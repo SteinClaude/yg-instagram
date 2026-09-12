@@ -1,0 +1,59 @@
+name: Plaatsen op Instagram
+
+on:
+  schedule:
+    # Elke twee uur. De tijden in planning.json staan in Amsterdamse tijd;
+    # het script rekent dat zelf om, dus zomertijd maakt niet uit.
+    - cron: '5 */2 * * *'
+  workflow_dispatch:          # knop om het met de hand te draaien
+
+permissions:
+  contents: write             # om gedaan.json terug te schrijven
+  issues: write               # om te waarschuwen als de sleutel verloopt
+
+concurrency:
+  group: plaatsen             # nooit twee runs tegelijk
+  cancel-in-progress: false
+
+jobs:
+  plaatsen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Plaatsen wat aan de beurt is
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          REPO_RAW: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+        run: node src/plaatsen.cjs
+
+      - name: Bijhouden wat geplaatst is
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain gedaan.json)" ]; then
+            git config user.name  "YG plaatser"
+            git config user.email "actions@users.noreply.github.com"
+            git add gedaan.json
+            git commit -m "geplaatst op $(TZ=Europe/Amsterdam date '+%d-%m-%Y %H:%M')"
+            git push
+          else
+            echo "niets nieuws om te bewaren"
+          fi
+
+      - name: Waarschuwen als de sleutel bijna verloopt
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f waarschuwing.txt ]; then
+            if [ -z "$(gh issue list --state open --search 'Sleutel vernieuwen in:title' --json number --jq '.[0].number')" ]; then
+              gh issue create --title "Sleutel vernieuwen" --body-file waarschuwing.txt
+            else
+              echo "melding staat al open"
+            fi
+          fi

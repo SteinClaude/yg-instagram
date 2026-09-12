@@ -1,0 +1,12 @@
+{
+  "name": "yg-instagram",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plaatst automatisch verhalen en berichten op het Instagram-account van YG Digital",
+  "scripts": {
+    "proef": "node src/plaatsen.cjs --proef",
+    "plaatsen": "node src/plaatsen.cjs",
+    "klaarzetten": "node gereedschap/klaarzetten.cjs"
+  },
+  "engines": { "node": ">=18" }
+}
