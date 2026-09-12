@@ -43,10 +43,13 @@ const lees = (bestand, standaard) => {
 };
 
 function main() {
+  // Nog niet ingesteld is geen fout: dan is stap 5 uit LEESMIJ.md gewoon nog niet
+  // gedaan. We stoppen netjes, zodat je geen foutmelding per twee uur krijgt.
   if (!TOKEN || !IG_ID) {
-    console.error(rood('IG_TOKEN of IG_USER_ID ontbreekt.') +
-      ' Zet ze bij Settings > Secrets and variables > Actions, of in je omgeving als je lokaal draait.');
-    process.exit(1);
+    console.log('Nog niet ingesteld: IG_TOKEN en/of IG_USER_ID ontbreken.');
+    console.log('Zet ze bij Settings > Secrets and variables > Actions (zie LEESMIJ.md, stap 5).');
+    console.log('Zolang die ontbreken plaatst dit script niets, en dat is de bedoeling.');
+    return;
   }
   if (!RAW && !PROEF) {
     console.error(rood('REPO_RAW ontbreekt.') + ' Dat is het openbare adres waar Instagram de platen ophaalt.');
