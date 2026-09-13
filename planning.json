@@ -5,7 +5,7 @@
   {
    "id": "2026-09-14-verhaal",
    "datum": "2026-09-14",
-   "tijd": "07:30",
+   "tijd": "07:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -15,7 +15,7 @@
   {
    "id": "2026-09-15-verhaal",
    "datum": "2026-09-15",
-   "tijd": "12:30",
+   "tijd": "12:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -25,7 +25,7 @@
   {
    "id": "2026-09-15-bericht",
    "datum": "2026-09-15",
-   "tijd": "19:00",
+   "tijd": "20:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -36,7 +36,7 @@
   {
    "id": "2026-09-16-verhaal",
    "datum": "2026-09-16",
-   "tijd": "19:30",
+   "tijd": "19:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -46,7 +46,7 @@
   {
    "id": "2026-09-17-verhaal",
    "datum": "2026-09-17",
-   "tijd": "08:30",
+   "tijd": "08:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -56,7 +56,7 @@
   {
    "id": "2026-09-17-bericht",
    "datum": "2026-09-17",
-   "tijd": "11:30",
+   "tijd": "11:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -67,7 +67,7 @@
   {
    "id": "2026-09-18-verhaal",
    "datum": "2026-09-18",
-   "tijd": "16:30",
+   "tijd": "16:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -77,7 +77,7 @@
   {
    "id": "2026-09-21-verhaal",
    "datum": "2026-09-21",
-   "tijd": "07:30",
+   "tijd": "07:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -87,7 +87,7 @@
   {
    "id": "2026-09-22-verhaal",
    "datum": "2026-09-22",
-   "tijd": "12:30",
+   "tijd": "12:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -97,7 +97,7 @@
   {
    "id": "2026-09-22-bericht",
    "datum": "2026-09-22",
-   "tijd": "19:00",
+   "tijd": "20:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -108,7 +108,7 @@
   {
    "id": "2026-09-23-verhaal",
    "datum": "2026-09-23",
-   "tijd": "19:30",
+   "tijd": "19:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -118,7 +118,7 @@
   {
    "id": "2026-09-24-verhaal",
    "datum": "2026-09-24",
-   "tijd": "08:30",
+   "tijd": "08:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -128,7 +128,7 @@
   {
    "id": "2026-09-24-bericht",
    "datum": "2026-09-24",
-   "tijd": "11:30",
+   "tijd": "11:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -139,7 +139,7 @@
   {
    "id": "2026-09-25-verhaal",
    "datum": "2026-09-25",
-   "tijd": "16:30",
+   "tijd": "16:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -149,7 +149,7 @@
   {
    "id": "2026-09-28-verhaal",
    "datum": "2026-09-28",
-   "tijd": "07:30",
+   "tijd": "07:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -159,7 +159,7 @@
   {
    "id": "2026-09-29-verhaal",
    "datum": "2026-09-29",
-   "tijd": "12:30",
+   "tijd": "12:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -169,7 +169,7 @@
   {
    "id": "2026-09-29-bericht",
    "datum": "2026-09-29",
-   "tijd": "19:00",
+   "tijd": "20:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -182,7 +182,7 @@
   {
    "id": "2026-09-30-verhaal",
    "datum": "2026-09-30",
-   "tijd": "19:30",
+   "tijd": "19:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -192,7 +192,7 @@
   {
    "id": "2026-10-01-verhaal",
    "datum": "2026-10-01",
-   "tijd": "08:30",
+   "tijd": "08:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -202,7 +202,7 @@
   {
    "id": "2026-10-01-bericht",
    "datum": "2026-10-01",
-   "tijd": "11:30",
+   "tijd": "11:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -213,7 +213,7 @@
   {
    "id": "2026-10-02-verhaal",
    "datum": "2026-10-02",
-   "tijd": "16:30",
+   "tijd": "16:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -223,7 +223,7 @@
   {
    "id": "2026-10-05-verhaal",
    "datum": "2026-10-05",
-   "tijd": "07:30",
+   "tijd": "07:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -233,7 +233,7 @@
   {
    "id": "2026-10-06-verhaal",
    "datum": "2026-10-06",
-   "tijd": "12:30",
+   "tijd": "12:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -243,7 +243,7 @@
   {
    "id": "2026-10-06-bericht",
    "datum": "2026-10-06",
-   "tijd": "19:00",
+   "tijd": "20:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -254,7 +254,7 @@
   {
    "id": "2026-10-07-verhaal",
    "datum": "2026-10-07",
-   "tijd": "19:30",
+   "tijd": "19:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -264,7 +264,7 @@
   {
    "id": "2026-10-08-verhaal",
    "datum": "2026-10-08",
-   "tijd": "08:30",
+   "tijd": "08:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -274,7 +274,7 @@
   {
    "id": "2026-10-08-bericht",
    "datum": "2026-10-08",
-   "tijd": "11:30",
+   "tijd": "11:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -285,7 +285,7 @@
   {
    "id": "2026-10-09-verhaal",
    "datum": "2026-10-09",
-   "tijd": "16:30",
+   "tijd": "16:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -295,7 +295,7 @@
   {
    "id": "2026-10-12-verhaal",
    "datum": "2026-10-12",
-   "tijd": "07:30",
+   "tijd": "07:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -305,7 +305,7 @@
   {
    "id": "2026-10-13-verhaal",
    "datum": "2026-10-13",
-   "tijd": "12:30",
+   "tijd": "12:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -315,7 +315,7 @@
   {
    "id": "2026-10-13-bericht",
    "datum": "2026-10-13",
-   "tijd": "19:00",
+   "tijd": "20:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -326,7 +326,7 @@
   {
    "id": "2026-10-14-verhaal",
    "datum": "2026-10-14",
-   "tijd": "19:30",
+   "tijd": "19:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -336,7 +336,7 @@
   {
    "id": "2026-10-15-verhaal",
    "datum": "2026-10-15",
-   "tijd": "08:30",
+   "tijd": "08:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -346,7 +346,7 @@
   {
    "id": "2026-10-15-bericht",
    "datum": "2026-10-15",
-   "tijd": "11:30",
+   "tijd": "11:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -357,7 +357,7 @@
   {
    "id": "2026-10-16-verhaal",
    "datum": "2026-10-16",
-   "tijd": "16:30",
+   "tijd": "16:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -367,7 +367,7 @@
   {
    "id": "2026-10-19-verhaal",
    "datum": "2026-10-19",
-   "tijd": "07:30",
+   "tijd": "07:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -377,7 +377,7 @@
   {
    "id": "2026-10-20-verhaal",
    "datum": "2026-10-20",
-   "tijd": "12:30",
+   "tijd": "12:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -387,7 +387,7 @@
   {
    "id": "2026-10-20-bericht",
    "datum": "2026-10-20",
-   "tijd": "19:00",
+   "tijd": "20:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -398,7 +398,7 @@
   {
    "id": "2026-10-21-verhaal",
    "datum": "2026-10-21",
-   "tijd": "19:30",
+   "tijd": "19:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -408,7 +408,7 @@
   {
    "id": "2026-10-22-verhaal",
    "datum": "2026-10-22",
-   "tijd": "08:30",
+   "tijd": "08:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -418,7 +418,7 @@
   {
    "id": "2026-10-22-bericht",
    "datum": "2026-10-22",
-   "tijd": "11:30",
+   "tijd": "11:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -429,7 +429,7 @@
   {
    "id": "2026-10-23-verhaal",
    "datum": "2026-10-23",
-   "tijd": "16:30",
+   "tijd": "16:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -439,7 +439,7 @@
   {
    "id": "2026-10-26-verhaal",
    "datum": "2026-10-26",
-   "tijd": "07:30",
+   "tijd": "07:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -449,7 +449,7 @@
   {
    "id": "2026-10-27-verhaal",
    "datum": "2026-10-27",
-   "tijd": "12:30",
+   "tijd": "12:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -459,7 +459,7 @@
   {
    "id": "2026-10-27-bericht",
    "datum": "2026-10-27",
-   "tijd": "19:00",
+   "tijd": "20:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -472,7 +472,7 @@
   {
    "id": "2026-10-28-verhaal",
    "datum": "2026-10-28",
-   "tijd": "19:30",
+   "tijd": "19:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -482,7 +482,7 @@
   {
    "id": "2026-10-29-verhaal",
    "datum": "2026-10-29",
-   "tijd": "08:30",
+   "tijd": "08:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -492,7 +492,7 @@
   {
    "id": "2026-10-29-bericht",
    "datum": "2026-10-29",
-   "tijd": "11:30",
+   "tijd": "11:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -503,7 +503,7 @@
   {
    "id": "2026-10-30-verhaal",
    "datum": "2026-10-30",
-   "tijd": "16:30",
+   "tijd": "16:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -513,7 +513,7 @@
   {
    "id": "2026-11-02-verhaal",
    "datum": "2026-11-02",
-   "tijd": "07:30",
+   "tijd": "07:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -523,7 +523,7 @@
   {
    "id": "2026-11-03-verhaal",
    "datum": "2026-11-03",
-   "tijd": "12:30",
+   "tijd": "12:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -533,7 +533,7 @@
   {
    "id": "2026-11-03-bericht",
    "datum": "2026-11-03",
-   "tijd": "19:00",
+   "tijd": "20:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -544,7 +544,7 @@
   {
    "id": "2026-11-04-verhaal",
    "datum": "2026-11-04",
-   "tijd": "19:30",
+   "tijd": "19:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -554,7 +554,7 @@
   {
    "id": "2026-11-05-verhaal",
    "datum": "2026-11-05",
-   "tijd": "08:30",
+   "tijd": "08:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -564,7 +564,7 @@
   {
    "id": "2026-11-05-bericht",
    "datum": "2026-11-05",
-   "tijd": "11:30",
+   "tijd": "11:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -575,7 +575,7 @@
   {
    "id": "2026-11-06-verhaal",
    "datum": "2026-11-06",
-   "tijd": "16:30",
+   "tijd": "16:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -585,7 +585,7 @@
   {
    "id": "2026-11-09-verhaal",
    "datum": "2026-11-09",
-   "tijd": "07:30",
+   "tijd": "07:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -595,7 +595,7 @@
   {
    "id": "2026-11-10-verhaal",
    "datum": "2026-11-10",
-   "tijd": "12:30",
+   "tijd": "12:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -605,7 +605,7 @@
   {
    "id": "2026-11-10-bericht",
    "datum": "2026-11-10",
-   "tijd": "19:00",
+   "tijd": "20:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -618,7 +618,7 @@
   {
    "id": "2026-11-11-verhaal",
    "datum": "2026-11-11",
-   "tijd": "19:30",
+   "tijd": "19:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -628,7 +628,7 @@
   {
    "id": "2026-11-12-verhaal",
    "datum": "2026-11-12",
-   "tijd": "08:30",
+   "tijd": "08:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -638,7 +638,7 @@
   {
    "id": "2026-11-12-bericht",
    "datum": "2026-11-12",
-   "tijd": "11:30",
+   "tijd": "11:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -649,7 +649,7 @@
   {
    "id": "2026-11-13-verhaal",
    "datum": "2026-11-13",
-   "tijd": "16:30",
+   "tijd": "16:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -659,7 +659,7 @@
   {
    "id": "2026-11-16-verhaal",
    "datum": "2026-11-16",
-   "tijd": "07:30",
+   "tijd": "07:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -669,7 +669,7 @@
   {
    "id": "2026-11-17-verhaal",
    "datum": "2026-11-17",
-   "tijd": "12:30",
+   "tijd": "12:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -679,7 +679,7 @@
   {
    "id": "2026-11-17-bericht",
    "datum": "2026-11-17",
-   "tijd": "19:00",
+   "tijd": "20:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -690,7 +690,7 @@
   {
    "id": "2026-11-18-verhaal",
    "datum": "2026-11-18",
-   "tijd": "19:30",
+   "tijd": "19:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -700,7 +700,7 @@
   {
    "id": "2026-11-19-verhaal",
    "datum": "2026-11-19",
-   "tijd": "08:30",
+   "tijd": "08:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -710,7 +710,7 @@
   {
    "id": "2026-11-19-bericht",
    "datum": "2026-11-19",
-   "tijd": "11:30",
+   "tijd": "11:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -721,7 +721,7 @@
   {
    "id": "2026-11-20-verhaal",
    "datum": "2026-11-20",
-   "tijd": "16:30",
+   "tijd": "16:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -731,7 +731,7 @@
   {
    "id": "2026-11-23-verhaal",
    "datum": "2026-11-23",
-   "tijd": "07:30",
+   "tijd": "07:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -741,7 +741,7 @@
   {
    "id": "2026-11-24-verhaal",
    "datum": "2026-11-24",
-   "tijd": "12:30",
+   "tijd": "12:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -751,7 +751,7 @@
   {
    "id": "2026-11-24-bericht",
    "datum": "2026-11-24",
-   "tijd": "19:00",
+   "tijd": "20:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -762,7 +762,7 @@
   {
    "id": "2026-11-25-verhaal",
    "datum": "2026-11-25",
-   "tijd": "19:30",
+   "tijd": "19:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -772,7 +772,7 @@
   {
    "id": "2026-11-26-verhaal",
    "datum": "2026-11-26",
-   "tijd": "08:30",
+   "tijd": "08:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -782,7 +782,7 @@
   {
    "id": "2026-11-26-bericht",
    "datum": "2026-11-26",
-   "tijd": "11:30",
+   "tijd": "11:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -793,7 +793,7 @@
   {
    "id": "2026-11-27-verhaal",
    "datum": "2026-11-27",
-   "tijd": "16:30",
+   "tijd": "16:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -803,7 +803,7 @@
   {
    "id": "2026-11-30-verhaal",
    "datum": "2026-11-30",
-   "tijd": "07:30",
+   "tijd": "07:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -813,7 +813,7 @@
   {
    "id": "2026-12-01-verhaal",
    "datum": "2026-12-01",
-   "tijd": "12:30",
+   "tijd": "12:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -823,7 +823,7 @@
   {
    "id": "2026-12-01-bericht",
    "datum": "2026-12-01",
-   "tijd": "19:00",
+   "tijd": "20:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -834,7 +834,7 @@
   {
    "id": "2026-12-02-verhaal",
    "datum": "2026-12-02",
-   "tijd": "19:30",
+   "tijd": "19:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -844,7 +844,7 @@
   {
    "id": "2026-12-03-verhaal",
    "datum": "2026-12-03",
-   "tijd": "08:30",
+   "tijd": "08:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
@@ -854,7 +854,7 @@
   {
    "id": "2026-12-03-bericht",
    "datum": "2026-12-03",
-   "tijd": "11:30",
+   "tijd": "11:00",
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
@@ -865,7 +865,7 @@
   {
    "id": "2026-12-04-verhaal",
    "datum": "2026-12-04",
-   "tijd": "16:30",
+   "tijd": "16:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
