@@ -1,6 +1,6 @@
 name: Planning wijzigen
 
-# Draait zodra jij een melding met het label "wijziging" opent of bijwerkt.
+# Draait zodra jij een melding vanuit het wijzigformulier opent of bijwerkt.
 on:
   issues:
     types: [opened, edited]
@@ -15,7 +15,9 @@ concurrency:
 
 jobs:
   wijzigen:
-    if: contains(github.event.issue.labels.*.name, 'wijziging')
+    # Herkent het formulier aan de inhoud, niet aan een label: GitHub kent het label
+    # van een formuliersjabloon niet altijd toe.
+    if: contains(github.event.issue.body, 'Welk item')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
