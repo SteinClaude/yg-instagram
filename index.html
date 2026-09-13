@@ -182,6 +182,28 @@ async function haal(naam, standaard){
   tekenStatus(); tekenStraks(); tekenWeken();
 })();
 
+// Leidt het ritme af uit de planning zelf, zodat deze regel nooit kan verouderen
+// als het schema verandert.
+function ritme(items){
+  const zien = {};
+  for (const i of items) {
+    const d = dat(i.datum).getUTCDay();
+    if (!zien[i.soort]) zien[i.soort] = {};
+    if (!zien[i.soort][d]) zien[i.soort][d] = [];
+    if (zien[i.soort][d].indexOf(i.tijd) < 0) zien[i.soort][d].push(i.tijd);
+  }
+  const regel = (soort, naam) => {
+    const dagen = Object.keys(zien[soort] || {}).map(Number).sort();
+    if (!dagen.length) return '';
+    return naam + ': ' + dagen.map(d => DAGEN[d] + ' ' + zien[soort][d].sort().join(' en ')).join(', ') + '.';
+  };
+  const talen = [];
+  items.forEach(i => { if (talen.indexOf(i.taal) < 0) talen.push(i.taal); });
+  return [regel('verhaal','Verhalen'), regel('bericht','Berichten'),
+    talen.length === 1 ? 'Alles in het ' + (talen[0] === 'nl' ? 'Nederlands' : 'Engels') + '.' : ''
+  ].filter(Boolean).join(' ');
+}
+
 function tekenStatus(){
   const geplaatst = Object.values(GEDAAN).filter(g => g.resultaat === 'geplaatst').length;
   const over = ITEMS.filter(i => !GEDAAN[i.id] && !voorbij(i)).length;
@@ -193,7 +215,7 @@ function tekenStatus(){
     (mis ? '<span class="pil fout">' + mis + ' niet gelukt</span>' : '') +
     '<span class="pil">tot ' + lang(laatste.datum) + '</span>';
   document.getElementById('voet').innerHTML =
-    'Elke dag een verhaal om 08:00, berichten op maandag, woensdag en vrijdag om 11:00, Nederlands en Engels om en om.<br>' +
+    ritme(ITEMS) + '<br>' +
     'Deze pagina leest <a href="https://github.com/' + REPO + '/blob/main/planning.json">planning.json</a> en ' +
     '<a href="https://github.com/' + REPO + '/blob/main/gedaan.json">gedaan.json</a> rechtstreeks uit. ' +
     'Het echte logboek staat bij <a href="https://github.com/' + REPO + '/actions">Actions</a>.';
