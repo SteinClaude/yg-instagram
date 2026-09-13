@@ -15,10 +15,11 @@ gratis voor openbare mappen.
 | `planning.json` | Wat er wanneer geplaatst wordt. 120 items, 12 weken vooruit. |
 | `beeld/` | De platen als JPEG. Instagram haalt ze hier zelf op. |
 | `gedaan.json` | Wat al geplaatst is. Voorkomt dubbel plaatsen. Wordt vanzelf bijgewerkt. |
+| `sleutel.json` | Wanneer de huidige sleutel voor het eerst gezien is, om op tijd te waarschuwen. Alleen een vingerafdruk, nooit de sleutel zelf. |
 | `src/plaatsen.cjs` | Het script dat het werk doet. |
-| `src/instagram.cjs` | De koppeling met Meta. |
+| `src/instagram.cjs` | De koppeling met Instagram. |
 | `gereedschap/klaarzetten.cjs` | Zet platen om naar JPEG en maakt een nieuwe planning. |
-| `gereedschap/instellen.cjs` | Eenmalig: haalt je sleutel en accountnummer op. |
+| `gereedschap/controleer.cjs` | Toetst of sleutel en accountnummer werken. |
 | `gereedschap/vernieuw-token.cjs` | Elke twee maanden: vernieuwt de sleutel. |
 
 De map is **openbaar**. Dat moet, want Instagram haalt de platen op van een
@@ -27,88 +28,78 @@ en komt nooit in de bestanden.
 
 ---
 
-## Instellen — eenmalig, ongeveer een half uur
+## Hoe dit met Meta praat
 
-### Stap 1 · De map op GitHub zetten
+Er zijn twee routes naar de Instagram API. Wij gebruiken de tweede:
 
-1. Ga naar **github.com/new**.
-2. Naam: `yg-instagram`. Kies **Public**. Niets aanvinken bij "Initialize".
-3. Klik **Create repository**.
-4. Draai daarna in deze map:
+- **Via Facebook-login** — loopt via je Facebook-pagina. Bij ons gaf `/me/accounts`
+  nul pagina's terug, omdat YG-Digital een pagina van de nieuwe soort is die aan
+  je profiel hangt. Onbruikbaar gebleken.
+- **Via Instagram-login** — praat rechtstreeks met je Instagram-account, zonder
+  de pagina. Dit is wat hier draait, tegen `graph.instagram.com`.
 
-```bash
-git remote add origin https://github.com/SteinClaude/yg-instagram.git
-git branch -M main
-git push -u origin main
+Je Facebook-pagina blijft gewoon bestaan en gekoppeld; die heb je nodig voor
+Business Suite. Hij is alleen niet de weg waarlangs dit script plaatst.
+
+---
+
+## Instellen
+
+### Stap 1 · De map op GitHub (al gedaan)
+
+Staat op **github.com/SteinClaude/yg-instagram**, openbaar.
+
+### Stap 2 · De Meta-app (al gedaan)
+
+App **YG Digital plaatser**, App ID `1602408081320897`, in **ontwikkelmodus**.
+Dat is precies goed: zo hoef je geen goedkeuringstraject van Meta in. Dat is
+alleen nodig als je namens *andermans* accounts wilt plaatsen.
+
+Je account `ygdigital.nl` heeft daarin de rol **Instagram Tester**, en die
+uitnodiging is geaccepteerd. Zonder die rol weigert Meta met *"Ontwikkelaarsrol
+is niet voldoende"*.
+
+### Stap 3 · De sleutel ophalen
+
+1. Ga naar
+   `developers.facebook.com/apps/1602408081320897/instagram-business/API-Setup/`
+2. Klap **1. Generate access tokens** open. Daar staat `ygdigital.nl`.
+3. Klik **Generate token** en kopieer de sleutel.
+
+De sleutel is 60 dagen geldig. Je accountnummer staat er meteen naast:
+**17841434765692615**.
+
+### Stap 4 · Controleren
+
+Draai in deze map:
+
+```powershell
+node gereedschap/controleer.cjs 17841434765692615 "JOUW_SLEUTEL"
 ```
 
-Bij de eerste push opent er een venster om in te loggen bij GitHub. Dat is normaal.
-
-### Stap 2 · Een Meta-app aanmaken
-
-Dit is geen app die iemand ziet; het is de sleutelbos waarmee het script bij je
-account mag. Hij blijft in **ontwikkelmodus** staan, en dat is precies goed:
-zo hoef je geen goedkeuringstraject van Meta in. Dat traject is alleen nodig
-als je namens *andermans* accounts wilt plaatsen.
-
-1. Ga naar **developers.facebook.com/apps** en log in met je Facebook-account.
-2. **Create App**. Kies als type **Business**.
-3. Naam: `YG Digital plaatser`. Koppel hem aan je bedrijf als dat gevraagd wordt.
-4. In het menu links: **App settings → Basic**. Noteer:
-   - **App ID** (een lang nummer)
-   - **App Secret** (klik op *Show*)
-5. Voeg het product **Instagram** toe (of *Facebook Login for Business*, als
-   Instagram er niet bij staat).
-
-### Stap 3 · Een sleutel ophalen
-
-1. Ga naar **developers.facebook.com/tools/explorer** (de Graph API Explorer).
-2. Rechtsboven bij **Meta App**: kies `YG Digital plaatser`.
-3. Bij **User or Page**: kies *User Token*.
-4. Klik **Add a Permission** en vink aan:
-   - `instagram_basic`
-   - `instagram_content_publish`
-   - `pages_show_list`
-   - `pages_read_engagement`
-5. Klik **Generate Access Token**. Er opent een venster; vink daar de pagina
-   **YG-Digital** aan. Doe je dat niet, dan vindt het script je account niet.
-6. Kopieer de sleutel die verschijnt. Die is maar een uur geldig — dat geeft
-   niet, de volgende stap ruilt hem om.
-
-### Stap 4 · De lange sleutel maken
-
-Draai in deze map, met de drie dingen uit stap 2 en 3:
-
-```bash
-node gereedschap/instellen.cjs <APP_ID> <APP_SECRET> <KORTE_SLEUTEL>
-```
-
-Je krijgt twee regels terug: `IG_USER_ID` en `IG_TOKEN`.
-
-Bewaar je **App ID** en **App Secret** ook ergens veilig. Die heb je elke twee
-maanden nodig om de sleutel te vernieuwen.
+Je hoort te zien: `Sleutel werkt. Account: @ygdigital.nl`
 
 ### Stap 5 · De sleutels in GitHub zetten
 
-Ga naar je repo → **Settings → Secrets and variables → Actions → New repository secret**.
-Maak er twee:
+Repo → **Settings → Secrets and variables → Actions → New repository secret**.
+Twee stuks:
 
 | Naam | Waarde |
 |---|---|
-| `IG_TOKEN` | de lange sleutel uit stap 4 |
-| `IG_USER_ID` | het nummer uit stap 4 |
+| `IG_USER_ID` | `17841434765692615` |
+| `IG_TOKEN` | de sleutel uit stap 3 |
 
 Deel die sleutel met niemand: hij geeft toegang tot je Instagram-account.
 
 ### Stap 6 · Proefdraaien
 
-Ga naar je repo → tabblad **Actions** → *Plaatsen op Instagram* → **Run workflow**.
+Repo → tabblad **Actions** → *Plaatsen op Instagram* → **Run workflow**.
 
 Staat er niets op het programma, dan zegt hij "Niets te plaatsen op dit moment"
 en controleert hij je sleutel. Dat is een geslaagde proef.
 
-Wil je echt iets zien verschijnen, zet dan in `planning.json` de datum en tijd
-van het eerste item op vandaag en een paar minuten geleden, en draai opnieuw.
+Wil je echt iets zien verschijnen: zet in `planning.json` de datum en tijd van
+het eerste item op vandaag en een paar minuten geleden, en draai opnieuw.
 
 Vanaf dan draait hij vanzelf, elke twee uur.
 
@@ -118,15 +109,18 @@ Vanaf dan draait hij vanzelf, elke twee uur.
 
 ### Elke twee maanden: de sleutel vernieuwen
 
-Meta's sleutels verlopen na 60 dagen. Het script waarschuwt op tijd: je krijgt
-een melding op GitHub (en dus een mailtje) met de titel *Sleutel vernieuwen*,
-twaalf dagen van tevoren. Dan doe je:
+Instagram-sleutels gaan 60 dagen mee. Het script houdt bij hoe oud de jouwe is
+en maakt twaalf dagen van tevoren een melding op GitHub met de titel
+*Sleutel vernieuwen* — daar krijg je een mailtje van. Dan doe je:
 
-```bash
-node gereedschap/vernieuw-token.cjs <APP_ID> <APP_SECRET> <HUIDIGE_SLEUTEL>
+```powershell
+node gereedschap/vernieuw-token.cjs "HUIDIGE_SLEUTEL"
 ```
 
 en zet je de nieuwe waarde bij `IG_TOKEN` (knop **Update**).
+
+Je hebt hier geen App ID of App Secret voor nodig; bij deze route vernieuwt de
+sleutel zichzelf. Wel moet de sleutel minstens 24 uur oud zijn.
 
 **Doe je dit niet, dan stopt het plaatsen stil.** Daarom die waarschuwing.
 
@@ -134,15 +128,15 @@ en zet je de nieuwe waarde bij `IG_TOKEN` (knop **Update**).
 
 De planning loopt twaalf weken. Voor een nieuwe reeks:
 
-```bash
+```powershell
 node gereedschap/klaarzetten.cjs 2026-12-07 12
 ```
 
 Daarna `git add -A`, `git commit -m "nieuwe planning"`, `git push`.
 
-Heb je in `yg-luxury/instagram/` teksten of platen aangepast? Draai dan eerst
-`node instagram/maak.cjs` en `node instagram/voorraad.cjs` daar, en daarna
-`klaarzetten.cjs` hier. Dan loopt alles weer gelijk.
+Heb je in `yg-luxury/instagram/` teksten of platen aangepast? Draai daar dan
+eerst `node instagram/maak.cjs` en `node instagram/voorraad.cjs`, en daarna
+`klaarzetten.cjs` hier.
 
 ### Iets overslaan of wijzigen
 
@@ -153,21 +147,24 @@ Wat in `gedaan.json` staat wordt nooit opnieuw geplaatst.
 
 ## Als er iets misgaat
 
-**De Action staat op rood.** Klik erop en lees de laatste regel. De meeste
-meldingen van Meta zijn letterlijk leesbaar ("Meta weigert …").
+**De Action staat op rood.** Klik erop en lees de laatste regel. De meldingen
+van Instagram zijn letterlijk leesbaar ("Instagram weigert …").
 
-**"Invalid OAuth access token"** — de sleutel is verlopen of verkeerd
-gekopieerd. Doe stap 3 en 4 opnieuw.
+**"Sleutel werkt niet meer"** — verlopen of verkeerd gekopieerd. Doe stap 3
+tot en met 5 opnieuw.
 
-**"Media could not be fetched"** — Instagram kon de plaat niet ophalen.
-Controleer of de map op GitHub echt **Public** staat.
+**"Instagram kon het beeld niet verwerken"** — controleer of de map op GitHub
+echt **Public** staat; anders kan Instagram de plaat niet ophalen.
 
-**Er verschijnt niets, maar de Action is groen.** Kijk in de logs naar
-"Nu in Amsterdam"; waarschijnlijk was er simpelweg niets aan de beurt, of
-het item stond al in `gedaan.json`.
+**"Ontwikkelaarsrol is niet voldoende"** — de Instagram Tester-rol is
+ingetrokken. Opnieuw toekennen bij *App roles → More → Instagram Testers*, en
+accepteren op `instagram.com/accounts/manage_access/`.
+
+**Groen, maar er verschijnt niets.** Kijk in de logs naar "Nu in Amsterdam";
+waarschijnlijk was er niets aan de beurt, of het stond al in `gedaan.json`.
 
 **Alles moet stoppen.** Repo → Settings → Actions → *Disable actions*. Of
-verwijder de twee secrets; dan stopt het script met een nette foutmelding.
+verwijder de twee secrets; dan stopt het script met een nette melding.
 
 ---
 

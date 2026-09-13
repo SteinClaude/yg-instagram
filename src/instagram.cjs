@@ -1,7 +1,11 @@
-// Instagram Graph API, alleen wat wij nodig hebben. Geen externe pakketten:
-// Node 18+ heeft fetch ingebouwd, dus er is niets dat kan verouderen.
-const VERSIE = process.env.GRAPH_VERSIE || 'v26.0';
-const BASIS = `https://graph.facebook.com/${VERSIE}`;
+// Instagram API met Instagram-login. Geen externe pakketten: Node 18+ heeft fetch
+// ingebouwd, dus er is niets dat kan verouderen.
+//
+// Let op: dit praat met graph.instagram.com, niet met graph.facebook.com. Die eerste
+// route loopt rechtstreeks naar je Instagram-account en heeft je Facebook-pagina niet
+// nodig. Dat scheelt een hoop koppelwerk dat bij ons niet wilde lukken.
+const VERSIE = process.env.GRAPH_VERSIE || 'v23.0';
+const BASIS = `https://graph.instagram.com/${VERSIE}`;
 
 const wacht = ms => new Promise(r => setTimeout(r, ms));
 
@@ -16,10 +20,10 @@ async function api(pad, params = {}, methode = 'GET') {
   const antwoord = await fetch(url, methode === 'GET' ? {} : { method: 'POST', body });
   let gegevens;
   try { gegevens = await antwoord.json(); }
-  catch { throw new Error(`Meta gaf geen leesbaar antwoord (status ${antwoord.status}) op ${pad}`); }
+  catch { throw new Error(`Instagram gaf geen leesbaar antwoord (status ${antwoord.status}) op ${pad}`); }
   if (gegevens.error) {
     const e = gegevens.error;
-    throw new Error(`Meta weigert ${pad}: ${e.message}` +
+    throw new Error(`Instagram weigert ${pad}: ${e.message}` +
       (e.error_user_msg ? ` — ${e.error_user_msg}` : '') +
       ` (code ${e.code}${e.error_subcode ? '/' + e.error_subcode : ''})`);
   }
@@ -32,7 +36,7 @@ async function maakContainer(igId, token, velden) {
   return id;
 }
 
-// Meta haalt het beeld zelf op; dat duurt even. Wachten tot hij klaar is.
+// Instagram haalt het beeld zelf op van het openbare adres; dat duurt even.
 async function wachtTotKlaar(containerId, token, seconden = 90) {
   const eind = Date.now() + seconden * 1000;
   let laatste = '';
@@ -41,11 +45,11 @@ async function wachtTotKlaar(containerId, token, seconden = 90) {
     laatste = status || status_code;
     if (status_code === 'FINISHED') return true;
     if (status_code === 'ERROR' || status_code === 'EXPIRED') {
-      throw new Error(`Meta kon het beeld niet verwerken (${status_code}): ${status || 'geen toelichting'}`);
+      throw new Error(`Instagram kon het beeld niet verwerken (${status_code}): ${status || 'geen toelichting'}`);
     }
     await wacht(3000);
   }
-  throw new Error(`Meta was na ${seconden} seconden nog niet klaar met het beeld (${laatste})`);
+  throw new Error(`Instagram was na ${seconden} seconden nog niet klaar met het beeld (${laatste})`);
 }
 
 async function publiceer(igId, token, containerId) {
@@ -86,22 +90,30 @@ async function plaatsVerhaal(igId, token, beeldUrl) {
 
 // --- controles ---------------------------------------------------------------
 
-// Hoeveel dagen de sleutel nog meegaat. null = onbekend (bijv. een sleutel zonder einddatum).
-async function dagenGeldig(token) {
-  const { data } = await api('/debug_token', { input_token: token, access_token: token });
-  if (!data) return null;
-  if (!data.is_valid) throw new Error('De toegangssleutel is niet (meer) geldig.');
-  if (!data.expires_at) return null;                       // 0 = verloopt niet
-  return Math.round((data.expires_at * 1000 - Date.now()) / 86400000);
+// Werkt de sleutel nog? Geeft de accountnaam terug, of gooit een leesbare fout.
+async function wieBenIk(igId, token) {
+  const a = await api(`/${igId}`, { fields: 'id,username', access_token: token });
+  return a.username;
 }
 
 async function ruimteOver(igId, token) {
-  const { data } = await api(`/${igId}/content_publishing_limit`, { access_token: token });
+  const { data } = await api(`/${igId}/content_publishing_limit`, { fields: 'quota_usage', access_token: token });
   const n = data && data[0] ? data[0].quota_usage : 0;
   return { gebruikt: n, limiet: 100 };
 }
 
+// Vernieuwt een lange sleutel. Geeft een NIEUWE sleutel terug; die moet je bewaren.
+// Mag pas als de sleutel minstens 24 uur oud is.
+async function vernieuwSleutel(token) {
+  const url = new URL('https://graph.instagram.com/refresh_access_token');
+  url.searchParams.set('grant_type', 'ig_refresh_token');
+  url.searchParams.set('access_token', token);
+  const a = await (await fetch(url)).json();
+  if (a.error) throw new Error(`${a.error.message} (code ${a.error.code})`);
+  return { sleutel: a.access_token, dagen: Math.round((a.expires_in || 0) / 86400) };
+}
+
 module.exports = {
   VERSIE, api, plaatsFoto, plaatsCarrousel, plaatsVerhaal,
-  dagenGeldig, ruimteOver, wacht,
+  wieBenIk, ruimteOver, vernieuwSleutel, wacht,
 };

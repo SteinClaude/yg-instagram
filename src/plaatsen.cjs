@@ -122,23 +122,47 @@ async function plaatsAlles(items, gedaan, nu) {
 }
 
 // Waarschuwt op tijd, want een verlopen sleutel stopt het plaatsen zonder alarm.
+// Instagram-sleutels gaan 60 dagen mee en hebben geen "wanneer verloop ik"-vraag,
+// dus we onthouden zelf wanneer we een nieuwe sleutel voor het eerst zagen. We
+// bewaren alleen een vingerafdruk, nooit de sleutel zelf.
+const SLEUTELBESTAND = path.join(WORTEL, 'sleutel.json');
+const vingerafdruk = t => require('crypto').createHash('sha256').update(t).digest('hex').slice(0, 12);
+
 async function controleerSleutel() {
   try {
-    const dagen = await IG.dagenGeldig(TOKEN);
-    if (dagen === null) { console.log('\nSleutel verloopt niet.'); return; }
-    console.log(`\nSleutel nog ${dagen} dagen geldig.`);
-    if (dagen <= 12) {
-      const tekst = `De Instagram-sleutel verloopt over ${dagen} dagen.\n\n` +
-        `Vernieuwen: draai op je eigen computer\n\n    node gereedschap/vernieuw-token.cjs\n\n` +
-        `en zet de nieuwe sleutel bij Settings > Secrets and variables > Actions > IG_TOKEN.\n` +
-        `Doe je dit niet, dan stopt het plaatsen stil.`;
-      fs.writeFileSync(WAARSCHUWING, tekst);
-      console.log(rood('\n' + tekst));
-    } else if (fs.existsSync(WAARSCHUWING)) {
-      fs.unlinkSync(WAARSCHUWING);
-    }
+    const naam = await IG.wieBenIk(IG_ID, TOKEN);
+    console.log(`\nSleutel werkt, account @${naam}.`);
   } catch (fout) {
-    console.error(rood(`Sleutelcontrole mislukt: ${fout.message}`));
+    console.error(rood(`\nSleutel werkt niet: ${fout.message}`));
+    fs.writeFileSync(WAARSCHUWING,
+      `De Instagram-sleutel werkt niet meer.\n\n${fout.message}\n\n` +
+      `Haal een nieuwe op (LEESMIJ.md, stap 3) en zet hem bij\n` +
+      `Settings > Secrets and variables > Actions > IG_TOKEN.`);
+    return;
+  }
+
+  const nu = nuInAmsterdam().datum;
+  const afdruk = vingerafdruk(TOKEN);
+  let staat = lees(SLEUTELBESTAND, {});
+  if (staat.afdruk !== afdruk) {
+    staat = { afdruk, sinds: nu };                          // nieuwe sleutel gezien
+    fs.writeFileSync(SLEUTELBESTAND, JSON.stringify(staat, null, 1));
+    console.log('Nieuwe sleutel herkend; de teller loopt vanaf vandaag.');
+  }
+
+  const dagenOud = Math.round((Date.parse(nu) - Date.parse(staat.sinds)) / 86400000);
+  const resterend = 60 - dagenOud;
+  console.log(`Sleutel is ${dagenOud} dagen oud, nog ongeveer ${resterend} dagen te gaan.`);
+
+  if (resterend <= 12) {
+    const tekst = `De Instagram-sleutel verloopt over ongeveer ${resterend} dagen.\n\n` +
+      `Vernieuwen: draai op je eigen computer\n\n    node gereedschap/vernieuw-token.cjs HUIDIGE_SLEUTEL\n\n` +
+      `en zet de nieuwe sleutel bij Settings > Secrets and variables > Actions > IG_TOKEN.\n` +
+      `Doe je dit niet, dan stopt het plaatsen stil.`;
+    fs.writeFileSync(WAARSCHUWING, tekst);
+    console.log(rood('\n' + tekst));
+  } else if (fs.existsSync(WAARSCHUWING)) {
+    fs.unlinkSync(WAARSCHUWING);
   }
 }
 
