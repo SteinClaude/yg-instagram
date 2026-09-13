@@ -1189,17 +1189,6 @@
    ]
   },
   {
-   "id": "2026-12-02-bericht",
-   "datum": "2026-12-02",
-   "tijd": "11:00",
-   "soort": "bericht",
-   "taal": "nl",
-   "beeld": [
-    "berichten/nl/F12.jpg"
-   ],
-   "tekst": "YG Digital bouwt websites voor ondernemers: de entree van uw bedrijf, rustig en verzorgd tot in detail.\n\nVaste prijs vooraf, vanaf € 250 excl. btw (€ 302,50 incl.). Antwoord binnen één werkdag. Twee correctierondes en dertig dagen nazorg.\n\nBenieuwd hoe uw website eruit zou zien? Maak in twee minuten gratis uw eerste ontwerp via de link in onze bio.\n\n#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland"
-  },
-  {
    "id": "2026-12-03-verhaal",
    "datum": "2026-12-03",
    "tijd": "08:00",
@@ -1218,6 +1207,17 @@
    "beeld": [
     "verhalen/en/V23.jpg"
    ]
+  },
+  {
+   "id": "2026-12-04-bericht-2",
+   "datum": "2026-12-04",
+   "tijd": "11:00",
+   "soort": "bericht",
+   "taal": "nl",
+   "beeld": [
+    "berichten/nl/F12.jpg"
+   ],
+   "tekst": "YG Digital bouwt websites voor ondernemers: de entree van uw bedrijf, rustig en verzorgd tot in detail.\n\nVaste prijs vooraf, vanaf € 250 excl. btw (€ 302,50 incl.). Antwoord binnen één werkdag. Twee correctierondes en dertig dagen nazorg.\n\nBenieuwd hoe uw website eruit zou zien? Maak in twee minuten gratis uw eerste ontwerp via de link in onze bio.\n\n#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland"
   },
   {
    "id": "2026-12-04-bericht",
