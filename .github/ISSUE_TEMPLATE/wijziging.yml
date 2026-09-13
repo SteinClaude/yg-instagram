@@ -14,7 +14,7 @@ body:
     attributes:
       label: Welk item
       description: "Het nummer van het item, bijvoorbeeld 2026-09-21-bericht of 2026-09-21-verhaal. Op de planningspagina staat dit bij elk item."
-      placeholder: 2026-09-21-bericht
+      placeholder: "2026-09-21-bericht"
     validations:
       required: true
 
@@ -34,7 +34,7 @@ body:
     attributes:
       label: Nieuwe datum
       description: "Alleen invullen bij Verzetten. Schrijf het als 2026-10-05."
-      placeholder: 2026-10-05
+      placeholder: "2026-10-05"
 
   - type: textarea
     id: tekst
