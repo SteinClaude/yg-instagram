@@ -2,9 +2,9 @@ name: Plaatsen op Instagram
 
 on:
   schedule:
-    # Elke twee uur. De tijden in planning.json staan in Amsterdamse tijd;
+    # Elk uur. De tijden in planning.json staan in Amsterdamse tijd;
     # het script rekent dat zelf om, dus zomertijd maakt niet uit.
-    - cron: '5 */2 * * *'
+    - cron: '5 * * * *'
   workflow_dispatch:          # knop om het met de hand te draaien
 
 permissions:

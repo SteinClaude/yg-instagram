@@ -1,4 +1,4 @@
-// Draait elke twee uur via GitHub Actions. Kijkt in planning.json wat er inmiddels
+// Draait elk uur via GitHub Actions. Kijkt in planning.json wat er inmiddels
 // aan de beurt is, plaatst dat, en schrijft het weg in gedaan.json zodat het nooit
 // twee keer gebeurt. Handmatig proefdraaien: node src/plaatsen.cjs --proef
 const fs = require('fs'), path = require('path');
@@ -44,7 +44,7 @@ const lees = (bestand, standaard) => {
 
 function main() {
   // Nog niet ingesteld is geen fout: dan is stap 5 uit LEESMIJ.md gewoon nog niet
-  // gedaan. We stoppen netjes, zodat je geen foutmelding per twee uur krijgt.
+  // gedaan. We stoppen netjes, zodat je geen foutmelding per uur krijgt.
   if (!TOKEN || !IG_ID) {
     console.log('Nog niet ingesteld: IG_TOKEN en/of IG_USER_ID ontbreken.');
     console.log('Zet ze bij Settings > Secrets and variables > Actions (zie LEESMIJ.md, stap 5).');

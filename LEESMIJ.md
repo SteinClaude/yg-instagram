@@ -101,7 +101,7 @@ en controleert hij je sleutel. Dat is een geslaagde proef.
 Wil je echt iets zien verschijnen: zet in `planning.json` de datum en tijd van
 het eerste item op vandaag en een paar minuten geleden, en draai opnieuw.
 
-Vanaf dan draait hij vanzelf, elke twee uur.
+Vanaf dan draait hij vanzelf, elk uur.
 
 ---
 
