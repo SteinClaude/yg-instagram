@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Instagram-planning · YG Digital</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --grond:#F6F1E8; --kaart:#FFFDF9; --verhoog:#EFE8DA;
+    --ink:#1C1B18; --ink-zacht:#6B665E; --ink-flauw:#8C877D;
+    --goud:#8C6F3A; --goud-tekst:#7B6132; --goud-hi:#C9A45C;
+    --lijn:rgba(140,111,58,.26); --lijn-zacht:rgba(140,111,58,.14);
+    --gedaan:#3F7150; --let-op:#A6462F;
+    --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+    --sans:"Montserrat",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --grond:#141414; --kaart:#1B1B1B; --verhoog:#0E0E0E;
+      --ink:#F3EEE4; --ink-zacht:#C9C3B8; --ink-flauw:#8F8A80;
+      --goud:#C9A45C; --goud-tekst:#C9A45C; --goud-hi:#E3C889;
+      --lijn:rgba(201,164,92,.30); --lijn-zacht:rgba(201,164,92,.16);
+      --gedaan:#7FB08E; --let-op:#E0866F;
+    }
+  }
+  *{box-sizing:border-box}
+  html{color-scheme:light dark}
+  body{margin:0; background:var(--grond); color:var(--ink); font-family:var(--sans); font-size:15px;
+       line-height:1.6; -webkit-font-smoothing:antialiased;}
+  img{max-width:100%}
+  .blad{max-width:880px; margin:0 auto; padding:40px 20px 90px;}
+  h1,h2{font-family:var(--serif); font-weight:400; margin:0; text-wrap:balance;}
+  h1{font-size:clamp(1.9rem,5vw,2.6rem); line-height:1.15;}
+  h2{font-size:1.35rem;}
+  p{margin:0}
+  a{color:var(--goud-tekst)}
+  .eyebrow{font-size:.68rem; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:var(--goud-tekst); margin:0 0 10px;}
+  .zacht{color:var(--ink-zacht)}
+  header{display:flex; flex-direction:column; gap:14px; padding-bottom:26px}
+  .status{display:flex; flex-wrap:wrap; gap:10px; margin-top:4px}
+  .pil{font-size:.72rem; font-weight:500; letter-spacing:.08em; border:1px solid var(--lijn);
+       border-radius:100px; padding:5px 12px; color:var(--ink-zacht); background:var(--kaart)}
+  .pil.aan{border-color:var(--gedaan); color:var(--gedaan)}
+  .pil.fout{border-color:var(--let-op); color:var(--let-op)}
+  .scheiding{display:flex; align-items:center; gap:14px; margin:40px 0 22px}
+  .scheiding::before,.scheiding::after{content:""; flex:1; height:1px; background:var(--lijn)}
+  .ruit{width:8px; height:13px; background:var(--goud); flex:none; clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+  .straks{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px}
+  .kaartje{border:1px solid var(--lijn); border-radius:4px; background:var(--kaart); padding:14px; display:flex; gap:12px; align-items:flex-start}
+  .kaartje img{width:56px; border-radius:2px; border:1px solid var(--lijn-zacht); flex:none}
+  .wanneer{font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--goud-tekst)}
+  .wat{font-weight:500; margin-top:2px}
+  details.week{border-top:1px solid var(--lijn-zacht)}
+  details.week>summary{cursor:pointer; padding:15px 2px; font-family:var(--serif); font-size:1.1rem;
+      display:flex; justify-content:space-between; align-items:baseline; gap:12px; list-style:none}
+  details.week>summary::-webkit-details-marker{display:none}
+  details.week>summary::after{content:"+"; color:var(--goud-tekst); font-family:var(--sans)}
+  details.week[open]>summary::after{content:"\2212"}
+  .tel{font-family:var(--sans); font-size:.75rem; color:var(--ink-flauw); letter-spacing:.06em}
+  .rij{display:grid; grid-template-columns:auto 1fr auto; gap:14px; align-items:center; padding:11px 2px; border-top:1px solid var(--lijn-zacht)}
+  .duimen{display:flex; gap:4px}
+  .duimen img{width:38px; border-radius:2px; border:1px solid var(--lijn-zacht); display:block}
+  .kop{display:flex; flex-wrap:wrap; gap:8px; align-items:baseline}
+  .dag{font-size:.78rem; color:var(--ink-flauw); font-variant-numeric:tabular-nums; white-space:nowrap}
+  .titel{font-weight:500}
+  .rij.voorbij .titel{color:var(--ink-flauw)}
+  .merk{font-size:.62rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase;
+        border:1px solid var(--lijn); border-radius:2px; padding:2px 6px; color:var(--ink-zacht)}
+  .merk.nl{border-color:var(--goud); color:var(--goud-tekst)}
+  .merk.gedaan{border-color:var(--gedaan); color:var(--gedaan)}
+  .merk.mis{border-color:var(--let-op); color:var(--let-op)}
+  .knop{display:inline-block; font-family:var(--sans); font-size:.68rem; font-weight:600; letter-spacing:.1em;
+        text-transform:uppercase; color:var(--goud-tekst); background:transparent; border:1px solid var(--goud);
+        border-radius:2px; padding:6px 11px; cursor:pointer; text-decoration:none; white-space:nowrap}
+  .knop:hover{background:var(--goud); color:var(--grond)}
+  .knop.stil{border-color:var(--lijn); color:var(--ink-zacht)}
+  .knop.stil:hover{background:var(--lijn-zacht); color:var(--ink)}
+  .paneel{grid-column:1/-1; border:1px solid var(--lijn); border-radius:4px; background:var(--verhoog);
+          padding:16px; margin:4px 0 10px; display:grid; gap:14px}
+  .bijschrift{white-space:pre-wrap; font-size:.86rem; line-height:1.6; color:var(--ink-zacht); max-height:240px; overflow:auto}
+  .acties{display:flex; flex-wrap:wrap; gap:8px}
+  .let-op{border-left:2px solid var(--goud); padding:2px 0 2px 16px; margin:18px 0; color:var(--ink-zacht); max-width:62ch}
+  .let-op strong{color:var(--ink); font-weight:600}
+  footer{margin-top:60px; padding-top:22px; border-top:1px solid var(--lijn-zacht); font-size:.8rem; color:var(--ink-flauw)}
+  @media (max-width:560px){ .rij{grid-template-columns:auto 1fr} .knopcel{grid-column:2; justify-self:start} }
+</style>
+</head>
+<body>
+<div class="blad">
+
+<header>
+  <p class="eyebrow">@ygdigital.nl</p>
+  <h1>Wat er op Instagram verschijnt</h1>
+  <p class="zacht" style="max-width:62ch">Deze pagina leest rechtstreeks de planning en het logboek uit,
+    dus wat je hier ziet is de werkelijke stand. Wil je iets veranderen, dan doe je dat zelf met de
+    knop <em>Wijzig</em> — dat gaat vanzelf door in de planning.</p>
+  <div class="status" id="status"><span class="pil">bezig met laden…</span></div>
+</header>
+
+<div class="scheiding"><span class="ruit"></span></div>
+
+<section>
+  <p class="eyebrow">Eerstvolgende</p>
+  <h2 style="margin-bottom:16px">Wat er nu aankomt</h2>
+  <div class="straks" id="straks"></div>
+</section>
+
+<div class="scheiding"><span class="ruit"></span></div>
+
+<section>
+  <p class="eyebrow">De hele planning</p>
+  <h2 style="margin-bottom:6px">Week voor week</h2>
+  <p class="zacht" style="margin-bottom:10px">Klik een week open, en daarna <em>Bekijk</em> voor de plaat en de tekst.</p>
+  <div id="weken"></div>
+</section>
+
+<div class="let-op">
+  <strong>Hoe wijzigen werkt.</strong> Je vult een klein formulier in op GitHub: welk item, en of het
+  overgeslagen, verzet of van tekst veranderd moet worden. Binnen een minuut is de planning aangepast
+  en krijg je een antwoord onder je melding. Je hoeft daarvoor niets te installeren; je moet wel
+  ingelogd zijn op GitHub.
+</div>
+
+<footer id="voet"></footer>
+</div>
+
+<script>
+const REPO = 'SteinClaude/yg-instagram';
+const DAGEN = ['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];
+const MAANDEN = ['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'];
+const dat = s => new Date(s + 'T12:00:00Z');
+const lang = s => { const d = dat(s); return DAGEN[d.getUTCDay()] + ' ' + d.getUTCDate() + ' ' + MAANDEN[d.getUTCMonth()]; };
+const kort = s => { const d = dat(s); return DAGEN[d.getUTCDay()].slice(0,2) + ' ' + d.getUTCDate() + ' ' + MAANDEN[d.getUTCMonth()].slice(0,3); };
+
+function nuAmsterdam(){
+  const d = new Intl.DateTimeFormat('nl-NL',{timeZone:'Europe/Amsterdam',year:'numeric',month:'2-digit',
+    day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date())
+    .reduce((a,p)=>(a[p.type]=p.value,a),{});
+  return d.year+'-'+d.month+'-'+d.day+' '+d.hour+':'+d.minute;
+}
+const NU = nuAmsterdam();
+
+let ITEMS = [], GEDAAN = {};
+const mini = b => 'mini/' + b.replace(/\//g,'-');
+const voorbij = i => (i.datum + ' ' + i.tijd) < NU;
+const status = i => GEDAAN[i.id] ? GEDAAN[i.id].resultaat : (voorbij(i) ? 'onbekend' : 'wacht');
+
+function titelVan(i){
+  if (i.tekst){ const r = i.tekst.split('\n').find(x => x.trim()); if (r) return r.trim(); }
+  const naam = i.beeld[0].replace(/\.jpg$/,'').split('/').pop();
+  return i.soort === 'verhaal' ? 'Verhaal ' + naam : naam;
+}
+function wijzigLink(i){
+  return 'https://github.com/' + REPO + '/issues/new?template=wijziging.yml&labels=wijziging'
+    + '&title=' + encodeURIComponent('Wijziging ' + i.id)
+    + '&item=' + encodeURIComponent(i.id);
+}
+
+async function haal(naam, standaard){
+  try{
+    const a = await fetch(naam + '?t=' + Date.now());
+    if (!a.ok) throw new Error(a.status);
+    return await a.json();
+  }catch(e){ return standaard; }
+}
+
+(async () => {
+  const [planning, gedaan] = await Promise.all([
+    haal('planning.json', null),
+    haal('gedaan.json', {items:[]})
+  ]);
+
+  if (!planning || !planning.items){
+    document.getElementById('status').innerHTML =
+      '<span class="pil fout">De planning kon niet geladen worden</span>';
+    return;
+  }
+  ITEMS = planning.items;
+  for (const g of (gedaan.items || [])) GEDAAN[g.id] = g;
+
+  tekenStatus(); tekenStraks(); tekenWeken();
+})();
+
+function tekenStatus(){
+  const geplaatst = Object.values(GEDAAN).filter(g => g.resultaat === 'geplaatst').length;
+  const over = ITEMS.filter(i => !GEDAAN[i.id] && !voorbij(i)).length;
+  const mis = ITEMS.filter(i => !GEDAAN[i.id] && voorbij(i)).length;
+  const laatste = ITEMS[ITEMS.length-1];
+  document.getElementById('status').innerHTML =
+    '<span class="pil aan">' + geplaatst + ' geplaatst</span>' +
+    '<span class="pil">' + over + ' nog te gaan</span>' +
+    (mis ? '<span class="pil fout">' + mis + ' niet gelukt</span>' : '') +
+    '<span class="pil">tot ' + lang(laatste.datum) + '</span>';
+  document.getElementById('voet').innerHTML =
+    'Elke dag een verhaal om 08:00, berichten op maandag, woensdag en vrijdag om 11:00, Nederlands en Engels om en om.<br>' +
+    'Deze pagina leest <a href="https://github.com/' + REPO + '/blob/main/planning.json">planning.json</a> en ' +
+    '<a href="https://github.com/' + REPO + '/blob/main/gedaan.json">gedaan.json</a> rechtstreeks uit. ' +
+    'Het echte logboek staat bij <a href="https://github.com/' + REPO + '/actions">Actions</a>.';
+}
+
+function tekenStraks(){
+  const komend = ITEMS.filter(i => !GEDAAN[i.id] && !voorbij(i)).slice(0,4);
+  const h = document.getElementById('straks'); h.innerHTML = '';
+  if (!komend.length){ h.innerHTML = '<p class="zacht">De planning is afgelopen. Vraag Claude om een nieuwe reeks.</p>'; return; }
+  for (const i of komend){
+    const k = document.createElement('div'); k.className = 'kaartje';
+    const img = document.createElement('img'); img.src = mini(i.beeld[0]); img.alt=''; img.loading='lazy';
+    const t = document.createElement('div');
+    t.innerHTML = '<div class="wanneer">' + kort(i.datum) + ' &middot; ' + i.tijd + '</div>' +
+      '<div class="wat">' + (i.soort === 'verhaal' ? 'Verhaal' : 'Bericht') + ' &middot; ' + i.taal.toUpperCase() + '</div>' +
+      '<div class="zacht" style="font-size:.82rem;margin-top:3px">' + titelVan(i).slice(0,64) + '</div>';
+    k.append(img, t); h.appendChild(k);
+  }
+}
+
+function weekVan(d){ const x = dat(d); x.setUTCDate(x.getUTCDate() - ((x.getUTCDay()+6)%7)); return x.toISOString().slice(0,10); }
+
+function tekenWeken(){
+  const houder = document.getElementById('weken'); houder.innerHTML = '';
+  const weken = new Map();
+  for (const i of ITEMS){ const w = weekVan(i.datum); if (!weken.has(w)) weken.set(w, []); weken.get(w).push(i); }
+  let eersteOpen = true;
+  for (const [start, lijst] of weken){
+    const d = document.createElement('details'); d.className = 'week';
+    const over = lijst.filter(i => !GEDAAN[i.id] && !voorbij(i)).length;
+    if (over && eersteOpen){ d.open = true; eersteOpen = false; }
+    const s = document.createElement('summary');
+    s.innerHTML = '<span>Week van ' + lang(start) + '</span><span class="tel">' + lijst.length + ' items' + (over ? '' : ' &middot; geweest') + '</span>';
+    d.appendChild(s);
+    for (const i of lijst) d.appendChild(tekenRij(i));
+    houder.appendChild(d);
+  }
+}
+
+function tekenRij(i){
+  const st = status(i);
+  const rij = document.createElement('div');
+  rij.className = 'rij' + (st === 'geplaatst' || st === 'onbekend' ? ' voorbij' : '');
+
+  const duimen = document.createElement('div'); duimen.className = 'duimen';
+  for (const b of i.beeld){ const img = document.createElement('img'); img.src = mini(b); img.alt=''; img.loading='lazy'; duimen.appendChild(img); }
+
+  const midden = document.createElement('div');
+  const kop = document.createElement('div'); kop.className='kop';
+  kop.innerHTML = '<span class="dag">' + kort(i.datum) + ' ' + i.tijd + '</span><span class="titel">' + titelVan(i).slice(0,70) + '</span>';
+  const merken = document.createElement('div'); merken.className='kop'; merken.style.marginTop='4px';
+  merken.innerHTML =
+    '<span class="merk">' + (i.soort === 'verhaal' ? 'verhaal' : (i.beeld.length > 1 ? 'carrousel' : 'bericht')) + '</span>' +
+    '<span class="merk ' + (i.taal === 'nl' ? 'nl' : '') + '">' + i.taal + '</span>' +
+    (st === 'geplaatst' ? '<span class="merk gedaan">geplaatst</span>' :
+     st === 'overgeslagen' ? '<span class="merk mis">overgeslagen</span>' :
+     st === 'onbekend' ? '<span class="merk mis">nog niet gelukt</span>' : '');
+  midden.append(kop, merken);
+
+  const knopcel = document.createElement('div'); knopcel.className='knopcel';
+  const knop = document.createElement('button'); knop.className='knop stil'; knop.type='button'; knop.textContent='Bekijk';
+  knopcel.appendChild(knop);
+  rij.append(duimen, midden, knopcel);
+
+  let paneel = null;
+  knop.addEventListener('click', () => {
+    if (paneel){ paneel.remove(); paneel = null; knop.textContent='Bekijk'; return; }
+    paneel = document.createElement('div'); paneel.className='paneel';
+    const t = document.createElement('div');
+    if (i.tekst){ t.className='bijschrift'; t.textContent = i.tekst; }
+    else { t.className='zacht'; t.style.fontSize='.86rem'; t.textContent='Een verhaal heeft geen bijschrift; de tekst staat op de plaat zelf.'; }
+    const a = document.createElement('div'); a.className='acties';
+    const wijzig = document.createElement('a'); wijzig.className='knop'; wijzig.href = wijzigLink(i);
+    wijzig.target='_blank'; wijzig.rel='noopener'; wijzig.textContent='Wijzig';
+    const nummer = document.createElement('span'); nummer.className='zacht';
+    nummer.style.cssText='font-size:.74rem;align-self:center';
+    nummer.textContent = i.id;
+    a.append(wijzig, nummer);
+    paneel.append(t, a);
+    rij.after(paneel); knop.textContent='Sluit';
+  });
+  return rij;
+}
+</script>
+</body>
+</html>

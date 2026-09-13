@@ -1,0 +1,52 @@
+name: Planning wijzigen
+
+# Draait zodra jij een melding met het label "wijziging" opent of bijwerkt.
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: wijzigen                       # nooit twee wijzigingen tegelijk in hetzelfde bestand
+  cancel-in-progress: false
+
+jobs:
+  wijzigen:
+    if: contains(github.event.issue.labels.*.name, 'wijziging')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Wijziging uitvoeren
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: node gereedschap/wijzig.cjs
+
+      - name: Planning bewaren
+        run: |
+          if [ -n "$(git status --porcelain planning.json)" ]; then
+            git config user.name  "YG plaatser"
+            git config user.email "actions@users.noreply.github.com"
+            git add planning.json
+            git commit -m "wijziging uit melding #${{ github.event.issue.number }}"
+            git push
+            echo "gelukt=ja" >> $GITHUB_ENV
+          else
+            echo "gelukt=nee" >> $GITHUB_ENV
+          fi
+
+      - name: Antwoorden onder de melding
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body-file antwoord.txt
+          if [ "$gelukt" = "ja" ]; then
+            gh issue close ${{ github.event.issue.number }} --reason completed
+          fi
