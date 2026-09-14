@@ -171,7 +171,7 @@ Ordepartner — Alkmaar
 
 Ordepartner brengt rust en overzicht in de magazijnen en loodsen van zzp’ers en mkb-bedrijven. Ze ruimen op, delen logisch in en zorgen dat het ook zo blijft. Dat vroeg om een website die precies hetzelfde doet.
 
-Wij maakten het logo, de teksten en de hele site: negen pagina’s, met de tarieven er gewoon op. In één dag van leeg naar live.
+Wij maakten het logo, de teksten en de hele site: negen pagina’s, met de tarieven er gewoon op. Het bouwen zelf kostte één werkdag.
 
 Sindsdien doen wij het onderhoud. Geen klus die af is, maar een samenwerking.
 
