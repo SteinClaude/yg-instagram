@@ -81,8 +81,8 @@ van de markt niet biedt:
 € 75 – € 150 van de markt, want dat is het scherpste eerlijke contrast dat we
 hebben. En zet er de snelheid bij, want daar winnen we van iedereen.
 
-**Eén waarschuwing.** € 250 tot € 750 zit zó ver onder de markt dat het bij
-sommige klanten argwaan wekt: te goedkoop om goed te zijn. Dat vang je op door
+**Eén waarschuwing.** Vanaf € 250 zit zó ver onder de markt dat het bij sommige
+klanten argwaan wekt: te goedkoop om goed te zijn. Dat vang je op door
 te laten zien wát je in die tijd doet — zoals bij Ordepartner — in plaats van
 alleen het bedrag te noemen.
 

@@ -15,7 +15,7 @@ const MERK = '#ygdigital #yourgateway #webdesign #websites #onlineondernemen #on
 const DOELGROEP = '#websitelatenmaken #webdesign #ondernemen #zzp #mkb #eigenbedrijf #kleinbedrijf #lokaalondernemen #startendondernemer #ondernemersleven #webdesignnederland #websitetips';
 
 // De afsluiter onder de negen doelgroepplaten: wel de prijs, geen harde oproep.
-const PRIJSREGEL = 'Websites voor ondernemers, vanaf € 250 excl. btw — de meeste tussen € 250 en € 750. Vaste prijs vooraf, antwoord binnen één werkdag.';
+const PRIJSREGEL = 'Websites voor ondernemers, vanaf € 250 excl. btw. Vaste prijs vooraf, met een opleverdatum erbij. Antwoord binnen één werkdag.';
 
 const t = (tekst, tags) => tekst.trim() + '\n\n' + tags;
 
@@ -120,7 +120,7 @@ Vaste prijs vooraf.
 
 Geen “neem contact op voor een vrijblijvende offerte” waarna je drie gesprekken verder nog steeds niet weet waar je aan toe bent.
 
-Je krijgt vooraf een offerte met een bedrag én een opleverdatum. Meerwerk gaat pas door nadat je er ja op hebt gezegd. Vanaf € 250 excl. btw; de meeste sites komen tussen € 250 en € 750 uit.
+Je krijgt vooraf een offerte met een bedrag én een opleverdatum. Meerwerk gaat pas door nadat je er ja op hebt gezegd. Websites vanaf € 250 excl. btw.
 
 Alle tarieven staan gewoon op de site — link in onze bio.`, MERK),
 
@@ -129,7 +129,7 @@ Antwoord binnen één werkdag.
 
 Één aanspreekpunt. Geen helpdesk, geen ticketnummer, geen “uw vraag is in behandeling”. Meestal hoor je nog dezelfde dag iets.
 
-Dat blijft ook zo nadat je site live staat. Een korte vraag tussendoor kost je niets.
+Dat blijft ook zo nadat je site live staat. Een korte vraag tussendoor kost je niets, en echt onderhoud € 45 per uur — waar een webbureau € 80 tot € 150 rekent.
 
 Iets te vragen? Bellen, appen of mailen mag — alles staat achter de link in onze bio.`, MERK),
 
@@ -151,14 +151,14 @@ Een website is de poort waardoor je klanten binnenkomen. De meeste ondernemers b
 
 Wij bouwen hem als de entree van een vijfsterrenhotel: rustig, verzorgd en tot in detail afgewerkt.
 
-Websites voor bedrijven en particulieren, vanaf € 250 excl. btw (€ 302,50 incl.) — de meeste tussen € 250 en € 750. Heel Nederland.
+Websites voor bedrijven en particulieren, vanaf € 250 excl. btw (€ 302,50 incl.). Heel Nederland.
 
 yg-digital.nl`, MERK),
 
   B02: t(`
 Wat kost een website?
 
-Bij ons vanaf € 250 eenmalig, exclusief btw (€ 302,50 inclusief). De meeste sites komen tussen € 250 en € 750 uit, afhankelijk van hoeveel pagina’s je nodig hebt.
+Bij ons vanaf € 250 eenmalig, exclusief btw (€ 302,50 inclusief). Wat het bij jou wordt hangt af van het aantal pagina’s — en dat hoor je vooraf, met een opleverdatum erbij.
 
 Geen “neem contact op voor een vrijblijvende offerte” waarna je drie gesprekken verder nog steeds niet weet waar je aan toe bent. Je krijgt vooraf een offerte met een bedrag én een opleverdatum. Meerwerk gaat pas door nadat je er ja op hebt gezegd.
 
@@ -232,6 +232,8 @@ De eerlijke opsomming:
 Hosting vanaf € 5,50 per maand, rechtstreeks aan het platform. Wij rekenen daar niets bovenop.
 Domeinnaam het eerste jaar gratis, daarna € 20 per jaar. Op je eigen naam.
 Onderhoud € 45 per uur, afgerond per kwartier. Een korte vraag tussendoor kost niets.
+
+Dat laatste bedrag is het vermelden waard: een webbureau rekent voor datzelfde werk € 80 tot € 150 per uur.
 
 Verwacht je vaker iets te willen veranderen? Dan is een onderhoudsabonnement voordeliger. Ook die tarieven staan gewoon op de site.
 
