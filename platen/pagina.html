@@ -1,0 +1,544 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>html{color-scheme:light dark}body{margin:0}img{max-width:100%}</style>
+<title>YG Digital op Instagram</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --grond:#F6F1E8; --kaart:#FFFDF9; --verhoog:#EFE8DA;
+    --ink:#1C1B18; --ink-zacht:#6B665E; --ink-flauw:#8C877D;
+    --goud:#8C6F3A; --goud-tekst:#7B6132; --goud-hi:#C9A45C;
+    --lijn:rgba(140,111,58,.26); --lijn-zacht:rgba(140,111,58,.14);
+    --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+    --sans:"Montserrat",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --grond:#141414; --kaart:#1B1B1B; --verhoog:#0E0E0E;
+      --ink:#F3EEE4; --ink-zacht:#C9C3B8; --ink-flauw:#8F8A80;
+      --goud:#C9A45C; --goud-tekst:#C9A45C; --goud-hi:#E3C889;
+      --lijn:rgba(201,164,92,.30); --lijn-zacht:rgba(201,164,92,.16);
+    }
+  }
+  :root[data-theme="dark"]{
+    --grond:#141414; --kaart:#1B1B1B; --verhoog:#0E0E0E;
+    --ink:#F3EEE4; --ink-zacht:#C9C3B8; --ink-flauw:#8F8A80;
+    --goud:#C9A45C; --goud-tekst:#C9A45C; --goud-hi:#E3C889;
+    --lijn:rgba(201,164,92,.30); --lijn-zacht:rgba(201,164,92,.16);
+  }
+
+  body{background:var(--grond); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.62;
+       -webkit-font-smoothing:antialiased;}
+  .blad{max-width:780px; margin:0 auto; padding:52px 22px 96px;}
+
+  h1,h2,h3{font-family:var(--serif); font-weight:400; text-wrap:balance; margin:0;}
+  h1{font-size:clamp(2.1rem,6vw,3.1rem); line-height:1.12; letter-spacing:-.01em;}
+  h2{font-size:clamp(1.5rem,4vw,2rem); line-height:1.2;}
+  h3{font-size:1.18rem; line-height:1.3;}
+  p{margin:0;}
+  a{color:var(--goud-tekst);}
+
+  .eyebrow{font-size:.7rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase;
+           color:var(--goud-tekst); margin:0 0 14px;}
+
+  header{display:flex; flex-direction:column; gap:18px; padding-bottom:34px;}
+  header .lead{color:var(--ink-zacht); max-width:60ch;}
+  .handle{font-family:var(--serif); font-size:1.05rem; color:var(--goud-tekst);}
+
+  /* ruit-scheiding, zoals op yg-digital.nl */
+  .scheiding{display:flex; align-items:center; gap:16px; margin:56px 0 30px;}
+  .scheiding::before,.scheiding::after{content:""; flex:1; height:1px; background:var(--lijn);}
+  .ruit{width:9px; height:14px; background:var(--goud); flex:none;
+        clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);}
+
+  section{scroll-margin-top:20px;}
+  .intro{color:var(--ink-zacht); max-width:62ch; margin:0 0 26px;}
+
+  /* --- profielvelden --- */
+  .velden{display:grid; gap:1px; background:var(--lijn-zacht); border:1px solid var(--lijn-zacht); border-radius:3px; overflow:hidden;}
+  .veld{display:grid; grid-template-columns:minmax(120px,180px) 1fr; gap:2px 20px; background:var(--kaart); padding:14px 18px;}
+  .veld dt{font-size:.74rem; font-weight:600; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-flauw); padding-top:4px;}
+  .veld dd{margin:0; font-weight:500;}
+  .veld dd small{display:block; font-weight:400; font-size:.85rem; color:var(--ink-zacht); letter-spacing:0; text-transform:none;}
+  @media (max-width:560px){ .veld{grid-template-columns:1fr;} .veld dt{padding-top:0;} }
+
+  /* --- kopieerblok --- */
+  .kopieer{border:1px solid var(--lijn); border-radius:3px; background:var(--kaart); overflow:hidden;}
+  .kopieer .tekst{margin:0; padding:18px 20px; white-space:pre-wrap; font-size:.95rem; line-height:1.66; color:var(--ink);}
+  .kopieer .balk{display:flex; align-items:center; justify-content:space-between; gap:14px;
+                 padding:10px 14px 10px 20px; border-top:1px solid var(--lijn-zacht); background:var(--verhoog);}
+  .teller{font-size:.74rem; letter-spacing:.08em; color:var(--ink-flauw); font-variant-numeric:tabular-nums;}
+  button.knop{font-family:var(--sans); font-size:.72rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+        color:var(--goud-tekst); background:transparent; border:1px solid var(--goud); border-radius:2px;
+        padding:8px 16px; cursor:pointer; transition:background .18s,color .18s; flex:none;}
+  button.knop:hover{background:var(--goud); color:var(--grond);}
+  button.knop:focus-visible{outline:2px solid var(--goud-hi); outline-offset:2px;}
+  button.knop.gelukt{background:var(--goud); color:var(--grond);}
+
+  /* --- berichten --- */
+  .bericht{display:grid; grid-template-columns:1fr; gap:16px; padding:34px 0; border-top:1px solid var(--lijn-zacht);}
+  .bericht:first-of-type{border-top:0;}
+  .platen{display:flex; gap:9px; align-items:flex-start;}
+  .platen img{flex:0 0 auto; width:168px; height:auto; border:1px solid var(--lijn); border-radius:2px; display:block;}
+  .platen.veeg img{width:calc(33.333% - 6px); max-width:210px;}
+  @media (max-width:480px){ .platen img{width:140px;} }
+  .kaartkop{display:flex; align-items:baseline; gap:12px; margin-bottom:4px; flex-wrap:wrap;}
+  .nummer{font-family:var(--serif); font-size:1.5rem; color:var(--goud-tekst); line-height:1; font-variant-numeric:tabular-nums;}
+  .merken{display:flex; gap:7px; flex-wrap:wrap; margin:10px 0 14px;}
+  .merk{font-size:.68rem; font-weight:500; letter-spacing:.1em; text-transform:uppercase;
+        border:1px solid var(--lijn); border-radius:2px; padding:3px 9px; color:var(--ink-zacht);}
+  .merk.veegmerk{border-color:var(--goud); color:var(--goud-tekst);}
+  .bestanden{font-size:.76rem; color:var(--ink-flauw); margin-top:12px; word-break:break-word;}
+
+  /* --- takenlijst --- */
+  ol.taken{list-style:none; margin:0; padding:0; display:grid; gap:1px; background:var(--lijn-zacht);
+           border:1px solid var(--lijn-zacht); border-radius:3px; overflow:hidden; counter-reset:t;}
+  ol.taken li{background:var(--kaart); padding:0;}
+  ol.taken label{display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:start; padding:15px 18px; cursor:pointer;}
+  ol.taken input{margin:5px 0 0; accent-color:var(--goud); width:17px; height:17px; flex:none;}
+  ol.taken .wat{font-weight:500;}
+  ol.taken .hoe{display:block; font-weight:400; font-size:.88rem; color:var(--ink-zacht); margin-top:3px;}
+  ol.taken input:checked ~ div .wat{text-decoration:line-through; color:var(--ink-flauw);}
+
+  /* --- rasters --- */
+  .raster{display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:18px;}
+  .raster figure{margin:0;}
+  .raster img{width:100%; display:block; border:1px solid var(--lijn); border-radius:2px;}
+  .raster figcaption{font-size:.8rem; color:var(--ink-zacht); margin-top:8px;}
+  .raster .rond img{border-radius:50%;}
+
+  /* --- tabel --- */
+  .rol{overflow-x:auto; border:1px solid var(--lijn-zacht); border-radius:3px;}
+  table{border-collapse:collapse; width:100%; min-width:520px; font-size:.9rem; background:var(--kaart);}
+  th,td{text-align:left; padding:12px 16px; border-bottom:1px solid var(--lijn-zacht); vertical-align:top;}
+  th{font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-flauw); white-space:nowrap;}
+  td:first-child{white-space:nowrap; color:var(--goud-tekst); font-variant-numeric:tabular-nums;}
+  tr:last-child td{border-bottom:0;}
+
+  .let-op{border-left:2px solid var(--goud); padding:2px 0 2px 18px; margin:22px 0; color:var(--ink-zacht); max-width:62ch;}
+  .let-op strong{color:var(--ink); font-weight:600;}
+  footer{margin-top:70px; padding-top:26px; border-top:1px solid var(--lijn-zacht); font-size:.84rem; color:var(--ink-flauw);}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+</style>
+
+<div class="blad">
+
+<header>
+  <p class="eyebrow">Startpakket &middot; 12 september 2026</p>
+  <h1>YG Digital op Instagram</h1>
+  <p class="lead">Het profiel staat inmiddels: naam, gebruikersnaam, foto, bio, categorie, link en contactgegevens zijn ingevuld. Wat nog ontbreekt is de inhoud &mdash; twaalf berichten met bijschrift, omslagen voor je highlights en een videodraaiboek, hieronder klaar om te plaatsen.</p>
+  <p class="handle">@ygdigital.nl</p>
+</header>
+
+<div class="scheiding"><span class="ruit"></span></div>
+
+<section>
+  <p class="eyebrow">Al geregeld</p>
+  <h2>Het profiel staat</h2>
+  <p class="intro">Dit is op 12 september ingesteld en is nu openbaar zichtbaar.</p>
+  <dl class="velden">
+    <div class="veld"><dt>Gebruikersnaam</dt><dd>ygdigital.nl<small>@ygdigital was bezet door een Turks e-commercebureau</small></dd></div>
+    <div class="veld"><dt>Weergavenaam</dt><dd>YG Digital</dd></div>
+    <div class="veld"><dt>Profielfoto</dt><dd>Poortembleem, goud op antraciet</dd></div>
+    <div class="veld"><dt>Bio</dt><dd>144 van de 150 tekens</dd></div>
+    <div class="veld"><dt>Accounttype</dt><dd>Zakelijk, categorie Webdesigner<small>Het categorielabel staat aan, dus het woord Webdesigner staat onder je naam</small></dd></div>
+    <div class="veld"><dt>Link</dt><dd>www.yg-digital.nl</dd></div>
+    <div class="veld"><dt>Contact</dt><dd>Bellen en e-mail<small>06 42 65 31 77 &middot; info@yg-digital.nl. Sms staat uit.</small></dd></div>
+  </dl>
+  <div class="let-op">
+    <strong>Contactknoppen zie je alleen in de app.</strong> Instagram toont ze niet op de computer, ook niet als ze goed staan &mdash; dat is Instagram, niet jouw profiel. Kijk op je telefoon en je ziet ze.
+  </div>
+</section>
+
+<div class="scheiding"><span class="ruit"></span></div>
+
+<section>
+  <p class="eyebrow">Nog te doen</p>
+  <h2>Wat jij moet doen</h2>
+  <p class="intro">Drie dingen die om je telefoon vragen &mdash; plaatsen, verhalen en WhatsApp kunnen niet vanaf de computer.</p>
+  <ol class="taken" id="taken"></ol>
+</section>
+
+<div class="scheiding"><span class="ruit"></span></div>
+
+<section>
+  <p class="eyebrow">Ter naslag</p>
+  <h2>De bio en de profielfoto</h2>
+  <p class="intro">Wat er nu op je profiel staat. De weergavenaam is kort gehouden &mdash; <em>YG Digital</em>, precies als je site &mdash; en daarom begint de bio met het woord waar mensen op zoeken. Mocht je hem ooit opnieuw moeten invoeren, dan staat hij hier klaar.</p>
+
+  <h3 style="margin:34px 0 12px">De bio</h3>
+  <div class="kopieer" data-kopie>
+<p class="tekst">Websites voor ondernemers, gebouwd als de entree van uw bedrijf.
+Vanaf &euro; 550 &middot; vaste prijs vooraf &middot; heel Nederland
+Uw eerste ontwerp is gratis &darr;</p>
+    <div class="balk"><span class="teller"></span><button class="knop" type="button">Kopieer</button></div>
+  </div>
+  <p class="bestanden">Instagram staat 150 tekens toe, regeleindes meegeteld. Deze zit daar net onder, dus haal er niets bij zonder iets weg te halen.</p>
+
+  <h3 style="margin:34px 0 12px">De profielfoto</h3>
+  <div class="raster" style="grid-template-columns:repeat(auto-fill,minmax(130px,1fr))">
+    <figure class="rond"><img src="web/profiel-embleem-donker.jpg" alt="Profielfoto: gouden poort op antraciet"><figcaption><strong>profiel-embleem-donker.png</strong><br>Deze. Een donker rondje valt op in een tijdlijn vol wit.</figcaption></figure>
+    <figure class="rond"><img src="web/profiel-embleem-ivoor.jpg" alt="Profielfoto: gouden poort op ivoor"><figcaption>profiel-embleem-ivoor.png<br>Reserve, mocht je later toch licht willen.</figcaption></figure>
+  </div>
+</section>
+
+<div class="scheiding"><span class="ruit"></span></div>
+
+<section>
+  <p class="eyebrow">De feed</p>
+  <h2>Twaalf berichten, op volgorde</h2>
+  <p class="intro">Plaats ze in deze volgorde, twee per week. Donker en ivoor wisselen elkaar af, zodat je profielraster vanzelf een dambord wordt &mdash; dat blijft kloppen of je nu bij drie of bij twaalf bent. Elk bericht staat in twee formaten klaar: <strong>4:5</strong> (staand, voor de tijdlijn) en <strong>1:1</strong> (vierkant). Gebruik 4:5, tenzij je het bericht ook ergens anders wilt plaatsen.</p>
+  <div id="berichten"></div>
+</section>
+
+<div class="scheiding"><span class="ruit"></span></div>
+
+<section>
+  <p class="eyebrow">Onder elk bericht</p>
+  <h2>Drie hashtag-sets</h2>
+  <p class="intro">Plak de set die bij het soort bericht hoort onder je tekst, of in de eerste reactie als je de tekst schoon wilt houden. Bij elk bericht hierboven staat welke set erbij hoort.</p>
+  <div id="hashtags" style="display:grid; gap:22px"></div>
+</section>
+
+<div class="scheiding"><span class="ruit"></span></div>
+
+<section>
+  <p class="eyebrow">Bovenaan je profiel</p>
+  <h2>Omslagen voor je highlights</h2>
+  <p class="intro">Vier vaste rubrieken. Instagram zet de titel er zelf onder, dus in het beeld staat alleen het teken. Let op: een highlight ontstaat pas als er minstens één verhaal in zit &mdash; plaats dus eerst iets als verhaal, maak daarna de highlight, en kies dan <em>Omslag bewerken</em> om deze afbeelding te uploaden.</p>
+  <div class="raster">
+    <figure class="rond"><img src="web/omslag-werk.jpg" alt="Omslag Werk"><figcaption>Werk</figcaption></figure>
+    <figure class="rond"><img src="web/omslag-prijzen.jpg" alt="Omslag Prijzen"><figcaption>Prijzen</figcaption></figure>
+    <figure class="rond"><img src="web/omslag-werkwijze.jpg" alt="Omslag Hoe het werkt"><figcaption>Hoe het werkt</figcaption></figure>
+    <figure class="rond"><img src="web/omslag-contact.jpg" alt="Omslag Contact"><figcaption>Contact</figcaption></figure>
+  </div>
+
+  <h3 style="margin:40px 0 12px">Sjablonen voor verhalen</h3>
+  <p class="intro">Achtergronden in je huisstijl. Zet er in de app je tekst of foto overheen, dan vallen je verhalen niet uit de toon.</p>
+  <div class="raster">
+    <figure><img src="web/verhaal-donker.jpg" alt="Verhaalsjabloon donker"><figcaption>Donker</figcaption></figure>
+    <figure><img src="web/verhaal-ivoor.jpg" alt="Verhaalsjabloon ivoor"><figcaption>Ivoor</figcaption></figure>
+    <figure><img src="web/verhaal-venster.jpg" alt="Verhaalsjabloon met venster voor een foto"><figcaption>Met venster voor een foto of scherm</figcaption></figure>
+  </div>
+</section>
+
+<div class="scheiding"><span class="ruit"></span></div>
+
+<section>
+  <p class="eyebrow">Als je één ding opneemt</p>
+  <h2>De poort die zichzelf tekent</h2>
+  <p class="intro">Je ontwerpstudio is het enige op je site dat niemand anders heeft, en hij beweegt. Dat is precies wat een Reel nodig heeft. Neem je scherm op terwijl je de studio doorloopt &mdash; op je telefoon, staand, ongeveer 20 seconden.</p>
+  <div class="rol">
+    <table>
+      <thead><tr><th>Tijd</th><th>Wat je opneemt</th><th>Tekst in beeld</th></tr></thead>
+      <tbody>
+        <tr><td>0&ndash;4 s</td><td>De triomfboog die zichzelf tekent, tot de deuren opengaan.</td><td>Zie uw website voordat hij bestaat.</td></tr>
+        <tr><td>4&ndash;8 s</td><td>Je kiest een branche &mdash; laat de vinger het aantikken.</td><td>Kies uw branche.</td></tr>
+        <tr><td>8&ndash;13 s</td><td>Je wisselt twee of drie keer van sfeer, zodat dezelfde site omslaat.</td><td>Kies uw sfeer.</td></tr>
+        <tr><td>13&ndash;18 s</td><td>De site verschijnt met een naam erop; scroll er rustig doorheen.</td><td>Met uw eigen naam erop.</td></tr>
+        <tr><td>18&ndash;20 s</td><td>Stilstaand slotbeeld op de poort.</td><td>Gratis, zonder account. yg-digital.nl</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="let-op">
+    <strong>Geen muziek met tekst of zang.</strong> Kies iets instrumentaals en rustigs uit Instagram&rsquo;s eigen bibliotheek; muziek van buiten kan je bereik kosten en past bovendien niet bij de toon. Neem op zonder meldingen in beeld &mdash; zet de telefoon even op niet storen.
+  </div>
+</section>
+
+<div class="scheiding"><span class="ruit"></span></div>
+
+<section>
+  <p class="eyebrow">Waar alles staat</p>
+  <h2>De bestanden</h2>
+  <p class="intro">Alles op ware grootte staat op je eigen computer. De platen hier zijn kleine voorbeelden &mdash; upload naar Instagram altijd de PNG&rsquo;s uit de map hieronder.</p>
+  <div class="rol">
+    <table>
+      <thead><tr><th>Map</th><th>Wat erin zit</th></tr></thead>
+      <tbody>
+        <tr><td>instagram/uit/</td><td>36 berichtplaten (4:5 en 1:1), profielfoto&rsquo;s, 4 omslagen, 3 verhaalsjablonen</td></tr>
+        <tr><td>instagram/bron/</td><td>De schermafdrukken van yg-digital.nl en ordepartner.nl</td></tr>
+        <tr><td>instagram/berichten.cjs</td><td>De teksten op de platen. Pas ze aan en draai <em>node instagram/maak.cjs</em></td></tr>
+        <tr><td>instagram/maak.cjs</td><td>De rendermachine: SVG naar PNG, zelfde aanpak als je logo-generator</td></tr>
+        <tr><td>instagram/extra.cjs</td><td>Profielfoto, omslagen en verhaalsjablonen</td></tr>
+        <tr><td>instagram/strook.cjs</td><td>Legt een strook van een webpagina vast rond een stuk tekst</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  Alle bedragen komen van yg-digital.nl, stand september 2026, exclusief btw met het bedrag inclusief btw erbij.
+  Ordepartner is getoond met jouw bevestiging dat dat mag.
+</footer>
+</div>
+
+<script>
+const BERICHTEN = [
+  { n:1, id:['01-entree'], titel:'De entree van uw bedrijf', soort:'Donker', set:'Merk',
+    tekst:`De entree van uw bedrijf.
+
+Een website is de poort waardoor uw klanten binnenkomen. De meeste ondernemers besteden maanden aan hun pand, hun bus en hun visitekaartje — en laten die ene poort er dan bijstaan alsof het de achterdeur is.
+
+Wij bouwen hem als de entree van een vijfsterrenhotel: rustig, verzorgd en tot in detail afgewerkt.
+
+Websites voor bedrijven en particulieren, vanaf € 550 excl. btw (€ 665,50 incl.). Heel Nederland.
+
+yg-digital.nl` },
+
+  { n:2, id:['02-prijs'], titel:'Wat kost een website?', soort:'Ivoor', set:'Uitleg',
+    tekst:`Wat kost een website?
+
+Bij ons vanaf € 550 eenmalig, exclusief btw (€ 665,50 inclusief).
+
+Geen “neem contact op voor een vrijblijvende offerte” waarna u drie gesprekken verder nog steeds niet weet waar u aan toe bent. U krijgt vooraf een offerte met een bedrag én een opleverdatum. Meerwerk gaat pas door nadat u er ja op heeft gezegd.
+
+Wat er daarna nog bij komt — hosting en domeinnaam — betaalt u rechtstreeks aan het platform. Wij rekenen daar niets bovenop.
+
+Alle tarieven staan gewoon op de site: yg-digital.nl/diensten` },
+
+  { n:3, id:['03a-ordepartner','03b-ordepartner-mobiel','03c-ordepartner-werk'], titel:'Ordepartner', soort:'Donker · carrousel', set:'Werk',
+    tekst:`Ordepartner — Alkmaar
+
+Ordepartner brengt rust en overzicht in de magazijnen en loodsen van zzp’ers en mkb-bedrijven. Dat vroeg om een website die hetzelfde doet.
+
+Wij maakten de website, het logo en de teksten. Een rustige uitstraling die bij het vak past, en een opbouw waarin de ondernemer zelf kan bijwerken zonder ons te hoeven bellen.
+
+Veeg door voor het kleine scherm en voor wat wij precies deden.
+
+ordepartner.nl` },
+
+  { n:4, id:['04-werkwijze'], titel:'Van eerste gesprek tot open deur', soort:'Ivoor', set:'Uitleg',
+    tekst:`Van eerste gesprek tot open deur.
+
+1. Gesprek. We bespreken wat uw bedrijf online nodig heeft. Vrijblijvend, en u ontvangt vooraf een offerte.
+2. Ontwerp. U ontvangt een eerste versie. Twee correctierondes zijn inbegrepen.
+3. Bouw. Wij bouwen de site af: snel, veilig en geschikt voor elk scherm.
+4. Lancering en nazorg. Uw entree gaat open. Dertig dagen herstellen wij eventuele fouten gratis.
+
+Uw site gaat pas live als u tevreden bent.
+
+yg-digital.nl` },
+
+  { n:5, id:['05-eerste-ontwerp'], titel:'Zie uw droomwebsite', soort:'Donker', set:'Merk',
+    tekst:`Zie uw droomwebsite voordat hij bestaat.
+
+Op onze site staat een ontwerpstudio. U kiest uw branche, uw sfeer en wat uw website moet kunnen — en wij bouwen hem voor uw ogen op, met uw eigen naam erop.
+
+Twee minuten. Geen account. Het kost niets en verplicht tot niets.
+
+Daarna weet u tenminste waar u over praat als u met ons of met iemand anders om tafel gaat.
+
+yg-digital.nl/eerste-ontwerp` },
+
+  { n:6, id:['06-afspraken'], titel:'Drie vaste afspraken', soort:'Ivoor', set:'Uitleg',
+    tekst:`Drie afspraken die wij vooraf maken.
+
+Vaste prijs vooraf. Een offerte met een bedrag en een opleverdatum. Meerwerk gaat pas door nadat u er ja op heeft gezegd.
+
+Antwoord binnen één werkdag. Één aanspreekpunt, geen helpdesk en geen ticketnummer. Meestal hoort u nog dezelfde dag iets.
+
+Twee rondes en 30 dagen nazorg. Uw site gaat pas live als u tevreden bent, en fouten in de eerste maand herstellen wij kosteloos.
+
+yg-digital.nl` },
+
+  { n:7, id:['07a-eigen-site','07b-eigen-prijzen','07c-eigen-platform'], titel:'Onze eigen entree', soort:'Donker · carrousel', set:'Werk',
+    tekst:`Onze eigen entree.
+
+Wat wij voor u bouwen, bouwen wij eerst voor onszelf. Inclusief het stuk waar de meeste bureaus met een grote boog omheen lopen: de prijzen.
+
+Veeg door — ze staan er gewoon.
+
+Wij bouwen standaard in JouwWeb, omdat u daar het minst kwijt bent en zelf alles kunt bijhouden. Liever Shopify, WordPress of Wix? Dan bouwen wij daar ook.
+
+yg-digital.nl` },
+
+  { n:8, id:['08-hosting'], titel:'En wat kost het daarna nog?', soort:'Ivoor', set:'Uitleg',
+    tekst:`“En wat kost het dan daarna nog?”
+
+De eerlijke opsomming:
+
+Hosting vanaf € 5,50 per maand, rechtstreeks aan het platform. Wij rekenen daar niets bovenop.
+Domeinnaam het eerste jaar gratis, daarna € 20 per jaar. Op uw eigen naam.
+Onderhoud € 45 per uur, afgerond per kwartier. Een korte vraag tussendoor kost niets.
+
+Verwacht u vaker iets te willen veranderen? Dan is een onderhoudsabonnement voordeliger. Ook die tarieven staan gewoon op de site.
+
+Bedragen exclusief btw, tarieven van september 2026.` },
+
+  { n:9, id:['09a-sfeer-warm','09b-sfeer-modern','09c-sfeer-chic'], titel:'Dezelfde bakker, drie sferen', soort:'Donker · carrousel', set:'Merk',
+    tekst:`Dezelfde bakker, drie sferen.
+
+Één bedrijf, één tekst, één aanbod — en toch drie totaal verschillende deuren. Warm en ambachtelijk, strak en modern, of donker en chic.
+
+Dit zijn voorbeeldontwerpen uit onze eigen ontwerpstudio, geen bestaande klant. In die studio maakt u er zelf een, met uw eigen naam erop.
+
+Welke zou u kiezen? Laat het weten in de reacties.
+
+yg-digital.nl/eerste-ontwerp` },
+
+  { n:10, id:['10-huisstijl'], titel:'Herkenbaar, tot in de voettekst', soort:'Ivoor', set:'Uitleg',
+    tekst:`Herkenbaar, tot in de voettekst.
+
+Een logo is niet af als het alleen op uw website staat. Het moet ook kloppen op uw bus, uw factuur, uw bord aan de weg en uw social media — in dezelfde kleuren, met dezelfde letters en dezelfde rust.
+
+Wij ontwerpen logo en huisstijl, en voeren ze overal consequent door. Ook als uw website er al staat.
+
+yg-digital.nl/diensten` },
+
+  { n:11, id:['11-telefoon'], titel:'De telefoon in de hand', soort:'Donker', set:'Uitleg',
+    tekst:`De meeste klanten kloppen aan met een telefoon in de hand.
+
+Een site die op uw computerscherm prachtig is en op een telefoon uit elkaar valt, kost u klanten zonder dat u het merkt. U kijkt er zelf immers zelden zo naar.
+
+Daarom ontwerpen wij elke site ook voor het kleine scherm, en testen wij hem daarop voordat hij opengaat.
+
+Pak uw telefoon er eens bij. Hoe staat uw eigen site erop?
+
+yg-digital.nl` },
+
+  { n:12, id:['12-kennismaken'], titel:'Laat ons uw entree bouwen', soort:'Ivoor', set:'Merk',
+    tekst:`Laat ons uw entree bouwen.
+
+Een vrijblijvend gesprek over wat uw bedrijf online nodig heeft — en wat wij daarin voor u kunnen betekenen. Bellen, appen of mailen mag. U hoort meestal nog dezelfde dag iets.
+
+06 42 65 31 77
+info@yg-digital.nl
+yg-digital.nl
+
+Liever eerst zelf rondkijken? Maak uw eerste ontwerp op yg-digital.nl/eerste-ontwerp — gratis en zonder account.` },
+];
+
+const HASHTAGS = [
+  { naam:'Werk', bij:'Bij bericht 3 en 7 — als je laat zien wat je gemaakt hebt.',
+    tekst:'#webdesign #websitelatenmaken #webdesignnederland #webdesigner #nieuwewebsite #websitedesign #huisstijl #logodesign #ondernemen #zzp #mkb #eigenbedrijf #jouwweb #portfolio' },
+  { naam:'Uitleg', bij:'Bij bericht 2, 4, 6, 8, 10 en 11 — prijzen, werkwijze en tips.',
+    tekst:'#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop' },
+  { naam:'Merk', bij:'Bij bericht 1, 5, 9 en 12 — wie jullie zijn en wat jullie aanbieden.',
+    tekst:'#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland' },
+];
+
+const TAKEN = [
+  { wat:'De twaalf berichten plaatsen',
+    hoe:'Twee per week, in de volgorde hieronder. Zet de PNG’s uit instagram/uit op je telefoon — gebruik de 4:5-versies — en plak het bijschrift erbij. Bij bericht 3, 7 en 9 kies je alle drie de platen tegelijk, dan wordt het een carrousel.' },
+  { wat:'Vier highlights aanmaken',
+    hoe:'Een highlight ontstaat pas als er een verhaal in zit. Plaats dus eerst iets als verhaal, maak daarna de highlight, en kies dan Omslag bewerken om de omslag uit instagram/uit te uploaden. Rubrieken: Werk, Prijzen, Hoe het werkt, Contact.' },
+  { wat:'WhatsApp-knop aanzetten (als je dat wilt)',
+    hoe:'Dit is het enige dat ik niet kon regelen: Instagram wil een WhatsApp Business-account op 06 42 65 31 77, en dat moet je op je telefoon aanmaken en laten verifiëren. Daarna: Instellingen → Professioneel account → WhatsApp-nummer. Bellen en e-mail werken al wel.' },
+];
+
+function maakKopieer(tekst){
+  const doos = document.createElement('div');
+  doos.className = 'kopieer';
+  const p = document.createElement('p');
+  p.className = 'tekst'; p.textContent = tekst;
+  const balk = document.createElement('div');
+  balk.className = 'balk';
+  const teller = document.createElement('span');
+  teller.className = 'teller';
+  teller.textContent = tekst.length + ' tekens';
+  const knop = document.createElement('button');
+  knop.className = 'knop'; knop.type = 'button'; knop.textContent = 'Kopieer';
+  balk.append(teller, knop);
+  doos.append(p, balk);
+  knopWerkt(knop, () => tekst);
+  return doos;
+}
+
+function knopWerkt(knop, geefTekst){
+  knop.addEventListener('click', async () => {
+    const t = geefTekst();
+    let gelukt = false;
+    try { await navigator.clipboard.writeText(t); gelukt = true; }
+    catch (e) {
+      try {
+        const h = document.createElement('textarea');
+        h.value = t; h.style.position = 'fixed'; h.style.opacity = '0';
+        document.body.appendChild(h); h.select();
+        gelukt = document.execCommand('copy');
+        document.body.removeChild(h);
+      } catch (e2) { gelukt = false; }
+    }
+    knop.textContent = gelukt ? 'Gekopieerd' : 'Selecteer zelf';
+    knop.classList.toggle('gelukt', gelukt);
+    setTimeout(() => { knop.textContent = 'Kopieer'; knop.classList.remove('gelukt'); }, 2200);
+  });
+}
+
+// bestaande bio-knop
+document.querySelectorAll('[data-kopie]').forEach(doos => {
+  const p = doos.querySelector('.tekst'), knop = doos.querySelector('button');
+  doos.querySelector('.teller').textContent = p.textContent.length + ' van 150 tekens';
+  knopWerkt(knop, () => p.textContent);
+});
+
+// de twaalf berichten
+const houder = document.getElementById('berichten');
+for (const b of BERICHTEN) {
+  const rij = document.createElement('div');
+  rij.className = 'bericht';
+
+  const platen = document.createElement('div');
+  platen.className = 'platen' + (b.id.length > 1 ? ' veeg' : '');
+  for (const id of b.id) {
+    const img = document.createElement('img');
+    img.src = 'web/' + id + '.jpg'; img.alt = b.titel; img.loading = 'lazy';
+    platen.appendChild(img);
+  }
+
+  const kolom = document.createElement('div');
+  const kop = document.createElement('div');
+  kop.className = 'kaartkop';
+  const nr = document.createElement('span');
+  nr.className = 'nummer'; nr.textContent = String(b.n).padStart(2, '0');
+  const h3 = document.createElement('h3'); h3.textContent = b.titel;
+  kop.append(nr, h3);
+
+  const merken = document.createElement('div');
+  merken.className = 'merken';
+  for (const [label, extra] of [[b.soort, b.id.length > 1], ['Hashtags: ' + b.set, false]]) {
+    const m = document.createElement('span');
+    m.className = 'merk' + (extra ? ' veegmerk' : '');
+    m.textContent = label;
+    merken.appendChild(m);
+  }
+
+  const best = document.createElement('p');
+  best.className = 'bestanden';
+  best.textContent = b.id.map(i => i + '-4x5.png').join('  ·  ');
+
+  kolom.append(kop, merken, maakKopieer(b.tekst), best);
+  rij.append(platen, kolom);
+  houder.appendChild(rij);
+}
+
+// hashtag-sets
+const hh = document.getElementById('hashtags');
+for (const s of HASHTAGS) {
+  const wrap = document.createElement('div');
+  const h3 = document.createElement('h3'); h3.textContent = s.naam;
+  const bij = document.createElement('p');
+  bij.className = 'intro'; bij.style.margin = '4px 0 12px'; bij.textContent = s.bij;
+  wrap.append(h3, bij, maakKopieer(s.tekst));
+  hh.appendChild(wrap);
+}
+
+// takenlijst, onthoudt wat je hebt afgevinkt
+const tl = document.getElementById('taken');
+TAKEN.forEach((t, i) => {
+  const li = document.createElement('li');
+  const label = document.createElement('label');
+  const vink = document.createElement('input');
+  vink.type = 'checkbox';
+  try { vink.checked = localStorage.getItem('yg-taak2-' + i) === 'ja'; } catch (e) {}
+  vink.addEventListener('change', () => {
+    try { localStorage.setItem('yg-taak2-' + i, vink.checked ? 'ja' : 'nee'); } catch (e) {}
+  });
+  const div = document.createElement('div');
+  const wat = document.createElement('span'); wat.className = 'wat'; wat.textContent = t.wat;
+  const hoe = document.createElement('span'); hoe.className = 'hoe'; hoe.textContent = t.hoe;
+  div.append(wat, hoe);
+  label.append(vink, div);
+  li.appendChild(label);
+  tl.appendChild(li);
+});
+</script>
+
+</body></html>

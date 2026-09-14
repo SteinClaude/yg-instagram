@@ -5,7 +5,7 @@
 const fs = require('fs'), path = require('path');
 const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
 
-const BRON = 'C:/Users/gijsm/yg-luxury/instagram';
+const BRON = require('path').join(__dirname, '..', 'platen');
 const WORTEL = path.join(__dirname, '..');
 const BEELD = path.join(WORTEL, 'beeld');
 

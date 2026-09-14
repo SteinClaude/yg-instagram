@@ -1,3 +1,11 @@
 node_modules/
 waarschuwing.txt
 planning.echt.json
+
+# platen/uit is het resultaat van het renderen, geen bron: 117 MB die je met
+# "node platen/voorraad.cjs" en "node platen/maak.cjs" zo weer terughebt.
+platen/uit/
+# proefdrukken en schermafdrukken, werkbestanden
+platen/overzicht*.jpg
+platen/opname*.jpg
+platen/controle-foto.jpg

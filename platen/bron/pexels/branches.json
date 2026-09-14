@@ -1,0 +1,92 @@
+[
+ {
+  "sleutel": "kapper",
+  "label": "Kapper & salon",
+  "dark": 7195801,
+  "light": 27165070,
+  "extra": [
+   9146943,
+   3993126
+  ]
+ },
+ {
+  "sleutel": "coach",
+  "label": "Coach & adviseur",
+  "dark": 7793162,
+  "light": 9034226,
+  "extra": [
+   8844392,
+   6517292
+  ]
+ },
+ {
+  "sleutel": "restaurant",
+  "label": "Restaurant & horeca",
+  "dark": 2403392,
+  "light": 10135116,
+  "extra": [
+   18090414,
+   9685244
+  ]
+ },
+ {
+  "sleutel": "bouw",
+  "label": "Bouw & vakwerk",
+  "dark": 5974389,
+  "light": 8830265,
+  "extra": [
+   5710853,
+   13005858
+  ]
+ },
+ {
+  "sleutel": "winkel",
+  "label": "Winkel & webshop",
+  "dark": 5418897,
+  "light": 8386651,
+  "extra": [
+   30506013,
+   18497140
+  ]
+ },
+ {
+  "sleutel": "praktijk",
+  "label": "Praktijk & zorg",
+  "dark": 6560308,
+  "light": 6899551,
+  "extra": [
+   20860610,
+   5794024
+  ]
+ },
+ {
+  "sleutel": "creatief",
+  "label": "Creatief & portfolio",
+  "dark": 3172844,
+  "light": 7205407,
+  "extra": [
+   12767729,
+   9396404
+  ]
+ },
+ {
+  "sleutel": "anders",
+  "label": "Iets anders",
+  "dark": 19895883,
+  "light": 5240158,
+  "extra": [
+   10341587,
+   5882647
+  ]
+ },
+ {
+  "sleutel": "kantoor",
+  "label": "Kantoor & dienstverlening",
+  "dark": 939331,
+  "light": 1006293,
+  "extra": [
+   1034646,
+   31236098
+  ]
+ }
+]
