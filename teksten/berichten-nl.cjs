@@ -15,7 +15,7 @@ const MERK = '#ygdigital #yourgateway #webdesign #websites #onlineondernemen #on
 const DOELGROEP = '#websitelatenmaken #webdesign #ondernemen #zzp #mkb #eigenbedrijf #kleinbedrijf #lokaalondernemen #startendondernemer #ondernemersleven #webdesignnederland #websitetips';
 
 // De afsluiter onder de negen doelgroepplaten: wel de prijs, geen harde oproep.
-const PRIJSREGEL = 'Websites voor ondernemers, vanaf € 250 excl. btw. Vaste prijs vooraf, met een opleverdatum erbij. Antwoord binnen één werkdag.';
+const PRIJSREGEL = 'Websites voor ondernemers, vanaf € 550 excl. btw. Vaste prijs vooraf, met een opleverdatum erbij. Antwoord binnen één werkdag.';
 
 const t = (tekst, tags) => tekst.trim() + '\n\n' + tags;
 
@@ -120,7 +120,7 @@ Vaste prijs vooraf.
 
 Geen “neem contact op voor een vrijblijvende offerte” waarna je drie gesprekken verder nog steeds niet weet waar je aan toe bent.
 
-Je krijgt vooraf een offerte met een bedrag én een opleverdatum. Meerwerk gaat pas door nadat je er ja op hebt gezegd. Websites vanaf € 250 excl. btw.
+Je krijgt vooraf een offerte met een bedrag én een opleverdatum. Meerwerk gaat pas door nadat je er ja op hebt gezegd. Websites vanaf € 550 excl. btw.
 
 Alle tarieven staan gewoon op de site — link in onze bio.`, MERK),
 
@@ -151,14 +151,14 @@ Een website is de poort waardoor je klanten binnenkomen. De meeste ondernemers b
 
 Wij bouwen hem als de entree van een vijfsterrenhotel: rustig, verzorgd en tot in detail afgewerkt.
 
-Websites voor bedrijven en particulieren, vanaf € 250 excl. btw (€ 302,50 incl.). Heel Nederland.
+Websites voor bedrijven en particulieren, vanaf € 550 excl. btw (€ 665,50 incl.). Heel Nederland.
 
 yg-digital.nl`, MERK),
 
   B02: t(`
 Wat kost een website?
 
-Bij ons vanaf € 250 eenmalig, exclusief btw (€ 302,50 inclusief). Wat het bij jou wordt hangt af van het aantal pagina’s — en dat hoor je vooraf, met een opleverdatum erbij.
+Bij ons vanaf € 550 eenmalig, exclusief btw (€ 665,50 inclusief). Wat het bij jou wordt hangt af van het aantal pagina’s — en dat hoor je vooraf, met een opleverdatum erbij.
 
 Geen “neem contact op voor een vrijblijvende offerte” waarna je drie gesprekken verder nog steeds niet weet waar je aan toe bent. Je krijgt vooraf een offerte met een bedrag én een opleverdatum. Meerwerk gaat pas door nadat je er ja op hebt gezegd.
 
