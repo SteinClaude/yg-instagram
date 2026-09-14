@@ -62,6 +62,28 @@ for (const [nr, titel] of Object.entries(LOS)) {
   n++;
 }
 
+// --- de twaalf Engelse berichten, voor het tweede account ---------------------
+// Deze stonden eerder alleen in de map en werden nooit opnieuw weggeschreven;
+// daardoor bleef er een oud bedrag in staan nadat de bron al was aangepast.
+
+const EN = require(path.join(__dirname, '..', 'platen', 'bijschriften-en.cjs'));
+const schoonEN = s => s.replace(/[\\/:*?"<>|]/g, '').replace(/\s+/g, ' ').trim();
+const enMap = path.join(MAP3, 'Eigen tekst bij de uitgewerkte berichten B01 - B12', 'English');
+for (const oud of fs.existsSync(enMap) ? fs.readdirSync(enMap) : []) {
+  if (/^B\d\d .*\.txt$/.test(oud)) fs.unlinkSync(path.join(enMap, oud));
+}
+fs.mkdirSync(enMap, { recursive: true });
+for (const b of EN) {
+  const nr = 'B' + String(b.n).padStart(2, '0');
+  schrijf(path.join(enMap, `${nr} - ${schoonEN(b.titel)}.txt`), [
+    `${nr} - ${schoonEN(b.titel).toUpperCase()}`, LIJN,
+    'Goes with the image of the same number in folder 2 / English.',
+    'Copy everything between the lines.', LIJN, '',
+    b.tekst.trim(), '', LIJN, '',
+  ]);
+  n++;
+}
+
 // --- het overzichtsbestand ---------------------------------------------------
 
 schrijf(path.join(MAP3, 'LEES DIT - over de teksten.txt'), [
