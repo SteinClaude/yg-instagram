@@ -1,0 +1,50 @@
+name: Nieuw item
+description: Een eigen foto op een datum in de planning zetten, als bericht of als verhaal
+title: "Nieuw item"
+labels: ["wijziging"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Zodra je op **Submit** drukt komt het item in de planning en krijg je
+        hieronder een antwoord. Duurt ongeveer een minuut.
+
+  - type: dropdown
+    id: soort
+    attributes:
+      label: Wat wordt het
+      options:
+        - Bericht
+        - Verhaal
+    validations:
+      required: true
+
+  - type: input
+    id: datum
+    attributes:
+      label: Datum
+      description: "Schrijf het als 2026-10-05."
+      placeholder: "2026-10-05"
+    validations:
+      required: true
+
+  - type: input
+    id: tijd
+    attributes:
+      label: Tijd
+      description: "Bijvoorbeeld 20:00. Leeg laten mag: een bericht gaat dan om 20:00, een verhaal om 12:00."
+      placeholder: "20:00"
+
+  - type: textarea
+    id: foto
+    attributes:
+      label: Foto
+      description: "Tik in dit vak en voeg de foto toe (op de telefoon via het paperclipje of Kies bestand; op de pc slepen of plakken). Wacht tot er een regel met een link in het vak staat. De foto wordt vanzelf staand bijgesneden: 4:5 voor een bericht, 9:16 voor een verhaal."
+    validations:
+      required: true
+
+  - type: textarea
+    id: tekst
+    attributes:
+      label: Tekst eronder
+      description: "Alleen voor een bericht: het hele bijschrift, inclusief de hashtags. Een verhaal heeft geen tekst eronder."

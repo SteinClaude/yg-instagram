@@ -1,6 +1,6 @@
 name: Planning wijzigen
 
-# Draait zodra jij een melding vanuit het wijzigformulier opent of bijwerkt.
+# Draait zodra jij een melding vanuit het wijzig- of nieuw-formulier opent of bijwerkt.
 on:
   issues:
     types: [opened, edited]
@@ -20,7 +20,9 @@ jobs:
     # En alleen als de eigenaar van de repo het instuurt: de repo is openbaar, dus
     # iedereen met een GitHub-account kan het formulier openen. Dat mag niet
     # doorwerken in de planning.
-    if: contains(github.event.issue.body, 'Welk item') && github.event.issue.user.login == github.repository_owner
+    if: >-
+      (contains(github.event.issue.body, 'Welk item') || contains(github.event.issue.body, 'Wat wordt het'))
+      && github.event.issue.user.login == github.repository_owner
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,6 +31,11 @@ jobs:
         with:
           node-version: '22'
 
+      # Alleen nodig als er een foto bij zit; de repo zelf blijft zonder pakketten.
+      - name: Fotogereedschap ophalen
+        if: contains(github.event.issue.body, 'https://')
+        run: npm install --no-save --no-audit --no-fund --loglevel=error sharp@0.33.5
+
       - name: Wijziging uitvoeren
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
@@ -36,12 +43,16 @@ jobs:
 
       - name: Planning bewaren
         run: |
-          if [ -n "$(git status --porcelain planning.json)" ]; then
+          if [ -n "$(git status --porcelain planning.json beeld mini)" ]; then
             git config user.name  "YG plaatser"
             git config user.email "actions@users.noreply.github.com"
-            git add planning.json
+            git add planning.json beeld mini
             git commit -m "wijziging uit melding #${{ github.event.issue.number }}"
-            git push
+            for poging in 1 2 3; do
+              if git push; then break; fi
+              git pull --rebase --autostash || true
+              sleep 3
+            done
             echo "gelukt=ja" >> $GITHUB_ENV
           else
             echo "gelukt=nee" >> $GITHUB_ENV
@@ -58,7 +69,9 @@ jobs:
 
   # Formulier van iemand anders: niet uitvoeren, wel netjes dichtdoen zodat het opvalt.
   afwijzen:
-    if: contains(github.event.issue.body, 'Welk item') && github.event.issue.user.login != github.repository_owner
+    if: >-
+      (contains(github.event.issue.body, 'Welk item') || contains(github.event.issue.body, 'Wat wordt het'))
+      && github.event.issue.user.login != github.repository_owner
     runs-on: ubuntu-latest
     steps:
       - name: Melding sluiten
