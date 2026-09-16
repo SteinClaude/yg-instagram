@@ -42,6 +42,19 @@ const lees = (bestand, standaard) => {
   try { return JSON.parse(fs.readFileSync(bestand, 'utf8')); } catch { return standaard; }
 };
 
+// De toestand van de automaat, zodat de planningspagina hem kan laten zien en je
+// niet in de logboeken van GitHub hoeft te duiken om te weten of het goed gaat.
+// Alleen wegschrijven als er iets verandert: anders krijg je elk uur een commit.
+const STATUS = path.join(WORTEL, 'status.json');
+function meldStand(stand, bericht) {
+  const oud = lees(STATUS, {});
+  if (oud.stand === stand && oud.bericht === bericht) return;
+  const nu = nuInAmsterdam();
+  fs.writeFileSync(STATUS, JSON.stringify(
+    { stand, bericht, sinds: `${nu.datum} ${nu.tijd}` }, null, 1));
+  console.log(`Toestand: ${stand} — ${bericht}`);
+}
+
 async function main() {
   // Nog niet ingesteld is geen fout: dan is stap 5 uit LEESMIJ.md gewoon nog niet
   // gedaan. We stoppen netjes, zodat je geen foutmelding per uur krijgt.
@@ -49,6 +62,7 @@ async function main() {
     console.log('Nog niet ingesteld: IG_TOKEN en/of IG_USER_ID ontbreken.');
     console.log('Zet ze bij Settings > Secrets and variables > Actions (zie LEESMIJ.md, stap 5).');
     console.log('Zolang die ontbreken plaatst dit script niets, en dat is de bedoeling.');
+    meldStand('niet ingesteld', 'De sleutel of het accountnummer ontbreekt bij de instellingen van de repo.');
     return;
   }
   if (!RAW && !PROEF) {
@@ -64,9 +78,11 @@ async function main() {
     try {
       const naam = await IG.wieBenIk(IG_ID, TOKEN);
       console.log(`Sleutel werkt, account @${naam}.`);
+      meldStand('in orde', `Verbonden met @${naam}.`);
     } catch (fout) {
       console.error(rood('De sleutel wordt geweigerd: ') + fout.message);
       console.log('Er wordt niets geplaatst zolang dit niet is opgelost.');
+      meldStand('staat stil', `Instagram weigert de sleutel: ${fout.message}`);
       fs.writeFileSync(WAARSCHUWING, [
         'De Instagram-sleutel werkt niet meer.',
         '',

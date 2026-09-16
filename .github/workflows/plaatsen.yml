@@ -41,7 +41,7 @@ jobs:
         if: always()
         run: |
           bestanden=""
-          for f in gedaan.json sleutel.json; do
+          for f in gedaan.json sleutel.json status.json; do
             [ -f "$f" ] && bestanden="$bestanden $f"
           done
           if [ -z "$bestanden" ] || [ -z "$(git status --porcelain $bestanden)" ]; then

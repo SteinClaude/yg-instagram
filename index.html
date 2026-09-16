@@ -38,6 +38,15 @@
   .eyebrow{font-size:.68rem; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:var(--goud-tekst); margin:0 0 10px;}
   .zacht{color:var(--ink-zacht)}
   header{display:flex; flex-direction:column; gap:14px; padding-bottom:26px}
+  /* Melding over de toestand van de automaat. Zonder dit moest je in de
+     logboeken van GitHub kijken om te merken dat het plaatsen stilstond. */
+  .melding{margin:22px 0 4px; padding:16px 20px; border:1px solid var(--lijn);
+    border-left:4px solid var(--goud); background:var(--kaart); color:var(--ink); border-radius:3px}
+  .melding.stil{border-left-color:var(--let-op)}
+  .melding.stil b{color:var(--let-op)}
+  .melding b{display:block; font-size:.95rem; margin-bottom:6px}
+  .melding p{margin:0 0 6px; font-size:.88rem; line-height:1.55}
+  .melding small{display:block; margin-top:8px; opacity:.7; font-size:.76rem}
   .status{display:flex; flex-wrap:wrap; gap:10px; margin-top:4px}
   .pil{font-size:.72rem; font-weight:500; letter-spacing:.08em; border:1px solid var(--lijn);
        border-radius:100px; padding:5px 12px; color:var(--ink-zacht); background:var(--kaart)}
@@ -95,6 +104,7 @@
   <p class="zacht" style="max-width:62ch">Deze pagina leest rechtstreeks de planning en het logboek uit,
     dus wat je hier ziet is de werkelijke stand. Wil je iets veranderen, dan doe je dat zelf met de
     knop <em>Wijzig</em> — dat gaat vanzelf door in de planning.</p>
+  <div id="melding"></div>
   <div class="status" id="status"><span class="pil">bezig met laden…</span></div>
 </header>
 
@@ -166,10 +176,12 @@ async function haal(naam, standaard){
 }
 
 (async () => {
-  const [planning, gedaan] = await Promise.all([
+  const [planning, gedaan, stand] = await Promise.all([
     haal('planning.json', null),
-    haal('gedaan.json', {items:[]})
+    haal('gedaan.json', {items:[]}),
+    haal('status.json', null)
   ]);
+  tekenMelding(stand);
 
   if (!planning || !planning.items){
     document.getElementById('status').innerHTML =
@@ -202,6 +214,23 @@ function ritme(items){
   return [regel('verhaal','Verhalen'), regel('bericht','Berichten'),
     talen.length === 1 ? 'Alles in het ' + (talen[0] === 'nl' ? 'Nederlands' : 'Engels') + '.' : ''
   ].filter(Boolean).join(' ');
+}
+
+// Laat zien hoe de automaat eraan toe is. Zonder dit moest je in de logboeken van
+// GitHub kijken om te merken dat het plaatsen stilstond.
+function tekenMelding(stand){
+  const vak = document.getElementById('melding');
+  if (!vak || !stand || stand.stand === 'in orde') { if (vak) vak.innerHTML = ''; return; }
+  const stil = stand.stand !== 'in orde';
+  const kop = stand.stand === 'staat stil' ? 'Het plaatsen staat stil'
+            : stand.stand === 'niet ingesteld' ? 'De automaat is nog niet ingesteld'
+            : 'Let op';
+  vak.innerHTML = '<div class="melding' + (stil ? ' stil' : '') + '">'
+    + '<b>' + kop + '</b>'
+    + '<p>' + String(stand.bericht || '').replace(/[<>]/g, '') + '</p>'
+    + '<p>Er gaat niets verloren: de planning blijft staan en gaat vanzelf verder zodra dit is opgelost.</p>'
+    + (stand.sinds ? '<small>zo sinds ' + stand.sinds + '</small>' : '')
+    + '</div>';
 }
 
 function tekenStatus(){
