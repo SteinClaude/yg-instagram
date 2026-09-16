@@ -252,7 +252,9 @@ const moment = w => /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}/.test(String(w)) ? kort(w.sl
 
 let ITEMS = [], GEDAAN = {}, LOGBOEK = [], STAND = null, SLEUTEL = null;
 const TABS = ['vandaag','planning','hulp'];
-const mini = b => 'mini/' + b.replace(/\//g,'-');
+// Bij een video (reel) is het kleintje een stilstaand beeld met dezelfde naam.
+const isVideo = b => /\.mp4$/i.test(b || '');
+const mini = b => 'mini/' + b.replace(/\//g,'-').replace(/\.mp4$/i, '.jpg');
 const groot = b => 'beeld/' + b;
 // Hoe lang de automaat zelf nog inhaalt (INHAALUREN in src/plaatsen.cjs). Tot die
 // tijd is een item dat over zijn tijd is gewoon aan de beurt, geen mislukking:
@@ -262,7 +264,8 @@ const minuten = s => { const [d, t] = s.split(' '); const [j, m, dd] = d.split('
 const voorbij = i => (i.datum + ' ' + i.tijd) < NU;
 const teLaat = i => minuten(NU) - minuten(i.datum + ' ' + i.tijd) > INHAALMINUTEN;
 const status = i => GEDAAN[i.id] ? GEDAAN[i.id].resultaat : (teLaat(i) ? 'onbekend' : 'wacht');
-const soortNaam = i => i.soort === 'verhaal' ? 'Verhaal' : ((i.beeld || []).length > 1 ? 'Carrousel' : 'Bericht');
+const soortNaam = i => i.soort === 'verhaal' ? 'Verhaal'
+  : isVideo((i.beeld || [])[0]) ? 'Reel' : ((i.beeld || []).length > 1 ? 'Carrousel' : 'Bericht');
 
 function titelVan(i){
   if (i.tekst){ const r = i.tekst.split('\n').find(x => x.trim()); if (r) return r.trim(); }
@@ -570,7 +573,14 @@ let VEL_OPEN = false, VEL_VAN = null;   // VEL_VAN: de regel waar het vandaan kw
 function openVel(i, van){
   document.getElementById('velwanneer').textContent = soortNaam(i) + ' · ' + kort(i.datum) + ' · ' + i.tijd;
   const beeld = document.getElementById('velbeeld'); beeld.innerHTML = '';
-  for (const b of (i.beeld || [])){ const img = document.createElement('img'); img.src = groot(b); img.alt = ''; beeld.appendChild(img); }
+  for (const b of (i.beeld || [])){
+    if (isVideo(b)){
+      const v = document.createElement('video'); v.src = groot(b); v.controls = true; v.playsInline = true; v.preload = 'metadata';
+      v.poster = groot(b).replace(/\.mp4$/i, '.jpg'); v.style.maxHeight = '54vh'; v.style.maxWidth = '100%';
+      beeld.appendChild(v); continue;
+    }
+    const img = document.createElement('img'); img.src = groot(b); img.alt = ''; beeld.appendChild(img);
+  }
   // De toestand alleen als er iets over te zeggen is; "gepland" staat al in de kop.
   const st = status(i), toestand = document.getElementById('veltoestand');
   const g = GEDAAN[i.id];

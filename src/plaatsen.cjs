@@ -170,6 +170,8 @@ async function plaatsAlles(items, gedaan, nu) {
       let mediaId;
       if (item.soort === 'verhaal') {
         mediaId = await IG.plaatsVerhaal(IG_ID, TOKEN, urls[0]);
+      } else if (/\.mp4$/i.test(urls[0])) {
+        mediaId = await IG.plaatsReel(IG_ID, TOKEN, urls[0], item.tekst || '');
       } else if (urls.length > 1) {
         mediaId = await IG.plaatsCarrousel(IG_ID, TOKEN, urls, item.tekst || '');
       } else {

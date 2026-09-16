@@ -83,8 +83,22 @@ async function plaatsCarrousel(igId, token, beeldUrls, bijschrift) {
 }
 
 async function plaatsVerhaal(igId, token, beeldUrl) {
-  const c = await maakContainer(igId, token, { image_url: beeldUrl, media_type: 'STORIES' });
-  await wachtTotKlaar(c, token);
+  const isVideo = /\.mp4(\?|$)/i.test(beeldUrl);
+  const c = await maakContainer(igId, token, isVideo
+    ? { video_url: beeldUrl, media_type: 'STORIES' }
+    : { image_url: beeldUrl, media_type: 'STORIES' });
+  await wachtTotKlaar(c, token, isVideo ? 300 : 90);
+  return publiceer(igId, token, c);
+}
+
+// Een reel: staande video (MP4, H.264/AAC, 3 s tot 15 min). Instagram haalt hem
+// op en zet hem om; dat duurt langer dan bij een foto, vandaar de ruimere wachttijd.
+// share_to_feed zet hem ook in het raster van het profiel.
+async function plaatsReel(igId, token, videoUrl, bijschrift) {
+  const c = await maakContainer(igId, token, {
+    media_type: 'REELS', video_url: videoUrl, caption: bijschrift, share_to_feed: 'true',
+  });
+  await wachtTotKlaar(c, token, 300);
   return publiceer(igId, token, c);
 }
 
@@ -122,5 +136,5 @@ async function vernieuwSleutel(token) {
 }
 
 module.exports = {
-  VERSIE, api, plaatsFoto, plaatsCarrousel, plaatsVerhaal,
+  VERSIE, api, plaatsFoto, plaatsCarrousel, plaatsVerhaal, plaatsReel,
   wieBenIk, ruimteOver, vernieuwSleutel, wacht, recenteMedia };
