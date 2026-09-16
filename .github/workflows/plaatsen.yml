@@ -6,6 +6,11 @@ on:
     # het script rekent dat zelf om, dus zomertijd maakt niet uit.
     - cron: '5 * * * *'
   workflow_dispatch:          # knop om het met de hand te draaien
+    inputs:
+      proefvideo:
+        description: 'Proef: adres van een video die Instagram moet ophalen (er wordt niets geplaatst)'
+        required: false
+        default: ''
 
 permissions:
   contents: write             # om gedaan.json terug te schrijven
@@ -26,11 +31,22 @@ jobs:
           node-version: '22'
 
       - name: Plaatsen wat aan de beurt is
+        if: github.event.inputs.proefvideo == ''
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           REPO_RAW: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
         run: node src/plaatsen.cjs
+
+      # Met de hand: Actions > Run workflow > adres van een video invullen. Zet een
+      # reel klaar bij Instagram zonder te publiceren, om te zien of hij geaccepteerd wordt.
+      - name: Proef met een video (er wordt niets geplaatst)
+        if: github.event.inputs.proefvideo != ''
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          REPO_RAW: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+        run: node src/plaatsen.cjs --proefvideo "${{ github.event.inputs.proefvideo }}"
 
       # Deze stap mag NOOIT klappen. Gebeurt dat toch, dan wordt gedaan.json niet
       # bewaard, denkt de volgende run dat er nog niets geplaatst is en gaat

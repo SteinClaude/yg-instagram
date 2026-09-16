@@ -14,6 +14,18 @@ const TOKEN = process.env.IG_TOKEN;
 const IG_ID = process.env.IG_USER_ID;
 const RAW = (process.env.REPO_RAW || '').replace(/\/+$/, '');
 
+// Video's halen we via GitHub Pages: raw.githubusercontent.com geeft een mp4 als
+// application/octet-stream terug, en of Instagram dat slikt is niet zeker. Pages
+// zegt netjes video/mp4. Het adres volgt uit het raw-adres, tenzij het apart is
+// ingesteld (REPO_PAGES).
+function paginaAdres(raw) {
+  const m = raw.match(/^https:\/\/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\//);
+  return m ? `https://${m[1].toLowerCase()}.github.io/${m[2]}` : raw;
+}
+const PAGES = (process.env.REPO_PAGES || paginaAdres(RAW)).replace(/\/+$/, '');
+const isVideo = b => /\.mp4$/i.test(b);
+const beeldUrl = b => `${isVideo(b) ? PAGES : RAW}/beeld/${b}`;
+
 // Hoeveel uur terug we nog inhalen. Staat een run een keer stil, dan wordt dat
 // ingehaald; is het langer geleden, dan slaan we over in plaats van alles te dumpen.
 const INHAALUREN = 6;
@@ -74,6 +86,24 @@ async function main() {
   // stoppen we netjes: de melding staat er al, en elk uur een rode run erbij
   // levert alleen een postvak vol op. Zodra de sleutel weer werkt, gaat het
   // vanzelf verder.
+  // Proefdraai van een video: node src/plaatsen.cjs --proefvideo <url>
+  // Zet een reel-container klaar zonder te publiceren en meldt of Instagram
+  // de video accepteert. Handig vóór de eerste echte reel.
+  const pv = process.argv.indexOf('--proefvideo');
+  if (pv > -1) {
+    const url = process.argv[pv + 1];
+    if (!url) { console.error(rood('Geef het adres van de video mee.')); process.exit(1); }
+    console.log(`Proef: Instagram haalt ${url} op…`);
+    try {
+      const c = await IG.proefVideo(IG_ID, TOKEN, url);
+      console.log(groen(`Geaccepteerd en omgezet (container ${c}). Niet gepubliceerd.`));
+    } catch (fout) {
+      console.error(rood(`Geweigerd: ${fout.message}`));
+      process.exit(1);
+    }
+    return;
+  }
+
   if (!PROEF) {
     try {
       const naam = await IG.wieBenIk(IG_ID, TOKEN);
@@ -149,10 +179,19 @@ async function plaatsAlles(items, gedaan, nu) {
   const kortgeleden = w => Date.now() - Date.parse(w) < SLOTUREN * 3600 * 1000;
 
   for (const item of items) {
-    const urls = item.beeld.map(b => `${RAW}/beeld/${b}`);
+    const urls = item.beeld.map(beeldUrl);
     const wat = `${item.soort} ${item.taal.toUpperCase()} ${item.id}`;
     console.log(`\n→ ${wat}`);
-    for (const u of urls) console.log(`   beeld: ${u.replace(RAW, '…')}`);
+    for (const u of urls) console.log(`   beeld: ${u.replace(RAW, '…').replace(PAGES, '…')}`);
+
+    // Een video gaat alleen als los item; in een carrousel kan hij zo niet mee.
+    if (urls.length > 1 && item.beeld.some(isVideo)) {
+      console.error(rood('   MISLUKT: een video kan niet in een carrousel; zet hem als los item in de planning.'));
+      gedaan.items.push({ id: item.id, wanneer: `${nu.datum} ${nu.tijd}`, resultaat: 'overgeslagen' });
+      fs.writeFileSync(GEDAAN, JSON.stringify(gedaan, null, 1));
+      meldStand('staat stil', `${wat}: een video kan niet in een carrousel. Het item is overgeslagen.`);
+      continue;
+    }
 
     if (PROEF) { console.log('   (proefdraai: niet echt geplaatst)'); continue; }
 
@@ -184,7 +223,9 @@ async function plaatsAlles(items, gedaan, nu) {
     } catch (fout) {
       console.error(rood(`   MISLUKT: ${fout.message}`));
       fs.writeFileSync(GEDAAN, JSON.stringify(gedaan, null, 1));
-      // niet als gedaan wegschrijven: de volgende run probeert het opnieuw
+      // Niet als gedaan wegschrijven: de volgende run probeert het opnieuw. Wel
+      // melden op het dashboard, anders zie je alleen een rode run in je mail.
+      meldStand('staat stil', `${wat} is niet gelukt: ${fout.message}. Elk uur wordt het opnieuw geprobeerd, tot ${INHAALUREN} uur na de geplande tijd.`);
       throw fout;
     }
   }

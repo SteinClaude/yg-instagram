@@ -56,30 +56,53 @@ function id(datum, soort) {
 }
 
 // ---- opbouwen -----------------------------------------------------------------
+// Verhaal, bericht en reel komen uit dezelfde twaalf foto's; dezelfde foto twee
+// keer in één week valt op. Daarom eerst de berichten van de week kiezen, en bij
+// de verhalen die bron overslaan.
+const reels = require('../teksten/reels-nl.cjs');
+const { VAK } = require('../platen/vak.cjs');
+const bronVan = pad => {
+  let m;
+  if ((m = pad.match(/V(\d\d)\.jpg$/))) return Number(m[1]) - 27;
+  if ((m = pad.match(/F(\d\d)\.jpg$/))) return Number(m[1]) - 14;
+  if ((m = pad.match(/(R\d\d)\.mp4$/))) return VAK.findIndex(x => x.beeld === reels.find(r => r.code === m[1]).beeld);
+  return -1;
+};
+
 const items = [];
 let v = 0, m = 0, t = 0, f = 0, r = 0, u = 0, slot = 0;
 for (let w = 0; w < WEKEN; w++) {
   const ma = dag(START, 7 * w);
-  // verhalen: woensdag een tip; van de andere vier is er één van het merk
-  for (const [plus, tijd] of [[0, '07:00'], [1, '12:00'], [2, '19:00'], [3, '08:00'], [4, '16:00']]) {
-    const datum = dag(ma, plus);
-    let beeld;
-    if (plus === 2) beeld = TIP_V[t++ % TIP_V.length];
-    else { beeld = (slot++ % 4 === 2) ? MERK_V[m++ % MERK_V.length] : VAK_V[v++ % VAK_V.length]; }
-    items.push({ id: id(datum, 'verhaal'), datum, tijd, soort: 'verhaal', taal: 'nl', beeld: [beeld] });
-  }
+  const week = [];
+
   // dinsdag 20:00: om de week een reel, anders een uitgewerkt bericht
   const di = dag(ma, 1);
   if (w % 2 === 0) {
     const code = REELS[r++ % REELS.length];
-    items.push({ id: id(di, 'bericht'), datum: di, tijd: '20:00', soort: 'bericht', taal: 'nl', beeld: [`reels/${code}.mp4`], tekst: tekstVan(code) });
+    week.push({ id: id(di, 'bericht'), datum: di, tijd: '20:00', soort: 'bericht', taal: 'nl', beeld: [`reels/${code}.mp4`], tekst: tekstVan(code) });
   } else {
     const code = UITGEWERKT[u++ % UITGEWERKT.length];
-    items.push({ id: id(di, 'bericht'), datum: di, tijd: '20:00', soort: 'bericht', taal: 'nl', beeld: platenVan(code), tekst: tekstVan(code) });
+    week.push({ id: id(di, 'bericht'), datum: di, tijd: '20:00', soort: 'bericht', taal: 'nl', beeld: platenVan(code), tekst: tekstVan(code) });
   }
   // donderdag 11:00: een fotobericht over ons vak
   const doo = dag(ma, 3), code = FOTO_B[f++ % FOTO_B.length];
-  items.push({ id: id(doo, 'bericht'), datum: doo, tijd: '11:00', soort: 'bericht', taal: 'nl', beeld: [`berichten/nl/${code}.jpg`], tekst: tekstVan(code) });
+  week.push({ id: id(doo, 'bericht'), datum: doo, tijd: '11:00', soort: 'bericht', taal: 'nl', beeld: [`berichten/nl/${code}.jpg`], tekst: tekstVan(code) });
+
+  // verhalen: woensdag een tip; van de andere vier is er één van het merk
+  const gebruikt = new Set(week.map(i => bronVan(i.beeld[0])));
+  for (const [plus, tijd] of [[0, '07:00'], [1, '12:00'], [2, '19:00'], [3, '08:00'], [4, '16:00']]) {
+    const datum = dag(ma, plus);
+    let beeld;
+    if (plus === 2) beeld = TIP_V[t++ % TIP_V.length];
+    else if (slot++ % 4 === 2) beeld = MERK_V[m++ % MERK_V.length];
+    else {
+      let k = 0;
+      do { beeld = VAK_V[v++ % VAK_V.length]; } while (gebruikt.has(bronVan(beeld)) && ++k < VAK_V.length);
+      gebruikt.add(bronVan(beeld));
+    }
+    week.push({ id: id(datum, 'verhaal'), datum, tijd, soort: 'verhaal', taal: 'nl', beeld: [beeld] });
+  }
+  items.push(...week);
 }
 
 const alles = [...behouden, ...items].sort((a, b) => (a.datum + a.tijd).localeCompare(b.datum + b.tijd));

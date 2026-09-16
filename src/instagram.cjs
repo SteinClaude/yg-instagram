@@ -37,7 +37,9 @@ async function maakContainer(igId, token, velden) {
 }
 
 // Instagram haalt het beeld zelf op van het openbare adres; dat duurt even.
-async function wachtTotKlaar(containerId, token, seconden = 90) {
+// Bij video's vragen we minder vaak (Meta adviseert hooguit eens per minuut);
+// een foto is meestal binnen tien seconden klaar, een reel duurt een paar minuten.
+async function wachtTotKlaar(containerId, token, seconden = 90, interval = 3000) {
   const eind = Date.now() + seconden * 1000;
   let laatste = '';
   while (Date.now() < eind) {
@@ -47,7 +49,7 @@ async function wachtTotKlaar(containerId, token, seconden = 90) {
     if (status_code === 'ERROR' || status_code === 'EXPIRED') {
       throw new Error(`Instagram kon het beeld niet verwerken (${status_code}): ${status || 'geen toelichting'}`);
     }
-    await wacht(3000);
+    await wacht(interval);
   }
   throw new Error(`Instagram was na ${seconden} seconden nog niet klaar met het beeld (${laatste})`);
 }
@@ -87,19 +89,32 @@ async function plaatsVerhaal(igId, token, beeldUrl) {
   const c = await maakContainer(igId, token, isVideo
     ? { video_url: beeldUrl, media_type: 'STORIES' }
     : { image_url: beeldUrl, media_type: 'STORIES' });
-  await wachtTotKlaar(c, token, isVideo ? 300 : 90);
+  await wachtTotKlaar(c, token, isVideo ? 300 : 90, isVideo ? 10000 : 3000);
   return publiceer(igId, token, c);
 }
 
 // Een reel: staande video (MP4, H.264/AAC, 3 s tot 15 min). Instagram haalt hem
 // op en zet hem om; dat duurt langer dan bij een foto, vandaar de ruimere wachttijd.
-// share_to_feed zet hem ook in het raster van het profiel.
+// share_to_feed zet hem ook in het raster van het profiel. thumb_offset kiest de
+// omslag: op 9 seconden staat de eerste boodschap volledig in beeld (op frame 0
+// is er nog niets dan de foto).
+const OMSLAG_MS = 9000;
 async function plaatsReel(igId, token, videoUrl, bijschrift) {
   const c = await maakContainer(igId, token, {
-    media_type: 'REELS', video_url: videoUrl, caption: bijschrift, share_to_feed: 'true',
+    media_type: 'REELS', video_url: videoUrl, caption: bijschrift, share_to_feed: 'true', thumb_offset: OMSLAG_MS,
   });
-  await wachtTotKlaar(c, token, 300);
+  await wachtTotKlaar(c, token, 300, 10000);
   return publiceer(igId, token, c);
+}
+
+// Proefdraai zonder te publiceren: zet een reel-container klaar en wacht tot
+// Instagram hem heeft opgehaald en omgezet. Zo weten we vooraf of de video en
+// de bron-URL geaccepteerd worden. Een ongepubliceerde container vervalt na
+// een dag vanzelf en telt niet mee voor de daglimiet.
+async function proefVideo(igId, token, videoUrl) {
+  const c = await maakContainer(igId, token, { media_type: 'REELS', video_url: videoUrl, thumb_offset: OMSLAG_MS });
+  await wachtTotKlaar(c, token, 300, 10000);
+  return c;
 }
 
 // --- controles ---------------------------------------------------------------
@@ -136,5 +151,5 @@ async function vernieuwSleutel(token) {
 }
 
 module.exports = {
-  VERSIE, api, plaatsFoto, plaatsCarrousel, plaatsVerhaal, plaatsReel,
+  VERSIE, api, plaatsFoto, plaatsCarrousel, plaatsVerhaal, plaatsReel, proefVideo,
   wieBenIk, ruimteOver, vernieuwSleutel, wacht, recenteMedia };

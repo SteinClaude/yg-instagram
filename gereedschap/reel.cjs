@@ -99,7 +99,10 @@ async function bouw(r) {
     `[v1][k1]overlay=0:${rijs(T.kop1)}[v2]`,
     `[v2][s1]overlay=0:${rijs(T.sub1)}[v3]`,
     `[v3][k2]overlay=0:${rijs(T.kop2)}[v4]`,
-    `[v4][s2]overlay=0:${rijs(T.sub2)},fade=t=out:st=${T.einde}:d=0.7,format=yuv420p[v]`,
+    // Expliciet naar beperkt bereik en BT.709, anders vlagt x264 de video als
+    // full-range 601 (uit de PNG/JPEG-lagen) en loopt het zwart dicht bij spelers
+    // die 1080p als 709 aannemen. Instagram hercodeert alles, dus dat telt.
+    `[v4][s2]overlay=0:${rijs(T.sub2)},fade=t=out:st=${T.einde}:d=0.7,scale=out_range=tv:out_color_matrix=bt709,format=yuv420p[v]`,
   ].join(';');
 
   const mp4 = path.join(UIT, r.code + '.mp4');
@@ -108,12 +111,17 @@ async function bouw(r) {
   args.push('-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=48000',
     '-filter_complex', filter, '-map', '[v]', '-map', '6:a', '-t', String(DUUR), '-r', String(FPS),
     '-c:v', 'libx264', '-preset', 'slow', '-crf', '18', '-profile:v', 'high', '-level', '4.1', '-pix_fmt', 'yuv420p',
-    '-c:a', 'aac', '-b:a', '96k', '-movflags', '+faststart', mp4);
+    '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',
+    '-c:a', 'aac', '-b:a', '96k',
+    '-movflags', '+faststart', '-use_editlist', '0',          // Meta wil geen edit lists
+    mp4);
   execFileSync('ffmpeg', args, { stdio: 'inherit' });
 
-  // stilstaand beeld op 3 seconden, voor het dashboard; en het kleintje
+  // Stilstaand beeld op 9 seconden: dan staan kop én onderregel van de eerste
+  // boodschap in beeld. Zelfde moment als de omslag die Instagram kiest
+  // (thumb_offset in src/instagram.cjs), zodat dashboard en profiel gelijk zijn.
   const poster = path.join(UIT, r.code + '.jpg');
-  execFileSync('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error', '-ss', '3', '-i', mp4, '-frames:v', '1', '-q:v', '3', poster]);
+  execFileSync('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error', '-ss', '9', '-i', mp4, '-frames:v', '1', '-q:v', '3', poster]);
   await sharp(poster).resize({ width: 260 }).jpeg({ quality: 72 }).toFile(path.join(MINI, `reels-${r.code}.jpg`));
   const mb = Math.round(fs.statSync(mp4).size / 1024 / 1024 * 10) / 10;
   console.log(`${r.code}  ${r.beeld.padEnd(10)} ${mb} MB ✓`);
