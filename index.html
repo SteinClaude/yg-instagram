@@ -95,6 +95,13 @@
   .kolom .rij .pijl{display:none}
   .kolom .leeg{padding:8px 0 12px}
   @media (min-width:720px){ .kolom{flex-basis:300px} }
+  /* Deze week: dezelfde kaart, maar over de volle breedte en in te klappen. */
+  .kolom.vol{flex:none; max-width:none; width:100%; margin-top:22px}
+  details.kolom>summary{cursor:pointer; list-style:none; font-family:var(--serif); font-size:1rem; padding:10px 0 8px;
+      display:flex; justify-content:space-between; align-items:baseline; gap:10px}
+  details.kolom>summary::-webkit-details-marker{display:none}
+  details.kolom>summary .tel::after{content:"+"; color:var(--goud-tekst); margin-left:14px}
+  details.kolom[open]>summary .tel::after{content:"\2212"}
 
   .knop{display:inline-flex; align-items:center; justify-content:center; min-height:46px; font-family:var(--sans);
         font-size:.7rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--goud-tekst);
@@ -191,7 +198,7 @@
         <div><h1>Planning</h1><p class="sub" id="planningsub"></p></div>
         <a class="knop klein" id="nieuw" href="#" target="_blank" rel="noopener">Nieuw</a>
       </div>
-      <details class="week" id="dezeweekvak" open style="margin-top:22px">
+      <details class="kolom vol" id="dezeweekvak" open>
         <summary><span>Deze week</span><span class="tel" id="dezeweektel"></span></summary>
         <div id="dezeweek"></div>
       </details>
