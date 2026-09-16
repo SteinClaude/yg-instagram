@@ -36,17 +36,6 @@
    "titel": "Staat uw telefoonnummer op elke pagina"
   },
   {
-   "id": "2026-09-17-verhaal",
-   "datum": "2026-09-17",
-   "tijd": "08:00",
-   "soort": "verhaal",
-   "taal": "nl",
-   "beeld": [
-    "verhalen/nl/V02.jpg"
-   ],
-   "titel": "Vanaf 550 euro"
-  },
-  {
    "id": "2026-09-17-verhaal-2",
    "datum": "2026-09-17",
    "tijd": "09:00",
@@ -460,6 +449,17 @@
     "verhalen/nl/V37.jpg"
    ],
    "titel": "U vertelt, wij schrijven."
+  },
+  {
+   "id": "2026-10-10-verhaal",
+   "datum": "2026-10-10",
+   "tijd": "08:00",
+   "soort": "verhaal",
+   "taal": "nl",
+   "beeld": [
+    "verhalen/nl/V02.jpg"
+   ],
+   "titel": "Vanaf 550 euro"
   },
   {
    "id": "2026-10-12-verhaal",
