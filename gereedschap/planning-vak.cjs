@@ -69,6 +69,13 @@ const bronVan = pad => {
   return -1;
 };
 
+// De kopregel van elke verhaalplaat, zodat het dashboard niet alleen "Verhaal" zegt.
+const voorraad = require('../platen/voorraad.cjs');
+const TITEL = {};
+for (const x of voorraad.verhalen('nl')) { const mm = x.id.match(/^(V\d\d) - (.*)$/); if (mm) TITEL[mm[1]] = mm[2].replace(/^Tip, /, ''); }
+VAK.forEach((x, i) => { TITEL['V' + (27 + i)] = x.kop; });
+const titelVan = pad => { const mm = pad.match(/(V\d\d)\.jpg$/); return mm ? TITEL[mm[1]] : undefined; };
+
 const items = [];
 let v = 0, m = 0, t = 0, f = 0, r = 0, u = 0, slot = 0;
 for (let w = 0; w < WEKEN; w++) {
@@ -100,7 +107,7 @@ for (let w = 0; w < WEKEN; w++) {
       do { beeld = VAK_V[v++ % VAK_V.length]; } while (gebruikt.has(bronVan(beeld)) && ++k < VAK_V.length);
       gebruikt.add(bronVan(beeld));
     }
-    week.push({ id: id(datum, 'verhaal'), datum, tijd, soort: 'verhaal', taal: 'nl', beeld: [beeld] });
+    week.push({ id: id(datum, 'verhaal'), datum, tijd, soort: 'verhaal', taal: 'nl', beeld: [beeld], titel: titelVan(beeld) });
   }
   items.push(...week);
 }

@@ -267,7 +267,9 @@ const status = i => GEDAAN[i.id] ? GEDAAN[i.id].resultaat : (teLaat(i) ? 'onbeke
 const soortNaam = i => i.soort === 'verhaal' ? 'Verhaal'
   : isVideo((i.beeld || [])[0]) ? 'Reel' : ((i.beeld || []).length > 1 ? 'Carrousel' : 'Bericht');
 
+// Een verhaal heeft geen bijschrift; dan de kopregel van de plaat (titel), als die er is.
 function titelVan(i){
+  if (i.titel) return i.titel;
   if (i.tekst){ const r = i.tekst.split('\n').find(x => x.trim()); if (r) return r.trim(); }
   return i.soort === 'verhaal' ? 'Verhaal' : 'Bericht zonder tekst';
 }

@@ -10,7 +10,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V01.jpg"
-   ]
+   ],
+   "titel": "De entree van uw bedrijf"
   },
   {
    "id": "2026-09-15-verhaal",
@@ -20,7 +21,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V14.jpg"
-   ]
+   ],
+   "titel": "Voor de kapper om de hoek"
   },
   {
    "id": "2026-09-16-verhaal",
@@ -30,7 +32,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V07.jpg"
-   ]
+   ],
+   "titel": "Staat uw telefoonnummer op elke pagina"
   },
   {
    "id": "2026-09-17-verhaal",
@@ -40,7 +43,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V02.jpg"
-   ]
+   ],
+   "titel": "Vanaf 550 euro"
   },
   {
    "id": "2026-09-17-verhaal-2",
@@ -51,7 +55,8 @@
    "beeld": [
     "verhalen/nl/V30.jpg"
    ],
-   "eenmalig": true
+   "eenmalig": true,
+   "titel": "De entree van uw bedrijf."
   },
   {
    "id": "2026-09-17-verhaal-3",
@@ -62,7 +67,8 @@
    "beeld": [
     "verhalen/nl/V27.jpg"
    ],
-   "eenmalig": true
+   "eenmalig": true,
+   "titel": "Elke site begint aan een bureau als dit."
   },
   {
    "id": "2026-09-17-bericht",
@@ -84,7 +90,8 @@
    "beeld": [
     "verhalen/nl/V28.jpg"
    ],
-   "eenmalig": true
+   "eenmalig": true,
+   "titel": "Eerst op papier."
   },
   {
    "id": "2026-09-17-verhaal-5",
@@ -95,7 +102,8 @@
    "beeld": [
     "verhalen/nl/V29.jpg"
    ],
-   "eenmalig": true
+   "eenmalig": true,
+   "titel": "Zo ziet de meeste klant u."
   },
   {
    "id": "2026-09-17-verhaal-6",
@@ -106,7 +114,8 @@
    "beeld": [
     "verhalen/nl/V31.jpg"
    ],
-   "eenmalig": true
+   "eenmalig": true,
+   "titel": "Soms is een app de betere entree."
   },
   {
    "id": "2026-09-17-verhaal-7",
@@ -117,7 +126,8 @@
    "beeld": [
     "verhalen/nl/V32.jpg"
    ],
-   "eenmalig": true
+   "eenmalig": true,
+   "titel": "Snel, veilig en zonder gedoe."
   },
   {
    "id": "2026-09-17-verhaal-8",
@@ -128,7 +138,8 @@
    "beeld": [
     "verhalen/nl/V33.jpg"
    ],
-   "eenmalig": true
+   "eenmalig": true,
+   "titel": "Herkenbaar, tot in de voettekst."
   },
   {
    "id": "2026-09-17-verhaal-9",
@@ -139,7 +150,8 @@
    "beeld": [
     "verhalen/nl/V34.jpg"
    ],
-   "eenmalig": true
+   "eenmalig": true,
+   "titel": "U spreekt altijd dezelfde persoon."
   },
   {
    "id": "2026-09-17-verhaal-10",
@@ -150,7 +162,8 @@
    "beeld": [
     "verhalen/nl/V35.jpg"
    ],
-   "eenmalig": true
+   "eenmalig": true,
+   "titel": "Wat goed gebouwd is, loopt vanzelf."
   },
   {
    "id": "2026-09-17-verhaal-11",
@@ -161,7 +174,8 @@
    "beeld": [
     "verhalen/nl/V36.jpg"
    ],
-   "eenmalig": true
+   "eenmalig": true,
+   "titel": "Uw klanten zijn ook om elf uur ’s avonds online."
   },
   {
    "id": "2026-09-17-verhaal-12",
@@ -172,7 +186,8 @@
    "beeld": [
     "verhalen/nl/V37.jpg"
    ],
-   "eenmalig": true
+   "eenmalig": true,
+   "titel": "U vertelt, wij schrijven."
   },
   {
    "id": "2026-09-17-verhaal-13",
@@ -183,7 +198,8 @@
    "beeld": [
     "verhalen/nl/V38.jpg"
    ],
-   "eenmalig": true
+   "eenmalig": true,
+   "titel": "Een voordeur die vertrouwen geeft."
   },
   {
    "id": "2026-09-18-bericht",
@@ -205,7 +221,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V30.jpg"
-   ]
+   ],
+   "titel": "De entree van uw bedrijf."
   },
   {
    "id": "2026-09-21-verhaal",
@@ -215,7 +232,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V28.jpg"
-   ]
+   ],
+   "titel": "Eerst op papier."
   },
   {
    "id": "2026-09-22-verhaal",
@@ -225,7 +243,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V29.jpg"
-   ]
+   ],
+   "titel": "Zo ziet de meeste klant u."
   },
   {
    "id": "2026-09-22-bericht",
@@ -246,7 +265,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V07.jpg"
-   ]
+   ],
+   "titel": "Staat uw telefoonnummer op elke pagina"
   },
   {
    "id": "2026-09-24-verhaal",
@@ -256,7 +276,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V01.jpg"
-   ]
+   ],
+   "titel": "De entree van uw bedrijf"
   },
   {
    "id": "2026-09-24-bericht",
@@ -277,7 +298,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V31.jpg"
-   ]
+   ],
+   "titel": "Soms is een app de betere entree."
   },
   {
    "id": "2026-09-28-verhaal",
@@ -287,7 +309,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V32.jpg"
-   ]
+   ],
+   "titel": "Snel, veilig en zonder gedoe."
   },
   {
    "id": "2026-09-29-verhaal",
@@ -297,7 +320,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V33.jpg"
-   ]
+   ],
+   "titel": "Herkenbaar, tot in de voettekst."
   },
   {
    "id": "2026-09-29-bericht",
@@ -324,7 +348,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V08.jpg"
-   ]
+   ],
+   "titel": "Open uw eigen site eens op uw telefoon"
   },
   {
    "id": "2026-10-01-verhaal",
@@ -334,7 +359,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V02.jpg"
-   ]
+   ],
+   "titel": "Vanaf 550 euro"
   },
   {
    "id": "2026-10-01-bericht",
@@ -355,7 +381,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V34.jpg"
-   ]
+   ],
+   "titel": "U spreekt altijd dezelfde persoon."
   },
   {
    "id": "2026-10-05-verhaal",
@@ -365,7 +392,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V35.jpg"
-   ]
+   ],
+   "titel": "Wat goed gebouwd is, loopt vanzelf."
   },
   {
    "id": "2026-10-06-verhaal",
@@ -375,7 +403,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V36.jpg"
-   ]
+   ],
+   "titel": "Uw klanten zijn ook om elf uur ’s avonds online."
   },
   {
    "id": "2026-10-06-bericht",
@@ -396,7 +425,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V09.jpg"
-   ]
+   ],
+   "titel": "Één knop per pagina"
   },
   {
    "id": "2026-10-08-verhaal",
@@ -406,7 +436,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V03.jpg"
-   ]
+   ],
+   "titel": "Uw eerste ontwerp is gratis"
   },
   {
    "id": "2026-10-08-bericht",
@@ -427,7 +458,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V37.jpg"
-   ]
+   ],
+   "titel": "U vertelt, wij schrijven."
   },
   {
    "id": "2026-10-12-verhaal",
@@ -437,7 +469,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V38.jpg"
-   ]
+   ],
+   "titel": "Een voordeur die vertrouwen geeft."
   },
   {
    "id": "2026-10-13-verhaal",
@@ -447,7 +480,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V27.jpg"
-   ]
+   ],
+   "titel": "Elke site begint aan een bureau als dit."
   },
   {
    "id": "2026-10-13-bericht",
@@ -468,7 +502,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V10.jpg"
-   ]
+   ],
+   "titel": "Kloppen uw openingstijden nog"
   },
   {
    "id": "2026-10-15-verhaal",
@@ -478,7 +513,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V04.jpg"
-   ]
+   ],
+   "titel": "Ons werk, Ordepartner"
   },
   {
    "id": "2026-10-15-bericht",
@@ -499,7 +535,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V28.jpg"
-   ]
+   ],
+   "titel": "Eerst op papier."
   },
   {
    "id": "2026-10-19-verhaal",
@@ -509,7 +546,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V30.jpg"
-   ]
+   ],
+   "titel": "De entree van uw bedrijf."
   },
   {
    "id": "2026-10-20-verhaal",
@@ -519,7 +557,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V32.jpg"
-   ]
+   ],
+   "titel": "Snel, veilig en zonder gedoe."
   },
   {
    "id": "2026-10-20-bericht",
@@ -540,7 +579,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V11.jpg"
-   ]
+   ],
+   "titel": "Home zegt Google niets"
   },
   {
    "id": "2026-10-22-verhaal",
@@ -550,7 +590,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V05.jpg"
-   ]
+   ],
+   "titel": "Ons werk, onze eigen site"
   },
   {
    "id": "2026-10-22-bericht",
@@ -571,7 +612,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V33.jpg"
-   ]
+   ],
+   "titel": "Herkenbaar, tot in de voettekst."
   },
   {
    "id": "2026-10-26-verhaal",
@@ -581,7 +623,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V34.jpg"
-   ]
+   ],
+   "titel": "U spreekt altijd dezelfde persoon."
   },
   {
    "id": "2026-10-27-verhaal",
@@ -591,7 +634,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V35.jpg"
-   ]
+   ],
+   "titel": "Wat goed gebouwd is, loopt vanzelf."
   },
   {
    "id": "2026-10-27-bericht",
@@ -614,7 +658,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V12.jpg"
-   ]
+   ],
+   "titel": "Elke tel wachten kost bezoekers"
   },
   {
    "id": "2026-10-29-verhaal",
@@ -624,7 +669,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V06.jpg"
-   ]
+   ],
+   "titel": "Op de telefoon"
   },
   {
    "id": "2026-10-29-bericht",
@@ -645,7 +691,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V36.jpg"
-   ]
+   ],
+   "titel": "Uw klanten zijn ook om elf uur ’s avonds online."
   },
   {
    "id": "2026-11-02-verhaal",
@@ -655,7 +702,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V37.jpg"
-   ]
+   ],
+   "titel": "U vertelt, wij schrijven."
   },
   {
    "id": "2026-11-03-verhaal",
@@ -665,7 +713,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V38.jpg"
-   ]
+   ],
+   "titel": "Een voordeur die vertrouwen geeft."
   },
   {
    "id": "2026-11-03-bericht",
@@ -686,7 +735,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V13.jpg"
-   ]
+   ],
+   "titel": "Een website is nooit af"
   },
   {
    "id": "2026-11-05-verhaal",
@@ -696,7 +746,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V01.jpg"
-   ]
+   ],
+   "titel": "De entree van uw bedrijf"
   },
   {
    "id": "2026-11-05-bericht",
@@ -717,7 +768,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V28.jpg"
-   ]
+   ],
+   "titel": "Eerst op papier."
   },
   {
    "id": "2026-11-09-verhaal",
@@ -727,7 +779,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V29.jpg"
-   ]
+   ],
+   "titel": "Zo ziet de meeste klant u."
   },
   {
    "id": "2026-11-10-verhaal",
@@ -737,7 +790,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V30.jpg"
-   ]
+   ],
+   "titel": "De entree van uw bedrijf."
   },
   {
    "id": "2026-11-10-bericht",
@@ -758,7 +812,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V07.jpg"
-   ]
+   ],
+   "titel": "Staat uw telefoonnummer op elke pagina"
   },
   {
    "id": "2026-11-12-verhaal",
@@ -768,7 +823,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V02.jpg"
-   ]
+   ],
+   "titel": "Vanaf 550 euro"
   },
   {
    "id": "2026-11-12-bericht",
@@ -789,7 +845,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V31.jpg"
-   ]
+   ],
+   "titel": "Soms is een app de betere entree."
   },
   {
    "id": "2026-11-16-verhaal",
@@ -799,7 +856,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V33.jpg"
-   ]
+   ],
+   "titel": "Herkenbaar, tot in de voettekst."
   },
   {
    "id": "2026-11-17-verhaal",
@@ -809,7 +867,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V34.jpg"
-   ]
+   ],
+   "titel": "U spreekt altijd dezelfde persoon."
   },
   {
    "id": "2026-11-17-bericht",
@@ -830,7 +889,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V08.jpg"
-   ]
+   ],
+   "titel": "Open uw eigen site eens op uw telefoon"
   },
   {
    "id": "2026-11-19-verhaal",
@@ -840,7 +900,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V03.jpg"
-   ]
+   ],
+   "titel": "Uw eerste ontwerp is gratis"
   },
   {
    "id": "2026-11-19-bericht",
@@ -861,7 +922,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V36.jpg"
-   ]
+   ],
+   "titel": "Uw klanten zijn ook om elf uur ’s avonds online."
   },
   {
    "id": "2026-11-23-verhaal",
@@ -871,7 +933,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V37.jpg"
-   ]
+   ],
+   "titel": "U vertelt, wij schrijven."
   },
   {
    "id": "2026-11-24-verhaal",
@@ -881,7 +944,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V38.jpg"
-   ]
+   ],
+   "titel": "Een voordeur die vertrouwen geeft."
   },
   {
    "id": "2026-11-24-bericht",
@@ -902,7 +966,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V09.jpg"
-   ]
+   ],
+   "titel": "Één knop per pagina"
   },
   {
    "id": "2026-11-26-verhaal",
@@ -912,7 +977,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V04.jpg"
-   ]
+   ],
+   "titel": "Ons werk, Ordepartner"
   },
   {
    "id": "2026-11-26-bericht",
@@ -933,7 +999,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V27.jpg"
-   ]
+   ],
+   "titel": "Elke site begint aan een bureau als dit."
   },
   {
    "id": "2026-11-30-verhaal",
@@ -943,7 +1010,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V28.jpg"
-   ]
+   ],
+   "titel": "Eerst op papier."
   },
   {
    "id": "2026-12-01-verhaal",
@@ -953,7 +1021,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V29.jpg"
-   ]
+   ],
+   "titel": "Zo ziet de meeste klant u."
   },
   {
    "id": "2026-12-01-bericht",
@@ -974,7 +1043,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V10.jpg"
-   ]
+   ],
+   "titel": "Kloppen uw openingstijden nog"
   },
   {
    "id": "2026-12-03-verhaal",
@@ -984,7 +1054,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V05.jpg"
-   ]
+   ],
+   "titel": "Ons werk, onze eigen site"
   },
   {
    "id": "2026-12-03-bericht",
@@ -1005,7 +1076,8 @@
    "taal": "nl",
    "beeld": [
     "verhalen/nl/V30.jpg"
-   ]
+   ],
+   "titel": "De entree van uw bedrijf."
   }
  ]
 }
