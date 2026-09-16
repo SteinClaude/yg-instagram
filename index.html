@@ -3,6 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#141414">
+<link rel="manifest" href="app/manifest.webmanifest">
+<link rel="icon" href="app/icoon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="app/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="YG Instagram">
 <title>Instagram-planning · YG Digital</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@400;500;600&display=swap">
 <style>
@@ -85,6 +92,15 @@
   .knop:hover{background:var(--goud); color:var(--grond)}
   .knop.stil{border-color:var(--lijn); color:var(--ink-zacht)}
   .knop.stil:hover{background:var(--lijn-zacht); color:var(--ink)}
+  /* Op de telefoon moet een knop onder een duim passen: minimaal 44 pixels hoog. */
+  @media (max-width:560px){
+    .knop{font-size:.78rem; padding:12px 16px; min-height:44px; display:inline-flex; align-items:center; justify-content:center}
+    .acties .knop{flex:1 1 40%}
+  }
+  .uitleg{font-size:.8rem; color:var(--ink-flauw); margin:0; line-height:1.5}
+  .installeer{margin:14px 0 0; padding:12px 16px; border:1px dashed var(--lijn); border-radius:3px;
+              font-size:.84rem; color:var(--ink-zacht); display:flex; gap:12px; align-items:center; justify-content:space-between}
+  .installeer b{color:var(--ink); font-weight:600}
   .paneel{grid-column:1/-1; border:1px solid var(--lijn); border-radius:4px; background:var(--verhoog);
           padding:16px; margin:4px 0 10px; display:grid; gap:14px}
   .bijschrift{white-space:pre-wrap; font-size:.86rem; line-height:1.6; color:var(--ink-zacht); max-height:240px; overflow:auto}
@@ -103,9 +119,10 @@
   <h1>Wat er op Instagram verschijnt</h1>
   <p class="zacht" style="max-width:62ch">Deze pagina leest rechtstreeks de planning en het logboek uit,
     dus wat je hier ziet is de werkelijke stand. Wil je iets veranderen, dan doe je dat zelf met de
-    knop <em>Wijzig</em> — dat gaat vanzelf door in de planning.</p>
+    knoppen onder <em>Bekijk</em> — dat gaat vanzelf door in de planning.</p>
   <div id="melding"></div>
   <div class="status" id="status"><span class="pil">bezig met laden…</span></div>
+  <div id="installeer"></div>
 </header>
 
 <div class="scheiding"><span class="ruit"></span></div>
@@ -126,10 +143,10 @@
 </section>
 
 <div class="let-op">
-  <strong>Hoe wijzigen werkt.</strong> Je vult een klein formulier in op GitHub: welk item, en of het
-  overgeslagen, verzet of van tekst veranderd moet worden. Binnen een minuut is de planning aangepast
-  en krijg je een antwoord onder je melding. Je hoeft daarvoor niets te installeren; je moet wel
-  ingelogd zijn op GitHub.
+  <strong>Hoe wijzigen werkt.</strong> Klik bij een item op <em>Bekijk</em> en kies Overslaan, Verzetten
+  of Tekst wijzigen. Er opent een kort formulier op GitHub met alles al ingevuld; één keer inloggen,
+  dan op Submit. Binnen een minuut is de planning aangepast en krijg je daar een antwoord. Je hoeft
+  niets te installeren.
 </div>
 
 <footer id="voet"></footer>
@@ -161,10 +178,13 @@ function titelVan(i){
   const naam = i.beeld[0].replace(/\.jpg$/,'').split('/').pop();
   return i.soort === 'verhaal' ? 'Verhaal ' + naam : naam;
 }
-function wijzigLink(i){
+// Opent het wijzigformulier met alles al ingevuld. De actie gaat mee, zodat de
+// keuzelijst daar al goed staat en er alleen nog op Submit gedrukt hoeft te worden.
+function wijzigLink(i, actie){
   return 'https://github.com/' + REPO + '/issues/new?template=wijziging.yml&labels=wijziging'
     + '&title=' + encodeURIComponent('Wijziging ' + i.id)
-    + '&item=' + encodeURIComponent(i.id);
+    + '&item=' + encodeURIComponent(i.id)
+    + (actie ? '&actie=' + encodeURIComponent(actie) : '');
 }
 
 async function haal(naam, standaard){
@@ -182,6 +202,7 @@ async function haal(naam, standaard){
     haal('status.json', null)
   ]);
   tekenMelding(stand);
+  tekenInstalleer();
 
   if (!planning || !planning.items){
     document.getElementById('status').innerHTML =
@@ -218,6 +239,26 @@ function ritme(items){
 
 // Laat zien hoe de automaat eraan toe is. Zonder dit moest je in de logboeken van
 // GitHub kijken om te merken dat het plaatsen stilstond.
+// Op een telefoon: nodig uit om de pagina op het beginscherm te zetten, dan opent
+// hij als app. Eén keer wegklikken is genoeg; daarna zeurt hij niet meer.
+function tekenInstalleer(){
+  const vak = document.getElementById('installeer');
+  if (!vak) return;
+  const alsApp = (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true;
+  const mobiel = /iPhone|iPad|Android/i.test(navigator.userAgent);
+  let weg = false; try { weg = localStorage.getItem('installeer-weg') === '1'; } catch(e){}
+  if (alsApp || !mobiel || weg) return;
+  const ios = /iPhone|iPad/i.test(navigator.userAgent);
+  vak.innerHTML = '<div class="installeer"><div><b>Zet dit op je beginscherm</b>, dan opent het als een app. '
+    + (ios ? 'Tik onderaan op Delen en dan op <em>Zet op beginscherm</em>.'
+           : 'Tik op de drie puntjes en dan op <em>Toevoegen aan startscherm</em>.')
+    + '</div><button type="button" class="knop stil" id="installeer-weg">Oké</button></div>';
+  document.getElementById('installeer-weg').onclick = () => {
+    try { localStorage.setItem('installeer-weg', '1'); } catch(e){}
+    vak.innerHTML = '';
+  };
+}
+
 function tekenMelding(stand){
   const vak = document.getElementById('melding');
   if (!vak || !stand || stand.stand === 'in orde') { if (vak) vak.innerHTML = ''; return; }
@@ -316,14 +357,19 @@ function tekenRij(i){
     const t = document.createElement('div');
     if (i.tekst){ t.className='bijschrift'; t.textContent = i.tekst; }
     else { t.className='zacht'; t.style.fontSize='.86rem'; t.textContent='Een verhaal heeft geen bijschrift; de tekst staat op de plaat zelf.'; }
+    // Een verhaal heeft geen bijschrift, dus daar is 'Tekst wijzigen' niet bij.
     const a = document.createElement('div'); a.className='acties';
-    const wijzig = document.createElement('a'); wijzig.className='knop'; wijzig.href = wijzigLink(i);
-    wijzig.target='_blank'; wijzig.rel='noopener'; wijzig.textContent='Wijzig';
-    const nummer = document.createElement('span'); nummer.className='zacht';
-    nummer.style.cssText='font-size:.74rem;align-self:center';
-    nummer.textContent = i.id;
-    a.append(wijzig, nummer);
-    paneel.append(t, a);
+    const keuzes = i.soort === 'verhaal'
+      ? ['Overslaan', 'Verzetten']
+      : ['Overslaan', 'Verzetten', 'Tekst wijzigen'];
+    for (const keuze of keuzes){
+      const k = document.createElement('a'); k.className='knop'; k.href = wijzigLink(i, keuze);
+      k.target='_blank'; k.rel='noopener'; k.textContent = keuze;
+      a.appendChild(k);
+    }
+    const uitleg = document.createElement('p'); uitleg.className='uitleg';
+    uitleg.textContent = 'Opent een kort formulier met alles al ingevuld. Eén keer inloggen op GitHub, dan op Submit. Binnen een minuut is het doorgevoerd.';
+    paneel.append(t, a, uitleg);
     rij.after(paneel); knop.textContent='Sluit';
   });
   return rij;

@@ -1,0 +1,17 @@
+{
+  "name": "YG Digital · Instagram",
+  "short_name": "YG Instagram",
+  "description": "Wat er op @ygdigital.nl verschijnt, en of de automaat het goed doet.",
+  "lang": "nl",
+  "start_url": "../?bron=app",
+  "scope": "../",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#141414",
+  "theme_color": "#141414",
+  "icons": [
+    { "src": "icoon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icoon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icoon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
