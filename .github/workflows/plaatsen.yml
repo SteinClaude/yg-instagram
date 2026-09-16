@@ -32,21 +32,34 @@ jobs:
           REPO_RAW: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
         run: node src/plaatsen.cjs
 
-      # sleutel.json hoort hier ook bij: daarin staat sinds wanneer de huidige
-      # sleutel in gebruik is. Werd dat niet vastgelegd, dan begon de teller elke
-      # run opnieuw op nul en ging de waarschuwing bij twaalf dagen nooit af.
+      # Deze stap mag NOOIT klappen. Gebeurt dat toch, dan wordt gedaan.json niet
+      # bewaard, denkt de volgende run dat er nog niets geplaatst is en gaat
+      # hetzelfde bericht er nog een keer uit - elk uur opnieuw. Dat is op
+      # 15 september 2026 gebeurd: "git add sleutel.json" viel over een bestand
+      # dat er niet altijd is, en twee items zijn zesmaal geplaatst.
       - name: Bijhouden wat geplaatst is
         if: always()
         run: |
-          if [ -n "$(git status --porcelain gedaan.json sleutel.json)" ]; then
-            git config user.name  "YG plaatser"
-            git config user.email "actions@users.noreply.github.com"
-            git add gedaan.json sleutel.json
-            git commit -m "geplaatst op $(TZ=Europe/Amsterdam date '+%d-%m-%Y %H:%M')"
-            git push
-          else
+          bestanden=""
+          for f in gedaan.json sleutel.json; do
+            [ -f "$f" ] && bestanden="$bestanden $f"
+          done
+          if [ -z "$bestanden" ] || [ -z "$(git status --porcelain $bestanden)" ]; then
             echo "niets nieuws om te bewaren"
+            exit 0
           fi
+          git config user.name  "YG plaatser"
+          git config user.email "actions@users.noreply.github.com"
+          git add $bestanden
+          git commit -m "geplaatst op $(TZ=Europe/Amsterdam date '+%d-%m-%Y %H:%M')"
+          # opnieuw proberen als er ondertussen iets anders is gepusht
+          for poging in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "push mislukt, poging $poging; eerst ophalen"
+            git pull --rebase --autostash || true
+            sleep 3
+          done
+          echo "kon het logboek niet wegschrijven; volgende run probeert het opnieuw"
 
       - name: Waarschuwen als de sleutel bijna verloopt
         if: always()
