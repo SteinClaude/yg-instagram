@@ -91,6 +91,14 @@ async function plaatsVerhaal(igId, token, beeldUrl) {
 // --- controles ---------------------------------------------------------------
 
 // Werkt de sleutel nog? Geeft de accountnaam terug, of gooit een leesbare fout.
+// Wat er de laatste tijd echt op het account staat. Gebruiken we als extra slot:
+// mocht het logboek een keer niet bewaard worden, dan plaatsen we niet nog eens
+// hetzelfde. Verhalen zitten hier niet in; die vervallen toch na een dag.
+async function recenteMedia(igId, token, aantal = 25) {
+  const r = await api(`/${igId}/media`, { fields: 'id,caption,timestamp', limit: aantal, access_token: token });
+  return r.data || [];
+}
+
 async function wieBenIk(igId, token) {
   const a = await api(`/${igId}`, { fields: 'id,username', access_token: token });
   return a.username;
@@ -115,5 +123,4 @@ async function vernieuwSleutel(token) {
 
 module.exports = {
   VERSIE, api, plaatsFoto, plaatsCarrousel, plaatsVerhaal,
-  wieBenIk, ruimteOver, vernieuwSleutel, wacht,
-};
+  wieBenIk, ruimteOver, vernieuwSleutel, wacht, recenteMedia };

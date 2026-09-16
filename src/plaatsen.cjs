@@ -89,7 +89,22 @@ function main() {
   return plaatsAlles(aanDeBeurt, gedaan, nu);
 }
 
+// Hoe lang we terugkijken op het account om te zien of een bericht er al staat.
+const SLOTUREN = 18;
+
 async function plaatsAlles(items, gedaan, nu) {
+  // Extra slot naast het logboek. Is gedaan.json een keer niet bewaard - zoals op
+  // 15 september 2026 gebeurde - dan zou hetzelfde bericht er nog eens uitgaan.
+  // Daarom eerst vragen wat er werkelijk op het account staat. Verhalen zitten
+  // hier niet in; die vervallen na een dag en zijn via de API niet op te vragen.
+  let opHetAccount = [];
+  if (!PROEF && items.some(i => i.soort === 'bericht')) {
+    try { opHetAccount = await IG.recenteMedia(IG_ID, TOKEN, 25); }
+    catch (fout) { console.log('Kon niet opvragen wat er al staat: ' + fout.message); }
+  }
+  const eersteRegel = s => String(s || '').split(String.fromCharCode(10))[0].trim();
+  const kortgeleden = w => Date.now() - Date.parse(w) < SLOTUREN * 3600 * 1000;
+
   for (const item of items) {
     const urls = item.beeld.map(b => `${RAW}/beeld/${b}`);
     const wat = `${item.soort} ${item.taal.toUpperCase()} ${item.id}`;
@@ -97,6 +112,16 @@ async function plaatsAlles(items, gedaan, nu) {
     for (const u of urls) console.log(`   beeld: ${u.replace(RAW, '…')}`);
 
     if (PROEF) { console.log('   (proefdraai: niet echt geplaatst)'); continue; }
+
+    if (item.soort === 'bericht') {
+      const staatEral = opHetAccount.find(m => kortgeleden(m.timestamp) && eersteRegel(m.caption) === eersteRegel(item.tekst));
+      if (staatEral) {
+        console.log(`   staat al op het account sinds ${staatEral.timestamp}; niet nog een keer`);
+        gedaan.items.push({ id: item.id, wanneer: `${nu.datum} ${nu.tijd}`, resultaat: 'stond er al', mediaId: staatEral.id });
+        fs.writeFileSync(GEDAAN, JSON.stringify(gedaan, null, 1));
+        continue;
+      }
+    }
 
     try {
       let mediaId;
