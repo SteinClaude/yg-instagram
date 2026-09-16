@@ -18,11 +18,15 @@ const ANTWOORD = path.join(WORTEL, 'antwoord.txt');
 const BEELD = path.join(WORTEL, 'beeld');
 const MINI = path.join(WORTEL, 'mini');
 
-const body = process.env.ISSUE_BODY || '';
+const body = (process.env.ISSUE_BODY || '').replace(/\r\n?/g, '\n');
 
-// GitHub-formulieren leveren de tekst aan als "### Kopje\n\nwaarde".
+// GitHub-formulieren leveren de tekst aan als "### Kopje\n\nwaarde". Een veld
+// loopt tot het volgende kopje dat wij kennen, zodat een "### " in een
+// bijschrift de tekst niet afkapt.
+const KOPJES = ['Welk item', 'Wat moet er gebeuren', 'Nieuwe datum', 'Nieuwe tekst', 'Nieuwe foto',
+  'Wat wordt het', 'Datum', 'Tijd', 'Foto', 'Tekst eronder'];
 function veld(kopje) {
-  const re = new RegExp('###\\s*' + kopje + '\\s*\\n+([\\s\\S]*?)(?=\\n###|$)', 'i');
+  const re = new RegExp('###\\s*' + kopje + '\\s*\\n+([\\s\\S]*?)(?=\\n###\\s*(?:' + KOPJES.join('|') + ')\\s*\\n|$)', 'i');
   const m = body.match(re);
   if (!m) return '';
   const v = m[1].trim();
@@ -32,6 +36,12 @@ function veld(kopje) {
 const DAGEN = ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'];
 const MAANDEN = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
 const netjes = s => { const d = new Date(s + 'T12:00:00Z'); return `${DAGEN[d.getUTCDay()]} ${d.getUTCDate()} ${MAANDEN[d.getUTCMonth()]}`; };
+// "2026-09-31" wordt door Date stilzwijgend 1 oktober; daarom heen en terug vergelijken.
+const geldigeDatum = s => {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) return false;
+  const d = new Date(s + 'T12:00:00Z');
+  return !isNaN(d) && d.toISOString().slice(0, 10) === s;
+};
 
 function nuInAmsterdam() {
   const d = new Intl.DateTimeFormat('nl-NL', {
@@ -86,8 +96,10 @@ async function haalFoto(url) {
 async function fotoVerwerken(buf, item) {
   const sharp = require('sharp');
   const [breed, hoog] = item.soort === 'verhaal' ? [1080, 1920] : [1080, 1350];
-  const stempel = nuInAmsterdam().replace(/[^0-9]/g, '');
-  const naam = `eigen/${item.datum}-${item.soort}-${stempel}.jpg`;
+  // Het id in de naam (uniek per item) plus een stempel tot op de seconde, zodat
+  // een nieuwe foto nooit dezelfde naam krijgt als de vorige (browsers cachen).
+  const stempel = nuInAmsterdam().replace(/[^0-9]/g, '') + String(new Date().getSeconds()).padStart(2, '0');
+  const naam = `eigen/${item.id}-${stempel}.jpg`;
   fs.mkdirSync(path.join(BEELD, 'eigen'), { recursive: true });
   fs.mkdirSync(MINI, { recursive: true });
 
@@ -104,7 +116,7 @@ async function fotoVerwerken(buf, item) {
     .toFile(path.join(MINI, naam.replace(/\//g, '-')));
 
   for (const oud of item.beeld || []) {
-    if (!oud.startsWith('eigen/')) continue;
+    if (!oud.startsWith('eigen/') || oud === naam) continue;
     for (const p of [path.join(BEELD, oud), path.join(MINI, oud.replace(/\//g, '-'))]) {
       if (fs.existsSync(p)) fs.unlinkSync(p);
     }
@@ -143,8 +155,8 @@ async function wijzig() {
   }
 
   if (actie.startsWith('verzetten')) {
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(datum) || isNaN(Date.parse(datum))) {
-      klaar(false, 'Om te verzetten heb ik een datum nodig bij **Nieuwe datum**, geschreven als `2026-10-05`.');
+    if (!geldigeDatum(datum)) {
+      klaar(false, 'Om te verzetten heb ik een bestaande datum nodig bij **Nieuwe datum**, geschreven als `2026-10-05`.');
     }
     if (`${datum} ${item.tijd}` < nuInAmsterdam()) {
       klaar(false, `${netjes(datum)} om ${item.tijd} is al voorbij. Kies een datum die nog komt.`);
@@ -192,8 +204,8 @@ async function nieuw() {
   let tijd = veld('Tijd').trim() || (soort === 'bericht' ? '20:00' : '12:00');
   const tekst = veld('Tekst eronder').trim();
 
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(datum) || isNaN(Date.parse(datum))) {
-    klaar(false, 'Ik heb een datum nodig bij **Datum**, geschreven als `2026-10-05`.');
+  if (!geldigeDatum(datum)) {
+    klaar(false, 'Ik heb een bestaande datum nodig bij **Datum**, geschreven als `2026-10-05`.');
   }
   const mt = tijd.match(/^(\d{1,2})[:.](\d{2})$/);
   if (!mt || +mt[1] > 23 || +mt[2] > 59) klaar(false, `Ik begrijp de tijd "${tijd}" niet. Schrijf hem als 20:00.`);

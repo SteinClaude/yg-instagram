@@ -3,7 +3,7 @@
   "short_name": "YG Instagram",
   "description": "Wat er op @ygdigital.nl verschijnt, en of de automaat het goed doet.",
   "lang": "nl",
-  "start_url": "../?bron=app",
+  "start_url": "../",
   "scope": "../",
   "display": "standalone",
   "orientation": "portrait",

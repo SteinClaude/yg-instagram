@@ -20,9 +20,12 @@ jobs:
     # En alleen als de eigenaar van de repo het instuurt: de repo is openbaar, dus
     # iedereen met een GitHub-account kan het formulier openen. Dat mag niet
     # doorwerken in de planning.
+    # En alleen zolang de melding open staat: een bewerking van een al afgehandelde
+    # melding zou anders nog eens uitgevoerd worden (en een nieuw item dubbel zetten).
     if: >-
       (contains(github.event.issue.body, 'Welk item') || contains(github.event.issue.body, 'Wat wordt het'))
       && github.event.issue.user.login == github.repository_owner
+      && github.event.issue.state == 'open'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -48,20 +51,28 @@ jobs:
             git config user.email "actions@users.noreply.github.com"
             git add planning.json beeld mini
             git commit -m "wijziging uit melding #${{ github.event.issue.number }}"
+            gepusht=nee
             for poging in 1 2 3; do
-              if git push; then break; fi
+              if git push; then gepusht=ja; break; fi
               git pull --rebase --autostash || true
               sleep 3
             done
-            echo "gelukt=ja" >> $GITHUB_ENV
+            echo "gelukt=$gepusht" >> $GITHUB_ENV
+            if [ "$gepusht" = "nee" ]; then
+              printf 'Het bewaren op GitHub is niet gelukt. Probeer het over een paar minuten opnieuw door de melding bij te werken.' > antwoord.txt
+            fi
           else
             echo "gelukt=nee" >> $GITHUB_ENV
           fi
 
+      # Altijd antwoorden, ook als een eerdere stap omviel: anders blijft de melding
+      # stil openstaan en lijkt het of er niets is aangekomen.
       - name: Antwoorden onder de melding
+        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          [ -f antwoord.txt ] || printf 'Er ging iets mis in de automaat. Probeer het over een paar minuten opnieuw door de melding bij te werken.' > antwoord.txt
           gh issue comment ${{ github.event.issue.number }} --body-file antwoord.txt
           if [ "$gelukt" = "ja" ]; then
             gh issue close ${{ github.event.issue.number }} --reason completed
@@ -72,6 +83,7 @@ jobs:
     if: >-
       (contains(github.event.issue.body, 'Welk item') || contains(github.event.issue.body, 'Wat wordt het'))
       && github.event.issue.user.login != github.repository_owner
+      && github.event.issue.state == 'open'
     runs-on: ubuntu-latest
     steps:
       - name: Melding sluiten

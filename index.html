@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#141414">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F6F1E8">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141414">
 <link rel="manifest" href="app/manifest.webmanifest">
 <link rel="icon" href="app/icoon-192.png" type="image/png">
 <link rel="apple-touch-icon" href="app/apple-touch-icon.png">
@@ -63,7 +64,7 @@
   /* Eén regel per item. De hele regel is de knop; er is niets anders om op te tikken. */
   .rij{display:grid; grid-template-columns:46px 1fr auto; gap:14px; align-items:center; width:100%;
        padding:12px 0; border:0; border-top:1px solid var(--lijn-zacht); background:none; text-align:left; cursor:pointer}
-  .rij img{width:46px; border-radius:2px; border:1px solid var(--lijn-zacht); display:block; background:var(--verhoog)}
+  .rij img{width:46px; height:58px; object-fit:cover; border-radius:2px; border:1px solid var(--lijn-zacht); display:block; background:var(--verhoog)}
   .wanneer{font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--goud-tekst)}
   .titel{font-weight:500; margin-top:2px; line-height:1.4; overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical}
   .rij.voorbij .titel{color:var(--ink-flauw); font-weight:400}
@@ -81,15 +82,15 @@
   .tel{font-family:var(--sans); font-size:.72rem; color:var(--ink-flauw); letter-spacing:.06em; white-space:nowrap}
 
   /* Weken naast elkaar: schuiven in plaats van scrollen, dan blijft de pagina kort. */
-  .strook{display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none;
-          margin:0 -20px; padding:2px 20px 8px}
-  .strook::-webkit-scrollbar{display:none}
+  .strook{display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; margin:0 -20px; padding:2px 20px 8px}
+  /* Op een aanraakscherm is de schuifbalk overbodig; met een muis is hij de enige aanwijzing. */
+  @media (hover:none){ .strook{scrollbar-width:none} .strook::-webkit-scrollbar{display:none} }
   .kolom{flex:0 0 78%; max-width:320px; scroll-snap-align:start; border:1px solid var(--lijn-zacht); border-radius:4px;
          background:var(--kaart); padding:4px 14px 6px}
   .kolom h3{font-family:var(--serif); font-weight:400; font-size:1rem; margin:0; padding:10px 0 8px;
             display:flex; justify-content:space-between; align-items:baseline; gap:10px}
   .kolom .rij{grid-template-columns:36px 1fr; gap:10px; padding:9px 0}
-  .kolom .rij img{width:36px}
+  .kolom .rij img{width:36px; height:45px}
   .kolom .rij .titel{-webkit-line-clamp:1; font-size:.9rem}
   .kolom .rij .recht{grid-column:2; justify-self:start; margin-top:-2px}
   .kolom .rij .pijl{display:none}
@@ -143,7 +144,8 @@
   .bijschrift{white-space:pre-wrap; font-size:.9rem; line-height:1.6; color:var(--ink); margin:0}
   .toestand:not(:empty) + #velinhoud .bijschrift{margin-top:12px}
   .acties{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:24px}
-  .acties .knop{width:100%}
+  .acties .knop{width:100%; white-space:normal; letter-spacing:.08em; padding-left:8px; padding-right:8px}
+  @media (max-width:359px){ .acties{grid-template-columns:1fr} }
   .noot{font-size:.78rem; color:var(--ink-flauw); margin:12px 0 0; line-height:1.5}
   @media (min-width:720px){
     .vel{background:rgba(0,0,0,.5); padding:40px 20px}
@@ -215,7 +217,7 @@
   </main>
 </div>
 
-<div class="vel" id="vel" aria-modal="true" role="dialog">
+<div class="vel" id="vel" aria-modal="true" role="dialog" aria-labelledby="velwanneer">
   <div class="vel-kader">
     <div class="vel-kop">
       <span class="wanneer" id="velwanneer"></span>
@@ -244,16 +246,23 @@ function nuAmsterdam(){
     .reduce((a,p)=>(a[p.type]=p.value,a),{});
   return d.year+'-'+d.month+'-'+d.day+' '+d.hour+':'+d.minute;
 }
-const NU = nuAmsterdam();
-const VANDAAG = NU.slice(0,10);
+let NU = nuAmsterdam(), VANDAAG = NU.slice(0,10);
+// Een moment uit het logboek ("2026-09-16 19:11") in dezelfde vorm als de rest.
+const moment = w => /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}/.test(String(w)) ? kort(w.slice(0,10)) + ' · ' + w.slice(11,16) : String(w || '');
 
 let ITEMS = [], GEDAAN = {}, LOGBOEK = [], STAND = null, SLEUTEL = null;
 const TABS = ['vandaag','planning','hulp'];
 const mini = b => 'mini/' + b.replace(/\//g,'-');
 const groot = b => 'beeld/' + b;
+// Hoe lang de automaat zelf nog inhaalt (INHAALUREN in src/plaatsen.cjs). Tot die
+// tijd is een item dat over zijn tijd is gewoon aan de beurt, geen mislukking:
+// de automaat draait pas om vijf over het uur.
+const INHAALMINUTEN = 6 * 60;
+const minuten = s => { const [d, t] = s.split(' '); const [j, m, dd] = d.split('-').map(Number); const [u, mi] = t.split(':').map(Number); return Date.UTC(j, m - 1, dd, u, mi) / 60000; };
 const voorbij = i => (i.datum + ' ' + i.tijd) < NU;
-const status = i => GEDAAN[i.id] ? GEDAAN[i.id].resultaat : (voorbij(i) ? 'onbekend' : 'wacht');
-const soortNaam = i => i.soort === 'verhaal' ? 'Verhaal' : (i.beeld.length > 1 ? 'Carrousel' : 'Bericht');
+const teLaat = i => minuten(NU) - minuten(i.datum + ' ' + i.tijd) > INHAALMINUTEN;
+const status = i => GEDAAN[i.id] ? GEDAAN[i.id].resultaat : (teLaat(i) ? 'onbekend' : 'wacht');
+const soortNaam = i => i.soort === 'verhaal' ? 'Verhaal' : ((i.beeld || []).length > 1 ? 'Carrousel' : 'Bericht');
 
 function titelVan(i){
   if (i.tekst){ const r = i.tekst.split('\n').find(x => x.trim()); if (r) return r.trim(); }
@@ -281,23 +290,37 @@ async function haal(naam, standaard){
   }catch(e){ return standaard; }
 }
 
-(async () => {
-  document.getElementById('nieuw').href = nieuwLink();
-  zetTabsOp();
+// Haalt alles op en tekent alles opnieuw. Ook bij terugkeren naar de app: op het
+// beginscherm blijft de pagina dagenlang leven, en dan moeten klok en stand mee.
+let LAATST = 0;
+async function laad(){
+  NU = nuAmsterdam(); VANDAAG = NU.slice(0,10); LAATST = Date.now();
   const [planning, gedaan, stand, sleutel] = await Promise.all([
     haal('planning.json', null), haal('gedaan.json', {items:[]}), haal('status.json', null), haal('sleutel.json', null)
   ]);
   STAND = stand; SLEUTEL = sleutel;
   tekenStand(); tekenMelding(); tekenInstalleer();
-  if (!planning || !planning.items){
+  if (!planning || !Array.isArray(planning.items)){
     document.getElementById('vandaagkop').textContent = 'De planning kon niet geladen worden';
     return;
   }
-  ITEMS = planning.items;
-  LOGBOEK = gedaan.items || [];
-  for (const g of LOGBOEK) GEDAAN[g.id] = g;
-  tekenVandaag(); tekenPlanning(); tekenHulp();
-})();
+  ITEMS = planning.items.filter(i => i && i.datum && i.tijd);
+  LOGBOEK = (gedaan && Array.isArray(gedaan.items)) ? gedaan.items : [];
+  GEDAAN = {}; for (const g of LOGBOEK) GEDAAN[g.id] = g;
+  try { tekenVandaag(); tekenPlanning(); tekenHulp(); }
+  catch (e) { document.getElementById('vandaagkop').textContent = 'De planning kon niet getoond worden'; console.error(e); }
+}
+function ververs(){
+  if (document.visibilityState === 'visible' && Date.now() - LAATST > 30000 && !VEL_OPEN) laad();
+}
+document.addEventListener('visibilitychange', ververs);
+window.addEventListener('pageshow', ververs);
+setInterval(ververs, 5 * 60 * 1000);
+
+document.getElementById('nieuw').href = nieuwLink();
+if (history.state && history.state.vel) history.replaceState(null, '');   // na verversen met open scherm
+zetTabsOp();
+laad();
 
 // --- tabbladen ---------------------------------------------------------------
 function toonTab(naam){
@@ -305,7 +328,11 @@ function toonTab(naam){
   for (const t of TABS){
     document.getElementById('tab-' + t).classList.toggle('actief', t === naam);
   }
-  for (const k of document.querySelectorAll('#tabs button')) k.classList.toggle('actief', k.dataset.tab === naam);
+  for (const k of document.querySelectorAll('#tabs button')){
+    const actief = k.dataset.tab === naam;
+    k.classList.toggle('actief', actief);
+    if (actief) k.setAttribute('aria-current', 'page'); else k.removeAttribute('aria-current');
+  }
   history.replaceState(history.state, '', naam === 'vandaag' ? location.pathname : '#' + naam);
   window.scrollTo(0, 0);
 }
@@ -328,10 +355,14 @@ function tekenMelding(){
   const vak = document.getElementById('melding');
   if (!STAND || STAND.stand === 'in orde'){ vak.innerHTML = ''; return; }
   const kop = STAND.stand === 'staat stil' ? 'Het plaatsen staat stil' : 'De automaat is nog niet ingesteld';
-  vak.innerHTML = '<div class="melding"><b>' + kop + '</b>'
-    + '<p>' + String(STAND.bericht || '').replace(/[<>]/g, '') + '</p>'
-    + '<p>Er gaat niets verloren: de planning blijft staan en gaat vanzelf verder zodra dit is opgelost.</p>'
-    + (STAND.sinds ? '<small>zo sinds ' + STAND.sinds + '</small>' : '') + '</div>';
+  vak.innerHTML = '';
+  const m = document.createElement('div'); m.className = 'melding';
+  const b = document.createElement('b'); b.textContent = kop;
+  const p1 = document.createElement('p'); p1.textContent = String(STAND.bericht || '');
+  const p2 = document.createElement('p'); p2.textContent = 'Er gaat niets verloren: de planning blijft staan en gaat vanzelf verder zodra dit is opgelost.';
+  m.append(b, p1, p2);
+  if (STAND.sinds){ const s = document.createElement('small'); s.textContent = 'zo sinds ' + moment(STAND.sinds); m.appendChild(s); }
+  vak.appendChild(m);
 }
 
 // Op een telefoon, niet als app: één keer uitnodigen om hem op het beginscherm te zetten.
@@ -358,20 +389,24 @@ function rechtsVan(i){
   if (st === 'stond er al') return ['Geplaatst', 'ok'];
   if (st === 'overgeslagen') return ['Overgeslagen', 'mis'];
   if (st === 'onbekend') return ['Niet gelukt', 'mis'];
+  if (voorbij(i)) return ['Aan de beurt', ''];
   return ['', ''];
 }
 
+// opties.kort: in een kolom; dan zonder het soort in de regel erboven, anders
+// breekt "carrousel" over twee regels.
 function rij(i, opties){
   opties = opties || {};
   const st = status(i);
   const b = document.createElement('button'); b.type = 'button';
   b.className = 'rij' + (st !== 'wacht' ? ' voorbij' : '');
-  const img = document.createElement('img'); img.src = mini(i.beeld[0]); img.alt = ''; img.loading = 'lazy';
+  const b0 = (i.beeld || [])[0];
+  const img = document.createElement('img'); if (b0) img.src = mini(b0); img.alt = ''; img.loading = 'lazy';
   const midden = document.createElement('div');
   // Bij een verhaal is de titel al "Verhaal"; dan niet nog eens in de regel erboven.
   const wanneer = document.createElement('div'); wanneer.className = 'wanneer';
-  wanneer.textContent = (opties.wanneer || (kort(i.datum) + ' · ' + i.tijd))
-    + (i.soort === 'verhaal' ? '' : ' · ' + soortNaam(i).toLowerCase());
+  wanneer.textContent = kort(i.datum) + ' · ' + i.tijd
+    + (i.soort === 'verhaal' || opties.kort ? '' : ' · ' + soortNaam(i).toLowerCase());
   const titel = document.createElement('div'); titel.className = 'titel'; titel.textContent = titelVan(i);
   midden.append(wanneer, titel);
   const [tekst, klasse] = rechtsVan(i);
@@ -379,8 +414,8 @@ function rij(i, opties){
   if (tekst){ recht.className = 'recht ' + klasse; recht.textContent = tekst; }
   else { recht.className = 'pijl'; recht.textContent = '›'; }
   b.append(img, midden, recht);
-  b.setAttribute('aria-label', soortNaam(i) + ' ' + kort(i.datum) + ' ' + i.tijd + ', ' + titelVan(i));
-  b.addEventListener('click', () => openVel(i));
+  b.setAttribute('aria-label', soortNaam(i) + ' ' + kort(i.datum) + ' ' + i.tijd + ', ' + titelVan(i) + (tekst ? ', ' + tekst.toLowerCase() : ''));
+  b.addEventListener('click', () => openVel(i, b));
   return b;
 }
 
@@ -393,10 +428,10 @@ function vul(houder, lijst, leegTekst, opties){
 // --- Vandaag -----------------------------------------------------------------
 function tekenVandaag(){
   document.getElementById('vandaagkop').textContent = lang(VANDAAG);
-  const over = ITEMS.filter(i => !GEDAAN[i.id] && !voorbij(i)).length;
+  const over = ITEMS.filter(i => status(i) === 'wacht').length;
   const laatste = ITEMS[ITEMS.length - 1];
   document.getElementById('vandaagsub').textContent = over
-    ? over + ' items gepland tot ' + lang(laatste.datum)
+    ? over + (over === 1 ? ' item' : ' items') + ' gepland tot ' + lang(laatste.datum)
     : 'De planning is afgelopen.';
   vul('vandaag', ITEMS.filter(i => i.datum === VANDAAG), 'Vandaag staat er niets gepland.', { });
   vul('daarna', ITEMS.filter(i => i.datum > VANDAAG && !GEDAAN[i.id]).slice(0, 6), 'Er komt niets meer aan. Vraag Claude om een nieuwe reeks.');
@@ -430,7 +465,7 @@ function logRij(g){
   const wanneer = document.createElement('div'); wanneer.className = 'wanneer';
   wanneer.textContent = m ? kort(m[1]) + (m[2] === 'bericht' ? ' · bericht' : '') : String(g.id);
   const titel = document.createElement('div'); titel.className = 'titel';
-  titel.textContent = m ? (m[2] === 'verhaal' ? 'Verhaal' : 'Bericht') + ', daarna verzet' : 'Onbekend item';
+  titel.textContent = m ? (m[2] === 'verhaal' ? 'Verhaal' : 'Bericht') + ', niet meer in de planning' : 'Onbekend item';
   const midden = document.createElement('div'); midden.append(wanneer, titel);
   const recht = document.createElement('span'); recht.className = 'recht ' + (g.resultaat === 'geplaatst' ? 'ok' : 'mis');
   recht.textContent = g.resultaat === 'geplaatst' ? 'Geplaatst' : 'Overgeslagen';
@@ -439,18 +474,21 @@ function logRij(g){
 }
 
 function tekenPlanning(){
-  const over = ITEMS.filter(i => !GEDAAN[i.id] && !voorbij(i)).length;
+  const over = ITEMS.filter(i => status(i) === 'wacht').length;
   document.getElementById('planningsub').textContent = over + ' nog te gaan';
   const dezeWeek = weekVan(VANDAAG);
 
   // Deze week: uitklapbaar, en of hij dicht stond onthouden we.
   const vak = document.getElementById('dezeweekvak');
-  try { if (localStorage.getItem('dezeweek-dicht') === '1') vak.open = false; } catch(e){}
-  vak.addEventListener('toggle', () => { try { localStorage.setItem('dezeweek-dicht', vak.open ? '0' : '1'); } catch(e){} });
+  if (!vak.dataset.klaar){
+    vak.dataset.klaar = '1';
+    try { if (localStorage.getItem('dezeweek-dicht') === '1') vak.open = false; } catch(e){}
+    vak.addEventListener('toggle', () => { try { localStorage.setItem('dezeweek-dicht', vak.open ? '0' : '1'); } catch(e){} });
+  }
   const dw = ITEMS.filter(i => weekVan(i.datum) === dezeWeek);
   const dwHouder = document.getElementById('dezeweek'); dwHouder.innerHTML = '';
   if (!dw.length) dwHouder.innerHTML = '<p class="leeg">Deze week staat er niets gepland.</p>';
-  for (const i of dw) dwHouder.appendChild(rij(i));
+  for (const i of dw) dwHouder.appendChild(rij(i, { kort: true }));
   const dwOver = dw.filter(i => status(i) === 'wacht').length;
   document.getElementById('dezeweektel').textContent = dw.length ? dwOver + ' te gaan' : '';
 
@@ -459,20 +497,20 @@ function tekenPlanning(){
   for (const i of ITEMS){
     const w = weekVan(i.datum); if (w <= dezeWeek) continue;
     if (!komend.has(w)) komend.set(w, []);
-    komend.get(w).push(rij(i));
+    komend.get(w).push(rij(i, { kort: true }));
   }
-  document.getElementById('komendtel').textContent = komend.size ? komend.size + ' weken' : '';
+  document.getElementById('komendtel').textContent = komend.size ? (komend.size === 1 ? '1 week' : komend.size + ' weken') : '';
   strook('komend', [...komend], 'Er komt niets meer aan. Vraag Claude om een nieuwe reeks.');
 
-  // Geplaatst: alles wat geweest is, nieuwste week eerst. Ook de regels uit het
-  // logboek waarvan het item niet meer in de planning staat.
+  // Geplaatst: de weken vóór deze week, nieuwste eerst (deze week staat al boven).
+  // Plus de regels uit het logboek waarvan het item niet meer in de planning staat.
   const perId = {}; for (const i of ITEMS) perId[i.id] = i;
   const geweest = new Map();
   const voeg = (w, el) => { if (!geweest.has(w)) geweest.set(w, []); geweest.get(w).push(el); };
   for (const i of ITEMS){
-    if (status(i) === 'wacht') continue;
-    const g = GEDAAN[i.id];
-    voeg(weekVan(i.datum), rij(i, { wanneer: g && g.wanneer ? g.wanneer.slice(8,10) + '-' + g.wanneer.slice(5,7) + ' ' + g.wanneer.slice(11) : undefined }));
+    const w = weekVan(i.datum);
+    if (w >= dezeWeek || status(i) === 'wacht') continue;
+    voeg(w, rij(i, { kort: true }));
   }
   for (const g of LOGBOEK){
     if (perId[g.id]) continue;
@@ -481,7 +519,7 @@ function tekenPlanning(){
   }
   const geplaatst = LOGBOEK.filter(g => g.resultaat === 'geplaatst' || g.resultaat === 'stond er al').length;
   document.getElementById('gedaantel').textContent = geplaatst ? geplaatst + ' geplaatst' : '';
-  strook('gedaan', [...geweest].sort((a, b) => b[0].localeCompare(a[0])), 'Er is nog niets geplaatst.');
+  strook('gedaan', [...geweest].sort((a, b) => b[0].localeCompare(a[0])), 'Nog geen eerdere weken.');
 }
 
 // --- Hulp --------------------------------------------------------------------
@@ -527,19 +565,20 @@ function tekenHulp(){
 
 // --- het detailscherm --------------------------------------------------------
 const VEL = document.getElementById('vel');
-let VEL_OPEN = false;
+let VEL_OPEN = false, VEL_VAN = null;   // VEL_VAN: de regel waar het vandaan kwam, voor de focus
 
-function openVel(i){
+function openVel(i, van){
   document.getElementById('velwanneer').textContent = soortNaam(i) + ' · ' + kort(i.datum) + ' · ' + i.tijd;
   const beeld = document.getElementById('velbeeld'); beeld.innerHTML = '';
-  for (const b of i.beeld){ const img = document.createElement('img'); img.src = groot(b); img.alt = ''; beeld.appendChild(img); }
+  for (const b of (i.beeld || [])){ const img = document.createElement('img'); img.src = groot(b); img.alt = ''; beeld.appendChild(img); }
   // De toestand alleen als er iets over te zeggen is; "gepland" staat al in de kop.
   const st = status(i), toestand = document.getElementById('veltoestand');
   const g = GEDAAN[i.id];
   toestand.className = 'toestand'; toestand.textContent = '';
-  if (st === 'geplaatst' || st === 'stond er al'){ toestand.classList.add('ok'); toestand.textContent = 'Geplaatst' + (g && g.wanneer ? ' op ' + g.wanneer : ''); }
-  else if (st === 'overgeslagen'){ toestand.classList.add('mis'); toestand.textContent = 'Overgeslagen' + (g && g.wanneer ? ' op ' + g.wanneer : ''); }
+  if (st === 'geplaatst' || st === 'stond er al'){ toestand.classList.add('ok'); toestand.textContent = 'Geplaatst' + (g && g.wanneer ? ' op ' + moment(g.wanneer) : ''); }
+  else if (st === 'overgeslagen'){ toestand.classList.add('mis'); toestand.textContent = 'Overgeslagen' + (g && g.wanneer ? ' op ' + moment(g.wanneer) : ''); }
   else if (st === 'onbekend'){ toestand.classList.add('mis'); toestand.textContent = 'Niet gelukt'; }
+  else if (voorbij(i)) toestand.textContent = 'Aan de beurt; de automaat plaatst het binnen het uur';
 
   const inhoud = document.getElementById('velinhoud'); inhoud.innerHTML = '';
   if (i.tekst){ const t = document.createElement('div'); t.className = 'bijschrift'; t.textContent = i.tekst; inhoud.appendChild(t); }
@@ -560,9 +599,11 @@ function openVel(i){
     inhoud.append(a, noot);
   }
 
-  VEL.classList.add('open'); VEL_OPEN = true;
+  VEL.classList.add('open'); VEL_OPEN = true; VEL_VAN = van || null;
   document.body.style.overflow = 'hidden';
+  document.querySelector('.app').inert = true;
   VEL.scrollTop = 0;
+  document.getElementById('velsluit').focus();
   history.pushState({ vel: i.id }, '');
 }
 
@@ -572,6 +613,8 @@ function sluitVel(viaTerug){
   if (!VEL_OPEN) return;
   VEL.classList.remove('open'); VEL_OPEN = false;
   document.body.style.overflow = '';
+  document.querySelector('.app').inert = false;
+  if (VEL_VAN && VEL_VAN.isConnected) VEL_VAN.focus();
   if (!viaTerug && history.state && history.state.vel) history.back();
 }
 document.getElementById('velsluit').addEventListener('click', () => sluitVel(false));
