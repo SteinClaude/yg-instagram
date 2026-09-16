@@ -17,7 +17,10 @@ jobs:
   wijzigen:
     # Herkent het formulier aan de inhoud, niet aan een label: GitHub kent het label
     # van een formuliersjabloon niet altijd toe.
-    if: contains(github.event.issue.body, 'Welk item')
+    # En alleen als de eigenaar van de repo het instuurt: de repo is openbaar, dus
+    # iedereen met een GitHub-account kan het formulier openen. Dat mag niet
+    # doorwerken in de planning.
+    if: contains(github.event.issue.body, 'Welk item') && github.event.issue.user.login == github.repository_owner
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -52,3 +55,17 @@ jobs:
           if [ "$gelukt" = "ja" ]; then
             gh issue close ${{ github.event.issue.number }} --reason completed
           fi
+
+  # Formulier van iemand anders: niet uitvoeren, wel netjes dichtdoen zodat het opvalt.
+  afwijzen:
+    if: contains(github.event.issue.body, 'Welk item') && github.event.issue.user.login != github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Melding sluiten
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          NUMMER: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$NUMMER" --body 'Alleen de eigenaar van deze planning kan wijzigingen doorvoeren. Deze melding is niet uitgevoerd.'
+          gh issue close "$NUMMER" --reason 'not planned'
