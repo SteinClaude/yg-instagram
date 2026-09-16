@@ -42,7 +42,7 @@ const lees = (bestand, standaard) => {
   try { return JSON.parse(fs.readFileSync(bestand, 'utf8')); } catch { return standaard; }
 };
 
-function main() {
+async function main() {
   // Nog niet ingesteld is geen fout: dan is stap 5 uit LEESMIJ.md gewoon nog niet
   // gedaan. We stoppen netjes, zodat je geen foutmelding per uur krijgt.
   if (!TOKEN || !IG_ID) {
@@ -54,6 +54,33 @@ function main() {
   if (!RAW && !PROEF) {
     console.error(rood('REPO_RAW ontbreekt.') + ' Dat is het openbare adres waar Instagram de platen ophaalt.');
     process.exit(1);
+  }
+
+  // Eerst vragen of de sleutel het doet. Zo niet, dan heeft plaatsen geen zin en
+  // stoppen we netjes: de melding staat er al, en elk uur een rode run erbij
+  // levert alleen een postvak vol op. Zodra de sleutel weer werkt, gaat het
+  // vanzelf verder.
+  if (!PROEF) {
+    try {
+      const naam = await IG.wieBenIk(IG_ID, TOKEN);
+      console.log(`Sleutel werkt, account @${naam}.`);
+    } catch (fout) {
+      console.error(rood('De sleutel wordt geweigerd: ') + fout.message);
+      console.log('Er wordt niets geplaatst zolang dit niet is opgelost.');
+      fs.writeFileSync(WAARSCHUWING, [
+        'De Instagram-sleutel werkt niet meer.',
+        '',
+        fout.message,
+        '',
+        'Haal een nieuwe op (LEESMIJ.md, stap 3) en zet hem bij',
+        'Settings > Secrets and variables > Actions > IG_TOKEN.',
+        '',
+        'Zolang dit niet is opgelost plaatst de automaat niets, en blijft de',
+        'planning gewoon staan. Er gaat dus niets verloren.',
+        '',
+      ].join('\n'));
+      return;
+    }
   }
 
   const planning = lees(PLANNING, { items: [] });
