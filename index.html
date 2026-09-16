@@ -57,6 +57,7 @@
   .sub{color:var(--ink-flauw); font-size:.8rem; margin:4px 0 0}
   .koprij{display:flex; justify-content:space-between; align-items:flex-start; gap:14px}
   .kopje{font-size:.66rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--goud-tekst); margin:28px 0 6px}
+  .kopje.koprij{align-items:baseline; margin-bottom:10px}
   .leeg{color:var(--ink-flauw); font-size:.9rem; padding:12px 0}
 
   /* Eén regel per item. De hele regel is de knop; er is niets anders om op te tikken. */
@@ -70,15 +71,30 @@
   .recht.ok{color:var(--gedaan)} .recht.mis{color:var(--let-op)}
   .pijl{color:var(--ink-flauw); font-size:1.2rem; line-height:1}
 
-  details.week{border-top:1px solid var(--lijn-zacht)}
+  details.week{border-top:1px solid var(--lijn-zacht); border-bottom:1px solid var(--lijn-zacht)}
   details.week>summary{cursor:pointer; padding:14px 0; font-family:var(--serif); font-size:1.05rem;
       display:flex; justify-content:space-between; align-items:baseline; gap:12px; list-style:none}
   details.week>summary::-webkit-details-marker{display:none}
-  details.week>summary::after{content:"+"; color:var(--goud-tekst); font-family:var(--sans)}
-  details.week[open]>summary::after{content:"\2212"}
+  details.week>summary .tel::after{content:"+"; color:var(--goud-tekst); margin-left:14px}
+  details.week[open]>summary .tel::after{content:"\2212"}
   details.week .rij{padding-left:0}
-  .tel{font-family:var(--sans); font-size:.72rem; color:var(--ink-flauw); letter-spacing:.06em}
-  details.week.geweest>summary{color:var(--ink-flauw)}
+  .tel{font-family:var(--sans); font-size:.72rem; color:var(--ink-flauw); letter-spacing:.06em; white-space:nowrap}
+
+  /* Weken naast elkaar: schuiven in plaats van scrollen, dan blijft de pagina kort. */
+  .strook{display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none;
+          margin:0 -20px; padding:2px 20px 8px}
+  .strook::-webkit-scrollbar{display:none}
+  .kolom{flex:0 0 78%; max-width:320px; scroll-snap-align:start; border:1px solid var(--lijn-zacht); border-radius:4px;
+         background:var(--kaart); padding:4px 14px 6px}
+  .kolom h3{font-family:var(--serif); font-weight:400; font-size:1rem; margin:0; padding:10px 0 8px;
+            display:flex; justify-content:space-between; align-items:baseline; gap:10px}
+  .kolom .rij{grid-template-columns:36px 1fr; gap:10px; padding:9px 0}
+  .kolom .rij img{width:36px}
+  .kolom .rij .titel{-webkit-line-clamp:1; font-size:.9rem}
+  .kolom .rij .recht{grid-column:2; justify-self:start; margin-top:-2px}
+  .kolom .rij .pijl{display:none}
+  .kolom .leeg{padding:8px 0 12px}
+  @media (min-width:720px){ .kolom{flex-basis:300px} }
 
   .knop{display:inline-flex; align-items:center; justify-content:center; min-height:46px; font-family:var(--sans);
         font-size:.7rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--goud-tekst);
@@ -155,7 +171,6 @@
   <nav class="tabs" id="tabs">
     <button type="button" data-tab="vandaag" class="actief">Vandaag</button>
     <button type="button" data-tab="planning">Planning</button>
-    <button type="button" data-tab="gedaan">Geplaatst</button>
     <button type="button" data-tab="hulp">Hulp</button>
   </nav>
 
@@ -176,13 +191,14 @@
         <div><h1>Planning</h1><p class="sub" id="planningsub"></p></div>
         <a class="knop klein" id="nieuw" href="#" target="_blank" rel="noopener">Nieuw</a>
       </div>
-      <div id="weken" style="margin-top:22px"></div>
-    </section>
-
-    <section class="tab" id="tab-gedaan">
-      <h1>Geplaatst</h1>
-      <p class="sub" id="gedaansub"></p>
-      <div id="gedaan" style="margin-top:22px"></div>
+      <details class="week" id="dezeweekvak" open style="margin-top:22px">
+        <summary><span>Deze week</span><span class="tel" id="dezeweektel"></span></summary>
+        <div id="dezeweek"></div>
+      </details>
+      <div class="kopje koprij"><span>Komende weken</span><span class="tel" id="komendtel"></span></div>
+      <div class="strook" id="komend"></div>
+      <div class="kopje koprij"><span>Geplaatst</span><span class="tel" id="gedaantel"></span></div>
+      <div class="strook" id="gedaan"></div>
     </section>
 
     <section class="tab hulp" id="tab-hulp">
@@ -225,7 +241,7 @@ const NU = nuAmsterdam();
 const VANDAAG = NU.slice(0,10);
 
 let ITEMS = [], GEDAAN = {}, LOGBOEK = [], STAND = null, SLEUTEL = null;
-const TABS = ['vandaag','planning','gedaan','hulp'];
+const TABS = ['vandaag','planning','hulp'];
 const mini = b => 'mini/' + b.replace(/\//g,'-');
 const groot = b => 'beeld/' + b;
 const voorbij = i => (i.datum + ' ' + i.tijd) < NU;
@@ -273,7 +289,7 @@ async function haal(naam, standaard){
   ITEMS = planning.items;
   LOGBOEK = gedaan.items || [];
   for (const g of LOGBOEK) GEDAAN[g.id] = g;
-  tekenVandaag(); tekenPlanning(); tekenGedaan(); tekenHulp();
+  tekenVandaag(); tekenPlanning(); tekenHulp();
 })();
 
 // --- tabbladen ---------------------------------------------------------------
@@ -381,53 +397,84 @@ function tekenVandaag(){
 
 // --- Planning ----------------------------------------------------------------
 function weekVan(d){ const x = dat(d); x.setUTCDate(x.getUTCDate() - ((x.getUTCDay()+6)%7)); return x.toISOString().slice(0,10); }
+const weekNaam = start => 'Week van ' + kort(start).slice(3);
+
+// Een kolom per week, naast elkaar te schuiven.
+function kolom(start, lijst){
+  const k = document.createElement('div'); k.className = 'kolom';
+  const h = document.createElement('h3');
+  h.innerHTML = '<span>' + weekNaam(start) + '</span><span class="tel">' + lijst.length + '</span>';
+  k.appendChild(h);
+  for (const el of lijst) k.appendChild(el);
+  return k;
+}
+
+function strook(houder, weken, leegTekst){
+  const h = document.getElementById(houder); h.innerHTML = '';
+  if (!weken.length){ h.innerHTML = '<p class="leeg">' + leegTekst + '</p>'; return; }
+  for (const [start, lijst] of weken) h.appendChild(kolom(start, lijst));
+}
+
+// Een regel uit het logboek waarvan het item niet meer in de planning staat
+// (bijvoorbeeld daarna verzet): alleen wat het nummer nog verraadt.
+function logRij(g){
+  const m = String(g.id).match(/^(\d{4}-\d{2}-\d{2})-(verhaal|bericht)/);
+  const p = document.createElement('div'); p.className = 'rij voorbij'; p.style.cursor = 'default';
+  const wanneer = document.createElement('div'); wanneer.className = 'wanneer';
+  wanneer.textContent = m ? kort(m[1]) + (m[2] === 'bericht' ? ' · bericht' : '') : String(g.id);
+  const titel = document.createElement('div'); titel.className = 'titel';
+  titel.textContent = m ? (m[2] === 'verhaal' ? 'Verhaal' : 'Bericht') + ', daarna verzet' : 'Onbekend item';
+  const midden = document.createElement('div'); midden.append(wanneer, titel);
+  const recht = document.createElement('span'); recht.className = 'recht ' + (g.resultaat === 'geplaatst' ? 'ok' : 'mis');
+  recht.textContent = g.resultaat === 'geplaatst' ? 'Geplaatst' : 'Overgeslagen';
+  p.append(document.createElement('span'), midden, recht);
+  return p;
+}
 
 function tekenPlanning(){
   const over = ITEMS.filter(i => !GEDAAN[i.id] && !voorbij(i)).length;
   document.getElementById('planningsub').textContent = over + ' nog te gaan';
-  const houder = document.getElementById('weken'); houder.innerHTML = '';
-  const weken = new Map();
-  for (const i of ITEMS){ const w = weekVan(i.datum); if (!weken.has(w)) weken.set(w, []); weken.get(w).push(i); }
   const dezeWeek = weekVan(VANDAAG);
-  for (const [start, lijst] of weken){
-    const d = document.createElement('details'); d.className = 'week';
-    const open = lijst.filter(i => !GEDAAN[i.id] && !voorbij(i)).length;
-    if (!open) d.classList.add('geweest');
-    if (start === dezeWeek || (start > dezeWeek && open && !houder.querySelector('details[open]') && dezeWeek < start && !weken.has(dezeWeek))) d.open = true;
-    const s = document.createElement('summary');
-    s.innerHTML = '<span>' + (start === dezeWeek ? 'Deze week' : 'Week van ' + kort(start)) + '</span>'
-      + '<span class="tel">' + lijst.length + (open ? '' : ' · geweest') + '</span>';
-    d.appendChild(s);
-    for (const i of lijst) d.appendChild(rij(i));
-    houder.appendChild(d);
-  }
-}
 
-// --- Geplaatst ---------------------------------------------------------------
-function tekenGedaan(){
-  const perId = {}; for (const i of ITEMS) perId[i.id] = i;
-  const geplaatst = LOGBOEK.filter(g => g.resultaat === 'geplaatst' || g.resultaat === 'stond er al').length;
-  document.getElementById('gedaansub').textContent = geplaatst + ' geplaatst';
-  const h = document.getElementById('gedaan'); h.innerHTML = '';
-  const lijst = LOGBOEK.slice().reverse();
-  if (!lijst.length){ h.innerHTML = '<p class="leeg">Er is nog niets geplaatst.</p>'; return; }
-  for (const g of lijst){
-    const i = perId[g.id];
-    if (i){ h.appendChild(rij(i, { wanneer: g.wanneer ? g.wanneer.slice(5,10).split('-').reverse().join('-') + ' ' + g.wanneer.slice(11) : kort(i.datum) })); continue; }
-    // Het item staat niet meer in de planning (bijvoorbeeld daarna verzet): alleen
-    // wat het logboek nog weet, en dat is de datum en het soort uit het nummer.
-    const m = String(g.id).match(/^(\d{4}-\d{2}-\d{2})-(verhaal|bericht)/);
-    const p = document.createElement('div'); p.className = 'rij voorbij'; p.style.cursor = 'default';
-    const wanneer = document.createElement('div'); wanneer.className = 'wanneer';
-    wanneer.textContent = m ? kort(m[1]) + (m[2] === 'bericht' ? ' · bericht' : '') : String(g.id);
-    const titel = document.createElement('div'); titel.className = 'titel';
-    titel.textContent = m ? (m[2] === 'verhaal' ? 'Verhaal' : 'Bericht') + ', daarna verzet' : 'Onbekend item';
-    const midden = document.createElement('div'); midden.append(wanneer, titel);
-    const recht = document.createElement('span'); recht.className = 'recht ' + (g.resultaat === 'geplaatst' ? 'ok' : 'mis');
-    recht.textContent = g.resultaat === 'geplaatst' ? 'Geplaatst' : 'Overgeslagen';
-    p.append(document.createElement('span'), midden, recht);
-    h.appendChild(p);
+  // Deze week: uitklapbaar, en of hij dicht stond onthouden we.
+  const vak = document.getElementById('dezeweekvak');
+  try { if (localStorage.getItem('dezeweek-dicht') === '1') vak.open = false; } catch(e){}
+  vak.addEventListener('toggle', () => { try { localStorage.setItem('dezeweek-dicht', vak.open ? '0' : '1'); } catch(e){} });
+  const dw = ITEMS.filter(i => weekVan(i.datum) === dezeWeek);
+  const dwHouder = document.getElementById('dezeweek'); dwHouder.innerHTML = '';
+  if (!dw.length) dwHouder.innerHTML = '<p class="leeg">Deze week staat er niets gepland.</p>';
+  for (const i of dw) dwHouder.appendChild(rij(i));
+  const dwOver = dw.filter(i => status(i) === 'wacht').length;
+  document.getElementById('dezeweektel').textContent = dw.length ? dwOver + ' te gaan' : '';
+
+  // Komende weken: alles na deze week, in kolommen.
+  const komend = new Map();
+  for (const i of ITEMS){
+    const w = weekVan(i.datum); if (w <= dezeWeek) continue;
+    if (!komend.has(w)) komend.set(w, []);
+    komend.get(w).push(rij(i));
   }
+  document.getElementById('komendtel').textContent = komend.size ? komend.size + ' weken' : '';
+  strook('komend', [...komend], 'Er komt niets meer aan. Vraag Claude om een nieuwe reeks.');
+
+  // Geplaatst: alles wat geweest is, nieuwste week eerst. Ook de regels uit het
+  // logboek waarvan het item niet meer in de planning staat.
+  const perId = {}; for (const i of ITEMS) perId[i.id] = i;
+  const geweest = new Map();
+  const voeg = (w, el) => { if (!geweest.has(w)) geweest.set(w, []); geweest.get(w).push(el); };
+  for (const i of ITEMS){
+    if (status(i) === 'wacht') continue;
+    const g = GEDAAN[i.id];
+    voeg(weekVan(i.datum), rij(i, { wanneer: g && g.wanneer ? g.wanneer.slice(8,10) + '-' + g.wanneer.slice(5,7) + ' ' + g.wanneer.slice(11) : undefined }));
+  }
+  for (const g of LOGBOEK){
+    if (perId[g.id]) continue;
+    const m = String(g.id).match(/^\d{4}-\d{2}-\d{2}/);
+    voeg(m ? weekVan(m[0]) : dezeWeek, logRij(g));
+  }
+  const geplaatst = LOGBOEK.filter(g => g.resultaat === 'geplaatst' || g.resultaat === 'stond er al').length;
+  document.getElementById('gedaantel').textContent = geplaatst ? geplaatst + ' geplaatst' : '';
+  strook('gedaan', [...geweest].sort((a, b) => b[0].localeCompare(a[0])), 'Er is nog niets geplaatst.');
 }
 
 // --- Hulp --------------------------------------------------------------------
