@@ -529,6 +529,7 @@ function tekenPlanning(){
 function ritme(items){
   const zien = {};
   for (const i of items) {
+    if (i.eenmalig) continue;                       // losse extra's tellen niet als ritme
     const d = dat(i.datum).getUTCDay();
     if (!zien[i.soort]) zien[i.soort] = {};
     if (!zien[i.soort][d]) zien[i.soort][d] = [];

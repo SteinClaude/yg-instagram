@@ -43,6 +43,28 @@
    ]
   },
   {
+   "id": "2026-09-17-verhaal-2",
+   "datum": "2026-09-17",
+   "tijd": "09:00",
+   "soort": "verhaal",
+   "taal": "nl",
+   "beeld": [
+    "verhalen/nl/V30.jpg"
+   ],
+   "eenmalig": true
+  },
+  {
+   "id": "2026-09-17-verhaal-3",
+   "datum": "2026-09-17",
+   "tijd": "10:00",
+   "soort": "verhaal",
+   "taal": "nl",
+   "beeld": [
+    "verhalen/nl/V27.jpg"
+   ],
+   "eenmalig": true
+  },
+  {
    "id": "2026-09-17-bericht",
    "datum": "2026-09-17",
    "tijd": "11:00",
@@ -52,6 +74,116 @@
     "berichten/nl/F01.jpg"
    ],
    "tekst": "Voor de kapper om de hoek.\n\nIemand verhuist naar jouw wijk, pakt zijn telefoon en typt “kapper”. Wat hij dan vindt, bepaalt of hij bij jou binnenloopt of twee straten verderop.\n\nGroot hoeft die site niet te zijn. Wel duidelijk: wat je doet, wat het kost, wanneer je open bent, en één knop om te bellen.\n\nWebsites voor ondernemers, vanaf € 550 excl. btw. Vaste prijs vooraf, met een opleverdatum erbij. Antwoord binnen één werkdag.\n\n#websitelatenmaken #webdesign #ondernemen #zzp #mkb #eigenbedrijf #kleinbedrijf #lokaalondernemen #startendondernemer #ondernemersleven #webdesignnederland #websitetips"
+  },
+  {
+   "id": "2026-09-17-verhaal-4",
+   "datum": "2026-09-17",
+   "tijd": "11:00",
+   "soort": "verhaal",
+   "taal": "nl",
+   "beeld": [
+    "verhalen/nl/V28.jpg"
+   ],
+   "eenmalig": true
+  },
+  {
+   "id": "2026-09-17-verhaal-5",
+   "datum": "2026-09-17",
+   "tijd": "12:00",
+   "soort": "verhaal",
+   "taal": "nl",
+   "beeld": [
+    "verhalen/nl/V29.jpg"
+   ],
+   "eenmalig": true
+  },
+  {
+   "id": "2026-09-17-verhaal-6",
+   "datum": "2026-09-17",
+   "tijd": "13:00",
+   "soort": "verhaal",
+   "taal": "nl",
+   "beeld": [
+    "verhalen/nl/V31.jpg"
+   ],
+   "eenmalig": true
+  },
+  {
+   "id": "2026-09-17-verhaal-7",
+   "datum": "2026-09-17",
+   "tijd": "14:00",
+   "soort": "verhaal",
+   "taal": "nl",
+   "beeld": [
+    "verhalen/nl/V32.jpg"
+   ],
+   "eenmalig": true
+  },
+  {
+   "id": "2026-09-17-verhaal-8",
+   "datum": "2026-09-17",
+   "tijd": "15:00",
+   "soort": "verhaal",
+   "taal": "nl",
+   "beeld": [
+    "verhalen/nl/V33.jpg"
+   ],
+   "eenmalig": true
+  },
+  {
+   "id": "2026-09-17-verhaal-9",
+   "datum": "2026-09-17",
+   "tijd": "16:00",
+   "soort": "verhaal",
+   "taal": "nl",
+   "beeld": [
+    "verhalen/nl/V34.jpg"
+   ],
+   "eenmalig": true
+  },
+  {
+   "id": "2026-09-17-verhaal-10",
+   "datum": "2026-09-17",
+   "tijd": "17:00",
+   "soort": "verhaal",
+   "taal": "nl",
+   "beeld": [
+    "verhalen/nl/V35.jpg"
+   ],
+   "eenmalig": true
+  },
+  {
+   "id": "2026-09-17-verhaal-11",
+   "datum": "2026-09-17",
+   "tijd": "18:00",
+   "soort": "verhaal",
+   "taal": "nl",
+   "beeld": [
+    "verhalen/nl/V36.jpg"
+   ],
+   "eenmalig": true
+  },
+  {
+   "id": "2026-09-17-verhaal-12",
+   "datum": "2026-09-17",
+   "tijd": "19:00",
+   "soort": "verhaal",
+   "taal": "nl",
+   "beeld": [
+    "verhalen/nl/V37.jpg"
+   ],
+   "eenmalig": true
+  },
+  {
+   "id": "2026-09-17-verhaal-13",
+   "datum": "2026-09-17",
+   "tijd": "20:00",
+   "soort": "verhaal",
+   "taal": "nl",
+   "beeld": [
+    "verhalen/nl/V38.jpg"
+   ],
+   "eenmalig": true
   },
   {
    "id": "2026-09-18-bericht",
