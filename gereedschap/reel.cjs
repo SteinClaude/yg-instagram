@@ -43,14 +43,17 @@ async function achtergrond(beeld, doel) {
     .jpeg({ quality: 94 }).toFile(doel);
 }
 
-// De vaste laag: kader, embleem, voetregel.
+// De vaste laag: kader, embleem, voetregel. Instagram legt bij reels bovenin
+// (± 220 px) en onderin (± 420 px) zijn eigen naam, bijschrift en knoppen over
+// het beeld; embleem en voetregel staan daarom binnen de veilige zone.
+const VEILIG_BOVEN = 236, VEILIG_ONDER = 1500;
 function chroom() {
-  const kader = 46, boven = kader + 30;
+  const kader = 46;
   const voet = 'YG-DIGITAL.NL', gv = 19, spv = 0.2 * gv, wv = M.breedte(L.sansMed, voet, gv, spv);
   return laag(
     `<rect x="${kader}" y="${kader}" width="${W - 2 * kader}" height="${H - 2 * kader}" fill="none" stroke="${k.lijn}" stroke-width="1.4"/>` +
-    M.poort(k.goud, W / 2 - 15, boven, 0.30) +
-    M.pad(L.sansMed, voet, W / 2 - wv / 2, H - kader - 40, gv, spv, k.goud).svg);
+    M.poort(k.goud, W / 2 - 15, VEILIG_BOVEN, 0.30) +
+    M.pad(L.sansMed, voet, W / 2 - wv / 2, VEILIG_ONDER - 16, gv, spv, k.goud).svg);
 }
 
 // Lijntje, bovenregel en kop; de onderkant van de groep op een vaste hoogte, zodat
@@ -81,8 +84,9 @@ async function bouw(r) {
   const lagen = {};
   const zet = (naam, png) => { lagen[naam] = path.join(werk, naam + '.png'); fs.writeFileSync(lagen[naam], png); };
   zet('chroom', chroom());
-  zet('kop1', groep(r.boven1, r.kop1, 1500)); zet('sub1', regel(r.sub1, 1540));
-  zet('kop2', groep(r.boven2, r.kop2, 1500)); zet('sub2', regel(r.sub2, 1540));
+  // kop eindigt op 1330, de regel eronder loopt tot uiterlijk ± 1450: boven de voetregel en de balk van Instagram
+  zet('kop1', groep(r.boven1, r.kop1, 1330)); zet('sub1', regel(r.sub1, 1366));
+  zet('kop2', groep(r.boven2, r.kop2, 1330)); zet('sub2', regel(r.sub2, 1366));
 
   // tijdlijn in seconden
   const T = { chroom: 0.5, kop1: 1.6, sub1: 4.4, uit1: 10.2, kop2: 11.0, sub2: 13.2, einde: 17.3 };

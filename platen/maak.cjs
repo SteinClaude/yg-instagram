@@ -209,8 +209,13 @@ async function kaart(plaat, W, H) {
     }
   }
 
-  const bovenChroom = kader + 30 * (W / 1080), poortH = 33 * (W / 1080);
-  const bodem = H - kader - 74 * (W / 1080);
+  // Bij een verhaal (plaat.veilig) legt Instagram bovenin (± 220 px) en onderin
+  // (± 420 px) zijn eigen naam, balk en knoppen over het beeld. Embleem, tekst en
+  // voetregel blijven dan binnen de zone daartussen.
+  const veilig = !!plaat.veilig && H > W * 1.5, f = W / 1080;
+  const bovenChroom = veilig ? 236 * f : kader + 30 * f, poortH = 33 * f;
+  const voetY = veilig ? 1484 * f : H - kader - 40 * f;
+  const bodem = veilig ? 1440 * f : H - kader - 74 * f;
 
   // Past de inhoud niet (vooral in het vierkante formaat), dan krimpen we net
   // zolang tot hij wel past. Zo raakt tekst nooit de voetregel.
@@ -240,7 +245,7 @@ ${achtergrond || `<rect width="${W}" height="${H}" fill="url(#gloed)"/>`}
 <rect x="${r3(kader)}" y="${r3(kader)}" width="${r3(W - 2 * kader)}" height="${r3(H - 2 * kader)}" fill="none" stroke="${k.lijn}" stroke-width="1.4"/>
 ${poort(k.goud, W / 2 - 15 * (W / 1080), bovenChroom, 0.30 * (W / 1080))}
 ${inhoud}
-${pad(L.sansMed, voet, W / 2 - wv / 2, H - kader - 40 * (W / 1080), gv, spv, k.goud).svg}
+${pad(L.sansMed, voet, W / 2 - wv / 2, voetY, gv, spv, k.goud).svg}
 </svg>`;
 
   const png = new Resvg(svg, {

@@ -162,7 +162,7 @@ function verhalen(taal) {
       { t: 'lijn' }, { t: 'boven', tekst: w.merk },
       { t: 'kop', tekst: s[taal][0], grootte: 92, marge: 36 },
       { t: 'tekst', tekst: s[taal][1], grootte: 33 } ], { id: `V${23 + i} - ${schoon(s[taal][0])}`, voet: s.voet })),
-  ];
+  ].map(p => ({ ...p, veilig: true }));   // verhalen: tekst binnen de zone die Instagram vrijlaat
 }
 
 function fotoberichten(taal) {

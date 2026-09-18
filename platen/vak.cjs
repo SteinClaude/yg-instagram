@@ -50,6 +50,7 @@ const plaat = (v, soort) => ({
   id: v.beeld,
   achtergrond: { bron: `ai/${v.beeld}.jpg`, helderheid: v.helderheid ?? 0.86, verzadiging: 0.9, donkerte: 0.94, positie: 'centre' },
   uitlijn: 'onder',
+  veilig: soort === 'verhaal',        // bij een verhaal legt Instagram onderin en bovenin zijn eigen balken over het beeld
   blokken: soort === 'verhaal'
     ? [{ t: 'lijn' }, { t: 'boven', tekst: v.boven }, { t: 'kop', tekst: v.kop, grootte: 86, marge: 36 }, { t: 'tekst', tekst: v.tekst, grootte: 33 }]
     : [{ t: 'lijn' }, { t: 'boven', tekst: v.boven }, { t: 'kop', tekst: v.kop, grootte: 70, marge: 28 }, { t: 'tekst', tekst: v.tekst, grootte: 28 }],
