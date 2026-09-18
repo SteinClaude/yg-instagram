@@ -17,24 +17,23 @@ const BRON = path.join(WORTEL, 'platen', 'bron', 'ai');
 const UIT = path.join(WORTEL, 'beeld', 'omslagen');
 const MAAT = 1080;
 
-// naam = de naam van de highlight; beeld = bronfoto; x/y = middelpunt van de
-// uitsnede als fractie, maat = breedte van de uitsnede als fractie van de foto.
+// naam = de naam van de highlight zoals hij op het profiel staat, zodat de
+// bestandsnaam meteen zegt waar hij hoort; beeld = bronfoto; x/y = middelpunt
+// van de uitsnede als fractie, maat = breedte als fractie van de foto.
 const OMSLAGEN = [
-  { naam: 'Websites',        beeld: 'deur',      x: 0.52, y: 0.42, maat: 0.72 },
-  { naam: 'Apps',            beeld: 'apps',      x: 0.50, y: 0.50, maat: 0.92 },
-  { naam: 'Logo en huisstijl', beeld: 'huisstijl', x: 0.46, y: 0.50, maat: 0.70 },
-  { naam: 'Teksten',         beeld: 'typen',     x: 0.55, y: 0.50, maat: 0.66 },
-  { naam: 'Ons werk',        beeld: 'bureau',    x: 0.44, y: 0.50, maat: 0.62 },
-  { naam: 'Zo werken we',    beeld: 'schets',    x: 0.54, y: 0.42, maat: 0.66 },
-  { naam: 'Afspraken',       beeld: 'afspraken', x: 0.66, y: 0.64, maat: 0.60 },
-  { naam: 'Onderhoud',       beeld: 'uurwerk',   x: 0.45, y: 0.50, maat: 0.56 },
-  { naam: 'Altijd open',     beeld: 'meldingen', x: 0.45, y: 0.55, maat: 0.62 },
-  { naam: 'Contact',         beeld: 'contact',   x: 0.50, y: 0.50, maat: 0.80 },
-  // De telefoon in de hand; nu nog reserve, straks de omslag voor Socials.
-  { naam: 'Socials',         beeld: 'telefoon',  x: 0.55, y: 0.45, maat: 0.62 },
+  { naam: 'Entree',      beeld: 'deur',      x: 0.52, y: 0.42, maat: 0.72 },
+  { naam: 'Ons vak',     beeld: 'bureau',    x: 0.44, y: 0.50, maat: 0.62 },
+  { naam: 'Op papier',   beeld: 'schets',    x: 0.54, y: 0.42, maat: 0.66 },
+  { naam: 'Telefoon',    beeld: 'telefoon',  x: 0.55, y: 0.45, maat: 0.62 },
+  { naam: 'Apps',        beeld: 'apps',      x: 0.50, y: 0.50, maat: 0.92 },
+  { naam: 'Techniek',    beeld: 'code',      x: 0.50, y: 0.86, maat: 0.38, licht: 1.12 },
+  { naam: 'Huisstijl',   beeld: 'huisstijl', x: 0.46, y: 0.50, maat: 0.70 },
+  { naam: 'Contact',     beeld: 'contact',   x: 0.50, y: 0.50, maat: 0.80 },
+  { naam: 'Onderhoud',   beeld: 'uurwerk',   x: 0.45, y: 0.50, maat: 0.56 },
+  { naam: 'Altijd open', beeld: 'meldingen', x: 0.45, y: 0.55, maat: 0.62 },
+  { naam: 'Teksten',     beeld: 'typen',     x: 0.55, y: 0.50, maat: 0.66 },
+  { naam: 'Afspraken',   beeld: 'afspraken', x: 0.66, y: 0.64, maat: 0.60 },
 ];
-// Automatisering krijgt een eigen foto zodra die dienst er is; de bestaande
-// beelden zeggen er niets over, en een vage omslag is erger dan geen omslag.
 
 // De prijs is geen foto maar een bedrag; dat leest in een rondje beter dan welk
 // beeld ook, en het is de vraag die iedere klant als eerste stelt.
@@ -63,7 +62,7 @@ const bestandsnaam = naam => naam.toLowerCase().replace(/ /g, '-') + '.jpg';
     await sharp(bron).extract({ left, top, width: zij, height: zij })
       .resize(MAAT, MAAT, { kernel: 'lanczos3' })
       .sharpen({ sigma: 1.1, m1: 0.6, m2: 2.2 })      // klein formaat vraagt om extra scherpte
-      .modulate({ brightness: 1.06 })                  // een rondje van 64 px mag niet te donker zijn
+      .modulate({ brightness: o.licht ?? 1.06 })       // een rondje van 64 px mag niet te donker zijn
       .jpeg({ quality: 92, mozjpeg: true }).toFile(doel);
     gemaakt.push(o.naam);
   }
@@ -73,8 +72,8 @@ const bestandsnaam = naam => naam.toLowerCase().replace(/ /g, '-') + '.jpg';
 
   // De pagina om ze op te slaan: grote rondjes, precies zoals ze op het profiel
   // komen te staan, met de bestandsnaam eronder.
-  const volgorde = ['Websites', 'Zo werken we', 'Apps', 'Logo en huisstijl', 'Teksten',
-    'Onderhoud', 'Altijd open', 'Afspraken', 'Contact', 'Ons werk', 'Prijzen', 'Socials'];
+  // Zelfde volgorde als op het profiel, zodat de pagina en Instagram naast elkaar lezen.
+  const volgorde = [...OMSLAGEN.map(o => o.naam), 'Prijzen'];
   const kaartjes = volgorde.map(naam => `    <figure><img src="beeld/omslagen/${bestandsnaam(naam)}" alt="${naam}"><figcaption>${naam}</figcaption></figure>`).join('\n');
   fs.writeFileSync(path.join(WORTEL, 'omslagen.html'), `<!doctype html>
 <html lang="nl">
@@ -109,8 +108,8 @@ const bestandsnaam = naam => naam.toLowerCase().replace(/ /g, '-') + '.jpg';
     <li>Instagram → je profiel → highlight openen → drie puntjes → <em>Highlight bewerken</em>.</li>
     <li><em>Omslag bewerken</em> → <em>Uit galerij</em> → de bewaarde foto kiezen.</li>
   </ol>
-  <p>De laatste drie zijn voor later: <em>Ons werk</em> zodra er een verhaal over Ordepartner staat,
-  <em>Prijzen</em> vanaf 10 oktober, en <em>Socials</em> als die dienst er is.</p>
+  <p>De namen staan in dezelfde volgorde als op je profiel; de bestandsnaam is de naam van de
+  highlight. <em>Prijzen</em> is voor later, als het verhaal met het bedrag op 10 oktober is geplaatst.</p>
   <div class="rooster">
 ${kaartjes}
   </div>
