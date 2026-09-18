@@ -26,13 +26,16 @@ const OMSLAGEN = [
   { naam: 'Op papier',   beeld: 'schets',    x: 0.54, y: 0.42, maat: 0.66 },
   { naam: 'Telefoon',    beeld: 'telefoon',  x: 0.55, y: 0.45, maat: 0.62 },
   { naam: 'Apps',        beeld: 'apps',      x: 0.50, y: 0.50, maat: 0.92 },
-  { naam: 'Techniek',    beeld: 'code',      x: 0.50, y: 0.86, maat: 0.38, licht: 1.12 },
-  { naam: 'Huisstijl',   beeld: 'huisstijl', x: 0.46, y: 0.50, maat: 0.70 },
-  { naam: 'Contact',     beeld: 'contact',   x: 0.50, y: 0.50, maat: 0.80 },
-  { naam: 'Onderhoud',   beeld: 'uurwerk',   x: 0.45, y: 0.50, maat: 0.56 },
-  { naam: 'Altijd open', beeld: 'meldingen', x: 0.45, y: 0.55, maat: 0.62 },
-  { naam: 'Teksten',     beeld: 'typen',     x: 0.55, y: 0.50, maat: 0.66 },
-  { naam: 'Afspraken',   beeld: 'afspraken', x: 0.66, y: 0.64, maat: 0.60 },
+  // Vijf omslagen kregen een eigen foto: de uitsnedes uit de verhaalbeelden
+  // waren te vaag of te veel op elkaar (twee keer een toetsenbord, twee keer
+  // een envelop). Nu één duidelijk voorwerp per rondje.
+  { naam: 'Techniek',    beeld: 'techniek2',    x: 0.50, y: 0.50, maat: 0.92 },
+  { naam: 'Huisstijl',   beeld: 'huisstijl',    x: 0.46, y: 0.50, maat: 0.70 },
+  { naam: 'Contact',     beeld: 'contact',      x: 0.50, y: 0.50, maat: 0.80 },
+  { naam: 'Onderhoud',   beeld: 'onderhoud2',   x: 0.48, y: 0.52, maat: 0.72 },
+  { naam: 'Altijd open', beeld: 'altijd-open2', x: 0.50, y: 0.50, maat: 0.92 },
+  { naam: 'Teksten',     beeld: 'teksten2',     x: 0.50, y: 0.50, maat: 0.92 },
+  { naam: 'Afspraken',   beeld: 'afspraken2',   x: 0.60, y: 0.62, maat: 0.52 },
 ];
 
 // De prijs is geen foto maar een bedrag; dat leest in een rondje beter dan welk
