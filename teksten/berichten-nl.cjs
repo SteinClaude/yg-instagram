@@ -9,10 +9,10 @@
 //  - de oproep wisselt: doelgroepplaten licht, merkplaten vol, tips geen
 //  - geen emoji, geen uitroeptekens, geen haast- of schaarsteteksten
 
-const WERK = '#webdesign #websitelatenmaken #webdesignnederland #webdesigner #nieuwewebsite #websitedesign #huisstijl #logodesign #ondernemen #zzp #mkb #eigenbedrijf #jouwweb #portfolio';
-const UITLEG = '#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop';
-const MERK = '#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland';
-const DOELGROEP = '#websitelatenmaken #webdesign #ondernemen #zzp #mkb #eigenbedrijf #kleinbedrijf #lokaalondernemen #startendondernemer #ondernemersleven #webdesignnederland #websitetips';
+const WERK = '#webdesign #websitelatenmaken #webdesignnederland #webdesignbureau #nieuwewebsite #websitedesign #huisstijl #logodesign #portfolio #ondernemen #mkb #zzp';
+const UITLEG = '#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer';
+const MERK = '#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen';
+const DOELGROEP = '#websitelatenmaken #webdesign #ondernemen #ondernemerschap #zzp #mkb #kleinbedrijf #eigenbedrijf #lokaalondernemen #startendondernemer #ondernemersleven #webdesignnederland';
 
 // De afsluiter onder de negen doelgroepplaten: wel de prijs, geen harde oproep.
 const PRIJSREGEL = 'Websites voor ondernemers, vanaf € 550 excl. btw. Vaste prijs vooraf, met een opleverdatum erbij. Antwoord binnen één werkdag.';

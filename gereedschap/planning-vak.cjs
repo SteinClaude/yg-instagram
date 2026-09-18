@@ -25,7 +25,9 @@ let inLogboek = [];
 try { inLogboek = JSON.parse(fs.readFileSync(path.join(WORTEL, 'gedaan.json'), 'utf8')).items.map(i => i.id); } catch { /* geen logboek */ }
 
 // ---- wat er blijft ------------------------------------------------------------
-const behouden = planning.items.filter(i => i.datum < START);
+// Ook alles wat als eenmalig is gemarkeerd blijft staan (losse extra's en items
+// die Gijs zelf heeft verzet), anders zou een herbouw zijn wijzigingen wissen.
+const behouden = planning.items.filter(i => i.datum < START || i.eenmalig);
 // het verhaal van vrijdag 18 september was nog een stockfoto; dat wordt de deur
 for (const i of behouden) if (i.id === '2026-09-18-verhaal') i.beeld = ['verhalen/nl/V30.jpg'];
 
@@ -36,6 +38,18 @@ const TIP_V = [...Array(7)].map((_, i) => `verhalen/nl/V${nr(7 + i)}.jpg`);
 const FOTO_B = [...Array(12)].map((_, i) => `F${nr(14 + i)}`);
 // R06 (de teksten) niet in dezelfde week als F24 (ook de teksten); daarom R07 ervoor.
 const REELS = ['R01', 'R02', 'R03', 'R04', 'R05', 'R07', 'R06', 'R08'];
+
+// De start-reeks (18 sep besloten): het raster is bij de start te leeg, dus in het
+// eerste weekend twee berichten per dag. Wat hier staat, komt niet nog eens in het
+// gewone ritme.
+const START_REEKS = [
+  { datum: '2026-09-19', tijd: '11:00', code: 'F17' },   // za: de entree
+  { datum: '2026-09-19', tijd: '19:00', code: 'B13' },   // za: carrousel, vijf dingen
+  { datum: '2026-09-20', tijd: '11:00', code: 'F15' },   // zo: eerst op papier
+  { datum: '2026-09-20', tijd: '19:00', code: 'R01' },   // zo: reel, de entree
+  { datum: '2026-09-21', tijd: '11:00', code: 'F16' },   // ma: zo ziet de meeste klant u
+  { datum: '2026-09-21', tijd: '19:00', code: 'B02' },   // ma: wat kost een website
+];
 // de uitgewerkte berichten, in volgorde; B01 is op 18 september al geweest
 const MEERDERE = { B03: 3, B07: 3, B09: 3, B13: 7 };
 const UITGEWERKT = ['B13', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B09', 'B10', 'B11', 'B12'];
@@ -46,6 +60,16 @@ const tekstVan = code => vak[code] || basis[code];
 
 // ---- datums -------------------------------------------------------------------
 const dag = (iso, plus) => { const d = new Date(iso + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + plus); return d.toISOString().slice(0, 10); };
+const weekStart = iso => { const d = new Date(iso + 'T12:00:00Z'); return dag(iso, -((d.getUTCDay() + 6) % 7)); };
+
+// Bijschriften van berichten die blijven staan, opnieuw uit de bron (bijvoorbeeld
+// na het opfrissen van de hashtags). De code volgt uit het pad van de plaat.
+const codeVan = pad => { const mm = pad.match(/\/((?:B|F)\d\d)(?:-\d)?\.jpg$|\/(R\d\d)\.mp4$/); return mm ? (mm[1] || mm[2]) : null; };
+for (const i of behouden) {
+  if (i.soort !== 'bericht') continue;
+  const c = codeVan(i.beeld[0]);
+  if (c && tekstVan(c)) i.tekst = tekstVan(c);
+}
 
 const bezet = new Set([...behouden.map(i => i.id), ...inLogboek]);
 function id(datum, soort) {
@@ -76,24 +100,38 @@ for (const x of voorraad.verhalen('nl')) { const mm = x.id.match(/^(V\d\d) - (.*
 VAK.forEach((x, i) => { TITEL['V' + (27 + i)] = x.kop; });
 const titelVan = pad => { const mm = pad.match(/(V\d\d)\.jpg$/); return mm ? TITEL[mm[1]] : undefined; };
 
+// Een bericht uit een code: F14 -> één plaat, B13 -> zeven platen, R01 -> een reel.
+const bericht = (datum, tijd, code) => ({
+  id: id(datum, 'bericht'), datum, tijd, soort: 'bericht', taal: 'nl',
+  beeld: code.startsWith('R') ? [`reels/${code}.mp4`] : platenVan(code), tekst: tekstVan(code),
+});
+
+// De start-reeks eerst; wat daarin zit, gaat uit de gewone voorraad.
 const items = [];
+const gestart = new Set(START_REEKS.map(s => s.code));
+const FOTO_B2 = FOTO_B.filter(c => !gestart.has(c)), REELS2 = REELS.filter(c => !gestart.has(c)), UITGEWERKT2 = UITGEWERKT.filter(c => !gestart.has(c));
+const startPerWeek = new Map();
+for (const s of START_REEKS) {
+  if (s.datum < START && planning.items.some(i => i.datum === s.datum && i.tijd === s.tijd && i.soort === 'bericht')) continue;
+  const it = bericht(s.datum, s.tijd, s.code);
+  const w = weekStart(s.datum);
+  if (!startPerWeek.has(w)) startPerWeek.set(w, []);
+  startPerWeek.get(w).push(it);
+  if (s.datum < START) items.push(it);            // vóór de startdatum: los toevoegen
+}
+
 let v = 0, m = 0, t = 0, f = 0, r = 0, u = 0, slot = 0;
 for (let w = 0; w < WEKEN; w++) {
   const ma = dag(START, 7 * w);
-  const week = [];
+  const week = [...(startPerWeek.get(ma) || [])];
 
-  // dinsdag 20:00: om de week een reel, anders een uitgewerkt bericht
+  // dinsdag 20:00: om de week een reel (vanaf de tweede week, de eerste reel zit
+  // al in de start-reeks), anders een uitgewerkt bericht
   const di = dag(ma, 1);
-  if (w % 2 === 0) {
-    const code = REELS[r++ % REELS.length];
-    week.push({ id: id(di, 'bericht'), datum: di, tijd: '20:00', soort: 'bericht', taal: 'nl', beeld: [`reels/${code}.mp4`], tekst: tekstVan(code) });
-  } else {
-    const code = UITGEWERKT[u++ % UITGEWERKT.length];
-    week.push({ id: id(di, 'bericht'), datum: di, tijd: '20:00', soort: 'bericht', taal: 'nl', beeld: platenVan(code), tekst: tekstVan(code) });
-  }
+  if (w % 2 === 1) week.push(bericht(di, '20:00', REELS2[r++ % REELS2.length]));
+  else week.push(bericht(di, '20:00', UITGEWERKT2[u++ % UITGEWERKT2.length]));
   // donderdag 11:00: een fotobericht over ons vak
-  const doo = dag(ma, 3), code = FOTO_B[f++ % FOTO_B.length];
-  week.push({ id: id(doo, 'bericht'), datum: doo, tijd: '11:00', soort: 'bericht', taal: 'nl', beeld: [`berichten/nl/${code}.jpg`], tekst: tekstVan(code) });
+  week.push(bericht(dag(ma, 3), '11:00', FOTO_B2[f++ % FOTO_B2.length]));
 
   // verhalen: woensdag een tip; van de andere vier is er één van het merk
   const gebruikt = new Set(week.map(i => bronVan(i.beeld[0])));

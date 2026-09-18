@@ -164,6 +164,7 @@ async function wijzig() {
     const bezet = planning.items.find(i => i !== item && i.datum === datum && i.soort === item.soort);
     item.datum = datum;
     item.id = vrijId(datum, item.soort, item);
+    item.eenmalig = true;          // verzet = buiten het ritme; blijft staan bij een herbouw van de planning
     sorteer(); bewaar();
     klaar(true, `Verzet: het ${item.soort} dat op ${was} stond, gaat nu op ${netjes(datum)} om ${item.tijd}.` +
       (bezet ? `\n\nLet op: er stond al een ${item.soort} op die dag. Ze staan er nu allebei.` : ''));

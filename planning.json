@@ -1,6 +1,6 @@
 {
  "tijdzone": "Europe/Amsterdam",
- "gemaakt": "2026-09-16",
+ "gemaakt": "2026-09-18",
  "items": [
   {
    "id": "2026-09-14-verhaal",
@@ -68,7 +68,7 @@
    "beeld": [
     "berichten/nl/F01.jpg"
    ],
-   "tekst": "Voor de kapper om de hoek.\n\nIemand verhuist naar jouw wijk, pakt zijn telefoon en typt “kapper”. Wat hij dan vindt, bepaalt of hij bij jou binnenloopt of twee straten verderop.\n\nGroot hoeft die site niet te zijn. Wel duidelijk: wat je doet, wat het kost, wanneer je open bent, en één knop om te bellen.\n\nWebsites voor ondernemers, vanaf € 550 excl. btw. Vaste prijs vooraf, met een opleverdatum erbij. Antwoord binnen één werkdag.\n\n#websitelatenmaken #webdesign #ondernemen #zzp #mkb #eigenbedrijf #kleinbedrijf #lokaalondernemen #startendondernemer #ondernemersleven #webdesignnederland #websitetips"
+   "tekst": "Voor de kapper om de hoek.\n\nIemand verhuist naar jouw wijk, pakt zijn telefoon en typt “kapper”. Wat hij dan vindt, bepaalt of hij bij jou binnenloopt of twee straten verderop.\n\nGroot hoeft die site niet te zijn. Wel duidelijk: wat je doet, wat het kost, wanneer je open bent, en één knop om te bellen.\n\nWebsites voor ondernemers, vanaf € 550 excl. btw. Vaste prijs vooraf, met een opleverdatum erbij. Antwoord binnen één werkdag.\n\n#websitelatenmaken #webdesign #ondernemen #ondernemerschap #zzp #mkb #kleinbedrijf #eigenbedrijf #lokaalondernemen #startendondernemer #ondernemersleven #webdesignnederland"
   },
   {
    "id": "2026-09-17-verhaal-4",
@@ -199,7 +199,7 @@
    "beeld": [
     "berichten/nl/B01.jpg"
    ],
-   "tekst": "De entree van je bedrijf.\n\nEen website is de poort waardoor je klanten binnenkomen. De meeste ondernemers besteden maanden aan hun pand, hun bus en hun visitekaartje — en laten die ene poort erbij staan alsof het de achterdeur is.\n\nWij bouwen hem als de entree van een vijfsterrenhotel: rustig, verzorgd en tot in detail afgewerkt.\n\nWebsites voor bedrijven en particulieren, vanaf € 550 excl. btw (€ 665,50 incl.). Heel Nederland.\n\nyg-digital.nl\n\n#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland",
+   "tekst": "De entree van je bedrijf.\n\nEen website is de poort waardoor je klanten binnenkomen. De meeste ondernemers besteden maanden aan hun pand, hun bus en hun visitekaartje — en laten die ene poort erbij staan alsof het de achterdeur is.\n\nWij bouwen hem als de entree van een vijfsterrenhotel: rustig, verzorgd en tot in detail afgewerkt.\n\nWebsites voor bedrijven en particulieren, vanaf € 550 excl. btw (€ 665,50 incl.). Heel Nederland.\n\nyg-digital.nl\n\n#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen",
    "eenmalig": true
   },
   {
@@ -214,6 +214,56 @@
    "titel": "De entree van uw bedrijf."
   },
   {
+   "id": "2026-09-19-bericht",
+   "datum": "2026-09-19",
+   "tijd": "11:00",
+   "soort": "bericht",
+   "taal": "nl",
+   "beeld": [
+    "berichten/nl/F17.jpg"
+   ],
+   "tekst": "De entree van je bedrijf.\n\nEen website is de deur waardoor klanten binnenkomen. Is die deur rommelig of dicht, dan lopen ze door naar de volgende. Wij bouwen hem rustig, verzorgd en tot in detail afgewerkt.\n\nWebsites vanaf € 550, vaste prijs vooraf. Link in bio.\n\n#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen"
+  },
+  {
+   "id": "2026-09-19-bericht-2",
+   "datum": "2026-09-19",
+   "tijd": "19:00",
+   "soort": "bericht",
+   "taal": "nl",
+   "beeld": [
+    "berichten/nl/B13-1.jpg",
+    "berichten/nl/B13-2.jpg",
+    "berichten/nl/B13-3.jpg",
+    "berichten/nl/B13-4.jpg",
+    "berichten/nl/B13-5.jpg",
+    "berichten/nl/B13-6.jpg",
+    "berichten/nl/B13-7.jpg"
+   ],
+   "tekst": "Vijf dingen die klanten op je site zoeken.\n\nEn binnen drie seconden willen vinden. Swipe door: wat je doet en waar, je telefoonnummer, openingstijden die kloppen, wat het ongeveer kost, en een foto van jou of je zaak.\n\nOntbreekt er iets op je site? Wij kijken vrijblijvend mee; één bericht is genoeg.\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
+  },
+  {
+   "id": "2026-09-20-bericht",
+   "datum": "2026-09-20",
+   "tijd": "11:00",
+   "soort": "bericht",
+   "taal": "nl",
+   "beeld": [
+    "berichten/nl/F15.jpg"
+   ],
+   "tekst": "Eerst op papier.\n\nVoordat er één regel code staat, staat je site op papier: welke pagina’s, wat bovenaan, waar de knop. Dat schetsje bespreken we samen. Zo bouwen we niets wat je niet wilt, en hoeft er later weinig over.\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
+  },
+  {
+   "id": "2026-09-20-bericht-2",
+   "datum": "2026-09-20",
+   "tijd": "19:00",
+   "soort": "bericht",
+   "taal": "nl",
+   "beeld": [
+    "reels/R01.mp4"
+   ],
+   "tekst": "De entree van je bedrijf.\n\nEen website is de deur waardoor klanten binnenkomen. Wij bouwen hem: rustig, verzorgd en tot in detail afgewerkt. Vanaf € 550, vaste prijs vooraf.\n\n#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen"
+  },
+  {
    "id": "2026-09-21-verhaal",
    "datum": "2026-09-21",
    "tijd": "07:00",
@@ -225,15 +275,37 @@
    "titel": "Eerst op papier."
   },
   {
+   "id": "2026-09-21-bericht",
+   "datum": "2026-09-21",
+   "tijd": "11:00",
+   "soort": "bericht",
+   "taal": "nl",
+   "beeld": [
+    "berichten/nl/F16.jpg"
+   ],
+   "tekst": "Zo ziet de meeste klant je.\n\nDe meeste bezoekers komen via hun telefoon. Daarom ontwerpen wij eerst voor het kleine scherm, en pas daarna voor de pc. Open je eigen site eens op je telefoon. Klopt het daar ook?\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
+  },
+  {
+   "id": "2026-09-21-bericht-2",
+   "datum": "2026-09-21",
+   "tijd": "19:00",
+   "soort": "bericht",
+   "taal": "nl",
+   "beeld": [
+    "berichten/nl/B02.jpg"
+   ],
+   "tekst": "Wat kost een website?\n\nBij ons vanaf € 550 eenmalig, exclusief btw (€ 665,50 inclusief). Wat het bij jou wordt hangt af van het aantal pagina’s — en dat hoor je vooraf, met een opleverdatum erbij.\n\nGeen “neem contact op voor een vrijblijvende offerte” waarna je drie gesprekken verder nog steeds niet weet waar je aan toe bent. Je krijgt vooraf een offerte met een bedrag én een opleverdatum. Meerwerk gaat pas door nadat je er ja op hebt gezegd.\n\nWat er daarna nog bij komt — hosting en domeinnaam — betaal je rechtstreeks aan het platform. Wij rekenen daar niets bovenop.\n\nAlle tarieven staan gewoon op de site: yg-digital.nl/diensten\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
+  },
+  {
    "id": "2026-09-22-verhaal",
    "datum": "2026-09-22",
    "tijd": "12:00",
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V29.jpg"
+    "verhalen/nl/V30.jpg"
    ],
-   "titel": "Zo ziet de meeste klant u."
+   "titel": "De entree van uw bedrijf."
   },
   {
    "id": "2026-09-22-bericht",
@@ -242,9 +314,11 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "reels/R01.mp4"
+    "berichten/nl/B03-1.jpg",
+    "berichten/nl/B03-2.jpg",
+    "berichten/nl/B03-3.jpg"
    ],
-   "tekst": "De entree van je bedrijf.\n\nEen website is de deur waardoor klanten binnenkomen. Wij bouwen hem: rustig, verzorgd en tot in detail afgewerkt. Vanaf € 550, vaste prijs vooraf.\n\n#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland"
+   "tekst": "Ordepartner — Alkmaar\n\nOrdepartner brengt rust en overzicht in de magazijnen en loodsen van zzp’ers en mkb-bedrijven. Ze ruimen op, delen logisch in en zorgen dat het ook zo blijft. Dat vroeg om een website die precies hetzelfde doet.\n\nWij maakten het logo, de teksten en de hele site: negen pagina’s, met de tarieven er gewoon op. Het bouwen zelf kostte één werkdag.\n\nSindsdien doen wij het onderhoud. Geen klus die af is, maar een samenwerking.\n\nVeeg door voor het kleine scherm en voor wat wij precies deden.\n\nordepartner.nl\n\n#webdesign #websitelatenmaken #webdesignnederland #webdesignbureau #nieuwewebsite #websitedesign #huisstijl #logodesign #portfolio #ondernemen #mkb #zzp"
   },
   {
    "id": "2026-09-23-verhaal",
@@ -277,7 +351,7 @@
    "beeld": [
     "berichten/nl/F14.jpg"
    ],
-   "tekst": "Elke site begint aan een bureau als dit.\n\nGeen sjabloon dat we voor de tiende keer opnieuw gebruiken, maar een leeg blad en jouw bedrijf als vertrekpunt. Wat doe je, voor wie, en wat moet een klant binnen drie seconden snappen? Daar begint het. De rest is vakwerk.\n\nWebsites vanaf € 550, vaste prijs vooraf.\n\n#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland"
+   "tekst": "Elke site begint aan een bureau als dit.\n\nGeen sjabloon dat we voor de tiende keer opnieuw gebruiken, maar een leeg blad en jouw bedrijf als vertrekpunt. Wat doe je, voor wie, en wat moet een klant binnen drie seconden snappen? Daar begint het. De rest is vakwerk.\n\nWebsites vanaf € 550, vaste prijs vooraf.\n\n#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen"
   },
   {
    "id": "2026-09-25-verhaal",
@@ -319,15 +393,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/B13-1.jpg",
-    "berichten/nl/B13-2.jpg",
-    "berichten/nl/B13-3.jpg",
-    "berichten/nl/B13-4.jpg",
-    "berichten/nl/B13-5.jpg",
-    "berichten/nl/B13-6.jpg",
-    "berichten/nl/B13-7.jpg"
+    "reels/R02.mp4"
    ],
-   "tekst": "Vijf dingen die klanten op je site zoeken.\n\nEn binnen drie seconden willen vinden. Swipe door: wat je doet en waar, je telefoonnummer, openingstijden die kloppen, wat het ongeveer kost, en een foto van jou of je zaak.\n\nOntbreekt er iets op je site? Wij kijken vrijblijvend mee; één bericht is genoeg.\n\n#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop"
+   "tekst": "Eerst op papier, dan pas bouwen.\n\nVoordat er één regel code staat, staat je site op papier. Zo bouwen we niets wat je niet wilt, en zitten er twee correctierondes bij.\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
   },
   {
    "id": "2026-09-30-verhaal",
@@ -358,9 +426,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/F15.jpg"
+    "berichten/nl/F18.jpg"
    ],
-   "tekst": "Eerst op papier.\n\nVoordat er één regel code staat, staat je site op papier: welke pagina’s, wat bovenaan, waar de knop. Dat schetsje bespreken we samen. Zo bouwen we niets wat je niet wilt, en hoeft er later weinig over.\n\n#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop"
+   "tekst": "Soms is een app de betere entree.\n\nEen bestelling die klanten zelf plaatsen, een afspraak die ze zelf inboeken, een klantenkaart op de telefoon. Niet elk bedrijf heeft dat nodig, maar als het past, bouwen we het. Vraag het gewoon.\n\n#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen"
   },
   {
    "id": "2026-10-02-verhaal",
@@ -402,9 +470,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "reels/R02.mp4"
+    "berichten/nl/B04.jpg"
    ],
-   "tekst": "Eerst op papier, dan pas bouwen.\n\nVoordat er één regel code staat, staat je site op papier. Zo bouwen we niets wat je niet wilt, en zitten er twee correctierondes bij.\n\n#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop"
+   "tekst": "Van eerste gesprek tot open deur.\n\n1. Gesprek. We bespreken wat je bedrijf online nodig heeft. Vrijblijvend, en je krijgt vooraf een offerte.\n2. Ontwerp. Je krijgt een eerste versie te zien. Twee correctierondes zitten erbij.\n3. Bouw. Wij bouwen de site af: snel, veilig en geschikt voor elk scherm.\n4. Lancering en nazorg. Je entree gaat open. Dertig dagen lang herstellen wij eventuele fouten gratis.\n\nJe site gaat pas live als je tevreden bent.\n\nyg-digital.nl\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
   },
   {
    "id": "2026-10-07-verhaal",
@@ -435,9 +503,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/F16.jpg"
+    "berichten/nl/F19.jpg"
    ],
-   "tekst": "Zo ziet de meeste klant je.\n\nDe meeste bezoekers komen via hun telefoon. Daarom ontwerpen wij eerst voor het kleine scherm, en pas daarna voor de pc. Open je eigen site eens op je telefoon. Klopt het daar ook?\n\n#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop"
+   "tekst": "Achter de schermen.\n\nSnel laden, veilig, en zonder gedoe met updates. Je hoeft er niets van te zien; wij zorgen dat het klopt en blijft kloppen. Dat is het verschil tussen een site die staat en een site die werkt.\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
   },
   {
    "id": "2026-10-09-verhaal",
@@ -459,7 +527,8 @@
    "beeld": [
     "verhalen/nl/V02.jpg"
    ],
-   "titel": "Vanaf 550 euro"
+   "titel": "Vanaf 550 euro",
+   "eenmalig": true
   },
   {
    "id": "2026-10-12-verhaal",
@@ -490,9 +559,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/B02.jpg"
+    "reels/R03.mp4"
    ],
-   "tekst": "Wat kost een website?\n\nBij ons vanaf € 550 eenmalig, exclusief btw (€ 665,50 inclusief). Wat het bij jou wordt hangt af van het aantal pagina’s — en dat hoor je vooraf, met een opleverdatum erbij.\n\nGeen “neem contact op voor een vrijblijvende offerte” waarna je drie gesprekken verder nog steeds niet weet waar je aan toe bent. Je krijgt vooraf een offerte met een bedrag én een opleverdatum. Meerwerk gaat pas door nadat je er ja op hebt gezegd.\n\nWat er daarna nog bij komt — hosting en domeinnaam — betaal je rechtstreeks aan het platform. Wij rekenen daar niets bovenop.\n\nAlle tarieven staan gewoon op de site: yg-digital.nl/diensten\n\n#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop"
+   "tekst": "Zo ziet de meeste klant je.\n\nOpen je eigen site eens op je telefoon. Dat is wat de meeste bezoekers zien. Klopt het daar ook? Zo niet, dan weet je ons te vinden.\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
   },
   {
    "id": "2026-10-14-verhaal",
@@ -523,9 +592,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/F17.jpg"
+    "berichten/nl/F20.jpg"
    ],
-   "tekst": "De entree van je bedrijf.\n\nEen website is de deur waardoor klanten binnenkomen. Is die deur rommelig of dicht, dan lopen ze door naar de volgende. Wij bouwen hem rustig, verzorgd en tot in detail afgewerkt.\n\nWebsites vanaf € 550, vaste prijs vooraf. Link in bio.\n\n#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland"
+   "tekst": "Herkenbaar, tot in de voettekst.\n\nLogo, kleur en letter als één geheel: op je site, je drukwerk en je social media. Klanten herkennen je dan overal, ook zonder je naam te lezen.\n\nLogo en huisstijl maken we erbij als je wilt.\n\n#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen"
   },
   {
    "id": "2026-10-16-verhaal",
@@ -545,9 +614,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V30.jpg"
+    "verhalen/nl/V29.jpg"
    ],
-   "titel": "De entree van uw bedrijf."
+   "titel": "Zo ziet de meeste klant u."
   },
   {
    "id": "2026-10-20-verhaal",
@@ -556,9 +625,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V32.jpg"
+    "verhalen/nl/V30.jpg"
    ],
-   "titel": "Snel, veilig en zonder gedoe."
+   "titel": "De entree van uw bedrijf."
   },
   {
    "id": "2026-10-20-bericht",
@@ -567,9 +636,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "reels/R03.mp4"
+    "berichten/nl/B05.jpg"
    ],
-   "tekst": "Zo ziet de meeste klant je.\n\nOpen je eigen site eens op je telefoon. Dat is wat de meeste bezoekers zien. Klopt het daar ook? Zo niet, dan weet je ons te vinden.\n\n#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop"
+   "tekst": "Zie je droomwebsite voordat hij bestaat.\n\nOp onze site staat een ontwerpstudio. Je kiest je branche, je sfeer en wat je website moet kunnen — en wij bouwen hem voor je ogen op, met je eigen naam erop.\n\nTwee minuten. Geen account. Het kost niets en verplicht tot niets.\n\nDaarna weet je tenminste waar je over praat als je met ons of met iemand anders om tafel gaat.\n\nyg-digital.nl/eerste-ontwerp\n\n#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen"
   },
   {
    "id": "2026-10-21-verhaal",
@@ -600,9 +669,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/F18.jpg"
+    "berichten/nl/F21.jpg"
    ],
-   "tekst": "Soms is een app de betere entree.\n\nEen bestelling die klanten zelf plaatsen, een afspraak die ze zelf inboeken, een klantenkaart op de telefoon. Niet elk bedrijf heeft dat nodig, maar als het past, bouwen we het. Vraag het gewoon.\n\n#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland"
+   "tekst": "Je spreekt altijd dezelfde persoon.\n\nGeen helpdesk, geen ticketnummer, geen wachtrij. Je mailt of appt, en je hoort binnen één werkdag iets. Klein bureau, korte lijnen. Zo werken we het liefst.\n\n#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen"
   },
   {
    "id": "2026-10-23-verhaal",
@@ -611,9 +680,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V33.jpg"
+    "verhalen/nl/V31.jpg"
    ],
-   "titel": "Herkenbaar, tot in de voettekst."
+   "titel": "Soms is een app de betere entree."
   },
   {
    "id": "2026-10-26-verhaal",
@@ -622,9 +691,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V34.jpg"
+    "verhalen/nl/V32.jpg"
    ],
-   "titel": "U spreekt altijd dezelfde persoon."
+   "titel": "Snel, veilig en zonder gedoe."
   },
   {
    "id": "2026-10-27-verhaal",
@@ -633,9 +702,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V35.jpg"
+    "verhalen/nl/V33.jpg"
    ],
-   "titel": "Wat goed gebouwd is, loopt vanzelf."
+   "titel": "Herkenbaar, tot in de voettekst."
   },
   {
    "id": "2026-10-27-bericht",
@@ -644,11 +713,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/B03-1.jpg",
-    "berichten/nl/B03-2.jpg",
-    "berichten/nl/B03-3.jpg"
+    "reels/R04.mp4"
    ],
-   "tekst": "Ordepartner — Alkmaar\n\nOrdepartner brengt rust en overzicht in de magazijnen en loodsen van zzp’ers en mkb-bedrijven. Ze ruimen op, delen logisch in en zorgen dat het ook zo blijft. Dat vroeg om een website die precies hetzelfde doet.\n\nWij maakten het logo, de teksten en de hele site: negen pagina’s, met de tarieven er gewoon op. Het bouwen zelf kostte één werkdag.\n\nSindsdien doen wij het onderhoud. Geen klus die af is, maar een samenwerking.\n\nVeeg door voor het kleine scherm en voor wat wij precies deden.\n\nordepartner.nl\n\n#webdesign #websitelatenmaken #webdesignnederland #webdesigner #nieuwewebsite #websitedesign #huisstijl #logodesign #ondernemen #zzp #mkb #eigenbedrijf #jouwweb #portfolio"
+   "tekst": "Elke site begint hier.\n\nEen leeg blad, en jouw bedrijf als vertrekpunt. Geen sjabloon dat voor de tiende keer meegaat, maar een site die bij je past.\n\n#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen"
   },
   {
    "id": "2026-10-28-verhaal",
@@ -679,9 +746,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/F19.jpg"
+    "berichten/nl/F22.jpg"
    ],
-   "tekst": "Achter de schermen.\n\nSnel laden, veilig, en zonder gedoe met updates. Je hoeft er niets van te zien; wij zorgen dat het klopt en blijft kloppen. Dat is het verschil tussen een site die staat en een site die werkt.\n\n#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop"
+   "tekst": "Wat goed gebouwd is, loopt vanzelf.\n\nEen site die je niet elke week hoeft na te kijken. Hosting, beveiliging en updates zitten erbij, en je kunt zelf teksten en foto’s aanpassen. Als je wilt. Als je niet wilt, doen wij het.\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
   },
   {
    "id": "2026-10-30-verhaal",
@@ -690,9 +757,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V36.jpg"
+    "verhalen/nl/V34.jpg"
    ],
-   "titel": "Uw klanten zijn ook om elf uur ’s avonds online."
+   "titel": "U spreekt altijd dezelfde persoon."
   },
   {
    "id": "2026-11-02-verhaal",
@@ -701,9 +768,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V37.jpg"
+    "verhalen/nl/V35.jpg"
    ],
-   "titel": "U vertelt, wij schrijven."
+   "titel": "Wat goed gebouwd is, loopt vanzelf."
   },
   {
    "id": "2026-11-03-verhaal",
@@ -712,9 +779,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V38.jpg"
+    "verhalen/nl/V37.jpg"
    ],
-   "titel": "Een voordeur die vertrouwen geeft."
+   "titel": "U vertelt, wij schrijven."
   },
   {
    "id": "2026-11-03-bericht",
@@ -723,9 +790,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "reels/R04.mp4"
+    "berichten/nl/B06.jpg"
    ],
-   "tekst": "Elke site begint hier.\n\nEen leeg blad, en jouw bedrijf als vertrekpunt. Geen sjabloon dat voor de tiende keer meegaat, maar een site die bij je past.\n\n#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland"
+   "tekst": "Drie afspraken die wij vooraf maken.\n\nVaste prijs vooraf. Een offerte met een bedrag en een opleverdatum. Meerwerk gaat pas door nadat je er ja op hebt gezegd.\n\nAntwoord binnen één werkdag. Één aanspreekpunt, geen helpdesk en geen ticketnummer. Meestal hoor je nog dezelfde dag iets.\n\nTwee rondes en 30 dagen nazorg. Je site gaat pas live als je tevreden bent, en fouten in de eerste maand herstellen wij kosteloos.\n\nyg-digital.nl\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
   },
   {
    "id": "2026-11-04-verhaal",
@@ -756,9 +823,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/F20.jpg"
+    "berichten/nl/F23.jpg"
    ],
-   "tekst": "Herkenbaar, tot in de voettekst.\n\nLogo, kleur en letter als één geheel: op je site, je drukwerk en je social media. Klanten herkennen je dan overal, ook zonder je naam te lezen.\n\nLogo en huisstijl maken we erbij als je wilt.\n\n#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland"
+   "tekst": "Je klanten zijn ook om elf uur ’s avonds online.\n\nDan zoeken ze je openingstijden, je prijzen, of gewoon een knop om morgen te bellen. Een goede site geeft dan al antwoord, zonder dat jij wakker hoeft te zijn.\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
   },
   {
    "id": "2026-11-06-verhaal",
@@ -767,9 +834,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V28.jpg"
+    "verhalen/nl/V38.jpg"
    ],
-   "titel": "Eerst op papier."
+   "titel": "Een voordeur die vertrouwen geeft."
   },
   {
    "id": "2026-11-09-verhaal",
@@ -778,9 +845,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V29.jpg"
+    "verhalen/nl/V27.jpg"
    ],
-   "titel": "Zo ziet de meeste klant u."
+   "titel": "Elke site begint aan een bureau als dit."
   },
   {
    "id": "2026-11-10-verhaal",
@@ -789,9 +856,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V30.jpg"
+    "verhalen/nl/V28.jpg"
    ],
-   "titel": "De entree van uw bedrijf."
+   "titel": "Eerst op papier."
   },
   {
    "id": "2026-11-10-bericht",
@@ -800,9 +867,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/B04.jpg"
+    "reels/R05.mp4"
    ],
-   "tekst": "Van eerste gesprek tot open deur.\n\n1. Gesprek. We bespreken wat je bedrijf online nodig heeft. Vrijblijvend, en je krijgt vooraf een offerte.\n2. Ontwerp. Je krijgt een eerste versie te zien. Twee correctierondes zitten erbij.\n3. Bouw. Wij bouwen de site af: snel, veilig en geschikt voor elk scherm.\n4. Lancering en nazorg. Je entree gaat open. Dertig dagen lang herstellen wij eventuele fouten gratis.\n\nJe site gaat pas live als je tevreden bent.\n\nyg-digital.nl\n\n#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop"
+   "tekst": "Snel, veilig, zonder gedoe.\n\nJe hoeft er niets van te zien. Updates en beveiliging zitten erbij, en het blijft kloppen. Dat is achter de schermen ons werk.\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
   },
   {
    "id": "2026-11-11-verhaal",
@@ -833,9 +900,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/F21.jpg"
+    "berichten/nl/F24.jpg"
    ],
-   "tekst": "Je spreekt altijd dezelfde persoon.\n\nGeen helpdesk, geen ticketnummer, geen wachtrij. Je mailt of appt, en je hoort binnen één werkdag iets. Klein bureau, korte lijnen. Zo werken we het liefst.\n\n#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland"
+   "tekst": "Jij vertelt, wij schrijven.\n\nDe meeste ondernemers lopen vast op de teksten, niet op het ontwerp. Daarom schrijven wij ze: jij vertelt hoe je werkt, wij maken er een verhaal van dat leest. Jij leest het na, wij maken het af.\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
   },
   {
    "id": "2026-11-13-verhaal",
@@ -844,9 +911,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V31.jpg"
+    "verhalen/nl/V29.jpg"
    ],
-   "titel": "Soms is een app de betere entree."
+   "titel": "Zo ziet de meeste klant u."
   },
   {
    "id": "2026-11-16-verhaal",
@@ -855,9 +922,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V33.jpg"
+    "verhalen/nl/V30.jpg"
    ],
-   "titel": "Herkenbaar, tot in de voettekst."
+   "titel": "De entree van uw bedrijf."
   },
   {
    "id": "2026-11-17-verhaal",
@@ -866,9 +933,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V34.jpg"
+    "verhalen/nl/V31.jpg"
    ],
-   "titel": "U spreekt altijd dezelfde persoon."
+   "titel": "Soms is een app de betere entree."
   },
   {
    "id": "2026-11-17-bericht",
@@ -877,9 +944,11 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "reels/R05.mp4"
+    "berichten/nl/B07-1.jpg",
+    "berichten/nl/B07-2.jpg",
+    "berichten/nl/B07-3.jpg"
    ],
-   "tekst": "Snel, veilig, zonder gedoe.\n\nJe hoeft er niets van te zien. Updates en beveiliging zitten erbij, en het blijft kloppen. Dat is achter de schermen ons werk.\n\n#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop"
+   "tekst": "Onze eigen entree.\n\nWat wij voor jou bouwen, bouwen wij eerst voor onszelf. Inclusief het stuk waar de meeste bureaus met een grote boog omheen lopen: de prijzen.\n\nVeeg door — ze staan er gewoon.\n\nWij bouwen standaard in JouwWeb, omdat je daar het minst kwijt bent en zelf alles kunt bijhouden. Liever Shopify, WordPress of Wix? Dan bouwen wij daar ook.\n\nyg-digital.nl\n\n#webdesign #websitelatenmaken #webdesignnederland #webdesignbureau #nieuwewebsite #websitedesign #huisstijl #logodesign #portfolio #ondernemen #mkb #zzp"
   },
   {
    "id": "2026-11-18-verhaal",
@@ -910,9 +979,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/F22.jpg"
+    "berichten/nl/F25.jpg"
    ],
-   "tekst": "Wat goed gebouwd is, loopt vanzelf.\n\nEen site die je niet elke week hoeft na te kijken. Hosting, beveiliging en updates zitten erbij, en je kunt zelf teksten en foto’s aanpassen. Als je wilt. Als je niet wilt, doen wij het.\n\n#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop"
+   "tekst": "Een voordeur die vertrouwen geeft.\n\nDrie afspraken, altijd: een vaste prijs vooraf, antwoord binnen één werkdag, en dertig dagen nazorg na de oplevering. Zo weet je waar je aan toe bent, van het eerste gesprek tot de open deur.\n\n#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen"
   },
   {
    "id": "2026-11-20-verhaal",
@@ -921,9 +990,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V36.jpg"
+    "verhalen/nl/V32.jpg"
    ],
-   "titel": "Uw klanten zijn ook om elf uur ’s avonds online."
+   "titel": "Snel, veilig en zonder gedoe."
   },
   {
    "id": "2026-11-23-verhaal",
@@ -932,9 +1001,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V37.jpg"
+    "verhalen/nl/V34.jpg"
    ],
-   "titel": "U vertelt, wij schrijven."
+   "titel": "U spreekt altijd dezelfde persoon."
   },
   {
    "id": "2026-11-24-verhaal",
@@ -943,9 +1012,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V38.jpg"
+    "verhalen/nl/V35.jpg"
    ],
-   "titel": "Een voordeur die vertrouwen geeft."
+   "titel": "Wat goed gebouwd is, loopt vanzelf."
   },
   {
    "id": "2026-11-24-bericht",
@@ -954,9 +1023,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/B05.jpg"
+    "reels/R07.mp4"
    ],
-   "tekst": "Zie je droomwebsite voordat hij bestaat.\n\nOp onze site staat een ontwerpstudio. Je kiest je branche, je sfeer en wat je website moet kunnen — en wij bouwen hem voor je ogen op, met je eigen naam erop.\n\nTwee minuten. Geen account. Het kost niets en verplicht tot niets.\n\nDaarna weet je tenminste waar je over praat als je met ons of met iemand anders om tafel gaat.\n\nyg-digital.nl/eerste-ontwerp\n\n#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland"
+   "tekst": "Herkenbaar, tot in de voettekst.\n\nLogo, kleur en letter als één geheel: op je site, je drukwerk en je social media. Klanten herkennen je zonder je naam te lezen.\n\n#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen"
   },
   {
    "id": "2026-11-25-verhaal",
@@ -987,9 +1056,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/F23.jpg"
+    "berichten/nl/F14.jpg"
    ],
-   "tekst": "Je klanten zijn ook om elf uur ’s avonds online.\n\nDan zoeken ze je openingstijden, je prijzen, of gewoon een knop om morgen te bellen. Een goede site geeft dan al antwoord, zonder dat jij wakker hoeft te zijn.\n\n#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop"
+   "tekst": "Elke site begint aan een bureau als dit.\n\nGeen sjabloon dat we voor de tiende keer opnieuw gebruiken, maar een leeg blad en jouw bedrijf als vertrekpunt. Wat doe je, voor wie, en wat moet een klant binnen drie seconden snappen? Daar begint het. De rest is vakwerk.\n\nWebsites vanaf € 550, vaste prijs vooraf.\n\n#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen"
   },
   {
    "id": "2026-11-27-verhaal",
@@ -998,9 +1067,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V27.jpg"
+    "verhalen/nl/V36.jpg"
    ],
-   "titel": "Elke site begint aan een bureau als dit."
+   "titel": "Uw klanten zijn ook om elf uur ’s avonds online."
   },
   {
    "id": "2026-11-30-verhaal",
@@ -1009,9 +1078,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V28.jpg"
+    "verhalen/nl/V37.jpg"
    ],
-   "titel": "Eerst op papier."
+   "titel": "U vertelt, wij schrijven."
   },
   {
    "id": "2026-12-01-verhaal",
@@ -1020,9 +1089,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V29.jpg"
+    "verhalen/nl/V38.jpg"
    ],
-   "titel": "Zo ziet de meeste klant u."
+   "titel": "Een voordeur die vertrouwen geeft."
   },
   {
    "id": "2026-12-01-bericht",
@@ -1031,9 +1100,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "reels/R07.mp4"
+    "berichten/nl/B08.jpg"
    ],
-   "tekst": "Herkenbaar, tot in de voettekst.\n\nLogo, kleur en letter als één geheel: op je site, je drukwerk en je social media. Klanten herkennen je zonder je naam te lezen.\n\n#ygdigital #yourgateway #webdesign #websites #onlineondernemen #ondernemen #zzpnederland #mkbnederland #eigenbedrijf #vakmanschap #entree #webdesignnederland"
+   "tekst": "“En wat kost het dan daarna nog?”\n\nDe eerlijke opsomming:\n\nHosting vanaf € 5,50 per maand, rechtstreeks aan het platform. Wij rekenen daar niets bovenop.\nDomeinnaam het eerste jaar gratis, daarna € 20 per jaar. Op je eigen naam.\nOnderhoud € 45 per uur, afgerond per kwartier. Een korte vraag tussendoor kost niets.\n\nDat laatste bedrag is het vermelden waard: een webbureau rekent voor datzelfde werk € 80 tot € 150 per uur.\n\nVerwacht je vaker iets te willen veranderen? Dan is een onderhoudsabonnement voordeliger. Ook die tarieven staan gewoon op de site.\n\nBedragen exclusief btw, tarieven van september 2026.\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
   },
   {
    "id": "2026-12-02-verhaal",
@@ -1064,9 +1133,9 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/F24.jpg"
+    "berichten/nl/F18.jpg"
    ],
-   "tekst": "Jij vertelt, wij schrijven.\n\nDe meeste ondernemers lopen vast op de teksten, niet op het ontwerp. Daarom schrijven wij ze: jij vertelt hoe je werkt, wij maken er een verhaal van dat leest. Jij leest het na, wij maken het af.\n\n#watkosteenwebsite #websitelatenmaken #webdesign #ondernemerstips #websitetips #onlinezichtbaar #vindbaarheid #zzp #mkb #startendondernemer #eigenbedrijf #kvk #ondernemen #webshop"
+   "tekst": "Soms is een app de betere entree.\n\nEen bestelling die klanten zelf plaatsen, een afspraak die ze zelf inboeken, een klantenkaart op de telefoon. Niet elk bedrijf heeft dat nodig, maar als het past, bouwen we het. Vraag het gewoon.\n\n#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen"
   },
   {
    "id": "2026-12-04-verhaal",
@@ -1075,9 +1144,9 @@
    "soort": "verhaal",
    "taal": "nl",
    "beeld": [
-    "verhalen/nl/V30.jpg"
+    "verhalen/nl/V27.jpg"
    ],
-   "titel": "De entree van uw bedrijf."
+   "titel": "Elke site begint aan een bureau als dit."
   }
  ]
 }
