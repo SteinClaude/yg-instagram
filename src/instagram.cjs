@@ -96,9 +96,13 @@ async function plaatsVerhaal(igId, token, beeldUrl) {
 // Een reel: staande video (MP4, H.264/AAC, 3 s tot 15 min). Instagram haalt hem
 // op en zet hem om; dat duurt langer dan bij een foto, vandaar de ruimere wachttijd.
 // share_to_feed zet hem ook in het raster van het profiel. thumb_offset kiest de
-// omslag: op 9 seconden staat de eerste boodschap volledig in beeld (op frame 0
-// is er nog niets dan de foto).
-const OMSLAG_MS = 9000;
+// omslag: op 4 seconden staat de kop volledig in beeld en de onderregel nog niet.
+// Dat is met opzet — in het raster is een tegel zo'n 120 px breed en wordt die
+// onderregel onleesbare ruis. Bij een reel met een clip is op 4 seconden ook het
+// onderwerp nog herkenbaar; later in de clip is de camera al doorgelopen.
+// gereedschap/reel.cjs haalt deze waarde hier op, zodat de poster in het
+// dashboard en de omslag op het profiel niet uit elkaar kunnen lopen.
+const OMSLAG_MS = 4000;
 async function plaatsReel(igId, token, videoUrl, bijschrift) {
   const c = await maakContainer(igId, token, {
     media_type: 'REELS', video_url: videoUrl, caption: bijschrift, share_to_feed: 'true', thumb_offset: OMSLAG_MS,
@@ -151,5 +155,5 @@ async function vernieuwSleutel(token) {
 }
 
 module.exports = {
-  VERSIE, api, plaatsFoto, plaatsCarrousel, plaatsVerhaal, plaatsReel, proefVideo,
+  VERSIE, OMSLAG_MS, api, plaatsFoto, plaatsCarrousel, plaatsVerhaal, plaatsReel, proefVideo,
   wieBenIk, ruimteOver, vernieuwSleutel, wacht, recenteMedia };

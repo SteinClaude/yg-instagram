@@ -4,6 +4,13 @@
 // met ffmpeg; muziek voegt Gijs in de Instagram-app toe. Er zit wel een stil
 // audiospoor in, anders weigert Instagram het bestand soms.
 //
+// Ligt er in platen/bron/clips/ een <beeld>.mp4 — een echte bewegende clip in
+// plaats van een foto — dan wordt die de achtergrond: eerst de clip, daarna het
+// laatste frame dat langzaam doorzoomt tot de 18 seconden vol zijn. Zo'n reel
+// draait op 24 beelden per seconde, het tempo van de clip zelf; omrekenen naar
+// 30 verdubbelt frames en dat schokt zichtbaar bij een trage camerabeweging.
+// De tijdlijn van de tekst staat in seconden en verschuift daar niet van.
+//
 //   node gereedschap/reel.cjs          alle reels uit teksten/reels-nl.cjs
 //   node gereedschap/reel.cjs R03      alleen die
 //
@@ -14,11 +21,13 @@ const { execFileSync } = require('child_process');
 const M = require('../platen/maak.cjs');
 const { Resvg } = require('C:/Users/gijsm/yg-luxury/brand/node_modules/@resvg/resvg-js');
 const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const { OMSLAG_MS } = require('../src/instagram.cjs');   // één waarde voor poster én profiel
 
-const W = 1080, H = 1920, FPS = 30, DUUR = 18;
+const W = 1080, H = 1920, FPS = 30, FPS_CLIP = 24, DUUR = 18;
 const k = M.K.donker, L = M.L, r3 = M.r3;
 const WORTEL = path.join(__dirname, '..');
 const BRON = path.join(WORTEL, 'platen', 'bron', 'ai');
+const CLIPS = path.join(WORTEL, 'platen', 'bron', 'clips');
 const UIT = path.join(WORTEL, 'beeld', 'reels');
 const MINI = path.join(WORTEL, 'mini');
 const WERK = path.join(WORTEL, 'platen', 'uit', 'reels');   // tussenbestanden, niet in git
@@ -27,20 +36,54 @@ const laag = inhoud => new Resvg(
   `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${inhoud}</svg>`,
   { font: { loadSystemFonts: false }, fitTo: { mode: 'width', value: W } }).render().asPng();
 
-// Het beeld op dubbele maat (voor een vloeiende zoom) met hetzelfde verloop als de platen.
-async function achtergrond(beeld, doel) {
-  const verloop = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="2160" height="3840">
-<defs><linearGradient id="v" x1="0" y1="0" x2="0" y2="1">
+// Het verloop dat de tekst leesbaar houdt: bovenin iets dempen, in het midden
+// bijna niets, onderin flink. Eén plek, zodat foto en clip niet uit elkaar lopen.
+const VERLOOP = (b, h) => `<defs><linearGradient id="v" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#141414" stop-opacity="0.34"/>
 <stop offset="40%" stop-color="#141414" stop-opacity="0.14"/>
 <stop offset="62%" stop-color="#141414" stop-opacity="0.58"/>
 <stop offset="100%" stop-color="#141414" stop-opacity="0.94"/></linearGradient></defs>
-<rect width="2160" height="3840" fill="url(#v)"/></svg>`);
+<rect width="${b}" height="${h}" fill="url(#v)"/>`;
+
+// Het beeld op dubbele maat (voor een vloeiende zoom) met hetzelfde verloop als de platen.
+async function achtergrond(beeld, doel) {
+  const verloop = Buffer.from(
+    `<svg xmlns="http://www.w3.org/2000/svg" width="2160" height="3840">${VERLOOP(2160, 3840)}</svg>`);
   await sharp(path.join(BRON, beeld + '.jpg'))
     .resize(2160, 3840, { fit: 'cover', kernel: 'lanczos3' })
     .modulate({ brightness: 0.9, saturation: 0.9 })
     .composite([{ input: verloop }])
     .jpeg({ quality: 94 }).toFile(doel);
+}
+
+// Achtergrond uit een bewegende clip: eerst de clip zelf, daarna het laatste
+// frame dat doorzoomt tot de 18 seconden vol zijn. Die doorzoom begint snel en
+// loopt uit (vandaar de wortel), zodat de camera niet hoorbaar stilvalt op het
+// moment dat de clip afloopt. Demping en verloop gelijk aan de platen.
+async function achtergrondVideo(clipPad, doel, werk, fps) {
+  const duur = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration',
+    '-of', 'default=nw=1:nk=1', clipPad]).toString().trim());
+  const rest = Math.max(0.5, DUUR - duur), rf = Math.round(rest * fps);
+  const slot = path.join(werk, 'slot.jpg');
+  execFileSync('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error',
+    '-sseof', '-0.15', '-i', clipPad, '-frames:v', '1', '-q:v', '2', slot]);
+  const slotGroot = path.join(werk, 'slot-groot.jpg');
+  await sharp(slot).resize(2 * W, 2 * H, { fit: 'cover', kernel: 'lanczos3' })
+    .jpeg({ quality: 96 }).toFile(slotGroot);
+  const vp = path.join(werk, 'verloop.png');
+  fs.writeFileSync(vp, laag(VERLOOP(W, H)));
+  const toon = 'eq=saturation=0.9:brightness=-0.04';   // wat modulate() op de platen doet
+  const filter = [
+    `[0:v]fps=${fps},scale=${W}:${H},${toon},setsar=1,format=yuv420p[a]`,
+    `[1:v]zoompan=z='1+0.12*sqrt(on/${rf})':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'` +
+      `:d=${rf}:s=${W}x${H}:fps=${fps},${toon},setsar=1,format=yuv420p[b]`,
+    `[a][b]concat=n=2:v=1:a=0[s]`,
+    `[s][2:v]overlay=0:0,format=yuv420p[v]`,
+  ].join(';');
+  execFileSync('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error',
+    '-i', clipPad, '-i', slotGroot, '-loop', '1', '-framerate', String(fps), '-t', String(DUUR), '-i', vp,
+    '-filter_complex', filter, '-map', '[v]', '-t', String(DUUR), '-r', String(fps),
+    '-c:v', 'libx264', '-preset', 'medium', '-crf', '16', '-pix_fmt', 'yuv420p', doel], { stdio: 'inherit' });
 }
 
 // De vaste laag: kader, embleem, voetregel. Instagram legt bij reels bovenin
@@ -79,8 +122,12 @@ function regel(tekst, bovenkant) {
 async function bouw(r) {
   const werk = path.join(WERK, r.code); fs.mkdirSync(werk, { recursive: true });
   fs.mkdirSync(UIT, { recursive: true }); fs.mkdirSync(MINI, { recursive: true });
-  const bg = path.join(werk, 'achtergrond.jpg');
-  await achtergrond(r.beeld, bg);
+  const clipPad = path.join(CLIPS, r.beeld + '.mp4');
+  const heeftClip = fs.existsSync(clipPad);
+  const fps = heeftClip ? FPS_CLIP : FPS;
+  const bg = path.join(werk, heeftClip ? 'achtergrond.mp4' : 'achtergrond.jpg');
+  if (heeftClip) await achtergrondVideo(clipPad, bg, werk, fps);
+  else await achtergrond(r.beeld, bg);
   const lagen = {};
   const zet = (naam, png) => { lagen[naam] = path.join(werk, naam + '.png'); fs.writeFileSync(lagen[naam], png); };
   zet('chroom', chroom());
@@ -91,9 +138,11 @@ async function bouw(r) {
   // tijdlijn in seconden
   const T = { chroom: 0.5, kop1: 1.6, sub1: 4.4, uit1: 10.2, kop2: 11.0, sub2: 13.2, einde: 17.3 };
   const rijs = (st, d = 0.9) => `'30*(1-min(1,max(0,(t-${st})/${d})))'`;   // zachte opkomst van 30 px
-  const frames = DUUR * FPS;
+  const frames = DUUR * fps;
   const filter = [
-    `[0:v]zoompan=z='1+0.10*on/${frames}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${frames}:s=${W}x${H}:fps=${FPS},format=rgba[bg]`,
+    heeftClip
+      ? `[0:v]format=rgba[bg]`
+      : `[0:v]zoompan=z='1+0.10*on/${frames}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${frames}:s=${W}x${H}:fps=${fps},format=rgba[bg]`,
     `[1:v]format=rgba,fade=t=in:st=${T.chroom}:d=0.8:alpha=1[c]`,
     `[2:v]format=rgba,fade=t=in:st=${T.kop1}:d=0.9:alpha=1,fade=t=out:st=${T.uit1}:d=0.6:alpha=1[k1]`,
     `[3:v]format=rgba,fade=t=in:st=${T.sub1}:d=0.9:alpha=1,fade=t=out:st=${T.uit1}:d=0.6:alpha=1[s1]`,
@@ -111,9 +160,9 @@ async function bouw(r) {
 
   const mp4 = path.join(UIT, r.code + '.mp4');
   const args = ['-y', '-hide_banner', '-loglevel', 'error', '-i', bg];
-  for (const naam of ['chroom', 'kop1', 'sub1', 'kop2', 'sub2']) args.push('-loop', '1', '-framerate', String(FPS), '-t', String(DUUR), '-i', lagen[naam]);
+  for (const naam of ['chroom', 'kop1', 'sub1', 'kop2', 'sub2']) args.push('-loop', '1', '-framerate', String(fps), '-t', String(DUUR), '-i', lagen[naam]);
   args.push('-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=48000',
-    '-filter_complex', filter, '-map', '[v]', '-map', '6:a', '-t', String(DUUR), '-r', String(FPS),
+    '-filter_complex', filter, '-map', '[v]', '-map', '6:a', '-t', String(DUUR), '-r', String(fps),
     '-c:v', 'libx264', '-preset', 'slow', '-crf', '18', '-profile:v', 'high', '-level', '4.1', '-pix_fmt', 'yuv420p',
     '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',
     '-c:a', 'aac', '-b:a', '96k',
@@ -121,11 +170,11 @@ async function bouw(r) {
     mp4);
   execFileSync('ffmpeg', args, { stdio: 'inherit' });
 
-  // Stilstaand beeld op 9 seconden: dan staan kop én onderregel van de eerste
-  // boodschap in beeld. Zelfde moment als de omslag die Instagram kiest
-  // (thumb_offset in src/instagram.cjs), zodat dashboard en profiel gelijk zijn.
+  // Stilstaand beeld op hetzelfde moment als de omslag die Instagram kiest
+  // (OMSLAG_MS uit src/instagram.cjs), zodat dashboard en profiel gelijk zijn.
   const poster = path.join(UIT, r.code + '.jpg');
-  execFileSync('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error', '-ss', '9', '-i', mp4, '-frames:v', '1', '-q:v', '3', poster]);
+  execFileSync('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error',
+    '-ss', String(OMSLAG_MS / 1000), '-i', mp4, '-frames:v', '1', '-q:v', '3', poster]);
   await sharp(poster).resize({ width: 260 }).jpeg({ quality: 72 }).toFile(path.join(MINI, `reels-${r.code}.jpg`));
   const mb = Math.round(fs.statSync(mp4).size / 1024 / 1024 * 10) / 10;
   console.log(`${r.code}  ${r.beeld.padEnd(10)} ${mb} MB ✓`);
