@@ -16,8 +16,9 @@ const SUB = 'Websites vanaf € 550 · vaste prijs vooraf';
 
 // code = het nummer waar het bijschrift in teksten/berichten-nl.cjs bij hoort.
 const PLATEN = [
-  { code: 'F01', beeld: 'kapper',  kop: 'Voor de kapper om de hoek.' },
-  { code: 'F04', beeld: 'vakman',  kop: 'Voor de vakman die liever bouwt dan typt.' },
+  { code: 'F01', beeld: 'kapper',     kop: 'Voor de kapper om de hoek.' },
+  { code: 'F04', beeld: 'vakman',     kop: 'Voor de vakman die liever bouwt dan typt.' },
+  { code: 'F03', beeld: 'restaurant', kop: 'Voor het restaurant dat vol wil zitten.' },
 ];
 
 const plaat = p => ({
