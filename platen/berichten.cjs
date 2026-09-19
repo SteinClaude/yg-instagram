@@ -215,7 +215,7 @@ module.exports = [
       { t: 'kop', tekst: 'Laat ons uw entree bouwen.', grootte: 68, marge: 34 },
       { t: 'tekst', tekst: 'Een vrijblijvend gesprek over wat uw bedrijf online nodig heeft. Bellen, appen of mailen mag — u hoort meestal nog dezelfde dag iets.', marge: 40 },
       { t: 'lijn', marge: 34 },
-      { t: 'tekst', tekst: '06 42 65 31 77', grootte: 34, marge: 14 },
+      { t: 'tekst', tekst: '06 44 89 21 82', grootte: 34, marge: 14 },
       { t: 'tekst', tekst: 'info@yg-digital.nl', grootte: 34 },
     ],
   },

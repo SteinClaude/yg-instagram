@@ -128,7 +128,7 @@ yg-digital.nl` },
 
 A no-obligation conversation about what your business needs online — and what we can do for you. Call, message or email. You usually hear back the same day.
 
-06 42 65 31 77
+06 44 89 21 82
 info@yg-digital.nl
 yg-digital.nl
 

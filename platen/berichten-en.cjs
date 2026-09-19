@@ -208,7 +208,7 @@ module.exports = [
       { t: 'kop', tekst: 'Let us build your entrance.', grootte: 68, marge: 34 },
       { t: 'tekst', tekst: 'A no-obligation conversation about what your business needs online. Call, message or email — you will usually hear back the same day.', marge: 40 },
       { t: 'lijn', marge: 34 },
-      { t: 'tekst', tekst: '06 42 65 31 77', grootte: 34, marge: 14 },
+      { t: 'tekst', tekst: '06 44 89 21 82', grootte: 34, marge: 14 },
       { t: 'tekst', tekst: 'info@yg-digital.nl', grootte: 34 },
     ],
   },

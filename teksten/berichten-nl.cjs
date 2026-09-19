@@ -275,7 +275,7 @@ Laat ons je entree bouwen.
 
 Een vrijblijvend gesprek over wat je bedrijf online nodig heeft — en wat wij daarin voor je kunnen betekenen. Bellen, appen of mailen mag. Je hoort meestal nog dezelfde dag iets.
 
-06 42 65 31 77
+06 44 89 21 82
 info@yg-digital.nl
 yg-digital.nl
 
