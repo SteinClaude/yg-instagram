@@ -231,15 +231,10 @@
    "soort": "bericht",
    "taal": "nl",
    "beeld": [
-    "berichten/nl/B13-1.jpg",
-    "berichten/nl/B13-2.jpg",
-    "berichten/nl/B13-3.jpg",
-    "berichten/nl/B13-4.jpg",
-    "berichten/nl/B13-5.jpg",
-    "berichten/nl/B13-6.jpg",
-    "berichten/nl/B13-7.jpg"
+    "berichten/nl/F04.jpg"
    ],
-   "tekst": "Vijf dingen die klanten op je site zoeken.\n\nEn binnen drie seconden willen vinden. Swipe door: wat je doet en waar, je telefoonnummer, openingstijden die kloppen, wat het ongeveer kost, en een foto van jou of je zaak.\n\nOntbreekt er iets op je site? Wij kijken vrijblijvend mee; één bericht is genoeg.\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer"
+   "tekst": "Voor de vakman die liever bouwt dan typt.\n\nJe levert vakwerk. Alleen ziet niemand dat, want je website is een pagina uit 2014 met een foto van een busje erop.\n\nJe hoeft er zelf niets aan te doen. Wij maken de teksten, kiezen het beeld en zetten je werk erop. Jij kijkt het na en zegt ja of nee.\n\nWebsites voor ondernemers, vanaf € 550 excl. btw. Vaste prijs vooraf, met een opleverdatum erbij. Antwoord binnen één werkdag.\n\n#websitelatenmaken #webdesign #ondernemen #ondernemerschap #zzp #mkb #kleinbedrijf #eigenbedrijf #lokaalondernemen #startendondernemer #ondernemersleven #webdesignnederland",
+   "eenmalig": true
   },
   {
    "id": "2026-09-20-bericht",
@@ -363,6 +358,24 @@
     "verhalen/nl/V31.jpg"
    ],
    "titel": "Soms is een app de betere entree."
+  },
+  {
+   "id": "2026-09-26-bericht",
+   "datum": "2026-09-26",
+   "tijd": "19:00",
+   "soort": "bericht",
+   "taal": "nl",
+   "beeld": [
+    "berichten/nl/B13-1.jpg",
+    "berichten/nl/B13-2.jpg",
+    "berichten/nl/B13-3.jpg",
+    "berichten/nl/B13-4.jpg",
+    "berichten/nl/B13-5.jpg",
+    "berichten/nl/B13-6.jpg",
+    "berichten/nl/B13-7.jpg"
+   ],
+   "tekst": "Vijf dingen die klanten op je site zoeken.\n\nEn binnen drie seconden willen vinden. Swipe door: wat je doet en waar, je telefoonnummer, openingstijden die kloppen, wat het ongeveer kost, en een foto van jou of je zaak.\n\nOntbreekt er iets op je site? Wij kijken vrijblijvend mee; één bericht is genoeg.\n\n#websitetips #ondernemerstips #websitelatenmaken #webdesign #watkosteenwebsite #onlinemarketing #vindbaarheid #onlinezichtbaar #ondernemen #mkb #zzp #startendondernemer",
+   "eenmalig": true
   },
   {
    "id": "2026-09-28-verhaal",
