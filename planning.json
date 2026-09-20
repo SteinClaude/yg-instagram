@@ -445,6 +445,18 @@
       "eenmalig": true
     },
     {
+      "id": "2026-09-25-verhaal-2",
+      "datum": "2026-09-25",
+      "tijd": "20:30",
+      "soort": "verhaal",
+      "taal": "nl",
+      "beeld": [
+        "verhalen/nl/V04.jpg"
+      ],
+      "titel": "Ons werk: Ordepartner",
+      "eenmalig": true
+    },
+    {
       "id": "2026-09-26-bericht",
       "datum": "2026-09-26",
       "tijd": "19:00",

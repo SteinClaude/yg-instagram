@@ -36,6 +36,8 @@ const OMSLAGEN = [
   { naam: 'Altijd open', beeld: 'altijd-open2', x: 0.50, y: 0.50, maat: 0.92 },
   { naam: 'Teksten',     beeld: 'teksten2',     x: 0.50, y: 0.50, maat: 0.92 },
   { naam: 'Afspraken',   beeld: 'afspraken2',   x: 0.60, y: 0.62, maat: 0.52 },
+  // 20 sep: hoort bij de nieuwe highlight *Ons werk* (Ordepartner voorop).
+  { naam: 'Ons werk',    beeld: 'tablet',       x: 0.32, y: 0.59, maat: 0.60 },
 ];
 
 // De prijs is geen foto maar een bedrag; dat leest in een rondje beter dan welk
