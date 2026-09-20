@@ -41,6 +41,27 @@ const x = C - 50 * SCH, y = C - 55 * SCH;
 let zaad = 20260919;
 const rnd = () => (zaad = (zaad * 1103515245 + 12345) & 0x7fffffff) / 0x7fffffff;
 
+// HANDWERK. Een geslagen penning komt uit een mal die met de hand is gesneden:
+// geen twee nissen zijn precies gelijk, geen parel zit exact op zijn plek. Deze
+// reeks staat los van de bovenstaande, zodat handwerk toevoegen de rest van het
+// ontwerp niet verschuift. De afwijkingen zijn klein genoeg om niet als fout te
+// lezen en groot genoeg om het machinale eraf te halen - en dat laatste is
+// precies waar het oog "gemaakt door iemand" aan herkent. Niet weghalen.
+let hzaad = 7777;
+const hrnd = () => (hzaad = (hzaad * 1103515245 + 12345) & 0x7fffffff) / 0x7fffffff;
+const w = () => hrnd() - 0.5;          // -0,5 tot 0,5
+
+// STEEN. Een derde reeks, voor de nerf van het albast. Los van de twee andere,
+// zodat het toevoegen van aders de korrel en het verguldwerk niet verschuift.
+// De albastlagen staan vast aan. De schakelaar die hier stond was om te kunnen
+// toetsen of de lagen de plaat niet stiekem donkerder maakten; die toets is
+// gedaan (helderheid 215 tegen 214 zonder) en hoeft niet in productie te staan.
+const ALBAST = true;
+const NAAM = 'profiel-entree';
+
+let nzaad = 5150419;
+const nrnd = () => (nzaad = (nzaad * 1103515245 + 12345) & 0x7fffffff) / 0x7fffffff;
+
 const r2 = n => Math.round(n * 100) / 100;
 const TAU = Math.PI * 2, RAD = Math.PI / 180;
 const P = (r, a) => [r2(C + r * Math.cos(a)), r2(C + r * Math.sin(a))];
@@ -82,6 +103,7 @@ for (let i = 0; i <= RIJEN; i++) {
 
 // licht linksboven, zelfde hoek als de champagne-ondergrond
 const A_LICHT = -128 * RAD;
+const LETTER_LIJN = 0.85;   // omlijning van YG: Playfair heeft geen vet, en dit is de naam
 const LX = Math.cos(A_LICHT), LY = Math.sin(A_LICHT);
 const licht = a => Math.cos(a - A_LICHT);
 
@@ -349,25 +371,30 @@ function tamboer() {
   s += `<circle cx="${C}" cy="${C}" r="${R_PLINT}" fill="none" stroke="${G_INKT}" stroke-width="2.2" opacity="0.46"/>`;
   s += `<circle cx="${C}" cy="${C}" r="${r2(R_PLINT + 2.6)}" fill="none" stroke="${CREME}" stroke-width="1.5" opacity="0.44"/>`;
   for (let k = 0; k < 144; k++) {
-    const a = A_OFF + (k + 0.5) * (TAU / 144);
-    const [px, py] = P(R_PLINT + 9, a);
-    s += `<circle cx="${px}" cy="${py}" r="${k % 6 === 0 ? 1.5 : 1.0}" fill="${CREME}" opacity="${k % 6 === 0 ? 0.34 : 0.22}"/>`;
+    const a = A_OFF + (k + 0.5) * (TAU / 144) + w() * 0.0055;
+    const [px, py] = P(R_PLINT + 9 + w() * 1.3, a);
+    const groot = k % 6 === 0;
+    s += `<circle cx="${px}" cy="${py}" r="${r2((groot ? 1.5 : 1.0) + w() * 0.34)}" fill="${CREME}" opacity="${r2((groot ? 0.34 : 0.22) + w() * 0.07)}"/>`;
   }
   s += `<circle cx="${C}" cy="${C}" r="${r2(R_VOET - 2.4)}" fill="none" stroke="${CREME}" stroke-width="1.7" opacity="0.52"/>`;
   s += `<circle cx="${C}" cy="${C}" r="${r2(R_VOET + 0.6)}" fill="none" stroke="${G_INKT}" stroke-width="2.6" opacity="0.46"/>`;
   // de wand van de tamboer: licht pleisterwerk waar de nissen in zitten
   s += `<path d="${ringPad(R_VOET, R_KROON)}" fill="url(#wand)" fill-rule="evenodd"/>`;
   for (let k = 0; k < 288; k++) {          // voegen van het steenwerk, heel fijn
-    const a = A_OFF + (k + 0.5) * (TAU / 288);
-    s += `<path d="${straalLijn(R_VOET + 1, R_KROON - 1, a)}" stroke="${G_SCHAD}" stroke-width="0.5" opacity="${k % 2 ? 0.045 : 0.075}"/>`;
+    const a = A_OFF + (k + 0.5) * (TAU / 288) + w() * 0.004;
+    s += `<path d="${straalLijn(R_VOET + 1 + w() * 1.2, R_KROON - 1 + w() * 1.2, a)}" stroke="${G_SCHAD}" stroke-width="${r2(0.5 + w() * 0.2)}" opacity="${r2((k % 2 ? 0.045 : 0.075) + w() * 0.03)}"/>`;
   }
   for (const rr of [R_VOET + 17, R_VOET + 34, R_VOET + 50])
     s += `<circle cx="${C}" cy="${C}" r="${rr}" fill="none" stroke="${G_SCHAD}" stroke-width="0.55" opacity="0.07"/>`;
 
-  const hw = HW, rVoet = R_VOET + 2, rAanzet = R_AANZ, rTop = R_BOOG;
+  const rTop = R_BOOG;
 
   for (let k = 0; k < TRAVEE; k++) {
-    const am = A_OFF + (k + 0.5) * STAP_T, L = licht(am);
+    const am = A_OFF + (k + 0.5) * STAP_T + w() * STAP_T * 0.055;   // niet exact op de steek
+    const hw = r2(HW + w() * 1.7);                                  // niet exact even breed
+    const rVoet = r2(R_VOET + 2 + w() * 1.9);
+    const rAanzet = r2(R_AANZ + w() * 2.8);
+    const L = licht(am);
     const scha = (1 - L) / 2, dk = 0.48 + 0.30 * scha;
     const links = Math.sin(A_LICHT - am) > 0;      // welke dagkant vangt licht
     let g = '';
@@ -566,7 +593,265 @@ function watermerk() {
   return s + '</g>';
 }
 
+// ================================================================ ALBAST
+// Tot hier is dit een ondoorzichtig voorwerp: al het licht komt van buiten, van
+// linksboven, en stuitert terug. Wat volgt zet er een lamp ACHTER. Dun albast
+// doet dan drie dingen tegelijk, en alle drie staan hieronder:
+//
+//   1. DIKTE BESLIST. Waar de steen dun is komt het licht er diffuus doorheen;
+//      waar hij dik is blijft hij dicht. Niet de vorm bepaalt de gloed maar de
+//      wanddikte - daarom eerst een dikteMasker(), en pas daarna licht.
+//   2. DE NERF WORDT PAS ZICHTBAAR IN HET LICHT. Op een ondoorzichtige steen
+//      zie je de aders overal even goed; bij doorvallend licht alleen daar waar
+//      het licht erdoorheen komt. Dus: nerf x dikte x lamp.
+//   3. DE RAND LEKT. Aan een dunne rand loopt het licht dwars door de steen en
+//      even verder - daarom gloeit de buitenrand naar buiten toe uit.
+//
+// Alles blijft onder de modellering (model/glans/verguld) hangen, zodat de
+// gloed IN het materiaal zit en er niet overheen ligt, en alles staat onder het
+// embleem, dat ongemoeid blijft - het merkteken is de harde grens.
+
+// ---------------------------------------------------------------- A. dikte
+// De wanddikte van het medaillon in grijswaarden: wit = dun, zwart = dik.
+//   dun - het vlakke hart binnen de oculus, de bodems van de cassetten, de
+//         wand van de tamboer tussen de nissen, de uiterste rand van de lijst
+//   dik - de kroonlijst, de architraaf, de ribben, de ringlijsten, de nissen
+// Het waas is geen luxe: een dikteovergang in steen is nooit een harde lijn.
+function dikteMasker() {
+  let s = `<g filter="url(#waasdun)">`;
+  s += `<circle cx="${C}" cy="${C}" r="${r2(R_OOG - 24)}" fill="#C6C6C6"/>`;
+  s += `<path d="${ringPad(R_OOG + 9, R_PLINT - 10)}" fill="#7A7A7A" fill-rule="evenodd"/>`;
+  s += `<path d="${ringPad(R_VOET + 8, R_KROON - 8)}" fill="#B2B2B2" fill-rule="evenodd"/>`;
+  s += `<path d="${ringPad(R_RAND - 13, R_RAND + 2)}" fill="#ACACAC" fill-rule="evenodd"/>`;
+  s += `</g>`;
+
+  s += `<g filter="url(#waasdik)" fill="#000000">`;
+  // ribben: massief gewelfwerk dat het licht tegenhoudt
+  const br = r => 2.4 + 5.2 * Math.pow(klem((r - R_OOG) / (R_PLINT - R_OOG), 0, 1), 0.85);
+  for (let k = 0; k < VAKKEN; k++) {
+    const a = A_OFF + k * STAP, pijler = k % 2 === 0;
+    const t = (rr, dt) => {
+      const [px, py] = P(rr, a);
+      return `${r2(px - Math.sin(a) * dt)} ${r2(py + Math.cos(a) * dt)}`;
+    };
+    const w0 = br(R_OOG) / 2 * (pijler ? 1.18 : 0.86) + 2.4;
+    const w1 = br(R_PLINT) / 2 * (pijler ? 1.18 : 0.86) + 2.4;
+    s += `<path d="M${t(R_OOG, -w0)}L${t(R_PLINT, -w1)}L${t(R_PLINT, w1)}L${t(R_OOG, w0)}Z"/>`;
+  }
+  // de ringlijsten zijn opstaande banden: ook daar zit meer steen
+  for (let i = 0; i <= RIJEN; i++)
+    s += `<circle cx="${C}" cy="${C}" r="${RING[i]}" fill="none" stroke="#000000" stroke-width="5.4"/>`;
+  // de nissen: de dichtste plekken van de tamboer, en dat moeten ze blijven -
+  // hierop rust het ritme van vierentwintig dat op 56 px nog telbaar is
+  for (let k = 0; k < TRAVEE; k++) {
+    const am = A_OFF + (k + 0.5) * STAP_T, hw = HW + 7;
+    s += `<g transform="rotate(${r2(am / RAD + 90)} ${C} ${C})">` +
+      `<path d="M${C - hw} ${Y(R_VOET - 3)}V${Y(R_AANZ + 2)}a${hw} ${hw} 0 0 1 ${hw * 2} 0V${Y(R_VOET - 3)}Z"/></g>`;
+  }
+  s += `</g>`;
+  // de dichtgemetselde pijlerpanelen laten nog een zweem door: half zo dik
+  s += `<g filter="url(#waasdik)" fill="#4A4A4A">`;
+  for (let k = 0; k < TRAVEE; k++) {
+    const ap = A_OFF + k * STAP_T, bw = 16;
+    s += `<g transform="rotate(${r2(ap / RAD + 90)} ${C} ${C})">` +
+      `<path d="M${C - bw} ${Y(R_VOET)}V${Y(437)}a${bw} ${bw} 0 0 1 ${bw * 2} 0V${Y(R_VOET)}Z"/></g>`;
+  }
+  s += `</g>`;
+  return s;
+}
+
+// ---------------------------------------------------------------- B. de nerf
+// De aders van de steen. Ze lopen allemaal met dezelfde drift mee, want in een
+// blok albast liggen de lagen evenwijdig, en die drift volgt de diagonaal van
+// de modellering - nerf en licht werken dezelfde kant op. Een ader is DICHTER
+// materiaal: hij houdt licht tegen en tekent zich donker af in het oplichtende
+// veld. Een paar melkbanen doen precies het omgekeerde.
+const A_NERF = 51 * RAD;
+function baan(o, kleur, br, dek, golf, dh) {
+  const A = A_NERF + (dh || 0);
+  const dx = Math.cos(A), dy = Math.sin(A), nx = -dy, ny = dx;
+  const cx0 = C + nx * o, cy0 = C + ny * o;
+  const L = 1800, N = 24;
+  const pt = [];
+  let fase = nrnd() * TAU, freq = 0.45 + nrnd() * 1.0, drift = 0;
+  for (let i = 0; i <= N; i++) {
+    const t = -L / 2 + (L * i) / N;
+    drift += (nrnd() - 0.5) * golf * 0.3;
+    const q = Math.sin(fase + (t / L) * TAU * freq) * golf * 0.5 + drift;
+    pt.push([r2(cx0 + dx * t + nx * q), r2(cy0 + dy * t + ny * q)]);
+  }
+  // door de middelpunten heen krommen: geen geknikte polylijn maar een vloeiende ader
+  let d = `M${pt[0][0]} ${pt[0][1]}`;
+  for (let i = 1; i < pt.length - 1; i++)
+    d += `Q${pt[i][0]} ${pt[i][1]} ${r2((pt[i][0] + pt[i + 1][0]) / 2)} ${r2((pt[i][1] + pt[i + 1][1]) / 2)}`;
+  d += `L${pt[pt.length - 1][0]} ${pt[pt.length - 1][1]}`;
+  return `<path d="${d}" fill="none" stroke="${kleur}" stroke-width="${r2(br)}" ` +
+    `opacity="${r2(dek)}" stroke-linecap="round"/>`;
+}
+function nerf() {
+  let s = '<g filter="url(#waasbreed)">';
+  for (let i = 0; i < 7; i++) {                    // de gelaagdheid van het blok
+    const o = (i - 3) * 138 + (nrnd() - 0.5) * 70, melk = i % 2 === 0;
+    s += baan(o, melk ? '#FFF6E2' : '#93733A', melk ? 80 : 60, melk ? 0.26 : 0.26, 190, (nrnd() - 0.5) * 0.14);
+  }
+  s += '</g><g filter="url(#waasnerf)">';
+  for (let i = 0; i < 30; i++) {                   // de aders zelf
+    const o = (nrnd() - 0.5) * 1560, melk = nrnd() < 0.3;
+    const kl = melk ? '#FFF8E8' : (nrnd() < 0.5 ? '#8A6B2E' : '#6E5524');
+    s += baan(o, kl, 2.2 + nrnd() * 6.2, (melk ? 0.46 : 0.54) + nrnd() * 0.26, 72 + nrnd() * 86, (nrnd() - 0.5) * 0.30);
+  }
+  for (let i = 0; i < 16; i++) {                   // korte zijtakken
+    const o = (nrnd() - 0.5) * 1200;
+    s += baan(o, nrnd() < 0.35 ? '#FFF8E8' : '#7A5E28', 1.4 + nrnd() * 2.6, 0.34 + nrnd() * 0.20, 40 + nrnd() * 44, (nrnd() - 0.5) * 0.44);
+  }
+  return s + '</g>';
+}
+
+// ---------------------------------------------------------------- C. tweede laag
+// Wat er ACHTER de steen staat. Bij doorvallend licht verschijnt er een tweede
+// tekening die je op de dichte steen niet ziet: het beeldmerk zelf, een slag
+// groter, als een aureool om de poort in het hart. Alleen de omtrek - geen
+// tweede YG, want twee keer dezelfde letters is een fout en geen effect. De
+// oculuslijst is dik en snijdt de boog doormidden: precies daardoor leest hij
+// als iets dat ACHTER de steen staat en niet erop getekend is.
+function tweedeLaag() {
+  const GS = 6.55, gx = r2(C - 50 * GS), gy = 122;
+  const lijn = (d, sw, dek) =>
+    `<path d="${d}" fill="none" stroke="#6B5322" stroke-width="${sw}" opacity="${dek}" stroke-linecap="round"/>`;
+  let g = lijn('M14 104V48a36 36 0 0 1 72 0v56', 0.8, 0.62);
+  g += lijn('M24 104V50a26 26 0 0 1 52 0v54', 0.38, 0.38);
+  g += lijn('M4 104h92', 0.62, 0.52);
+  g += `<path d="M50 5l4.5 7-4.5 7-4.5-7z" fill="#6B5322" opacity="0.56"/>`;
+  // de filter zit op de BUITENSTE groep, anders wordt het waas mee opgeschaald
+  return `<g filter="url(#waastweede)"><g transform="translate(${gx},${gy}) scale(${GS})">${g}</g></g>`;
+}
+
+// ---------------------------------------------------------------- D. randen
+// Waar de steen dun uitloopt reist het licht er dwars doorheen en komt het aan
+// de andere kant weer naar buiten. Dat gebeurt op drie plekken: buiten langs de
+// kroonlijst, binnen langs de oculuslijst, en in de kruin van elke nis.
+function randgloed() {
+  let s = '<g filter="url(#waasrand)">';
+  s += `<circle cx="${C}" cy="${C}" r="${r2(R_RAND + 7)}" fill="none" stroke="#E7C489" stroke-width="26" opacity="0.15"/>`;
+  const [hx, hy] = P(R_RAND + 14, A_LICHT);
+  s += `<circle cx="${r2(hx)}" cy="${r2(hy)}" r="168" fill="#FFE2AC" opacity="0.115"/>`;
+  return s + '</g>';
+}
+function randlek() {
+  let s = '<g filter="url(#waaslek)">';
+  // langs de oculuslijst kruipt het licht uit het hart naar buiten
+  s += `<circle cx="${C}" cy="${C}" r="${r2(R_OOG - 15)}" fill="none" stroke="#FFF3D8" stroke-width="20" opacity="0.30"/>`;
+  // de kruin van elke nis: een dunne plek waar het licht omheen lekt
+  for (let k = 0; k < TRAVEE; k++) {
+    const am = A_OFF + (k + 0.5) * STAP_T, hw = HW - 2;
+    s += `<g transform="rotate(${r2(am / RAD + 90)} ${C} ${C})">` +
+      `<path d="M${C - hw} ${Y(R_AANZ)}a${hw} ${hw} 0 0 1 ${hw * 2} 0" fill="none" ` +
+      `stroke="#FFEDCB" stroke-width="5" opacity="0.34"/></g>`;
+  }
+  return s + '</g>';
+}
+// het tegendeel: waar de steen dik is blijft hij dicht. Zonder dit verschil is
+// de gloed alleen maar "lichter", en niet "doorschijnend".
+function dichteDelen() {
+  let s = '';
+  s += `<path d="${ringPad(R_KROON + 3, R_RAND - 11)}" fill="#7A5E28" opacity="0.05" fill-rule="evenodd"/>`;
+  s += `<path d="${ringPad(R_PLINT + 1, R_VOET - 1)}" fill="#4A390F" opacity="0.155" fill-rule="evenodd"/>`;
+  return s;
+}
+
+function albastLaag() {
+  if (!ALBAST) return '';
+  return '<g mask="url(#dun)">' +
+    '<rect width="' + W + '" height="' + W + '" fill="url(#lamp)"/>' +
+    '<rect width="' + W + '" height="' + W + '" fill="url(#verweg)"/>' +
+    '<g mask="url(#nerfm)">' + nerf() + '</g>' +
+    '<g mask="url(#lampm)">' + tweedeLaag() + '</g></g>' +
+    '<g mask="url(#lampm)">' + randlek() + '</g>' + dichteDelen();
+}
+
 // ---------------------------------------------------------------- opbouw
+// De poort was een omtrek: twee lijnen met niets ertussen en niets erachter.
+// Daardoor bleef het middelpunt een tekening terwijl de ring eromheen een
+// voorwerp was. Hier worden die twee vlakken ingevuld:
+//   BAND  - metselwerk van wigstenen met een sluitsteen bovenaan en voegen die
+//           naar het middelpunt van de boog wijzen; rijmt op de 24 nissen en de
+//           cassetten in de ring, zodat het hele medaillon een taal spreekt.
+//   HOLTE - schaduw onder de boog, arcering die de diepte doet, een verlichte
+//           dagkant en een vloer die licht vangt. De schaduw zit bewust BOVEN:
+//           daaronder staat de YG, en die moet op het lichte deel blijven staan.
+// Alles in de plaatselijke maat van poort() (100 breed, 110 hoog), daarna
+// meegeschaald, zodat het precies onder het beeldmerk valt.
+function poortVlakken() {
+  const CX = 50, CYo = 48, CYi = 50, RO = 36, RI = 26;
+  const pt = (cy, r, t) => [r2(CX + r * Math.cos(t)), r2(cy + r * Math.sin(t))];
+  let v = '';
+
+  // --- de holte binnen de binnenboog
+  v += `<path d="M24 104V${CYi}a${RI} ${RI} 0 0 1 ${RI * 2} 0V104Z" fill="url(#poortnis)"/>`;
+  v += '<g clip-path="url(#poortknip)">';
+  // Alleen in het bovenste deel: dat is de halve koepel van de nis. De
+  // achterwand daaronder blijft glad, want daar staat de YG en die moet op een
+  // rustige ondergrond staan - strepen achter letters lezen als ruis.
+  for (let j = 0; j < 9; j++) {
+    const yy = r2(25 + j * 4.3 + w() * 0.8);
+    v += `<path d="M22 ${yy}h56" stroke="${G_INKT}" stroke-width="${r2(0.5 + w() * 0.14)}" opacity="${r2(Math.max(0.010, 0.095 - j * 0.0095))}"/>`;
+  }
+  v += `<path d="M26.5 104V${CYi - 2}" stroke="${CREME}" stroke-width="1.5" opacity="0.30"/>`;
+  v += `<path d="M73.5 104V${CYi - 2}" stroke="${G_INKT}" stroke-width="1.6" opacity="0.16"/>`;
+  v += `<path d="M24 97h52v7h-52z" fill="${CREME}" opacity="0.26"/>`;
+  v += `<path d="M24 96.4h52" stroke="${CREME}" stroke-width="0.8" opacity="0.34"/>`;
+  // ---- POORT IN POORT ------------------------------------------------------
+  // Achter in de nis ligt een tweede doorgang: kleiner, hoger geplaatst, met
+  // licht dat er doorheen naar binnen valt en een lichtbaan over de vloer naar
+  // voren. De YG staat op de drempel ervoor en tekent zich af tegen dat licht.
+  // Dat is niet alleen diepte maar ook leesbaarheid: bronzen letters tegen een
+  // heldere ondergrond springen er harder uit dan tegen een neutrale. En het
+  // klopt met wat er op de platen staat - een website is de deur waardoor
+  // klanten binnenkomen. Haal het licht hier niet weg zonder de letters opnieuw
+  // op contrast te toetsen.
+  {
+    const hw2 = 19, voet2 = 99, aanzet2 = 66;
+    const vorm2 = `M${50 - hw2} ${voet2}V${aanzet2}a${hw2} ${hw2} 0 0 1 ${hw2 * 2} 0V${voet2}`;
+    v += `<path d="${vorm2}Z" fill="#FFFCF2" opacity="0.62"/>`;
+    v += `<path d="M${50 - hw2 + 3} ${voet2}V${aanzet2 + 2}a${hw2 - 3} ${hw2 - 3} 0 0 1 ${(hw2 - 3) * 2} 0V${voet2}Z" fill="#FFFFFF" opacity="0.40"/>`;
+    v += `<path d="${vorm2}" fill="none" stroke="${G_INKT}" stroke-width="1.2" opacity="0.44"/>`;
+    v += `<path d="M${50 - hw2 - 2.8} ${voet2}V${aanzet2}a${hw2 + 2.8} ${hw2 + 2.8} 0 0 1 ${(hw2 + 2.8) * 2} 0V${voet2}" fill="none" stroke="${CREME}" stroke-width="1.7" opacity="0.40"/>`;
+    v += `<path d="M${50 - hw2} ${voet2}L${50 - hw2 - 7} 104h${(hw2 + 7) * 2}L${50 + hw2} ${voet2}Z" fill="#FFFCF2" opacity="0.34"/>`;
+  }
+  v += '</g>';
+
+  // --- de band: wigstenen over de boog, lagen in de staanders
+  v += `<path d="M14 104V${CYo}a${RO} ${RO} 0 0 1 ${RO * 2} 0V104ZM24 104V${CYi}a${RI} ${RI} 0 0 1 ${RI * 2} 0V104Z" fill="url(#poortband)" fill-rule="evenodd"/>`;
+  v += '<g clip-path="url(#bandknip)">';
+  const STENEN = 13;                          // oneven: dan zit er een sluitsteen bovenaan
+  for (let k = 0; k < STENEN; k++) {          // elke steen zijn eigen toon naar de lichtval
+    const tm = Math.PI + ((k + 0.5) / STENEN) * Math.PI;
+    const L = Math.cos(tm - (A_LICHT + Math.PI / 2));
+    const b = Math.PI / STENEN / 2 - 0.012;
+    const [ax, ay] = pt(CYo, RO, tm - b), [bx, by] = pt(CYo, RO, tm + b);
+    const [cx2, cy2] = pt(CYi, RI, tm + b), [dx2, dy2] = pt(CYi, RI, tm - b);
+    const d = `M${ax} ${ay}A${RO} ${RO} 0 0 1 ${bx} ${by}L${cx2} ${cy2}A${RI} ${RI} 0 0 0 ${dx2} ${dy2}Z`;
+    v += `<path d="${d}" fill="${L > 0 ? CREME : G_SCHAD}" opacity="${r2(0.17 * Math.abs(L) + 0.04 + w() * 0.04)}"/>`;
+  }
+  for (let k = 0; k <= STENEN; k++) {         // de voegen, elk een fractie uit het gelid
+    const t = Math.PI + (k / STENEN) * Math.PI + w() * 0.012;
+    const [ax, ay] = pt(CYo, RO + 1.2, t), [bx, by] = pt(CYi, RI - 1.2, t);
+    v += `<path d="M${ax} ${ay}L${bx} ${by}" stroke="${G_INKT}" stroke-width="${r2(0.7 + w() * 0.2)}" opacity="${r2(0.30 + w() * 0.07)}"/>`;
+    v += `<path d="M${r2(ax + 0.55)} ${r2(ay + 0.45)}L${r2(bx + 0.55)} ${r2(by + 0.45)}" stroke="${CREME}" stroke-width="0.5" opacity="0.20"/>`;
+  }
+  for (const zij of [14, 76]) {               // lagen in de staanders onder de boogaanzet
+    for (let j = 1; j <= 4; j++) {
+      const yy = r2(56 + j * 11.5 + w() * 1.1);
+      v += `<path d="M${zij} ${yy}h10" stroke="${G_INKT}" stroke-width="0.65" opacity="${r2(0.24 + w() * 0.06)}"/>`;
+      v += `<path d="M${zij} ${r2(yy + 0.5)}h10" stroke="${CREME}" stroke-width="0.45" opacity="0.18"/>`;
+    }
+  }
+  v += '</g>';
+  // de sluitsteen: iets breder dan de rest, zoals bij een echte boog
+  v += `<path d="M45.4 ${r2(CYo - RO - 0.8)}h9.2v12.6h-9.2z" fill="${CREME}" opacity="0.22"/>`;
+  v += `<path d="M45.4 ${r2(CYo - RO - 0.8)}h9.2v12.6h-9.2z" fill="none" stroke="${G_INKT}" stroke-width="0.7" opacity="0.34"/>`;
+  return v;
+}
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${W}" viewBox="0 0 ${W} ${W}">
 <defs>
   <radialGradient id="ch" cx="46%" cy="36%" r="80%">
@@ -627,13 +912,68 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${W}" 
     <stop offset="0%" stop-color="#FFFBF0" stop-opacity="0.88"/>
     <stop offset="62%" stop-color="#FFFBF0" stop-opacity="0.40"/>
     <stop offset="100%" stop-color="#FFFBF0" stop-opacity="0"/></radialGradient>
+  <!-- de holte achter de poort: donker onder de boog, licht op de vloer, zodat
+       de letters op het lichte deel staan en leesbaar blijven -->
+  <linearGradient id="poortnis" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#5A4419" stop-opacity="0.50"/>
+    <stop offset="38%" stop-color="#7A5E28" stop-opacity="0.26"/>
+    <stop offset="74%" stop-color="#C9A45C" stop-opacity="0.10"/>
+    <stop offset="100%" stop-color="#FFF8E6" stop-opacity="0.34"/></linearGradient>
+  <!-- de band tussen de bogen: licht aan de kant die het licht vangt -->
+  <linearGradient id="poortband" x1="0.05" y1="0" x2="0.95" y2="1">
+    <stop offset="0%" stop-color="#FFF6E2" stop-opacity="0.60"/>
+    <stop offset="42%" stop-color="#D8B573" stop-opacity="0.34"/>
+    <stop offset="100%" stop-color="#6B5322" stop-opacity="0.44"/></linearGradient>
+  <clipPath id="poortknip"><path d="M24 104V50a26 26 0 0 1 52 0V104Z"/></clipPath>
+  <clipPath id="bandknip"><path d="M14 104V48a36 36 0 0 1 72 0V104ZM24 104V50a26 26 0 0 1 52 0V104Z" clip-rule="evenodd"/></clipPath>
   <linearGradient id="brons" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="112">
     <stop offset="0%" stop-color="#9C7B33"/><stop offset="40%" stop-color="#7E6229"/>
     <stop offset="100%" stop-color="#52401A"/></linearGradient>
+
+  <!-- ALBAST. Het waas is het materiaal zelf: licht dat door steen gaat komt er
+       verstrooid uit, nooit met een scherpe rand. -->
+  <filter id="waasdun" x="-14%" y="-14%" width="128%" height="128%"><feGaussianBlur stdDeviation="7.5"/></filter>
+  <filter id="waasdik" x="-14%" y="-14%" width="128%" height="128%"><feGaussianBlur stdDeviation="3.2"/></filter>
+  <filter id="waasnerf" x="-14%" y="-14%" width="128%" height="128%"><feGaussianBlur stdDeviation="2.0"/></filter>
+  <filter id="waasbreed" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="26"/></filter>
+  <filter id="waastweede" x="-14%" y="-14%" width="128%" height="128%"><feGaussianBlur stdDeviation="4.5"/></filter>
+  <filter id="waasrand" x="-24%" y="-24%" width="148%" height="148%"><feGaussianBlur stdDeviation="15"/></filter>
+  <filter id="waaslek" x="-14%" y="-14%" width="128%" height="128%"><feGaussianBlur stdDeviation="6"/></filter>
+  <mask id="dun">
+    <rect width="${W}" height="${W}" fill="#000000"/>
+    ${dikteMasker()}
+  </mask>
+  <!-- de lamp staat schuin achter de steen, in dezelfde hoek als A_LICHT: niets
+       hier mag tegen die richting in werken -->
+  <radialGradient id="lamp" gradientUnits="userSpaceOnUse"
+    cx="${r2(C + 262 * LX)}" cy="${r2(C + 262 * LY)}" r="840">
+    <stop offset="0%" stop-color="#FFE7B4" stop-opacity="0.66"/>
+    <stop offset="20%" stop-color="#FFE5B2" stop-opacity="0.54"/>
+    <stop offset="40%" stop-color="#FFEBC6" stop-opacity="0.34"/>
+    <stop offset="68%" stop-color="#FFF1D4" stop-opacity="0.11"/>
+    <stop offset="100%" stop-color="#FFF6E2" stop-opacity="0.015"/></radialGradient>
+  <radialGradient id="lampwit" gradientUnits="userSpaceOnUse"
+    cx="${r2(C + 262 * LX)}" cy="${r2(C + 262 * LY)}" r="880">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+    <stop offset="42%" stop-color="#FFFFFF" stop-opacity="0.72"/>
+    <stop offset="78%" stop-color="#FFFFFF" stop-opacity="0.30"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.10"/></radialGradient>
+  <radialGradient id="verweg" gradientUnits="userSpaceOnUse"
+    cx="${r2(C + 262 * LX)}" cy="${r2(C + 262 * LY)}" r="900">
+    <stop offset="0%" stop-color="#C9A45C" stop-opacity="0"/>
+    <stop offset="36%" stop-color="#C9A45C" stop-opacity="0.015"/>
+    <stop offset="64%" stop-color="#C2994E" stop-opacity="0.07"/>
+    <stop offset="100%" stop-color="#AE8839" stop-opacity="0.135"/></radialGradient>
+  <mask id="lampm"><rect width="${W}" height="${W}" fill="url(#lampwit)"/></mask>
+  <!-- de nerf wordt in het hart gedempt: daar staat de YG, en aders vlak
+       naast letters lezen als krassen in plaats van als steen -->
+  <mask id="nerfm"><rect width="${W}" height="${W}" fill="url(#lampwit)"/>
+    <g filter="url(#waasdun)"><circle cx="${C}" cy="${C}" r="${r2(R_OOG - 26)}" fill="#000000" opacity="0.74"/></g></mask>
 </defs>
 <rect width="${W}" height="${W}" fill="url(#ch)"/>
 ${papierLijnen()}
 ${buitenveld()}
+${ALBAST ? randgloed() : ''}
 <circle cx="${C}" cy="${C}" r="556" fill="none" stroke="${G_DIEP}" stroke-width="0.9" opacity="0.18"/>
 <circle cx="${C}" cy="${C}" r="592" fill="none" stroke="${G_DIEP}" stroke-width="0.6" opacity="0.10"/>
 ${koepel()}
@@ -643,6 +983,12 @@ ${ringlijsten()}
 ${oculus()}
 ${tamboer()}
 ${kroonlijst()}
+<!-- HET LICHT VAN ACHTEREN. Deze laag hoort hier en nergens anders: boven het
+     tekenwerk, zodat het licht er echt doorheen komt, maar ONDER de modellering
+     en het verguldwerk, zodat de gloed in het materiaal zit in plaats van er
+     overheen te liggen. De modellering dooft hem rechtsonder vanzelf, waar de
+     steen van het licht af staat. -->
+${albastLaag()}
 <g mask="url(#ringm)"><rect width="${W}" height="${W}" fill="url(#model)"/></g>
 <g mask="url(#ringm)"><rect width="${W}" height="${W}" fill="url(#glans)"/></g>
 <g mask="url(#ringm)">${verguld()}</g>
@@ -651,19 +997,113 @@ ${korrel(1400, 770, 1)}
 <rect width="${W}" height="${W}" fill="url(#hart)"/>
 ${watermerk()}
 ${korrel(560, 300, 0.85)}
-<g opacity="0.34">${['-1.8 0', '1.8 0', '0 -1.8', '0 1.8', '-1.3 -1.3', '1.3 1.3', '-1.3 1.3', '1.3 -1.3'].map(t => `<g transform="translate(${t})">${M.poort('#4A3814', x, y, SCH)}</g>`).join('')}</g>
-<g opacity="0.50"><g transform="translate(0,3)">${M.poort('#FFFFFF', x, y, SCH)}</g></g>
-${M.poort('url(#brons)', x, y, SCH)}
+<g transform="translate(${x},${y}) scale(${SCH})">${poortVlakken()}</g>
+<!-- Het beeldmerk in relief. De ring eromheen is een gemodelleerd voorwerp met
+     diepte en licht; een vlakke lijntekening in het midden valt daarbij uit de
+     toon. Schaduw en hooglicht volgen DEZELFDE lichtrichting als de koepel
+     (A_LICHT), anders vecht het middelpunt met zijn eigen lijst. De letters
+     krijgen een donkere omlijning: Playfair heeft geen vet, en YG is de naam -
+     die moet het zwaarst wegen van alles wat hier staat. -->
+${(() => {
+  const lx = Math.cos(A_LICHT), ly = Math.sin(A_LICHT);
+  const v = (d, kl, dek) => `<g opacity="${dek}"><g transform="translate(${r2(lx * d)},${r2(ly * d)})">${M.poort(kl, x, y, SCH)}</g></g>`;
+  return [
+    v(-1.0, G_INKT, 0.16),                 // zachte aanzet van de slagschaduw
+    v(-3.4, G_INKT, 0.30),                 // de slagschaduw, weg van het licht
+    v(-2.1, G_SCHAD, 0.34),
+    v(2.4, CREME, 0.62),                   // hooglicht op de kant die licht vangt
+    v(1.2, CREME, 0.40),
+    `<g stroke="${G_INKT}" stroke-width="${LETTER_LIJN}" stroke-linejoin="round" opacity="0.82">${M.poort('url(#brons)', x, y, SCH)}</g>`,
+    M.poort('url(#brons)', x, y, SCH),
+  ].join('');
+})()}
 <circle cx="540" cy="540" r="514" fill="none" stroke="#A07F3C" stroke-width="2.8" opacity="0.42"/>
 </svg>`;
 
 const buf = new Resvg(svg, { font: { fontFiles: [], loadSystemFonts: false }, fitTo: { mode: 'width', value: 1080 } }).render().asPng();
-fs.writeFileSync(path.join(UIT, 'profiel-entree.png'), buf);
-console.log('profiel-entree.png'.padEnd(30), W + 'x' + W, (buf.length / 1024).toFixed(0) + ' kB');
+// ------------------------------------------------- patina en korrel
+// Het tekenwerk hierboven is wiskundig glad: elk verloop valt precies af zoals
+// een formule dat doet. Echt metaal is dat nooit. Deze twee lagen leggen daar
+// oneffenheid overheen - een laagfrequent veld dat het oppervlak ongelijk laat
+// verouderen, en een fijne korrel als de tand van papier of het gietsel van
+// brons. Samen met de afwijkingen in de meetkunde haalt dat het machinale eraf.
+const PAT_GROF = 14, PAT_WAAS = 30, PAT_DIEP = 0.46, KORREL = 0.08;
+
+// ------------------------------------------- onderhuidse verstrooiing
+// Het laatste dat albast van glas onderscheidt: licht dat de steen in gaat komt
+// er niet op dezelfde plek weer uit. Het verstrooit een paar millimeter naar
+// opzij, en daardoor lopen lichte vlakken ietsje OVER hun eigen rand heen. Dat
+// is met tekenen niet te maken - het is een bewerking van het hele beeld: een
+// sterk gewaasde, warm gestookte kopie die er met "screen" onder wordt gelegd,
+// maar alleen zo sterk als de steen op die plek dun is.
+//
+// Het embleem is uitgespaard. Verstrooiing vreet contrast, en de YG moet op
+// 56 px leesbaar blijven; dat weegt zwaarder dan het effect.
+const SSS_STERK = 0.44, SSS_WAAS = 22, SSS_WARM = [1.0, 0.93, 0.76], SSS_KLEUR = [5.5, 1.2, -4.5];
+const maskerSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${W}" viewBox="0 0 ${W} ${W}">
+<defs>
+  <filter id="waasdun" x="-14%" y="-14%" width="128%" height="128%"><feGaussianBlur stdDeviation="7.5"/></filter>
+  <filter id="waasdik" x="-14%" y="-14%" width="128%" height="128%"><feGaussianBlur stdDeviation="3.2"/></filter>
+  <filter id="waasspaar" x="-24%" y="-24%" width="148%" height="148%"><feGaussianBlur stdDeviation="13"/></filter>
+  <radialGradient id="lampdemp" gradientUnits="userSpaceOnUse" cx="${r2(C + 262 * LX)}" cy="${r2(C + 262 * LY)}" r="880">
+    <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+    <stop offset="40%" stop-color="#000000" stop-opacity="0.24"/>
+    <stop offset="75%" stop-color="#000000" stop-opacity="0.62"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.86"/></radialGradient>
+</defs>
+<rect width="${W}" height="${W}" fill="#000000"/>
+${dikteMasker()}
+<rect width="${W}" height="${W}" fill="url(#lampdemp)"/>
+<g filter="url(#waasspaar)"><rect x="352" y="292" width="376" height="500" rx="62" fill="#000000"/></g>
+</svg>`;
+const maskerBuf = new Resvg(maskerSvg, { font: { fontFiles: [], loadSystemFonts: false }, fitTo: { mode: 'width', value: W } }).render().asPng();
+
+async function doorschijnen(plaatBuf) {
+  const m = await sharp(maskerBuf).removeAlpha().greyscale().raw().toBuffer();
+  const b = await sharp(plaatBuf).removeAlpha().raw().toBuffer();
+  const g = await sharp(plaatBuf).removeAlpha().blur(SSS_WAAS).raw().toBuffer();
+  const uit = Buffer.alloc(W * W * 3);
+  for (let i = 0; i < W * W; i++) {
+    const a = (m[i] / 255) * SSS_STERK;
+    for (let c = 0; c < 3; c++) {
+      const bv = b[i * 3 + c], gv = Math.min(255, g[i * 3 + c] * SSS_WARM[c]);
+      const sc = 255 - ((255 - bv) * (255 - gv)) / 255;      // screen
+      uit[i * 3 + c] = klem(Math.round(bv + (sc - bv) * a + SSS_KLEUR[c] * a), 0, 255);
+    }
+  }
+  return sharp(uit, { raw: { width: W, height: W, channels: 3 } }).png().toBuffer();
+}
+
+function ruisveld(n, sterk, zd) {
+  let z = zd;
+  const trek = () => (z = (z * 1103515245 + 12345) & 0x7fffffff) / 0x7fffffff;
+  const px = Buffer.alloc(n * n * 3);
+  for (let i = 0; i < n * n; i++) {
+    const v = klem(128 + Math.round((trek() - 0.5) * 255 * sterk), 0, 255);
+    px[i * 3] = px[i * 3 + 1] = px[i * 3 + 2] = v;
+  }
+  return { px, n };
+}
 
 // -------------------------------------------------- controlestrook
 (async () => {
-  const maat = async n => sharp(buf).resize(n, n, { kernel: 'lanczos3' }).png().toBuffer();
+  const grof = ruisveld(PAT_GROF, PAT_DIEP, 424242);
+  const patina = await sharp(grof.px, { raw: { width: grof.n, height: grof.n, channels: 3 } })
+    .resize(W, W, { kernel: 'cubic' }).blur(PAT_WAAS).png().toBuffer();
+  const fijn = ruisveld(W, KORREL, 991);
+  const korrelLaag = await sharp(fijn.px, { raw: { width: W, height: W, channels: 3 } }).png().toBuffer();
+  const gestrooid = ALBAST ? await doorschijnen(buf) : buf;
+  const plaat = await sharp(gestrooid).removeAlpha()
+    .composite([{ input: patina, blend: 'soft-light' }, { input: korrelLaag, blend: 'overlay' }])
+    .png().toBuffer();
+  const st = await sharp(plaat).stats();
+  const lum = 0.2126 * st.channels[0].mean + 0.7152 * st.channels[1].mean + 0.0722 * st.channels[2].mean;
+  console.log('helderheid'.padEnd(30), st.channels.map(c => c.mean.toFixed(1)).join(' / '),
+    ' luma ' + lum.toFixed(2), lum >= 198.76 ? '(>= origineel 198.76, goed)' : '(TE DONKER, origineel 198.76)');
+  fs.writeFileSync(path.join(UIT, NAAM + '.png'), plaat);
+  console.log((NAAM + '.png').padEnd(30), W + 'x' + W, (plaat.length / 1024).toFixed(0) + ' kB');
+
+  const maat = async n => sharp(plaat).resize(n, n, { kernel: 'lanczos3' }).png().toBuffer();
   const k56 = await maat(56), k96 = await maat(96), k150 = await maat(150);
   const groot = await sharp(k56).resize(224, 224, { kernel: 'nearest' }).png().toBuffer();
   await sharp({ create: { width: 700, height: 250, channels: 3, background: '#2b2b2b' } })
@@ -672,8 +1112,8 @@ console.log('profiel-entree.png'.padEnd(30), W + 'x' + W, (buf.length / 1024).to
       { input: k96, top: 77, left: 100 },
       { input: k150, top: 50, left: 218 },
       { input: groot, top: 13, left: 396 },
-    ]).png().toFile(path.join(UIT, 'profiel-entree-controle.png'));
-  await sharp(buf).extract({ left: 110, top: 110, width: 440, height: 440 }).png().toFile(path.join(UIT, 'profiel-entree-detail.png'));
-  await sharp(buf).resize(300, 300).jpeg({ quality: 82 }).toFile(path.join(WEB, 'profiel-entree.jpg'));
+    ]).png().toFile(path.join(UIT, NAAM + '-controle.png'));
+  await sharp(plaat).extract({ left: 110, top: 110, width: 440, height: 440 }).png().toFile(path.join(UIT, NAAM + '-detail.png'));
+  await sharp(plaat).resize(300, 300).jpeg({ quality: 82 }).toFile(path.join(WEB, NAAM + '.jpg'));
   console.log('controlestrook, detail en web-voorbeeld klaar');
 })();
