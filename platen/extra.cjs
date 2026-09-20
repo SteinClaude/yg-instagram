@@ -2,7 +2,6 @@
 // node instagram/extra.cjs      -> instagram/uit/profiel-*.png, omslag-*.png, verhaal-*.png
 const fs = require('fs'), path = require('path');
 const { Resvg } = require('C:/Users/gijsm/yg-luxury/brand/node_modules/@resvg/resvg-js');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
 const M = require('./maak.cjs');
 const UIT = path.join(__dirname, 'uit'); fs.mkdirSync(UIT, { recursive: true });
 
@@ -99,56 +98,3 @@ for (const [naam, grond, lijn, merk, gloed] of [
   png(doek(W, H, DONKER, inhoud, 0.15), W, H, 'verhaal-venster.png');
 }
 
-// ------------------------------------------- 4. profielfoto op de deurfoto
-// Zelfde familie als de berichten: een echte foto, getemperd op helderheid 0,86
-// en verzadiging 0,95, met contrast erbij. Drie dingen maken dat het embleem
-// daar overheen toch leesbaar blijft, ook op de 32 pixels die Instagram in de
-// tijdlijn en bij reacties toont:
-//   - een donkere halo pal achter het embleem; het detail leeft in de ring
-//     eromheen, waar niets staat wat gelezen moet worden;
-//   - twee donkere kopieën van de poort eronder, licht verschoven, zodat de
-//     gouden lijnen ook over de lichte deuropening heen snijden;
-//   - een messingverloop in de poort zelf in plaats van één vlakke goudtint.
-// Een ring langs de buitenrand is bewust weggelaten: die liep alleen zichtbaar
-// over de donkere helft en las daardoor als een fout.
-async function profielFoto() {
-  const W = 1080, sch = 5.1, x = W / 2 - 50 * sch, y = W / 2 - 55 * sch;
-  const HALO = 0.86, RAND = 0.62, CONTRAST = 1.45;
-  const overlaag = new Resvg(
-`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${W}" viewBox="0 0 ${W} ${W}">
-<defs>
-<radialGradient id="kern" cx="50%" cy="50%" r="44%">
-  <stop offset="0%" stop-color="${DONKER}" stop-opacity="${HALO}"/>
-  <stop offset="62%" stop-color="${DONKER}" stop-opacity="${(HALO * 0.55).toFixed(2)}"/>
-  <stop offset="100%" stop-color="${DONKER}" stop-opacity="0"/></radialGradient>
-<radialGradient id="rim" cx="50%" cy="50%" r="72%">
-  <stop offset="0%" stop-color="${DONKER}" stop-opacity="0"/>
-  <stop offset="64%" stop-color="${DONKER}" stop-opacity="0"/>
-  <stop offset="100%" stop-color="${DONKER}" stop-opacity="${RAND}"/></radialGradient>
-<radialGradient id="gl" cx="50%" cy="44%" r="46%">
-  <stop offset="0%" stop-color="${GOUD}" stop-opacity="0.14"/>
-  <stop offset="100%" stop-color="${GOUD}" stop-opacity="0"/></radialGradient>
-<linearGradient id="brons" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="112">
-  <stop offset="0%" stop-color="#F4E2B4"/><stop offset="38%" stop-color="${GOUDLICHT}"/>
-  <stop offset="72%" stop-color="${GOUD}"/><stop offset="100%" stop-color="#96762F"/></linearGradient>
-</defs>
-<rect width="${W}" height="${W}" fill="url(#rim)"/>
-<rect width="${W}" height="${W}" fill="url(#kern)"/>
-<rect width="${W}" height="${W}" fill="url(#gl)"/>
-<g opacity="0.55"><g transform="translate(0,5)">${M.poort('#0A0A0A', x, y, sch)}</g></g>
-<g opacity="0.30"><g transform="translate(0,2)">${M.poort('#0A0A0A', x, y, sch)}</g></g>
-${M.poort('url(#brons)', x, y, sch)}</svg>`,
-    { font: { fontFiles: [], loadSystemFonts: false }, fitTo: { mode: 'width', value: W } }).render().asPng();
-
-  const naam = 'profiel-entree.png';
-  await sharp(path.join(__dirname, 'bron', 'ai', 'deur.jpg'))
-    .resize(W, W, { fit: 'cover', position: 'centre' })
-    .modulate({ brightness: 0.86, saturation: 0.95 })
-    .linear(CONTRAST, -(128 * (CONTRAST - 1)))
-    .sharpen()
-    .composite([{ input: overlaag }])
-    .png().toFile(path.join(UIT, naam));
-  console.log(naam.padEnd(30), W + 'x' + W);
-}
-
-profielFoto().catch(e => { console.error(e); process.exit(1); });
