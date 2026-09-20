@@ -4,12 +4,14 @@
 // Daardoor is de YG ongeveer twee keer zo groot als in de vorige versie - dat
 // was de reden voor de wissel: de naam moest duidelijker.
 //
-// GOUD OP ZWART is de gekozen uitvoering, want zo hoort hij bij de Facebook-
-// omslag, die hetzelfde embleem op donker draagt. Er staat ook een champagne-
-// uitvoering in dit bestand; die leest de naam scherper (donker brons op licht)
-// en zet zich beter af tegen de donkere highlights op Instagram. Gijs koos
-// bewust voor samenhang met de omslag. Wil je terug: verwissel de volgorde in
-// de lus onderaan, want de eerste schrijft naar profiel-entree.png.
+// CHAMPAGNE is de gekozen uitvoering: donker brons op licht. Die leest de naam
+// het scherpst en zet zich het best af tegen de zeven donkere highlight-rondjes
+// op Instagram, waar dit profiel in de praktijk bekeken wordt. Op de donkere
+// Facebook-omslag springt een lichte profielfoto er juist uit.
+//
+// Er staat ook een uitvoering GOUD OP ZWART in dit bestand. Die heeft een dag
+// live gestaan omdat hij beter aansluit bij de Facebook-omslag, maar Gijs vond
+// hem uiteindelijk niks. Hij komt eruit als profiel-entree-zwart.png.
 //
 // De behandeling komt uit het medaillon (zie medaillon.cjs): relief in de
 // lichtrichting, wigstenen in de boog, een verdiepte doorgang met een tweede
@@ -168,9 +170,9 @@ ${M.poort('url(#brons)', x, y, SCH)}
     await sharp(buf).removeAlpha()
       .composite([{ input: patina, blend: 'soft-light' }, { input: korrel, blend: 'overlay' }])
       .png().toFile(`poort-${naam}.png`);
-    const doel = naam === 'zwart' ? 'profiel-entree.png' : 'profiel-entree-champagne.png';
+    const doel = naam === 'champagne' ? 'profiel-entree.png' : 'profiel-entree-zwart.png';
     fs.renameSync(`poort-${naam}.png`, path.join(UIT, doel));
-    if (naam === 'zwart') {
+    if (naam === 'champagne') {
       const p = path.join(UIT, doel);
       await sharp(p).resize(300, 300).jpeg({ quality: 82 }).toFile(path.join(WEB, 'profiel-entree.jpg'));
       const k56 = await sharp(p).resize(56, 56, { kernel: 'lanczos3' }).png().toBuffer();
