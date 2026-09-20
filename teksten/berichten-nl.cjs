@@ -169,11 +169,11 @@ Alle tarieven staan gewoon op de site: yg-digital.nl/diensten`, UITLEG),
   B03: t(`
 Ordepartner — Alkmaar
 
-Ordepartner brengt rust en overzicht in de magazijnen en loodsen van zzp’ers en mkb-bedrijven. Ze ruimen op, delen logisch in en zorgen dat het ook zo blijft. Dat vroeg om een website die precies hetzelfde doet.
+Op 1 oktober gaat Ordepartner open: vijf man die magazijnen en loodsen op orde brengen voor zzp’ers en mkb. Opruimen, logisch indelen, labels erop — en daarna terugkomen, zodat het ook zo blijft. Dat vroeg om een website die precies hetzelfde doet.
 
-Wij maakten het logo, de teksten en de hele site: negen pagina’s, met de tarieven er gewoon op. Het bouwen zelf kostte één werkdag.
+Wij maakten het logo, de teksten en de hele site: negen pagina’s, met de tarieven er gewoon op. Eén kerndienst met twee fundamenten eronder, en één knop: vraag een gratis quickscan aan. Het bouwen zelf kostte één werkdag.
 
-Sindsdien doen wij het onderhoud. Geen klus die af is, maar een samenwerking.
+Eerlijk erbij: Ordepartner is ons eigen tweede bedrijf. Dat maakte het niet makkelijker — voor jezelf ben je strenger dan voor een klant. Het leerde ons wel hoe het voelt om aan de andere kant van de tafel te zitten: een opening in het vooruitzicht, en nog geen deur om klanten door binnen te laten.
 
 Veeg door voor het kleine scherm en voor wat wij precies deden.
 
