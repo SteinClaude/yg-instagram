@@ -1,8 +1,15 @@
 // Bouwt de reels: 18 seconden, 1080x1920, 30 beelden per seconde. Een langzame
 // zoom over het beeld, tekst die zacht opkomt in de huisstijl (dezelfde letters
 // en kleuren als de platen), embleem boven en de voetregel onder. Alles lokaal
-// met ffmpeg; muziek voegt Gijs in de Instagram-app toe. Er zit wel een stil
-// audiospoor in, anders weigert Instagram het bestand soms.
+// met ffmpeg. Ligt er muziek klaar in platen/bron/muziek/ (<code>.mp3, of anders
+// standaard.mp3), dan komt die onder de reel te staan met een zachte in- en
+// uitloop. Zonder muziek krijgt de reel een stil audiospoor — anders weigert
+// Instagram het bestand soms.
+//
+// Let op: via de Graph API kun je GEEN nummer uit de muziekbibliotheek van
+// Instagram meenemen; dat kan alleen met de hand. Het geluid moet dus in het
+// bestand zitten, en dan moeten de RECHTEN geregeld zijn: een compositie van
+// Bach is vrij, de opname ervan meestal niet. Zelf laten maken is schoon.
 //
 // Ligt er in platen/bron/clips/ een <beeld>.mp4 — een echte bewegende clip in
 // plaats van een foto — dan wordt die de achtergrond: eerst de clip, daarna het
@@ -28,6 +35,7 @@ const k = M.K.donker, L = M.L, r3 = M.r3;
 const WORTEL = path.join(__dirname, '..');
 const BRON = path.join(WORTEL, 'platen', 'bron', 'ai');
 const CLIPS = path.join(WORTEL, 'platen', 'bron', 'clips');
+const MUZIEK = path.join(WORTEL, 'platen', 'bron', 'muziek');
 const UIT = path.join(WORTEL, 'beeld', 'reels');
 const MINI = path.join(WORTEL, 'mini');
 const WERK = path.join(WORTEL, 'platen', 'uit', 'reels');   // tussenbestanden, niet in git
@@ -125,6 +133,13 @@ async function bouw(r) {
   const clipPad = path.join(CLIPS, r.beeld + '.mp4');
   const heeftClip = fs.existsSync(clipPad);
   const fps = heeftClip ? FPS_CLIP : FPS;
+  // Eigen nummer per reel gaat voor; anders het standaardnummer; anders stilte.
+  // Staat er 'stil: true' bij de reel, dan komt er nooit muziek in het bestand:
+  // die reel plaatst Gijs met de hand en kiest in de app zelf een nummer uit de
+  // bibliotheek van Instagram. Muziek in het bestand vecht daar dan mee.
+  const muziek = r.stil ? null
+    : [path.join(MUZIEK, r.code + '.mp3'), path.join(MUZIEK, 'standaard.mp3')]
+      .find(p => fs.existsSync(p));
   const bg = path.join(werk, heeftClip ? 'achtergrond.mp4' : 'achtergrond.jpg');
   if (heeftClip) await achtergrondVideo(clipPad, bg, werk, fps);
   else await achtergrond(r.beeld, bg);
@@ -156,13 +171,17 @@ async function bouw(r) {
     // full-range 601 (uit de PNG/JPEG-lagen) en loopt het zwart dicht bij spelers
     // die 1080p als 709 aannemen. Instagram hercodeert alles, dus dat telt.
     `[v4][s2]overlay=0:${rijs(T.sub2)},fade=t=out:st=${T.einde}:d=0.7,scale=out_range=tv:out_color_matrix=bt709,format=yuv420p[v]`,
+    // Muziek: zacht opkomen, onder de tekst blijven, en aan het eind uitlopen.
+    ...(muziek ? [`[6:a]atrim=0:${DUUR},asetpts=N/SR/TB,volume=0.8,afade=t=in:st=0:d=2,afade=t=out:st=${DUUR - 2.5}:d=2.5[a]`] : []),
   ].join(';');
 
   const mp4 = path.join(UIT, r.code + '.mp4');
   const args = ['-y', '-hide_banner', '-loglevel', 'error', '-i', bg];
   for (const naam of ['chroom', 'kop1', 'sub1', 'kop2', 'sub2']) args.push('-loop', '1', '-framerate', String(fps), '-t', String(DUUR), '-i', lagen[naam]);
-  args.push('-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=48000',
-    '-filter_complex', filter, '-map', '[v]', '-map', '6:a', '-t', String(DUUR), '-r', String(fps),
+  if (muziek) args.push('-i', muziek);
+  else args.push('-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=48000');
+  args.push(
+    '-filter_complex', filter, '-map', '[v]', '-map', muziek ? '[a]' : '6:a', '-t', String(DUUR), '-r', String(fps),
     '-c:v', 'libx264', '-preset', 'slow', '-crf', '18', '-profile:v', 'high', '-level', '4.1', '-pix_fmt', 'yuv420p',
     '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',
     '-c:a', 'aac', '-b:a', '96k',

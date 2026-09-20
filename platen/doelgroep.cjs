@@ -19,15 +19,15 @@ const PLATEN = [
   { code: 'F01', beeld: 'kapper',     kop: 'Voor de kapper om de hoek.' },
   { code: 'F04', beeld: 'vakman',     kop: 'Voor de vakman die liever bouwt dan typt.' },
   { code: 'F03', beeld: 'restaurant', kop: 'Voor het restaurant dat vol wil zitten.' },
-  // 20 sep: de tweede en derde rij. De kop is steeds de eerste regel van het
-  // bijschrift in teksten/berichten-nl.cjs; houd die twee gelijk.
-  { code: 'F02', beeld: 'coach',    kop: 'Voor de coach met een volle agenda.' },
-  { code: 'F05', beeld: 'winkel',   kop: 'Voor de winkel die ook ’s avonds open wil zijn.' },
-  { code: 'F06', beeld: 'praktijk', kop: 'Voor de praktijk waar mensen zich welkom voelen.' },
-  { code: 'F07', beeld: 'maker',    kop: 'Voor de maker die zijn werk wil laten zien.' },
-  { code: 'F08', beeld: 'kantoor',  kop: 'Voor het kantoor dat serieus genomen wil worden.' },
-  { code: 'F09', beeld: 'tijd',     kop: 'Voor iedereen met een bedrijf en te weinig tijd.' },
 ];
+
+// 20 sep gemaakt, 20 sep weer uit de voorraad gehaald: coach, winkel, praktijk,
+// maker, kantoor en "te weinig tijd" (F02, F05, F06, F07, F08, F09). Het waren
+// nog twee rijen "Voor wie wij bouwen" bovenop de rij die er al stond, en het zijn
+// gegenereerde foto’s van werkplekken — precies wat een echte kapper of praktijk-
+// houder als nep herkent zodra je hem dit als voorbeeld laat zien.
+// De bronbeelden staan er nog (platen/bron/ai/coach.jpg enzovoort); ze zijn alleen
+// niet meer ingepland. Wil je ze terug, zet de regels dan weer in PLATEN hierboven.
 
 const plaat = p => ({
   id: p.code,
