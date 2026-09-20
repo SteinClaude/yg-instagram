@@ -19,6 +19,14 @@ const PLATEN = [
   { code: 'F01', beeld: 'kapper',     kop: 'Voor de kapper om de hoek.' },
   { code: 'F04', beeld: 'vakman',     kop: 'Voor de vakman die liever bouwt dan typt.' },
   { code: 'F03', beeld: 'restaurant', kop: 'Voor het restaurant dat vol wil zitten.' },
+  // 20 sep: de tweede en derde rij. De kop is steeds de eerste regel van het
+  // bijschrift in teksten/berichten-nl.cjs; houd die twee gelijk.
+  { code: 'F02', beeld: 'coach',    kop: 'Voor de coach met een volle agenda.' },
+  { code: 'F05', beeld: 'winkel',   kop: 'Voor de winkel die ook ’s avonds open wil zijn.' },
+  { code: 'F06', beeld: 'praktijk', kop: 'Voor de praktijk waar mensen zich welkom voelen.' },
+  { code: 'F07', beeld: 'maker',    kop: 'Voor de maker die zijn werk wil laten zien.' },
+  { code: 'F08', beeld: 'kantoor',  kop: 'Voor het kantoor dat serieus genomen wil worden.' },
+  { code: 'F09', beeld: 'tijd',     kop: 'Voor iedereen met een bedrijf en te weinig tijd.' },
 ];
 
 const plaat = p => ({
