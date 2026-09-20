@@ -77,9 +77,9 @@ module.exports = [
   // Ook deze plaatst Gijs met de hand, dus stil.
   {
     code: 'R14', beeld: 'poort', stil: true,
-    boven1: 'YG Digital', kop1: 'Your Gateway.',
-    sub1: 'Daar staat de YG voor.',
-    boven2: 'Wat wij bouwen', kop2: 'De ingang naar uw bedrijf.',
-    sub2: 'Websites vanaf € 550 · vaste prijs vooraf',
+    boven1: 'YG Digital', kop1: 'Kom eens binnen.',
+    sub1: 'Uw eerste ontwerp kost u niets.',
+    boven2: 'Op yg-digital.nl', kop2: 'Zie uw eigen site in vijf minuten.',
+    sub2: 'Geen afspraak nodig · geen verplichting',
   },
 ];
