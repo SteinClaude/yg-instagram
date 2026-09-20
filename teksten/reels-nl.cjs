@@ -72,4 +72,14 @@ module.exports = [
     boven2: "Wij bouwen hem", kop2: "Rustig, verzorgd, tot in detail.",
     sub2: "Websites vanaf € 550 · vaste prijs vooraf",
   },
+
+  // R14 sluit de bovenste rij af: de poort uit de ontwerpstudio, het merk zelf.
+  // Ook deze plaatst Gijs met de hand, dus stil.
+  {
+    code: 'R14', beeld: 'poort', stil: true,
+    boven1: 'YG Digital', kop1: 'Your Gateway.',
+    sub1: 'Daar staat de YG voor.',
+    boven2: 'Wat wij bouwen', kop2: 'De ingang naar uw bedrijf.',
+    sub2: 'Websites vanaf € 550 · vaste prijs vooraf',
+  },
 ];
