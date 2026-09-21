@@ -26,14 +26,14 @@ const tagsNl = set => HASHTAGS.find(h => h.naam === set).tekst;
 const STANDAARD = {
   nl: `YG Digital bouwt websites voor ondernemers: de entree van uw bedrijf, rustig en verzorgd tot in detail.
 
-Vaste prijs vooraf, vanaf \u20AC 250 excl. btw (\u20AC 302,50 incl.). Antwoord binnen \u00E9\u00E9n werkdag. Twee correctierondes en dertig dagen nazorg.
+Vaste prijs vooraf, vanaf \u20AC 550 excl. btw (\u20AC 665,50 incl.). Antwoord binnen \u00E9\u00E9n werkdag. Twee correctierondes en dertig dagen nazorg.
 
 Benieuwd hoe uw website eruit zou zien? Maak in twee minuten gratis uw eerste ontwerp via de link in onze bio.
 
 ${HASHTAGS.find(h => h.naam === 'Merk').tekst}`,
   en: `YG Digital builds websites for business owners: the entrance to your business, calm and polished down to the last detail.
 
-Fixed price upfront, from \u20AC 250 excl. VAT (\u20AC 302.50 incl.). A reply within one working day. Two rounds of revisions and thirty days of aftercare.
+Fixed price upfront, from \u20AC 550 excl. VAT (\u20AC 665.50 incl.). A reply within one working day. Two rounds of revisions and thirty days of aftercare.
 
 Curious what your website could look like? Create your first design for free in two minutes via the link in our bio.
 
