@@ -82,4 +82,24 @@ module.exports = [
     boven2: 'Op yg-digital.nl', kop2: 'Zie uw eigen site in vijf minuten.',
     sub2: 'Geen afspraak nodig · geen verplichting',
   },
+
+  // R15 en R16 horen bij de volgorde die Gijs op 21 september zelf samenstelde:
+  // quote, video, quote, bericht, video, bericht. Ze hergebruiken beeld dat al
+  // gemaakt en betaald is (de voordeur en het bordje), maar met nieuwe tekst: die
+  // van R08 herhaalde precies de drie beloftes die er een rij onder staan.
+  // Allebei stil, want Gijs plaatst ze met de hand en kiest de muziek in de app.
+  {
+    code: 'R15', beeld: 'voordeur', stil: true,
+    boven1: 'Your Gateway', kop1: 'Elke klant komt ergens binnen.',
+    sub1: 'Bij u is dat straks uw website.',
+    boven2: 'Wat u krijgt', kop2: 'Een entree die klopt.',
+    sub2: 'Websites vanaf € 550 · vaste prijs vooraf',
+  },
+  {
+    code: 'R16', beeld: 'opening-bordje', stil: true,
+    boven1: 'Voor uw klanten', kop1: 'Uw site staat altijd op open.',
+    sub1: 'Ook om elf uur ’s avonds, ook op zondag.',
+    boven2: 'Op yg-digital.nl', kop2: 'Maak uw eigen ontwerp.',
+    sub2: 'Geen afspraak nodig · geen verplichting',
+  },
 ];
