@@ -1,0 +1,30 @@
+{
+  "reden": "Winactie geplaatst op 21 september 2026; die moet bovenaan het raster blijven staan. Elk bericht duwt hem een plek naar beneden.",
+  "geparkeerd": "2026-09-21",
+  "items": [
+    {
+      "id": "2026-09-22-bericht",
+      "datum": "2026-09-22",
+      "tijd": "11:00",
+      "soort": "bericht",
+      "taal": "nl",
+      "beeld": [
+        "berichten/nl/F27.jpg"
+      ],
+      "tekst": "Antwoord binnen één werkdag.\n\nGeen helpdesk, geen ticketnummer, geen keuzemenu. Je stuurt een bericht en je krijgt antwoord van de persoon die je site heeft gebouwd — ook een jaar na oplevering.\n\nDat kan omdat wij klein zijn. Het is meteen de reden om klein te blijven.\n\nWebsites voor ondernemers, vanaf € 550 excl. btw. Vaste prijs vooraf, met een opleverdatum erbij. Antwoord binnen één werkdag.\n\n#websitelatenmaken #webdesign #ondernemen #ondernemerschap #zzp #mkb #kleinbedrijf #eigenbedrijf #lokaalondernemen #webdesignnederland #vasteprijs #duidelijkheid",
+      "eenmalig": true
+    },
+    {
+      "id": "2026-09-23-bericht",
+      "datum": "2026-09-23",
+      "tijd": "11:00",
+      "soort": "bericht",
+      "taal": "nl",
+      "beeld": [
+        "berichten/nl/F28.jpg"
+      ],
+      "tekst": "Dertig dagen nazorg.\n\nEen site is niet af op de dag dat hij online gaat. In de eerste weken kom je er pas achter wat er in het echt nog schuurt: een tekst die anders moet, een foto die scheef staat, een knop die niemand ziet.\n\nDie maand is van ons. Wat er niet klopt, zetten we recht zonder dat er een rekening bij komt.\n\nWebsites voor ondernemers, vanaf € 550 excl. btw. Vaste prijs vooraf, met een opleverdatum erbij. Antwoord binnen één werkdag.\n\n#websitelatenmaken #webdesign #ondernemen #ondernemerschap #zzp #mkb #kleinbedrijf #eigenbedrijf #lokaalondernemen #webdesignnederland #vasteprijs #duidelijkheid",
+      "eenmalig": true
+    }
+  ]
+}
