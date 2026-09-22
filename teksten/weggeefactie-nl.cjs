@@ -39,10 +39,10 @@
 
 const MERK = '#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen';
 
-const F35 = `De 200 volgers zijn gehaald. Daarom bouwen wij voor een ondernemer een complete website, zonder rekening. Zeven pagina's, de teksten en een logo. Insturen kan tot en met 30 oktober.
+const F35 = `Tweehonderd volgers in twee dagen. Wij hadden op een handvol gerekend. Daarom bouwen wij voor één ondernemer een complete website, zonder rekening: zeven pagina's, de teksten en een logo. Insturen kan tot en met 30 oktober.
 
 Waarom wij dit doen
-Wij hebben werk nodig dat wij openbaar mogen laten zien, en er is iemand die een website nodig heeft en er nu geen geld voor vrijmaakt. Dat komt hier bij elkaar. De tweehonderd is het moment waarop wij het doen: dit account is jong, en wie het nu ziet groeien hoort er iets aan over te houden.
+Dit account is jong en groeide sneller dan wij dachten: tweehonderd mensen die iets van ons wilden zien, in twee dagen. Daar hoort meer tegenover te staan dan een bedankje. Wij hebben werk nodig dat wij openbaar mogen laten zien, en ergens zit een ondernemer die een website nodig heeft en er nu geen geld voor vrijmaakt. Dat komt hier bij elkaar.
 
 Wat het waard is
 Op onze prijslijst ligt vijf pagina's rond € 550 en tien pagina's met logo en teksten rond € 1.250. Dit zit daartussenin, op € 1.000 exclusief btw.
