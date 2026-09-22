@@ -1,3 +1,9 @@
+// INGEHAALD op 22 september 2026 door platen/actie.cjs (A35 en W53). Gijs vond
+// deze platen te veel op zijn andere berichten lijken; de nieuwe zijn licht met
+// een medaillon en vallen op het raster wel op. Het BIJSCHRIFT hoort nog steeds
+// bij deze map: dat staat in teksten/weggeefactie-nl.cjs onder F35 en wordt door
+// de nieuwe platen gewoon gebruikt. Niet weggooien.
+//
 // De weggeefactie van najaar 2026: een complete website t.w.v. € 1.000, uitslag
 // bij 500 volgers. Twee platen, allebei op dezelfde achtergrond (de openstaande deur):
 //

@@ -8,10 +8,12 @@
 //   2. één groot ding dat je op 150 px nog leest — hier het medaillon en € 1.000
 //   3. een zegel of randwerk, zodat het als oorkonde leest en niet als bericht
 //
-// Twee uitvoeringen, want dit is een smaakkeuze:
-//   A35 / W53   LICHT   ivoor met het medaillon groot. Springt het hardst eruit.
-//   B35 / X53   DONKER  de deur van F35, met het medaillon als zegel erop. Blijft
-//                       dichter bij de rest van het account.
+// Er waren twee uitvoeringen. Gijs koos op 22 september de LICHTE:
+//   A35   het bericht, 1080x1350
+//   W53   het verhaal, 1080x1920
+// De donkere tegenhanger (B35 / X53, de deur met het medaillon als zegel) is
+// daarna weggehaald, zodat er bij het plaatsen niet per ongeluk de verkeerde
+// tussenuit gepakt wordt. Hij staat in de geschiedenis van deze map.
 //
 // LET OP, dit is een juridische regel en geen stijlregel: er wordt niet geloot.
 // Schrijf nergens "win", "maak kans", "trekking" of "verloting" — ook niet tussen
@@ -75,33 +77,9 @@ const PLATEN = [
       { t: 'tekst', tekst: META, grootte: 16, marge: 20, max: 760 },
     ],
   },
-  // ---- B: donker met zegel, bericht -------------------------------------
-  {
-    code: 'B35', achtergrond: 'deur', helderheid: 0.58, W: 1080, H: 1350,
-    blokken: [
-      zegel(230),
-      { t: 'boven', tekst: 'Wij gingen door de 200 volgers' },
-      { t: 'kop', tekst: 'E\u00e9n website,\nzonder rekening.', grootte: 78, marge: 46 },
-      { t: 'prijs', bedrag: '\u20ac 1.000', onder: 'de waarde \u00b7 u betaalt niets', grootte: 98, marge: 26 },
-      { t: 'tekst', tekst: REGEL, grootte: 27 },
-    ],
-  },
-  // ---- B: donker met zegel, verhaal -------------------------------------
-  {
-    code: 'X53', achtergrond: 'deur', helderheid: 0.55, W: 1080, H: 1920, veilig: true,
-    blokken: [
-      zegel(280),
-      { t: 'boven', tekst: 'Wij gingen door de 200 volgers' },
-      { t: 'kop', tekst: 'E\u00e9n website,\nzonder rekening.', grootte: 84, marge: 46 },
-      { t: 'prijs', bedrag: '\u20ac 1.000', onder: 'de waarde \u00b7 u betaalt niets', grootte: 106, marge: 28 },
-      { t: 'tekst', tekst: REGEL, grootte: 29 },
-      { t: 'tekst', tekst: 'Hoe u meedoet en waarop wij kiezen, leest u in ons bericht.', grootte: 26, marge: 22 },
-      { t: 'tekst', tekst: META, grootte: 16, marge: 20, max: 760 },
-    ],
-  },
 ];
 
-const MAP = { A35: 'berichten/nl', B35: 'berichten/nl', W53: 'verhalen/nl', X53: 'verhalen/nl' };
+const MAP = { A35: 'berichten/nl', W53: 'verhalen/nl' };
 
 async function bewaar(png, relatief) {
   const doel = path.join(BEELD, relatief);
