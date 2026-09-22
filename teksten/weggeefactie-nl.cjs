@@ -37,41 +37,38 @@
 // verhaal verdwijnt na 24 uur, dus de vermeldingen moeten worden bijgehouden
 // op het moment dat ze binnenkomen.
 
-const MERK = '#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen';
+const MERK = '#ygdigital #yourgateway #websitelatenmaken #webdesign #ondernemen #mkb #zzp #kleinbedrijf';
 
 const F35 = `Tweehonderd volgers in twee dagen. Wij hadden op een handvol gerekend. Daarom bouwen wij voor één ondernemer een complete website, zonder rekening: zeven pagina's, de teksten en een logo. Insturen kan tot en met 30 oktober.
 
 Waarom wij dit doen
-Dit account is jong en groeide sneller dan wij dachten: tweehonderd mensen die iets van ons wilden zien, in twee dagen. Daar hoort meer tegenover te staan dan een bedankje. Wij hebben werk nodig dat wij openbaar mogen laten zien, en ergens zit een ondernemer die een website nodig heeft en er nu geen geld voor vrijmaakt. Dat komt hier bij elkaar.
+Dit account is jong en groeide sneller dan wij dachten: tweehonderd mensen in twee dagen. Daar hoort meer tegenover te staan dan een bedankje. Wij hebben werk nodig dat wij mogen laten zien, en ergens zit een ondernemer die een website nodig heeft en er nu geen geld voor vrijmaakt.
 
 Wat het waard is
-Op onze prijslijst ligt vijf pagina's rond € 550 en tien pagina's met logo en teksten rond € 1.250. Dit zit daartussenin, op € 1.000 exclusief btw.
+Op onze prijslijst ligt vijf pagina's rond € 550 en tien pagina's met logo en teksten rond € 1.250. Dit zit ertussenin: € 1.000 exclusief btw.
 
 Meedoen gaat in drie stappen
 1. Stuur ons hier een privébericht dat begint met het woord Weggeefactie. Een reactie onder deze post telt niet mee.
 2. Vind deze post leuk.
 3. Deel deze post in je verhaal en tag @ygdigital.nl, zodat wij het zien.
-Vergeet je een stap, dan laten wij het je weten. Niemand valt af op een vergissing.
+Vergeet je een stap, dan zeggen wij het; niemand valt af.
 
 Wat er in dat bericht moet staan
-Gijs leest elke inzending zelf en beoordeelt hem op vier punten. Schrijf er dus over, in vier korte alinea's:
+Gijs leest elke inzending zelf, op vier punten. Schrijf in vier korte alinea's:
 1. Wat je bedrijf doet en voor wie.
 2. Wat een website bij jou zou moeten oplossen.
-3. Wat je zelf al geprobeerd hebt om gevonden te worden, en wat daar niet werkte.
+3. Wat je al geprobeerd hebt om gevonden te worden, en wat niet werkte.
 4. Wie je klant is.
-Bij een gelijke uitkomst geeft punt 2 de doorslag. Meedoen kan als je bedrijf bij de KvK staat; een inzending per bedrijf.
+Bij een gelijke uitkomst geeft punt 2 de doorslag. Meedoen kan als je bedrijf bij de KvK staat; één inzending per bedrijf.
 
 Wat je daarna zelf betaalt
-De eerste maand hosting is van ons. Daarna neem je die over bij JouwWeb, vanaf € 5,50 per maand. De domeinnaam is het eerste jaar gratis en kost daarna € 20 per jaar. Onderhoud is € 45 per uur, alleen als je erom vraagt.
+De eerste maand hosting is van ons. Daarna vanaf € 5,50 per maand bij JouwWeb. De domeinnaam is het eerste jaar gratis, daarna € 20 per jaar. Onderhoud € 45 per uur, alleen op verzoek.
 
-Wij vragen twee dingen terug: dat wij het werk openbaar mogen laten zien, en dat je teksten en foto's uiterlijk 30 november bij ons zijn.
+Wij vragen twee dingen terug: dat wij het werk mogen laten zien, en je teksten en foto's uiterlijk 30 november.
 
-Insturen kan tot en met vrijdag 30 oktober 2026, 23.59 uur. Wie het geworden is, en waarom, maken wij bekend zodra dit account 500 volgers heeft.
-
-Staat de teller op 1 december nog niet op 500, dan maken wij de uitslag die dag alsnog bekend. Niemand wacht hier eindeloos op.
+Insturen kan tot en met 30 oktober 2026, 23.59 uur. Wie het geworden is, en waarom, maken wij bekend zodra dit account 500 volgers heeft. Staat de teller op 1 december nog niet op 500, dan komt de uitslag die dag alsnog.
 
 Deze actie wordt op geen enkele wijze gesponsord, onderschreven of beheerd door, of geassocieerd met, Instagram.
-
 ${MERK}`;
 
 module.exports = { F35, MERK };
