@@ -1,5 +1,5 @@
 // De weggeefactie van najaar 2026: een complete website t.w.v. € 1.000, uitslag
-// 1 november. Twee platen, allebei op dezelfde achtergrond (de openstaande deur):
+// bij 500 volgers. Twee platen, allebei op dezelfde achtergrond (de openstaande deur):
 //
 //   V53  het verhaal (1080x1920) — staat los, krijgt geen bijschrift onder zich
 //   F35  het bericht (1080x1350) — het bijschrift staat in teksten/weggeefactie-nl.cjs
@@ -46,14 +46,14 @@ const META = 'Deze actie wordt op geen enkele wijze gesponsord, onderschreven of
 const PLATEN = [
   {
     code: 'V53', map: 'verhalen/nl', breed: 1080, hoog: 1920, veilig: true,
-    boven: 'Bij 200 volgers',
+    boven: 'Tweehonderd volgers',
     kop: 'Wij doen er iets\nvoor terug.',
-    // Het getal staat er nu wel op: bij 200 volgers is het getal de actie zelf,
-    // niet een mijlpaal die veroudert. Stand op 21 sep: 119 volgers.
+    // Het getal staat er wel op: de tweehonderd is de aanleiding, dus het getal
+    // is de boodschap. Stand op 22 sep: 195 volgers.
     // Deelt geen woordreeks van vier met het bijschrift.
-    tekst: 'Zodra tweehonderd mensen dit account volgen, doen wij er iets voor '
-      + 'terug. Geen groot getal, maar wel allemaal mensen die iets van ons '
-      + 'wilden zien. Een bedankje leek ons te weinig.',
+    tekst: 'Tweehonderd mensen volgen dit account. Geen groot getal, maar wel '
+      + 'allemaal mensen die iets van ons wilden zien. Een bedankje leek ons '
+      + 'te weinig.',
     tekst2: 'Wij bouwen een hele website voor iemand, kosteloos. Hoe u meedoet en '
       + 'waarop wij kiezen, leest u in ons bericht.',
     klein: META,
@@ -64,7 +64,7 @@ const PLATEN = [
     kop: 'Eén website,\nzonder rekening.',
     tekst: "Zeven pagina's, de teksten en een logo: bij ons samen € 1.000 excl. btw. "
       + 'Wij lezen elke inzending zelf en kiezen er één uit. Insturen kan tot en met '
-      + '30 oktober.',
+      + '30 oktober. Bij 500 volgers maken wij bekend wie het geworden is.',
     tekst2: null,
     klein: null,
   },
