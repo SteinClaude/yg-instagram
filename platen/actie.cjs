@@ -55,7 +55,7 @@ const REGEL = 'Zeven pagina\u2019s, de teksten en een logo. Insturen kan tot en 
 const PLATEN = [
   // ---- A: licht, bericht ------------------------------------------------
   {
-    code: 'A35', soort: 'ivoor', W: 1080, H: 1350,
+    code: 'A35', foto: 'deur', W: 1080, H: 1350,
     blokken: [
       zegel(300),
       { t: 'boven', tekst: 'Wij gingen door de 200 volgers' },
@@ -66,7 +66,7 @@ const PLATEN = [
   },
   // ---- A: licht, verhaal ------------------------------------------------
   {
-    code: 'W53', soort: 'ivoor', W: 1080, H: 1920, veilig: true,
+    code: 'W53', foto: 'deur', W: 1080, H: 1920, veilig: true,
     blokken: [
       zegel(340),
       { t: 'boven', tekst: 'Wij gingen door de 200 volgers' },
@@ -97,8 +97,10 @@ if (require.main === module) {
     for (const p of PLATEN) {
       if (alleen && p.code !== alleen) continue;
       const plaat = { blokken: p.blokken, veilig: p.veilig };
-      if (p.achtergrond) plaat.achtergrond = { bron: `ai/${p.achtergrond}.jpg`, helderheid: p.helderheid, verzadiging: 0.9, donkerte: 0.95, positie: 'centre' };
-      else plaat.soort = p.soort;
+      // Lichte foto: opgelicht en met een ivoren waas, zodat hij als afdruk op
+      // crèmepapier achter het medaillon ligt. Zie a.licht in maak.cjs.
+      if (p.foto) plaat.achtergrond = { bron: `ai/${p.foto}.jpg`, licht: true, helderheid: 1.18, verzadiging: 0.7, waas: 0.84, positie: 'centre' };
+      else plaat.soort = p.soort || 'ivoor';
       await bewaar(await kaart(plaat, p.W, p.H), `${MAP[p.code]}/${p.code}.jpg`);
       console.log(`${p.code}  ${(p.achtergrond ? 'donker' : 'licht').padEnd(7)} ${p.W}x${p.H} \u2713`);
     }

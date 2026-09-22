@@ -184,9 +184,20 @@ async function achtergrondSvg(a, W, H) {
     .resize(W, H, { fit: 'cover', position: a.positie || 'centre' })
     .modulate({ brightness: a.helderheid ?? 0.82, saturation: a.verzadiging ?? 0.85 })
     .jpeg({ quality: 90 }).toBuffer();
+  const beeld = `<image x="0" y="0" width="${W}" height="${H}" href="data:image/jpeg;base64,${buf.toString('base64')}"/>`;
+  // Lichte stand (a.licht): geen donker verloop maar een ivoren waas, zodat de
+  // foto als een afdruk op crèmepapier achter de tekst ligt. Gemaakt voor de
+  // weggeefactie, die licht moet blijven om op het raster op te vallen.
+  if (a.licht) {
+    const waas = a.waas ?? 0.84;
+    return beeld + `<defs><linearGradient id="verloop" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#F6F1E8" stop-opacity="${Math.max(0, waas - 0.16)}"/>
+<stop offset="40%" stop-color="#F6F1E8" stop-opacity="${waas}"/>
+<stop offset="100%" stop-color="#F6F1E8" stop-opacity="${Math.min(1, waas + 0.06)}"/></linearGradient></defs>
+<rect width="${W}" height="${H}" fill="url(#verloop)"/>`;
+  }
   const donker = a.donkerte ?? 0.94;
-  return `<image x="0" y="0" width="${W}" height="${H}" href="data:image/jpeg;base64,${buf.toString('base64')}"/>
-<defs><linearGradient id="verloop" x1="0" y1="0" x2="0" y2="1">
+  return beeld + `<defs><linearGradient id="verloop" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#141414" stop-opacity="0.30"/>
 <stop offset="34%" stop-color="#141414" stop-opacity="0.12"/>
 <stop offset="58%" stop-color="#141414" stop-opacity="0.55"/>
@@ -196,7 +207,7 @@ async function achtergrondSvg(a, W, H) {
 
 async function kaart(plaat, W, H) {
   const s = W / 1080 * (H / W < 1.15 ? 0.94 : 1);   // vierkant iets compacter
-  const k = K[plaat.achtergrond ? 'donker' : (plaat.soort || 'donker')];
+  const k = K[plaat.achtergrond ? (plaat.achtergrond.licht ? 'ivoor' : 'donker') : (plaat.soort || 'donker')];
   const marge = 100 * (W / 1080), kader = 46 * (W / 1080);
   const C = { k, s, W, H, marge, max: W - 2 * marge, mx: W / 2, beelden: {} };
   const achtergrond = plaat.achtergrond ? await achtergrondSvg(plaat.achtergrond, W, H) : '';
