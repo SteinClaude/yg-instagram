@@ -48,8 +48,12 @@ const PLATEN = [
     code: 'V53', map: 'verhalen/nl', breed: 1080, hoog: 1920, veilig: true,
     boven: 'Honderd volgers',
     kop: 'Wij doen er iets\nvoor terug.',
-    tekst: 'Honderd mensen volgen dit account. Geen groot getal, maar wel honderd '
-      + 'mensen die iets van ons wilden zien. Daar hoort meer bij dan een bedankje.',
+    // Geen exact getal op de plaat: het account groeit snel (93 op 20 sep, 168 op
+    // 22 sep) en een getal is binnen een week achterhaald. 'Meer dan honderd'
+    // blijft kloppen. Deelt ook geen woordreeks van vier met het bijschrift.
+    tekst: 'Er volgen nu meer dan honderd mensen dit account. Geen groot getal, '
+      + 'maar wel allemaal mensen die iets van ons wilden zien. Een bedankje leek '
+      + 'ons te weinig.',
     tekst2: 'Wij bouwen een hele website voor iemand, kosteloos. Hoe u meedoet en '
       + 'waarop wij kiezen, leest u in ons bericht.',
     klein: META,
