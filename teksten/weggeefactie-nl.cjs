@@ -39,10 +39,10 @@
 
 const MERK = '#ygdigital #yourgateway #webdesign #websitelatenmaken #webdesignnederland #ondernemen #ondernemerschap #mkb #zzp #kleinbedrijf #eigenbedrijf #onlineondernemen';
 
-const F35 = `Wij bouwen voor een ondernemer een complete website, zonder rekening. Zeven pagina's, de teksten en een logo. Insturen kan tot en met 30 oktober.
+const F35 = `Zodra dit account 200 volgers heeft, bouwen wij voor een ondernemer een complete website, zonder rekening. Zeven pagina's, de teksten en een logo. Insturen kan tot en met 30 oktober.
 
 Waarom wij dit doen
-Dit account ging door de honderd volgers. Daar hoort meer bij dan een bedankje. Wij hebben werk nodig dat wij openbaar mogen laten zien, en er is iemand die een website nodig heeft en er nu geen geld voor vrijmaakt. Dat komt hier bij elkaar.
+Wij hebben werk nodig dat wij openbaar mogen laten zien, en er is iemand die een website nodig heeft en er nu geen geld voor vrijmaakt. Dat komt hier bij elkaar. De tweehonderd volgers zijn het moment waarop wij het doen: dit account is jong, en wie het nu ziet groeien hoort er iets aan over te houden.
 
 Wat het waard is
 Op onze prijslijst ligt vijf pagina's rond € 550 en tien pagina's met logo en teksten rond € 1.250. Dit zit daartussenin, op € 1.000 exclusief btw.
@@ -67,6 +67,8 @@ De eerste maand hosting is van ons. Daarna neem je die over bij JouwWeb, vanaf �
 Wij vragen twee dingen terug: dat wij het werk openbaar mogen laten zien, en dat je teksten en foto's uiterlijk 30 november bij ons zijn.
 
 Insturen kan tot en met vrijdag 30 oktober 2026, 23.59 uur. Op zondag 1 november laten wij weten wie het geworden is, en waarom.
+
+Staat de teller op 30 oktober nog niet op 200, dan gaat de actie gewoon door en schuift alleen de uitslag op. Wij laten dat hier weten. Wie heeft ingestuurd, blijft meedoen.
 
 Deze actie wordt op geen enkele wijze gesponsord, onderschreven of beheerd door, of geassocieerd met, Instagram.
 

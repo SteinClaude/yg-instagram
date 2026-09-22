@@ -41,19 +41,19 @@ const META = 'Deze actie wordt op geen enkele wijze gesponsord, onderschreven of
 // Op de plaat staat "u"; in het bijschrift staat "je". Zie teksten/berichten-nl.cjs.
 //
 // Het verhaal en het bericht delen geen woordreeks van vier of langer. Het verhaal
-// gaat over de mijlpaal (honderd volgers, daar hoort iets tegenover te staan), het
+// gaat over de mijlpaal (200 volgers, daar hoort iets tegenover te staan), het
 // bericht over de actie zelf. Wie ze allebei ziet, leest geen twee keer hetzelfde.
 const PLATEN = [
   {
     code: 'V53', map: 'verhalen/nl', breed: 1080, hoog: 1920, veilig: true,
-    boven: 'Honderd volgers',
+    boven: 'Bij 200 volgers',
     kop: 'Wij doen er iets\nvoor terug.',
-    // Geen exact getal op de plaat: het account groeit snel (93 op 20 sep, 168 op
-    // 22 sep) en een getal is binnen een week achterhaald. 'Meer dan honderd'
-    // blijft kloppen. Deelt ook geen woordreeks van vier met het bijschrift.
-    tekst: 'Er volgen nu meer dan honderd mensen dit account. Geen groot getal, '
-      + 'maar wel allemaal mensen die iets van ons wilden zien. Een bedankje leek '
-      + 'ons te weinig.',
+    // Het getal staat er nu wel op: bij 200 volgers is het getal de actie zelf,
+    // niet een mijlpaal die veroudert. Stand op 21 sep: 119 volgers.
+    // Deelt geen woordreeks van vier met het bijschrift.
+    tekst: 'Zodra tweehonderd mensen dit account volgen, doen wij er iets voor '
+      + 'terug. Geen groot getal, maar wel allemaal mensen die iets van ons '
+      + 'wilden zien. Een bedankje leek ons te weinig.',
     tekst2: 'Wij bouwen een hele website voor iemand, kosteloos. Hoe u meedoet en '
       + 'waarop wij kiezen, leest u in ons bericht.',
     klein: META,

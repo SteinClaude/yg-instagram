@@ -48,7 +48,7 @@ const zegel = (maat, opties = {}) => ({
 const META = 'Deze actie wordt op geen enkele wijze gesponsord, onderschreven of '
   + 'beheerd door, of geassocieerd met, Instagram.';
 
-const REGEL = 'Zeven pagina\u2019s, de teksten en een logo. Wij lezen elke inzending zelf en kiezen er \u00e9\u00e9n uit. Insturen kan tot en met 30 oktober.';
+const REGEL = 'Zeven pagina\u2019s, de teksten en een logo. Zodra dit account 200 volgers heeft, kiezen wij er \u00e9\u00e9n uit. Insturen kan tot en met 30 oktober.';
 
 const PLATEN = [
   // ---- A: licht, bericht ------------------------------------------------
@@ -56,7 +56,7 @@ const PLATEN = [
     code: 'A35', soort: 'ivoor', W: 1080, H: 1350,
     blokken: [
       zegel(300),
-      { t: 'boven', tekst: 'Onze weggeefactie \u00b7 najaar 2026' },
+      { t: 'boven', tekst: 'Onze weggeefactie \u00b7 bij 200 volgers' },
       { t: 'kop', tekst: 'E\u00e9n website,\nzonder rekening.', grootte: 80, marge: 46 },
       { t: 'prijs', bedrag: '\u20ac 1.000', onder: 'de waarde \u00b7 u betaalt niets', grootte: 104, marge: 28 },
       { t: 'tekst', tekst: REGEL, grootte: 27 },
@@ -67,7 +67,7 @@ const PLATEN = [
     code: 'W53', soort: 'ivoor', W: 1080, H: 1920, veilig: true,
     blokken: [
       zegel(340),
-      { t: 'boven', tekst: 'Onze weggeefactie \u00b7 najaar 2026' },
+      { t: 'boven', tekst: 'Onze weggeefactie \u00b7 bij 200 volgers' },
       { t: 'kop', tekst: 'E\u00e9n website,\nzonder rekening.', grootte: 86, marge: 46 },
       { t: 'prijs', bedrag: '\u20ac 1.000', onder: 'de waarde \u00b7 u betaalt niets', grootte: 112, marge: 30 },
       { t: 'tekst', tekst: REGEL, grootte: 29 },
@@ -80,7 +80,7 @@ const PLATEN = [
     code: 'B35', achtergrond: 'deur', helderheid: 0.58, W: 1080, H: 1350,
     blokken: [
       zegel(230),
-      { t: 'boven', tekst: 'Onze weggeefactie \u00b7 najaar 2026' },
+      { t: 'boven', tekst: 'Onze weggeefactie \u00b7 bij 200 volgers' },
       { t: 'kop', tekst: 'E\u00e9n website,\nzonder rekening.', grootte: 78, marge: 46 },
       { t: 'prijs', bedrag: '\u20ac 1.000', onder: 'de waarde \u00b7 u betaalt niets', grootte: 98, marge: 26 },
       { t: 'tekst', tekst: REGEL, grootte: 27 },
@@ -91,7 +91,7 @@ const PLATEN = [
     code: 'X53', achtergrond: 'deur', helderheid: 0.55, W: 1080, H: 1920, veilig: true,
     blokken: [
       zegel(280),
-      { t: 'boven', tekst: 'Onze weggeefactie \u00b7 najaar 2026' },
+      { t: 'boven', tekst: 'Onze weggeefactie \u00b7 bij 200 volgers' },
       { t: 'kop', tekst: 'E\u00e9n website,\nzonder rekening.', grootte: 84, marge: 46 },
       { t: 'prijs', bedrag: '\u20ac 1.000', onder: 'de waarde \u00b7 u betaalt niets', grootte: 106, marge: 28 },
       { t: 'tekst', tekst: REGEL, grootte: 29 },
