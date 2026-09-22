@@ -58,7 +58,7 @@ const PLATEN = [
     code: 'A35', foto: 'deur', W: 1080, H: 1350,
     blokken: [
       zegel(300),
-      { t: 'boven', tekst: 'Wij gingen door de 200 volgers' },
+      { t: 'boven', tekst: '200 volgers gehaald \u00b7 onze weggeefactie' },
       { t: 'kop', tekst: 'E\u00e9n website,\nzonder rekening.', grootte: 80, marge: 46 },
       { t: 'prijs', bedrag: '\u20ac 1.000', onder: 'de waarde \u00b7 u betaalt niets', grootte: 104, marge: 28 },
       { t: 'tekst', tekst: REGEL, grootte: 27 },
@@ -69,7 +69,7 @@ const PLATEN = [
     code: 'W53', foto: 'deur', W: 1080, H: 1920, veilig: true,
     blokken: [
       zegel(340),
-      { t: 'boven', tekst: 'Wij gingen door de 200 volgers' },
+      { t: 'boven', tekst: '200 volgers gehaald \u00b7 onze weggeefactie' },
       { t: 'kop', tekst: 'E\u00e9n website,\nzonder rekening.', grootte: 86, marge: 46 },
       { t: 'prijs', bedrag: '\u20ac 1.000', onder: 'de waarde \u00b7 u betaalt niets', grootte: 112, marge: 30 },
       { t: 'tekst', tekst: REGEL, grootte: 29 },
