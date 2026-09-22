@@ -54,19 +54,19 @@ Meedoen gaat in drie stappen
 Vergeet je een stap, dan zeggen wij het; niemand valt af.
 
 Wat er in dat bericht moet staan
-Gijs leest elke inzending zelf, op vier punten. Schrijf in vier korte alinea's:
+Wij lezen elke inzending zelf, op vier punten. Schrijf in vier korte alinea's:
 1. Wat je bedrijf doet en voor wie.
 2. Wat een website bij jou zou moeten oplossen.
 3. Wat je al geprobeerd hebt om gevonden te worden, en wat niet werkte.
 4. Wie je klant is.
-Bij een gelijke uitkomst geeft punt 2 de doorslag. Meedoen kan als je bedrijf bij de KvK staat; één inzending per bedrijf.
+Bij een gelijke uitkomst geeft punt 2 de doorslag. Meedoen kan nu!
 
 Wat je daarna zelf betaalt
 De eerste maand hosting is van ons. Daarna vanaf € 5,50 per maand bij JouwWeb. De domeinnaam is het eerste jaar gratis, daarna € 20 per jaar. Onderhoud € 45 per uur, alleen op verzoek.
 
-Wij vragen twee dingen terug: dat wij het werk mogen laten zien, en je teksten en foto's uiterlijk 30 november.
+Wij vragen twee dingen terug: dat wij het werk mogen laten zien, en dat je je teksten en foto's direct na de uitslag naar ons stuurt.
 
-Insturen kan tot en met 30 oktober 2026, 23.59 uur. Wie het geworden is, en waarom, maken wij bekend zodra dit account 500 volgers heeft. Staat de teller op 1 december nog niet op 500, dan komt de uitslag die dag alsnog.
+Insturen kan tot en met 30 oktober 2026, 23.59 uur. Wie het geworden is, en waarom, maken wij bekend zodra dit account 500 volgers heeft.
 
 Deze actie wordt op geen enkele wijze gesponsord, onderschreven of beheerd door, of geassocieerd met, Instagram.
 ${MERK}`;
