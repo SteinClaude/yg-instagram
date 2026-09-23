@@ -56,25 +56,54 @@ const PLATEN = [
   // ---- A: licht, bericht ------------------------------------------------
   {
     code: 'A35', foto: 'deur', W: 1080, H: 1350,
+    // 23 sep: zelfde idee als W53 \u2014 de kop is de trigger, het bedrag legt zichzelf
+    // uit. De stappen staan hier niet op de plaat: die staan in het bijschrift
+    // eronder, en op de rastertegel moet het rustig blijven.
     blokken: [
       zegel(300),
-      { t: 'boven', tekst: 'Onze weggeefactie \u00b7 dank u' },
-      { t: 'kop', tekst: 'Tweehonderd volgers,\nin twee dagen.', grootte: 78, marge: 46 },
-      { t: 'prijs', bedrag: '\u20ac 1.000', onder: '\u00e9\u00e9n website \u00b7 zonder rekening', grootte: 104, marge: 28 },
-      { t: 'tekst', tekst: REGEL, grootte: 27 },
+      { t: 'boven', tekst: '250 volgers in twee dagen \u00b7 dank u' },
+      { t: 'kop', tekst: 'Wij geven \u00e9\u00e9n\nwebsite weg.', grootte: 80, marge: 40 },
+      { t: 'prijs', bedrag: '\u20ac 1.000', onder: 'de waarde op onze prijslijst \u00b7 u betaalt niets', grootte: 104, marge: 30 },
+      { t: 'tekst', tekst: 'Zeven pagina\u2019s, de teksten en een logo, voor \u00e9\u00e9n ondernemer. Insturen kan tot en met 30 oktober; hoe u meedoet en waarop wij kiezen, leest u hieronder.', grootte: 27 },
     ],
   },
   // ---- A: licht, verhaal ------------------------------------------------
   {
     code: 'W53', foto: 'deur', W: 1080, H: 1920, veilig: true,
+    // 23 sep: Gijs vond de plaat te leeg \u2014 medaillon te laag, ruimte onder de
+    // tekst. De zone is daarom ruimer (200 tot 1600, voet op 1640) en alles is
+    // een maat groter. Onder 1640 blijft 280 px vrij voor de antwoordbalk van
+    // Instagram; officieel is 250 genoeg.
+    // 23 sep, derde ronde \u2014 de definitieve. Gijs: het bedrag is de trigger, maar
+    // groot "EUR 1.000" met klein "\u00e9\u00e9n website" eronder leest als geld. Daarom is
+    // de KOP nu de trigger ("Wij geven \u00e9\u00e9n website weg."), staat de reden (de
+    // 250 volgers) in de bovenregel, legt het bedrag zichzelf uit, en
+    // staan de drie stappen op de plaat \u2014 een verhaal heeft geen bijschrift.
+    // Gewone lettergroottes; de hoogte wordt gevuld met inhoud, niet met lucht.
+    // Medaillon bovenaan de zone (uitlijn 'boven'), tekst loopt naar beneden uit.
+    // Zone gemeten aan het echte verhaal (23 sep): Instagram toont 1080x1920
+    // ongesneden; bovenin ± 160 px naam en muziek, onderin op de telefoon ± 250 px
+    // antwoordbalk. Dus inhoud tot 1600, voetregel op 1650.
+    // 23 sep, vierde ronde: Gijs wil de hele plaat gebruiken. Logo en voetregel
+    // staan nu op dezelfde plek als in het bericht (vlak binnen het kader), en de
+    // inhoud vult de ruimte ertussen (uitlijn 'vul'): de lucht gaat vooral naar de
+    // naden tussen de groepen, niet tussen bovenregel en kop. Fijnafstelling op
+    // Gijs' verzoek: alles, ook de voetregel, eindigt boven de balk "Bericht
+    // verzenden" (± 1755-1850 op een telefoon waar hij over het beeld ligt).
+    zone: { boven: 76, bodem: 1650, voet: 1722 }, uitlijn: 'vul',
     blokken: [
-      zegel(340),
-      { t: 'boven', tekst: 'Onze weggeefactie \u00b7 dank u' },
-      { t: 'kop', tekst: 'Tweehonderd volgers,\nin twee dagen.', grootte: 84, marge: 46 },
-      { t: 'prijs', bedrag: '\u20ac 1.000', onder: '\u00e9\u00e9n website \u00b7 zonder rekening', grootte: 112, marge: 30 },
-      { t: 'tekst', tekst: REGEL, grootte: 29 },
-      { t: 'tekst', tekst: 'Hoe u meedoet en waarop wij kiezen, leest u in ons bericht.', grootte: 26, marge: 22 },
-      { t: 'tekst', tekst: META, grootte: 16, marge: 20, max: 760 },
+      { ...zegel(500, { marge: 40 }), rek: 1 },
+      { t: 'boven', tekst: '250 volgers in twee dagen \u00b7 dank u', rek: 0 },
+      { t: 'kop', tekst: 'Wij geven \u00e9\u00e9n\nwebsite weg.', grootte: 84, marge: 36, rek: 0.5 },
+      { t: 'prijs', bedrag: '\u20ac 1.000', onder: 'de waarde op onze prijslijst \u00b7 u betaalt niets', grootte: 104, marge: 40, rek: 1.5 },
+      { t: 'tekst', tekst: 'Zeven pagina\u2019s, de teksten en een logo, voor \u00e9\u00e9n ondernemer. Meedoen gaat zo.', grootte: 30, marge: 36, rek: 0.5 },
+      { t: 'lijst', grootte: 28, grootteTekst: 24, gat: 34, marge: 36, rek: 1.2, items: [
+        { kop: 'Stuur ons een priv\u00e9bericht', tekst: 'Begin met het woord Weggeefactie en vertel wat uw bedrijf doet.' },
+        { kop: 'Vind ons bericht leuk', tekst: 'Het bericht met de poort op ons profiel.' },
+        { kop: 'Deel het in uw verhaal', tekst: 'En tag @ygdigital.nl, zodat wij het zien.' },
+      ] },
+      { t: 'tekst', tekst: 'Insturen kan tot en met 30 oktober. Wij lezen elke inzending zelf en kiezen er \u00e9\u00e9n uit.', grootte: 27, marge: 28, rek: 0.5 },
+      { t: 'tekst', tekst: META, grootte: 16, max: 760 },
     ],
   },
 ];
@@ -88,7 +117,7 @@ async function bewaar(png, relatief) {
   await sharp(doel).resize({ width: 260 }).jpeg({ quality: 72 }).toFile(path.join(MINI, relatief.replace(/\//g, '-')));
 }
 
-module.exports = { PLATEN };
+module.exports = { PLATEN, zegel, META, REGEL };
 
 if (require.main === module) {
   (async () => {
@@ -96,7 +125,7 @@ if (require.main === module) {
     fs.mkdirSync(MINI, { recursive: true });
     for (const p of PLATEN) {
       if (alleen && p.code !== alleen) continue;
-      const plaat = { blokken: p.blokken, veilig: p.veilig };
+      const plaat = { blokken: p.blokken, veilig: p.veilig, zone: p.zone, uitlijn: p.uitlijn };
       // Lichte foto: opgelicht en met een ivoren waas, zodat hij als afdruk op
       // crèmepapier achter het medaillon ligt. Zie a.licht in maak.cjs.
       if (p.foto) plaat.achtergrond = { bron: `ai/${p.foto}.jpg`, licht: true, helderheid: 1.18, verzadiging: 0.7, waas: 0.84, positie: 'centre' };

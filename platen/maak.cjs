@@ -99,7 +99,7 @@ function maakBlokken(blokken, C) {
   const M = [];
   for (const b of blokken) {
     if (!b) continue;
-    const t = b.t;
+    const t = b.t, voor = M.length;
     if (t === 'lijn') {
       M.push({ h: 1, marge: b.marge ?? 30 * C.s, teken: y => `<rect x="${C.mx - 34 * C.s}" y="${r3(y)}" width="${68 * C.s}" height="1" fill="${C.k.goud}"/>` });
     } else if (t === 'boven') {
@@ -165,6 +165,9 @@ function maakBlokken(blokken, C) {
     } else if (t === 'ruimte') {
       M.push({ h: 0, marge: (b.h ?? 20) * C.s, teken: () => '' });
     }
+    // rek = hoeveel van de vrije ruimte de marge ná dit blok krijgt bij uitlijn
+    // 'vul' (0 = blijft vast, zoals tussen bovenregel en kop).
+    if (M.length > voor) M[M.length - 1].rek = b.rek ?? 1;
   }
   return M;
 }
@@ -224,9 +227,14 @@ async function kaart(plaat, W, H) {
   // (± 420 px) zijn eigen naam, balk en knoppen over het beeld. Embleem, tekst en
   // voetregel blijven dan binnen de zone daartussen.
   const veilig = !!plaat.veilig && H > W * 1.5, f = W / 1080;
-  const bovenChroom = veilig ? 236 * f : kader + 30 * f, poortH = 33 * f;
-  const voetY = veilig ? 1484 * f : H - kader - 40 * f;
-  const bodem = veilig ? 1440 * f : H - kader - 74 * f;
+  // plaat.zone = { boven, bodem, voet } (in 1080-eenheden) overschrijft de vaste
+  // zone van een verhaal. Instagram houdt officieel 250 px boven en onder vrij;
+  // de standaard hieronder is ruimer (236 / 480). Een plaat die het beeld beter
+  // moet vullen kan tot ± 1600 zakken zonder onder de antwoordbalk te komen.
+  const zone = plaat.zone || {};
+  const bovenChroom = zone.boven != null ? zone.boven * f : (veilig ? 236 * f : kader + 30 * f), poortH = 33 * f;
+  const voetY = zone.voet != null ? zone.voet * f : (veilig ? 1484 * f : H - kader - 40 * f);
+  const bodem = zone.bodem != null ? zone.bodem * f : (veilig ? 1440 * f : H - kader - 74 * f);
 
   // Past de inhoud niet (vooral in het vierkante formaat), dan krimpen we net
   // zolang tot hij wel past. Zo raakt tekst nooit de voetregel.
@@ -238,8 +246,18 @@ async function kaart(plaat, W, H) {
     top = bovenChroom + poortH + 54 * C.s;
     if (hoogte <= bodem - top) break;
   }
-  // 'onder' zet de tekst onderaan (bij een foto), anders gecentreerd
-  let y = plaat.uitlijn === 'onder' ? bodem - hoogte - 30 * (W / 1080) : top + Math.max(0, (bodem - top - hoogte) / 2);
+  // 'onder' zet de tekst onderaan (bij een foto), 'boven' bovenaan de zone
+  // (embleem of medaillon hoog in beeld, de tekst loopt naar beneden uit),
+  // 'vul' begint bovenaan en verdeelt de vrije ruimte over de marges (naar
+  // rato van rek), zodat de inhoud precies tot de bodem loopt. Anders gecentreerd.
+  if (plaat.uitlijn === 'vul') {
+    const over = bodem - top - hoogte, tussen = blokken.slice(0, -1);
+    const gewicht = tussen.reduce((a, b) => a + b.rek, 0);
+    if (over > 0 && gewicht > 0) for (const b of tussen) b.marge += over * b.rek / gewicht;
+  }
+  let y = plaat.uitlijn === 'onder' ? bodem - hoogte - 30 * (W / 1080)
+    : plaat.uitlijn === 'boven' || plaat.uitlijn === 'vul' ? top
+    : top + Math.max(0, (bodem - top - hoogte) / 2);
 
   let inhoud = '';
   for (const b of blokken) { inhoud += b.teken(y); y += b.h + b.marge; }
