@@ -145,13 +145,18 @@ voorbeeldvenster op een telefoon te klein.
 - Verhaal 3: branche Kapper & salon, sfeer Warm & ambachtelijk (leest duidelijk als een
   andere site dan die van YG), naam "Uw bedrijf". De rondleiding van de studio scrolt op
   telefoonmaat niet vanzelf; het ontwerp wordt in de opname zelf rustig gescrold.
-- Verhaal 1 wacht op de keuze uit de Pexels-kandidaten (zie het bericht van 23 september).
+- Verhaal 1: Pexels-video 35466110 (hal met kroonluchter), de eerste acht seconden op
+  looptempo, 30 beelden per seconde. Gekozen op mijn advies toen Gijs "gaan we verder" zei
+  zonder nummer; ruilen is één download.
 
-## Volgende stappen
+## Stand 24 september: af
 
-1. Gijs kiest de entree (Pexels) en beoordeelt de twee proeven.
-2. Verhaal 1 bouwen, alle drie definitief renderen zonder telefoonbalken.
-3. Bestanden op GitHub Pages zetten zodat Gijs ze op de telefoon kan bewaren.
+De drie verhalen staan definitief in `beeld/highlights/entree/` (H01.mp4, H02.mp4, H03.mp4) en
+op GitHub Pages: https://steinclaude.github.io/yg-instagram/highlights.html. Op die pagina
+kan Gijs ze op de telefoon bewaren. Plaatsen gaat met de hand in de app: volgorde 1, 2, 3,
+muziek naar keuze, op verhaal 3 de linksticker in het lege vak onderin, daarna elk verhaal
+toevoegen aan de highlight Entree. Nog te beslissen: de lichte plaat die nu in Entree staat,
+en de bestemming van de sticker (advies: yg-digital.nl/eerste-ontwerp).
 
 ## Aanvulling vanuit de YG-sitesessie (23 september, avond)
 
