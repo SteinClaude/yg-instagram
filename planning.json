@@ -331,6 +331,42 @@
       "eenmalig": true
     },
     {
+      "id": "2026-09-24-verhaal-entree-1",
+      "datum": "2026-09-24",
+      "tijd": "19:00",
+      "soort": "verhaal",
+      "taal": "nl",
+      "beeld": [
+        "highlights/entree/H01.mp4"
+      ],
+      "titel": "Entree 1 · Welkom",
+      "eenmalig": true
+    },
+    {
+      "id": "2026-09-24-verhaal-entree-2",
+      "datum": "2026-09-24",
+      "tijd": "19:00",
+      "soort": "verhaal",
+      "taal": "nl",
+      "beeld": [
+        "highlights/entree/H02.mp4"
+      ],
+      "titel": "Entree 2 · Wat we doen",
+      "eenmalig": true
+    },
+    {
+      "id": "2026-09-24-verhaal-entree-3",
+      "datum": "2026-09-24",
+      "tijd": "19:00",
+      "soort": "verhaal",
+      "taal": "nl",
+      "beeld": [
+        "highlights/entree/H03.mp4"
+      ],
+      "titel": "Entree 3 · Even binnenkijken",
+      "eenmalig": true
+    },
+    {
       "id": "2026-09-25-verhaal",
       "datum": "2026-09-25",
       "tijd": "08:00",
