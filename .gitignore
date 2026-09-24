@@ -9,3 +9,12 @@ platen/uit/
 platen/overzicht*.jpg
 platen/opname*.jpg
 platen/controle-foto.jpg
+
+# lijst van accounts om te ontvolgen: privegegevens, hoort niet in git
+ontvolgen-lijst.tsv
+ontvolgen-twijfel.tsv
+
+# bronmateriaal voor de highlight-verhalen: de Pexels-clip is met een url in teksten/highlights-nl.cjs
+# opnieuw te halen, de schermopnamen maakt gereedschap/opname.cjs opnieuw
+platen/bron/clips/entree.mp4
+platen/bron/opnamen/

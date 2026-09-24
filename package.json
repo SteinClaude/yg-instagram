@@ -8,5 +8,10 @@
     "plaatsen": "node src/plaatsen.cjs",
     "klaarzetten": "node gereedschap/klaarzetten.cjs"
   },
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.63.0"
+  }
 }

@@ -208,3 +208,6 @@ if (require.main === module) {
     }
   })().catch(e => { console.error(e); process.exit(1); });
 }
+
+// Hergebruik door gereedschap/verhaal-video.cjs: dezelfde letters, plekken en het verloop.
+module.exports = { laag, VERLOOP, chroom, groep, regel, W, H };
