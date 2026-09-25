@@ -50,7 +50,7 @@ module.exports = [
     bron: 'clips/magazijn.mp4',
     lagen: [
       { soort: 'groep', boven: 'Ordepartner', kop: 'Structuur begint met een sterke basis.', onderkant: 1330, in: 0.6 },
-      { soort: 'regel', tekst: 'Ons eigen tweede bedrijf.', bovenkant: 1366, in: 2.6 },
+      // Geen regel over het eigen tweede bedrijf: Gijs, 25 sep 2026 ("niks vertellen erin over ons 2e bedrijf").
     ],
   },
 ];
