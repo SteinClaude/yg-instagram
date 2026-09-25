@@ -33,24 +33,24 @@ const medaillon = (maat, opties = {}) => ({
   },
 });
 
-// Zone zoals bij W53, Gijs' eigen fijnafstelling van 23 sep: embleem vlak binnen het
-// kader, inhoud tot 1650, yg-digital.nl op 1722, boven de antwoordbalk. De eerste
-// ruimte houdt het beeld onder de naamregel van Instagram (± 115-190); alle tekst
-// staat tussen ± 1000 en 1650. De vrije ruimte gaat vooral naar de naad tussen
-// beeld en tekst (rek), zodat de tekst als één groep bij elkaar blijft.
-const BASIS = { veilig: true, zone: { boven: 76, bodem: 1650, voet: 1722 }, uitlijn: 'vul' };
+// Zone: het kleine poort-embleem staat op 236, onder de naamregel van Instagram
+// (± 115-190), zodat het op de telefoon volledig zichtbaar blijft (Gijs, 26 sep;
+// eerder stond het op 76, zoals bij de weggeefactie, en viel het achter de
+// voortgangsbalk). Inhoud tot 1650, yg-digital.nl op 1722, boven de antwoordbalk.
+// De vrije ruimte gaat vooral naar de naad tussen beeld en tekst (rek), zodat de
+// tekst als één groep bij elkaar blijft.
+const BASIS = { veilig: true, zone: { boven: 236, bodem: 1650, voet: 1722 }, uitlijn: 'vul' };
 
 const PLATEN = {
   C01: { ...BASIS, blokken: [
-    { t: 'ruimte', h: 70, rek: 0.35 },
     { ...medaillon(640, { marge: 50 }), rek: 1 },
     { t: 'lijn', rek: 0 },
     { t: 'kop', tekst: 'Uw plannen beginnen\nmet een gesprek.', grootte: 80, marge: 34, rek: 0.3 },
     { t: 'tekst', tekst: 'Een nieuwe website nodig of\nbenieuwd wat er mogelijk is?\nStuur ons een bericht.', grootte: 36, marge: 44, rek: 0.45 },
-    { t: 'boven', tekst: 'Stuur een DM \u00b7 Antwoord binnen \u00e9\u00e9n werkdag', rek: 0 },
+    // Afsluiting iets groter (28 in plaats van 23) en op twee regels (Gijs, 26 sep).
+    { t: 'boven', tekst: 'Stuur een DM\nAntwoord binnen \u00e9\u00e9n werkdag', grootte: 28, rek: 0 },
   ] },
   C02: { ...BASIS, blokken: [
-    { t: 'ruimte', h: 70, rek: 0.35 },
     // Beeld uit de studio-opname van 25 sep (platen/bron/opnamen/onthulling.mp4, 5,8 s):
     // de kopbalk "Uw bedrijf", de salonfoto, "Kapper & salon" en de kop van het
     // voorbeeldontwerp; de zwarte strook erboven (tot rij 261) en de lopende tekst

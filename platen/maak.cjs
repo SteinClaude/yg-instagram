@@ -103,7 +103,8 @@ function maakBlokken(blokken, C) {
     if (t === 'lijn') {
       M.push({ h: 1, marge: b.marge ?? 30 * C.s, teken: y => `<rect x="${C.mx - 34 * C.s}" y="${r3(y)}" width="${68 * C.s}" height="1" fill="${C.k.goud}"/>` });
     } else if (t === 'boven') {
-      const g = 23 * C.s, sp = 0.24 * g, rs = breek(L.sansMed, b.tekst.toUpperCase(), g, sp, C.max);
+      // grootte optioneel (standaard 23); een \n in de tekst geeft een eigen regel
+      const g = (b.grootte ?? 23) * C.s, sp = 0.24 * g, rs = breek(L.sansMed, b.tekst.toUpperCase(), g, sp, C.max);
       M.push({ h: g * (rs.length - 1) * 1.5 + g * 0.72, marge: b.marge ?? 34 * C.s, teken: y => regels(L.sansMed, rs, g, sp, 1.5, C.k.goud, C.mx, y + g * 0.72, 'midden') });
     } else if (t === 'kop') {
       let g = (b.grootte ?? 76) * C.s; const sp = 0;
