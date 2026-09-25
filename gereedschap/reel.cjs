@@ -110,9 +110,9 @@ function chroom() {
 // Lijntje, bovenregel en kop; de onderkant van de groep op een vaste hoogte, zodat
 // de tweede boodschap precies op de plek van de eerste komt.
 const MAX = W - 200, MX = W / 2;
-function groep(boven, kop, onderkant) {
+function groep(boven, kop, onderkant, kopGrootte = 96) {
   const gb = 23, spb = 0.24 * gb, rsB = boven ? M.breek(L.sansMed, boven.toUpperCase(), gb, spb, MAX) : [];
-  let gk = 96, rsK = M.breek(L.serif, kop, gk, 0, MAX);
+  let gk = kopGrootte, rsK = M.breek(L.serif, kop, gk, 0, MAX);
   while (rsK.length > 3 && gk > 40) { gk -= 3; rsK = M.breek(L.serif, kop, gk, 0, MAX); }
   const hB = rsB.length ? gb * 0.72 + gb * (rsB.length - 1) * 1.5 + 34 : 0;
   const hK = gk * 0.72 + gk * (rsK.length - 1) * 1.17;

@@ -24,17 +24,18 @@ const WERK = path.join(WORTEL, 'platen', 'uit', 'highlights');
 const UIT = path.join(WORTEL, 'beeld', 'highlights');
 const MX = W / 2;
 
-// Verloop voor een schermopname: bovenin licht dempen, de site zichtbaar tot
-// ongeveer 880, daaronder in een korte overgang vrijwel dicht. De tekst van de
-// site is even groot en even licht als de tekst van het verhaal; laat je die
-// doorschemeren, dan leest het als tekst over tekst (gezien in de eerste proef).
+// Verloop voor een schermopname: de opname vult de hele plaat, zoals een clip
+// in een reel. Bovenin licht dempen, tot ruim over de helft vrijwel niets, en
+// onder de tekst stevig donker (steviger dan het reel-verloop, omdat de tekst
+// van de site even groot en even licht is als de tekst van het verhaal). Een
+// dicht vlak onderin was Gijs' eerste indruk: "half om half", 25 sep 2026.
 const VERLOOP_OPNAME = `<defs><linearGradient id="v" x1="0" y1="0" x2="0" y2="1">
-<stop offset="0%" stop-color="#141414" stop-opacity="0.40"/>
-<stop offset="12%" stop-color="#141414" stop-opacity="0.12"/>
-<stop offset="40%" stop-color="#141414" stop-opacity="0.12"/>
-<stop offset="46%" stop-color="#141414" stop-opacity="0.97"/>
-<stop offset="52%" stop-color="#141414" stop-opacity="1"/>
-<stop offset="100%" stop-color="#141414" stop-opacity="1"/></linearGradient></defs>
+<stop offset="0%" stop-color="#141414" stop-opacity="0.34"/>
+<stop offset="12%" stop-color="#141414" stop-opacity="0.10"/>
+<stop offset="46%" stop-color="#141414" stop-opacity="0.14"/>
+<stop offset="55%" stop-color="#141414" stop-opacity="0.82"/>
+<stop offset="62%" stop-color="#141414" stop-opacity="0.94"/>
+<stop offset="100%" stop-color="#141414" stop-opacity="0.97"/></linearGradient></defs>
 <rect width="${W}" height="${H}" fill="url(#v)"/>`;
 
 // Gouden afsluitregel, met een getekende pijl (geen lettertekenpijl: die zit
@@ -108,7 +109,7 @@ async function bouw(v, proef) {
   zet('verloop', R.laag(v.verloop === 'opname' ? VERLOOP_OPNAME : R.VERLOOP(W, H)), { in: 0, d: 0 });
   zet('chroom', R.chroom(), { in: 0.4, d: 0.8 });
   v.lagen.forEach((l, i) => {
-    const png = l.soort === 'groep' ? R.groep(l.boven || '', l.kop, l.onderkant)
+    const png = l.soort === 'groep' ? R.groep(l.boven || '', l.kop, l.onderkant, l.kopGrootte || 96)
       : l.soort === 'regel' ? R.regel(l.tekst, l.bovenkant)
         : slot(l.tekst, l.y, l.pijl);
     zet('tekst' + i, png, { in: l.in, d: 0.6, uit: l.uit, rijst: true });
