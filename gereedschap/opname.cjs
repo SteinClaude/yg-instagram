@@ -138,6 +138,10 @@ async function studio() {
     '--disable-site-isolation-trials', '--disable-features=IsolateSandboxedIframes,IsolateOrigins,site-per-process']);
   await page.goto(SITE + '/eerste-ontwerp', { waitUntil: 'networkidle' });
   await weigerCookies(page); await stilScrollen(page);
+  // Tijdens de intro klapt de pagina even in en komt de voettekst van de site
+  // (logo en navigatie) onderin in beeld, midden in het licht van de poort.
+  // Die voettekst hoort niet bij de studio; buiten beeld houden.
+  await page.addStyleTag({ content: 'footer, .jw-footer, [class*="footer"] { visibility: hidden !important; }' });
   await page.waitForTimeout(800);
 
   // 1. De poort: de knop in beeld, opnemen, klikken, tot stap één er staat.
