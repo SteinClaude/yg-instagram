@@ -23,34 +23,24 @@ module.exports = [
     ],
   },
   {
-    code: 'H02', map: 'entree', nr: 1, titel: 'Wat we doen', duur: 10, verloop: 'opname',
+    code: 'H02', map: 'entree', nr: 1, titel: 'Wat we doen', duur: 10,
     bron: 'opnamen/site.mp4',            // node gereedschap/opname.cjs site
-    lagen: [
-      // Zelfde plekken als de reels: kop eindigt op 1330, de regel eronder vanaf 1366.
-      // De tweede regel neemt de plaats van de eerste in, zodat de opname zo hoog
-      // mogelijk in beeld blijft.
-      // Geen bovenregel: die stond over het beeld van de site heen (Gijs, 25 sep).
-      { soort: 'groep', boven: '', kop: 'Uw website. Onze aandacht.', onderkant: 1330, kopGrootte: 78, in: 0.5 },
-      { soort: 'regel', tekst: 'Met YG Launch bouwen we uw website en verzorgen we daarna het beheer.', bovenkant: 1366, in: 2.0, uit: 5.7 },
-      { soort: 'regel', tekst: 'Persoonlijk, met duidelijke afspraken.', bovenkant: 1366, in: 6.2 },
-    ],
+    // Schoon: de opname van de startpagina over de hele plaat, zonder tekst, verloop
+    // of kader eroverheen (Gijs, 25 sep 2026). De teksten van het voorstel ("Uw
+    // website. Onze aandacht." enz.) staan in docs/highlight-entree.md voor het
+    // geval ze nog ergens anders van pas komen.
+    verloop: 'geen', chroom: false, lagen: [],
   },
   {
-    code: 'H03', map: 'entree', nr: 2, titel: 'Even binnenkijken', duur: 15, verloop: 'opname',
+    code: 'H03', map: 'entree', nr: 2, titel: 'Even binnenkijken', duur: 15,
+    // Schoon, net als H02: alleen de opname van de studio (Gijs, 25 sep 2026).
+    verloop: 'geen', chroom: false,
     montage: [                           // node gereedschap/opname.cjs studio (tijden gemeten op de contactvellen)
       { bron: 'opnamen/poort.mp4', van: 0.9, tot: 3.4 },              // knop, de poort gaat open, de studio verschijnt (2,5 s)
       { bron: 'opnamen/stap1.mp4', tot: 3.1, snelheid: 1.25 },        // naam typen, branche aantikken (2,5 s)
       { bron: 'opnamen/onthulling.mp4', van: 0.55, tot: 1.9 },        // de boog tekent zich op donker (1,35 s)
       { bron: 'opnamen/onthulling.mp4', van: 5.7, tot: 13.6 },        // het ontwerp op volledig scherm, dan rustig scrollen (7,9 s); vanaf 5,7: de knoppen zijn dan al verborgen
     ],
-    lagen: [
-      // Kop laag in beeld (onderkant 1300) zodat de studio de plaat vult; de
-      // afsluitregel neemt na tien seconden de plaats van de uitleg in.
-      // Geen bovenregel: die stond over het beeld van de studio heen (Gijs, 25 sep).
-      { soort: 'groep', boven: '', kop: 'Hoe zou uw website eruitzien?', onderkant: 1300, kopGrootte: 78, in: 0.8 },
-      { soort: 'regel', tekst: 'Ontdek de ontwerpstudio en bekijk een eerste ontwerp voor uw bedrijf.', bovenkant: 1336, in: 5.2, uit: 10.0 },
-      { soort: 'slot', tekst: 'Bekijk uw eerste ontwerp', pijl: true, y: 1360, in: 10.5 },
-    ],
-    sticker: [1520, 1680],               // blijft leeg: daar zet Gijs in de app de linksticker
+    lagen: [],                           // de linksticker zet Gijs zelf in de app, waar hij wil
   },
 ];

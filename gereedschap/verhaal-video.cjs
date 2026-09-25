@@ -106,8 +106,10 @@ async function bouw(v, proef) {
 
   const lagen = [];
   const zet = (naam, png, tijd) => { const p = path.join(werk, naam + '.png'); fs.writeFileSync(p, png); lagen.push({ naam, p, ...tijd }); };
-  zet('verloop', R.laag(v.verloop === 'opname' ? VERLOOP_OPNAME : R.VERLOOP(W, H)), { in: 0, d: 0 });
-  zet('chroom', R.chroom(), { in: 0.4, d: 0.8 });
+  // verloop 'geen' en chroom: false geven de opname schoon, zonder iets eroverheen
+  // (Gijs, 25 sep 2026: "het filmpje compleet in beeld en duidelijk").
+  if (v.verloop !== 'geen') zet('verloop', R.laag(v.verloop === 'opname' ? VERLOOP_OPNAME : R.VERLOOP(W, H)), { in: 0, d: 0 });
+  if (v.chroom !== false) zet('chroom', R.chroom(), { in: 0.4, d: 0.8 });
   v.lagen.forEach((l, i) => {
     const png = l.soort === 'groep' ? R.groep(l.boven || '', l.kop, l.onderkant, l.kopGrootte || 96)
       : l.soort === 'regel' ? R.regel(l.tekst, l.bovenkant)
@@ -140,7 +142,9 @@ async function bouw(v, proef) {
   execFileSync('ffmpeg', args, { stdio: 'inherit' });
 
   // Stilstaande beelden: één bij het echte verhaal, drie bij de proef (na elke tekst).
-  const momenten = proef ? v.lagen.map(l => Math.min(v.duur - 0.3, l.in + 1.6)) : [Math.min(v.duur - 0.3, v.lagen[v.lagen.length - 1].in + 1.6)];
+  const momenten = v.lagen.length
+    ? (proef ? v.lagen.map(l => Math.min(v.duur - 0.3, l.in + 1.6)) : [Math.min(v.duur - 0.3, v.lagen[v.lagen.length - 1].in + 1.6)])
+    : (proef ? [0.25, 0.6, 0.92].map(f => v.duur * f) : [v.duur * 0.6]);
   momenten.forEach((t, i) => {
     const jpg = uit.replace(/\.mp4$/, (proef ? `-${i + 1}` : '') + '.jpg');
     execFileSync('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error', '-ss', String(t), '-i', uit, '-frames:v', '1', '-q:v', '3', jpg]);
