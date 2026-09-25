@@ -403,6 +403,42 @@
       "eenmalig": true
     },
     {
+      "id": "2026-09-25-verhaal-projecten-1",
+      "datum": "2026-09-25",
+      "tijd": "19:10",
+      "soort": "verhaal",
+      "taal": "nl",
+      "beeld": [
+        "highlights/projecten/P01.mp4"
+      ],
+      "titel": "Projecten 1 · Het project",
+      "eenmalig": true
+    },
+    {
+      "id": "2026-09-25-verhaal-projecten-2",
+      "datum": "2026-09-25",
+      "tijd": "19:10",
+      "soort": "verhaal",
+      "taal": "nl",
+      "beeld": [
+        "highlights/projecten/P02.jpg"
+      ],
+      "titel": "Projecten 2 · De website",
+      "eenmalig": true
+    },
+    {
+      "id": "2026-09-25-verhaal-projecten-3",
+      "datum": "2026-09-25",
+      "tijd": "19:10",
+      "soort": "verhaal",
+      "taal": "nl",
+      "beeld": [
+        "highlights/projecten/P03.jpg"
+      ],
+      "titel": "Projecten 3 · Wat wij deden",
+      "eenmalig": true
+    },
+    {
       "id": "2026-09-26-verhaal",
       "datum": "2026-09-26",
       "tijd": "12:00",
