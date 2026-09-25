@@ -379,6 +379,30 @@
       "eenmalig": true
     },
     {
+      "id": "2026-09-25-verhaal-entree-2b",
+      "datum": "2026-09-25",
+      "tijd": "10:40",
+      "soort": "verhaal",
+      "taal": "nl",
+      "beeld": [
+        "highlights/entree/H02.mp4"
+      ],
+      "titel": "Entree 2 · Wat we doen (schoon)",
+      "eenmalig": true
+    },
+    {
+      "id": "2026-09-25-verhaal-entree-3b",
+      "datum": "2026-09-25",
+      "tijd": "10:45",
+      "soort": "verhaal",
+      "taal": "nl",
+      "beeld": [
+        "highlights/entree/H03.mp4"
+      ],
+      "titel": "Entree 3 · Even binnenkijken (schoon)",
+      "eenmalig": true
+    },
+    {
       "id": "2026-09-26-verhaal",
       "datum": "2026-09-26",
       "tijd": "12:00",
