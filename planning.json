@@ -451,6 +451,18 @@
       "eenmalig": true
     },
     {
+      "id": "2026-09-26-verhaal-contact-2",
+      "datum": "2026-09-26",
+      "tijd": "00:30",
+      "soort": "verhaal",
+      "taal": "nl",
+      "beeld": [
+        "highlights/contact/C02.jpg"
+      ],
+      "titel": "Contact 2 · Ontwerpstudio",
+      "eenmalig": true
+    },
+    {
       "id": "2026-09-26-verhaal",
       "datum": "2026-09-26",
       "tijd": "12:00",
