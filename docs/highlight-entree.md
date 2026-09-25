@@ -149,6 +149,13 @@ voorbeeldvenster op een telefoon te klein.
   looptempo, 30 beelden per seconde. Gekozen op mijn advies toen Gijs "gaan we verder" zei
   zonder nummer; ruilen is één download.
 
+## 25 september: verhaal 2 en 3 opnieuw
+
+Gijs zag de eerste versie als "half om half": opname boven, donker vlak onder. Nu vult de
+opname de hele plaat en staat de tekst onderin op een doorzichtig verloop, op dezelfde plekken
+als bij de reels, met een iets kleinere kop (78 in plaats van 96). De tekst van de site
+schemert daardoor licht door onder de kop; dat is de prijs van beeld over de hele plaat.
+
 ## Stand 24 september: af
 
 De drie verhalen staan definitief in `beeld/highlights/entree/` (H01.mp4, H02.mp4, H03.mp4) en

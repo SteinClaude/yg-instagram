@@ -29,7 +29,8 @@ module.exports = [
       // Zelfde plekken als de reels: kop eindigt op 1330, de regel eronder vanaf 1366.
       // De tweede regel neemt de plaats van de eerste in, zodat de opname zo hoog
       // mogelijk in beeld blijft.
-      { soort: 'groep', boven: 'Wat we doen', kop: 'Uw website. Onze aandacht.', onderkant: 1330, kopGrootte: 78, in: 0.5 },
+      // Geen bovenregel: die stond over het beeld van de site heen (Gijs, 25 sep).
+      { soort: 'groep', boven: '', kop: 'Uw website. Onze aandacht.', onderkant: 1330, kopGrootte: 78, in: 0.5 },
       { soort: 'regel', tekst: 'Met YG Launch bouwen we uw website en verzorgen we daarna het beheer.', bovenkant: 1366, in: 2.0, uit: 5.7 },
       { soort: 'regel', tekst: 'Persoonlijk, met duidelijke afspraken.', bovenkant: 1366, in: 6.2 },
     ],
@@ -45,7 +46,8 @@ module.exports = [
     lagen: [
       // Kop laag in beeld (onderkant 1300) zodat de studio de plaat vult; de
       // afsluitregel neemt na tien seconden de plaats van de uitleg in.
-      { soort: 'groep', boven: 'Ontwerpstudio', kop: 'Hoe zou uw website eruitzien?', onderkant: 1300, kopGrootte: 78, in: 0.8 },
+      // Geen bovenregel: die stond over het beeld van de studio heen (Gijs, 25 sep).
+      { soort: 'groep', boven: '', kop: 'Hoe zou uw website eruitzien?', onderkant: 1300, kopGrootte: 78, in: 0.8 },
       { soort: 'regel', tekst: 'Ontdek de ontwerpstudio en bekijk een eerste ontwerp voor uw bedrijf.', bovenkant: 1336, in: 5.2, uit: 10.0 },
       { soort: 'slot', tekst: 'Bekijk uw eerste ontwerp', pijl: true, y: 1360, in: 10.5 },
     ],
