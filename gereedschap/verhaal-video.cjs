@@ -54,7 +54,7 @@ function slot(tekst, y, pijl) {
 // Nagebootste telefoonbalken voor de proef: voortgangsbalkjes, naam en de
 // antwoordbalk zoals Instagram ze over een verhaal legt, plus het stickervak.
 function telefoonbalken(v) {
-  const wit = '#FFFFFF', n = 3, gap = 8, bw = (W - 48 - gap * (n - 1)) / n;
+  const wit = '#FFFFFF', n = v.aantal || 3, gap = 8, bw = (W - 48 - gap * (n - 1)) / n;
   let s = `<defs><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#000" stop-opacity="0.45"/><stop offset="100%" stop-color="#000" stop-opacity="0"/></linearGradient>
 <linearGradient id="o" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity="0.45"/></linearGradient></defs>
 <rect width="${W}" height="260" fill="url(#b)"/><rect y="1660" width="${W}" height="260" fill="url(#o)"/>`;
@@ -172,6 +172,9 @@ async function bouw(v, proef) {
   const mb = Math.round(fs.statSync(uit).size / 1024 / 1024 * 10) / 10;
   console.log(`${v.code}  ${v.titel.padEnd(18)} ${v.duur} s  ${mb} MB  -> ${uit}`);
 }
+
+// Ook gebruikt door platen/*.cjs voor een controlebeeld met de balken van Instagram erover.
+module.exports = { telefoonbalken };
 
 if (require.main === module) {
   (async () => {
