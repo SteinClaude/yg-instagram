@@ -81,6 +81,7 @@ function telefoonbalken(v) {
 // snelheid > 1 versnelt) achter elkaar zonder overgangen.
 function achtergrond(v, werk) {
   const fps = v.fps || FPS;
+  if (v.bron && v.naloop) return metNaloop(path.join(BRON, v.bron), werk, v.naloop, fps);
   if (v.bron) return path.join(BRON, v.bron);
   const uit = path.join(werk, 'achtergrond.mp4');
   const args = ['-y', '-hide_banner', '-loglevel', 'error'];
@@ -93,6 +94,25 @@ function achtergrond(v, werk) {
   const filter = delen.join(';') + ';' + v.montage.map((_, i) => `[p${i}]`).join('') + `concat=n=${v.montage.length}:v=1:a=0[v]`;
   args.push('-filter_complex', filter, '-map', '[v]', '-c:v', 'libx264', '-preset', 'medium', '-crf', '15', '-pix_fmt', 'yuv420p', uit);
   execFileSync('ffmpeg', args, { stdio: 'inherit' });
+  return uit;
+}
+
+
+// Een korte clip verlengen zoals reel.cjs dat doet: eerst de clip, daarna het
+// laatste beeld dat 'naloop' seconden langzaam doorzoomt (snel beginnend, uitlopend,
+// vandaar de wortel), zodat de camera niet hoorbaar stilvalt als de clip afloopt.
+function metNaloop(clipPad, werk, naloop, fps) {
+  const slot = path.join(werk, 'slot.jpg'), slotGroot = path.join(werk, 'slot-groot.png'), uit = path.join(werk, 'achtergrond.mp4');
+  execFileSync('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error', '-sseof', '-0.15', '-i', clipPad, '-frames:v', '1', '-q:v', '2', slot]);
+  execFileSync('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error', '-i', slot, '-vf', `scale=${2 * W}:${2 * H}:flags=lanczos`, slotGroot]);
+  const rf = Math.round(naloop * fps);
+  const filter = [
+    `[0:v]fps=${fps},scale=${W}:${H}:flags=lanczos,setsar=1,format=yuv420p[a]`,
+    `[1:v]zoompan=z='1+0.10*sqrt(on/${rf})':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${rf}:s=${W}x${H}:fps=${fps},setsar=1,format=yuv420p[b]`,
+    '[a][b]concat=n=2:v=1:a=0[v]',
+  ].join(';');
+  execFileSync('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error', '-i', clipPad, '-loop', '1', '-framerate', String(fps), '-t', String(naloop + 1), '-i', slotGroot,
+    '-filter_complex', filter, '-map', '[v]', '-c:v', 'libx264', '-preset', 'medium', '-crf', '15', '-pix_fmt', 'yuv420p', uit], { stdio: 'inherit' });
   return uit;
 }
 

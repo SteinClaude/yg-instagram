@@ -43,4 +43,14 @@ module.exports = [
     ],
     lagen: [],                           // de linksticker zet Gijs zelf in de app, waar hij wil
   },
+  {
+    code: 'P01', map: 'projecten', nr: 0, titel: 'Het project', duur: 8, verloop: 'reel', fps: 24, naloop: 3.2,
+    // Runway-clip (seedance-2-mini, 5 s, 720p, 9:16; 80 credits, 25 sep 2026), sfeerbeeld van een
+    // opgeruimd magazijn, geen eigen locatie van Ordepartner. Teksten uit PROJECTEN-OPDRACHT.md.
+    bron: 'clips/magazijn.mp4',
+    lagen: [
+      { soort: 'groep', boven: 'Ordepartner', kop: 'Structuur begint met een sterke basis.', onderkant: 1330, in: 0.6 },
+      { soort: 'regel', tekst: 'Ons eigen tweede bedrijf.', bovenkant: 1366, in: 2.6 },
+    ],
+  },
 ];
