@@ -475,18 +475,6 @@
       "eenmalig": true
     },
     {
-      "id": "2026-09-27-verhaal",
-      "datum": "2026-09-27",
-      "tijd": "17:00",
-      "soort": "verhaal",
-      "taal": "nl",
-      "beeld": [
-        "verhalen/nl/V45.jpg"
-      ],
-      "titel": "Moet ik zelf iets technisch doen?",
-      "eenmalig": true
-    },
-    {
       "id": "2026-09-28-verhaal",
       "datum": "2026-09-28",
       "tijd": "19:00",

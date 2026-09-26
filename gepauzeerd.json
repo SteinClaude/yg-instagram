@@ -1,0 +1,20 @@
+{
+  "uitleg": "Gepauzeerde items: uit de actieve planning gehaald en hier bewaard. De automaat (src/plaatsen.cjs) leest alleen planning.json, dus niets hierin wordt geplaatst. Terugzetten = het item weer in planning.json zetten, met een nieuwe datum en tijd. Let op: gereedschap/plan-14-dagen.cjs kent dit bestand niet en zou een gepauzeerd verhaal bij een nieuwe planning opnieuw inplannen.",
+  "items": [
+    {
+      "id": "2026-09-27-verhaal",
+      "datum": "2026-09-27",
+      "tijd": "17:00",
+      "soort": "verhaal",
+      "taal": "nl",
+      "beeld": [
+        "verhalen/nl/V45.jpg"
+      ],
+      "titel": "Moet ik zelf iets technisch doen?",
+      "eenmalig": true,
+      "gepauzeerd": "2026-09-26",
+      "reden": "Tekst op het beeld: \"Domeinnaam, hosting en e-mail regelen wij.\" Dat botst met het besluit van 23 september dat de klant hosting zelf afsluit bij JouwWeb en betaalt, en eigenaar is van account, domein en e-mail (BESLUITEN.md).",
+      "akkoord": "Gijs, 26 september 2026, Instagram-chat: V45 uit de actieve planning halen en als gepauzeerd bewaren."
+    }
+  ]
+}
