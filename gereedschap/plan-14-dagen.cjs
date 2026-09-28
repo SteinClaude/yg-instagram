@@ -17,6 +17,7 @@
 // Wil je een volgende ronde? Maak nieuwe platen (of hergebruik deze), pas de
 // teksten aan en draai dit opnieuw met een nieuwe begindatum.
 const fs = require('fs'), path = require('path');
+require('./pauze.cjs')(!process.argv.includes('--proef'));   // zie gepauzeerd.json
 
 const WORTEL = path.join(__dirname, '..');
 const { ALLE } = require(path.join(WORTEL, 'platen/rijen.cjs'));

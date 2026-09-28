@@ -10,6 +10,7 @@
 // vr 16:00; berichten di 20:00 (om de week een reel, anders uitgewerkt) en do 11:00
 // (fotobericht over ons vak).
 const fs = require('fs'), path = require('path');
+require('./pauze.cjs')(process.argv.includes('--doen'));   // zie gepauzeerd.json
 
 const WORTEL = path.join(__dirname, '..');
 const PLANNING = path.join(WORTEL, 'planning.json');

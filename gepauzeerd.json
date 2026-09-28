@@ -1,5 +1,11 @@
 {
-  "uitleg": "Gepauzeerde items: uit de actieve planning gehaald en hier bewaard. De automaat (src/plaatsen.cjs) leest alleen planning.json, dus niets hierin wordt geplaatst. Terugzetten = het item weer in planning.json zetten, met een nieuwe datum en tijd. Sinds 28 september 2026 staat alle oude geplande content hier: Gijs en ChatGPT werken een volledig nieuwe contentrichting uit. Let op: gereedschap/plan-14-dagen.cjs kent dit bestand niet en zou een gepauzeerd verhaal bij een nieuwe planning opnieuw inplannen.",
+  "uitleg": "Gepauzeerde items: uit de actieve planning gehaald en hier bewaard. De automaat (src/plaatsen.cjs) leest alleen planning.json, dus niets hierin wordt geplaatst. Terugzetten = het item weer in planning.json zetten, met een nieuwe datum en tijd. Sinds 28 september 2026 staat alle oude geplande content hier: Gijs en ChatGPT werken een volledig nieuwe contentrichting uit. Zolang pauze.actief true is, weigeren plan-14-dagen.cjs, klaarzetten.cjs en planning-vak.cjs in planning.json te schrijven (gereedschap/pauze.cjs).",
+  "pauze": {
+    "actief": true,
+    "sinds": "2026-09-28",
+    "reden": "alle oude geplande content staat stil; Gijs en ChatGPT werken een volledig nieuwe contentrichting uit.",
+    "opheffen": "Opheffen alleen na akkoord van Gijs: zet pauze.actief in gepauzeerd.json op false."
+  },
   "items": [
     {
       "id": "2026-09-27-verhaal",
