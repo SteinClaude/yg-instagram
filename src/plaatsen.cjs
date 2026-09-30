@@ -212,7 +212,7 @@ async function plaatsAlles(items, gedaan, nu) {
       } else if (/\.mp4$/i.test(urls[0])) {
         mediaId = await IG.plaatsReel(IG_ID, TOKEN, urls[0], item.tekst || '');
       } else if (urls.length > 1) {
-        mediaId = await IG.plaatsCarrousel(IG_ID, TOKEN, urls, item.tekst || '');
+        mediaId = await IG.plaatsCarrousel(IG_ID, TOKEN, urls, item.tekst || '', item.alt || []);
       } else {
         mediaId = await IG.plaatsFoto(IG_ID, TOKEN, urls[0], item.tekst || '');
       }

@@ -473,6 +473,30 @@
       ],
       "titel": "Werkt u ook buiten Alkmaar?",
       "eenmalig": true
+    },
+    {
+      "id": "2026-09-30-bericht-kapsalon",
+      "datum": "2026-09-30",
+      "tijd": "12:34",
+      "soort": "bericht",
+      "taal": "nl",
+      "beeld": [
+        "berichten/nl/K01-1.jpg",
+        "berichten/nl/K01-2.jpg",
+        "berichten/nl/K01-3.jpg",
+        "berichten/nl/K01-4.jpg",
+        "berichten/nl/K01-5.jpg"
+      ],
+      "titel": "Salon Avelijn · carrousel (medaillonserie)",
+      "tekst": "Goed in uw vak. Laat uw website dat ook zien.\n\nVoor de fictieve Salon Avelijn laten we zien hoe dezelfde foto en behandelingen een andere eerste indruk kunnen geven. Een rustig menu. Overzichtelijke keuzes. Een afspraakknop die u meteen ziet.\n\nSwipe door de vergelijking en bekijk ook de mobiele versie.\n\nHoe zou uw bedrijf eruitzien? Probeer onze gratis ontwerpstudio via de link in onze bio.\n\n#YGDigital #Webdesign #WebsiteVoorOndernemers #Kapsalon",
+      "alt": [
+        "Goed in uw vak. Laat uw website dat ook zien. Websiteconcept voor de fictieve Salon Avelijn. Een rustige pagina met een foto van haarkleuring en een duidelijke afspraakknop, op een champagnekleurige achtergrond met een doorschijnend rond YG-medaillon.",
+        "Dezelfde salon. Een onduidelijke eerste indruk. Een minder overzichtelijk websiteconcept voor Salon Avelijn. Drie markeringen tonen een lang menu over twee regels, behandelingen verstopt in lopende tekst en een kleine grijze afspraakknop die weinig opvalt.",
+        "Meer overzicht. Een duidelijke volgende stap. Dezelfde salon, foto en behandelingen in een rustiger ontwerp. Drie markeringen tonen een kort menu, afzonderlijke behandelingskaarten met de duur erbij en een opvallende donkere afspraakknop.",
+        "Ook op uw telefoon klopt het. Twee telefoonvoorbeelden tonen de salonwebsite. Behandelingen staan overzichtelijk onder elkaar. Onderaan blijft de afspraakknop in beeld; deze wordt eronder ook vergroot getoond.",
+        "Hoe zou uw bedrijf eruitzien? Een telefoon toont een voorbeeld uit de YG Digital-ontwerpstudio, met een licht saloninterieur en de naam Salon Avelijn. De tekst nodigt uit de gratis ontwerpstudio te proberen via de link in de bio."
+      ],
+      "eenmalig": true
     }
   ]
 }

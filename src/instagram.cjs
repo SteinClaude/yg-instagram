@@ -67,13 +67,24 @@ async function plaatsFoto(igId, token, beeldUrl, bijschrift) {
   return publiceer(igId, token, c);
 }
 
-async function plaatsCarrousel(igId, token, beeldUrls, bijschrift) {
+// alts: optioneel, per plaat een alternatieve tekst (alt_text, sinds maart 2025 per carrouselplaat, tot 1000 tekens).
+// Weigert Instagram die, dan gaat de plaat zonder alt-tekst mee in plaats van dat het hele bericht mislukt.
+async function plaatsCarrousel(igId, token, beeldUrls, bijschrift, alts = []) {
   if (beeldUrls.length < 2 || beeldUrls.length > 10) {
     throw new Error(`Een carrousel heeft 2 tot 10 platen nodig, gekregen: ${beeldUrls.length}`);
   }
   const kinderen = [];
-  for (const url of beeldUrls) {
-    const c = await maakContainer(igId, token, { image_url: url, is_carousel_item: true });
+  for (const [i, url] of beeldUrls.entries()) {
+    const alt = alts[i] ? String(alts[i]).slice(0, 1000) : undefined;
+    let c;
+    try {
+      c = await maakContainer(igId, token, { image_url: url, is_carousel_item: true, alt_text: alt });
+      if (alt) console.log(`   plaat ${i + 1}: alt-tekst meegegeven`);
+    } catch (fout) {
+      if (!alt) throw fout;
+      console.log(`   plaat ${i + 1}: alt-tekst niet geaccepteerd (${fout.message}); zonder alt-tekst opnieuw`);
+      c = await maakContainer(igId, token, { image_url: url, is_carousel_item: true });
+    }
     await wachtTotKlaar(c, token);
     kinderen.push(c);
   }
