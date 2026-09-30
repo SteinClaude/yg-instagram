@@ -142,7 +142,7 @@ async function main() {
     if (alGedaan.has(item.id)) continue;
     const verschil = nuMin - naarMinuten(item.datum, item.tijd);
     if (verschil < 0) continue;                              // nog niet
-    if (verschil > INHAALUREN * 60) { teLaat.push(item); continue; }
+    if (verschil > (item.inhaaluren || INHAALUREN) * 60) { teLaat.push(item); continue; }   // per item ruimer mogelijk
     aanDeBeurt.push(item);
   }
 
