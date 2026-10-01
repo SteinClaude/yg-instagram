@@ -497,6 +497,22 @@
         "Hoe zou uw bedrijf eruitzien? Een telefoon toont een voorbeeld uit de YG Digital-ontwerpstudio, met een licht saloninterieur en de naam Salon Avelijn. De tekst nodigt uit de gratis ontwerpstudio te proberen via de link in de bio."
       ],
       "eenmalig": true
+    },
+    {
+      "id": "2026-10-06-reel-r17",
+      "datum": "2026-10-06",
+      "tijd": "19:00",
+      "soort": "bericht",
+      "taal": "nl",
+      "beeld": [
+        "reels/R17.mp4"
+      ],
+      "omslag": "reels/R17.jpg",
+      "omslagMs": 800,
+      "titel": "Reel R17: Uw bedrijfsnaam. Uw branche. Uw eerste ontwerp.",
+      "tekst": "Uw bedrijfsnaam. Uw branche. Uw eerste ontwerp.\n\nIn onze gratis ontwerpstudio kiest u een sfeer en bekijkt u hoe uw bedrijf online kan worden gepresenteerd. In deze demo krijgt het fictieve Bistro Korenlicht vorm.\n\nBenieuwd naar uw eigen bedrijf? Probeer de ontwerpstudio via de link in onze bio.\n\n#YGDigital #Webdesign #Ondernemen",
+      "inhaaluren": 18,
+      "eenmalig": true
     }
   ]
 }
