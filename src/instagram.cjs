@@ -114,22 +114,52 @@ async function plaatsVerhaal(igId, token, beeldUrl) {
 // gereedschap/reel.cjs haalt deze waarde hier op, zodat de poster in het
 // dashboard en de omslag op het profiel niet uit elkaar kunnen lopen.
 const OMSLAG_MS = 4000;
-async function plaatsReel(igId, token, videoUrl, bijschrift) {
-  const c = await maakContainer(igId, token, {
-    media_type: 'REELS', video_url: videoUrl, caption: bijschrift, share_to_feed: 'true', thumb_offset: OMSLAG_MS,
-  });
+
+// Eigen omslag per reel (1 okt 2026). De vaste 4 seconden passen bij de reels uit
+// gereedschap/reel.cjs, maar niet bij een reel die met een eigen openingsbeeld
+// begint. Een planningsitem kan daarom meegeven:
+//   omslag.url  een JPEG op een openbaar adres (cover_url). Dan gebruikt Instagram
+//               dat beeld en negeert het thumb_offset.
+//   omslag.ms   het moment in de video (thumb_offset), standaard OMSLAG_MS. Dit is
+//               ook de terugval als Instagram het eigen beeld weigert: liever het
+//               goede videobeeld als omslag dan helemaal geen reel.
+// Alleen het klaarzetten valt terug, het publiceren nooit: een fout bij het
+// publiceren kan betekenen dat de reel er toch staat, en dan zou hij dubbel gaan.
+async function reelContainer(igId, token, velden, omslag = {}) {
+  const ms = Number.isFinite(omslag.ms) ? Math.max(0, Math.round(omslag.ms)) : OMSLAG_MS;
+  const basis = { media_type: 'REELS', ...velden, thumb_offset: ms };
+  if (omslag.url) {
+    try {
+      const c = await maakContainer(igId, token, { ...basis, cover_url: omslag.url });
+      await wachtTotKlaar(c, token, 300, 10000);
+      console.log('   omslag: eigen beeld (cover_url)');
+      return { id: c, omslag: 'eigen beeld' };
+    } catch (fout) {
+      // Een time-out of netwerkfout zegt niets over de omslag: dan liever een uur later opnieuw met de
+      // eigen omslag (een reel heeft inhaaluren genoeg) dan nu terugvallen op het videobeeld.
+      if (/nog niet klaar|fetch failed|geen leesbaar antwoord/i.test(fout.message)) throw fout;
+      console.log(`   eigen omslag niet gelukt (${fout.message}); opnieuw met het videobeeld op ${ms} ms`);
+    }
+  }
+  const c = await maakContainer(igId, token, basis);
   await wachtTotKlaar(c, token, 300, 10000);
-  return publiceer(igId, token, c);
+  console.log(`   omslag: videobeeld op ${ms} ms`);
+  return { id: c, omslag: `videobeeld op ${ms} ms` };
+}
+
+// Geeft { id, omslag } terug: het media-id en welke omslag Instagram heeft aangenomen.
+async function plaatsReel(igId, token, videoUrl, bijschrift, omslag = {}) {
+  const r = await reelContainer(igId, token, { video_url: videoUrl, caption: bijschrift, share_to_feed: 'true' }, omslag);
+  return { id: await publiceer(igId, token, r.id), omslag: r.omslag };
 }
 
 // Proefdraai zonder te publiceren: zet een reel-container klaar en wacht tot
-// Instagram hem heeft opgehaald en omgezet. Zo weten we vooraf of de video en
-// de bron-URL geaccepteerd worden. Een ongepubliceerde container vervalt na
-// een dag vanzelf en telt niet mee voor de daglimiet.
-async function proefVideo(igId, token, videoUrl) {
-  const c = await maakContainer(igId, token, { media_type: 'REELS', video_url: videoUrl, thumb_offset: OMSLAG_MS });
-  await wachtTotKlaar(c, token, 300, 10000);
-  return c;
+// Instagram hem heeft opgehaald en omgezet. Zo weten we vooraf of de video, de
+// bron-URL en een eventuele eigen omslag geaccepteerd worden. Een ongepubliceerde
+// container vervalt na een dag vanzelf en telt niet mee voor de daglimiet.
+// Geeft { id, omslag } terug: welke omslag Instagram uiteindelijk aannam.
+async function proefVideo(igId, token, videoUrl, omslag = {}) {
+  return reelContainer(igId, token, { video_url: videoUrl }, omslag);
 }
 
 // --- controles ---------------------------------------------------------------

@@ -11,6 +11,14 @@ on:
         description: 'Proef: adres van een video die Instagram moet ophalen (er wordt niets geplaatst)'
         required: false
         default: ''
+      proefomslag:
+        description: 'Proef: adres van een eigen omslag (jpg) bij die video; leeg = geen'
+        required: false
+        default: ''
+      proefms:
+        description: 'Proef: omslagmoment in milliseconden; leeg = 4000'
+        required: false
+        default: ''
 
 permissions:
   contents: write             # om gedaan.json terug te schrijven
@@ -46,7 +54,10 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           REPO_RAW: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
-        run: node src/plaatsen.cjs --proefvideo "${{ github.event.inputs.proefvideo }}"
+          PROEF_VIDEO: ${{ github.event.inputs.proefvideo }}
+          PROEF_OMSLAG: ${{ github.event.inputs.proefomslag }}
+          PROEF_MS: ${{ github.event.inputs.proefms }}
+        run: node src/plaatsen.cjs --proefvideo "$PROEF_VIDEO" ${PROEF_OMSLAG:+--proefomslag "$PROEF_OMSLAG"} ${PROEF_MS:+--proefms "$PROEF_MS"}
 
       # Deze stap mag NOOIT klappen. Gebeurt dat toch, dan wordt gedaan.json niet
       # bewaard, denkt de volgende run dat er nog niets geplaatst is en gaat

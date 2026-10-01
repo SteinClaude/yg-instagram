@@ -262,7 +262,7 @@ const groot = b => 'beeld/' + b;
 const INHAALMINUTEN = 6 * 60;
 const minuten = s => { const [d, t] = s.split(' '); const [j, m, dd] = d.split('-').map(Number); const [u, mi] = t.split(':').map(Number); return Date.UTC(j, m - 1, dd, u, mi) / 60000; };
 const voorbij = i => (i.datum + ' ' + i.tijd) < NU;
-const teLaat = i => minuten(NU) - minuten(i.datum + ' ' + i.tijd) > INHAALMINUTEN;
+const teLaat = i => minuten(NU) - minuten(i.datum + ' ' + i.tijd) > (i.inhaaluren ? i.inhaaluren * 60 : INHAALMINUTEN);   // per item ruimer mogelijk (inhaaluren)
 const status = i => GEDAAN[i.id] ? GEDAAN[i.id].resultaat : (teLaat(i) ? 'onbekend' : 'wacht');
 const soortNaam = i => i.soort === 'verhaal' ? 'Verhaal'
   : isVideo((i.beeld || [])[0]) ? 'Reel' : ((i.beeld || []).length > 1 ? 'Carrousel' : 'Bericht');

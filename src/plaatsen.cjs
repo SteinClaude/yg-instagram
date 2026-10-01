@@ -87,16 +87,26 @@ async function main() {
   // levert alleen een postvak vol op. Zodra de sleutel weer werkt, gaat het
   // vanzelf verder.
   // Proefdraai van een video: node src/plaatsen.cjs --proefvideo <url>
+  //   [--proefomslag <url van een jpg>] [--proefms <milliseconden>]
   // Zet een reel-container klaar zonder te publiceren en meldt of Instagram
-  // de video accepteert. Handig vóór de eerste echte reel.
+  // de video (en de eigen omslag) accepteert. Handig vóór een nieuwe soort reel.
   const pv = process.argv.indexOf('--proefvideo');
   if (pv > -1) {
+    const arg = naam => { const i = process.argv.indexOf(naam); return i > -1 ? process.argv[i + 1] : ''; };
     const url = process.argv[pv + 1];
     if (!url) { console.error(rood('Geef het adres van de video mee.')); process.exit(1); }
+    if (arg('--proefms') && !/^\d+$/.test(arg('--proefms'))) { console.error(rood(`Omslagmoment "${arg('--proefms')}" is geen geheel aantal milliseconden.`)); process.exit(1); }
+    const omslag = { url: arg('--proefomslag') || undefined, ms: arg('--proefms') ? Number(arg('--proefms')) : undefined };
     console.log(`Proef: Instagram haalt ${url} op…`);
+    if (omslag.url) console.log(`   met eigen omslag ${omslag.url}`);
+    if (Number.isFinite(omslag.ms)) console.log(`   omslagmoment ${omslag.ms} ms`);
     try {
-      const c = await IG.proefVideo(IG_ID, TOKEN, url);
-      console.log(groen(`Geaccepteerd en omgezet (container ${c}). Niet gepubliceerd.`));
+      const r = await IG.proefVideo(IG_ID, TOKEN, url, omslag);
+      console.log(groen(`Geaccepteerd en omgezet (container ${r.id}, omslag: ${r.omslag}). Niet gepubliceerd.`));
+      if (omslag.url && r.omslag !== 'eigen beeld') {
+        console.error(rood('Let op: de eigen omslag is NIET aangenomen; bij plaatsen valt hij terug op het videobeeld.'));
+        process.exit(1);
+      }
     } catch (fout) {
       console.error(rood(`Geweigerd: ${fout.message}`));
       process.exit(1);
@@ -206,18 +216,22 @@ async function plaatsAlles(items, gedaan, nu) {
     }
 
     try {
-      let mediaId;
+      let mediaId, extra = {};
       if (item.soort === 'verhaal') {
         mediaId = await IG.plaatsVerhaal(IG_ID, TOKEN, urls[0]);
       } else if (/\.mp4$/i.test(urls[0])) {
-        mediaId = await IG.plaatsReel(IG_ID, TOKEN, urls[0], item.tekst || '');
+        // eigen omslag per reel (velden omslag en omslagMs uit gereedschap/plan-reel.cjs); zonder die velden blijft het 4 s
+        const omslag = { url: item.omslag ? beeldUrl(item.omslag) : undefined, ms: Number.isFinite(item.omslagMs) ? item.omslagMs : undefined };
+        if (omslag.url) console.log(`   omslag: ${omslag.url.replace(RAW, '…')}${Number.isFinite(omslag.ms) ? `, terugval ${omslag.ms} ms` : ''}`);
+        const r = await IG.plaatsReel(IG_ID, TOKEN, urls[0], item.tekst || '', omslag);
+        mediaId = r.id; extra = { omslag: r.omslag };            // welke omslag Instagram aannam, voor de nacontrole
       } else if (urls.length > 1) {
         mediaId = await IG.plaatsCarrousel(IG_ID, TOKEN, urls, item.tekst || '', item.alt || []);
       } else {
         mediaId = await IG.plaatsFoto(IG_ID, TOKEN, urls[0], item.tekst || '');
       }
       console.log(groen(`   geplaatst (${mediaId})`));
-      gedaan.items.push({ id: item.id, wanneer: `${nu.datum} ${nu.tijd}`, resultaat: 'geplaatst', mediaId });
+      gedaan.items.push({ id: item.id, wanneer: `${nu.datum} ${nu.tijd}`, resultaat: 'geplaatst', mediaId, ...extra });
       fs.writeFileSync(GEDAAN, JSON.stringify(gedaan, null, 1));
       await IG.wacht(4000);                                  // Meta niet overvragen
     } catch (fout) {
@@ -225,7 +239,7 @@ async function plaatsAlles(items, gedaan, nu) {
       fs.writeFileSync(GEDAAN, JSON.stringify(gedaan, null, 1));
       // Niet als gedaan wegschrijven: de volgende run probeert het opnieuw. Wel
       // melden op het dashboard, anders zie je alleen een rode run in je mail.
-      meldStand('staat stil', `${wat} is niet gelukt: ${fout.message}. Elk uur wordt het opnieuw geprobeerd, tot ${INHAALUREN} uur na de geplande tijd.`);
+      meldStand('staat stil', `${wat} is niet gelukt: ${fout.message}. Elk uur wordt het opnieuw geprobeerd, tot ${item.inhaaluren || INHAALUREN} uur na de geplande tijd.`);
       throw fout;
     }
   }
