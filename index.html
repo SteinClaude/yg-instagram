@@ -406,7 +406,7 @@ function rij(i, opties){
   const b = document.createElement('button'); b.type = 'button';
   b.className = 'rij' + (st !== 'wacht' ? ' voorbij' : '');
   const b0 = (i.beeld || [])[0];
-  const img = document.createElement('img'); if (b0) img.src = mini(b0); img.alt = ''; img.loading = 'lazy';
+  const img = document.createElement('img'); if (b0) img.src = mini(i.omslag || b0); img.alt = ''; img.loading = 'lazy';   // reel met eigen omslag: die als plaatje
   const midden = document.createElement('div');
   // Bij een verhaal is de titel al "Verhaal"; dan niet nog eens in de regel erboven.
   const wanneer = document.createElement('div'); wanneer.className = 'wanneer';
@@ -579,7 +579,7 @@ function openVel(i, van){
   for (const b of (i.beeld || [])){
     if (isVideo(b)){
       const v = document.createElement('video'); v.src = groot(b); v.controls = true; v.playsInline = true; v.preload = 'metadata';
-      v.poster = groot(b).replace(/\.mp4$/i, '.jpg'); v.style.maxHeight = '54vh'; v.style.maxWidth = '100%';
+      v.poster = i.omslag ? groot(i.omslag) : groot(b).replace(/\.mp4$/i, '.jpg'); v.style.maxHeight = '54vh'; v.style.maxWidth = '100%';
       beeld.appendChild(v); continue;
     }
     const img = document.createElement('img'); img.src = groot(b); img.alt = ''; beeld.appendChild(img);
