@@ -67,6 +67,22 @@ const PLATEN = [
       { t: 'tekst', tekst: 'Zeven pagina\u2019s, de teksten en een logo, voor \u00e9\u00e9n ondernemer. Insturen kan tot en met 30 oktober; hoe u meedoet en waarop wij kiezen, leest u hieronder.', grootte: 27 },
     ],
   },
+  // ---- A36: dezelfde plaat, nieuwe datum ---------------------------------
+  {
+    // 14 okt: Gijs verlengde de actie tot en met 31 oktober en voegt het bericht
+    // samen met reel R17 tot \u00e9\u00e9n carrousel (plaat 1 = deze plaat, plaat 2 = de
+    // video in 4:5). Instagram laat een bestaand bericht niet uitbreiden, dus het
+    // wordt een nieuw bericht met een nieuwe code; A35 blijft in de geschiedenis.
+    // Enige verschil met A35: "30 oktober" -> "31 oktober".
+    code: 'A36', foto: 'deur', W: 1080, H: 1350,
+    blokken: [
+      zegel(300),
+      { t: 'boven', tekst: '250 volgers in twee dagen \u00b7 dank u' },
+      { t: 'kop', tekst: 'Wij geven \u00e9\u00e9n\nwebsite weg.', grootte: 80, marge: 40 },
+      { t: 'prijs', bedrag: '\u20ac 1.000', onder: 'de waarde op onze prijslijst \u00b7 u betaalt niets', grootte: 104, marge: 30 },
+      { t: 'tekst', tekst: 'Zeven pagina\u2019s, de teksten en een logo, voor \u00e9\u00e9n ondernemer. Insturen kan tot en met 31 oktober; hoe u meedoet en waarop wij kiezen, leest u hieronder.', grootte: 27 },
+    ],
+  },
   // ---- A: licht, verhaal ------------------------------------------------
   {
     code: 'W53', foto: 'deur', W: 1080, H: 1920, veilig: true,
@@ -108,7 +124,7 @@ const PLATEN = [
   },
 ];
 
-const MAP = { A35: 'berichten/nl', W53: 'verhalen/nl' };
+const MAP = { A35: 'berichten/nl', A36: 'berichten/nl', W53: 'verhalen/nl' };
 
 async function bewaar(png, relatief) {
   const doel = path.join(BEELD, relatief);

@@ -194,14 +194,17 @@ async function plaatsAlles(items, gedaan, nu) {
     console.log(`\n→ ${wat}`);
     for (const u of urls) console.log(`   beeld: ${u.replace(RAW, '…').replace(PAGES, '…')}`);
 
-    // Een video gaat alleen als los item; in een carrousel kan hij zo niet mee.
-    if (urls.length > 1 && item.beeld.some(isVideo)) {
-      console.error(rood('   MISLUKT: een video kan niet in een carrousel; zet hem als los item in de planning.'));
+    // Een video mag sinds 14 okt 2026 ook in een carrousel (plaatsCarrousel in
+    // instagram.cjs regelt het als media_type VIDEO). De eerste plaat moet wel een
+    // foto zijn: die bepaalt de verhouding van de hele carrousel en de rastertegel.
+    if (urls.length > 1 && isVideo(item.beeld[0])) {
+      console.error(rood('   MISLUKT: de eerste plaat van een carrousel moet een foto zijn; zet de video op plaat 2 of later.'));
       gedaan.items.push({ id: item.id, wanneer: `${nu.datum} ${nu.tijd}`, resultaat: 'overgeslagen' });
       fs.writeFileSync(GEDAAN, JSON.stringify(gedaan, null, 1));
-      meldStand('staat stil', `${wat}: een video kan niet in een carrousel. Het item is overgeslagen.`);
+      meldStand('staat stil', `${wat}: de eerste plaat van een carrousel moet een foto zijn. Het item is overgeslagen.`);
       continue;
     }
+    if (urls.length > 1 && item.beeld.some(isVideo)) console.log('   carrousel met video (plaat ' + (item.beeld.findIndex(isVideo) + 1) + ')');
 
     if (PROEF) { console.log('   (proefdraai: niet echt geplaatst)'); continue; }
 

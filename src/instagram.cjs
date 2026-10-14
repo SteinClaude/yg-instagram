@@ -69,14 +69,30 @@ async function plaatsFoto(igId, token, beeldUrl, bijschrift) {
 
 // alts: optioneel, per plaat een alternatieve tekst (alt_text, sinds maart 2025 per carrouselplaat, tot 1000 tekens).
 // Weigert Instagram die, dan gaat de plaat zonder alt-tekst mee in plaats van dat het hele bericht mislukt.
+//
+// Sinds 14 okt 2026 mag een plaat ook een video zijn (A36: de weggeefactie met als
+// plaat 2 de ontwerpstudio). Zo'n kind gaat als media_type VIDEO met is_carousel_item,
+// en krijgt dezelfde ruime wachttijd als een reel: Instagram zet video asynchroon om.
+// Let op: Instagram snijdt álle platen naar de verhouding van plaat 1 (4:5), dus een
+// video voor een carrousel wordt altijd in 1080x1350 aangeleverd (zie plan-carrousel.cjs).
+// Alt-tekst is iets van foto's; een video gaat zonder.
+const isVideoUrl = url => /\.mp4(\?|$)/i.test(url);
+
 async function plaatsCarrousel(igId, token, beeldUrls, bijschrift, alts = []) {
   if (beeldUrls.length < 2 || beeldUrls.length > 10) {
     throw new Error(`Een carrousel heeft 2 tot 10 platen nodig, gekregen: ${beeldUrls.length}`);
   }
   const kinderen = [];
   for (const [i, url] of beeldUrls.entries()) {
-    const alt = alts[i] ? String(alts[i]).slice(0, 1000) : undefined;
     let c;
+    if (isVideoUrl(url)) {
+      c = await maakContainer(igId, token, { video_url: url, media_type: 'VIDEO', is_carousel_item: true });
+      console.log(`   plaat ${i + 1}: video, wachten tot Instagram hem heeft omgezet`);
+      await wachtTotKlaar(c, token, 300, 10000);
+      kinderen.push(c);
+      continue;
+    }
+    const alt = alts[i] ? String(alts[i]).slice(0, 1000) : undefined;
     try {
       c = await maakContainer(igId, token, { image_url: url, is_carousel_item: true, alt_text: alt });
       if (alt) console.log(`   plaat ${i + 1}: alt-tekst meegegeven`);
