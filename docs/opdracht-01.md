@@ -49,12 +49,12 @@ Verder per pakket: `preview/raster-<CODE>.jpg` — het profielraster zoals het e
 
 | # | Datum | Code | Pijler | Inhoud |
 |---|---|---|---|---|
-| 1 | vr 17 okt | K02 | concept | **Autoschadeherstel / garage** in Alkmaar, fictieve naam, telefoonkader, 3–5 platen zoals K01 (sluit aan bij prospect 2) |
-| 2 | ma 20 okt | W01 | werk | **Entree van yg-digital.nl** — homepage in laptop- én telefoonkader, echte schermafdrukken (`platen/strook.cjs` / `tools/paginaplaat.cjs` in de website-repo) |
-| 3 | wo 22 okt | T01 | feit | Goud op donker, één zin per plaat: "1.400 volgers op Instagram. Nul resultaten als iemand 'kapper Alkmaar' googelt." + plaat 2 met de oplossing in één zin, zonder naam |
-| 4 | vr 24 okt | K03 | concept | **Restaurant** in Alkmaar, fictieve naam (horeca is de tweede doelsector) |
-| 5 | ma 27 okt | Z01 | zo werkt het | Vier platen: gesprek · eerste ontwerp vrijblijvend · vaste prijs **€ 750 + € 49/mnd, excl. btw** (de prijs van de site; de enige post met een prijs) · daarna beheerd. Hosting nooit "inbegrepen" noemen |
-| 6 | wo 29 okt | W02 | werk | **Ontwerpstudio /eerste-ontwerp** — de werelden-opening en de studio in telefoonkader, als schermafdrukken (geen reel; R17 bestaat al) |
+| 1 | ma 19 okt | K02 | concept | **Autoschadeherstel / garage** in Alkmaar, fictieve naam, telefoonkader, 3–5 platen zoals K01 (sluit aan bij prospect 2) |
+| 2 | wo 21 okt | W01 | werk | **Entree van yg-digital.nl** — homepage in laptop- én telefoonkader, echte schermafdrukken (`platen/strook.cjs` / `tools/paginaplaat.cjs` in de website-repo) |
+| 3 | vr 23 okt | T01 | feit | Goud op donker, één zin per plaat: "1.400 volgers op Instagram. Nul resultaten als iemand 'kapper Alkmaar' googelt." + plaat 2 met de oplossing in één zin, zonder naam |
+| 4 | ma 26 okt | K03 | concept | **Restaurant** in Alkmaar, fictieve naam (horeca is de tweede doelsector) |
+| 5 | wo 28 okt | Z01 | zo werkt het | Vier platen: gesprek · eerste ontwerp vrijblijvend · vaste prijs **€ 750 + € 49/mnd, excl. btw** (de prijs van de site; de enige post met een prijs) · daarna beheerd. Hosting nooit "inbegrepen" noemen |
+| 6 | vr 30 okt | W02 | werk | **Ontwerpstudio /eerste-ontwerp** — de werelden-opening en de studio in telefoonkader, als schermafdrukken (geen reel; R17 bestaat al) |
 
 Batch 2 (opdracht 02, na 30 okt): bekendmaking van de weggeefactie, een derde conceptproject (vakman), tweede feit. Raster vol rond **wo 5 nov**.
 

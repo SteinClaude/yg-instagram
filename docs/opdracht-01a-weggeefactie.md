@@ -31,7 +31,7 @@ In `platen/actie.cjs` het blok `A35` kopiëren naar `A36`; enige wijziging: `30 
 
 ## E. Na "pakket OK" van Andries
 
-1. Inplannen op de eerstvolgende avond **19:00** (valt het OK na 17:00, dan de dag erna), committen, pushen; de automaat plaatst binnen het uur.
+1. Inplannen, committen, pushen; de automaat plaatst bij de eerstvolgende run (handmatig aan te stoten via workflow_dispatch). Uitgevoerd door de manager op 16 okt 21:30 na "pakket OK".
 2. Na plaatsing: `git pull`, `gedaan.json` controleren, mediaId melden.
 3. Andries, in de app: het nieuwe bericht **vastzetten** (··· → Vastzetten op je profiel), daarna de oude weggeefactie-post en de oude reel **archiveren** (··· → Archiveren). Niet verwijderen.
 
@@ -39,15 +39,15 @@ In `platen/actie.cjs` het blok `A35` kopiëren naar `A36`; enige wijziging: `30 
 
 | # | Datum | Code | Inhoud |
 |---|---|---|---|
-| 0 | do 16 of vr 17 okt | A36 | weggeefactie + ontwerpstudio (deze opdracht) |
-| 1 | ma 20 okt | K02 | conceptproject garage/autoschadeherstel, Alkmaar |
-| 2 | wo 22 okt | W01 | entree van yg-digital.nl |
-| 3 | vr 24 okt | T01 | feit |
-| 4 | ma 27 okt | K03 | conceptproject restaurant, Alkmaar |
-| 5 | wo 29 okt | Z01 | zo werkt het (enige post met prijs) |
-| 6 | vr 31 okt | W02 | ontwerpstudio als schermafdrukken |
+| 0 | vr 16 okt 21:30 | A36 | weggeefactie + ontwerpstudio (deze opdracht) — ingepland na "pakket OK" |
+| 1 | ma 19 okt | K02 | conceptproject garage/autoschadeherstel, Alkmaar |
+| 2 | wo 21 okt | W01 | entree van yg-digital.nl |
+| 3 | vr 23 okt | T01 | feit |
+| 4 | ma 26 okt | K03 | conceptproject restaurant, Alkmaar |
+| 5 | wo 28 okt | Z01 | zo werkt het (enige post met prijs) |
+| 6 | vr 30 okt | W02 | ontwerpstudio als schermafdrukken |
 
-Batch 2 vanaf ma 3 nov, te beginnen met de bekendmaking van de weggeefactie. §1 van opdracht-01 (WIP veiligstellen) doe je direct na dit pakket, vóór K02.
+Batch 2 vanaf ma 2 nov, te beginnen met de bekendmaking van de weggeefactie. (Weekdagen gecorrigeerd 16 okt: 17 okt 2026 is een zaterdag.) §1 van opdracht-01 (WIP veiligstellen) doe je direct na dit pakket, vóór K02.
 
 ## Klaar = dit werkt
 
