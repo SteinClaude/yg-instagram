@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Autoschade Lindevoort · conceptontwerp (sterke versie)</title>
+<!-- Conceptproject van YG Digital (K02, oktober 2026). Autoschade Lindevoort is een fictief bedrijf; openingstijden en
+     doorlooptijden zijn verzonnen voorbeeldinhoud. Zelfde opzet als salon-na.html van K01 (Salon Avelijn). -->
+<style>
+  @font-face { font-family: 'Mont'; src: url('file:///C:/Users/gijsm/yg-instagram/platen/fonts/Montserrat-400.ttf'); font-weight: 400; }
+  @font-face { font-family: 'Mont'; src: url('file:///C:/Users/gijsm/yg-instagram/platen/fonts/Montserrat-500.ttf'); font-weight: 500 700; }
+  :root { --ivoor: #F6F1E9; --papier: #FBF8F3; --inkt: #231D18; --zacht: #675D53; --lijn: #E3D9CA; --messing: #9C7636; --donker: #2B231E; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--ivoor); color: var(--inkt); font: 400 16px/1.6 'Mont', sans-serif; }
+  a { color: inherit; text-decoration: none; }
+  .kop { height: 84px; display: flex; align-items: center; justify-content: space-between; padding: 0 64px; border-bottom: 1px solid var(--lijn); background: var(--ivoor); }
+  .naam { font-family: 'Bodoni MT', serif; font-size: 31px; letter-spacing: .01em; line-height: 1; }
+  .naam small { display: block; font: 500 10px 'Mont'; letter-spacing: .34em; color: var(--messing); margin-bottom: 6px; }
+  nav { display: flex; gap: 36px; font-size: 14px; font-weight: 500; letter-spacing: .03em; }
+  .rechts { display: flex; align-items: center; gap: 36px; }
+  .knop { display: inline-flex; align-items: center; justify-content: center; gap: 12px; height: 50px; padding: 0 26px; font: 500 13.5px 'Mont'; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; }
+  .knop.vol { background: var(--donker); color: var(--papier); }
+  .knop.vol i { width: 18px; height: 1px; background: #C9A45C; display: inline-block; }
+  .knop.rand { border: 1px solid var(--inkt); color: var(--inkt); }
+  .paar { display: flex; gap: 12px; }
+  .held { display: grid; grid-template-columns: 1.16fr .84fr; gap: 64px; padding: 52px 64px 60px; align-items: center; }
+  .boven { font-size: 12.5px; font-weight: 500; letter-spacing: .24em; color: var(--messing); text-transform: uppercase; }
+  h1 { font-family: 'Bodoni MT', serif; font-weight: 400; font-size: 62px; line-height: 1.04; margin: 20px 0 24px; letter-spacing: -.005em; }
+  h1 em { color: var(--messing); }
+  .intro { font-size: 17px; color: var(--zacht); max-width: 480px; }
+  .knoppen { display: flex; gap: 14px; margin: 36px 0 34px; }
+  .info { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: 34px; font-size: 13.5px; color: var(--zacht); border-top: 1px solid var(--lijn); padding-top: 22px; }
+  .info b { display: block; color: var(--inkt); font-weight: 500; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 2px; }
+  .foto { height: 520px; background: url(beelden/garagefoto-staand.jpg) 50% center / cover; position: relative; }
+  .foto::after { content: ''; position: absolute; inset: 14px; border: 1px solid rgba(251, 248, 243, .55); pointer-events: none; }
+  .sectie { padding: 52px 64px 80px; background: var(--papier); border-top: 1px solid var(--lijn); }
+  .sectiekop { display: flex; justify-content: space-between; align-items: end; }
+  h2 { font-family: 'Bodoni MT', serif; font-weight: 400; font-size: 46px; line-height: 1.05; margin-top: 12px; }
+  .sectiekop p { font-size: 15px; color: var(--zacht); max-width: 340px; }
+  .kaarten { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 36px; }
+  .kaart { background: var(--ivoor); border: 1px solid var(--lijn); padding: 28px 26px 26px; display: flex; flex-direction: column; }
+  .kaart .duur { font-size: 12px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--messing); }
+  .kaart h3 { font-family: 'Bodoni MT', serif; font-weight: 400; font-size: 29px; line-height: 1.1; margin: 14px 0 10px; }
+  .kaart p { font-size: 14.5px; line-height: 1.55; color: var(--zacht); flex: 1; }
+  .kaart a { margin-top: 22px; font-size: 12.5px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; align-self: start; padding-bottom: 4px; border-bottom: 1px solid #C9A45C; }
+  @media (max-width: 1180px) { nav { gap: 30px; } .foto { height: 600px; } }
+  /* detailstand (beeld 1): de foto domineert en loopt tot de rechterrand, kop en knoppen ernaast */
+  body.detail .held { grid-template-columns: .8fr 1.2fr; gap: 52px; padding: 44px 0 44px 64px; }
+  body.detail .foto { height: 640px; }
+  body.detail .foto::after { inset: 16px 0 16px 16px; border-right: 0; }
+  body.detail h1 { font-size: 48px; }
+  body.detail .intro { font-size: 16px; }
+  body.detail .boven { font-size: 11px; letter-spacing: .16em; }
+  body.detail .knoppen { flex-direction: column; align-items: flex-start; }
+  body.detail .info { display: none; }
+</style>
+</head>
+<body>
+  <header class="kop">
+    <div class="naam"><small>AUTOSCHADEHERSTEL · ALKMAAR</small>Autoschade Lindevoort</div>
+    <div class="rechts">
+      <nav><a>Diensten</a><a>Over ons</a><a>Contact</a></nav>
+      <div class="paar" id="afspraak"><a class="knop rand">Bellen</a><a class="knop vol">Afspraak maken</a></div>
+    </div>
+  </header>
+
+  <section class="held">
+    <div>
+      <div class="boven">Schadeherstel · spuitwerk · ruitschade</div>
+      <h1>Schade? Wij maken<br><em>het weer heel.</em></h1>
+      <p class="intro">Bij Autoschade Lindevoort in Alkmaar wordt uw auto vakkundig hersteld, van een kleine deuk tot een complete spuitbeurt. U weet vooraf waar u aan toe bent en wanneer u hem weer ophaalt.</p>
+      <div class="knoppen"><a class="knop vol">Afspraak maken <i></i></a><a class="knop rand">Bellen</a></div>
+      <div class="info">
+        <div><b>Geopend</b>maandag t/m vrijdag</div>
+        <div><b>Schade melden</b>bel of kom langs</div>
+        <div><b>Vervangend vervoer</b>in overleg</div>
+      </div>
+    </div>
+    <div class="foto" role="img" aria-label="Spuitwerk in de werkplaats"></div>
+  </section>
+
+  <section class="sectie" id="diensten">
+    <div class="sectiekop">
+      <div><div class="boven">Diensten</div><h2>Kies wat u nodig heeft,<br>de doorlooptijd staat erbij.</h2></div>
+      <p>U ziet vooraf hoe lang uw auto bij ons staat. Zo regelt u uw vervoer zonder verrassingen.</p>
+    </div>
+    <div class="kaarten">
+      <div class="kaart"><div class="duur">1 dag</div><h3>Uitdeuken</h3><p>Kleine deuken zonder spuiten, de lak blijft heel.</p><a>Plan in</a></div>
+      <div class="kaart"><div class="duur">3 dagen</div><h3>Spuitwerk</h3><p>Krassen en schade weer in de kleur van uw auto.</p><a>Plan in</a></div>
+      <div class="kaart"><div class="duur">1 uur</div><h3>Ruitschade</h3><p>Een sterretje of barst, verholpen terwijl u wacht.</p><a>Plan in</a></div>
+      <div class="kaart"><div class="duur">In overleg</div><h3>Volledig herstel</h3><p>Na een aanrijding: alles in één hand, ook richting uw verzekeraar.</p><a>Plan in</a></div>
+    </div>
+  </section>
+  <script>if (location.hash === "#detail") document.body.classList.add("detail");</script>
+</body>
+</html>

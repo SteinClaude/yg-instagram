@@ -22,3 +22,9 @@ platen/bron/opnamen/
 # grote bronbestanden van de vorige sessie (13 okt): de clip en de Runway-foto's voor de highlight-platen
 platen/bron/clips/magazijn.mp4
 platen/bron/highlights/
+
+# pakketten: de schermafdrukken en de gegenereerde plaat-N.html zijn afgeleid werk; bron/maak-*.cjs maakt ze opnieuw
+pakketten/*/bron/render/
+pakketten/*/bron/plaat-*.html
+pakketten/*/bron/overzicht.html
+pakketten/*/bron/telefooncontrole.html
