@@ -18,3 +18,7 @@ ontvolgen-twijfel.tsv
 # opnieuw te halen, de schermopnamen maakt gereedschap/opname.cjs opnieuw
 platen/bron/clips/entree.mp4
 platen/bron/opnamen/
+
+# grote bronbestanden van de vorige sessie (13 okt): de clip en de Runway-foto's voor de highlight-platen
+platen/bron/clips/magazijn.mp4
+platen/bron/highlights/

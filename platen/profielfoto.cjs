@@ -115,9 +115,14 @@ function ruis(n, sterk, zd) {
   return { px, n };
 }
 
-function plaat(p) {
+// opt.poort: een andere tekenfunctie voor de poort (zelfde handtekening als M.poort);
+// zo krijgen de highlight-omslagen hetzelfde embleem met een symbool op de plek van
+// de YG. opt.schaal: iets groter dan het profiel; boven 7,6 valt de drempel buiten
+// het rondje dat Instagram uitsnijdt.
+function plaat(p, opt = {}) {
+  const S = opt.schaal || SCH, X = C - 50 * S, Y = C - 55 * S, POORT = opt.poort || M.poort;
   const relief = p.relief.map(([d, kl, dek]) =>
-    `<g opacity="${dek}"><g transform="translate(${r2(lx * d)},${r2(ly * d)})">${M.poort(kl, x, y, SCH)}</g></g>`).join('');
+    `<g opacity="${dek}"><g transform="translate(${r2(lx * d)},${r2(ly * d)})">${POORT(kl, X, Y, S)}</g></g>`).join('');
   const grond = p.grond
     ? `<rect width="${W}" height="${W}" fill="${p.grond}"/><rect width="${W}" height="${W}" fill="url(#halo)"/>`
     : `<rect width="${W}" height="${W}" fill="url(#champ)"/>`;
@@ -151,14 +156,30 @@ function plaat(p) {
   <clipPath id="bandknip"><path d="M14 104V48a36 36 0 0 1 72 0V104ZM24 104V50a26 26 0 0 1 52 0V104Z" clip-rule="evenodd"/></clipPath>
 </defs>
 ${grond}
-<g transform="translate(${x},${y}) scale(${SCH})">${vlakken(p)}</g>
+<g transform="translate(${X},${Y}) scale(${S})">${vlakken(p)}</g>
 ${relief}
-<g stroke="${p.letterLijn}" stroke-width="0.8" stroke-linejoin="round" opacity="0.55">${M.poort('url(#brons)', x, y, SCH)}</g>
-${M.poort('url(#brons)', x, y, SCH)}
+<g stroke="${p.letterLijn}" stroke-width="0.8" stroke-linejoin="round" opacity="0.55">${POORT('url(#brons)', X, Y, S)}</g>
+${POORT('url(#brons)', X, Y, S)}
 </svg>`;
 }
 
-(async () => {
+// Dezelfde afwerking als het profiel (patina en korrel), zodat een omslag uit
+// omslag-poort.cjs niet "in de buurt" komt maar identiek is.
+async function afwerken(svg) {
+  const grof = ruis(14, 0.46, 424242);
+  const patina = await sharp(grof.px, { raw: { width: grof.n, height: grof.n, channels: 3 } })
+    .resize(W, W, { kernel: 'cubic' }).blur(30).png().toBuffer();
+  const fijn = ruis(W, 0.08, 991);
+  const korrel = await sharp(fijn.px, { raw: { width: W, height: W, channels: 3 } }).png().toBuffer();
+  const buf = new Resvg(svg, { font: { fontFiles: [], loadSystemFonts: false }, fitTo: { mode: 'width', value: W } }).render().asPng();
+  return sharp(buf).removeAlpha()
+    .composite([{ input: patina, blend: 'soft-light' }, { input: korrel, blend: 'overlay' }])
+    .png().toBuffer();
+}
+
+module.exports = { plaat, afwerken, P, W, SCH };
+
+if (require.main === module) (async () => {
   const grof = ruis(14, 0.46, 424242);
   const patina = await sharp(grof.px, { raw: { width: grof.n, height: grof.n, channels: 3 } })
     .resize(W, W, { kernel: 'cubic' }).blur(30).png().toBuffer();
