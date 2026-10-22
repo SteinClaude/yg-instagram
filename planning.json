@@ -557,6 +557,31 @@
       ],
       "inhaaluren": 18,
       "eenmalig": true
+    },
+    {
+      "id": "2026-10-26-bericht-k03",
+      "datum": "2026-10-26",
+      "tijd": "19:00",
+      "soort": "bericht",
+      "taal": "nl",
+      "beeld": [
+        "berichten/nl/K03-1.jpg",
+        "berichten/nl/K03-2.jpg",
+        "berichten/nl/K03-3.jpg",
+        "berichten/nl/K03-4.jpg",
+        "berichten/nl/K03-5.jpg"
+      ],
+      "titel": "Carrousel K03: Vakwerk met de kwast. Laat uw website dat ook zien.",
+      "tekst": "Vakwerk met de kwast. Laat uw website dat ook zien.\n\nVoor het fictieve Schildersbedrijf Hollenbeek in Alkmaar laten we zien hoe dezelfde foto en diensten een andere eerste indruk geven. Een rustig menu. Binnen- en buitenwerk met de doorlooptijd erbij. Eén knop om te bellen, ook op de telefoon.\n\nSwipe door de vergelijking en bekijk de mobiele versie.\n\nHoe zou uw bedrijf eruitzien? Probeer onze gratis ontwerpstudio via de link in onze bio.\n\n#alkmaar #ondernemersalkmaar #webdesign #websitelatenmaken #ygdigital #schilder #schildersbedrijf #schilderwerk #vakman",
+      "alt": [
+        "Vakwerk met de kwast. Laat uw website dat ook zien. Websiteconcept voor het fictieve Schildersbedrijf Hollenbeek in Alkmaar. Een rustige pagina met een foto van een schilder op een ladder met een verfroller, een belknop en een afspraakknop, op een champagnekleurige achtergrond met een doorschijnend rond YG-medaillon.",
+        "Hetzelfde bedrijf. Een onduidelijke eerste indruk. Een minder overzichtelijk websiteconcept voor Schildersbedrijf Hollenbeek. Drie markeringen tonen een lang menu over twee regels, diensten verstopt in lopende tekst en een kleine grijze afspraakknop; een belknop ontbreekt.",
+        "Meer overzicht. Eén tik om te bellen. Hetzelfde bedrijf, dezelfde foto en diensten in een rustiger ontwerp. Drie markeringen tonen een kort menu, losse dienstkaarten met de doorlooptijd erbij en twee opvallende knoppen: bellen en afspraak maken.",
+        "Ook op uw telefoon klopt het. Twee telefoonvoorbeelden tonen de schilderswebsite. De diensten staan overzichtelijk onder elkaar. Onderaan blijft een balk met de knoppen bellen en afspraak maken in beeld; die balk wordt eronder ook vergroot getoond.",
+        "Hoe zou uw bedrijf eruitzien? Een telefoon toont een voorbeeld uit de YG Digital-ontwerpstudio met de handgeschreven naam Schildersbedrijf Hollenbeek, een kop en twee knoppen. De tekst nodigt uit de gratis ontwerpstudio te proberen via de link in de bio."
+      ],
+      "inhaaluren": 18,
+      "eenmalig": true
     }
   ]
 }
