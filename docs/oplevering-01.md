@@ -9,8 +9,8 @@ Gedaan: §1 (map veiliggesteld), pakket K02 (ingepland na "pakket OK" van Andrie
 | Datum | Code | Inhoud | Stand |
 |---|---|---|---|
 | vr 23 okt 19:00 | K02 | conceptproject autoschadebedrijf, Alkmaar | **ingepland** (commit `f17231f`, 22 okt); de automaat plaatst binnen het uur na 19:00 |
-| ma 26 okt 19:00 | K03 | conceptproject **schildersbedrijf** (vakman), zelfde opzet als K01/K02 | **pakket klaar, wacht op "pakket OK"** |
-| wo 28 okt 19:00 | W01 | entree van yg-digital.nl | nog te maken |
+| ma 26 okt 19:00 | K03 | conceptproject **schildersbedrijf** (vakman), zelfde opzet als K01/K02 | **ingepland** (commit `d383968`, 22 okt) |
+| wo 28 okt 19:00 | W01 | entree van yg-digital.nl | **pakket klaar, wacht op "pakket OK"** |
 | vr 30 okt 19:00 | T01 | feit | nog te maken |
 | batch 2 (november) | Z01, W02 | zo werkt het · ontwerpstudio als schermafdrukken | later |
 
@@ -92,9 +92,29 @@ Map: `pakketten/2026-10-26-K03-schilder/`. Zelfde vijf-beeldenvorm, dezelfde bro
 - De studiotekst voor "Bouw & vakwerk" zegt "bouwt, verbouwt en repareert" — de neutrale tekst van die branche, niet specifiek voor een schilder. Het staat op beeld 5 als echt studioresultaat. Wil Andries dat niet, dan is het alternatief de opname lager te zetten (alleen knoppen en "Wat wij doen"), of de studio een schilder-variant te geven (site-sessie).
 - Hashtag #vakman is breed; alternatief #schildersalkmaar.
 
+## Pakket W01 · Entree van yg-digital.nl (eigen werk) — 22 okt
+
+Map: `pakketten/2026-10-28-W01-entree/`. **Vier** platen (opdracht §2: 2–5), zelfde champagne-medaillonstijl als de K-reeks, label "Eigen werk · yg-digital.nl":
+
+1. De homepage groot in een laptopvenster: de donkere entree met de deuren, "Uw website, gebouwd en desgewenst beheerd." en de knop *Ontdek YG Launch*. Onderschrift: "yg-digital.nl, zoals een bezoeker hem vandaag ziet."
+2. De sectie eronder met drie markeringen: *Websites en automatisering voor ondernemers* · *antwoord binnen één werkdag* · *Liever eerst even praten? Bel … of mail …* — precies de drie dingen uit het accountdoel (websites · voor ondernemers · bereikbaar).
+3. Twee telefoons (bovenkant met belknop bovenaan; sectie Over YG Digital) en de knop *Ontdek YG Launch* vergroot eronder.
+4. Afsluiting: de ingang van de ontwerpstudio (`/eerste-ontwerp`) op een telefoon, met "Hoe zou uw bedrijf eruitzien?" en de aanroep naar de bio.
+
+Alles zijn **echte schermafdrukken** van de live site (22 okt): `bron/opname-w01.cjs` (Chrome via playwright-core, cookiemelding geweigerd, hero-slider stilgezet, laptop 1440×900 op 2×, telefoon 390×693 op 3×, maten van kop, alinea en contactregel in `render/maten.json`), daarna `bron/maak-w01.cjs`. Geen nabouw, geen bewerking van de site. Op de schermafdrukken staan het telefoonnummer en e-mailadres van YG Digital zoals op de site; dat is eigen werk, geen prospect.
+
+**Proef:** `node gereedschap/plan-carrousel.cjs pakketten/2026-10-28-W01-entree 2026-10-28 19:00 W01 --proef` slaagt zonder STOP (4 platen, bijschrift 577 tekens, 78 woorden, 9 hashtags, alt-teksten 309/281/256/281). `preview/raster-W01.jpg` toont het raster met K02, K03 en W01 erbij: eerst drie conceptprojecten en dan eigen werk, het raster wordt zo afwisselend donker en licht.
+
+### Keuzes en aannames W01
+
+- De hero van de homepage is een slider (YG Launch · YG Flow · YG Autopilot · YG OS); de opname toont de eerste stand (YG Launch) met de slider stilgezet. Verandert de homepage, dan is de carrousel in één run opnieuw te maken.
+- Geen prijs, geen "hosting inbegrepen"; de tekst over het beheer is de tekst van de site zelf.
+- Bijschrift noemt "vanuit Alkmaar" (opdracht §0) en eindigt met de aanroep naar de bio; hashtags: de vijf vaste + #eigenwerk #websiteontwerp #webdesignalkmaar #ondernemen.
+- `platen/strook.cjs` / `tools/paginaplaat.cjs` uit de opdracht zijn niet gebruikt: die maken losse stroken; voor de plaatvorm van de K-reeks was een eigen opname met maten nodig. Dezelfde Chrome, dezelfde site.
+
 ## Nog te doen (volgorde opdracht §3)
 
-1. K02: na vr 23 okt 19:00 `git pull`, `gedaan.json` controleren, "geplaatst" melden met mediaId.
-2. K03: "pakket OK" van Andries → `plan-carrousel.cjs` zonder `--proef`, commit `K03 gepland: ma 26 okt 19:00`, push.
+1. K02 (vr 23 okt) en K03 (ma 26 okt): na 19:00 `git pull`, `gedaan.json` controleren, "geplaatst" melden met mediaId.
+2. W01: "pakket OK" van Andries → `plan-carrousel.cjs` zonder `--proef`, commit `W01 gepland: wo 28 okt 19:00`, push.
 3. §4: `docs/bio.md` staat er (twee varianten); `docs/highlights.md` nog schrijven, de vier omslagen zijn klaar.
-4. W01 (wo 28 okt), T01 (vr 30 okt).
+4. T01 (vr 30 okt).
