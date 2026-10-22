@@ -582,6 +582,29 @@
       ],
       "inhaaluren": 18,
       "eenmalig": true
+    },
+    {
+      "id": "2026-10-28-bericht-w01",
+      "datum": "2026-10-28",
+      "tijd": "19:00",
+      "soort": "bericht",
+      "taal": "nl",
+      "beeld": [
+        "berichten/nl/W01-1.jpg",
+        "berichten/nl/W01-2.jpg",
+        "berichten/nl/W01-3.jpg",
+        "berichten/nl/W01-4.jpg"
+      ],
+      "titel": "Carrousel W01: De entree van uw bedrijf. Dit is de onze.",
+      "tekst": "De entree van uw bedrijf. Dit is de onze.\n\nZo ziet yg-digital.nl er vandaag uit: één pagina die binnen tien seconden vertelt wat wij doen, voor wie, en hoe u ons bereikt. Websites voor ondernemers, vanuit Alkmaar. Antwoord binnen één werkdag. En één knop waarmee u in vijf minuten uw eigen ontwerp ziet.\n\nSwipe voor de telefoonversie en de ingang van de ontwerpstudio.\n\nHoe zou uw bedrijf eruitzien? Bekijk uw eerste ontwerp via de link in onze bio.\n\n#alkmaar #ondernemersalkmaar #webdesign #websitelatenmaken #ygdigital #eigenwerk #websiteontwerp #webdesignalkmaar #ondernemen",
+      "alt": [
+        "De entree van uw bedrijf. Dit is de onze. De homepage van yg-digital.nl in een laptopvenster: een donkere entree met twee openstaande deuren, de kop \"Uw website, gebouwd en desgewenst beheerd\" en een gouden knop \"Ontdek YG Launch\", op een champagnekleurige achtergrond met een doorschijnend rond YG-medaillon.",
+        "Wat een bezoeker meteen ziet. De sectie onder de entree van yg-digital.nl, met drie markeringen: de kop \"Websites en automatisering voor ondernemers\", de zin dat u altijd binnen één werkdag antwoord krijgt, en de regel \"Liever eerst even praten?\" met telefoonnummer en e-mailadres.",
+        "Ook op uw telefoon klopt het. Twee telefoons tonen yg-digital.nl: links de entree met de belknop bovenaan en de knop \"Ontdek YG Launch\", rechts de tekst over YG Digital met de belofte van antwoord binnen één werkdag. De knop wordt eronder vergroot getoond.",
+        "Hoe zou uw bedrijf eruitzien? Een telefoon toont de ingang van de YG Digital-ontwerpstudio: een donkere salon achter openstaande deuren, de tekst \"Gratis website-ontwerp\" en de knop \"Bekijk uw ontwerp\". De tekst nodigt uit de gratis ontwerpstudio te proberen via de link in de bio."
+      ],
+      "inhaaluren": 18,
+      "eenmalig": true
     }
   ]
 }
