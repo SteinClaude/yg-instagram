@@ -1,23 +1,37 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** do 22 okt 2026, 23:00 — Eva
+**Bijgewerkt:** vr 23 okt 2026, 00:30 — Eva
 
 ## Stand
 
-- **K02** Autoschade Lindevoort (fictief): pakket OK, ingepland vr 23 okt 19:00.
-- **K03** Schildersbedrijf Hollenbeek (fictief): pakket OK van Andries in jouw sessie (22 okt, met code en datum; staat in je logboek en in de commit-boodschap). **Bevestigd door Eva: in orde.** De eerdere opmerking over "zonder OK" vervalt; Eva kon jouw chat niet zien. Zo werkt het goed: het OK-citaat in het logboek en in de commit-boodschap is het bewijs.
-- **W01** Entree van yg-digital.nl: pakket gecontroleerd door Eva (vier platen, eigen schermafdrukken, bijschrift zonder prijs, link in de bio): in orde. Ingepland wo 28 okt 19:00 (`5a6a09f`) op een OK van Andries in jouw sessie; Eva vraagt Andries dat te bevestigen.
+- **Batch 1 staat volledig in de planning:** K02 vr 23 okt 19:00 (`f17231f`), K03 ma 26 okt (`d383968`), W01 wo 28 okt (`5a6a09f`), T01 vr 30 okt (`19445be`). Alle vier met een "pakket OK" van Andries in jouw sessie, geciteerd in je logboek en in de commit-boodschap. Precies zo hoort het; goed werk.
+- **T01 krijgt één tekstcorrectie vóór plaatsing** (zie hieronder). Niet jouw fout: de kop is pakkend, maar hij klopt niet en hij is te specifiek.
 
-## Nu
+## Nu: T01-correctie — pas uitvoeren na "T01 akkoord" van Andries
 
-1. **T01** — feit, carrousel voor **vr 30 okt 19:00**. Maak het pakket, push, meld "pakket T01 klaar". Niet inplannen zonder "pakket OK T01" van Andries; zet zijn OK-tekst dan weer in je logboek en in de commit-boodschap.
-2. Na vr 23 okt 19:00 en ma 26 okt 19:00: `gedaan.json` controleren, "geplaatst" melden in je logboek met media-id. Plaatst de automaat niet binnen 6 uur: meld het; Eva stoot hem aan.
-3. Batch 2 (vanaf ma 2 nov): bekendmaking weggeefactie (eerst), Z01 zo werkt het, W02 ontwerpstudio. Planning komt van Eva; begin er niet uit jezelf aan.
-4. `docs/highlights.md` blijft open tot batch 1 af is.
+**Waarom.** De kop "1.400 volgers op Instagram. Nul resultaten als iemand 'kapper Alkmaar' googelt." heeft twee problemen: (1) "nul resultaten" is aantoonbaar onwaar — die zoekopdracht geeft een pagina vol resultaten, en een feit-post die niet klopt, ondermijnt de pijler "feit"; (2) de combinatie van een volgersaantal, een vak en een stad is zo specifiek dat hij op een echt bedrijf kan slaan — regel: geen echte bedrijven, ook niet herkenbaar omschreven.
+
+**Nieuwe kop (voorstel Eva, wacht op akkoord):** "1.400 volgers op Instagram. Niet te vinden voor wie 'schilder Alkmaar' googelt." — waar (het gaat om "niet te vinden", niet om "nul resultaten"), geen herkenbaar bedrijf, en het is die week de vakmanweek (K03 is het fictieve schildersbedrijf).
+
+**Wat je doet zodra Andries "T01 akkoord" zegt** (in jouw sessie of via Eva; geeft hij een andere tekst, gebruik die):
+1. `pakketten/2026-10-30-T01-feit/bron/maak-t01.cjs`: de koptekst op plaat 1 vervangen; plaat 1 opnieuw renderen; `overzicht.jpg`, `telefooncontrole.jpg` en `preview/raster-T01.jpg` opnieuw maken. Plaat 2 blijft.
+2. `bijschrift.txt`: regel 1 vervangen; hashtag `#kapper` → `#schilder`. De rest blijft.
+3. `beeldbeschrijvingen.txt`: alt-tekst 1 aanpassen aan de nieuwe plaat.
+4. `beeld/berichten/nl/T01-1.jpg` overschrijven met de nieuwe plaat 1 (niets verwijderen; `plan-carrousel.cjs` weigert een bestaande code, dus niet opnieuw inplannen).
+5. In `planning.json`, item `2026-10-30-bericht-t01`: velden `titel`, `tekst` en `alt[0]` aanpassen (datum, tijd en beeld blijven). Controleer dat het bestand geldige JSON is (`node -e "JSON.parse(require('fs').readFileSync('planning.json','utf8'))"`).
+6. Commit met het OK-citaat van Andries in de boodschap, push, regel in `docs/oplevering-manon.md`. Meld "T01 gecorrigeerd".
+
+Zonder "T01 akkoord": niets aan T01 doen.
+
+## Daarna
+
+- Na vr 23, ma 26 en wo 28 okt 19:00: `gedaan.json` controleren, "geplaatst" melden in je logboek met media-id. Plaatst de automaat niet binnen 6 uur: meld het; Eva stoot hem aan.
+- Batch 2 (vanaf ma 2 nov): bekendmaking weggeefactie (eerst), Z01 zo werkt het, W02 ontwerpstudio. Planning komt van Eva na de maandaglevering van Daan; begin er niet uit jezelf aan.
+- `docs/highlights.md` blijft open tot batch 1 af is.
 
 ## Niet doen
 
-Reels of video · nieuwe weggeefacties · iets met Runway · een pakket inplannen zonder OK voor die code.
+Reels of video · nieuwe weggeefacties · iets met Runway · een pakket inplannen of wijzigen zonder OK voor die code.
 
 ## Vragen voor Eva of Andries
 
