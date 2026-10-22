@@ -10,8 +10,8 @@ Gedaan: §1 (map veiliggesteld), pakket K02 (ingepland na "pakket OK" van Andrie
 |---|---|---|---|
 | vr 23 okt 19:00 | K02 | conceptproject autoschadebedrijf, Alkmaar | **ingepland** (commit `f17231f`, 22 okt); de automaat plaatst binnen het uur na 19:00 |
 | ma 26 okt 19:00 | K03 | conceptproject **schildersbedrijf** (vakman), zelfde opzet als K01/K02 | **ingepland** (commit `d383968`, 22 okt) |
-| wo 28 okt 19:00 | W01 | entree van yg-digital.nl | **pakket klaar, wacht op "pakket OK"** |
-| vr 30 okt 19:00 | T01 | feit | nog te maken |
+| wo 28 okt 19:00 | W01 | entree van yg-digital.nl | **ingepland** (commit `5a6a09f`, 22 okt) |
+| vr 30 okt 19:00 | T01 | feit | **pakket klaar, wacht op "pakket OK"** |
 | batch 2 (november) | Z01, W02 | zo werkt het · ontwerpstudio als schermafdrukken | later |
 
 ## §1 · Wat het oude ongecommitte werk was
@@ -112,9 +112,22 @@ Alles zijn **echte schermafdrukken** van de live site (22 okt): `bron/opname-w01
 - Bijschrift noemt "vanuit Alkmaar" (opdracht §0) en eindigt met de aanroep naar de bio; hashtags: de vijf vaste + #eigenwerk #websiteontwerp #webdesignalkmaar #ondernemen.
 - `platen/strook.cjs` / `tools/paginaplaat.cjs` uit de opdracht zijn niet gebruikt: die maken losse stroken; voor de plaatvorm van de K-reeks was een eigen opname met maten nodig. Dezelfde Chrome, dezelfde site.
 
+## Pakket T01 · feit — 22 okt
+
+Map: `pakketten/2026-10-30-T01-feit/`. **Twee** platen, goud op donker, één gedachte per plaat, gemaakt met de tekenmachine (`platen/maak.cjs`, `kaart` zonder foto: donkere grond met gouden gloed, kaderlijn, poortembleem, bovenregel in goud, kop in ivoor, voetregel). Niets nieuws ontworpen; het is de stijl van de bestaande donkere berichten.
+
+1. *Een feit* — "1.400 volgers op Instagram." / "Nul resultaten als iemand ‘kapper Alkmaar’ googelt." (tekst uit opdracht §3; geen naam).
+2. *De oplossing* — "Een website zorgt dat u gevonden wordt door wie nu zoekt, niet alleen door wie al volgt." + "Bekijk uw eerste ontwerp via de link in onze bio."
+
+Bijschrift 78 woorden, u-vorm, geen prijs, geen naam; hashtags: de vijf vaste + #vindbaarheid #google #kapper #lokaalondernemen. **Proef:** `node gereedschap/plan-carrousel.cjs pakketten/2026-10-30-T01-feit 2026-10-30 19:00 T01 --proef` slaagt zonder STOP (2 platen, 554 tekens, 9 hashtags, alt 217/214). `preview/raster-T01.jpg`: het donkere feit staat als accent tussen de lichte conceptprojecten en de entree.
+
+Opnieuw maken: `node pakketten/2026-10-30-T01-feit/bron/maak-t01.cjs` (platen, overzicht, telefooncontrole).
+
+**Open punt T01:** het feit (1.400 volgers, nul resultaten) komt uit de opdracht; ik heb het niet zelf gemeten. Klopt het niet meer, dan is het één regel in `maak-t01.cjs` en in `bijschrift.txt`.
+
 ## Nog te doen (volgorde opdracht §3)
 
-1. K02 (vr 23 okt) en K03 (ma 26 okt): na 19:00 `git pull`, `gedaan.json` controleren, "geplaatst" melden met mediaId.
-2. W01: "pakket OK" van Andries → `plan-carrousel.cjs` zonder `--proef`, commit `W01 gepland: wo 28 okt 19:00`, push.
+1. K02 (vr 23 okt), K03 (ma 26 okt), W01 (wo 28 okt): na 19:00 `git pull`, `gedaan.json` controleren, "geplaatst" melden met mediaId.
+2. T01: "pakket OK" van Andries → `plan-carrousel.cjs` zonder `--proef`, commit `T01 gepland: vr 30 okt 19:00`, push.
 3. §4: `docs/bio.md` staat er (twee varianten); `docs/highlights.md` nog schrijven, de vier omslagen zijn klaar.
-4. T01 (vr 30 okt).
+4. Batch 2 (vanaf ma 2 nov): planning komt van Eva.
