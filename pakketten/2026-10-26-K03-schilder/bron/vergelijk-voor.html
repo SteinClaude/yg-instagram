@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Schildersbedrijf Hollenbeek · vergelijking, minder sterke versie</title>
+<!-- Conceptproject van YG Digital (K03). Schildersbedrijf Hollenbeek is fictief. Compacte weergave (760 breed) voor beeld 2:
+     dezelfde inhoud en foto als vergelijk-na.html, opgemaakt zoals veel sjabloonsites: lange menubalk over twee regels,
+     tekst gecentreerd over een verbleekte foto, diensten als lopende tekst en een kleine, grijze afspraakknop zonder belknop. -->
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #EFEBE5; }
+  body { color: #5B554E; font: 400 13px/1.6 Arial, sans-serif; width: 760px; min-height: 640px; }
+  a { color: inherit; text-decoration: none; }
+  .kop { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px 24px; background: #F4F1EC; border-bottom: 1px solid #DDD6CC; }
+  .naam { font-family: Georgia, serif; font-size: 14px; letter-spacing: .08em; color: #6A635B; white-space: nowrap; }
+  nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px 14px; max-width: 430px; font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: #8A837A; align-items: center; }
+  .afspraak { border: 1px solid #C9C1B6; color: #A39B91; padding: 2px 8px; font-size: 11px; }
+  .held { position: relative; height: 282px; background: url(beelden/schildersfoto-liggend.jpg) center 45% / cover; display: flex; align-items: center; justify-content: center; text-align: center; }
+  .held::before { content: ''; position: absolute; inset: 0; background: rgba(226, 219, 209, .55); }
+  .tekst { position: relative; max-width: 560px; padding: 0 20px; }
+  .welkom { font-family: Georgia, serif; font-style: italic; font-size: 15px; color: #6E6760; }
+  h1 { font-family: Georgia, serif; font-weight: 400; font-size: 25px; color: #4E4842; margin: 4px 0 10px; }
+  .tekst p { font-size: 12.5px; color: #57514A; }
+  .meer { display: inline-block; margin-top: 12px; border: 1px solid #8F877D; color: #6E675F; padding: 4px 14px; font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; }
+  .sectie { padding: 22px 50px 26px; text-align: center; }
+  h2 { font-family: Georgia, serif; font-weight: 400; font-size: 20px; color: #57514A; margin-bottom: 8px; }
+  .sectie p { font-size: 12.5px; color: #6A645D; }
+  .galerij { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 0 50px 30px; }
+  .galerij div { height: 150px; background: url(beelden/schildersfoto-liggend.jpg) center / cover; background-size: 260%; }
+  .galerij div:nth-child(1) { background-position: 18% 30%; } .galerij div:nth-child(2) { background-position: 52% 60%; } .galerij div:nth-child(3) { background-position: 88% 40%; }
+</style>
+</head>
+<body>
+  <header class="kop">
+    <div class="naam">SCHILDERSBEDRIJF HOLLENBEEK</div>
+    <nav><a>Home</a><a>Over ons</a><a>Diensten</a><a>Foto&#8217;s</a><a>Nieuws</a><a>Openingstijden</a><a>Contact</a><a class="afspraak" id="afspraak">afspraak</a></nav>
+  </header>
+  <section class="held">
+    <div class="tekst">
+      <div class="welkom">Binnen · buiten · houtwerk</div>
+      <h1>Strak geschilderd, netjes achtergelaten.</h1>
+      <p>Schildersbedrijf Hollenbeek in Alkmaar schildert binnen en buiten: wanden, plafonds, kozijnen en deuren.</p>
+      <a class="meer">Lees meer</a>
+    </div>
+  </section>
+  <section class="sectie" id="diensten">
+    <h2>Diensten</h2>
+    <p>Binnenschilderwerk (1 dag per kamer), buitenschilderwerk (3 tot 5 dagen), behangwerk (1 dag) en houtrotherstel (in overleg). Voor een afspraak kunt u ons bellen of mailen.</p>
+  </section>
+  <div class="galerij"><div></div><div></div><div></div></div>
+</body>
+</html>

@@ -1,15 +1,15 @@
-# Oplevering 01 — stand woensdag 21 oktober 2026
+# Oplevering 01 — stand donderdag 22 oktober 2026
 
 **Van:** Manon (uitvoerder, YG Crew) · **Voor:** Eva (manager) en Andries · **Bij:** `docs/opdracht-01.md`, met de wijzigingen van 21 oktober (nieuwe data, K03 wordt een schildersbedrijf, nieuwe bio-regel).
 
-Gedaan in deze sessie: §1 (map veiliggesteld) en pakket 1 (K02). Niets geplaatst, nergens ingelogd, `planning.json` ongewijzigd, geen Runway-credits, geen echte bedrijven.
+Gedaan: §1 (map veiliggesteld), pakket K02 (ingepland na "pakket OK" van Andries op 22 okt) en pakket K03 (klaar, wacht op "pakket OK"). Nergens ingelogd, niets zelf geplaatst, geen Runway-credits, geen echte bedrijven.
 
 ## Nieuwe planning batch 1 (21 okt)
 
 | Datum | Code | Inhoud | Stand |
 |---|---|---|---|
-| vr 23 okt 19:00 | K02 | conceptproject autoschadebedrijf, Alkmaar | **pakket klaar, wacht op "pakket OK"** |
-| ma 26 okt 19:00 | K03 | conceptproject **schildersbedrijf** (vakman), zelfde opzet als K01/K02 | nog te maken |
+| vr 23 okt 19:00 | K02 | conceptproject autoschadebedrijf, Alkmaar | **ingepland** (commit `f17231f`, 22 okt); de automaat plaatst binnen het uur na 19:00 |
+| ma 26 okt 19:00 | K03 | conceptproject **schildersbedrijf** (vakman), zelfde opzet als K01/K02 | **pakket klaar, wacht op "pakket OK"** |
 | wo 28 okt 19:00 | W01 | entree van yg-digital.nl | nog te maken |
 | vr 30 okt 19:00 | T01 | feit | nog te maken |
 | batch 2 (november) | Z01, W02 | zo werkt het · ontwerpstudio als schermafdrukken | later |
@@ -73,8 +73,28 @@ Chrome via `playwright-core` (zit in deze map), `sharp` geleend uit `yg-luxury` 
 - **Doorlooptijden** op de kaarten zijn voorbeeldinhoud. Wil Andries liever geen tijden (zoals "3 dagen") op een fictieve garagesite, dan is dat één regel per kaart.
 - **Hashtag #garage** is breed; alternatief #autoschadeherstel. Eén woord wisselen in `bijschrift.txt`.
 
+## Pakket K03 · Schildersbedrijf Hollenbeek (fictief) — 22 okt
+
+Map: `pakketten/2026-10-26-K03-schilder/`. Zelfde vijf-beeldenvorm, dezelfde bron-opzet als K02 (`schilder-na.html`, `vergelijk-voor.html`, `vergelijk-na.html`, `schilder-mobiel.html`, `maak-k03.cjs`, `studio-opname.cjs`); renderen gaat net als bij K02, met `k03` in de bestandsnamen. `preview/raster-K03.jpg` toont het raster met K02 én K03 erbij.
+
+**Proef:** `node gereedschap/plan-carrousel.cjs pakketten/2026-10-26-K03-schilder 2026-10-26 19:00 K03 --proef` slaagt zonder STOP (5 platen, bijschrift 562 tekens, 73 woorden, 9 hashtags, alt-teksten 318/273/245/248/254).
+
+### Keuzes
+
+- **Naam:** Schildersbedrijf Hollenbeek. Gezocht op 22 okt (web): geen schildersbedrijf met die naam, ook niet als "Hollenbeek" met schilder/schildersbedrijf/schilderwerken. Alleen voorbeeldinhoud: binnenschilderwerk (1 dag per kamer), buitenschilderwerk (3 tot 5 dagen), behangwerk (1 dag), houtrotherstel (in overleg); "offerte gratis, aan huis", "werkgebied Alkmaar en omgeving". Geen prijzen of claims.
+- **Koppen:** "Vakwerk met de kwast. Laat uw website dat ook zien." · verder dezelfde vier als K02, zodat de reeks als één lijn leest. Label: "Conceptproject · fictief schildersbedrijf". Sitekop: "Strak geschilderd, netjes achtergelaten."
+- **Foto:** Pexels 5798972, "Close-Up Shot of a Person Holding a Paint Roller with Brown Paint" van Ivan S, Pexels-licentie (vrij, ook commercieel; naamsvermelding niet verplicht, wel vastgelegd). Gezichtsloos, terracotta en crème, past bij de serie. Liggend origineel (2400×1600); de staande uitsnede is het middenstuk met ladder, hand en roller. Op het handvat staat een klein ingegoten merkje; op plaatformaat is dat niet leesbaar. Tweede kandidaat 5583116 (hand met roller op witte muur) viel af als te kaal.
+- **Beeld 5:** branche **"Bouw & vakwerk"** (noemt de schilder expliciet), sfeer warm, accent brons, deellink `yg-digital.nl/eerste-ontwerp#b=bouw&s=warm&n=Schildersbedrijf%20Hollenbeek&a=%238a6d3b`. Zelfde uitsnede als K02: polaroidrand met handgeschreven naam, kop en knoppen; bovenin alleen de houten dakconstructie van de studiofoto, geen gezicht.
+- **Zwakke versie:** menu teruggebracht tot acht woorden (zoals K01), omdat de lange naam anders drie menuregels gaf; kopbalk van de sterke versie in detailstand iets compacter, zodat naam en menu op één regel staan.
+
+### Open punten K03
+
+- De studiotekst voor "Bouw & vakwerk" zegt "bouwt, verbouwt en repareert" — de neutrale tekst van die branche, niet specifiek voor een schilder. Het staat op beeld 5 als echt studioresultaat. Wil Andries dat niet, dan is het alternatief de opname lager te zetten (alleen knoppen en "Wat wij doen"), of de studio een schilder-variant te geven (site-sessie).
+- Hashtag #vakman is breed; alternatief #schildersalkmaar.
+
 ## Nog te doen (volgorde opdracht §3)
 
-1. "pakket OK" van Andries → `plan-carrousel.cjs` zonder `--proef`, commit `K02 gepland: vr 23 okt 19:00`, push; na 19:00 `git pull`, `gedaan.json` controleren, "geplaatst" melden met mediaId.
-2. §4: `docs/bio.md` staat er (twee varianten); `docs/highlights.md` nog schrijven, de vier omslagen zijn klaar.
-3. K03 (schildersbedrijf, ma 26 okt), W01 (wo 28 okt), T01 (vr 30 okt).
+1. K02: na vr 23 okt 19:00 `git pull`, `gedaan.json` controleren, "geplaatst" melden met mediaId.
+2. K03: "pakket OK" van Andries → `plan-carrousel.cjs` zonder `--proef`, commit `K03 gepland: ma 26 okt 19:00`, push.
+3. §4: `docs/bio.md` staat er (twee varianten); `docs/highlights.md` nog schrijven, de vier omslagen zijn klaar.
+4. W01 (wo 28 okt), T01 (vr 30 okt).
