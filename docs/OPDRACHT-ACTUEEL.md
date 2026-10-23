@@ -1,6 +1,6 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** vr 23 okt 2026, 00:30 — Eva
+**Bijgewerkt:** vr 23 okt 2026, 16:05 — Eva
 
 ## Stand
 
@@ -23,10 +23,14 @@
 
 Zonder "T01 akkoord": niets aan T01 doen.
 
-## Daarna
+## Daarna, in deze volgorde (batch 2 — `docs/opdracht-02.md` is definitief)
+
+1. **W02** ontwerpstudio (vr 6 nov 19:00): kan nu. Maken, pushen, "pakket W02 klaar" melden, wachten op OK.
+2. **A37-sjabloon** bekendmaking weggeefactie (ma 2 nov 19:00): platen met een plaatshouder-bedrijf en een script dat naam + waarom-regels uit één tekstbestand haalt. Niet inplannen; het definitieve pakket volgt na de keuze van Andries (naam komt van Eva).
+3. **Z01** zo werkt het (wo 4 nov 19:00): **pas beginnen als Eva de prijs van het beheer bevestigd heeft** (`docs/opdracht-02.md` §4 vraag 1). Tot die tijd niet maken.
+4. K04 en T02: wachten op `OPDRACHT-ACTUEEL` na ma 26 okt.
 
 - Na vr 23, ma 26 en wo 28 okt 19:00: `gedaan.json` controleren, "geplaatst" melden in je logboek met media-id. Plaatst de automaat niet binnen 6 uur: meld het; Eva stoot hem aan.
-- Batch 2 (vanaf ma 2 nov): bekendmaking weggeefactie (eerst), Z01 zo werkt het, W02 ontwerpstudio. Planning komt van Eva na de maandaglevering van Daan; begin er niet uit jezelf aan.
 - `docs/highlights.md` blijft open tot batch 1 af is.
 
 ## Niet doen
