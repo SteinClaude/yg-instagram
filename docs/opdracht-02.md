@@ -1,6 +1,6 @@
 # OPDRACHT 02 — Manon: batch 2 (2–13 november) en de afronding van de weggeefactie
 
-**Van:** Eva (chef de staf) · **Voor:** Manon · **Datum:** vr 23 okt 2026 · **Status:** definitief voor Z01, W02 en A37-sjabloon; K04 en T02 volgen na levering 02 van Daan (ma 26 okt)
+**Van:** Eva (chef de staf) · **Voor:** Manon · **Datum:** vr 23 okt 2026 · **Status:** definitief voor Z01, W02 en A37-sjabloon (prijs bevestigd door Andries op 23 okt 17:14); K04 en T02 volgen na levering 02 van Daan (ma 26 okt)
 **Geldt naast:** `docs/opdracht-01.md` (formaat, stijl, hashtags, pakketmap), `CLAUDE.md` (harde regels), `docs/OPDRACHT-ACTUEEL.md` (wat nu).
 
 ## 1. Waarom batch 2 zo is opgebouwd
@@ -12,13 +12,13 @@ Batch 1 laat zien wat wij maken (K02, K03, W01) en waarom een site nodig is (T01
 | # | Datum | Code | Inhoud | Afhankelijk van |
 |---|---|---|---|---|
 | 1 | ma 2 nov | **A37** | bekendmaking weggeefactie: wie en waarom | de keuze van Andries (uiterlijk zo 1 nov) én zijn DM aan de gekozen ondernemer; sjabloon kun je nu al maken |
-| 2 | wo 4 nov | **Z01** | zo werkt het — de enige post met een prijs | bevestiging van de prijs door Andries (zie §4, vraag 1) |
+| 2 | wo 4 nov | **Z01** | zo werkt het — de enige post met een prijs | de site moet vóór plaatsing dezelfde prijs tonen (zie §4, vraag 1) |
 | 3 | vr 6 nov | **W02** | ontwerpstudio als schermafdrukken in telefoonkader | niets — kan nu |
 | 4 | ma 9 nov | **K04** | conceptproject in de sector van levering 02 | planning van Eva na ma 26 okt |
 | 5 | wo 11 nov | **T02** | tweede feit | idem |
 | 6 | vr 13 nov | **W03** | het eerste ontwerp voor de gekozen ondernemer (echt werk, met toestemming) | A37 geplaatst én "ontwerp OK" van Andries |
 
-Volgorde van maken: eerst de T01-correctie (zodra "T01 akkoord" er is), dan **W02**, dan **Z01** (pas als de prijs bevestigd is), dan het **A37-sjabloon**. Niets inplannen zonder "pakket OK" voor die code; het OK-citaat in je logboek en in de commit-boodschap.
+Volgorde van maken: eerst de T01-correctie (zodra "T01 akkoord" er is), dan **W02**, dan **Z01**, dan het **A37-sjabloon**. Niets inplannen zonder "pakket OK" voor die code; het OK-citaat in je logboek en in de commit-boodschap.
 
 ## 3. De pakketten
 
@@ -32,9 +32,9 @@ Volgorde van maken: eerst de T01-correctie (zodra "T01 akkoord" er is), dan **W0
 
 ### Z01 — zo werkt het (vier platen)
 
-- (1) **Ontwerp**: "Zie in vijf minuten uw eerste ontwerp in de ontwerpstudio — of begin met een gesprek." · (2) **Gesprek en offerte**: één gesprek over het doel van de site, daarna een offerte met een vaste prijs · (3) **De prijs**: eenmalig **€ 750 excl. btw** voor ontwerp en bouw; beheer optioneel, **het maandbedrag zoals Andries het bevestigt (§4)**: technisch onderhoud en updates, back-ups, tot 30 minuten kleine tekst- en fotowijzigingen per maand; **hosting regelt en betaalt u rechtstreeks bij JouwWeb, zonder opslag** · (4) **Bouw en live**: u kijkt mee, twee gebundelde feedbackrondes, daarna live en (bij beheer) onderhouden vanaf de oplevering.
+- (1) **Ontwerp**: "Zie in vijf minuten uw eerste ontwerp in de ontwerpstudio — of begin met een gesprek." · (2) **Gesprek en offerte**: één gesprek over het doel van de site, daarna een offerte met een vaste prijs · (3) **De prijs**: eenmalig **€ 750 excl. btw** (€ 907,50 incl.) voor ontwerp en bouw; beheer optioneel **€ 49 per maand excl. btw** (€ 59,29 incl.) — bevestigd door Andries 23 okt: technisch onderhoud en updates, back-ups, tot 30 minuten kleine tekst- en fotowijzigingen per maand; **hosting regelt en betaalt u rechtstreeks bij JouwWeb, zonder opslag** · (4) **Bouw en live**: u kijkt mee, twee gebundelde feedbackrondes, daarna live en (bij beheer) onderhouden vanaf de oplevering.
 - Bijschrift: de vier stappen in vier korte zinnen; de prijs exact zoals op plaat 3 (excl./incl. btw erbij, zoals op yg-digital.nl/yg-launch); "hosting betaalt u rechtstreeks bij JouwWeb" — nooit "hosting inbegrepen"; eindigt met de link in de bio.
-- Dit is de **enige** post met een prijs (I4). Elk bedrag moet letterlijk overeenkomen met `yg-digital.nl/yg-launch` op de dag van plaatsing — controleer dat zelf en zet de datum van je controle in `docs/oplevering-01.md`.
+- Dit is de **enige** post met een prijs (I4). Elk bedrag moet letterlijk overeenkomen met `yg-digital.nl/yg-launch` op de dag van plaatsing. Op 23 okt stond daar nog € 45/mnd incl. btw; Andries laat de site aanpassen naar € 49/mnd excl. btw. **Controleer de site op de dag van plaatsing**; staat er dan nog € 45: niet plaatsen, melden, Z01 schuift op. Zet de datum van je controle in `docs/oplevering-01.md`.
 
 ### W02 — ontwerpstudio (vier of vijf platen)
 
@@ -47,7 +47,7 @@ Komen in `docs/OPDRACHT-ACTUEEL.md` zodra Eva de sector van levering 02 kent (ma
 
 ## 4. Vragen aan Andries (Eva stelt ze; jij wacht)
 
-1. **Prijs van het beheer.** De projectdocumenten zeggen "€ 750 + € 49/mnd, excl. btw"; `yg-digital.nl/yg-launch` zegt € 750 excl. btw eenmalig en **€ 45 per maand inclusief btw (€ 37,19 excl.)**. Z01 moet gelijk zijn aan de site. Welke is juist — en moet de site worden aangepast?
+1. ~~**Prijs van het beheer.**~~ **Beantwoord 23 okt 17:14: € 49 per maand excl. btw (€ 59,29 incl.).** De site (`yg-digital.nl/yg-launch`) toont nog € 45/mnd incl. btw en wordt vóór wo 4 nov aangepast; Manon controleert dat op de dag van plaatsing.
 2. De keuze van de weggeefactie uiterlijk **zo 1 nov**; A37 kan anders niet op ma 2 nov.
 3. Toestemming van de gekozen ondernemer om genoemd te worden, via de DM van Gijs (A36 zegt alleen "dat wij het werk mogen laten zien").
 

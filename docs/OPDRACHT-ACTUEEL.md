@@ -1,6 +1,6 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** vr 23 okt 2026, 16:05 — Eva
+**Bijgewerkt:** vr 23 okt 2026, 17:25 — Eva
 
 ## Stand
 
@@ -27,7 +27,7 @@ Zonder "T01 akkoord": niets aan T01 doen.
 
 1. **W02** ontwerpstudio (vr 6 nov 19:00): kan nu. Maken, pushen, "pakket W02 klaar" melden, wachten op OK.
 2. **A37-sjabloon** bekendmaking weggeefactie (ma 2 nov 19:00): platen met een plaatshouder-bedrijf en een script dat naam + waarom-regels uit één tekstbestand haalt. Niet inplannen; het definitieve pakket volgt na de keuze van Andries (naam komt van Eva).
-3. **Z01** zo werkt het (wo 4 nov 19:00): **pas beginnen als Eva de prijs van het beheer bevestigd heeft** (`docs/opdracht-02.md` §4 vraag 1). Tot die tijd niet maken.
+3. **Z01** zo werkt het (wo 4 nov 19:00): prijs is bevestigd — € 750 excl. btw eenmalig, beheer € 49/mnd excl. btw (€ 59,29 incl.), hosting rechtstreeks bij JouwWeb. Maken volgens `docs/opdracht-02.md` §3. Vóór het inplannen en op de dag van plaatsing: controleer dat `yg-digital.nl/yg-launch` dezelfde prijs toont; zo niet, niet plaatsen en melden.
 4. K04 en T02: wachten op `OPDRACHT-ACTUEEL` na ma 26 okt.
 
 - Na vr 23, ma 26 en wo 28 okt 19:00: `gedaan.json` controleren, "geplaatst" melden in je logboek met media-id. Plaatst de automaat niet binnen 6 uur: meld het; Eva stoot hem aan.
