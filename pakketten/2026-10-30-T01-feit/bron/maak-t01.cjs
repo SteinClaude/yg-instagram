@@ -10,12 +10,14 @@ const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
 const UIT = path.join(__dirname, '..');
 
 const PLATEN = [
-  // 1. Het feit. Geen naam van het account: het gaat om het patroon, niet om de salon.
+  // 1. Het feit. Geen naam en geen herkenbaar bedrijf: het gaat om het patroon.
+  // Kop gecorrigeerd op 25 okt (akkoord Andries via Kantoor, 25 okt 13:37: "T01 akkoord"): "niet te vinden"
+  // in plaats van "nul resultaten" (dat was aantoonbaar onwaar), en "schilder" in plaats van "kapper" (vakmanweek).
   { blokken: [
       { t: 'lijn' },
       { t: 'boven', tekst: 'Een feit' },
       { t: 'kop', tekst: '1.400 volgers op Instagram.', grootte: 92, marge: 44, maxRegels: 2 },
-      { t: 'kop', tekst: 'Nul resultaten als iemand \u2018kapper Alkmaar\u2019 googelt.', grootte: 64, marge: 0, maxRegels: 3 },
+      { t: 'kop', tekst: 'Niet te vinden voor wie \u2018schilder Alkmaar\u2019 googelt.', grootte: 64, marge: 0, maxRegels: 3 },
     ] },
   // 2. De oplossing, in één zin, zonder naam.
   { blokken: [
