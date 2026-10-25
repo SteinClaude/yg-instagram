@@ -624,6 +624,31 @@
       ],
       "inhaaluren": 18,
       "eenmalig": true
+    },
+    {
+      "id": "2026-11-06-bericht-w02",
+      "datum": "2026-11-06",
+      "tijd": "19:00",
+      "soort": "bericht",
+      "taal": "nl",
+      "beeld": [
+        "berichten/nl/W02-1.jpg",
+        "berichten/nl/W02-2.jpg",
+        "berichten/nl/W02-3.jpg",
+        "berichten/nl/W02-4.jpg",
+        "berichten/nl/W02-5.jpg"
+      ],
+      "titel": "Carrousel W02: Uw website zien, voordat u iets beslist.",
+      "tekst": "Uw website zien, voordat u iets beslist.\n\nIn onze ontwerpstudio vult u uw bedrijfsnaam in, kiest u uw vak en een sfeer, en binnen vijf minuten staat er een eerste ontwerp met uw naam erop. Geen account, geen verplichting. Bevalt het, dan praten we verder over de bouw; zo niet, dan heeft u een idee gekregen van wat kan.\n\nSwipe door de stappen.\n\nHoe zou uw bedrijf eruitzien? Bekijk uw eerste ontwerp via de link in onze bio.\n\n#alkmaar #ondernemersalkmaar #webdesign #websitelatenmaken #ygdigital #ontwerpstudio #eersteontwerp #websiteontwerp #ondernemen",
+      "alt": [
+        "Uw website zien, voordat u iets beslist. Een telefoon toont de ingang van de YG Digital-ontwerpstudio: een donkere salon achter openstaande deuren, de tekst \"Gratis website-ontwerp\" en de knop \"Bekijk uw ontwerp\". Links de uitleg: in vijf minuten, met uw eigen naam, geen account nodig. Champagnekleurige achtergrond met een doorschijnend rond YG-medaillon.",
+        "Stap één: uw naam en uw vak. Een telefoon toont stap één van de ontwerpstudio: het veld \"Naam van uw bedrijf\" met de voorbeeldnaam \"Uw bedrijf\" en daaronder de brancheknoppen, waarvan \"Kapper & salon\" is gekozen.",
+        "Stap twee: kies een sfeer. Een telefoon toont stap twee van de ontwerpstudio: een gekozen sfeer als kleine website met de naam \"Uw bedrijf\", een polaroidfoto van een saloninterieur en de kop \"Stap naar buiten zoals u zich wilt voelen\".",
+        "Daar staat hij: uw eerste ontwerp. Een telefoon toont het eerste ontwerp op volledig scherm: een website met de naam \"Uw bedrijf\", een foto van een saloninterieur en een kop, zoals de ontwerpstudio hem maakt.",
+        "Hoe zou uw bedrijf eruitzien? Een telefoon toont het ontwerp in de ontwerpstudio met de knoppen \"Volledig scherm\" en \"Bewaar ontwerp\". De tekst nodigt uit de gratis ontwerpstudio te proberen via de link in de bio."
+      ],
+      "inhaaluren": 18,
+      "eenmalig": true
     }
   ]
 }
