@@ -12,7 +12,7 @@
 
 **Waarom.** De kop "1.400 volgers op Instagram. Nul resultaten als iemand 'kapper Alkmaar' googelt." heeft twee problemen: (1) "nul resultaten" is aantoonbaar onwaar — die zoekopdracht geeft een pagina vol resultaten, en een feit-post die niet klopt, ondermijnt de pijler "feit"; (2) de combinatie van een volgersaantal, een vak en een stad is zo specifiek dat hij op een echt bedrijf kan slaan — regel: geen echte bedrijven, ook niet herkenbaar omschreven.
 
-**Nieuwe kop (voorstel Eva, wacht op akkoord):** "1.400 volgers op Instagram. Niet te vinden voor wie 'schilder Alkmaar' googelt." — waar (het gaat om "niet te vinden", niet om "nul resultaten"), geen herkenbaar bedrijf, en het is die week de vakmanweek (K03 is het fictieve schildersbedrijf).
+**Nieuwe kop (akkoord Andries, 25 okt):** "1.400 volgers op Instagram. Niet te vinden voor wie 'schilder Alkmaar' googelt." — waar (het gaat om "niet te vinden", niet om "nul resultaten"), geen herkenbaar bedrijf, en het is die week de vakmanweek (K03 is het fictieve schildersbedrijf).
 
 **Wat je doet** (de nieuwe kop is precies de tekst hierboven):
 1. `pakketten/2026-10-30-T01-feit/bron/maak-t01.cjs`: de koptekst op plaat 1 vervangen; plaat 1 opnieuw renderen; `overzicht.jpg`, `telefooncontrole.jpg` en `preview/raster-T01.jpg` opnieuw maken. Plaat 2 blijft.
