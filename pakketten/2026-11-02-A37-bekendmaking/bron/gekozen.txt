@@ -1,0 +1,10 @@
+# A37 · bekendmaking weggeefactie — het enige bestand dat je invult zodra Andries gekozen heeft (naam komt van Eva).
+# Daarna: node pakketten/2026-11-02-A37-bekendmaking/bron/maak-a37.cjs  → platen, bijschrift.txt, beeldbeschrijvingen.txt.
+# Regels: sleutel: waarde. Lege regels en regels met # worden overgeslagen. Alles hieronder is PLAATSHOUDER.
+naam: Voorbeeld B.V.
+wat: een fictief voorbeeldbedrijf, alleen om dit sjabloon te tonen
+waarom1: Wat het bedrijf doet en voor wie, stond in twee heldere zinnen.
+waarom2: De inzending zei precies wat de site moet oplossen.
+waarom3: Er was al van alles geprobeerd, en de klant was scherp omschreven.
+# waaromkort: één bijzin van hooguit twaalf woorden, begint met "omdat"; komt in het bijschrift (max 80 woorden in totaal).
+waaromkort: omdat de inzending precies zei wat de site moet oplossen

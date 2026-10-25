@@ -143,9 +143,25 @@ Keuzes: naam "Uw bedrijf" (leest als voorbeeld, geen klant), branche Kapper & sa
 
 **Proef:** `node gereedschap/plan-carrousel.cjs pakketten/2026-11-06-W02-ontwerpstudio 2026-11-06 19:00 W02 --proef` slaagt zonder STOP (5 platen, 554 tekens, 9 hashtags, alt 357/212/235/208/213). `preview/raster-W02.jpg` toont het raster met batch 1 en W02.
 
+### A37-sjabloon · bekendmaking weggeefactie — 25 okt (sjabloon, niet inplannen)
+
+Map: `pakketten/2026-11-02-A37-bekendmaking/`. Vier platen in de stijl van A36 (lichte deur met ivoren waas, rond medaillonzegel, goud, poortembleem), gemaakt met de tekenmachine en het zegel uit `platen/actie.cjs`. **Eén tekstbestand stuurt alles:** `bron/gekozen.txt` (naam · wat · waarom1–3 · waaromkort); `node bron/maak-a37.cjs` maakt daaruit de vier platen, `bijschrift.txt` en `beeldbeschrijvingen.txt`, telt de woorden (nu 74) en weigert verboden woorden (win, winnaar, kans, trekking …). Nu staat er de plaatshouder "Voorbeeld B.V."; het script meldt dat zelf. Het definitieve pakket op zo 1 of ma 2 nov: naam en regels van Eva in `gekozen.txt`, script draaien, raster, proef, push, "pakket A37 klaar", wachten op OK.
+
+1. "Gekozen." + naam + wat het bedrijf doet · 2. "Wat de doorslag gaf." met de drie waarom-regels en de vier punten uit A36 · 3. "Van ontwerp naar live." (eerste ontwerp binnen 48 uur · bouw: zeven pagina’s, teksten, logo · live, en wij laten het hier zien) · 4. "Vrijblijvend, via de link in onze bio." (iedereen die meedeed krijgt een eerste ontwerp).
+
+Bijschrift: dank, wie gekozen is en waarom in één bijzin, wat de ondernemer krijgt (alleen wat A36 beloofde), "iedereen die meedeed krijgt een eerste ontwerp, vrijblijvend", de link in de bio; hashtags de vijf vaste + #ondernemen #mkb #kleinbedrijf. Proef met plan-carrousel slaagt (4 platen, 8 hashtags).
+
+### Pakket Z01 · zo werkt het — 25 okt (de enige post met een prijs)
+
+Map: `pakketten/2026-11-04-Z01-zo-werkt-het/`. Vier platen goud op donker (tekenmachine, zoals T01): (1) Het ontwerp · (2) Gesprek en offerte · (3) De prijs: **€ 750 eenmalig excl. btw (€ 907,50 incl.)** voor ontwerp en bouw; beheer optioneel **€ 49 per maand excl. btw (€ 59,29 incl.)** voor technisch onderhoud en updates, back-ups en tot dertig minuten kleine tekst- en fotowijzigingen per maand; hosting regelt en betaalt u rechtstreeks bij JouwWeb, zonder opslag · (4) Bouw en live: u kijkt mee, twee gebundelde feedbackrondes, daarna live en bij beheer onderhouden vanaf de oplevering. Bijschrift 78 woorden met dezelfde bedragen, nooit "hosting inbegrepen"; hashtags de vijf vaste + #watkosteenwebsite #vasteprijs #websitekosten #zowerkthet. Proef: `node gereedschap/plan-carrousel.cjs pakketten/2026-11-04-Z01-zo-werkt-het 2026-11-04 19:00 Z01 --proef` slaagt.
+
+**Sitecontrole (I4).** `yg-digital.nl/yg-launch` gelezen op **zo 25 okt 2026, 19:30**: € 750 excl. btw (€ 907,50 incl.) klopt; het beheer staat er nog als **€ 45 per maand inclusief btw (€ 37,19 exclusief)**, niet als € 49 excl. btw. Z01 volgt het besluit van Andries (23 okt 17:14). Vóór het inplannen en op wo 4 nov vóór 19:00 controleer ik de site opnieuw; staat er dan nog € 45, dan wordt Z01 niet geplaatst en meld ik het.
+
+`preview/raster-A37.jpg`, `preview/raster-Z01.jpg` en `preview/raster-W02.jpg` tonen hetzelfde raster met batch 1 en de drie pakketten van batch 2 in plaatsingsvolgorde (A37 · Z01 · W02).
+
 ## Nog te doen
 
 1. K03 (ma 26 okt), W01 (wo 28 okt), T01 (vr 30 okt): na 19:00 `git pull`, `gedaan.json` controleren, "geplaatst" in het logboek met media-id.
-2. W02: "pakket OK W02" van Andries → inplannen vr 6 nov 19:00, OK-citaat in logboek en commit.
-3. A37-sjabloon (ma 2 nov) en Z01 (wo 4 nov) volgens `docs/opdracht-02.md`; K04 en T02 na OPDRACHT-ACTUEEL.
-4. §4: `docs/highlights.md` na batch 1; de vier omslagen zijn klaar.
+2. W02 en Z01: "pakket OK" per code van Andries → inplannen (vr 6 nov, wo 4 nov), OK-citaat in logboek en commit. Z01 pas na een geslaagde sitecontrole.
+3. A37: naam en waarom-regels van Eva in `bron/gekozen.txt`, script draaien, pushen, "pakket A37 klaar".
+4. K04 en T02 na OPDRACHT-ACTUEEL; §4 `docs/highlights.md` na batch 1.
