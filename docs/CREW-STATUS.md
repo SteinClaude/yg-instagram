@@ -34,4 +34,5 @@ Andries beslist alles; naar buiten heet hij Gijs. Niemand plaatst, verstuurt of 
 - Bij sessiestart: `git pull`, dit bestand en `docs/OPDRACHT-ACTUEEL.md` lezen, dan "ga verder".
 - Alles wat je commit en pusht, ziet Eva. Wat alleen in je sessie blijft, bestaat niet.
 - Een OK van Andries dat alleen in jouw chat is gegeven, telt als je het citeert (code + datum) in je logboek en in de commit-boodschap.
-- Vragen die blokkeren: bovenaan je antwoord; Andries plakt ze bij Eva.
+- Vragen die blokkeren: bovenaan je antwoord én onder "Vragen" in `docs/oplevering-*.md` (vraag · aanname · wat je ondertussen doet · blokkeert ja/nee); werk door op je aanname. Andries plakt niets meer over; Eva antwoordt als citaat in `OPDRACHT-ACTUEEL`.
+- Wie start wie (vanaf 26 okt, besluit Andries 25 okt): Eva start Lotte en Manon als deelagent in haar sessie (Manon zodra haar gereedschap draagbaar is); Bram en Noor op de pc met "ga verder"; Daan is een geplande taak. Pc-sessies blijven als uitwijk.
