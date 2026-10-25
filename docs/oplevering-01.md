@@ -125,9 +125,27 @@ Opnieuw maken: `node pakketten/2026-10-30-T01-feit/bron/maak-t01.cjs` (platen, o
 
 **Open punt T01:** het feit (1.400 volgers, nul resultaten) komt uit de opdracht; ik heb het niet zelf gemeten. Klopt het niet meer, dan is het één regel in `maak-t01.cjs` en in `bijschrift.txt`.
 
-## Nog te doen (volgorde opdracht §3)
+**Correctie T01 (zo 25 okt, akkoord Andries via Kantoor 25 okt 13:37):** kop plaat 1 is nu "1.400 volgers op Instagram. Niet te vinden voor wie ‘schilder Alkmaar’ googelt." ("nul resultaten" was onwaar; "kapper" te herkenbaar). Bijschrift, alt-tekst 1, `beeld/berichten/nl/T01-1.jpg` en het planningsitem (titel, tekst, alt[0]) zijn mee veranderd; datum, tijd, beelden en plaat 2 niet. Commit `1255824`.
 
-1. K02 (vr 23 okt), K03 (ma 26 okt), W01 (wo 28 okt): na 19:00 `git pull`, `gedaan.json` controleren, "geplaatst" melden met mediaId.
-2. T01: "pakket OK" van Andries → `plan-carrousel.cjs` zonder `--proef`, commit `T01 gepland: vr 30 okt 19:00`, push.
-3. §4: `docs/bio.md` staat er (twee varianten); `docs/highlights.md` nog schrijven, de vier omslagen zijn klaar.
-4. Batch 2 (vanaf ma 2 nov): planning komt van Eva.
+## Batch 2 (opdracht 02)
+
+### Pakket W02 · de ontwerpstudio (eigen werk) — 25 okt
+
+Map: `pakketten/2026-11-06-W02-ontwerpstudio/`. **Vijf** platen, champagne-medaillonstijl, label "YG Digital · ontwerpstudio", alle beelden echte schermafdrukken van `yg-digital.nl/eerste-ontwerp` op telefoonmaat (`bron/opname-w02.cjs`, daarna `bron/maak-w02.cjs`):
+
+1. De ingang (hero "Gratis website-ontwerp · Bekijk uw ontwerp") met links "Uw website zien, voordat u iets beslist." en "In vijf minuten, met uw eigen naam. Geen account nodig." — die regel staat letterlijk zo op de site (gecontroleerd 25 okt).
+2. Stap één: het naamveld met "Uw bedrijf" en de branche Kapper & salon gekozen.
+3. Stap twee: de gekozen sfeer als kleine website met de naam erin.
+4. Het eerste ontwerp op volledig scherm ("Daar staat hij: uw eerste ontwerp.").
+5. Afsluiting: het ontwerp in de studio met de knoppen *Volledig scherm* en *Bewaar ontwerp*, "Hoe zou uw bedrijf eruitzien?" en de aanroep naar de bio.
+
+Keuzes: naam "Uw bedrijf" (leest als voorbeeld, geen klant), branche Kapper & salon en de warme sfeer — dezelfde keuze als K01 en reel R17, en de salonfoto's van de studio zijn gezichtsloos. Geen reel (R17 bestaat), geen prijs. De route is in één run opnieuw op te nemen als de studio verandert. Bijschrift 78 woorden, 9 hashtags (vijf vaste + #ontwerpstudio #eersteontwerp #websiteontwerp #ondernemen).
+
+**Proef:** `node gereedschap/plan-carrousel.cjs pakketten/2026-11-06-W02-ontwerpstudio 2026-11-06 19:00 W02 --proef` slaagt zonder STOP (5 platen, 554 tekens, 9 hashtags, alt 357/212/235/208/213). `preview/raster-W02.jpg` toont het raster met batch 1 en W02.
+
+## Nog te doen
+
+1. K03 (ma 26 okt), W01 (wo 28 okt), T01 (vr 30 okt): na 19:00 `git pull`, `gedaan.json` controleren, "geplaatst" in het logboek met media-id.
+2. W02: "pakket OK W02" van Andries → inplannen vr 6 nov 19:00, OK-citaat in logboek en commit.
+3. A37-sjabloon (ma 2 nov) en Z01 (wo 4 nov) volgens `docs/opdracht-02.md`; K04 en T02 na OPDRACHT-ACTUEEL.
+4. §4: `docs/highlights.md` na batch 1; de vier omslagen zijn klaar.
