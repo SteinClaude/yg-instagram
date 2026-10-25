@@ -1,41 +1,47 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** zo 25 okt 2026, 18:55 — Eva
+**Bijgewerkt:** ma 26 okt 2026, 00:40 — Eva
 
 ## Stand
 
-- **Batch 1 staat volledig in de planning:** K02 vr 23 okt 19:00 (`f17231f`), K03 ma 26 okt (`d383968`), W01 wo 28 okt (`5a6a09f`), T01 vr 30 okt (`19445be`). Alle vier met een "pakket OK" van Andries in jouw sessie, geciteerd in je logboek en in de commit-boodschap. Precies zo hoort het; goed werk.
-- **T01 krijgt één tekstcorrectie vóór plaatsing** (zie hieronder). Niet jouw fout: de kop is pakkend, maar hij klopt niet en hij is te specifiek. **Het akkoord is er: Andries via Kantoor, zo 25 okt 2026 13:37: "T01 akkoord".** Je kunt dus direct aan de slag.
-- K02 is geplaatst op vr 23 okt 20:09 (media-id 18140360860622623, staat in `gedaan.json`); zet dat als "geplaatst" in je logboek.
+- **Batch 1 staat volledig in de planning en T01 is gecorrigeerd** (`1255824`). K02 geplaatst vr 23 okt (media-id in `gedaan.json`); K03 ma 26 okt 19:00, W01 wo 28 okt, T01 vr 30 okt lopen via de automaat. **W02 ingepland** vr 6 nov 19:00 (`bf1be32`, pakket OK van Andries 25 okt). Goed werk.
+- **Je vraag over de site is beantwoord: yg-digital.nl/yg-launch toont sinds zo 25 okt ± 21:00 "€ 49 per maand, exclusief btw"** (Eva heeft het in JouwWeb gezet; controleer het zelf met WebFetch op de dag van plaatsing, zoals je opdracht zegt). Z01 kan dus ingepland worden — maar op een nieuwe datum, zie hieronder.
+- **Nieuwe werkwijze (C20, Andries 25 okt 23:13 "akkoord"):** Eva start je binnenkort als deelagent in haar eigen cloudsessie, in een eigen kloon; Andries opent dan geen sessie meer op zijn pc. Je regels blijven gelijk. Vragen zet je onder "Vragen" in `docs/oplevering-manon.md` als *vraag · mijn aanname · wat ik ondertussen doe · blokkeert ja/nee* en je werkt door op je aanname; een "pakket OK" blijft een harde stop.
 
-## Nu: T01-correctie (akkoord gegeven, zie Stand)
+## Nu, in deze volgorde
 
-**Waarom.** De kop "1.400 volgers op Instagram. Nul resultaten als iemand 'kapper Alkmaar' googelt." heeft twee problemen: (1) "nul resultaten" is aantoonbaar onwaar — die zoekopdracht geeft een pagina vol resultaten, en een feit-post die niet klopt, ondermijnt de pijler "feit"; (2) de combinatie van een volgersaantal, een vak en een stad is zo specifiek dat hij op een echt bedrijf kan slaan — regel: geen echte bedrijven, ook niet herkenbaar omschreven.
+### 1. Z01 inplannen op ma 2 nov 19:00 (OK is er; datum gewijzigd)
 
-**Nieuwe kop (akkoord Andries, 25 okt):** "1.400 volgers op Instagram. Niet te vinden voor wie 'schilder Alkmaar' googelt." — waar (het gaat om "niet te vinden", niet om "nul resultaten"), geen herkenbaar bedrijf, en het is die week de vakmanweek (K03 is het fictieve schildersbedrijf).
+Andries in jouw sessie, 25 okt: "pakket OK voor Z01 (woensdag 4 november 19:00)". **Andries via Eva (chat), 25 okt 23:13, akkoord H: Z01 verhuist naar ma 2 nov 19:00 en A37 naar wo 4 nov 19:00** (zodat zondag 1 nov geen crunch is; de weggeefactie-post zegt "begin november", dat blijft waar). Plan Z01 dus in voor **2026-11-02 19:00** met `gereedschap/plan-carrousel.cjs`; citeer beide regels (het OK en de datumwijziging) in de commit-boodschap en in je logboek. De mapnaam `2026-11-04-Z01-zo-werkt-het` mag blijven (hernoemen alleen als je gereedschap dat vereist; dan ook de preview). Vóór het inplannen: WebFetch op `https://www.yg-digital.nl/yg-launch` en controleer dat "€ 49" en "exclusief btw" erin staan; zo niet: niet inplannen, melden.
 
-**Wat je doet** (de nieuwe kop is precies de tekst hierboven):
-1. `pakketten/2026-10-30-T01-feit/bron/maak-t01.cjs`: de koptekst op plaat 1 vervangen; plaat 1 opnieuw renderen; `overzicht.jpg`, `telefooncontrole.jpg` en `preview/raster-T01.jpg` opnieuw maken. Plaat 2 blijft.
-2. `bijschrift.txt`: regel 1 vervangen; hashtag `#kapper` → `#schilder`. De rest blijft.
-3. `beeldbeschrijvingen.txt`: alt-tekst 1 aanpassen aan de nieuwe plaat.
-4. `beeld/berichten/nl/T01-1.jpg` overschrijven met de nieuwe plaat 1 (niets verwijderen; `plan-carrousel.cjs` weigert een bestaande code, dus niet opnieuw inplannen).
-5. In `planning.json`, item `2026-10-30-bericht-t01`: velden `titel`, `tekst` en `alt[0]` aanpassen (datum, tijd en beeld blijven). Controleer dat het bestand geldige JSON is (`node -e "JSON.parse(require('fs').readFileSync('planning.json','utf8'))"`).
-6. Commit met het citaat "Andries via Kantoor, 25 okt 13:37: T01 akkoord" in de boodschap, push, regel in `docs/oplevering-manon.md`. Meld "T01 gecorrigeerd".
+### 2. Je gereedschap draagbaar maken (voorwaarde om in de cloud te werken) — branch `cloud-gereedschap`
 
-## Daarna, in deze volgorde (batch 2 — `docs/opdracht-02.md` is definitief)
+Uit de technische toets van 25 okt (`crew/toets-aansturing/1-techniek.md` in het Project; jij hoeft dat niet te lezen): in de cloud bestaat `C:/Users/gijsm/yg-luxury/node_modules/...` niet en is er geen Chrome-kanaal. Jouw K03 is daar al volledig opnieuw gemaakt (17 s) ná deze aanpassingen — het werkt dus, het moet alleen in de repo:
+1. `sharp`, `@resvg/resvg-js`, `opentype.js` als dependencies in `package.json` (naast `playwright-core`); `npm install` op de pc één keer.
+2. De harde `require('C:/Users/gijsm/…')`-regels in `gereedschap/*.cjs`, `platen/maak.cjs`, `platen/extra.cjs` en `pakketten/*/bron/*.cjs` vervangen door pakketnamen, met terugval voor de pc als je dat nodig vindt: `let sharp; try { sharp = require('sharp'); } catch { sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp'); }` — liever helemaal zonder pc-pad als `npm install` het oplost.
+3. Fontpaden (`file:///C:/Users/gijsm/yg-instagram/platen/fonts/`) relatief maken (`path.join(__dirname, …)`), en `chromium.launch({ channel: 'chrome' })` vervangen door een start zonder `channel` (met terugval naar `channel: 'chrome'` als die er is).
+4. Bewijs op de branch: `node gereedschap/raster-preview.cjs K03 pakketten/2026-10-26-K03-schilder/plaat-1.jpg` maakt `preview/raster-K03.jpg` opnieuw; `node gereedschap/plan-carrousel.cjs pakketten/2026-10-26-K03-schilder 2026-12-01 19:00 K99 --proef` meldt "(proef: niets geschreven)"; `planning.json` ongewijzigd (`git diff main -- planning.json` leeg).
+5. **Openbare repo:** geen nieuwe paden met `gijsm`, geen namen, geen bedragen. Push de branch, meld "cloud-gereedschap klaar"; Eva kijkt en zegt wanneer je naar `main` mag mergen.
+Wat in de cloud níet kan en zo blijft: echte schermafdrukken van de live site (`studio-opname.cjs`), Pexels-foto's en het Windows-lettertype Bodoni MT — dat werk doe je op de pc of via Eva.
 
-1. **W02** ontwerpstudio (vr 6 nov 19:00): kan nu. Maken, pushen, "pakket W02 klaar" melden, wachten op OK.
-2. **A37-sjabloon** bekendmaking weggeefactie (ma 2 nov 19:00): platen met een plaatshouder-bedrijf en een script dat naam + waarom-regels uit één tekstbestand haalt. Niet inplannen; het definitieve pakket volgt na de keuze van Andries (naam komt van Eva).
-3. **Z01** zo werkt het (wo 4 nov 19:00): prijs is bevestigd — € 750 excl. btw eenmalig, beheer € 49/mnd excl. btw (€ 59,29 incl.), hosting rechtstreeks bij JouwWeb. Maken volgens `docs/opdracht-02.md` §3. Vóór het inplannen en op de dag van plaatsing: controleer dat `yg-digital.nl/yg-launch` dezelfde prijs toont; zo niet, niet plaatsen en melden.
-4. K04 en T02: wachten op `OPDRACHT-ACTUEEL` na ma 26 okt.
+### 3. A37 — bekendmaking, nu wo 4 nov 19:00
 
-- Na vr 23, ma 26 en wo 28 okt 19:00: `gedaan.json` controleren, "geplaatst" melden in je logboek met media-id. Plaatst de automaat niet binnen 6 uur: meld het; Eva stoot hem aan.
-- `docs/highlights.md` blijft open tot batch 1 af is.
+Het sjabloon staat (`2026-11-02-A37-bekendmaking`, `bron/gekozen.txt` + `maak-a37.cjs`). Nieuwe plaatsingsdatum **wo 4 nov 19:00**; de map mag blijven heten zoals hij heet of hernoemd worden naar `2026-11-04-…` — jouw keuze, zeg het in je logboek. Niet inplannen tot de naam en de "waarom"-regels van de gekozene hier als citaat staan (na zo 1 nov) en Andries "pakket OK A37" heeft gegeven.
+
+### 4. K04 en T02 in één keer
+
+Zodra de sector van de week hier staat (na Daans levering 02, ma 26 okt 04:47 — Eva zet hem erbij): maak **K04 en T02 direct achter elkaar**, push, meld "pakketten K04 en T02 klaar". Andries keurt ze in één bericht met beide codes; tot die tijd niet inplannen. Data: K04 ma 9 nov 19:00, T02 vr 13 nov 19:00 (zie `docs/opdracht-02.md`).
+
+### Doorlopend
+
+- Na ma 26 en wo 28 okt 19:00: `gedaan.json` controleren, "geplaatst" melden in je logboek met media-id. Plaatst de automaat niet binnen 6 uur: meld het; Eva stoot hem aan.
+- Sluit elke sessie af met één regel in `docs/oplevering-manon.md`: "gebruik bij afsluiten: `/usage` sessie x % · week y %" (als `/usage` bestaat in je sessie; anders "n.v.t.").
+- `docs/highlights.md` blijft open tot batch 1 geplaatst is.
 
 ## Niet doen
 
-Reels of video · nieuwe weggeefacties · iets met Runway · een pakket inplannen of wijzigen zonder OK voor die code.
+Reels of video · nieuwe weggeefacties · iets met Runway · een pakket inplannen of wijzigen zonder OK voor die code · pc-paden of namen in deze openbare repo.
 
 ## Vragen voor Eva of Andries
 
-Bovenaan je antwoord in de chat en in `docs/oplevering-manon.md`.
+Onder "Vragen" in `docs/oplevering-manon.md` (vraag · aanname · wat je ondertussen doet · blokkeert ja/nee) én bovenaan je verslag. Andries plakt niets meer over; Eva antwoordt hier als citaat.
