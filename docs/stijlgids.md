@@ -68,6 +68,20 @@ Plaat 1 is de tegel in het raster en moet op ± 130 pixels werken.
 - Kop groter (minimaal 84 px op plaat 1) en de tekst in het **midden of onderste derde**, zodat de plaat van boven naar onder gevuld is.
 - Embleem bovenin en voetregel blijven.
 
+**Vaste set gouden elementen** (Andries 26 okt: het Nacht-voorbeeld "wel goed"; uitgebreid op zijn verzoek). Kies het element dat bij de gedachte hoort; gebruik hetzelfde element niet twee keer achter elkaar in het raster.
+
+| Element | Past bij | Voorbeeld |
+|---|---|---|
+| zoekbalk met resultaatregels | gevonden worden op Google | `voorbeeld-nacht-feit.jpg` |
+| kaartspeld met kringen | Google Maps, de buurt | `nacht-kaart.jpg` |
+| klok | altijd open, afspraken buiten openingstijd | `nacht-klok.jpg` |
+| telefoon met afspraakbalk | mobiel, het kleine scherm | `nacht-telefoon.jpg` |
+| sterrenrij | reviews | `nacht-sterren.jpg` |
+| groot aanhalingsteken | werkwijze, een belofte in één zin | `nacht-citaat.jpg` |
+| groot stapnummer | zo werkt het (Z), stap 1 tot 4 | `voorbeeld-nacht-stap.jpg`, `nacht-stap-3.jpg` |
+
+Lijntekeningen in dunne gouden lijn zoals het embleem (± 2,6 px op 1080), één gevuld accent (de stip in de speld, de afspraakbalk, de volle sterren). Geen iconen uit een pakket, geen kleur buiten het goud. Getekend in `gereedschap/stijlproef-nacht.cjs`; voor een pakket kopieer je de tekenfunctie naar de `bron/` van dat pakket.
+
 ## 7. Veilige zone
 
 - Instagram toont het raster in tegels van 3:4; onze platen zijn 4:5. Links en rechts valt ± 34 px weg. **Tekst, label en markeringen minstens 72 px van de zijkant** (zo is het nu, zo blijft het). Een venster of foto mag wel aflopen.
@@ -97,5 +111,6 @@ Plaat 1 is de tegel in het raster en moet op ± 130 pixels werken.
 - `voorbeeld-nacht-feit.jpg` — een feitplaat met een gouden lijntekening.
 - `voorbeeld-nacht-stap.jpg` — een zo-werkt-hetplaat met groot stapnummer.
 - `raster-nu-en-straks.jpg` — één week in het raster zoals het nu is, en dezelfde week volgens deze gids.
+- `nacht-overzicht.jpg` — alle acht Nacht-voorbeelden naast elkaar (de twee eerste en zes nieuwe: kaartspeld, klok, telefoon, sterren, citaat, stap 3).
 
 De voorbeelden zijn proeven met de bestaande bouwstenen (`platen/maak.cjs`, `gereedschap/browser.cjs`), gemaakt met `gereedschap/stijlproef.cjs`. Het zijn geen pakketten en ze worden niet ingepland.
