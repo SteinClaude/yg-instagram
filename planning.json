@@ -672,6 +672,50 @@
       ],
       "inhaaluren": 18,
       "eenmalig": true
+    },
+    {
+      "id": "2026-11-09-bericht-k04",
+      "datum": "2026-11-09",
+      "tijd": "19:00",
+      "soort": "bericht",
+      "taal": "nl",
+      "beeld": [
+        "berichten/nl/K04-1.jpg",
+        "berichten/nl/K04-2.jpg",
+        "berichten/nl/K04-3.jpg",
+        "berichten/nl/K04-4.jpg",
+        "berichten/nl/K04-5.jpg"
+      ],
+      "titel": "Carrousel K04: Uw salon is rustig en verzorgd. Uw website ook?",
+      "tekst": "Uw salon is rustig en verzorgd. Uw website ook?\n\nVoor de fictieve schoonheidssalon Salon Lindaveer in Alkmaar laten we zien wat een klant op een salonwebsite meteen wil zien. Een knop om een afspraak te maken, bovenaan. Reviews in beeld, niet weggestopt. En het telefoonnummer als tekst, zodat één tik genoeg is om te bellen.\n\nSwipe door de vergelijking en bekijk de mobiele versie. De salon, de reviews en het nummer zijn verzonnen voor dit voorbeeld.\n\nHoe zou uw salon eruitzien? Probeer onze gratis ontwerpstudio via de link in onze bio.\n\n#alkmaar #ondernemersalkmaar #webdesign #websitelatenmaken #ygdigital #schoonheidssalon #nagelstudio #beautysalon #salon",
+      "alt": [
+        "Uw salon is rustig en verzorgd. Uw website ook? Websiteconcept voor de fictieve schoonheidssalon Salon Lindaveer in Alkmaar. Links een kop, een knop Afspraak maken, het telefoonnummer als tekst en een korte voorbeeldreview met vijf sterren; rechts een foto van een lichte behandelkamer met roze luiken, een lamp en een behandeltafel. Op een champagnekleurige achtergrond met een doorschijnend rond YG-medaillon.",
+        "Dezelfde salon. Waar maak ik een afspraak? Een minder overzichtelijk websiteconcept voor Salon Lindaveer. Drie markeringen tonen een menu zonder afspraakknop, een tekstblok zonder reviews en een roze sierbanner waarin het telefoonnummer als plaatje staat, dus niet aan te tikken.",
+        "Afspraak, reviews en nummer: meteen te zien. Dezelfde salon, dezelfde foto en tekst in een rustiger ontwerp. Drie markeringen tonen de knop Afspraak maken bovenaan, twee voorbeeldreviews met vijf sterren direct onder de opening en het telefoonnummer als tekst.",
+        "Ook op uw telefoon klopt het. Twee telefoonvoorbeelden tonen de salonwebsite. Op de rechter staan de reviews onder elkaar. Onderaan blijft een balk met de knop Afspraak en het telefoonnummer in beeld; die balk wordt eronder ook vergroot getoond.",
+        "Hoe zou uw salon eruitzien? Een telefoon toont het mobiele conceptontwerp van Salon Lindaveer met de foto van de behandelkamer, een kop en twee knoppen. De tekst nodigt uit de gratis ontwerpstudio te proberen via de link in de bio."
+      ],
+      "inhaaluren": 18,
+      "eenmalig": true
+    },
+    {
+      "id": "2026-11-11-bericht-t02",
+      "datum": "2026-11-11",
+      "tijd": "19:00",
+      "soort": "bericht",
+      "taal": "nl",
+      "beeld": [
+        "berichten/nl/T02-1.jpg",
+        "berichten/nl/T02-2.jpg"
+      ],
+      "titel": "Carrousel T02: Zoek op ‘nagelstudio’. Op Google krijgt een salon zonder web",
+      "tekst": "Zoek op ‘nagelstudio’. Op Google krijgt een salon zonder website geen knop ‘Website’.\n\nWie een nieuwe salon zoekt, wil meer zien dan een adres op de kaart: welke behandelingen u doet, hoe uw werk eruitziet en wanneer er plek is. Die knop ‘Website’ verschijnt alleen als u een website heeft om naartoe te sturen. Zonder site eindigt de zoektocht bij het adres, of bij de salon die er wél een heeft.\n\nHoe staat uw salon ervoor? Bekijk uw eerste ontwerp via de link in onze bio.\n\n#alkmaar #ondernemersalkmaar #webdesign #websitelatenmaken #ygdigital #vindbaarheid #google #nagelstudio #schoonheidssalon",
+      "alt": [
+        "Een feit Donkere plaat met gouden kaderlijn en het YG-poortembleem. In het midden in ivoren letters: Zoek op ‘nagelstudio’. Op Google krijgt een salon zonder website geen knop ‘Website’. Onderaan de voetregel yg-digital.nl.",
+        "De oplossing Donkere plaat in dezelfde stijl. In ivoren letters: Met een eigen website tikt een klant door naar uw behandelingen, uw werk en een knop om te boeken. Daaronder: Bekijk uw eerste ontwerp via de link in onze bio."
+      ],
+      "inhaaluren": 18,
+      "eenmalig": true
     }
   ]
 }
