@@ -21,24 +21,21 @@ Een ondernemer die een DM van Gijs krijgt, ziet eerst het raster, op telefoonfor
 | Familie | Grond | Voor | Herken je aan |
 |---|---|---|---|
 | **Champagne** | ivoor met medaillon | conceptprojecten (K), eigen werk (W) | foto of scherm als groot beeld |
-| **Nacht** | antraciet met gouden gloed | feiten (T), zo werkt het (Z) | één groot gouden element |
-| **Deur** | lichte deurfoto achter ivoren waas, rond zegel | alleen de weggeefactie en de bekendmaking (A) | zegel midden boven |
+| **Nacht** | antraciet met gouden gloed | feiten (T), zo werkt het (Z), werkwijze in één zin (nieuwe pijler, code door Eva te kiezen) | één groot gouden element |
+| **Deur** | lichte deurfoto achter ivoren waas, rond zegel | alleen de weggeefactie en de bekendmaking (A); telt in het ritme als licht | zegel midden boven |
 
 Geen nieuwe families. Een pakket dat nergens past, krijgt de familie die het dichtst bij zijn taak ligt.
 
-## 3. Ritme in het raster
+## 3. Ritme in het raster: om en om
 
-Eén week = drie berichten = één rij in het raster.
+**Andries, 26 okt:** "deze style gecombineerd met de champagne style die er al op de pagina staat en zo om en om met deze style posten."
 
-| Dag | Familie | Codes |
-|---|---|---|
-| maandag | Champagne | K (concept) |
-| woensdag | **Nacht** | T (feit) of Z (zo werkt het) |
-| vrijdag | Champagne | W (eigen werk) |
+Elk bericht wisselt van familie: **licht, donker, licht, donker**, ongeacht de dag. Licht = Champagne of Deur, donker = Nacht. Omdat het raster drie kolommen heeft, ontstaat vanzelf een **dambord**: in elke rij en elke kolom wisselen licht en donker. Zie `preview/stijlgids/raster-om-en-om.jpg`.
 
-Zo staat de donkere tegel elke week op dezelfde plek en ontstaat in het raster een rustige, herkenbare lijn. De vastgezette post (A36, later A37) staat altijd linksboven en schuift het patroon één plek op; dat is goed zo, het patroon blijft regelmatig.
-
-Wijkt een week af (een bekendmaking, een uitgestelde post): liever een week overslaan dan twee donkere tegels naast elkaar.
+- De volgorde van de berichten bepaalt het patroon, niet de weekdag. Vóór je een pakket maakt: kijk welke familie het vorige geplaatste of ingeplande bericht had, en kies de andere.
+- Daardoor is ongeveer de helft van de berichten Nacht. De donkere plekken vullen we met T (feit), Z (zo werkt het) en een nieuwe pijler *werkwijze*: één belofte in één zin met een groot aanhalingsteken (`nacht-citaat.jpg`).
+- De vastgezette post (A36, later A37) staat altijd linksboven. Hij telt mee als licht; het eerste bericht erna is donker.
+- Moet een bericht verschuiven (een uitgestelde post, een bekendmaking): verwissel liever twee berichten van plaats dan twee keer dezelfde familie achter elkaar te zetten.
 
 ## 4. Plaat 1: de tegel
 
@@ -95,7 +92,7 @@ Lijntekeningen in dunne gouden lijn zoals het embleem (± 2,6 px op 1080), één
 
 ## 9. Controle per pakket (aanvulling op het pakketformaat)
 
-1. Past de familie bij de dag (§3)? Staat er geen donkere tegel naast een andere donkere tegel in `preview/raster-<code>.jpg`?
+1. Is de familie de andere dan die van het vorige bericht (§3, om en om)? Laat `preview/raster-<code>.jpg` het dambord zien, zonder twee lichte of twee donkere tegels naast elkaar?
 2. Plaat 1: kop ≤ 5 woorden, ≥ 84 px, één groot beeld, opbouw anders dan het vorige conceptproject?
 3. Medaillon alleen op eerste en laatste plaat, licht?
 4. Nacht: één groot gouden element?
@@ -111,6 +108,7 @@ Lijntekeningen in dunne gouden lijn zoals het embleem (± 2,6 px op 1080), één
 - `voorbeeld-nacht-feit.jpg` — een feitplaat met een gouden lijntekening.
 - `voorbeeld-nacht-stap.jpg` — een zo-werkt-hetplaat met groot stapnummer.
 - `raster-nu-en-straks.jpg` — één week in het raster zoals het nu is, en dezelfde week volgens deze gids.
+- `raster-om-en-om.jpg` — het profiel met champagne en Nacht om en om: het dambord (gemaakt met `gereedschap/stijlproef-raster.cjs`).
 - `nacht-overzicht.jpg` — alle acht Nacht-voorbeelden naast elkaar (de twee eerste en zes nieuwe: kaartspeld, klok, telefoon, sterren, citaat, stap 3).
 
 De voorbeelden zijn proeven met de bestaande bouwstenen (`platen/maak.cjs`, `gereedschap/browser.cjs`), gemaakt met `gereedschap/stijlproef.cjs`. Het zijn geen pakketten en ze worden niet ingepland.
