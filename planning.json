@@ -626,6 +626,29 @@
       "eenmalig": true
     },
     {
+      "id": "2026-11-02-bericht-z01",
+      "datum": "2026-11-02",
+      "tijd": "19:00",
+      "soort": "bericht",
+      "taal": "nl",
+      "beeld": [
+        "berichten/nl/Z01-1.jpg",
+        "berichten/nl/Z01-2.jpg",
+        "berichten/nl/Z01-3.jpg",
+        "berichten/nl/Z01-4.jpg"
+      ],
+      "titel": "Carrousel Z01: Zo werkt het.",
+      "tekst": "Zo werkt het.\n\n1. Uw eerste ontwerp in vijf minuten in de ontwerpstudio, of eerst een gesprek.\n2. Eén gesprek over het doel van uw site, dan een offerte met vaste prijs.\n3. Ontwerp en bouw € 750 excl. btw (€ 907,50 incl.). Beheer optioneel € 49 per maand excl. btw (€ 59,29 incl.); hosting betaalt u rechtstreeks bij JouwWeb.\n4. U kijkt mee, twee feedbackrondes, dan live.\n\nBekijk uw eerste ontwerp via de link in onze bio.\n\n#alkmaar #ondernemersalkmaar #webdesign #websitelatenmaken #ygdigital #watkosteenwebsite #vasteprijs #websitekosten #zowerkthet",
+      "alt": [
+        "Zo werkt het, stap 1: het ontwerp Donkere plaat met gouden kaderlijn en het YG-poortembleem. In ivoren letters: Het ontwerp. Daaronder: Zie in vijf minuten uw eerste ontwerp in de ontwerpstudio, of begin met een gesprek.",
+        "Zo werkt het, stap 2: gesprek en offerte Donkere plaat in dezelfde stijl. In ivoren letters: Gesprek en offerte. Daaronder: Eén gesprek over het doel van uw site. Daarna een offerte met een vaste prijs.",
+        "Zo werkt het, stap 3: de prijs Donkere plaat in dezelfde stijl. In gouden cijfers: € 750, eenmalig voor ontwerp en bouw, exclusief btw (€ 907,50 inclusief). Daaronder twee punten: beheer optioneel, € 49 per maand exclusief btw (€ 59,29 inclusief), voor technisch onderhoud en updates, back-ups en tot dertig minuten kleine tekst- en fotowijzigingen per maand; hosting regelt en betaalt u rechtstreeks bij JouwWeb, zonder opslag.",
+        "Zo werkt het, stap 4: bouw en live Donkere plaat in dezelfde stijl. In ivoren letters: Bouw en live. Daaronder: U kijkt mee, met twee gebundelde feedbackrondes. Daarna gaat uw site live. Kiest u beheer, dan onderhouden wij hem vanaf de oplevering. Bekijk uw eerste ontwerp via de link in onze bio."
+      ],
+      "inhaaluren": 18,
+      "eenmalig": true
+    },
+    {
       "id": "2026-11-06-bericht-w02",
       "datum": "2026-11-06",
       "tijd": "19:00",
