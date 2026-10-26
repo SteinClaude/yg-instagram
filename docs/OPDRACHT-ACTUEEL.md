@@ -1,10 +1,33 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 26 okt 2026, 17:50 — Eva
+**Bijgewerkt:** ma 26 okt 2026, 23:30 — Eva
 
-## Nieuw van Andries
+## Bij "ga verder": doe dit (Eva, ma 26 okt 23:30)
 
-**Andries via Kantoor, ma 26 okt 2026 17:45: "Ga verder".** Z01 staat al ingepland (`e28765c`). Ga verder met §4: K04 en T02 (beauty) maken, pushen, "pakketten K04 en T02 klaar" melden. Niet inplannen zonder "pakket OK" per code.
+Andries via chat, ma 26 okt 2026 23:10: *"zet alles klaar … zodat ik ze ga verder kan geven en ze zelf verder kunnen gaan."*
+
+**Waar je staat:** Z01, W02, K04 en T02 zijn ingepland op zijn OK's (`7605b6b`). K03 is geplaatst (`58a2f26`). De bovenste regel van je logboek (KAN NIET VERDER over K04/T02) klopt niet meer; vervang hem.
+
+**Besluiten van Eva over je open punten** (uitvoeringsvragen; Andries kan ze omgooien):
+- De code **G** voor de pijler werkwijze: akkoord.
+- Je bouwt batch 3 al in de **nieuwe stijlgids**, en daarmee doe je een aanname. Stijlgids v1 en het contentvoorstel batch 3 wachten nog op Andries (Kantoor). Keurt hij de stijlgids af, dan zet je dezelfde pakketten om naar de huidige opmaak. Je volgt dus zijn oordeel, je werk is niet weggegooid.
+- **Volgorde batch 3:** zoals je voorstel. Sector van vr 18 nov blijft **vakman** tot Daans levering van ma 2 nov iets anders zegt.
+
+**Taken, van boven naar beneden:**
+1. **G01** "Eerst zien. Dan beslissen." (donker, ma 16 nov 19:00): pakket maken volgens het vaste formaat, plus de proef met `plan-carrousel.cjs … --proef`. Pushen en `KLAAR: pakket G01 klaar · <commit>`.
+2. **K05** installateur/loodgieter (licht, wo 18 nov 19:00).
+   - Fictieve naam: zoek eerst zelf of er een bedrijf met die naam bestaat, ook buiten Alkmaar.
+   - Geen bestaand telefoonnummer.
+   - Pushen, `KLAAR`.
+3. **T03** "Gevonden op de kaart. En dan?" (donker, vr 20 nov 19:00).
+   - Een constatering zonder cijfer, met een bron in je logboek.
+   - Pushen, `KLAAR`.
+4. **Raster bijwerken:** `preview/raster-*.jpg` met de lopende planning plus G01, K05 en T03 erachter, zodat Andries het ritme om en om in één beeld ziet. Pushen.
+5. **Stoppen.** Bovenaan je logboek: `KAN NIET VERDER: G01, K05 en T03 klaar; stijlgids, contentvoorstel batch 3 en de drie pakketten wachten op Andries · nodig: akkoord stijlgids + "pakket OK G01/K05/T03", via Eva`.
+
+**Niet inplannen** zonder "pakket OK <code>" (C15). W03, W04 en A37 maak je nog niet: W03 en A37 hangen af van de gekozene (zo 1 nov), W04 van een studio-opname op de pc.
+
+**Doorlopend:** na wo 28 okt 19:00 (W01) en vr 30 okt 19:00 (T01) `gedaan.json` controleren en "geplaatst" met media-id in je logboek zetten. Plaatst de automaat niet binnen 6 uur, meld het.
 
 ## Stand
 
