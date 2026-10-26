@@ -19,8 +19,8 @@
 //
 //   node platen/profielfoto.cjs
 const fs = require('fs'), path = require('path');
-const { Resvg } = require('C:/Users/gijsm/yg-luxury/brand/node_modules/@resvg/resvg-js');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const { Resvg } = require('@resvg/resvg-js');
+const sharp = require('sharp');
 const M = require('./maak.cjs');
 
 const UIT = path.join(__dirname, 'uit'), WEB = path.join(__dirname, 'web');

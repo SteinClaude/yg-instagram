@@ -9,7 +9,7 @@
 const fs = require('fs'), path = require('path');
 
 const teksten = require(path.join(__dirname, '..', 'teksten', 'berichten-nl.cjs'));
-const YGRAM = "C:/Users/gijsm/OneDrive/Desktop/YG-GRAM";
+const YGRAM = path.join(require('os').homedir(), 'OneDrive', 'Desktop', 'YG-GRAM'); // bureaublad van de pc
 const MAP3 = path.join(YGRAM, '3 - Standaardtekst');
 const EIGEN = path.join(MAP3, 'Eigen tekst bij de uitgewerkte berichten B01 - B12', 'Nederlands');
 const LIJN = '-'.repeat(64);

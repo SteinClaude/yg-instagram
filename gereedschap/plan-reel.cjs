@@ -17,7 +17,7 @@
 // Alleen gebruiken na akkoord van Gijs op deze reel. Daarna committen en pushen; de automaat plaatst hem.
 const fs = require('fs'), path = require('path'), crypto = require('crypto');
 const { execFileSync } = require('child_process');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const sharp = require('sharp');
 
 const WORTEL = path.join(__dirname, '..');
 const stop = m => { console.error('STOP: ' + m); process.exit(1); };

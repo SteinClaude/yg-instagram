@@ -16,7 +16,7 @@
 const fs = require('fs'), path = require('path');
 const M = require('./maak.cjs');
 const profiel = require('./profielfoto.cjs');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const sharp = require('sharp');
 
 const WORTEL = path.join(__dirname, '..');
 const UIT = path.join(WORTEL, 'beeld', 'omslagen-poort');

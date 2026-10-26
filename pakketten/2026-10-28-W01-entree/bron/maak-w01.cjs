@@ -4,14 +4,15 @@
 //   node pakketten/2026-10-28-W01-entree/bron/opname-w01.cjs
 //   node pakketten/2026-10-28-W01-entree/bron/maak-w01.cjs
 'use strict';
-const fs = require('fs'), path = require('path');
-const { chromium } = require('C:/Users/gijsm/yg-instagram/node_modules/playwright-core');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const fs = require('fs'), path = require('path'), { pathToFileURL } = require('url');
+const { start } = require('../../../gereedschap/browser.cjs');
+const sharp = require('sharp');
 
 const BRON = __dirname.split(path.sep).join('/') + '/';
 const UIT = BRON.replace(/bron\/$/, '');
 const R = BRON + 'render/';
-const FONT = 'file:///C:/Users/gijsm/yg-instagram/platen/fonts/';
+const FONT = pathToFileURL(path.join(__dirname, '..', '..', '..', 'platen', 'fonts')).href + '/'; // platen/fonts in deze repo
+const url = p => { const [bestand, hash] = p.split('#'); return pathToFileURL(bestand).href + (hash ? '#' + hash : ''); }; // bestand -> file-adres, ook met #deel
 const M = JSON.parse(fs.readFileSync(R + 'maten.json', 'utf8'));
 
 // ------------------------------------------------------------------ platen (zelfde CSS als K02/K03)
@@ -75,7 +76,7 @@ function plaat(inhoud, titel) {
 const KOPPEN = ['De entree van uw bedrijf. Dit is de onze.', 'Wat een bezoeker meteen ziet.', 'Ook op uw telefoon klopt het.', 'Hoe zou uw bedrijf eruitzien?'];
 
 (async () => {
-  const b = await chromium.launch({ channel: 'chrome', headless: true });
+  const b = await start();
 
   const hero = { src: 'render/laptop-hero.png', w: 1440, h: 900 };
   const onder = { src: 'render/laptop-onder.png', w: M.onder.w, h: M.onder.h };
@@ -127,7 +128,7 @@ const KOPPEN = ['De entree van uw bedrijf. Dit is de onze.', 'Wat een bezoeker m
   for (const [i, inhoud] of platen.entries()) {
     const html = BRON + `plaat-${i + 1}.html`;
     fs.writeFileSync(html, plaat(inhoud, `Entree van yg-digital.nl — beeld ${i + 1} — YG Digital`), 'utf8');
-    await p.goto('file:///' + html, { waitUntil: 'load' });
+    await p.goto(url(html), { waitUntil: 'load' });
     await p.evaluate(() => document.fonts.ready);
     const png = await p.screenshot();
     await sharp(png).resize(1080, 1350, { kernel: 'lanczos3' }).jpeg({ quality: 92, mozjpeg: true }).toFile(UIT + `plaat-${i + 1}.jpg`);
@@ -151,7 +152,7 @@ const KOPPEN = ['De entree van uw bedrijf. Dit is de onze.', 'Wat een bezoeker m
   <div class="rij">${KOPPEN.map((k, i) => `<div class="k"><img src="../plaat-${i + 1}.jpg"><div class="n">BEELD ${i + 1}</div><div class="t">${k}</div></div>`).join('')}</div></div></body></html>`;
   fs.writeFileSync(BRON + 'overzicht.html', ov, 'utf8');
   const po = await b.newPage({ viewport: { width: 2000, height: 800 }, deviceScaleFactor: 1 });
-  await po.goto('file:///' + BRON + 'overzicht.html', { waitUntil: 'load' });
+  await po.goto(url(BRON + 'overzicht.html'), { waitUntil: 'load' });
   await po.evaluate(() => document.fonts.ready);
   const vak = await po.evaluate(() => { const r = document.querySelector('.w').getBoundingClientRect(); return { width: Math.ceil(r.width), height: Math.ceil(r.height) }; });
   await po.setViewportSize(vak);
@@ -169,7 +170,7 @@ const KOPPEN = ['De entree van uw bedrijf. Dit is de onze.', 'Wat een bezoeker m
   <div class="rij">${KOPPEN.map((k, i) => `<div class="k"><img src="../plaat-${i + 1}.jpg"><div class="n">BEELD ${i + 1}</div></div>`).join('')}</div></div></body></html>`;
   fs.writeFileSync(BRON + 'telefooncontrole.html', tc, 'utf8');
   const pt = await b.newPage({ viewport: { width: 1800, height: 600 }, deviceScaleFactor: 2 });
-  await pt.goto('file:///' + BRON + 'telefooncontrole.html', { waitUntil: 'load' });
+  await pt.goto(url(BRON + 'telefooncontrole.html'), { waitUntil: 'load' });
   await pt.evaluate(() => document.fonts.ready);
   const vak2 = await pt.evaluate(() => { const r = document.querySelector('.w').getBoundingClientRect(); return { width: Math.ceil(r.width), height: Math.ceil(r.height) }; });
   await pt.setViewportSize(vak2);

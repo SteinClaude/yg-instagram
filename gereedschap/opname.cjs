@@ -25,7 +25,7 @@
 // in platen/bron/opnamen/<naam>.mp4. De montage doet gereedschap/verhaal-video.cjs.
 const fs = require('fs'), path = require('path');
 const { execFileSync } = require('child_process');
-const { chromium } = require('playwright-core');
+const { start } = require('./browser.cjs');
 
 const W = 360, H = 640, SCHAAL = 3, FPS = 24;
 const SITE = 'https://yg-digital.nl';
@@ -34,7 +34,7 @@ const WERK = path.join(WORTEL, 'platen', 'uit', 'opnamen');
 const UIT = path.join(WORTEL, 'platen', 'bron', 'opnamen');
 
 async function open(args = []) {
-  const browser = await chromium.launch({ channel: 'chrome', headless: true, args });
+  const browser = await start({ args });
   const ctx = await browser.newContext({
     viewport: { width: W, height: H }, deviceScaleFactor: SCHAAL, isMobile: true, hasTouch: false, locale: 'nl-NL',
     userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1',

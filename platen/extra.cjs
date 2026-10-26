@@ -1,7 +1,7 @@
 // Profielfoto, omslagen voor highlights en sjablonen voor verhalen.
 // node instagram/extra.cjs      -> instagram/uit/profiel-*.png, omslag-*.png, verhaal-*.png
 const fs = require('fs'), path = require('path');
-const { Resvg } = require('C:/Users/gijsm/yg-luxury/brand/node_modules/@resvg/resvg-js');
+const { Resvg } = require('@resvg/resvg-js');
 const M = require('./maak.cjs');
 const UIT = path.join(__dirname, 'uit'); fs.mkdirSync(UIT, { recursive: true });
 

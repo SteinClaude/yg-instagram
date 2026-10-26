@@ -11,7 +11,7 @@
 //
 // Resultaat: platen/uit/schermfotos/<naam>.png (niet in git).
 const fs = require('fs'), path = require('path');
-const { chromium } = require('playwright-core');
+const { start } = require('./browser.cjs');
 
 const W = 360, H = 640, SCHAAL = 3;
 const UIT = path.join(__dirname, '..', 'platen', 'uit', 'schermfotos');
@@ -23,7 +23,7 @@ async function main() {
   const vol = opties.includes('--vol');
   fs.mkdirSync(UIT, { recursive: true });
 
-  const browser = await chromium.launch({ channel: 'chrome', headless: true });
+  const browser = await start();
   const ctx = await browser.newContext({
     viewport: { width: W, height: H }, deviceScaleFactor: SCHAAL, isMobile: true, hasTouch: false, locale: 'nl-NL',
     userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1',

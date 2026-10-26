@@ -4,7 +4,7 @@
 //
 //   node gereedschap/icoon.cjs
 const fs = require('fs'), path = require('path');
-const { Resvg } = require('C:/Users/gijsm/yg-luxury/brand/node_modules/@resvg/resvg-js');
+const { Resvg } = require('@resvg/resvg-js');
 const M = require(path.join(__dirname, '..', 'platen', 'maak.cjs'));
 
 const GOUD = '#C9A45C', GOUDLICHT = '#E3C889', DONKER = '#141414';

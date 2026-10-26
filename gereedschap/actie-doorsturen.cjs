@@ -10,7 +10,7 @@ const fs = require('fs'), path = require('path');
 const w = require('../teksten/weggeefactie-nl.cjs');
 
 const WORTEL = path.join(__dirname, '..');
-const DOEL = 'C:/Users/gijsm/OneDrive/Desktop/Doorsturen';
+const DOEL = path.join(require('os').homedir(), 'OneDrive', 'Desktop', 'Doorsturen'); // bureaublad van de pc
 fs.mkdirSync(DOEL, { recursive: true });
 
 const BESTANDEN = [

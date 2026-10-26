@@ -6,10 +6,10 @@
 //   node pakketten/2026-10-23-K02-autoschade/bron/studio-opname.cjs
 // Uitvoer: beelden/studio-resultaat-lindevoort.png (1170 x 1908, het element .site in volledig scherm, 3x).
 const path = require('path');
-const { chromium } = require('C:/Users/gijsm/yg-instagram/node_modules/playwright-core');
+const { start } = require('../../../gereedschap/browser.cjs');
 const UIT = path.join(__dirname, 'beelden', 'studio-resultaat-lindevoort.png');
 (async () => {
-  const b = await chromium.launch({ channel: 'chrome', headless: true });
+  const b = await start();
   const ctx = await b.newContext({ viewport: { width: 390, height: 693 }, deviceScaleFactor: 3, isMobile: true, locale: 'nl-NL' });
   const p = await ctx.newPage();
   await p.goto('https://www.yg-digital.nl/eerste-ontwerp#b=anders&s=warm&n=Autoschade%20Lindevoort&a=%238a6d3b', { waitUntil: 'load' });

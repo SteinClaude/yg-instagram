@@ -13,7 +13,7 @@
 //   node platen/uitspraken.cjs U01    alleen die ene
 const fs = require('fs'), path = require('path');
 const { kaart, pad, breedte, L } = require('./maak.cjs');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const sharp = require('sharp');
 
 const WORTEL = path.join(__dirname, '..');
 const BEELD = path.join(WORTEL, 'beeld'), MINI = path.join(WORTEL, 'mini');

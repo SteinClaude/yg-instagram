@@ -11,9 +11,9 @@
 // na A36 gearchiveerd te zijn door Andries (opdracht 01a, E3); die staan hier gedempt in een tweede rij, voor het geval
 // dat nog niet gebeurd is. Instagram toont het raster sinds 2025 in tegels van 3:4; de platen (4:5) worden daarom
 // iets aan boven- en onderkant afgesneden, net als in de app.
-const fs = require('fs'), path = require('path');
-const { chromium } = require('playwright-core');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const fs = require('fs'), path = require('path'), { pathToFileURL } = require('url');
+const { start } = require('./browser.cjs');
+const sharp = require('sharp');
 
 const WORTEL = path.join(__dirname, '..');
 const args = process.argv.slice(2);
@@ -30,15 +30,17 @@ const tegels = [
   { pad: B('reels/R17.jpg'), label: 'R17 · reel (gearchiveerd?)', dim: true },
   { pad: B('berichten/nl/A35.jpg'), label: 'A35 · oude actie (gearchiveerd?)', dim: true },
 ];
-const FONT = 'file:///' + path.join(WORTEL, 'platen', 'fonts').replace(/\\/g, '/') + '/';
-const uri = p => 'file:///' + p.replace(/\\/g, '/');
+const FONT = pathToFileURL(path.join(WORTEL, 'platen', 'fonts')).href + '/';
+const uri = p => pathToFileURL(p).href;
+// profielfoto: de gerenderde png uit platen/uit (niet in git), anders de webversie die wel in de repo staat
+const PROFIEL = [path.join(WORTEL, 'platen', 'uit', 'profiel-entree.png'), path.join(WORTEL, 'platen', 'web', 'profiel-entree.jpg')].find(p => fs.existsSync(p));
 const html = `<!doctype html><html lang="nl"><head><meta charset="utf-8"><style>
   @font-face { font-family: 'Mont'; src: url('${FONT}Montserrat-400.ttf'); font-weight: 400; }
   @font-face { font-family: 'Mont'; src: url('${FONT}Montserrat-500.ttf'); font-weight: 500; }
   body { margin: 0; background: #fff; font-family: 'Mont'; color: #262626; }
   .w { width: 390px; padding: 0 0 24px; }
   .kop { padding: 14px 16px 10px; display: flex; align-items: center; gap: 18px; }
-  .kop .pf { width: 76px; height: 76px; border-radius: 50%; background: url('${uri(B('../platen/uit/profiel-entree.png'))}') center / cover, #e8dfcf; }
+  .kop .pf { width: 76px; height: 76px; border-radius: 50%; background: ${PROFIEL ? `url('${uri(PROFIEL)}') center / cover, ` : ''}#e8dfcf; }
   .kop .naam { font-weight: 500; font-size: 14px; } .kop .bio { font-size: 12px; color: #555; margin-top: 2px; line-height: 1.35; }
   .tabs { border-top: 1px solid #dbdbdb; display: flex; } .tabs div { flex: 1; text-align: center; font-size: 11px; padding: 9px 0; letter-spacing: .06em; color: #999; }
   .tabs div:first-child { color: #262626; border-top: 1px solid #262626; margin-top: -1px; }
@@ -61,7 +63,7 @@ fs.mkdirSync(UIT, { recursive: true });
 const tmp = path.join(UIT, `raster-${laatste}.html`);
 fs.writeFileSync(tmp, html, 'utf8');
 (async () => {
-  const b = await chromium.launch({ channel: 'chrome', headless: true });
+  const b = await start();
   const p = await b.newPage({ viewport: { width: 390, height: 800 }, deviceScaleFactor: 3 });
   await p.goto(uri(tmp), { waitUntil: 'load' });
   await p.evaluate(() => document.fonts.ready);

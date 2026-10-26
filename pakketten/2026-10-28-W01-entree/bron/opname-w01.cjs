@@ -3,7 +3,7 @@
 //   node pakketten/2026-10-28-W01-entree/bron/opname-w01.cjs
 'use strict';
 const fs = require('fs'), path = require('path');
-const { chromium } = require('C:/Users/gijsm/yg-instagram/node_modules/playwright-core');
+const { start } = require('../../../gereedschap/browser.cjs');
 const R = path.join(__dirname, 'render'); fs.mkdirSync(R, { recursive: true });
 const SITE = 'https://www.yg-digital.nl/';
 
@@ -51,7 +51,7 @@ const meet = (p, teksten) => p.evaluate(teksten => {
 }, teksten);
 
 (async () => {
-  const b = await chromium.launch({ channel: 'chrome', headless: true });
+  const b = await start();
   const maten = {};
   // laptop: hero (venster) en de onderste sectie (uitsnede uit de hele pagina)
   let { ctx, p } = await open(b, false);

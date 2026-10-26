@@ -7,7 +7,7 @@
 // sharp staat niet in deze repo (die houden we zonder pakketten); we lenen hem
 // uit de website-map ernaast.
 const fs = require('fs'), path = require('path');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const sharp = require('sharp');
 
 const WORTEL = path.join(__dirname, '..');
 const BEELD = path.join(WORTEL, 'beeld');

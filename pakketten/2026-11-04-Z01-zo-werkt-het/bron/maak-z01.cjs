@@ -7,7 +7,7 @@
 'use strict';
 const path = require('path');
 const { kaart } = require('../../../platen/maak.cjs');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const sharp = require('sharp');
 const UIT = path.join(__dirname, '..');
 
 const PLATEN = [

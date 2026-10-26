@@ -4,14 +4,15 @@
 //   node pakketten/2026-11-06-W02-ontwerpstudio/bron/opname-w02.cjs
 //   node pakketten/2026-11-06-W02-ontwerpstudio/bron/maak-w02.cjs
 'use strict';
-const fs = require('fs'), path = require('path');
-const { chromium } = require('C:/Users/gijsm/yg-instagram/node_modules/playwright-core');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const fs = require('fs'), path = require('path'), { pathToFileURL } = require('url');
+const { start } = require('../../../gereedschap/browser.cjs');
+const sharp = require('sharp');
 
 const BRON = __dirname.split(path.sep).join('/') + '/';
 const UIT = BRON.replace(/bron\/$/, '');
 const R = BRON + 'render/';
-const FONT = 'file:///C:/Users/gijsm/yg-instagram/platen/fonts/';
+const FONT = pathToFileURL(path.join(__dirname, '..', '..', '..', 'platen', 'fonts')).href + '/'; // platen/fonts in deze repo
+const url = p => { const [bestand, hash] = p.split('#'); return pathToFileURL(bestand).href + (hash ? '#' + hash : ''); }; // bestand -> file-adres, ook met #deel
 
 const CSS = `
 @font-face { font-family: 'Playfair'; src: url('${FONT}PlayfairDisplay-400.ttf'); }
@@ -73,12 +74,12 @@ const KOPPEN = ['Uw website zien, voordat u iets beslist.', 'Stap één: uw naam
        ${telefoon(resultaat, 560)}</div>${voet(5)}`,
   ];
 
-  const b = await chromium.launch({ channel: 'chrome', headless: true });
+  const b = await start();
   const p = await b.newPage({ viewport: { width: 1080, height: 1350 }, deviceScaleFactor: 2 });
   for (const [i, inhoud] of platen.entries()) {
     const html = BRON + `plaat-${i + 1}.html`;
     fs.writeFileSync(html, plaat(inhoud, `Ontwerpstudio — beeld ${i + 1} — YG Digital`), 'utf8');
-    await p.goto('file:///' + html, { waitUntil: 'load' });
+    await p.goto(url(html), { waitUntil: 'load' });
     await p.evaluate(() => document.fonts.ready);
     const png = await p.screenshot();
     await sharp(png).resize(1080, 1350, { kernel: 'lanczos3' }).jpeg({ quality: 92, mozjpeg: true }).toFile(UIT + `plaat-${i + 1}.jpg`);
@@ -99,7 +100,7 @@ const KOPPEN = ['Uw website zien, voordat u iets beslist.', 'Stap één: uw naam
     </style></head><body><div class="w">${kop}<div class="rij">${KOPPEN.map((k, i) => `<div class="k"><img src="../plaat-${i + 1}.jpg"><div class="n">BEELD ${i + 1}</div><div class="t">${k}</div></div>`).join('')}</div></div></body></html>`;
     fs.writeFileSync(BRON + naam + '.html', html, 'utf8');
     const q = await b.newPage({ viewport: { width: 2400, height: 800 }, deviceScaleFactor: naam === 'telefooncontrole' ? 2 : 1 });
-    await q.goto('file:///' + BRON + naam + '.html', { waitUntil: 'load' });
+    await q.goto(url(BRON + naam + '.html'), { waitUntil: 'load' });
     await q.evaluate(() => document.fonts.ready);
     const vak = await q.evaluate(() => { const r = document.querySelector('.w').getBoundingClientRect(); return { width: Math.ceil(r.width), height: Math.ceil(r.height) }; });
     await q.setViewportSize(vak);

@@ -9,7 +9,7 @@
 // Nummering: verhalen V27-V38, fotoberichten F14-F25 (na de bestaande voorraad).
 const fs = require('fs'), path = require('path');
 const { kaart } = require('./maak.cjs');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const sharp = require('sharp');
 
 const WORTEL = path.join(__dirname, '..');
 const BEELD = path.join(WORTEL, 'beeld'), MINI = path.join(WORTEL, 'mini');
