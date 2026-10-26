@@ -1,6 +1,10 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 26 okt 2026, 14:10 — Eva
+**Bijgewerkt:** ma 26 okt 2026, 17:50 — Eva
+
+## Nieuw van Andries
+
+**Andries via Kantoor, ma 26 okt 2026 17:45: "Ga verder".** Z01 staat al ingepland (`e28765c`). Ga verder met §4: K04 en T02 (beauty) maken, pushen, "pakketten K04 en T02 klaar" melden. Niet inplannen zonder "pakket OK" per code.
 
 ## Stand
 
