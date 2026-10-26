@@ -44,17 +44,18 @@ Plaat 1 is de tegel in het raster en moet op ± 130 pixels werken.
 - **Kop van hooguit vijf woorden**, minimaal 84 px op 1080 (± 30 pt op een telefoon van 390 breed; nu 58 px). De rest van de gedachte gaat naar plaat 2 of het bijschrift.
 - **Eén groot beeld** dat minstens de helft van de plaat vult: een foto, een telefoon, of een uitvergroot detail. Geen browservenster met kleine tekst als enige beeld.
 - **Wissel de opbouw per conceptproject** (vier vormen, nooit twee keer achter elkaar dezelfde):
-  1. *Foto*: de branchefoto groot, kop erboven.
-  2. *Telefoon*: het mobiele ontwerp groot en schuin, kop links.
-  3. *Detail*: één onderdeel uitvergroot (de afspraakknop, het reviewblok), kop erboven.
-  4. *Venster*: het browservenster zoals nu, maar met de korte kop.
+  1. *Foto*: de branchefoto groot, kop erboven, de bedrijfsnaam als kaartje op de foto (`champagne-1-foto.jpg`).
+  2. *Telefoon*: het mobiele ontwerp groot en licht schuin rechts, kop links in drie korte regels (`champagne-1-telefoon.jpg`).
+  3. *Detail*: één onderdeel uitvergroot, bijvoorbeeld de onderkant van de telefoonversie met de belbalk, in een goudomrand kader (`champagne-1-detail.jpg`).
+  4. *Venster*: het browservenster zoals nu, maar met de korte kop (`champagne-1-venster.jpg`).
+  Alle vier zijn uitgewerkt voor één project (het schildersbedrijf van K03) in `champagne-overzicht.jpg`, met een tussenplaat en een slotplaat.
 - **Geen vaste kopformule.** "Laat uw website dat ook zien" stond op K01–K04; vanaf K05 een eigen zin per project.
 - Het label ("Conceptproject · fictieve …") blijft: het is eerlijk en het hoort bij de lijn.
 
 ## 5. Het medaillon
 
 - **Groot medaillon alleen op plaat 1 en de laatste plaat**, en 40 % lichter dan nu (een ivoren waas erover), zodat het achter de kop niet meer meepraat.
-- Op de tussenplaten: dezelfde ivoren grond zonder medaillon. Het embleem in de voetregel blijft.
+- Op de tussenplaten: dezelfde ivoren grond zonder medaillon. Het embleem in de voetregel blijft (`champagne-tussen.jpg`; slotplaat met licht medaillon: `champagne-slot.jpg`).
 - Nooit tekst of een markering op de lijnen van het medaillon zelf; schuif dan het medaillon, niet de tekst.
 
 ## 6. Nacht: één groot gouden element
@@ -105,6 +106,7 @@ Lijntekeningen in dunne gouden lijn zoals het embleem (± 2,6 px op 1080), één
 `preview/stijlgids/` bevat:
 
 - `voorbeeld-champagne.jpg` — plaat 1 van een conceptproject in de vorm *Foto*, met korte kop en licht medaillon.
+- `champagne-overzicht.jpg` — de vier vormen van plaat 1, een tussenplaat en een slotplaat voor één project (gemaakt met `gereedschap/stijlproef-champagne.cjs`).
 - `voorbeeld-nacht-feit.jpg` — een feitplaat met een gouden lijntekening.
 - `voorbeeld-nacht-stap.jpg` — een zo-werkt-hetplaat met groot stapnummer.
 - `raster-nu-en-straks.jpg` — één week in het raster zoals het nu is, en dezelfde week volgens deze gids.

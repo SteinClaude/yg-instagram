@@ -12,15 +12,15 @@ const W = path.join(__dirname, '..'), P = f => path.join(W, 'pakketten', f), S =
 const TEGELS = [
   [path.join(W, 'beeld', 'berichten', 'nl', 'A36-1.jpg'), 'A36 · vastgezet', 'licht'],
   [S('nacht-kaart.jpg'), 'Nacht · feit', 'donker'],
-  [S('voorbeeld-champagne.jpg'), 'Champagne · concept', 'licht'],
+  [S('champagne-1-foto.jpg'), 'Champagne · concept (Foto)', 'licht'],
   [S('nacht-citaat.jpg'), 'Nacht · werkwijze', 'donker'],
   [P('2026-11-06-W02-ontwerpstudio/plaat-1.jpg'), 'Champagne · eigen werk', 'licht'],
   [S('nacht-stap-3.jpg'), 'Nacht · zo werkt het', 'donker'],
-  [P('2026-11-09-K04-salon/plaat-1.jpg'), 'Champagne · concept', 'licht'],
+  [S('champagne-1-telefoon.jpg'), 'Champagne · concept (Telefoon)', 'licht'],
   [S('nacht-sterren.jpg'), 'Nacht · feit', 'donker'],
-  [P('2026-10-28-W01-entree/plaat-1.jpg'), 'Champagne · eigen werk', 'licht'],
+  [S('champagne-1-detail.jpg'), 'Champagne · concept (Detail)', 'licht'],
   [S('nacht-klok.jpg'), 'Nacht · feit', 'donker'],
-  [P('2026-10-26-K03-schilder/plaat-1.jpg'), 'Champagne · concept', 'licht'],
+  [S('champagne-1-venster.jpg'), 'Champagne · concept (Venster)', 'licht'],
   [S('nacht-telefoon.jpg'), 'Nacht · feit', 'donker'],
 ];
 
