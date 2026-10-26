@@ -3,9 +3,9 @@
 // Draaien:  node instagram/maak.cjs          (alles)
 //           node instagram/maak.cjs 03       (alleen bericht 03)
 const fs = require('fs'), path = require('path');
-const opentype = require('C:/Users/gijsm/yg-luxury/brand/node_modules/opentype.js');
-const { Resvg } = require('C:/Users/gijsm/yg-luxury/brand/node_modules/@resvg/resvg-js');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const opentype = require('opentype.js');
+const { Resvg } = require('@resvg/resvg-js');
+const sharp = require('sharp');
 
 const HIER = __dirname, MERK = HIER;          // fonts/ staat hier nu naast
 const UIT = path.join(HIER, 'uit'); fs.mkdirSync(UIT, { recursive: true });

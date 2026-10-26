@@ -1,7 +1,7 @@
 // Zet één goedgekeurde carrousel uit een plaatsingspakket in de planning (nieuwe contentlijn, vanaf 30 sep 2026).
 //
 //   node gereedschap/plan-carrousel.cjs <pakketmap> <datum> <tijd> <code> [--proef]
-//   bv. node gereedschap/plan-carrousel.cjs "C:/.../pakket" 2026-10-06 19:00 K02 --proef
+//   bv. node gereedschap/plan-carrousel.cjs pakketten/2026-10-23-K02-autoschade 2026-10-23 19:00 K02 --proef
 //
 // Het pakket bevat <iets>-1.jpg ... <iets>-N.jpg (2 tot 10 platen, JPEG 1080 x 1350), bijschrift.txt en
 // beeldbeschrijvingen.txt (per plaat een blok "1. Kop" + beschrijving, gescheiden door een lege regel).
@@ -17,7 +17,7 @@
 // Het item mag tot 18 uur te laat nog worden geplaatst (inhaaluren), omdat GitHub het uurschema soms uren overslaat.
 const fs = require('fs'), path = require('path'), crypto = require('crypto');
 const { execFileSync } = require('child_process');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const sharp = require('sharp');
 
 // Controleert een video voor een carrousel met ffprobe; geeft een leesbare fout terug of null.
 function controleerVideo(bestand) {

@@ -1,19 +1,20 @@
 // K03 · Schildersbedrijf Hollenbeek (fictief), oktober 2026: vijf carrouselplaten van 1080 x 1350, een overzicht en een
 // telefooncontrole, in dezelfde vorm en medaillonstijl als K01 (Salon Avelijn). Afgeleid van maak-k02.cjs (K02) en maak-concept.cjs (K01).
 //   node pakketten/2026-10-26-K03-schilder/bron/maak-k02.cjs
-// Gebruikt Chrome via playwright-core (uit yg-instagram) en sharp (uit yg-luxury); lettertypen: Playfair Display en
+// Gebruikt Chromium of Chrome via gereedschap/browser.cjs en sharp (npm install in de hoofdmap); lettertypen: Playfair Display en
 // Montserrat (OFL, uit platen/fonts) voor de platen, Bodoni MT (systeemletter) voor de schilderssite.
 // Beeld 5 gebruikt beelden/studio-resultaat-hollenbeek.png; die maakt studio-opname.cjs (echte studio, geen nabouw).
 'use strict';
-const fs = require('fs'), path = require('path');
-const { chromium } = require('C:/Users/gijsm/yg-instagram/node_modules/playwright-core');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const fs = require('fs'), path = require('path'), { pathToFileURL } = require('url');
+const { start } = require('../../../gereedschap/browser.cjs');
+const sharp = require('sharp');
 
 const BRON = __dirname.split(path.sep).join('/') + '/';
 const UIT = BRON.replace(/bron\/$/, '');
 const R = BRON + 'render/';
 fs.mkdirSync(R, { recursive: true });
-const FONT = 'file:///C:/Users/gijsm/yg-instagram/platen/fonts/';
+const FONT = pathToFileURL(path.join(__dirname, '..', '..', '..', 'platen', 'fonts')).href + '/'; // platen/fonts in deze repo
+const url = p => { const [bestand, hash] = p.split('#'); return pathToFileURL(bestand).href + (hash ? '#' + hash : ''); }; // bestand -> file-adres, ook met #deel
 const PEXELS = BRON + 'beelden/pexels-5798972-ivan-s.jpg'; // 2400 x 1600 (liggend), Pexels-licentie
 
 // ------------------------------------------------------------------ uitsneden van de foto
@@ -27,7 +28,7 @@ async function fotos() {
 // ------------------------------------------------------------------ schermafdrukken van de ontwerpen
 async function scherm(browser, { bestand, w, h, dpr, clipH, voor, meet }) {
   const p = await browser.newPage({ viewport: { width: w, height: h }, deviceScaleFactor: dpr });
-  await p.goto('file:///' + BRON + bestand, { waitUntil: 'load' });
+  await p.goto(url(BRON + bestand), { waitUntil: 'load' });
   await p.evaluate(() => document.fonts.ready);
   if (voor) await p.evaluate(voor);
   await p.waitForTimeout(200);
@@ -102,7 +103,7 @@ const KOPPEN = ['Vakwerk met de kwast. Laat uw website dat ook zien.', 'Hetzelfd
 
 (async () => {
   await fotos();
-  const b = await chromium.launch({ channel: 'chrome', headless: true });
+  const b = await start();
 
   // Beeld 1: het sterke ontwerp in detailstand (#detail): de foto domineert en loopt tot de rechterrand.
   const na0 = await scherm(b, { bestand: 'schilder-na.html#detail', w: 1100, h: 900, dpr: 2, clipH: 1000, voor: () => document.body.classList.add('detail'), meet: { held: '.held' } });
@@ -168,7 +169,7 @@ const KOPPEN = ['Vakwerk met de kwast. Laat uw website dat ook zien.', 'Hetzelfd
   for (const [i, inhoud] of platen.entries()) {
     const html = BRON + `plaat-${i + 1}.html`;
     fs.writeFileSync(html, plaat(inhoud, `Schildersbedrijf Hollenbeek — beeld ${i + 1} — YG Digital`), 'utf8');
-    await p.goto('file:///' + html, { waitUntil: 'load' });
+    await p.goto(url(html), { waitUntil: 'load' });
     await p.evaluate(() => document.fonts.ready);
     const png = await p.screenshot();
     await sharp(png).resize(1080, 1350, { kernel: 'lanczos3' }).jpeg({ quality: 92, mozjpeg: true }).toFile(UIT + `plaat-${i + 1}.jpg`);
@@ -192,7 +193,7 @@ const KOPPEN = ['Vakwerk met de kwast. Laat uw website dat ook zien.', 'Hetzelfd
   <div class="rij">${KOPPEN.map((k, i) => `<div class="k"><img src="../plaat-${i + 1}.jpg"><div class="n">BEELD ${i + 1}</div><div class="t">${k}</div></div>`).join('')}</div></div></body></html>`;
   fs.writeFileSync(BRON + 'overzicht.html', ov, 'utf8');
   const po = await b.newPage({ viewport: { width: 2400, height: 800 }, deviceScaleFactor: 1 });
-  await po.goto('file:///' + BRON + 'overzicht.html', { waitUntil: 'load' });
+  await po.goto(url(BRON + 'overzicht.html'), { waitUntil: 'load' });
   await po.evaluate(() => document.fonts.ready);
   const vak = await po.evaluate(() => { const r = document.querySelector('.w').getBoundingClientRect(); return { width: Math.ceil(r.width), height: Math.ceil(r.height) }; });
   await po.setViewportSize(vak);
@@ -210,7 +211,7 @@ const KOPPEN = ['Vakwerk met de kwast. Laat uw website dat ook zien.', 'Hetzelfd
   <div class="rij">${KOPPEN.map((k, i) => `<div class="k"><img src="../plaat-${i + 1}.jpg"><div class="n">BEELD ${i + 1}</div></div>`).join('')}</div></div></body></html>`;
   fs.writeFileSync(BRON + 'telefooncontrole.html', tc, 'utf8');
   const pt = await b.newPage({ viewport: { width: 2200, height: 600 }, deviceScaleFactor: 2 });
-  await pt.goto('file:///' + BRON + 'telefooncontrole.html', { waitUntil: 'load' });
+  await pt.goto(url(BRON + 'telefooncontrole.html'), { waitUntil: 'load' });
   await pt.evaluate(() => document.fonts.ready);
   const vak2 = await pt.evaluate(() => { const r = document.querySelector('.w').getBoundingClientRect(); return { width: Math.ceil(r.width), height: Math.ceil(r.height) }; });
   await pt.setViewportSize(vak2);

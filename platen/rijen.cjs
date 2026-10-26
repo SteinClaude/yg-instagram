@@ -10,7 +10,7 @@
 // geplaatst te worden, anders valt hij in het raster uit elkaar.
 const fs = require('fs'), path = require('path');
 const { kaart } = require('./maak.cjs');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const sharp = require('sharp');
 
 const WORTEL = path.join(__dirname, '..');
 const BEELD = path.join(WORTEL, 'beeld'), MINI = path.join(WORTEL, 'mini');

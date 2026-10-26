@@ -26,8 +26,8 @@
 const fs = require('fs'), path = require('path');
 const { execFileSync } = require('child_process');
 const M = require('../platen/maak.cjs');
-const { Resvg } = require('C:/Users/gijsm/yg-luxury/brand/node_modules/@resvg/resvg-js');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const { Resvg } = require('@resvg/resvg-js');
+const sharp = require('sharp');
 const { OMSLAG_MS } = require('../src/instagram.cjs');   // één waarde voor poster én profiel
 
 const W = 1080, H = 1920, FPS = 30, FPS_CLIP = 24, DUUR = 18;

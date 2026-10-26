@@ -10,7 +10,7 @@ const fs = require('fs'), path = require('path');
 const { VOLGORDE, bijschrift } = require('../teksten/los-nl.cjs');
 
 const WORTEL = path.join(__dirname, '..');
-const DOEL = 'C:/Users/gijsm/OneDrive/Desktop/Doorsturen';
+const DOEL = path.join(require('os').homedir(), 'OneDrive', 'Desktop', 'Doorsturen'); // bureaublad van de pc
 
 const BRON = code => code.startsWith('R')
   ? { van: path.join(WORTEL, 'beeld', 'reels', code + '.mp4'), ext: '.mp4', wat: 'video' }

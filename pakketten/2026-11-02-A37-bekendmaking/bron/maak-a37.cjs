@@ -9,7 +9,7 @@
 const fs = require('fs'), path = require('path');
 const { kaart } = require('../../../platen/maak.cjs');
 const { zegel } = require('../../../platen/actie.cjs');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const sharp = require('sharp');
 const UIT = path.join(__dirname, '..');
 
 // ---- invoer

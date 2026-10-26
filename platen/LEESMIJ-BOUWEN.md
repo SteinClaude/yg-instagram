@@ -32,15 +32,24 @@ Daarna naar JPEG voor de automaat:
 
 ## Wat er buiten deze map nodig is
 
-Twee pakketten die niet in deze repo zitten, omdat we hem zonder `npm install`
-willen houden. Ze worden geleend uit de websitemap ernaast:
+Sinds 26 oktober 2026 (branch `cloud-gereedschap`) staan de pakketten gewoon in
+`package.json` van de hoofdmap: `opentype.js`, `@resvg/resvg-js`, `sharp` en
+`playwright-core`. Eén keer `npm install` in de hoofdmap, op de pc én in de
+cloud; `node_modules/` blijft buiten git. Er wordt niets meer geleend uit een
+andere map, en er staan geen pc-paden meer in de scripts.
 
-- `C:/Users/gijsm/yg-luxury/brand/node_modules/opentype.js`
-- `C:/Users/gijsm/yg-luxury/brand/node_modules/@resvg/resvg-js`
-- `C:/Users/gijsm/yg-luxury/node_modules/sharp`
+Schermafdrukken (`gereedschap/raster-preview.cjs`, `schermfoto.cjs`,
+`opname.cjs` en de `maak-*.cjs` in `pakketten/*/bron/`) starten de browser via
+`gereedschap/browser.cjs`: eerst de Chromium die bij `playwright-core` hoort
+(in de cloud klaargezet via `PLAYWRIGHT_BROWSERS_PATH`; de versie van
+`playwright-core` in `package.json` hoort bij die browser, dus niet zomaar
+verhogen), anders de geïnstalleerde Google Chrome (zoals op de pc).
+Lettertypen komen uit `platen/fonts/`, altijd relatief aan het script.
 
-Staat die map ergens anders, dan moet je die drie paden aanpassen in
-`maak.cjs` en `extra.cjs`. Verder heeft deze map geen afhankelijkheden.
+Wat alleen op de pc kan: echte schermafdrukken van de live site met een
+ingelogde browser (`studio-opname.cjs`), nieuwe Pexels-foto's ophalen en het
+Windows-lettertype Bodoni MT in de nagebouwde klantsites (K02/K03); in de cloud
+valt dat terug op een standaardletter.
 
 ## Let op bij het wijzigen
 

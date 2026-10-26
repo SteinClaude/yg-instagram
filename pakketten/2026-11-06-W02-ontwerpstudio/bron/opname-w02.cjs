@@ -5,7 +5,7 @@
 //   node pakketten/2026-11-06-W02-ontwerpstudio/bron/opname-w02.cjs
 'use strict';
 const fs = require('fs'), path = require('path');
-const { chromium } = require('C:/Users/gijsm/yg-instagram/node_modules/playwright-core');
+const { start } = require('../../../gereedschap/browser.cjs');
 const R = path.join(__dirname, 'render'); fs.mkdirSync(R, { recursive: true });
 const NAAM = 'Uw bedrijf';
 const schiet = async (p, naam) => { await p.waitForTimeout(1200); await p.screenshot({ path: path.join(R, naam + '.png') }); console.log(naam); };
@@ -18,7 +18,7 @@ async function naar(p, tekst, boven = 110) {
   await p.waitForTimeout(500);
 }
 (async () => {
-  const b = await chromium.launch({ channel: 'chrome', headless: true });
+  const b = await start();
   const ctx = await b.newContext({ viewport: { width: 390, height: 693 }, deviceScaleFactor: 3, isMobile: true, locale: 'nl-NL' });
   const p = await ctx.newPage();
   await p.goto('https://www.yg-digital.nl/eerste-ontwerp', { waitUntil: 'load' }); await p.waitForTimeout(2500);

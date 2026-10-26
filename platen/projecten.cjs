@@ -6,7 +6,7 @@
 //                                  beeld/highlights/projecten/P03-beeld.jpg (met een gedempt
 //                                  beeld uit de magazijnclip als achtergrond) + mini's
 const fs = require('fs'), path = require('path');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const sharp = require('sharp');
 const { kaart } = require('./maak.cjs');
 
 const WORTEL = path.join(__dirname, '..');

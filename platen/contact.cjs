@@ -11,7 +11,7 @@
 //   node platen/contact.cjs --controle   -> ook platen/uit/highlights/contact/C0x-controle.jpg,
 //                                           met de balken van Instagram eroverheen
 const fs = require('fs'), path = require('path');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const sharp = require('sharp');
 const { kaart } = require('./maak.cjs');
 
 const WORTEL = path.join(__dirname, '..');

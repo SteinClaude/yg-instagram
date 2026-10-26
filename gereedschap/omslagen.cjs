@@ -8,9 +8,9 @@
 // Resultaat: beeld/omslagen/<naam>.jpg (1080x1080) en omslagen.html, een pagina
 // die Gijs op zijn telefoon opent om ze met een lange druk te bewaren.
 const fs = require('fs'), path = require('path');
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const sharp = require('sharp');
 const M = require('../platen/maak.cjs');
-const { Resvg } = require('C:/Users/gijsm/yg-luxury/brand/node_modules/@resvg/resvg-js');
+const { Resvg } = require('@resvg/resvg-js');
 
 const WORTEL = path.join(__dirname, '..');
 const BRON = path.join(WORTEL, 'platen', 'bron', 'ai');

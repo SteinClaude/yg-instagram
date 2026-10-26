@@ -4,7 +4,7 @@
 //     node gereedschap/klaarzetten.cjs 2026-09-14 8 vanaf die datum, 8 weken
 const fs = require('fs'), path = require('path');
 require('./pauze.cjs')(true);   // zie gepauzeerd.json
-const sharp = require('C:/Users/gijsm/yg-luxury/node_modules/sharp');
+const sharp = require('sharp');
 
 const BRON = require('path').join(__dirname, '..', 'platen');
 const WORTEL = path.join(__dirname, '..');
