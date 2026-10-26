@@ -1,6 +1,6 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 26 okt 2026, 00:40 — Eva
+**Bijgewerkt:** ma 26 okt 2026, 14:10 — Eva
 
 ## Stand
 
@@ -28,9 +28,12 @@ Wat in de cloud níet kan en zo blijft: echte schermafdrukken van de live site (
 
 Het sjabloon staat (`2026-11-02-A37-bekendmaking`, `bron/gekozen.txt` + `maak-a37.cjs`). Nieuwe plaatsingsdatum **wo 4 nov 19:00**; de map mag blijven heten zoals hij heet of hernoemd worden naar `2026-11-04-…` — jouw keuze, zeg het in je logboek. Niet inplannen tot de naam en de "waarom"-regels van de gekozene hier als citaat staan (na zo 1 nov) en Andries "pakket OK A37" heeft gegeven.
 
-### 4. K04 en T02 in één keer
+### 4. K04 en T02 in één keer — sector van de week: beauty
 
-Zodra de sector van de week hier staat (na Daans levering 02, ma 26 okt 04:47 — Eva zet hem erbij): maak **K04 en T02 direct achter elkaar**, push, meld "pakketten K04 en T02 klaar". Andries keurt ze in één bericht met beide codes; tot die tijd niet inplannen. Data: K04 ma 9 nov 19:00, T02 vr 13 nov 19:00 (zie `docs/opdracht-02.md`).
+**Sector van levering 02 (Daan, ma 26 okt): beauty** — nagelstudio's, kapsalons en schoonheidssalons zonder of met een zwakke site. (Levering 02 bevat ook vakmensen, maar K03 was al een schildersbedrijf; de beauty-zaken krijgen deze week de DM's van Gijs.) Maak **K04 en T02 direct achter elkaar**, push, meld "pakketten K04 en T02 klaar". Andries keurt ze in één bericht met beide codes; tot die tijd niet inplannen.
+- **K04** (ma 9 nov 19:00): conceptproject voor een **fictieve nagelstudio of schoonheidssalon**, zelfde opzet als K02/K03 (eerste ontwerp uit de studio, vóór/na, de drie dingen die een klant direct ziet: afspraakknop bovenaan, reviews in beeld, telefoonnummer als tekst). Fictieve naam eerst zelf controleren (geen bestaand bedrijf, ook niet buiten Alkmaar); Eva controleert ook. Geen verwijzing naar een echte zaak, geen herkenbare combinatie van cijfers + vak + stad.
+- **T02** (wo 11 nov 19:00, let op: de tabel in `docs/opdracht-02.md` zegt wo 11 nov; de vorige regel hier zei vr 13 nov — wo 11 nov geldt): één feit dat waar is en niet naar een bestaand bedrijf wijst, in de beauty-hoek. Voorbeeldrichting (zelf toetsen of het klopt): "Wie 'nagelstudio Alkmaar' googelt, ziet eerst de zaken mét website; een zaak zonder site staat alleen op de kaart." Formuleer als constatering, niet als cijfer dat je niet kunt bewijzen (les van T01).
+- W03 (vr 13 nov) pas na A37 en "ontwerp OK" van Andries voor de gekozene.
 
 ### Doorlopend
 
