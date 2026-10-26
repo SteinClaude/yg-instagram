@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Nagelstudio Amarel · vergelijking, minder sterke versie</title>
+<!-- Conceptproject van YG Digital (K04). Nagelstudio Amarel is fictief. Compacte weergave (760 breed) voor beeld 2: dezelfde
+     inhoud en foto als vergelijk-na.html, opgemaakt zoals veel sjabloonsites: een lang menu zonder afspraakknop bovenaan,
+     geen reviews (een fotostrook op die plek) en het telefoonnummer alleen in een plaatje, niet aan te tikken. -->
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #F0ECEA; }
+  body { color: #5B5452; font: 400 13px/1.6 Arial, sans-serif; width: 760px; min-height: 640px; }
+  .kop { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 12px 24px; background: #F6F3F1; border-bottom: 1px solid #DDD5D2; }
+  .naam { font-family: Georgia, serif; font-size: 15px; letter-spacing: .1em; color: #6A6260; white-space: nowrap; }
+  nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px 14px; max-width: 470px; font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: #8A8280; }
+  .held { position: relative; height: 270px; background: url(beelden/nagelfoto-liggend.jpg) center 50% / cover; display: flex; align-items: center; justify-content: center; text-align: center; }
+  .held::before { content: ''; position: absolute; inset: 0; background: rgba(232, 224, 220, .55); }
+  .tekst { position: relative; max-width: 560px; padding: 0 20px; }
+  .welkom { font-family: Georgia, serif; font-style: italic; font-size: 15px; color: #6E6664; }
+  h1 { font-family: Georgia, serif; font-weight: 400; font-size: 25px; color: #4E4644; margin: 4px 0 10px; }
+  .tekst p { font-size: 12.5px; color: #57504E; }
+  .sectie { padding: 20px 50px 14px; text-align: center; }
+  h2 { font-family: Georgia, serif; font-weight: 400; font-size: 20px; color: #57504E; margin-bottom: 6px; }
+  .sectie p { font-size: 12.5px; color: #6A6462; }
+  .onder { display: grid; grid-template-columns: 2fr 1fr; gap: 10px; padding: 8px 50px 30px; }
+  .galerij { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .galerij div { height: 120px; background: url(beelden/nagelfoto-liggend.jpg) center / 300%; }
+  .galerij div:nth-child(1) { background-position: 20% 40%; } .galerij div:nth-child(2) { background-position: 55% 55%; } .galerij div:nth-child(3) { background-position: 85% 30%; }
+  /* het telefoonnummer als plaatje: tekst in een decoratief kader, vaag en klein, geen link */
+  .banner { height: 120px; background: url(beelden/nagelfoto-liggend.jpg) 70% 60% / 260%; position: relative; display: flex; align-items: flex-end; }
+  .banner::before { content: ''; position: absolute; inset: 0; background: rgba(240, 232, 228, .62); }
+  .banner span { position: relative; font-family: Georgia, serif; font-style: italic; font-size: 12px; color: #8F8481; padding: 8px 10px; filter: blur(.35px); }
+</style>
+</head>
+<body>
+  <header class="kop">
+    <div class="naam">NAGELSTUDIO AMAREL</div>
+    <nav id="menu"><a>Home</a><a>Over ons</a><a>Behandelingen</a><a>Prijzen</a><a>Foto&#8217;s</a><a>Nieuws</a><a>Openingstijden</a><a>Contact</a></nav>
+  </header>
+  <section class="held">
+    <div class="tekst">
+      <div class="welkom">Manicure · gellak · pedicure</div>
+      <h1>Verzorgde nagels, in alle rust.</h1>
+      <p>Bij Nagelstudio Amarel in Alkmaar neemt u plaats aan een rustige tafel, voor een behandeling die netjes is en lang mooi blijft.</p>
+    </div>
+  </section>
+  <section class="sectie">
+    <h2>Behandelingen</h2>
+    <p>Manicure (45 minuten), gellak (60 minuten), BIAB (75 minuten) en pedicure (50 minuten).</p>
+  </section>
+  <div class="onder">
+    <div class="galerij" id="reviews"><div></div><div></div><div></div></div>
+    <div class="banner" id="telefoon"><span>Bel ons voor een afspraak: 072 000 00 00</span></div>
+  </div>
+</body>
+</html>

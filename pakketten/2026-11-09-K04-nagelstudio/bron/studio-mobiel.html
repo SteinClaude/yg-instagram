@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=390">
+<title>Nagelstudio Amarel · conceptontwerp (telefoon)</title>
+<!-- Conceptproject van YG Digital (K04). Nagelstudio Amarel is fictief. Mobiele versie van studio-na.html.
+     Met #lijst staat de pagina bij de reviews en behandelingen, en is de vaste balk met Afspraak maken en Bellen zichtbaar. -->
+<style>
+  @font-face { font-family: 'Play'; src: url('../../../platen/fonts/PlayfairDisplay-400.ttf'); }
+  @font-face { font-family: 'Mont'; src: url('../../../platen/fonts/Montserrat-400.ttf'); font-weight: 400; }
+  @font-face { font-family: 'Mont'; src: url('../../../platen/fonts/Montserrat-500.ttf'); font-weight: 500 700; }
+  :root { --ivoor: #F7F0EC; --papier: #FCF8F6; --inkt: #2A1F1F; --zacht: #6E5E5B; --lijn: #E8D9D3; --roos: #A0675E; --donker: #3A2626; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--ivoor); color: var(--inkt); font: 400 15px/1.55 'Mont', sans-serif; width: 390px; }
+  a { color: inherit; text-decoration: none; }
+  .kop { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 22px; border-bottom: 1px solid var(--lijn); position: sticky; top: 0; background: var(--ivoor); z-index: 2; }
+  .naam { font-family: 'Play', serif; font-size: 22px; line-height: 1; white-space: nowrap; }
+  .naam small { display: block; font: 500 8px 'Mont'; letter-spacing: .3em; color: var(--roos); margin-bottom: 5px; }
+  .menu { width: 26px; display: grid; gap: 6px; } .menu i { height: 1.5px; background: var(--inkt); display: block; }
+  .foto { height: 220px; background: url(beelden/nagelfoto-liggend.jpg) 50% 50% / cover; position: relative; }
+  .foto::after { content: ''; position: absolute; inset: 10px; border: 1px solid rgba(252, 248, 246, .55); }
+  .held { padding: 22px 22px 28px; }
+  .boven { font-size: 10.5px; font-weight: 500; letter-spacing: .24em; color: var(--roos); text-transform: uppercase; }
+  h1 { font-family: 'Play', serif; font-weight: 400; font-size: 36px; line-height: 1.08; margin: 10px 0 12px; }
+  h1 em { color: var(--roos); }
+  .intro { font-size: 14px; color: var(--zacht); }
+  .knop { display: flex; align-items: center; justify-content: center; gap: 12px; height: 56px; font: 500 15px 'Mont'; letter-spacing: .12em; text-transform: uppercase; }
+  .knop.vol { background: var(--donker); color: var(--papier); margin-top: 20px; }
+  .knop.vol i { width: 18px; height: 1px; background: #D9A99E; display: inline-block; }
+  .tel { display: block; text-align: center; margin-top: 14px; font-size: 15px; font-weight: 500; letter-spacing: .04em; }
+  .tel span { border-bottom: 1px solid var(--roos); padding-bottom: 2px; }
+  .sectie { padding: 26px 22px 120px; background: var(--papier); border-top: 1px solid var(--lijn); }
+  .reviews { display: flex; align-items: center; gap: 12px; border: 1px solid var(--lijn); background: var(--ivoor); padding: 14px 16px; margin-bottom: 18px; }
+  .reviews .sterren { color: #C08A3E; font-size: 17px; letter-spacing: 2px; white-space: nowrap; }
+  .reviews p { font-size: 12.5px; line-height: 1.4; color: var(--zacht); }
+  .reviews b { color: var(--inkt); font-weight: 500; display: block; }
+  h2 { font-family: 'Play', serif; font-weight: 400; font-size: 30px; line-height: 1.08; margin: 8px 0 14px; }
+  .rij { display: flex; align-items: center; justify-content: space-between; padding: 15px 18px; background: var(--ivoor); border: 1px solid var(--lijn); margin-bottom: 10px; }
+  .rij h3 { font-family: 'Play', serif; font-weight: 400; font-size: 22px; line-height: 1.1; }
+  .rij .duur { font-size: 10.5px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--roos); margin-top: 4px; }
+  .rij .pijl { width: 30px; height: 30px; border: 1px solid var(--inkt); border-radius: 50%; display: grid; place-items: center; font-size: 15px; line-height: 1; }
+  .vast { position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 16px 16px; background: rgba(247, 240, 236, .96); border-top: 1px solid var(--lijn); display: none; z-index: 3; }
+  .vast .knoppen { display: grid; grid-template-columns: 1.4fr 1fr; gap: 10px; }
+  .vast .knop { margin: 0; height: 54px; font-size: 13.5px; letter-spacing: .1em; }
+  .vast .knop.rand { border: 1px solid var(--inkt); }
+  body.lijst .vast { display: block; }
+</style>
+</head>
+<body>
+  <header class="kop"><div class="naam"><small>NAGELSTUDIO · ALKMAAR</small>Nagelstudio Amarel</div><div class="menu"><i></i><i></i><i></i></div></header>
+  <div class="foto" role="img" aria-label="Nagels worden gelakt"></div>
+  <section class="held">
+    <div class="boven">Manicure · gellak · pedicure</div>
+    <h1>Verzorgde nagels,<br><em>in alle rust.</em></h1>
+    <p class="intro">Bij Nagelstudio Amarel in Alkmaar neemt u plaats aan een rustige tafel, voor een behandeling die lang mooi blijft.</p>
+    <a class="knop vol">Afspraak maken <i></i></a>
+    <a class="tel">Of bel <span>072 000 00 00</span></a>
+  </section>
+  <section class="sectie" id="behandelingen">
+    <div class="reviews" id="reviews"><span class="sterren">★★★★★</span><p><b>Uw Google-reviews</b>Hier staan straks uw eigen beoordelingen.</p></div>
+    <div class="boven">Behandelingen</div>
+    <h2>Kies wat u wilt, de tijd staat erbij.</h2>
+    <div class="rij"><div><h3>Manicure</h3><div class="duur">45 minuten</div></div><div class="pijl">›</div></div>
+    <div class="rij"><div><h3>Gellak</h3><div class="duur">60 minuten</div></div><div class="pijl">›</div></div>
+    <div class="rij"><div><h3>BIAB</h3><div class="duur">75 minuten</div></div><div class="pijl">›</div></div>
+    <div class="rij"><div><h3>Pedicure</h3><div class="duur">50 minuten</div></div><div class="pijl">›</div></div>
+  </section>
+  <div class="vast"><div class="knoppen"><a class="knop vol">Afspraak maken <i></i></a><a class="knop rand">Bellen</a></div></div>
+  <script>if (location.hash === '#lijst') { document.body.classList.add('lijst'); }</script>
+</body>
+</html>

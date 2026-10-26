@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Nagelstudio Amarel · conceptontwerp (sterke versie)</title>
+<!-- Conceptproject van YG Digital (K04, november 2026). Nagelstudio Amarel is een fictief bedrijf. Behandelingen en duur zijn
+     verzonnen voorbeeldinhoud; het telefoonnummer 072 000 00 00 is een plaatshouder (bestaat niet); het reviewblok toont waar
+     de echte Google-reviews van de klant komen te staan, zonder verzonnen beoordelingen. Lettertypen uit platen/fonts. -->
+<style>
+  @font-face { font-family: 'Play'; src: url('../../../platen/fonts/PlayfairDisplay-400.ttf'); }
+  @font-face { font-family: 'Mont'; src: url('../../../platen/fonts/Montserrat-400.ttf'); font-weight: 400; }
+  @font-face { font-family: 'Mont'; src: url('../../../platen/fonts/Montserrat-500.ttf'); font-weight: 500 700; }
+  :root { --ivoor: #F7F0EC; --papier: #FCF8F6; --inkt: #2A1F1F; --zacht: #6E5E5B; --lijn: #E8D9D3; --roos: #A0675E; --donker: #3A2626; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--ivoor); color: var(--inkt); font: 400 16px/1.6 'Mont', sans-serif; }
+  a { color: inherit; text-decoration: none; }
+  .kop { height: 84px; display: flex; align-items: center; justify-content: space-between; padding: 0 64px; border-bottom: 1px solid var(--lijn); background: var(--ivoor); }
+  .naam { font-family: 'Play', serif; font-size: 30px; line-height: 1; white-space: nowrap; }
+  .naam small { display: block; font: 500 10px 'Mont'; letter-spacing: .34em; color: var(--roos); margin-bottom: 6px; }
+  nav { display: flex; gap: 30px; font-size: 14px; font-weight: 500; letter-spacing: .03em; white-space: nowrap; }
+  .rechts { display: flex; align-items: center; gap: 28px; }
+  .tel { font-size: 14.5px; font-weight: 500; letter-spacing: .04em; border-bottom: 1px solid var(--roos); padding-bottom: 2px; white-space: nowrap; }
+  .knop { display: inline-flex; align-items: center; justify-content: center; gap: 12px; height: 50px; padding: 0 24px; font: 500 13.5px 'Mont'; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; }
+  .knop.vol { background: var(--donker); color: var(--papier); }
+  .knop.vol i { width: 18px; height: 1px; background: #D9A99E; display: inline-block; }
+  .knop.rand { border: 1px solid var(--inkt); color: var(--inkt); }
+  .held { display: grid; grid-template-columns: 1.16fr .84fr; gap: 64px; padding: 52px 64px 60px; align-items: center; }
+  .boven { font-size: 12.5px; font-weight: 500; letter-spacing: .24em; color: var(--roos); text-transform: uppercase; }
+  h1 { font-family: 'Play', serif; font-weight: 400; font-size: 60px; line-height: 1.06; margin: 20px 0 24px; }
+  h1 em { color: var(--roos); }
+  .intro { font-size: 17px; color: var(--zacht); max-width: 480px; }
+  .knoppen { display: flex; gap: 14px; margin: 34px 0 30px; }
+  .reviews { display: flex; align-items: center; gap: 16px; border: 1px solid var(--lijn); background: var(--papier); padding: 16px 20px; max-width: 470px; }
+  .reviews .sterren { color: #C08A3E; font-size: 20px; letter-spacing: 3px; white-space: nowrap; }
+  .reviews p { font-size: 13.5px; line-height: 1.45; color: var(--zacht); }
+  .reviews b { color: var(--inkt); font-weight: 500; display: block; }
+  .foto { height: 520px; background: url(beelden/nagelfoto-staand.jpg) 50% center / cover; position: relative; }
+  .foto::after { content: ''; position: absolute; inset: 14px; border: 1px solid rgba(252, 248, 246, .55); pointer-events: none; }
+  .sectie { padding: 52px 64px 80px; background: var(--papier); border-top: 1px solid var(--lijn); }
+  h2 { font-family: 'Play', serif; font-weight: 400; font-size: 44px; line-height: 1.05; margin-top: 12px; }
+  .kaarten { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 36px; }
+  .kaart { background: var(--ivoor); border: 1px solid var(--lijn); padding: 26px 24px; }
+  .kaart .duur { font-size: 12px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--roos); }
+  .kaart h3 { font-family: 'Play', serif; font-weight: 400; font-size: 28px; margin: 12px 0 8px; }
+  .kaart p { font-size: 14.5px; color: var(--zacht); }
+  /* detailstand (beeld 1): de foto domineert en loopt tot de rechterrand, kop, knoppen en reviews ernaast */
+  body.detail .held { grid-template-columns: .82fr 1.18fr; gap: 50px; padding: 42px 0 42px 64px; }
+  body.detail .foto { height: 660px; }
+  body.detail .foto::after { inset: 16px 0 16px 16px; border-right: 0; }
+  body.detail h1 { font-size: 48px; }
+  body.detail .intro { font-size: 16px; }
+  body.detail .boven { font-size: 11px; letter-spacing: .16em; }
+  body.detail .knoppen { flex-direction: column; align-items: flex-start; margin: 28px 0 26px; }
+  body.detail nav { gap: 22px; }
+  body.detail .rechts { gap: 20px; }
+  body.detail .kop .knop { padding: 0 18px; }
+</style>
+</head>
+<body>
+  <header class="kop">
+    <div class="naam"><small>NAGELSTUDIO · ALKMAAR</small>Nagelstudio Amarel</div>
+    <div class="rechts">
+      <nav><a>Behandelingen</a><a>Over ons</a><a>Contact</a></nav>
+      <a class="tel" id="telefoon">072 000 00 00</a>
+      <a class="knop vol" id="afspraak">Afspraak maken</a>
+    </div>
+  </header>
+  <section class="held">
+    <div>
+      <div class="boven">Manicure · gellak · pedicure</div>
+      <h1>Verzorgde nagels,<br><em>in alle rust.</em></h1>
+      <p class="intro">Bij Nagelstudio Amarel in Alkmaar neemt u plaats aan een rustige tafel, voor een behandeling die netjes is en lang mooi blijft.</p>
+      <div class="knoppen"><a class="knop vol">Afspraak maken <i></i></a><a class="knop rand">Bekijk behandelingen</a></div>
+      <div class="reviews" id="reviews"><span class="sterren">★★★★★</span><p><b>Uw Google-reviews</b>Hier staan straks uw eigen beoordelingen, automatisch bijgewerkt.</p></div>
+    </div>
+    <div class="foto" role="img" aria-label="Nagels worden gelakt"></div>
+  </section>
+  <section class="sectie" id="behandelingen">
+    <div class="boven">Behandelingen</div>
+    <h2>Kies wat u wilt, de tijd staat erbij.</h2>
+    <div class="kaarten">
+      <div class="kaart"><div class="duur">45 minuten</div><h3>Manicure</h3><p>Vijlen, verzorgen en lakken.</p></div>
+      <div class="kaart"><div class="duur">60 minuten</div><h3>Gellak</h3><p>Glanzend en weken mooi.</p></div>
+      <div class="kaart"><div class="duur">75 minuten</div><h3>BIAB</h3><p>Versteviging op uw eigen nagel.</p></div>
+      <div class="kaart"><div class="duur">50 minuten</div><h3>Pedicure</h3><p>Verzorging voor uw voeten.</p></div>
+    </div>
+  </section>
+  <script>if (location.hash === "#detail") document.body.classList.add("detail");</script>
+</body>
+</html>

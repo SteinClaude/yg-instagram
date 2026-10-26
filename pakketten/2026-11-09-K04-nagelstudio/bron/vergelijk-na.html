@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Nagelstudio Amarel · vergelijking, sterke versie</title>
+<!-- Conceptproject van YG Digital (K04). Nagelstudio Amarel is fictief. Compacte weergave (760 breed) voor beeld 3: dezelfde
+     inhoud en foto als vergelijk-voor.html, met de afspraakknop bovenaan, reviews in beeld en het telefoonnummer als tekst.
+     072 000 00 00 is een plaatshouder; het reviewblok toont alleen waar echte reviews komen. -->
+<style>
+  @font-face { font-family: 'Play'; src: url('../../../platen/fonts/PlayfairDisplay-400.ttf'); }
+  @font-face { font-family: 'Mont'; src: url('../../../platen/fonts/Montserrat-400.ttf'); font-weight: 400; }
+  @font-face { font-family: 'Mont'; src: url('../../../platen/fonts/Montserrat-500.ttf'); font-weight: 500 700; }
+  :root { --ivoor: #F7F0EC; --papier: #FCF8F6; --inkt: #2A1F1F; --zacht: #6E5E5B; --lijn: #E8D9D3; --roos: #A0675E; --donker: #3A2626; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--ivoor); }
+  body { color: var(--inkt); font: 400 14px/1.55 'Mont', sans-serif; width: 760px; min-height: 640px; }
+  a { color: inherit; text-decoration: none; }
+  .kop { height: 74px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; border-bottom: 1px solid var(--lijn); }
+  .naam { font-family: 'Play', serif; font-size: 21px; line-height: 1; white-space: nowrap; }
+  .naam small { display: block; font: 500 8px 'Mont'; letter-spacing: .3em; color: var(--roos); margin-bottom: 5px; }
+  .rechts { display: flex; align-items: center; gap: 16px; }
+  nav { display: flex; gap: 14px; font-size: 13px; font-weight: 500; white-space: nowrap; }
+  .knop { display: inline-flex; align-items: center; justify-content: center; height: 42px; padding: 0 14px; font: 500 12px 'Mont'; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+  .knop.vol { background: var(--donker); color: var(--papier); }
+  .held { display: grid; grid-template-columns: 1.08fr .92fr; gap: 26px; padding: 24px 28px 22px; align-items: center; }
+  .boven { font-size: 10.5px; font-weight: 500; letter-spacing: .24em; color: var(--roos); text-transform: uppercase; }
+  h1 { font-family: 'Play', serif; font-weight: 400; font-size: 36px; line-height: 1.08; margin: 10px 0 12px; }
+  h1 em { color: var(--roos); }
+  .intro { font-size: 13px; color: var(--zacht); }
+  .tel { display: inline-block; margin-top: 14px; font-size: 15px; font-weight: 500; letter-spacing: .04em; border-bottom: 1px solid var(--roos); padding-bottom: 2px; }
+  .foto { height: 236px; background: url(beelden/nagelfoto-liggend.jpg) 50% 50% / cover; }
+  .reviews { display: flex; align-items: center; gap: 14px; margin: 0 28px; border: 1px solid var(--lijn); background: var(--papier); padding: 12px 16px; }
+  .reviews .sterren { color: #C08A3E; font-size: 18px; letter-spacing: 3px; white-space: nowrap; }
+  .reviews p { font-size: 12.5px; color: var(--zacht); }
+  .reviews b { color: var(--inkt); font-weight: 500; }
+  .sectie { padding: 16px 28px 26px; }
+  .sectie .boven { margin-bottom: 10px; }
+  .kaarten { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .kaart { background: var(--papier); border: 1px solid var(--lijn); padding: 12px 14px; }
+  .kaart .duur { font-size: 10px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--roos); }
+  .kaart h3 { font-family: 'Play', serif; font-weight: 400; font-size: 21px; margin-top: 3px; }
+</style>
+</head>
+<body>
+  <header class="kop">
+    <div class="naam"><small>NAGELSTUDIO · ALKMAAR</small>Nagelstudio Amarel</div>
+    <div class="rechts"><nav id="menu"><a>Behandelingen</a><a>Over ons</a><a>Contact</a></nav><a class="knop vol" id="afspraak">Afspraak maken</a></div>
+  </header>
+  <section class="held">
+    <div>
+      <div class="boven">Manicure · gellak · pedicure</div>
+      <h1>Verzorgde nagels,<br><em>in alle rust.</em></h1>
+      <p class="intro">Bij Nagelstudio Amarel in Alkmaar neemt u plaats aan een rustige tafel, voor een behandeling die netjes is en lang mooi blijft.</p>
+      <a class="tel" id="telefoon">Bel 072 000 00 00</a>
+    </div>
+    <div class="foto" role="img" aria-label="Nagels worden gelakt"></div>
+  </section>
+  <div class="reviews" id="reviews"><span class="sterren">★★★★★</span><p><b>Uw Google-reviews</b> staan hier, automatisch bijgewerkt.</p></div>
+  <section class="sectie">
+    <div class="boven">Behandelingen</div>
+    <div class="kaarten">
+      <div class="kaart"><div class="duur">45 min</div><h3>Manicure</h3></div>
+      <div class="kaart"><div class="duur">60 min</div><h3>Gellak</h3></div>
+      <div class="kaart"><div class="duur">75 min</div><h3>BIAB</h3></div>
+      <div class="kaart"><div class="duur">50 min</div><h3>Pedicure</h3></div>
+    </div>
+  </section>
+</body>
+</html>
