@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Salon Lindaveer · conceptontwerp (sterke versie)</title>
+<!-- Conceptproject van YG Digital (K04, november 2026). Salon Lindaveer is een fictieve schoonheidssalon; behandelingen,
+     reviews en telefoonnummer zijn verzonnen voorbeeldinhoud (het nummer 072 000 00 00 bestaat niet). Zelfde opzet als K03.
+     Lettertypen alleen uit platen/fonts (Playfair Display, Montserrat), zodat pc en cloud hetzelfde renderen. -->
+<style>
+  @font-face { font-family: 'Playfair'; src: url('../../../platen/fonts/PlayfairDisplay-400.ttf'); }
+  @font-face { font-family: 'Mont'; src: url('../../../platen/fonts/Montserrat-400.ttf'); font-weight: 400; }
+  @font-face { font-family: 'Mont'; src: url('../../../platen/fonts/Montserrat-500.ttf'); font-weight: 500 700; }
+  :root { --ivoor: #F7F1EE; --papier: #FCF9F7; --inkt: #2A1F1E; --zacht: #6E5F5C; --lijn: #E8DAD5; --roze: #A4646A; --donker: #3A2A2A; --goud: #C9A45C; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--ivoor); color: var(--inkt); font: 400 16px/1.6 'Mont', sans-serif; }
+  a { color: inherit; text-decoration: none; }
+  .kop { height: 84px; display: flex; align-items: center; justify-content: space-between; padding: 0 64px; border-bottom: 1px solid var(--lijn); background: var(--ivoor); }
+  .naam { font-family: 'Playfair', serif; font-size: 30px; line-height: 1; white-space: nowrap; }
+  .naam small { display: block; font: 500 10px 'Mont'; letter-spacing: .34em; color: var(--roze); margin-bottom: 6px; }
+  nav { display: flex; gap: 30px; font-size: 14px; font-weight: 500; letter-spacing: .03em; white-space: nowrap; }
+  .rechts { display: flex; align-items: center; gap: 30px; }
+  .tel { font-size: 15px; font-weight: 500; letter-spacing: .04em; white-space: nowrap; border-bottom: 1px solid var(--goud); padding-bottom: 2px; }
+  .knop { display: inline-flex; align-items: center; justify-content: center; gap: 12px; height: 50px; padding: 0 24px; font: 500 13.5px 'Mont'; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; }
+  .knop.vol { background: var(--donker); color: var(--papier); }
+  .knop.vol i { width: 18px; height: 1px; background: var(--goud); display: inline-block; }
+  .knop.rand { border: 1px solid var(--inkt); color: var(--inkt); }
+  .held { display: grid; grid-template-columns: .8fr 1.2fr; gap: 52px; padding: 44px 0 44px 64px; align-items: center; }
+  .boven { font-size: 11px; font-weight: 500; letter-spacing: .2em; color: var(--roze); text-transform: uppercase; }
+  h1 { font-family: 'Playfair', serif; font-weight: 400; font-size: 50px; line-height: 1.08; margin: 18px 0 20px; }
+  h1 em { color: var(--roze); }
+  .intro { font-size: 16px; color: var(--zacht); }
+  .knoppen { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; margin: 30px 0 26px; }
+  .knoppen .tel { font-size: 16px; }
+  .sterren { color: var(--goud); letter-spacing: .14em; font-size: 15px; }
+  .review { border-top: 1px solid var(--lijn); padding-top: 18px; font-size: 14px; color: var(--zacht); }
+  .review q { display: block; font-family: 'Playfair', serif; font-style: normal; font-size: 19px; line-height: 1.35; color: var(--inkt); margin: 6px 0 6px; }
+  .review q::before, .review q::after { content: none; }
+  .foto { height: 640px; background: url(beelden/salonfoto-staand.jpg) 40% center / cover; position: relative; }
+  .foto::after { content: ''; position: absolute; inset: 16px 0 16px 16px; border: 1px solid rgba(252, 249, 247, .6); border-right: 0; pointer-events: none; }
+</style>
+</head>
+<body>
+  <header class="kop">
+    <div class="naam"><small>SCHOONHEIDSSALON · ALKMAAR</small>Salon Lindaveer</div>
+    <div class="rechts">
+      <nav><a>Behandelingen</a><a>Reviews</a><a>Contact</a></nav>
+      <a class="tel">072 000 00 00</a>
+      <a class="knop vol">Afspraak maken</a>
+    </div>
+  </header>
+  <section class="held">
+    <div>
+      <div class="boven">Gezicht · huid · handen</div>
+      <h1>Even helemaal<br><em>voor uzelf.</em></h1>
+      <p class="intro">Salon Lindaveer in Alkmaar: gezichtsbehandelingen, huidverzorging en manicure in een rustige, lichte behandelkamer.</p>
+      <div class="knoppen"><a class="knop vol">Afspraak maken <i></i></a><a class="tel">Of bel 072 000 00 00</a></div>
+      <div class="review"><span class="sterren">★★★★★</span><q>Ik kom hier om even niets te hoeven. Dat lukt elke keer.</q>Voorbeeldreview</div>
+    </div>
+    <div class="foto" role="img" aria-label="Lichte behandelkamer met roze luiken en een behandeltafel"></div>
+  </section>
+</body>
+</html>

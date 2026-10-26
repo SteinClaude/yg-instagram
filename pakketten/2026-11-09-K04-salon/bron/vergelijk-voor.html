@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Salon Lindaveer · vergelijking, minder sterke versie</title>
+<!-- Conceptproject van YG Digital (K04). Salon Lindaveer is fictief. Compacte weergave (760 breed) voor beeld 2:
+     dezelfde inhoud en foto als vergelijk-na.html, opgemaakt zoals veel sjabloonsites: een menu zonder afspraakknop,
+     tekst gecentreerd over een verbleekte foto, geen reviews in beeld en het telefoonnummer alleen in een sierbanner
+     (een afbeelding, dus niet aan te tikken). Lettertypen uit platen/fonts, zodat pc en cloud hetzelfde renderen. -->
+<style>
+  @font-face { font-family: 'Playfair'; src: url('../../../platen/fonts/PlayfairDisplay-400.ttf'); }
+  @font-face { font-family: 'Mont'; src: url('../../../platen/fonts/Montserrat-400.ttf'); font-weight: 400; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #F1ECEA; }
+  body { color: #6A615E; font: 400 12.5px/1.6 'Mont', sans-serif; width: 760px; min-height: 640px; }
+  a { color: inherit; text-decoration: none; }
+  .kop { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 16px 26px; background: #F6F2F0; border-bottom: 1px solid #DED5D1; }
+  .naam { font-family: 'Playfair', serif; font-size: 14px; letter-spacing: .14em; color: #7A706C; white-space: nowrap; }
+  nav { display: flex; gap: 16px; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: #9A8F8B; white-space: nowrap; }
+  .held { position: relative; height: 290px; background: url(beelden/salonfoto-liggend.jpg) center 60% / cover; display: flex; align-items: center; justify-content: center; text-align: center; }
+  .held::before { content: ''; position: absolute; inset: 0; background: rgba(238, 230, 227, .6); }
+  .tekst { position: relative; max-width: 540px; padding: 0 20px; }
+  .welkom { font-family: 'Playfair', serif; font-style: italic; font-size: 15px; color: #7A706C; }
+  h1 { font-family: 'Playfair', serif; font-weight: 400; font-size: 25px; color: #5A514E; margin: 4px 0 10px; }
+  .tekst p { font-size: 12.5px; color: #615855; }
+  .meer { display: inline-block; margin-top: 12px; border: 1px solid #A0948F; color: #7A706C; padding: 4px 14px; font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; }
+  .sectie { padding: 22px 60px 18px; text-align: center; }
+  h2 { font-family: 'Playfair', serif; font-weight: 400; font-size: 20px; color: #5E5552; margin-bottom: 8px; }
+  .sectie p { font-size: 12.5px; color: #746B67; }
+  /* sierbanner met het telefoonnummer: in de echte sjabloonsites is dit een plaatje */
+  .banner { margin: 6px auto 0; width: 340px; height: 74px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            background: linear-gradient(90deg, #E9C9CB, #F3DFE0 50%, #E9C9CB); border-radius: 4px; color: #FFFFFF;
+            font-family: 'Playfair', serif; font-style: italic; text-shadow: 0 1px 2px rgba(120, 70, 75, .55); }
+  .banner b { font-weight: 400; font-size: 13px; letter-spacing: .1em; }
+  .banner span { font-size: 22px; letter-spacing: .04em; }
+</style>
+</head>
+<body>
+  <header class="kop">
+    <div class="naam">SALON LINDAVEER</div>
+    <nav id="menu"><a>Home</a><a>Over mij</a><a>Behandelingen</a><a>Foto&#8217;s</a><a>Contact</a></nav>
+  </header>
+  <section class="held">
+    <div class="tekst">
+      <div class="welkom">Welkom bij Salon Lindaveer</div>
+      <h1>Even helemaal voor uzelf.</h1>
+      <p>Salon Lindaveer in Alkmaar: gezichtsbehandelingen, huidverzorging en manicure.</p>
+      <a class="meer">Lees meer</a>
+    </div>
+  </section>
+  <section class="sectie" id="leeg">
+    <h2>Over de salon</h2>
+    <p>Bij Salon Lindaveer staat u centraal. Neem gerust contact op voor meer informatie over de mogelijkheden.</p>
+  </section>
+  <div class="banner" id="banner" role="img" aria-label="Bel ons: 072 000 00 00"><b>Bel voor een afspraak</b><span>072 000 00 00</span></div>
+</body>
+</html>
