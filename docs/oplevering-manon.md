@@ -1,3 +1,5 @@
+KAN NIET VERDER: K04 en T02 zijn klaar en wachten op een harde stop (pakket-OK) · nodig: "pakket OK K04" en "pakket OK T02" van Andries, als citaat in docs/OPDRACHT-ACTUEEL.md (26 okt)
+
 # Oplevering Manon — logboek per werksessie
 
 Eén regel per sessie: datum · gedaan · open · vragen. Details per pakket staan in `docs/oplevering-01.md`. Nieuwste onderaan.
