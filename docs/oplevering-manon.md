@@ -4,6 +4,8 @@ KAN NIET VERDER: K04 en T02 zijn klaar en wachten op een harde stop (pakket-OK) 
 
 Eén regel per sessie: datum · gedaan · open · vragen. Details per pakket staan in `docs/oplevering-01.md`. Nieuwste onderaan.
 
+KLAAR: pakket T03 klaar (feit "Gevonden op de kaart. En dan?", Nacht, vr 20 nov 19:00, niet ingepland; bron Google-bedrijfsprofiel Help, support.google.com/business/answer/3039617) · dcf6f32
+
 KLAAR: pakket K05 klaar (Installatiebedrijf Veldwater, fictief, nieuwe stijl, wo 18 nov 19:00, niet ingepland) · a392a90
 
 KLAAR: pakket G01 klaar (werkwijze "Eerst zien. Dan beslissen.", Nacht, ma 16 nov 19:00, niet ingepland) · 6f4737b
