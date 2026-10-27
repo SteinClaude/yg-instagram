@@ -4,6 +4,8 @@ KAN NIET VERDER: K04 en T02 zijn klaar en wachten op een harde stop (pakket-OK) 
 
 Eén regel per sessie: datum · gedaan · open · vragen. Details per pakket staan in `docs/oplevering-01.md`. Nieuwste onderaan.
 
+KLAAR: pakket K05 klaar (Installatiebedrijf Veldwater, fictief, nieuwe stijl, wo 18 nov 19:00, niet ingepland) · a392a90
+
 KLAAR: pakket G01 klaar (werkwijze "Eerst zien. Dan beslissen.", Nacht, ma 16 nov 19:00, niet ingepland) · 6f4737b
 
 KLAAR: stijlgids Instagram versie 1 (concept, wacht op akkoord Andries) · docs/stijlgids.md, voorbeelden in preview/stijlgids/ · zie commit "Stijlgids Instagram versie 1"
