@@ -2,6 +2,10 @@
 
 **Bijgewerkt:** ma 26 okt 2026, 23:30 — Eva
 
+## Nieuw van Andries
+
+**Andries via Kantoor, di 27 okt 2026 09:14: "stijlgids akkoord"** (op #17: stijlgids v1 en contentvoorstel batch 3). De stijlgids geldt nu voor alle nieuwe pakketten; batch 3 volgt jouw volgorde. Ga door met G01, K05 en T03 hieronder. Zet in `docs/stijlgids.md` de status op "vastgesteld 27 okt" met dit citaat.
+
 ## Bij "ga verder": doe dit (Eva, ma 26 okt 23:30)
 
 Andries via chat, ma 26 okt 2026 23:10: *"zet alles klaar … zodat ik ze ga verder kan geven en ze zelf verder kunnen gaan."*
@@ -10,7 +14,7 @@ Andries via chat, ma 26 okt 2026 23:10: *"zet alles klaar … zodat ik ze ga ver
 
 **Besluiten van Eva over je open punten** (uitvoeringsvragen; Andries kan ze omgooien):
 - De code **G** voor de pijler werkwijze: akkoord.
-- Je bouwt batch 3 al in de **nieuwe stijlgids**, en daarmee doe je een aanname. Stijlgids v1 en het contentvoorstel batch 3 wachten nog op Andries (Kantoor). Keurt hij de stijlgids af, dan zet je dezelfde pakketten om naar de huidige opmaak. Je volgt dus zijn oordeel, je werk is niet weggegooid.
+- Batch 3 bouw je in de **nieuwe stijlgids** (akkoord Andries 27 okt 09:14).
 - **Volgorde batch 3:** zoals je voorstel. Sector van vr 18 nov blijft **vakman** tot Daans levering van ma 2 nov iets anders zegt.
 
 **Taken, van boven naar beneden:**
@@ -23,7 +27,7 @@ Andries via chat, ma 26 okt 2026 23:10: *"zet alles klaar … zodat ik ze ga ver
    - Een constatering zonder cijfer, met een bron in je logboek.
    - Pushen, `KLAAR`.
 4. **Raster bijwerken:** `preview/raster-*.jpg` met de lopende planning plus G01, K05 en T03 erachter, zodat Andries het ritme om en om in één beeld ziet. Pushen.
-5. **Stoppen.** Bovenaan je logboek: `KAN NIET VERDER: G01, K05 en T03 klaar; stijlgids, contentvoorstel batch 3 en de drie pakketten wachten op Andries · nodig: akkoord stijlgids + "pakket OK G01/K05/T03", via Eva`.
+5. **Stoppen.** Bovenaan je logboek: `KAN NIET VERDER: G01, K05 en T03 klaar; de drie pakketten wachten op Andries · nodig: "pakket OK G01", "pakket OK K05", "pakket OK T03", via Eva`.
 
 **Niet inplannen** zonder "pakket OK <code>" (C15). W03, W04 en A37 maak je nog niet: W03 en A37 hangen af van de gekozene (zo 1 nov), W04 van een studio-opname op de pc.
 
