@@ -4,6 +4,8 @@ KAN NIET VERDER: K04 en T02 zijn klaar en wachten op een harde stop (pakket-OK) 
 
 Eén regel per sessie: datum · gedaan · open · vragen. Details per pakket staan in `docs/oplevering-01.md`. Nieuwste onderaan.
 
+KLAAR: pakket G01 klaar (werkwijze "Eerst zien. Dan beslissen.", Nacht, ma 16 nov 19:00, niet ingepland) · 6f4737b
+
 KLAAR: stijlgids Instagram versie 1 (concept, wacht op akkoord Andries) · docs/stijlgids.md, voorbeelden in preview/stijlgids/ · zie commit "Stijlgids Instagram versie 1"
 
 KLAAR: K04 en T02 ingepland (K04 Salon Lindaveer ma 9 nov 19:00 · T02 wo 11 nov 19:00) · zie commit "K04 en T02 gepland"
