@@ -4,6 +4,8 @@
 
 ## Nieuw van Andries
 
+**Eva, di 27 okt 09:45 — K03 niet zichtbaar.** `gedaan.json` zegt K03 geplaatst op 26 okt 22:26 (media-id 17965821570218103, drie uur na 19:00), maar het profiel toont om 09:40 maar 2 berichten (A36 en K02). Zoek uit wat er gebeurde: de workflow "Plaatsen op Instagram" (run van 26 okt rond 21:26 UTC), het plaatsingsscript en wat de API teruggaf (een media-id zonder zichtbare post wijst op een container die niet gepubliceerd is, of op een story in plaats van een feedbericht). Niets opnieuw plaatsen en `planning.json` niet aanpassen: schrijf je bevinding en een voorstel bovenaan je logboek, als KAN NIET VERDER als je Andries nodig hebt. W01 staat op wo 28 okt 19:00; heeft dezelfde fout invloed op W01, zeg dat dan bovenaan.
+
 **Andries via Kantoor, di 27 okt 2026 09:14: "stijlgids akkoord"** (op #17: stijlgids v1 en contentvoorstel batch 3). De stijlgids geldt nu voor alle nieuwe pakketten; batch 3 volgt jouw volgorde. Ga door met G01, K05 en T03 hieronder. Zet in `docs/stijlgids.md` de status op "vastgesteld 27 okt" met dit citaat.
 
 ## Bij "ga verder": doe dit (Eva, ma 26 okt 23:30)
