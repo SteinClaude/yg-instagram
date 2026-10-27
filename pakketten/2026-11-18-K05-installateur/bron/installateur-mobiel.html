@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=390">
+<title>Installatiebedrijf Veldwater · conceptontwerp (telefoon)</title>
+<!-- Conceptproject van YG Digital (K05). Installatiebedrijf Veldwater is fictief; 072 000 00 00 is een plaatshouder.
+     Bovenaan de pagina staat de belknop; met #lijst staat de pagina bij de diensten en is de vaste balk met Bellen en
+     Offerte onderin zichtbaar. Lettertypen uit platen/fonts. -->
+<style>
+  @font-face { font-family: 'Play'; src: url('../../../platen/fonts/PlayfairDisplay-400.ttf'); }
+  @font-face { font-family: 'Mont'; src: url('../../../platen/fonts/Montserrat-400.ttf'); font-weight: 400; }
+  @font-face { font-family: 'Mont'; src: url('../../../platen/fonts/Montserrat-500.ttf'); font-weight: 500 700; }
+  :root { --ivoor: #F4F5F3; --papier: #FBFBFA; --inkt: #1E2428; --zacht: #5D666C; --lijn: #DDE1E2; --blauw: #2F5D73; --donker: #1E2E37; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--ivoor); color: var(--inkt); font: 400 15px/1.55 'Mont', sans-serif; width: 390px; }
+  a { color: inherit; text-decoration: none; }
+  .kop { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; border-bottom: 1px solid var(--lijn); position: sticky; top: 0; background: var(--ivoor); z-index: 2; }
+  .naam { font-family: 'Play', serif; font-size: 19px; line-height: 1; white-space: nowrap; }
+  .naam small { display: block; font: 500 7.5px 'Mont'; letter-spacing: .28em; color: var(--blauw); margin-bottom: 5px; }
+  .menu { width: 26px; display: grid; gap: 6px; } .menu i { height: 1.5px; background: var(--inkt); display: block; }
+  .belbalk { display: flex; align-items: center; justify-content: center; gap: 10px; height: 52px; background: var(--donker); color: var(--papier); font: 500 14px 'Mont'; letter-spacing: .08em; }
+  .belbalk b { font-weight: 500; letter-spacing: .04em; }
+  .foto { height: 200px; background: url(beelden/installateursfoto-liggend.jpg) 50% 45% / cover; }
+  .held { padding: 22px 20px 26px; }
+  .boven { font-size: 10.5px; font-weight: 500; letter-spacing: .24em; color: var(--blauw); text-transform: uppercase; }
+  h1 { font-family: 'Play', serif; font-weight: 400; font-size: 34px; line-height: 1.1; margin: 10px 0 12px; }
+  h1 em { color: var(--blauw); }
+  .intro { font-size: 14px; color: var(--zacht); }
+  .gebied { display: flex; align-items: center; gap: 8px; margin-top: 14px; font-size: 13.5px; font-weight: 500; }
+  .gebied i { width: 9px; height: 9px; border-radius: 50%; background: var(--blauw); display: inline-block; }
+  .sectie { padding: 24px 20px 120px; background: var(--papier); border-top: 1px solid var(--lijn); }
+  h2 { font-family: 'Play', serif; font-weight: 400; font-size: 28px; line-height: 1.1; margin: 8px 0 14px; }
+  .rij { display: flex; align-items: center; justify-content: space-between; padding: 15px 16px; background: var(--ivoor); border: 1px solid var(--lijn); margin-bottom: 10px; }
+  .rij h3 { font-family: 'Play', serif; font-weight: 400; font-size: 21px; line-height: 1.1; }
+  .rij p { font-size: 11px; color: var(--zacht); margin-top: 3px; }
+  .rij .pijl { width: 30px; height: 30px; border: 1px solid var(--inkt); border-radius: 50%; display: grid; place-items: center; font-size: 15px; line-height: 1; }
+  .vast { position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 14px 16px; background: rgba(244, 245, 243, .96); border-top: 1px solid var(--lijn); display: none; z-index: 3; }
+  .vast .knoppen { display: grid; grid-template-columns: 1.3fr 1fr; gap: 10px; }
+  .vast a { display: flex; align-items: center; justify-content: center; height: 54px; font: 500 14px 'Mont'; letter-spacing: .1em; text-transform: uppercase; }
+  .vast .vol { background: var(--donker); color: var(--papier); }
+  .vast .rand { border: 1px solid var(--inkt); }
+  body.lijst .vast { display: block; }
+</style>
+</head>
+<body>
+  <header class="kop"><div class="naam"><small>INSTALLATIETECHNIEK · ALKMAAR</small>Installatiebedrijf Veldwater</div><div class="menu"><i></i><i></i><i></i></div></header>
+  <a class="belbalk" id="belbalk">BEL DIRECT · <b>072 000 00 00</b></a>
+  <div class="foto" role="img" aria-label="Een installateur werkt aan een radiatorleiding"></div>
+  <section class="held">
+    <div class="boven">Cv-ketel · lekkage · badkamer</div>
+    <h1>Storing of lekkage?<br><em>Wij komen langs.</em></h1>
+    <p class="intro">Installatiebedrijf Veldwater helpt bij storingen, lekkages en onderhoud, en vervangt uw cv-ketel of badkamer.</p>
+    <div class="gebied"><i></i>Alkmaar en omgeving</div>
+  </section>
+  <section class="sectie" id="diensten">
+    <div class="boven">Diensten</div>
+    <h2>Waar kunnen wij u mee helpen?</h2>
+    <div class="rij"><div><h3>Cv-onderhoud</h3><p>Jaarlijks nagekeken</p></div><div class="pijl">›</div></div>
+    <div class="rij"><div><h3>Lekkage</h3><p>Gevonden en verholpen</p></div><div class="pijl">›</div></div>
+    <div class="rij"><div><h3>Nieuwe ketel</h3><p>Advies en plaatsing</p></div><div class="pijl">›</div></div>
+    <div class="rij"><div><h3>Badkamer</h3><p>Van ontwerp tot oplevering</p></div><div class="pijl">›</div></div>
+  </section>
+  <div class="vast"><div class="knoppen"><a class="vol">Bellen</a><a class="rand">Offerte</a></div></div>
+  <script>if (location.hash === '#lijst') { document.body.classList.add('lijst'); }</script>
+</body>
+</html>
