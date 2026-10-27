@@ -44,18 +44,7 @@ h1 em { font-style: italic; color: #86682F; }
 </div></body></html>`;
 
 // ---------------------------------------------------------------- 2. nacht, feit met een gouden lijntekening (zoekbalk)
-const zoekbalk = {
-  t: 'svg', hoogte: 300, marge: 64,
-  teken: (C, y) => {
-    const s = C.s, w = 720 * s, x = C.mx - w / 2, g = C.k.goud, h = 92 * s;
-    const lijn = (yy, br, dek) => `<rect x="${x + 40 * s}" y="${yy}" width="${br * s}" height="${10 * s}" rx="${5 * s}" fill="${g}" opacity="${dek}"/>`;
-    return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${h / 2}" fill="none" stroke="${g}" stroke-width="${2.4 * s}"/>
-      <circle cx="${x + 62 * s}" cy="${y + h / 2 - 4 * s}" r="${16 * s}" fill="none" stroke="${g}" stroke-width="${3 * s}"/>
-      <path d="M${x + 74 * s} ${y + h / 2 + 8 * s}l${14 * s} ${14 * s}" stroke="${g}" stroke-width="${3.4 * s}" stroke-linecap="round"/>
-      ${lijn(y + h + 56 * s, 420, 0.9)}${lijn(y + h + 84 * s, 560, 0.45)}
-      ${lijn(y + h + 132 * s, 360, 0.9)}${lijn(y + h + 160 * s, 600, 0.45)}`;
-  },
-};
+const { zoekbalk } = require('./nacht-elementen.cjs');
 const nachtFeit = { blokken: [
   { t: 'boven', tekst: 'Een feit' },
   { t: 'ruimte', h: 30 },
