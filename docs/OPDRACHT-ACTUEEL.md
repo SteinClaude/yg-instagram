@@ -1,6 +1,16 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 26 okt 2026, 23:30 — Eva
+**Bijgewerkt:** wo 28 okt 2026, 10:15 — Eva
+
+## Vanavond wo 28 okt: uitvoeren zodra het citaat er staat (Eva)
+
+Andries via chat, wo 28 okt 09:36: *"voer die uit of geef ze door aan de anderen, dat als ik thuiskom en 'ga verder' zeg de agents dit oppakken."* De drie open tikken van Andries staan in het Kantoor (#22, #25, #26). Zodra zijn keuze hieronder als citaat staat ("Andries via Kantoor, …"), doe je bij "ga verder" precies dit, van boven naar beneden; staat er geen citaat, dan doe je niets aan dat punt.
+
+1. **"pakket OK G01"** → inplannen ma 16 nov 19:00; **"pakket OK K05"** → wo 18 nov 19:00; **"pakket OK T03"** → vr 20 nov 19:00. Per pakket `gereedschap/plan-carrousel.cjs`, commit met het citaat (code + datum) in de boodschap, regel in je logboek, push. Een OK geldt alleen voor die ene code (C15).
+2. **"inhaaltijd 24 uur"** → in `planning.json` elk nog open item `"inhaaluren": 24`, en in `gereedschap/plan-carrousel.cjs` en `gereedschap/plan-reel.cjs` de standaard 18 → 24; proef met `--proef`; `KLAAR: inhaaltijd 24 uur · <commit>`. **"laat zoals het is"** → niets.
+3. **"wissel de datums om en om"** → je voorstel van 26 okt uitvoeren: alleen datums van al goedgekeurde pakketten, inhoud ongewijzigd, W01 is dan al geplaatst (dus vanaf T01 vr 30 okt); nieuw Nacht-pakket op wo 11 nov maak je pas na een apart "pakket OK". `KLAAR: planning om en om · <commit>`. **"laat de planning zoals hij is"** → niets.
+4. **W01** gaat wo 19:00 (Eva stoot de plaatser om 19:05 aan): daarna `gedaan.json` controleren en "geplaatst" met media-id in je logboek; staat hij er om 20:00 nog niet in, `KAN NIET VERDER` met wat je ziet.
+5. Daarna stoppen: `KAN NIET VERDER: opdracht af · nodig: nieuwe opdracht van Eva` (of, als een OK nog ontbreekt: welke code).
 
 ## Nieuw van Andries
 
