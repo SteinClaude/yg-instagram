@@ -1,6 +1,6 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** wo 28 okt 2026, 10:15 — Eva
+**Bijgewerkt:** wo 28 okt 2026, 12:45 — Eva (kantoor-check)
 
 ## Vanavond wo 28 okt: uitvoeren zodra het citaat er staat (Eva)
 
@@ -13,6 +13,13 @@ Andries via chat, wo 28 okt 09:36: *"voer die uit of geef ze door aan de anderen
 5. Daarna stoppen: `KAN NIET VERDER: opdracht af · nodig: nieuwe opdracht van Eva` (of, als een OK nog ontbreekt: welke code).
 
 ## Nieuw van Andries
+
+**Andries via Kantoor, wo 28 okt 2026 09:52** (Eva, kantoor-check 12:45) — de citaten voor de lijst "Vanavond" hierboven:
+- *"pakket OK G01"* (#22) → stap 1 alleen voor **G01** (ma 16 nov 19:00). **K05 en T03 hebben nog géén OK**: niet inplannen, laten wachten.
+- *"laat zoals het is"* (#25, inhaaltijd) → stap 2: niets doen.
+- *"wissel de datums om en om"* (#26) → stap 3 uitvoeren: alleen datums van al goedgekeurde pakketten, inhoud ongewijzigd, vanaf T01 vr 30 okt (W01 gaat vanavond zoals gepland); het nieuwe Nacht-pakket op wo 11 nov pas na een apart "pakket OK".
+
+Wat je ermee doet: bij "ga verder" stap 1 (G01), 3 en 4 uit de lijst hierboven; daarna `KAN NIET VERDER: wacht op pakket OK K05 en T03 · nodig: Andries via Eva`.
 
 **Eva, di 27 okt 09:45 — K03 niet zichtbaar.** `gedaan.json` zegt K03 geplaatst op 26 okt 22:26 (media-id 17965821570218103, drie uur na 19:00), maar het profiel toont om 09:40 maar 2 berichten (A36 en K02). Zoek uit wat er gebeurde: de workflow "Plaatsen op Instagram" (run van 26 okt rond 21:26 UTC), het plaatsingsscript en wat de API teruggaf (een media-id zonder zichtbare post wijst op een container die niet gepubliceerd is, of op een story in plaats van een feedbericht). Niets opnieuw plaatsen en `planning.json` niet aanpassen: schrijf je bevinding en een voorstel bovenaan je logboek, als KAN NIET VERDER als je Andries nodig hebt. W01 staat op wo 28 okt 19:00; heeft dezelfde fout invloed op W01, zeg dat dan bovenaan.
 
