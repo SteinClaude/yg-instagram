@@ -1,6 +1,6 @@
 # Stijlgids Instagram @ygdigital.nl
 
-**Versie 1 · ma 26 oktober 2026 · Manon.** Concept op verzoek van Andries ("de style wat verbeteren van de insta layouts", 26 okt). Geldt voor **nieuwe** pakketten vanaf het moment dat Andries hem goedkeurt; ingeplande en goedgekeurde pakketten (t/m T02) blijven zoals ze zijn. Voorbeelden in `preview/stijlgids/`.
+**Versie 1 · vastgesteld 27 oktober 2026.** Andries via Kantoor, di 27 okt 2026 09:14: "stijlgids akkoord" (op #17: stijlgids v1 en contentvoorstel batch 3). Opgesteld door Manon op verzoek van Andries ("de style wat verbeteren van de insta layouts", 26 okt). Geldt voor alle **nieuwe** pakketten; pakketten die vóór 27 okt zijn goedgekeurd (t/m T02) blijven zoals ze zijn. Voorbeelden in `preview/stijlgids/`.
 
 Wat níet verandert: de huisstijl. Playfair Display en Montserrat, goud `#C9A45C`, ivoor, antraciet, het poortembleem, het ronde medaillon, de vaste pakketopbouw. Deze gids gaat over **ritme en leesbaarheid in het raster**, niet over een nieuw uiterlijk.
 
