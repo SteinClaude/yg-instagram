@@ -716,6 +716,27 @@
       ],
       "inhaaluren": 18,
       "eenmalig": true
+    },
+    {
+      "id": "2026-11-16-bericht-g01",
+      "datum": "2026-11-16",
+      "tijd": "19:00",
+      "soort": "bericht",
+      "taal": "nl",
+      "beeld": [
+        "berichten/nl/G01-1.jpg",
+        "berichten/nl/G01-2.jpg",
+        "berichten/nl/G01-3.jpg"
+      ],
+      "titel": "Carrousel G01: Eerst zien. Dan beslissen.",
+      "tekst": "Eerst zien. Dan beslissen.\n\nBij ons begint een website niet met een offerte, maar met een ontwerp. In onze ontwerpstudio vult u uw bedrijfsnaam in, kiest u uw vak en een sfeer, en ziet u binnen vijf minuten een eerste ontwerp. Bevalt het, dan praten we verder. Zo niet, dan zit u nergens aan vast.\n\nBekijk uw eerste ontwerp via de link in onze bio.\n\n#alkmaar #ondernemersalkmaar #webdesign #websitelatenmaken #ygdigital #werkwijze #eersteontwerp #ondernemen",
+      "alt": [
+        "Eerst zien. Dan beslissen. Donkere plaat met gouden kaderlijn en het YG-poortembleem. Boven de tekst Onze werkwijze een groot gouden aanhalingsteken. In ivoren letters: Eerst zien. Dan beslissen. Daaronder: U ziet uw eerste ontwerp voordat u iets afspreekt.",
+        "In de ontwerpstudio Donkere plaat in dezelfde stijl met een gouden lijntekening van een telefoon met een website en een knop. In ivoren letters: Uw naam, uw vak, uw sfeer. Daaronder: In vijf minuten staat er een eerste ontwerp met uw eigen naam. Geen account nodig.",
+        "Daarna Donkere plaat in dezelfde stijl met een groot gouden sluitend aanhalingsteken. In ivoren letters: Bevalt het? Dan praten we verder. Daaronder: Zo niet, dan zit u nergens aan vast. Bekijk uw eerste ontwerp via de link in onze bio."
+      ],
+      "inhaaluren": 18,
+      "eenmalig": true
     }
   ]
 }
