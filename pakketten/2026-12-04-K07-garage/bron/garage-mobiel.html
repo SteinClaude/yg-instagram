@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=390">
+<title>Garage Wendhoek · conceptontwerp (telefoon)</title>
+<!-- Conceptproject van YG Digital (K07). Garage Wendhoek is fictief. Standaard: bovenkant met de knop "Plan uw APK".
+     #plan: het planformulier (kenteken, dienst, dag) met de vaste balk "Afspraak aanvragen" onderin. Het kenteken is leeg
+     gelaten: geen bestaand kenteken in beeld. -->
+<link rel="stylesheet" href="garage.css">
+<style>
+  body { width: 390px; font-size: 15px; }
+  .kop { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; border-bottom: 1px solid var(--lijn); background: var(--ivoor); }
+  .naam { font-size: 20px; } .naam small { font-size: 7.5px; }
+  .menu { width: 26px; display: grid; gap: 6px; } .menu i { height: 1.5px; background: var(--inkt); display: block; }
+  .foto { height: 220px; }
+  .held { padding: 22px 20px 24px; }
+  h1 { font-size: 34px; margin: 10px 0 14px; }
+  .knop { display: flex; align-items: center; justify-content: center; height: 54px; margin-top: 18px; background: var(--oker); color: var(--papier); font: 500 14px 'Mont'; letter-spacing: .1em; text-transform: uppercase; }
+  .plan { display: none; padding: 22px 20px 130px; background: var(--papier); min-height: 629px; }
+  body.plan-open .plan { display: block; } body.plan-open .gewoon { display: none; }
+  h2 { font-family: 'Play', serif; font-weight: 400; font-size: 28px; line-height: 1.1; margin: 8px 0 18px; }
+  .veld { margin-bottom: 18px; }
+  .veld label { display: block; font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--zacht); margin-bottom: 8px; }
+  .kenteken { display: flex; height: 52px; border: 2px solid var(--inkt); border-radius: 6px; overflow: hidden; background: #F4C430; }
+  .kenteken b { width: 34px; background: #2B4DA0; color: #fff; font: 500 11px 'Mont'; display: grid; place-items: end center; padding-bottom: 6px; }
+  .kenteken span { flex: 1; display: flex; align-items: center; padding-left: 14px; font: 500 15px 'Mont'; color: rgba(29,32,35,.55); letter-spacing: .06em; }
+  .keuzes { display: flex; flex-wrap: wrap; gap: 8px; }
+  .keuze { border: 1px solid var(--lijn); padding: 10px 14px; font-size: 13.5px; font-weight: 500; background: var(--ivoor); }
+  .keuze.on { background: var(--oker); border-color: var(--oker); color: var(--papier); }
+  .dagen { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+  .dag { border: 1px solid var(--lijn); text-align: center; padding: 8px 0; font-size: 11px; color: var(--zacht); background: var(--ivoor); }
+  .dag b { display: block; font: 400 20px 'Play'; color: var(--inkt); }
+  .dag.vol { opacity: .45; } .dag.on { border-color: var(--oker); box-shadow: inset 0 0 0 1px var(--oker); }
+  .vast { position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 14px 16px; background: rgba(242, 242, 239, .96); border-top: 1px solid var(--lijn); display: none; }
+  .vast a { display: flex; align-items: center; justify-content: space-between; height: 56px; padding: 0 18px; background: var(--oker); color: var(--papier); font: 500 14px 'Mont'; letter-spacing: .1em; text-transform: uppercase; }
+  .vast a span { font-size: 12.5px; letter-spacing: .03em; text-transform: none; }
+  body.plan-open .vast { display: block; }
+</style>
+</head>
+<body>
+  <header class="kop"><div class="naam"><small>GARAGE · ALLE MERKEN</small>Garage Wendhoek</div><div class="menu"><i></i><i></i><i></i></div></header>
+  <div class="gewoon">
+    <div class="foto" role="img" aria-label="Een witte auto op de brug in een lichte werkplaats"></div>
+    <section class="held">
+      <div class="boven">APK · onderhoud · reparatie</div>
+      <h1>Wanneer kan<br><em>uw auto erin?</em></h1>
+      <div class="adres"><i></i>Alkmaar · ma–vr 8.00–17.30</div>
+      <a class="knop" id="planknop">Plan uw APK</a>
+    </section>
+  </div>
+  <section class="plan">
+    <div class="boven">Afspraak plannen</div>
+    <h2>Wanneer kan uw auto erin?</h2>
+    <div class="veld" id="veld-kenteken"><label>Kenteken</label><div class="kenteken"><b>NL</b><span>Uw kenteken</span></div></div>
+    <div class="veld" id="veld-dienst"><label>Wat moet er gebeuren?</label><div class="keuzes"><span class="keuze on">APK</span><span class="keuze">Kleine beurt</span><span class="keuze on">Grote beurt</span><span class="keuze">Banden</span></div></div>
+    <div class="veld" id="veld-dag"><label>Welke dag?</label><div class="dagen"><div class="dag vol">ma<b>7</b></div><div class="dag on">di<b>8</b></div><div class="dag">wo<b>9</b></div><div class="dag vol">do<b>10</b></div><div class="dag">vr<b>11</b></div></div></div>
+  </section>
+  <div class="vast"><a id="vastknop">Aanvragen <span>di 8 · APK, grote beurt</span></a></div>
+  <script>if (location.hash === '#plan') document.body.classList.add('plan-open');</script>
+</body>
+</html>

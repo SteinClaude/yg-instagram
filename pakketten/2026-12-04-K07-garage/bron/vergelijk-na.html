@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Garage Wendhoek · vergelijking, sterke versie</title>
+<!-- Conceptproject van YG Digital (K07). Garage Wendhoek is fictief. Compacte weergave (760 breed) voor plaat 3: dezelfde
+     inhoud en foto als vergelijk-voor.html, met de knop "Plan uw APK" bovenaan, de diensten als kaarten en adres en
+     openingstijden in één regel. -->
+<link rel="stylesheet" href="garage.css">
+<style>
+  body { width: 760px; min-height: 640px; }
+  .kop { height: 74px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; border-bottom: 1px solid var(--lijn); }
+  .naam { font-size: 20px; }
+  .rechts { display: flex; align-items: center; gap: 16px; }
+  nav { display: flex; gap: 14px; font-size: 13px; font-weight: 500; }
+  .knop { display: inline-flex; align-items: center; height: 42px; padding: 0 16px; font: 500 12px 'Mont'; letter-spacing: .1em; text-transform: uppercase; background: var(--oker); color: var(--papier); white-space: nowrap; }
+  .held { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; padding: 22px 28px 16px; align-items: center; }
+  h1 { font-size: 34px; margin: 10px 0 14px; }
+  .foto { height: 220px; }
+  .sectie { padding: 14px 28px 24px; background: var(--papier); border-top: 1px solid var(--lijn); }
+  .sectie .boven { margin-bottom: 10px; }
+  .kaarten { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .kaart { background: var(--ivoor); border: 1px solid var(--lijn); padding: 12px 14px; }
+  .kaart h3 { font-family: 'Play', serif; font-weight: 400; font-size: 19px; line-height: 1.15; }
+  .kaart p { font-size: 11px; color: var(--zacht); margin-top: 4px; }
+</style>
+</head>
+<body>
+  <header class="kop">
+    <div class="naam"><small>GARAGE · ALLE MERKEN</small>Garage Wendhoek</div>
+    <div class="rechts"><nav><a>Diensten</a><a>Contact</a></nav><a class="knop" id="plan">Plan uw APK</a></div>
+  </header>
+  <section class="held">
+    <div>
+      <div class="boven">APK · onderhoud · reparatie</div>
+      <h1>Wanneer kan<br><em>uw auto erin?</em></h1>
+      <div class="adres" id="adres"><i></i>Alkmaar · ma–vr 8.00–17.30</div>
+    </div>
+    <div class="foto" role="img" aria-label="Een witte auto op de brug in een lichte werkplaats"></div>
+  </section>
+  <section class="sectie">
+    <div class="boven">Diensten</div>
+    <div class="kaarten" id="diensten">
+      <div class="kaart"><h3>APK</h3><p>Terwijl u wacht</p></div>
+      <div class="kaart"><h3>Kleine beurt</h3><p>Olie, filters, controle</p></div>
+      <div class="kaart"><h3>Grote beurt</h3><p>Volgens fabrieksschema</p></div>
+      <div class="kaart"><h3>Banden</h3><p>Wisselen en opslag</p></div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Garage Wendhoek · vergelijking, zwakke versie</title>
+<!-- Conceptproject van YG Digital (K07). Garage Wendhoek is fictief. Compacte weergave (760 breed) voor plaat 2: zo ziet
+     de site van veel garages eruit. Geen manier om een afspraak te plannen (bellen staat in de tekst), APK en onderhoud
+     in één alinea en adres en openingstijden klein onderaan. 072 000 00 00 is een plaatshouder. -->
+<link rel="stylesheet" href="garage.css">
+<style>
+  body { width: 760px; min-height: 640px; }
+  .kop { height: 74px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; border-bottom: 1px solid var(--lijn); }
+  .naam { font-size: 22px; }
+  nav { display: flex; gap: 18px; font-size: 13px; font-weight: 500; }
+  .foto { height: 210px; }
+  .tekst { padding: 22px 28px 6px; }
+  h1 { font-size: 28px; margin-bottom: 10px; }
+  p { font-size: 12.5px; color: var(--zacht); margin-bottom: 8px; }
+  .voet { margin-top: 12px; padding: 12px 28px; border-top: 1px solid var(--lijn); font-size: 9.5px; color: #8a8f94; display: flex; gap: 22px; }
+</style>
+</head>
+<body>
+  <header class="kop"><div class="naam">Garage Wendhoek</div><nav id="menu"><a>Home</a><a>Occasions</a><a>Contact</a></nav></header>
+  <div class="foto" role="img" aria-label="Een witte auto op de brug in een lichte werkplaats"></div>
+  <section class="tekst">
+    <h1>Welkom bij Garage Wendhoek</h1>
+    <p>Garage Wendhoek is uw garage voor alle merken. Wij verzorgen het onderhoud van uw auto, van een kleine tot een grote beurt.</p>
+    <p id="diensten">Ook voor de APK, banden wisselen, de airco, schadeherstel en reparaties bent u bij ons aan het juiste adres. Bel ons om een afspraak te maken; wij kijken graag wanneer uw auto terecht kan.</p>
+  </section>
+  <div class="voet"><span>Garage Wendhoek</span><span id="adres">Werkplaats Alkmaar · ma t/m vr 8.00–17.30, za op afspraak</span><span>072 000 00 00</span></div>
+</body>
+</html>

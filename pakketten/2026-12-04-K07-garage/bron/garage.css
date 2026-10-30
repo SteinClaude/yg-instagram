@@ -1,0 +1,18 @@
+/* Conceptproject van YG Digital (K07). Garage Wendhoek is fictief. Gedeelde opmaak van de drie ontwerpen.
+   Lettertypen alleen uit platen/fonts (pc en cloud renderen gelijk). Foto: Pexels 8986138 (Artem Podrez), zonder personen. */
+@font-face { font-family: 'Play'; src: url('../../../platen/fonts/PlayfairDisplay-400.ttf'); }
+@font-face { font-family: 'Mont'; src: url('../../../platen/fonts/Montserrat-400.ttf'); font-weight: 400; }
+@font-face { font-family: 'Mont'; src: url('../../../platen/fonts/Montserrat-500.ttf'); font-weight: 500 700; }
+:root { --ivoor: #F2F2EF; --papier: #FAFAF8; --inkt: #1D2023; --zacht: #5C6268; --lijn: #DCDDDA; --oker: #B8701C; --donker: #23272B; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: inherit; text-decoration: none; }
+html, body { background: var(--ivoor); }
+body { color: var(--inkt); font: 400 14px/1.55 'Mont', sans-serif; }
+.foto { background: url(beelden/pexels-8986138-artem-podrez.jpg) 30% 50% / cover; }
+.boven { font-size: 10.5px; font-weight: 500; letter-spacing: .24em; color: var(--oker); text-transform: uppercase; }
+h1 { font-family: 'Play', serif; font-weight: 400; line-height: 1.1; }
+h1 em { color: var(--oker); }
+.naam { font-family: 'Play', serif; line-height: 1; white-space: nowrap; }
+.naam small { display: block; font: 500 8px 'Mont'; letter-spacing: .3em; color: var(--oker); margin-bottom: 5px; }
+.adres { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; }
+.adres i { width: 9px; height: 9px; border-radius: 50%; background: #5E8C52; display: inline-block; }
