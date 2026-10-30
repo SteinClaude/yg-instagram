@@ -4,7 +4,7 @@
 // daaruit de platen, bijschrift.txt en beeldbeschrijvingen.txt. Zolang gekozen.txt de plaatshouder bevat, is het pakket
 // een voorbeeld en wordt het niet ingepland.
 // Woordkeus (juridisch, zie platen/actie.cjs): "gekozen", nooit "gewonnen", "winnaar", "winactie" of "kans".
-//   node pakketten/2026-11-02-A37-bekendmaking/bron/maak-a37.cjs
+//   node pakketten/2026-11-04-A37-bekendmaking/bron/maak-a37.cjs
 'use strict';
 const fs = require('fs'), path = require('path');
 const { kaart } = require('../../../platen/maak.cjs');
