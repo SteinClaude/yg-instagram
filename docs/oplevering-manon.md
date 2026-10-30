@@ -1,3 +1,7 @@
+KLAAR: pakket W04 klaar (niet ingepland) · eedf92e
+
+KLAAR: pakket G02 klaar (niet ingepland) · zie commit "Pakket G02 klaar"
+
 AF: K02 en W01 geplaatst; Z01, T02, K04, T01, W02, G01 (a441f9c), K05 en T03 (2d41cc0) ingepland t/m vr 20 nov, om en om (d86bd95); stijlgids vastgesteld; gereedschap draagbaar
 
 OPEN: pakket W04 (ma 23 nov) en G02 (wo 25 nov) maken, niet inplannen; docs/sleutel-vernieuwen.md (#32, vóór 15 nov); A37 wacht op de gekozene (zo 1 nov) en pakket OK; K06/K07 na Daans levering ma 2 nov; na Z01 (ma 2 nov) gedaan.json controleren

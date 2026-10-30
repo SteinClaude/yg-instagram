@@ -7,3 +7,4 @@ vastgestelde stijlgids (om en om licht/donker); het raster per code laat de hele
 | Code | Datum | Wat | Preview |
 |---|---|---|---|
 | W04 | ma 23 nov | Eigen werk (licht): "Eén naam. Acht sferen." — "Uw bedrijf" in alle acht sferen van de ontwerpstudio, echte opnames uit de live studio, 4 platen. | `preview/raster-W04.jpg` · `pakketten/2026-11-23-W04-acht-sferen/overzicht.jpg` |
+| G02 | wo 25 nov | Werkwijze (donker): "U spreekt altijd dezelfde persoon." — vast aanspreekpunt, telefonisch/online/langs (staat zo op yg-digital.nl/over-yg-digital), 3 platen. | `preview/raster-G02.jpg` · `pakketten/2026-11-25-G02-werkwijze/overzicht.jpg` |
