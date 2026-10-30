@@ -1,8 +1,9 @@
 // A37 · bekendmaking van de weggeefactie (opdracht 02, §3): vier platen van 1080 x 1350 in de stijl van A36 (lichte deur
 // met ivoren waas, rond medaillonzegel, goud, poortembleem), met de tekenmachine (platen/maak.cjs) en het zegel uit
 // platen/actie.cjs. SJABLOON: naam, omschrijving en de drie waarom-regels komen uit bron/gekozen.txt; dit script maakt
-// daaruit de platen, bijschrift.txt en beeldbeschrijvingen.txt. Zolang gekozen.txt de plaatshouder bevat, is het pakket
-// een voorbeeld en wordt het niet ingepland.
+// daaruit de platen, bijschrift.txt en beeldbeschrijvingen.txt. Zolang gekozen.txt een plaatshouder ([GEKOZENE] of
+// iets anders tussen [ ]) bevat, is het pakket een sjabloon en wordt het niet ingepland (Eva 30 okt: na zondag hoeven
+// alleen naam, handle, waarom-regels en eventueel een beeld ingevuld te worden).
 // Woordkeus (juridisch, zie platen/actie.cjs): "gekozen", nooit "gewonnen", "winnaar", "winactie" of "kans".
 //   node pakketten/2026-11-04-A37-bekendmaking/bron/maak-a37.cjs
 'use strict';
@@ -18,7 +19,11 @@ for (const r of fs.readFileSync(path.join(__dirname, 'gekozen.txt'), 'utf8').spl
   const m = r.match(/^\s*([a-z0-9]+)\s*:\s*(.+?)\s*$/i); if (m && !r.trim().startsWith('#')) G[m[1]] = m[2];
 }
 for (const k of ['naam', 'wat', 'waarom1', 'waarom2', 'waarom3', 'waaromkort']) if (!G[k]) { console.error('gekozen.txt mist: ' + k); process.exit(1); }
-const PLAATSHOUDER = /voorbeeld b\.v\.|plaatshouder|fictief voorbeeldbedrijf/i.test(G.naam + ' ' + G.wat);
+const PLAATSHOUDER = /\[|voorbeeld b\.v\.|plaatshouder|fictief voorbeeldbedrijf/i.test(Object.values(G).join(' '));
+const HANDLE = G.handle ? ` (@${G.handle.replace(/^@/, '')})` : '';
+// optioneel beeld van de gekozene op plaat 1; de tekenmachine zoekt beelden vanuit platen/bron/
+const BEELD = G.beeld ? { t: 'beeld', bron: path.relative(path.join(__dirname, '..', '..', '..', 'platen', 'bron'), path.join(__dirname, G.beeld)), hoogte: 300, breedte: 300, marge: 30 } : null;
+if (BEELD && !fs.existsSync(path.join(__dirname, G.beeld))) { console.error('beeld niet gevonden: ' + G.beeld); process.exit(1); }
 const verboden = /\b(win|winnaar|winnen|gewonnen|winactie|kans|trekking|verloting|loting)\b/i;
 for (const [k, v] of Object.entries(G)) if (verboden.test(v)) { console.error(`verboden woord in ${k}: ${v}`); process.exit(1); }
 
@@ -30,6 +35,7 @@ const PLATEN = [
       { t: 'boven', tekst: 'Weggeefactie \u00b7 de uitslag' },
       { t: 'kop', tekst: 'Gekozen.', grootte: 96, marge: 30 },
       { t: 'kop', tekst: G.naam, grootte: 58, marge: 22, maxRegels: 2 },
+      ...(BEELD ? [BEELD] : []),
       { t: 'tekst', tekst: G.wat.charAt(0).toUpperCase() + G.wat.slice(1) + '.', grootte: 28, max: 820 },
     ] },
   { achtergrond: ACHTERGROND, blokken: [
@@ -58,7 +64,7 @@ const PLATEN = [
 ];
 
 // ---- bijschrift en alt-teksten (\u2264 80 woorden; "gekozen", nooit "gewonnen")
-const BIJSCHRIFT = `Gekozen: ${G.naam}.
+const BIJSCHRIFT = `Gekozen: ${G.naam}${HANDLE}.
 
 Dank aan iedereen die instuurde. Wij lazen elke inzending zelf en kozen ${G.naam} ${G.waaromkort}. Zij krijgen wat in de actie stond: zeven pagina\u2019s, de teksten en een logo. Het eerste ontwerp staat binnen 48 uur; de bouw laten wij hier zien.
 
@@ -69,7 +75,7 @@ Ook een eerste ontwerp? Via de link in onze bio.
 #alkmaar #ondernemersalkmaar #webdesign #websitelatenmaken #ygdigital #ondernemen #mkb #kleinbedrijf
 `;
 const ALT = `1. Gekozen: ${G.naam}
-Lichte plaat met een open deur achter een ivoren waas, het ronde gouden YG-medaillon en de tekst Weggeefactie, de uitslag. Gekozen: ${G.naam}, ${G.wat}.
+Lichte plaat met een open deur achter een ivoren waas, het ronde gouden YG-medaillon en de tekst Weggeefactie, de uitslag. Gekozen: ${G.naam}, ${G.wat}.${BEELD ? ' [BESCHRIJVING VAN HET BEELD INVULLEN]' : ''}
 
 2. Waarom
 Lichte plaat in dezelfde stijl. Kop: Wat de doorslag gaf. Drie punten: ${G.waarom1} ${G.waarom2} ${G.waarom3}

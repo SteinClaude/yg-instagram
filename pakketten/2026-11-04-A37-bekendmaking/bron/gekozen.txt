@@ -1,10 +1,16 @@
-# A37 · bekendmaking weggeefactie — het enige bestand dat je invult zodra Andries gekozen heeft (naam komt van Eva).
-# Daarna: node pakketten/2026-11-04-A37-bekendmaking/bron/maak-a37.cjs  → platen, bijschrift.txt, beeldbeschrijvingen.txt.
-# Regels: sleutel: waarde. Lege regels en regels met # worden overgeslagen. Alles hieronder is PLAATSHOUDER.
-naam: Voorbeeld B.V.
-wat: een fictief voorbeeldbedrijf, alleen om dit sjabloon te tonen
-waarom1: Wat het bedrijf doet en voor wie, stond in twee heldere zinnen.
-waarom2: De inzending zei precies wat de site moet oplossen.
-waarom3: Er was al van alles geprobeerd, en de klant was scherp omschreven.
+# A37 · bekendmaking weggeefactie — het enige bestand dat je invult zodra Andries gekozen heeft (naam komt als citaat van
+# Eva in docs/OPDRACHT-ACTUEEL.md). Daarna: node pakketten/2026-11-04-A37-bekendmaking/bron/maak-a37.cjs
+#   → platen, bijschrift.txt, beeldbeschrijvingen.txt. Zolang er [GEKOZENE] staat, is het pakket een sjabloon.
+# Regels: sleutel: waarde. Lege regels en regels met # worden overgeslagen.
+naam: [GEKOZENE]
+# handle: de Instagram-naam van de gekozene zonder @; laat de regel weg als die er niet is of niet genoemd mag worden.
+handle: [GEKOZENE-HANDLE]
+wat: [wat de gekozene doet, in een paar woorden, bv. "kapsalon in Heiloo"]
+waarom1: [waarom 1: één zin uit de keuze van Andries]
+waarom2: [waarom 2]
+waarom3: [waarom 3]
 # waaromkort: één bijzin van hooguit twaalf woorden, begint met "omdat"; komt in het bijschrift (max 80 woorden in totaal).
-waaromkort: omdat de inzending precies zei wat de site moet oplossen
+waaromkort: omdat [korte reden]
+# beeld: bestandsnaam in deze map (bv. beeld-gekozene.jpg): logo of foto van de gekozene, met toestemming. Komt op
+# plaat 1 onder de naam. Laat de regel weg zolang er geen beeld is.
+# beeld: beeld-gekozene.jpg

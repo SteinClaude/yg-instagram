@@ -11,6 +11,8 @@ VRAGEN:
 - Komt A37 niet op wo 4 nov, dan staan Z01 en T02 (beide donker) naast elkaar · aanname: A37 haalt wo 4 nov; anders A37 naar vr 6 nov en T02 een plek op (Eva 30 okt), alleen voorstellen · doorwerken: ja · blokkeert nee
 - De ontwerpstudio (eerste-ontwerp) toont onder het ontwerp nog "Beheer € 45 per maand, inclusief btw (€ 37,19 exclusief)"; /yg-launch en Z01 zeggen € 49 excl. btw · aanname: Eva of Lotte past de studiotekst aan; mijn pakketten tonen dat stuk niet · doorwerken: ja · blokkeert nee
 
+KLAAR: pakket A37 klaar als sjabloon met [GEKOZENE] (niet ingepland; wacht op naam als citaat en pakket OK) · zie commit "Pakket A37 klaar als sjabloon"
+
 KLAAR: pakket W04 klaar (niet ingepland) · eedf92e
 
 KLAAR: pakket G02 klaar (niet ingepland) · f8de55d
