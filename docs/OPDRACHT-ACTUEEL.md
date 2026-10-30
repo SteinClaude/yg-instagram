@@ -1,6 +1,20 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** vr 30 okt 2026, 18:15 — Eva
+**Bijgewerkt:** vr 30 okt 2026, 22:40 — Eva
+
+## Vr 30 okt 22:40 — vooruitwerken: heel batch 3 maken, keuren in één zitting (Eva)
+
+**Andries via chat, vr 30 okt 2026 22:07:** *"maak een goede workflow voor de agent en zorg dat ze veel vooruit kunnen werken, mijn akkoord heb je op alles."* Dat is het akkoord om **alle pakketten van batch 3 te maken**. Het is **geen** "pakket OK": inplannen blijft per code na zijn OK (C15; de repo is openbaar, hij ziet elk pakket eerst). Je stand van 18:23 (`02e30bd`) is gezien; je aanname over A37 (haalt wo 4 nov) is goed — en als de naam van de gekozene zondag laat komt, verschuift A37 naar vr 6 nov en schuift T02 één plek op; dat stel je dan voor, niet uitvoeren.
+
+**Werkwijze vanaf nu — je stopt niet meer na één pakket:**
+1. **Maak achter elkaar, in deze volgorde, elk als volledig pakket (niet inplannen):** W04 (ma 23 nov, licht) · G02 (wo 25 nov, donker) · K06 barbier, fictief (vr 27 nov, licht; naam eerst zelf controleren op bestaande bedrijven, Eva controleert ook) · T04 (ma 30 nov, donker) · G03 (wo 2 dec, donker) · K07 garage, fictief (vr 4 dec, licht) · T05 (ma 7 dec, donker). Sector van de week wijzigt alleen als Eva dat hier zet na Daans levering van ma 2 nov; tot die tijd je eigen volgorde. Per pakket: push + `KLAAR: pakket <code> klaar (niet ingepland) · <commit>`.
+2. **Keurlijst voor Andries:** `docs/keurlijst.md` — één regel per gemaakt, nog niet goedgekeurd pakket: code · datum · één zin · pad van `preview/raster-<code>.jpg` en `overzicht.jpg`. Eva zet die lijst als één punt in het Kantoor; Andries keurt in één zitting per code (C20 I). Na elk pakket de keurlijst bijwerken en pushen.
+3. **`docs/sleutel-vernieuwen.md`** (#32, vóór 15 nov): stappen voor Andries, zonder sleutels of waarden.
+4. **A37** (bekendmaking): maak het pakket al **met plaatshouder** voor naam en handle (`[GEKOZENE]`), zodat na zondag alleen de naam en het beeld nog ingevuld hoeven; de echte naam komt hier als citaat.
+5. **W03/W05** (echt werk van de gekozene) pas na "ontwerp OK" voor dat ontwerp — niet eerder.
+6. Elke werksessie: `git pull`, kijken of hier citaten staan ("pakket OK <code>" → inplannen met `plan-carrousel.cjs`, citaat in commit en logboek), dan verder met het volgende pakket. Je stopt pas met `KAN NIET VERDER: batch 3 gemaakt · nodig: pakket OK per code` als alles van punt 1 klaar is.
+
+**Blijft:** geen echte bedrijven, geen prijs buiten Z01, "gekozen" nooit "winnen", geen Runway, geen plaatsen zonder OK.
 
 ## Vr 30 okt: K05 en T03 in orde; nu W04 en G02 (Eva)
 
