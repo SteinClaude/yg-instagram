@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=390">
+<title>Barbier Moldaan · conceptontwerp (telefoon)</title>
+<!-- Conceptproject van YG Digital (K06). Barbier Moldaan is fictief. Standaard: bovenkant met boekknop. #lijst: bij de
+     behandelingen, met de vaste balk "Boek een plek" onderin. #tijd: de tijdkiezer voor één behandeling. -->
+<link rel="stylesheet" href="barbier.css">
+<style>
+  body { width: 390px; font-size: 15px; }
+  .kop { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; border-bottom: 1px solid var(--lijn); position: sticky; top: 0; background: var(--ivoor); z-index: 2; }
+  .naam { font-size: 20px; } .naam small { font-size: 7.5px; }
+  .menu { width: 26px; display: grid; gap: 6px; } .menu i { height: 1.5px; background: var(--inkt); display: block; }
+  .foto { height: 210px; }
+  .held { padding: 22px 20px 24px; }
+  h1 { font-size: 34px; margin: 10px 0 14px; }
+  .knop { display: flex; align-items: center; justify-content: center; height: 54px; margin-top: 18px; background: var(--koper); color: var(--papier); font: 500 14px 'Mont'; letter-spacing: .1em; text-transform: uppercase; }
+  .sectie { padding: 24px 20px 130px; background: var(--papier); border-top: 1px solid var(--lijn); }
+  h2 { font-family: 'Play', serif; font-weight: 400; font-size: 28px; line-height: 1.1; margin: 8px 0 14px; }
+  .rij { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: var(--ivoor); border: 1px solid var(--lijn); margin-bottom: 10px; }
+  .rij h3 { font-family: 'Play', serif; font-weight: 400; font-size: 21px; line-height: 1.1; }
+  .rij p { font-size: 11px; color: var(--zacht); margin-top: 3px; }
+  .rij .plus { width: 30px; height: 30px; border: 1px solid var(--inkt); border-radius: 50%; display: grid; place-items: center; font-size: 16px; line-height: 1; }
+  .rij.on { border-color: var(--koper); } .rij.on .plus { background: var(--koper); border-color: var(--koper); color: var(--papier); }
+  .vast { position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 14px 16px; background: rgba(243, 240, 234, .96); border-top: 1px solid var(--lijn); display: none; z-index: 3; }
+  .vast a { display: flex; align-items: center; justify-content: space-between; height: 56px; padding: 0 18px; background: var(--koper); color: var(--papier); font: 500 14px 'Mont'; letter-spacing: .1em; text-transform: uppercase; }
+  .vast a span { font-size: 12.5px; letter-spacing: .03em; text-transform: none; }
+  body.lijst .vast, body.tijd .vast { display: block; }
+  .kiezer { display: none; padding: 22px 20px 130px; background: var(--papier); min-height: 693px; }
+  body.tijd .kiezer { display: block; } body.tijd .gewoon { display: none; }
+  .dagen { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin: 12px 0 18px; }
+  .dag { border: 1px solid var(--lijn); text-align: center; padding: 8px 0; font-size: 11px; color: var(--zacht); }
+  .dag b { display: block; font: 400 20px 'Play'; color: var(--inkt); }
+  .dag.on { border-color: var(--koper); background: var(--ivoor); }
+  .raster { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .slot { border: 1px solid var(--lijn); height: 48px; display: grid; place-items: center; font: 500 15px 'Mont'; }
+  .slot.vol { color: #b9b2a8; text-decoration: line-through; } .slot.on { background: var(--koper); border-color: var(--koper); color: var(--papier); }
+</style>
+</head>
+<body>
+  <header class="kop"><div class="naam"><small>BARBIER · ALKMAAR</small>Barbier Moldaan</div><div class="menu"><i></i><i></i><i></i></div></header>
+  <div class="gewoon">
+    <div class="foto" role="img" aria-label="Lege barbierszaak met leren stoelen"></div>
+    <section class="held">
+      <div class="boven">Knippen · baard · scheren</div>
+      <h1>Strak geknipt,<br><em>zonder wachten.</em></h1>
+      <div class="tijden"><i></i>Di–za open · vandaag tot 18.00</div>
+      <a class="knop" id="boekknop">Boek een plek</a>
+    </section>
+    <section class="sectie" id="behandelingen">
+      <div class="boven">Behandelingen</div>
+      <h2>Wat mag het zijn?</h2>
+      <div class="rij"><div><h3>Knippen</h3><p>30 minuten</p></div><div class="plus">+</div></div>
+      <div class="rij on"><div><h3>Fade</h3><p>40 minuten</p></div><div class="plus">✓</div></div>
+      <div class="rij"><div><h3>Baard trimmen</h3><p>20 minuten</p></div><div class="plus">+</div></div>
+      <div class="rij"><div><h3>Scheren met warme doek</h3><p>30 minuten</p></div><div class="plus">+</div></div>
+    </section>
+  </div>
+  <section class="kiezer">
+    <div class="boven">Fade · 40 minuten</div>
+    <h2>Kies een tijd</h2>
+    <div class="dagen"><div class="dag on">di<b>24</b></div><div class="dag">wo<b>25</b></div><div class="dag">do<b>26</b></div><div class="dag">vr<b>27</b></div><div class="dag">za<b>28</b></div></div>
+    <div class="raster" id="slots">
+      <div class="slot vol">09.00</div><div class="slot vol">09.40</div><div class="slot">10.20</div>
+      <div class="slot vol">11.00</div><div class="slot on" id="gekozen">11.40</div><div class="slot">13.00</div>
+      <div class="slot">13.40</div><div class="slot vol">14.20</div><div class="slot">15.00</div>
+      <div class="slot">15.40</div><div class="slot vol">16.20</div><div class="slot">17.00</div>
+    </div>
+  </section>
+  <div class="vast"><a id="vastknop"><b style="font-weight:500">Boek een plek</b> <span id="vasttekst">Fade · 40 min</span></a></div>
+  <script>
+    if (location.hash === '#lijst') document.body.classList.add('lijst');
+    if (location.hash === '#tijd') { document.body.classList.add('tijd'); document.querySelector('#vastknop b').textContent = 'Bevestig'; document.getElementById('vasttekst').textContent = 'di 24 · 11.40'; }
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Barbier Moldaan · vergelijking, sterke versie</title>
+<!-- Conceptproject van YG Digital (K06). Barbier Moldaan is fictief. Compacte weergave (760 breed) voor plaat 3: dezelfde
+     inhoud en foto als vergelijk-voor.html, met de boekknop bovenaan, de behandelingen als kaarten met de duur erbij en de
+     openingstijden in één regel. -->
+<link rel="stylesheet" href="barbier.css">
+<style>
+  body { width: 760px; min-height: 640px; }
+  .kop { height: 74px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; border-bottom: 1px solid var(--lijn); }
+  .naam { font-size: 20px; }
+  .rechts { display: flex; align-items: center; gap: 16px; }
+  nav { display: flex; gap: 14px; font-size: 13px; font-weight: 500; }
+  .knop { display: inline-flex; align-items: center; height: 42px; padding: 0 16px; font: 500 12px 'Mont'; letter-spacing: .1em; text-transform: uppercase; background: var(--koper); color: var(--papier); white-space: nowrap; }
+  .held { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; padding: 22px 28px 16px; align-items: center; }
+  h1 { font-size: 34px; margin: 10px 0 14px; }
+  .foto { height: 220px; }
+  .sectie { padding: 14px 28px 24px; background: var(--papier); border-top: 1px solid var(--lijn); }
+  .sectie .boven { margin-bottom: 10px; }
+  .kaarten { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .kaart { background: var(--ivoor); border: 1px solid var(--lijn); padding: 12px 14px; }
+  .kaart h3 { font-family: 'Play', serif; font-weight: 400; font-size: 19px; line-height: 1.15; }
+  .kaart p { font-size: 11px; color: var(--zacht); margin-top: 4px; }
+</style>
+</head>
+<body>
+  <header class="kop">
+    <div class="naam"><small>BARBIER · ALKMAAR</small>Barbier Moldaan</div>
+    <div class="rechts"><nav><a>Behandelingen</a><a>Contact</a></nav><a class="knop" id="boek">Boek een plek</a></div>
+  </header>
+  <section class="held">
+    <div>
+      <div class="boven">Knippen · baard · scheren</div>
+      <h1>Strak geknipt,<br><em>zonder wachten.</em></h1>
+      <div class="tijden" id="tijden"><i></i>Di–za open · vandaag tot 18.00</div>
+    </div>
+    <div class="foto" role="img" aria-label="Lege barbierszaak met leren stoelen"></div>
+  </section>
+  <section class="sectie">
+    <div class="boven">Behandelingen</div>
+    <div class="kaarten" id="behandelingen">
+      <div class="kaart"><h3>Knippen</h3><p>30 minuten</p></div>
+      <div class="kaart"><h3>Fade</h3><p>40 minuten</p></div>
+      <div class="kaart"><h3>Baard</h3><p>20 minuten</p></div>
+      <div class="kaart"><h3>Scheren</h3><p>30 min · warme doek</p></div>
+    </div>
+  </section>
+</body>
+</html>

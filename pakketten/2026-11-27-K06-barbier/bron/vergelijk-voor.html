@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Barbier Moldaan · vergelijking, zwakke versie</title>
+<!-- Conceptproject van YG Digital (K06). Barbier Moldaan is fictief. Compacte weergave (760 breed) voor plaat 2: zo ziet
+     de site van veel barbiers eruit. Geen boekknop (bellen staat in de tekst), de behandelingen in een lap tekst en de
+     openingstijden klein onderaan. 072 000 00 00 is een plaatshouder. -->
+<link rel="stylesheet" href="barbier.css">
+<style>
+  body { width: 760px; min-height: 640px; }
+  .kop { height: 74px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; border-bottom: 1px solid var(--lijn); }
+  .naam { font-size: 22px; }
+  nav { display: flex; gap: 18px; font-size: 13px; font-weight: 500; }
+  .foto { height: 210px; }
+  .tekst { padding: 22px 28px 6px; }
+  h1 { font-size: 28px; margin-bottom: 10px; }
+  p { font-size: 12.5px; color: var(--zacht); margin-bottom: 8px; }
+  .voet { margin-top: 12px; padding: 12px 28px; border-top: 1px solid var(--lijn); font-size: 9.5px; color: #8b847b; display: flex; gap: 22px; }
+</style>
+</head>
+<body>
+  <header class="kop"><div class="naam">Barbier Moldaan</div><nav id="menu"><a>Home</a><a>Over ons</a><a>Contact</a></nav></header>
+  <div class="foto" role="img" aria-label="Lege barbierszaak met leren stoelen"></div>
+  <section class="tekst">
+    <h1>Welkom bij Barbier Moldaan</h1>
+    <p>Al jaren de vertrouwde barbier in de buurt. Bij ons kunt u terecht voor een klassieke knipbeurt, een fade, het bijwerken of trimmen van uw baard en een scheerbeurt met warme doek. Ook kinderen zijn welkom.</p>
+    <p id="behandelingen">Knippen, fade, tondeuse, baard trimmen, baard modelleren, scheren met warme doek, kinderen knippen, nek bijwerken, wenkbrauwen. Voor een afspraak kunt u ons bellen of gewoon langskomen.</p>
+  </section>
+  <div class="voet"><span>Barbier Moldaan · Alkmaar</span><span id="tijden">di t/m vr 9.00–18.00, za 8.30–16.00, zo en ma gesloten</span><span>072 000 00 00</span></div>
+</body>
+</html>
