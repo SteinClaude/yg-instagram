@@ -1,3 +1,16 @@
+## Stand (Manon, bijgewerkt vr 30 okt, laat)
+
+AF: K02, W01 geplaatst · Z01, T02, K04, T01, W02, G01 (a441f9c), K05, T03 (2d41cc0) ingepland t/m vr 20 nov, om en om (d86bd95) · batch 3 gemaakt, niet ingepland: W04 (eedf92e), G02 (f8de55d), K06 (4020863), T04 (5802650), G03 (a940789), K07 (8a9e33e), T05 (b1fe497) · keurlijst in docs/keurlijst.md
+
+OPEN (in volgorde): 1. A37 met plaatshouder [GEKOZENE] (map hernoemd naar 2026-11-04) · 2. docs/sleutel-vernieuwen.md (#32, vóór 15 nov) · 3. daarna KAN NIET VERDER: batch 3 gemaakt, wacht op pakket OK per code · doorlopend: na Z01 (ma 2 nov) gedaan.json controleren; na zo 1 nov naam gekozene invullen in A37
+
+VOLGENDE STAP: A37 omzetten naar [GEKOZENE], proef, raster, keurlijst, push
+
+VRAGEN:
+- In de volgorde van Eva staan T04 (ma 30 nov) en G03 (wo 2 dec) allebei donker naast elkaar; batch 3 heeft 4 donkere en 3 lichte pakketten, dus om en om kan niet helemaal · aanname: zo maken; voorstel: W03 (de gekozene, licht) tussen T04 en G03 zodra die er is, of G03 een week later · doorwerken: ja · blokkeert nee
+- Komt A37 niet op wo 4 nov, dan staan Z01 en T02 (beide donker) naast elkaar · aanname: A37 haalt wo 4 nov; anders A37 naar vr 6 nov en T02 een plek op (Eva 30 okt), alleen voorstellen · doorwerken: ja · blokkeert nee
+- De ontwerpstudio (eerste-ontwerp) toont onder het ontwerp nog "Beheer € 45 per maand, inclusief btw (€ 37,19 exclusief)"; /yg-launch en Z01 zeggen € 49 excl. btw · aanname: Eva of Lotte past de studiotekst aan; mijn pakketten tonen dat stuk niet · doorwerken: ja · blokkeert nee
+
 KLAAR: pakket W04 klaar (niet ingepland) · eedf92e
 
 KLAAR: pakket G02 klaar (niet ingepland) · f8de55d
@@ -10,15 +23,9 @@ KLAAR: pakket G03 klaar (niet ingepland) · a940789
 
 KLAAR: pakket K07 klaar (niet ingepland) · 8a9e33e
 
-KLAAR: pakket T05 klaar (niet ingepland) · zie commit "Pakket T05 klaar"
+KLAAR: pakket T05 klaar (niet ingepland) · b1fe497
 
-AF: K02 en W01 geplaatst; Z01, T02, K04, T01, W02, G01 (a441f9c), K05 en T03 (2d41cc0) ingepland t/m vr 20 nov, om en om (d86bd95); stijlgids vastgesteld; gereedschap draagbaar
-
-OPEN: pakket W04 (ma 23 nov) en G02 (wo 25 nov) maken, niet inplannen; docs/sleutel-vernieuwen.md (#32, vóór 15 nov); A37 wacht op de gekozene (zo 1 nov) en pakket OK; K06/K07 na Daans levering ma 2 nov; na Z01 (ma 2 nov) gedaan.json controleren
-
-VRAGEN: komt A37 niet op wo 4 nov, dan staan Z01 en T02 (beide donker) naast elkaar · aanname: A37 haalt wo 4 nov; zo niet, dan stel ik een wissel voor zonder iets te verzetten · blokkeert nee
-
-KLAAR: K05 ingepland wo 18 nov 19:00 en T03 ingepland vr 20 nov 19:00 op "Pakket OK K05 (woensdag 18 november 19:00) en pakket OK T03 (vrijdag 20 november 19:00)" (Andries in mijn sessie, do 29 okt) · zie commit "K05 en T03 gepland"
+KLAAR: K05 ingepland wo 18 nov 19:00 en T03 ingepland vr 20 nov 19:00 op "Pakket OK K05 (woensdag 18 november 19:00) en pakket OK T03 (vrijdag 20 november 19:00)" (Andries in mijn sessie, do 29 okt) · 2d41cc0
 
 KLAAR: W01 geplaatst wo 28 okt 19:10, media-id 18127750922314347 (gedaan.json, commit 0a25795 van de automaat)
 
