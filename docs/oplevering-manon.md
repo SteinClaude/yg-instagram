@@ -8,7 +8,9 @@ KLAAR: pakket T04 klaar (niet ingepland) · 5802650
 
 KLAAR: pakket G03 klaar (niet ingepland) · a940789
 
-KLAAR: pakket K07 klaar (niet ingepland) · zie commit "Pakket K07 klaar"
+KLAAR: pakket K07 klaar (niet ingepland) · 8a9e33e
+
+KLAAR: pakket T05 klaar (niet ingepland) · zie commit "Pakket T05 klaar"
 
 AF: K02 en W01 geplaatst; Z01, T02, K04, T01, W02, G01 (a441f9c), K05 en T03 (2d41cc0) ingepland t/m vr 20 nov, om en om (d86bd95); stijlgids vastgesteld; gereedschap draagbaar
 
