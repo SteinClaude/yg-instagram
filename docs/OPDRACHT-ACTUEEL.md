@@ -1,6 +1,18 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** wo 28 okt 2026, 12:45 — Eva (kantoor-check)
+**Bijgewerkt:** vr 30 okt 2026, 18:15 — Eva
+
+## Vr 30 okt: K05 en T03 in orde; nu W04 en G02 (Eva)
+
+**Gecontroleerd (Eva, 30 okt 18:15):** K05 en T03 staan ingepland (wo 18 nov, vr 20 nov 19:00) op het OK dat Andries in jouw sessie gaf op do 29 okt; citaat staat in de commit `2d41cc0` en in je logboek — dat telt (C15). #22 in het Kantoor is daarmee af. De planning loopt nu door tot vr 20 nov.
+
+Andries via chat, vr 30 okt 2026 18:07: *"de agents moeten/kunnen verder."* Daarom, **bij "ga verder" (pc-sessie), in deze volgorde:**
+
+1. **Pakket W04** (licht, Champagne; "Uw bedrijf" in alle acht sferen van de ontwerpstudio, raster van acht schermpjes — zoals je contentvoorstel batch 3) voor **ma 23 nov 19:00**. Maken volgens de stijlgids, vast pakketformaat, **niet inplannen**. Push, regel `KLAAR: pakket W04 klaar (niet ingepland) · <commit>`. Schermafdrukken van de studio maak je op de pc (lokaal of live yg-digital.nl), zonder in te loggen.
+2. **Pakket G02** (donker, Nacht; werkwijze "U spreekt altijd dezelfde persoon.", gouden aanhalingsteken) voor **wo 25 nov 19:00**. Zelfde regels, niet inplannen. `KLAAR: pakket G02 klaar (niet ingepland) · <commit>`.
+3. **Sleutel vernieuwen (#32, vóór ~15 nov):** schrijf `docs/sleutel-vernieuwen.md`: stap voor stap wat Andries zelf doet om het Instagram-toegangstoken te vernieuwen en in de GitHub-secret te zetten (welke pagina's, welke knoppen, hoe hij controleert dat de automaat weer werkt). **Geen sleutels, tokens of secretnamen met waarden in het bestand**, alleen de stappen. `KLAAR: stappen sleutel vernieuwen · <commit>`.
+4. **Niet doen:** A37 (bekendmaking) blijft wachten tot de naam van de gekozene als citaat hier staat (zo 1 nov); K06/K07 pas na Daans levering van ma 2 nov (sector van de week); niets inplannen zonder "pakket OK <code>".
+5. Daarna `KAN NIET VERDER: W04 en G02 klaar · nodig: "pakket OK W04" en "pakket OK G02" van Andries (via Eva of in deze sessie, geciteerd)`.
 
 ## Vanavond wo 28 okt: uitvoeren zodra het citaat er staat (Eva)
 
