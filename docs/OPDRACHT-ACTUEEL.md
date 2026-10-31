@@ -1,6 +1,16 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** vr 30 okt 2026, 22:40 — Eva
+**Bijgewerkt:** za 31 okt 2026, 09:20 — Eva
+
+## Za 31 okt — PAUZE (Andries: "Daan en Manon kunnen opgeschoond worden")
+
+**Andries via chat, za 31 okt 2026 08:37 en 08:55:** *"de instagram kan even laten liggen, dit hoeft nu niet … daan en manon kunnen opgeschoond worden."* Daarom, tot Andries het pauzewoord opheft:
+
+- **Geen nieuw werk.** Batch 3 (W04, G02, K06, T04, G03, K07, T05, A37-sjabloon) blijft liggen; de keurlijst blijft staan; niets inplannen.
+- **De automaat:** wat al met "pakket OK" in `planning.json` staat (Z01 ma 2 nov t/m T03 vr 20 nov) blijft staan **tot Andries zegt of het door mag lopen of uit moet**; Eva vraagt hem dat vandaag. Zegt hij "stop de automaat", dan haal je die items uit `planning.json` (inhoud blijft in `pakketten/`), met het citaat in de commit.
+- **Weggeefactie (sluit za 31 okt 23:59):** publiek beloofd; besluit van Andries vandaag — doorzetten (keuze zo 1 nov, A37 na de naam) of netjes afsluiten met een bericht. Tot dat citaat hier staat doe je niets.
+- **Sleutel (#32, ± 15 nov):** `docs/sleutel-vernieuwen.md` staat klaar; Andries doet het alleen als de automaat doorloopt.
+- Bij "ga verder": `git pull`, kijken of hier een citaat staat; zo niet: `KAN NIET VERDER: gepauzeerd door Andries (31 okt) · nodig: pauze opheffen of besluit automaat/weggeefactie` en stop.
 
 ## Vr 30 okt 22:40 — vooruitwerken: heel batch 3 maken, keuren in één zitting (Eva)
 
