@@ -25,7 +25,7 @@ Per video ingevuld volgens `studio.txt`: titel, beschrijving met bron (letterlij
 
 **Bij "ga verder" vandaag** (wacht hiervoor niet tot Andries in Studio heeft ingepland; dat loopt los):
 1. `git pull`; lees `docs/CREW-STATUS.md`, deze opdracht en je stand.
-2. YS01–YS03 staan in Studio (zie het blok hieronder, 22:45): werk de status in `studio.txt` bij.
+2. YS01–YS03 staan in Studio (zie het blok bovenaan, 22:45): werk de status in `studio.txt` bij.
 3. Maak **YS04–YS07** in de v2-stijl (haak in seconde 1, elke 1,5–2 s iets nieuws, eigen geluidseffecten, loop-einde, alles met bron). Gebruik onderwerpen uit je plan en zet als datums do 12 t/m zo 15 nov, 18:00. Push na elk pakket en meld `KLAAR: pakket YSxx klaar (niet ingepland) · <commit>`.
 4. Maak daarna kanaallogo, banner en profielfoto als één pakket ter keuring. Geen kanaalnaam of handle in de repo.
 5. Zonder "pakket OK <code>" plan je niets in. Je logt nergens in.
