@@ -1,5 +1,5 @@
 STUDIO.TXT — YS01 versie 2 (YouTube Studio, uploadscherm van boven naar beneden)
-Status: pakket OK YS01 (Andries in de sessie van Manon, ma 2 nov 2026: "OK voor alle drie", op de vraag "Geef je pakket OK voor YS01, YS02 en YS03?"). Klaar om in te plannen in YouTube Studio; Andries plant zelf in.
+Status: pakket OK YS01 (Andries in de sessie van Manon, ma 2 nov 2026: "OK voor alle drie", op de vraag "Geef je pakket OK voor YS01, YS02 en YS03?"). Ingepland in Studio (Eva, 2 nov 22:45): ma 9 nov 2026, 18:00 (GMT+1), op verzoek van Andries; geüpload als hercodeerde kopie onder 10 MB (zie docs/OPDRACHT-ACTUEEL.md).
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 38,4 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)

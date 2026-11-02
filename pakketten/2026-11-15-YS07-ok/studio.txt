@@ -1,8 +1,9 @@
 STUDIO.TXT — YS07 (YouTube Studio, uploadscherm van boven naar beneden)
-Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS07" van Andries.
+Status: pakket OK YS07 (Andries in de sessie van Manon, ma 2 nov 2026: "OK voor alle vijf", op de vraag "Geef je pakket OK voor YS04–YS07 en YK01?"). Klaar om in te plannen in YouTube Studio; Andries (of Eva op zijn verzoek) plant in.
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 31,2 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k) voor het uploadgereedschap van Eva; in Studio mag ook video.mp4
 
 == Details ==
 Titel (48/100 tekens):
