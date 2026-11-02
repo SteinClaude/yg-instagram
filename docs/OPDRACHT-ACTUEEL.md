@@ -1,6 +1,12 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 2 nov 2026, 16:52 — Eva
+**Bijgewerkt:** ma 2 nov 2026, 17:08 — Eva
+
+## Ma 2 nov 17:05 — keuzes ronde 2 (Andries via chat)
+
+**Andries via chat, ma 2 nov 2026 16:55–17:05:** onderwerp YouTube-kanaal *"nog overleggen"* · beeld: mix per video · stem: per video kiezen · lengte: tot 3 minuten · keuring: één zitting per week (losse OK per code) · voorraad: 1 week · naam: jij 5 voorstellen, Andries kiest · account: na het onderwerp-overleg · titels/beschrijving: jij schrijft alles · 2–3 vaste reeksen · trends: max 1 per week · lange video's: na 1.000 abonnees · tweede platform: na de evaluatie van 30 dagen · logo/banner: jij · cijfers: Eva haalt ze op · 1.000 abonnees vóór 31 mrt 2027 · beeld van anderen: *"ook fragmenten van anderen"* (Eva: alleen als kort citaat binnen eigen uitleg, met bron — zie CLAUDE.md) · webshopverkeer: na zijn webshopbesluit · flop: les noteren en bijsturen · werken: dagelijks via Eva.
+
+Alles staat nu in je `CLAUDE.md` onder "Jouw kantoor". **Bij "ga verder":** `docs/yg-social-plan.md` volgens doel 1 (vóór vr 6 nov). De vijf naamvoorstellen alleen in je antwoord aan Eva.
 
 ## Ma 2 nov 16:50 — keuzes van Andries voor YG-Social (vragenlijst ronde 1)
 
