@@ -2,6 +2,12 @@
 
 **Bijgewerkt:** ma 2 nov 2026, 21:45 — Eva (avondronde, terugval)
 
+## Di 3 nov 00:01 — Andries stopt voor vandaag (Eva)
+
+**Andries via chat met Eva, di 3 nov 2026 00:01:** *"ik ga nu, schrijf voor iedereen alvast dat ik morgen verder ga."*
+
+Andries gaat later vandaag (di 3 nov) verder met "ga verder". Tot dan start niemand iets nieuws en wacht niemand op een antwoord van hem. Je werk voor vandaag staat in het blok "Di 3 nov — start van de dag" hieronder.
+
 ## Ma 2 nov 22:45 — YS01–YS03 staan in YouTube Studio (Eva, op verzoek van Andries)
 
 **Andries via chat met Eva, ma 2 nov 2026 22:09:** *"plan de ys-1 t/m ys-3 in en zeg daarna tegen manon dat ze erin staan."*
