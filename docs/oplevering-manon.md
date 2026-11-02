@@ -1,4 +1,16 @@
-KAN NIET VERDER: YS01–YS03 hebben pakket OK · nodig: Andries plant ze in YouTube Studio in (YS01 ma 9 nov, YS02 di 10 nov, YS03 wo 11 nov, 18:00, met studio.txt) en zegt dat het staat; daarna maak ik YS04–YS07 en logo/banner (opdracht stap 5)
+KAN NIET VERDER: eerste week compleet · nodig: "pakket OK YS04", "YS05", "YS06", "YS07" en "pakket OK YK01" (kanaalbeeld) van Andries, per code; daarna plant hij ze in YouTube Studio in
+
+KLAAR: pakket YS07 klaar (niet ingepland) · 5ebb750
+
+KLAAR: pakket YS06 klaar (niet ingepland) · c969065
+
+KLAAR: pakket YS05 klaar (niet ingepland) · 949c202
+
+KLAAR: pakket YK01 kanaalbeeld klaar (niet geplaatst) · fa88f71
+
+KLAAR: pakket YS04 klaar (niet ingepland) · 73c772a
+
+KLAAR: YS01–YS03 staan in YouTube Studio (Andries in mijn sessie, ma 2 nov 2026: "Staan erin, ga door")
 
 KLAAR: pakket OK YS01, YS02, YS03 vastgelegd (Andries in mijn sessie, ma 2 nov 2026: "OK voor alle drie", op de vraag "Geef je pakket OK voor YS01, YS02 en YS03?"); status in elke studio.txt bijgewerkt · 4126bea
 
@@ -22,8 +34,9 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 AF (laat): short.cjs v2 · YS01 v2 (38,4 s, haak in seconde 1, 14 beats, loop naar het begin, eigen geluid; piek -1,5 dB, geen clipping) · overzicht-v1.jpg bewaard in YS01–YS03
 Andries in mijn sessie, 2 nov: "Stijl goed, ga door" (op YS01 v2) → YS02 v2 (34,9 s) en YS03 v2 (36,9 s) gemaakt, zelfde stijl, bronnen en beweringen; audio piek -1,5/-1,6 dB.
-OPEN (in volgorde): 1. Andries plant YS01–YS03 in via YouTube Studio (studio.txt) · 2. YS04–YS07 · 3. logo en banner
-VOLGENDE STAP: wachten tot Andries meldt dat YS01–YS03 in Studio staan
+Andries in mijn sessie, ma 2 nov 2026: "Staan erin, ga door" → YS04 @ (do 12 nov), YS05 Post-it (vr 13), YS06 pincode (za 14), YS07 OK (zo 15) en YK01 kanaalbeeld gemaakt. Drie plan-bronnen vervangen (Smithsonian en Merriam-Webster gaven een 403, NIHF dekte het Post-it-verhaal niet), zie docs/yg-social-plan.md en elke bron/bronnen.md.
+OPEN (in volgorde): 1. pakket OK per code YS04–YS07 en YK01 · 2. Andries plant in via Studio en zet het kanaalbeeld erin · 3. week 2 (YS08–YS14) als voorraad · 4. eerste maandagverslag (16 nov, cijfers van Eva)
+VOLGENDE STAP: wachten op pakket OK YS04–YS07 en YK01
 
 AF: plan · gereedschap/short.cjs (eigen animatie, 1080x1920, geen credits) · pakketten YS01-YS03 (zie KLAAR-regels)
 OPEN: YS04-YS07 (rest eerste week) · logo, banner, profielfoto als pakket · inplannen alleen na "pakket OK YSxx"; Andries plant in via YouTube Studio
