@@ -1,6 +1,17 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 2 nov 2026, 15:30 — Eva
+**Bijgewerkt:** ma 2 nov 2026, 16:52 — Eva
+
+## Ma 2 nov 16:50 — keuzes van Andries voor YG-Social (vragenlijst ronde 1)
+
+**Andries via chat, ma 2 nov 2026 16:44–16:50** (20 vragen, letterlijk gekozen):
+1 hoofddoel: eerst bereik, dan geld · 2 onderwerp: per account een eigen onderwerp · 3 gezicht: niemand, tekst en beeld · 4 taal: **Engels** · 5 AI: alleen zeggen als iemand het vraagt · 6 ritme: **7 per week (dagelijks)** · 7 keuring: **elke short apart** ("pakket OK <code>") · 8 tijd van Andries: meer, dit wordt een hoofdzaak · 9 platforms: **eerst één platform** · 10 voorrang: **YouTube Shorts** · 11 TikTok: alleen video's van 1+ minuut · 12 @ygdigital.nl: **pauze tot YG-Social loopt** · 13 plaatsen: via koppelingen per platform (Andries zet ze op) · 14 ideeën: kaarten van Noor plus eigen ideeën · 15 muziek: alleen de gratis bibliotheek van het platform · 16 YG Digital: alleen in de bio · 17 reacties: alleen vragen beantwoorden (jij schrijft het concept, Andries plaatst) · 18 maandag: cijfers plus 3 beste en 3 slechtste met reden · 19 evaluatie: na 30 dagen · 20 stoppen: nooit, alleen bijsturen.
+
+**Al uitgevoerd door Eva (16:52, tijdkritisch: Z01 stond vandaag 19:00):** alle nog niet geplaatste items vanaf 2 nov (Z01, T02, K04, T01, W02, G01, K05, T03) staan uit `planning.json` en in `planning-gepauzeerd.json`; inhoud blijft in `pakketten/`/`berichten/`. Terugzetten alleen na een citaat hier. Gevolg: de sleutel (#32, ± 15 nov) hoeft nu niet.
+
+**Let op bij 5:** YouTube en TikTok verplichten zelf een label bij realistisch AI-beeld; waar de platformregel dat eist, zet je het label. Verder alleen als iemand het vraagt.
+
+Ronde 2 (nieuwe vragen) volgt; daarna past Eva je "Jouw kantoor" in `CLAUDE.md` aan.
 
 ## Ma 2 nov — YG-Social: jouw nieuwe afdeling (besluit Andries)
 
