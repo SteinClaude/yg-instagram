@@ -8,6 +8,20 @@
 
 Wat jij doet: niets extra. Z01 t/m T03 staan al uit `planning.json` en in `planning-gepauzeerd.json` (Eva, 16:52); dit citaat bevestigt dat de automaat uit blijft. Terugzetten alleen na een nieuw citaat hier.
 
+## Ma 2 nov 19:45 — YS01–YS03: versie 2, scherper en pakkender
+
+**Andries via chat, ma 2 nov 2026 19:41:** *"oke dit is heel goed, alleen de uitstraling en alles mag beter en scherper en creatiever, met meer tijd in de animatie zodat het echt triggert; zorg dat het zo triggergevoelig mogelijk wordt."*
+
+Geen OK voor v1. Maak YS01–YS03 opnieuw als v2 (zelfde onderwerpen en bronnen), dan pas YS04–YS07. Richtlijnen van Eva:
+- **Haak in de eerste seconde**: beweging vanaf frame 1, een prikkelende bewering of vraag in grote letters, geen rustig titelbeeld. Binnen 2 s moet de kijker een vraag in zijn hoofd hebben ("open loop") die pas aan het eind dicht gaat.
+- **Elke 1,5–2 s iets nieuws** (pattern interrupt): zoom, schuif, snelle overgang, kleur wissel, object dat binnenvliegt of breekt. Woorden verschijnen woord voor woord (kinetische typografie), met nadruk op het sleutelwoord.
+- **Geluid**: eigen gemaakte geluidseffecten (whoosh, tik, klap, ruis) zelf gesynthetiseerd met ffmpeg — geen betaalde of gekopieerde audio. Muziek blijft voor Studio.
+- **Sterker beeld**: meer diepte (schaduw, licht, textuur), krachtiger contrast, grotere tekst, cinematische camerabeweging; nog steeds jouw eigen stijl, geen stock nodig.
+- **Einde dat terugloopt naar het begin** (loop), zodat herhaald kijken vanzelf gaat; een korte prikkel voor de volgende aflevering.
+- **Pakkend, nooit onwaar**: geen beweringen die de bron niet draagt; "triggeren" = nieuwsgierigheid en verrassing, geen misleiding.
+- Lengte: wat het verhaal nodig heeft (richtlijn 35–50 s), maar met veel meer beweging per seconde.
+Vergelijk v2 naast v1 (frames) en zet beide `overzicht.jpg` in het pakket (`overzicht-v1.jpg` bewaren).
+
 ## Ma 2 nov 18:50 — onderwerp van het YouTube-kanaal staat vast
 
 Eva las met Andries' akkoord het kanaal uit in zijn browser (ma 2 nov 18:48). Het kanaal heeft al een naam en een beschrijving: **elke aflevering neemt één alledaags ding en zoekt uit hoe het zo gekomen is, altijd met bronnen.** Dat is je onderwerp; de "drie onderwerpvoorstellen" en "vijf kanaalnamen" vervallen.
