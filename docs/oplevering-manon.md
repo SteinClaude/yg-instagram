@@ -1,8 +1,8 @@
 KAN NIET VERDER: YS01 v2 staat klaar ter beoordeling · nodig: reactie van Andries op de stijl van YS01 v2 (opdracht stap 3: eerst zijn oordeel, dan YS02 en YS03 v2)
 
-KLAAR: pakket YS01 v2 klaar (niet ingepland) · zie commit "YS01 v2"
+KLAAR: pakket YS01 v2 klaar (niet ingepland) · fb5b54b
 
-KLAAR: gereedschap/short.cjs versie 2 (camera, tekst woord voor woord, overgangen, diepte, eigen geluid met ffmpeg, controleblad uit de mp4); v1-scripts blijven gelijk (overzicht YS01 v1 bit voor bit gelijk) · zie commit "YS01 v2"
+KLAAR: gereedschap/short.cjs versie 2 (camera, tekst woord voor woord, overgangen, diepte, eigen geluid met ffmpeg, controleblad uit de mp4); v1-scripts blijven gelijk (overzicht YS01 v1 bit voor bit gelijk; v2-video begrensd op 7 Mbit/s, 20 MB) · fb5b54b
 
 KLAAR: pakket YS03 klaar (niet ingepland) · 15b4584
 
