@@ -1,3 +1,5 @@
+KLAAR: pakket YS01 klaar (niet ingepland) · adcf422
+
 KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reeksen, pakketformaat short, ritme 7/week, API later) · 634997a
 
 ## YG-Social (Manon, ma 2 nov 2026, avond)

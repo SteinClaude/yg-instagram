@@ -1,0 +1,45 @@
+STUDIO.TXT — YS02 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS02" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, stil audiospoor, 48,5 s
+
+== Details ==
+Titel (46/100 tekens):
+Why isn't your keyboard in alphabetical order?
+
+Beschrijving:
+The first typewriter keyboards were alphabetical. So how did we end up with QWERTY? The famous answer (to stop the keys jamming) is contested, and nobody fully agrees on the real one.
+
+What the source says:
+- Christopher Latham Sholes, a Milwaukee printer, and colleagues patented an early typewriter in 1868. Its keys were in alphabetical order.
+- Sholes kept changing the layout over the following years.
+- The "jamming" story is contentious: E and R, a very common pair, sit right next to each other.
+- Koichi and Motoko Yasuoka (Kyoto University, 2011) argue the layout was shaped by early users: telegraph operators transcribing Morse code.
+- Remington started selling the typewriter in 1874 for $125. In 1893 the big makers merged into the Union Typewriter Company, which made QWERTY the de facto standard.
+
+Source:
+Smithsonian Magazine, "Fact of Fiction? The Legend of the QWERTY Keyboard": https://www.smithsonianmag.com/innovation/fact-of-fiction-the-legend-of-the-qwerty-keyboard-49863249/
+
+#Shorts #history #keyboard #qwerty
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de laatste scene).
+Afspeellijsten: geen (eerste week).
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+qwerty, keyboard, why is the keyboard not alphabetical, qwerty history, typewriter, Sholes, Remington, keyboard layout, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: dinsdag 10 november 2026, 18:00 (Amsterdam)
