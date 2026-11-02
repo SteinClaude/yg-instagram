@@ -2,6 +2,21 @@
 
 **Bijgewerkt:** ma 2 nov 2026, 21:45 — Eva (avondronde, terugval)
 
+## Ma 2 nov 22:45 — YS01–YS03 staan in YouTube Studio (Eva, op verzoek van Andries)
+
+**Andries via chat met Eva, ma 2 nov 2026 22:09:** *"plan de ys-1 t/m ys-3 in en zeg daarna tegen manon dat ze erin staan."*
+
+Eva heeft ze in Studio gezet, in de browser van Andries. Studio meldt alle drie als **Gepland**:
+- YS01 · ma 9 nov 2026, 18:00 (GMT+1)
+- YS02 · di 10 nov 2026, 18:00 (GMT+1)
+- YS03 · wo 11 nov 2026, 18:00 (GMT+1)
+
+Per video ingevuld volgens `studio.txt`: titel, beschrijving met bron (letterlijk), tags, gemaakt voor kinderen: nee, geen leeftijdsbeperking, betaalde promotie: nee, AI-label (gewijzigde content): nee, videotaal Engels, categorie Educatief. Thumbnail, remix en reacties staan op de standaard van Studio.
+
+**Let op, het geüploade bestand is niet byte-gelijk aan `video.mp4`.** Het uploadgereedschap neemt hoogstens 10 MB per bestand. Daarom heeft Eva elke video opnieuw gecodeerd: H.264 in twee passen, ±2 Mbit/s, zelfde beeld (1080×1920), lengte en geluid (AAC 96k). Uit een gecontroleerd frame bleek geen zichtbaar verschil. Kopieën staan op het bureaublad van de pc onder `02 YG-Social\Shorts upload\`. Voor YS04 en verder: lever naast `video.mp4` ook `video-upload.mp4` onder 10 MB (zelfde instellingen), of Andries uploadt het origineel zelf.
+
+**Wat jij doet:** zet in elke `studio.txt` van YS01–YS03 de status op "ingepland in Studio (Eva, 2 nov 22:45)". Neem dit citaat op in `buitenGit` van je stand. Daarna verder met je blok "Di 3 nov". YS01–YS03 hoef je niet meer af te wachten.
+
 ## Di 3 nov — start van de dag (Eva, ma 2 nov 22:20)
 
 **Andries via chat, ma 2 nov 2026 21:57:** *"zet voor elke agent een opdracht klaar … morgen verder gaan … zodat we precies weten waar we zijn."*
@@ -10,7 +25,7 @@
 
 **Bij "ga verder" vandaag** (wacht hiervoor niet tot Andries in Studio heeft ingepland; dat loopt los):
 1. `git pull`; lees `docs/CREW-STATUS.md`, deze opdracht en je stand.
-2. Zegt Andries in je sessie dat YS01–YS03 in Studio staan: noteer dat letterlijk met de tijd in `buitenGit` en in je oplevering.
+2. YS01–YS03 staan in Studio (zie het blok hieronder, 22:45): werk de status in `studio.txt` bij.
 3. Maak **YS04–YS07** in de v2-stijl (haak in seconde 1, elke 1,5–2 s iets nieuws, eigen geluidseffecten, loop-einde, alles met bron). Gebruik onderwerpen uit je plan en zet als datums do 12 t/m zo 15 nov, 18:00. Push na elk pakket en meld `KLAAR: pakket YSxx klaar (niet ingepland) · <commit>`.
 4. Maak daarna kanaallogo, banner en profielfoto als één pakket ter keuring. Geen kanaalnaam of handle in de repo.
 5. Zonder "pakket OK <code>" plan je niets in. Je logt nergens in.
