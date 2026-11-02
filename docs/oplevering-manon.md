@@ -1,4 +1,15 @@
-KAN NIET VERDER: batch 3 gemaakt · nodig: pakket OK per code van Andries (W04, G02, K06, T04, G03, K07, T05; A37 pas na de naam van de gekozene als citaat), zie docs/keurlijst.md
+KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reeksen, pakketformaat short, ritme 7/week, API later) · 634997a
+
+## YG-Social (Manon, ma 2 nov 2026, avond)
+
+AF: plan · gereedschap/short.cjs (eigen animatie, 1080x1920, geen credits) · pakketten YS01-YS03 (zie KLAAR-regels)
+OPEN: YS04-YS07 (rest eerste week) · logo, banner, profielfoto als pakket · inplannen alleen na "pakket OK YSxx"; Andries plant in via YouTube Studio
+VRAGEN:
+- De documentatie van Google (videos.insert, gelezen 2 nov) zegt nu dat uploads via een niet-gecontroleerd API-project NIET meer privé blijven; mijn CLAUDE.md zegt het omgekeerde · aanname: Studio blijft de weg tot Andries anders besluit; ik noteer het als "te controleren" in het plan · doorwerken: ja · blokkeert nee
+- Stem: de eerste drie shorts hebben geen stem en geen muziek (tekst op beeld, stil spoor) · aanname: goed voor de start; wil Andries muziek, dan kiest hij die in Studio uit de gratis bibliotheek · doorwerken: ja · blokkeert nee
+
+(@ygdigital.nl: op pauze; de oude KAN NIET VERDER over batch 3 geldt tot het pauzewoord is opgeheven.)
+
 
 ## Stand (Manon, bijgewerkt vr 30 okt, nacht)
 

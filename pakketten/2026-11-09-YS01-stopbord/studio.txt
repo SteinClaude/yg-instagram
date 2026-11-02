@@ -1,0 +1,44 @@
+STUDIO.TXT — YS01 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS01" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, stil audiospoor, 48,0 s
+
+== Details ==
+Titel (53/100 tekens):
+Why is a stop sign an octagon? (It used to be yellow)
+
+Beschrijving:
+Why does a stop sign have eight sides? In the early 1920s, US highway engineers ranked danger by shape, so drivers could react to a sign even when they couldn't read it at night. And for decades, stop signs weren't red at all.
+
+What the source says:
+- Early 1920s: engineers from Wisconsin, Minnesota and Indiana classified sign shapes by the level of danger. Round = railroad crossing (most danger), octagon = stop, diamond = caution, rectangle = directions and information.
+- The reasoning: there was little illumination on signs, so drivers should respond to the shape even when they couldn't see the letters.
+- A 1924 report favoured yellow for stop signs; red was rejected because of poor visibility at night.
+- 1954: stop signs became white letters on red, mainly thanks to new fade-resistant finishes.
+
+Source:
+U.S. Federal Highway Administration, "The Evolution of MUTCD" (archived copy): https://webarchive.library.unt.edu/web/20161031205947/http:/mutcd.fhwa.dot.gov/kno-history.htm
+
+#Shorts #history #design #roadsigns
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de laatste scene).
+Afspeellijsten: geen (eerste week).
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+stop sign, why is a stop sign an octagon, stop sign history, road signs, traffic signs, MUTCD, design history, history of everyday things, why things are the way they are, octagon, 1920s, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: maandag 9 november 2026, 18:00 (Amsterdam)
