@@ -1,0 +1,45 @@
+STUDIO.TXT — YS04 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS04" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 30,8 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+
+== Details ==
+Titel (41/100 tekens):
+Why is there an @ in every email address?
+
+Beschrijving:
+In 1971, engineer Ray Tomlinson was building an early email system and needed a way to separate the user from the machine. He picked a symbol that was rarely used in computing.
+
+What the sources say:
+- Ray Tomlinson worked at Bolt, Beranek and Newman (BBN) when he developed an early email system; the Internet Hall of Fame dates the system to 1971.
+- He first sent messages between two computers in his office, with keyboards about 10 feet apart.
+- He chose @ to separate user names from machine names, because it was rarely used in computing at the time. In his words: "It's the only preposition on the keyboard."
+- About the first email he said: "The first email is completely forgettable." The message itself is forgotten.
+
+Sources:
+NPR, "In memoriam: Ray Tomlinson, who put the @ sign in your email" (Alina Selyukh, March 7, 2016, via MPR News): https://www.mprnews.org/story/2016/03/07/npr-in-memoriam-ray-tomlinson-who-put-the-sign-in-your-email
+Internet Hall of Fame, "Meet the Man Who Put the '@' in Your E-Mail": https://www.internethalloffame.org/?p=260
+
+#Shorts #history #email #technology
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene, na de klap).
+Afspeellijsten: geen (eerste week).
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+at sign, @ symbol, email history, Ray Tomlinson, why is there an @ in email, first email, ARPANET, BBN, history of everyday things, why things are the way they are, 1971, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: donderdag 12 november 2026, 18:00 (Amsterdam)
