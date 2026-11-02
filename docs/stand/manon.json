@@ -1,25 +1,29 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-02T21:45:00+01:00",
+  "tijd": "2026-11-02T23:45:00+01:00",
   "sessie": {
-    "id": "",
-    "plek": "",
-    "sinds": ""
+    "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
+    "plek": "pc",
+    "sinds": "2026-11-02T19:45:00+01:00"
   },
-  "status": "wacht",
+  "status": "klaar",
   "af": [
-    "plan 30 onderwerpen (634997a)",
-    "YS01–YS03 v2"
+    "plan 30 onderwerpen · 634997a",
+    "short.cjs v2 · fb5b54b",
+    "YS01–YS03 v2, pakket OK · 4126bea; ingepland in Studio door Eva (2 nov 22:45) · b2691db",
+    "YS04 · 73c772a, YS05 · 949c202, YS06 · c969065, YS07 · 5ebb750: pakket OK · b2691db",
+    "YK01 kanaalbeeld · fa88f71: pakket OK · b2691db",
+    "video-upload.mp4 onder 10 MB bij YS04–YS07 · b2691db"
   ],
   "bezig": "-",
-  "volgende": "wacht op \"pakket OK YS01/YS02/YS03\"; daarna YS04–YS07 en logo/banner",
+  "volgende": "bij ga verder: week 2 (YS08–YS14) als voorraad, zelfde v2-stijl; YS04–YS07 en YK01 plant Andries (of Eva op zijn verzoek) in via Studio",
   "kanNietVerder": null,
   "vragen": [],
-  "buitenGit": [],
+  "buitenGit": [
+    { "tijd": "2026-11-02T22:45:00+01:00", "wat": "YS01–YS03 ingepland in YouTube Studio (9, 10, 11 nov 18:00), als hercodeerde kopie onder 10 MB; Andries via chat met Eva 22:09: \"plan de ys-1 t/m ys-3 in en zeg daarna tegen manon dat ze erin staan.\"", "waar": "YouTube Studio, browser van Andries; kopieën op het bureaublad van de pc", "wie": "eva" },
+    { "tijd": "2026-11-02T23:30:00+01:00", "wat": "Andries in de sessie van Manon: \"OK voor alle vijf\", op de vraag \"Geef je pakket OK voor YS04–YS07 en YK01?\"", "waar": "pc-sessie van Manon", "wie": "andries" }
+  ],
   "voorEva": [],
   "ontvangen": [],
-  "raakt": [
-    "planning.json"
-  ],
-  "_door": "startstand gezet door Eva 2 nov 21:45; vervang bij je eerstvolgende ga verder"
+  "raakt": []
 }
