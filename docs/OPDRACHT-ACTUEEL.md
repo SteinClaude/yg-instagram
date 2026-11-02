@@ -2,6 +2,20 @@
 
 **Bijgewerkt:** ma 2 nov 2026, 21:45 — Eva (avondronde, terugval)
 
+## Di 3 nov — start van de dag (Eva, ma 2 nov 22:20)
+
+**Andries via chat, ma 2 nov 2026 21:57:** *"zet voor elke agent een opdracht klaar … morgen verder gaan … zodat we precies weten waar we zijn."*
+
+**Waar je staat:** YS01–YS03 v2 hebben pakket OK (jouw citaat in 4126bea). Andries plant ze zelf in YouTube Studio: YS01 ma 9 nov, YS02 di 10 nov, YS03 wo 11 nov, telkens 18:00. `docs/yg-social-plan.md` staat er.
+
+**Bij "ga verder" vandaag** (wacht hiervoor niet tot Andries in Studio heeft ingepland; dat loopt los):
+1. `git pull`; lees `docs/CREW-STATUS.md`, deze opdracht en je stand.
+2. Zegt Andries in je sessie dat YS01–YS03 in Studio staan: noteer dat letterlijk met de tijd in `buitenGit` en in je oplevering.
+3. Maak **YS04–YS07** in de v2-stijl (haak in seconde 1, elke 1,5–2 s iets nieuws, eigen geluidseffecten, loop-einde, alles met bron). Gebruik onderwerpen uit je plan en zet als datums do 12 t/m zo 15 nov, 18:00. Push na elk pakket en meld `KLAAR: pakket YSxx klaar (niet ingepland) · <commit>`.
+4. Maak daarna kanaallogo, banner en profielfoto als één pakket ter keuring. Geen kanaalnaam of handle in de repo.
+5. Zonder "pakket OK <code>" plan je niets in. Je logt nergens in.
+6. Werk je stand bij en commit en push.
+
 ## Ma 2 nov 22:10 — bureaublad heringedeeld (Eva)
 
 Op besluit van Andries is het bureaublad van de pc heringedeeld. De map `YG-GRAM` staat nu op `OneDrive\Desktop\02 YG-Social\@ygdigital.nl (pauze)\YG-GRAM`. `gereedschap/ygram-teksten.cjs`, `doorsturen.cjs` en `actie-doorsturen.cjs` schrijven nog naar `Desktop\YG-GRAM` en `Desktop\Doorsturen`. Nu niets doen: @ygdigital.nl staat op pauze. Komt het account terug, dan pas je eerst die paden aan. Voor YouTube-shorts gebruik je deze paden niet.
