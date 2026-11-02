@@ -8,6 +8,12 @@
 
 Wat jij doet: niets extra. Z01 t/m T03 staan al uit `planning.json` en in `planning-gepauzeerd.json` (Eva, 16:52); dit citaat bevestigt dat de automaat uit blijft. Terugzetten alleen na een nieuw citaat hier.
 
+## Ma 2 nov 18:45 — YouTube-account bestaat; plaatsen via YouTube Studio
+
+**Andries via chat, ma 2 nov 2026 18:43–18:45:** *"ik wil nu met manon het eerste social account koppelen"* · account: **"Account bestaat al"** · plaatsen: **"Jij plant in YouTube Studio"** (Andries plant de week zelf in, ~10 min; API-controle bij Google later).
+
+Gevolg: geen technische koppeling nodig om te starten. Je pakketformaat voor een short volgt het uploadscherm van YouTube Studio (zie CLAUDE.md, Kennis). Naam en handle van het kanaal komen **nooit** in deze repo; Eva geeft ze je in je opdracht als je ze nodig hebt (in een deelagent-prompt, niet in git). Onderwerp: zie de volgende regel van Eva zodra Andries het heeft gekozen.
+
 ## Ma 2 nov 17:05 — keuzes ronde 2 (Andries via chat)
 
 **Andries via chat, ma 2 nov 2026 16:55–17:05:** onderwerp YouTube-kanaal *"nog overleggen"* · beeld: mix per video · stem: per video kiezen · lengte: tot 3 minuten · keuring: één zitting per week (losse OK per code) · voorraad: 1 week · naam: jij 5 voorstellen, Andries kiest · account: na het onderwerp-overleg · titels/beschrijving: jij schrijft alles · 2–3 vaste reeksen · trends: max 1 per week · lange video's: na 1.000 abonnees · tweede platform: na de evaluatie van 30 dagen · logo/banner: jij · cijfers: Eva haalt ze op · 1.000 abonnees vóór 31 mrt 2027 · beeld van anderen: *"ook fragmenten van anderen"* (Eva: alleen als kort citaat binnen eigen uitleg, met bron — zie CLAUDE.md) · webshopverkeer: na zijn webshopbesluit · flop: les noteren en bijsturen · werken: dagelijks via Eva.
