@@ -1,0 +1,46 @@
+STUDIO.TXT — YS07 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS07" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 31,2 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+
+== Details ==
+Titel (48/100 tekens):
+Why do we say OK? It started as a newspaper joke
+
+Beschrijving:
+OK began in 1839 as a joke abbreviation in a Boston newspaper. A presidential campaign the next year kept it alive.
+
+What the sources say:
+- 1839: Boston newspapers were full of humorous abbreviations, like O.F.M. ("Our First Men"), S.P. ("Small Potatoes") and R.T.B.S. ("Remains To Be Seen").
+- March 23, 1839: in the Boston Morning Post, editor Charles Gordon Greene used "O.K." for "oll korrect", a deliberate misspelling of "all correct".
+- Linguist Allen Walker Read of Columbia University found this earliest use by reading old newspapers.
+- 1840: supporters of President Martin Van Buren, born in Kinderhook, New York, called him "Old Kinderhook", shortened to "OK" on rally signs; an O.K. Club formed in New York City.
+- Van Buren lost the election, but "OK" stayed.
+
+Sources:
+Michigan Public, "TWTS: An origin story that's just 'OK'" (Anne Curzan and Rebecca Hector, May 14, 2023): https://www.michiganpublic.org/podcast/thats-what-they-say/2023-05-14/twts-an-origin-story-thats-just-ok
+VOA Learning English, "OK" (February 12, 2002): https://learningenglish.voanews.com/amp/a-23-a-2002-02-12-27-1-83113602/118125.html
+
+#Shorts #history #language #words
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene, na de klap).
+Afspeellijsten: geen (eerste week).
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+OK, okay, origin of OK, oll korrect, Boston Morning Post, Old Kinderhook, Martin Van Buren, word origins, etymology, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: zondag 15 november 2026, 18:00 (Amsterdam)
