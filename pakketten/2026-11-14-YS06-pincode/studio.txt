@@ -1,0 +1,45 @@
+STUDIO.TXT — YS06 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS06" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 31,0 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+
+== Details ==
+Titel (51/100 tekens):
+Why your PIN has 4 digits (it was supposed to be 6)
+
+Beschrijving:
+The inventor of the cash machine planned a six-digit PIN. Then his wife told him six was too many.
+
+What the source says:
+- 27 June 1967: the first cash machine was installed at a Barclays branch in a north London suburb.
+- Inventor John Shepherd-Barron got the idea from a chocolate bar dispenser, "replacing chocolate with cash".
+- There were no plastic bank cards yet: the machine used special cheques coded with a mildly radioactive material.
+- He first planned six-digit PINs, but cut them to four after his wife said six was too many. In his words: "she could only remember four figures, so because of her, four figures became the world standard."
+- By 2010 there were at least 1.7 million cash machines worldwide.
+
+Source:
+Al Jazeera English, "Cash machine inventor dies at 84" (May 20, 2010): https://www.aljazeera.com/news/europe/2010/05/2010520132141953856.html
+
+#Shorts #history #money #inventions
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene, na de klap).
+Afspeellijsten: geen (eerste week).
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+PIN code, why is a PIN 4 digits, ATM history, cash machine, John Shepherd-Barron, first ATM, Barclays 1967, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: zaterdag 14 november 2026, 18:00 (Amsterdam)
