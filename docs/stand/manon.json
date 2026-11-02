@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-02T23:55:00+01:00",
+  "tijd": "2026-11-03T00:05:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-02T19:45:00+01:00"
   },
-  "status": "klaar",
+  "status": "werkt",
   "af": [
     "plan 30 onderwerpen · 634997a",
     "short.cjs v2 · fb5b54b",
@@ -15,8 +15,8 @@
     "YK01 kanaalbeeld · fa88f71: pakket OK · b2691db",
     "video-upload.mp4 onder 10 MB bij YS04–YS07 · b2691db"
   ],
-  "bezig": "-",
-  "volgende": "bij ga verder: week 2 (YS08–YS14) als voorraad, zelfde v2-stijl; YS04–YS07 en YK01 plant Andries (of Eva op zijn verzoek) in via Studio",
+  "bezig": "week 2 als voorraad: YS08 SOS, YS09 A4, YS10 bug, YS11 $, YS12 999, YS13 klittenband, YS14 eerste verkeerslicht (ma 16 t/m zo 22 nov, 18:00)",
+  "volgende": "per pakket pushen met KLAAR-regel; daarna wachten op pakket OK YS08–YS14",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -36,6 +36,12 @@
     {
       "tijd": "2026-11-02T23:30:00+01:00",
       "wat": "Andries in de sessie van Manon: \"OK voor alle vijf\", op de vraag \"Geef je pakket OK voor YS04–YS07 en YK01?\"",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-03T00:00:00+01:00",
+      "wat": "Andries in de sessie van Manon: \"Ja, begin week 2\"",
       "waar": "pc-sessie van Manon",
       "wie": "andries"
     }
