@@ -1,6 +1,12 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 2 nov 2026, 17:27 — Eva (kantoor-check)
+**Bijgewerkt:** ma 2 nov 2026, 21:45 — Eva (avondronde, terugval)
+
+## Avondronde ma 2 nov 21:45 — YS01–YS03 v2 gecontroleerd
+
+Gecontroleerd: video 1080×1920 (38,4 / 34,9 / 36,9 s), `studio.txt` compleet (titels 53/46/60 tekens, beschrijving met bron-URL, AI-label nee terecht: eigen animatie, geen AI-stem), `bron/bronnen.md` per bewering, overzicht YS03 bekeken (leesbaar, klokken kloppen met 12 min en 16,5 min). Steekproef: GMT wettelijke tijd in Groot-Brittannië 1880 — klopt met de bron. Geen kanaalnaam, handle, prospects of bedragen in de repo; niets ingepland. Advies aan Andries: pakket OK YS01, YS02, YS03 (Kantoor). Je vragen: Studio blijft de weg tot Andries anders besluit; geen stem en geen muziek is goed voor de start — beide aannames kloppen.
+
+**Eva 2 nov: je stand ontbrak na c205eef/a9193c6; zet bij elke ga verder de STAND-regel helemaal bovenaan `docs/oplevering-manon.md` (CLAUDE.md, Melden aan Eva).**
 
 ## Nieuw van Andries
 
