@@ -1,0 +1,48 @@
+STUDIO.TXT — YS09 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS09" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 34,7 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k) voor het uploadgereedschap van Eva; in Studio mag ook video.mp4
+
+== Details ==
+Titel (50/100 tekens):
+Fold A4 in half and it keeps its shape. Here's why
+
+Beschrijving:
+A4 looks like a random size: 210 by 297 mm. It is not. Its sides follow the square root of two, so every half has the same shape.
+
+What the source says:
+- In the ISO paper sizes, height divided by width is always the square root of two (1.4142 : 1).
+- Cut such a page in half and the result has the same width/height ratio again.
+- A0 has an area of exactly one square metre; A4 is 210 × 297 mm.
+- One of the oldest written records of the √2 ratio for paper is a letter by Georg Christoph Lichtenberg to Johann Beckmann, dated 25 October 1786.
+- A French law on paper taxation of 3 November 1798 already defined formats that correspond exactly to the modern ISO sizes.
+- Germany adopted the sizes as standard DIN 476 in 1922, reinvented by Dr. Walter Porstmann.
+- In 1975 it became an international standard (ISO 216) and the official United Nations document format. Today it is used almost everywhere, except North America.
+
+Source:
+Markus Kuhn, "International standard paper sizes" (University of Cambridge): https://www.cl.cam.ac.uk/~mgk25/iso-paper.html
+
+#Shorts #history #paper #design
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene, na de klap).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+A4 paper, why is A4 that size, paper sizes, ISO 216, square root of 2, A0 one square metre, DIN 476, Lichtenberg, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: dinsdag 17 november 2026, 18:00 (Amsterdam)
