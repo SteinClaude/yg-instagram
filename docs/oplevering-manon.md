@@ -1,3 +1,5 @@
+KLAAR: pakket YS08 klaar (niet ingepland) · 0a4fd10
+
 KLAAR: pakket OK YS04, YS05, YS06, YS07 en YK01 vastgelegd (Andries in mijn sessie, ma 2 nov 2026: "OK voor alle vijf", op de vraag "Geef je pakket OK voor YS04–YS07 en YK01?"); status in elke studio.txt bijgewerkt; video-upload.mp4 onder 10 MB (7,9–8,1 MB) bij YS04–YS07 voor het uploadgereedschap van Eva; YS01–YS03 op "ingepland in Studio (Eva, 2 nov 22:45)" · b2691db
 
 KAN NIET VERDER (opgelost door het OK hierboven): eerste week compleet · nodig: "pakket OK YS04", "YS05", "YS06", "YS07" en "pakket OK YK01" (kanaalbeeld) van Andries, per code; daarna plant hij ze in YouTube Studio in
