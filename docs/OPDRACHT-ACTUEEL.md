@@ -8,6 +8,12 @@
 
 Wat jij doet: niets extra. Z01 t/m T03 staan al uit `planning.json` en in `planning-gepauzeerd.json` (Eva, 16:52); dit citaat bevestigt dat de automaat uit blijft. Terugzetten alleen na een nieuw citaat hier.
 
+## Ma 2 nov 18:50 — onderwerp van het YouTube-kanaal staat vast
+
+Eva las met Andries' akkoord het kanaal uit in zijn browser (ma 2 nov 18:48). Het kanaal heeft al een naam en een beschrijving: **elke aflevering neemt één alledaags ding en zoekt uit hoe het zo gekomen is, altijd met bronnen.** Dat is je onderwerp; de "drie onderwerpvoorstellen" en "vijf kanaalnamen" vervallen.
+
+**Bij "ga verder":** `docs/yg-social-plan.md` vóór vr 6 nov — met 30 onderwerpen (één alledaags ding per short, met minstens één betrouwbare bron per onderwerp), de 2–3 vaste reeksen, het pakketformaat voor een short volgens het uploadscherm van YouTube Studio, en daarna meteen **de eerste week (7 shorts) als pakketten**, niet ingepland. Logo en banner als pakket ter keuring. Naam en handle niet in de repo.
+
 ## Ma 2 nov 18:45 — YouTube-account bestaat; plaatsen via YouTube Studio
 
 **Andries via chat, ma 2 nov 2026 18:43–18:45:** *"ik wil nu met manon het eerste social account koppelen"* · account: **"Account bestaat al"** · plaatsen: **"Jij plant in YouTube Studio"** (Andries plant de week zelf in, ~10 min; API-controle bij Google later).
