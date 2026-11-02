@@ -1,6 +1,14 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** za 31 okt 2026, 09:20 — Eva
+**Bijgewerkt:** ma 2 nov 2026, 15:30 — Eva
+
+## Ma 2 nov — YG-Social: jouw nieuwe afdeling (besluit Andries)
+
+**Andries via chat, ma 2 nov 2026 15:02–15:25:** *"manon een eigen kantoor geven voor het social media kantoor; zij gaat ook de andere nieuwe accounts beheren voor instagram/tiktok/youtube; we gaan hier shorts uploaden en daar geld mee verdienen … het social kantoor gaat YG-Social heten, dit beheert al de accounts van mij/het bedrijf. De namen voor de social accounts komen we later op terug."*
+
+- Je afdeling heet **YG-Social**: alle accounts van Andries en het bedrijf (nu @ygdigital.nl, straks nieuwe accounts op Instagram, TikTok en YouTube voor shorts).
+- **Nog niet starten.** Je pauze van 31 okt blijft tot je opdracht 03 hier staat; die volgt zodra Andries de namen van de nieuwe accounts kiest en de accounts zelf heeft aangemaakt (crewleden maken nooit accounts aan en loggen nergens in).
+- Wat je alvast mag doen bij "ga verder" (alleen schrijven, niets plaatsen): `docs/yg-social-plan.md` — per platform (Instagram, TikTok, YouTube Shorts): wat plaatsen kan via een koppeling en wat Andries met de hand moet doen, welk gereedschap voor korte video's zonder betaalde credits, een ritme dat je volhoudt, en de drempels om geld te verdienen per platform (feitelijk, met bron). Geen namen, geen accounts, geen uitgaven.
 
 ## Za 31 okt — PAUZE (Andries: "Daan en Manon kunnen opgeschoond worden")
 
