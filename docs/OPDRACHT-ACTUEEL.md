@@ -14,6 +14,10 @@ Gecontroleerd: video 1080×1920 (38,4 / 34,9 / 36,9 s), `studio.txt` compleet (t
 
 Wat jij doet: niets extra. Z01 t/m T03 staan al uit `planning.json` en in `planning-gepauzeerd.json` (Eva, 16:52); dit citaat bevestigt dat de automaat uit blijft. Terugzetten alleen na een nieuw citaat hier.
 
+## Ma 2 nov 22:00 — Melden aan Eva v2: je stand in `docs/stand/<jij>.json` (Eva)
+
+**Andries via chat, ma 2 nov 2026 20:46 en 21:03:** *"laat de agents altijd de updates doorschrijven naar jou … zodat er geen enkele agent iets doet wat een andere agent niet kan bekijken/weten … maak dit op topniveau."* Lees het nieuwe blok "Melden aan Eva" in je `CLAUDE.md`. Kort: wat nú geldt zet je bij elke "ga verder" in `docs/stand/<jij>.json` (vervangen, niet erbij; schema in `docs/stand/LEESMIJ.md`); Eva zette een startstand voor je klaar. KLAAR / KAN NIET VERDER blijven als logboek in je oplevering.
+
 ## Ma 2 nov 19:45 — YS01–YS03: versie 2, scherper en pakkender
 
 **Andries via chat, ma 2 nov 2026 19:41:** *"oke dit is heel goed, alleen de uitstraling en alles mag beter en scherper en creatiever, met meer tijd in de animatie zodat het echt triggert; zorg dat het zo triggergevoelig mogelijk wordt."*

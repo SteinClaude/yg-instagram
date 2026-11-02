@@ -1,0 +1,25 @@
+{
+  "lid": "manon",
+  "tijd": "2026-11-02T21:45:00+01:00",
+  "sessie": {
+    "id": "",
+    "plek": "",
+    "sinds": ""
+  },
+  "status": "wacht",
+  "af": [
+    "plan 30 onderwerpen (634997a)",
+    "YS01–YS03 v2"
+  ],
+  "bezig": "-",
+  "volgende": "wacht op \"pakket OK YS01/YS02/YS03\"; daarna YS04–YS07 en logo/banner",
+  "kanNietVerder": null,
+  "vragen": [],
+  "buitenGit": [],
+  "voorEva": [],
+  "ontvangen": [],
+  "raakt": [
+    "planning.json"
+  ],
+  "_door": "startstand gezet door Eva 2 nov 21:45; vervang bij je eerstvolgende ga verder"
+}
