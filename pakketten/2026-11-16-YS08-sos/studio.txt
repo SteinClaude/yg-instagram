@@ -1,0 +1,48 @@
+STUDIO.TXT — YS08 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS08" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 32,8 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k) voor het uploadgereedschap van Eva; in Studio mag ook video.mp4
+
+== Details ==
+Titel (33/100 tekens):
+What does SOS stand for? Nothing.
+
+Beschrijving:
+SOS is not an abbreviation. It is one continuous Morse pattern, chosen because it is simple and unmistakable.
+
+What the source says:
+- The SOS signal originated in German national radio regulations in 1905.
+- It was adopted internationally at the International Radiotelegraph Conference in Berlin in 1906, where 29 countries signed a convention: ships in distress had to use this signal.
+- It is a continuous group of Morse dots and dashes (three dots, three dashes, three dots), not separate letters. It was chosen because the pattern is simple and unmistakable.
+- Because it can be read as "SOS" in Morse code, that became the usual way to remember it.
+- Before that, Marconi operators used "CQD": "CQ" was a general call to all stations, "D" stood for distress.
+- On 15 April 1912, the Titanic sent CQD and, as suggested by assistant operator Harold Bride, mixed in the new signal, SOS.
+- SOS stopped being the official distress signal on 1 January 1998, replaced by satellite systems and voice messages.
+
+Source:
+ITU News, No. 6/2006, "Pioneers' page" (International Telecommunication Union): https://www.itu.int/itunews/manager/display.asp?lang=en&year=2006&issue=06&ipage=pioneers&ext=html
+
+#Shorts #history #morsecode #titanic
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene, na de klap).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+SOS, what does SOS stand for, SOS meaning, Morse code, distress signal, CQD, Titanic, 1906 Berlin conference, radio history, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: maandag 16 november 2026, 18:00 (Amsterdam)
