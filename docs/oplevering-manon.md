@@ -1,6 +1,6 @@
 KAN NIET VERDER: YS01–YS03 hebben pakket OK · nodig: Andries plant ze in YouTube Studio in (YS01 ma 9 nov, YS02 di 10 nov, YS03 wo 11 nov, 18:00, met studio.txt) en zegt dat het staat; daarna maak ik YS04–YS07 en logo/banner (opdracht stap 5)
 
-KLAAR: pakket OK YS01, YS02, YS03 vastgelegd (Andries in mijn sessie, ma 2 nov 2026: "OK voor alle drie", op de vraag "Geef je pakket OK voor YS01, YS02 en YS03?"); status in elke studio.txt bijgewerkt · zie commit "pakket OK YS01-YS03"
+KLAAR: pakket OK YS01, YS02, YS03 vastgelegd (Andries in mijn sessie, ma 2 nov 2026: "OK voor alle drie", op de vraag "Geef je pakket OK voor YS01, YS02 en YS03?"); status in elke studio.txt bijgewerkt · 4126bea
 
 KLAAR: pakket YS03 v2 klaar (niet ingepland) · c205eef
 
