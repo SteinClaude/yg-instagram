@@ -1,6 +1,6 @@
 KAN NIET VERDER: YS01–YS03 v2 klaar · nodig: "pakket OK YS01", "pakket OK YS02", "pakket OK YS03" van Andries (in deze sessie of via Eva); daarna plant hij ze in YouTube Studio in en maak ik YS04–YS07 en logo/banner
 
-KLAAR: pakket YS03 v2 klaar (niet ingepland) · zie commit "YS03 v2"
+KLAAR: pakket YS03 v2 klaar (niet ingepland) · c205eef
 
 KLAAR: pakket YS02 v2 klaar (niet ingepland) · c81e7b4
 
