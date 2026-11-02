@@ -1,3 +1,9 @@
+KAN NIET VERDER: YS01 v2 staat klaar ter beoordeling · nodig: reactie van Andries op de stijl van YS01 v2 (opdracht stap 3: eerst zijn oordeel, dan YS02 en YS03 v2)
+
+KLAAR: pakket YS01 v2 klaar (niet ingepland) · zie commit "YS01 v2"
+
+KLAAR: gereedschap/short.cjs versie 2 (camera, tekst woord voor woord, overgangen, diepte, eigen geluid met ffmpeg, controleblad uit de mp4); v1-scripts blijven gelijk (overzicht YS01 v1 bit voor bit gelijk) · zie commit "YS01 v2"
+
 KLAAR: pakket YS03 klaar (niet ingepland) · 15b4584
 
 KLAAR: pakket YS02 klaar (niet ingepland) · d6fa5fd
@@ -6,7 +12,11 @@ KLAAR: pakket YS01 klaar (niet ingepland) · adcf422
 
 KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reeksen, pakketformaat short, ritme 7/week, API later) · 634997a
 
-## YG-Social (Manon, ma 2 nov 2026, avond)
+## YG-Social (Manon, ma 2 nov 2026, avond; bijgewerkt ma 2 nov laat, pc-sessie met Andries)
+
+AF (laat): short.cjs v2 · YS01 v2 (38,4 s, haak in seconde 1, 14 beats, loop naar het begin, eigen geluid; piek -1,5 dB, geen clipping) · overzicht-v1.jpg bewaard in YS01–YS03
+OPEN (laat, in volgorde): 1. oordeel Andries over YS01 v2 · 2. YS02 v2 en YS03 v2 op dezelfde manier · 3. YS04–YS07 · 4. logo en banner
+VOLGENDE STAP: Andries bekijkt pakketten/2026-11-09-YS01-stopbord/video.mp4
 
 AF: plan · gereedschap/short.cjs (eigen animatie, 1080x1920, geen credits) · pakketten YS01-YS03 (zie KLAAR-regels)
 OPEN: YS04-YS07 (rest eerste week) · logo, banner, profielfoto als pakket · inplannen alleen na "pakket OK YSxx"; Andries plant in via YouTube Studio

@@ -7,6 +7,12 @@
 //   node gereedschap/short.cjs YS01            maakt pakketten/<map>/video.mp4 + overzicht.jpg
 //   node gereedschap/short.cjs YS01 --frames   alleen controlebeelden (geen video)
 //
+// Versie 2 (script met `versie: 2`, opdracht Eva 2 nov 19:45): camera over de hele scène (scene.camera), tekst
+// woord voor woord (kin), overgangen tussen scènes (scene.in: zweep, flits, masker, op, zoom), diepte (schaduw, licht,
+// vignet, korrel) en eigen geluidseffecten (scene.geluid, gemaakt met ffmpeg in short/geluid.cjs). Bij een overgang
+// klinkt vanzelf een whoosh. Na het coderen komt er een controleblad met beelden midden in de bewegingen
+// (bron/controle-beweging.jpg). Scripts zonder `versie: 2` worden gemaakt zoals voorheen.
+//
 // Het pakket-pad staat in het script (veld `map`). Het audiospoor is stil:
 // muziek komt alleen uit de gratis bibliotheek van het platform zelf (CLAUDE.md).
 //
@@ -59,6 +65,9 @@ function breek(tekst, g, max, font) {
   if (r.length) regels.push(r);
   return regels;
 }
+const B = require('./short/beweging.cjs')({ FONT, maat, esc, K, W, H, woorden, breek });
+const GELUID = require('./short/geluid.cjs');
+
 // Tekstblok met regels die na elkaar opkomen. Geeft {svg, hoogte}.
 function blok(tekst, { x = 100, y, g = 64, max = 820, gewicht = 'bold', kleur = K.inkt, accent = K.signaal, t = 99, start = 0, regelHoogte = 1.18, stap = 0.12, midden = false } = {}) {
   const font = gewicht === 'bold' ? FONT.bold : gewicht === 'mono' ? FONT.mono : FONT.regular;
@@ -146,16 +155,56 @@ function bronRegel(tekst, t, start, nacht) {
   return blok('Source: ' + tekst, { y: 1330, g: 30, gewicht: 'mono', kleur: nacht ? '#C9C6BC' : K.grijs, accent: K.signaal, t, start, max: 800, regelHoogte: 1.3 }).svg;
 }
 
+const HULP = () => ({ K, blok, fase, zacht, uit, klem, stopbord, vorm, klok, toetsen, veelhoek, W, H, esc, maat, FONT,
+  kin: B.kin, veer: B.veer });
+// Eén volledig beeld van een scène op tijd t (achtergrond, kop, inhoud, bronregel), zonder <svg>-omhulsel.
+function beeldVan(script, scene, t) {
+  const inhoud = scene.teken({ t, duur: scene.duur, ...HULP() });
+  if (script.versie !== 2) return `${kader(script, scene, t)}${inhoud}${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht)}`;
+  const licht = scene.nacht ? '' : `<rect width="${W}" height="${H}" fill="url(#licht)"/>`;
+  return `${kader(script, scene, t)}${licht}<g transform="${B.camera(t, scene.duur, scene.camera)}">${inhoud}</g>` +
+    `${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`;
+}
 function svgVoor(script, tijd) {
   let t0 = 0;
-  for (const scene of script.scenes) {
-    if (tijd < t0 + scene.duur || scene === script.scenes[script.scenes.length - 1]) {
+  const sc = script.scenes;
+  for (let i = 0; i < sc.length; i++) {
+    const scene = sc[i];
+    if (tijd < t0 + scene.duur || i === sc.length - 1) {
       const t = tijd - t0;
-      const inhoud = scene.teken({ t, duur: scene.duur, K, blok, fase, zacht, uit, klem, stopbord, vorm, klok, toetsen, veelhoek, W, H, esc, maat, FONT });
-      return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${kader(script, scene, t)}${inhoud}${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht)}</svg>`;
+      let lijf = beeldVan(script, scene, t);
+      if (script.versie === 2 && scene.in && i > 0 && t < B.OVERGANG_DUUR) {
+        const vorige = beeldVan(script, sc[i - 1], sc[i - 1].duur - 0.001);
+        lijf = B.overgang(scene.in, B.uit(t / B.OVERGANG_DUUR), vorige, lijf, i);
+      }
+      return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${script.versie === 2 ? B.DEFS : ''}${lijf}</svg>`;
     }
     t0 += scene.duur;
   }
+}
+// Tijdlijn van de geluiden (versie 2): wat de scènes vragen, plus een whoosh bij elke overgang.
+function geluidLijst(script) {
+  const lijst = []; let t0 = 0;
+  script.scenes.forEach((s, i) => {
+    if (s.in && i > 0) lijst.push([Math.max(0, t0 - 0.16), 'whoosh', 0.55]);
+    for (const [t, naam, vol, pan] of s.geluid || []) lijst.push([t0 + t, naam, vol ?? 1, pan ?? 0]);
+    t0 += s.duur;
+  });
+  return lijst;
+}
+// Korrel (versie 2): vier vaste ruispatronen, per beeld een ander, opgeteld bij de pixels na het tekenen.
+let KORREL = null;
+function korrel(px, i, sterkte = 5) {
+  if (!KORREL) {
+    let z = 12345; const rnd = () => ((z = (z * 1103515245 + 12345) & 0x7fffffff) / 0x7fffffff);
+    KORREL = [0, 1, 2, 3].map(() => { const a = new Int8Array(W * H); for (let k = 0; k < a.length; k++) a[k] = Math.round((rnd() * 2 - 1) * sterkte); return a; });
+  }
+  const r = KORREL[i % 4], uitk = Buffer.from(px);
+  for (let k = 0, p = 0; k < r.length; k++, p += 4) {
+    const d = r[k];
+    uitk[p] = Math.max(0, Math.min(255, uitk[p] + d)); uitk[p + 1] = Math.max(0, Math.min(255, uitk[p + 1] + d)); uitk[p + 2] = Math.max(0, Math.min(255, uitk[p + 2] + d));
+  }
+  return uitk;
 }
 const totaal = script => script.scenes.reduce((a, s) => a + s.duur, 0);
 const teken = svg => new Resvg(svg, { font: { fontFiles, loadSystemFonts: false, defaultFontFamily: 'Instrument Sans' }, fitTo: { mode: 'width', value: W } }).render();
@@ -179,23 +228,52 @@ async function maak(code, alleenBeelden) {
   if (alleenBeelden) return;
 
   const doel = path.join(map, 'video.mp4');
+  const v2 = script.versie === 2;
+  let audioIn = ['-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=48000'];
+  if (v2) {
+    const lijst = geluidLijst(script), pcm = GELUID.mix(lijst, duur);
+    const tmp = path.join(require('os').tmpdir(), `short-${code}-geluid.f32`);
+    fs.writeFileSync(tmp, Buffer.from(pcm.buffer));
+    audioIn = ['-f', 'f32le', '-ar', String(GELUID.RATE), '-ac', '2', '-i', tmp];
+    console.log(`geluid: ${lijst.length} effecten`);
+  }
   const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error',
     '-f', 'rawvideo', '-pix_fmt', 'rgba', '-s', `${W}x${H}`, '-r', String(FPS), '-i', '-',
-    '-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=48000',
+    ...audioIn,
     '-map', '0:v', '-map', '1:a', '-shortest',
-    '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-movflags', '+faststart',
-    '-c:a', 'aac', '-b:a', '128k', doel], { stdio: ['pipe', 'inherit', 'inherit'] });
-  let vorige = '', buf = null;
+    '-c:v', 'libx264', '-preset', 'medium', '-crf', v2 ? '20' : '18', ...(v2 ? ['-maxrate', '7M', '-bufsize', '14M'] : []),   // korrel comprimeert slecht: v2 begrensd (GitHub weigert bestanden > 100 MB)
+    '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-movflags', '+faststart',
+    '-c:a', 'aac', '-b:a', v2 ? '192k' : '128k', doel], { stdio: ['pipe', 'inherit', 'inherit'] });
+  let vorige = '', buf = null; const begon = Date.now();
   for (let i = 0; i < n; i++) {
     const svg = svgVoor(script, i / FPS);
     if (svg !== vorige) { buf = Buffer.from(teken(svg).pixels); vorige = svg; }   // stilstaande beelden niet opnieuw tekenen
-    if (!ff.stdin.write(buf)) await new Promise(r => ff.stdin.once('drain', r));
-    if (i % 300 === 0) process.stdout.write(`  ${i}/${n}\n`);
+    const beeld = v2 ? korrel(buf, i) : buf;
+    if (!ff.stdin.write(beeld)) await new Promise(r => ff.stdin.once('drain', r));
+    if (i % 300 === 0) process.stdout.write(`  ${i}/${n}  (${((Date.now() - begon) / 1000).toFixed(0)} s)\n`);
   }
   ff.stdin.end();
   await new Promise((ok, fout) => ff.on('close', c => c === 0 ? ok() : fout(new Error('ffmpeg ' + c))));
   const info = execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'stream=codec_type,width,height,r_frame_rate:format=duration', '-of', 'compact', doel]).toString();
   console.log(info.trim());
+  if (v2) await controleBlad(script, map, doel);
+}
+
+// Controleblad uit de echte mp4: per scène een beeld midden in de overgang (0,12 s na het begin) en een beeld
+// halverwege, zodat je ziet dat niets buiten beeld of over elkaar valt terwijl het beweegt.
+async function controleBlad(script, map, doel) {
+  const tijden = []; let t0 = 0;
+  for (const s of script.scenes) { tijden.push(t0 + 0.12, t0 + s.duur * 0.5); t0 += s.duur; }
+  const tegels = [];
+  for (const tm of tijden) {
+    const png = execFileSync('ffmpeg', ['-v', 'error', '-ss', tm.toFixed(3), '-i', doel, '-frames:v', '1', '-f', 'image2pipe', '-vcodec', 'png', 'pipe:1'], { maxBuffer: 64 << 20 });
+    tegels.push(await sharp(png).resize(216, 384).png().toBuffer());
+  }
+  const kol = 6, rij = Math.ceil(tegels.length / kol), m = 12;
+  await sharp({ create: { width: kol * 216 + (kol + 1) * m, height: rij * 384 + (rij + 1) * m, channels: 3, background: '#222' } })
+    .composite(tegels.map((b, i) => ({ input: b, left: m + (i % kol) * (216 + m), top: m + Math.floor(i / kol) * (384 + m) })))
+    .jpeg({ quality: 84 }).toFile(path.join(map, 'bron', 'controle-beweging.jpg'));
+  console.log('bron/controle-beweging.jpg klaar (' + tegels.length + ' beelden uit de mp4)');
 }
 
 if (require.main === module) {
@@ -203,4 +281,4 @@ if (require.main === module) {
   if (!code) { console.error('gebruik: node gereedschap/short.cjs YS01 [--frames]'); process.exit(1); }
   maak(code, vlag === '--frames').catch(e => { console.error(e); process.exit(1); });
 }
-module.exports = { maak, svgVoor, teken, K };
+module.exports = { maak, svgVoor, teken, K, geluidLijst };

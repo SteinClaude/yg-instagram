@@ -16,4 +16,5 @@ https://webarchive.library.unt.edu/web/20161031205947/http:/mutcd.fhwa.dot.gov/k
 ## Beeld, letters en geluid
 - Beeld: eigen animatie (SVG, gereedschap/short.cjs). Geen stockbeeld, geen beeld van anderen, geen AI-beeld.
 - Letters: Instrument Sans en IBM Plex Mono, SIL Open Font License (gereedschap/short/fonts/).
-- Geluid: stil audiospoor; geen muziek, geen stem.
+- Geluid (versie 2): eigen geluidseffecten (whoosh, tik, klap, dreun, stijgende toon, bel, plop, rol), zelf gesynthetiseerd met ffmpeg uit sinus en ruis (gereedschap/short/geluid.cjs). Geen muziek, geen stem, geen audio van anderen.
+- Versie 2 (2 nov 2026): zelfde bron en beweringen als v1, nieuwe opbouw (haak, snellere beats, loop). v1: overzicht-v1.jpg en git-commit adcf422.
