@@ -1,0 +1,47 @@
+STUDIO.TXT — YS10 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS10" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 32,7 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k) voor het uploadgereedschap van Eva; in Studio mag ook video.mp4
+
+== Details ==
+Titel (67/100 tekens):
+The first computer bug was a real moth. But it wasn't the first bug
+
+Beschrijving:
+In 1947 a team at Harvard found a moth inside their computer and taped it into the logbook. The joke only works because "bug" already meant a fault.
+
+What the sources say:
+- September 9, 1947: a moth was found caught between the relay contacts of the Harvard Mark II computer in Cambridge, Massachusetts.
+- The team taped the dead moth into the logbook, with the note: "First actual case of bug being found."
+- "Bug" for a fault was much older: in an 1878 letter, Thomas Edison wrote about "'Bugs' as such little faults and difficulties are called."
+- Grace Hopper was present and later made the incident famous in her many public lectures.
+- The logbook, with the moth, is today in the collection of the Smithsonian's National Museum of American History.
+
+Sources:
+Computer History Museum, "This Day in History: September 9": https://www.computerhistory.org/tdih/September/09/
+JSTOR Daily, "The Bug in the Computer Bug Story": https://daily.jstor.org/the-bug-in-the-computer-bug-story/
+
+#Shorts #history #computers #programming
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene, na de klap).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+computer bug, first computer bug, why is it called a bug, moth, Harvard Mark II, Grace Hopper, Edison bug, software bug history, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: woensdag 18 november 2026, 18:00 (Amsterdam)
