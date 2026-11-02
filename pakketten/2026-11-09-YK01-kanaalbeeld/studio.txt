@@ -1,0 +1,32 @@
+STUDIO.TXT — YK01 kanaalbeeld (YouTube Studio > Aanpassing > Branding)
+Status: gemaakt, NIET geplaatst. Plaatsen pas na "pakket OK YK01" van Andries; hij zet het er zelf in.
+
+Wat: profielfoto, banner en watermerk voor het YouTube-kanaal, in de stijl van de shorts (papier, inkt, signaalrood).
+Bewust zonder kanaalnaam of handle: die horen niet in deze openbare repo, en YouTube toont de naam al naast de
+profielfoto. Het merkteken is een rood rondje met een vraagteken: elke short begint met een vraag.
+
+== Bestanden ==
+profielfoto.png   800x800 (YouTube toont hem rond; alles belangrijks staat in het midden)
+banner.png        2560x1440 (de tekst staat in de veilige zone van 1546x423, zie banner-zones.jpg)
+watermerk.png     150x150 (optioneel; verschijnt rechtsonder in elke video)
+banner-zones.jpg  controlebeeld: blauw = wat elke telefoon toont, roze = wat een computer toont
+overzicht.jpg     alles naast elkaar
+
+== In YouTube Studio ==
+1. Studio > Aanpassing (Customization) > tabblad Branding.
+2. Afbeelding (Picture): Uploaden > profielfoto.png > Gereed. (Tip van YouTube: 98x98 of groter, PNG, max 4 MB.)
+3. Bannerafbeelding (Banner image): Uploaden > banner.png > Gereed. Controleer in het voorbeeld dat de tekst op
+   "alle apparaten" volledig zichtbaar is.
+4. Videowatermerk (Video watermark), optioneel: Uploaden > watermerk.png, weergavetijd "Volledige video".
+5. Publiceren (rechtsboven).
+
+== Tekst op de banner ==
+Why everyday things are the way they are.
+ONE THING A DAY · ALWAYS WITH SOURCES
+
+(Komt overeen met de kanaalbeschrijving van Andries, 2 nov 18:50: elke aflevering neemt één alledaags ding en zoekt
+uit hoe het zo gekomen is, altijd met bronnen.)
+
+== Maken ==
+node pakketten/2026-11-09-YK01-kanaalbeeld/bron/maak-kanaalbeeld.cjs
+Letters: Instrument Sans en IBM Plex Mono (SIL Open Font License). Eigen tekenwerk, geen stock, geen AI-beeld.
