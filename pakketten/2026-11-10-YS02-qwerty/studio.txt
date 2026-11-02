@@ -1,8 +1,8 @@
-STUDIO.TXT — YS02 (YouTube Studio, uploadscherm van boven naar beneden)
+STUDIO.TXT — YS02 versie 2 (YouTube Studio, uploadscherm van boven naar beneden)
 Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS02" van Andries.
 
 == Bestand ==
-video.mp4   1080x1920 (9:16), 30 fps, H.264, stil audiospoor, 48,5 s
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 34,9 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
 
 == Details ==
 Titel (46/100 tekens):
