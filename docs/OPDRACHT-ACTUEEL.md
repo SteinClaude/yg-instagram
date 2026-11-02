@@ -2,6 +2,10 @@
 
 **Bijgewerkt:** ma 2 nov 2026, 21:45 — Eva (avondronde, terugval)
 
+## Ma 2 nov 22:10 — bureaublad heringedeeld (Eva)
+
+Op besluit van Andries is het bureaublad van de pc heringedeeld. De map `YG-GRAM` staat nu op `OneDrive\Desktop\02 YG-Social\@ygdigital.nl (pauze)\YG-GRAM`. `gereedschap/ygram-teksten.cjs`, `doorsturen.cjs` en `actie-doorsturen.cjs` schrijven nog naar `Desktop\YG-GRAM` en `Desktop\Doorsturen`. Nu niets doen: @ygdigital.nl staat op pauze. Komt het account terug, dan pas je eerst die paden aan. Voor YouTube-shorts gebruik je deze paden niet.
+
 ## Avondronde ma 2 nov 21:45 — YS01–YS03 v2 gecontroleerd
 
 Gecontroleerd: video 1080×1920 (38,4 / 34,9 / 36,9 s), `studio.txt` compleet (titels 53/46/60 tekens, beschrijving met bron-URL, AI-label nee terecht: eigen animatie, geen AI-stem), `bron/bronnen.md` per bewering, overzicht YS03 bekeken (leesbaar, klokken kloppen met 12 min en 16,5 min). Steekproef: GMT wettelijke tijd in Groot-Brittannië 1880 — klopt met de bron. Geen kanaalnaam, handle, prospects of bedragen in de repo; niets ingepland. Advies aan Andries: pakket OK YS01, YS02, YS03 (Kantoor). Je vragen: Studio blijft de weg tot Andries anders besluit; geen stem en geen muziek is goed voor de start — beide aannames kloppen.
