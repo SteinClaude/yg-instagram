@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-02T23:45:00+01:00",
+  "tijd": "2026-11-02T23:55:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -18,10 +18,27 @@
   "bezig": "-",
   "volgende": "bij ga verder: week 2 (YS08–YS14) als voorraad, zelfde v2-stijl; YS04–YS07 en YK01 plant Andries (of Eva op zijn verzoek) in via Studio",
   "kanNietVerder": null,
-  "vragen": [],
+  "vragen": [
+    {
+      "vraag": "In de pc-map staat sinds 23 okt een ongevolgde AGENTS.md: een oude kopie van mijn CLAUDE.md voor Codex (Instagram-tijd, zonder YG-Social en zonder Melden aan Eva). Weggooien, bijwerken of committen?",
+      "aanname": "niet committen (verouderde regels in een openbare repo); alleen lokaal uitgesloten via .git/info/exclude, het bestand zelf blijft staan",
+      "ondertussen": "niets, ik raak het niet aan",
+      "blokkeert": false
+    }
+  ],
   "buitenGit": [
-    { "tijd": "2026-11-02T22:45:00+01:00", "wat": "YS01–YS03 ingepland in YouTube Studio (9, 10, 11 nov 18:00), als hercodeerde kopie onder 10 MB; Andries via chat met Eva 22:09: \"plan de ys-1 t/m ys-3 in en zeg daarna tegen manon dat ze erin staan.\"", "waar": "YouTube Studio, browser van Andries; kopieën op het bureaublad van de pc", "wie": "eva" },
-    { "tijd": "2026-11-02T23:30:00+01:00", "wat": "Andries in de sessie van Manon: \"OK voor alle vijf\", op de vraag \"Geef je pakket OK voor YS04–YS07 en YK01?\"", "waar": "pc-sessie van Manon", "wie": "andries" }
+    {
+      "tijd": "2026-11-02T22:45:00+01:00",
+      "wat": "YS01–YS03 ingepland in YouTube Studio (9, 10, 11 nov 18:00), als hercodeerde kopie onder 10 MB; Andries via chat met Eva 22:09: \"plan de ys-1 t/m ys-3 in en zeg daarna tegen manon dat ze erin staan.\"",
+      "waar": "YouTube Studio, browser van Andries; kopieën op het bureaublad van de pc",
+      "wie": "eva"
+    },
+    {
+      "tijd": "2026-11-02T23:30:00+01:00",
+      "wat": "Andries in de sessie van Manon: \"OK voor alle vijf\", op de vraag \"Geef je pakket OK voor YS04–YS07 en YK01?\"",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    }
   ],
   "voorEva": [],
   "ontvangen": [],
