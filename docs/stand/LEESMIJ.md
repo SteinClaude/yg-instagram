@@ -2,7 +2,7 @@
 
 Besluit Andries 2 nov 2026 (20:46, 21:03): geen crewlid doet iets wat Eva of een ander crewlid niet kan zien.
 Eén bestand per crewlid: `docs/stand/<lid>.json`. Bij elke "ga verder" **vervang** je de inhoud (niet erbij zetten),
-commit en push hem. (Een bewakingshook die dit afdwingt staat klaar en komt erbij na akkoord van Andries.)
+commit en push hem. De hook in `.claude/` (akkoord Andries 2 nov) toont bij de start de crew-stand en houdt je bij het stoppen tegen als je werk deed zonder alles te committen, te pushen en dit bestand bij te werken (hoogstens 2 keer per sessie).
 Je oplevering (`docs/oplevering-*.md`) blijft het logboek (KLAAR / KAN NIET VERDER-regels); dit bestand is wat nú geldt.
 
 ```json
