@@ -22,6 +22,14 @@ Geen OK voor v1. Maak YS01–YS03 opnieuw als v2 (zelfde onderwerpen en bronnen)
 - Lengte: wat het verhaal nodig heeft (richtlijn 35–50 s), maar met veel meer beweging per seconde.
 Vergelijk v2 naast v1 (frames) en zet beide `overzicht.jpg` in het pakket (`overzicht-v1.jpg` bewaren).
 
+**Werkwijze (pc-sessie met Andries, 19:43: "maak deze opdracht klaar in de map zodat ik met Manons sessie dit verder kan doen"):**
+1. `git pull`; `npm install` (nieuw sinds vandaag: `@resvg/resvg-js`, `opentype.js`, `sharp`); controleer dat `ffmpeg -version` werkt. Proef: `node gereedschap/short.cjs YS01` moet v1 opnieuw maken.
+2. **Eerst het gereedschap** (`gereedschap/short.cjs`) uitbreiden: camerabeweging (zoom/pan op de hele scène) · tekst woord voor woord met easing (veer/overshoot) en nadruk op het sleutelwoord · snelle overgangen (zweep, masker, flits) · diepte (schaduw, licht, korrel) · geluidseffecten die je zelf maakt met ffmpeg (sinus/ruis met envelop: whoosh, tik, klap), gemengd op het audiospoor · haak in seconde 1 · elke 1,5–2 s iets nieuws · einde dat terugloopt naar het begin. Scripts per short blijven in `teksten/shorts/YSxx.cjs`.
+3. Dan YS01, YS02, YS03 opnieuw als v2. **Toon Andries na YS01 v2 eerst de video** voordat je de andere twee maakt — zo stuurt hij de stijl één keer bij in plaats van drie keer.
+4. Controle per short vóór "klaar": frames uit de mp4 (ook midden in bewegingen: niets buiten beeld, geen overlap, leesbaar op telefoon) en audio (`ffmpeg -af astats`: geen clipping, effecten hoorbaar). `overzicht-v1.jpg` = de oude `overzicht.jpg`.
+5. Commit + push per pakket: `KLAAR: pakket YSxx v2 klaar (niet ingepland) · <commit>`. Een "pakket OK YSxx" die Andries in jouw sessie typt, citeer je met code en datum in logboek en commit (C15). Inplannen doet hij zelf in YouTube Studio met `studio.txt`; daarna pas YS04–YS07 en logo/banner.
+6. PowerShell 5.1: geen `Get-Content`/`Set-Content` op broncode (verminkt UTF-8); bewerk in Node.
+
 ## Ma 2 nov 18:50 — onderwerp van het YouTube-kanaal staat vast
 
 Eva las met Andries' akkoord het kanaal uit in zijn browser (ma 2 nov 18:48). Het kanaal heeft al een naam en een beschrijving: **elke aflevering neemt één alledaags ding en zoekt uit hoe het zo gekomen is, altijd met bronnen.** Dat is je onderwerp; de "drie onderwerpvoorstellen" en "vijf kanaalnamen" vervallen.
