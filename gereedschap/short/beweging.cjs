@@ -73,6 +73,9 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
   const OVERGANG_DUUR = 0.3;
   function overgang(soort, e, vorige, huidige, n = 0) {
     const s = Math.sin(Math.PI * klem(e)), id = 'ov' + n;
+    // aan het begin en eind van een zweep is de vervaging 0: dan geen filter (een filter van 0 px over een groep met
+    // iets buiten beeld laat resvg vastlopen)
+    if ((soort === 'zweep' || soort === 'op') && s < 0.02) return e < 0.5 ? vorige : huidige;
     if (soort === 'zweep') {
       return `<defs><filter id="${id}" x="-10%" y="0" width="120%" height="100%"><feGaussianBlur stdDeviation="${(70 * s).toFixed(1)} 0"/></filter></defs>` +
         `<g filter="url(#${id})"><g transform="translate(${(-W * e).toFixed(1)} 0)">${vorige}</g><g transform="translate(${(W * (1 - e)).toFixed(1)} 0)">${huidige}</g></g>`;

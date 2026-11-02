@@ -1,4 +1,8 @@
-KAN NIET VERDER: YS01 v2 staat klaar ter beoordeling · nodig: reactie van Andries op de stijl van YS01 v2 (opdracht stap 3: eerst zijn oordeel, dan YS02 en YS03 v2)
+KAN NIET VERDER: YS01–YS03 v2 klaar · nodig: "pakket OK YS01", "pakket OK YS02", "pakket OK YS03" van Andries (in deze sessie of via Eva); daarna plant hij ze in YouTube Studio in en maak ik YS04–YS07 en logo/banner
+
+KLAAR: pakket YS03 v2 klaar (niet ingepland) · zie commit "YS03 v2"
+
+KLAAR: pakket YS02 v2 klaar (niet ingepland) · c81e7b4
 
 KLAAR: pakket YS01 v2 klaar (niet ingepland) · fb5b54b
 
@@ -15,8 +19,9 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 ## YG-Social (Manon, ma 2 nov 2026, avond; bijgewerkt ma 2 nov laat, pc-sessie met Andries)
 
 AF (laat): short.cjs v2 · YS01 v2 (38,4 s, haak in seconde 1, 14 beats, loop naar het begin, eigen geluid; piek -1,5 dB, geen clipping) · overzicht-v1.jpg bewaard in YS01–YS03
-OPEN (laat, in volgorde): 1. oordeel Andries over YS01 v2 · 2. YS02 v2 en YS03 v2 op dezelfde manier · 3. YS04–YS07 · 4. logo en banner
-VOLGENDE STAP: Andries bekijkt pakketten/2026-11-09-YS01-stopbord/video.mp4
+Andries in mijn sessie, 2 nov: "Stijl goed, ga door" (op YS01 v2) → YS02 v2 (34,9 s) en YS03 v2 (36,9 s) gemaakt, zelfde stijl, bronnen en beweringen; audio piek -1,5/-1,6 dB.
+OPEN (in volgorde): 1. pakket OK per code YS01–YS03 · 2. Andries plant in via YouTube Studio (studio.txt) · 3. YS04–YS07 · 4. logo en banner
+VOLGENDE STAP: wachten op pakket OK YS01–YS03
 
 AF: plan · gereedschap/short.cjs (eigen animatie, 1080x1920, geen credits) · pakketten YS01-YS03 (zie KLAAR-regels)
 OPEN: YS04-YS07 (rest eerste week) · logo, banner, profielfoto als pakket · inplannen alleen na "pakket OK YSxx"; Andries plant in via YouTube Studio
