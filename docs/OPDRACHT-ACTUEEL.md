@@ -1,6 +1,12 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 2 nov 2026, 17:08 — Eva
+**Bijgewerkt:** ma 2 nov 2026, 17:27 — Eva (kantoor-check)
+
+## Nieuw van Andries
+
+**Andries via Kantoor, ma 2 nov 2026 15:51 (#48):** *"automaat uit"*
+
+Wat jij doet: niets extra. Z01 t/m T03 staan al uit `planning.json` en in `planning-gepauzeerd.json` (Eva, 16:52); dit citaat bevestigt dat de automaat uit blijft. Terugzetten alleen na een nieuw citaat hier.
 
 ## Ma 2 nov 17:05 — keuzes ronde 2 (Andries via chat)
 
