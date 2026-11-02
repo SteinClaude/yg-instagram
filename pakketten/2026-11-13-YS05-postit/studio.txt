@@ -1,0 +1,47 @@
+STUDIO.TXT — YS05 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS05" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 30,6 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+
+== Details ==
+Titel (37/100 tekens):
+Why do Post-it Notes only half stick?
+
+Beschrijving:
+The glue behind Post-it Notes almost stayed on a shelf. It grabbed, but it let go, and for years nobody had the right use for it.
+
+What the sources say:
+- 1968: Spencer Silver, a senior scientist at 3M, discovered an acrylic adhesive with unique properties.
+- It was made of tiny spheres, giving "a high level of tack but a low degree of adhesion".
+- Silver wanted to market it as a spray or as a surface for bulletin boards; it "might have been consigned to a shelf indefinitely".
+- Art Fry, singing in his church choir, was frustrated that the paper bookmarks in his hymnal kept slipping out of place.
+- Fry coated paper with the adhesive and made repositionable notes.
+- 1980: Post-it Notes were introduced nationally in the United States.
+
+Sources:
+Lemelson-MIT, "Art Fry & Spencer Silver": https://lemelson.mit.edu/resources/art-fry-spencer-silver
+National Inventors Hall of Fame, "Spencer Silver": https://www.invent.org/inductees/spencer-silver
+
+#Shorts #history #inventions #3M
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene, na de klap).
+Afspeellijsten: geen (eerste week).
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+post-it notes, sticky notes, post-it history, Spencer Silver, Art Fry, 3M, invention, accidental inventions, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: vrijdag 13 november 2026, 18:00 (Amsterdam)
