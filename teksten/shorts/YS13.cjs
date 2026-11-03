@@ -1,4 +1,4 @@
-// YS13 — Velcro was invented on a walk with a dog.
+// YS13 — Velcro started with a walk with a dog.
 // Stijl van YS01 v2 (goedgekeurd door Andries 2 nov: "Stijl goed, ga door"). Reeks C · Happy Accidents.
 // Bron (gelezen 2 nov 2026): National Inventors Hall of Fame, blog "A Walk in the Woods". Elke bewering staat daarin;
 // zie pakketten/<map>/bron/bronnen.md. Niet gezegd: het patentjaar, hoe lang het duurde, zijn beroep of nationaliteit.
@@ -45,7 +45,7 @@ module.exports = {
       teken: h => {
         const p = h.uit(h.t / 0.6);
         return hond(h, 520, 1080, 1.4, 0) + klit(h, 1100 - 560 * p, 700 + 300 * p, 46, { draai: h.t * 300 * (1 - p) })
-          + h.kin('Velcro was invented on a *walk with a dog*.', { y: 300, g: 100, t: h.t, start: 0.2 }).svg;
+          + h.kin('Velcro started with a *walk with a dog*.', { y: 300, g: 100, t: h.t, start: 0.2 }).svg;
       } },
     // 2 · 1941: wandeling in het bos met zijn Ierse pointer
     { duur: 3.8, in: 'zweep', bron: NIHF, bronStart: 2.4, camera: { zoom: [1, 1.04], pan: [[30, 0], [-30, 0]] }, geluid: [[1.2, 'tik', 0.4], [1.6, 'tik', 0.4], [2.0, 'tik', 0.4]],

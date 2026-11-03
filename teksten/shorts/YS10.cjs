@@ -1,4 +1,4 @@
-// YS10 — The first computer bug was a real moth. But it wasn't the first bug.
+// YS10 — This moth was the first "actual" computer bug. But the word is older.
 // Stijl van YS01 v2 (goedgekeurd door Andries 2 nov: "Stijl goed, ga door"). Reeks C · Happy Accidents.
 // Bronnen (gelezen 2 nov 2026): Computer History Museum, "This Day in History: September 9"; JSTOR Daily, "The Bug in
 // the Computer Bug Story". Elke bewering staat in een van die twee; zie pakketten/<map>/bron/bronnen.md.
@@ -48,7 +48,7 @@ module.exports = {
         const x = 900 - 360 * p + (vast ? 0 : Math.sin(h.t * 18) * 30), y = 760 + 260 * p + (vast ? 0 : Math.cos(h.t * 14) * 40);
         return blad(h, 260, 880, 560, 420, -3) + mot(h, x, y + 40, 0.9, { klap: vast ? 1 : Math.abs(Math.sin(h.t * 22)), draai: vast ? -8 : 20 * Math.sin(h.t * 9) })
           + (vast ? plakband(540, 990, 300, -12) + plakband(540, 1140, 300, 10) : '')
-          + h.kin('The first computer bug was a *real moth*.', { y: 290, g: 96, t: h.t, start: 0.1 }).svg
+          + h.kin('This moth was the first *actual* computer bug.', { y: 290, g: 96, t: h.t, start: 0.1 }).svg
           + h.kin('But it wasn\'t the *first bug*.', { y: 690, g: 76, gewicht: 'regular', t: h.t, start: 1.8 }).svg;
       } },
     // 2 · 1947, Harvard, de Mark II

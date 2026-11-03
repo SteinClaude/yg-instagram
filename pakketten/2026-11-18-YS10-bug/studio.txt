@@ -6,8 +6,8 @@ video.mp4   1080x1920 (9:16), 30 fps, H.264, 32,7 s, met eigen geluidseffecten (
 video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k) voor het uploadgereedschap van Eva; in Studio mag ook video.mp4
 
 == Details ==
-Titel (67/100 tekens):
-The first computer bug was a real moth. But it wasn't the first bug
+Titel (64/100 tekens):
+This moth was the first "actual" computer bug. The word is older
 
 Beschrijving:
 In 1947 a team at Harvard found a moth inside their computer and taped it into the logbook. The joke only works because "bug" already meant a fault.

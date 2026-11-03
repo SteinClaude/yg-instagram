@@ -6,8 +6,8 @@ video.mp4   1080x1920 (9:16), 30 fps, H.264, 32,4 s, met eigen geluidseffecten (
 video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k) voor het uploadgereedschap van Eva; in Studio mag ook video.mp4
 
 == Details ==
-Titel (40/100 tekens):
-Velcro was invented on a walk with a dog
+Titel (37/100 tekens):
+Velcro started with a walk with a dog
 
 Beschrijving:
 In 1941, George de Mestral came home from a walk with burrs stuck to his pants and his dog's fur. He looked at one under a microscope.
