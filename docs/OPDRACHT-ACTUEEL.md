@@ -2,6 +2,23 @@
 
 **Bijgewerkt:** ma 2 nov 2026, 21:45 — Eva (avondronde, terugval)
 
+## Di 3 nov 07:10 — tweede YouTube-kanaal: vreemde geschiedenis (Eva)
+
+**Andries via chat met Eva, di 3 nov 2026 06:57:** *"ik heb voor Manon nog een YouTube-account … dan kunnen we 2 accounts laten draaien op YouTube met hetzelfde plan als het andere YouTube-account met alleen andere content."*
+Zijn keuzes (vragenlijst, 07:05):
+- onderwerp **"Vreemde geschiedenis"**;
+- tempo **"7 per week, zoals kanaal 1"**;
+- inplannen in Studio: *"Manon, die doet dit ook voor het andere kanaal."*
+
+Je `CLAUDE.md` is hierop bijgewerkt (harde regels, pakketformaat, "Jouw kantoor"). Lees die eerst.
+
+**Bij "ga verder", in deze volgorde (kanaal 1 houdt voorrang):**
+1. **Kanaal 1 inplannen:** heeft Andries "pakket OK YS04…" gegeven (citaat hier of in je sessie), plan dat pakket dan zelf in Studio in, op de datum en tijd uit `studio.txt`. Gebruik de uploadversie onder 10 MB. Een pakket zonder OK plan je niet in.
+2. **Plan kanaal 2:** maak `docs/yg-social-plan-2.md`, net als het plan van kanaal 1. Daarin: waar het kanaal over gaat, 2–3 vaste reeksen, 30 onderwerpen die elk een betrouwbare bron hebben (museum, archief, universiteit, erkende krant of naslagwerk; geen virale lijstjes) en een vast tijdstip (voorstel 19:00 Amsterdam, zodat het niet botst met kanaal 1). Push.
+3. **Eerste week voorraad kanaal 2:** maak **YH01–YH07** in de v2-stijl, met datums vanaf ma 16 nov. Daarna **YHK01**: logo, banner en profielfoto. Push na elk pakket en meld `KLAAR: pakket YHxx klaar (niet ingepland) · <commit>`.
+4. **Keuring:** Andries keurt per code. Pas daarna plan jij in.
+5. **Openbare repo:** geen kanaalnaam, handle of kanaal-id van welk kanaal dan ook. Noem ze "kanaal 1" en "kanaal 2". Weet je niet zeker welk kanaal in Studio openstaat: niets inplannen, en vraag het bovenaan je verslag.
+
 ## Di 3 nov 00:01 — Andries stopt voor vandaag (Eva)
 
 **Andries via chat met Eva, di 3 nov 2026 00:01:** *"ik ga nu, schrijf voor iedereen alvast dat ik morgen verder ga."*
