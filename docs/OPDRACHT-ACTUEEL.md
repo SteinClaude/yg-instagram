@@ -2,6 +2,30 @@
 
 **Bijgewerkt:** ma 2 nov 2026, 21:45 — Eva (avondronde, terugval)
 
+## ▶ NU — di 3 nov 10:35 (Eva). Dit blok geldt; de blokken eronder zijn achtergrond.
+
+**Andries via chat met Eva, di 3 nov 2026 10:27:** *"ik ga thuis alle agents opdracht geven om verder te gaan, zet ze allemaal klaar zodat ze verder kunnen en niks over het hoofd zien."*
+
+**Altijd eerst:** `git pull`, lees `docs/CREW-STATUS.md` en je eigen stand. **Altijd aan het eind:** stand bijwerken, KLAAR of KAN NIET VERDER bovenaan je oplevering, commit en push.
+
+**Waar je staat:**
+- YS01–YS03 staan in Studio (9, 10 en 11 nov, 18:00).
+- YS04–YS14 en YK01 hebben pakket OK; je citaten staan in b2691db en 6495672.
+- Sinds vandaag plan jij zelf in (CLAUDE.md).
+- Kanaal 2 is "vreemd maar waar" (zie de blokken van 07:10 en 07:20 hieronder).
+- Een reupload-kanaal komt er niet.
+
+**Welk kanaal staat open in Studio?** Kanaal 1 is het kanaal waar YS01–YS03 als "Gepland" staan. Kanaal 2 is het kanaal met 16 bestaande shorts. Weet je het niet zeker, plan dan niets in en vraag het Andries. Namen en handles schrijf je nergens op.
+
+1. **Kanaal 1 inplannen:** zet YS04–YS14 in YouTube Studio, in de Chrome van Andries, met `video-upload.mp4` en de velden uit `studio.txt` (do 12 t/m zo 22 nov, 18:00 Amsterdam).
+   - Controleer na elke short in de lijst Kanaalcontent > Shorts dat hij als "Gepland" staat, op de juiste datum. Zet dat in je oplevering.
+   - Plaats nooit iets dubbel: kijk eerst of de titel al in de lijst staat.
+   - **YK01 (logo/banner) zet je niet zelf.** Dat is een kanaalinstelling. Andries doet het, of zegt in jouw sessie letterlijk dat jij het mag.
+2. **Plan kanaal 2:** `docs/yg-social-plan-2.md` (reeksen, 30 onderwerpen met bron en vrije beeldbron, vast tijdstip, voorstel 19:00). Push.
+3. **YH01–YH07** vanaf ma 16 nov, in de stijl van de bestaande shorts van kanaal 2, met vrije beelden. Daarna **YHK01**. Push per pakket en meld `KLAAR`.
+4. Pas daarna **YS15–YS21** (week 3 van kanaal 1); kanaal 1 heeft voorraad tot 22 nov.
+5. Keuring per code door Andries. Pas na "pakket OK YHxx" plan je in.
+
 ## Di 3 nov 07:25 — later: kanaal 3 en meer platforms (Eva; nu niets doen)
 
 **Andries via chat met Eva, di 3 nov 2026 07:18:** *"dan maak ik nog een nieuw account erbij … eerst de 2 kanalen laten draaien met paar video's/basis maken, dan de 3e YouTube-account, en dan kunnen we voor de 3 accounts ook een YouTube- en Instagram- en Snapchat-account gaan maken."*
