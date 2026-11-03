@@ -2,6 +2,18 @@
 
 **Bijgewerkt:** ma 2 nov 2026, 21:45 — Eva (avondronde, terugval)
 
+## Di 3 nov 07:20 — kanaal 2 wordt "vreemd maar waar" (Eva; vervangt het onderwerp uit het blok van 07:10)
+
+**Andries via chat met Eva, di 3 nov 2026 07:13:** *"er zijn al video's gepost inderdaad, kan je dit soort gelijke video's maken/erin zetten met Manon"*. Op de vraag welke richting koos hij **"Beide mengen"**.
+
+Wat er al op kanaal 2 staat (Eva keek 07:15): 16 shorts, met echte filmpjes van anderen en grote vette woorden in beeld. Titels als "How Illegal Vendors Outsmart the Police" en "Why Are They Opening Wine Bottles Like This". Twee daarvan hebben ±1.100 weergaven, de rest 1–8.
+
+Het blok van 07:10 blijft gelden. Alleen het onderwerp en de stijl veranderen; de regels staan in je `CLAUDE.md`:
+- Je plan heet nog steeds `docs/yg-social-plan-2.md`. Doe er minstens twee reeksen in: "weird but real" (nu) en "weird history".
+- Maak 30 onderwerpen, elk met een betrouwbare bron én een vrije beeldbron (Pexels/Pixabay).
+- Neem de stijl van de twee best bekeken shorts als voorbeeld: titel, haak en tekst in beeld. Hun beelden neem je **niet** over.
+- Maak daarna YH01–YH07 vanaf ma 16 nov en YHK01.
+
 ## Di 3 nov 07:10 — tweede YouTube-kanaal: vreemde geschiedenis (Eva)
 
 **Andries via chat met Eva, di 3 nov 2026 06:57:** *"ik heb voor Manon nog een YouTube-account … dan kunnen we 2 accounts laten draaien op YouTube met hetzelfde plan als het andere YouTube-account met alleen andere content."*
