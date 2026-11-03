@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-03T05:56:00+01:00",
+  "tijd": "2026-11-03T15:20:17Z",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-02T19:45:00+01:00"
   },
-  "status": "klaar",
+  "status": "werkt",
   "af": [
     "plan 30 onderwerpen · 634997a",
     "short.cjs v2 · fb5b54b",
@@ -14,8 +14,8 @@
     "YS04–YS07 en YK01: pakket OK · b2691db",
     "YS08–YS14 (week 2): pakket OK · 6495672"
   ],
-  "bezig": "-",
-  "volgende": "bij ga verder: week 3 (YS15–YS21) als voorraad; YS04–YS14 en YK01 plant Andries (of Eva op zijn verzoek) in via Studio; maandagverslag 16 nov",
+  "bezig": "week 3 als voorraad: YS15–YS21 (ma 23 t/m zo 29 nov, 18:00)",
+  "volgende": "per pakket pushen met KLAAR-regel; daarna wachten op pakket OK YS15–YS21",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -53,6 +53,12 @@
     {
       "tijd": "2026-11-03T05:53:00+01:00",
       "wat": "Andries in de sessie van Manon: \"OK voor alle zeven\", op de vraag \"Geef je pakket OK voor YS08 t/m YS14?\"",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-03T15:20:17Z",
+      "wat": "Andries in de sessie van Manon: \"Ja, begin week 3\"",
       "waar": "pc-sessie van Manon",
       "wie": "andries"
     }
