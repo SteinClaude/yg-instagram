@@ -1,6 +1,6 @@
 # CREW-STATUS — stand van alle sporen
 
-**Bijgewerkt:** ma 2 nov 2026, 22:50 — Eva (kantoor-check). Eva werkt dit bij in de avondronde en bij elke kantoor-check als er iets veranderde (besluit Andries 2 nov 20:46). Lees dit bij elke "ga verder"; wat hier en in je opdracht niet staat, weet je niet en neem je niet aan.
+**Bijgewerkt:** di 3 nov 2026, 08:45 — Eva (kantoor-check). Eva werkt dit bij in de avondronde en bij elke kantoor-check als er iets veranderde (besluit Andries 2 nov 20:46). Lees dit bij elke "ga verder"; wat hier en in je opdracht niet staat, weet je niet en neem je niet aan.
 
 ## Werkwijze voor iedereen
 - Andries beslist. Eva (chef de staf) zet opdrachten in `docs/OPDRACHT-ACTUEEL.md` en leest jullie stand en opleveringen.
@@ -12,7 +12,7 @@
 | Wie | Rol | Nu |
 |---|---|---|
 | Eva | chef de staf | leest je stand en oplevering; zet je opdracht klaar |
-| Manon | YG-Social | YouTube-shorts: YS01–YS03 hebben pakket OK en staan gepland in Studio (9, 10, 11 nov 18:00); YS04–YS07 en kanaalbeeld YK01 klaar, wachten op "pakket OK" per code; @ygdigital.nl op pauze |
+| Manon | YG-Social | YouTube-shorts: YS01–YS03 gepland in Studio (9, 10, 11 nov 18:00); pakket OK voor YS04–YS07, kanaalbeeld YK01 en week 2 (YS08–YS14) — nog niet ingepland; vanaf 3 nov plant Manon zelf in via Studio na pakket OK; tweede YouTube-kanaal (vreemd maar waar, codes YHxx) toegevoegd; volgende: week 3 (YS15–YS21); @ygdigital.nl op pauze |
 
 De overige sporen van de crew zijn privé. Wat Manon van een ander crewlid moet weten, zet Eva in haar opdracht.
 
