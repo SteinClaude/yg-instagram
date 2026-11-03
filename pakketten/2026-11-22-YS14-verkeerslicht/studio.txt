@@ -1,0 +1,47 @@
+STUDIO.TXT — YS14 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS14" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 35,4 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k) voor het uploadgereedschap van Eva; in Studio mag ook video.mp4
+
+== Details ==
+Titel (40/100 tekens):
+The world's first traffic light exploded
+
+Beschrijving:
+In December 1868 London got the first traffic light, outside the Houses of Parliament. The idea came from railway signals.
+
+What the sources say:
+- December 1868: the world's first traffic lights were installed in Westminster, London, outside the Houses of Parliament.
+- They were designed by J P Knight, a railway signalling engineer, who took the idea from the railway signalling system onto roads.
+- By day, semaphore arms directed the traffic; at night, red and green gas lamps. All of it was operated by a police constable.
+- A leak in the gas line made one of the lights explode, seriously burning the policeman on duty, and the trial was scrapped.
+- Traffic lights disappeared from the UK for more than 40 years; electric signals became common in London around 1929.
+
+Sources:
+PA Media, "Ready, steady, go: 150 years since world's first traffic light in London" (December 2018, via Yahoo News UK): https://uk.news.yahoo.com/ready-steady-150-years-since-091344126.html
+History Hit, "Where Were the World's First Traffic Lights?": https://www.historyhit.com/1868-first-traffic-light/
+
+#Shorts #history #london #traffic
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene, na de klap).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+traffic lights, first traffic light, why are traffic lights red and green, 1868, Westminster, John Peake Knight, railway signals, gas lamp explosion, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: zondag 22 november 2026, 18:00 (Amsterdam)
