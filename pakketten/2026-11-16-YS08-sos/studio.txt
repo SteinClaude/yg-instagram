@@ -1,5 +1,5 @@
 STUDIO.TXT — YS08 (YouTube Studio, uploadscherm van boven naar beneden)
-Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS08" van Andries.
+Status: pakket OK YS08 (Andries in de sessie van Manon, di 3 nov 2026: "OK voor alle zeven", op de vraag "Geef je pakket OK voor YS08 t/m YS14?"). Klaar om in te plannen in YouTube Studio; Andries (of Eva op zijn verzoek) plant in.
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 32,8 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
