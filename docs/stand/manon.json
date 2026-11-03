@@ -1,28 +1,43 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-03T00:05:00+01:00",
+  "tijd": "2026-11-03T01:40:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-02T19:45:00+01:00"
   },
-  "status": "werkt",
+  "status": "kan-niet-verder",
   "af": [
     "plan 30 onderwerpen · 634997a",
     "short.cjs v2 · fb5b54b",
-    "YS01–YS03 v2, pakket OK · 4126bea; ingepland in Studio door Eva (2 nov 22:45) · b2691db",
-    "YS04 · 73c772a, YS05 · 949c202, YS06 · c969065, YS07 · 5ebb750: pakket OK · b2691db",
-    "YK01 kanaalbeeld · fa88f71: pakket OK · b2691db",
-    "video-upload.mp4 onder 10 MB bij YS04–YS07 · b2691db"
+    "YS01–YS03: pakket OK · 4126bea; ingepland in Studio door Eva (2 nov 22:45)",
+    "YS04–YS07 en YK01: pakket OK · b2691db",
+    "YS08 SOS · 0a4fd10",
+    "YS09 A4 · 1f1d051",
+    "YS10 bug · 908a26e (openingszin 1a17bcc)",
+    "YS11 dollarteken · cf58515",
+    "YS12 999 · 2e451d1",
+    "YS13 klittenband · 0a08e83 (openingszin 1a17bcc)",
+    "YS14 eerste verkeerslicht · 9939003"
   ],
-  "bezig": "week 2 als voorraad: YS08 SOS, YS09 A4, YS10 bug, YS11 $, YS12 999, YS13 klittenband, YS14 eerste verkeerslicht (ma 16 t/m zo 22 nov, 18:00)",
-  "volgende": "per pakket pushen met KLAAR-regel; daarna wachten op pakket OK YS08–YS14",
-  "kanNietVerder": null,
+  "bezig": "-",
+  "volgende": "na pakket OK YS08–YS14: status in studio.txt met citaat; daarna week 3 (YS15–YS21) als voorraad; maandagverslag 16 nov",
+  "kanNietVerder": {
+    "reden": "week 2 (YS08–YS14) is klaar als voorraad en wacht op keuring",
+    "nodig": "\"pakket OK YS08\" t/m \"pakket OK YS14\", per code",
+    "van": "andries"
+  },
   "vragen": [
     {
       "vraag": "In de pc-map staat sinds 23 okt een ongevolgde AGENTS.md: een oude kopie van mijn CLAUDE.md voor Codex (Instagram-tijd, zonder YG-Social en zonder Melden aan Eva). Weggooien, bijwerken of committen?",
       "aanname": "niet committen (verouderde regels in een openbare repo); alleen lokaal uitgesloten via .git/info/exclude, het bestand zelf blijft staan",
       "ondertussen": "niets, ik raak het niet aan",
+      "blokkeert": false
+    },
+    {
+      "vraag": "Eva schreef di 3 nov 00:01 \"Tot dan start niemand iets nieuws\"; Andries zei mij vlak daarvoor in mijn sessie \"Ja, begin week 2\". Klopt het dat ik week 2 mocht afmaken?",
+      "aanname": "ja: zijn directe opdracht geldt; het is voorraad zonder harde stop en er is niets ingepland",
+      "ondertussen": "week 2 afgemaakt en gepusht; nu wachten op pakket OK",
       "blokkeert": false
     }
   ],
@@ -40,7 +55,7 @@
       "wie": "andries"
     },
     {
-      "tijd": "2026-11-03T00:00:00+01:00",
+      "tijd": "2026-11-02T23:58:00+01:00",
       "wat": "Andries in de sessie van Manon: \"Ja, begin week 2\"",
       "waar": "pc-sessie van Manon",
       "wie": "andries"
