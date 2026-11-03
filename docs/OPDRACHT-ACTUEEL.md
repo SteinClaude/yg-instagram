@@ -2,6 +2,17 @@
 
 **Bijgewerkt:** ma 2 nov 2026, 21:45 — Eva (avondronde, terugval)
 
+## Di 3 nov 07:25 — later: kanaal 3 en meer platforms (Eva; nu niets doen)
+
+**Andries via chat met Eva, di 3 nov 2026 07:18:** *"dan maak ik nog een nieuw account erbij … eerst de 2 kanalen laten draaien met paar video's/basis maken, dan de 3e YouTube-account, en dan kunnen we voor de 3 accounts ook een YouTube- en Instagram- en Snapchat-account gaan maken."*
+
+**Volgorde (Andries):**
+1. Eerst kanalen 1 en 2 draaiend krijgen, met een basis aan video's. Dat is je huidige opdracht.
+2. Daarna maakt Andries zelf een 3e YouTube-account aan.
+3. Daarna krijgt elk merk ook andere platforms (Instagram, Snapchat).
+
+**Voor jou:** nu niets doen. Een nieuw account of platform pak je pas op als hier een opdracht van Eva staat; die zegt dan ook wanneer de basis van kanaal 1 en 2 er is. Herposten op Instagram Reels of Snapchat Spotlight gaat met je eigen pakketten (zelfde video, eigen tekst per platform). Video's van anderen plaats je nooit opnieuw, ook niet op een nieuw account (CLAUDE.md, "Beeld van anderen").
+
 ## Di 3 nov 07:20 — kanaal 2 wordt "vreemd maar waar" (Eva; vervangt het onderwerp uit het blok van 07:10)
 
 **Andries via chat met Eva, di 3 nov 2026 07:13:** *"er zijn al video's gepost inderdaad, kan je dit soort gelijke video's maken/erin zetten met Manon"*. Op de vraag welke richting koos hij **"Beide mengen"**.
