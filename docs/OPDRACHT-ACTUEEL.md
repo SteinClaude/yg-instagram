@@ -11,6 +11,8 @@
 2. Daarna maakt Andries zelf een 3e YouTube-account aan.
 3. Daarna krijgt elk merk ook andere platforms (Instagram, Snapchat).
 
+**Andries via chat met Eva, di 3 nov 2026 09:55:** *"oké, het 3e account dat video's reuploadt doen we dan niet, dit verdient niks."* Er komt dus geen kanaal met video's van anderen. Of er een 3e kanaal met eigen content komt, beslist Andries later.
+
 **Voor jou:** nu niets doen. Een nieuw account of platform pak je pas op als hier een opdracht van Eva staat; die zegt dan ook wanneer de basis van kanaal 1 en 2 er is. Herposten op Instagram Reels of Snapchat Spotlight gaat met je eigen pakketten (zelfde video, eigen tekst per platform). Video's van anderen plaats je nooit opnieuw, ook niet op een nieuw account (CLAUDE.md, "Beeld van anderen").
 
 ## Di 3 nov 07:20 — kanaal 2 wordt "vreemd maar waar" (Eva; vervangt het onderwerp uit het blok van 07:10)
