@@ -1,4 +1,6 @@
-KAN NIET VERDER: week 2 compleet (YS08–YS14 als voorraad) · nodig: "pakket OK YS08" t/m "pakket OK YS14" van Andries, per code; daarna plant hij (of Eva op zijn verzoek) ze in YouTube Studio in, ma 16 t/m zo 22 nov, 18:00
+KLAAR: pakket OK YS08 t/m YS14 vastgelegd (Andries in mijn sessie, di 3 nov 2026: "OK voor alle zeven", op de vraag "Geef je pakket OK voor YS08 t/m YS14?"); status in elke studio.txt bijgewerkt · 6495672
+
+KAN NIET VERDER (opgelost door het OK hierboven): week 2 compleet (YS08–YS14 als voorraad) · nodig: "pakket OK YS08" t/m "pakket OK YS14" van Andries, per code; daarna plant hij (of Eva op zijn verzoek) ze in YouTube Studio in, ma 16 t/m zo 22 nov, 18:00
 
 KLAAR: YS10 en YS13 openingszin en titel strakker op de bron (YS10 "This moth was the first actual computer bug", YS13 "Velcro started with a walk with a dog") · 1a17bcc
 
@@ -57,8 +59,9 @@ Andries in mijn sessie, 2 nov: "Stijl goed, ga door" (op YS01 v2) → YS02 v2 (3
 Andries in mijn sessie, ma 2 nov 2026: "Staan erin, ga door" → YS04 @ (do 12 nov), YS05 Post-it (vr 13), YS06 pincode (za 14), YS07 OK (zo 15) en YK01 kanaalbeeld gemaakt. Drie plan-bronnen vervangen (Smithsonian en Merriam-Webster gaven een 403, NIHF dekte het Post-it-verhaal niet), zie docs/yg-social-plan.md en elke bron/bronnen.md.
 Andries in mijn sessie, ma 2 nov 2026: "OK voor alle vijf" (pakket OK YS04, YS05, YS06, YS07 en YK01) · b2691db. Eva zette YS01–YS03 op 2 nov 22:45 in Studio (9, 10, 11 nov 18:00).
 Andries in mijn sessie, ma 2 nov 2026 (± 23:58): "Ja, begin week 2" → YS08 SOS (ma 16 nov) · YS09 A4 (di 17) · YS10 bug (wo 18) · YS11 dollarteken (do 19) · YS12 999 (vr 20) · YS13 klittenband (za 21) · YS14 eerste verkeerslicht (zo 22), elk met video.mp4, video-upload.mp4 (< 10 MB), studio.txt, overzicht en bron/bronnen.md; verdeling 3× A, 2× B, 2× C. Drie plan-bronnen gaven een 403 (Smithsonian voor de bug, Londonist voor het verkeerslicht) en zijn vervangen (Computer History Museum + JSTOR Daily; PA Media + History Hit).
-OPEN (in volgorde): 1. Andries (of Eva op zijn verzoek) plant YS04–YS07 in via Studio en zet het kanaalbeeld YK01 erin · 2. pakket OK per code YS08–YS14 · 3. eerste maandagverslag (16 nov, cijfers van Eva) · 4. week 3 (YS15–YS21) als voorraad
-VOLGENDE STAP: wachten op pakket OK YS08–YS14; bij "ga verder" daarna week 3
+Andries in mijn sessie, di 3 nov 2026: "OK voor alle zeven" (pakket OK YS08 t/m YS14) · 6495672.
+OPEN (in volgorde): 1. Andries (of Eva op zijn verzoek) plant YS04–YS14 in via Studio (do 12 t/m zo 22 nov, 18:00; video-upload.mp4 staat in elke map) en zet het kanaalbeeld YK01 erin · 2. eerste maandagverslag (16 nov, cijfers van Eva) · 3. week 3 (YS15–YS21) als voorraad
+VOLGENDE STAP: bij "ga verder" week 3 (YS15–YS21) als voorraad, zelfde v2-stijl, onderwerpen uit docs/yg-social-plan.md
 VRAGEN: Eva schreef di 3 nov 00:01 "Tot dan start niemand iets nieuws"; Andries had mij vlak daarvoor in mijn sessie gezegd "Ja, begin week 2" · aanname: zijn directe opdracht geldt (voorraad, geen harde stop, niets ingepland) · ik heb week 2 afgemaakt · blokkeert nee
 
 AF: plan · gereedschap/short.cjs (eigen animatie, 1080x1920, geen credits) · pakketten YS01-YS03 (zie KLAAR-regels)
