@@ -1,3 +1,5 @@
+KLAAR: pakket YH01 klaar (niet ingepland), kanaal 2 · 0af8f19
+
 KLAAR: plan kanaal 2 (docs/yg-social-plan-2.md: 3 reeksen, 30 onderwerpen met bron en vrij beeld, YHxx, 19:00) · c048666
 
 KLAAR: pakket YS18 klaar (niet ingepland) · ac0b1ff
