@@ -1,0 +1,48 @@
+STUDIO.TXT — YS16 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS16" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 32,0 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k); deze upload je via Chrome
+
+== Details ==
+Titel (44/100 tekens):
+Why does longitude 0° run through Greenwich?
+
+Beschrijving:
+In 1884 the Greenwich Meridian was recommended as the Prime Meridian of the World. The main reason: most of the world was already using it.
+
+What the source says:
+- Before, there were no national or international conventions that set how time should be measured.
+- In 1884 the Greenwich Meridian was recommended as the Prime Meridian of the World, indicating 0° longitude.
+- One reason: the USA had already chosen Greenwich as the basis for its own national time zone system.
+- Another: in the late 19th century, 72% of the world's commerce depended on sea charts that used Greenwich as the Prime Meridian.
+- So naming Greenwich as longitude 0° would be of advantage to the largest number of people.
+- The meridian line is marked by the cross-hairs in the eyepiece of the Airy Transit Circle telescope.
+- From 1884 until 1972, GMT was the international standard of civil time.
+
+Source:
+Royal Museums Greenwich, "Greenwich Mean Time (GMT)": https://www.rmg.co.uk/stories/time/greenwich-mean-time-gmt
+
+#Shorts #history #maps #time
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+prime meridian, longitude zero, why Greenwich, Greenwich Mean Time, GMT, 1884, Airy Transit Circle, maps history, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: dinsdag 24 november 2026, 18:00 (Amsterdam)
