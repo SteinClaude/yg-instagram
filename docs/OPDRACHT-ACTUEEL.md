@@ -2,6 +2,31 @@
 
 **Bijgewerkt:** ma 2 nov 2026, 21:45 — Eva (avondronde, terugval)
 
+## ▶ ERBIJ — wo 4 nov 07:15 (Eva): gegevens, afvinklijst en map Gegevens
+
+**Andries via chat met Eva, di 3 nov 2026 13:18:** *"zorg dat we voor Lotte en Manon een strakke opstelling maken, dus nummer, telefoon, e-mail, rekening etc. … een map/werkplek op mijn bureaublad en in het kantoor … bijvoorbeeld inlognamen, contactgegevens, betaalgegevens."* En wo 4 nov 07:02: *"stel ook een taken/afvinklijst op voor beide accounts zodat we dit stapsgewijs kunnen doorlopen."*
+
+Zijn keuzes uit twee vragenlijsten van 20 vragen:
+- **Wachtwoorden** staan in Google Wachtwoordmanager en nergens anders. Nooit wachtwoorden, codes, volledige IBAN of kaartnummers in git, het Kantoor of een bestand; van een rekening alleen de laatste 4 cijfers.
+- **Contact en betalen:**
+  - eigen e-mail per merk;
+  - één tweede telefoonnummer, gedeeld door shop en social (dat regelt Andries zelf);
+  - per merk een eigen bunq-rekening ("YG-Shop Prontocrate", "YG-Social");
+  - 2FA met een Google-melding; de herstelcodes worden geprint en thuis bewaard.
+- **Inloggen:** per merk een eigen Chrome-profiel, met de Claude in Chrome-extensie erin. Andries logt in; jij werkt in dat venster.
+- **Bijwerken:** jij stelt wijzigingen voor (in `voorEva`), Andries keurt, Eva zet ze in het Kantoor en in het privé-overzicht.
+- **Controle:** elke 1e maandag van de maand. Het maandoverzicht per merk maak jij; Fleur controleert het.
+
+**In het Kantoor** (v2.11) staan in jouw kamer twee nieuwe delen: **"Op weg naar draaien"** (een afvinklijst; Andries vinkt af) en **"Gegevens"** (een overzicht zonder wachtwoorden). Lees ze daar als je in Chrome werkt.
+
+**Wat jij doet (na je NU-blok, in deze volgorde):**
+1. **Map op het bureaublad:** `OneDrive\Desktop\02 YG-Social\Gegevens\` met de mappen `01 Overzicht`, `02 Facturen\2026-11`, `03 Contracten` en `04 Noodblad`. Maak alleen mappen aan; verplaats of verwijder niets.
+2. **Stappenlijst voor Andries:** volg de afvinklijst van YG-Social in het Kantoor, met per stap wat, waar, hoe lang en wat hij aan Eva meldt.
+   - Zoek ook uit hoe je een bestaand kanaal onder een nieuwe Gmail zet (merkaccount/eigenaar toevoegen).
+   - **Dit bestand komt alleen in de bureaubladmap, niet in deze openbare repo**, want er staan kanaalnamen in. Zet in `buitenGit` dat het er staat en wanneer.
+3. **Noodblad** in `04 Noodblad`, ook alleen op het bureaublad.
+4. **Maandoverzicht** (1e maandag): kosten uit het potje van €25/maand en later de inkomsten. Zonder namen of bedragen in de repo; het overzicht komt in de bureaubladmap.
+
 ## ▶ NU — di 3 nov 10:35 (Eva). Dit blok geldt; de blokken eronder zijn achtergrond.
 
 **Andries via chat met Eva, di 3 nov 2026 10:27:** *"ik ga thuis alle agents opdracht geven om verder te gaan, zet ze allemaal klaar zodat ze verder kunnen en niks over het hoofd zien."*
