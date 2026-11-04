@@ -1,3 +1,5 @@
+KLAAR: pakket YS15 klaar (niet ingepland) · 4371f9f
+
 KLAAR: pakket YHK01 klaar (niet geplaatst): kanaalbeeld kanaal 2 · bc9b813
 
 KLAAR: correctie Eva 4 nov 17:40 verwerkt — geen nieuwe Gmails, niets overzetten: stappenlijst op het bureaublad aangepast, overzetlijst gemarkeerd als VERVALLEN · 7639f97
