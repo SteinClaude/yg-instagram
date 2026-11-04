@@ -1,0 +1,48 @@
+STUDIO.TXT — YS17 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS17" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 35,2 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k); deze upload je via Chrome
+
+== Details ==
+Titel (60/100 tekens):
+Non-stick pans started with a gas cylinder that seemed empty
+
+Beschrijving:
+In 1938 a chemist opened a cylinder of gas and nothing came out. It still weighed the same. Inside was the slippery powder later called Teflon.
+
+What the source says:
+- Roy J. Plunkett discovered Teflon at the DuPont Company's Jackson Laboratory in 1938.
+- His first assignment at DuPont was researching new chlorofluorocarbon refrigerants.
+- He produced a hundred pounds of tetrafluoroethylene gas (TFE) and stored it in small cylinders.
+- When a cylinder was opened, none of the gas came out, yet the cylinder weighed the same as before. Opened up, it held a white powder: the TFE had polymerized.
+- The substance was heat resistant, chemically inert and had very low surface friction, so most other substances would not stick to it.
+- Its first use was in the gaseous diffusion process of the Manhattan Project; Teflon pots and pans came years later.
+- It was an accidental invention, unlike most other polymer products.
+
+Source:
+Science History Institute, "Roy J. Plunkett": https://www.sciencehistory.org/education/scientific-biographies/roy-j-plunkett/
+
+#Shorts #history #inventions #chemistry
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+teflon, non-stick pan, teflon invention, Roy Plunkett, DuPont 1938, PTFE, accidental inventions, chemistry history, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: woensdag 25 november 2026, 18:00 (Amsterdam)
