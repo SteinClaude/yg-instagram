@@ -1,6 +1,29 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 2 nov 2026, 21:45 — Eva (avondronde, terugval)
+**Bijgewerkt:** wo 4 nov 2026, 17:50 — Eva
+
+## ▶ NU — wo 4 nov 17:50 (Eva). Dit blok gaat voor; de blokken eronder blijven gelden waar dit blok niets anders zegt.
+
+**Andries via chat met Eva, wo 4 nov 2026 17:41:** *"geef voor Manon de opdracht die nodig is, ze moet ook weten dat de content die ze heeft gemaakt en de naam die we hebben niet uitmaakt dat het verschilt of niet bij passend is."*
+
+**1. Naam en onderwerp hoeven niet bij elkaar te passen (besluit Andries).** De namen en handles van beide kanalen passen niet bij hun onderwerp ("waarom gewone dingen zijn zoals ze zijn" en "vreemd maar waar"), en jouw shorts verschillen van wat er al op kanaal 2 staat. **Dat is goed zo.** Je past je shorts niet aan de naam aan, je stelt geen nieuwe naam voor en je verandert geen naam of handle. Het onderwerp per kanaal blijft zoals in je CLAUDE.md. Wel: titel, beschrijving, bio, logo en banner dragen het onderwerp, zodat een kijker in twee seconden ziet waar het kanaal over gaat.
+
+**2. Chrome staat nu open op kanaal 1** (Andries zit achter de pc, wo 4 nov vanaf ±17:30). Je hoeft niet op vr 6 nov te wachten. Zegt Andries in jouw sessie "ga verder":
+1. Controleer rechtsboven in Studio dat kanaal 1 actief is.
+2. Plan **YS04–YS14** in (pakket OK staat er: b2691db en 6495672), elk op datum en tijd uit `studio.txt`, upload `video-upload.mp4`. Na elke short: wat Studio meldt (Gepland + datum/tijd) in je oplevering.
+3. Daarna **YK01** (logo en banner kanaal 1), in zijn venster. Dit is de enige kanaalinstelling die je mag wijzigen.
+4. Is Andries weg of staat Chrome op een ander account: stop, schrijf `KAN NIET VERDER: … · nodig: Chrome op kanaal 1 van Andries` en ga door met punt 4.
+
+**3. Handles op andere platforms (gecontroleerd door Eva, wo 4 nov 17:45):** voor beide kanaalnamen vrij op Instagram, TikTok, X en Snapchat; Pinterest niet vast te stellen (cookiemuur). Reserveren doet Andries (do 5 nov, 19:30). Jij schrijft per platform een bio van één regel met het onderwerp, **alleen in de bureaubladmap** (er staan namen in), en meldt in `voorEva` dat ze klaarstaan.
+
+**4. Daarna, in deze volgorde:** `docs/yg-social-plan-2.md` → YH01–YH07 (vanaf ma 16 nov) en YHK01 → YS15–YS21. Elk pakket: "pakket <code> klaar" melden, wachten op "pakket OK <code>".
+
+**Antwoorden op je vragen (stand 18:08):**
+- **`.codex/` en `AGENTS.md`:** komen van een import naar ChatGPT/Codex (wo 4 nov 16:37, niet door Andries bedoeld; de sync staat nu uit). Niet committen, niet verwijderen; je uitsluiting via `.git/info/exclude` is goed.
+- **Volgorde:** gewijzigd — nu eerst inplannen YS04–YS14 en YK01, omdat Chrome nu openstaat (punt 2). Het bureaubladwerk voor do 5 nov daarna, als het nog niet af is.
+- **Tijdstip kanaal 2:** 19:00 Amsterdam, akkoord.
+
+**Grenzen blijven:** niet inloggen, geen andere kanaalinstellingen, geen naam of handle in deze repo, niets plaatsen zonder "pakket OK <code>".
 
 ## ▶ CORRECTIE — wo 4 nov 17:40 (Eva): geen nieuwe Gmails, niets overzetten
 
