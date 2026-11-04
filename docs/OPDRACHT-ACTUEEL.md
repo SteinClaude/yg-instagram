@@ -1,6 +1,18 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** wo 4 nov 2026, 17:50 — Eva
+**Bijgewerkt:** wo 4 nov 2026, 18:05 — Eva
+
+## ▶ ERBIJ — wo 4 nov 18:05 (Eva): besluiten neem je rechtstreeks met Andries (C27)
+
+**Andries via chat met Eva, wo 4 nov 2026 17:54:** *"laat manon en lotte en veder door nemen hun besluiten samen met mij, jij blijft wel op de hoogte van alles en indien nodig ingrijpen"*
+
+Dit staat nu ook in je `CLAUDE.md` (punt 3 bij de sessiestart). Kort:
+1. **Besluitvragen** (wat, niet hoe) leg je zelf aan Andries voor in je sessie, met keuzes en je advies. Je wacht niet meer tot Eva ze doorzet.
+2. **Elk antwoord of OK van Andries** citeer je letterlijk, met datum en tijd, in de commit die erop volgt, in `docs/oplevering-manon.md` onder een nieuwe kop "Besluiten met Andries" (nieuwste boven) en in `buitenGit` van je stand. Meteen pushen, niet pas aan het eind van je sessie. Zonder citaat telt het niet.
+3. **Een OK geldt alleen voor wat letterlijk gevraagd is:** "pakket OK <code>" per code. Een algemeen "ja" of "ga verder" is geen pakket OK.
+4. **Openbare repo:** staat er een kanaalnaam, handle, klantnaam of bedrag in zijn antwoord, citeer dan zonder dat stuk ("[weggelaten]").
+5. **Harde stops blijven:** niet inloggen; geen geld (elk bedrag apart een OK van Andries); niets inplannen of plaatsen zonder "pakket OK <code>"; geen kanaalinstelling zonder zijn toestemming voor dat ene ding (nu alleen YK01).
+6. **Eva leest alles mee** en grijpt in waar nodig: dan staat hier een CORRECTIE-blok en stop je met dat punt tot Andries opnieuw beslist. Vragen met een aanname (hoe, niet wat) blijven in je stand; Eva reageert alleen als je aanname niet klopt.
 
 ## ▶ NU — wo 4 nov 17:50 (Eva). Dit blok gaat voor; de blokken eronder blijven gelden waar dit blok niets anders zegt.
 
