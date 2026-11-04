@@ -12,7 +12,7 @@
 1. Controleer rechtsboven in Studio dat kanaal 1 actief is.
 2. Plan **YS04–YS14** in (pakket OK staat er: b2691db en 6495672), elk op datum en tijd uit `studio.txt`, upload `video-upload.mp4`. Na elke short: wat Studio meldt (Gepland + datum/tijd) in je oplevering.
 3. Daarna **YK01** (logo en banner kanaal 1), in zijn venster. Dit is de enige kanaalinstelling die je mag wijzigen.
-4. Is Andries weg of staat Chrome op een ander account: stop, schrijf `KAN NIET VERDER: … · nodig: Chrome op kanaal 1 van Andries` en ga door met punt 4.
+4. Is Andries weg of staat Chrome op een ander account: stop, schrijf `KAN NIET VERDER: … · nodig: Chrome op kanaal 1 van Andries` en ga door met **4. Daarna** hieronder.
 
 **3. Handles op andere platforms (gecontroleerd door Eva, wo 4 nov 17:45):** voor beide kanaalnamen **geen account gevonden** op Instagram, TikTok, X en Snapchat (dus waarschijnlijk vrij; zeker is het pas bij het reserveren). Pinterest niet vast te stellen (cookiemuur). Let op: in de kanaalkop van kanaal 2 staat al een Instagram-link; Andries kijkt eerst of daar al een account achter zit. Reserveren doet Andries (do 5 nov, 19:30). Jij schrijft per platform een bio van één regel met het onderwerp, **alleen in de bureaubladmap** (er staan namen in), en meldt in `voorEva` dat ze klaarstaan.
 
