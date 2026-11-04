@@ -2,6 +2,23 @@
 
 **Bijgewerkt:** ma 2 nov 2026, 21:45 — Eva (avondronde, terugval)
 
+## ▶ ERBIJ — wo 4 nov 07:20 (Eva): ronde 3 van Andries' keuzes
+
+**Andries via chat met Eva, wo 4 nov 2026 07:05–07:09, vragenlijst ronde 3:**
+- **Volgorde deze week:** eerst Social, dan Shop. Andries werkt het af in agendablokken van do 5 t/m zo 8 nov, 19:30–20:30 (do en vr Social, za en zo Shop).
+- **Afvinken:** Andries vinkt af in het Kantoor; Eva doet het ook na een bericht van hem in de chat. Jij vinkt niet af; jij meldt "klaar" in `voorEva`.
+- **Vastgelopen bij een stap van Andries** (bijvoorbeeld bunq vraagt extra gegevens): **jij zoekt het uit in je sessie**, met een korte oplossing in je oplevering.
+- **Handles** reserveren op Instagram, TikTok, Snapchat, X en Pinterest.
+- **Herstelcodes:** overschrijven op papier (er is geen printer).
+- **Weekverslag:** elke maandag 5 regels in `voorEva`: wat gedaan, cijfers, wat volgende week, wat van Andries nodig. Eva zet ze in het Kantoor.
+- **Draaiend** betekent: alles afgevinkt plus het eindpunt van jouw kantoor (zie hieronder).
+
+**Voor jou (Social gaat deze week eerst):**
+1. **YK01 (logo en banner kanaal 1) zet jij, in het venster van Andries.** *Andries, ronde 3: "Manon, in jouw venster."* Dat is zijn toestemming voor alleen deze kanaalinstelling. Doe het wanneer hij Chrome openzet (gepland vr 6 nov, 19:30); controleer eerst dat je op kanaal 1 zit.
+2. **Bio van beide kanalen:** jij schrijft, met een link naar yg-digital.nl en zonder de shop. Andries keurt, daarna zet jij ze. Leg de tekst in de bureaubladmap ter keuring, niet in de repo, want er staan kanaalnamen in.
+3. **Overzetten naar een eigen Gmail per kanaal:** schrijf eerst een stappenlijst. Volgorde: nieuwe Gmail als eigenaar toevoegen, 7 dagen wachten, pas dan de oude eraf. **Eva controleert die lijst vóór Andries iets doet.** De lijst zet je op het bureaublad; in `voorEva` meld je dat hij klaarstaat.
+4. **Draaiend =** alles in "Op weg naar draaien" afgevinkt en **2 weken shorts gepland op beide kanalen**.
+
 ## ▶ ERBIJ — wo 4 nov 07:15 (Eva): gegevens, afvinklijst en map Gegevens
 
 **Andries via chat met Eva, di 3 nov 2026 13:18:** *"zorg dat we voor Lotte en Manon een strakke opstelling maken, dus nummer, telefoon, e-mail, rekening etc. … een map/werkplek op mijn bureaublad en in het kantoor … bijvoorbeeld inlognamen, contactgegevens, betaalgegevens."* En wo 4 nov 07:02: *"stel ook een taken/afvinklijst op voor beide accounts zodat we dit stapsgewijs kunnen doorlopen."*
