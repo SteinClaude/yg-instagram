@@ -1,3 +1,5 @@
+KAN NIET VERDER: ronde wo 4 nov af; inplannen en keuren wachten op Andries · nodig: (1) vr 6 nov 19:30 Chrome open + in mijn sessie "ja, plan YS04 t/m YS14 in" (YK01 mag al); (2) pakket OK per code voor YS15–YS18, YH01, YH02, YHK01; (3) "bio OK" voor de bio's op het bureaublad
+
 KLAAR: pakket YH02 klaar (niet ingepland), kanaal 2 · 45650a9
 
 KLAAR: pakket YH01 klaar (niet ingepland), kanaal 2 · 0af8f19
@@ -80,8 +82,10 @@ Andries in mijn sessie, ma 2 nov 2026: "Staan erin, ga door" → YS04 @ (do 12 n
 Andries in mijn sessie, ma 2 nov 2026: "OK voor alle vijf" (pakket OK YS04, YS05, YS06, YS07 en YK01) · b2691db. Eva zette YS01–YS03 op 2 nov 22:45 in Studio (9, 10, 11 nov 18:00).
 Andries in mijn sessie, ma 2 nov 2026 (± 23:58): "Ja, begin week 2" → YS08 SOS (ma 16 nov) · YS09 A4 (di 17) · YS10 bug (wo 18) · YS11 dollarteken (do 19) · YS12 999 (vr 20) · YS13 klittenband (za 21) · YS14 eerste verkeerslicht (zo 22), elk met video.mp4, video-upload.mp4 (< 10 MB), studio.txt, overzicht en bron/bronnen.md; verdeling 3× A, 2× B, 2× C. Drie plan-bronnen gaven een 403 (Smithsonian voor de bug, Londonist voor het verkeerslicht) en zijn vervangen (Computer History Museum + JSTOR Daily; PA Media + History Hit).
 Andries in mijn sessie, di 3 nov 2026: "OK voor alle zeven" (pakket OK YS08 t/m YS14) · 6495672.
-OPEN (in volgorde): 1. Andries (of Eva op zijn verzoek) plant YS04–YS14 in via Studio (do 12 t/m zo 22 nov, 18:00; video-upload.mp4 staat in elke map) en zet het kanaalbeeld YK01 erin · 2. eerste maandagverslag (16 nov, cijfers van Eva) · 3. week 3 (YS15–YS21) als voorraad
-VOLGENDE STAP: bij "ga verder" week 3 (YS15–YS21) als voorraad, zelfde v2-stijl, onderwerpen uit docs/yg-social-plan.md
+Wo 4 nov (opdracht 3 en 4 nov): bureaubladwerk (Gegevens, stappenlijst, bio's, noodblad) · d4396bc; plan kanaal 2 · c048666; YHK01 · bc9b813; YH01 · 0af8f19; YH02 · 45650a9; YS15–YS18 · 4371f9f, 0f569f2, 9507480, ac0b1ff. Gereedschap: foto-stijl kanaal 2 + beeld.cjs (b5a0bb2), pakket.cjs (4371f9f).
+OPEN (in volgorde): 1. vr 6 nov 19:30, Chrome van Andries: YK01 zetten ("Manon, in jouw venster") en YS04–YS14 inplannen na zijn "ja" in mijn sessie · 2. keuring per code: YS15–YS18, YH01–YH02, YHK01, bio's · 3. YH03–YH07 · 4. YS19–YS21 · 5. weekverslag ma 9 nov (5 regels in voorEva)
+VOLGENDE STAP: bij "ga verder" YH03–YH07, daarna YS19–YS21
+VRAGEN: inplannen in Chrome · aanname ja na Andries' "ja" in mijn sessie · ondertussen pakketten · blokkeert nee | Commons als beeldbron kanaal 2 (Pexels/Pixabay 403/401) · aanname ja · YH met Commons · blokkeert nee | kanaal 2 om 19:00 · aanname ja · blokkeert nee | .codex/ en AGENTS.md niet van mij · lokaal uitgesloten · blokkeert nee
 VRAGEN: Eva schreef di 3 nov 00:01 "Tot dan start niemand iets nieuws"; Andries had mij vlak daarvoor in mijn sessie gezegd "Ja, begin week 2" · aanname: zijn directe opdracht geldt (voorraad, geen harde stop, niets ingepland) · ik heb week 2 afgemaakt · blokkeert nee
 
 AF: plan · gereedschap/short.cjs (eigen animatie, 1080x1920, geen credits) · pakketten YS01-YS03 (zie KLAAR-regels)

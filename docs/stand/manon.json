@@ -1,39 +1,48 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-04T18:08:00+01:00",
+  "tijd": "2026-11-04T17:28:46Z",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-04T17:33:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
-    "plan 30 onderwerpen · 634997a",
-    "short.cjs v2 · fb5b54b",
-    "YS01–YS03: pakket OK · 4126bea; ingepland in Studio door Eva (2 nov 22:45)",
-    "YS04–YS07 en YK01: pakket OK · b2691db",
-    "YS08–YS14 (week 2): pakket OK · 6495672"
+    "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
+    "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
+    "bureaubladwerk 4 nov (Gegevens, stappenlijst, bio's, noodblad, sjabloon maandoverzicht) · d4396bc; correctie geen nieuwe Gmails verwerkt",
+    "gereedschap kanaal 2: foto-stijl in short.cjs + beeld.cjs · b5a0bb2; pakket.cjs · 4371f9f",
+    "plan kanaal 2 (docs/yg-social-plan-2.md) · c048666",
+    "YHK01 kanaalbeeld kanaal 2 · bc9b813",
+    "YH01 Emoe-oorlog · 0af8f19; YH02 kaneel · 45650a9 (kanaal 2, 19:00)",
+    "YS15 pondteken · 4371f9f; YS16 nulmeridiaan · 0f569f2; YS17 Teflon · 9507480; YS18 streepjescode · ac0b1ff (week 3 kanaal 1)"
   ],
-  "bezig": "opdracht wo 4 nov: bureaubladwerk voor de agenda van Andries (do 5 / vr 6 nov) af; nu plan kanaal 2 en YH01–YH07",
-  "volgende": "docs/yg-social-plan-2.md, daarna YH01–YH07 (vanaf ma 16 nov) en YHK01, dan YS15–YS21; inplannen YS04–YS14 en YK01 zodra Andries Chrome openzet (vr 6 nov 19:30)",
+  "bezig": "-",
+  "volgende": "bij ga verder: YH03–YH07 (Whittier, wombats, 1752, Baarle, Cooper's Hill) en YS19–YS21 (Bluetooth, veiligheidsglas, nog één A); vr 6 nov 19:30 in Chrome van Andries: YK01 zetten en YS04–YS14 inplannen (na zijn \"ja\" in mijn sessie)",
   "kanNietVerder": null,
   "vragen": [
     {
-      "vraag": "Ongevolgde map .codex/ (hooks voor Codex, 4 nov 16:37) en AGENTS.md staan in mijn map; niet van mij. Committen, laten staan of weg?",
-      "aanname": "niet committen, alleen lokaal uitgesloten via .git/info/exclude; ik raak ze niet aan",
+      "vraag": "Mag ik YS04–YS14 inplannen in Studio, in jouw Chrome (vr 6 nov 19:30)? Ik doe het pas na jouw letterlijke \"ja\" in mijn sessie: video-upload.mp4 is publiceren.",
+      "aanname": "ja, zodra je Chrome openzet en het in mijn sessie zegt",
+      "ondertussen": "pakketten maken",
+      "blokkeert": false
+    },
+    {
+      "vraag": "Pexels en Pixabay weigeren automatisch ophalen (403, bot-check) en de Pexels-API vraagt een sleutel (401). Mag Wikimedia Commons (PD, CC0, CC BY met naamsvermelding) de vrije beeldbron voor kanaal 2 zijn, of maak je een gratis Pexels-API-sleutel (lokale omgevingsvariabele, nooit in git)?",
+      "aanname": "Commons is goed",
+      "ondertussen": "YH-pakketten met Commons-beelden",
+      "blokkeert": false
+    },
+    {
+      "vraag": "Tijdstip kanaal 2: 19:00 Amsterdam?",
+      "aanname": "ja",
+      "ondertussen": "studio.txt van YH01–YH02 op 19:00",
+      "blokkeert": false
+    },
+    {
+      "vraag": "Ongevolgde .codex/ (hooks, 4 nov 16:37) en AGENTS.md in mijn map: niet van mij. Committen, laten staan of weg?",
+      "aanname": "niet committen, lokaal uitgesloten",
       "ondertussen": "niets",
-      "blokkeert": false
-    },
-    {
-      "vraag": "Volgorde: het NU-blok zet inplannen YS04–YS14 eerst, maar dat kan pas als Andries Chrome openzet (vr 6 nov 19:30). Ik doe eerst het bureaubladwerk dat Andries do 5 nov nodig heeft, dan plan kanaal 2, YH01–YH07 en YS15–YS21.",
-      "aanname": "zo is het goed",
-      "ondertussen": "werk in die volgorde",
-      "blokkeert": false
-    },
-    {
-      "vraag": "Tijdstip kanaal 2: 19:00 Amsterdam (voorstel uit het blok van 3 nov)?",
-      "aanname": "ja, 19:00; staat zo in de bio en komt in plan-2",
-      "ondertussen": "gebruik 19:00",
       "blokkeert": false
     }
   ],
@@ -105,6 +114,12 @@
       "aan": "eva",
       "wat": "Klaar (afvinken door Andries of Eva): map Gegevens, noodblad, sjabloon maandoverzicht.",
       "pad": "OneDrive\\Desktop\\02 YG-Social\\Gegevens"
+    },
+    {
+      "id": "H-manon-4",
+      "aan": "andries",
+      "wat": "Ter keuring (pakket OK per code): YS15–YS18 (kanaal 1, ma 23 t/m do 26 nov 18:00), YH01–YH02 (kanaal 2, ma 16 en di 17 nov 19:00), YHK01 (kanaalbeeld kanaal 2), en de bio's (\"bio OK\").",
+      "pad": "pakketten/ en OneDrive\\Desktop\\02 YG-Social\\Gegevens\\01 Overzicht"
     }
   ],
   "ontvangen": [
