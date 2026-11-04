@@ -1,0 +1,36 @@
+STUDIO.TXT — YHK01 kanaalbeeld kanaal 2 (YouTube Studio > Aanpassing > Branding)
+Status: gemaakt, NIET geplaatst. Plaatsen pas na "pakket OK YHK01" van Andries. Het is een kanaalinstelling: Andries zet het
+zelf, of zegt in Manons sessie letterlijk dat zij het mag (zoals bij YK01: "Manon, in jouw venster").
+
+Wat: profielfoto, banner en watermerk voor kanaal 2 ("vreemd maar waar"), in de stijl van de shorts van kanaal 2
+(donker, geel label, grote witte letters). Bewust zonder kanaalnaam of handle: die horen niet in deze openbare repo,
+en YouTube toont de naam al naast de profielfoto. Het merkteken is een geel vlak met "?!": vreemd is een vraag
+en een uitroep tegelijk.
+
+== Bestanden ==
+profielfoto.png   800x800 (YouTube toont hem rond; alles belangrijks staat in het midden)
+banner.png        2560x1440 (de tekst staat in de veilige zone van 1546x423, zie banner-zones.jpg)
+watermerk.png     150x150 (optioneel; verschijnt rechtsonder in elke video)
+banner-zones.jpg  controlebeeld: blauw = wat elke telefoon toont, roze = wat een computer toont
+overzicht.jpg     alles naast elkaar
+
+== In YouTube Studio (eerst controleren: kanaal 2 actief, accountmenu rechtsboven) ==
+1. Studio > Aanpassing (Customization) > tabblad Branding.
+2. Afbeelding (Picture): Uploaden > profielfoto.png > Gereed.
+3. Bannerafbeelding (Banner image): Uploaden > banner.png > Gereed. Controleer in het voorbeeld dat de tekst op
+   "alle apparaten" volledig zichtbaar is.
+4. Videowatermerk (Video watermark), optioneel: Uploaden > watermerk.png, weergavetijd "Volledige video".
+5. Publiceren (rechtsboven).
+
+== Tekst op de banner ==
+Weird, but real.
+STRANGE THINGS, EXPLAINED · ALWAYS WITH A SOURCE
+NEW SHORT EVERY DAY
+
+(Past bij de bio ter keuring: "Weird, but real. Strange things people actually do, odd customs and the weirdest
+moments in history. First we show it, then we explain it.")
+
+== Maken ==
+node pakketten/2026-11-16-YHK01-kanaalbeeld/bron/maak-kanaalbeeld.cjs
+Letters: Instrument Sans en IBM Plex Mono (SIL Open Font License). Eigen tekenwerk, geen stock, geen AI-beeld.
+De iconen (emoe, kaneel, gebouw, kubus, kalender, grens NL/BE, kaas) verwijzen naar onderwerpen van de eerste week.
