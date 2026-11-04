@@ -150,17 +150,50 @@ function kader(script, scene, t) {
   s += `<line x1="100" y1="264" x2="980" y2="264" stroke="${scene.nacht ? '#3A3F52' : K.inkt}" stroke-width="3"/>`;
   return s;
 }
+// Kanaal 2 (script met `kanaal: 2`, "vreemd maar waar"): geen dossier maar een echte foto onder de tekst. De kop is
+// een geel label met de reeks (script.reeks). De foto staat in scene.achter (onder een donker verloop boven en onder),
+// de tekst in scene.teken (erboven, dus niet verduisterd).
+function kader2(script) {
+  return `<rect width="${W}" height="${H}" fill="#0E0F14"/>`;
+}
+function verloop2() {
+  return `<defs><linearGradient id="k2boven" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0.78"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>`
+    + `<linearGradient id="k2onder" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.85"/></linearGradient></defs>`
+    + `<rect width="${W}" height="820" fill="url(#k2boven)"/><rect y="1150" width="${W}" height="${H - 1150}" fill="url(#k2onder)"/>`;
+}
+function kop2(script) {
+  const tekst = script.reeks || '', g = 34, b = maat(FONT.mono, tekst, g) + 44;
+  return (tekst ? `<rect x="100" y="190" width="${b.toFixed(1)}" height="60" rx="8" fill="${K.geel}"/><text x="122" y="232" font-family="IBM Plex Mono" font-weight="700" font-size="${g}" fill="${K.inkt}">${esc(tekst)}</text>` : '');
+}
+// Foto (kanaal 2): een vrij beeld uit bron/ (vooraf verkleind tot hoogstens 1600 px, jpg; zie short/beeld.cjs), met
+// langzame zoom en schuif over de duur van de scène. Het bestand wordt één keer ingelezen en als data-URI meegegeven.
+// Standaard iets groter dan het beeld, zodat een camerastoot geen zwarte rand laat zien.
+const FOTO = new Map();
+function foto(pad, { x = -40, y = -40, w = W + 80, h = H + 80, t = 0, duur = 1, zoom = [1, 1.08], pan = [[0, 0], [0, 0]], midden } = {}) {
+  if (!FOTO.has(pad)) FOTO.set(pad, 'data:image/jpeg;base64,' + fs.readFileSync(path.join(WORTEL, pad)).toString('base64'));
+  const p = klem(t / duur), z = zoom[0] + (zoom[1] - zoom[0]) * p;
+  const dx = pan[0][0] + (pan[1][0] - pan[0][0]) * p, dy = pan[0][1] + (pan[1][1] - pan[0][1]) * p;
+  const [cx, cy] = midden || [x + w / 2, y + h / 2];
+  const vol = x <= 0 && y <= 0 && x + w >= W && y + h >= H;   // schermvullend: geen clip nodig
+  const img = `<image href="${FOTO.get(pad)}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice" transform="translate(${(cx + dx).toFixed(2)} ${(cy + dy).toFixed(2)}) scale(${z.toFixed(4)}) translate(${-cx} ${-cy})"/>`;
+  if (vol) return img;
+  const id = `fv${x | 0}_${y | 0}_${w | 0}_${h | 0}`;
+  return `<defs><clipPath id="${id}"><rect x="${x}" y="${y}" width="${w}" height="${h}"/></clipPath></defs><g clip-path="url(#${id})">${img}</g>`;
+}
 function bronRegel(tekst, t, start, nacht) {
   const p = fase(t, start, 0.5); if (p <= 0 || !tekst) return '';
   return blok('Source: ' + tekst, { y: 1330, g: 30, gewicht: 'mono', kleur: nacht ? '#C9C6BC' : K.grijs, accent: K.signaal, t, start, max: 800, regelHoogte: 1.3 }).svg;
 }
 
 const HULP = () => ({ K, blok, fase, zacht, uit, klem, stopbord, vorm, klok, toetsen, veelhoek, W, H, esc, maat, FONT,
-  kin: B.kin, veer: B.veer });
+  kin: B.kin, veer: B.veer, foto });
 // Eén volledig beeld van een scène op tijd t (achtergrond, kop, inhoud, bronregel), zonder <svg>-omhulsel.
 function beeldVan(script, scene, t) {
   const inhoud = scene.teken({ t, duur: scene.duur, ...HULP() });
   if (script.versie !== 2) return `${kader(script, scene, t)}${inhoud}${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht)}`;
+  if (script.kanaal === 2) { const cam = B.camera(t, scene.duur, scene.camera), achter = scene.achter ? scene.achter({ t, duur: scene.duur, ...HULP() }) : '';
+    return `${kader2(script)}<g transform="${cam}">${achter}</g>${verloop2()}<g transform="${cam}">${inhoud}</g>` +
+    `${kop2(script)}${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, true)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`; }
   const licht = scene.nacht ? '' : `<rect width="${W}" height="${H}" fill="url(#licht)"/>`;
   return `${kader(script, scene, t)}${licht}<g transform="${B.camera(t, scene.duur, scene.camera)}">${inhoud}</g>` +
     `${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`;
