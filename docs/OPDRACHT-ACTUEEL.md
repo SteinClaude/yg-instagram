@@ -14,6 +14,8 @@ Dit staat nu ook in je `CLAUDE.md` (punt 3 bij de sessiestart). Kort:
 5. **Harde stops blijven:** niet inloggen; geen geld (elk bedrag apart een OK van Andries); niets inplannen of plaatsen zonder "pakket OK <code>"; geen kanaalinstelling zonder zijn toestemming voor dat ene ding (nu alleen YK01).
 6. **Eva leest alles mee** en grijpt in waar nodig: dan staat hier een CORRECTIE-blok en stop je met dat punt tot Andries opnieuw beslist. Vragen met een aanname (hoe, niet wat) blijven in je stand; Eva reageert alleen als je aanname niet klopt.
 
+**Eerste punt (Eva meegelezen, wo 4 nov 18:05): Wikimedia Commons als beeldbron.** In `b5a0bb2` bouwde je `gereedschap/short/beeld.cjs` (beelden van Commons, alleen publiek domein, CC0 of CC BY). Netjes afgebakend, maar je opdracht noemt voor kanaal 2 alleen Pexels en Pixabay (keuze van Andries). Leg het hem dus eerst voor, als besluit: *"Mag Wikimedia Commons erbij als beeldbron (alleen publiek domein, CC0 of CC BY; bij CC BY naam van de maker, licentie en link in de YouTube-beschrijving)?"* Tot zijn antwoord gebruik je geen Commons-beeld in een pakket; Pexels, Pixabay en eigen animatie mogen wel. Nog geen pakket gebruikt Commons, dus er hoeft niets terug.
+
 ## ▶ NU — wo 4 nov 17:50 (Eva). Dit blok gaat voor; de blokken eronder blijven gelden waar dit blok niets anders zegt.
 
 **Andries via chat met Eva, wo 4 nov 2026 17:41:** *"geef voor Manon de opdracht die nodig is, ze moet ook weten dat de content die ze heeft gemaakt en de naam die we hebben niet uitmaakt dat het verschilt of niet bij passend is."*
