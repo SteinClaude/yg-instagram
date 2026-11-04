@@ -6,7 +6,7 @@
 const ABC = 'ABC News (Australia), "Australia\'s Emu War…" (2022)';
 const B = n => `pakketten/2026-11-16-YH01-emoe-oorlog/bron/beeld-${n}.jpg`;
 // donkere waas over een lichte foto (het gouden graan), zodat geel en wit leesbaar blijven
-const donker = (s, op = 0.5) => `${s}<rect x="-40" y="-40" width="1160" height="2000" fill="#000" opacity="${op}"/>`;
+const donker = (s, op = 0.5) => `${s}<rect width="1080" height="1920" fill="#000" fill-opacity="${op}"/>`;   // fill-opacity en binnen beeld: resvg crasht op opacity buiten beeld in een zweep
 
 // grote witte tekst met gele nadruk en schaduw
 const tekst = (h, s, o = {}) => `<g filter="url(#schKlein)">${h.kin(s, { y: 330, g: 104, kleur: '#FFFFFF', accent: h.K.geel, t: h.t, ...o }).svg}</g>`;

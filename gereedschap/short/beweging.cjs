@@ -76,6 +76,8 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
     // aan het begin en eind van een zweep is de vervaging 0: dan geen filter (een filter van 0 px over een groep met
     // iets buiten beeld laat resvg vastlopen). Ook binnen een zweep of op: een <g opacity> die deels buiten beeld valt,
     // of een element met filter op schaal 0, laat resvg crashen (YS13, YS14): sla zulke elementen in het script over.
+    // Kanaal 2: een foto met sterke zoom (± 2,5×, ver buiten beeld) in een zweep of op crasht ook (YH02): gebruik
+    // bij zulke scènes flits, masker of zoom.
     if ((soort === 'zweep' || soort === 'op') && s < 0.02) return e < 0.5 ? vorige : huidige;
     if (soort === 'zweep') {
       return `<defs><filter id="${id}" x="-10%" y="0" width="120%" height="100%"><feGaussianBlur stdDeviation="${(70 * s).toFixed(1)} 0"/></filter></defs>` +
