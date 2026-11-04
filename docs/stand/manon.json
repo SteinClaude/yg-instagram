@@ -1,10 +1,10 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-03T15:20:17Z",
+  "tijd": "2026-11-04T17:55:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
-    "sinds": "2026-11-02T19:45:00+01:00"
+    "sinds": "2026-11-04T17:33:00+01:00"
   },
   "status": "werkt",
   "af": [
@@ -14,20 +14,26 @@
     "YS04–YS07 en YK01: pakket OK · b2691db",
     "YS08–YS14 (week 2): pakket OK · 6495672"
   ],
-  "bezig": "week 3 als voorraad: YS15–YS21 (ma 23 t/m zo 29 nov, 18:00)",
-  "volgende": "per pakket pushen met KLAAR-regel; daarna wachten op pakket OK YS15–YS21",
+  "bezig": "opdracht wo 4 nov: bureaubladwerk voor de agenda van Andries (do 5 / vr 6 nov) af; nu plan kanaal 2 en YH01–YH07",
+  "volgende": "docs/yg-social-plan-2.md, daarna YH01–YH07 (vanaf ma 16 nov) en YHK01, dan YS15–YS21; inplannen YS04–YS14 en YK01 zodra Andries Chrome openzet (vr 6 nov 19:30)",
   "kanNietVerder": null,
   "vragen": [
     {
-      "vraag": "In de pc-map staat sinds 23 okt een ongevolgde AGENTS.md: een oude kopie van mijn CLAUDE.md voor Codex (Instagram-tijd, zonder YG-Social en zonder Melden aan Eva). Weggooien, bijwerken of committen?",
-      "aanname": "niet committen (verouderde regels in een openbare repo); alleen lokaal uitgesloten via .git/info/exclude, het bestand zelf blijft staan",
-      "ondertussen": "niets, ik raak het niet aan",
+      "vraag": "Ongevolgde map .codex/ (hooks voor Codex, 4 nov 16:37) en AGENTS.md staan in mijn map; niet van mij. Committen, laten staan of weg?",
+      "aanname": "niet committen, alleen lokaal uitgesloten via .git/info/exclude; ik raak ze niet aan",
+      "ondertussen": "niets",
       "blokkeert": false
     },
     {
-      "vraag": "Eva schreef di 3 nov 00:01 \"Tot dan start niemand iets nieuws\"; Andries zei mij vlak daarvoor in mijn sessie \"Ja, begin week 2\". Klopt het dat ik week 2 mocht afmaken?",
-      "aanname": "ja: zijn directe opdracht geldt; het is voorraad zonder harde stop en er is niets ingepland",
-      "ondertussen": "week 2 afgemaakt en gepusht; nu wachten op pakket OK",
+      "vraag": "Volgorde: het NU-blok zet inplannen YS04–YS14 eerst, maar dat kan pas als Andries Chrome openzet (vr 6 nov 19:30). Ik doe eerst het bureaubladwerk dat Andries do 5 nov nodig heeft, dan plan kanaal 2, YH01–YH07 en YS15–YS21.",
+      "aanname": "zo is het goed",
+      "ondertussen": "werk in die volgorde",
+      "blokkeert": false
+    },
+    {
+      "vraag": "Tijdstip kanaal 2: 19:00 Amsterdam (voorstel uit het blok van 3 nov)?",
+      "aanname": "ja, 19:00; staat zo in de bio en komt in plan-2",
+      "ondertussen": "gebruik 19:00",
       "blokkeert": false
     }
   ],
@@ -61,9 +67,46 @@
       "wat": "Andries in de sessie van Manon: \"Ja, begin week 3\"",
       "waar": "pc-sessie van Manon",
       "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-04T17:55:00+01:00",
+      "wat": "map Gegevens aangemaakt met 01 Overzicht, 02 Facturen\\2026-11, 03 Contracten, 04 Noodblad (alleen mappen, niets verplaatst)",
+      "waar": "OneDrive\\Desktop\\02 YG-Social\\Gegevens",
+      "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-04T17:55:00+01:00",
+      "wat": "Stappenlijst YG-Social (agenda do 5 en vr 6 nov), Overzetten naar eigen Gmail per kanaal, Bio kanalen (ter keuring), Maandoverzicht 2026-11 (sjabloon)",
+      "waar": "OneDrive\\Desktop\\02 YG-Social\\Gegevens\\01 Overzicht",
+      "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-04T17:55:00+01:00",
+      "wat": "Noodblad YG-Social",
+      "waar": "OneDrive\\Desktop\\02 YG-Social\\Gegevens\\04 Noodblad",
+      "wie": "manon"
     }
   ],
-  "voorEva": [],
+  "voorEva": [
+    {
+      "id": "H-manon-1",
+      "aan": "eva",
+      "wat": "Stappenlijst \"Overzetten naar eigen Gmail per kanaal\" staat klaar om na te kijken vóór Andries iets doet (bron: Google Help 4628007 en 3056283; de 7 dagen zijn de wachttijd voor hoofdeigenaar). Vraag erin: oude account helemaal eraf of als beheerder houden?",
+      "pad": "OneDrive\\Desktop\\02 YG-Social\\Gegevens\\01 Overzicht\\Overzetten naar eigen Gmail per kanaal.txt"
+    },
+    {
+      "id": "H-manon-2",
+      "aan": "andries",
+      "wat": "Stappenlijst voor de agendablokken do 5 en vr 6 nov (19:30) en de bio's van beide kanalen ter keuring (\"bio OK\" in mijn sessie). De afvinklijst \"Op weg naar draaien\" in het Kantoor kan ik niet lezen; zet de tekst ervan in mijn opdracht, dan leg ik hem naast mijn lijst.",
+      "pad": "OneDrive\\Desktop\\02 YG-Social\\Gegevens\\01 Overzicht"
+    },
+    {
+      "id": "H-manon-3",
+      "aan": "eva",
+      "wat": "Klaar (afvinken door Andries of Eva): map Gegevens, noodblad, sjabloon maandoverzicht.",
+      "pad": "OneDrive\\Desktop\\02 YG-Social\\Gegevens"
+    }
+  ],
   "ontvangen": [],
   "raakt": []
 }

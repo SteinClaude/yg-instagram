@@ -1,3 +1,5 @@
+KLAAR: bureaubladwerk wo 4 nov voor de agenda van Andries — map Gegevens (4 mappen), stappenlijst do 5 / vr 6 nov, lijst overzetten naar eigen Gmail (eerst Eva), bio's beide kanalen ter keuring, noodblad, sjabloon maandoverzicht; alleen op het bureaublad (kanaalnamen), zie buitenGit en voorEva H-manon-1 t/m 3 · deze commit
+
 KLAAR: pakket OK YS08 t/m YS14 vastgelegd (Andries in mijn sessie, di 3 nov 2026: "OK voor alle zeven", op de vraag "Geef je pakket OK voor YS08 t/m YS14?"); status in elke studio.txt bijgewerkt · 6495672
 
 KAN NIET VERDER (opgelost door het OK hierboven): week 2 compleet (YS08–YS14 als voorraad) · nodig: "pakket OK YS08" t/m "pakket OK YS14" van Andries, per code; daarna plant hij (of Eva op zijn verzoek) ze in YouTube Studio in, ma 16 t/m zo 22 nov, 18:00
