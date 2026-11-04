@@ -1,0 +1,48 @@
+STUDIO.TXT — YS18 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS18" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 36,4 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k); deze upload je via Chrome
+
+== Details ==
+Titel (52/100 tekens):
+The barcode started as dots and dashes drawn in sand
+
+Beschrijving:
+On a beach in Miami, Joe Woodland was thinking about dots and dashes. He pulled four fingers through the sand and had four lines.
+
+What the source says:
+- Joe Woodland got the idea in a deck chair on a beach in Miami. In his words: "I remember I was thinking about dots and dashes when I poked my four fingers into the sand."
+- "I pulled my hand toward me and I had four lines." Wide lines and narrow lines, instead of dots and dashes.
+- Seconds later he swept his fingers round into a circle: the first barcode looked more like a bullseye.
+- Woodland and his former classmate Bernard Silver refined the concept and applied for a patent in 1949.
+- The bullseye tended to smear in the direction of the paper when running through the register.
+- At IBM, the rectangular UPC code we use today was developed; it had to be readable from any direction at any speed.
+- Fifty years before June 2024 (so in 1974), a pack of Wrigley's Juicy Fruit gum at Marsh's grocery store in Troy, Ohio, became the first retail item scanned.
+
+Source:
+WYSO (NPR member station), "50 years ago, the first retail barcode was scanned at an Ohio grocery store" (Renee Wilde, June 25, 2024): https://www.wyso.org/news/2024-06-25/50-years-ago-the-first-retail-barcode-was-scanned-at-an-ohio-grocery-store
+
+#Shorts #history #inventions #technology
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+barcode, UPC, barcode history, Joe Woodland, Morse code, bullseye barcode, first barcode scan, Troy Ohio 1974, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: donderdag 26 november 2026, 18:00 (Amsterdam)
