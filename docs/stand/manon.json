@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-04T17:55:00+01:00",
+  "tijd": "2026-11-04T18:08:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -85,15 +85,15 @@
       "wat": "Noodblad YG-Social",
       "waar": "OneDrive\\Desktop\\02 YG-Social\\Gegevens\\04 Noodblad",
       "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-04T18:08:00+01:00",
+      "wat": "na de correctie van Eva (17:40): stappenlijst aangepast (stap 2 = beveiliging bestaande kanaal-accounts, stap 7 vervallen); overzetlijst bovenaan gemarkeerd als VERVALLEN, alleen naslag",
+      "waar": "OneDriveDesktop\u0002 YG-SocialGegevens\u0001 Overzicht",
+      "wie": "manon"
     }
   ],
   "voorEva": [
-    {
-      "id": "H-manon-1",
-      "aan": "eva",
-      "wat": "Stappenlijst \"Overzetten naar eigen Gmail per kanaal\" staat klaar om na te kijken vóór Andries iets doet (bron: Google Help 4628007 en 3056283; de 7 dagen zijn de wachttijd voor hoofdeigenaar). Vraag erin: oude account helemaal eraf of als beheerder houden?",
-      "pad": "OneDrive\\Desktop\\02 YG-Social\\Gegevens\\01 Overzicht\\Overzetten naar eigen Gmail per kanaal.txt"
-    },
     {
       "id": "H-manon-2",
       "aan": "andries",
@@ -107,6 +107,8 @@
       "pad": "OneDrive\\Desktop\\02 YG-Social\\Gegevens"
     }
   ],
-  "ontvangen": [],
+  "ontvangen": [
+    "correctie Eva wo 4 nov 17:40 (geen nieuwe Gmails, niets overzetten)"
+  ],
   "raakt": []
 }
