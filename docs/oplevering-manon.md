@@ -1,4 +1,4 @@
-KLAAR: correctie Eva 4 nov 17:40 verwerkt — geen nieuwe Gmails, niets overzetten: stappenlijst op het bureaublad aangepast, overzetlijst gemarkeerd als VERVALLEN · deze commit
+KLAAR: correctie Eva 4 nov 17:40 verwerkt — geen nieuwe Gmails, niets overzetten: stappenlijst op het bureaublad aangepast, overzetlijst gemarkeerd als VERVALLEN · 7639f97
 
 KLAAR: bureaubladwerk wo 4 nov voor de agenda van Andries — map Gegevens (4 mappen), stappenlijst do 5 / vr 6 nov, lijst overzetten naar eigen Gmail (eerst Eva), bio's beide kanalen ter keuring, noodblad, sjabloon maandoverzicht; alleen op het bureaublad (kanaalnamen), zie buitenGit en voorEva H-manon-1 t/m 3 · d4396bc
 
