@@ -11,7 +11,9 @@ const WORTEL = path.join(__dirname, '..', '..');
 const VRIJ = /^(public domain|pd|cc0|cc by(?!-sa)( \d(\.\d)?)?$|cc-by-\d|no restrictions)/i;
 
 const haal = url => execFileSync('curl', ['-sL', '--max-time', '60', '-A', UA, url], { maxBuffer: 200 * 1024 * 1024 });
-const kaal = s => String(s || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+// Commons zet de maker soms twee keer in de HTML (zichtbaar + verborgen); dan houden we één helft over.
+const kaal = s => { const t = String(s || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(), h = t.length / 2;
+  return Number.isInteger(h) && h > 0 && t.slice(0, h) === t.slice(h) ? t.slice(0, h) : t; };
 
 async function main() {
   const [map, nr, titel] = process.argv.slice(2);

@@ -1,0 +1,54 @@
+STUDIO.TXT — YH01 (YouTube Studio, uploadscherm van boven naar beneden) · KANAAL 2
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YH01" van Andries.
+Vóór het uploaden: controleer in Studio (accountmenu rechtsboven) dat kanaal 2 actief is.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 35,0 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k); deze upload je via Chrome
+
+== Details ==
+Titel (43/100 tekens):
+The Time Australia Went to War Against Emus
+
+Beschrijving:
+In 1932, up to 20,000 emus moved onto farms in Western Australia. The army sent soldiers with machine guns.
+
+What the source says:
+- Up to 20,000 migrating emus found their way onto farms in the Western Australian Wheatbelt, destroying fences and valuable grain.
+- On November 2, 1932, three soldiers of the Royal Australian Artillery arrived in Campion, led by Major G.P.W. Meredith.
+- On November 4, an ambush went awry when a machine gun jammed: just 12 of the 1,000 assembled birds were killed.
+- Major Meredith: "They could face machine guns with the invulnerability of tanks."
+- A newspaper at the time, the Daily News: "The emus are more than holding their own."
+- After 2,500 rounds of ammunition, between 300 and 500 emus had been killed. The army made its final withdrawal on December 10.
+
+Source:
+ABC News (Australia), "Australia's Emu War spawns feature film, jokes and memes 90 years on" (December 10, 2022): https://www.abc.net.au/news/2022-12-10/great-emu-war-90-years-on-army-wheatbelt-battle-history/101752238
+
+Images:
+"HeadofEmu" by Relativity (CC0), via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:HeadofEmu.jpg
+"Australian soldiers resting during Emu War" by Unknown author (Public domain), via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Australian_soldiers_resting_during_Emu_War.jpg
+"CSIRO ScienceImage 962 Wheat crop ready to harvest" by Gregory Heath, CSIRO (CC BY 3.0), via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_962_Wheat_crop_ready_to_harvest.jpg
+"Portrait of an emu" by Bilby (CC BY 3.0), via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Portrait_of_an_emu.jpg
+
+#Shorts #history #weirdhistory #australia
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — echte foto's met een vrije licentie (zie Images), eigen tekst en animatie; geen AI-beeld, geen AI-stem.
+Tags:
+emu war, great emu war, australia emu war 1932, weird history, strange history, emus, western australia, major meredith, history facts, weird but true, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: maandag 16 november 2026, 19:00 (Amsterdam)
