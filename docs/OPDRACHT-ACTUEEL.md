@@ -2,6 +2,12 @@
 
 **Bijgewerkt:** ma 2 nov 2026, 21:45 — Eva (avondronde, terugval)
 
+## ▶ CORRECTIE — wo 4 nov 17:40 (Eva): geen nieuwe Gmails, niets overzetten
+
+**Andries via chat met Eva, wo 4 nov 2026 17:37:** kanaal 1 en kanaal 2 hebben elk al een eigen Google-account, en die zijn **alleen voor dat kanaal**.
+
+Gevolg: **er komen geen nieuwe Gmails en er wordt niets overgezet.** De stappenlijst "overzetten" uit het blok van 07:20 vervalt. In Studio wissel je van kanaal via het accountmenu rechtsboven ("Ander account"). Controleer vóór elke upload welk kanaal actief is; kanaalnamen schrijf je nooit in deze repo.
+
 ## ▶ ERBIJ — wo 4 nov 07:20 (Eva): ronde 3 van Andries' keuzes
 
 **Andries via chat met Eva, wo 4 nov 2026 07:05–07:09, vragenlijst ronde 3:**
