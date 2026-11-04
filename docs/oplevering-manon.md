@@ -1,3 +1,5 @@
+KAN NIET VERDER: Andries wil eerst de tekst of feiten van YH01, YH02 en YHK01 aangepast; welke regels zegt hij nog · nodig: van Andries per regel wat anders moet, en zijn besluit over Commons als beeldbron (ja/nee); YS15–YS18 wachten op "pakket OK" per code
+
 KAN NIET VERDER: ronde wo 4 nov af; inplannen en keuren wachten op Andries · nodig: (1) vr 6 nov 19:30 Chrome open + in mijn sessie "ja, plan YS04 t/m YS14 in" (YK01 mag al); (2) pakket OK per code voor YS15–YS18, YH01, YH02, YHK01; (3) "bio OK" voor de bio's op het bureaublad
 
 KLAAR: pakket YH02 klaar (niet ingepland), kanaal 2 · 45650a9
@@ -73,6 +75,10 @@ KLAAR: pakket YS02 klaar (niet ingepland) · d6fa5fd
 KLAAR: pakket YS01 klaar (niet ingepland) · adcf422
 
 KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reeksen, pakketformaat short, ritme 7/week, API later) · 634997a
+
+## Besluiten met Andries
+
+- Andries in de sessie van Manon, wo 4 nov 2026 ±21:47: "Eerst aanpassen" (op "Geef je pakket OK voor YS15–YS18, YH01, YH02 en YHK01?"); daarna gekozen: pakketten "YH01 en/of YH02" en "YHK01 kanaalbeeld", soort "Tekst of feiten"; op de vraag "Mag Commons erbij als beeldbron?": geen voorkeur (geen besluit). Geen pakket OK gegeven.
 
 ## YG-Social (Manon, ma 2 nov 2026, avond; bijgewerkt ma 2 nov laat, pc-sessie met Andries)
 

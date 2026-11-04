@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-04T17:28:46Z",
+  "tijd": "2026-11-04T20:47:54Z",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -18,19 +18,19 @@
     "YS15 pondteken · 4371f9f; YS16 nulmeridiaan · 0f569f2; YS17 Teflon · 9507480; YS18 streepjescode · ac0b1ff (week 3 kanaal 1)"
   ],
   "bezig": "-",
-  "volgende": "bij ga verder: YH03–YH07 (Whittier, wombats, 1752, Baarle, Cooper's Hill) en YS19–YS21 (Bluetooth, veiligheidsglas, nog één A); vr 6 nov 19:30 in Chrome van Andries: YK01 zetten en YS04–YS14 inplannen (na zijn \"ja\" in mijn sessie)",
-  "kanNietVerder": null,
+  "volgende": "na antwoord Andries: tekst/feiten van YH01, YH02 en YHK01 aanpassen (welke regels zegt hij), opnieuw ter keuring; daarna YH03–YH07 en YS19–YS21; inplannen YS04–YS14 + YK01 in Chrome na zijn \"ja\" in mijn sessie",
+  "kanNietVerder": "wacht op Andries: welke regels in YH01, YH02 en YHK01 anders moeten (hij koos \"Eerst aanpassen\", soort: tekst of feiten); Commons-besluit open",
   "vragen": [
+    {
+      "vraag": "Besluit (Andries): mag Wikimedia Commons erbij als beeldbron voor kanaal 2 (alleen publiek domein, CC0 of CC BY; bij CC BY maker, licentie en link in de beschrijving)? YH01 en YH02 gebruiken nu Commons-foto's. Gevraagd wo 4 nov, antwoord: geen voorkeur.",
+      "aanname": "geen Commons-beeld in nieuwe pakketten tot zijn ja (opdracht Eva 18:05); YH01/YH02 niet ter keuring zonder dat besluit",
+      "ondertussen": "wachten op welke regels anders moeten",
+      "blokkeert": true
+    },
     {
       "vraag": "Mag ik YS04–YS14 inplannen in Studio, in jouw Chrome (vr 6 nov 19:30)? Ik doe het pas na jouw letterlijke \"ja\" in mijn sessie: video-upload.mp4 is publiceren.",
       "aanname": "ja, zodra je Chrome openzet en het in mijn sessie zegt",
       "ondertussen": "pakketten maken",
-      "blokkeert": false
-    },
-    {
-      "vraag": "Pexels en Pixabay weigeren automatisch ophalen (403, bot-check) en de Pexels-API vraagt een sleutel (401). Mag Wikimedia Commons (PD, CC0, CC BY met naamsvermelding) de vrije beeldbron voor kanaal 2 zijn, of maak je een gratis Pexels-API-sleutel (lokale omgevingsvariabele, nooit in git)?",
-      "aanname": "Commons is goed",
-      "ondertussen": "YH-pakketten met Commons-beelden",
       "blokkeert": false
     },
     {
@@ -100,6 +100,12 @@
       "wat": "na de correctie van Eva (17:40): stappenlijst aangepast (stap 2 = beveiliging bestaande kanaal-accounts, stap 7 vervallen); overzetlijst bovenaan gemarkeerd als VERVALLEN, alleen naslag",
       "waar": "OneDrive\\Desktop\\02 YG-Social\\Gegevens\\01 Overzicht",
       "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-04T20:47:54Z",
+      "wat": "Andries in de sessie van Manon, wo 4 nov 2026 ±21:47: \"Eerst aanpassen\" (op \"Geef je pakket OK voor YS15–YS18, YH01, YH02 en YHK01?\"); daarna gekozen: pakketten \"YH01 en/of YH02\" en \"YHK01 kanaalbeeld\", soort \"Tekst of feiten\"; op de vraag \"Mag Commons erbij als beeldbron?\": geen voorkeur (geen besluit). Geen pakket OK gegeven.",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
     }
   ],
   "voorEva": [
@@ -116,10 +122,9 @@
       "pad": "OneDrive\\Desktop\\02 YG-Social\\Gegevens"
     },
     {
-      "id": "H-manon-4",
-      "aan": "andries",
-      "wat": "Ter keuring (pakket OK per code): YS15–YS18 (kanaal 1, ma 23 t/m do 26 nov 18:00), YH01–YH02 (kanaal 2, ma 16 en di 17 nov 19:00), YHK01 (kanaalbeeld kanaal 2), en de bio's (\"bio OK\").",
-      "pad": "pakketten/ en OneDrive\\Desktop\\02 YG-Social\\Gegevens\\01 Overzicht"
+      "id": "H-manon-5",
+      "aan": "eva",
+      "wat": "Andries koos \"Eerst aanpassen\" voor YH01, YH02 en YHK01 (tekst of feiten; welke regels nog niet gezegd). YS15–YS18 nog zonder OK. Let op: YH01 en YH02 gebruiken wél Commons-beelden (in het ERBIJ-blok van 18:05 staat \"Nog geen pakket gebruikt Commons\"); Commons-besluit nog open (Andries: geen voorkeur)."
     }
   ],
   "ontvangen": [
