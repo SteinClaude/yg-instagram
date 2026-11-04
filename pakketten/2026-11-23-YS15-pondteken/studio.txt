@@ -1,0 +1,47 @@
+STUDIO.TXT — YS15 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS15" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 35,8 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k); deze upload je via Chrome
+
+== Details ==
+Titel (27/100 tekens):
+Why is the pound sign an L?
+
+Beschrijving:
+The £ sign started as the letter L, for the Latin word libra. Old British money was written £ s d, and the s and d were Latin too.
+
+What the source says:
+- The £ sign developed over the years from the letter L, the initial of the Latin word libra, meaning a pound of money.
+- Old British money was counted in pounds, shillings and pence (£ s d); s and d stand for the Latin words solidus and denarius, originally Roman.
+- A pound was 20 shillings or 240 pence.
+- The system grew up in the Frankish kingdom and crossed into England quite early, perhaps in the seventh century.
+- With the silver pennies of William I the weight became much more consistent; the pound as a unit of 240 pence has its origin there.
+- Britain used this pre-decimal system up to 1971.
+
+Source:
+Royal Mint Museum, "Pounds, shillings and pence": https://www.royalmintmuseum.org.uk/journal/history/pounds-shillings-and-pence/
+
+#Shorts #history #money #symbols
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Tags:
+pound sign, £ symbol, why is the pound sign an L, libra, pounds shillings and pence, £sd, British money history, decimalisation 1971, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education).
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: maandag 23 november 2026, 18:00 (Amsterdam)
