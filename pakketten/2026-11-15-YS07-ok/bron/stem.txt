@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. You say it every day. And it started as a joke.
+2. 1839, Boston. Newspapers loved jokey abbreviations, like S.P., for Small Potatoes.
+3. On March 23, editor Charles Gordon Greene wrote O.K. in the Boston Morning Post.
+4. It stood for oll korrect: a deliberate misspelling of all correct.
+5. Linguist Allen Walker Read of Columbia University found it by reading old newspapers.
+6. In 1840, President Martin Van Buren, born in Kinderhook, New York, ran for re-election. Old Kinderhook became O.K.
+7. His supporters formed an O.K. Club in New York City. O.K. went on rally signs.
+8. Van Buren lost. The word stayed.
+9. A newspaper joke from 1839, still in your messages.
