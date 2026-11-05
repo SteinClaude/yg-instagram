@@ -1,6 +1,15 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** do 5 nov 2026, 13:45 — Eva
+**Bijgewerkt:** do 5 nov 2026, 19:37 — Eva
+
+## ▶ NU — do 5 nov 19:37 (Eva): besluit Andries C30 — keuren tekst-eerst, Commons mag (beperkt)
+
+Andries via chat met Eva, do 5 nov 2026 19:33, op het voorstel "Kantoor v3" met twaalf keuzes en Eva's advies: *"oke laten we dit doen voer alles uit"*. Wat daarvan jou raakt:
+
+1. **Keurmodel tekst-eerst.** "pakket OK <code>" dekt script, bronnen en titel. Eén **"stijl OK YS"** dekt stem (Kokoro), letters en beeldaanpak van de hele YS-reeks; daarna vraagt een stemversie van een al goedgekeurd pakket geen nieuw OK meer. Vraag Andries nu, in één vraag: *"Geef je stijl OK YS voor de stem en de letters zoals in YS04–YS08?"* Bij ja: YS04–YS07 blijven goedgekeurd (ook na de uitspraakfix) en YS09–YS14 met stem hebben alleen hun bestaande pakket OK nodig; YS15–YS18 wachten op hun eerste pakket OK. Eén keurlijst per week; geen losse vragen per versie.
+2. **Wikimedia Commons mag, beperkt:** publiek domein, CC0 en CC BY, met naam, licentie en link in de beschrijving en `bron/`. Daarmee kunnen YH01 en YH02 ter keuring (per code "pakket OK"), en mag je door met YH03–YH07. Zelfde model: één "stijl OK YH" voor de reeks.
+3. **Inplannen:** blijft wachten op "ja, plan … in" van Andries; de API-koppeling (eenmalige test of uploads privé blijven) komt als aparte opdracht.
+4. **Je stand-tijd:** schrijf de echte tijd met `+01:00`, niet `Z` (`TZ=Europe/Amsterdam date`).
 
 ## ▶ NU — do 5 nov 13:45 (Eva): vanavond 16:30–19:45 kanaal 1 volgens het draaiboek; kanaal 2 is van Finn
 
