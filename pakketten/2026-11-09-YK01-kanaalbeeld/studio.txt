@@ -1,5 +1,5 @@
-STUDIO.TXT — YK01 kanaalbeeld (YouTube Studio > Aanpassing > Branding)
-Status: pakket OK YK01 (Andries in de sessie van Manon, ma 2 nov 2026: "OK voor alle vijf", op de vraag "Geef je pakket OK voor YS04–YS07 en YK01?"). Klaar om te plaatsen; Andries zet het er zelf in.
+STUDIO.TXT — YK01 kanaalbeeld (YouTube Studio > Aanpassing > Profiel)
+Status: pakket OK YK01 (Andries in de sessie van Manon, ma 2 nov 2026: "OK voor alle vijf", op de vraag "Geef je pakket OK voor YS04–YS07 en YK01?"). Klaar om te plaatsen; Manon zet het in het venster van kanaal 1 (de enige kanaalinstelling die ze mag wijzigen; opdracht Eva 4 nov, draaiboek K5). Naam en handle blijven ongemoeid.
 
 Wat: profielfoto, banner en watermerk voor het YouTube-kanaal, in de stijl van de shorts (papier, inkt, signaalrood).
 Bewust zonder kanaalnaam of handle: die horen niet in deze openbare repo, en YouTube toont de naam al naast de
@@ -13,7 +13,7 @@ banner-zones.jpg  controlebeeld: blauw = wat elke telefoon toont, roze = wat een
 overzicht.jpg     alles naast elkaar
 
 == In YouTube Studio ==
-1. Studio > Aanpassing (Customization) > tabblad Branding.
+1. Studio > Aanpassing (Customization) > Profiel (vroeger het tabblad Branding).
 2. Afbeelding (Picture): Uploaden > profielfoto.png > Gereed. (Tip van YouTube: 98x98 of groter, PNG, max 4 MB.)
 3. Bannerafbeelding (Banner image): Uploaden > banner.png > Gereed. Controleer in het voorbeeld dat de tekst op
    "alle apparaten" volledig zichtbaar is.
