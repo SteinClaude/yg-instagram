@@ -44,7 +44,7 @@ module.exports = {
           + h.kin('Your PIN has four digits because of *one person\'s memory*.', { y: 290, g: 72, t: h.t, start: 1.05 }).svg;
       } },
     // 2 · 1967: de eerste geldautomaat, bij Barclays in Noord-Londen
-    { duur: 3.3, stem: "June 27, 1967. The first cash machine opens at a Barclays branch in north London.", in: 'zweep', bron: BRON, bronStart: 1.5, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
+    { duur: 3.3, stem: "June twenty-seventh, 1967. The first cash machine opens at a Barclays branch in north London.", in: 'zweep', bron: BRON, bronStart: 1.5, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
       teken: h => {
         const q = h.veer(h.t / 0.3);
         return `<text x="540" y="${(700 - (1 - q) * 300).toFixed(1)}" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="${(290 * (0.6 + 0.4 * q)).toFixed(0)}" fill="${h.K.signaal}" opacity="${h.klem(h.t / 0.1)}">1967</text>`

@@ -41,7 +41,7 @@ module.exports = {
         + knipsel(h, 430, 930, 540, 'S.P.', 'Small Potatoes', (h.t - 1.4) / 0.35)
         + knipsel(h, 150, 1100, 560, 'R.T.B.S.', 'Remains To Be Seen', (h.t - 1.8) / 0.35) },
     // 3 · 23 maart 1839, Boston Morning Post
-    { duur: 3.4, stem: "On March 23, editor Charles Gordon Greene wrote O.K. in the Boston Morning Post.", in: 'op', bron: MP, bronStart: 1.8, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
+    { duur: 3.4, stem: "On March twenty-third, editor Charles Gordon Greene wrote O.K. in the Boston Morning Post.", in: 'op', bron: MP, bronStart: 1.8, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
       teken: h => {
         const q = h.veer(h.t / 0.3);
         return `<text x="540" y="${(660 - (1 - q) * 300).toFixed(1)}" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="${(290 * (0.6 + 0.4 * q)).toFixed(0)}" fill="${h.K.signaal}" opacity="${h.klem(h.t / 0.1)}">1839</text>`

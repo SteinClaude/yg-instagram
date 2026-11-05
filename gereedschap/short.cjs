@@ -252,7 +252,7 @@ function voorbereidStem(script, map) {
   const { stem = 'am_fenrir', tempo = 1.1 } = script.stem, sporen = []; let t0 = 0, tekst = '';
   script.scenes.forEach((s, i) => {
     if (s.stem) {
-      const sleutel = require('crypto').createHash('sha1').update(`${stem}|${tempo}|${s.stem}`).digest('hex').slice(0, 16);
+      const sleutel = require('crypto').createHash('sha1').update(`${stem}|${tempo}|uitspraak2|${s.stem}`).digest('hex').slice(0, 16);
       const wav = path.join(cache, sleutel + '.wav');
       if (!fs.existsSync(wav)) execFileSync(KOKORO_PY, [path.join(__dirname, 'short', 'stem.py'), wav, stem, String(tempo), s.stem]);
       const pcm = execFileSync('ffmpeg', ['-v', 'error', '-i', wav, '-ac', '1', '-ar', String(GELUID.RATE), '-f', 'f32le', 'pipe:1'], { maxBuffer: 64 << 20 });

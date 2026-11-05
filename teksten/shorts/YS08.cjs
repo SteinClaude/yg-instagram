@@ -30,32 +30,33 @@ const sleutel = (h, x, y, neer) => `<g filter="url(#schKlein)"><rect x="${x - 17
 module.exports = {
   code: 'YS08',
   versie: 2,
+  stem: { stem: 'am_fenrir', tempo: 1.1 },   // besluit Andries do 5 nov 2026: Kokoro, stem "fenrir"
   map: '2026-11-16-YS08-sos',
   nummer: 'No. 08',
   onderwerp: 'THE SIGNAL "SOS"',
   scenes: [
     // 1 · HAAK: SOS slaat neer, met de belofte dat het niets betekent
-    { duur: 2.9, camera: { zoom: [1, 1.04], stoot: [0.3], schud: [0.3] }, geluid: [[0.28, 'klap'], [0.28, 'boem', 0.8]],
+    { duur: 2.9, stem: "S-O-S doesn't stand for anything.", camera: { zoom: [1, 1.04], stoot: [0.3], schud: [0.3] }, geluid: [[0.28, 'klap'], [0.28, 'boem', 0.8]],
       teken: h => {
         const p = h.klem(h.t / 0.3);
         return sos(h, { schaal: 2.4 - 1.4 * p * p, draai: (1 - p) * 15, op: h.klem(h.t / 0.08) })
           + h.kin('SOS doesn\'t stand for *anything*.', { y: 320, g: 112, t: h.t, start: 0.4 }).svg;
       } },
     // 2 · het is één morsepatroon: punten en strepen verschijnen met piepjes
-    { duur: 4.2, in: 'zweep', bron: ITU, bronStart: 2.6, camera: { zoom: [1, 1.05] },
+    { duur: 4.2, stem: "It's one unbroken Morse pattern. Not separate letters.", in: 'zweep', bron: ITU, bronStart: 2.6, camera: { zoom: [1, 1.05] },
       geluid: [0, 1, 2, 3, 4, 5, 6, 7, 8].map(i => [0.9 + i * 0.22, 'tik', 0.8]),
       teken: h => h.kin('It\'s one unbroken Morse pattern, not *separate letters*.', { y: 300, g: 90, t: h.t, start: 0.05 }).svg
         + morse(h, { p: (h.t - 0.9) / 0.22 + 1 })
         + `<text x="${MX}" y="1220" text-anchor="middle" font-family="IBM Plex Mono" font-size="32" fill="${h.K.grijs}" opacity="${h.klem((h.t - 3.0) / 0.3).toFixed(3)}">dot dot dot · dash dash dash · dot dot dot</text>` },
     // 3 · 1905: Duitse radioregels
-    { duur: 3.3, in: 'op', bron: ITU, bronStart: 1.8, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
+    { duur: 3.3, stem: "It first appeared in German radio regulations, in 1905.", in: 'op', bron: ITU, bronStart: 1.8, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
       teken: h => {
         const q = h.veer(h.t / 0.3);
         return `<text x="540" y="${(700 - (1 - q) * 300).toFixed(1)}" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="${(290 * (0.6 + 0.4 * q)).toFixed(0)}" fill="${h.K.signaal}" opacity="${h.klem(h.t / 0.1)}">1905</text>`
           + h.kin('It first appears in *German* radio regulations.', { y: 830, g: 84, t: h.t, start: 0.45 }).svg;
       } },
     // 4 · 1906: Berlijn, 29 landen tekenen
-    { duur: 3.8, in: 'flits', bron: ITU, bronStart: 2.2, camera: { zoom: [1, 1.05], stoot: [2.4] }, geluid: [[0.9, 'rol', 0.5], [2.4, 'ding', 0.6]],
+    { duur: 3.8, stem: "In 1906, at a radio conference in Berlin, twenty-nine countries signed. Ships in distress had to use this signal.", in: 'flits', bron: ITU, bronStart: 2.2, camera: { zoom: [1, 1.05], stoot: [2.4] }, geluid: [[0.9, 'rol', 0.5], [2.4, 'ding', 0.6]],
       teken: h => {
         let s = h.kin('*1906*: a radio conference in Berlin. *29 countries* sign. Ships in distress must use this signal.', { y: 300, g: 76, t: h.t, start: 0.05 }).svg;
         for (let i = 0; i < 29; i++) {
@@ -66,13 +67,13 @@ module.exports = {
         return s;
       } },
     // 5 · waarom dit patroon: simpel en onmiskenbaar
-    { duur: 3.4, in: 'zweep', bron: ITU, bronStart: 2.0, camera: { zoom: [1.06, 1.0] }, geluid: [[1.2, 'pop', 0.8], [2.0, 'pop', 0.8]],
+    { duur: 3.4, stem: "Why this one? The pattern is simple, and unmistakable.", in: 'zweep', bron: ITU, bronStart: 2.0, camera: { zoom: [1.06, 1.0] }, geluid: [[1.2, 'pop', 0.8], [2.0, 'pop', 0.8]],
       teken: h => h.kin('Why this one? The pattern is *simple* and *unmistakable*.', { y: 300, g: 92, t: h.t, start: 0.05 }).svg
         + morse(h, { y: 1000, schaal: 0.9 + 0.08 * Math.sin(h.t * 6), op: 1 })
         + (h.t > 1.2 ? `<g opacity="${h.klem((h.t - 1.2) / 0.2)}"><path d="M 210 1150 l 40 40 l 80 -90" fill="none" stroke="${h.K.groen}" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/></g>` : '')
         + (h.t > 2.0 ? `<g opacity="${h.klem((h.t - 2.0) / 0.2)}"><path d="M 750 1150 l 40 40 l 80 -90" fill="none" stroke="${h.K.groen}" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/></g>` : '') },
     // 6 · daarvoor: CQD van Marconi
-    { duur: 3.6, in: 'op', bron: ITU, bronStart: 2.2, camera: { zoom: [1, 1.05] }, geluid: [[1.0, 'pop', 0.7, -0.4], [1.3, 'pop', 0.7, 0], [1.6, 'pop', 0.7, 0.4]],
+    { duur: 3.6, stem: "Before that, Marconi operators sent C-Q-D. C-Q for all stations, D for distress.", in: 'op', bron: ITU, bronStart: 2.2, camera: { zoom: [1, 1.05] }, geluid: [[1.0, 'pop', 0.7, -0.4], [1.3, 'pop', 0.7, 0], [1.6, 'pop', 0.7, 0.4]],
       teken: h => {
         let s = h.kin('Before that, Marconi operators sent *CQD*: "CQ" for all stations, "D" for distress.', { y: 300, g: 78, t: h.t, start: 0.05 }).svg;
         ['C', 'Q', 'D'].forEach((l, i) => { const p = h.veer((h.t - 1.0 - i * 0.3) / 0.3); if (p <= 0) return; const x = 300 + i * 240;
@@ -80,13 +81,13 @@ module.exports = {
         return s;
       } },
     // 7 · 15 april 1912: de Titanic, CQD en het nieuwe SOS door elkaar
-    { duur: 4.0, in: 'masker', nacht: true, bron: ITU, bronStart: 2.6, camera: { zoom: [1.05, 1.0] },
+    { duur: 4.0, stem: "April fifteenth, 1912. The Titanic. At assistant operator Harold Bride's suggestion, C-Q-D was mixed with the new S-O-S.", in: 'masker', nacht: true, bron: ITU, bronStart: 2.6, camera: { zoom: [1.05, 1.0] },
       geluid: [[1.4, 'tik', 0.7], [1.6, 'tik', 0.7], [1.8, 'tik', 0.7], [2.3, 'tik', 0.7], [2.5, 'tik', 0.7], [2.7, 'tik', 0.7]],
       teken: h => h.kin('*15 April 1912*, the Titanic. At assistant operator Harold Bride\'s suggestion, CQD is mixed with the new *SOS*.', { y: 300, g: 74, t: h.t, start: 0.05, kleur: '#F3F0E8', accent: h.K.geel }).svg
         + sleutel(h, 540, 1050, Math.floor(h.t * 5) % 2 === 0 && h.t > 1.3)
         + `<text x="540" y="1240" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="64" fill="${h.K.geel}" opacity="${h.klem((h.t - 1.4) / 0.3).toFixed(3)}">CQD ... SOS ... CQD</text>` },
     // 8 · reading it as S-O-S is just the ezelsbruggetje; officieel tot 1998
-    { duur: 3.8, in: 'zweep', bron: ITU, bronStart: 2.4, camera: { zoom: [1, 1.06], stoot: [2.2] }, geluid: [[1.0, 'rol', 0.6], [2.2, 'klap', 0.7]],
+    { duur: 3.8, stem: "Reading it as the letters S-O-S is just a way to remember it. It stayed official until January first, 1998.", in: 'zweep', bron: ITU, bronStart: 2.4, camera: { zoom: [1, 1.06], stoot: [2.2] }, geluid: [[1.0, 'rol', 0.6], [2.2, 'klap', 0.7]],
       teken: h => {
         const k = h.zacht((h.t - 1.0) / 0.8);
         return h.kin('Reading it as the letters S-O-S is just a way to *remember* it.', { y: 300, g: 86, t: h.t, start: 0.05 }).svg
@@ -94,9 +95,9 @@ module.exports = {
           + h.kin('Official until *1 January 1998*.', { y: 1180, g: 60, gewicht: 'regular', t: h.t, start: 2.1 }).svg;
       } },
     // 9 · slot: weer het patroon; tekst vliegt weg, video loopt terug naar het begin
-    { duur: 3.8, in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[2.9, 'whoosh', 0.5]],
+    { duur: 3.8, stem: "Not three letters. One pattern. Simple, and unmistakable.", in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[-0.9, 'whoosh', 0.5]],
       teken: h => morse(h, { y: MY })
-        + h.kin('Not three letters. One pattern: *simple, unmistakable*.', { y: 300, g: 92, t: h.t, start: 0.1, weg: 3.0 }).svg
-        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - 3.0) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
+        + h.kin('Not three letters. One pattern: *simple, unmistakable*.', { y: 300, g: 92, t: h.t, start: 0.1, weg: h.duur - 0.8 }).svg
+        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - (h.duur - 0.8)) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
   ],
 };
