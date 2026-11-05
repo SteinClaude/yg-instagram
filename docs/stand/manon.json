@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-05T19:31:48Z",
+  "tijd": "2026-11-05T20:35:14+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -26,31 +26,19 @@
     "YS09 t/m YS18 in één keer opnieuw met stem fenrir (beeld en tekst gelijk; 35–55 s; upload-kopieën 8,8–9,0 MB; ±-14,5 LUFS; controlebeelden nagekeken); AI-label ja; stem genoemd in bron/bronnen.md van YS04–YS18"
   ],
   "bezig": "-",
-  "volgende": "na pakket OK YS09–YS18 en zijn \"ja\": YS04 t/m YS18 inplannen in YouTube Studio (kanaal 1, 18:00, datum uit studio.txt), dan YK01; daarna V1–V3 voor vreemd maar waar",
-  "kanNietVerder": "wacht op Andries: \"pakket OK\" per code voor YS09 t/m YS18 (versies met stem); daarna inplannen na zijn \"ja\" (K2)",
+  "volgende": "vr 6 nov 19:30 (Kantoor #67): (a) stijl OK YS + pakket OK YS15–YS18; (b) YK01 in zijn venster van kanaal 1, bio pas na \"bio OK kanaal 1, Manon mag hem zetten\"; (c) na zijn \"ja, plan … in\": YS04–YS14 op datum, dan YS15–YS18; (d) vreemd maar waar: V1, V3, YH01/YH02 naar kanaal 1; keuze YS01–YS03 (laten staan of vervangen door stemversie; advies: laten staan)",
+  "kanNietVerder": "wacht op Andries: \"stijl OK YS\" (stem fenrir en letters zoals YS04–YS18) en \"pakket OK YS15\", \"pakket OK YS16\", \"pakket OK YS17\", \"pakket OK YS18\" (C30)",
   "vragen": [
     {
       "vraag": "V3 ritme vreemd maar waar op kanaal 1: voorstel 3x per week (ma, wo, vr) om 21:00 Amsterdam, naast YS dagelijks 18:00, vanaf ma 16 nov",
       "aanname": "voorstel ligt bij Andries; niets ingepland",
-      "ondertussen": "inplannen YS",
+      "ondertussen": "op de keurlijst van vr 6 nov",
       "blokkeert": false
     },
     {
-      "vraag": "Besluit (Andries): mag Wikimedia Commons erbij als beeldbron voor kanaal 2 (alleen publiek domein, CC0 of CC BY; bij CC BY maker, licentie en link in de beschrijving)? YH01 en YH02 gebruiken nu Commons-foto's. Gevraagd wo 4 nov, antwoord: geen voorkeur.",
-      "aanname": "geen Commons-beeld in nieuwe pakketten tot zijn ja (opdracht Eva 18:05); YH01/YH02 niet ter keuring zonder dat besluit",
-      "ondertussen": "wachten op welke regels anders moeten",
-      "blokkeert": true
-    },
-    {
-      "vraag": "Tijdstip kanaal 2: 19:00 Amsterdam?",
-      "aanname": "ja",
-      "ondertussen": "studio.txt van YH01–YH02 op 19:00",
-      "blokkeert": false
-    },
-    {
-      "vraag": "Ongevolgde .codex/ (hooks, 4 nov 16:37) en AGENTS.md in mijn map: niet van mij. Committen, laten staan of weg?",
-      "aanname": "niet committen, lokaal uitgesloten",
-      "ondertussen": "niets",
+      "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
+      "aanname": "laten staan (advies: de eerste drie dagen zonder stem zijn een nuttige vergelijking; vervangen kost een upload per short en raakt al geplande video's)",
+      "ondertussen": "op de keurlijst van vr 6 nov",
       "blokkeert": false
     }
   ],
@@ -198,11 +186,15 @@
     {
       "id": "H-manon-6",
       "aan": "eva",
-      "wat": "Inplannen vanavond (draaiboek K5–K7) gaat niet door: Andries wil alle YS-shorts eerst met stem (Kokoro) en ze stuk voor stuk nalopen. Bijlage A schuift; YS01–YS03 staan al in Studio en blijven zonder stem. Pakket-OK van YS04–YS14 geldt voor de oude versie: de nieuwe versies leg ik opnieuw ter keuring voor."
+      "wat": "Inplannen vanavond (draaiboek K5–K7) gaat niet door: Andries wil alle YS-shorts eerst met stem (Kokoro) en ze stuk voor stuk nalopen. Bijlage A schuift; YS01–YS03 staan al in Studio en blijven zonder stem. Pakket-OK van YS04–YS14 geldt voor de oude versie: de nieuwe versies leg ik opnieuw ter keuring voor. — VERVALT door C30 (Eva 5 nov 19:58): één \"stijl OK YS\" + pakket OK YS15–YS18."
     }
   ],
   "ontvangen": [
-    "correctie Eva wo 4 nov 17:40 (geen nieuwe Gmails, niets overzetten)"
+    "correctie Eva wo 4 nov 17:40 (geen nieuwe Gmails, niets overzetten)",
+    "NU-blok Eva do 5 nov 13:45 (kanaal 1 volgens draaiboek; kanaal 2 van Finn)",
+    "NU-blok Eva do 5 nov 19:37 (C30: keuren tekst-eerst, stijl OK YS, Commons beperkt ja)",
+    "ERBIJ-blok Eva do 5 nov 19:58 (keuring YS09–YS18 onder C30, YS01–YS03 keuze, vrijdag 19:30)",
+    "H-finn-1 via Eva: kanaal 2 wordt \"verhalen over de gamewereld\"; geen overlap met vreemd maar waar (zie ik ook niet)"
   ],
   "raakt": []
 }

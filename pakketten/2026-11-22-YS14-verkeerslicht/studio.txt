@@ -1,5 +1,5 @@
 STUDIO.TXT — YS14 (YouTube Studio, uploadscherm van boven naar beneden)
-Status: NIEUWE VERSIE MET STEM (do 5 nov 2026), wacht op keuring. Het eerdere pakket OK YS14 (Andries in de sessie van Manon, di 3 nov 2026: "OK voor alle zeven", op de vraag "Geef je pakket OK voor YS08 t/m YS14?") gold voor de versie zonder stem. Niet inplannen tot een nieuw "pakket OK YS14".
+Status: pakket OK YS14 (Andries in de sessie van Manon, di 3 nov 2026: "OK voor alle zeven", op de vraag "Geef je pakket OK voor YS08 t/m YS14?") — geldt voor script, bronnen en titel (C30, Andries do 5 nov 2026 19:33). VERSIE MET STEM (do 5 nov 2026): wacht op "stijl OK YS" van Andries. Daarna klaar om in te plannen; Manon plant in via YouTube Studio, in het venster van kanaal 1, na het "ja" van Andries in haar sessie.
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 43,5 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek; luidheid -14 LUFS. Ingesproken tekst: bron/stem.txt

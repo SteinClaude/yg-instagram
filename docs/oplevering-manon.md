@@ -1,4 +1,4 @@
-KAN NIET VERDER: YS09 t/m YS18 met stem klaar (in één keer, besluit Andries 19:33) · nodig: Andries geeft "pakket OK" per code voor YS09 t/m YS18
+KAN NIET VERDER: YS09 t/m YS18 met stem klaar (de020e7) · nodig: Andries zegt "stijl OK YS" en "pakket OK YS15", "pakket OK YS16", "pakket OK YS17", "pakket OK YS18" (C30)
 
 KLAAR: pakket OK YS08 (versie met stem) en OK YS04–YS07 blijft na de uitspraakfix · 5f76637
 

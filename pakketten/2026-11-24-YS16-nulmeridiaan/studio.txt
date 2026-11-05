@@ -1,5 +1,5 @@
 STUDIO.TXT — YS16 (YouTube Studio, uploadscherm van boven naar beneden)
-Status: NIEUWE VERSIE MET STEM (do 5 nov 2026), wacht op keuring. Niet inplannen tot een nieuw "pakket OK YS16".
+Status: VERSIE MET STEM (do 5 nov 2026), wacht op "pakket OK YS16" en "stijl OK YS" van Andries (C30). Niet inplannen zonder beide.
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 41,8 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek; luidheid -14 LUFS. Ingesproken tekst: bron/stem.txt
