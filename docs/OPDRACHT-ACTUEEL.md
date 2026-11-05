@@ -1,6 +1,38 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** wo 4 nov 2026, 18:05 — Eva
+**Bijgewerkt:** do 5 nov 2026, 10:15 — Eva
+
+## ▶ NU — do 5 nov 10:15 (Eva): kanaal 2 wordt GTA 6; vreemd maar waar gaat naar kanaal 1
+
+Dit blok gaat voor. Waar het blok "NU — wo 4 nov 17:50" iets anders zegt over kanaal 2, YH-shorts of YHK01, geldt dit blok.
+
+**Andries via chat met Eva, do 5 nov 2026** (kanaalnamen weggelaten, openbare repo):
+- 09:58: *"Manon heeft nu voor 1 kanaal content bedacht, voor het andere kanaal wil ik gta 6 videos uploaden"*
+- 10:07, vragenlijst van Eva:
+  - kanaal: *"Kanaal 2 · [weggelaten] (Aanbevolen)"*;
+  - soort: *"Ik wil nieuws en gameplay, het nieuws kunnen we doen met rockstar beelden die online staan als achtergrond video met de kennis erover heen"*;
+  - console: *"Nog geen console"*;
+  - het werk voor vreemd maar waar: *"We doen [weggelaten] toch voor gta 6 en dat andere acount voor de content die gemaakt is"*.
+- 10:09, vervolgvraag "waar gaan YH01, YH02 en het plan van 30 onderwerpen heen?": *"Naar kanaal 1 · [weggelaten]"*
+- 10:02: *"De videos die gemaakt zijn gaan bij welk acount, en welk kunnen gebruiken voor gta clips"*. Antwoord van Eva: alles wat al gemaakt is gaat naar kanaal 1; GTA 6 gaat naar kanaal 2.
+
+Je `CLAUDE.md` is hierop bijgewerkt (kanaal 2 = GTA 6, met de grenzen voor Rockstar-beeld; vreemd maar waar = tweede reeks op kanaal 1). Wat je nu doet:
+
+1. **Kanaal 1 krijgt twee reeksen:** YS ("waarom gewone dingen zijn zoals ze zijn") zoals gepland, en daarnaast YH (vreemd maar waar).
+   - Stel Andries een ritme voor YH naast de YS-shorts voor (C27, in je sessie). De YS-tijd van 18:00 blijft.
+   - YH01 en YH02 wachten nog op de zinnen die Andries anders wil (zijn keuze van wo 4 nov: "Eerst aanpassen", tekst of feiten).
+   - Het Commons-besluit voor die twee staat nog open; "geen voorkeur" is geen ja.
+   - Zet in hun `studio.txt` kanaal 1 en een nieuwe datum en tijd zodra het ritme vaststaat.
+2. **Kanaal 2 wordt GTA 6**, in deze volgorde:
+   - (a) `docs/gta6-plan.md`: 2–3 reeksen, 20 onderwerpen met bron (Rockstar zelf of een betrouwbare nieuwssite) en een ritme voor vóór en na 19 nov;
+   - (b) kanaalbeeld GTK01, zonder logo of beeldmerk van Rockstar of GTA;
+   - (c) de eerste drie shorts, GT01–GT03, als pakket ter keuring.
+   
+   Elk pakket wacht op "pakket OK <code>". De grenzen voor Rockstar-beeld staan in je `CLAUDE.md`; lees ze vóór je eerste GT-short.
+3. **YHK01 vervalt** en blijft in `pakketten/` als archief. `docs/yg-social-plan-2.md` blijft en geldt nu voor kanaal 1.
+4. **Gameplay wacht.** Andries heeft nog geen console; een aankoop is zijn besluit, apart. Bereid niets voor dat geld kost.
+5. **Advies van Eva over de volgorde:** tot 19 nov eerst GTA 6, want de voorraad van kanaal 1 loopt al tot en met 26 nov. Leg dat Andries voor in je sessie; hij beslist.
+6. **Ongewijzigd:** het inplannen van YS04–YS14 en YK01 wacht op zijn "ja" in je sessie, met Chrome op kanaal 1. YS15–YS18 wachten op hun pakket OK.
 
 ## ▶ ERBIJ — wo 4 nov 18:05 (Eva): besluiten neem je rechtstreeks met Andries (C27)
 
