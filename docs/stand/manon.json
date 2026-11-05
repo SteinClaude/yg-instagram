@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-05T15:24:14Z",
+  "tijd": "2026-11-05T15:25:21Z",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-05T15:24:14Z"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -15,12 +15,19 @@
     "plan kanaal 2 (docs/yg-social-plan-2.md) · c048666",
     "YHK01 kanaalbeeld kanaal 2 · bc9b813",
     "YH01 Emoe-oorlog · 0af8f19; YH02 kaneel · 45650a9 (kanaal 2, 19:00)",
-    "YS15 pondteken · 4371f9f; YS16 nulmeridiaan · 0f569f2; YS17 Teflon · 9507480; YS18 streepjescode · ac0b1ff (week 3 kanaal 1)"
+    "YS15 pondteken · 4371f9f; YS16 nulmeridiaan · 0f569f2; YS17 Teflon · 9507480; YS18 streepjescode · ac0b1ff (week 3 kanaal 1)",
+    "draaiboek S2: bestanden YS04–YS18 en YK01 gecontroleerd (1080x1920, uploadversies 7,6–9,0 MB, titels <100) · studio.txt bijgewerkt 5ce92a4"
   ],
-  "bezig": "draaiboek do 5 nov (docs/sessie-2026-11-05-youtube.md), stap S2: bestanden YS04–YS18 en YK01 controleren; wacht op het venster van kanaal 1 (K4)",
+  "bezig": "wacht op Andries: K1 (pakket OK YS15–YS18), K2 (ja inplannen), K3 (bio OK), K4 (venster kanaal 1 via /chrome)",
   "volgende": "K1–K3 besluiten citeren; K5 YK01; K7 inplannen YS04 e.v. (één per upload, op datum); V1–V3 (YH-zinnen, Commons, ritme); E1 afsluiten",
   "kanNietVerder": null,
   "vragen": [
+    {
+      "vraag": "V3 ritme vreemd maar waar op kanaal 1: voorstel 3x per week (ma, wo, vr) om 21:00 Amsterdam, naast YS dagelijks 18:00, vanaf ma 16 nov",
+      "aanname": "voorstel ligt bij Andries; niets ingepland",
+      "ondertussen": "inplannen YS",
+      "blokkeert": false
+    },
     {
       "vraag": "Besluit (Andries): mag Wikimedia Commons erbij als beeldbron voor kanaal 2 (alleen publiek domein, CC0 of CC BY; bij CC BY maker, licentie en link in de beschrijving)? YH01 en YH02 gebruiken nu Commons-foto's. Gevraagd wo 4 nov, antwoord: geen voorkeur.",
       "aanname": "geen Commons-beeld in nieuwe pakketten tot zijn ja (opdracht Eva 18:05); YH01/YH02 niet ter keuring zonder dat besluit",
