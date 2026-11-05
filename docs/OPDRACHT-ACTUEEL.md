@@ -1,6 +1,19 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** do 5 nov 2026, 19:37 — Eva
+**Bijgewerkt:** do 5 nov 2026, 19:58 — Eva
+
+## ▶ ERBIJ — do 5 nov 19:58 (Eva, avondcontrole): zo vraag je de keuring van YS09–YS18 onder C30, en wat vrijdag 19:30 moet
+
+Gelezen: je stand van 19:35 en commits t/m `c32cbd5`. Je commit heeft het NU-blok van 19:37 (C30, `3016ad5`) nog niet als voorouder: doe eerst `git pull` en lees dat blok. Dan geldt voor je volgende stap:
+
+1. **Niet opnieuw "pakket OK" per code voor YS09–YS14.** Die hebben al pakket OK (3 nov, `6495672`) op script, bronnen en titel; je verandert alleen de stijl (stem erbij). Onder C30 vraag je Andries in één keer, letterlijk: **"stijl OK YS"** (dekt stem fenrir, letters en beeldaanpak van de hele YS-reeks, dus YS04–YS18 en alles wat volgt) én **"pakket OK YS15"**, **"pakket OK YS16"**, **"pakket OK YS17"**, **"pakket OK YS18"** (die vier hadden nog nooit pakket OK; de avondronde van 4 nov vond ze in orde). Zijn antwoord van 19:33 ("elke keer keuren hoeft niet als je dit maar bij alles toevoegd") zegt hetzelfde, maar is niet het letterlijke woord: vraag het één keer letterlijk en citeer het. Jouw H-manon-6 ("de nieuwe versies leg ik opnieuw ter keuring voor") vervalt daarmee.
+2. **YS01–YS03 staan in Studio zonder stem.** Dat is een besluit voor Andries, niet voor jou: zet het op je keurlijst van vrijdag als keuze *laten staan* of *vervangen door de versie met stem* (vervangen = in Studio de geplande video verwijderen en opnieuw uploaden, in zijn venster, na zijn "ja"). Jouw advies erbij.
+3. **Vrijdag 6 nov 19:30 (agendablok, Kantoor #67), in deze volgorde:** (a) in je sessie: stijl OK YS + pakket OK YS15–YS18 (5 min); (b) in zijn venster van kanaal 1: eerst YK01 (K5, 10 min), bio alleen na "bio OK kanaal 1, Manon mag hem zetten" (K3/K6); (c) inplannen YS04–YS14 met stem op volgorde van datum, daarna YS15–YS18 (K7; ±12 min per short, dus reken op 7 à 8 shorts; de rest in het volgende blok, meld welke codes open blijven); (d) vreemd maar waar: V1 (welke zinnen van YH01/YH02 anders), V3 (ritme) en de ombouw van YH01/YH02 naar kanaal 1 — V2 (Commons) is beantwoord door C30: ja, beperkt. Niets inplannen vóór zijn "ja, plan … in" in je sessie.
+4. **Van Finn via Eva (H-finn-1):** kanaal 2 wordt "verhalen over de gamewereld" (lange video's + shorts). Eva ziet geen overlap met vreemd maar waar (YH = vreemde dingen uit het dagelijks leven en de geschiedenis, geen games). Zet dit in `ontvangen`; zie jij wél overlap, dan via `voorEva`.
+5. **Je stand opschonen:** de vragen "Commons" (beantwoord: C30), "tijdstip kanaal 2" (vervalt: kanaal 2 is van Finn) en ".codex/ en AGENTS.md" (4 nov: niet committen) kunnen eruit; alleen V3 (ritme vreemd maar waar) blijft open, voor de keurlijst van vrijdag. `tijd` nog steeds in `Z`: schrijf `+01:00`. Zet de NU-blokken van 5 nov (13:45 en 19:37) en dit blok in `ontvangen`.
+
+Vanavond is niets ingepland en dat klopt: Andries koos om 17:14 eerst de stem bij alle YS-shorts te zetten; bijlage A van het draaiboek schuift naar vrijdag. Goed gedaan vanavond: elk OK letterlijk met tijd, de uitspraakfix gemeld vóór je verder ging.
+
 
 ## ▶ NU — do 5 nov 19:37 (Eva): besluit Andries C30 — keuren tekst-eerst, Commons mag (beperkt)
 
