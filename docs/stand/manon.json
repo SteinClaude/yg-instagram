@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-05T15:25:21Z",
+  "tijd": "2026-11-05T15:29:55Z",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-05T15:24:14Z"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -18,8 +18,8 @@
     "YS15 pondteken · 4371f9f; YS16 nulmeridiaan · 0f569f2; YS17 Teflon · 9507480; YS18 streepjescode · ac0b1ff (week 3 kanaal 1)",
     "draaiboek S2: bestanden YS04–YS18 en YK01 gecontroleerd (1080x1920, uploadversies 7,6–9,0 MB, titels <100) · studio.txt bijgewerkt 5ce92a4"
   ],
-  "bezig": "wacht op Andries: K1 (pakket OK YS15–YS18), K2 (ja inplannen), K3 (bio OK), K4 (venster kanaal 1 via /chrome)",
-  "volgende": "K1–K3 besluiten citeren; K5 YK01; K7 inplannen YS04 e.v. (één per upload, op datum); V1–V3 (YH-zinnen, Commons, ritme); E1 afsluiten",
+  "bezig": "stem (Kokoro) inbouwen in short.cjs; YS04 als proef, daarna YS05–YS18 stuk voor stuk met Andries nalopen",
+  "volgende": "na akkoord op de nieuwe YS04: YS05–YS18 een voor een met stem, elk opnieuw ter keuring; pas daarna inplannen (K2) en YK01",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -33,12 +33,6 @@
       "aanname": "geen Commons-beeld in nieuwe pakketten tot zijn ja (opdracht Eva 18:05); YH01/YH02 niet ter keuring zonder dat besluit",
       "ondertussen": "wachten op welke regels anders moeten",
       "blokkeert": true
-    },
-    {
-      "vraag": "Mag ik YS04–YS14 inplannen in Studio, in jouw Chrome (vr 6 nov 19:30)? Ik doe het pas na jouw letterlijke \"ja\" in mijn sessie: video-upload.mp4 is publiceren.",
-      "aanname": "ja, zodra je Chrome openzet en het in mijn sessie zegt",
-      "ondertussen": "pakketten maken",
-      "blokkeert": false
     },
     {
       "vraag": "Tijdstip kanaal 2: 19:00 Amsterdam?",
@@ -119,6 +113,18 @@
       "wat": "Andries in de sessie van Manon, do 5 nov 2026: \"he manon je heb nu als het goed wat nieuwe dingen binnen wat ik vandaag besproken heb,\" (start draaiboek, S1)",
       "waar": "pc-sessie van Manon",
       "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-05T15:29:55Z",
+      "wat": "Andries in de sessie van Manon, do 5 nov 2026 ±16:29: \"ik wil de gemaakte videos nog wel aanpassen voordat we gaan inplannen\" (tijdens het openen van Studio; ik ben gestopt, niets ingepland of gewijzigd). Op \"Welke video's wil je aanpassen?\": \"Alle YS-shorts\"; op \"Wat wil je anders?\": \"ik zat te denken aan wel een stem en ik wil ze stuk voor stuk na lopen.\"; op \"Welke stem wil je voor de YS-shorts?\": \"Kokoro (Aanbevolen)\" (open-source AI-stem, Apache-2.0, draait op de pc, AI-label in Studio).",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-05T15:29:55Z",
+      "wat": "Studio geopend in de Chrome van Andries (Claude in Chrome, eigen tabblad) om het actieve kanaal te controleren; pagina laadde nog niet; tabblad gesloten na zijn bericht. Niets gewijzigd.",
+      "waar": "Chrome van Andries",
+      "wie": "manon"
     }
   ],
   "voorEva": [
@@ -133,12 +139,15 @@
       "aan": "eva",
       "wat": "Klaar (afvinken door Andries of Eva): map Gegevens, noodblad, sjabloon maandoverzicht.",
       "pad": "OneDrive\\Desktop\\02 YG-Social\\Gegevens"
+    },
+    {
+      "id": "H-manon-6",
+      "aan": "eva",
+      "wat": "Inplannen vanavond (draaiboek K5–K7) gaat niet door: Andries wil alle YS-shorts eerst met stem (Kokoro) en ze stuk voor stuk nalopen. Bijlage A schuift; YS01–YS03 staan al in Studio en blijven zonder stem. Pakket-OK van YS04–YS14 geldt voor de oude versie: de nieuwe versies leg ik opnieuw ter keuring voor."
     }
   ],
   "ontvangen": [
     "correctie Eva wo 4 nov 17:40 (geen nieuwe Gmails, niets overzetten)"
   ],
-  "raakt": [
-    "youtube-studio-kanaal-1"
-  ]
+  "raakt": []
 }
