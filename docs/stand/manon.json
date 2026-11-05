@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-05T15:29:55Z",
+  "tijd": "2026-11-05T16:14:13Z",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-05T15:24:14Z"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -16,11 +16,12 @@
     "YHK01 kanaalbeeld kanaal 2 · bc9b813",
     "YH01 Emoe-oorlog · 0af8f19; YH02 kaneel · 45650a9 (kanaal 2, 19:00)",
     "YS15 pondteken · 4371f9f; YS16 nulmeridiaan · 0f569f2; YS17 Teflon · 9507480; YS18 streepjescode · ac0b1ff (week 3 kanaal 1)",
-    "draaiboek S2: bestanden YS04–YS18 en YK01 gecontroleerd (1080x1920, uploadversies 7,6–9,0 MB, titels <100) · studio.txt bijgewerkt 5ce92a4"
+    "draaiboek S2: bestanden YS04–YS18 en YK01 gecontroleerd (1080x1920, uploadversies 7,6–9,0 MB, titels <100) · studio.txt bijgewerkt 5ce92a4",
+    "stem ingebouwd (short.cjs, stem.py, upload.cjs) en YS04 opnieuw met stem fenrir, 36,4 s, AI-label ja · 7298def"
   ],
-  "bezig": "stem (Kokoro) inbouwen in short.cjs; YS04 als proef, daarna YS05–YS18 stuk voor stuk met Andries nalopen",
-  "volgende": "na akkoord op de nieuwe YS04: YS05–YS18 een voor een met stem, elk opnieuw ter keuring; pas daarna inplannen (K2) en YK01",
-  "kanNietVerder": null,
+  "bezig": "wacht op Andries: nalopen nieuwe YS04 (met stem)",
+  "volgende": "na zijn oordeel over YS04: aanpassen of YS05 met stem maken, en zo verder stuk voor stuk t/m YS18; elke nieuwe versie vraagt een nieuw \"pakket OK <code>\"",
+  "kanNietVerder": "wacht op Andries: nalopen van de nieuwe YS04 met stem (goed, of wat moet anders)",
   "vragen": [
     {
       "vraag": "V3 ritme vreemd maar waar op kanaal 1: voorstel 3x per week (ma, wo, vr) om 21:00 Amsterdam, naast YS dagelijks 18:00, vanaf ma 16 nov",
@@ -124,6 +125,18 @@
       "tijd": "2026-11-05T15:29:55Z",
       "wat": "Studio geopend in de Chrome van Andries (Claude in Chrome, eigen tabblad) om het actieve kanaal te controleren; pagina laadde nog niet; tabblad gesloten na zijn bericht. Niets gewijzigd.",
       "waar": "Chrome van Andries",
+      "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-05T16:14:13Z",
+      "wat": "Andries in de sessie van Manon, do 5 nov 2026 (±17:14): op \"Welke stem wordt het voor alle YS-shorts?\" (vijf proefjes Kokoro): \"fenrir\".",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-05T16:14:13Z",
+      "wat": "Kokoro geïnstalleerd buiten de repo: C:Usersgijsmyg-gereedschapkokoro-venv (pip kokoro-onnx, soundfile) en kokoro-model (kokoro-v1.0.onnx, voices-v1.0.bin van de GitHub-releases van thewh1teagle/kokoro-onnx); stemcache in %TEMP%yg-stem.",
+      "waar": "pc van Andries",
       "wie": "manon"
     }
   ],
