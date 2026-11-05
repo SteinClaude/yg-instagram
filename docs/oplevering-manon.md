@@ -1,3 +1,5 @@
+KAN NIET VERDER: na de OK van YS04–YS07 de uitspraak van jaartallen hersteld (fc59dc6, opnieuw gerenderd); YS08 met stem klaar · nodig: Andries bevestigt dat de OK voor YS04–YS07 blijft gelden, en keurt YS08
+
 KLAAR: pakket OK YS07 (versie met stem) · 2e281ca
 
 KLAAR: pakket OK YS06 (versie met stem) · f269786

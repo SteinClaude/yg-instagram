@@ -1,7 +1,7 @@
 Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
 Ingesproken tekst per scène:
 1. Your PIN has four digits because of one person's memory.
-2. June 27, 1967. The first cash machine opens at a Barclays branch in north London.
+2. June twenty-seventh, 1967. The first cash machine opens at a Barclays branch in north London.
 3. The idea came from a chocolate bar dispenser. Just replace the chocolate with cash.
 4. There were no plastic cards yet. Instead, special cheques, coded with a mildly radioactive material.
 5. Inventor John Shepherd-Barron planned a six-digit PIN.

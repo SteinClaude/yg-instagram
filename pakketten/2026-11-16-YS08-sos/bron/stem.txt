@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. S-O-S doesn't stand for anything.
+2. It's one unbroken Morse pattern. Not separate letters.
+3. It first appeared in German radio regulations, in 1905.
+4. In 1906, at a radio conference in Berlin, twenty-nine countries signed. Ships in distress had to use this signal.
+5. Why this one? The pattern is simple, and unmistakable.
+6. Before that, Marconi operators sent C-Q-D. C-Q for all stations, D for distress.
+7. April fifteenth, 1912. The Titanic. At assistant operator Harold Bride's suggestion, C-Q-D was mixed with the new S-O-S.
+8. Reading it as the letters S-O-S is just a way to remember it. It stayed official until January first, 1998.
+9. Not three letters. One pattern. Simple, and unmistakable.

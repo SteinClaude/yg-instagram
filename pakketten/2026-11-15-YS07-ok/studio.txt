@@ -1,9 +1,9 @@
 STUDIO.TXT — YS07 (YouTube Studio, uploadscherm van boven naar beneden)
-Status: pakket OK YS07 — versie met stem (Andries in de sessie van Manon, do 5 nov 2026 ±17:54: "pakket OK YS07" (nieuwe versie met stem, 2e281ca; op de vraag "Is YS07 met stem goed zo?")). Klaar om in te plannen; Manon plant in via YouTube Studio, in het venster van kanaal 1, na het "ja" van Andries in haar sessie.
+Status: pakket OK YS07 — versie met stem (Andries in de sessie van Manon, do 5 nov 2026 ±17:54: "pakket OK YS07" (nieuwe versie met stem, 2e281ca; op de vraag "Is YS07 met stem goed zo?")). Daarna (do 5 nov) alleen de uitspraak van jaartallen en datums hersteld ("nineteen seventy-one" in plaats van "nineteen hundred seventy-one"); beeld en tekst ongewijzigd. Niet inplannen voordat Andries bevestigt dat zijn OK voor deze versie blijft gelden.
 
 == Bestand ==
-video.mp4   1080x1920 (9:16), 30 fps, H.264, 49,9 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek; luidheid -14 LUFS. Ingesproken tekst: bron/stem.txt
-video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (8,9 MB; H.264 twee passen, AAC 96k; gereedschap/short/upload.cjs) voor het uploadgereedschap van Claude in Chrome (max 10 MB); in Studio mag ook video.mp4
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 46,5 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek; luidheid -14 LUFS. Ingesproken tekst: bron/stem.txt
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (9,0 MB; H.264 twee passen, AAC 96k; gereedschap/short/upload.cjs) voor het uploadgereedschap van Claude in Chrome (max 10 MB); in Studio mag ook video.mp4
 
 == Details ==
 Titel (48/100 tekens):
