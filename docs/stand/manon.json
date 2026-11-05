@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-04T20:47:54Z",
+  "tijd": "2026-11-05T15:24:14Z",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
-    "sinds": "2026-11-04T17:33:00+01:00"
+    "sinds": "2026-11-05T15:24:14Z"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -17,9 +17,9 @@
     "YH01 Emoe-oorlog · 0af8f19; YH02 kaneel · 45650a9 (kanaal 2, 19:00)",
     "YS15 pondteken · 4371f9f; YS16 nulmeridiaan · 0f569f2; YS17 Teflon · 9507480; YS18 streepjescode · ac0b1ff (week 3 kanaal 1)"
   ],
-  "bezig": "-",
-  "volgende": "na antwoord Andries: tekst/feiten van YH01, YH02 en YHK01 aanpassen (welke regels zegt hij), opnieuw ter keuring; daarna YH03–YH07 en YS19–YS21; inplannen YS04–YS14 + YK01 in Chrome na zijn \"ja\" in mijn sessie",
-  "kanNietVerder": "wacht op Andries: welke regels in YH01, YH02 en YHK01 anders moeten (hij koos \"Eerst aanpassen\", soort: tekst of feiten); Commons-besluit open",
+  "bezig": "draaiboek do 5 nov (docs/sessie-2026-11-05-youtube.md), stap S2: bestanden YS04–YS18 en YK01 controleren; wacht op het venster van kanaal 1 (K4)",
+  "volgende": "K1–K3 besluiten citeren; K5 YK01; K7 inplannen YS04 e.v. (één per upload, op datum); V1–V3 (YH-zinnen, Commons, ritme); E1 afsluiten",
+  "kanNietVerder": null,
   "vragen": [
     {
       "vraag": "Besluit (Andries): mag Wikimedia Commons erbij als beeldbron voor kanaal 2 (alleen publiek domein, CC0 of CC BY; bij CC BY maker, licentie en link in de beschrijving)? YH01 en YH02 gebruiken nu Commons-foto's. Gevraagd wo 4 nov, antwoord: geen voorkeur.",
@@ -106,6 +106,12 @@
       "wat": "Andries in de sessie van Manon, wo 4 nov 2026 ±21:47: \"Eerst aanpassen\" (op \"Geef je pakket OK voor YS15–YS18, YH01, YH02 en YHK01?\"); daarna gekozen: pakketten \"YH01 en/of YH02\" en \"YHK01 kanaalbeeld\", soort \"Tekst of feiten\"; op de vraag \"Mag Commons erbij als beeldbron?\": geen voorkeur (geen besluit). Geen pakket OK gegeven.",
       "waar": "pc-sessie van Manon",
       "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-05T15:24:14Z",
+      "wat": "Andries in de sessie van Manon, do 5 nov 2026: \"he manon je heb nu als het goed wat nieuwe dingen binnen wat ik vandaag besproken heb,\" (start draaiboek, S1)",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
     }
   ],
   "voorEva": [
@@ -120,15 +126,12 @@
       "aan": "eva",
       "wat": "Klaar (afvinken door Andries of Eva): map Gegevens, noodblad, sjabloon maandoverzicht.",
       "pad": "OneDrive\\Desktop\\02 YG-Social\\Gegevens"
-    },
-    {
-      "id": "H-manon-5",
-      "aan": "eva",
-      "wat": "Andries koos \"Eerst aanpassen\" voor YH01, YH02 en YHK01 (tekst of feiten; welke regels nog niet gezegd). YS15–YS18 nog zonder OK. Let op: YH01 en YH02 gebruiken wél Commons-beelden (in het ERBIJ-blok van 18:05 staat \"Nog geen pakket gebruikt Commons\"); Commons-besluit nog open (Andries: geen voorkeur)."
     }
   ],
   "ontvangen": [
     "correctie Eva wo 4 nov 17:40 (geen nieuwe Gmails, niets overzetten)"
   ],
-  "raakt": []
+  "raakt": [
+    "youtube-studio-kanaal-1"
+  ]
 }
