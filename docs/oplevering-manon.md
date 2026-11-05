@@ -1,3 +1,5 @@
+KLAAR: pakket OK YS04 (versie met stem) · 7298def
+
 KAN NIET VERDER: YS-shorts krijgen een stem en worden stuk voor stuk nagelopen; nieuwe YS04 ligt klaar (7298def) · nodig: Andries bekijkt YS04 en zegt "pakket OK YS04" of wat anders moet
 
 KAN NIET VERDER: Andries wil eerst de tekst of feiten van YH01, YH02 en YHK01 aangepast; welke regels zegt hij nog · nodig: van Andries per regel wat anders moet, en zijn besluit over Commons als beeldbron (ja/nee); YS15–YS18 wachten op "pakket OK" per code
@@ -80,6 +82,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, do 5 nov 2026 ±17:15: "pakket OK YS04" (nieuwe versie met stem, 7298def; op de vraag "Is YS04 met stem goed zo?")
 - Andries in de sessie van Manon, do 5 nov 2026 (±17:14): op "Welke stem wordt het voor alle YS-shorts?" (vijf proefjes Kokoro): "fenrir".
 - Andries in de sessie van Manon, do 5 nov 2026 ±16:29: "ik wil de gemaakte videos nog wel aanpassen voordat we gaan inplannen" (tijdens het openen van Studio; ik ben gestopt, niets ingepland of gewijzigd). Op "Welke video's wil je aanpassen?": "Alle YS-shorts"; op "Wat wil je anders?": "ik zat te denken aan wel een stem en ik wil ze stuk voor stuk na lopen."; op "Welke stem wil je voor de YS-shorts?": "Kokoro (Aanbevolen)" (open-source AI-stem, Apache-2.0, draait op de pc, AI-label in Studio).
 - Andries in de sessie van Manon, wo 4 nov 2026 ±21:47: "Eerst aanpassen" (op "Geef je pakket OK voor YS15–YS18, YH01, YH02 en YHK01?"); daarna gekozen: pakketten "YH01 en/of YH02" en "YHK01 kanaalbeeld", soort "Tekst of feiten"; op de vraag "Mag Commons erbij als beeldbron?": geen voorkeur (geen besluit). Geen pakket OK gegeven.

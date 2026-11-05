@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-05T16:14:13Z",
+  "tijd": "2026-11-05T16:15:24Z",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-05T15:24:14Z"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -19,9 +19,9 @@
     "draaiboek S2: bestanden YS04–YS18 en YK01 gecontroleerd (1080x1920, uploadversies 7,6–9,0 MB, titels <100) · studio.txt bijgewerkt 5ce92a4",
     "stem ingebouwd (short.cjs, stem.py, upload.cjs) en YS04 opnieuw met stem fenrir, 36,4 s, AI-label ja · 7298def"
   ],
-  "bezig": "wacht op Andries: nalopen nieuwe YS04 (met stem)",
+  "bezig": "YS05 met stem maken",
   "volgende": "na zijn oordeel over YS04: aanpassen of YS05 met stem maken, en zo verder stuk voor stuk t/m YS18; elke nieuwe versie vraagt een nieuw \"pakket OK <code>\"",
-  "kanNietVerder": "wacht op Andries: nalopen van de nieuwe YS04 met stem (goed, of wat moet anders)",
+  "kanNietVerder": null,
   "vragen": [
     {
       "vraag": "V3 ritme vreemd maar waar op kanaal 1: voorstel 3x per week (ma, wo, vr) om 21:00 Amsterdam, naast YS dagelijks 18:00, vanaf ma 16 nov",
@@ -138,6 +138,12 @@
       "wat": "Kokoro geïnstalleerd buiten de repo: C:Usersgijsmyg-gereedschapkokoro-venv (pip kokoro-onnx, soundfile) en kokoro-model (kokoro-v1.0.onnx, voices-v1.0.bin van de GitHub-releases van thewh1teagle/kokoro-onnx); stemcache in %TEMP%yg-stem.",
       "waar": "pc van Andries",
       "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-05T16:15:24Z",
+      "wat": "Andries in de sessie van Manon, do 5 nov 2026 ±17:15: \"pakket OK YS04\" (nieuwe versie met stem, 7298def; op de vraag \"Is YS04 met stem goed zo?\")",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
     }
   ],
   "voorEva": [
