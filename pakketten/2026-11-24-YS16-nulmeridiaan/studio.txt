@@ -1,5 +1,5 @@
 STUDIO.TXT — YS16 (YouTube Studio, uploadscherm van boven naar beneden)
-Status: VERSIE MET STEM (do 5 nov 2026), wacht op "pakket OK YS16" en "stijl OK YS" van Andries (C30). Niet inplannen zonder beide.
+Status: pakket OK YS16 en stijl OK YS — versie met stem (Andries in de sessie van Manon, do 5 nov 2026 ±21:27: "Ja, alle vijf OK" (op de vraag "Geef je "stijl OK YS" en "pakket OK" voor YS15, YS16, YS17 en YS18?"; versies met stem, de020e7)). Klaar om in te plannen; Manon plant in via YouTube Studio, in het venster van kanaal 1, na het "ja, plan … in" van Andries in haar sessie.
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 41,8 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek; luidheid -14 LUFS. Ingesproken tekst: bron/stem.txt

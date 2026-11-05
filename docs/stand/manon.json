@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-05T20:35:14+01:00",
+  "tijd": "2026-11-05T21:27:17+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -23,11 +23,12 @@
     "YS07 opnieuw met stem fenrir, AI-label ja",
     "uitspraak jaartallen/datums hersteld in stem.py (fc59dc6); YS04–YS07 opnieuw gerenderd (alleen uitspraak), YS08 met stem 49,6 s",
     "OK YS04–YS07 blijft gelden na de uitspraakfix en OK YS08 (versie met stem) vastgelegd in studio.txt",
-    "YS09 t/m YS18 in één keer opnieuw met stem fenrir (beeld en tekst gelijk; 35–55 s; upload-kopieën 8,8–9,0 MB; ±-14,5 LUFS; controlebeelden nagekeken); AI-label ja; stem genoemd in bron/bronnen.md van YS04–YS18"
+    "YS09 t/m YS18 in één keer opnieuw met stem fenrir (beeld en tekst gelijk; 35–55 s; upload-kopieën 8,8–9,0 MB; ±-14,5 LUFS; controlebeelden nagekeken); AI-label ja; stem genoemd in bron/bronnen.md van YS04–YS18",
+    "stijl OK YS en pakket OK YS15–YS18 vastgelegd; YS04–YS18 met stem klaar om in te plannen"
   ],
   "bezig": "-",
   "volgende": "vr 6 nov 19:30 (Kantoor #67): (a) stijl OK YS + pakket OK YS15–YS18; (b) YK01 in zijn venster van kanaal 1, bio pas na \"bio OK kanaal 1, Manon mag hem zetten\"; (c) na zijn \"ja, plan … in\": YS04–YS14 op datum, dan YS15–YS18; (d) vreemd maar waar: V1, V3, YH01/YH02 naar kanaal 1; keuze YS01–YS03 (laten staan of vervangen door stemversie; advies: laten staan)",
-  "kanNietVerder": "wacht op Andries: \"stijl OK YS\" (stem fenrir en letters zoals YS04–YS18) en \"pakket OK YS15\", \"pakket OK YS16\", \"pakket OK YS17\", \"pakket OK YS18\" (C30)",
+  "kanNietVerder": "YS04–YS18 met stem goedgekeurd; inplannen wacht op vr 6 nov 19:30: Andries geeft zijn venster van kanaal 1 (/chrome) en zegt \"ja, plan YS04 t/m YS18 in\"",
   "vragen": [
     {
       "vraag": "V3 ritme vreemd maar waar op kanaal 1: voorstel 3x per week (ma, wo, vr) om 21:00 Amsterdam, naast YS dagelijks 18:00, vanaf ma 16 nov",
@@ -166,6 +167,12 @@
     {
       "tijd": "2026-11-05T18:33:00Z",
       "wat": "Andries in de sessie van Manon, do 5 nov 2026 ±19:33: \"als je alle videos het zelfde houd en daar die stem over doet kan je het in 1keer afronden elke keer keuren hoeft niet als je dit maar bij alles toevoegd (de stem)\". Werkwijze: YS09 t/m YS18 in één keer met stem (beeld en tekst gelijk), niet meer stuk voor stuk. Zijn \"pakket OK <code>\" per code (C15) vraag ik daarna in één keer voor YS09–YS18; zonder die OK wordt niets ingepland.",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-05T21:27:17+01:00",
+      "wat": "Andries in de sessie van Manon, do 5 nov 2026 ±21:27: \"Ja, alle vijf OK\" (op de vraag \"Geef je \"stijl OK YS\" en \"pakket OK\" voor YS15, YS16, YS17 en YS18?\"; versies met stem, de020e7)",
       "waar": "pc-sessie van Manon",
       "wie": "andries"
     }

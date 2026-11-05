@@ -1,4 +1,6 @@
-KAN NIET VERDER: YS09 t/m YS18 met stem klaar (de020e7) · nodig: Andries zegt "stijl OK YS" en "pakket OK YS15", "pakket OK YS16", "pakket OK YS17", "pakket OK YS18" (C30)
+KAN NIET VERDER: YS04–YS18 met stem goedgekeurd, niets ingepland · nodig: vr 6 nov 19:30 het venster van kanaal 1 van Andries en zijn "ja, plan YS04 t/m YS18 in"
+
+KLAAR: stijl OK YS en pakket OK YS15–YS18 (versies met stem) · de020e7
 
 KLAAR: pakket OK YS08 (versie met stem) en OK YS04–YS07 blijft na de uitspraakfix · 5f76637
 
@@ -94,6 +96,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, do 5 nov 2026 ±21:27: "Ja, alle vijf OK" (op de vraag "Geef je "stijl OK YS" en "pakket OK" voor YS15, YS16, YS17 en YS18?"; versies met stem, de020e7)
 - Andries in de sessie van Manon, do 5 nov 2026 ±19:33: "als je alle videos het zelfde houd en daar die stem over doet kan je het in 1keer afronden elke keer keuren hoeft niet als je dit maar bij alles toevoegd (de stem)". Werkwijze: YS09 t/m YS18 in één keer met stem (beeld en tekst gelijk), niet meer stuk voor stuk. Zijn "pakket OK <code>" per code (C15) vraag ik daarna in één keer voor YS09–YS18; zonder die OK wordt niets ingepland.
 - Andries in de sessie van Manon, do 5 nov 2026 ±19:32: "Ja, en OK YS08" (op de vraag "Blijft je OK voor YS04–YS07 gelden, en is YS08 goed?"; YS04–YS07 na alleen de uitspraakfix, 5f76637; YS08 nieuwe versie met stem, 5f76637)
 - Andries in de sessie van Manon, do 5 nov 2026 ±17:54: "pakket OK YS07" (nieuwe versie met stem, 2e281ca; op de vraag "Is YS07 met stem goed zo?")
