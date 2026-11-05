@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. This glue almost stayed on a shelf.
+2. In 1968, Spencer Silver at 3M discovered an adhesive with unusual properties.
+3. It was made of tiny spheres.
+4. High tack, low adhesion. It grabs, but it lets go.
+5. Silver wanted to sell it as a spray, or as a surface for bulletin boards.
+6. Then Art Fry, who sang in a church choir, kept losing the paper bookmarks in his hymnal.
+7. So he coated paper with it. A note you can stick, peel, and stick again.
+8. In 1980, Post-it Notes went on sale across the United States.
+9. A glue that barely held on ended up on paper.

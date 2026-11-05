@@ -20,26 +20,27 @@ function briefje(h, { x = NX, y = NY, b = NB, draai = -3, til = 0, tekst = '', o
 module.exports = {
   code: 'YS05',
   versie: 2,
+  stem: { stem: 'am_fenrir', tempo: 1.1 },   // besluit Andries do 5 nov 2026: Kokoro, stem "fenrir"
   map: '2026-11-13-YS05-postit',
   nummer: 'No. 05',
   onderwerp: 'THE STICKY NOTE',
   scenes: [
     // 1 · HAAK: het briefje klapt op het scherm en de hoek wipt los
-    { duur: 2.9, camera: { zoom: [1, 1.04], stoot: [0.3], schud: [0.3] }, geluid: [[0.28, 'klap'], [0.28, 'boem', 0.6], [1.6, 'pop', 0.6]],
+    { duur: 2.9, stem: "This glue almost stayed on a shelf.", camera: { zoom: [1, 1.04], stoot: [0.3], schud: [0.3] }, geluid: [[0.28, 'klap'], [0.28, 'boem', 0.6], [1.6, 'pop', 0.6]],
       teken: h => {
         const p = h.klem(h.t / 0.3);
         return briefje(h, { schaal: 2.4 - 1.4 * p * p, draai: -3 + (1 - p) * 25, op: h.klem(h.t / 0.08), til: h.klem((h.t - 1.5) / 0.3) * 0.6 })
           + h.kin('This glue almost stayed on a *shelf*.', { y: 300, g: 104, t: h.t, start: 0.4 }).svg;
       } },
     // 2 · 1968, 3M: Spencer Silver vindt een lijm met bijzondere eigenschappen
-    { duur: 3.3, in: 'zweep', bron: NIHF, bronStart: 1.5, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
+    { duur: 3.3, stem: "In 1968, Spencer Silver at 3M discovered an adhesive with unusual properties.", in: 'zweep', bron: NIHF, bronStart: 1.5, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
       teken: h => {
         const q = h.veer(h.t / 0.3);
         return `<text x="540" y="${(700 - (1 - q) * 300).toFixed(1)}" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="${(290 * (0.6 + 0.4 * q)).toFixed(0)}" fill="${h.K.signaal}" opacity="${h.klem(h.t / 0.1)}">1968</text>`
           + h.kin('At *3M*, scientist Spencer Silver discovers an acrylic adhesive with unusual properties.', { y: 800, g: 64, gewicht: 'regular', t: h.t, start: 0.45, max: 860 }).svg;
       } },
     // 3 · gemaakt van piepkleine bolletjes
-    { duur: 3.4, in: 'op', bron: NIHF, bronStart: 1.8, camera: { zoom: [1, 1.04], midden: [540, 1000] },
+    { duur: 3.4, stem: "It was made of tiny spheres.", in: 'op', bron: NIHF, bronStart: 1.8, camera: { zoom: [1, 1.04], midden: [540, 1000] },
       geluid: Array.from({ length: 7 }, (_, i) => [0.6 + i * 0.12, 'pop', 0.5, -0.6 + i * 0.2]),
       teken: h => {
         let s = h.kin('It is made of *tiny spheres*.', { y: 300, g: 108, t: h.t, start: 0.05 }).svg
@@ -49,7 +50,7 @@ module.exports = {
         return s;
       } },
     // 4 · plakt goed, maar laat makkelijk los: het briefje gaat erop, en er weer af
-    { duur: 3.6, in: 'flits', bron: NIHF, bronStart: 2.0, camera: { zoom: [1, 1.05] }, geluid: [[0.7, 'klap', 0.6], [1.9, 'whoosh', 0.5], [2.4, 'klap', 0.5]],
+    { duur: 3.6, stem: "High tack, low adhesion. It grabs, but it lets go.", in: 'flits', bron: NIHF, bronStart: 2.0, camera: { zoom: [1, 1.05] }, geluid: [[0.7, 'klap', 0.6], [1.9, 'whoosh', 0.5], [2.4, 'klap', 0.5]],
       teken: h => {
         const op1 = h.zacht((h.t - 0.4) / 0.3), af = h.zacht((h.t - 1.6) / 0.5), weer = h.zacht((h.t - 2.2) / 0.25);
         const y = NY - 260 * (1 - op1) - 220 * af * (1 - weer);
@@ -59,7 +60,7 @@ module.exports = {
           + briefje(h, { y: y + 30, b: 380, til: af * (1 - weer), draai: -3 + 8 * af * (1 - weer) });
       } },
     // 5 · waar Silver het voor wilde gebruiken: een spray, of een prikbord
-    { duur: 3.4, in: 'zweep', bron: LEM, bronStart: 1.9, camera: { zoom: [1, 1.05], stoot: [1.3] }, geluid: [[0.9, 'pop', 0.8, -0.5], [1.3, 'pop', 0.8, 0.5]],
+    { duur: 3.4, stem: "Silver wanted to sell it as a spray, or as a surface for bulletin boards.", in: 'zweep', bron: LEM, bronStart: 1.9, camera: { zoom: [1, 1.05], stoot: [1.3] }, geluid: [[0.9, 'pop', 0.8, -0.5], [1.3, 'pop', 0.8, 0.5]],
       teken: h => {
         const a = h.veer((h.t - 0.9) / 0.35), b = h.veer((h.t - 1.3) / 0.35);
         let s = h.kin('Silver wanted to sell it as a *spray*, or as a surface for *bulletin boards*.', { y: 300, g: 80, t: h.t, start: 0.05 }).svg;
@@ -68,7 +69,7 @@ module.exports = {
         return s;
       } },
     // 6 · jaren later: Art Fry in het kerkkoor; zijn bladwijzer valt steeds uit zijn liedboek
-    { duur: 3.8, in: 'masker', nacht: true, bron: LEM, bronStart: 2.2, camera: { zoom: [1, 1.06] }, geluid: [[1.2, 'whoosh', 0.6], [1.75, 'klap', 0.4], [2.5, 'whoosh', 0.5], [3.05, 'klap', 0.35]],
+    { duur: 3.8, stem: "Then Art Fry, who sang in a church choir, kept losing the paper bookmarks in his hymnal.", in: 'masker', nacht: true, bron: LEM, bronStart: 2.2, camera: { zoom: [1, 1.06] }, geluid: [[1.2, 'whoosh', 0.6], [1.75, 'klap', 0.4], [2.5, 'whoosh', 0.5], [3.05, 'klap', 0.35]],
       teken: h => {
         let s = h.kin('Then Art Fry, singing in a church choir, keeps losing the paper *bookmarks* in his hymnal.', { y: 300, g: 70, t: h.t, start: 0.05, kleur: '#F3F0E8', accent: h.K.geel }).svg
           + `<g filter="url(#sch)"><path d="M540 860 L300 830 L300 1180 L540 1210 Z" fill="#F3F0E8" stroke="${h.K.inkt}" stroke-width="5"/><path d="M540 860 L780 830 L780 1180 L540 1210 Z" fill="#E6E1D6" stroke="${h.K.inkt}" stroke-width="5"/></g>`;
@@ -77,23 +78,23 @@ module.exports = {
         return s;
       } },
     // 7 · hij strijkt de lijm op papier: een briefje dat je kunt verplaatsen
-    { duur: 3.4, in: 'zweep', bron: NIHF, bronStart: 1.9, camera: { zoom: [1, 1.06], stoot: [1.1] }, geluid: [[1.08, 'klap', 0.8], [1.9, 'ding', 0.7]],
+    { duur: 3.4, stem: "So he coated paper with it. A note you can stick, peel, and stick again.", in: 'zweep', bron: NIHF, bronStart: 1.9, camera: { zoom: [1, 1.06], stoot: [1.1] }, geluid: [[1.08, 'klap', 0.8], [1.9, 'ding', 0.7]],
       teken: h => {
         const p = h.veer((h.t - 0.8) / 0.32);
         return h.kin('He coats paper with it. A note you can *stick*, peel and stick again.', { y: 300, g: 82, t: h.t, start: 0.05 }).svg
           + (h.t > 0.8 ? briefje(h, { y: 1010, b: 380, schaal: 0.3 + 0.7 * p, draai: -3 + (1 - p) * 30, tekst: 'p. 214' }) : '');
       } },
     // 8 · 1980: landelijk in de VS
-    { duur: 3.0, in: 'op', bron: LEM, bronStart: 1.4, camera: { zoom: [1, 1.05], stoot: [1.0] }, geluid: [[0.05, 'rol', 0.7], [1.0, 'ding', 0.8]],
+    { duur: 3.0, stem: "In 1980, Post-it Notes went on sale across the United States.", in: 'op', bron: LEM, bronStart: 1.4, camera: { zoom: [1, 1.05], stoot: [1.0] }, geluid: [[0.05, 'rol', 0.7], [1.0, 'ding', 0.8]],
       teken: h => {
         const j = Math.round(1968 + 12 * h.zacht(h.t / 0.95));
         return `<text x="540" y="640" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="250" fill="${j === 1980 ? h.K.signaal : h.K.inkt}">${j}</text>`
           + h.kin('Post-it Notes go on sale across the *United States*.', { y: 760, g: 80, t: h.t, start: 1.05, midden: true, max: 860 }).svg;
       } },
     // 9 · slot: hetzelfde briefje als het begin; tekst vliegt weg, video loopt terug naar het begin
-    { duur: 3.8, in: 'flits', camera: { zoom: [1.03, 1.0] }, geluid: [[2.9, 'whoosh', 0.5]],
+    { duur: 3.8, stem: "A glue that barely held on ended up on paper.", in: 'flits', camera: { zoom: [1.03, 1.0] }, geluid: [[-0.9, 'whoosh', 0.5]],
       teken: h => briefje(h)
-        + h.kin('A glue that *barely held on* ended up on paper.', { y: 300, g: 92, t: h.t, start: 0.1, weg: 3.0 }).svg
-        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - 3.0) / 0.3))).toFixed(3)}">Next: why your PIN has four digits.</text>` },
+        + h.kin('A glue that *barely held on* ended up on paper.', { y: 300, g: 92, t: h.t, start: 0.1, weg: h.duur - 0.8 }).svg
+        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - (h.duur - 0.8)) / 0.3))).toFixed(3)}">Next: why your PIN has four digits.</text>` },
   ],
 };

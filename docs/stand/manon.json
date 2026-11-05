@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-05T16:15:24Z",
+  "tijd": "2026-11-05T16:23:31Z",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-05T15:24:14Z"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -17,11 +17,12 @@
     "YH01 Emoe-oorlog · 0af8f19; YH02 kaneel · 45650a9 (kanaal 2, 19:00)",
     "YS15 pondteken · 4371f9f; YS16 nulmeridiaan · 0f569f2; YS17 Teflon · 9507480; YS18 streepjescode · ac0b1ff (week 3 kanaal 1)",
     "draaiboek S2: bestanden YS04–YS18 en YK01 gecontroleerd (1080x1920, uploadversies 7,6–9,0 MB, titels <100) · studio.txt bijgewerkt 5ce92a4",
-    "stem ingebouwd (short.cjs, stem.py, upload.cjs) en YS04 opnieuw met stem fenrir, 36,4 s, AI-label ja · 7298def"
+    "stem ingebouwd (short.cjs, stem.py, upload.cjs) en YS04 opnieuw met stem fenrir, 36,4 s, AI-label ja · 7298def",
+    "YS05 opnieuw met stem fenrir, 38,8 s, AI-label ja"
   ],
-  "bezig": "YS05 met stem maken",
+  "bezig": "wacht op Andries: nalopen nieuwe YS05 (met stem)",
   "volgende": "na zijn oordeel over YS04: aanpassen of YS05 met stem maken, en zo verder stuk voor stuk t/m YS18; elke nieuwe versie vraagt een nieuw \"pakket OK <code>\"",
-  "kanNietVerder": null,
+  "kanNietVerder": "wacht op Andries: nalopen van de nieuwe YS05 met stem",
   "vragen": [
     {
       "vraag": "V3 ritme vreemd maar waar op kanaal 1: voorstel 3x per week (ma, wo, vr) om 21:00 Amsterdam, naast YS dagelijks 18:00, vanaf ma 16 nov",

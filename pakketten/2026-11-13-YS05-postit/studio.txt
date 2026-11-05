@@ -1,9 +1,9 @@
 STUDIO.TXT — YS05 (YouTube Studio, uploadscherm van boven naar beneden)
-Status: pakket OK YS05 (Andries in de sessie van Manon, ma 2 nov 2026: "OK voor alle vijf", op de vraag "Geef je pakket OK voor YS04–YS07 en YK01?"). Klaar om in te plannen in YouTube Studio; Manon plant in via YouTube Studio, in het venster van kanaal 1, na het "ja" van Andries in haar sessie.
+Status: NIEUWE VERSIE MET STEM (do 5 nov 2026), wacht op keuring. Het eerdere pakket OK YS05 (Andries in de sessie van Manon, ma 2 nov 2026: "OK voor alle vijf", op de vraag "Geef je pakket OK voor YS04–YS07 en YK01?") gold voor de versie zonder stem. Niet inplannen tot een nieuw "pakket OK YS05".
 
 == Bestand ==
-video.mp4   1080x1920 (9:16), 30 fps, H.264, 30,6 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
-video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k) voor het uploadgereedschap van Claude in Chrome (max 10 MB); in Studio mag ook video.mp4
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 38,8 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek; luidheid -14 LUFS. Ingesproken tekst: bron/stem.txt
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (8,9 MB; H.264 twee passen, AAC 96k; gereedschap/short/upload.cjs) voor het uploadgereedschap van Claude in Chrome (max 10 MB); in Studio mag ook video.mp4
 
 == Details ==
 Titel (37/100 tekens):
@@ -33,7 +33,7 @@ Leeftijdsbeperking: Nee.
 
 == Meer weergeven ==
 Betaalde promotie: Nee.
-Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Gewijzigde of synthetische content (AI-label): Ja — de stem is een realistische AI-stem (Kokoro). Beeld: eigen getekende animatie en tekst; geen AI-beelden, geen echte personen nagebootst.
 Tags:
 post-it notes, sticky notes, post-it history, Spencer Silver, Art Fry, 3M, invention, accidental inventions, history of everyday things, why things are the way they are, shorts
 Taal van de video: Engels.
