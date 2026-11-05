@@ -31,16 +31,17 @@ const groot = (h, tekst, y = 700, g = 290) => { const q = h.veer(h.t / 0.3);
 module.exports = {
   code: 'YS12',
   versie: 2,
+  stem: { stem: 'am_fenrir', tempo: 1.1 },   // besluit Andries do 5 nov 2026: Kokoro, stem "fenrir"
   map: '2026-11-20-YS12-alarmnummer',
   nummer: 'No. 12',
   onderwerp: 'EMERGENCY NUMBER 999',
   scenes: [
     // 1 · HAAK: de schijf draait drie keer een 9
-    { duur: 3.2, camera: { zoom: [1, 1.04], stoot: [0.1] }, geluid: [[0.05, 'rol', 0.7], [0.4, 'tik', 0.9], [0.85, 'rol', 0.7], [1.2, 'tik', 0.9], [1.65, 'rol', 0.7], [2.0, 'tik', 0.9], [2.2, 'boem', 0.6]],
+    { duur: 3.2, stem: "The world's first emergency number started with a fire.", camera: { zoom: [1, 1.04], stoot: [0.1] }, geluid: [[0.05, 'rol', 0.7], [0.4, 'tik', 0.9], [0.85, 'rol', 0.7], [1.2, 'tik', 0.9], [1.65, 'rol', 0.7], [2.0, 'tik', 0.9], [2.2, 'boem', 0.6]],
       teken: h => schijf(h, 540, 1020, 300, { draai: h.t < 2.4 ? draaiNegen(h.t) : 0, licht: 8, schaal: 0.9 + 0.1 * h.veer(h.t / 0.3) })
         + h.kin('The world\'s first emergency number started with a *fire*.', { y: 300, g: 92, t: h.t, start: 0.1 }).svg },
     // 2 · november 1935, Wimpole Street: vijf vrouwen komen om (rustig)
-    { duur: 4.0, in: 'masker', nacht: true, bron: GLA, bronStart: 2.4, camera: { zoom: [1.04, 1.0] }, geluid: [[0.4, 'whoosh', 0.3]],
+    { duur: 4.0, stem: "November 1935. Wimpole Street, London. A fire kills five women.", in: 'masker', nacht: true, bron: GLA, bronStart: 2.4, camera: { zoom: [1.04, 1.0] }, geluid: [[0.4, 'whoosh', 0.3]],
       teken: h => {
         let s = h.kin('*November 1935*, Wimpole Street, London. A fire kills *five women*.', { y: 330, g: 86, t: h.t, start: 0.05, kleur: '#F3F0E8', accent: h.K.geel }).svg;
         s += `<rect x="260" y="820" width="560" height="460" fill="#2A2E3D"/>`;
@@ -51,7 +52,7 @@ module.exports = {
         return s;
       } },
     // 3 · de evaluatie leidt tot het Belgrave Committee
-    { duur: 3.6, in: 'zweep', bron: GLA, bronStart: 2.2, camera: { zoom: [1, 1.05], stoot: [1.6] }, geluid: [[1.58, 'klap', 0.7], [1.6, 'boem', 0.4]],
+    { duur: 3.6, stem: "A review of the fire leads to the Belgrave Committee.", in: 'zweep', bron: GLA, bronStart: 2.2, camera: { zoom: [1, 1.05], stoot: [1.6] }, geluid: [[1.58, 'klap', 0.7], [1.6, 'boem', 0.4]],
       teken: h => {
         const st = h.veer((h.t - 1.5) / 0.25);
         return h.kin('A review of the fire leads to the *Belgrave Committee*.', { y: 300, g: 92, t: h.t, start: 0.05 }).svg
@@ -59,7 +60,7 @@ module.exports = {
           + (st > 0 ? `<g transform="translate(560 1180) rotate(-12) scale(${(1.6 - 0.6 * st).toFixed(3)}) translate(-560 -1180)" opacity="${h.klem(st * 2).toFixed(3)}"><rect x="400" y="1130" width="320" height="100" rx="10" fill="none" stroke="${h.K.signaal}" stroke-width="8"/><text x="560" y="1200" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="56" fill="${h.K.signaal}">REVIEW</text></g>` : '');
       } },
     // 4 · de opdracht: telefonisten moeten noodoproepen herkennen; één lampje op het schakelbord
-    { duur: 3.6, in: 'op', bron: GLA, bronStart: 2.2, camera: { zoom: [1, 1.05] }, geluid: [[1.4, 'ding', 0.6]],
+    { duur: 3.6, stem: "Its question: how can operators identify emergency calls?", in: 'op', bron: GLA, bronStart: 2.2, camera: { zoom: [1, 1.05] }, geluid: [[1.4, 'ding', 0.6]],
       teken: h => {
         let s = h.kin('Its question: how can operators *identify emergency calls*?', { y: 300, g: 90, t: h.t, start: 0.05 }).svg
           + `<g filter="url(#sch)"><rect x="160" y="800" width="760" height="460" rx="16" fill="#5A4632"/></g>`;
@@ -70,7 +71,7 @@ module.exports = {
         return s;
       } },
     // 5 · het advies: één nummer voor alle hulpdiensten
-    { duur: 3.4, in: 'zweep', bron: GLA, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [1.7] }, geluid: [[1.0, 'whoosh', 0.4], [1.7, 'klap', 0.7]],
+    { duur: 3.4, stem: "Its advice: one number for all the emergency services.", in: 'zweep', bron: GLA, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [1.7] }, geluid: [[1.0, 'whoosh', 0.4], [1.7, 'klap', 0.7]],
       teken: h => {
         const m = h.zacht((h.t - 0.9) / 0.8);
         let s = h.kin('Its advice: *one number* for all the emergency services.', { y: 300, g: 90, t: h.t, start: 0.05 }).svg;
@@ -79,17 +80,17 @@ module.exports = {
         return s;
       } },
     // 6 · makkelijk te onthouden
-    { duur: 3.0, in: 'op', bron: GLA, bronStart: 1.8, camera: { zoom: [1.05, 1.0] }, geluid: [[1.2, 'pop', 0.8]],
+    { duur: 3.0, stem: "And it must be easy to remember.", in: 'op', bron: GLA, bronStart: 1.8, camera: { zoom: [1.05, 1.0] }, geluid: [[1.2, 'pop', 0.8]],
       teken: h => h.kin('And it must be *easy to remember*.', { y: 420, g: 110, t: h.t, start: 0.05, nadruk: 'balk' }).svg
         + `<g opacity="${h.klem((h.t - 1.1) / 0.3).toFixed(3)}" filter="url(#schKlein)"><circle cx="540" cy="1050" r="150" fill="#FFFFFF" stroke="${h.K.inkt}" stroke-width="6"/><text x="540" y="1110" text-anchor="middle" font-family="Instrument Sans" font-weight="700" font-size="170" fill="${h.K.signaal}">?</text></g>` },
     // 7 · het antwoord: 999
-    { duur: 3.0, in: 'flits', bron: GLA, bronStart: 1.8, camera: { zoom: [1, 1.06], stoot: [0.3], schud: [0.3] }, geluid: [[0.28, 'klap'], [0.28, 'boem', 0.8]],
+    { duur: 3.0, stem: "The answer: nine, nine, nine.", in: 'flits', bron: GLA, bronStart: 1.8, camera: { zoom: [1, 1.06], stoot: [0.3], schud: [0.3] }, geluid: [[0.28, 'klap'], [0.28, 'boem', 0.8]],
       teken: h => h.kin('The answer:', { y: 330, g: 100, t: h.t, start: 0.05 }).svg + groot(h, '999', 1080, 380) },
     // 8 · 30 juni 1937: de eerste 999-oproep ter wereld
-    { duur: 3.8, in: 'zweep', bron: GLA, bronStart: 2.4, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5], [2.0, 'ding', 0.5]],
+    { duur: 3.8, stem: "June thirtieth, 1937. The first ever nine nine nine call, in London. The first of its kind in the world.", in: 'zweep', bron: GLA, bronStart: 2.4, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5], [2.0, 'ding', 0.5]],
       teken: h => groot(h, '1937') + h.kin('*30 June*: the first ever 999 call, in London. The first of its kind in the world.', { y: 830, g: 76, t: h.t, start: 0.45 }).svg },
     // 9 · eerste week: 1.336 oproepen (teller)
-    { duur: 3.4, in: 'op', bron: GLA, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [2.0] }, geluid: [[0.6, 'rol', 0.6], [1.1, 'rol', 0.6], [2.0, 'klap', 0.7], [2.0, 'ding', 0.5]],
+    { duur: 3.4, stem: "In the first week: one thousand, three hundred and thirty-six calls.", in: 'op', bron: GLA, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [2.0] }, geluid: [[0.6, 'rol', 0.6], [1.1, 'rol', 0.6], [2.0, 'klap', 0.7], [2.0, 'ding', 0.5]],
       teken: h => {
         const n = Math.round(1336 * h.uit((h.t - 0.5) / 1.5));
         return h.kin('In the *first week*:', { y: 330, g: 100, t: h.t, start: 0.05 }).svg
@@ -97,9 +98,9 @@ module.exports = {
           + `<text x="540" y="1180" text-anchor="middle" font-family="Instrument Sans" font-weight="700" font-size="80" fill="${h.K.inkt}" opacity="${h.klem((h.t - 2.0) / 0.3).toFixed(3)}">calls</text>`;
       } },
     // 10 · slot: de draaischijf; tekst vliegt weg, video loopt terug naar het begin
-    { duur: 3.8, in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[2.9, 'whoosh', 0.5]],
+    { duur: 3.8, stem: "One fire. One number, easy to remember. Nine, nine, nine.", in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[-0.9, 'whoosh', 0.5]],
       teken: h => schijf(h, 540, 1020, 300, { licht: 8 })
-        + h.kin('One fire. One number, easy to remember: *999*.', { y: 300, g: 96, t: h.t, start: 0.1, weg: 3.0 }).svg
-        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - 3.0) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
+        + h.kin('One fire. One number, easy to remember: *999*.', { y: 300, g: 96, t: h.t, start: 0.1, weg: h.duur - 0.8 }).svg
+        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - (h.duur - 0.8)) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
   ],
 };

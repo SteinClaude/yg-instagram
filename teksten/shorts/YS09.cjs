@@ -44,12 +44,13 @@ const jaar = (h, j, tekst, extra = '') => {
 module.exports = {
   code: 'YS09',
   versie: 2,
+  stem: { stem: 'am_fenrir', tempo: 1.1 },   // besluit Andries do 5 nov 2026: Kokoro, stem "fenrir"
   map: '2026-11-17-YS09-a4',
   nummer: 'No. 09',
   onderwerp: 'PAPER SIZE A4',
   scenes: [
     // 1 · HAAK: een vel slaat neer, splitst in twee, en elke helft heeft weer dezelfde vorm
-    { duur: 3.4, camera: { zoom: [1, 1.04], stoot: [0.3], schud: [0.3] }, geluid: [[0.28, 'klap'], [0.28, 'boem', 0.8], [1.2, 'rol', 0.6], [2.0, 'ding', 0.6]],
+    { duur: 3.4, stem: "Fold a sheet of A4 in half. It's still the same shape.", camera: { zoom: [1, 1.04], stoot: [0.3], schud: [0.3] }, geluid: [[0.28, 'klap'], [0.28, 'boem', 0.8], [1.2, 'rol', 0.6], [2.0, 'ding', 0.6]],
       teken: h => {
         const p = h.klem(h.t / 0.3), sp = h.zacht((h.t - 1.2) / 0.8);
         let s = h.kin('Fold A4 in half. It\'s *still the same shape*.', { y: 300, g: 104, t: h.t, start: 0.4 }).svg;
@@ -60,7 +61,7 @@ module.exports = {
           + vel(h, 540 + 200 * sp, 1020 + 127 * (1 - sp), kort, { liggend: true, draai: 90 * sp, label: 'A5' });
       } },
     // 2 · de verhouding: hoogte gedeeld door breedte = wortel 2
-    { duur: 3.6, in: 'zweep', bron: KUHN, bronStart: 2.2, camera: { zoom: [1, 1.05] }, geluid: [[1.0, 'pop', 0.7], [1.5, 'pop', 0.7], [2.2, 'klap', 0.6]],
+    { duur: 3.6, stem: "On every ISO page, height divided by width is the square root of two. About one point four one four.", in: 'zweep', bron: KUHN, bronStart: 2.2, camera: { zoom: [1, 1.05] }, geluid: [[1.0, 'pop', 0.7], [1.5, 'pop', 0.7], [2.2, 'klap', 0.6]],
       teken: h => {
         let s = h.kin('On every ISO page, height ÷ width is the *square root of 2*: about 1.414.', { y: 300, g: 90, t: h.t, start: 0.05 }).svg + vel(h, 470, 995, 280);
         if (h.t > 1.0) s += `<text x="470" y="${995 - 198 - 22}" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="40" fill="${h.K.inkt}" opacity="${h.klem((h.t - 1.0) / 0.2)}">210 mm</text>`;
@@ -69,37 +70,37 @@ module.exports = {
         return s;
       } },
     // 3 · halveren geeft telkens dezelfde vorm
-    { duur: 3.8, in: 'op', bron: KUHN, bronStart: 2.4, camera: { zoom: [1, 1.06] }, geluid: [[0.9, 'tik', 0.8], [1.4, 'tik', 0.8], [1.9, 'tik', 0.8], [2.4, 'tik', 0.8], [2.9, 'ding', 0.5]],
+    { duur: 3.8, stem: "Cut it in half, and you get the same ratio again. And again.", in: 'op', bron: KUHN, bronStart: 2.4, camera: { zoom: [1, 1.06] }, geluid: [[0.9, 'tik', 0.8], [1.4, 'tik', 0.8], [1.9, 'tik', 0.8], [2.4, 'tik', 0.8], [2.9, 'ding', 0.5]],
       teken: h => h.kin('Cut it in half: *the same ratio* again. And again.', { y: 300, g: 92, t: h.t, start: 0.05 }).svg
         + halveer(h, 330, 680, 420, h.klem((h.t - 0.8) / 0.5, 0, 4)) },
     // 4 · A0 is precies één vierkante meter
-    { duur: 3.2, in: 'flits', bron: KUHN, bronStart: 1.8, camera: { zoom: [1, 1.06], stoot: [0.9] }, geluid: [[0.88, 'klap', 0.8], [0.88, 'boem', 0.5]],
+    { duur: 3.2, stem: "It all starts with A-zero: exactly one square metre.", in: 'flits', bron: KUHN, bronStart: 1.8, camera: { zoom: [1, 1.06], stoot: [0.9] }, geluid: [[0.88, 'klap', 0.8], [0.88, 'boem', 0.5]],
       teken: h => {
         const q = h.veer((h.t - 0.7) / 0.35);
         return h.kin('It starts with *A0*: exactly *one square metre*.', { y: 300, g: 92, t: h.t, start: 0.05 }).svg
           + (q > 0 ? `<g transform="translate(540 1000) scale(${q.toFixed(3)}) translate(-540 -1000)">${vel(h, 540, 1000, 420, { label: 'A0' })}<text x="540" y="1170" text-anchor="middle" font-family="Instrument Sans" font-weight="700" font-size="72" fill="${h.K.inkt}">1 m²</text></g>` : '');
       } },
     // 5 · vier keer halveren = A4
-    { duur: 3.6, in: 'zweep', bron: KUHN, bronStart: 2.2, camera: { zoom: [1, 1.05], stoot: [2.4] }, geluid: [[2.4, 'klap', 0.7], [2.4, 'ding', 0.5]],
+    { duur: 3.6, stem: "Halve it four times, and you get A4. Two hundred ten by two hundred ninety-seven millimetres.", in: 'zweep', bron: KUHN, bronStart: 2.2, camera: { zoom: [1, 1.05], stoot: [2.4] }, geluid: [[2.4, 'klap', 0.7], [2.4, 'ding', 0.5]],
       teken: h => h.kin('Halve it four times and you get *A4*: 210 × 297 mm.', { y: 300, g: 90, t: h.t, start: 0.05 }).svg
         + halveer(h, 330, 680, 420, 4, { markeer: h.t > 2.3 ? 4 : -1 }) },
     // 6 · 1786: Lichtenberg
-    { duur: 3.3, in: 'op', bron: KUHN, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
+    { duur: 3.3, stem: "1786. In a letter, scientist Georg Christoph Lichtenberg describes this ratio for paper.", in: 'op', bron: KUHN, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
       teken: h => jaar(h, '1786', 'In a letter, scientist Georg Christoph *Lichtenberg* describes this ratio for paper.') },
     // 7 · 1798: Franse belastingwet
-    { duur: 3.2, in: 'zweep', bron: KUHN, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
+    { duur: 3.2, stem: "1798. A French law on paper taxes already uses these exact sizes.", in: 'zweep', bron: KUHN, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
       teken: h => jaar(h, '1798', 'A *French* law on paper taxes already uses these exact sizes.') },
     // 8 · 1922: DIN 476
-    { duur: 3.4, in: 'op', bron: KUHN, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5], [1.8, 'pop', 0.7]],
+    { duur: 3.4, stem: "1922. Germany makes it a standard, D-I-N four seventy-six, reinvented by Doctor Walter Porstmann.", in: 'op', bron: KUHN, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5], [1.8, 'pop', 0.7]],
       teken: h => jaar(h, '1922', 'Germany makes it a standard: *DIN 476*, reinvented by Dr. Walter Porstmann.') },
     // 9 · 1975: ISO 216 en de VN
-    { duur: 3.4, in: 'masker', nacht: true, bron: KUHN, bronStart: 2.0, camera: { zoom: [1.05, 1.0] }, geluid: [[0.5, 'whoosh', 0.4], [1.8, 'ding', 0.7]],
+    { duur: 3.4, stem: "1975. It becomes world standard ISO two sixteen, and the official U-N document format.", in: 'masker', nacht: true, bron: KUHN, bronStart: 2.0, camera: { zoom: [1.05, 1.0] }, geluid: [[0.5, 'whoosh', 0.4], [1.8, 'ding', 0.7]],
       teken: h => h.kin('*1975*: it becomes world standard *ISO 216*, and the official UN document format.', { y: 330, g: 90, t: h.t, start: 0.05, kleur: '#F3F0E8', accent: h.K.geel }).svg
         + [0, 1, 2].map(i => { const p = h.veer((h.t - 1.3 - i * 0.15) / 0.35); return p <= 0 ? '' : vel(h, 340 + i * 200, 1060, 150 * p, { draai: -6 + i * 6, vul: '#F3F0E8' }); }).join('') },
     // 10 · slot: bijna overal, behalve Noord-Amerika; tekst vliegt weg, video loopt terug naar het begin
-    { duur: 3.8, in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[2.9, 'whoosh', 0.5]],
+    { duur: 3.8, stem: "Used almost everywhere on the planet. Except North America.", in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[-0.9, 'whoosh', 0.5]],
       teken: h => vel(h, 540, 1020, 360, { label: 'A4' })
-        + h.kin('Used almost everywhere. Except *North America*.', { y: 300, g: 96, t: h.t, start: 0.1, weg: 3.0 }).svg
-        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - 3.0) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
+        + h.kin('Used almost everywhere. Except *North America*.', { y: 300, g: 96, t: h.t, start: 0.1, weg: h.duur - 0.8 }).svg
+        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - (h.duur - 0.8)) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
   ],
 };

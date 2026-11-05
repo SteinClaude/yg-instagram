@@ -27,6 +27,7 @@ const groot = (h, tekst, y = 700, g = 290) => { const q = h.veer(h.t / 0.3);
 module.exports = {
   code: 'YS16',
   versie: 2,
+  stem: { stem: 'am_fenrir', tempo: 1.1 },   // besluit Andries do 5 nov 2026: Kokoro, stem "fenrir"
   map: '2026-11-24-YS16-nulmeridiaan',
   nummer: 'No. 16',
   onderwerp: 'LONGITUDE ZERO',
@@ -50,41 +51,41 @@ module.exports = {
   },
   scenes: [
     // 1 · HAAK: de bol draait, de rode lijn klapt erop
-    { duur: 3.2, camera: { zoom: [1, 1.04], stoot: [0.9], schud: [0.9] }, geluid: [[0.05, 'rol', 0.6], [0.88, 'klap'], [0.88, 'boem', 0.7]],
+    { duur: 3.2, stem: "Longitude zero runs through one telescope.", camera: { zoom: [1, 1.04], stoot: [0.9], schud: [0.9] }, geluid: [[0.05, 'rol', 0.6], [0.88, 'klap'], [0.88, 'boem', 0.7]],
       teken: h => bol(h, { draai: h.t < 0.9 ? h.t * 0.5 : 0.45, nul: h.klem((h.t - 0.85) / 0.1), schaal: 0.9 + 0.1 * h.veer(h.t / 0.4) })
         + h.kin('Longitude *0°* runs through one telescope.', { y: 300, g: 100, t: h.t, start: 0.2 }).svg },
     // 2 · eerst: geen afspraak
-    { duur: 3.4, in: 'zweep', bron: RMG, bronStart: 2.0, camera: { zoom: [1, 1.05] }, geluid: [[1.0, 'pop', 0.6, -0.5], [1.3, 'pop', 0.6, 0.5], [1.6, 'pop', 0.6]],
+    { duur: 3.4, stem: "Before, there were no international conventions for measuring time.", in: 'zweep', bron: RMG, bronStart: 2.0, camera: { zoom: [1, 1.05] }, geluid: [[1.0, 'pop', 0.6, -0.5], [1.3, 'pop', 0.6, 0.5], [1.6, 'pop', 0.6]],
       teken: h => h.kin('Before, there were *no international conventions* for measuring time.', { y: 300, g: 88, t: h.t, start: 0.05 }).svg
         + [[300, 1000, 5], [560, 1080, 23], [810, 990, 41]].map(([x, y, m], i) => { const p = h.veer((h.t - 1.0 - i * 0.3) / 0.3); return p <= 0 ? '' : `<g transform="translate(${x} ${y}) scale(${p.toFixed(3)}) translate(${-x} ${-y})">${h.klok(x, y, 110, 12, m)}</g>`; }).join('') },
     // 3 · 1884: Greenwich aanbevolen
-    { duur: 3.6, in: 'op', bron: RMG, bronStart: 2.2, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
+    { duur: 3.6, stem: "1884. The Greenwich Meridian is recommended as the Prime Meridian of the World. Zero degrees longitude.", in: 'op', bron: RMG, bronStart: 2.2, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
       teken: h => groot(h, '1884') + h.kin('The Greenwich Meridian is recommended as the *Prime Meridian* of the World: 0° longitude.', { y: 830, g: 74, t: h.t, start: 0.45 }).svg },
     // 4 · reden 1: de VS gebruikten het al
-    { duur: 3.6, in: 'zweep', bron: RMG, bronStart: 2.2, camera: { zoom: [1, 1.05], stoot: [1.6] }, geluid: [[1.6, 'klap', 0.7]],
+    { duur: 3.6, stem: "Why Greenwich? The U-S-A had already chosen it for its own time zones.", in: 'zweep', bron: RMG, bronStart: 2.2, camera: { zoom: [1, 1.05], stoot: [1.6] }, geluid: [[1.6, 'klap', 0.7]],
       teken: h => h.kin('Why Greenwich? The *USA* had already chosen it for its own time zones.', { y: 300, g: 88, t: h.t, start: 0.05 }).svg
         + [0, 1, 2, 3].map(i => { const p = h.veer((h.t - 1.2 - i * 0.12) / 0.3); return p <= 0 ? '' : `<rect x="${200 + i * 175}" y="${880 + 0 * i}" width="150" height="320" rx="10" fill="${['#DCE6EE', '#C9D6E3', '#B5C7D8', '#A1B8CD'][i]}" stroke="${h.K.inkt}" stroke-width="4" opacity="${p.toFixed(3)}"/><text x="${275 + i * 175}" y="1060" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="44" fill="${h.K.inkt}" opacity="${p.toFixed(3)}">${['-5', '-6', '-7', '-8'][i]}</text>`; }).join('') },
     // 5 · reden 2: 72% van de handel voer op kaarten met Greenwich
-    { duur: 3.8, in: 'op', bron: RMG, bronStart: 2.4, camera: { zoom: [1, 1.06], stoot: [2.2] }, geluid: [[0.8, 'rol', 0.6], [1.3, 'rol', 0.6], [2.2, 'klap', 0.7], [2.2, 'ding', 0.5]],
+    { duur: 3.8, stem: "And seventy-two percent of the world's commerce used sea charts based on Greenwich.", in: 'op', bron: RMG, bronStart: 2.4, camera: { zoom: [1, 1.06], stoot: [2.2] }, geluid: [[0.8, 'rol', 0.6], [1.3, 'rol', 0.6], [2.2, 'klap', 0.7], [2.2, 'ding', 0.5]],
       teken: h => { const n = Math.round(72 * h.uit((h.t - 0.7) / 1.4));
         return h.kin('And *72%* of the world\'s commerce used sea charts based on Greenwich.', { y: 300, g: 86, t: h.t, start: 0.05 }).svg
           + `<text x="540" y="1110" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="260" fill="${h.K.signaal}">${n}%</text>`; } },
     // 6 · dus: voordeel voor de meeste mensen
-    { duur: 3.2, in: 'flits', bron: RMG, bronStart: 1.8, camera: { zoom: [1.05, 1.0] }, geluid: [[1.2, 'ding', 0.6]],
+    { duur: 3.2, stem: "So zero at Greenwich helped the largest number of people.", in: 'flits', bron: RMG, bronStart: 1.8, camera: { zoom: [1.05, 1.0] }, geluid: [[1.2, 'ding', 0.6]],
       teken: h => h.kin('So 0° at Greenwich helped *the largest number of people*.', { y: 300, g: 96, t: h.t, start: 0.05, nadruk: 'balk' }).svg
         + bol(h, { r: 250, nul: h.klem((h.t - 1.0) / 0.3) }) },
     // 7 · de lijn zelf: het dradenkruis van de Airy Transit Circle
-    { duur: 3.8, in: 'zoom', bron: RMG, bronStart: 2.4, camera: { zoom: [1, 1.08] }, geluid: [[1.0, 'whoosh', 0.4], [1.8, 'tik', 0.8]],
+    { duur: 3.8, stem: "The exact line: the cross-hairs of the Airy Transit Circle telescope.", in: 'zoom', bron: RMG, bronStart: 2.4, camera: { zoom: [1, 1.08] }, geluid: [[1.0, 'whoosh', 0.4], [1.8, 'tik', 0.8]],
       teken: h => h.kin('The exact line: the cross-hairs of the *Airy Transit Circle* telescope.', { y: 300, g: 88, t: h.t, start: 0.05 }).svg
         + vizier(h, 540, 1010, 225, (h.t - 0.9) / 0.5) },
     // 8 · GMT als wereldstandaard tot 1972
-    { duur: 3.6, in: 'masker', nacht: true, bron: RMG, bronStart: 2.2, camera: { zoom: [1.05, 1.0] }, geluid: [[0.5, 'whoosh', 0.4], [1.8, 'ding', 0.7]],
+    { duur: 3.6, stem: "From 1884 until 1972, G-M-T was the world's standard of civil time.", in: 'masker', nacht: true, bron: RMG, bronStart: 2.2, camera: { zoom: [1.05, 1.0] }, geluid: [[0.5, 'whoosh', 0.4], [1.8, 'ding', 0.7]],
       teken: h => h.kin('From 1884 until *1972*, GMT was the world\'s standard of civil time.', { y: 330, g: 92, t: h.t, start: 0.05, kleur: '#F3F0E8', accent: h.K.geel }).svg
         + `<text x="540" y="1100" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="200" fill="${h.K.geel}" opacity="${h.klem((h.t - 1.3) / 0.3).toFixed(3)}">GMT</text>` },
     // 9 · slot: de bol met de rode lijn; tekst vliegt weg, video loopt terug naar het begin
-    { duur: 3.8, in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[2.9, 'whoosh', 0.5]],
+    { duur: 3.8, stem: "Zero, because most ships already used it.", in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[-0.9, 'whoosh', 0.5]],
       teken: h => bol(h, { draai: 0.45 })
-        + h.kin('Zero, because most ships *already used it*.', { y: 300, g: 100, t: h.t, start: 0.1, weg: 3.0 }).svg
-        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - 3.0) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
+        + h.kin('Zero, because most ships *already used it*.', { y: 300, g: 100, t: h.t, start: 0.1, weg: h.duur - 0.8 }).svg
+        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - (h.duur - 0.8)) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
   ],
 };

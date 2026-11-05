@@ -36,19 +36,20 @@ const lens = (inhoud, cx, cy, r, p = 1) => p < 0.02 ? '' : `<g transform="transl
 module.exports = {
   code: 'YS13',
   versie: 2,
+  stem: { stem: 'am_fenrir', tempo: 1.1 },   // besluit Andries do 5 nov 2026: Kokoro, stem "fenrir"
   map: '2026-11-21-YS13-klittenband',
   nummer: 'No. 13',
   onderwerp: 'VELCRO',
   scenes: [
     // 1 · HAAK: een klit vliegt in beeld en blijft hangen
-    { duur: 3.2, camera: { zoom: [1, 1.04], stoot: [0.6], schud: [0.6] }, geluid: [[0.05, 'whoosh', 0.5], [0.58, 'klap'], [0.58, 'boem', 0.6]],
+    { duur: 3.2, stem: "Velcro started with a walk with a dog.", camera: { zoom: [1, 1.04], stoot: [0.6], schud: [0.6] }, geluid: [[0.05, 'whoosh', 0.5], [0.58, 'klap'], [0.58, 'boem', 0.6]],
       teken: h => {
         const p = h.uit(h.t / 0.6);
         return hond(h, 520, 1080, 1.4, 0) + klit(h, 1100 - 560 * p, 700 + 300 * p, 46, { draai: h.t * 300 * (1 - p) })
           + h.kin('Velcro started with a *walk with a dog*.', { y: 300, g: 100, t: h.t, start: 0.2 }).svg;
       } },
     // 2 · 1941: wandeling in het bos met zijn Ierse pointer
-    { duur: 3.8, in: 'zweep', bron: NIHF, bronStart: 2.4, camera: { zoom: [1, 1.04], pan: [[30, 0], [-30, 0]] }, geluid: [[1.2, 'tik', 0.4], [1.6, 'tik', 0.4], [2.0, 'tik', 0.4]],
+    { duur: 3.8, stem: "1941. George de Mestral walks in the woods with his dog, an Irish Pointer.", in: 'zweep', bron: NIHF, bronStart: 2.4, camera: { zoom: [1, 1.04], pan: [[30, 0], [-30, 0]] }, geluid: [[1.2, 'tik', 0.4], [1.6, 'tik', 0.4], [2.0, 'tik', 0.4]],
       teken: h => {
         let s = '';
         for (let i = 0; i < 5; i++) { const x = 80 + i * 240 - (h.t * 60) % 240; s += `<g><rect x="${x - 14}" y="900" width="28" height="300" fill="#6B4E32"/><circle cx="${x}" cy="880" r="90" fill="${h.K.groen}"/></g>`; }
@@ -56,17 +57,17 @@ module.exports = {
           + h.kin('*1941*. George de Mestral walks in the woods with his dog, an Irish Pointer.', { y: 300, g: 80, t: h.t, start: 0.05 }).svg;
       } },
     // 3 · klitten van de grote klis blijven aan broek en vacht hangen
-    { duur: 3.6, in: 'op', bron: NIHF, bronStart: 2.2, camera: { zoom: [1, 1.05] }, geluid: [[1.0, 'pop', 0.7, -0.4], [1.25, 'pop', 0.7, 0.2], [1.5, 'pop', 0.7, 0.5], [1.75, 'pop', 0.7, -0.1]],
+    { duur: 3.6, stem: "Burrs from burdock plants cling to his pants, and his dog's fur.", in: 'op', bron: NIHF, bronStart: 2.2, camera: { zoom: [1, 1.05] }, geluid: [[1.0, 'pop', 0.7, -0.4], [1.25, 'pop', 0.7, 0.2], [1.5, 'pop', 0.7, 0.5], [1.75, 'pop', 0.7, -0.1]],
       teken: h => hond(h, 540, 1100, 1.2, 0)
         + [[420, 1060], [560, 1010], [660, 1090], [320, 1120]].map(([x, y], i) => klit(h, x, y, 26, { schaal: h.veer((h.t - 1.0 - i * 0.25) / 0.3) })).join('')
         + h.kin('Burrs from burdock plants cling to his pants and his dog\'s fur.', { y: 300, g: 86, t: h.t, start: 0.05 }).svg },
     // 4 · thuis onder de microscoop
-    { duur: 3.4, in: 'zoom', bron: NIHF, bronStart: 2.0, camera: { zoom: [1, 1.08] }, geluid: [[1.0, 'rol', 0.5], [1.6, 'ding', 0.5]],
+    { duur: 3.4, stem: "At home, he looks at one under a microscope.", in: 'zoom', bron: NIHF, bronStart: 2.0, camera: { zoom: [1, 1.08] }, geluid: [[1.0, 'rol', 0.5], [1.6, 'ding', 0.5]],
       teken: h => h.kin('At home, he looks at one under a *microscope*.', { y: 300, g: 96, t: h.t, start: 0.05 }).svg
         + `<g filter="url(#sch)"><rect x="380" y="1220" width="320" height="50" rx="10" fill="${h.K.inkt}"/><rect x="600" y="820" width="40" height="420" fill="${h.K.inkt}"/><rect x="470" y="760" width="70" height="300" rx="12" fill="#3B3F4A" transform="rotate(-20 505 900)"/><rect x="430" y="1120" width="220" height="24" fill="#3B3F4A"/></g>`
         + klit(h, 520, 1100, 16, { op: h.klem((h.t - 0.8) / 0.3) }) },
     // 5 · duizenden haakjes
-    { duur: 3.4, in: 'flits', bron: NIHF, bronStart: 2.0, camera: { zoom: [1, 1.05], stoot: [0.9] }, geluid: [[0.88, 'klap', 0.7], [0.9, 'boem', 0.4]],
+    { duur: 3.4, stem: "It is covered in thousands of tiny hooks.", in: 'flits', bron: NIHF, bronStart: 2.0, camera: { zoom: [1, 1.05], stoot: [0.9] }, geluid: [[0.88, 'klap', 0.7], [0.9, 'boem', 0.4]],
       teken: h => {
         let haken = '';
         for (let i = 0; i < 9; i++) for (let j = 0; j < 4; j++) haken += haak(330 + i * 55 + (j % 2) * 27, 940 + j * 90, 60, '#6B5A2E');
@@ -74,7 +75,7 @@ module.exports = {
           + lens(haken, 540, 1010, 250, h.veer((h.t - 0.7) / 0.35));
       } },
     // 6 · de haakjes grijpen in de lusjes van zijn kleding
-    { duur: 3.8, in: 'op', bron: NIHF, bronStart: 2.4, camera: { zoom: [1, 1.06], stoot: [1.9] }, geluid: [[1.1, 'rol', 0.5], [1.9, 'klap', 0.7]],
+    { duur: 3.8, stem: "They grip the loops in the threads of his clothes.", in: 'op', bron: NIHF, bronStart: 2.4, camera: { zoom: [1, 1.06], stoot: [1.9] }, geluid: [[1.1, 'rol', 0.5], [1.9, 'klap', 0.7]],
       teken: h => {
         const d = 120 * (1 - h.zacht((h.t - 0.9) / 1.0));
         let s = '';
@@ -86,7 +87,7 @@ module.exports = {
           + lens(s + k + `<line x1="260" y1="1150" x2="820" y2="1150" stroke="#6B5A2E" stroke-width="10"/>`, 540, 1010, 255, 1);
       } },
     // 7 · haakjes van nylon, samen met een stoffenmaker in Lyon
-    { duur: 3.6, in: 'zweep', bron: NIHF, bronStart: 2.2, camera: { zoom: [1.05, 1.0] }, geluid: [[1.2, 'pop', 0.7], [1.8, 'ding', 0.5]],
+    { duur: 3.6, stem: "He makes the hooks from nylon, with a fabric maker in Lyon, France.", in: 'zweep', bron: NIHF, bronStart: 2.2, camera: { zoom: [1.05, 1.0] }, geluid: [[1.2, 'pop', 0.7], [1.8, 'ding', 0.5]],
       teken: h => {
         const w = 760 * h.uit((h.t - 0.9) / 0.8);
         let s = `<g filter="url(#sch)"><rect x="160" y="960" width="${w.toFixed(1)}" height="130" rx="10" fill="${h.K.signaal}"/></g>`;
@@ -94,7 +95,7 @@ module.exports = {
         return h.kin('He makes the hooks from *nylon*, with a fabric maker in Lyon, France.', { y: 300, g: 86, t: h.t, start: 0.05 }).svg + s;
       } },
     // 8 · de naam: velours + crochet
-    { duur: 3.8, in: 'masker', nacht: true, bron: NIHF, bronStart: 2.4, camera: { zoom: [1.05, 1.0] }, geluid: [[0.9, 'pop', 0.7, -0.4], [1.5, 'pop', 0.7, 0.4], [2.3, 'klap', 0.6], [2.3, 'ding', 0.5]],
+    { duur: 3.8, stem: "The name comes from two French words: velour, velvet, and crochet, hooks.", in: 'masker', nacht: true, bron: NIHF, bronStart: 2.4, camera: { zoom: [1.05, 1.0] }, geluid: [[0.9, 'pop', 0.7, -0.4], [1.5, 'pop', 0.7, 0.4], [2.3, 'klap', 0.6], [2.3, 'ding', 0.5]],
       teken: h => {
         const p1 = h.veer((h.t - 0.8) / 0.35), p2 = h.veer((h.t - 1.4) / 0.35), m = h.zacht((h.t - 2.2) / 0.4);
         const rij = (y, voor, achter, uitleg, p) => p <= 0 ? '' : `<g opacity="${(p * (1 - 0.5 * m)).toFixed(3)}"><text x="160" y="${y}" font-family="Instrument Sans" font-weight="700" font-size="110" fill="${h.K.geel}">${voor}<tspan fill="#F3F0E8">${achter}</tspan></text><text x="164" y="${y + 56}" font-family="IBM Plex Mono" font-size="38" fill="#C9C6BC">${uitleg}</text></g>`;
@@ -103,9 +104,9 @@ module.exports = {
           + (m > 0 ? `<text x="540" y="1250" text-anchor="middle" font-family="Instrument Sans" font-weight="700" font-size="${(130 * (0.6 + 0.4 * h.veer(m))).toFixed(0)}" fill="${h.K.geel}" opacity="${m.toFixed(3)}">VELCRO</text>` : '');
       } },
     // 9 · slot: klit en band; tekst vliegt weg, video loopt terug naar het begin
-    { duur: 3.8, in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[2.9, 'whoosh', 0.5]],
+    { duur: 3.8, stem: "Hooks and loops, copied from a burr.", in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[-0.9, 'whoosh', 0.5]],
       teken: h => hond(h, 520, 1080, 1.4, 0) + klit(h, 540, 1000, 46)
-        + h.kin('Hooks and loops, copied from a *burr*.', { y: 300, g: 100, t: h.t, start: 0.1, weg: 3.0 }).svg
-        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - 3.0) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
+        + h.kin('Hooks and loops, copied from a *burr*.', { y: 300, g: 100, t: h.t, start: 0.1, weg: h.duur - 0.8 }).svg
+        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - (h.duur - 0.8)) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
   ],
 };

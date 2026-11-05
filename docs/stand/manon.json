@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-05T18:32:54Z",
+  "tijd": "2026-11-05T18:35:40Z",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -24,8 +24,8 @@
     "uitspraak jaartallen/datums hersteld in stem.py (fc59dc6); YS04–YS07 opnieuw gerenderd (alleen uitspraak), YS08 met stem 49,6 s",
     "OK YS04–YS07 blijft gelden na de uitspraakfix en OK YS08 (versie met stem) vastgelegd in studio.txt"
   ],
-  "bezig": "YS09 met stem maken",
-  "volgende": "YS09 ter keuring; daarna YS10 t/m YS18 stuk voor stuk met stem; elke nieuwe versie vraagt een nieuw \"pakket OK <code>\"",
+  "bezig": "YS09 t/m YS18 in één keer met stem (fenrir) aan het maken",
+  "volgende": "YS09–YS18 met stem pushen en Andries in één keer om \"pakket OK\" per code vragen (YS09 t/m YS18); daarna inplannen na zijn \"ja\" (K2)",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -171,6 +171,12 @@
     {
       "tijd": "2026-11-05T18:32:54Z",
       "wat": "Andries in de sessie van Manon, do 5 nov 2026 ±19:32: \"Ja, en OK YS08\" (op de vraag \"Blijft je OK voor YS04–YS07 gelden, en is YS08 goed?\"; YS04–YS07 na alleen de uitspraakfix, 5f76637; YS08 nieuwe versie met stem, 5f76637)",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-05T18:33:00Z",
+      "wat": "Andries in de sessie van Manon, do 5 nov 2026 ±19:33: \"als je alle videos het zelfde houd en daar die stem over doet kan je het in 1keer afronden elke keer keuren hoeft niet als je dit maar bij alles toevoegd (de stem)\". Werkwijze: YS09 t/m YS18 in één keer met stem (beeld en tekst gelijk), niet meer stuk voor stuk. Zijn \"pakket OK <code>\" per code (C15) vraag ik daarna in één keer voor YS09–YS18; zonder die OK wordt niets ingepland.",
       "waar": "pc-sessie van Manon",
       "wie": "andries"
     }

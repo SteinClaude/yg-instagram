@@ -37,12 +37,13 @@ const relais = (h, x0, y0, n, t = 99, start = 0) => {
 module.exports = {
   code: 'YS10',
   versie: 2,
+  stem: { stem: 'am_fenrir', tempo: 1.1 },   // besluit Andries do 5 nov 2026: Kokoro, stem "fenrir"
   map: '2026-11-18-YS10-bug',
   nummer: 'No. 10',
   onderwerp: 'THE WORD "BUG"',
   scenes: [
     // 1 · HAAK: een mot fladdert in beeld en wordt vastgeplakt; maar het was niet de eerste bug
-    { duur: 3.6, camera: { zoom: [1, 1.04], stoot: [0.9], schud: [0.9] }, geluid: [[0.05, 'whoosh', 0.5], [0.88, 'klap'], [0.88, 'boem', 0.6], [2.2, 'ding', 0.5]],
+    { duur: 3.6, stem: "This moth was the first actual computer bug. But it wasn't the first bug.", camera: { zoom: [1, 1.04], stoot: [0.9], schud: [0.9] }, geluid: [[0.05, 'whoosh', 0.5], [0.88, 'klap'], [0.88, 'boem', 0.6], [2.2, 'ding', 0.5]],
       teken: h => {
         const p = h.zacht(h.t / 0.9), vast = h.t > 0.9;
         const x = 900 - 360 * p + (vast ? 0 : Math.sin(h.t * 18) * 30), y = 760 + 260 * p + (vast ? 0 : Math.cos(h.t * 14) * 40);
@@ -52,16 +53,16 @@ module.exports = {
           + h.kin('But it wasn\'t the *first bug*.', { y: 690, g: 76, gewicht: 'regular', t: h.t, start: 1.8 }).svg;
       } },
     // 2 · 1947, Harvard, de Mark II
-    { duur: 3.3, in: 'zweep', bron: CHM, bronStart: 1.8, camera: { zoom: [1, 1.05] }, geluid: [[0.8, 'rol', 0.6]],
+    { duur: 3.3, stem: "1947, Harvard University. The Mark Two computer.", in: 'zweep', bron: CHM, bronStart: 1.8, camera: { zoom: [1, 1.05] }, geluid: [[0.8, 'rol', 0.6]],
       teken: h => h.kin('*1947*, Harvard University. The *Mark II* computer.', { y: 300, g: 96, t: h.t, start: 0.05 }).svg
         + relais(h, 150, 820, 4, h.t, 0.6) },
     // 3 · tussen de relaiscontacten: een mot (inzoomen)
-    { duur: 3.4, in: 'zoom', bron: CHM, bronStart: 1.8, camera: { zoom: [1, 1.08], stoot: [1.3] }, geluid: [[1.28, 'pop', 0.9], [1.3, 'klap', 0.5]],
+    { duur: 3.4, stem: "Caught between its relay contacts: a moth.", in: 'zoom', bron: CHM, bronStart: 1.8, camera: { zoom: [1, 1.08], stoot: [1.3] }, geluid: [[1.28, 'pop', 0.9], [1.3, 'klap', 0.5]],
       teken: h => h.kin('Caught between its relay contacts: a *moth*.', { y: 300, g: 96, t: h.t, start: 0.05 }).svg
         + `<g filter="url(#sch)"><rect x="200" y="840" width="680" height="70" rx="10" fill="#8C6A3E"/><rect x="200" y="1150" width="680" height="70" rx="10" fill="#8C6A3E"/></g>`
         + (h.t > 1.2 ? mot(h, 540, 1030, 0.95 * h.veer((h.t - 1.2) / 0.3), { klap: 0.8 }) : '') },
     // 4 · in het logboek geplakt, met de notitie
-    { duur: 4.0, in: 'op', bron: CHM, bronStart: 2.6, camera: { zoom: [1, 1.05] }, geluid: [[0.7, 'klap', 0.7], [1.0, 'klap', 0.6], [1.4, 'rol', 0.5]],
+    { duur: 4.0, stem: "The team taped it into the logbook, with a note: First actual case of bug being found.", in: 'op', bron: CHM, bronStart: 2.6, camera: { zoom: [1, 1.05] }, geluid: [[0.7, 'klap', 0.7], [1.0, 'klap', 0.6], [1.4, 'rol', 0.5]],
       teken: h => {
         const tekst = 'First actual case of bug being found.', n = Math.floor(h.klem((h.t - 1.4) / 1.6) * tekst.length);
         return h.kin('The team taped it into the logbook, with a note:', { y: 300, g: 84, t: h.t, start: 0.05 }).svg
@@ -71,34 +72,34 @@ module.exports = {
           + `<text x="200" y="1180" font-family="IBM Plex Mono" font-size="42" fill="#2A3F8F">${h.esc(n > 21 ? tekst.slice(21, n) : '')}</text>`;
       } },
     // 5 · "actual"? dus het woord bestond al
-    { duur: 3.4, in: 'flits', bron: BEIDE, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5], [1.6, 'ding', 0.5]],
+    { duur: 3.4, stem: "Because bug already meant a fault.", in: 'flits', bron: BEIDE, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5], [1.6, 'ding', 0.5]],
       teken: h => {
         const q = h.veer(h.t / 0.3);
         return `<text x="540" y="${(640 - (1 - q) * 200).toFixed(1)}" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="${(150 * (0.6 + 0.4 * q)).toFixed(0)}" fill="${h.K.signaal}" opacity="${h.klem(h.t / 0.1)}">"actual"?</text>`
           + h.kin('Because "bug" already *meant a fault*.', { y: 860, g: 92, t: h.t, start: 0.6, nadruk: 'balk' }).svg;
       } },
     // 6 · 1878: Edison
-    { duur: 4.0, in: 'zweep', bron: JD, bronStart: 2.6, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
+    { duur: 4.0, stem: "1878. In a letter, Thomas Edison writes of bugs, as such little faults and difficulties are called.", in: 'zweep', bron: JD, bronStart: 2.6, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
       teken: h => {
         const q = h.veer(h.t / 0.3);
         return `<text x="540" y="${(620 - (1 - q) * 300).toFixed(1)}" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="${(270 * (0.6 + 0.4 * q)).toFixed(0)}" fill="${h.K.signaal}" opacity="${h.klem(h.t / 0.1)}">1878</text>`
           + h.kin('In a letter, *Thomas Edison* writes of "Bugs", "as such little faults and difficulties are called."', { y: 760, g: 72, t: h.t, start: 0.45 }).svg;
       } },
     // 7 · Grace Hopper was erbij en maakte het verhaal beroemd
-    { duur: 3.6, in: 'op', bron: CHM, bronStart: 2.2, camera: { zoom: [1.05, 1.0] }, geluid: [[1.5, 'pop', 0.7], [1.9, 'pop', 0.7, 0.4]],
+    { duur: 3.6, stem: "Grace Hopper was there. She made the story famous in her many lectures.", in: 'op', bron: CHM, bronStart: 2.2, camera: { zoom: [1.05, 1.0] }, geluid: [[1.5, 'pop', 0.7], [1.9, 'pop', 0.7, 0.4]],
       teken: h => {
         const p = h.veer((h.t - 1.4) / 0.35);
         return h.kin('*Grace Hopper* was there. She made the story famous in her many *lectures*.', { y: 300, g: 84, t: h.t, start: 0.05 }).svg
           + (p > 0 ? `<g filter="url(#sch)" transform="translate(540 1030) scale(${p.toFixed(3)}) translate(-540 -1030)"><path d="M 220 860 h 640 a 30 30 0 0 1 30 30 v 240 a 30 30 0 0 1 -30 30 h -380 l -90 80 v -80 h -170 a 30 30 0 0 1 -30 -30 v -240 a 30 30 0 0 1 30 -30 Z" fill="#FFFFFF" stroke="${h.K.inkt}" stroke-width="5"/></g>${mot(h, 540, 1000, 0.7 * p, { klap: Math.abs(Math.sin(h.t * 8)) })}` : '');
       } },
     // 8 · het logboek ligt nu in het Smithsonian
-    { duur: 3.6, in: 'masker', nacht: true, bron: JD, bronStart: 2.2, camera: { zoom: [1.05, 1.0] }, geluid: [[0.5, 'whoosh', 0.4], [1.8, 'ding', 0.7]],
+    { duur: 3.6, stem: "Today the logbook, moth and all, is in the Smithsonian's National Museum of American History.", in: 'masker', nacht: true, bron: JD, bronStart: 2.2, camera: { zoom: [1.05, 1.0] }, geluid: [[0.5, 'whoosh', 0.4], [1.8, 'ding', 0.7]],
       teken: h => h.kin('Today the logbook, moth and all, is in the *Smithsonian*\'s National Museum of American History.', { y: 330, g: 76, t: h.t, start: 0.05, kleur: '#F3F0E8', accent: h.K.geel }).svg
         + `<g opacity="${h.klem((h.t - 1.2) / 0.4).toFixed(3)}"><rect x="230" y="880" width="620" height="420" fill="none" stroke="${h.K.geel}" stroke-width="8"/>${blad(h, 270, 920, 540, 340, 0)}${mot(h, 420, 1060, 0.6, { draai: -10 })}</g>` },
     // 9 · slot: de mot op het blad; tekst vliegt weg, video loopt terug naar het begin
-    { duur: 3.8, in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[2.9, 'whoosh', 0.5]],
+    { duur: 3.8, stem: "Not the first bug. Just the first actual one.", in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[-0.9, 'whoosh', 0.5]],
       teken: h => blad(h, 260, 840, 560, 420, -3) + mot(h, 540, 1020, 0.9, { draai: -8 }) + plakband(540, 950, 300, -12) + plakband(540, 1100, 300, 10)
-        + h.kin('Not the first bug. Just the first *actual* one.', { y: 300, g: 96, t: h.t, start: 0.1, weg: 3.0 }).svg
-        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - 3.0) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
+        + h.kin('Not the first bug. Just the first *actual* one.', { y: 300, g: 96, t: h.t, start: 0.1, weg: h.duur - 0.8 }).svg
+        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - (h.duur - 0.8)) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
   ],
 };

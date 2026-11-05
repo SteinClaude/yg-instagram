@@ -30,6 +30,7 @@ const groot = (h, tekst, y = 700, g = 290) => { const q = h.veer(h.t / 0.3);
 module.exports = {
   code: 'YS18',
   versie: 2,
+  stem: { stem: 'am_fenrir', tempo: 1.1 },   // besluit Andries do 5 nov 2026: Kokoro, stem "fenrir"
   map: '2026-11-26-YS18-streepjescode',
   nummer: 'No. 18',
   onderwerp: 'THE BARCODE',
@@ -53,49 +54,49 @@ module.exports = {
   },
   scenes: [
     // 1 · HAAK: een streepjescode slaat neer
-    { duur: 3.2, camera: { zoom: [1, 1.04], stoot: [0.3], schud: [0.3] }, geluid: [[0.28, 'klap'], [0.28, 'boem', 0.8], [0.9, 'ding', 0.4]],
+    { duur: 3.2, stem: "The barcode started as dots and dashes, drawn in sand.", camera: { zoom: [1, 1.04], stoot: [0.3], schud: [0.3] }, geluid: [[0.28, 'klap'], [0.28, 'boem', 0.8], [0.9, 'ding', 0.4]],
       teken: h => { const p = h.klem(h.t / 0.3);
         return code(h, 540, 1040, { schaal: 1.8 - 0.8 * p * p, op: h.klem(h.t / 0.08) })
           + h.kin('The barcode started as *dots and dashes*, drawn in sand.', { y: 300, g: 96, t: h.t, start: 0.4 }).svg; } },
     // 2 · een strand in Miami: punten en strepen
-    { duur: 3.6, in: 'zweep', bron: WYSO, bronStart: 2.2, camera: { zoom: [1, 1.05] }, geluid: [0, 1, 2, 3, 4, 5].map(i => [1.0 + i * 0.18, 'tik', 0.7]),
+    { duur: 3.6, stem: "A beach in Miami. Joe Woodland is thinking about dots and dashes.", in: 'zweep', bron: WYSO, bronStart: 2.2, camera: { zoom: [1, 1.05] }, geluid: [0, 1, 2, 3, 4, 5].map(i => [1.0 + i * 0.18, 'tik', 0.7]),
       teken: h => zand(h) + h.kin('A beach in Miami. Joe Woodland is thinking about *dots and dashes*.', { y: 300, g: 88, t: h.t, start: 0.05 }).svg
         + ['.', '-', '.', '.', '-', '-'].map((d, i) => h.t < 1.0 + i * 0.18 ? '' : `<rect x="${250 + i * 100}" y="1020" width="${d === '.' ? 30 : 80}" height="30" rx="15" fill="#8C7440"/>`).join('') },
     // 3 · vier vingers, naar zich toe getrokken: vier lijnen
-    { duur: 3.8, in: 'op', bron: WYSO, bronStart: 2.4, camera: { zoom: [1, 1.06], stoot: [2.0] }, geluid: [[0.9, 'pop', 0.7], [1.2, 'rol', 0.6], [2.0, 'klap', 0.6]],
+    { duur: 3.8, stem: "He pokes four fingers into the sand, pulls them toward him, and has four lines.", in: 'op', bron: WYSO, bronStart: 2.4, camera: { zoom: [1, 1.06], stoot: [2.0] }, geluid: [[0.9, 'pop', 0.7], [1.2, 'rol', 0.6], [2.0, 'klap', 0.6]],
       teken: h => zand(h) + h.kin('He pokes four fingers into the sand, pulls them toward him… and has *four lines*.', { y: 300, g: 84, t: h.t, start: 0.05 }).svg
         + (h.t > 0.8 ? sporen(h, { rek: h.zacht((h.t - 1.2) / 0.8) }) : '') },
     // 4 · brede en smalle lijnen in plaats van punten en strepen
-    { duur: 3.6, in: 'flits', bron: WYSO, bronStart: 2.2, camera: { zoom: [1.05, 1.0] }, geluid: [[1.4, 'ding', 0.5]],
+    { duur: 3.6, stem: "Wide lines and narrow lines, instead of dots and dashes.", in: 'flits', bron: WYSO, bronStart: 2.2, camera: { zoom: [1.05, 1.0] }, geluid: [[1.4, 'ding', 0.5]],
       teken: h => zand(h) + h.kin('"Wide lines and narrow lines, instead of *dots and dashes*."', { y: 300, g: 90, t: h.t, start: 0.05 }).svg
         + sporen(h, { rek: 1 }) },
     // 5 · dan rondgeveegd tot een cirkel: een schietschijf
-    { duur: 3.6, in: 'zweep', bron: WYSO, bronStart: 2.2, camera: { zoom: [1, 1.06], stoot: [1.9] }, geluid: [[1.0, 'stijg', 0.5], [1.9, 'klap', 0.7]],
+    { duur: 3.6, stem: "Then he sweeps them round into a circle. The first barcode was a bullseye.", in: 'zweep', bron: WYSO, bronStart: 2.2, camera: { zoom: [1, 1.06], stoot: [1.9] }, geluid: [[1.0, 'stijg', 0.5], [1.9, 'klap', 0.7]],
       teken: h => { const r = h.zacht((h.t - 1.0) / 0.9);
         return zand(h) + h.kin('Then he sweeps them round into a circle. The first barcode was a *bullseye*.', { y: 300, g: 86, t: h.t, start: 0.05 }).svg
           + sporen(h, { rek: 1 - r, rond: r > 0.5 ? (r - 0.5) * 2 : 0 }) + (r <= 0.5 ? '' : ''); } },
     // 6 · 1949: patent met Bernard Silver
-    { duur: 3.6, in: 'op', bron: WYSO, bronStart: 2.2, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
+    { duur: 3.6, stem: "1949. With his former classmate Bernard Silver, he applies for a patent.", in: 'op', bron: WYSO, bronStart: 2.2, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5]],
       teken: h => groot(h, '1949') + h.kin('With his former classmate *Bernard Silver*, he applies for a patent.', { y: 830, g: 76, t: h.t, start: 0.45 }).svg },
     // 7 · maar de schietschijf smeerde uit bij het drukken
-    { duur: 3.6, in: 'zweep', bron: WYSO, bronStart: 2.2, camera: { zoom: [1, 1.05], schud: [1.4] }, geluid: [[1.2, 'rol', 0.6]],
+    { duur: 3.6, stem: "But the bullseye tended to smear as the paper ran through.", in: 'zweep', bron: WYSO, bronStart: 2.2, camera: { zoom: [1, 1.05], schud: [1.4] }, geluid: [[1.2, 'rol', 0.6]],
       teken: h => { const sm = h.zacht((h.t - 1.0) / 0.9);
         let s = h.kin('But the bullseye tended to *smear* as the paper ran through.', { y: 300, g: 90, t: h.t, start: 0.05 }).svg;
         for (let k = 0; k < 6; k++) s += [0, 1, 2, 3].map(i => `<circle cx="${540 + k * 22 * sm}" cy="1030" r="${50 + i * 55}" fill="none" stroke="${h.K.inkt}" stroke-width="${[22, 10, 18, 10][i]}" opacity="${(k === 0 ? 1 : 0.18 * sm).toFixed(3)}"/>`).join('');
         return s; } },
     // 8 · bij IBM werd het een rechthoek, leesbaar uit elke richting
-    { duur: 3.8, in: 'op', bron: WYSO, bronStart: 2.4, camera: { zoom: [1, 1.06], stoot: [1.8] }, geluid: [[1.0, 'rol', 0.5], [1.8, 'klap', 0.7], [1.8, 'ding', 0.5]],
+    { duur: 3.8, stem: "At I-B-M it became a rectangle, readable from any direction, at any speed.", in: 'op', bron: WYSO, bronStart: 2.4, camera: { zoom: [1, 1.06], stoot: [1.8] }, geluid: [[1.0, 'rol', 0.5], [1.8, 'klap', 0.7], [1.8, 'ding', 0.5]],
       teken: h => h.kin('At *IBM* it became a rectangle, readable from *any direction*, at any speed.', { y: 300, g: 86, t: h.t, start: 0.05 }).svg
         + code(h, 540, 1040, { p: h.klem((h.t - 0.9) / 0.9), schaal: 0.9 }) },
     // 9 · 1974, Troy, Ohio: een pakje kauwgom als eerste gescand
-    { duur: 3.8, in: 'masker', nacht: true, bron: WYSO, bronStart: 2.4, camera: { zoom: [1.05, 1.0] }, geluid: [[1.6, 'tik', 0.9], [1.7, 'ding', 0.7]],
+    { duur: 3.8, stem: "1974. A grocery store in Troy, Ohio. The first retail item ever scanned: a pack of chewing gum.", in: 'masker', nacht: true, bron: WYSO, bronStart: 2.4, camera: { zoom: [1.05, 1.0] }, geluid: [[1.6, 'tik', 0.9], [1.7, 'ding', 0.7]],
       teken: h => h.kin('*1974*, a grocery store in Troy, Ohio. The first retail item ever scanned: a pack of *chewing gum*.', { y: 330, g: 82, t: h.t, start: 0.05, kleur: '#F3F0E8', accent: h.K.geel }).svg
         + `<g opacity="${h.klem((h.t - 1.2) / 0.3).toFixed(3)}" filter="url(#sch)"><rect x="330" y="960" width="420" height="200" rx="16" fill="${h.K.geel}"/><rect x="560" y="1000" width="150" height="120" fill="#FFFFFF"/>${[0, 1, 2, 3, 4, 5, 6].map(i => `<rect x="${572 + i * 18}" y="1010" width="${i % 2 ? 6 : 10}" height="100" fill="${h.K.inkt}"/>`).join('')}</g>`
         + (h.t > 1.6 ? `<line x1="250" y1="1060" x2="830" y2="1060" stroke="${h.K.signaal}" stroke-width="6" opacity="${(1 - h.klem((h.t - 1.9) / 0.4)).toFixed(3)}"/>` : '') },
     // 10 · slot: de streepjescode; tekst vliegt weg, video loopt terug naar het begin
-    { duur: 3.8, in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[2.9, 'whoosh', 0.5]],
+    { duur: 3.8, stem: "Dots and dashes, stretched into lines.", in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[-0.9, 'whoosh', 0.5]],
       teken: h => code(h, 540, 1040)
-        + h.kin('Dots and dashes, *stretched into lines*.', { y: 300, g: 100, t: h.t, start: 0.1, weg: 3.0 }).svg
-        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - 3.0) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
+        + h.kin('Dots and dashes, *stretched into lines*.', { y: 300, g: 100, t: h.t, start: 0.1, weg: h.duur - 0.8 }).svg
+        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - (h.duur - 0.8)) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
   ],
 };
