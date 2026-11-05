@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-05T17:22:13Z",
+  "tijd": "2026-11-05T18:32:54Z",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-05T15:24:14Z"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -21,11 +21,12 @@
     "YS05 opnieuw met stem fenrir, 38,8 s, AI-label ja",
     "YS06 opnieuw met stem fenrir, 43,5 s, AI-label ja; Next-regel niet meer over het toetsenpaneel",
     "YS07 opnieuw met stem fenrir, AI-label ja",
-    "uitspraak jaartallen/datums hersteld in stem.py (fc59dc6); YS04–YS07 opnieuw gerenderd (alleen uitspraak), YS08 met stem 49,6 s"
+    "uitspraak jaartallen/datums hersteld in stem.py (fc59dc6); YS04–YS07 opnieuw gerenderd (alleen uitspraak), YS08 met stem 49,6 s",
+    "OK YS04–YS07 blijft gelden na de uitspraakfix en OK YS08 (versie met stem) vastgelegd in studio.txt"
   ],
-  "bezig": "wacht op Andries: bevestigen dat OK YS04–YS07 blijft na de uitspraakfix; nalopen YS08",
-  "volgende": "na zijn oordeel over YS04: aanpassen of YS05 met stem maken, en zo verder stuk voor stuk t/m YS18; elke nieuwe versie vraagt een nieuw \"pakket OK <code>\"",
-  "kanNietVerder": "wacht op Andries: (1) blijft pakket OK YS04–YS07 gelden na alleen de uitspraakfix van jaartallen? (2) nalopen nieuwe YS08 met stem",
+  "bezig": "YS09 met stem maken",
+  "volgende": "YS09 ter keuring; daarna YS10 t/m YS18 stuk voor stuk met stem; elke nieuwe versie vraagt een nieuw \"pakket OK <code>\"",
+  "kanNietVerder": null,
   "vragen": [
     {
       "vraag": "V3 ritme vreemd maar waar op kanaal 1: voorstel 3x per week (ma, wo, vr) om 21:00 Amsterdam, naast YS dagelijks 18:00, vanaf ma 16 nov",
@@ -164,6 +165,12 @@
     {
       "tijd": "2026-11-05T16:54:08Z",
       "wat": "Andries in de sessie van Manon, do 5 nov 2026 ±17:54: \"pakket OK YS07\" (nieuwe versie met stem, 2e281ca; op de vraag \"Is YS07 met stem goed zo?\")",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-05T18:32:54Z",
+      "wat": "Andries in de sessie van Manon, do 5 nov 2026 ±19:32: \"Ja, en OK YS08\" (op de vraag \"Blijft je OK voor YS04–YS07 gelden, en is YS08 goed?\"; YS04–YS07 na alleen de uitspraakfix, 5f76637; YS08 nieuwe versie met stem, 5f76637)",
       "waar": "pc-sessie van Manon",
       "wie": "andries"
     }

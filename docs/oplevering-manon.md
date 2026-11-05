@@ -1,3 +1,5 @@
+KLAAR: pakket OK YS08 (versie met stem) en OK YS04–YS07 blijft na de uitspraakfix · 5f76637
+
 KAN NIET VERDER: na de OK van YS04–YS07 de uitspraak van jaartallen hersteld (fc59dc6, opnieuw gerenderd); YS08 met stem klaar · nodig: Andries bevestigt dat de OK voor YS04–YS07 blijft gelden, en keurt YS08
 
 KLAAR: pakket OK YS07 (versie met stem) · 2e281ca
@@ -90,6 +92,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, do 5 nov 2026 ±19:32: "Ja, en OK YS08" (op de vraag "Blijft je OK voor YS04–YS07 gelden, en is YS08 goed?"; YS04–YS07 na alleen de uitspraakfix, 5f76637; YS08 nieuwe versie met stem, 5f76637)
 - Andries in de sessie van Manon, do 5 nov 2026 ±17:54: "pakket OK YS07" (nieuwe versie met stem, 2e281ca; op de vraag "Is YS07 met stem goed zo?")
 - Andries in de sessie van Manon, do 5 nov 2026 ±17:40: "pakket OK YS06" (nieuwe versie met stem, f269786; op de vraag "Is YS06 met stem goed zo?")
 - Andries in de sessie van Manon, do 5 nov 2026 ±17:24: "pakket OK YS05" (nieuwe versie met stem, d0af0d4; op de vraag "Is YS05 met stem goed zo?")
