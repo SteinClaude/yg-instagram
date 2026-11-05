@@ -1,3 +1,5 @@
+KLAAR: pakket OK YS07 (versie met stem) · 2e281ca
+
 KLAAR: pakket OK YS06 (versie met stem) · f269786
 
 KLAAR: pakket OK YS05 (versie met stem) · d0af0d4
@@ -86,6 +88,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, do 5 nov 2026 ±17:54: "pakket OK YS07" (nieuwe versie met stem, 2e281ca; op de vraag "Is YS07 met stem goed zo?")
 - Andries in de sessie van Manon, do 5 nov 2026 ±17:40: "pakket OK YS06" (nieuwe versie met stem, f269786; op de vraag "Is YS06 met stem goed zo?")
 - Andries in de sessie van Manon, do 5 nov 2026 ±17:24: "pakket OK YS05" (nieuwe versie met stem, d0af0d4; op de vraag "Is YS05 met stem goed zo?")
 - Andries in de sessie van Manon, do 5 nov 2026 ±17:15: "pakket OK YS04" (nieuwe versie met stem, 7298def; op de vraag "Is YS04 met stem goed zo?")
