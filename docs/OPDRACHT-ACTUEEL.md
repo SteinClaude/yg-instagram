@@ -1,6 +1,38 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** do 5 nov 2026, 10:15 — Eva
+**Bijgewerkt:** do 5 nov 2026, 13:45 — Eva
+
+## ▶ NU — do 5 nov 13:45 (Eva): vanavond 16:30–19:45 kanaal 1 volgens het draaiboek; kanaal 2 is van Finn
+
+Dit blok gaat voor. Waar de blokken "NU — do 5 nov 10:15" en "NU — wo 4 nov 17:50" iets anders zeggen over kanaal 2, GT-pakketten, YHK01 of de volgorde van vanavond, geldt dit blok.
+
+**Andries via chat met Eva, do 5 nov 2026** (kanaalnamen weggelaten, openbare repo):
+- 11:17: *"Plan dit in voor 16:30"*
+- 12:14: *"Maak met agents de perfecte planing en controleer dit per stuk koppel dit ook terug in de git zodat we secuur te werk gaan"*
+- 13:07: *"Oke dan gebruiken we dat ene kanaal waar content voor is, die noemen we kanaal 1, kanaal 2 zou gta videos worden maar dit is geen verdien model"*
+- 13:17: *"Als ik thuis ben gaan we kanaal 1 afmaken … ik dacht manon kanaal laten doen, een extra agent naken voor kanaal 2, dan als ze beide klaar zijn kan elke agent hun eigen kanaal bij houden en zo bliift het ook gescheiden in de sessies"*
+- 13:23: *"Dan ga ik in de nieuwe sessie met de nieuwe agent praten over war ik nou wil en wat we kunnen doen dus hou de info als onderdeel van het gesprek maar is geen eis of doel"*
+- 13:24 (vragenlijst van Eva): nieuwe agent **"Finn"**; plaats **"YG-Social, naast Manon"**.
+
+**Wat dat voor jou betekent:**
+1. **Vanavond volg je het draaiboek** `docs/sessie-2026-11-05-youtube.md`. Elke stap is gecontroleerd door een agent die er niet aan meewerkte; daarna liep Eva de versie met Finn nog eens na. Jouw stappen zijn S2, K4–K7, V1–V3 en E1. Kort:
+   - Andries geeft je het venster van kanaal 1 via `/chrome`; jij controleert in Studio welk kanaal actief is (naam links onder de kanaalfoto).
+   - Eerst YK01 (Studio → Aanpassing → Profiel).
+   - Daarna inplannen vanaf YS04, op volgorde van datum, één short per upload. Reken op ±12 minuten per short.
+   - De bio zet je pas na **"bio OK kanaal 1, Manon mag hem zetten"**. Laat Studio de link nog niet toe (klikbare links horen bij de geavanceerde functies), zet dan alleen de beschrijving en meld het.
+   - Bij de melding van de daglimiet stop je en meld je welke codes nog moeten.
+2. **Kanaal 1 is het hoofdkanaal** (YS + vreemd maar waar). **Kanaal 2 is van Finn**, die in een eigen privé-repo werkt. Je maakt niets meer voor kanaal 2. Het GTA-plan, de GT-pakketten en GTK01 uit het blok van 10:15 vervallen; YHK01 ook.
+3. **Je blijft directeur van YG-Social** voor de gedeelde zaken: accountnamen op andere platforms, het potje, het maandoverzicht en de gegevens. Vragen van Finn daarover komen via `voorEva`.
+4. **Werk je studio.txt bij** zodra je een short inplant: "ingepland door Manon" met datum en tijd. De oude zin "Andries (of Eva) plant in" klopt niet meer. In de studio.txt van YK01 heet "tabblad Branding" nu "Aanpassing → Profiel".
+
+**CORRECTIE (avondronde wo 4 nov 20:45; die kon niet pushen, Eva zet hem nu):**
+- **Wat er gebeurde:** het blok "Eerste punt" van 18:05 zei dat je tot het besluit van Andries geen Commons-beeld in een pakket gebruikt. Toch maakte je daarna YH01 (`0af8f19`, 18:16) en YH02 (`45650a9`, 18:28) met elk vier Commons-beelden. Er is niets ingepland en de licenties zijn in orde. De zin "Nog geen pakket gebruikt Commons" in dat blok klopte daarna niet meer.
+- **Voortaan:** wijkt je werk af van je opdracht, zet dat dan bovenaan je oplevering.
+- **Wat nu geldt:**
+  - YH01 en YH02 blijven staan, niet ingepland.
+  - Vanavond beslist Andries (V2): Commons ja of nee. Bij nee: een gratis Pexels-sleutel die hij aanmaakt (lokaal, nooit in git), of eigen animatie.
+  - Tot zijn antwoord gebruik je geen nieuw Commons-beeld.
+- **Oordeel van de avondronde:** YS15–YS18 zijn technisch in orde en de steekproef YS17 klopt; het advies is pakket OK.
 
 ## ▶ NU — do 5 nov 10:15 (Eva): kanaal 2 wordt GTA 6; vreemd maar waar gaat naar kanaal 1
 
@@ -49,7 +81,7 @@ Dit staat nu ook in je `CLAUDE.md` (punt 3 bij de sessiestart). Kort:
 5. **Harde stops blijven:** niet inloggen; geen geld (elk bedrag apart een OK van Andries); niets inplannen of plaatsen zonder "pakket OK <code>"; geen kanaalinstelling zonder zijn toestemming voor dat ene ding (nu alleen YK01).
 6. **Eva leest alles mee** en grijpt in waar nodig: dan staat hier een CORRECTIE-blok en stop je met dat punt tot Andries opnieuw beslist. Vragen met een aanname (hoe, niet wat) blijven in je stand; Eva reageert alleen als je aanname niet klopt.
 
-**Eerste punt (Eva meegelezen, wo 4 nov 18:05): Wikimedia Commons als beeldbron.** In `b5a0bb2` bouwde je `gereedschap/short/beeld.cjs` (beelden van Commons, alleen publiek domein, CC0 of CC BY). Netjes afgebakend, maar je opdracht noemt voor kanaal 2 alleen Pexels en Pixabay (keuze van Andries). Leg het hem dus eerst voor, als besluit: *"Mag Wikimedia Commons erbij als beeldbron (alleen publiek domein, CC0 of CC BY; bij CC BY naam van de maker, licentie en link in de YouTube-beschrijving)?"* Tot zijn antwoord gebruik je geen Commons-beeld in een pakket; Pexels, Pixabay en eigen animatie mogen wel. Nog geen pakket gebruikt Commons, dus er hoeft niets terug.
+**Eerste punt (Eva meegelezen, wo 4 nov 18:05): Wikimedia Commons als beeldbron.** In `b5a0bb2` bouwde je `gereedschap/short/beeld.cjs` (beelden van Commons, alleen publiek domein, CC0 of CC BY). Netjes afgebakend, maar je opdracht noemt voor kanaal 2 alleen Pexels en Pixabay (keuze van Andries). Leg het hem dus eerst voor, als besluit: *"Mag Wikimedia Commons erbij als beeldbron (alleen publiek domein, CC0 of CC BY; bij CC BY naam van de maker, licentie en link in de YouTube-beschrijving)?"* Tot zijn antwoord gebruik je geen Commons-beeld in een pakket; Pexels, Pixabay en eigen animatie mogen wel. (Correctie 5 nov: YH01 en YH02 gebruiken wél Commons-beelden; zie het NU-blok van 5 nov 14:45.)
 
 ## ▶ NU — wo 4 nov 17:50 (Eva). Dit blok gaat voor; de blokken eronder blijven gelden waar dit blok niets anders zegt.
 
