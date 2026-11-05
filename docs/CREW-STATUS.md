@@ -1,6 +1,6 @@
 # CREW-STATUS — stand van alle sporen
 
-**Bijgewerkt:** do 5 nov 2026, 13:45 — Eva. Eva werkt dit bij in de avondronde en bij elke kantoor-check als er iets veranderde (besluit Andries 2 nov 20:46). Lees dit bij elke "ga verder"; wat hier en in je opdracht niet staat, weet je niet en neem je niet aan.
+**Bijgewerkt:** do 5 nov 2026, 16:47 — Eva (kantoor-check). Eva werkt dit bij in de avondronde en bij elke kantoor-check als er iets veranderde (besluit Andries 2 nov 20:46). Lees dit bij elke "ga verder"; wat hier en in je opdracht niet staat, weet je niet en neem je niet aan.
 
 ## Werkwijze voor iedereen
 - Andries beslist. Eva (chef de staf) zet opdrachten in `docs/OPDRACHT-ACTUEEL.md` en leest jullie stand en opleveringen.
@@ -13,7 +13,7 @@
 | Wie | Rol | Nu |
 |---|---|---|
 | Eva | chef de staf | leest je stand, oplevering en besluiten mee; zet je opdracht klaar; grijpt in waar nodig (C27) |
-| Manon | YG-Social · kanaal 1 | Kanaal 1 is het hoofdkanaal: YS + vreemd maar waar (Andries 5 nov 13:07). Vanavond 16:30–19:45 sessie met Andries volgens `docs/sessie-2026-11-05-youtube.md`: YS15–YS18 keuren, YK01 en bio zetten, inplannen vanaf YS04, besluiten over YH01/YH02; directeur YG-Social voor de gedeelde zaken; besluiten rechtstreeks met Andries (C27); @ygdigital.nl op pauze |
+| Manon | YG-Social · kanaal 1 | Kanaal 1 is het hoofdkanaal: YS + vreemd maar waar (Andries 5 nov 13:07). Sessie 5 nov: bestanden YS04–YS18 en YK01 gecontroleerd (`5ce92a4`); Andries besliste 16:29: alle YS-shorts eerst met stem (Kokoro) en stuk voor stuk nalopen (`618a623`); YS04 als proef, daarna YS05–YS18 elk opnieuw ter keuring; inplannen schuift tot daarna; directeur YG-Social voor de gedeelde zaken; besluiten rechtstreeks met Andries (C27); @ygdigital.nl op pauze |
 
 Kanaal 2 is sinds 5 nov van crewlid Finn, in een eigen privé-repo. De overige sporen van de crew zijn privé. Wat Manon van een ander crewlid moet weten, zet Eva in haar opdracht.
 
