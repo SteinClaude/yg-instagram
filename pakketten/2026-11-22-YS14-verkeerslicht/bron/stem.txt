@@ -1,0 +1,12 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. The world's first traffic light exploded.
+2. December 1868. London, outside the Houses of Parliament, in Westminster.
+3. It was designed by J-P Knight, a railway signalling engineer.
+4. He took the idea from railway signals, onto the road.
+5. By day: semaphore arms.
+6. At night: red and green gas lamps.
+7. All of it operated by a police constable.
+8. Then a leak in the gas line made it explode. The policeman on duty was seriously burned.
+9. For more than forty years, the U-K had no traffic lights. Electric signals spread in London around 1929.
+10. The first traffic light. An idea from the railways.

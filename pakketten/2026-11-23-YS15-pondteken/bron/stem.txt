@@ -1,0 +1,12 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. The pound sign is an L. In disguise.
+2. L for libra, the Latin word for a pound of money.
+3. Over the years, that L became the pound sign.
+4. Old British money was written as pounds, S, and D.
+5. S for solidus, D for denarius. Both originally Roman.
+6. One pound was twenty shillings, or two hundred and forty pence.
+7. The system grew up in the Frankish kingdom, and reached England perhaps in the seventh century.
+8. Under William the First, silver pennies got a consistent weight. That is where the pound of two hundred and forty pence comes from.
+9. Britain counted like this until 1971.
+10. Every pound sign you see: an L, for libra.

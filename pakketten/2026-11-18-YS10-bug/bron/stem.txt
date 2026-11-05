@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. This moth was the first actual computer bug. But it wasn't the first bug.
+2. 1947, Harvard University. The Mark Two computer.
+3. Caught between its relay contacts: a moth.
+4. The team taped it into the logbook, with a note: First actual case of bug being found.
+5. Because bug already meant a fault.
+6. 1878. In a letter, Thomas Edison writes of bugs, as such little faults and difficulties are called.
+7. Grace Hopper was there. She made the story famous in her many lectures.
+8. Today the logbook, moth and all, is in the Smithsonian's National Museum of American History.
+9. Not the first bug. Just the first actual one.

@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Longitude zero runs through one telescope.
+2. Before, there were no international conventions for measuring time.
+3. 1884. The Greenwich Meridian is recommended as the Prime Meridian of the World. Zero degrees longitude.
+4. Why Greenwich? The U-S-A had already chosen it for its own time zones.
+5. And seventy-two percent of the world's commerce used sea charts based on Greenwich.
+6. So zero at Greenwich helped the largest number of people.
+7. The exact line: the cross-hairs of the Airy Transit Circle telescope.
+8. From 1884 until 1972, G-M-T was the world's standard of civil time.
+9. Zero, because most ships already used it.

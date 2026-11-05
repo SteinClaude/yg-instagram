@@ -1,0 +1,12 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Fold a sheet of A4 in half. It's still the same shape.
+2. On every ISO page, height divided by width is the square root of two. About one point four one four.
+3. Cut it in half, and you get the same ratio again. And again.
+4. It all starts with A-zero: exactly one square metre.
+5. Halve it four times, and you get A4. Two hundred ten by two hundred ninety-seven millimetres.
+6. 1786. In a letter, scientist Georg Christoph Lichtenberg describes this ratio for paper.
+7. 1798. A French law on paper taxes already uses these exact sizes.
+8. 1922. Germany makes it a standard, D-I-N four seventy-six, reinvented by Doctor Walter Porstmann.
+9. 1975. It becomes world standard ISO two sixteen, and the official U-N document format.
+10. Used almost everywhere on the planet. Except North America.

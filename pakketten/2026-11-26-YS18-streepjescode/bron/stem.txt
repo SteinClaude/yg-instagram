@@ -1,0 +1,12 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. The barcode started as dots and dashes, drawn in sand.
+2. A beach in Miami. Joe Woodland is thinking about dots and dashes.
+3. He pokes four fingers into the sand, pulls them toward him, and has four lines.
+4. Wide lines and narrow lines, instead of dots and dashes.
+5. Then he sweeps them round into a circle. The first barcode was a bullseye.
+6. 1949. With his former classmate Bernard Silver, he applies for a patent.
+7. But the bullseye tended to smear as the paper ran through.
+8. At I-B-M it became a rectangle, readable from any direction, at any speed.
+9. 1974. A grocery store in Troy, Ohio. The first retail item ever scanned: a pack of chewing gum.
+10. Dots and dashes, stretched into lines.

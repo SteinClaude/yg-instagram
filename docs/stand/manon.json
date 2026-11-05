@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-05T18:35:40Z",
+  "tijd": "2026-11-05T19:31:48Z",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-05T15:24:14Z"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -22,11 +22,12 @@
     "YS06 opnieuw met stem fenrir, 43,5 s, AI-label ja; Next-regel niet meer over het toetsenpaneel",
     "YS07 opnieuw met stem fenrir, AI-label ja",
     "uitspraak jaartallen/datums hersteld in stem.py (fc59dc6); YS04–YS07 opnieuw gerenderd (alleen uitspraak), YS08 met stem 49,6 s",
-    "OK YS04–YS07 blijft gelden na de uitspraakfix en OK YS08 (versie met stem) vastgelegd in studio.txt"
+    "OK YS04–YS07 blijft gelden na de uitspraakfix en OK YS08 (versie met stem) vastgelegd in studio.txt",
+    "YS09 t/m YS18 in één keer opnieuw met stem fenrir (beeld en tekst gelijk; 35–55 s; upload-kopieën 8,8–9,0 MB; ±-14,5 LUFS; controlebeelden nagekeken); AI-label ja; stem genoemd in bron/bronnen.md van YS04–YS18"
   ],
-  "bezig": "YS09 t/m YS18 in één keer met stem (fenrir) aan het maken",
-  "volgende": "YS09–YS18 met stem pushen en Andries in één keer om \"pakket OK\" per code vragen (YS09 t/m YS18); daarna inplannen na zijn \"ja\" (K2)",
-  "kanNietVerder": null,
+  "bezig": "-",
+  "volgende": "na pakket OK YS09–YS18 en zijn \"ja\": YS04 t/m YS18 inplannen in YouTube Studio (kanaal 1, 18:00, datum uit studio.txt), dan YK01; daarna V1–V3 voor vreemd maar waar",
+  "kanNietVerder": "wacht op Andries: \"pakket OK\" per code voor YS09 t/m YS18 (versies met stem); daarna inplannen na zijn \"ja\" (K2)",
   "vragen": [
     {
       "vraag": "V3 ritme vreemd maar waar op kanaal 1: voorstel 3x per week (ma, wo, vr) om 21:00 Amsterdam, naast YS dagelijks 18:00, vanaf ma 16 nov",

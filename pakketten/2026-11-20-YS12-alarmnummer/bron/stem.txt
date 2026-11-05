@@ -1,0 +1,12 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. The world's first emergency number started with a fire.
+2. November 1935. Wimpole Street, London. A fire kills five women.
+3. A review of the fire leads to the Belgrave Committee.
+4. Its question: how can operators identify emergency calls?
+5. Its advice: one number for all the emergency services.
+6. And it must be easy to remember.
+7. The answer: nine, nine, nine.
+8. June thirtieth, 1937. The first ever nine nine nine call, in London. The first of its kind in the world.
+9. In the first week: one thousand, three hundred and thirty-six calls.
+10. One fire. One number, easy to remember. Nine, nine, nine.

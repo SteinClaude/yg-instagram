@@ -1,3 +1,5 @@
+KAN NIET VERDER: YS09 t/m YS18 met stem klaar (in één keer, besluit Andries 19:33) · nodig: Andries geeft "pakket OK" per code voor YS09 t/m YS18
+
 KLAAR: pakket OK YS08 (versie met stem) en OK YS04–YS07 blijft na de uitspraakfix · 5f76637
 
 KAN NIET VERDER: na de OK van YS04–YS07 de uitspraak van jaartallen hersteld (fc59dc6, opnieuw gerenderd); YS08 met stem klaar · nodig: Andries bevestigt dat de OK voor YS04–YS07 blijft gelden, en keurt YS08

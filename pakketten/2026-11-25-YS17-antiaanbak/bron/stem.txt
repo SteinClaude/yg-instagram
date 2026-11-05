@@ -1,0 +1,12 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Non-stick pans started with an empty gas cylinder.
+2. 1938, at DuPont. Chemist Roy Plunkett is researching new refrigerants.
+3. He makes a hundred pounds of a gas, T-F-E, and stores it in small cylinders.
+4. One day, the valve opens. Nothing comes out.
+5. But the cylinder weighs the same as before.
+6. They open it up: a white powder.
+7. The gas had polymerized. The new stuff resisted heat, and almost nothing stuck to it.
+8. Its first job: the Manhattan Project. Non-stick pans came years later.
+9. An accident. Unlike most other polymer products.
+10. An empty cylinder that wasn't empty.

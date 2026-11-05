@@ -22,5 +22,5 @@ https://www.sciencehistory.org/education/scientific-biographies/roy-j-plunkett/
 ## Beeld, letters en geluid
 - Beeld: eigen animatie (SVG, gereedschap/short.cjs, versie 2). Geen stockbeeld, geen beeld van anderen, geen AI-beeld.
 - Letters: Instrument Sans en IBM Plex Mono, SIL Open Font License (gereedschap/short/fonts/).
-- Geluid: eigen geluidseffecten (whoosh, tik, klap, dreun, stijgende toon, bel, plop, rol), zelf gesynthetiseerd met ffmpeg uit sinus en ruis (gereedschap/short/geluid.cjs). Geen muziek, geen stem, geen audio van anderen.
+- Geluid: eigen geluidseffecten (whoosh, tik, klap, dreun, stijgende toon, bel, plop, rol), zelf gesynthetiseerd met ffmpeg uit sinus en ruis (gereedschap/short/geluid.cjs). Stem: Engelse AI-stem Kokoro-82M (open source, Apache-2.0, stem "fenrir"), lokaal gemaakt; ingesproken tekst in bron/stem.txt. Geen muziek, geen audio van anderen.
 - Controle: bron/controle-beweging.jpg (beelden uit de mp4, midden in de bewegingen).

@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. The dollar sign is probably not an S. It's two letters.
+2. Long before the U-S dollar, there was the Spanish or Mexican peso.
+3. Pesos were abbreviated P-S.
+4. Old manuscripts show the S gradually written over the P.
+5. Until it became something very close to the dollar sign.
+6. Probably in different places, independently of each other.
+7. The sign was already widely used before the U-S adopted the dollar, in 1785.
+8. Other explanations exist. This is the most accepted one.
+9. A P and an S. Most likely.

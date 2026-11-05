@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Velcro started with a walk with a dog.
+2. 1941. George de Mestral walks in the woods with his dog, an Irish Pointer.
+3. Burrs from burdock plants cling to his pants, and his dog's fur.
+4. At home, he looks at one under a microscope.
+5. It is covered in thousands of tiny hooks.
+6. They grip the loops in the threads of his clothes.
+7. He makes the hooks from nylon, with a fabric maker in Lyon, France.
+8. The name comes from two French words: velour, velvet, and crochet, hooks.
+9. Hooks and loops, copied from a burr.
