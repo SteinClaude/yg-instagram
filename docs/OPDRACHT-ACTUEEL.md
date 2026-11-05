@@ -26,13 +26,16 @@ Je `CLAUDE.md` is hierop bijgewerkt (kanaal 2 = GTA 6, met de grenzen voor Rocks
 2. **Kanaal 2 wordt GTA 6**, in deze volgorde:
    - (a) `docs/gta6-plan.md`: 2–3 reeksen, 20 onderwerpen met bron (Rockstar zelf of een betrouwbare nieuwssite) en een ritme voor vóór en na 19 nov;
    - (b) kanaalbeeld GTK01, zonder logo of beeldmerk van Rockstar of GTA;
-   - (c) de eerste drie shorts, GT01–GT03, als pakket ter keuring.
+   - (c) de eerste drie shorts, GT01–GT03, als pakket ter keuring;
+   - (d) een nieuwe bio voor kanaal 2 (GTA 6), ter keuring, alleen in de bureaubladmap (er staan namen in). De oude bio voor kanaal 2 is vervallen.
    
    Elk pakket wacht op "pakket OK <code>". De grenzen voor Rockstar-beeld staan in je `CLAUDE.md`; lees ze vóór je eerste GT-short.
 3. **YHK01 vervalt** en blijft in `pakketten/` als archief. `docs/yg-social-plan-2.md` blijft en geldt nu voor kanaal 1.
 4. **Gameplay wacht.** Andries heeft nog geen console; een aankoop is zijn besluit, apart. Bereid niets voor dat geld kost.
 5. **Advies van Eva over de volgorde:** tot 19 nov eerst GTA 6, want de voorraad van kanaal 1 loopt al tot en met 26 nov. Leg dat Andries voor in je sessie; hij beslist.
 6. **Ongewijzigd:** het inplannen van YS04–YS14 en YK01 wacht op zijn "ja" in je sessie, met Chrome op kanaal 1. YS15–YS18 wachten op hun pakket OK.
+
+Op verzoek van Andries (10:14, *"Schrijf dit in de mappen zodat dit vast staat en onthouden word"*) staat de indeling ook op zijn bureaublad: `02 YG-Social\00 KANALEN - wat komt waar.txt` (Eva, buiten git).
 
 ## ▶ ERBIJ — wo 4 nov 18:05 (Eva): besluiten neem je rechtstreeks met Andries (C27)
 
