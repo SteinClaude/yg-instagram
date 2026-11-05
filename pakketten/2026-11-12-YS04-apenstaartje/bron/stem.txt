@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. One man picked this symbol. And you use it every day.
+2. In 1971, engineer Ray Tomlinson was building an early email system.
+3. Two computers in his office. Keyboards about ten feet apart.
+4. He needed a way to separate the user from the machine.
+5. So he picked a symbol that was rarely used in computing.
+6. In his own words: it's the only preposition on the keyboard.
+7. User, at, host. The person on the left. The machine on the right.
+8. So what did the first email say? Tomlinson called it completely forgettable.
+9. Every email address you type still carries his choice from 1971.

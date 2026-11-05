@@ -220,7 +220,7 @@ function geluidLijst(script) {
   const lijst = []; let t0 = 0;
   script.scenes.forEach((s, i) => {
     if (s.in && i > 0) lijst.push([Math.max(0, t0 - 0.16), 'whoosh', 0.55]);
-    for (const [t, naam, vol, pan] of s.geluid || []) lijst.push([t0 + t, naam, vol ?? 1, pan ?? 0]);
+    for (const [t, naam, vol, pan] of s.geluid || []) lijst.push([t0 + (t < 0 ? s.duur + t : t), naam, vol ?? 1, pan ?? 0]);   // negatieve tijd = vanaf het eind van de scène
     t0 += s.duur;
   });
   return lijst;
@@ -242,10 +242,48 @@ function korrel(px, i, sterkte = 5) {
 const totaal = script => script.scenes.reduce((a, s) => a + s.duur, 0);
 const teken = svg => new Resvg(svg, { font: { fontFiles, loadSystemFonts: false, defaultFontFamily: 'Instrument Sans' }, fitTo: { mode: 'width', value: W } }).render();
 
+// Stem (besluit Andries do 5 nov 2026: Kokoro, stem "fenrir"). script.stem = { stem: 'am_fenrir', tempo: 1.1 } en per
+// scène `stem: 'tekst'` (optioneel `stemStart`, standaard 0.12 s). Een scène duurt minstens zo lang als haar zin + 0,25 s.
+// De wav's komen in een cache buiten de repo (te groot voor git); de tekst staat in het script en in bron/stem.txt.
+const KOKORO_PY = process.env.KOKORO_PY || 'C:/Users/gijsm/yg-gereedschap/kokoro-venv/Scripts/python.exe';
+function voorbereidStem(script, map) {
+  if (!script.stem) return [];
+  const cache = path.join(require('os').tmpdir(), 'yg-stem'); fs.mkdirSync(cache, { recursive: true });
+  const { stem = 'am_fenrir', tempo = 1.1 } = script.stem, sporen = []; let t0 = 0, tekst = '';
+  script.scenes.forEach((s, i) => {
+    if (s.stem) {
+      const sleutel = require('crypto').createHash('sha1').update(`${stem}|${tempo}|${s.stem}`).digest('hex').slice(0, 16);
+      const wav = path.join(cache, sleutel + '.wav');
+      if (!fs.existsSync(wav)) execFileSync(KOKORO_PY, [path.join(__dirname, 'short', 'stem.py'), wav, stem, String(tempo), s.stem]);
+      const pcm = execFileSync('ffmpeg', ['-v', 'error', '-i', wav, '-ac', '1', '-ar', String(GELUID.RATE), '-f', 'f32le', 'pipe:1'], { maxBuffer: 64 << 20 });
+      const smp = new Float32Array(pcm.buffer, pcm.byteOffset, pcm.length / 4), start = s.stemStart ?? 0.12, lengte = smp.length / GELUID.RATE;
+      s.duur = Math.max(s.duur, start + lengte + 0.25);
+      sporen.push({ begin: t0 + start, smp });
+      tekst += `${i + 1}. ${s.stem}\n`;
+    }
+    t0 += s.duur;
+  });
+  fs.writeFileSync(path.join(map, 'bron', 'stem.txt'), `Stem: Kokoro-82M (Apache-2.0), stem ${stem}, tempo ${tempo}; lokaal gemaakt met gereedschap/short/stem.py.\nIngesproken tekst per scène:\n${tekst}`);
+  return sporen;
+}
+// Stem in de mix: effecten zachter (0,5) zodat de stem boven ligt, daarna een begrenzer tegen oversturen.
+function mengStem(pcm, sporen) {
+  if (!sporen.length) return pcm;
+  for (let k = 0; k < pcm.length; k++) pcm[k] *= 0.5;
+  for (const { begin, smp } of sporen) {
+    const b = Math.round(begin * GELUID.RATE);
+    for (let j = 0; j < smp.length && (b + j) * 2 + 1 < pcm.length; j++) { pcm[(b + j) * 2] += smp[j] * 0.95; pcm[(b + j) * 2 + 1] += smp[j] * 0.95; }
+  }
+  let piek = 0; for (let k = 0; k < pcm.length; k++) piek = Math.max(piek, Math.abs(pcm[k]));
+  if (piek > 0.97) { const f = 0.97 / piek; for (let k = 0; k < pcm.length; k++) pcm[k] *= f; }
+  return pcm;
+}
+
 async function maak(code, alleenBeelden) {
   const script = require(path.join(WORTEL, 'teksten', 'shorts', code + '.cjs'));
   const map = path.join(WORTEL, 'pakketten', script.map);
   fs.mkdirSync(path.join(map, 'bron'), { recursive: true });
+  const stemSporen = voorbereidStem(script, map);
   const duur = totaal(script), n = Math.round(duur * FPS);
   console.log(`${code}: ${duur.toFixed(1)} s, ${n} beelden -> ${path.relative(WORTEL, map)}`);
 
@@ -264,7 +302,7 @@ async function maak(code, alleenBeelden) {
   const v2 = script.versie === 2;
   let audioIn = ['-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=48000'];
   if (v2) {
-    const lijst = geluidLijst(script), pcm = GELUID.mix(lijst, duur);
+    const lijst = geluidLijst(script), pcm = mengStem(GELUID.mix(lijst, duur), stemSporen);
     const tmp = path.join(require('os').tmpdir(), `short-${code}-geluid.f32`);
     fs.writeFileSync(tmp, Buffer.from(pcm.buffer));
     audioIn = ['-f', 'f32le', '-ar', String(GELUID.RATE), '-ac', '2', '-i', tmp];
@@ -276,6 +314,7 @@ async function maak(code, alleenBeelden) {
     '-map', '0:v', '-map', '1:a', '-shortest',
     '-c:v', 'libx264', '-preset', 'medium', '-crf', v2 ? '20' : '18', ...(v2 ? ['-maxrate', '7M', '-bufsize', '14M'] : []),   // korrel comprimeert slecht: v2 begrensd (GitHub weigert bestanden > 100 MB)
     '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-movflags', '+faststart',
+    ...(stemSporen.length ? ['-af', 'loudnorm=I=-14:TP=-1.5:LRA=11'] : []),   // met stem: luidheid zoals YouTube die afspeelt (-14 LUFS)
     '-c:a', 'aac', '-b:a', v2 ? '192k' : '128k', doel], { stdio: ['pipe', 'inherit', 'inherit'] });
   let vorige = '', buf = null; const begon = Date.now();
   for (let i = 0; i < n; i++) {
