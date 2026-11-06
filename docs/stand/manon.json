@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-06T17:14:05+01:00",
+  "tijd": "2026-11-06T17:16:28+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -30,7 +30,8 @@
     "YS05 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 13 november 2026 om 18:00\")",
     "YS06 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 14 november 2026 om 18:00\")",
     "YS07 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 15 november 2026 om 18:00\")",
-    "YS08 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 16 november 2026 om 18:00\")"
+    "YS08 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 16 november 2026 om 18:00\")",
+    "YS09 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 17 november 2026 om 18:00\")"
   ],
   "bezig": "YS04 t/m YS18 inplannen in YouTube Studio, kanaal 1, op datum (18:00)",
   "volgende": "vr 6 nov 19:30 (Kantoor #67): (a) stijl OK YS + pakket OK YS15–YS18; (b) YK01 in zijn venster van kanaal 1, bio pas na \"bio OK kanaal 1, Manon mag hem zetten\"; (c) na zijn \"ja, plan … in\": YS04–YS14 op datum, dan YS15–YS18; (d) vreemd maar waar: V1, V3, YH01/YH02 naar kanaal 1; keuze YS01–YS03 (laten staan of vervangen door stemversie; advies: laten staan)",
@@ -233,6 +234,12 @@
     {
       "tijd": "2026-11-06T17:14:05+01:00",
       "wat": "YS08 ingepland in YouTube Studio kanaal 1; Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 16 november 2026 om 18:00\"",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-06T17:16:28+01:00",
+      "wat": "YS09 ingepland in YouTube Studio kanaal 1; Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 17 november 2026 om 18:00\"",
       "waar": "Chrome van Andries, YouTube Studio",
       "wie": "manon"
     }
