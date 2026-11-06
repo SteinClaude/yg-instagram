@@ -124,6 +124,9 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, vr 6 nov 2026 ±18:20: "kanaal staat open op chrome"
+- Andries in de sessie van Manon, vr 6 nov 2026 ±18:07: "Alle drie vervangen (Aanbevolen)" (op de vraag "YS01 (stopbord) staat sinds 18:00 online zonder stem. YS02 en YS03 hebben ook geen stem en gaan morgen en zondag om 18:00 live. Wat doe ik?"; de keuze: YS01 op Privé, YS01–YS03 met stem maken, morgen uploaden)
+- Andries in de sessie van Manon, vr 6 nov 2026 ±18:05: "er zit geen stem bij de  geposte video"
 - Andries in de sessie van Manon, vr 6 nov 2026 ±18:03: "dit lijkt niet op de videos die we eerst hebben gemaakt dus dit wil ik niet posten hierzo, kan dit weg?" en daarna "de twee videos kwijt," (over YH01 en YH02)
 - Andries in de sessie van Manon, vr 6 nov 2026 ±17:43: "begin vanaf nu maar met de planing en daarna maken we wel extra vooraad bij, ook zijn er nog dingen die we moeten doen voor dit project??" (op het voorstel om eerder te beginnen)
 - Andries in de sessie van Manon, vr 6 nov 2026 ±16:50: "Ja, plan YS04 t/m YS18 in" (op de vraag "YS04 t/m YS18 met stem zijn goedgekeurd (pakket OK + stijl OK YS). Mag ik ze na YK01 in dit venster inplannen, één per upload, op de datum uit studio.txt om 18:00?")

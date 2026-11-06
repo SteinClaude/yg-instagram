@@ -15,19 +15,20 @@ const bord = (h, o = {}) => `<g filter="url(#sch)">${h.stopbord(o.cx ?? CX, o.cy
 module.exports = {
   code: 'YS01',
   versie: 2,
+  stem: { stem: 'am_fenrir', tempo: 1.1 },   // besluit Andries do 5 nov 2026: Kokoro, stem "fenrir"
   map: '2026-11-09-YS01-stopbord',
   nummer: 'No. 01',
   onderwerp: 'THE STOP SIGN',
   scenes: [
     // 1 · HAAK: het bord valt van groot naar zijn plek en slaat neer; de vraag gaat open
-    { duur: 2.7, camera: { zoom: [1, 1.04], stoot: [0.32], schud: [0.32] }, geluid: [[0.3, 'klap'], [0.3, 'boem', 0.9]],
+    { duur: 2.7, stem: "This shape was chosen for the dark.", camera: { zoom: [1, 1.04], stoot: [0.32], schud: [0.32] }, geluid: [[0.3, 'klap'], [0.3, 'boem', 0.9]],
       teken: h => {
         const p = h.klem(h.t / 0.32), s = 3.2 - 2.2 * (p * p);
         return bord(h, { schaal: s, draai: (1 - p) * -38, doorzicht: h.klem(h.t / 0.08) })
           + h.kin('This shape was chosen for the *dark*.', { y: 300, g: 104, t: h.t, start: 0.42 }).svg;
       } },
     // 2 · acht zijden tellen, met een tik per zijde
-    { duur: 3.0, in: 'zweep', camera: { zoom: [1.02, 1.08] },
+    { duur: 3.0, stem: "Why eight sides?", in: 'zweep', camera: { zoom: [1.02, 1.08] },
       geluid: [...Array.from({ length: 8 }, (_, i) => [0.25 + i * 0.17, 'tik', 0.7, (i % 2 ? 0.4 : -0.4)]), [1.85, 'pop', 0.9]],
       teken: h => {
         const k = Math.max(0, Math.min(8, Math.floor((h.t - 0.25) / 0.17) + 1)), pt = hoeken(CX, CY, R * 0.97);
@@ -37,7 +38,7 @@ module.exports = {
         return s + h.kin('Why *eight*?', { y: 1290, g: 96, t: h.t, start: 1.85, midden: true }).svg;
       } },
     // 3 · nacht, jaren twintig: koplampen strijken over een bord dat je niet kunt lezen
-    { duur: 3.4, in: 'flits', nacht: true, camera: { zoom: [1.06, 1.0], pan: [[30, 0], [-30, 0]] },
+    { duur: 3.4, stem: "More cars every year. And signs were barely lit at night.", in: 'flits', nacht: true, camera: { zoom: [1.06, 1.0], pan: [[30, 0], [-30, 0]] },
       geluid: [[0.7, 'whoosh', 0.8, -0.8], [1.9, 'whoosh', 0.7, 0.8]],
       teken: h => {
         const veeg = (h.t * 0.9) % 1.6 - 0.3;
@@ -50,10 +51,10 @@ module.exports = {
         return s;
       } },
     // 4 · wie: drie staten
-    { duur: 2.3, in: 'zweep', bron: BRON, bronStart: 0.4, camera: { zoom: [1, 1.05] }, geluid: [[0.55, 'pop', 0.7], [0.95, 'pop', 0.7, 0.3], [1.35, 'pop', 0.7, -0.3]],
+    { duur: 2.3, stem: "Engineers from Wisconsin, Minnesota and Indiana had an idea.", in: 'zweep', bron: BRON, bronStart: 0.4, camera: { zoom: [1, 1.05] }, geluid: [[0.55, 'pop', 0.7], [0.95, 'pop', 0.7, 0.3], [1.35, 'pop', 0.7, -0.3]],
       teken: h => h.kin('Engineers from *Wisconsin,* *Minnesota* and *Indiana* had an idea.', { y: 420, g: 92, t: h.t, start: 0.05, nadruk: 'balk' }).svg },
     // 5 · het idee: gevaar rangschikken naar vorm; vier vormen vliegen binnen
-    { duur: 2.6, in: 'op', bron: BRON, bronStart: 0.4, camera: { zoom: [1, 1.06], stoot: [1.25] },
+    { duur: 2.6, stem: "Rank danger by shape. Round: a railroad crossing, the most danger. Eight sides: stop. A diamond: be careful. A rectangle: directions and information.", in: 'op', bron: BRON, bronStart: 0.4, camera: { zoom: [1, 1.06], stoot: [1.25] },
       geluid: [[0.9, 'pop'], [1.05, 'pop', 0.9, 0.5], [1.2, 'pop', 0.9, -0.5], [1.35, 'pop']],
       teken: h => {
         let s = h.kin('Rank danger by *shape*.', { y: 330, g: 120, t: h.t, start: 0.05 }).svg;
@@ -82,7 +83,7 @@ module.exports = {
           + h.kin(wat, { y: 1160, g: 56, gewicht: 'regular', t: h.t, start: 0.65, midden: true, max: 860 }).svg;
       } })),
     // 10 · de letters verdwijnen, de vorm blijft spreken
-    { duur: 3.4, in: 'masker', bron: BRON, bronStart: 0.6, camera: { zoom: [1.1, 1.0] }, geluid: [[1.0, 'stijg', 0.5], [2.25, 'ding', 0.8]],
+    { duur: 3.4, stem: "Can't read the letters? The shape still says stop.", in: 'masker', bron: BRON, bronStart: 0.6, camera: { zoom: [1.1, 1.0] }, geluid: [[1.0, 'stijg', 0.5], [2.25, 'ding', 0.8]],
       teken: h => {
         const weg = h.klem((h.t - 0.6) / 0.9);
         return bord(h, { cy: 840, r: 220, letter: meng('#FFFFFF', h.K.signaal, weg), rand: meng('#FFFFFF', h.K.signaal, weg * 0.6) })
@@ -90,7 +91,7 @@ module.exports = {
           + h.kin('The *shape* still says STOP.', { y: 1110, g: 88, t: h.t, start: 2.0, midden: true }).svg;
       } },
     // 11 · de wending: het bord draait om en is geel
-    { duur: 2.7, in: 'flits', bron: BRON, bronStart: 1.4, camera: { zoom: [1, 1.06], stoot: [1.2], schud: [1.2] }, geluid: [[0, 'stijg', 0.6], [1.18, 'klap'], [1.18, 'boem', 0.7]],
+    { duur: 2.7, stem: "Here's the twist. Early stop signs were yellow.", in: 'flits', bron: BRON, bronStart: 1.4, camera: { zoom: [1, 1.06], stoot: [1.2], schud: [1.2] }, geluid: [[0, 'stijg', 0.6], [1.18, 'klap'], [1.18, 'boem', 0.7]],
       teken: h => {
         const f = h.klem((h.t - 0.9) / 0.3), sx = Math.abs(Math.cos(f * Math.PI)), geel = f > 0.5;
         const b = h.stopbord(CX, 840, 220, geel ? { vul: h.K.geel, letter: h.K.signaal, rand: h.K.inkt } : {});
@@ -99,7 +100,7 @@ module.exports = {
           + h.kin('Early stop signs were *yellow*.', { y: 1110, g: 86, t: h.t, start: 1.25, midden: true, nadruk: 'balk' }).svg;
       } },
     // 12 · waarom niet rood: in het donker slecht te zien
-    { duur: 2.8, in: 'zweep', nacht: true, bron: BRON, bronStart: 0.6, camera: { zoom: [1, 1.05] }, geluid: [[0.35, 'pop', 0.7], [1.6, 'whoosh', 0.4]],
+    { duur: 2.8, stem: "Red? Rejected. Too hard to see at night.", in: 'zweep', nacht: true, bron: BRON, bronStart: 0.6, camera: { zoom: [1, 1.05] }, geluid: [[0.35, 'pop', 0.7], [1.6, 'whoosh', 0.4]],
       teken: h => {
         const d = h.klem((h.t - 0.8) / 1.2);
         return h.kin('*Red?* Rejected.', { y: 320, g: 112, t: h.t, start: 0.05, kleur: '#F3F0E8' }).svg
@@ -107,7 +108,7 @@ module.exports = {
           + h.kin('Too hard to see at night.', { y: 1150, g: 70, gewicht: 'regular', t: h.t, start: 0.9, midden: true, kleur: '#D8D4CA' }).svg;
       } },
     // 13 · de teller rolt van 1924 naar 1954 en het bord wordt rood
-    { duur: 3.7, in: 'op', bron: BRON, bronStart: 0.6, camera: { zoom: [1, 1.05], stoot: [1.45] },
+    { duur: 3.7, stem: "1954. New fade-resistant finishes, and the stop sign turns red.", in: 'op', bron: BRON, bronStart: 0.6, camera: { zoom: [1, 1.05], stoot: [1.45] },
       geluid: [[0.1, 'rol', 0.8], [0.5, 'rol', 0.8], [1.45, 'ding'], [2.3, 'pop', 0.8]],
       teken: h => {
         const p = h.zacht((h.t - 0.1) / 1.35), jaar = Math.round(1924 + 30 * p), m = h.klem((h.t - 2.2) / 0.9);
@@ -116,9 +117,9 @@ module.exports = {
           + bord(h, { cy: 1080, r: 190, vul: meng(h.K.geel, h.K.signaal, m), letter: meng(h.K.signaal, '#FFFFFF', m), rand: meng(h.K.inkt, '#FFFFFF', m) });
       } },
     // 14 · slot: zelfde bord op dezelfde plek als het begin; de tekst vliegt weg en de video loopt terug naar het begin
-    { duur: 3.6, in: 'zoom', camera: { zoom: [1.04, 1.0] }, geluid: [[2.6, 'whoosh', 0.5]],
+    { duur: 3.6, stem: "A nineteen-twenties night problem still shapes every corner.", in: 'zoom', camera: { zoom: [1.04, 1.0] }, geluid: [[-0.9, 'whoosh', 0.5]],
       teken: h => bord(h)
-        + h.kin('A *1920s* night problem still shapes every corner.', { y: 300, g: 84, t: h.t, start: 0.1, weg: 2.75 }).svg
-        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.3) / 0.4) * (1 - h.klem((h.t - 2.75) / 0.3))).toFixed(3)}">Next: why your keyboard is so weird.</text>` },
+        + h.kin('A *1920s* night problem still shapes every corner.', { y: 300, g: 84, t: h.t, start: 0.1, weg: h.duur - 0.8 }).svg
+        + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.3) / 0.4) * (1 - h.klem((h.t - (h.duur - 0.8)) / 0.3))).toFixed(3)}">Next: why your keyboard is so weird.</text>` },
   ],
 };

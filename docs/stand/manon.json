@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-06T18:03:43+01:00",
+  "tijd": "2026-11-06T18:19:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-06T15:50:36+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -38,10 +38,11 @@
     "YS13 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 21 november 2026 om 18:00\")",
     "Studio-controle 17:27: YS01–YS13 staan op Gepland (9 t/m 21 nov 18:00); geen los concept van YS14",
     "YS01–YS13 drie dagen naar voren verschoven in Studio (YS01 vr 6 nov 18:00 t/m YS13 wo 18 nov); YS14–YS18 krijgen 19–23 nov",
-    "YH01 en YH02 uit de repo gehaald (git rm; terug te halen uit de geschiedenis); nooit ingepland of online"
+    "YH01 en YH02 uit de repo gehaald (git rm; terug te halen uit de geschiedenis); nooit ingepland of online",
+    "YS01 (online sinds 18:00 zonder stem) in Studio op Privé gezet, 18:19; niet verwijderd"
   ],
-  "bezig": "-",
-  "volgende": "za 7 nov na ±17:30: YS14–YS18 uploaden en plannen (19–23 nov); voorraad YS19+ maken; bio na \"bio OK kanaal 1, Manon mag hem zetten\"; antwoord reeks vreemd maar waar; weekverslag ma 9 nov",
+  "bezig": "YS01–YS03 met stem renderen",
+  "volgende": "za 7 nov na ±17:00: YS02 met stem uploaden voor 7 nov 18:00 en de oude YS02 op Privé; daarna YS03 met stem (8 nov) en oude YS03 op Privé; YS14–YS18 (19–23 nov); YS01 met stem op 24 nov; voorraad YS19+",
   "kanNietVerder": "YS14–YS18 (nu 19–23 nov) nog niet geüpload: dagelijkse uploadlimiet van Studio (vr 6 nov 17:27) · nodig: Andries opent na 24 uur (za 7 nov vanaf ±17:30) het venster van kanaal 1, of doet zelf de eenmalige verificatie",
   "vragen": [
     {
@@ -297,6 +298,30 @@
       "wat": "Andries in de sessie van Manon, vr 6 nov 2026 ±18:03: \"dit lijkt niet op de videos die we eerst hebben gemaakt dus dit wil ik niet posten hierzo, kan dit weg?\" en daarna \"de twee videos kwijt,\" (over YH01 en YH02)",
       "waar": "pc-sessie van Manon",
       "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-06T18:19:00+01:00",
+      "wat": "Andries in de sessie van Manon, vr 6 nov 2026 ±18:05: \"er zit geen stem bij de  geposte video\"",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-06T18:19:00+01:00",
+      "wat": "Andries in de sessie van Manon, vr 6 nov 2026 ±18:07: \"Alle drie vervangen (Aanbevolen)\" (op de vraag \"YS01 (stopbord) staat sinds 18:00 online zonder stem. YS02 en YS03 hebben ook geen stem en gaan morgen en zondag om 18:00 live. Wat doe ik?\"; de keuze: YS01 op Privé, YS01–YS03 met stem maken, morgen uploaden)",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-06T18:19:00+01:00",
+      "wat": "Andries in de sessie van Manon, vr 6 nov 2026 ±18:20: \"kanaal staat open op chrome\"",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-06T18:19:00+01:00",
+      "wat": "YouTube Studio kanaal 1 (gecontroleerd): YS01 van Openbaar naar Privé, Studio: \"Wijzigingen opgeslagen\". Om ±18:15 stond Studio op een ander kanaal; daar niets gedaan, niet zelf gewisseld.",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
     }
   ],
   "voorEva": [
