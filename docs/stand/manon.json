@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-06T17:55:30+01:00",
+  "tijd": "2026-11-06T18:03:43+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-06T15:50:36+01:00"
   },
-  "status": "kan-niet-verder",
+  "status": "wacht",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -37,22 +37,23 @@
     "YS12 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 20 november 2026 om 18:00\")",
     "YS13 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 21 november 2026 om 18:00\")",
     "Studio-controle 17:27: YS01–YS13 staan op Gepland (9 t/m 21 nov 18:00); geen los concept van YS14",
-    "YS01–YS13 drie dagen naar voren verschoven in Studio (YS01 vr 6 nov 18:00 t/m YS13 wo 18 nov); YS14–YS18 krijgen 19–23 nov"
+    "YS01–YS13 drie dagen naar voren verschoven in Studio (YS01 vr 6 nov 18:00 t/m YS13 wo 18 nov); YS14–YS18 krijgen 19–23 nov",
+    "YH01 en YH02 uit de repo gehaald (git rm; terug te halen uit de geschiedenis); nooit ingepland of online"
   ],
   "bezig": "-",
-  "volgende": "za 7 nov: YS14–YS18 uploaden en plannen (19–23 nov); extra voorraad YS19+ maken (vanaf 24 nov nodig); bio na \"bio OK kanaal 1, Manon mag hem zetten\"; vreemd maar waar V1/V3 en YH01/YH02 naar kanaal 1; weekverslag ma 9 nov",
+  "volgende": "za 7 nov na ±17:30: YS14–YS18 uploaden en plannen (19–23 nov); voorraad YS19+ maken; bio na \"bio OK kanaal 1, Manon mag hem zetten\"; antwoord reeks vreemd maar waar; weekverslag ma 9 nov",
   "kanNietVerder": "YS14–YS18 (nu 19–23 nov) nog niet geüpload: dagelijkse uploadlimiet van Studio (vr 6 nov 17:27) · nodig: Andries opent na 24 uur (za 7 nov vanaf ±17:30) het venster van kanaal 1, of doet zelf de eenmalige verificatie",
   "vragen": [
-    {
-      "vraag": "V3 ritme vreemd maar waar op kanaal 1: voorstel 3x per week (ma, wo, vr) om 21:00 Amsterdam, naast YS dagelijks 18:00, vanaf ma 16 nov",
-      "aanname": "voorstel ligt bij Andries; niets ingepland",
-      "ondertussen": "op de keurlijst van vr 6 nov",
-      "blokkeert": false
-    },
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
       "aanname": "laten staan (advies: de eerste drie dagen zonder stem zijn een nuttige vergelijking; vervangen kost een upload per short en raakt al geplande video's)",
       "ondertussen": "op de keurlijst van vr 6 nov",
+      "blokkeert": false
+    },
+    {
+      "vraag": "Stopt de reeks vreemd maar waar (YHxx) op kanaal 1 helemaal, of blijft hij in de stijl van YS (getekend, stem fenrir)?",
+      "aanname": "reeks staat stil; geen nieuwe YH-pakketten tot zijn antwoord; plan docs/yg-social-plan-2.md blijft als archief",
+      "ondertussen": "YS-voorraad YS19+",
       "blokkeert": false
     }
   ],
@@ -290,6 +291,12 @@
       "wat": "YouTube Studio kanaal 1: datum van YS01–YS13 aangepast (6 t/m 18 nov 18:00), per short \"Wijzigingen opgeslagen\"; tabblad gesloten",
       "waar": "Chrome van Andries, YouTube Studio",
       "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-06T18:03:43+01:00",
+      "wat": "Andries in de sessie van Manon, vr 6 nov 2026 ±18:03: \"dit lijkt niet op de videos die we eerst hebben gemaakt dus dit wil ik niet posten hierzo, kan dit weg?\" en daarna \"de twee videos kwijt,\" (over YH01 en YH02)",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
     }
   ],
   "voorEva": [
@@ -309,6 +316,11 @@
       "id": "H-manon-6",
       "aan": "eva",
       "wat": "Inplannen vanavond (draaiboek K5–K7) gaat niet door: Andries wil alle YS-shorts eerst met stem (Kokoro) en ze stuk voor stuk nalopen. Bijlage A schuift; YS01–YS03 staan al in Studio en blijven zonder stem. Pakket-OK van YS04–YS14 geldt voor de oude versie: de nieuwe versies leg ik opnieuw ter keuring voor. — VERVALT door C30 (Eva 5 nov 19:58): één \"stijl OK YS\" + pakket OK YS15–YS18."
+    },
+    {
+      "id": "H-manon-7",
+      "aan": "eva",
+      "wat": "Andries vr 6 nov ±18:03: YH01 en YH02 weg (\"de twee videos kwijt,\"): ze leken niet op de YS-shorts. Uit de repo gehaald, nooit online. Of de reeks vreemd maar waar stopt of in YS-stijl doorgaat, vraag ik hem nog; tot dan geen YH-werk. CLAUDE.md noemt de reeks nog."
     }
   ],
   "ontvangen": [
