@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-06T18:33:06+01:00",
+  "tijd": "2026-11-06T18:58:20+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -40,11 +40,12 @@
     "YS01–YS13 drie dagen naar voren verschoven in Studio (YS01 vr 6 nov 18:00 t/m YS13 wo 18 nov); YS14–YS18 krijgen 19–23 nov",
     "YH01 en YH02 uit de repo gehaald (git rm; terug te halen uit de geschiedenis); nooit ingepland of online",
     "YS01 (online sinds 18:00 zonder stem) in Studio op Privé gezet, 18:19; niet verwijderd",
-    "YS01–YS03 met stem gemaakt (49,3 / 50,0 / 47,1 s; upload-kopieën 8,9–9,0 MB; controlebeelden nagekeken)"
+    "YS01–YS03 met stem gemaakt (49,3 / 50,0 / 47,1 s; upload-kopieën 8,9–9,0 MB; controlebeelden nagekeken)",
+    "YS04–YS13 in Studio een dag later gezet (10 t/m 19 nov 18:00), 18:58"
   ],
   "bezig": "-",
-  "volgende": "za 7 nov na ±17:00: YS02 met stem uploaden voor 7 nov 18:00 en de oude YS02 op Privé; daarna YS03 met stem (8 nov) en oude YS03 op Privé; YS14–YS18 (19–23 nov); YS01 met stem op 24 nov; voorraad YS19+",
-  "kanNietVerder": "Studio-daglimiet: YS02 en YS03 met stem en YS14–YS18 kunnen pas za 7 nov (vanaf ±17:00) geüpload worden · nodig: Andries opent za 7 nov vóór 17:30 het venster van kanaal 1; YS02 moet om 18:00 live",
+  "volgende": "za 7 nov vanaf ±17:00: YS01 met stem uploaden voor 7 nov 18:00, YS02 met stem voor 8 nov, YS03 met stem voor 9 nov; daarna oude YS02 en YS03 (zonder stem) op Privé; YS14–YS18 voor 20–24 nov; voorraad YS19+ (vanaf 25 nov); bio na \"bio OK\"; weekverslag ma 9 nov",
+  "kanNietVerder": "Studio-daglimiet: YS01–YS03 met stem en YS14–YS18 kunnen pas za 7 nov (vanaf ±17:00) geüpload worden · nodig: Andries opent za 7 nov vóór 17:30 het venster van kanaal 1; YS01 moet om 18:00 live",
   "vragen": [
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -321,6 +322,18 @@
     {
       "tijd": "2026-11-06T18:19:00+01:00",
       "wat": "YouTube Studio kanaal 1 (gecontroleerd): YS01 van Openbaar naar Privé, Studio: \"Wijzigingen opgeslagen\". Om ±18:15 stond Studio op een ander kanaal; daar niets gedaan, niet zelf gewisseld.",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-06T18:58:20+01:00",
+      "wat": "Andries in de sessie van Manon, vr 6 nov 2026 ±18:45: \"Ja, YS01 morgen\" (op de vraag \"Zet ik YS01 met stem morgen als eerste (7 nov) en schuif ik de rest één dag op?\")",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-06T18:58:20+01:00",
+      "wat": "YouTube Studio kanaal 1 (gecontroleerd): YS04–YS13 naar 10–19 nov 18:00, per short \"Wijzigingen opgeslagen\". Oude YS02 (7 nov) en YS03 (8 nov) zonder stem blijven gepland als reserve; tabblad gesloten.",
       "waar": "Chrome van Andries, YouTube Studio",
       "wie": "manon"
     }

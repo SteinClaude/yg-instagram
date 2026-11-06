@@ -1,6 +1,7 @@
 STUDIO.TXT — YS13 (YouTube Studio, uploadscherm van boven naar beneden)
 Status: pakket OK YS13 (Andries in de sessie van Manon, di 3 nov 2026: "OK voor alle zeven", op de vraag "Geef je pakket OK voor YS08 t/m YS14?") — geldt voor script, bronnen en titel (C30, Andries do 5 nov 2026 19:33). Versie met stem: stijl OK YS (Andries in de sessie van Manon, do 5 nov 2026 ±21:27: "Ja, alle vijf OK" (op de vraag "Geef je "stijl OK YS" en "pakket OK" voor YS15, YS16, YS17 en YS18?"; versies met stem, de020e7)). Klaar om in te plannen; Manon plant in via YouTube Studio, in het venster van kanaal 1, na het "ja, plan … in" van Andries in haar sessie.
 VERSCHOVEN door Manon in YouTube Studio, vr 6 nov 2026 17:46–17:55: nieuwe datum woensdag 18 november 2026 18:00; Studio: "Wijzigingen opgeslagen", lijst toont "Gepland 18 nov 2026".
+OPNIEUW VERSCHOVEN door Manon, vr 6 nov 2026 18:58: donderdag 19 november 2026 18:00; Studio: "Wijzigingen opgeslagen", lijst toont "Gepland 19 nov 2026".
 INGEPLAND door Manon in YouTube Studio, venster van kanaal 1 (Chrome van Andries), vr 6 nov 2026 17:25, na "Ja, plan YS04 t/m YS18 in" (Andries, vr 6 nov ±16:50). Studio meldt: "Video gepland. Je video wordt als openbaar ingesteld op 21 november 2026 om 18:00". Geüpload: video-upload.mp4; AI-label ja; niet voor kinderen; taal Engels; categorie Educatief.
 
 == Bestand ==
@@ -45,4 +46,4 @@ Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
 Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
 
 == Zichtbaarheid ==
-Plannen: woensdag 18 november 2026, 18:00 (Amsterdam) — verschoven van zaterdag 21 november 2026 (Andries in de sessie van Manon, vr 6 nov 2026 ±17:43: "begin vanaf nu maar met de planing en daarna maken we wel extra vooraad bij, ook zijn er nog dingen die we moeten doen voor dit project??" (op het voorstel om eerder te beginnen))
+Plannen: donderdag 19 november 2026, 18:00 (Amsterdam) — volgorde YS01–YS18 vanaf za 7 nov (Andries in de sessie van Manon, vr 6 nov 2026 ±18:45: "Ja, YS01 morgen" (op de vraag "Zet ik YS01 met stem morgen als eerste (7 nov) en schuif ik de rest één dag op?"); eerder: start vr 6 nov, Andries ±17:43)

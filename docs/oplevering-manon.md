@@ -1,4 +1,6 @@
-KAN NIET VERDER: Studio-daglimiet: YS02 en YS03 met stem en YS14–YS18 kunnen pas za 7 nov (vanaf ±17:00) geüpload worden · nodig: Andries opent za 7 nov vóór 17:30 het venster van kanaal 1
+KAN NIET VERDER: Studio-daglimiet: YS01–YS03 met stem en YS14–YS18 kunnen pas za 7 nov (vanaf ±17:00) geüpload worden · nodig: Andries opent za 7 nov vóór 17:30 het venster van kanaal 1; YS01 moet om 18:00 live
+
+KLAAR: nieuwe volgorde: YS01 za 7 nov t/m YS18 di 24 nov (18:00); YS04–YS13 in Studio verschoven naar 10–19 nov; oude YS02/YS03 als reserve gepland tot morgen · 18:58
 
 KLAAR: YH01 en YH02 weggehaald op verzoek van Andries (nooit ingepland of online; git-geschiedenis bewaart ze) · 18:03
 
@@ -124,6 +126,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, vr 6 nov 2026 ±18:45: "Ja, YS01 morgen" (op de vraag "Zet ik YS01 met stem morgen als eerste (7 nov) en schuif ik de rest één dag op?")
 - Andries in de sessie van Manon, vr 6 nov 2026 ±18:15: "kanaal staat open op chrome"
 - Andries in de sessie van Manon, vr 6 nov 2026 ±18:07: "Alle drie vervangen (Aanbevolen)" (op de vraag "YS01 (stopbord) staat sinds 18:00 online zonder stem. YS02 en YS03 hebben ook geen stem en gaan morgen en zondag om 18:00 live. Wat doe ik?"; de keuze: YS01 op Privé, YS01–YS03 met stem maken, morgen uploaden)
 - Andries in de sessie van Manon, vr 6 nov 2026 ±18:05: "er zit geen stem bij de  geposte video"
