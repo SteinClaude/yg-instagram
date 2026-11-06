@@ -124,7 +124,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
-- Andries in de sessie van Manon, vr 6 nov 2026 ±18:20: "kanaal staat open op chrome"
+- Andries in de sessie van Manon, vr 6 nov 2026 ±18:15: "kanaal staat open op chrome"
 - Andries in de sessie van Manon, vr 6 nov 2026 ±18:07: "Alle drie vervangen (Aanbevolen)" (op de vraag "YS01 (stopbord) staat sinds 18:00 online zonder stem. YS02 en YS03 hebben ook geen stem en gaan morgen en zondag om 18:00 live. Wat doe ik?"; de keuze: YS01 op Privé, YS01–YS03 met stem maken, morgen uploaden)
 - Andries in de sessie van Manon, vr 6 nov 2026 ±18:05: "er zit geen stem bij de  geposte video"
 - Andries in de sessie van Manon, vr 6 nov 2026 ±18:03: "dit lijkt niet op de videos die we eerst hebben gemaakt dus dit wil ik niet posten hierzo, kan dit weg?" en daarna "de twee videos kwijt," (over YH01 en YH02)
