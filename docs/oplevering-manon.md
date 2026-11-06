@@ -126,6 +126,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, vr 6 nov 2026 ±20:49: "hoezo kan jij de video niet uploaden nu ik verwijder de oude zoder stem" (Andries verwijdert zelf de oude versies zonder stem)
 - Andries in de sessie van Manon, vr 6 nov 2026 ±20:43: "Ik verifieer nu" (op de vraag of hij de eenmalige verificatie van de uploadlimiet doet of dat we tot za 7 nov 17:00 wachten)
 - Andries in de sessie van Manon, vr 6 nov 2026 ±20:24: "doe nu maar gelijk" (na het bericht dat YS01–YS03 met stem en YS14–YS18 morgen vanaf ±17:00 geüpload worden)
 - Andries in de sessie van Manon, vr 6 nov 2026 ±18:45: "Ja, YS01 morgen" (op de vraag "Zet ik YS01 met stem morgen als eerste (7 nov) en schuif ik de rest één dag op?")
