@@ -1,3 +1,5 @@
+KLAAR: YS04 ingepland in Studio, kanaal 1 — Studio: "Video gepland. Je video wordt als openbaar ingesteld op 12 november 2026 om 18:00" · 17:04
+
 KLAAR: YK01 gezet op kanaal 1 (banner, profielfoto, watermerk; Studio: gepubliceerd) · 16:56
 
 KAN NIET VERDER: YS04–YS18 met stem goedgekeurd, niets ingepland · nodig: vr 6 nov 19:30 het venster van kanaal 1 van Andries en zijn "ja, plan YS04 t/m YS18 in"
