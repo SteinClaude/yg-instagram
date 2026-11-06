@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-06T15:50:36+01:00",
+  "tijd": "2026-11-06T16:56:27+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -24,9 +24,10 @@
     "uitspraak jaartallen/datums hersteld in stem.py (fc59dc6); YS04–YS07 opnieuw gerenderd (alleen uitspraak), YS08 met stem 49,6 s",
     "OK YS04–YS07 blijft gelden na de uitspraakfix en OK YS08 (versie met stem) vastgelegd in studio.txt",
     "YS09 t/m YS18 in één keer opnieuw met stem fenrir (beeld en tekst gelijk; 35–55 s; upload-kopieën 8,8–9,0 MB; ±-14,5 LUFS; controlebeelden nagekeken); AI-label ja; stem genoemd in bron/bronnen.md van YS04–YS18",
-    "stijl OK YS en pakket OK YS15–YS18 vastgelegd; YS04–YS18 met stem klaar om in te plannen"
+    "stijl OK YS en pakket OK YS15–YS18 vastgelegd; YS04–YS18 met stem klaar om in te plannen",
+    "YK01 gezet op kanaal 1 (banner, profielfoto, watermerk), vr 6 nov 16:56"
   ],
-  "bezig": "YK01 zetten in het venster van kanaal 1 (Chrome van Andries); daarna inplannen na zijn \"ja, plan … in\"",
+  "bezig": "YS04 t/m YS18 inplannen in YouTube Studio, kanaal 1, op datum (18:00)",
   "volgende": "vr 6 nov 19:30 (Kantoor #67): (a) stijl OK YS + pakket OK YS15–YS18; (b) YK01 in zijn venster van kanaal 1, bio pas na \"bio OK kanaal 1, Manon mag hem zetten\"; (c) na zijn \"ja, plan … in\": YS04–YS14 op datum, dan YS15–YS18; (d) vreemd maar waar: V1, V3, YH01/YH02 naar kanaal 1; keuze YS01–YS03 (laten staan of vervangen door stemversie; advies: laten staan)",
   "kanNietVerder": "YS04–YS18 met stem goedgekeurd; inplannen wacht op vr 6 nov 19:30: Andries geeft zijn venster van kanaal 1 (/chrome) en zegt \"ja, plan YS04 t/m YS18 in\"",
   "vragen": [
@@ -181,6 +182,24 @@
       "wat": "Andries in de sessie van Manon, vr 6 nov 2026 ±15:50: \"oke venster staat open\" (venster van kanaal 1 in zijn Chrome)",
       "waar": "pc-sessie van Manon",
       "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-06T16:56:27+01:00",
+      "wat": "Andries in de sessie van Manon, vr 6 nov 2026 ±15:55: \"Vervangen door YK01\" (op de vraag \"Op kanaal 1 staat al een profielfoto: een zwart rondje met een wit vraagteken en een oranje punt. Het YK01-pakket heeft een rood rondje met een vraagteken op papier. De banner is nog leeg. Wat doe ik met de profielfoto?\")",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-06T16:56:27+01:00",
+      "wat": "Andries in de sessie van Manon, vr 6 nov 2026 ±15:55: \"Ja, plan YS04 t/m YS18 in\" (op de vraag \"YS04 t/m YS18 met stem zijn goedgekeurd (pakket OK + stijl OK YS). Mag ik ze na YK01 in dit venster inplannen, één per upload, op de datum uit studio.txt om 18:00?\")",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-06T16:56:27+01:00",
+      "wat": "YK01 gezet in YouTube Studio (Aanpassen > Profiel) van kanaal 1: banner, profielfoto, watermerk; gepubliceerd. Kanaal gecontroleerd via Inhoud (YS01–YS03 gepland 9–11 nov).",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
     }
   ],
   "voorEva": [
