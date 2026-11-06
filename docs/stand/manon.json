@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-05T21:27:17+01:00",
+  "tijd": "2026-11-06T15:50:36+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
-    "sinds": "2026-11-05T15:24:14Z"
+    "sinds": "2026-11-06T15:50:36+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -26,7 +26,7 @@
     "YS09 t/m YS18 in één keer opnieuw met stem fenrir (beeld en tekst gelijk; 35–55 s; upload-kopieën 8,8–9,0 MB; ±-14,5 LUFS; controlebeelden nagekeken); AI-label ja; stem genoemd in bron/bronnen.md van YS04–YS18",
     "stijl OK YS en pakket OK YS15–YS18 vastgelegd; YS04–YS18 met stem klaar om in te plannen"
   ],
-  "bezig": "-",
+  "bezig": "YK01 zetten in het venster van kanaal 1 (Chrome van Andries); daarna inplannen na zijn \"ja, plan … in\"",
   "volgende": "vr 6 nov 19:30 (Kantoor #67): (a) stijl OK YS + pakket OK YS15–YS18; (b) YK01 in zijn venster van kanaal 1, bio pas na \"bio OK kanaal 1, Manon mag hem zetten\"; (c) na zijn \"ja, plan … in\": YS04–YS14 op datum, dan YS15–YS18; (d) vreemd maar waar: V1, V3, YH01/YH02 naar kanaal 1; keuze YS01–YS03 (laten staan of vervangen door stemversie; advies: laten staan)",
   "kanNietVerder": "YS04–YS18 met stem goedgekeurd; inplannen wacht op vr 6 nov 19:30: Andries geeft zijn venster van kanaal 1 (/chrome) en zegt \"ja, plan YS04 t/m YS18 in\"",
   "vragen": [
@@ -175,6 +175,12 @@
       "wat": "Andries in de sessie van Manon, do 5 nov 2026 ±21:27: \"Ja, alle vijf OK\" (op de vraag \"Geef je \"stijl OK YS\" en \"pakket OK\" voor YS15, YS16, YS17 en YS18?\"; versies met stem, de020e7)",
       "waar": "pc-sessie van Manon",
       "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-06T15:50:36+01:00",
+      "wat": "Andries in de sessie van Manon, vr 6 nov 2026 ±15:50: \"oke venster staat open\" (venster van kanaal 1 in zijn Chrome)",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
     }
   ],
   "voorEva": [
@@ -203,5 +209,7 @@
     "ERBIJ-blok Eva do 5 nov 19:58 (keuring YS09–YS18 onder C30, YS01–YS03 keuze, vrijdag 19:30)",
     "H-finn-1 via Eva: kanaal 2 wordt \"verhalen over de gamewereld\"; geen overlap met vreemd maar waar (zie ik ook niet)"
   ],
-  "raakt": []
+  "raakt": [
+    "youtube-studio-kanaal-1"
+  ]
 }
