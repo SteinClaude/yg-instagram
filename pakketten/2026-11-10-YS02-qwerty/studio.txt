@@ -1,9 +1,11 @@
 STUDIO.TXT — YS02 versie 2 (YouTube Studio, uploadscherm van boven naar beneden)
 Status: pakket OK YS02 (Andries in de sessie van Manon, ma 2 nov 2026: "OK voor alle drie", op de vraag "Geef je pakket OK voor YS01, YS02 en YS03?"). Ingepland in Studio (Eva, 2 nov 22:45): di 10 nov 2026, 18:00 (GMT+1), op verzoek van Andries; geüpload als hercodeerde kopie onder 10 MB (zie docs/OPDRACHT-ACTUEEL.md).
+VERSIE MET STEM (vr 6 nov 2026): pakket OK YS02 (2 nov) + stijl OK YS (Andries 5 nov ±21:27) dekken deze versie (C30). De geplande versie in Studio (7 nov 18:00) heeft nog geen stem. Plan: za 7 nov na de daglimiet de versie met stem uploaden en plannen, daarna de oude op Privé (Andries: "Alle drie vervangen").
 VERSCHOVEN door Manon in YouTube Studio, vr 6 nov 2026 17:46–17:55: nieuwe datum zaterdag 7 november 2026 18:00; Studio: "Wijzigingen opgeslagen", lijst toont "Gepland 7 nov 2026".
 
 == Bestand ==
-video.mp4   1080x1920 (9:16), 30 fps, H.264, 34,9 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 50,0 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek; luidheid -14 LUFS. Ingesproken tekst: bron/stem.txt
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (8,9 MB; H.264 twee passen, AAC 96k; gereedschap/short/upload.cjs) voor het uploadgereedschap van Claude in Chrome
 
 == Details ==
 Titel (46/100 tekens):
@@ -31,7 +33,7 @@ Leeftijdsbeperking: Nee.
 
 == Meer weergeven ==
 Betaalde promotie: Nee.
-Gewijzigde of synthetische content (AI-label): Nee — eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen.
+Gewijzigde of synthetische content (AI-label): Ja — de stem is een realistische AI-stem (Kokoro). Beeld: eigen getekende animatie en tekst; geen AI-beelden, geen echte personen nagebootst.
 Tags:
 qwerty, keyboard, why is the keyboard not alphabetical, qwerty history, typewriter, Sholes, Remington, keyboard layout, history of everyday things, why things are the way they are, shorts
 Taal van de video: Engels.

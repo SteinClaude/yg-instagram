@@ -16,5 +16,5 @@ https://www.smithsonianmag.com/innovation/fact-of-fiction-the-legend-of-the-qwer
 ## Beeld, letters en geluid
 - Beeld: eigen animatie (SVG, gereedschap/short.cjs). Geen stockbeeld, geen beeld van anderen, geen AI-beeld.
 - Letters: Instrument Sans en IBM Plex Mono, SIL Open Font License (gereedschap/short/fonts/).
-- Geluid (versie 2): eigen geluidseffecten (whoosh, tik, klap, dreun, stijgende toon, bel, plop, rol), zelf gesynthetiseerd met ffmpeg uit sinus en ruis (gereedschap/short/geluid.cjs). Geen muziek, geen stem, geen audio van anderen.
+- Geluid (versie 2): eigen geluidseffecten (whoosh, tik, klap, dreun, stijgende toon, bel, plop, rol), zelf gesynthetiseerd met ffmpeg uit sinus en ruis (gereedschap/short/geluid.cjs). Stem: Engelse AI-stem Kokoro-82M (open source, Apache-2.0, stem "fenrir"), lokaal gemaakt; ingesproken tekst in bron/stem.txt. Geen muziek, geen audio van anderen.
 - Versie 2 (2 nov 2026): zelfde bron(nen) en beweringen als v1, nieuwe opbouw (haak, snellere beats, loop). v1: overzicht-v1.jpg en git-commit d6fa5fd.

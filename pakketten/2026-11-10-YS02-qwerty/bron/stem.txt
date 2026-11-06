@@ -1,0 +1,12 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Nobody fully agrees why your keyboard looks like this.
+2. The first ones were alphabetical.
+3. 1868. Christopher Latham Sholes, a Milwaukee printer, and his colleagues patent a typewriter.
+4. Then he kept moving the keys around.
+5. The famous story: common letters were split up, so the metal arms wouldn't jam.
+6. Historians call that contentious. E and R sit right next to each other.
+7. Another theory, from Kyoto University in 2011: its first big users were telegraph operators, copying Morse code.
+8. 1874. Remington starts selling the machine, for a hundred and twenty-five dollars.
+9. 1893. The big typewriter makers merge into one company. QWERTY becomes the standard.
+10. Nobody agrees why the keys went there. Everybody agreed to leave them.

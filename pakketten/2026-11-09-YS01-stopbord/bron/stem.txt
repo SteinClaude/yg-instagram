@@ -1,0 +1,12 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. This shape was chosen for the dark.
+2. Why eight sides?
+3. More cars every year. And signs were barely lit at night.
+4. Engineers from Wisconsin, Minnesota and Indiana had an idea.
+5. Rank danger by shape. Round: a railroad crossing, the most danger. Eight sides: stop. A diamond: be careful. A rectangle: directions and information.
+10. Can't read the letters? The shape still says stop.
+11. Here's the twist. Early stop signs were yellow.
+12. Red? Rejected. Too hard to see at night.
+13. 1954. New fade-resistant finishes, and the stop sign turns red.
+14. A nineteen-twenties night problem still shapes every corner.

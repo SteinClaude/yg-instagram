@@ -1,4 +1,4 @@
-KAN NIET VERDER: YS14–YS18 (nu 19–23 nov) nog niet geüpload door de dagelijkse uploadlimiet · nodig: Andries opent za 7 nov na ±17:30 het venster van kanaal 1, of doet zelf de eenmalige verificatie
+KAN NIET VERDER: Studio-daglimiet: YS02 en YS03 met stem en YS14–YS18 kunnen pas za 7 nov (vanaf ±17:00) geüpload worden · nodig: Andries opent za 7 nov vóór 17:30 het venster van kanaal 1
 
 KLAAR: YH01 en YH02 weggehaald op verzoek van Andries (nooit ingepland of online; git-geschiedenis bewaart ze) · 18:03
 

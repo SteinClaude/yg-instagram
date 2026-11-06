@@ -1,0 +1,14 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Same moment. Three times. All three were right.
+2. For most of history, every town set its clocks by its own sun.
+3. Noon is the sun at its highest. Go west, and noon comes later.
+4. Liverpool: twelve minutes behind Greenwich.
+5. Plymouth: about sixteen and a half minutes behind.
+6. Then came the railways. One timetable. Dozens of different clocks.
+7. 1847. Britain's Railway Clearing House recommends Greenwich time for every station.
+8. 1852. Telegraph wires carry it across the country.
+9. 1880. Greenwich Mean Time becomes the legal time in Great Britain.
+10. America, November eighteenth, 1883: the Day of Two Noons.
+11. Only in 1918 does the U-S make standard time law.
+12. The time zone on your phone began as a railway timetable.
