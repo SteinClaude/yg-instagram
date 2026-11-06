@@ -1,4 +1,4 @@
-KAN NIET VERDER: Wacht op Andries: hij doet nu de eenmalige verificatie van de Studio-uploadlimiet (accountactie) · nodig: Andries meldt dat het gelukt is; daarna upload Manon YS01–YS03 met stem en YS14–YS18
+KAN NIET VERDER: Studio-daglimiet blijft ook na de telefoonverificatie (getest vr 6 nov 20:54): YS01–YS03 met stem en YS14–YS18 kunnen pas za 7 nov (vanaf ±17:00) · nodig: Andries opent za 7 nov vóór 17:30 het venster van kanaal 1 en laat de oude YS02 (gepland 7 nov) staan tot de nieuwe gepland is
 
 KLAAR: nieuwe volgorde: YS01 za 7 nov t/m YS18 di 24 nov (18:00); YS04–YS13 in Studio verschoven naar 10–19 nov; oude YS02/YS03 als reserve gepland tot morgen · 18:58
 
@@ -126,6 +126,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, vr 6 nov 2026 ±20:54: "Gelukt, ga verder" (over de eenmalige verificatie)
 - Andries in de sessie van Manon, vr 6 nov 2026 ±20:49: "hoezo kan jij de video niet uploaden nu ik verwijder de oude zoder stem" (Andries verwijdert zelf de oude versies zonder stem)
 - Andries in de sessie van Manon, vr 6 nov 2026 ±20:43: "Ik verifieer nu" (op de vraag of hij de eenmalige verificatie van de uploadlimiet doet of dat we tot za 7 nov 17:00 wachten)
 - Andries in de sessie van Manon, vr 6 nov 2026 ±20:24: "doe nu maar gelijk" (na het bericht dat YS01–YS03 met stem en YS14–YS18 morgen vanaf ±17:00 geüpload worden)

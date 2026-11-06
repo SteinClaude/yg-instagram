@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-06T20:49:02+01:00",
+  "tijd": "2026-11-06T20:54:39+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-06T15:50:36+01:00"
   },
-  "status": "wacht",
+  "status": "kan-niet-verder",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -45,7 +45,7 @@
   ],
   "bezig": "-",
   "volgende": "za 7 nov vanaf ±17:00: YS01 met stem uploaden voor 7 nov 18:00, YS02 met stem voor 8 nov, YS03 met stem voor 9 nov; daarna oude YS02 en YS03 (zonder stem) op Privé; YS14–YS18 voor 20–24 nov; voorraad YS19+ (vanaf 25 nov); bio na \"bio OK\"; weekverslag ma 9 nov",
-  "kanNietVerder": "Wacht op Andries: hij doet nu de eenmalige verificatie van de Studio-uploadlimiet (accountactie) · nodig: Andries meldt dat het gelukt is; daarna upload Manon YS01–YS03 met stem en YS14–YS18",
+  "kanNietVerder": "Studio-daglimiet blijft ook na de telefoonverificatie (getest vr 6 nov 20:54): YS01–YS03 met stem en YS14–YS18 kunnen pas za 7 nov (vanaf ±17:00) · nodig: Andries opent za 7 nov vóór 17:30 het venster van kanaal 1 en laat de oude YS02 (gepland 7 nov) staan tot de nieuwe gepland is",
   "vragen": [
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -364,6 +364,18 @@
     {
       "tijd": "2026-11-06T20:49:02+01:00",
       "wat": "YouTube Studio kanaal 1 (gecontroleerd), 20:49: upload YS01 met stem opnieuw geprobeerd; Studio meldt nog \"Dagelijkse uploadlimiet bereikt\" (verificatie nog niet gedaan). Uploadvenster met de knop Verifiëren open gelaten in een tabblad voor Andries.",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-06T20:54:39+01:00",
+      "wat": "Andries in de sessie van Manon, vr 6 nov 2026 ±20:54: \"Gelukt, ga verder\" (over de eenmalige verificatie)",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-06T20:54:39+01:00",
+      "wat": "YouTube Studio kanaal 1 (gecontroleerd), 20:54: het verificatietabblad meldde \"Telefoonnummer geverifieerd\" (door Andries; tabblad gesloten). Daarna YS01 met stem twee keer opnieuw geprobeerd: Studio meldt nog steeds \"Dagelijkse uploadlimiet bereikt\". Gestopt met proberen; geen concept achtergebleven. Stand in Studio: oude YS02 Gepland 7 nov, oude YS03 Gepland 8 nov, YS04 Gepland 10 nov, oude YS01 Privé.",
       "waar": "Chrome van Andries, YouTube Studio",
       "wie": "manon"
     }
