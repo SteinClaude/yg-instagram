@@ -1,5 +1,6 @@
 STUDIO.TXT — YS06 (YouTube Studio, uploadscherm van boven naar beneden)
 Status: pakket OK YS06 — versie met stem (Andries in de sessie van Manon, do 5 nov 2026 ±17:40: "pakket OK YS06" (nieuwe versie met stem, f269786; op de vraag "Is YS06 met stem goed zo?")). Daarna (do 5 nov) alleen de uitspraak van jaartallen en datums hersteld ("nineteen seventy-one" in plaats van "nineteen hundred seventy-one"); beeld en tekst ongewijzigd. De OK blijft gelden voor deze versie (Andries in de sessie van Manon, do 5 nov 2026 ±19:32: "Ja, en OK YS08" (op de vraag "Blijft je OK voor YS04–YS07 gelden, en is YS08 goed?"; YS04–YS07 na alleen de uitspraakfix, 5f76637; YS08 nieuwe versie met stem, 5f76637)). Klaar om in te plannen; Manon plant in via YouTube Studio, in het venster van kanaal 1, na het "ja" van Andries in haar sessie. Stijl OK YS (Andries in de sessie van Manon, do 5 nov 2026 ±21:27: "Ja, alle vijf OK" (op de vraag "Geef je "stijl OK YS" en "pakket OK" voor YS15, YS16, YS17 en YS18?"; versies met stem, de020e7)).
+VERSCHOVEN door Manon in YouTube Studio, vr 6 nov 2026 17:46–17:55: nieuwe datum woensdag 11 november 2026 18:00; Studio: "Wijzigingen opgeslagen", lijst toont "Gepland 11 nov 2026".
 INGEPLAND door Manon in YouTube Studio, venster van kanaal 1 (Chrome van Andries), vr 6 nov 2026 17:09, na "Ja, plan YS04 t/m YS18 in" (Andries, vr 6 nov ±16:50). Studio meldt: "Video gepland. Je video wordt als openbaar ingesteld op 14 november 2026 om 18:00". Geüpload: video-upload.mp4; AI-label ja; niet voor kinderen; taal Engels; categorie Educatief.
 
 == Bestand ==
@@ -44,4 +45,4 @@ Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
 Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
 
 == Zichtbaarheid ==
-Plannen: zaterdag 14 november 2026, 18:00 (Amsterdam)
+Plannen: woensdag 11 november 2026, 18:00 (Amsterdam) — verschoven van zaterdag 14 november 2026 (Andries in de sessie van Manon, vr 6 nov 2026 ±17:43: "begin vanaf nu maar met de planing en daarna maken we wel extra vooraad bij, ook zijn er nog dingen die we moeten doen voor dit project??" (op het voorstel om eerder te beginnen))

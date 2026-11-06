@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-06T17:27:38+01:00",
+  "tijd": "2026-11-06T17:55:30+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -36,11 +36,12 @@
     "YS11 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 19 november 2026 om 18:00\")",
     "YS12 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 20 november 2026 om 18:00\")",
     "YS13 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 21 november 2026 om 18:00\")",
-    "Studio-controle 17:27: YS01–YS13 staan op Gepland (9 t/m 21 nov 18:00); geen los concept van YS14"
+    "Studio-controle 17:27: YS01–YS13 staan op Gepland (9 t/m 21 nov 18:00); geen los concept van YS14",
+    "YS01–YS13 drie dagen naar voren verschoven in Studio (YS01 vr 6 nov 18:00 t/m YS13 wo 18 nov); YS14–YS18 krijgen 19–23 nov"
   ],
   "bezig": "-",
-  "volgende": "YS14–YS18 inplannen zodra de limiet voorbij is (22 t/m 26 nov 18:00; het \"ja, plan YS04 t/m YS18 in\" van 16:50 dekt ze); bio pas na \"bio OK kanaal 1, Manon mag hem zetten\"; vreemd maar waar: V1 (zinnen YH01/YH02), V3 (ritme), ombouw YH01/YH02 naar kanaal 1; keuze YS01–YS03 (advies: laten staan); weekverslag ma 9 nov",
-  "kanNietVerder": "YouTube Studio meldt bij YS14 (vr 6 nov 17:27): \"Dagelijkse uploadlimiet bereikt. Upload meer video's per dag na een eenmalige verificatie of wacht 24 uur.\" · nodig: Andries opent na 24 uur (za 7 nov vanaf ±17:30) opnieuw het venster van kanaal 1 voor YS14–YS18, of doet zelf de eenmalige verificatie (zijn account; dat doe ik niet)",
+  "volgende": "za 7 nov: YS14–YS18 uploaden en plannen (19–23 nov); extra voorraad YS19+ maken (vanaf 24 nov nodig); bio na \"bio OK kanaal 1, Manon mag hem zetten\"; vreemd maar waar V1/V3 en YH01/YH02 naar kanaal 1; weekverslag ma 9 nov",
+  "kanNietVerder": "YS14–YS18 (nu 19–23 nov) nog niet geüpload: dagelijkse uploadlimiet van Studio (vr 6 nov 17:27) · nodig: Andries opent na 24 uur (za 7 nov vanaf ±17:30) het venster van kanaal 1, of doet zelf de eenmalige verificatie",
   "vragen": [
     {
       "vraag": "V3 ritme vreemd maar waar op kanaal 1: voorstel 3x per week (ma, wo, vr) om 21:00 Amsterdam, naast YS dagelijks 18:00, vanaf ma 16 nov",
@@ -275,6 +276,18 @@
     {
       "tijd": "2026-11-06T17:27:38+01:00",
       "wat": "YouTube Studio kanaal 1, bij de upload van YS14: \"Dagelijkse uploadlimiet bereikt. Upload meer video's per dag na een eenmalige verificatie of wacht 24 uur.\". Gestopt volgens het draaiboek; YS14 niet ingepland, geen concept achtergebleven. Tabblad van Manon gesloten.",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-06T17:55:30+01:00",
+      "wat": "Andries in de sessie van Manon, vr 6 nov 2026 ±17:43: \"begin vanaf nu maar met de planing en daarna maken we wel extra vooraad bij, ook zijn er nog dingen die we moeten doen voor dit project??\" (op het voorstel om eerder te beginnen)",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-06T17:55:30+01:00",
+      "wat": "YouTube Studio kanaal 1: datum van YS01–YS13 aangepast (6 t/m 18 nov 18:00), per short \"Wijzigingen opgeslagen\"; tabblad gesloten",
       "waar": "Chrome van Andries, YouTube Studio",
       "wie": "manon"
     }

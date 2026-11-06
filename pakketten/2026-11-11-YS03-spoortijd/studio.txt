@@ -1,5 +1,6 @@
 STUDIO.TXT — YS03 versie 2 (YouTube Studio, uploadscherm van boven naar beneden)
 Status: pakket OK YS03 (Andries in de sessie van Manon, ma 2 nov 2026: "OK voor alle drie", op de vraag "Geef je pakket OK voor YS01, YS02 en YS03?"). Ingepland in Studio (Eva, 2 nov 22:45): wo 11 nov 2026, 18:00 (GMT+1), op verzoek van Andries; geüpload als hercodeerde kopie onder 10 MB (zie docs/OPDRACHT-ACTUEEL.md).
+VERSCHOVEN door Manon in YouTube Studio, vr 6 nov 2026 17:46–17:55: nieuwe datum zondag 8 november 2026 18:00; Studio: "Wijzigingen opgeslagen", lijst toont "Gepland 8 nov 2026".
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 36,9 s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
@@ -44,4 +45,4 @@ Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
 Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
 
 == Zichtbaarheid ==
-Plannen: woensdag 11 november 2026, 18:00 (Amsterdam)
+Plannen: zondag 8 november 2026, 18:00 (Amsterdam) — verschoven van woensdag 11 november 2026 (Andries in de sessie van Manon, vr 6 nov 2026 ±17:43: "begin vanaf nu maar met de planing en daarna maken we wel extra vooraad bij, ook zijn er nog dingen die we moeten doen voor dit project??" (op het voorstel om eerder te beginnen))

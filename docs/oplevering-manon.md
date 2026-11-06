@@ -1,4 +1,6 @@
-KAN NIET VERDER: Studio meldt bij YS14 "Dagelijkse uploadlimiet bereikt" (vr 6 nov 17:27); YS04–YS13 staan gepland, YS14–YS18 nog niet · nodig: Andries opent na 24 uur (za 7 nov vanaf ±17:30) opnieuw het venster van kanaal 1, of doet zelf de eenmalige verificatie
+KAN NIET VERDER: YS14–YS18 (nu 19–23 nov) nog niet geüpload door de dagelijkse uploadlimiet · nodig: Andries opent za 7 nov na ±17:30 het venster van kanaal 1, of doet zelf de eenmalige verificatie
+
+KLAAR: planning 3 dagen naar voren: YS01 vr 6 nov 18:00 t/m YS13 wo 18 nov 18:00 (Studio: "Wijzigingen opgeslagen" per short); mapnamen houden de oude datum · 17:55
 
 KLAAR: inplannen YS04–YS13 in Studio, kanaal 1 (12 t/m 21 nov, 18:00; Studio: "Video gepland" per short) · 17:27
 
@@ -120,6 +122,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, vr 6 nov 2026 ±17:43: "begin vanaf nu maar met de planing en daarna maken we wel extra vooraad bij, ook zijn er nog dingen die we moeten doen voor dit project??" (op het voorstel om eerder te beginnen)
 - Andries in de sessie van Manon, vr 6 nov 2026 ±16:50: "Ja, plan YS04 t/m YS18 in" (op de vraag "YS04 t/m YS18 met stem zijn goedgekeurd (pakket OK + stijl OK YS). Mag ik ze na YK01 in dit venster inplannen, één per upload, op de datum uit studio.txt om 18:00?")
 - Andries in de sessie van Manon, vr 6 nov 2026 ±16:50: "Vervangen door YK01" (op de vraag "Op kanaal 1 staat al een profielfoto: een zwart rondje met een wit vraagteken en een oranje punt. Het YK01-pakket heeft een rood rondje met een vraagteken op papier. De banner is nog leeg. Wat doe ik met de profielfoto?")
 - Andries in de sessie van Manon, do 5 nov 2026 ±21:27: "Ja, alle vijf OK" (op de vraag "Geef je "stijl OK YS" en "pakket OK" voor YS15, YS16, YS17 en YS18?"; versies met stem, de020e7)
