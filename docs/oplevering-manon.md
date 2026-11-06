@@ -1,3 +1,5 @@
+KLAAR: YS10 ingepland in Studio, kanaal 1 — Studio: "Video gepland. Je video wordt als openbaar ingesteld op 18 november 2026 om 18:00" · 17:18
+
 KLAAR: YS09 ingepland in Studio, kanaal 1 — Studio: "Video gepland. Je video wordt als openbaar ingesteld op 17 november 2026 om 18:00" · 17:16
 
 KLAAR: YS08 ingepland in Studio, kanaal 1 — Studio: "Video gepland. Je video wordt als openbaar ingesteld op 16 november 2026 om 18:00" · 17:14
