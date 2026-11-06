@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-06T17:25:41+01:00",
+  "tijd": "2026-11-06T17:27:38+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-06T15:50:36+01:00"
   },
-  "status": "werkt",
+  "status": "kan-niet-verder",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -35,11 +35,12 @@
     "YS10 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 18 november 2026 om 18:00\")",
     "YS11 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 19 november 2026 om 18:00\")",
     "YS12 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 20 november 2026 om 18:00\")",
-    "YS13 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 21 november 2026 om 18:00\")"
+    "YS13 ingepland (Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 21 november 2026 om 18:00\")",
+    "Studio-controle 17:27: YS01–YS13 staan op Gepland (9 t/m 21 nov 18:00); geen los concept van YS14"
   ],
-  "bezig": "YS04 t/m YS18 inplannen in YouTube Studio, kanaal 1, op datum (18:00)",
-  "volgende": "vr 6 nov 19:30 (Kantoor #67): (a) stijl OK YS + pakket OK YS15–YS18; (b) YK01 in zijn venster van kanaal 1, bio pas na \"bio OK kanaal 1, Manon mag hem zetten\"; (c) na zijn \"ja, plan … in\": YS04–YS14 op datum, dan YS15–YS18; (d) vreemd maar waar: V1, V3, YH01/YH02 naar kanaal 1; keuze YS01–YS03 (laten staan of vervangen door stemversie; advies: laten staan)",
-  "kanNietVerder": "YS04–YS18 met stem goedgekeurd; inplannen wacht op vr 6 nov 19:30: Andries geeft zijn venster van kanaal 1 (/chrome) en zegt \"ja, plan YS04 t/m YS18 in\"",
+  "bezig": "-",
+  "volgende": "YS14–YS18 inplannen zodra de limiet voorbij is (22 t/m 26 nov 18:00; het \"ja, plan YS04 t/m YS18 in\" van 16:50 dekt ze); bio pas na \"bio OK kanaal 1, Manon mag hem zetten\"; vreemd maar waar: V1 (zinnen YH01/YH02), V3 (ritme), ombouw YH01/YH02 naar kanaal 1; keuze YS01–YS03 (advies: laten staan); weekverslag ma 9 nov",
+  "kanNietVerder": "YouTube Studio meldt bij YS14 (vr 6 nov 17:27): \"Dagelijkse uploadlimiet bereikt. Upload meer video's per dag na een eenmalige verificatie of wacht 24 uur.\" · nodig: Andries opent na 24 uur (za 7 nov vanaf ±17:30) opnieuw het venster van kanaal 1 voor YS14–YS18, of doet zelf de eenmalige verificatie (zijn account; dat doe ik niet)",
   "vragen": [
     {
       "vraag": "V3 ritme vreemd maar waar op kanaal 1: voorstel 3x per week (ma, wo, vr) om 21:00 Amsterdam, naast YS dagelijks 18:00, vanaf ma 16 nov",
@@ -270,6 +271,12 @@
       "wat": "YS13 ingepland in YouTube Studio kanaal 1; Studio: \"Video gepland. Je video wordt als openbaar ingesteld op 21 november 2026 om 18:00\"",
       "waar": "Chrome van Andries, YouTube Studio",
       "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-06T17:27:38+01:00",
+      "wat": "YouTube Studio kanaal 1, bij de upload van YS14: \"Dagelijkse uploadlimiet bereikt. Upload meer video's per dag na een eenmalige verificatie of wacht 24 uur.\". Gestopt volgens het draaiboek; YS14 niet ingepland, geen concept achtergebleven. Tabblad van Manon gesloten.",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
     }
   ],
   "voorEva": [
@@ -298,7 +305,5 @@
     "ERBIJ-blok Eva do 5 nov 19:58 (keuring YS09–YS18 onder C30, YS01–YS03 keuze, vrijdag 19:30)",
     "H-finn-1 via Eva: kanaal 2 wordt \"verhalen over de gamewereld\"; geen overlap met vreemd maar waar (zie ik ook niet)"
   ],
-  "raakt": [
-    "youtube-studio-kanaal-1"
-  ]
+  "raakt": []
 }

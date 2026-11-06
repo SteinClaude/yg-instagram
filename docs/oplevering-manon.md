@@ -1,3 +1,7 @@
+KAN NIET VERDER: Studio meldt bij YS14 "Dagelijkse uploadlimiet bereikt" (vr 6 nov 17:27); YS04–YS13 staan gepland, YS14–YS18 nog niet · nodig: Andries opent na 24 uur (za 7 nov vanaf ±17:30) opnieuw het venster van kanaal 1, of doet zelf de eenmalige verificatie
+
+KLAAR: inplannen YS04–YS13 in Studio, kanaal 1 (12 t/m 21 nov, 18:00; Studio: "Video gepland" per short) · 17:27
+
 KLAAR: YS13 ingepland in Studio, kanaal 1 — Studio: "Video gepland. Je video wordt als openbaar ingesteld op 21 november 2026 om 18:00" · 17:25
 
 KLAAR: YS12 ingepland in Studio, kanaal 1 — Studio: "Video gepland. Je video wordt als openbaar ingesteld op 20 november 2026 om 18:00" · 17:23
@@ -19,8 +23,6 @@ KLAAR: YS05 ingepland in Studio, kanaal 1 — Studio: "Video gepland. Je video w
 KLAAR: YS04 ingepland in Studio, kanaal 1 — Studio: "Video gepland. Je video wordt als openbaar ingesteld op 12 november 2026 om 18:00" · 17:04
 
 KLAAR: YK01 gezet op kanaal 1 (banner, profielfoto, watermerk; Studio: gepubliceerd) · 16:56
-
-KAN NIET VERDER: YS04–YS18 met stem goedgekeurd, niets ingepland · nodig: vr 6 nov 19:30 het venster van kanaal 1 van Andries en zijn "ja, plan YS04 t/m YS18 in"
 
 KLAAR: stijl OK YS en pakket OK YS15–YS18 (versies met stem) · de020e7
 
