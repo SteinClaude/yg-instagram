@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-07T17:08:00+01:00",
+  "tijd": "2026-11-07T17:21:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -58,7 +58,8 @@
     "YS23 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 29 november 2026 om 18:00\")",
     "YS24 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 30 november 2026 om 18:00\")",
     "YS25 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 1 december 2026 om 18:00\")",
-    "Studio-lijst ±16:21: YS01–YS25 Gepland 7 nov – 1 dec 2026 (18:00); oude YS01–YS03 Privé; geen meldingen bij YS01"
+    "Studio-lijst ±16:21: YS01–YS25 Gepland 7 nov – 1 dec 2026 (18:00); oude YS01–YS03 Privé; geen meldingen bij YS01",
+    "YS01 openbaar gezet in Studio (kanaal 1) ±17:20 op verzoek van Andries; Studio: \"Wijzigingen opgeslagen\", zichtbaarheid Openbaar"
   ],
   "bezig": "voorraad YS26–YS32 (2–8 dec) maken",
   "volgende": "YS26–YS32 klaar maken (render loopt), dan keuring (pakket OK per code); bio + weergavenaam Instagram kanaal 1 na \"bio OK kanaal 1\"; weekverslag ma 9 nov",
@@ -72,6 +73,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-07T17:20:00+01:00 Andries: \"post alvast wat\" → keuze \"YS01 nu openbaar\"; YS01 in Studio (kanaal 1) van Gepland 18:00 naar Openbaar gezet",
     "2026-11-07T17:08:00+01:00 Opdracht Eva gelezen: Andries via het Kantoor 16:51 \"YH stoppen\"; vraag vreemd maar waar vervalt",
     "2026-11-07T16:58:00+01:00 Andries: \"check even ik zie nog niks op het kanaal staan of gepost\"; Studio (kanaal 1) gecontroleerd: YS01 Gepland, tooltip \"Deze video is momenteel privé en wordt openbaar op 7 november 2026 om 18:00\"",
     "2026-11-07T16:23:00+01:00 Andries in de sessie: \"Ja, maak YS26+\" (op de vraag \"Zal ik de volgende voorraad maken, YS26 en verder (vanaf 2 dec)?\")",

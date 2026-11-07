@@ -1,3 +1,5 @@
+KLAAR: YS01 nu openbaar op kanaal 1 (was gepland 7 nov 18:00), op verzoek van Andries; Studio: "Wijzigingen opgeslagen", zichtbaarheid Openbaar · 17:20
+
 KLAAR: YS19–YS25 ingepland in Studio, kanaal 1, 25 nov t/m 1 dec 2026, elke dag 18:00 (na "Alle zeven OK", za 7 nov ±15:49); Studio-lijst gecontroleerd ±16:21: YS01–YS25 Gepland 7 nov – 1 dec, geen meldingen bij YS01 · 16:22
 
 KLAAR: pakketten YS19–YS25 gemaakt (met stem, bronnen gelezen 7 nov), wachten op "pakket OK <code>"; keurlijst in docs/keurlijst.md · 12:58
@@ -142,6 +144,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, za 7 nov 2026 ±17:18: "post alvast wat", en op de vraag wat hij bedoelde de keuze "YS01 nu openbaar" (in plaats van 18:00)
 - Andries via de vragenknop in het Kantoor, za 7 nov 2026 16:51 (citaat in docs/OPDRACHT-ACTUEEL.md, Eva): "YH stoppen" (op de vraag of vreemd maar waar op kanaal 1 stopt of doorgaat in YS-stijl) → geen YH-pakketten meer; kanaal 1 is alleen YS
 - Andries in de sessie van Manon, za 7 nov 2026 ±16:23: "Ja, maak YS26+" (op de vraag "Zal ik de volgende voorraad maken, YS26 en verder (vanaf 2 dec)?")
 - Andries in de sessie van Manon, za 7 nov 2026 ±15:53: "Gewisseld" (Studio op kanaal 1, na "Staat nu op kanaal 1" ±15:51)
