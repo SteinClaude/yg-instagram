@@ -1,6 +1,6 @@
 STUDIO.TXT — YS25 (YouTube Studio, uploadscherm van boven naar beneden)
 Status: pakket OK YS25 (Andries in de sessie van Manon, za 7 nov 2026 ±15:49: "Alle zeven OK", op de vraag "Geef je \"pakket OK\" voor YS19 t/m YS25?"); stijl OK YS (5 nov ±21:27).
-INGEPLAND door Manon in YouTube Studio, venster van kanaal 1 (Chrome van Andries), za 7 nov 2026 16:46. Studio meldt: "Video gepland — Je video wordt als openbaar ingesteld op 1 december 2026 om 18:00". Geüpload: video-upload.mp4; AI-label ja; niet voor kinderen; taal Engels; categorie Educatief; 11 tags.
+INGEPLAND door Manon in YouTube Studio, venster van kanaal 1 (Chrome van Andries), za 7 nov 2026 ±16:20. Studio meldt: "Video gepland — Je video wordt als openbaar ingesteld op 1 december 2026 om 18:00". Geüpload: video-upload.mp4; AI-label ja; niet voor kinderen; taal Engels; categorie Educatief; 11 tags.
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 32,5 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt

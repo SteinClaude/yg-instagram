@@ -1,6 +1,6 @@
 STUDIO.TXT — YS20 (YouTube Studio, uploadscherm van boven naar beneden)
 Status: pakket OK YS20 (Andries in de sessie van Manon, za 7 nov 2026 ±15:49: "Alle zeven OK", op de vraag "Geef je \"pakket OK\" voor YS19 t/m YS25?"); stijl OK YS (5 nov ±21:27).
-INGEPLAND door Manon in YouTube Studio, venster van kanaal 1 (Chrome van Andries), za 7 nov 2026 16:13. Studio toonde het venster "Video gepubliceerd" (zonder datum); planscherm vooraf: 26 nov 2026, 18:00; Studio-lijst daarna: "Gepland — 26 nov 2026". Geüpload: video-upload.mp4; AI-label ja; niet voor kinderen; taal Engels; categorie Educatief; 11 tags.
+INGEPLAND door Manon in YouTube Studio, venster van kanaal 1 (Chrome van Andries), za 7 nov 2026 ±16:03. Studio toonde het venster "Video gepubliceerd" (zonder datum); planscherm vooraf: 26 nov 2026, 18:00; Studio-lijst daarna: "Gepland — 26 nov 2026". Geüpload: video-upload.mp4; AI-label ja; niet voor kinderen; taal Engels; categorie Educatief; 11 tags.
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 39,6 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt

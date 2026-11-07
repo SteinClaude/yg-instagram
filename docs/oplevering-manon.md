@@ -1,4 +1,4 @@
-KLAAR: YS19–YS25 ingepland in Studio, kanaal 1, 25 nov t/m 1 dec 2026, elke dag 18:00 (na "Alle zeven OK", za 7 nov ±15:49); Studio-lijst gecontroleerd 16:47: YS01–YS25 Gepland 7 nov – 1 dec, geen meldingen bij YS01 · 16:48
+KLAAR: YS19–YS25 ingepland in Studio, kanaal 1, 25 nov t/m 1 dec 2026, elke dag 18:00 (na "Alle zeven OK", za 7 nov ±15:49); Studio-lijst gecontroleerd ±16:21: YS01–YS25 Gepland 7 nov – 1 dec, geen meldingen bij YS01 · 16:22
 
 KLAAR: pakketten YS19–YS25 gemaakt (met stem, bronnen gelezen 7 nov), wachten op "pakket OK <code>"; keurlijst in docs/keurlijst.md · 12:58
 
@@ -142,7 +142,8 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
-- Andries in de sessie van Manon, za 7 nov 2026 ±16:00: "Gewisseld" (Studio op kanaal 1, na "Staat nu op kanaal 1" ±15:57)
+- Andries in de sessie van Manon, za 7 nov 2026 ±16:23: "Ja, maak YS26+" (op de vraag "Zal ik de volgende voorraad maken, YS26 en verder (vanaf 2 dec)?")
+- Andries in de sessie van Manon, za 7 nov 2026 ±15:53: "Gewisseld" (Studio op kanaal 1, na "Staat nu op kanaal 1" ±15:51)
 - Andries in de sessie van Manon, za 7 nov 2026 ±15:49: "Alle zeven OK" (op de vraag "Geef je \"pakket OK\" voor YS19 t/m YS25?") = pakket OK YS19, YS20, YS21, YS22, YS23, YS24, YS25
 - Andries in de sessie van Manon, za 7 nov 2026 ±11:57: "Ja, maak YS19+" (op de vraag "Zal ik de volgende voorraad (YS19 en verder) gaan maken?")
 - Andries in de sessie van Manon, za 7 nov 2026 ±11:43: "kunnen nu veder finn is klaar ik zet de pagina klaar voor je"

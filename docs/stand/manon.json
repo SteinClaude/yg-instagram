@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-07T16:48:00+01:00",
+  "tijd": "2026-11-07T16:26:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-06T15:50:36+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -58,10 +58,10 @@
     "YS23 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 29 november 2026 om 18:00\")",
     "YS24 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 30 november 2026 om 18:00\")",
     "YS25 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 1 december 2026 om 18:00\")",
-    "Studio-lijst 16:47: YS01–YS25 Gepland 7 nov – 1 dec 2026 (18:00); oude YS01–YS03 Privé; geen meldingen bij YS01"
+    "Studio-lijst ±16:21: YS01–YS25 Gepland 7 nov – 1 dec 2026 (18:00); oude YS01–YS03 Privé; geen meldingen bij YS01"
   ],
-  "bezig": "-",
-  "volgende": "Volgende voorraad YS26+ (vanaf 2 dec) als Andries dat vraagt; bio na \"bio OK\"; vreemd maar waar: stoppen of YS-stijl (vraag Andries); weekverslag ma 9 nov",
+  "bezig": "voorraad YS26–YS32 (2–8 dec) maken",
+  "volgende": "YS26–YS32 klaar, dan keuring (pakket OK per code); bio na \"bio OK\"; vreemd maar waar: stoppen of YS-stijl; weekverslag ma 9 nov",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -78,9 +78,10 @@
     }
   ],
   "buitenGit": [
-    "2026-11-07T16:47:00+01:00 YS22–YS25 ingepland in Studio (kanaal 1, Chrome van Andries) 16:31–16:46; lijst gecontroleerd: YS01–YS25 Gepland, geen meldingen bij YS01",
-    "2026-11-07T16:00:00+01:00 Andries: \"Gewisseld\"; Studio op kanaal 1 gecontroleerd (pad), YS19–YS21 ingepland 16:05–16:22",
-    "2026-11-07T15:57:00+01:00 Andries: \"Staat nu op kanaal 1\"; Studio in mijn tabblad opnieuw geladen: nog steeds een ander kanaal actief; niets gedaan, niet gewisseld",
+    "2026-11-07T16:23:00+01:00 Andries in de sessie: \"Ja, maak YS26+\" (op de vraag \"Zal ik de volgende voorraad maken, YS26 en verder (vanaf 2 dec)?\")",
+    "2026-11-07T16:21:00+01:00 YS22–YS25 ingepland in Studio (kanaal 1, Chrome van Andries) ±16:12–16:20; lijst gecontroleerd: YS01–YS25 Gepland, geen meldingen bij YS01",
+    "2026-11-07T15:53:00+01:00 Andries: \"Gewisseld\"; Studio op kanaal 1 gecontroleerd (pad), YS19–YS21 ingepland ±15:58–16:08",
+    "2026-11-07T15:51:00+01:00 Andries: \"Staat nu op kanaal 1\"; Studio in mijn tabblad opnieuw geladen: nog steeds een ander kanaal actief; niets gedaan, niet gewisseld",
     "2026-11-07T15:52:00+01:00 Studio geopend in de Chrome van Andries: ander kanaal actief (niet kanaal 1); niets gedaan, niet gewisseld; Andries gevraagd wanneer kanaal 1 vrij is",
     "2026-11-07T15:49:00+01:00 Andries in de sessie: \"Alle zeven OK\" (op de vraag \"Geef je pakket OK voor YS19 t/m YS25?\") = pakket OK YS19–YS25",
     {
