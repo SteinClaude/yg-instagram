@@ -1,6 +1,17 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** do 5 nov 2026, 19:58 — Eva
+**Bijgewerkt:** za 7 nov 2026, 16:51 — Eva
+
+## ▶ NU — za 7 nov 16:51 (Eva): besluit Andries via het Kantoor — vreemd maar waar stopt; Instagram kanaal 1 bestaat
+
+**Andries via de vragenknop in het Kantoor, za 7 nov 2026 16:51** (telt als citaat, C27), op jouw vraag of de reeks vreemd maar waar (YH) op kanaal 1 stopt of doorgaat in YS-stijl: **"YH stoppen"**.
+
+Wat dat betekent:
+1. **Geen YH-pakketten meer.** `docs/yg-social-plan-2.md` blijft als archief; je vraag V3 (ritme vreemd maar waar) vervalt. Kanaal 1 is alleen de YS-reeks: 7 per week, altijd 1 week voorraad, keuring per code (C30). Ga door met YS26–YS32.
+2. **Instagram van kanaal 1 bestaat** sinds za 7 nov 16:33 (aangemaakt door Andries; nog zonder profielfoto, bio en berichten). De bio op het bureaublad (02 YG-Social\Gegevens\01 Overzicht) wacht nog op zijn **"bio OK kanaal 1"**; neem in dat voorstel ook de weergavenaam mee (op Instagram staat nu de naam in één woord; op YouTube met spatie). Na zijn OK zet jij foto (YK01) en bio in zijn venster van kanaal 1, en je meldt wat Instagram toont. Geen enkele accountinstelling verder.
+3. **TikTok van kanaal 1** maakt Andries zelf (Kantoor #72); de naam van het Instagram-account van kanaal 2 past hij over twee weken aan (#85). Finn hoort het van zijn kant.
+4. Handles, adressen en kanaalnamen blijven uit deze repo (openbaar). "Kanaal 1" en "kanaal 2" volstaan.
+
 
 ## ▶ ERBIJ — do 5 nov 19:58 (Eva, avondcontrole): zo vraag je de keuring van YS09–YS18 onder C30, en wat vrijdag 19:30 moet
 
