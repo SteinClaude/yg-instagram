@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-07T10:23:23+01:00",
+  "tijd": "2026-11-07T11:18:17+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-06T15:50:36+01:00"
   },
-  "status": "kan-niet-verder",
+  "status": "wacht",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -45,7 +45,7 @@
   ],
   "bezig": "-",
   "volgende": "za 7 nov 17:00 (Andries opent het venster): YS01 met stem voor 7 nov 18:00, YS02 met stem voor 8 nov, YS03 met stem voor 9 nov; dan oude YS02/YS03 weg of Privé (Andries verwijdert zelf); YS14–YS18 voor 20–24 nov; voorraad YS19+ (vanaf 25 nov); bio na \"bio OK\"; weekverslag ma 9 nov",
-  "kanNietVerder": "Studio staat in Chrome op een ander kanaal (Finn werkt tegelijk); het actieve kanaal geldt voor alle tabbladen · nodig: Andries zet Studio op kanaal 1 zodra Finn klaar is, en meldt het; YS01 met stem moet za 7 nov om 18:00 live",
+  "kanNietVerder": "Wacht tot za 7 nov 17:00: dan zet Andries Studio op kanaal 1 (Finn werkt er nu) · nodig: Andries meldt om 17:00 dat kanaal 1 openstaat; YS01 met stem moet om 18:00 live",
   "vragen": [
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -402,6 +402,12 @@
       "wat": "YouTube Studio, 10:23: twee keer geopend; beide keren stond Studio op een ander kanaal dan kanaal 1 (Finn werkt tegelijk in dezelfde Chrome). Niets gedaan, niet gewisseld, tabbladen gesloten.",
       "waar": "Chrome van Andries, YouTube Studio",
       "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-07T11:18:17+01:00",
+      "wat": "Andries in de sessie van Manon, za 7 nov 2026 ±11:18: \"Om 17:00\" (op de vraag wanneer Studio op kanaal 1 staat, na Finn)",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
     }
   ],
   "voorEva": [

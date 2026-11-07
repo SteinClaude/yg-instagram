@@ -1,4 +1,4 @@
-KAN NIET VERDER: Studio staat in Chrome op een ander kanaal (Finn werkt tegelijk); het actieve kanaal geldt voor alle tabbladen · nodig: Andries zet Studio op kanaal 1 zodra Finn klaar is, en meldt het; YS01 met stem moet za 7 nov om 18:00 live
+KAN NIET VERDER: Wacht tot za 7 nov 17:00: dan zet Andries Studio op kanaal 1 (Finn werkt er nu) · nodig: Andries meldt om 17:00 dat kanaal 1 openstaat; YS01 met stem moet om 18:00 live
 
 KLAAR: nieuwe volgorde: YS01 za 7 nov t/m YS18 di 24 nov (18:00); YS04–YS13 in Studio verschoven naar 10–19 nov; oude YS02/YS03 als reserve gepland tot morgen · 18:58
 
@@ -126,6 +126,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, za 7 nov 2026 ±11:18: "Om 17:00" (op de vraag wanneer Studio op kanaal 1 staat, na Finn)
 - Andries in de sessie van Manon, za 7 nov 2026 ±10:23: "ja staat open in google chrome er zijn er meerde dus kijk goed dat je de juiste pakt" en "finn is ook bezig"
 - Andries in de sessie van Manon, za 7 nov 2026 ±10:23: "hij kan nu ook ik had melding gegreken over de verivicatie"
 - Andries in de sessie van Manon, vr 6 nov 2026 ±20:55: "Ja, morgen 17:00" (op de vraag of hij za 7 nov vóór 17:30 het venster van kanaal 1 opent)
