@@ -138,6 +138,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, za 7 nov 2026 ±11:57: "Ja, maak YS19+" (op de vraag "Zal ik de volgende voorraad (YS19 en verder) gaan maken?")
 - Andries in de sessie van Manon, za 7 nov 2026 ±11:43: "kunnen nu veder finn is klaar ik zet de pagina klaar voor je"
 - Andries in de sessie van Manon, za 7 nov 2026 ±11:18: "Om 17:00" (op de vraag wanneer Studio op kanaal 1 staat, na Finn)
 - Andries in de sessie van Manon, za 7 nov 2026 ±10:23: "ja staat open in google chrome er zijn er meerde dus kijk goed dat je de juiste pakt" en "finn is ook bezig"

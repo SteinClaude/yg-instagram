@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-07T11:55:47+01:00",
+  "tijd": "2026-11-07T11:57:37+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-06T15:50:36+01:00"
   },
-  "status": "klaar",
+  "status": "werkt",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -51,7 +51,7 @@
     "YS17 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 23 november 2026 om 18:00\")",
     "YS18 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 24 november 2026 om 18:00\")"
   ],
-  "bezig": "-",
+  "bezig": "voorraad YS19–YS25 maken (onderwerpen 8, 9, 13, 21, 23, 24, 30 uit het plan)",
   "volgende": "Voorraad YS19+ maken (vanaf 25 nov is er niets gepland; met stem, pakket OK per code); bio na \"bio OK\"; weekverslag ma 9 nov; vreemd maar waar: antwoord Andries (stopt of in YS-stijl)",
   "kanNietVerder": null,
   "vragen": [
@@ -464,6 +464,12 @@
       "wat": "YouTube Studio kanaal 1, lijst Shorts gecontroleerd: YS01 t/m YS18 Gepland 7 t/m 24 nov 2026 (elke dag één, 18:00); de drie oude versies zonder stem (YS01–YS03) op Privé, niet verwijderd. Bij alle nieuwe uploads: AI-label ja, niet voor kinderen, taal Engels, categorie Educatief. Tabblad gesloten.",
       "waar": "Chrome van Andries, YouTube Studio",
       "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-07T11:57:37+01:00",
+      "wat": "Andries in de sessie van Manon, za 7 nov 2026 ±11:57: \"Ja, maak YS19+\" (op de vraag \"Zal ik de volgende voorraad (YS19 en verder) gaan maken?\")",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
     }
   ],
   "voorEva": [
