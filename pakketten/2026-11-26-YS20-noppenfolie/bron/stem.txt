@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Bubble wrap was supposed to be wallpaper.
+2. 1957, New Jersey. Two engineers, Alfred Fielding and Marc Chavannes, want a textured wall covering.
+3. In Fielding's garage, they seal two plastic sheets together, with air trapped inside.
+4. As wallpaper, it didn't take hold.
+5. Next try: cheap insulation for greenhouses. Also a hard sell.
+6. 1960. They found a company to sell it: Sealed Air.
+7. IBM has a new computer, the 1401. A Sealed Air marketer pitches them the bubbles.
+8. Finally, a use: protective packaging.
+9. Failed wallpaper. Perfect packaging.

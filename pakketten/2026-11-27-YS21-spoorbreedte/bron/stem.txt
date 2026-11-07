@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Most train tracks are four feet, eight and a half inches apart. Why such a strange number?
+2. That's one thousand four hundred and thirty-five millimetres, on more than half of the world's railway routes.
+3. It starts with old trackways for horse and cart, about four feet eight inches wide.
+4. George Stephenson knew that gauge from coal tramways near Newcastle.
+5. 1830. His Liverpool and Manchester Railway opens: the first intercity railway in the world.
+6. 1846. A British law: new passenger railways in Great Britain must use four feet, eight and a half inches.
+7. Ireland got a different number: five feet three.
+8. Today it runs across North America and much of Europe.
+9. A coal-wagon width, still under your train.

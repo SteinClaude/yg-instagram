@@ -1,0 +1,10 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. The inventor of the telephone wanted you to answer with: Ahoy.
+2. Alexander Graham Bell's recommendation: Ahoy, ahoy.
+3. August 15, 1877. Thomas Edison writes to the president of a telegraph company in Pittsburgh.
+4. His suggestion: Hello.
+5. Early phones had no bell. Edison: Hello! can be heard ten to twenty feet away.
+6. The word was older. The spelling hello already shows up in America in the eighteen-twenties.
+7. But on the phone, Edison's hello won. Bell's ahoy didn't.
+8. Ahoy lost. Hello picked up.

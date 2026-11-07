@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Mayday is French. Sort of.
+2. It's the spoken distress call on the radio.
+3. February 1923. The Times reports: S-O-S will give way to the words May-day.
+4. Why May-day? It's how the French m'aidez sounds.
+5. M'aidez. Help me.
+6. It's credited to Stanley Mockford, a radio officer at Croydon Airport in London.
+7. 1927, Washington. An international radio convention makes it official.
+8. The spoken word Mayday, corresponding to the French pronunciation of m'aider.
+9. Help me, in French. Spelled in English.
