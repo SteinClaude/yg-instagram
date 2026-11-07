@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Why is pound written L-B? There's no L or B in pound.
+2. It's Latin. Libra.
+3. Libra first meant a balance, or scales. Like the star sign.
+4. The Romans said libra pondo: a pound by weight.
+5. English kept pondo for speaking. It became pound.
+6. But for writing, it kept libra. L-B.
+7. A Roman libra weighed about 327 grams.
+8. And the pound sign? Also libra. It grew out of the letter L.
+9. Pound for saying it. Libra for writing it.

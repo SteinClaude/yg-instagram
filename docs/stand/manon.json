@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-07T12:24:48+01:00",
+  "tijd": "2026-11-07T12:58:33+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-06T15:50:36+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -49,10 +49,11 @@
     "YS15 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 21 november 2026 om 18:00\")",
     "YS16 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 22 november 2026 om 18:00\")",
     "YS17 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 23 november 2026 om 18:00\")",
-    "YS18 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 24 november 2026 om 18:00\")"
+    "YS18 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 24 november 2026 om 18:00\")",
+    "YS19–YS25 gemaakt met stem (pakketten, video, upload-kopie, studio.txt, bronnen), 12:58"
   ],
-  "bezig": "YS19–YS25: scripts klaar (d594e7a), controlebeelden en daarna video's renderen",
-  "volgende": "Voorraad YS19+ maken (vanaf 25 nov is er niets gepland; met stem, pakket OK per code); bio na \"bio OK\"; weekverslag ma 9 nov; vreemd maar waar: antwoord Andries (stopt of in YS-stijl)",
+  "bezig": "-",
+  "volgende": "Keuring YS19–YS25 door Andries (\"pakket OK <code>\" per code; docs/keurlijst.md); na OK inplannen in Studio 25 nov – 1 dec 18:00; vóór 18:00 vandaag nagaan of Studio bij YS01 problemen meldt; bio na \"bio OK\"; weekverslag ma 9 nov",
   "kanNietVerder": null,
   "vragen": [
     {

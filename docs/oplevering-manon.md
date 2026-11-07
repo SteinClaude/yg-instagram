@@ -1,3 +1,5 @@
+KLAAR: pakketten YS19–YS25 gemaakt (met stem, bronnen gelezen 7 nov), wachten op "pakket OK <code>"; keurlijst in docs/keurlijst.md · 12:58
+
 KLAAR: YS01–YS18 staan in Studio gepland, 7 t/m 24 nov 2026, elke dag 18:00 (lijst gecontroleerd); oude YS01–YS03 zonder stem op Privé · 11:55
 
 KLAAR: YS18 ingepland in Studio, kanaal 1 — Studio: "Video gepland — Je video wordt als openbaar ingesteld op 24 november 2026 om 18:00" · 11:55

@@ -1,0 +1,12 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. The first shoppers refused to use shopping carts.
+2. Oklahoma City. Sylvan Goldman runs the Humpty Dumpty grocery stores.
+3. His idea starts with a folding chair: a basket on the seat, wheels on the legs.
+4. Two wire baskets, one above the other.
+5. June 4, 1937. The carts roll out in his stores.
+6. No one wanted them.
+7. So Goldman hired people to pose as shoppers, and push the carts around.
+8. He patented his cart, and started a company to build it.
+9. Later, Orla Watson's nesting cart took over. Goldman licensed it in 1949.
+10. Fake shoppers sold the first cart.

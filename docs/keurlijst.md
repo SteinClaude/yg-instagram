@@ -4,6 +4,22 @@ Bijgehouden door Manon. Eén regel per gemaakt pakket dat nog niet is goedgekeur
 Een OK geldt per code (C15). Na een OK plant Manon het pakket in en haalt ze de regel hier weg. Alles is gemaakt in de
 vastgestelde stijlgids (om en om licht/donker); het raster per code laat de hele rij tot en met dat pakket zien.
 
+## YouTube kanaal 1 · YS19–YS25 (week 25 nov – 1 dec) — wacht op "pakket OK <code>"
+
+Gemaakt za 7 nov 2026, met stem (Kokoro "fenrir"); stijl valt onder "stijl OK YS" (5 nov), dus per code is alleen "pakket OK" nodig voor script, bronnen en titel (C30). Bronnen gelezen op 7 nov; de bronnen uit het plan (Merriam-Webster, Britannica, Smithsonian) gaven een 403 en zijn vervangen door leesbare bronnen (staat per pakket in `bron/bronnen.md`, onder "Wat bewust niet gezegd is").
+
+| Code | Plannen | Titel | Lengte · bronnen | Bekijken |
+|---|---|---|---|---|
+| YS19 | woensdag 25 november, 18:00 | Why do pilots shout "Mayday"? It's French (sort of) | 38,1 s · 3 bronnen | `pakketten/2026-11-25-YS19-mayday/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+| YS20 | donderdag 26 november, 18:00 | Bubble wrap was supposed to be wallpaper | 39,6 s · 2 bronnen | `pakketten/2026-11-26-YS20-noppenfolie/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+| YS21 | vrijdag 27 november, 18:00 | Why are train tracks exactly 4 feet 8½ inches apart? | 45,1 s · 3 bronnen | `pakketten/2026-11-27-YS21-spoorbreedte/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+| YS22 | zaterdag 28 november, 18:00 | Alexander Graham Bell wanted you to answer the phone with "Ahoy" | 35,0 s · 3 bronnen | `pakketten/2026-11-28-YS22-hello/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+| YS23 | zondag 29 november, 18:00 | Why your windshield cracks but doesn't shatter | 36,5 s · 2 bronnen | `pakketten/2026-11-29-YS23-veiligheidsglas/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+| YS24 | maandag 30 november, 18:00 | The first shoppers refused to use shopping carts | 41,3 s · 4 bronnen | `pakketten/2026-11-30-YS24-winkelwagen/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+| YS25 | dinsdag 1 december, 18:00 | Why is "pound" written "lb"? There's no L or B in it | 32,5 s · 3 bronnen | `pakketten/2026-12-01-YS25-lb/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+
+## @ygdigital.nl (op pauze)
+
 | Code | Datum | Wat | Preview |
 |---|---|---|---|
 | W04 | ma 23 nov | Eigen werk (licht): "Eén naam. Acht sferen." — "Uw bedrijf" in alle acht sferen van de ontwerpstudio, echte opnames uit de live studio, 4 platen. | `preview/raster-W04.jpg` · `pakketten/2026-11-23-W04-acht-sferen/overzicht.jpg` |

@@ -18,12 +18,13 @@ if (p.titel.length > 100) throw new Error('titel te lang: ' + p.titel.length);
 const video = path.join(D, 'video.mp4');
 const duur = parseFloat(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', video]).toString()).toFixed(1).replace('.', ',');
 
-// upload-kopie onder 10 MB (zelfde instellingen als Eva: H.264 twee passen, 2 Mbit/s, AAC 96k)
+// upload-kopie onder 10 MB (H.264 twee passen, AAC 96k; 2 Mbit/s, of lager voor lange shorts: doel ±9,3 MB, zoals upload.cjs)
 const log = path.join(os.tmpdir(), 'short-upload-' + code), uitv = path.join(D, 'video-upload.mp4');
+const kbps = Math.min(2000, Math.floor((9.3 * 8 * 1024) / parseFloat(duur.replace(',', '.')) - 96 - 40)) + 'k';
 const nul = process.platform === 'win32' ? 'NUL' : '/dev/null';
-execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', video, '-c:v', 'libx264', '-b:v', '2000k', '-pass', '1', '-passlogfile', log, '-preset', 'slow', '-pix_fmt', 'yuv420p', '-an', '-f', 'mp4', nul]);
-execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', video, '-c:v', 'libx264', '-b:v', '2000k', '-pass', '2', '-passlogfile', log, '-preset', 'slow', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '96k', '-movflags', '+faststart', uitv]);
-const mb = fs.statSync(uitv).size / 1e6; if (mb >= 10) throw new Error('upload te groot: ' + mb.toFixed(1) + ' MB');
+execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', video, '-c:v', 'libx264', '-b:v', kbps, '-pass', '1', '-passlogfile', log, '-preset', 'slow', '-pix_fmt', 'yuv420p', '-an', '-f', 'mp4', nul]);
+execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', video, '-c:v', 'libx264', '-b:v', kbps, '-pass', '2', '-passlogfile', log, '-preset', 'slow', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '96k', '-movflags', '+faststart', uitv]);
+const mb = fs.statSync(uitv).size / 1048576; if (mb >= 10) throw new Error('upload te groot: ' + mb.toFixed(1) + ' MB');
 
 // vrije beelden (kanaal 2): naamsvermelding in de beschrijving en in bronnen.md
 const bl = path.join(D, 'bron', 'beelden.json');
@@ -38,7 +39,7 @@ Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK ${code}" van Andrie
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, ${duur} s, ${stem ? `Engelse stem (${stem}) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt` : 'met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)'}
-video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k); deze upload je via Chrome
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (${mb.toFixed(1).replace('.', ',')} MB; H.264 twee passen, ${kbps}bit/s, AAC 96k); deze upload je via Chrome
 
 == Details ==
 Titel (${p.titel.length}/100 tekens):

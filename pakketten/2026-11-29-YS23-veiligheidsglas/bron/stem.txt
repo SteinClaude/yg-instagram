@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Your windshield cracks, but stays in one piece. That started with a dropped beaker.
+2. 1903. French chemist and painter Édouard Bénédictus is in his lab.
+3. A glass beaker falls off the shelf.
+4. It breaks. But it doesn't splinter.
+5. The beaker had held a cellulose nitrate solution. It left a thin film that held the glass together.
+6. 1909. He patents laminated glass.
+7. World War One. It's wanted for the lenses of gas masks.
+8. And laminated glass starts showing up in windshields.
+9. A dropped beaker, still in your windshield.
