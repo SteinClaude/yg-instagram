@@ -23,7 +23,7 @@ const stoel = (h, x = 540, y = 1060, { wielen = 0, manden = 0, op = 1 } = {}) =>
   return s + '</g>';
 };
 // winkelschap
-const schap = (h) => `<g opacity="0.55">${[0, 1, 2].map(j => `<rect x="80" y="${760 + j * 170}" width="920" height="14" fill="#B5AD9C"/>` + Array.from({ length: 9 }, (_, i) => `<rect x="${100 + i * 100}" y="${670 + j * 170}" width="70" height="90" rx="6" fill="${['#D9432B', '#F2C230', '#2F7D5B', '#6E6A62'][(i + j) % 4]}"/>`).join('')).join('')}</g>`;
+const schap = (h) => `<g opacity="0.55" transform="translate(0 150)">${[0, 1, 2].map(j => `<rect x="80" y="${760 + j * 170}" width="920" height="14" fill="#B5AD9C"/>` + Array.from({ length: 9 }, (_, i) => `<rect x="${100 + i * 100}" y="${670 + j * 170}" width="70" height="90" rx="6" fill="${['#D9432B', '#F2C230', '#2F7D5B', '#6E6A62'][(i + j) % 4]}"/>`).join('')).join('')}</g>`;
 // poppetje (eenvoudige vorm, geen echt persoon)
 const pop = (h, x, y, kleur) => `<g filter="url(#sch)"><circle cx="${x}" cy="${y - 170}" r="42" fill="${kleur}"/><rect x="${x - 45}" y="${y - 120}" width="90" height="190" rx="40" fill="${kleur}"/><rect x="${x - 35}" y="${y + 60}" width="26" height="110" rx="12" fill="${kleur}"/><rect x="${x + 9}" y="${y + 60}" width="26" height="110" rx="12" fill="${kleur}"/></g>`;
 // nestbare karren: in elkaar geschoven
@@ -67,22 +67,22 @@ module.exports = {
   scenes: [
     // 1 · HAAK
     { duur: 3.4, stem: "The first shoppers refused to use shopping carts.", camera: { zoom: [1, 1.04], stoot: [0.3], schud: [0.3] }, geluid: [[0.28, 'klap'], [0.28, 'boem', 0.8]],
-      teken: h => stoel(h, 540, 1060, { wielen: 1, manden: 2, op: h.klem(h.t / 0.1) }) + h.kin('The first shoppers *refused* to use shopping carts.', { y: 300, g: 100, t: h.t, start: 0.4 }).svg },
+      teken: h => stoel(h, 540, 1000, { wielen: 1, manden: 2, op: h.klem(h.t / 0.1) }) + h.kin('The first shoppers *refused* to use shopping carts.', { y: 300, g: 100, t: h.t, start: 0.4 }).svg },
     // 2 · Goldman, Humpty Dumpty, Oklahoma City
     { duur: 3.6, stem: "Oklahoma City. Sylvan Goldman runs the Humpty Dumpty grocery stores.", in: 'zweep', bron: OK, bronStart: 2.2, camera: { zoom: [1, 1.05] }, geluid: [[1.2, 'ding', 0.4]],
       teken: h => schap(h) + h.kin('Oklahoma City. *Sylvan Goldman* runs the Humpty Dumpty grocery stores.', { y: 300, g: 86, t: h.t, start: 0.05 }).svg },
     // 3 · het idee: een klapstoel
     { duur: 3.8, stem: "His idea starts with a folding chair: a basket on the seat, wheels on the legs.", in: 'op', bron: CBS, bronStart: 2.4, camera: { zoom: [1, 1.05], stoot: [1.6] }, geluid: [[1.0, 'pop', 0.7], [1.6, 'klap', 0.6], [2.2, 'rol', 0.5]],
-      teken: h => stoel(h, 540, 1060, { manden: h.klem((h.t - 0.9) / 0.5), wielen: h.klem((h.t - 1.9) / 0.4) }) + h.kin('A *folding chair*: a basket on the seat, wheels on the legs.', { y: 300, g: 88, t: h.t, start: 0.05 }).svg },
+      teken: h => stoel(h, 540, 1000, { manden: h.klem((h.t - 0.9) / 0.5), wielen: h.klem((h.t - 1.9) / 0.4) }) + h.kin('A *folding chair*: a basket on the seat, wheels on the legs.', { y: 300, g: 88, t: h.t, start: 0.05 }).svg },
     // 4 · twee draadmanden
     { duur: 3.0, stem: "Two wire baskets, one above the other.", in: 'flits', bron: IT, bronStart: 1.8, camera: { zoom: [1, 1.06], stoot: [1.0] }, geluid: [[1.0, 'pop', 0.8]],
-      teken: h => stoel(h, 540, 1060, { wielen: 1, manden: 1 + h.klem((h.t - 0.8) / 0.4) }) + h.kin('*Two wire baskets*, one above the other.', { y: 300, g: 100, t: h.t, start: 0.05 }).svg },
+      teken: h => stoel(h, 540, 1000, { wielen: 1, manden: 1 + h.klem((h.t - 0.8) / 0.4) }) + h.kin('*Two wire baskets*, one above the other.', { y: 300, g: 100, t: h.t, start: 0.05 }).svg },
     // 5 · 4 juni 1937
     { duur: 3.4, stem: "June 4, 1937. The carts roll out in his stores.", in: 'zweep', bron: CBS, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [0.3] }, geluid: [[0.28, 'klap', 0.8], [0.28, 'boem', 0.5], [1.4, 'rol', 0.6]],
       teken: h => groot(h, '1937', 760, 260) + h.kin('June 4. The carts *roll out*.', { y: 860, g: 96, t: h.t, start: 0.45 }).svg },
     // 6 · niemand wilde ze
     { duur: 3.2, stem: "No one wanted them.", in: 'op', bron: NPR, bronStart: 1.8, camera: { zoom: [1, 1.06], stoot: [0.9] }, geluid: [[0.9, 'boem', 0.6]],
-      teken: h => schap(h) + stoel(h, 540, 1080, { wielen: 1, manden: 2, op: 1 - 0.35 * h.klem((h.t - 0.9) / 0.5) }) + h.kin('*No one* wanted them.', { y: 300, g: 120, t: h.t, start: 0.05 }).svg },
+      teken: h => schap(h) + stoel(h, 540, 1000, { wielen: 1, manden: 2, op: 1 - 0.35 * h.klem((h.t - 0.9) / 0.5) }) + h.kin('*No one* wanted them.', { y: 300, g: 120, t: h.t, start: 0.05 }).svg },
     // 7 · dus huurde hij mensen in
     { duur: 4.0, stem: "So Goldman hired people to pose as shoppers, and push the carts around.", in: 'zweep', bron: IT, bronStart: 2.4, camera: { zoom: [1, 1.05] }, geluid: [[1.0, 'rol', 0.6], [2.0, 'rol', 0.6]],
       teken: h => { const dx = (h.t - 1.0) * 120;
@@ -90,13 +90,13 @@ module.exports = {
           + h.kin('So he hired people to *pose as shoppers* and push the carts around.', { y: 290, g: 84, t: h.t, start: 0.05 }).svg; } },
     // 8 · patent en een bedrijf
     { duur: 3.6, stem: "He patented his cart, and started a company to build it.", in: 'masker', nacht: true, bron: OK, bronStart: 2.2, camera: { zoom: [1.05, 1.0] }, geluid: [[0.5, 'whoosh', 0.4], [1.8, 'ding', 0.6]],
-      teken: h => stoel(h, 540, 1080, { wielen: 1, manden: 2 }) + h.kin('He *patented* his cart, and started a company to build it.', { y: 330, g: 88, t: h.t, start: 0.05, kleur: '#F3F0E8', accent: h.K.geel }).svg },
+      teken: h => stoel(h, 540, 1000, { wielen: 1, manden: 2 }) + h.kin('He *patented* his cart, and started a company to build it.', { y: 330, g: 88, t: h.t, start: 0.05, kleur: '#F3F0E8', accent: h.K.geel }).svg },
     // 9 · later: de nestbare kar van Orla Watson
     { duur: 4.0, stem: "Later, Orla Watson's nesting cart took over. Goldman licensed it in 1949.", in: 'zweep', bron: IT, bronStart: 2.4, camera: { zoom: [1, 1.05], stoot: [2.0] }, geluid: [[1.2, 'rol', 0.6], [2.0, 'klap', 0.7]],
       teken: h => nest(h, 540, 1100, h.zacht((h.t - 1.0) / 1.0)) + h.kin('Later: *Orla Watson\'s* nesting cart. Goldman licensed it in *1949*.', { y: 290, g: 84, t: h.t, start: 0.05 }).svg },
     // 10 · slot
     { duur: 3.4, stem: "Fake shoppers sold the first cart.", in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[-0.9, 'whoosh', 0.5]],
-      teken: h => stoel(h, 540, 1040, { wielen: 1, manden: 2 })
+      teken: h => stoel(h, 540, 1000, { wielen: 1, manden: 2 })
         + h.kin('*Fake shoppers* sold the first cart.', { y: 300, g: 110, t: h.t, start: 0.1, weg: h.duur - 0.8 }).svg
         + `<text x="540" y="1380" text-anchor="middle" font-family="IBM Plex Mono" font-size="34" fill="${h.K.grijs}" opacity="${(h.klem((h.t - 1.6) / 0.4) * (1 - h.klem((h.t - (h.duur - 0.8)) / 0.3))).toFixed(3)}">Sources in the description.</text>` },
   ],

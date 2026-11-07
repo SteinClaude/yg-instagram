@@ -61,9 +61,9 @@ module.exports = {
       teken: h => groot(h, '1903', 760, 260) + h.kin('French chemist and painter *Édouard Bénédictus*.', { y: 860, g: 80, t: h.t, start: 0.45 }).svg },
     // 3 · de beker valt
     { duur: 3.4, stem: "A glass beaker falls off the shelf.", in: 'op', bron: ACS, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [1.5], schud: [1.5] }, geluid: [[0.7, 'stijg', 0.4], [1.5, 'klap', 0.9], [1.5, 'boem', 0.6]],
-      teken: h => { const v = h.klem((h.t - 0.6) / 0.9), y = 820 + v * v * 420;
-        return `<rect x="140" y="${980 - 200}" width="420" height="26" fill="#8C6B4A"/>` + beker(h, 330 + v * 260, y - 150 + 150, { draai: v * 95, p: h.klem((h.t - 1.5) / 0.25) })
-          + `<rect x="100" y="1320" width="880" height="12" fill="${h.K.grijs}"/>` + h.kin('A glass beaker *falls off the shelf*.', { y: 300, g: 100, t: h.t, start: 0.05 }).svg; } },
+      teken: h => { const v = h.klem((h.t - 0.6) / 0.9), y = 630 + v * v * 450;
+        return `<rect x="140" y="${980 - 200}" width="420" height="26" fill="#8C6B4A"/>` + beker(h, 330 + v * 260, y, { draai: v * 95, p: h.klem((h.t - 1.5) / 0.25) })
+          + `<rect x="100" y="1236" width="880" height="12" fill="${h.K.grijs}"/>` + h.kin('A glass beaker *falls off the shelf*.', { y: 300, g: 100, t: h.t, start: 0.05 }).svg; } },
     // 4 · gebroken, maar niet versplinterd
     { duur: 3.2, stem: "It breaks. But it doesn't splinter.", in: 'flits', bron: VIL, bronStart: 1.8, camera: { zoom: [1, 1.06], stoot: [1.1] }, geluid: [[1.1, 'ding', 0.7]],
       teken: h => beker(h, 540, 1060, { p: 1 }) + h.kin('It breaks. But it *doesn\'t splinter*.', { y: 300, g: 104, t: h.t, start: 0.05 }).svg },
@@ -78,7 +78,7 @@ module.exports = {
       teken: h => masker(h, 540, 1080) + h.kin('World War I: lenses for *gas masks*.', { y: 330, g: 100, t: h.t, start: 0.05, kleur: '#F3F0E8', accent: h.K.geel }).svg },
     // 8 · en in voorruiten
     { duur: 3.4, stem: "And laminated glass starts showing up in windshields.", in: 'zweep', bron: ACS, bronStart: 2.0, camera: { zoom: [1, 1.05], stoot: [1.6] }, geluid: [[1.6, 'ding', 0.6]],
-      teken: h => ruit(h, 540, 1060, 0) + h.kin('And it starts showing up in *windshields*.', { y: 300, g: 100, t: h.t, start: 0.05 }).svg },
+      teken: h => ruit(h, 540, 990, 0) + h.kin('And it starts showing up in *windshields*.', { y: 300, g: 100, t: h.t, start: 0.05 }).svg },
     // 9 · slot
     { duur: 3.6, stem: "A dropped beaker, still in your windshield.", in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[0.6, 'klap', 0.6], [-0.9, 'whoosh', 0.5]],
       teken: h => ruit(h, 540, 990, h.klem((h.t - 0.6) / 0.25))

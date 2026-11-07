@@ -17,9 +17,9 @@ const telefoon = (h, x = 540, y = 1060, tril = 0) => { const dx = Math.sin(h.t *
     + `<rect x="${x - 40}" y="${y + 40}" width="80" height="110" rx="10" fill="#6F4A30"/>`
     + `<rect x="${x + 170}" y="${y - 200}" width="56" height="170" rx="24" fill="${h.K.inkt}"/><path d="M ${x + 198} ${y - 30} C ${x + 220} ${y + 80} ${x + 120} ${y + 80} ${x + 150} ${y + 150}" fill="none" stroke="${h.K.inkt}" stroke-width="8"/></g>`; };
 // brief met handschrift-regels
-const brief = (h, x = 540, y = 1060, p = 1) => `<g opacity="${p.toFixed(3)}" filter="url(#sch)" transform="translate(0 ${((1 - p) * 60).toFixed(1)})"><rect x="${x - 250}" y="${y - 300}" width="500" height="600" rx="8" fill="#FBF6EA"/>`
+const brief = (h, x = 540, y = 1060, p = 1) => `<g opacity="${p.toFixed(3)}" filter="url(#sch)" transform="translate(0 ${((1 - p) * 60).toFixed(1)})"><rect x="${x - 250}" y="${y - 290}" width="500" height="600" rx="8" fill="#FBF6EA"/>`
   + Array.from({ length: 9 }, (_, i) => `<path d="M ${x - 190} ${y - 220 + i * 52} q 40 -10 80 0 t 80 0 t 80 0 t ${i % 3 === 2 ? 40 : 120} 0" fill="none" stroke="#5A6B8C" stroke-width="5"/>`).join('')
-  + `<text x="${x + 150}" y="${y + 260}" text-anchor="end" font-family="IBM Plex Mono" font-weight="700" font-size="30" fill="${h.K.signaal}">15 Aug 1877</text></g>`;
+  + `<text x="${x + 150}" y="${y + 270}" text-anchor="end" font-family="IBM Plex Mono" font-weight="700" font-size="30" fill="${h.K.signaal}">15 Aug 1877</text></g>`;
 // golven rond een woord (geluid dat ver draagt); p = 0..1
 const golven = (h, x, y, p) => [0, 1, 2].map(i => { const q = h.klem(p * 3 - i); return q <= 0 ? '' : `<circle cx="${x}" cy="${y}" r="${(160 + i * 110 + q * 30).toFixed(1)}" fill="none" stroke="${h.K.signaal}" stroke-width="8" opacity="${(q * (1 - i * 0.25)).toFixed(3)}"/>`; }).join('');
 
@@ -61,7 +61,7 @@ module.exports = {
       teken: h => telefoon(h, 540, 1080, h.klem((h.t - 0.9) / 0.2) * (1 - h.klem((h.t - 2.0) / 0.3))) + h.kin('Alexander Graham Bell\'s recommendation: *"Ahoy, ahoy."*', { y: 300, g: 90, t: h.t, start: 0.05 }).svg },
     // 3 · 15 augustus 1877: een brief van Edison
     { duur: 4.0, stem: "August 15, 1877. Thomas Edison writes to the president of a telegraph company in Pittsburgh.", in: 'op', bron: HAG, bronStart: 2.4, camera: { zoom: [1, 1.05] }, geluid: [[0.9, 'rol', 0.5]],
-      teken: h => brief(h, 540, 1050, h.klem((h.t - 0.6) / 0.5)) + h.kin('*1877*. Thomas Edison writes to a telegraph company in Pittsburgh.', { y: 290, g: 84, t: h.t, start: 0.05 }).svg },
+      teken: h => brief(h, 540, 980, h.klem((h.t - 0.6) / 0.5)) + h.kin('*1877*. Thomas Edison writes to a telegraph company in Pittsburgh.', { y: 290, g: 84, t: h.t, start: 0.05 }).svg },
     // 4 · zijn voorstel: Hello
     { duur: 3.0, stem: "His suggestion: Hello.", in: 'flits', bron: HAG, bronStart: 1.8, camera: { zoom: [1, 1.06], stoot: [0.9], schud: [0.9] }, geluid: [[0.9, 'klap', 0.9], [0.9, 'boem', 0.6]],
       teken: h => (h.t > 0.8 ? groot({ ...h, t: h.t - 0.8 }, 'HELLO!', 1050, 220) : '') + h.kin('His suggestion:', { y: 300, g: 110, t: h.t, start: 0.05 }).svg },

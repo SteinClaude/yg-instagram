@@ -76,7 +76,7 @@ module.exports = {
           + h.kin('But for writing, it kept *libra*: *lb*.', { y: 300, g: 100, t: h.t, start: 0.05 }).svg; } },
     // 7 · een Romeinse libra: ongeveer 327 gram
     { duur: 3.4, stem: "A Roman libra weighed about 327 grams.", in: 'zweep', bron: DC, bronStart: 2.0, camera: { zoom: [1, 1.06], stoot: [1.4] }, geluid: [[0.8, 'rol', 0.6], [1.4, 'ding', 0.6]],
-      teken: h => balans(h, 540, 1150, 0) + `<text x="540" y="760" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="150" fill="${h.K.signaal}" opacity="${h.klem((h.t - 0.8) / 0.3).toFixed(3)}">≈ ${Math.round(327 * h.zacht((h.t - 0.8) / 0.6))} g</text>`
+      teken: h => balans(h, 540, 1090, 0) + `<text x="540" y="720" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="150" fill="${h.K.signaal}" opacity="${h.klem((h.t - 0.8) / 0.3).toFixed(3)}">≈ ${Math.round(327 * h.zacht((h.t - 0.8) / 0.6))} g</text>`
         + h.kin('A Roman libra: *about 327 grams*.', { y: 300, g: 100, t: h.t, start: 0.05 }).svg },
     // 8 · ook de £ komt van libra
     { duur: 3.6, stem: "And the pound sign? Also libra. It grew out of the letter L.", in: 'masker', nacht: true, bron: RM, bronStart: 2.2, camera: { zoom: [1.05, 1.0] }, geluid: [[0.5, 'whoosh', 0.4], [1.8, 'ding', 0.6]],
