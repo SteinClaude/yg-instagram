@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-07T15:58:00+01:00",
+  "tijd": "2026-11-07T16:24:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-06T15:50:36+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -50,9 +50,12 @@
     "YS16 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 22 november 2026 om 18:00\")",
     "YS17 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 23 november 2026 om 18:00\")",
     "YS18 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 24 november 2026 om 18:00\")",
-    "YS19–YS25 gemaakt met stem (pakketten, video, upload-kopie, studio.txt, bronnen), 12:58"
+    "YS19–YS25 gemaakt met stem (pakketten, video, upload-kopie, studio.txt, bronnen), 12:58",
+    "YS19 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 25 november 2026 om 18:00\")",
+    "YS20 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 26 november 2026 om 18:00\"); venster heette \"Video gepubliceerd\", lijst toont Gepland 26 nov",
+    "YS21 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 27 november 2026 om 18:00\")"
   ],
-  "bezig": "-",
+  "bezig": "YS22–YS25 inplannen in Studio, kanaal 1",
   "volgende": "YS19–YS25 inplannen in Studio (25 nov – 1 dec 18:00) zodra Andries meldt dat Studio op kanaal 1 staat; daarna YS01-controles nakijken; bio na \"bio OK\"; weekverslag ma 9 nov",
   "kanNietVerder": null,
   "vragen": [
@@ -70,6 +73,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-07T16:00:00+01:00 Andries: \"Gewisseld\"; Studio op kanaal 1 gecontroleerd (pad), YS19–YS21 ingepland 16:05–16:22",
     "2026-11-07T15:57:00+01:00 Andries: \"Staat nu op kanaal 1\"; Studio in mijn tabblad opnieuw geladen: nog steeds een ander kanaal actief; niets gedaan, niet gewisseld",
     "2026-11-07T15:52:00+01:00 Studio geopend in de Chrome van Andries: ander kanaal actief (niet kanaal 1); niets gedaan, niet gewisseld; Andries gevraagd wanneer kanaal 1 vrij is",
     "2026-11-07T15:49:00+01:00 Andries in de sessie: \"Alle zeven OK\" (op de vraag \"Geef je pakket OK voor YS19 t/m YS25?\") = pakket OK YS19–YS25",
