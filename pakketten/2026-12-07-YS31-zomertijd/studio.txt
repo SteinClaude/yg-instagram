@@ -1,0 +1,48 @@
+STUDIO.TXT — YS31 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS31" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 45,9 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (9,0 MB; H.264 twee passen, 1523kbit/s, AAC 96k); deze upload je via Chrome
+
+== Details ==
+Titel (54/100 tekens):
+Why do we change the clocks? It started in World War I
+
+Beschrijving:
+Benjamin Franklin only joked about it. An insect collector and a London pamphlet proposed it. A war made it happen: in 1916, to save coal.
+
+What the sources say:
+- "Daylight saving time is one thing that Franklin did not invent." His 1784 essay in the Journal de Paris was satire, and even suggested firing cannons in the streets to wake people up (The Franklin Institute).
+- Modern daylight saving time was first proposed in 1895 by New Zealand entomologist George Hudson, who enjoyed collecting insects after work. He proposed changing clocks by two hours every spring; the Wellington Philosophical Society ridiculed his idea (NZ Department of Internal Affairs).
+- In 1907 William Willett published the pamphlet "The Waste of Daylight", using his own money (Western Front Association).
+- Germany and Austria-Hungary were the first countries to introduce daylight saving time, on 30 April 1916, as a way to conserve coal (Western Front Association).
+- In Britain, a bill was finally passed in parliament on 17 May 1916 (Western Front Association).
+
+Sources:
+The Franklin Institute, "Did Ben Franklin Invent Daylight Saving Time?": https://www.fi.edu/en/science-and-education/benjamin-franklin/daylight-savings-time
+New Zealand Department of Internal Affairs, press release (September 22, 2023): https://www.dia.govt.nz/press.nsf/d77da9b523f12931cc256ac5000d19b6/bdb6f7d0d9ee78dccc258a34006e3aa5!OpenDocument
+David Tattersfield, "Spring forward, fall back: the changing of the clocks and the First World War", Western Front Association (October 24, 2020): https://www.westernfrontassociation.com/world-war-i-articles/spring-forward-fall-back-the-changing-of-the-clocks-and-the-first-world-war/
+
+#Shorts #history #time #WW1
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Ja — de stem is een realistische AI-stem (Kokoro). Beeld: eigen getekende animatie en tekst; geen AI-beelden, geen echte personen nagebootst.
+Tags:
+daylight saving time, why do we change the clocks, clocks go back, summer time, 1916, World War I, Benjamin Franklin, George Hudson, William Willett, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education) — in Studio heet die "Educatief".
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: maandag 7 december 2026, 18:00 (Amsterdam)

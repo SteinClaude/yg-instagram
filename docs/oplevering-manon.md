@@ -1,3 +1,5 @@
+KLAAR: pakketten YS26–YS32 gemaakt (met stem, bronnen gelezen 7 nov), voor 2–8 dec 18:00; wachten op "pakket OK <code>"; keurlijst in docs/keurlijst.md · 22:30
+
 KLAAR: YS01 nu openbaar op kanaal 1 (was gepland 7 nov 18:00), op verzoek van Andries; Studio: "Wijzigingen opgeslagen", zichtbaarheid Openbaar · 17:20
 
 KLAAR: YS19–YS25 ingepland in Studio, kanaal 1, 25 nov t/m 1 dec 2026, elke dag 18:00 (na "Alle zeven OK", za 7 nov ±15:49); Studio-lijst gecontroleerd ±16:21: YS01–YS25 Gepland 7 nov – 1 dec, geen meldingen bij YS01 · 16:22

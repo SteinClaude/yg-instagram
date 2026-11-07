@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-07T22:10:00+01:00",
+  "tijd": "2026-11-07T22:30:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-07T22:02:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -60,10 +60,11 @@
     "YS25 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 1 december 2026 om 18:00\")",
     "Studio-lijst ±16:21: YS01–YS25 Gepland 7 nov – 1 dec 2026 (18:00); oude YS01–YS03 Privé; geen meldingen bij YS01",
     "YS01 openbaar gezet in Studio (kanaal 1) ±17:20 op verzoek van Andries; Studio: \"Wijzigingen opgeslagen\", zichtbaarheid Openbaar",
-    "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland"
+    "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
+    "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "YS31 en YS32 opnieuw renderen (render stopte bij de herstart van de sessie)",
-  "volgende": "YS26–YS32 klaar maken (render loopt), dan keuring (pakket OK per code); bio + weergavenaam Instagram kanaal 1 na \"bio OK kanaal 1\"; weekverslag ma 9 nov",
+  "bezig": "-",
+  "volgende": "Keuring YS26–YS32 door Andries (\"pakket OK <code>\" per code; docs/keurlijst.md); na OK inplannen in Studio 2–8 dec 18:00; bio + weergavenaam Instagram kanaal 1 na \"bio OK kanaal 1\"; weekverslag ma 9 nov",
   "kanNietVerder": null,
   "vragen": [
     {

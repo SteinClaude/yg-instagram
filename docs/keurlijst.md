@@ -4,6 +4,20 @@ Bijgehouden door Manon. Eén regel per gemaakt pakket dat nog niet is goedgekeur
 Een OK geldt per code (C15). Na een OK plant Manon het pakket in en haalt ze de regel hier weg. Alles is gemaakt in de
 vastgestelde stijlgids (om en om licht/donker); het raster per code laat de hele rij tot en met dat pakket zien.
 
+## YouTube kanaal 1 · YS26–YS32 (week 2 – 8 dec) — wacht op "pakket OK <code>"
+
+Gemaakt za 7 nov 2026, met stem (Kokoro "fenrir"); stijl valt onder "stijl OK YS" (5 nov), dus per code is alleen "pakket OK" nodig voor script, bronnen en titel (C30). Onderwerpen uit het plan (spam, 60 minuten, zomertijd, toetsenblok, Monopoly) plus magnetron en marathon; de Olympische ringen vallen af (beeldmerk). Wat omstreden is, zegt de video ook zo (marathon: het verhaal over de koninklijke kinderen; magnetron: chocolade of pindareep). Bronnen gelezen op 7 nov, per bewering in `bron/bronnen.md`.
+
+| Code | Plannen | Titel | Lengte · bronnen | Bekijken |
+|---|---|---|---|---|
+| YS26 | woensdag 2 december, 18:00 | Why is junk email called "spam"? Blame a comedy sketch | 44,5 s · 2 bronnen | `pakketten/2026-12-02-YS26-spam/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+| YS27 | donderdag 3 december, 18:00 | Why does an hour have 60 minutes? Not 10, not 100 | 48,5 s · 2 bronnen | `pakketten/2026-12-03-YS27-zestig-minuten/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+| YS28 | vrijdag 4 december, 18:00 | Why is a marathon exactly 42.195 km (26.2 miles)? | 41,7 s · 3 bronnen | `pakketten/2026-12-04-YS28-marathon/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+| YS29 | zaterdag 5 december, 18:00 | Why does a phone keypad start with 1-2-3, but a calculator with 7-8-9? | 42,5 s · 2 bronnen | `pakketten/2026-12-05-YS29-toetsenblok/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+| YS30 | zondag 6 december, 18:00 | The microwave oven was discovered by a melted candy bar | 49,2 s · 5 bronnen | `pakketten/2026-12-06-YS30-magnetron/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+| YS31 | maandag 7 december, 18:00 | Why do we change the clocks? It started in World War I | 45,9 s · 3 bronnen | `pakketten/2026-12-07-YS31-zomertijd/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+| YS32 | dinsdag 8 december, 18:00 | Monopoly began as a game against landlords | 35,8 s · 4 bronnen | `pakketten/2026-12-08-YS32-monopoly/overzicht.jpg` · `video.mp4` · `bron/bronnen.md` |
+
 ## YouTube kanaal 1 · YS19–YS25 (week 25 nov – 1 dec) — pakket OK alle zeven (Andries, za 7 nov ±15:49: "Alle zeven OK") · ingepland in Studio 7 nov ±15:58–16:20
 
 Gemaakt za 7 nov 2026, met stem (Kokoro "fenrir"); stijl valt onder "stijl OK YS" (5 nov), dus per code is alleen "pakket OK" nodig voor script, bronnen en titel (C30). Bronnen gelezen op 7 nov; de bronnen uit het plan (Merriam-Webster, Britannica, Smithsonian) gaven een 403 en zijn vervangen door leesbare bronnen (staat per pakket in `bron/bronnen.md`, onder "Wat bewust niet gezegd is").

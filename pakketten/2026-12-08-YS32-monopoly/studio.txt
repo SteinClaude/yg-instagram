@@ -1,0 +1,49 @@
+STUDIO.TXT — YS32 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS32" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 35,8 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (9,0 MB; H.264 twee passen, 1992kbit/s, AAC 96k); deze upload je via Chrome
+
+== Details ==
+Titel (42/100 tekens):
+Monopoly began as a game against landlords
+
+Beschrijving:
+In 1904 Lizzie Magie patented The Landlord's Game, to show the tragic effects of land-grabbing. Thirty years later it was sold as Monopoly.
+
+What the sources say:
+- In 1904 Lizzie Magie patented The Landlord's Game (US Patent 748,626, granted January 5, 1904; NPR).
+- Reformer Henry George proposed a single tax on land; Magie's game was a playful way to spread his philosophies (The Strong).
+- It was meant to demonstrate the tragic effects of land-grabbing (Mental Floss) and was an argument against the concentration of wealth (NPR).
+- Out of work because of the Great Depression, Charles Darrow began producing copies of Monopoly in his home (The Strong). He got the game through a friend and sold it to Parker Brothers as his own (NPR).
+- Parker Brothers purchased the rights to publish it in 1935, and sales skyrocketed (The Strong).
+
+Sources:
+Lizzie J. Magie, "Game-board", US Patent 748,626 (granted January 5, 1904), Google Patents: https://patents.google.com/patent/US748626A/en
+The Strong National Museum of Play, "Making Monopoly" (Google Arts & Culture): https://artsandculture.google.com/story/8wXRngw0ZZDFLQ
+NPR Staff, "Ever Cheat At Monopoly? So Did Its Creator" (March 3, 2015, via KPBS): https://www.kpbs.org/news/news/arts-culture/2015/03/03/ever-cheat-at-monopoly-so-did-its-creator-he-stole-the-idea-from-a-woman
+David W. Brown, "Retrobituaries: Elizabeth Magie", Mental Floss (February 6, 2013): https://www.mentalfloss.com/article/48787/retrobituaries-elizabeth-lizzie-magie-inventor-monopoly
+
+#Shorts #history #boardgames #inventions
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Ja — de stem is een realistische AI-stem (Kokoro). Beeld: eigen getekende animatie en tekst; geen AI-beelden, geen echte personen nagebootst.
+Tags:
+Monopoly, Monopoly history, Landlord's Game, Lizzie Magie, Henry George, Charles Darrow, Parker Brothers 1935, board game history, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education) — in Studio heet die "Educatief".
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: dinsdag 8 december 2026, 18:00 (Amsterdam)
