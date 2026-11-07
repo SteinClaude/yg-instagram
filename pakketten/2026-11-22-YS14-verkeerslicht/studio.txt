@@ -1,5 +1,6 @@
 STUDIO.TXT — YS14 (YouTube Studio, uploadscherm van boven naar beneden)
 Status: pakket OK YS14 (Andries in de sessie van Manon, di 3 nov 2026: "OK voor alle zeven", op de vraag "Geef je pakket OK voor YS08 t/m YS14?") — geldt voor script, bronnen en titel (C30, Andries do 5 nov 2026 19:33). Versie met stem: stijl OK YS (Andries in de sessie van Manon, do 5 nov 2026 ±21:27: "Ja, alle vijf OK" (op de vraag "Geef je "stijl OK YS" en "pakket OK" voor YS15, YS16, YS17 en YS18?"; versies met stem, de020e7)). Klaar om in te plannen; Manon plant in via YouTube Studio, in het venster van kanaal 1, na het "ja, plan … in" van Andries in haar sessie.
+INGEPLAND door Manon in YouTube Studio, venster van kanaal 1 (Chrome van Andries), za 7 nov 2026 11:46, na "Ja, plan YS04 t/m YS18 in" (Andries, vr 6 nov ±16:50); eerder geblokkeerd door de Studio-daglimiet. Studio meldt: "Video gepland — Je video wordt als openbaar ingesteld op 20 november 2026 om 18:00". Geüpload: video-upload.mp4; AI-label ja; niet voor kinderen; taal Engels; categorie Educatief.
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 43,5 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek; luidheid -14 LUFS. Ingesproken tekst: bron/stem.txt

@@ -1,3 +1,15 @@
+KLAAR: YS01–YS18 staan in Studio gepland, 7 t/m 24 nov 2026, elke dag 18:00 (lijst gecontroleerd); oude YS01–YS03 zonder stem op Privé · 11:55
+
+KLAAR: YS18 ingepland in Studio, kanaal 1 — Studio: "Video gepland — Je video wordt als openbaar ingesteld op 24 november 2026 om 18:00" · 11:55
+
+KLAAR: YS17 ingepland in Studio, kanaal 1 — Studio: "Video gepland — Je video wordt als openbaar ingesteld op 23 november 2026 om 18:00" · 11:53
+
+KLAAR: YS16 ingepland in Studio, kanaal 1 — Studio: "Video gepland — Je video wordt als openbaar ingesteld op 22 november 2026 om 18:00" · 11:51
+
+KLAAR: YS15 ingepland in Studio, kanaal 1 — Studio: "Video gepland — Je video wordt als openbaar ingesteld op 21 november 2026 om 18:00" · 11:48
+
+KLAAR: YS14 ingepland in Studio, kanaal 1 — Studio: "Video gepland — Je video wordt als openbaar ingesteld op 20 november 2026 om 18:00" · 11:46
+
 KLAAR: YS01–YS03 met stem ingepland (7, 8, 9 nov 18:00); oude YS02/YS03 zonder stem op Privé · 11:43
 
 KLAAR: nieuwe volgorde: YS01 za 7 nov t/m YS18 di 24 nov (18:00); YS04–YS13 in Studio verschoven naar 10–19 nov; oude YS02/YS03 als reserve gepland tot morgen · 18:58

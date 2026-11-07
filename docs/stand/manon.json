@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-07T11:43:00+01:00",
+  "tijd": "2026-11-07T11:55:47+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-06T15:50:36+01:00"
   },
-  "status": "werkt",
+  "status": "klaar",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -44,10 +44,15 @@
     "YS04–YS13 in Studio een dag later gezet (10 t/m 19 nov 18:00), 18:58",
     "YS01 met stem ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 7 november 2026 om 18:00\")",
     "YS02 met stem ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 8 november 2026 om 18:00\")",
-    "YS03 met stem ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 9 november 2026 om 18:00\")"
+    "YS03 met stem ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 9 november 2026 om 18:00\")",
+    "YS14 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 20 november 2026 om 18:00\")",
+    "YS15 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 21 november 2026 om 18:00\")",
+    "YS16 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 22 november 2026 om 18:00\")",
+    "YS17 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 23 november 2026 om 18:00\")",
+    "YS18 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 24 november 2026 om 18:00\")"
   ],
-  "bezig": "YS14–YS18 uploaden",
-  "volgende": "YS14–YS18 uploaden voor 20–24 nov 18:00; voorraad YS19+ (vanaf 25 nov); bio na \"bio OK\"; weekverslag ma 9 nov",
+  "bezig": "-",
+  "volgende": "Voorraad YS19+ maken (vanaf 25 nov is er niets gepland; met stem, pakket OK per code); bio na \"bio OK\"; weekverslag ma 9 nov; vreemd maar waar: antwoord Andries (stopt of in YS-stijl)",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -421,6 +426,42 @@
     {
       "tijd": "2026-11-07T11:43:00+01:00",
       "wat": "YouTube Studio kanaal 1 (gecontroleerd): YS01 met stem gepland 7 nov 18:00, YS02 met stem 8 nov 18:00, YS03 met stem 9 nov 18:00 (telkens \"Video gepland\"). Oude YS02 en oude YS03 zonder stem op Privé (\"Wijzigingen opgeslagen\"); niet verwijderd. Bij YS01 achteraf taal Engels en categorie Educatief gezet. De eerste upload-limiet is na de verificatie van Andries weg.",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-07T11:46:52+01:00",
+      "wat": "YS14 ingepland in YouTube Studio kanaal 1; Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 20 november 2026 om 18:00\"",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-07T11:48:53+01:00",
+      "wat": "YS15 ingepland in YouTube Studio kanaal 1; Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 21 november 2026 om 18:00\"",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-07T11:51:01+01:00",
+      "wat": "YS16 ingepland in YouTube Studio kanaal 1; Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 22 november 2026 om 18:00\"",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-07T11:53:11+01:00",
+      "wat": "YS17 ingepland in YouTube Studio kanaal 1; Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 23 november 2026 om 18:00\"",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-07T11:55:47+01:00",
+      "wat": "YS18 ingepland in YouTube Studio kanaal 1; Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 24 november 2026 om 18:00\"",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
+    },
+    {
+      "tijd": "2026-11-07T11:55:47+01:00",
+      "wat": "YouTube Studio kanaal 1, lijst Shorts gecontroleerd: YS01 t/m YS18 Gepland 7 t/m 24 nov 2026 (elke dag één, 18:00); de drie oude versies zonder stem (YS01–YS03) op Privé, niet verwijderd. Bij alle nieuwe uploads: AI-label ja, niet voor kinderen, taal Engels, categorie Educatief. Tabblad gesloten.",
       "waar": "Chrome van Andries, YouTube Studio",
       "wie": "manon"
     }
