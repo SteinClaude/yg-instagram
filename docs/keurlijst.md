@@ -4,7 +4,7 @@ Bijgehouden door Manon. Eén regel per gemaakt pakket dat nog niet is goedgekeur
 Een OK geldt per code (C15). Na een OK plant Manon het pakket in en haalt ze de regel hier weg. Alles is gemaakt in de
 vastgestelde stijlgids (om en om licht/donker); het raster per code laat de hele rij tot en met dat pakket zien.
 
-## YouTube kanaal 1 · YS19–YS25 (week 25 nov – 1 dec) — wacht op "pakket OK <code>"
+## YouTube kanaal 1 · YS19–YS25 (week 25 nov – 1 dec) — pakket OK alle zeven (Andries, za 7 nov ±15:49: "Alle zeven OK") · ingepland in Studio 7 nov 16:05–16:46
 
 Gemaakt za 7 nov 2026, met stem (Kokoro "fenrir"); stijl valt onder "stijl OK YS" (5 nov), dus per code is alleen "pakket OK" nodig voor script, bronnen en titel (C30). Bronnen gelezen op 7 nov; de bronnen uit het plan (Merriam-Webster, Britannica, Smithsonian) gaven een 403 en zijn vervangen door leesbare bronnen (staat per pakket in `bron/bronnen.md`, onder "Wat bewust niet gezegd is").
 
