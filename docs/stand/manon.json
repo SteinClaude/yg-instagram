@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-07T16:26:00+01:00",
+  "tijd": "2026-11-07T16:59:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -78,6 +78,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-07T16:58:00+01:00 Andries: \"check even ik zie nog niks op het kanaal staan of gepost\"; Studio (kanaal 1) gecontroleerd: YS01 Gepland, tooltip \"Deze video is momenteel privé en wordt openbaar op 7 november 2026 om 18:00\"",
     "2026-11-07T16:23:00+01:00 Andries in de sessie: \"Ja, maak YS26+\" (op de vraag \"Zal ik de volgende voorraad maken, YS26 en verder (vanaf 2 dec)?\")",
     "2026-11-07T16:21:00+01:00 YS22–YS25 ingepland in Studio (kanaal 1, Chrome van Andries) ±16:12–16:20; lijst gecontroleerd: YS01–YS25 Gepland, geen meldingen bij YS01",
     "2026-11-07T15:53:00+01:00 Andries: \"Gewisseld\"; Studio op kanaal 1 gecontroleerd (pad), YS19–YS21 ingepland ±15:58–16:08",

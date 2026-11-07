@@ -1,0 +1,12 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. A marathon is forty-two point one nine five kilometres. Why that odd number?
+2. London, 1908. The Olympic marathon.
+3. The start: by the East Terrace of Windsor Castle.
+4. The finish: in front of the Royal Box, in the White City Stadium.
+5. That course was precisely twenty-six miles, three hundred and eighty-five yards.
+6. Or forty-two point one nine five kilometres.
+7. A popular story says the royals wanted that start. One Olympic history site calls that certainly false.
+8. In 1921, the I-A-A-F made it the official marathon distance.
+9. Marathons today still run that 1908 London distance.
+10. A castle and a stadium set the distance.

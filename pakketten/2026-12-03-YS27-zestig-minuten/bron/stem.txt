@@ -1,0 +1,12 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Why does an hour have sixty minutes? Not ten. Not a hundred.
+2. The number comes from ancient Mesopotamia. The Babylonians counted in base sixty, from the Sumerians.
+3. Why sixty? Nobody knows for sure.
+4. But sixty splits nicely: by 1, 2, 3, 4, 5, 6, 10, 12, 15, 20 and 30.
+5. The hours came from Egypt. Twelve parts for the light, twelve for the dark. A twenty-four hour day.
+6. Around the year 150, the astronomer Ptolemy split each degree into sixty parts. And each of those into sixty again.
+7. The first small part, in Latin: partes minutae primae. The minute.
+8. The second small part: partes minutae secundae. The second.
+9. But clocks didn't count minutes and seconds until many centuries later.
+10. Your clock still counts the Babylonian way.

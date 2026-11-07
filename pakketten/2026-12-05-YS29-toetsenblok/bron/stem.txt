@@ -1,0 +1,12 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Your phone puts 1, 2, 3 on top. Your calculator puts 7, 8, 9 on top. Why?
+2. 1960. Bell engineers prepare a new push-button telephone.
+3. They tested sixteen different arrangements of the keys.
+4. One was the layout found on adding machines, with seven, eight, nine on top.
+5. It was not the best of its group.
+6. The same shape, numbered with 1, 2, 3 on top, was faster to key.
+7. But only a little. 4.92 seconds, against 5.08.
+8. So the push-button phone got 1, 2, 3 on top. Not at the bottom, as on a calculator.
+9. And why adding machines had seven on top? The study doesn't say.
+10. Same ten digits. Two different answers.

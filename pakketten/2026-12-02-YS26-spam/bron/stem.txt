@@ -1,0 +1,12 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Junk email is named after a comedy sketch.
+2. 1970. A Monty Python sketch, set in a restaurant with a very limited menu.
+3. And a chorus of Vikings, chanting the word Spam, over and over.
+4. So spam came to mean something that keeps repeating, to great annoyance.
+5. Late nineteen-eighties. Players of online text games used it for flooding a chat with text.
+6. April 12, 1994. Two lawyers post one ad to thousands of Usenet newsgroups at once.
+7. Thousands of users hit back: by email, fax and phone.
+8. That ad is what first made the word spam widely known.
+9. The maker of the canned meat first defended its brand. Then it chose a sense of humor.
+10. A tin of meat, now in every inbox.

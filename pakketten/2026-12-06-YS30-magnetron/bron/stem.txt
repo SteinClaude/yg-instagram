@@ -1,0 +1,13 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. It was a mistake. A candy bar melted in an engineer's pocket.
+2. Percy Spencer worked with magnetrons: tubes that produce microwave energy.
+3. He didn't invent the tube. He found a way to mass produce it.
+4. Standing near one, he noticed the candy bar in his pocket had started to melt.
+5. Chocolate, says one story. A peanut bar, says his grandson.
+6. He tried popcorn kernels. They popped all over his lab.
+7. Then an egg. It exploded.
+8. October 8, 1945: a patent for cooking food with microwaves.
+9. The first microwave oven, in 1947, stood about six feet tall, and weighed about 750 pounds.
+10. In 1967, a countertop model for the home sold for 495 dollars.
+11. A melted candy bar started it.

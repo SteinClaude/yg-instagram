@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Twice a year we move the clocks. It started with a war.
+2. Not with Benjamin Franklin. In 1784 he wrote a joke: fire cannons in the streets to wake people up.
+3. He never invented moving the clocks.
+4. 1895, New Zealand. Insect collector George Hudson wants more daylight after work. Move the clocks two hours each spring.
+5. The local science society ridiculed his idea.
+6. 1907, London. William Willett pays for a pamphlet himself: The Waste of Daylight.
+7. Then the war. April 30, 1916: Germany and Austria-Hungary move the clocks first. To save coal.
+8. Britain follows: its law passes on May 17, 1916.
+9. You still change your clock for a wartime idea.

@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Monopoly began as a warning about landlords.
+2. 1904. Lizzie Magie patents a game: The Landlord's Game.
+3. She followed Henry George, who wanted a single tax on land.
+4. Her game showed what happens when land and money pile up in a few hands.
+5. An argument against the concentration of wealth.
+6. Then the Great Depression. Charles Darrow, out of work, made copies of Monopoly at home.
+7. He got the game through a friend, and sold it to Parker Brothers as his own.
+8. 1935. Parker Brothers buys the rights, and sales skyrocket.
+9. A game against monopolies, sold as Monopoly.
