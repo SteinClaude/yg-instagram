@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-07T16:59:00+01:00",
+  "tijd": "2026-11-07T17:08:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -61,7 +61,7 @@
     "Studio-lijst ±16:21: YS01–YS25 Gepland 7 nov – 1 dec 2026 (18:00); oude YS01–YS03 Privé; geen meldingen bij YS01"
   ],
   "bezig": "voorraad YS26–YS32 (2–8 dec) maken",
-  "volgende": "YS26–YS32 klaar, dan keuring (pakket OK per code); bio na \"bio OK\"; vreemd maar waar: stoppen of YS-stijl; weekverslag ma 9 nov",
+  "volgende": "YS26–YS32 klaar maken (render loopt), dan keuring (pakket OK per code); bio + weergavenaam Instagram kanaal 1 na \"bio OK kanaal 1\"; weekverslag ma 9 nov",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -69,15 +69,10 @@
       "aanname": "laten staan (advies: de eerste drie dagen zonder stem zijn een nuttige vergelijking; vervangen kost een upload per short en raakt al geplande video's)",
       "ondertussen": "op de keurlijst van vr 6 nov",
       "blokkeert": false
-    },
-    {
-      "vraag": "Stopt de reeks vreemd maar waar (YHxx) op kanaal 1 helemaal, of blijft hij in de stijl van YS (getekend, stem fenrir)?",
-      "aanname": "reeks staat stil; geen nieuwe YH-pakketten tot zijn antwoord; plan docs/yg-social-plan-2.md blijft als archief",
-      "ondertussen": "YS-voorraad YS19+",
-      "blokkeert": false
     }
   ],
   "buitenGit": [
+    "2026-11-07T17:08:00+01:00 Opdracht Eva gelezen: Andries via het Kantoor 16:51 \"YH stoppen\"; vraag vreemd maar waar vervalt",
     "2026-11-07T16:58:00+01:00 Andries: \"check even ik zie nog niks op het kanaal staan of gepost\"; Studio (kanaal 1) gecontroleerd: YS01 Gepland, tooltip \"Deze video is momenteel privé en wordt openbaar op 7 november 2026 om 18:00\"",
     "2026-11-07T16:23:00+01:00 Andries in de sessie: \"Ja, maak YS26+\" (op de vraag \"Zal ik de volgende voorraad maken, YS26 en verder (vanaf 2 dec)?\")",
     "2026-11-07T16:21:00+01:00 YS22–YS25 ingepland in Studio (kanaal 1, Chrome van Andries) ±16:12–16:20; lijst gecontroleerd: YS01–YS25 Gepland, geen meldingen bij YS01",
@@ -518,6 +513,12 @@
     }
   ],
   "ontvangen": [
+    {
+      "id": "opdracht-7nov-1651",
+      "van": "eva",
+      "wat": "Besluit Andries via het Kantoor 16:51: \"YH stoppen\"; Instagram kanaal 1 bestaat (bio wacht op \"bio OK kanaal 1\", met weergavenaam)",
+      "tijd": "2026-11-07T16:51:00+01:00"
+    },
     "correctie Eva wo 4 nov 17:40 (geen nieuwe Gmails, niets overzetten)",
     "NU-blok Eva do 5 nov 13:45 (kanaal 1 volgens draaiboek; kanaal 2 van Finn)",
     "NU-blok Eva do 5 nov 19:37 (C30: keuren tekst-eerst, stijl OK YS, Commons beperkt ja)",
