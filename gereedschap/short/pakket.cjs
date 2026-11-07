@@ -32,11 +32,12 @@ const naam = b => b.titel.replace(/^File:/, '').replace(/\.[a-z]+$/i, '');
 const beeldRegels = beelden.map(([, b]) => `"${naam(b)}" by ${b.maker || 'unknown'} (${b.licentie}), via Wikimedia Commons: ${b.pagina}`);
 
 const meer = p.bronnen.length > 1;
+const stem = script.stem ? `Kokoro-82M, open source, stem "${(script.stem.stem || 'am_fenrir').replace(/^am_/, '')}", lokaal gemaakt` : null;   // shorts met stem (besluit Andries do 5 nov 2026)
 const studio = `STUDIO.TXT — ${code} (YouTube Studio, uploadscherm van boven naar beneden)${k2 ? ' · KANAAL 2' : ''}
 Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK ${code}" van Andries.${k2 ? '\nVóór het uploaden: controleer in Studio (accountmenu rechtsboven) dat kanaal 2 actief is.' : ''}
 
 == Bestand ==
-video.mp4   1080x1920 (9:16), 30 fps, H.264, ${duur} s, met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)
+video.mp4   1080x1920 (9:16), 30 fps, H.264, ${duur} s, ${stem ? `Engelse stem (${stem}) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt` : 'met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)'}
 video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (H.264 twee passen, 2 Mbit/s, AAC 96k); deze upload je via Chrome
 
 == Details ==
@@ -61,14 +62,14 @@ Leeftijdsbeperking: Nee.
 
 == Meer weergeven ==
 Betaalde promotie: Nee.
-Gewijzigde of synthetische content (AI-label): Nee — ${k2 ? 'echte foto\'s met een vrije licentie (zie Images), eigen tekst en animatie; geen AI-beeld, geen AI-stem' : 'eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen'}.
+Gewijzigde of synthetische content (AI-label): ${stem ? 'Ja — de stem is een realistische AI-stem (Kokoro). Beeld: eigen getekende animatie en tekst; geen AI-beelden, geen echte personen nagebootst' : `Nee — ${k2 ? 'echte foto\'s met een vrije licentie (zie Images), eigen tekst en animatie; geen AI-beeld, geen AI-stem' : 'eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen'}`}.
 Tags:
 ${p.tags}
 Taal van de video: Engels.
 Opnamedatum en locatie: leeg laten.
 Licentie: Standaard YouTube-licentie.
 Insluiten toestaan: Ja.
-Categorie: Onderwijs (Education).
+Categorie: Onderwijs (Education) — in Studio heet die "Educatief".
 Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
 Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
 
@@ -94,7 +95,7 @@ ${p.niet}
 ## Beeld, letters en geluid
 ${beeldMd}
 - Letters: Instrument Sans en IBM Plex Mono, SIL Open Font License (gereedschap/short/fonts/).
-- Geluid: eigen geluidseffecten (whoosh, tik, klap, dreun, stijgende toon, bel, plop, rol), zelf gesynthetiseerd met ffmpeg uit sinus en ruis (gereedschap/short/geluid.cjs). Geen muziek, geen stem, geen audio van anderen.
+- Geluid: eigen geluidseffecten (whoosh, tik, klap, dreun, stijgende toon, bel, plop, rol), zelf gesynthetiseerd met ffmpeg uit sinus en ruis (gereedschap/short/geluid.cjs).${stem ? ` Stem: Engelse AI-stem Kokoro-82M (open source, Apache-2.0, stem "${(script.stem.stem || 'am_fenrir').replace(/^am_/, '')}"), lokaal gemaakt; ingesproken tekst in bron/stem.txt. Geen muziek, geen audio van anderen.` : ' Geen muziek, geen stem, geen audio van anderen.'}
 - Controle: bron/controle-beweging.jpg (beelden uit de mp4, midden in de bewegingen).
 `;
 fs.writeFileSync(path.join(D, 'bron', 'bronnen.md'), md);
