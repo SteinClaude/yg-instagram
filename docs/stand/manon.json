@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-06T20:55:44+01:00",
+  "tijd": "2026-11-07T10:23:23+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-06T15:50:36+01:00"
   },
-  "status": "wacht",
+  "status": "kan-niet-verder",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -45,7 +45,7 @@
   ],
   "bezig": "-",
   "volgende": "za 7 nov 17:00 (Andries opent het venster): YS01 met stem voor 7 nov 18:00, YS02 met stem voor 8 nov, YS03 met stem voor 9 nov; dan oude YS02/YS03 weg of Privé (Andries verwijdert zelf); YS14–YS18 voor 20–24 nov; voorraad YS19+ (vanaf 25 nov); bio na \"bio OK\"; weekverslag ma 9 nov",
-  "kanNietVerder": "Studio-daglimiet tot za 7 nov ±17:00 · nodig: Andries opent za 7 nov om 17:00 het venster van kanaal 1 (toegezegd); YS01 met stem moet om 18:00 live",
+  "kanNietVerder": "Studio staat in Chrome op een ander kanaal (Finn werkt tegelijk); het actieve kanaal geldt voor alle tabbladen · nodig: Andries zet Studio op kanaal 1 zodra Finn klaar is, en meldt het; YS01 met stem moet za 7 nov om 18:00 live",
   "vragen": [
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -384,6 +384,24 @@
       "wat": "Andries in de sessie van Manon, vr 6 nov 2026 ±20:55: \"Ja, morgen 17:00\" (op de vraag of hij za 7 nov vóór 17:30 het venster van kanaal 1 opent)",
       "waar": "pc-sessie van Manon",
       "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-07T10:23:23+01:00",
+      "wat": "Andries in de sessie van Manon, za 7 nov 2026 ±10:23: \"hij kan nu ook ik had melding gegreken over de verivicatie\"",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-07T10:23:23+01:00",
+      "wat": "Andries in de sessie van Manon, za 7 nov 2026 ±10:23: \"ja staat open in google chrome er zijn er meerde dus kijk goed dat je de juiste pakt\" en \"finn is ook bezig\"",
+      "waar": "pc-sessie van Manon",
+      "wie": "andries"
+    },
+    {
+      "tijd": "2026-11-07T10:23:23+01:00",
+      "wat": "YouTube Studio, 10:23: twee keer geopend; beide keren stond Studio op een ander kanaal dan kanaal 1 (Finn werkt tegelijk in dezelfde Chrome). Niets gedaan, niet gewisseld, tabbladen gesloten.",
+      "waar": "Chrome van Andries, YouTube Studio",
+      "wie": "manon"
     }
   ],
   "voorEva": [
@@ -408,6 +426,11 @@
       "id": "H-manon-7",
       "aan": "eva",
       "wat": "Andries vr 6 nov ±18:03: YH01 en YH02 weg (\"de twee videos kwijt,\"): ze leken niet op de YS-shorts. Uit de repo gehaald, nooit online. Of de reeks vreemd maar waar stopt of in YS-stijl doorgaat, vraag ik hem nog; tot dan geen YH-werk. CLAUDE.md noemt de reeks nog."
+    },
+    {
+      "id": "H-manon-8",
+      "aan": "eva",
+      "wat": "Botsing gedeeld middel: Manon en Finn plannen allebei in YouTube Studio in dezelfde Chrome van Andries. Het actieve kanaal geldt voor alle tabbladen, dus ze kunnen niet tegelijk. Voorstel: vaste tijden per crewlid voor Studio (bijv. Manon 17:00–17:45, Finn daarna), of Andries wisselt per beurt."
     }
   ],
   "ontvangen": [
@@ -417,5 +440,7 @@
     "ERBIJ-blok Eva do 5 nov 19:58 (keuring YS09–YS18 onder C30, YS01–YS03 keuze, vrijdag 19:30)",
     "H-finn-1 via Eva: kanaal 2 wordt \"verhalen over de gamewereld\"; geen overlap met vreemd maar waar (zie ik ook niet)"
   ],
-  "raakt": []
+  "raakt": [
+    "youtube-studio"
+  ]
 }
