@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-07T15:53:00+01:00",
+  "tijd": "2026-11-07T15:58:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -70,6 +70,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-07T15:57:00+01:00 Andries: \"Staat nu op kanaal 1\"; Studio in mijn tabblad opnieuw geladen: nog steeds een ander kanaal actief; niets gedaan, niet gewisseld",
     "2026-11-07T15:52:00+01:00 Studio geopend in de Chrome van Andries: ander kanaal actief (niet kanaal 1); niets gedaan, niet gewisseld; Andries gevraagd wanneer kanaal 1 vrij is",
     "2026-11-07T15:49:00+01:00 Andries in de sessie: \"Alle zeven OK\" (op de vraag \"Geef je pakket OK voor YS19 t/m YS25?\") = pakket OK YS19–YS25",
     {
