@@ -1,0 +1,52 @@
+STUDIO.TXT — YS30 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS30" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 49,2 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (8,9 MB; H.264 twee passen, 1412kbit/s, AAC 96k); deze upload je via Chrome
+
+== Details ==
+Titel (55/100 tekens):
+The microwave oven was discovered by a melted candy bar
+
+Beschrijving:
+An engineer stood next to a magnetron and the candy bar in his pocket melted. Then he tried popcorn, and an egg.
+
+What the sources say:
+- Percy Spencer did not invent the magnetron himself, but he developed a system to mass produce it (Lemelson-MIT). A magnetron is a vacuum tube that produces microwave energy (IEEE Spectrum).
+- Standing near a magnetron, he noticed that the candy bar in his pocket had started to melt (Lemelson-MIT: "chocolate bar"; Linda Hall Library and IEEE Spectrum: "candy bar").
+- His grandson says the chocolate story is wrong: he always carried a peanut cluster bar (Popular Mechanics).
+- He placed popcorn kernels near the magnetron and they popped all over his lab (IEEE Spectrum). Eggs exploded (Linda Hall Library).
+- Spencer filed for a patent on October 8, 1945 (Lemelson-MIT).
+- The first Radarange (1947) stood about 6 feet tall and weighed about 750 pounds (Lemelson-MIT).
+- In 1967 the first Amana home countertop microwave oven sold for $495 (IEEE Spectrum).
+
+Sources:
+Lemelson-MIT, "Percy Spencer": https://lemelson.mit.edu/resources/percy-spencer
+Amanda Davis, "A Brief History of the Microwave Oven", IEEE Spectrum (May 2, 2016): https://spectrum.ieee.org/a-history-of-the-microwave-oven
+William B. Ashworth Jr., "Percy Spencer", Scientist of the Day, Linda Hall Library (July 9, 2019): https://www.lindahall.org/about/news/scientist-of-the-day/percy-spencer
+Matt Blitz, Popular Mechanics (October 20, 2022, via Yahoo News): https://ca.news.yahoo.com/microwave-invented-accident-171703267.html
+Google Patents, US2495429, "Method of treating foodstuffs" (filed October 8, 1945): https://patents.google.com/patent/US2495429A/en
+
+#Shorts #history #inventions #accidents
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Ja — de stem is een realistische AI-stem (Kokoro). Beeld: eigen getekende animatie en tekst; geen AI-beelden, geen echte personen nagebootst.
+Tags:
+microwave oven, microwave history, Percy Spencer, magnetron, melted candy bar, popcorn, Raytheon, Radarange, accidental inventions, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education) — in Studio heet die "Educatief".
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: zondag 6 december 2026, 18:00 (Amsterdam)
