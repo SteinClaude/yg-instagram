@@ -140,6 +140,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, za 7 nov 2026 ±15:49: "Alle zeven OK" (op de vraag "Geef je \"pakket OK\" voor YS19 t/m YS25?") = pakket OK YS19, YS20, YS21, YS22, YS23, YS24, YS25
 - Andries in de sessie van Manon, za 7 nov 2026 ±11:57: "Ja, maak YS19+" (op de vraag "Zal ik de volgende voorraad (YS19 en verder) gaan maken?")
 - Andries in de sessie van Manon, za 7 nov 2026 ±11:43: "kunnen nu veder finn is klaar ik zet de pagina klaar voor je"
 - Andries in de sessie van Manon, za 7 nov 2026 ±11:18: "Om 17:00" (op de vraag wanneer Studio op kanaal 1 staat, na Finn)

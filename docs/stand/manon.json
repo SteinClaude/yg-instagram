@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-07T12:58:33+01:00",
+  "tijd": "2026-11-07T15:50:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-06T15:50:36+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -52,7 +52,7 @@
     "YS18 ingepland (Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 24 november 2026 om 18:00\")",
     "YS19–YS25 gemaakt met stem (pakketten, video, upload-kopie, studio.txt, bronnen), 12:58"
   ],
-  "bezig": "-",
+  "bezig": "YS19–YS25 inplannen in Studio, kanaal 1 (25 nov – 1 dec 18:00)",
   "volgende": "Keuring YS19–YS25 door Andries (\"pakket OK <code>\" per code; docs/keurlijst.md); na OK inplannen in Studio 25 nov – 1 dec 18:00; vóór 18:00 vandaag nagaan of Studio bij YS01 problemen meldt; bio na \"bio OK\"; weekverslag ma 9 nov",
   "kanNietVerder": null,
   "vragen": [
@@ -70,6 +70,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-07T15:49:00+01:00 Andries in de sessie: \"Alle zeven OK\" (op de vraag \"Geef je pakket OK voor YS19 t/m YS25?\") = pakket OK YS19–YS25",
     {
       "tijd": "2026-11-02T22:45:00+01:00",
       "wat": "YS01–YS03 ingepland in YouTube Studio (9, 10, 11 nov 18:00), als hercodeerde kopie onder 10 MB; Andries via chat met Eva 22:09: \"plan de ys-1 t/m ys-3 in en zeg daarna tegen manon dat ze erin staan.\"",
