@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-08T14:11:00+01:00",
+  "tijd": "2026-11-08T14:14:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-07T22:02:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
     "YS01–YS03 ingepland in Studio (Eva, 2 nov); YS04–YS14 en YK01: pakket OK · b2691db, 6495672 (nog niet ingepland)",
@@ -63,7 +63,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "YS26–YS32 inplannen in Studio (kanaal 1), 2–8 dec 18:00, na pakket OK",
   "volgende": "Keuring YS26–YS32 door Andries (\"pakket OK <code>\" per code; docs/keurlijst.md); na OK inplannen in Studio 2–8 dec 18:00; bio + weergavenaam Instagram kanaal 1 na \"bio OK kanaal 1\"; weekverslag ma 9 nov",
   "kanNietVerder": null,
   "vragen": [
@@ -75,6 +75,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-08T14:11:00+01:00 Andries: \"Alle zeven OK\" op de vraag \"Welke van YS26–YS32 krijgen pakket OK?\" → pakket OK YS26–YS32",
     "2026-11-08T14:08:00+01:00 Andries: \"Eerst bekijken\" op de vraag om pakket OK YS26–YS32; leesversie docs/keurtekst-YS26-YS32.md gemaakt, niets ingepland",
     "2026-11-07T22:02:00+01:00 Sessie hervat na herstart (\"ga veder\"); render YS31 was halverwege gestopt, YS31–YS32 opnieuw gestart",
     "2026-11-07T17:20:00+01:00 Andries: \"post alvast wat\" → keuze \"YS01 nu openbaar\"; YS01 in Studio (kanaal 1) van Gepland 18:00 naar Openbaar gezet",

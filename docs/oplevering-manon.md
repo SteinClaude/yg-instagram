@@ -146,6 +146,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, zo 8 nov 2026 ±14:11, op de vraag "Welke van YS26–YS32 krijgen "pakket OK"?" (na de leesversie docs/keurtekst-YS26-YS32.md): "Alle zeven OK" → pakket OK YS26, YS27, YS28, YS29, YS30, YS31, YS32
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:08, op de vraag "Geef je "pakket OK" voor YS26 t/m YS32?": "Eerst bekijken" (geen OK; leesversie docs/keurtekst-YS26-YS32.md klaargezet, niets ingepland)
 - Andries in de sessie van Manon, za 7 nov 2026 ±17:18: "post alvast wat", en op de vraag wat hij bedoelde de keuze "YS01 nu openbaar" (in plaats van 18:00)
 - Andries via de vragenknop in het Kantoor, za 7 nov 2026 16:51 (citaat in docs/OPDRACHT-ACTUEEL.md, Eva): "YH stoppen" (op de vraag of vreemd maar waar op kanaal 1 stopt of doorgaat in YS-stijl) → geen YH-pakketten meer; kanaal 1 is alleen YS
