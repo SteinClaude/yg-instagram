@@ -1,3 +1,4 @@
+KLAAR: stand nagelopen op vraag van Andries (zo 8 nov ±21:07): Studio kanaal 1 gepland t/m 8 dec 18:00, niets in te plannen; YS33–YS39 pas na de eerste cijfers of op zijn woord · zo 8 nov 21:08
 KLAAR: Instagram kanaal 1 — profielfoto (YK01) en bio (Kort B, 149 tekens) gezet in het venster van Andries, na "bio OK kanaal 1" (zo 8 nov ±14:34); Instagram meldt "Profiel opgeslagen." en het profiel toont foto en bio. Weergavenaam niet gewijzigd (zit in het Accountcentrum; Andries koos geen optie), geen link, verder niets aangeraakt · zo 8 nov 14:43
 KLAAR: YS26–YS32 ingepland in YouTube Studio (kanaal 1), 2 t/m 8 dec 2026 om 18:00, na pakket OK ("Alle zeven OK", zo 8 nov ±14:11); Studio meldt per video "Video gepland" en de lijst toont Gepland · zo 8 nov 14:30
 KLAAR: pakketten YS26–YS32 gemaakt (met stem, bronnen gelezen 7 nov), voor 2–8 dec 18:00; wachten op "pakket OK <code>"; keurlijst in docs/keurlijst.md · 22:30
