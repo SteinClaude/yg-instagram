@@ -1,3 +1,4 @@
+KLAAR: YS26–YS32 ingepland in YouTube Studio (kanaal 1), 2 t/m 8 dec 2026 om 18:00, na pakket OK ("Alle zeven OK", zo 8 nov ±14:11); Studio meldt per video "Video gepland" en de lijst toont Gepland · zo 8 nov 14:30
 KLAAR: pakketten YS26–YS32 gemaakt (met stem, bronnen gelezen 7 nov), voor 2–8 dec 18:00; wachten op "pakket OK <code>"; keurlijst in docs/keurlijst.md · 22:30
 
 KLAAR: YS01 nu openbaar op kanaal 1 (was gepland 7 nov 18:00), op verzoek van Andries; Studio: "Wijzigingen opgeslagen", zichtbaarheid Openbaar · 17:20
@@ -146,6 +147,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, zo 8 nov 2026 ±14:18, op de vraag "Wissel je in Studio naar kanaal 1?": "Gewisseld" (daarna YS26–YS32 ingepland)
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:11, op de vraag "Welke van YS26–YS32 krijgen "pakket OK"?" (na de leesversie docs/keurtekst-YS26-YS32.md): "Alle zeven OK" → pakket OK YS26, YS27, YS28, YS29, YS30, YS31, YS32
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:08, op de vraag "Geef je "pakket OK" voor YS26 t/m YS32?": "Eerst bekijken" (geen OK; leesversie docs/keurtekst-YS26-YS32.md klaargezet, niets ingepland)
 - Andries in de sessie van Manon, za 7 nov 2026 ±17:18: "post alvast wat", en op de vraag wat hij bedoelde de keuze "YS01 nu openbaar" (in plaats van 18:00)

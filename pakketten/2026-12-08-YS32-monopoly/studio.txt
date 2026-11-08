@@ -1,5 +1,6 @@
 STUDIO.TXT — YS32 (YouTube Studio, uploadscherm van boven naar beneden)
-Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS32" van Andries.
+Status: pakket OK YS32 (Andries in de sessie van Manon, zo 8 nov 2026 ±14:11: "Alle zeven OK", op de vraag "Welke van YS26–YS32 krijgen \"pakket OK\"?"); stijl OK YS (5 nov ±21:27).
+INGEPLAND door Manon in YouTube Studio, venster van kanaal 1 (Chrome van Andries), zo 8 nov 2026 ±14:30. Studio meldt: "Video gepland — Je video wordt als openbaar ingesteld op 8 december 2026 om 18:00". Geüpload: video-upload.mp4; AI-label ja; niet voor kinderen; taal Engels; categorie Educatief; alle tags uit dit bestand.
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 35,8 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt

@@ -4,7 +4,7 @@ Bijgehouden door Manon. Eén regel per gemaakt pakket dat nog niet is goedgekeur
 Een OK geldt per code (C15). Na een OK plant Manon het pakket in en haalt ze de regel hier weg. Alles is gemaakt in de
 vastgestelde stijlgids (om en om licht/donker); het raster per code laat de hele rij tot en met dat pakket zien.
 
-## YouTube kanaal 1 · YS26–YS32 (week 2 – 8 dec) — wacht op "pakket OK <code>"
+## YouTube kanaal 1 · YS26–YS32 (week 2 – 8 dec) — pakket OK alle zeven (zo 8 nov ±14:11) + ingepland 8 nov ±14:20–14:30
 
 Gemaakt za 7 nov 2026, met stem (Kokoro "fenrir"); stijl valt onder "stijl OK YS" (5 nov), dus per code is alleen "pakket OK" nodig voor script, bronnen en titel (C30). Onderwerpen uit het plan (spam, 60 minuten, zomertijd, toetsenblok, Monopoly) plus magnetron en marathon; de Olympische ringen vallen af (beeldmerk). Wat omstreden is, zegt de video ook zo (marathon: het verhaal over de koninklijke kinderen; magnetron: chocolade of pindareep). Bronnen gelezen op 7 nov, per bewering in `bron/bronnen.md`. **Leesversie** (titel, gesproken tekst, bronnen en wat bewust niet gezegd is, per code): `docs/keurtekst-YS26-YS32.md`.
 
