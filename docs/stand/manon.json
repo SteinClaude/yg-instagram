@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-08T21:08:00+01:00",
+  "tijd": "2026-11-08T21:16:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -66,10 +66,9 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "-",
-  "volgende": "Weergavenaam Instagram kanaal 1: Andries past zelf aan of kiest een naam (Accountcentrum); weekverslag ma 9 nov met eerste cijfers; daarna voorraad YS33–YS39 (9–15 dec) op besluit van Andries",
+  "volgende": "Weekverslag ma 9 nov met eerste cijfers (Eva haalt ze op); daarna YS33–YS39 (9–15 dec) maken, afgestemd op die cijfers, en ter keuring; weergavenaam Instagram kanaal 1 ligt bij Andries",
   "kanNietVerder": null,
   "vragen": [
-    "YS33–YS39 (9–15 dec): nu maken of na de eerste cijfers? · mijn aanname: na de eerste cijfers (weekverslag ma 9 nov) · ondertussen: weekverslag · blokkeert: nee (planning loopt t/m 8 dec)",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
       "aanname": "laten staan (advies: de eerste drie dagen zonder stem zijn een nuttige vergelijking; vervangen kost een upload per short en raakt al geplande video's)",
@@ -78,6 +77,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-08T21:15:00+01:00 Andries in sessie: \"Na eerste cijfers\" (YS33–YS39 pas maken na de eerste cijfers)",
     "2026-11-08T21:07:00+01:00 Vraag Andries in sessie: \"moet je nog wat doen of inplannen of lopen we goed vooruit\" — antwoord: niets in te plannen, Studio kanaal 1 gepland t/m 8 dec 18:00; advies YS33–YS39 pas na de eerste cijfers; keuze aan Andries (wachten of nu maken)",
     "2026-11-08T14:43:00+01:00 Instagram (Chrome van Andries), account van kanaal 1 (door Andries bevestigd): profielfoto YK01 geüpload en bio Kort B opgeslagen; Instagram: \"Profiel opgeslagen.\"; profiel toont foto en bio. Weergavenaam, link en overige instellingen niet aangeraakt",
     "2026-11-08T14:36:00+01:00 Andries: \"bio OK kanaal 1\"; keuzes: bio \"Kort B (149)\", weergavenaam \"Zelfde als YouTube\", \"Geen link\"",

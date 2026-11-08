@@ -149,6 +149,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, zo 8 nov 2026 ±21:15, op de vraag wanneer YS33–YS39 (9–15 dec) gemaakt worden: "Na eerste cijfers" → eerst het weekverslag met de eerste cijfers, daarna de onderwerpen en lengte van YS33–YS39 daarop afstemmen
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:40, op de vraag of het actieve Instagram-account dat van kanaal 1 is: "Ja, dat is kanaal 1"; op de vraag over de weergavenaam (Accountcentrum): geen keuze → naam niet gewijzigd
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:34: "bio OK kanaal 1". Daarna, op de vraag welke korte versie (Instagram max. 150 tekens; de goedgekeurde bio is ±390): "Kort B (149)" = "Why is a stop sign octagonal? / One ordinary thing a day, and how it got that way. Always with sources. / New every day, 18:00 (Amsterdam). / By YG Digital"; weergavenaam: "Zelfde als YouTube" (met spatie; gebruikersnaam blijft); link: "Geen link"
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:18, op de vraag "Wissel je in Studio naar kanaal 1?": "Gewisseld" (daarna YS26–YS32 ingepland)
