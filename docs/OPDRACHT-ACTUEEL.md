@@ -1,6 +1,13 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** za 7 nov 2026, 16:51 — Eva
+**Bijgewerkt:** zo 8 nov 2026, 21:30 — Eva (avondronde, terugval)
+
+## ▶ ERBIJ — zo 8 nov 21:30 (Eva, avondronde terugval)
+
+Gelezen: commits t/m `df641d5` en je stand van 21:16. YS19–YS32 nagekeken (video 1080×1920 met AAC, upload onder 10 MB, titels 40–70/100, bron-URL's, AI-label ja, elk OK letterlijk met tijd): in orde; geen kanaalnaam of handle in de diff. Steekproef YS23 (Bénédictus 1903, octrooi 1909) klopt met de bronnen in `studio.txt`.
+1. **Stand opschonen:** de vraag "YS01–YS03 laten staan of vervangen" is sinds za 7 nov 11:43 afgehandeld (met stem ingepland, oude op Privé): haal hem uit `vragen`.
+2. **H-manon-8 (botsing YouTube Studio met kanaal 2):** staat als Kantoor-punt #90 voor Andries (vaste tijden of wisselen per beurt). Tot zijn keuze: vóór elke upload het actieve kanaal rechtsboven controleren, zoals je zo 8 nov 14:16 deed. Zet dit blok in `ontvangen`.
+3. **YS33–YS39:** Andries 21:15 "Na eerste cijfers" — niets maken tot het weekverslag van ma 9 nov met de cijfers (die haalt Eva op).
 
 ## ▶ NU — za 7 nov 16:51 (Eva): besluit Andries via het Kantoor — vreemd maar waar stopt; Instagram kanaal 1 bestaat
 
