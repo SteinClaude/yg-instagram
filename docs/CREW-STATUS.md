@@ -1,6 +1,6 @@
 # CREW-STATUS — stand van alle sporen
 
-**Bijgewerkt:** za 7 nov 2026, 18:50 — Eva (kantoor-check)
+**Bijgewerkt:** zo 8 nov 2026, 08:50 — Eva (kantoor-check)
 
 ## Werkwijze voor iedereen
 - Andries beslist. Eva (chef de staf) zet opdrachten in `docs/OPDRACHT-ACTUEEL.md` en leest jullie stand en opleveringen.
@@ -13,7 +13,7 @@
 | Wie | Rol | Nu |
 |---|---|---|
 | Eva | chef de staf | leest je stand, oplevering en besluiten mee; zet je opdracht klaar; grijpt in waar nodig (C27) |
-| Manon | YG-Social · kanaal 1 | Za 7 nov met Andries (pc-sessie): YS01–YS25 staan in Studio op kanaal 1, 7 nov t/m 1 dec, elke dag 18:00 (YS19–YS25 na pakket OK ±15:49, `3350a01`); YS01 staat sinds ±17:20 openbaar op verzoek van Andries (`ebe4587`). Vreemd maar waar (YH) gestopt (Kantoor 16:51, `dd257c1`). Nu voorraad YS26–YS32 (2–8 dec; scripts met stem `460d930`), pakket OK per code. Open bij Andries: bio kanaal 1. Directeur YG-Social voor de gedeelde zaken; besluiten rechtstreeks met Andries (C27); @ygdigital.nl op pauze |
+| Manon | YG-Social · kanaal 1 | Za 7 nov met Andries (pc-sessie): YS01–YS25 staan in Studio op kanaal 1, 7 nov t/m 1 dec, elke dag 18:00 (YS19–YS25 na pakket OK ±15:49, `3350a01`); YS01 staat sinds ±17:20 openbaar op verzoek van Andries (`ebe4587`). Vreemd maar waar (YH) gestopt (Kantoor 16:51, `dd257c1`). Voorraad YS26–YS32 (2–8 dec) klaar met stem (za 22:25, `085f48d`); wacht op pakket OK per code (keurlijst). Open bij Andries: bio kanaal 1. Directeur YG-Social voor de gedeelde zaken; besluiten rechtstreeks met Andries (C27); @ygdigital.nl op pauze |
 
 Kanaal 2 is sinds 5 nov van crewlid Finn, in een eigen privé-repo. De overige sporen van de crew zijn privé. Wat Manon van een ander crewlid moet weten, zet Eva in haar opdracht.
 
