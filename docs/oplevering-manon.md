@@ -1,3 +1,4 @@
+KLAAR: Instagram kanaal 1 — profielfoto (YK01) en bio (Kort B, 149 tekens) gezet in het venster van Andries, na "bio OK kanaal 1" (zo 8 nov ±14:34); Instagram meldt "Profiel opgeslagen." en het profiel toont foto en bio. Weergavenaam niet gewijzigd (zit in het Accountcentrum; Andries koos geen optie), geen link, verder niets aangeraakt · zo 8 nov 14:43
 KLAAR: YS26–YS32 ingepland in YouTube Studio (kanaal 1), 2 t/m 8 dec 2026 om 18:00, na pakket OK ("Alle zeven OK", zo 8 nov ±14:11); Studio meldt per video "Video gepland" en de lijst toont Gepland · zo 8 nov 14:30
 KLAAR: pakketten YS26–YS32 gemaakt (met stem, bronnen gelezen 7 nov), voor 2–8 dec 18:00; wachten op "pakket OK <code>"; keurlijst in docs/keurlijst.md · 22:30
 
@@ -147,6 +148,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, zo 8 nov 2026 ±14:40, op de vraag of het actieve Instagram-account dat van kanaal 1 is: "Ja, dat is kanaal 1"; op de vraag over de weergavenaam (Accountcentrum): geen keuze → naam niet gewijzigd
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:34: "bio OK kanaal 1". Daarna, op de vraag welke korte versie (Instagram max. 150 tekens; de goedgekeurde bio is ±390): "Kort B (149)" = "Why is a stop sign octagonal? / One ordinary thing a day, and how it got that way. Always with sources. / New every day, 18:00 (Amsterdam). / By YG Digital"; weergavenaam: "Zelfde als YouTube" (met spatie; gebruikersnaam blijft); link: "Geen link"
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:18, op de vraag "Wissel je in Studio naar kanaal 1?": "Gewisseld" (daarna YS26–YS32 ingepland)
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:11, op de vraag "Welke van YS26–YS32 krijgen "pakket OK"?" (na de leesversie docs/keurtekst-YS26-YS32.md): "Alle zeven OK" → pakket OK YS26, YS27, YS28, YS29, YS30, YS31, YS32
