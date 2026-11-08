@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-07T22:30:00+01:00",
+  "tijd": "2026-11-08T14:11:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -75,6 +75,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-08T14:08:00+01:00 Andries: \"Eerst bekijken\" op de vraag om pakket OK YS26–YS32; leesversie docs/keurtekst-YS26-YS32.md gemaakt, niets ingepland",
     "2026-11-07T22:02:00+01:00 Sessie hervat na herstart (\"ga veder\"); render YS31 was halverwege gestopt, YS31–YS32 opnieuw gestart",
     "2026-11-07T17:20:00+01:00 Andries: \"post alvast wat\" → keuze \"YS01 nu openbaar\"; YS01 in Studio (kanaal 1) van Gepland 18:00 naar Openbaar gezet",
     "2026-11-07T17:08:00+01:00 Opdracht Eva gelezen: Andries via het Kantoor 16:51 \"YH stoppen\"; vraag vreemd maar waar vervalt",
