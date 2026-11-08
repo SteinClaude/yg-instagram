@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-08T14:30:00+01:00",
+  "tijd": "2026-11-08T14:34:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-07T22:02:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-08T14:30:00+01:00 YS26–YS32 ingepland in Studio (kanaal 1), 2–8 dec 18:00, na pakket OK 8 nov ±14:11",
     "plan kanaal 1 · 634997a; short.cjs v2 · fb5b54b",
@@ -64,7 +64,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "Instagram kanaal 1: foto YK01, bio (Kort B) en weergavenaam zetten in het venster van Andries, na \"bio OK kanaal 1\"",
   "volgende": "Voorraad YS33–YS39 (9–15 dec) maken en ter keuring leggen (pakket OK per code); bio + weergavenaam Instagram kanaal 1 na \"bio OK kanaal 1\"; weekverslag ma 9 nov",
   "kanNietVerder": null,
   "vragen": [
@@ -76,6 +76,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-08T14:36:00+01:00 Andries: \"bio OK kanaal 1\"; keuzes: bio \"Kort B (149)\", weergavenaam \"Zelfde als YouTube\", \"Geen link\"",
     "2026-11-08T14:30:00+01:00 Andries: \"Gewisseld\" (Studio naar kanaal 1); daarna YS26–YS32 geüpload en ingepland in YouTube Studio, kanaal 1, 2–8 dec 18:00; Studio meldt per video \"Video gepland\", lijst toont Gepland 2–8 dec",
     "2026-11-08T14:16:00+01:00 Studio (Chrome van Andries) toont het kanaal van kanaal 2, niet kanaal 1; niets gedaan, niet gewisseld, Andries gevraagd te wisselen",
     "2026-11-08T14:11:00+01:00 Andries: \"Alle zeven OK\" op de vraag \"Welke van YS26–YS32 krijgen pakket OK?\" → pakket OK YS26–YS32",
@@ -536,6 +537,7 @@
     "H-finn-1 via Eva: kanaal 2 wordt \"verhalen over de gamewereld\"; geen overlap met vreemd maar waar (zie ik ook niet)"
   ],
   "raakt": [
-    "youtube-studio"
+    "youtube-studio",
+    "instagram-kanaal-1"
   ]
 }

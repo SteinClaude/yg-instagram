@@ -147,6 +147,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- Andries in de sessie van Manon, zo 8 nov 2026 ±14:34: "bio OK kanaal 1". Daarna, op de vraag welke korte versie (Instagram max. 150 tekens; de goedgekeurde bio is ±390): "Kort B (149)" = "Why is a stop sign octagonal? / One ordinary thing a day, and how it got that way. Always with sources. / New every day, 18:00 (Amsterdam). / By YG Digital"; weergavenaam: "Zelfde als YouTube" (met spatie; gebruikersnaam blijft); link: "Geen link"
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:18, op de vraag "Wissel je in Studio naar kanaal 1?": "Gewisseld" (daarna YS26–YS32 ingepland)
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:11, op de vraag "Welke van YS26–YS32 krijgen "pakket OK"?" (na de leesversie docs/keurtekst-YS26-YS32.md): "Alle zeven OK" → pakket OK YS26, YS27, YS28, YS29, YS30, YS31, YS32
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:08, op de vraag "Geef je "pakket OK" voor YS26 t/m YS32?": "Eerst bekijken" (geen OK; leesversie docs/keurtekst-YS26-YS32.md klaargezet, niets ingepland)
