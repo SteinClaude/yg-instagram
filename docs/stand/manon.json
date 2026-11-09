@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T19:08:00+01:00",
+  "tijd": "2026-11-09T19:25:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-09T10:35:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-09T19:25:00+01:00 Proef stijl 2 ronde 3 (tekst gelijk met de stem, studiomix, geluid bij krabbels, levende camera, CRF 17, leestijd): YS33-proef 30,5 s, -14,3 LUFS; voor/na docs/proef-stijl-2-voor-na.jpg; video alleen lokaal",
     "2026-11-09T19:05:00+01:00 Proef stijl 2 ronde 2: geen nummer bovenaan, papierstructuur, voortgangsbalk, markeerstift, krabbels, bronstempel; voor/na uit beide echte video's in docs/proef-stijl-2-voor-na.jpg; proefvideo YS33 alleen lokaal",
     "2026-11-09T18:45:00+01:00 Proef stijl 2 (markeerstift, bronstempel, voortgangslijn, dossierlabel): generator met --stijl 2, voor/na-blad docs/proef-stijl-2-voor-na.jpg, uitleg docs/proef-stijl-2.md; proefvideo YS33 alleen lokaal",
     "2026-11-09T14:30:00+01:00 YS33–YS39 af in vorm 3 (pakketten, Instagram-versies, bijschriften); keurlijst docs/keurlijst-YS33-YS39.md",
@@ -77,10 +78,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Proef stijl 2, ronde 3 (professioneel): tekst gelijk met de stem, studiomix, geluid bij krabbels, levende camera, hogere kwaliteit; YS33 rendert",
+  "bezig": "-",
   "volgende": "Na stijl OK stijl 2: YS33–YS39 opnieuw renderen in stijl 2; na pakket OK en bijschrift OK YS33–YS39: Instagram 17–23 nov en Studio 9–15 dec 18:00; daarna YS40–YS54. Weekverslag ma 9 nov.",
   "kanNietVerder": null,
   "vragen": [
+    "Automaat Instagram kanaal 1: GitHub sloeg de uurlijkse runs over (laatste geplande run 10:18), YS03 (9 nov 18:00) staat nog niet op Instagram · voorstel: nu met de hand starten in de Chrome van Andries; structureel extra starttijden of externe wekker (na controle Eva en go Andries, B30) · ondertussen: niets aangeraakt · blokkeert: ja, voor YS03",
     "stijl OK stijl 2 (docs/proef-stijl-2.md)? · aanname: ja, dan YS33–YS39 opnieuw in stijl 2 vóór het inplannen (script, bronnen en titel gelijk) · ondertussen: niets ingepland · blokkeert: ja, voor YS33–YS39",
     "stijl OK vorm 3, pakket OK YS33–YS39 en bijschrift OK YS33–YS39? · niets inplannen zonder · ondertussen: weekverslag · blokkeert: ja, voor Instagram vanaf 17 nov",
     {
@@ -530,6 +532,11 @@
     }
   ],
   "voorEva": [
+    {
+      "id": "V-manon-cron",
+      "aan": "Eva",
+      "wat": "plaatsen.yml (cron 5 * * * *) draaide op 9 nov na 10:18 UTC+1 niet meer; YS03 Instagram kanaal 1 (18:00) is daardoor niet geplaatst. Voorstel: extra cron-tijden rond 17:00–18:00 op rustige minuten of externe wekker. Wil jij meekijken vóór de wijziging (B30)?"
+    },
     {
       "id": "V-manon-profiel",
       "aan": "Eva",
