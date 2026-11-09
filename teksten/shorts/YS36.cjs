@@ -31,6 +31,7 @@ module.exports = {
   versie: 2,
   vorm: 3,
   lus: 0.5,
+  stijl: 2,   // Stijl OK stijl 2 (Andries, ma 9 nov 2026)
   stem: { stem: 'am_fenrir', tempo: 1.1 },
   map: '2026-12-12-YS36-recycling',
   nummer: 'No. 36',
@@ -59,7 +60,7 @@ module.exports = {
   },
   scenes: [
     { duur: 2.8, stem: 'A twenty-three-year-old student drew this. You see it every day.', stemStart: 0.05, camera: { zoom: [1, 1.05], stoot: [0.15] }, geluid: [[0.12, 'klap'], [0.12, 'boem', 0.7]],
-      teken: h => pijlen(h, 1060, intro(h).s, h.t * 8, 1) + h.kin('A *23-year-old student* drew this.', { y: 300, g: 108, t: h.t, start: 0, stap: 0.07 }).svg },
+      teken: h => pijlen(h, 1060, intro(h).s, h.t * 8, 1) + (h.stijl >= 2 ? h.krabbel.cirkel(540, 1060, 260, 260, { t: h.t, start: 1.3 }) : '') + h.kin('A *23-year-old student* drew this.', { y: 300, g: 108, t: h.t, start: 0, stap: 0.07 }).svg },
     { duur: 2.8, stem: '1970. The year of the first Earth Day.', in: 'zweep', bron: AJ, bronStart: 1.4, camera: { zoom: [1, 1.05] }, geluid: [[0.4, 'ding', 0.5]],
       teken: h => aarde(h, h.klem((h.t - 0.2) / 0.4)) + h.kin('*1970*: the first Earth Day.', { y: 300, g: 112, t: h.t, start: 0.05 }).svg },
     { duur: 3.0, stem: 'A cardboard company holds a contest for a recycling symbol.', in: 'op', bron: LS, bronStart: 1.6, camera: { zoom: [1, 1.05] }, geluid: [[0.6, 'pop', 0.5]],
@@ -69,10 +70,10 @@ module.exports = {
     { duur: 3.0, stem: 'He is inspired by a Möbius strip: a loop with a twist.', in: 'op', bron: LS, bronStart: 1.6, camera: { zoom: [1, 1.05] }, geluid: [[0.6, 'whoosh', 0.4]],
       teken: h => mobius(h, h.zacht((h.t - 0.2) / 1.4)) + h.kin('Inspired by a *Möbius strip*.', { y: 300, g: 108, t: h.t, start: 0.05 }).svg },
     { duur: 2.4, stem: 'He wins two thousand five hundred dollars.', in: 'flits', bron: LS, bronStart: 1.2, camera: { zoom: [1, 1.06], stoot: [0.5] }, geluid: [[0.5, 'klap', 0.6], [0.6, 'ding', 0.5]],
-      teken: h => geld(h, h.klem((h.t - 0.4) / 0.3)) + h.kin('He *wins*.', { y: 300, g: 120, t: h.t, start: 0.05 }).svg },
+      teken: h => geld(h, h.klem((h.t - 0.4) / 0.3)) + (h.stijl >= 2 ? h.krabbel.cirkel(540, 1000, 360, 190, { t: h.t, start: 1.0 }) : '') + h.kin('He *wins*.', { y: 300, g: 120, t: h.t, start: 0.05 }).svg },
     { duur: 3.0, stem: 'And the symbol goes into the public domain. Free for everyone.', in: 'zweep', bron: BB, bronStart: 1.6, camera: { zoom: [1, 1.05] }, geluid: [[1.0, 'stijg', 0.5]],
       teken: h => [0, 1, 2].map(i => pijlen(h, 1000, 0.42 * h.veer(h.klem((h.t - 0.6 - i * 0.3) / 0.4)), 0, 1)).map((s, i) => `<g transform="translate(${(i - 1) * 300} 0)">${s}</g>`).join('') + h.kin('Public domain: *free for everyone*.', { y: 300, g: 104, t: h.t, start: 0.05 }).svg },
     { duur: 2.6, stem: 'That is why you see it everywhere.', in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[0.3, 'stijg', 0.5]],
-      teken: h => pijlen(h, 1060, intro(h).s, h.t * 8, 1) + h.kin('That is why it is *everywhere*.', { y: 300, g: 108, t: h.t, start: 0.05 }).svg },
+      teken: h => pijlen(h, 1060, intro(h).s, h.t * 8, 1) + (h.stijl >= 2 ? h.krabbel.cirkel(540, 1060, 260, 260, { t: h.t, start: 1.2 }) : '') + h.kin('That is why it is *everywhere*.', { y: 300, g: 108, t: h.t, start: 0.05 }).svg },
   ],
 };

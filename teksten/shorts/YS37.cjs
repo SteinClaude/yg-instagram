@@ -33,6 +33,7 @@ module.exports = {
   versie: 2,
   vorm: 3,
   lus: 0.5,
+  stijl: 2,   // Stijl OK stijl 2 (Andries, ma 9 nov 2026)
   stem: { stem: 'am_fenrir', tempo: 1.1 },
   map: '2026-12-13-YS37-olympische-kleuren',
   nummer: 'No. 37',
@@ -64,7 +65,7 @@ module.exports = {
     { duur: 3.6, stem: 'Together, he wrote, those six colours reproduce the colours of all the nations.', in: 'op', bron: OLY, bronStart: 2.0, camera: { zoom: [1, 1.05] }, geluid: [[1.0, 'pop', 0.4], [1.4, 'pop', 0.4], [1.8, 'pop', 0.4]],
       teken: h => vlaggen(h, h.klem((h.t - 0.6) / 1.6)) + h.kin('Six colours: *the colours of all the nations*.', { y: 300, g: 96, t: h.t, start: 0.05 }).svg },
     { duur: 2.4, stem: 'With no exception.', in: 'flits', bron: OLY, bronStart: 1.0, camera: { zoom: [1, 1.07], stoot: [0.3] }, geluid: [[0.3, 'klap', 0.7], [0.3, 'boem', 0.5]],
-      teken: h => vlaggen(h, 1) + h.kin('"With *no exception*."', { y: 300, g: 120, t: h.t, start: 0.05 }).svg },
+      teken: h => vlaggen(h, 1) + (h.stijl >= 2 ? h.krabbel.cirkel(540, 1020, 395, 235, { t: h.t, start: 1.2 }) : '') + h.kin('"With *no exception*."', { y: 300, g: 120, t: h.t, start: 0.05 }).svg },
     { duur: 3.2, stem: 'The flag first flew in 1914, in Egypt. At the Olympics, in 1920.', in: 'zweep', bron: OLY, bronStart: 1.8, camera: { zoom: [1, 1.05] }, geluid: [[0.6, 'stijg', 0.5]],
       teken: h => stadion(h, h.zacht((h.t - 0.2) / 1.2)) + h.kin('*1914*: first flown. *1920*: the Games.', { y: 300, g: 100, t: h.t, start: 0.05 }).svg },
     { duur: 2.6, stem: 'Six colours. Every flag. That was the idea.', in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[0.3, 'stijg', 0.5]],

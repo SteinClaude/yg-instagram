@@ -38,6 +38,7 @@ module.exports = {
   versie: 2,
   vorm: 3,
   lus: 0.5,
+  stijl: 2,   // Stijl OK stijl 2 (Andries, ma 9 nov 2026)
   stem: { stem: 'am_fenrir', tempo: 1.1 },
   map: '2026-12-09-YS33-hashtag',
   nummer: 'No. 33',

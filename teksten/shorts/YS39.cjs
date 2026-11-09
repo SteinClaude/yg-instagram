@@ -17,7 +17,7 @@ const knop = (h, m = 1, y = 1040, s = 1, kleur = null, intro = true) => { const 
     + `<g transform="translate(${d.toFixed(1)} 0)"><path d="${boog}" fill="none" stroke="${c}" stroke-width="48" stroke-linecap="round"/></g>`
     + `<line x1="${(-d).toFixed(1)}" y1="${(-220 + 30 * (1 - m)).toFixed(1)}" x2="${(-d).toFixed(1)}" y2="${(-20 + 180 * (1 - m)).toFixed(1)}" stroke="${c}" stroke-width="48" stroke-linecap="round"/></g>`; };
 const cijfers = (h, p = 1) => ['1', '0'].map((c, i) => { const q = h.veer(h.klem(p * 2 - i)); return `<text x="${360 + i * 360}" y="1180" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="${(380 * q).toFixed(0)}" fill="${h.K.inkt}" opacity="${h.klem(q).toFixed(3)}">${c}</text>`; }).join('');
-const lampjes = (h, p = 1) => `<g filter="url(#sch)"><text x="360" y="1300" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="70" fill="${h.K.inkt}">1 = ON</text><text x="720" y="1300" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="70" fill="${h.K.inkt}">0 = OFF</text>`
+const lampjes = (h, p = 1) => `<g filter="url(#sch)"><text x="360" y="1235" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="70" fill="${h.K.inkt}">1 = ON</text><text x="720" y="1235" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="70" fill="${h.K.inkt}">0 = OFF</text>`
   + `<circle cx="360" cy="1000" r="130" fill="${h.K.geel}" stroke="${h.K.inkt}" stroke-width="8" opacity="${(0.4 + 0.6 * p).toFixed(3)}"/><circle cx="720" cy="1000" r="130" fill="#4A4A52" stroke="${h.K.inkt}" stroke-width="8"/></g>`;
 const norm = (h, p = 1) => `<g filter="url(#sch)" opacity="${p.toFixed(3)}" transform="translate(0 ${((1 - p) * 80).toFixed(1)})"><rect x="250" y="740" width="580" height="600" rx="10" fill="#F6F1E3" stroke="${h.K.inkt}" stroke-width="6"/><text x="540" y="860" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="64" fill="${h.K.inkt}">IEC 60417</text>`
   + Array.from({ length: 6 }, (_, i) => `<rect x="310" y="${920 + i * 60}" width="${[420, 360, 400, 300, 380, 260][i]}" height="16" rx="8" fill="${h.K.grijs}"/>`).join('') + '</g>';
@@ -28,6 +28,7 @@ module.exports = {
   versie: 2,
   vorm: 3,
   lus: 0.5,
+  stijl: 2,   // Stijl OK stijl 2 (Andries, ma 9 nov 2026)
   stem: { stem: 'am_fenrir', tempo: 1.1 },
   map: '2026-12-15-YS39-aan-uit',
   nummer: 'No. 39',
@@ -54,7 +55,7 @@ module.exports = {
     { duur: 2.4, stem: 'Your power button hides two numbers.', stemStart: 0.05, camera: { zoom: [1, 1.05], stoot: [0.15] }, geluid: [[0.12, 'klap'], [0.12, 'boem', 0.7]],
       teken: h => knop(h, 1) + h.kin('Your power button hides *two numbers*.', { y: 300, g: 108, t: h.t, start: 0, stap: 0.07 }).svg },
     { duur: 2.4, stem: 'A one, and a zero.', in: 'zweep', bron: NPI, bronStart: 1.0, camera: { zoom: [1, 1.05] }, geluid: [[0.4, 'pop', 0.5], [0.9, 'pop', 0.5]],
-      teken: h => cijfers(h, h.klem((h.t - 0.2) / 0.8)) + h.kin('A *1*, and a *0*.', { y: 300, g: 120, t: h.t, start: 0.05 }).svg },
+      teken: h => cijfers(h, h.klem((h.t - 0.2) / 0.8)) + (h.stijl >= 2 ? h.krabbel.cirkel(360, 1045, 150, 190, { t: h.t, start: 0.9 }) + h.krabbel.cirkel(720, 1045, 150, 190, { t: h.t, start: 1.4, draai: 5 }) : '') + h.kin('A *1*, and a *0*.', { y: 300, g: 120, t: h.t, start: 0.05 }).svg },
     { duur: 2.8, stem: 'In binary terms, one means on. Zero means off.', in: 'op', bron: NPI, bronStart: 1.4, camera: { zoom: [1, 1.05] }, geluid: [[0.8, 'tik', 0.5], [1.6, 'tik', 0.5]],
       teken: h => lampjes(h, Math.round((Math.sin(h.t * 6) + 1) / 2)) + h.kin('In binary: *1 = on*, *0 = off*.', { y: 300, g: 108, t: h.t, start: 0.05 }).svg },
     { duur: 2.8, stem: 'Push them together, and you get this.', in: 'zweep', bron: NPI, bronStart: 1.4, camera: { zoom: [1, 1.06], stoot: [1.5] }, geluid: [[1.0, 'whoosh', 0.5], [1.5, 'klap', 0.6]],
@@ -62,7 +63,7 @@ module.exports = {
     { duur: 3.0, stem: 'The symbols are defined in an international standard: IEC 60417.', in: 'op', bron: UNI, bronStart: 1.6, camera: { zoom: [1, 1.05] }, geluid: [[0.6, 'pop', 0.4]],
       teken: h => norm(h, h.klem((h.t - 0.3) / 0.4)) + h.kin('An international standard: *IEC 60417*.', { y: 300, g: 100, t: h.t, start: 0.05 }).svg },
     { duur: 3.2, stem: 'For years they were only pictures. In 2015, Unicode accepted them as text.', in: 'zweep', bron: NPI, bronStart: 1.8, camera: { zoom: [1, 1.05], stoot: [1.8] }, geluid: [[1.7, 'klap', 0.5], [1.9, 'ding', 0.5]],
-      teken: h => toetsen(h, h.klem((h.t - 1.6) / 0.3)) + knop(h, 1, 880, 0.55, h.K.inkt, false) + h.kin('*2015*: accepted as text.', { y: 300, g: 112, t: h.t, start: 0.05 }).svg },
+      teken: h => toetsen(h, h.klem((h.t - 1.6) / 0.3)) + knop(h, 1, 880, 0.55, h.K.inkt, false) + (h.stijl >= 2 ? h.krabbel.cirkel(540, 1180, 410, 110, { t: h.t, start: 2.0 }) : '') + h.kin('*2015*: accepted as text.', { y: 300, g: 112, t: h.t, start: 0.05 }).svg },
     { duur: 2.6, stem: 'On and off, in one symbol. Press it, and it all starts again.', in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[0.3, 'stijg', 0.5]],
       teken: h => knop(h, 1) + h.kin('On and off, *in one symbol*.', { y: 300, g: 110, t: h.t, start: 0.05 }).svg },
   ],
