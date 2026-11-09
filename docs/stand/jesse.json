@@ -1,16 +1,28 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-09T19:05:00+01:00",
-  "sessie": null,
+  "tijd": "2026-11-09T19:45:00+01:00",
+  "sessie": { "plek": "pc", "sinds": "2026-11-09T19:35:00+01:00" },
   "status": "wacht",
-  "af": [],
+  "af": [
+    "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social in docs/oplevering-jesse.md (weekdagen, cijfers via Eva, proef 1 met criteria vooraf, gebundelde keurlijst) plus doelenbewaking"
+  ],
   "bezig": null,
-  "volgende": "eerste sessie: kaart docs/manager/JESSE.md lezen en voorstel Weekritme YG-Social schrijven",
-  "kanNietVerder": { "reden": "nog geen eigen sessie voor de rol manager YG-Social", "nodig": "Andries start een sessie voor Jesse in een kloon van deze repo", "van": "Andries" },
-  "vragen": [ { "vraag": "Mag de manager de repo van Finn lezen?", "aanname": "nee; via voorEva en CREW-STATUS", "blokkeert": false } ],
-  "buitenGit": [ { "tijd": "2026-11-09T18:48:00+01:00", "wat": "C31: Andries maakt Jesse manager van YG-Social (Eva legt vast)" } ],
-  "voorEva": [],
+  "volgende": "Na besluit Andries: docs/keurlijst-week.md elke vrijdag; eerste weekoverzicht YG-Social ma 16 nov (cijfers via Eva)",
+  "kanNietVerder": null,
+  "vragen": [
+    { "vraag": "Weekritme YG-Social zoals voorgesteld (keurzitting vrijdagavond, proef 1 haak vs. oud)?", "aanname": "ja", "blokkeert": false },
+    { "vraag": "Mag de manager de repo van Finn lezen?", "aanname": "nee; via voorEva en CREW-STATUS", "blokkeert": false }
+  ],
+  "buitenGit": [
+    { "tijd": "2026-11-09T18:48:00+01:00", "wat": "C31: Andries maakt Jesse manager van YG-Social (Eva legt vast)" },
+    { "tijd": "2026-11-09T19:35:00+01:00", "wat": "Eerste sessie Jesse gestart door Andries op de pc (\"jij bent jesse ga veder\")" }
+  ],
+  "voorEva": [
+    { "id": "jesse-1", "aan": "Finn (via Eva)", "wat": "Stand kanaal 2: wat is gepland t/m welke datum (YouTube), voorraad, open keuringen (codes + plaatsdatum). Voor de doelenbewaking en de keurlijst van de week." },
+    { "id": "jesse-2", "aan": "Eva", "wat": "Vanaf ma 16 nov elke maandag de weekcijfers beide kanalen in vaste vorm (per short 72 u na plaatsing: code · platform · weergaven · weergegeven-vs-weggeswipet % · kijkpercentage · nieuwe abonnees; plus abonnees/volgers begin-eind week, 90-dagen Shorts-weergaven, uitgaven potje). Zie docs/oplevering-jesse.md §2." },
+    { "id": "jesse-3", "aan": "Eva", "wat": "Instagram kanaal 1 loopt achter op YouTube (gepland t/m 16 nov vs 8 dec) en de automaat sloeg op 9 nov runs over; graag bewaken dat bijschrift OK YS11–YS32 deze week bij Manon langskomt." }
+  ],
   "ontvangen": [],
   "raakt": []
 }
