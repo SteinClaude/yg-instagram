@@ -1,3 +1,4 @@
+KLAAR: proef Instagram kanaal 1 geslaagd (Actions-run 42610270333): Instagram nam video en eigen omslag van YS01 aan, niets gepubliceerd; geheimen staan (Andries) · ma 9 nov 12:39
 KAN NIET VERDER: sleutel Instagram kanaal 1 · nodig: Andries klikt "Add" in het klaargezette Meta-venster, accepteert de testeruitnodiging, maakt de sleutel en zet IG_TOKEN_K1 en IG_USER_ID_K1 in GitHub · ma 9 nov 12:22
 KLAAR: automaat tweede account (Instagram kanaal 1) samengevoegd naar main (853989c), na goedkeuring Eva en go Andries via Eva (ma 9 nov 11:51); plaatst nog niets (geen item, geen sleutel) · ma 9 nov 12:02
 KLAAR: keurlijst Instagram-bijschriften kanaal 1 YS01–YS10 (docs/keurlijst-instagram-YS01-YS10.md; bestanden in pakketten/<map>/instagram/bijschrift.txt); wacht op "bijschrift OK <code>" per code · ma 9 nov 11:08
@@ -153,6 +154,7 @@ KLAAR: pakket YS01 klaar (niet ingepland) · adcf422
 KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reeksen, pakketformaat short, ritme 7/week, API later) · 634997a
 
 ## Besluiten met Andries
+- Andries in de sessie van Manon, ma 9 nov 2026: "okedoe dit zo veel mogelijk voor mij de stappen kijk waar ik was en wat er nog moet zet dit dan zo goed mogelijk klaar voor mij"; daarna "Add geklikt", "Geaccepteerd", "Geheimen staan" (sleutel kanaal 1 door Andries zelf gemaakt en in GitHub gezet; Manon heeft hem niet gezien)
 - Andries via chat met Eva, ma 9 nov 2026 11:51 (in OPDRACHT-ACTUEEL 12:05): "geef manon opdracht om verder te gaan als jij dat goedkeurd" → Eva keurde de tak goed; geldt als go (B30) om de automaat naar main te zetten
 - Andries in de sessie van Manon, ma 9 nov 2026 ±11:06, op de vraag "Mag ik de bijschriften van YS01–YS10 alvast voor de keurlijst schrijven?": "Ja, schrijf ze"
 - Andries in de sessie van Manon, ma 9 nov 2026 ±10:58, op de vraag "Laat je Manon de automaat bouwen?" (Reels Instagram kanaal 1): "Ja, Manon bouwt" → bouw op een aparte tak, Eva kijkt mee, live pas na go van Andries (B30)

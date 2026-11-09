@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T12:25:00+01:00",
+  "tijd": "2026-11-09T12:39:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-09T12:39:00+01:00 Proef Instagram kanaal 1 (Actions-run 42610270333): YS01 \"Geaccepteerd en omgezet (… omslag: eigen beeld). Niet gepubliceerd.\" Geen naam of nummer van kanaal 1 in het logboek.",
     "2026-11-09T12:02:00+01:00 Automaat tweede account naar main · 853989c (go Andries via Eva 11:51)",
     "2026-11-09T11:08:00+01:00 Keurlijst Instagram-bijschriften YS01–YS10: docs/keurlijst-instagram-YS01-YS10.md",
     "2026-11-09T11:05:00+01:00 Automaat tweede account (Instagram kanaal 1) gebouwd op tak manon/instagram-kanaal-1 · 7fbf229; getest zonder plaatsen; nog niet live",
@@ -69,10 +70,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Sleutel Instagram kanaal 1: Andries maakt de sleutel (Generate token) en logt in op GitHub om IG_TOKEN_K1 en IG_USER_ID_K1 te zetten",
-  "volgende": "Andries: bijschrift OK YS01–YS10 (keurlijst) en go voor de automaat (na meekijken Eva, tak manon/instagram-kanaal-1); daarna sleutel kanaal 1 en proef. Intussen: weekverslag ma 9 nov; daarna YS33–YS39 op de eerste cijfers",
+  "bezig": "-",
+  "volgende": "Andries: AI-label via de API (ja/nee) en bijschrift OK YS01–YS10; daarna AI-label in de automaat (Eva kijkt mee), Instagram-versies YS02–YS10 maken en de bijloop inplannen. Weekverslag ma 9 nov (cijfers via Eva)",
   "kanNietVerder": null,
   "vragen": [
+    "AI-label Instagram kanaal 1: de API kent is_ai_generated (sinds juni 2026). Aanzetten bij elke Reel, zoals op YouTube? · mijn aanname: ja, automatisch via de automaat (kleine aanpassing, Eva kijkt mee) · ondertussen: niets inplannen · blokkeert: ja, vóór de eerste Reel",
     "bijschrift OK YS01 t/m YS10 (Instagram kanaal 1)? · mijn aanname: geen; niets in de planning zonder OK per code · ondertussen: weekverslag · blokkeert: ja, voor de Reels",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -82,6 +84,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-09T12:39:00+01:00 Andries in sessie: \"Geheimen staan\". In GitHub (Chrome, door Andries ingelogd): lijst toont IG_TOKEN, IG_TOKEN_K1, IG_USER_ID, IG_USER_ID_K1 (alleen namen gezien). Proef gestart via Run workflow (proefaccount kanaal-1, video + omslag YS01, 800 ms): geslaagd, niets gepubliceerd.",
     "2026-11-09T12:25:00+01:00 Andries in sessie: \"Add geklikt\" en \"Geaccepteerd\" — kanaal 1 is Instagram Tester van de Meta-app (eerst Pending, uitnodiging door Andries geaccepteerd). Chrome: Meta-pagina API-configuratie met Instagram-aanmelding klaargezet (kanaal 1 staat bij Generate access tokens; niet op Generate token geklikt, niets van sleutel of accountnummer gelezen). Tweede tabblad GitHub: niet ingelogd, dus de geheimen-pagina gaf 404; Andries logt zelf in.",
     "2026-11-09T12:22:00+01:00 Chrome van Andries, op zijn verzoek (\"okedoe dit zo veel mogelijk voor mij de stappen kijk waar ik was en wat er nog moet zet dit dan zo goed mogelijk klaar voor mij\"): nagekeken dat Instagram kanaal 1 al professioneel is (Creator) en nog geen Instagram Tester in de Meta-app; venster \"Add people\" klaargezet met rol Instagram Tester en het account van kanaal 1 ingevuld — niet op Add geklikt (dat doet Andries). Geen sleutel gezien of aangeraakt.",
     "2026-11-09T11:06:00+01:00 Andries in sessie: \"Ja, schrijf ze\" (bijschriften YS01–YS10 voor de keurlijst)",
