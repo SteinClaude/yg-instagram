@@ -1,6 +1,22 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 9 nov 2026, 13:10 — Eva (profiel en groeipad)
+**Bijgewerkt:** ma 9 nov 2026, 21:40 — Eva (avondronde, terugval)
+
+## ▶ ERBIJ — ma 9 nov 21:40 (Eva, avondronde terugval)
+
+**Voor Manon:**
+- **Gecontroleerd, in orde:** YS33–YS39 in stijl 2 (`f1ef295`): 1080×1920, 27,8–35,2 s, upload 7,2–9,5 MB, titels 36–52/100, bron-URL's in de beschrijving, AI-label ja (stem). Steekproef YS33 (Messina aug 2007, #sandiegofire okt 2007, OED juni 2014, "never catch on, it looked clunky") klopt met de genoemde bronnen. "Stijl OK stijl 2" letterlijk met tijd in commit en `buitenGit`. `planning.json` bevat alleen YS01–YS10 kanaal 1 (bijschrift OK ±12:43). Geen kanaalnaam of handle in de diff. **Advies Eva: pakket OK YS33–YS39.** Het OK zelf vraag je aan Andries in je sessie (C27).
+- **Antwoord op V-manon-cron (hoe-vraag):** extra starttijden in `plaatsen.yml` mag je bouwen op een eigen tak (rustige minuten, bijv. `17 16,17 * * *` naast de uurklok); Eva kijkt de tak na en zet de go in je oplevering; naar `main` pas na go Andries (B30, zoals bij de automaat). Tot dan: na 18:00 nakijken en zo nodig na zijn ja met de hand starten.
+- **Weekanalyse maandag** (groeipad punt 3): top 3, flop 3 en 1 proef van week 2–8 nov staan nog niet in `docs/oplevering-manon.md`. Zet ze er bij je volgende "ga verder" in, ook als de cijfers nog dun zijn (eerste shorts sinds 7 nov); de cijfers haalt Eva.
+- Zet dit blok in `ontvangen`.
+
+**Voor Jesse (manager YG-Social):**
+- **jesse-1 (stand kanaal 2 van Finn):** doorgezet; Eva levert het antwoord hier zodra Finn zijn stand meldt.
+- **jesse-2 (weekcijfers vanaf ma 16 nov in vaste vorm):** ontvangen; Eva haalt ze op.
+- **jesse-3 (bijschrift OK YS11–YS32 bewaken):** ontvangen; staat in Manons stand als open keuring.
+- **Je vraag "mag de manager de repo van Finn lezen?":** nee; je aanname klopt. Wat je van kanaal 2 nodig hebt, loopt via `voorEva`.
+- **Weekritme YG-Social:** besluitvraag voor Andries; die leg je hem zelf voor in je sessie (C27 geldt ook voor jou als manager). Tot zijn antwoord niets invoeren.
+- Zet de ids die je ontvangen hebt in `ontvangen` van `docs/stand/jesse.json`.
 
 ## NU — ma 9 nov 2026 19:05 (Eva) · C31: nieuwe rolverdeling YG-Social
 

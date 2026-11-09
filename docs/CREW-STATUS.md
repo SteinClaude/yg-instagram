@@ -1,6 +1,6 @@
 # CREW-STATUS — stand van alle sporen
 
-**Bijgewerkt:** ma 9 nov 2026, 18:50 — Eva (kantoor-check)
+**Bijgewerkt:** ma 9 nov 2026, 21:40 — Eva (avondronde, terugval)
 
 ## Werkwijze voor iedereen
 - Andries beslist. Eva (chef de staf) zet opdrachten in `docs/OPDRACHT-ACTUEEL.md` en leest jullie stand en opleveringen.
@@ -13,10 +13,13 @@
 | Wie | Rol | Nu |
 |---|---|---|
 | Eva | chef de staf | leest je stand, oplevering en besluiten mee; zet je opdracht klaar; grijpt in waar nodig (C27) |
-| Manon | YG-Social · kanaal 1 | YS01–YS32 staan in Studio op kanaal 1, elke dag 18:00 t/m di 8 dec. Vreemd maar waar (YH) gestopt. **Ma 9 nov (pc-sessie met Andries, 10:35–18:45):** automaat Instagram kanaal 1 op main (853989c); geen AI-label op Instagram; bijschriften YS01–YS10 OK (1b451ba); YS01 en YS02 als eerste Reels geplaatst door de automaat (±13:02, 751628c), daarna elke dag 18:00 gelijk met YouTube t/m YS10 (16 nov); keurlijst Instagram-bijschriften YS11–YS32 (7c4837b); Andries ±13:30/13:39: Instagram-voorraad even ver als YouTube, met nieuwe video's in verbeterde vorm (YS33+); YS33–YS39 af in vorm 3 (haak in de eerste seconde, 25–32 s, lus) met keurlijst (078cb9c); proef stijl 2 (markeerstift, bronstempel, voortgangslijn; bac4197). Stand `wacht`: op stijl OK vorm 3 / stijl 2, pakket OK en bijschrift OK YS33–YS39 en bijschrift OK YS11–YS32; niets ingepland zonder. Weekverslag ma 9 nov volgt (cijfers via Eva). Directeur YG-Social voor de gedeelde zaken; besluiten rechtstreeks met Andries (C27); @ygdigital.nl op pauze |
+| Jesse | manager YG-Social (C31, ma 9 nov) | voorstel weekritme YG-Social en doelenbewaking (`6ff0971`); stand `wacht` op besluit Andries over het weekritme; eerste weekoverzicht ma 16 nov (cijfers via Eva) |
+| Manon | maakster kanaal 1 (C31) | YS01–YS32 in Studio t/m di 8 dec (18:00). Instagram kanaal 1: YS01–YS03 geplaatst (YS03 met de hand gestart, de uurklok van GitHub sloeg runs over), automaat t/m YS10 (16 nov). **"Stijl OK stijl 2"** (Andries ±19:28, in haar sessie, `f87dfb5`); YS33–YS39 opnieuw in stijl 2 (`f1ef295`). Stand `wacht` op pakket OK + bijschrift OK YS33–YS39 en bijschrift OK YS11–YS32; niets ingepland zonder. Weekanalyse ma 9 nov (top 3, flop 3, proef) nog niet in de oplevering |
 
 Kanaal 2 is sinds 5 nov van crewlid Finn, in een eigen privé-repo. De overige sporen van de crew zijn privé. Wat Manon van een ander crewlid moet weten, zet Eva in haar opdracht.
 
+- Manon ma 9 nov ±19:20–19:28 (in haar sessie): "Ja, start nu" (automaat met de hand voor YS03); "Stijl OK stijl 2".
+- C31 (ma 9 nov 18:48): een afdelingshoofd heet manager, Eva is directeur; Jesse manager YG-Social, Manon maakster kanaal 1.
 - Manon ma 9 nov ±12:56–13:39 (in haar sessie): Reels nu plaatsen wat kan (YS01, YS02); Instagram-voorraad even ver als YouTube, met nieuwe video's in verbeterde vorm (YS33+).
 - Manon ma 9 nov (in haar sessie): automaat Instagram kanaal 1 naar main (go via Eva 11:51); geen AI-label op Instagram kanaal 1; "Alle tien OK" bijschriften YS01–YS10 (±12:43).
 - Manon zo 8 nov (in haar sessie): pakket OK YS26–YS32 ("Alle zeven OK", ±14:11); "bio OK kanaal 1" (korte versie B, ±14:34); YS33–YS39 "Na eerste cijfers" (±21:15).
