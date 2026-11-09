@@ -1,0 +1,47 @@
+STUDIO.TXT — YS34 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS34" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 27,8 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (7,1 MB; H.264 twee passen, 2000kbit/s, AAC 96k); deze upload je via Chrome
+
+== Details ==
+Titel (52/100 tekens):
+The first :-) was invented because of a fake warning
+
+Beschrijving:
+In September 1982, a joke on a Carnegie Mellon message board was taken seriously. Three days later, Scott Fahlman proposed a joke marker: :-)
+
+What the sources say:
+- 16 September 1982: on a Carnegie Mellon message board, a joke post warned that the leftmost elevator "has been contaminated with mercury" (original thread).
+- The next day: "Many people seem to have taken the notice about the physics department seriously." Others proposed joke markers such as *, % and & (original thread).
+- 19 September 1982, 11:44: Scott Fahlman wrote "I propose that the following character sequence for joke markers: :-) Read it sideways." For things that are not jokes, he suggested :-( (original thread; "Smiley Lore").
+- The post was retrieved from a 1982 backup tape on September 10, 2002 (original thread; The Register).
+
+Sources:
+Original bboard thread in which :-) was proposed (Scott E. Fahlman, Carnegie Mellon University): https://www.cs.cmu.edu/~sef/Orig-Smiley.htm
+Scott E. Fahlman, "Smiley Lore :-)" (Carnegie Mellon University): https://www.cs.cmu.edu/~sef/sefSmiley.htm
+The Register, on the recovery of the first smiley post (September 13, 2002): https://www.theregister.com/2002/09/13/first_ever_smiley_found_preserved/
+
+#Shorts #history #internet #smiley
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Ja — de stem is een realistische AI-stem (Kokoro). Beeld: eigen getekende animatie en tekst; geen AI-beelden, geen echte personen nagebootst.
+Tags:
+smiley, first smiley, emoticon history, :-), Scott Fahlman, Carnegie Mellon 1982, joke marker, internet history, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education) — in Studio heet die "Educatief".
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: donderdag 10 december 2026, 18:00 (Amsterdam)

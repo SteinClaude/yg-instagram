@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T13:59:00+01:00",
+  "tijd": "2026-11-09T14:30:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-09T10:35:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-09T14:30:00+01:00 YS33–YS39 af in vorm 3 (pakketten, Instagram-versies, bijschriften); keurlijst docs/keurlijst-YS33-YS39.md",
     "2026-11-09T13:59:00+01:00 YS33 af (27,8 s, vorm 3); scripts YS34–YS39 en Instagram-bijschriften YS33–YS39 geschreven (bronnen gelezen 9 nov)",
     "2026-11-09T13:33:00+01:00 Keurlijst Instagram-bijschriften YS11–YS32: docs/keurlijst-instagram-YS11-YS32.md",
     "2026-11-09T13:03:00+01:00 YS01 en YS02 geplaatst op Instagram kanaal 1 (run 42613214266, met de hand gestart in de Chrome van Andries); profiel toont 2 berichten",
@@ -74,10 +75,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "YS34–YS39 renderen (achtergrond), daarna pakketten, Instagram-versies en keurlijst YS33–YS39 (pakket OK, bijschrift OK, stijl OK vorm 3)",
-  "volgende": "YS33–YS39 maken in de verbeterde vorm (Instagram 17–23 nov, YouTube vanaf 9 dec), ter keuring met stijl OK; daarna YS40–YS54. Weekverslag ma 9 nov (cijfers via Eva)",
+  "bezig": "-",
+  "volgende": "Na de OK's: YS33–YS39 in planning.json (Instagram 17–23 nov 18:00) en in Studio (YouTube 9–15 dec 18:00); daarna YS40–YS54 in vorm 3. Weekverslag ma 9 nov (top 3, flop 3, 1 proef, groot idee, zelfevaluatie; cijfers via Eva)",
   "kanNietVerder": null,
   "vragen": [
+    "stijl OK vorm 3, pakket OK YS33–YS39 en bijschrift OK YS33–YS39? · niets inplannen zonder · ondertussen: weekverslag · blokkeert: ja, voor Instagram vanaf 17 nov",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
       "aanname": "laten staan (advies: de eerste drie dagen zonder stem zijn een nuttige vergelijking; vervangen kost een upload per short en raakt al geplande video's)",

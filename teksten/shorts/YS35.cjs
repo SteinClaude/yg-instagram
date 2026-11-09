@@ -5,7 +5,7 @@
 // "The Jelling Stone"; Jim Kardach, kardach.com/bluetooth.
 // Niet gezegd: het jaar (1996 of 1997: de video zegt "late 1990s"), het jaar 958 (alleen de SIG), het boek dat Kardach las
 // (alleen Wikipedia), Ericsson en de kroeg (alleen zoekresultaten). De bijnaam: "is said to" (SIG). Het logo zelf (merk)
-// staat niet in beeld: alleen de twee runen, eigen getekend.
+// zelf staat niet in beeld: alleen de twee runen als eigen lijnen die over elkaar schuiven, zonder blauw ovaal.
 const SIG = 'Bluetooth SIG, "Origin of the name"';
 const NAT = 'National Museum of Denmark';
 const KAR = 'J. Kardach, kardach.com';
@@ -59,7 +59,7 @@ module.exports = {
       ['opschrift: "won for himself all of Denmark and Norway and made the Danes Christian"', 'opgericht "around the year 965"']],
       ['Jim Kardach, kardach.com/bluetooth', 'https://www.kardach.com/bluetooth',
       ['"In the late 90\'s I helped form and lead a Special Interest Group I codenamed Bluetooth, after the 10th century Danish King."']]],
-    niet: '- Niet gezegd: het precieze jaar (1996 of 1997: "late 1990s"), het jaar 958 (alleen de SIG), het boek dat Kardach las, Ericsson. "Won all of Denmark and Norway" is wat de steen zegt (Harald over zichzelf); de video zegt "his runestone claims". Het Bluetooth-logo (merk) staat niet in beeld: alleen de twee runen als eigen lijnen. Koptelefoon, kroon, tand en steen zijn eigen ontwerp.',
+    niet: '- Niet gezegd: het precieze jaar (1996 of 1997: "late 1990s"), het jaar 958 (alleen de SIG), het boek dat Kardach las, Ericsson. "Won all of Denmark and Norway" is wat de steen zegt (Harald over zichzelf); de video zegt "his runestone claims". In beeld schuiven de twee runen als eigen lijnen over elkaar (de bind rune die het logo vormt), zonder het blauwe ovaal of de merkvormgeving. Koptelefoon, kroon, tand en steen zijn eigen ontwerp.',
   },
   scenes: [
     { duur: 2.6, stem: 'Your headphones are named after a Viking king.', stemStart: 0.05, camera: { zoom: [1, 1.05], stoot: [0.15] }, geluid: [[0.12, 'klap'], [0.12, 'boem', 0.7]],

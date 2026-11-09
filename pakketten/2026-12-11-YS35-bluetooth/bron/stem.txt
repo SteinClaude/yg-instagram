@@ -1,0 +1,11 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Your headphones are named after a Viking king.
+2. Harald Bluetooth. King of Denmark, more than a thousand years ago.
+3. The nickname is said to come from a dead, blue-grey tooth.
+4. His runestone claims he won all of Denmark and Norway.
+5. Late 1990s. Engineer Jim Kardach needs a code name.
+6. Harald unified Denmark. This radio link would unite computers and phones.
+7. It was only a placeholder. The other names failed in time.
+8. And the logo? His initials, in runes.
+9. So yes: a Viking king, in your ears.

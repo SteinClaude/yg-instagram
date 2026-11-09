@@ -1,0 +1,10 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. These colours were picked to match every flag in the world.
+2. 1913. Pierre de Coubertin presents the Olympic rings.
+3. Five rings, for five parts of the world.
+4. Blue, yellow, black, green and red. On white.
+5. Together, he wrote, those six colours reproduce the colours of all the nations.
+6. With no exception.
+7. The flag first flew in 1914, in Egypt. At the Olympics, in 1920.
+8. Six colours. Every flag. That was the idea.

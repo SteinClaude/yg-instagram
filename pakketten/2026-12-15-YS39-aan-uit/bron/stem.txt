@@ -1,0 +1,9 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Your power button hides two numbers.
+2. A one, and a zero.
+3. In binary terms, one means on. Zero means off.
+4. Push them together, and you get this.
+5. The symbols are defined in an international standard: IEC 60417.
+6. For years they were only pictures. In 2015, Unicode accepted them as text.
+7. On and off, in one symbol. Press it, and it all starts again.

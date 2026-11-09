@@ -1,0 +1,10 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. A twenty-three-year-old student drew this. You see it every day.
+2. 1970. The year of the first Earth Day.
+3. A cardboard company holds a contest for a recycling symbol.
+4. Gary Anderson, a student in California, enters.
+5. He is inspired by a Möbius strip: a loop with a twist.
+6. He wins two thousand five hundred dollars.
+7. And the symbol goes into the public domain. Free for everyone.
+8. That is why you see it everywhere.

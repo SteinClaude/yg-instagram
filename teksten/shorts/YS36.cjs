@@ -11,8 +11,12 @@ const BB = 'Baltimore Banner (2026)';
 
 // drie pijlen in een driehoek: eigen tekening (geen kopie van een bestand); r = 0..1 opbouw
 const pijlen = (h, y = 1020, s = 1, draai = 0, r = 1, kleur = null) => { const c = kleur || h.K.groen; let o = '';
+  const R = 250, pt = k => { const a = (-90 + k * 120) * Math.PI / 180; return [R * Math.cos(a), R * Math.sin(a)]; };
   for (let i = 0; i < 3; i++) { const q = h.klem(r * 3 - i); if (q <= 0) continue;
-    o += `<g transform="rotate(${i * 120})" opacity="${q.toFixed(3)}"><path d="M -150 -40 L 40 -260 L 100 -200 L -70 0 Z" fill="${c}" stroke="${h.K.inkt}" stroke-width="10" stroke-linejoin="round"/><path d="M 40 -260 L 150 -270 L 120 -150 Z" fill="${c}" stroke="${h.K.inkt}" stroke-width="10" stroke-linejoin="round"/></g>`; }
+    const [ax, ay] = pt(i), [bx, by] = pt(i + 1), dx = bx - ax, dy = by - ay, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L, nx = -uy, ny = ux;
+    const x0 = ax + ux * L * 0.14, y0 = ay + uy * L * 0.14, x1 = ax + ux * L * 0.70, y1 = ay + uy * L * 0.70, tx = ax + ux * L * 0.88, ty = ay + uy * L * 0.88, w = 34, kop = 78;
+    const P = [[x0 + nx * w, y0 + ny * w], [x1 + nx * w, y1 + ny * w], [x1 + nx * kop, y1 + ny * kop], [tx, ty], [x1 - nx * kop, y1 - ny * kop], [x1 - nx * w, y1 - ny * w], [x0 - nx * w, y0 - ny * w]];
+    o += `<path d="M ${P.map(p => p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" L ")} Z" fill="${c}" stroke="${h.K.inkt}" stroke-width="9" stroke-linejoin="round" opacity="${q.toFixed(3)}"/>`; }
   return `<g filter="url(#sch)" transform="translate(540 ${y}) rotate(${draai.toFixed(1)}) scale(${s.toFixed(3)})">${o}</g>`; };
 const intro = h => { const q = h.veer(h.klem(h.t / 0.35)); return { s: 0.7 + 0.3 * q }; };
 const aarde = (h, p = 1) => `<g filter="url(#sch)" transform="translate(540 1000) scale(${(0.6 + 0.4 * h.veer(p)).toFixed(3)})" opacity="${h.klem(p * 3).toFixed(3)}"><circle r="230" fill="#3D6FB4" stroke="${h.K.inkt}" stroke-width="10"/><path d="M -150 -120 Q -60 -170 -20 -90 Q 30 -20 -60 30 Q -140 60 -170 -20 Z M 40 40 Q 140 10 170 90 Q 120 170 50 140 Z" fill="${h.K.groen}" stroke="${h.K.inkt}" stroke-width="6"/></g>`;

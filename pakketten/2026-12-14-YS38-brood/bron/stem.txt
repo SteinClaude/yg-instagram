@@ -1,0 +1,10 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Sliced bread was invented by a jeweller.
+2. Otto Rohwedder ran three jewellery stores in Missouri.
+3. He designs a bread slicer. In 1917, a fire destroys his blueprints.
+4. Sliced bread goes stale. So his new machine slices, and wraps.
+5. 1928. A bakery in Chillicothe, Missouri, buys the first machine.
+6. July seventh: the first sliced loaf is sold.
+7. In 1943, the US government even banned it. For seven weeks.
+8. The greatest thing since sliced bread? Thank a jeweller.

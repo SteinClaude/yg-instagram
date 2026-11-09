@@ -1,0 +1,49 @@
+STUDIO.TXT — YS35 (YouTube Studio, uploadscherm van boven naar beneden)
+Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS35" van Andries.
+
+== Bestand ==
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 32,4 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (8,2 MB; H.264 twee passen, 2000kbit/s, AAC 96k); deze upload je via Chrome
+
+== Details ==
+Titel (43/100 tekens):
+Why is Bluetooth named after a Viking king?
+
+Beschrijving:
+Bluetooth is named after Harald "Bluetooth" Gormsson, a Danish king from more than a thousand years ago. It was only meant to be a placeholder.
+
+What the sources say:
+- The name dates back more than a millennium to King Harald "Bluetooth" Gormsson; his nickname is said to come from a dead tooth, "a dark blue/grey color" (Bluetooth SIG).
+- His runestone at Jelling says he "won for himself all of Denmark and Norway and made the Danes Christian" (National Museum of Denmark).
+- In the late 1990s, Jim Kardach codenamed the project Bluetooth, "after the 10th century Danish King" (kardach.com).
+- The idea: "just as we intended to unite the PC and cellular industries with a short-range wireless link" (Kardach, quoted by the Bluetooth SIG).
+- Bluetooth "was only intended as a placeholder". PAN already had tens of thousands of hits, and a trademark search on RadioWire could not be completed in time for launch (Bluetooth SIG).
+- The logo is a bind rune that merges the runes Hagall (ᚼ) and Bjarkan (ᛒ): Harald's initials (Bluetooth SIG).
+
+Sources:
+Bluetooth SIG, "Origin of the name": https://www.bluetooth.com/about-us/bluetooth-origin/
+National Museum of Denmark, "The Jelling Stone": https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-monuments-at-jelling/the-jelling-stone
+Jim Kardach, "Bluetooth" (kardach.com): https://www.kardach.com/bluetooth
+
+#Shorts #history #technology #vikings
+
+Miniatuur: geen eigen bestand; kies in Studio een beeld uit de video (voorstel: de eerste scene).
+Afspeellijsten: geen.
+Publiek / Gemaakt voor kinderen: Nee, deze video is niet gemaakt voor kinderen.
+Leeftijdsbeperking: Nee.
+
+== Meer weergeven ==
+Betaalde promotie: Nee.
+Gewijzigde of synthetische content (AI-label): Ja — de stem is een realistische AI-stem (Kokoro). Beeld: eigen getekende animatie en tekst; geen AI-beelden, geen echte personen nagebootst.
+Tags:
+Bluetooth, Bluetooth name, Harald Bluetooth, Viking king, Jim Kardach, Bluetooth logo, runes, Jelling stone, history of everyday things, why things are the way they are, shorts
+Taal van de video: Engels.
+Opnamedatum en locatie: leeg laten.
+Licentie: Standaard YouTube-licentie.
+Insluiten toestaan: Ja.
+Categorie: Onderwijs (Education) — in Studio heet die "Educatief".
+Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
+Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
+
+== Zichtbaarheid ==
+Plannen: vrijdag 11 december 2026, 18:00 (Amsterdam)

@@ -50,7 +50,7 @@ module.exports = {
     tags: 'Olympic rings, Olympic rings colours, Olympic flag, Pierre de Coubertin, 1913, Antwerp 1920, flag colours, design history, history of everyday things, why things are the way they are, shorts',
     md: [['Olympedia, "Olympic Flag"', 'https://www.olympedia.org/definitions/9',
       ['Coubertin, Olympic Review, augustus 1913: "These five rings represent the five parts of the world from this point on won over to Olympism"', '"the six colors [including the white background]. thus combined reproduce the colors of all the nations, with no exception."', '"The flag was first flown at Chatsby Stadium in Alexandria, Egypt for the Pan-Egyptian Games on 5 April 1914"', '"made its début at the Olympic Games in 1920 at Antwerp, Belgium"']]],
-    niet: '- Niet gezegd: welke kleur bij welk werelddeel hoort (Coubertin koppelde ze niet), of zijn bewering over "alle vlaggen" echt klopte (de video zegt "he wrote"). olympics.com reageerde niet, Britannica gaf een 403: daarom één bron. In beeld geen olympische ringen (beschermd symbool): vijf losse kleurstalen en verzonnen vlaggen, eigen tekenwerk.',
+    niet: '- Niet gezegd: welke kleur bij welk werelddeel hoort (Coubertin koppelde ze niet), of zijn bewering over "alle vlaggen" echt klopte (de video zegt "he wrote"). olympics.com reageerde niet, Britannica gaf een 403: daarom één bron. In beeld geen olympische ringen (beschermd symbool): vijf losse kleurstalen en eenvoudige vlaggen in alleen die zes kleuren (sommige lijken op echte vlaggen; dat is het punt), eigen tekenwerk.',
   },
   scenes: [
     { duur: 2.8, stem: 'These colours were picked to match every flag in the world.', stemStart: 0.05, camera: { zoom: [1, 1.05], stoot: [0.15] }, geluid: [[0.12, 'klap'], [0.12, 'boem', 0.7]],
