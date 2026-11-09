@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T13:33:00+01:00",
+  "tijd": "2026-11-09T13:39:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-09T10:35:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-09T13:33:00+01:00 Keurlijst Instagram-bijschriften YS11–YS32: docs/keurlijst-instagram-YS11-YS32.md",
     "2026-11-09T13:03:00+01:00 YS01 en YS02 geplaatst op Instagram kanaal 1 (run 42613214266, met de hand gestart in de Chrome van Andries); profiel toont 2 berichten",
@@ -73,11 +73,10 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
-  "volgende": "Andries: bijschrift OK YS11–YS32; daarna Instagram-versies maken en inplannen gelijk met YouTube (17 nov – 8 dec 18:00). Weekverslag ma 9 nov (cijfers via Eva). Nieuwe content YS33+ na de eerste cijfers",
+  "bezig": "Nieuwe shorts YS33–YS39 (verbeterde vorm) voor Instagram kanaal 1, 17–23 nov",
+  "volgende": "YS33–YS39 maken in de verbeterde vorm (Instagram 17–23 nov, YouTube vanaf 9 dec), ter keuring met stijl OK; daarna YS40–YS54. Weekverslag ma 9 nov (cijfers via Eva)",
   "kanNietVerder": null,
   "vragen": [
-    "bijschrift OK YS11 t/m YS32 (Instagram kanaal 1)? · niets in de planning zonder OK · ondertussen: weekverslag · blokkeert: ja, voor Instagram na 16 nov",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
       "aanname": "laten staan (advies: de eerste drie dagen zonder stem zijn een nuttige vergelijking; vervangen kost een upload per short en raakt al geplande video's)",
@@ -86,6 +85,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-09T13:39:00+01:00 Andries in sessie: \"ik wil voor instagram vooraad bij te vullen tot dat die gelijk is aan youtube, aleen wil ik hier nieuwe videos voor maken, zodat we alvast de verbteringen kunnen toepassen ect\"; keuzes: \"Mijn voorstel\" (verbeteringen), \"Ja, als YS33+\", \"Eerst 7, dan de rest\"",
     "2026-11-09T13:30:00+01:00 Andries in sessie: \"oke de instagram voorraad doen we net zo ver vooruit krijgen als youtube, hier gaan we dan wel nieuwe content voor maken\"",
     "2026-11-09T13:03:00+01:00 Chrome van Andries: workflow \"Plaatsen op Instagram\" met de hand gestart (Run workflow, zonder proef) → YS01 en YS02 geplaatst 12:59; profiel van kanaal 1 nagekeken: 2 berichten, omslagen YS01 en YS02.",
     "2026-11-09T12:56:00+01:00 Andries in sessie: \"post nu wat er al gepost kan worden zodat we alvast op schema lopen\"",

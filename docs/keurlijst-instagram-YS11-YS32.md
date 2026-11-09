@@ -1,5 +1,7 @@
 # Keurlijst Instagram-bijschriften kanaal 1 · YS11–YS32
 
+**VERVALLEN** (Andries, ma 9 nov 2026 ±13:39): Instagram krijgt vanaf 17 nov nieuwe video's (YS33 en verder) in plaats van YS11–YS32. Deze lijst blijft als archief.
+
 **Gemaakt:** ma 9 nov 2026 — Manon, op "oke de instagram voorraad doen we net zo ver vooruit krijgen als youtube" van Andries.
 
 Na **"bijschrift OK <code>"** (of één antwoord voor alle 22) gaat elke short op Instagram kanaal 1 op dezelfde dag en tijd als op YouTube (18:00), t/m YS32 op di 8 dec. Het "pakket OK" dat er al is, dekt video, script, bronnen en titel.
