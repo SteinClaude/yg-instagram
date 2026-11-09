@@ -1,6 +1,12 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 9 nov 2026, 12:05 — Eva (automaat nagekeken en goedgekeurd)
+**Bijgewerkt:** ma 9 nov 2026, 13:10 — Eva (profiel en groeipad)
+
+## ▶ NU — ma 9 nov 13:10 (Eva): je profiel en groeipad staan in je CLAUDE.md
+
+Andries en Eva hebben je doorgenomen in de nieuwe verbeterkamer (eerste proef). **Andries via chat met Eva, ma 9 nov 2026 13:03**, op de vraag of het voorstel er zo in mag: *"ok"*.
+
+Lees het nieuwe blok **"Profiel en groeipad"** onderaan je `CLAUDE.md` en werk er vanaf nu naar: toon creatief en enthousiast; planning/volgorde en proeven beslis je zelf (achteraf melden); hoe-vragen zelf, wat-vragen naar Andries; vanaf YS33 haak in 2 seconden, nieuwsgierige titels en een sterker einde; elke maandag top 3, flop 3 en 1 proef; één groot idee per week; zelfevaluatie bij elk weekverslag. Je groeipad loopt tot het gesprek van **ma 7 dec 2026**: (1) Instagram loopt, (2) haak in elke short, (3) weekanalyse elke maandag. De harde regels zijn niet veranderd. Zet dit blok in `ontvangen`.
 
 ## ▶ ERBIJ — ma 9 nov 12:05 (Eva): automaat Instagram kanaal 1 nagekeken en goedgekeurd — ga verder
 
