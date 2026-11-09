@@ -140,11 +140,21 @@ function toetsen(rijen, { x0 = 100, y0 = 1000, toets = 78, gat = 10, inspring = 
 
 // ---------------------------------------------------------------- frame
 // Kop: dossiernummer en onderwerp, klein, in mono. Onder: bronregel.
-function kader(script, scene, t) {
+function kader(script, scene, t, abs = 0) {
   let s = `<rect width="${W}" height="${H}" fill="${scene.nacht ? K.nacht : K.papier}"/>`;
   // fijne lijnen als papier van een dossier
   if (!scene.nacht) for (let y = 160; y < H; y += 96) s += `<line x1="0" y1="${y}" x2="${W}" y2="${y}" stroke="#E2DBCD" stroke-width="2"/>`;
   const kleur = scene.nacht ? '#C9C6BC' : K.grijs;
+  if ((script.stijl || 1) >= 2) {
+    // Stijl 2: het nummer als rood dossierlabel, en de lijn eronder loopt rood vol terwijl de short speelt (voortgang).
+    const nb = maat(FONT.mono, script.nummer, 34), p = klem(abs / totaal(script));
+    s += `<rect x="86" y="196" width="${(nb + 28).toFixed(1)}" height="52" rx="6" fill="${K.signaal}"/>`;
+    s += `<text x="100" y="234" font-family="IBM Plex Mono" font-size="34" fill="#FFFFFF" font-weight="700">${esc(script.nummer)}</text>`;
+    s += `<text x="${100 + nb + 34}" y="234" font-family="IBM Plex Mono" font-size="34" fill="${kleur}">${esc(script.onderwerp)}</text>`;
+    s += `<line x1="100" y1="264" x2="980" y2="264" stroke="${scene.nacht ? '#3A3F52' : K.inkt}" stroke-width="3"/>`;
+    if (p > 0) s += `<line x1="100" y1="264" x2="${(100 + 880 * p).toFixed(1)}" y2="264" stroke="${K.signaal}" stroke-width="7" stroke-linecap="round"/>`;
+    return s;
+  }
   s += `<text x="100" y="236" font-family="IBM Plex Mono" font-size="34" fill="${K.signaal}" font-weight="700">${esc(script.nummer)}</text>`;
   s += `<text x="${100 + maat(FONT.mono, script.nummer, 34) + 24}" y="236" font-family="IBM Plex Mono" font-size="34" fill="${kleur}">${esc(script.onderwerp)}</text>`;
   s += `<line x1="100" y1="264" x2="980" y2="264" stroke="${scene.nacht ? '#3A3F52' : K.inkt}" stroke-width="3"/>`;
@@ -180,23 +190,43 @@ function foto(pad, { x = -40, y = -40, w = W + 80, h = H + 80, t = 0, duur = 1, 
   const id = `fv${x | 0}_${y | 0}_${w | 0}_${h | 0}`;
   return `<defs><clipPath id="${id}"><rect x="${x}" y="${y}" width="${w}" height="${h}"/></clipPath></defs><g clip-path="url(#${id})">${img}</g>`;
 }
-function bronRegel(tekst, t, start, nacht) {
+// Stijl 2: de bron als stempel op het dossier (rood label SOURCE + de bron), die met een kleine klap neerkomt.
+function bronStempel(tekst, t, start, nacht) {
+  const u = (t - start) / 0.22; if (u <= 0 || !tekst) return '';
+  const lab = 'SOURCE', gl = 24; let g = 28;
+  const lb = maat(FONT.mono, lab, gl) + 24;
+  while (g > 20 && lb + maat(FONT.mono, tekst, g) + 40 > 860) g -= 1;
+  const bw = lb + maat(FONT.mono, tekst, g) + 34, x = 100, y = 1326, h = 50;
+  const sc = 1 + 0.45 * (1 - B.veer(u, 1.2)), op = klem(u * 3);
+  return `<g opacity="${op.toFixed(3)}" transform="translate(${x} ${y + h / 2}) rotate(-1.2) scale(${sc.toFixed(4)}) translate(${-x} ${-(y + h / 2)})">`
+    + `<rect x="${x}" y="${y}" width="${bw.toFixed(1)}" height="${h}" rx="5" fill="${nacht ? '#232738' : '#F7F2E6'}" stroke="${K.signaal}" stroke-width="3.5"/>`
+    + `<rect x="${x}" y="${y}" width="${lb.toFixed(1)}" height="${h}" rx="5" fill="${K.signaal}"/>`
+    + `<text x="${x + 12}" y="${y + 34}" font-family="IBM Plex Mono" font-weight="700" font-size="${gl}" fill="#FFFFFF">${lab}</text>`
+    + `<text x="${(x + lb + 16).toFixed(1)}" y="${y + 34}" font-family="IBM Plex Mono" font-size="${g}" fill="${nacht ? '#E8E4DA' : K.inkt}" xml:space="preserve">${esc(tekst)}</text></g>`;
+}
+function bronRegel(tekst, t, start, nacht, stijl = 1) {
+  if (stijl >= 2) return bronStempel(tekst, t, start, nacht);
   const p = fase(t, start, 0.5); if (p <= 0 || !tekst) return '';
   return blok('Source: ' + tekst, { y: 1330, g: 30, gewicht: 'mono', kleur: nacht ? '#C9C6BC' : K.grijs, accent: K.signaal, t, start, max: 800, regelHoogte: 1.3 }).svg;
 }
 
-const HULP = () => ({ K, blok, fase, zacht, uit, klem, stopbord, vorm, klok, toetsen, veelhoek, W, H, esc, maat, FONT,
-  kin: B.kin, veer: B.veer, foto });
+const HULP = (script = {}) => ({ K, blok, fase, zacht, uit, klem, stopbord, vorm, klok, toetsen, veelhoek, W, H, esc, maat, FONT,
+  kin: (tekst, o = {}) => B.kin(tekst, { stijl: script.stijl || 1, ...o }), veer: B.veer, foto });
 // Eén volledig beeld van een scène op tijd t (achtergrond, kop, inhoud, bronregel), zonder <svg>-omhulsel.
-function beeldVan(script, scene, t) {
-  const inhoud = scene.teken({ t, duur: scene.duur, ...HULP() });
+function beeldVan(script, scene, t, abs = 0) {
+  const inhoud = scene.teken({ t, duur: scene.duur, ...HULP(script) });
   if (script.versie !== 2) return `${kader(script, scene, t)}${inhoud}${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht)}`;
   if (script.kanaal === 2) { const cam = B.camera(t, scene.duur, scene.camera), achter = scene.achter ? scene.achter({ t, duur: scene.duur, ...HULP() }) : '';
     return `${kader2(script)}<g transform="${cam}">${achter}</g>${verloop2()}<g transform="${cam}">${inhoud}</g>` +
     `${kop2(script)}${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, true)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`; }
   const licht = scene.nacht ? '' : `<rect width="${W}" height="${H}" fill="url(#licht)"/>`;
-  return `${kader(script, scene, t)}${licht}<g transform="${B.camera(t, scene.duur, scene.camera)}">${inhoud}</g>` +
-    `${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`;
+  if ((script.stijl || 1) >= 2) {   // stijl 2: het licht valt op het papier, niet over het rode label en de voortgangslijn
+    const k = kader(script, scene, t, abs), knip = k.indexOf('<rect x="86"');
+    return `${k.slice(0, knip)}${licht}${k.slice(knip)}<g transform="${B.camera(t, scene.duur, scene.camera)}">${inhoud}</g>` +
+      `${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht, script.stijl)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`;
+  }
+  return `${kader(script, scene, t, abs)}${licht}<g transform="${B.camera(t, scene.duur, scene.camera)}">${inhoud}</g>` +
+    `${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht, script.stijl)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`;
 }
 function svgVoor(script, tijd) {
   let t0 = 0;
@@ -205,9 +235,9 @@ function svgVoor(script, tijd) {
     const scene = sc[i];
     if (tijd < t0 + scene.duur || i === sc.length - 1) {
       const t = tijd - t0;
-      let lijf = beeldVan(script, scene, t);
+      let lijf = beeldVan(script, scene, t, tijd);
       if (script.versie === 2 && scene.in && i > 0 && t < B.OVERGANG_DUUR) {
-        const vorige = beeldVan(script, sc[i - 1], sc[i - 1].duur - 0.001);
+        const vorige = beeldVan(script, sc[i - 1], sc[i - 1].duur - 0.001, t0 - 0.001);
         lijf = B.overgang(scene.in, B.uit(t / B.OVERGANG_DUUR), vorige, lijf, i);
       }
       // Lus (vorm 3, vanaf YS33): de laatste `script.lus` seconden vloeien over in het eerste beeld van de short,
@@ -226,6 +256,7 @@ function geluidLijst(script) {
   const lijst = []; let t0 = 0;
   script.scenes.forEach((s, i) => {
     if (s.in && i > 0) lijst.push([Math.max(0, t0 - 0.16), 'whoosh', 0.55]);
+    if ((script.stijl || 1) >= 2 && s.bron) lijst.push([t0 + (s.bronStart ?? 0.6), 'stempel', 0.45]);
     for (const [t, naam, vol, pan] of s.geluid || []) lijst.push([t0 + (t < 0 ? s.duur + t : t), naam, vol ?? 1, pan ?? 0]);   // negatieve tijd = vanaf het eind van de scène
     t0 += s.duur;
   });
@@ -285,9 +316,10 @@ function mengStem(pcm, sporen) {
   return pcm;
 }
 
-async function maak(code, alleenBeelden) {
+async function maak(code, alleenBeelden, opties = {}) {
   const script = require(path.join(WORTEL, 'teksten', 'shorts', code + '.cjs'));
-  const map = path.join(WORTEL, 'pakketten', script.map);
+  if (opties.stijl) script.stijl = opties.stijl;   // --stijl 2: proef met de nieuwe stijl zonder het script te wijzigen
+  const map = opties.map ? path.resolve(opties.map) : path.join(WORTEL, 'pakketten', script.map);
   fs.mkdirSync(path.join(map, 'bron'), { recursive: true });
   const stemSporen = voorbereidStem(script, map);
   const duur = totaal(script), n = Math.round(duur * FPS);
@@ -355,8 +387,8 @@ async function controleBlad(script, map, doel) {
 }
 
 if (require.main === module) {
-  const [code, vlag] = process.argv.slice(2);
-  if (!code) { console.error('gebruik: node gereedschap/short.cjs YS01 [--frames]'); process.exit(1); }
-  maak(code, vlag === '--frames').catch(e => { console.error(e); process.exit(1); });
+  const a = process.argv.slice(2), code = a[0], waarde = v => { const i = a.indexOf(v); return i > 0 ? a[i + 1] : undefined; };
+  if (!code) { console.error('gebruik: node gereedschap/short.cjs YS01 [--frames] [--stijl 2] [--map <uitvoermap>]'); process.exit(1); }
+  maak(code, a.includes('--frames'), { stijl: Number(waarde('--stijl')) || 0, map: waarde('--map') }).catch(e => { console.error(e); process.exit(1); });
 }
 module.exports = { maak, svgVoor, teken, K, geluidLijst };

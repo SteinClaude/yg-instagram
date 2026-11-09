@@ -20,7 +20,10 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
   // weg: tijd waarop de woorden er snel weer uit vliegen (voor een scène die met een nieuwe zin verdergaat).
   function kin(tekst, o = {}) {
     const { x = 100, y, g = 96, max = 880, t, start = 0, stap = 0.085, duurW = 0.36, gewicht = 'bold',
-      kleur = K.inkt, accent = K.signaal, midden = false, regelHoogte = 1.1, nadruk = 'kleur', balk = K.geel, weg = null } = o;
+      kleur = K.inkt, accent = K.signaal, midden = false, regelHoogte = 1.1, nadruk = 'kleur', balk = K.geel, weg = null, stijl = 1 } = o;
+    // Stijl 2 (proef ma 9 nov 2026): een markeerstift die onder het sleutelwoord doorhaalt nadat het is geland (op donker
+    // papier een rode onderstreping) en een lichte drukschaduw onder de letters.
+    const markeer = stijl >= 2 && nadruk === 'kleur', donker = kleur !== K.inkt;
     const font = gewicht === 'bold' ? FONT.bold : gewicht === 'mono' ? FONT.mono : FONT.regular;
     const fam = gewicht === 'mono' ? 'IBM Plex Mono' : 'Instrument Sans', fw = gewicht === 'regular' ? 400 : 700;
     const regels = breek(tekst, g, max, font), sp = maat(font, ' ', g);
@@ -30,8 +33,8 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
       const breedte = r.reduce((a, z, j) => a + maat(font, z.w, g) + (j ? sp : 0), 0);
       let cx0 = midden ? (W - breedte) / 2 : x;
       const by = y + g * 0.82 + ri * g * regelHoogte;
-      for (const z of r) {
-        const wb = maat(font, z.w, g), ts = start + i * stap, u = (t - ts) / duurW;
+      for (let j = 0; j < r.length; j++) {
+        const z = r[j], wb = maat(font, z.w, g), ts = start + i * stap, u = (t - ts) / duurW;
         const acc = z.stukken.some(s => s.accent);
         if (u > 0 && wegP < 1) {
           const p = veer(u), op = klem(u * 2.6) * (1 - wegP);
@@ -44,6 +47,17 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
             const bw = uit((t - ts - 0.1) / 0.3);
             if (bw > 0) w += `<rect x="${(cx0 - 12).toFixed(1)}" y="${(by - g * 0.8).toFixed(1)}" width="${((wb + 24) * bw).toFixed(1)}" height="${(g * 1.0).toFixed(1)}" rx="8" fill="${balk}"/>`;
           }
+          if (acc && markeer) {
+            const mw = uit((t - ts - duurW * 0.55) / 0.24);
+            if (mw > 0) {
+              const verder = j < r.length - 1 && r[j + 1].stukken.some(s => s.accent);
+              const x0 = cx0 - 10, x1 = cx0 + wb + (verder ? sp : 10), xe = x0 + (x1 - x0) * mw;
+              if (donker) w += `<rect x="${x0.toFixed(1)}" y="${(by + g * 0.1).toFixed(1)}" width="${(xe - x0).toFixed(1)}" height="${(g * 0.09).toFixed(1)}" rx="${(g * 0.045).toFixed(1)}" fill="${K.signaal}"/>`;
+              else { const yb = by - g * 0.4, yo = by + g * 0.07;
+                w += `<polygon points="${x0.toFixed(1)},${(yb + 5).toFixed(1)} ${xe.toFixed(1)},${yb.toFixed(1)} ${(xe + 4).toFixed(1)},${(yo - 3).toFixed(1)} ${(x0 - 3).toFixed(1)},${yo.toFixed(1)}" fill="${K.geel}" opacity="0.62"/>`; }
+            }
+          }
+          if (stijl >= 2) w += `<text x="${(cx0 + g * 0.035).toFixed(1)}" y="${(by + g * 0.05).toFixed(1)}" font-family="${fam}" font-weight="${fw}" font-size="${g}" fill="#000000" opacity="${donker ? 0.35 : 0.11}" xml:space="preserve">${esc(z.w)}</text>`;
           const spans = z.stukken.map(st => `<tspan fill="${st.accent ? (nadruk === 'balk' ? kleur : accent) : kleur}">${esc(st.s)}</tspan>`).join('');
           w += `<text x="${cx0.toFixed(1)}" y="${by.toFixed(1)}" font-family="${fam}" font-weight="${fw}" font-size="${g}" xml:space="preserve">${spans}</text>`;
           svg += `<g opacity="${op.toFixed(3)}" transform="translate(${cx.toFixed(1)} ${(cy + dy).toFixed(1)}) scale(${sc.toFixed(4)}) translate(${(-cx).toFixed(1)} ${(-cy).toFixed(1)})">${w}</g>`;

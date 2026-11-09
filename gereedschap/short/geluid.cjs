@@ -25,6 +25,8 @@ const EFFECTEN = {
   ding: 'aevalsrc=0.6*sin(2*PI*1318.5*t)*exp(-4*t)+0.25*sin(2*PI*2637*t)*exp(-6*t):d=1.0',
   // plop voor een woord of vorm die binnenkomt
   pop: 'aevalsrc=0.8*sin(2*PI*(1250*t-5200*t*t))*exp(-28*t):d=0.12',
+  // stempel die op papier neerkomt (stijl 2: bronstempel)
+  stempel: 'anoisesrc=d=0.12:c=brown:a=1,lowpass=f=1200,afade=t=out:d=0.12:curve=exp',
   // ruis van een draaiende teller
   rol: 'anoisesrc=d=0.6:c=brown:a=0.6,bandpass=f=1800:width_type=h:w=1400,afade=t=in:d=0.08,afade=t=out:st=0.35:d=0.25',
 };
