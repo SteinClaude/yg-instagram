@@ -1,3 +1,4 @@
+KLAAR: plan Reels op Instagram kanaal 1 via de automaat (docs/plan-instagram-kanaal-1.md): stappen voor Andries, aanpassing automaat (niet gebouwd), bijloopritme, vorm bijschrift; wacht op besluit wie bouwt · ma 9 nov 10:45
 KLAAR: stand nagelopen op vraag van Andries (zo 8 nov ±21:07): Studio kanaal 1 gepland t/m 8 dec 18:00, niets in te plannen; YS33–YS39 pas na de eerste cijfers of op zijn woord · zo 8 nov 21:08
 KLAAR: Instagram kanaal 1 — profielfoto (YK01) en bio (Kort B, 149 tekens) gezet in het venster van Andries, na "bio OK kanaal 1" (zo 8 nov ±14:34); Instagram meldt "Profiel opgeslagen." en het profiel toont foto en bio. Weergavenaam niet gewijzigd (zit in het Accountcentrum; Andries koos geen optie), geen link, verder niets aangeraakt · zo 8 nov 14:43
 KLAAR: YS26–YS32 ingepland in YouTube Studio (kanaal 1), 2 t/m 8 dec 2026 om 18:00, na pakket OK ("Alle zeven OK", zo 8 nov ±14:11); Studio meldt per video "Video gepland" en de lijst toont Gepland · zo 8 nov 14:30
@@ -148,7 +149,7 @@ KLAAR: pakket YS01 klaar (niet ingepland) · adcf422
 KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reeksen, pakketformaat short, ritme 7/week, API later) · 634997a
 
 ## Besluiten met Andries
-
+- Andries in de sessie van Manon, ma 9 nov 2026 ±10:35: "zullen we de shorts die gemaakt zijn ook inplannen voor het instagram kanaal, dit wil ik het zelfde als voor het ygdigital.nl instagram, we plannen dat in via een extrene die plaats het dan automatisch ect". Op de keuzes daarna (±10:38): ritme "de short die al online staan plaatsen we dan op instagram zodat we bij lopen en dan is het daarna gelijk met youtube"; bijschrift "Eerst een keurlijst"; automaat "Eerst alleen een plan" → plan in docs/plan-instagram-kanaal-1.md, nog niets gebouwd of ingepland
 - Andries in de sessie van Manon, zo 8 nov 2026 ±21:15, op de vraag wanneer YS33–YS39 (9–15 dec) gemaakt worden: "Na eerste cijfers" → eerst het weekverslag met de eerste cijfers, daarna de onderwerpen en lengte van YS33–YS39 daarop afstemmen
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:40, op de vraag of het actieve Instagram-account dat van kanaal 1 is: "Ja, dat is kanaal 1"; op de vraag over de weergavenaam (Accountcentrum): geen keuze → naam niet gewijzigd
 - Andries in de sessie van Manon, zo 8 nov 2026 ±14:34: "bio OK kanaal 1". Daarna, op de vraag welke korte versie (Instagram max. 150 tekens; de goedgekeurde bio is ±390): "Kort B (149)" = "Why is a stop sign octagonal? / One ordinary thing a day, and how it got that way. Always with sources. / New every day, 18:00 (Amsterdam). / By YG Digital"; weergavenaam: "Zelfde als YouTube" (met spatie; gebruikersnaam blijft); link: "Geen link"
