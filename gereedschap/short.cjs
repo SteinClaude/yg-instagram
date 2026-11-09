@@ -140,21 +140,36 @@ function toetsen(rijen, { x0 = 100, y0 = 1000, toets = 78, gat = 10, inspring = 
 
 // ---------------------------------------------------------------- frame
 // Kop: dossiernummer en onderwerp, klein, in mono. Onder: bronregel.
+// Stijl 2 (Andries ma 9 nov 2026: geen nummer meer bovenaan): papier met structuur in plaats van een egale kleur, geen
+// kop. Het papier wordt één keer gemaakt (vezels + vlekken met feTurbulence) en als beeld hergebruikt.
+const PAPIER = {};
+function papierBeeld(nacht) {
+  const k = nacht ? 'nacht' : 'dag';
+  if (!PAPIER[k]) {
+    const basis = nacht ? K.nacht : K.papier;
+    const [vr, vg, vb, va] = nacht ? [0.55, 0.6, 0.8, 0.10] : [0.42, 0.34, 0.22, 0.16];
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}"><defs>`
+      + `<filter id="v" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="7"/><feColorMatrix type="matrix" values="0 0 0 0 ${vr}  0 0 0 0 ${vg}  0 0 0 0 ${vb}  0 0 0 ${va} 0"/></filter>`
+      + `<filter id="m" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.0035 0.005" numOctaves="3" seed="11"/><feColorMatrix type="matrix" values="0 0 0 0 ${vr}  0 0 0 0 ${vg}  0 0 0 0 ${vb}  0 0 0 ${va * 0.9} 0"/></filter></defs>`
+      + `<rect width="${W}" height="${H}" fill="${basis}"/><rect width="${W}" height="${H}" filter="url(#m)"/><rect width="${W}" height="${H}" filter="url(#v)"/>`
+      + (nacht ? '' : Array.from({ length: 20 }, (_, i) => `<line x1="0" y1="${160 + i * 96}" x2="${W}" y2="${160 + i * 96}" stroke="#D8CFBE" stroke-width="2" opacity="0.55"/>`).join(''))
+      + `</svg>`;
+    PAPIER[k] = 'data:image/png;base64,' + Buffer.from(teken(svg).asPng()).toString('base64');
+  }
+  return PAPIER[k];
+}
+// Voortgangsbalk (stijl 2): dun spoor bovenaan het veilige vlak, loopt rood vol terwijl de short speelt.
+function voortgang(script, scene, abs) {
+  const p = klem(abs / totaal(script)), y = 212;
+  return `<rect x="100" y="${y}" width="880" height="8" rx="4" fill="${scene.nacht ? '#FFFFFF' : K.inkt}" opacity="${scene.nacht ? 0.14 : 0.1}"/>`
+    + (p > 0 ? `<rect x="100" y="${y}" width="${Math.max(8, 880 * p).toFixed(1)}" height="8" rx="4" fill="${K.signaal}"/>` : '');
+}
 function kader(script, scene, t, abs = 0) {
+  if ((script.stijl || 1) >= 2) return `<image href="${papierBeeld(scene.nacht)}" x="0" y="0" width="${W}" height="${H}"/>`;
   let s = `<rect width="${W}" height="${H}" fill="${scene.nacht ? K.nacht : K.papier}"/>`;
   // fijne lijnen als papier van een dossier
   if (!scene.nacht) for (let y = 160; y < H; y += 96) s += `<line x1="0" y1="${y}" x2="${W}" y2="${y}" stroke="#E2DBCD" stroke-width="2"/>`;
   const kleur = scene.nacht ? '#C9C6BC' : K.grijs;
-  if ((script.stijl || 1) >= 2) {
-    // Stijl 2: het nummer als rood dossierlabel, en de lijn eronder loopt rood vol terwijl de short speelt (voortgang).
-    const nb = maat(FONT.mono, script.nummer, 34), p = klem(abs / totaal(script));
-    s += `<rect x="86" y="196" width="${(nb + 28).toFixed(1)}" height="52" rx="6" fill="${K.signaal}"/>`;
-    s += `<text x="100" y="234" font-family="IBM Plex Mono" font-size="34" fill="#FFFFFF" font-weight="700">${esc(script.nummer)}</text>`;
-    s += `<text x="${100 + nb + 34}" y="234" font-family="IBM Plex Mono" font-size="34" fill="${kleur}">${esc(script.onderwerp)}</text>`;
-    s += `<line x1="100" y1="264" x2="980" y2="264" stroke="${scene.nacht ? '#3A3F52' : K.inkt}" stroke-width="3"/>`;
-    if (p > 0) s += `<line x1="100" y1="264" x2="${(100 + 880 * p).toFixed(1)}" y2="264" stroke="${K.signaal}" stroke-width="7" stroke-linecap="round"/>`;
-    return s;
-  }
   s += `<text x="100" y="236" font-family="IBM Plex Mono" font-size="34" fill="${K.signaal}" font-weight="700">${esc(script.nummer)}</text>`;
   s += `<text x="${100 + maat(FONT.mono, script.nummer, 34) + 24}" y="236" font-family="IBM Plex Mono" font-size="34" fill="${kleur}">${esc(script.onderwerp)}</text>`;
   s += `<line x1="100" y1="264" x2="980" y2="264" stroke="${scene.nacht ? '#3A3F52' : K.inkt}" stroke-width="3"/>`;
@@ -211,7 +226,8 @@ function bronRegel(tekst, t, start, nacht, stijl = 1) {
 }
 
 const HULP = (script = {}) => ({ K, blok, fase, zacht, uit, klem, stopbord, vorm, klok, toetsen, veelhoek, W, H, esc, maat, FONT,
-  kin: (tekst, o = {}) => B.kin(tekst, { stijl: script.stijl || 1, ...o }), veer: B.veer, foto });
+  kin: (tekst, o = {}) => B.kin(tekst, { stijl: script.stijl || 1, ...o }), veer: B.veer, foto,
+  stijl: script.stijl || 1, krabbel: B.krabbel });
 // Eén volledig beeld van een scène op tijd t (achtergrond, kop, inhoud, bronregel), zonder <svg>-omhulsel.
 function beeldVan(script, scene, t, abs = 0) {
   const inhoud = scene.teken({ t, duur: scene.duur, ...HULP(script) });
@@ -220,9 +236,8 @@ function beeldVan(script, scene, t, abs = 0) {
     return `${kader2(script)}<g transform="${cam}">${achter}</g>${verloop2()}<g transform="${cam}">${inhoud}</g>` +
     `${kop2(script)}${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, true)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`; }
   const licht = scene.nacht ? '' : `<rect width="${W}" height="${H}" fill="url(#licht)"/>`;
-  if ((script.stijl || 1) >= 2) {   // stijl 2: het licht valt op het papier, niet over het rode label en de voortgangslijn
-    const k = kader(script, scene, t, abs), knip = k.indexOf('<rect x="86"');
-    return `${k.slice(0, knip)}${licht}${k.slice(knip)}<g transform="${B.camera(t, scene.duur, scene.camera)}">${inhoud}</g>` +
+  if ((script.stijl || 1) >= 2) {   // stijl 2: geen kop; voortgangsbalk boven het licht
+    return `${kader(script, scene, t, abs)}${licht}<g transform="${B.camera(t, scene.duur, scene.camera)}">${inhoud}</g>${voortgang(script, scene, abs)}` +
       `${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht, script.stijl)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`;
   }
   return `${kader(script, scene, t, abs)}${licht}<g transform="${B.camera(t, scene.duur, scene.camera)}">${inhoud}</g>` +

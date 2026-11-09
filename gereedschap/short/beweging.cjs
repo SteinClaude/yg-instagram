@@ -122,5 +122,39 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
 <radialGradient id="vignet" cx="0.5" cy="0.45" r="0.75"><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.38"/></radialGradient>
 </defs>`;
 
-  return { kin, camera, overgang, OVERGANG_DUUR, DEFS, veer, klem, uit, zacht };
+  // ------------------------------------------------------------ krabbels (stijl 2)
+  // Met de hand getekende aantekeningen in signaalrood die zichzelf tekenen, zoals een onderzoeker op een dossier doet:
+  //   krabbel.cirkel(cx, cy, rx, ry, { t, start })   een lus die iets omcirkelt (iets meer dan één ronde)
+  //   krabbel.pijl(x1, y1, x2, y2, { t, start })     een gebogen pijl naar iets toe
+  //   krabbel.streep(x1, y, x2, { t, start })        een onderstreping met een kleine golf
+  const dPad = pts => pts.map((p, i) => `${i ? 'L' : 'M'} ${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' ');
+  const lengte = pts => pts.reduce((a, p, i) => i ? a + Math.hypot(p[0] - pts[i - 1][0], p[1] - pts[i - 1][1]) : 0, 0);
+  const lijn = (pts, p, kleur, dikte) => { const L = lengte(pts);
+    return `<path d="${dPad(pts)}" fill="none" stroke="${kleur}" stroke-width="${dikte}" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="${L.toFixed(1)} ${(L + 10).toFixed(1)}" stroke-dashoffset="${(L * (1 - p)).toFixed(1)}"/>`; };
+  const krabbel = {
+    cirkel(cx, cy, rx, ry, { t, start = 0, duur = 0.5, kleur = K.signaal, dikte = 15, draai = -6 } = {}) {
+      const p = uit((t - start) / duur); if (p <= 0) return '';
+      const n = 72, rond = 1.13, a0 = -Math.PI * 0.62, pts = [];
+      for (let i = 0; i <= n; i++) { const f = i / n, a = a0 + rond * 2 * Math.PI * f, r = 1 + 0.035 * Math.sin(f * 9) + 0.07 * f;
+        pts.push([cx + rx * r * Math.cos(a), cy + ry * r * Math.sin(a)]); }
+      return `<g transform="rotate(${draai} ${cx} ${cy})">${lijn(pts, p, kleur, dikte)}</g>`;
+    },
+    pijl(x1, y1, x2, y2, { t, start = 0, duur = 0.4, kleur = K.signaal, dikte = 13, bocht = 0.28 } = {}) {
+      const p = uit((t - start) / duur); if (p <= 0) return '';
+      const mx = (x1 + x2) / 2 - (y2 - y1) * bocht, my = (y1 + y2) / 2 + (x2 - x1) * bocht, pts = [];
+      for (let i = 0; i <= 30; i++) { const f = i / 30; pts.push([(1 - f) ** 2 * x1 + 2 * (1 - f) * f * mx + f * f * x2, (1 - f) ** 2 * y1 + 2 * (1 - f) * f * my + f * f * y2]); }
+      let s = lijn(pts, p, kleur, dikte);
+      const q = klem((p - 0.8) / 0.2);
+      if (q > 0) { const [ax, ay] = pts[28], h = Math.atan2(y2 - ay, x2 - ax), k = 34 * q;
+        s += `<path d="M ${(x2 - k * Math.cos(h - 0.5)).toFixed(1)} ${(y2 - k * Math.sin(h - 0.5)).toFixed(1)} L ${x2} ${y2} L ${(x2 - k * Math.cos(h + 0.5)).toFixed(1)} ${(y2 - k * Math.sin(h + 0.5)).toFixed(1)}" fill="none" stroke="${kleur}" stroke-width="${dikte}" stroke-linecap="round" stroke-linejoin="round"/>`; }
+      return s;
+    },
+    streep(x1, y, x2, { t, start = 0, duur = 0.35, kleur = K.signaal, dikte = 13 } = {}) {
+      const p = uit((t - start) / duur); if (p <= 0) return '';
+      const pts = []; for (let i = 0; i <= 24; i++) { const f = i / 24; pts.push([x1 + (x2 - x1) * f, y + 5 * Math.sin(f * 7) - 6 * f]); }
+      return lijn(pts, p, kleur, dikte);
+    },
+  };
+
+  return { kin, camera, overgang, krabbel, OVERGANG_DUUR, DEFS, veer, klem, uit, zacht };
 };

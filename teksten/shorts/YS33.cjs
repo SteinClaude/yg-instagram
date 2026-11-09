@@ -67,10 +67,10 @@ module.exports = {
   scenes: [
     // 1 · HAAK (in de eerste seconde)
     { duur: 2.6, stem: 'Twitter said this symbol would never catch on.', stemStart: 0.05, camera: { zoom: [1, 1.05], stoot: [0.15] }, geluid: [[0.12, 'klap'], [0.12, 'boem', 0.7]],
-      teken: h => hekje(h, 1180, 640) + h.kin('Twitter said *#* would never catch on.', { y: 300, g: 108, t: h.t, start: 0, stap: 0.07 }).svg },
+      teken: h => hekje(h, 1180, 640) + (h.stijl >= 2 ? h.krabbel.cirkel(540, 968, 262, 262, { t: h.t, start: 1.3 }) : '') + h.kin('Twitter said *#* would never catch on.', { y: 300, g: 108, t: h.t, start: 0, stap: 0.07 }).svg },
     // 2 · augustus 2007
     { duur: 3.2, stem: 'August 2007. Chris Messina asks: how about using it for groups?', in: 'zweep', bron: CNBC, bronStart: 1.8, camera: { zoom: [1, 1.05] }, geluid: [[1.0, 'pop', 0.6]],
-      teken: h => kaart(h, 860, 'how about ', h.klem((h.t - 0.5) / 0.4), '#barcamp?') + h.kin('*August 2007*: Chris Messina asks, how about *#* for groups?', { y: 290, g: 86, t: h.t, start: 0.05 }).svg },
+      teken: h => kaart(h, 860, 'how about ', h.klem((h.t - 0.5) / 0.4), '#barcamp?') + (h.stijl >= 2 ? h.krabbel.pijl(905, 1300, 760, 1185, { t: h.t, start: 1.5 }) : '') + h.kin('*August 2007*: Chris Messina asks, how about *#* for groups?', { y: 290, g: 86, t: h.t, start: 0.05 }).svg },
     // 3 · IRC
     { duur: 3.0, stem: 'Chat rooms already used it to name their channels.', in: 'op', nacht: true, bron: NPI, bronStart: 1.6, camera: { zoom: [1, 1.04] }, geluid: [[0.6, 'tik', 0.5], [1.0, 'tik', 0.5], [1.4, 'tik', 0.5]],
       teken: h => chat(h, h.klem((h.t - 0.4) / 1.4)) + h.kin('Chat rooms already used *#* for their channels.', { y: 300, g: 90, t: h.t, start: 0.05, kleur: '#F3F0E8', accent: h.K.geel }).svg },
@@ -85,9 +85,9 @@ module.exports = {
       teken: h => [0, 1, 2].map(i => kaart(h, 580 + i * 190, '', h.klem((h.t - 0.7 - i * 0.45) / 0.35), '#sandiegofire')).join('') + h.kin('One tag. Then *everyone* used it.', { y: 300, g: 104, t: h.t, start: 0.05 }).svg },
     // 7 · OED 2014
     { duur: 3.0, stem: 'In 2014, hashtag entered the Oxford English Dictionary.', in: 'zweep', bron: REG, bronStart: 1.6, camera: { zoom: [1, 1.05], stoot: [0.3] }, geluid: [[0.3, 'klap', 0.6], [1.2, 'ding', 0.5]],
-      teken: h => boek(h, h.klem((h.t - 0.2) / 0.4)) + h.kin('*2014*: it is in the dictionary.', { y: 300, g: 108, t: h.t, start: 0.05 }).svg },
+      teken: h => boek(h, h.klem((h.t - 0.2) / 0.4)) + (h.stijl >= 2 ? h.krabbel.cirkel(505, 898, 262, 78, { t: h.t, start: 1.2 }) : '') + h.kin('*2014*: it is in the dictionary.', { y: 300, g: 108, t: h.t, start: 0.05 }).svg },
     // 8 · SLOT, loopt terug naar het begin
     { duur: 2.8, stem: 'Never catch on? Now every trend starts with it.', in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[0.3, 'stijg', 0.5]],
-      teken: h => hekje(h, 1180, 640) + h.kin('Never catch on? Every trend *starts with it*.', { y: 300, g: 100, t: h.t, start: 0.05 }).svg },
+      teken: h => hekje(h, 1180, 640) + (h.stijl >= 2 ? h.krabbel.cirkel(540, 968, 262, 262, { t: h.t, start: 1.2 }) : '') + h.kin('Never catch on? Every trend *starts with it*.', { y: 300, g: 100, t: h.t, start: 0.05 }).svg },
   ],
 };
