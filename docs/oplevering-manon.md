@@ -150,6 +150,7 @@ KLAAR: pakket YS01 klaar (niet ingepland) · adcf422
 KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reeksen, pakketformaat short, ritme 7/week, API later) · 634997a
 
 ## Besluiten met Andries
+- Andries in de sessie van Manon, ma 9 nov 2026 ±11:06, op de vraag "Mag ik de bijschriften van YS01–YS10 alvast voor de keurlijst schrijven?": "Ja, schrijf ze"
 - Andries in de sessie van Manon, ma 9 nov 2026 ±10:58, op de vraag "Laat je Manon de automaat bouwen?" (Reels Instagram kanaal 1): "Ja, Manon bouwt" → bouw op een aparte tak, Eva kijkt mee, live pas na go van Andries (B30)
 - Andries in de sessie van Manon, ma 9 nov 2026 ±10:44, op de vraag wie de aanpassing van de automaat (Reels Instagram kanaal 1) bouwt: "Later beslissen" → niets gebouwd; plan blijft liggen tot zijn besluit
 - Andries in de sessie van Manon, ma 9 nov 2026 ±10:35: "zullen we de shorts die gemaakt zijn ook inplannen voor het instagram kanaal, dit wil ik het zelfde als voor het ygdigital.nl instagram, we plannen dat in via een extrene die plaats het dan automatisch ect". Op de keuzes daarna (±10:38): ritme "de short die al online staan plaatsen we dan op instagram zodat we bij lopen en dan is het daarna gelijk met youtube"; bijschrift "Eerst een keurlijst"; automaat "Eerst alleen een plan" → plan in docs/plan-instagram-kanaal-1.md, nog niets gebouwd of ingepland

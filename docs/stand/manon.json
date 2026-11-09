@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T11:05:00+01:00",
+  "tijd": "2026-11-09T11:06:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-09T10:35:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-09T11:05:00+01:00 Automaat tweede account (Instagram kanaal 1) gebouwd op tak manon/instagram-kanaal-1 · 7fbf229; getest zonder plaatsen; nog niet live",
     "2026-11-09T10:45:00+01:00 Plan Reels op Instagram kanaal 1 via de automaat: docs/plan-instagram-kanaal-1.md (niets gebouwd of ingepland)",
@@ -67,7 +67,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "Instagram-bijschriften YS01–YS10 voor de keurlijst",
   "volgende": "Go Andries voor de automaat (na meekijken Eva); daarna zet Andries de sleutel van kanaal 1 (LEESMIJ op de tak) en draaien we de proef. Intussen: weekverslag ma 9 nov, keurlijst bijschriften YS01–YS10. Daarna YS33–YS39 op de eerste cijfers",
   "kanNietVerder": null,
   "vragen": [
@@ -80,6 +80,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-09T11:06:00+01:00 Andries in sessie: \"Ja, schrijf ze\" (bijschriften YS01–YS10 voor de keurlijst)",
     "2026-11-09T10:58:00+01:00 Andries in sessie: \"Ja, Manon bouwt\" (automaat Instagram kanaal 1)",
     "2026-11-09T10:44:00+01:00 Andries in sessie, op wie de automaat voor Instagram kanaal 1 bouwt: \"Later beslissen\"",
     "2026-11-09T10:38:00+01:00 Andries in sessie: Instagram kanaal 1 Reels via de automaat zoals bij @ygdigital.nl; ritme \"de short die al online staan plaatsen we dan op instagram zodat we bij lopen en dan is het daarna gelijk met youtube\"; bijschrift \"Eerst een keurlijst\"; automaat \"Eerst alleen een plan\"",
