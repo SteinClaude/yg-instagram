@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T12:02:00+01:00",
+  "tijd": "2026-11-09T12:22:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-09T10:35:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
     "2026-11-09T12:02:00+01:00 Automaat tweede account naar main · 853989c (go Andries via Eva 11:51)",
     "2026-11-09T11:08:00+01:00 Keurlijst Instagram-bijschriften YS01–YS10: docs/keurlijst-instagram-YS01-YS10.md",
@@ -69,7 +69,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Sleutel Instagram kanaal 1: Andries zet de geheimen, daarna proef",
+  "bezig": "Sleutel Instagram kanaal 1: Andries klikt \"Add\" (tester), accepteert de uitnodiging, maakt de sleutel en zet de twee geheimen",
   "volgende": "Andries: bijschrift OK YS01–YS10 (keurlijst) en go voor de automaat (na meekijken Eva, tak manon/instagram-kanaal-1); daarna sleutel kanaal 1 en proef. Intussen: weekverslag ma 9 nov; daarna YS33–YS39 op de eerste cijfers",
   "kanNietVerder": null,
   "vragen": [
@@ -82,6 +82,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-09T12:22:00+01:00 Chrome van Andries, op zijn verzoek (\"okedoe dit zo veel mogelijk voor mij de stappen kijk waar ik was en wat er nog moet zet dit dan zo goed mogelijk klaar voor mij\"): nagekeken dat Instagram kanaal 1 al professioneel is (Creator) en nog geen Instagram Tester in de Meta-app; venster \"Add people\" klaargezet met rol Instagram Tester en het account van kanaal 1 ingevuld — niet op Add geklikt (dat doet Andries). Geen sleutel gezien of aangeraakt.",
     "2026-11-09T11:06:00+01:00 Andries in sessie: \"Ja, schrijf ze\" (bijschriften YS01–YS10 voor de keurlijst)",
     "2026-11-09T10:58:00+01:00 Andries in sessie: \"Ja, Manon bouwt\" (automaat Instagram kanaal 1)",
     "2026-11-09T10:44:00+01:00 Andries in sessie, op wie de automaat voor Instagram kanaal 1 bouwt: \"Later beslissen\"",

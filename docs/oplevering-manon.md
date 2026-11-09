@@ -1,3 +1,4 @@
+KAN NIET VERDER: sleutel Instagram kanaal 1 · nodig: Andries klikt "Add" in het klaargezette Meta-venster, accepteert de testeruitnodiging, maakt de sleutel en zet IG_TOKEN_K1 en IG_USER_ID_K1 in GitHub · ma 9 nov 12:22
 KLAAR: automaat tweede account (Instagram kanaal 1) samengevoegd naar main (853989c), na goedkeuring Eva en go Andries via Eva (ma 9 nov 11:51); plaatst nog niets (geen item, geen sleutel) · ma 9 nov 12:02
 KLAAR: keurlijst Instagram-bijschriften kanaal 1 YS01–YS10 (docs/keurlijst-instagram-YS01-YS10.md; bestanden in pakketten/<map>/instagram/bijschrift.txt); wacht op "bijschrift OK <code>" per code · ma 9 nov 11:08
 KLAAR: automaat voor Instagram kanaal 1 gebouwd op tak manon/instagram-kanaal-1 (7fbf229): tweede account met eigen sleutel, @ygdigital.nl ongewijzigd, naam/nummer van kanaal 1 nooit in logboek of status; getest zonder plaatsen. Niet live: wacht op meekijken Eva en go van Andries (B30) · ma 9 nov 11:05
