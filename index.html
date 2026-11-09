@@ -255,7 +255,7 @@ const TABS = ['vandaag','planning','hulp'];
 // Bij een video (reel) is het kleintje een stilstaand beeld met dezelfde naam.
 const isVideo = b => /\.mp4$/i.test(b || '');
 const mini = b => 'mini/' + b.replace(/\//g,'-').replace(/\.mp4$/i, '.jpg');
-const groot = b => 'beeld/' + b;
+const groot = b => (b.startsWith('pakketten/') ? '' : 'beeld/') + b;   // kanaal 1: rechtstreeks uit het pakket
 // Hoe lang de automaat zelf nog inhaalt (INHAALUREN in src/plaatsen.cjs). Tot die
 // tijd is een item dat over zijn tijd is gewoon aan de beurt, geen mislukking:
 // de automaat draait pas om vijf over het uur.

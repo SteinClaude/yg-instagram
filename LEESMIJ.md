@@ -105,6 +105,70 @@ Vanaf dan draait hij vanzelf, elk uur.
 
 ---
 
+## Tweede account: Instagram van kanaal 1
+
+Sinds 9 nov 2026 kan de automaat ook plaatsen op het Instagram-account van
+YouTube-kanaal 1 (YG-Social). Andries besliste dat, en ook dat Manon de automaat
+bouwt (zie `docs/plan-instagram-kanaal-1.md`). Een item met `"account": "kanaal-1"`
+gaat naar dat account. Een item zonder `account` gaat zoals altijd naar @ygdigital.nl.
+
+Naam en accountnummer van kanaal 1 komen **nooit** in deze map: de map en de
+logboeken van Actions zijn openbaar. Het nummer staat alleen in de geheimen. In
+foutmeldingen haalt het script het nummer eruit.
+
+### Eenmalig instellen (Andries, ±15 minuten)
+
+1. **Professioneel account.** Open in de Instagram-app het account van kanaal 1 en
+   ga naar Instellingen → *Accounttype en hulpmiddelen* → *Overstappen naar
+   professioneel account* → **Creator**. Een Facebook-pagina is niet nodig.
+2. **Tester in de bestaande Meta-app.** Open developers.facebook.com → de app van
+   stap 2 → *App-rollen* → *Rollen* → *Instagram Testers* toevoegen. Vul daar het
+   account van kanaal 1 in. Accepteer de uitnodiging daarna in Instagram, onder
+   Instellingen → *Apps en websites* → *Uitnodigingen van testers*.
+3. **Sleutel ophalen** zoals in stap 3. Bij *Generate access tokens* staat nu ook
+   kanaal 1. Klik daar **Generate token**. Het accountnummer staat ernaast.
+4. **Controleren** op je eigen computer:
+   `node gereedschap/controleer.cjs <ACCOUNTNUMMER> "<SLEUTEL>"`
+5. **Twee geheimen** in GitHub (Settings → Secrets and variables → Actions):
+
+   | Naam | Waarde |
+   |---|---|
+   | `IG_USER_ID_K1` | het accountnummer van kanaal 1 |
+   | `IG_TOKEN_K1` | de sleutel uit punt 3 |
+
+6. **Proef** (Actions → *Plaatsen op Instagram* → *Run workflow*). Vul bij
+   *proefvideo* het adres van een Instagram-versie in, bijvoorbeeld
+   `https://steinclaude.github.io/yg-instagram/pakketten/2026-11-09-YS01-stopbord/instagram/reel.mp4`,
+   en zet *proefaccount* op `kanaal-1`. Er wordt niets geplaatst; je ziet alleen
+   of Instagram de video aanneemt.
+
+Zolang de twee geheimen ontbreken, doet kanaal 1 niet mee en blijven de items
+staan. Voor @ygdigital.nl verandert er niets.
+
+### Een short in de planning zetten (Manon)
+
+Alleen na **"pakket OK <code>"** én **"bijschrift OK <code>"** van Andries.
+
+```powershell
+node gereedschap/short/instagram.cjs <pakketmap> [--ms 800]
+#   maakt pakketten/<map>/instagram/reel.mp4 (geluid 48 kHz, ±9 MB) en omslag.jpg
+#   bijschrift.txt zet Manon zelf in dezelfde map
+node gereedschap/plan-reel.cjs --account kanaal-1 pakketten/<map>/instagram/reel.mp4 pakketten/<map>/instagram/omslag.jpg pakketten/<map>/instagram/bijschrift.txt <datum> <tijd> YSxx --proef
+#   zonder --proef: zet het item in planning.json (id <datum>-k1-ysxx)
+```
+
+De video wordt niet naar `beeld/` gekopieerd. Het item wijst rechtstreeks naar het
+pakket, en Instagram haalt hem op via GitHub Pages.
+
+### Sleutel vernieuwen
+
+Dit gaat zoals bij @ygdigital.nl, maar dan bij het geheim `IG_TOKEN_K1`. De
+waarschuwing ("Sleutel vernieuwen") noemt per account welk geheim aan de beurt is.
+In `sleutel.json` staat kanaal 1 onder `"kanaal-1"`, net als bij @ygdigital.nl
+alleen met een vingerafdruk van de sleutel.
+
+---
+
 ## Onderhoud
 
 ### Elke twee maanden: de sleutel vernieuwen

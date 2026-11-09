@@ -15,24 +15,40 @@
 // 800 ms). Zonder die velden kiest de automaat het beeld op 4 seconden. Het item mag tot 18 uur te laat nog uit,
 // omdat GitHub het uurschema soms uren overslaat.
 // Alleen gebruiken na akkoord van Gijs op deze reel. Daarna committen en pushen; de automaat plaatst hem.
+//
+// Tweede account (sinds 9 nov 2026): --account kanaal-1 zet een short van YouTube-kanaal 1 in de planning
+// voor het Instagram-account van kanaal 1. Dan:
+//   * code YSxx; video en omslag moeten in het pakket staan (pakketten/<map>/instagram/reel.mp4 en omslag.jpg,
+//     gemaakt met gereedschap/short/instagram.cjs) en worden NIET gekopieerd: het item wijst er rechtstreeks
+//     naar, zodat de openbare site niet twee keer dezelfde video draagt;
+//   * id <datum>-k1-<code>, taal en, veld "account": "kanaal-1";
+//   * alleen na "pakket OK <code>" én "bijschrift OK <code>" van Andries (C15), geciteerd in de commit.
+//   bv. node gereedschap/plan-reel.cjs --account kanaal-1 pakketten/2026-11-09-YS01-stopbord/instagram/reel.mp4 \
+//         pakketten/2026-11-09-YS01-stopbord/instagram/omslag.jpg pakketten/2026-11-09-YS01-stopbord/instagram/bijschrift.txt 2026-11-16 12:00 YS01 --proef
 const fs = require('fs'), path = require('path'), crypto = require('crypto');
 const { execFileSync } = require('child_process');
 const sharp = require('sharp');
 
 const WORTEL = path.join(__dirname, '..');
 const stop = m => { console.error('STOP: ' + m); process.exit(1); };
-const GEBRUIK = 'gebruik: node gereedschap/plan-reel.cjs <video.mp4> <omslag.jpg> <bijschrift.txt> <jjjj-mm-dd> <uu:mm> <CODE, bv. R17> [--omslag-ms 800] [--proef]';
+const GEBRUIK = 'gebruik: node gereedschap/plan-reel.cjs [--account kanaal-1] <video.mp4> <omslag.jpg> <bijschrift.txt> <jjjj-mm-dd> <uu:mm> <CODE, bv. R17 of YS01> [--omslag-ms 800] [--proef]';
+const ACCOUNTS = ['ygdigital', 'kanaal-1'];
 const args = process.argv.slice(2), pos = [];
-let PROEF = false, OMSLAG_MS = 800;
+let PROEF = false, OMSLAG_MS = 800, ACCOUNT = 'ygdigital';
 for (let i = 0; i < args.length; i++) {
   if (args[i] === '--proef') PROEF = true;
+  else if (args[i] === '--account') { ACCOUNT = args[++i]; if (!ACCOUNTS.includes(ACCOUNT)) stop(`onbekend account "${ACCOUNT}"; kies uit ${ACCOUNTS.join(', ')}`); }
   else if (args[i] === '--omslag-ms') { if (!/^\d+$/.test(args[i + 1] || '')) stop('--omslag-ms vraagt een geheel aantal milliseconden'); OMSLAG_MS = Number(args[++i]); }
   else if (args[i].startsWith('--')) stop(`onbekende optie ${args[i]}\n${GEBRUIK}`);
   else pos.push(args[i]);
 }
 const [video, omslag, bijschrift, datum, tijd, code] = pos;
-if (pos.length !== 6 || !/^\d{4}-\d{2}-\d{2}$/.test(datum || '') || !/^\d{2}:\d{2}$/.test(tijd || '') || !/^[A-Z]\d{2}$/.test(code || '')) stop(GEBRUIK);
+const K1 = ACCOUNT === 'kanaal-1';
+if (pos.length !== 6 || !/^\d{4}-\d{2}-\d{2}$/.test(datum || '') || !/^\d{2}:\d{2}$/.test(tijd || '') || !(K1 ? /^YS\d{2}$/ : /^[A-Z]\d{2}$/).test(code || '')) stop(GEBRUIK);
 for (const f of [video, omslag, bijschrift]) if (!fs.existsSync(f)) stop(`bestand niet gevonden: ${f}`);
+// kanaal 1: pad binnen de repo, onder pakketten/ (zo haalt de automaat het op via GitHub Pages)
+const inRepo = f => path.relative(WORTEL, path.resolve(f)).split(path.sep).join('/');
+if (K1) for (const f of [video, omslag]) if (!/^pakketten\/[^/]+\/instagram\//.test(inRepo(f))) stop(`${f} staat niet in pakketten/<map>/instagram/ (maak hem met gereedschap/short/instagram.cjs)`);
 
 // Datum en tijd: een bestaande dag, een bestaande tijd, en minstens een uur vooruit in Amsterdamse tijd.
 // Tijden in planning.json zijn Amsterdamse tijd; src/plaatsen.cjs rekent net zo (wandklok, als UTC-minuten).
@@ -52,15 +68,19 @@ const sha = f => crypto.createHash('sha256').update(fs.readFileSync(f)).digest('
 (async () => {
   const lees = f => JSON.parse(fs.readFileSync(path.join(WORTEL, f), 'utf8'));
   const planning = lees('planning.json'), gedaan = lees('gedaan.json');
-  const id = `${datum}-reel-${code.toLowerCase()}`;
+  const id = K1 ? `${datum}-k1-${code.toLowerCase()}` : `${datum}-reel-${code.toLowerCase()}`;
+  const vanAccount = i => (i.account || 'ygdigital') === ACCOUNT;
   const REELS = path.join(WORTEL, 'beeld', 'reels');
   if ([...planning.items, ...gedaan.items].some(i => i.id === id)) stop(`id ${id} bestaat al`);
-  if (planning.items.some(i => i.datum === datum && i.tijd === tijd)) stop(`op ${datum} ${tijd} staat al iets gepland`);
-  if (fs.readdirSync(REELS).some(f => f.startsWith(code + '.') || f.startsWith(code + '-'))) stop(`code ${code} is al in gebruik in beeld/reels`);
+  if (planning.items.some(i => vanAccount(i) && i.datum === datum && i.tijd === tijd)) stop(`op ${datum} ${tijd} staat voor ${ACCOUNT} al iets gepland`);
+  if (K1) {
+    const al = [...planning.items, ...gedaan.items].find(i => new RegExp(`-k1-${code.toLowerCase()}$`).test(i.id));
+    if (al) stop(`${code} staat voor kanaal 1 al in planning of gedaan (${al.id})`);
+  } else if (fs.readdirSync(REELS).some(f => f.startsWith(code + '.') || f.startsWith(code + '-'))) stop(`code ${code} is al in gebruik in beeld/reels`);
 
   // --- video ---
   const shaVideo = sha(video);
-  const dubbel = fs.readdirSync(REELS).filter(f => f.endsWith('.mp4')).find(f => sha(path.join(REELS, f)) === shaVideo);
+  const dubbel = K1 ? null : fs.readdirSync(REELS).filter(f => f.endsWith('.mp4')).find(f => sha(path.join(REELS, f)) === shaVideo);
   if (dubbel) stop(`precies deze video staat al als beeld/reels/${dubbel}`);
   const probe = JSON.parse(execFileSync('ffprobe', ['-v', 'error', '-show_streams', '-show_format', '-of', 'json', video]).toString());
   const v = probe.streams.find(s => s.codec_type === 'video'), a = probe.streams.find(s => s.codec_type === 'audio');
@@ -98,9 +118,12 @@ const sha = f => crypto.createHash('sha256').update(fs.readFileSync(f)).digest('
   if (tekst.length > 2200) stop(`bijschrift is ${tekst.length} tekens (max 2200)`);
   if (tags > 30) stop(`bijschrift heeft ${tags} hashtags (max 30)`);
 
-  const item = { id, datum, tijd, soort: 'bericht', taal: 'nl', beeld: [`reels/${code}.mp4`], omslag: `reels/${code}.jpg`, omslagMs: OMSLAG_MS,
-    titel: `Reel ${code}: ${tekst.split('\n')[0].slice(0, 60)}`, tekst, inhaaluren: 18, eenmalig: true };
-  console.log(`\nitem ${id} op ${leesbaar} om ${tijd} (Amsterdamse tijd): bijschrift ${tekst.length} tekens en ${tags} hashtags`);
+  const item = K1
+    ? { id, datum, tijd, soort: 'bericht', taal: 'en', account: 'kanaal-1', beeld: [inRepo(video)], omslag: inRepo(omslag), omslagMs: OMSLAG_MS,
+        titel: `Kanaal 1 ${code}: ${tekst.split('\n')[0].slice(0, 60)}`, tekst, inhaaluren: 18, eenmalig: true }
+    : { id, datum, tijd, soort: 'bericht', taal: 'nl', beeld: [`reels/${code}.mp4`], omslag: `reels/${code}.jpg`, omslagMs: OMSLAG_MS,
+        titel: `Reel ${code}: ${tekst.split('\n')[0].slice(0, 60)}`, tekst, inhaaluren: 18, eenmalig: true };
+  console.log(`\nitem ${id} (${ACCOUNT}) op ${leesbaar} om ${tijd} (Amsterdamse tijd): bijschrift ${tekst.length} tekens en ${tags} hashtags`);
   console.log('\nBIJSCHRIFT:\n' + tekst);
   if (PROEF) return console.log('\n(proef: niets geschreven)');
 
@@ -108,11 +131,16 @@ const sha = f => crypto.createHash('sha256').update(fs.readFileSync(f)).digest('
   // vastloopt op "code al in gebruik".
   const geschreven = [];
   try {
-    const doelMini = path.join(WORTEL, 'mini', `reels-${code}.jpg`), doelVideo = path.join(REELS, `${code}.mp4`), doelOmslag = path.join(REELS, `${code}.jpg`);
-    await sharp(omslag).resize({ width: 260 }).jpeg({ quality: 72 }).toFile(doelMini); geschreven.push(doelMini);
-    fs.copyFileSync(video, doelVideo); geschreven.push(doelVideo);
-    fs.copyFileSync(omslag, doelOmslag); geschreven.push(doelOmslag);
-    if (sha(doelVideo) !== shaVideo || sha(doelOmslag) !== sha(omslag)) throw new Error('kopie wijkt af van het origineel');
+    if (K1) {
+      const doelMini = path.join(WORTEL, 'mini', inRepo(omslag).replace(/\//g, '-'));
+      await sharp(omslag).resize({ width: 260 }).jpeg({ quality: 72 }).toFile(doelMini); geschreven.push(doelMini);
+    } else {
+      const doelMini = path.join(WORTEL, 'mini', `reels-${code}.jpg`), doelVideo = path.join(REELS, `${code}.mp4`), doelOmslag = path.join(REELS, `${code}.jpg`);
+      await sharp(omslag).resize({ width: 260 }).jpeg({ quality: 72 }).toFile(doelMini); geschreven.push(doelMini);
+      fs.copyFileSync(video, doelVideo); geschreven.push(doelVideo);
+      fs.copyFileSync(omslag, doelOmslag); geschreven.push(doelOmslag);
+      if (sha(doelVideo) !== shaVideo || sha(doelOmslag) !== sha(omslag)) throw new Error('kopie wijkt af van het origineel');
+    }
     planning.items.push(item);
     planning.items.sort((x, y) => (x.datum + x.tijd).localeCompare(y.datum + y.tijd));
     fs.writeFileSync(path.join(WORTEL, 'planning.json'), JSON.stringify(planning, null, 2) + '\n', 'utf8');
@@ -120,5 +148,7 @@ const sha = f => crypto.createHash('sha256').update(fs.readFileSync(f)).digest('
     for (const f of geschreven) fs.rmSync(f, { force: true });
     stop(`schrijven mislukt (${e.message}); ${geschreven.length} bestand(en) weer weggehaald, planning.json ongewijzigd`);
   }
-  console.log(`\nplanning.json bijgewerkt. Nu committen en pushen:\n  git add planning.json beeld/reels/${code}.mp4 beeld/reels/${code}.jpg mini/reels-${code}.jpg`);
+  console.log(K1
+    ? `\nplanning.json bijgewerkt. Nu committen en pushen:\n  git add planning.json ${inRepo(video)} ${inRepo(omslag)} mini/${inRepo(omslag).replace(/\//g, '-')}`
+    : `\nplanning.json bijgewerkt. Nu committen en pushen:\n  git add planning.json beeld/reels/${code}.mp4 beeld/reels/${code}.jpg mini/reels-${code}.jpg`);
 })().catch(e => stop(e.message));

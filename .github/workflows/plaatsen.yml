@@ -19,6 +19,10 @@ on:
         description: 'Proef: omslagmoment in milliseconden; leeg = 4000'
         required: false
         default: ''
+      proefaccount:
+        description: 'Proef: op welk account (ygdigital of kanaal-1)'
+        required: false
+        default: 'ygdigital'
 
 permissions:
   contents: write             # om gedaan.json terug te schrijven
@@ -43,6 +47,9 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          # tweede account: Instagram van kanaal 1 (YG-Social). Leeg = dat account doet niet mee.
+          IG_TOKEN_K1: ${{ secrets.IG_TOKEN_K1 }}
+          IG_USER_ID_K1: ${{ secrets.IG_USER_ID_K1 }}
           REPO_RAW: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
         run: node src/plaatsen.cjs
 
@@ -53,11 +60,15 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          # tweede account: Instagram van kanaal 1 (YG-Social). Leeg = dat account doet niet mee.
+          IG_TOKEN_K1: ${{ secrets.IG_TOKEN_K1 }}
+          IG_USER_ID_K1: ${{ secrets.IG_USER_ID_K1 }}
           REPO_RAW: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
           PROEF_VIDEO: ${{ github.event.inputs.proefvideo }}
           PROEF_OMSLAG: ${{ github.event.inputs.proefomslag }}
           PROEF_MS: ${{ github.event.inputs.proefms }}
-        run: node src/plaatsen.cjs --proefvideo "$PROEF_VIDEO" ${PROEF_OMSLAG:+--proefomslag "$PROEF_OMSLAG"} ${PROEF_MS:+--proefms "$PROEF_MS"}
+          PROEF_ACCOUNT: ${{ github.event.inputs.proefaccount }}
+        run: node src/plaatsen.cjs --proefvideo "$PROEF_VIDEO" ${PROEF_OMSLAG:+--proefomslag "$PROEF_OMSLAG"} ${PROEF_MS:+--proefms "$PROEF_MS"} ${PROEF_ACCOUNT:+--account "$PROEF_ACCOUNT"}
 
       # Deze stap mag NOOIT klappen. Gebeurt dat toch, dan wordt gedaan.json niet
       # bewaard, denkt de volgende run dat er nog niets geplaatst is en gaat
