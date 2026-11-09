@@ -605,6 +605,176 @@
       ],
       "inhaaluren": 18,
       "eenmalig": true
+    },
+    {
+      "id": "2026-11-09-k1-ys01",
+      "datum": "2026-11-09",
+      "tijd": "15:00",
+      "soort": "bericht",
+      "taal": "en",
+      "account": "kanaal-1",
+      "beeld": [
+        "pakketten/2026-11-09-YS01-stopbord/instagram/reel.mp4"
+      ],
+      "omslag": "pakketten/2026-11-09-YS01-stopbord/instagram/omslag.jpg",
+      "omslagMs": 2000,
+      "titel": "Kanaal 1 YS01: Why is a stop sign an octagon? It used to be yellow.",
+      "tekst": "Why is a stop sign an octagon? It used to be yellow.\n\nIn the early 1920s, US highway engineers ranked danger by shape, so drivers could react to a sign at night even when they couldn't read it. Round meant railroad crossing, the octagon meant stop, the diamond meant caution.\n\nA 1924 report picked yellow for stop signs, because red was hard to see at night. Red only came in 1954, thanks to new fade-resistant finishes.\n\nSource: U.S. Federal Highway Administration, \"The Evolution of MUTCD\" (archived, UNT Libraries).\n\nNew every day at 18:00 (Amsterdam).\n\n#history #design #roadsigns #todayilearned #everydaythings",
+      "inhaaluren": 18,
+      "eenmalig": true
+    },
+    {
+      "id": "2026-11-09-k1-ys02",
+      "datum": "2026-11-09",
+      "tijd": "18:00",
+      "soort": "bericht",
+      "taal": "en",
+      "account": "kanaal-1",
+      "beeld": [
+        "pakketten/2026-11-10-YS02-qwerty/instagram/reel.mp4"
+      ],
+      "omslag": "pakketten/2026-11-10-YS02-qwerty/instagram/omslag.jpg",
+      "omslagMs": 2000,
+      "titel": "Kanaal 1 YS02: Why isn't your keyboard in alphabetical order?",
+      "tekst": "Why isn't your keyboard in alphabetical order?\n\nThe first typewriter keyboards were. Christopher Latham Sholes, a Milwaukee printer, patented an early typewriter with colleagues in 1868, with the keys in A-to-Z order. Then he kept changing the layout for years.\n\nThe famous answer, \"to stop the keys jamming\", is contested: E and R, a very common pair, sit right next to each other. Two researchers at Kyoto University argued in 2011 that early users shaped it: telegraph operators transcribing Morse code.\n\nQWERTY won when the big typewriter makers merged in 1893 and made it the standard.\n\nSource: Smithsonian Magazine, \"Fact of Fiction? The Legend of the QWERTY Keyboard\".\n\nNew every day at 18:00 (Amsterdam).\n\n#history #keyboard #qwerty #typewriter #todayilearned",
+      "inhaaluren": 18,
+      "eenmalig": true
+    },
+    {
+      "id": "2026-11-10-k1-ys03",
+      "datum": "2026-11-10",
+      "tijd": "12:00",
+      "soort": "bericht",
+      "taal": "en",
+      "account": "kanaal-1",
+      "beeld": [
+        "pakketten/2026-11-11-YS03-spoortijd/instagram/reel.mp4"
+      ],
+      "omslag": "pakketten/2026-11-11-YS03-spoortijd/instagram/omslag.jpg",
+      "omslagMs": 2000,
+      "titel": "Kanaal 1 YS03: Why does your whole town share one clock? Blame the railways",
+      "tekst": "Why does your whole town share one clock? Blame the railways.\n\nFor most of history, every town kept its own time by the sun. In Britain, Plymouth ran about 16.5 minutes behind Greenwich, Liverpool 12 minutes. Fine, until one train timetable had to work across all of them.\n\nIn 1847 the Railway Clearing House recommended Greenwich time for every station. By 1852 the railways sent it down the telegraph, and in 1880 it became legal time in Great Britain. In the US, railroad clocks were reset on 18 November 1883: the \"Day of Two Noons\".\n\nSources: Royal Museums Greenwich, \"Why do we have Greenwich Mean Time?\"; Library of Congress, \"The Day of Two Noons\".\n\nNew every day at 18:00 (Amsterdam).\n\n#history #time #railways #clocks #todayilearned",
+      "inhaaluren": 18,
+      "eenmalig": true
+    },
+    {
+      "id": "2026-11-10-k1-ys04",
+      "datum": "2026-11-10",
+      "tijd": "18:00",
+      "soort": "bericht",
+      "taal": "en",
+      "account": "kanaal-1",
+      "beeld": [
+        "pakketten/2026-11-12-YS04-apenstaartje/instagram/reel.mp4"
+      ],
+      "omslag": "pakketten/2026-11-12-YS04-apenstaartje/instagram/omslag.jpg",
+      "omslagMs": 2000,
+      "titel": "Kanaal 1 YS04: Why is there an @ in every email address?",
+      "tekst": "Why is there an @ in every email address?\n\nIn 1971, engineer Ray Tomlinson was building an early email system at BBN. He needed a way to separate the user's name from the machine's name, and he picked a symbol that was rarely used in computing: @.\n\nHis first messages went between two computers in his own office, with the keyboards about 10 feet apart. And what did the first email say? Even he called it completely forgettable.\n\nSources: NPR, \"In memoriam: Ray Tomlinson, who put the @ sign in your email\" (2016); Internet Hall of Fame.\n\nNew every day at 18:00 (Amsterdam).\n\n#history #email #technology #internet #todayilearned",
+      "inhaaluren": 18,
+      "eenmalig": true
+    },
+    {
+      "id": "2026-11-11-k1-ys05",
+      "datum": "2026-11-11",
+      "tijd": "18:00",
+      "soort": "bericht",
+      "taal": "en",
+      "account": "kanaal-1",
+      "beeld": [
+        "pakketten/2026-11-13-YS05-postit/instagram/reel.mp4"
+      ],
+      "omslag": "pakketten/2026-11-13-YS05-postit/instagram/omslag.jpg",
+      "omslagMs": 2000,
+      "titel": "Kanaal 1 YS05: Why do Post-it Notes only half stick?",
+      "tekst": "Why do Post-it Notes only half stick?\n\nIn 1968, 3M scientist Spencer Silver discovered an adhesive made of tiny spheres: it grabbed, but it let go easily. Nobody had the right use for it, and it nearly stayed on a shelf.\n\nThen Art Fry got annoyed in his church choir: the paper bookmarks in his hymnal kept slipping out. He coated paper with the adhesive and made notes you could stick, peel off and stick again. Post-it Notes went on sale across the US in 1980.\n\nSources: Lemelson-MIT, \"Art Fry & Spencer Silver\"; National Inventors Hall of Fame, \"Spencer Silver\".\n\nNew every day at 18:00 (Amsterdam).\n\n#history #inventions #office #design #todayilearned",
+      "inhaaluren": 18,
+      "eenmalig": true
+    },
+    {
+      "id": "2026-11-12-k1-ys06",
+      "datum": "2026-11-12",
+      "tijd": "18:00",
+      "soort": "bericht",
+      "taal": "en",
+      "account": "kanaal-1",
+      "beeld": [
+        "pakketten/2026-11-14-YS06-pincode/instagram/reel.mp4"
+      ],
+      "omslag": "pakketten/2026-11-14-YS06-pincode/instagram/omslag.jpg",
+      "omslagMs": 2600,
+      "titel": "Kanaal 1 YS06: Why does your PIN have 4 digits? It was supposed to be 6.",
+      "tekst": "Why does your PIN have 4 digits? It was supposed to be 6.\n\nThe first cash machine opened in 1967 at a Barclays branch in north London. Its inventor, John Shepherd-Barron, got the idea from a chocolate bar dispenser. There were no plastic bank cards yet: the machine took special cheques.\n\nHe planned a six-digit PIN. His wife said six was too many: she could only remember four. So four became the world standard.\n\nSource: Al Jazeera English, \"Cash machine inventor dies at 84\" (2010).\n\nNew every day at 18:00 (Amsterdam).\n\n#history #money #inventions #banking #todayilearned",
+      "inhaaluren": 18,
+      "eenmalig": true
+    },
+    {
+      "id": "2026-11-13-k1-ys07",
+      "datum": "2026-11-13",
+      "tijd": "18:00",
+      "soort": "bericht",
+      "taal": "en",
+      "account": "kanaal-1",
+      "beeld": [
+        "pakketten/2026-11-15-YS07-ok/instagram/reel.mp4"
+      ],
+      "omslag": "pakketten/2026-11-15-YS07-ok/instagram/omslag.jpg",
+      "omslagMs": 2000,
+      "titel": "Kanaal 1 YS07: Why do we say OK? It started as a newspaper joke.",
+      "tekst": "Why do we say OK? It started as a newspaper joke.\n\nIn 1839, Boston newspapers were full of joke abbreviations. On 23 March 1839, the Boston Morning Post printed \"O.K.\" for \"oll korrect\", a deliberate misspelling of \"all correct\".\n\nA year later, supporters of President Martin Van Buren, born in Kinderhook, New York, called him \"Old Kinderhook\": OK, on their rally signs. Van Buren lost the election. OK stayed.\n\nSources: Michigan Public, \"TWTS: An origin story that's just 'OK'\" (2023); VOA Learning English, \"OK\" (2002).\n\nNew every day at 18:00 (Amsterdam).\n\n#history #language #words #english #todayilearned",
+      "inhaaluren": 18,
+      "eenmalig": true
+    },
+    {
+      "id": "2026-11-14-k1-ys08",
+      "datum": "2026-11-14",
+      "tijd": "18:00",
+      "soort": "bericht",
+      "taal": "en",
+      "account": "kanaal-1",
+      "beeld": [
+        "pakketten/2026-11-16-YS08-sos/instagram/reel.mp4"
+      ],
+      "omslag": "pakketten/2026-11-16-YS08-sos/instagram/omslag.jpg",
+      "omslagMs": 2000,
+      "titel": "Kanaal 1 YS08: What does SOS stand for? Nothing.",
+      "tekst": "What does SOS stand for? Nothing.\n\nIt isn't an abbreviation. SOS is one continuous Morse pattern: three dots, three dashes, three dots. It was chosen because it is simple and unmistakable. That it reads as \"SOS\" just made it easy to remember.\n\nIt came from German radio rules in 1905 and went international in Berlin in 1906. On 15 April 1912, the Titanic sent the older call, CQD, and mixed in the new one: SOS. It stopped being the official distress signal on 1 January 1998.\n\nSource: ITU News 6/2006, \"Pioneers' page\" (International Telecommunication Union).\n\nNew every day at 18:00 (Amsterdam).\n\n#history #morsecode #titanic #radio #todayilearned",
+      "inhaaluren": 18,
+      "eenmalig": true
+    },
+    {
+      "id": "2026-11-15-k1-ys09",
+      "datum": "2026-11-15",
+      "tijd": "18:00",
+      "soort": "bericht",
+      "taal": "en",
+      "account": "kanaal-1",
+      "beeld": [
+        "pakketten/2026-11-17-YS09-a4/instagram/reel.mp4"
+      ],
+      "omslag": "pakketten/2026-11-17-YS09-a4/instagram/omslag.jpg",
+      "omslagMs": 2000,
+      "titel": "Kanaal 1 YS09: Fold A4 in half and it keeps its shape. Here's why.",
+      "tekst": "Fold A4 in half and it keeps its shape. Here's why.\n\nA4 looks like a random size: 210 by 297 mm. It isn't. In ISO paper sizes, the long side divided by the short side is always the square root of two. Cut the page in half and you get the same shape again, one size smaller.\n\nA0 is exactly one square metre; halve it four times and you have A4. The idea is old: a 1786 letter by Georg Christoph Lichtenberg, a French paper-tax law of 1798, the German DIN 476 standard in 1922 and ISO 216 in 1975. Today it is used almost everywhere, except North America.\n\nSource: Markus Kuhn, \"International standard paper sizes\" (University of Cambridge).\n\nNew every day at 18:00 (Amsterdam).\n\n#history #paper #design #maths #todayilearned",
+      "inhaaluren": 18,
+      "eenmalig": true
+    },
+    {
+      "id": "2026-11-16-k1-ys10",
+      "datum": "2026-11-16",
+      "tijd": "18:00",
+      "soort": "bericht",
+      "taal": "en",
+      "account": "kanaal-1",
+      "beeld": [
+        "pakketten/2026-11-18-YS10-bug/instagram/reel.mp4"
+      ],
+      "omslag": "pakketten/2026-11-18-YS10-bug/instagram/omslag.jpg",
+      "omslagMs": 1700,
+      "titel": "Kanaal 1 YS10: This moth was the first \"actual\" computer bug. The word is o",
+      "tekst": "This moth was the first \"actual\" computer bug. The word is older.\n\nOn 9 September 1947, a team at Harvard found a moth stuck between the relay contacts of the Mark II computer. They taped it into the logbook with the note: \"First actual case of bug being found.\"\n\nThe joke only works because \"bug\" already meant a fault. In an 1878 letter, Thomas Edison wrote about \"bugs\": little faults and difficulties. Grace Hopper was there and later made the story famous. The logbook, moth included, is now at the Smithsonian.\n\nSources: Computer History Museum, \"This Day in History: September 9\"; JSTOR Daily, \"The Bug in the Computer Bug Story\".\n\nNew every day at 18:00 (Amsterdam).\n\n#history #computers #programming #technology #todayilearned",
+      "inhaaluren": 18,
+      "eenmalig": true
     }
   ]
 }

@@ -1,3 +1,4 @@
+KLAAR: Instagram kanaal 1 — YS01–YS10 in planning.json (bijloop: ma 9 nov 15:00 YS01, 18:00 YS02; di 10 nov 12:00 YS03, 18:00 YS04; daarna elke dag 18:00 gelijk met YouTube t/m YS10 ma 16 nov), na pakket OK en bijschrift OK ("Alle tien OK"); geen AI-label (besluit Andries) · ma 9 nov 12:45
 KLAAR: proef Instagram kanaal 1 geslaagd (Actions-run 42610270333): Instagram nam video en eigen omslag van YS01 aan, niets gepubliceerd; geheimen staan (Andries) · ma 9 nov 12:39
 KAN NIET VERDER: sleutel Instagram kanaal 1 · nodig: Andries klikt "Add" in het klaargezette Meta-venster, accepteert de testeruitnodiging, maakt de sleutel en zet IG_TOKEN_K1 en IG_USER_ID_K1 in GitHub · ma 9 nov 12:22
 KLAAR: automaat tweede account (Instagram kanaal 1) samengevoegd naar main (853989c), na goedkeuring Eva en go Andries via Eva (ma 9 nov 11:51); plaatst nog niets (geen item, geen sleutel) · ma 9 nov 12:02
