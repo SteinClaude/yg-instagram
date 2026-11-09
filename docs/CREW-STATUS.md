@@ -1,6 +1,6 @@
 # CREW-STATUS — stand van alle sporen
 
-**Bijgewerkt:** ma 9 nov 2026, 12:50 — Eva (kantoor-check)
+**Bijgewerkt:** ma 9 nov 2026, 18:50 — Eva (kantoor-check)
 
 ## Werkwijze voor iedereen
 - Andries beslist. Eva (chef de staf) zet opdrachten in `docs/OPDRACHT-ACTUEEL.md` en leest jullie stand en opleveringen.
@@ -13,10 +13,11 @@
 | Wie | Rol | Nu |
 |---|---|---|
 | Eva | chef de staf | leest je stand, oplevering en besluiten mee; zet je opdracht klaar; grijpt in waar nodig (C27) |
-| Manon | YG-Social · kanaal 1 | Za 7 nov met Andries (pc-sessie): YS01–YS25 staan in Studio op kanaal 1, 7 nov t/m 1 dec, elke dag 18:00 (YS19–YS25 na pakket OK ±15:49, `3350a01`); YS01 staat sinds ±17:20 openbaar op verzoek van Andries (`ebe4587`). Vreemd maar waar (YH) gestopt (Kantoor 16:51, `dd257c1`). Zo 8 nov met Andries: pakket OK YS26–YS32 (±14:11) en alle zeven ingepland, 2–8 dec 18:00 (`d159c24`); YS01–YS32 staan nu gepland t/m 8 dec. Instagram kanaal 1: profielfoto YK01 en bio gezet na "bio OK kanaal 1" (±14:34, `1c9f10e`). Andries ±21:15: YS33–YS39 pas "Na eerste cijfers" (`df641d5`). **Ma 9 nov (pc-sessie met Andries, sinds 10:35):** plan Reels op Instagram kanaal 1 via de automaat (`docs/plan-instagram-kanaal-1.md`); automaat tweede account naar main (853989c, na Eva-controle en go Andries); proef geslaagd zonder publiceren (801871f); geen AI-label op Instagram kanaal 1 (1d0b3cc); bijschriften YS01–YS10 OK ("Alle tien OK" ±12:43, 1b451ba). Bezig: Instagram-versies YS02–YS10 en de bijloop inplannen; weekverslag ma 9 nov (cijfers via Eva). Wacht: weergavenaam Instagram (Andries, Accountcentrum); weekverslag ma 9 nov. Directeur YG-Social voor de gedeelde zaken; besluiten rechtstreeks met Andries (C27); @ygdigital.nl op pauze |
+| Manon | YG-Social · kanaal 1 | YS01–YS32 staan in Studio op kanaal 1, elke dag 18:00 t/m di 8 dec. Vreemd maar waar (YH) gestopt. **Ma 9 nov (pc-sessie met Andries, 10:35–18:45):** automaat Instagram kanaal 1 op main (853989c); geen AI-label op Instagram; bijschriften YS01–YS10 OK (1b451ba); YS01 en YS02 als eerste Reels geplaatst door de automaat (±13:02, 751628c), daarna elke dag 18:00 gelijk met YouTube t/m YS10 (16 nov); keurlijst Instagram-bijschriften YS11–YS32 (7c4837b); Andries ±13:30/13:39: Instagram-voorraad even ver als YouTube, met nieuwe video's in verbeterde vorm (YS33+); YS33–YS39 af in vorm 3 (haak in de eerste seconde, 25–32 s, lus) met keurlijst (078cb9c); proef stijl 2 (markeerstift, bronstempel, voortgangslijn; bac4197). Stand `wacht`: op stijl OK vorm 3 / stijl 2, pakket OK en bijschrift OK YS33–YS39 en bijschrift OK YS11–YS32; niets ingepland zonder. Weekverslag ma 9 nov volgt (cijfers via Eva). Directeur YG-Social voor de gedeelde zaken; besluiten rechtstreeks met Andries (C27); @ygdigital.nl op pauze |
 
 Kanaal 2 is sinds 5 nov van crewlid Finn, in een eigen privé-repo. De overige sporen van de crew zijn privé. Wat Manon van een ander crewlid moet weten, zet Eva in haar opdracht.
 
+- Manon ma 9 nov ±12:56–13:39 (in haar sessie): Reels nu plaatsen wat kan (YS01, YS02); Instagram-voorraad even ver als YouTube, met nieuwe video's in verbeterde vorm (YS33+).
 - Manon ma 9 nov (in haar sessie): automaat Instagram kanaal 1 naar main (go via Eva 11:51); geen AI-label op Instagram kanaal 1; "Alle tien OK" bijschriften YS01–YS10 (±12:43).
 - Manon zo 8 nov (in haar sessie): pakket OK YS26–YS32 ("Alle zeven OK", ±14:11); "bio OK kanaal 1" (korte versie B, ±14:34); YS33–YS39 "Na eerste cijfers" (±21:15).
 - Manon za 7 nov: pakket OK YS19–YS25 ("Alle zeven OK", ±15:49, in haar sessie); "YH stoppen" (Kantoor, 16:51); YS01 openbaar (op verzoek van Andries, ±17:20).
