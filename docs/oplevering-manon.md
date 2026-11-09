@@ -1,3 +1,4 @@
+KLAAR: proef stijl 2, ronde 2 (geen nummer bovenaan, papierstructuur, voortgangsbalk, krabbels, markeerstift, bronstempel): docs/proef-stijl-2.md en docs/proef-stijl-2-voor-na.jpg; wacht op "stijl OK stijl 2" · ma 9 nov 19:05
 KLAAR: proef stijl 2 voor YS (markeerstift, bronstempel, voortgangslijn, dossierlabel; zelfde huisstijl): docs/proef-stijl-2.md en docs/proef-stijl-2-voor-na.jpg; wacht op "stijl OK stijl 2" · ma 9 nov 18:45
 KLAAR: YS33–YS39 gemaakt in vorm 3 (25,5–32,4 s, haak in de eerste seconde, lus), met pakket, Instagram-versie en bijschrift; keurlijst docs/keurlijst-YS33-YS39.md (stijl OK vorm 3, pakket OK en bijschrift OK per code) · ma 9 nov 14:30
 KLAAR: keurlijst Instagram-bijschriften kanaal 1 YS11–YS32 (docs/keurlijst-instagram-YS11-YS32.md; bestanden in pakketten/<map>/instagram/bijschrift.txt); na "bijschrift OK" gaan ze op dezelfde dag als YouTube (17 nov – 8 dec, 18:00) · ma 9 nov 13:33
