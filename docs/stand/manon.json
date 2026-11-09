@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T19:28:00+01:00",
+  "tijd": "2026-11-09T19:45:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -79,7 +79,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "YS33–YS39 opnieuw in stijl 2 (na stijl OK stijl 2)",
+  "bezig": "YS33–YS39 renderen in stijl 2 (video, pakket, Instagram-versie); daarna keurlijst bijwerken",
   "volgende": "Na stijl OK stijl 2: YS33–YS39 opnieuw renderen in stijl 2; na pakket OK en bijschrift OK YS33–YS39: Instagram 17–23 nov en Studio 9–15 dec 18:00; daarna YS40–YS54. Weekverslag ma 9 nov.",
   "kanNietVerder": null,
   "vragen": [
