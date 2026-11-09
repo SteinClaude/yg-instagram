@@ -609,7 +609,7 @@
     {
       "id": "2026-11-09-k1-ys01",
       "datum": "2026-11-09",
-      "tijd": "15:00",
+      "tijd": "12:54",
       "soort": "bericht",
       "taal": "en",
       "account": "kanaal-1",
@@ -626,7 +626,7 @@
     {
       "id": "2026-11-09-k1-ys02",
       "datum": "2026-11-09",
-      "tijd": "18:00",
+      "tijd": "12:54",
       "soort": "bericht",
       "taal": "en",
       "account": "kanaal-1",
@@ -641,9 +641,9 @@
       "eenmalig": true
     },
     {
-      "id": "2026-11-10-k1-ys03",
-      "datum": "2026-11-10",
-      "tijd": "12:00",
+      "id": "2026-11-09-k1-ys03",
+      "datum": "2026-11-09",
+      "tijd": "18:00",
       "soort": "bericht",
       "taal": "en",
       "account": "kanaal-1",
