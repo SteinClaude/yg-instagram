@@ -156,6 +156,7 @@ KLAAR: pakket YS01 klaar (niet ingepland) · adcf422
 KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reeksen, pakketformaat short, ritme 7/week, API later) · 634997a
 
 ## Besluiten met Andries
+- Andries in de sessie van Manon, ma 9 nov 2026 ±13:30: "oke de instagram voorraad doen we net zo ver vooruit krijgen als youtube, hier gaan we dan wel nieuwe content voor maken" → keurlijst bijschriften YS11–YS32 (Instagram tot 8 dec, gelijk met YouTube); nieuwe content (YS33+) na de eerste cijfers
 - Andries in de sessie van Manon, ma 9 nov 2026 ±12:56: "post nu wat er al gepost kan worden zodat we alvast op schema lopen" → YS01 en YS02 (al online op YouTube) nu op Instagram kanaal 1, YS03 vandaag 18:00 gelijk met YouTube; daarna elke dag 18:00
 - Andries in de sessie van Manon, ma 9 nov 2026 ±12:43, op de vraag "Keur je de bijschriften van YS01–YS10?" (keurlijst docs/keurlijst-instagram-YS01-YS10.md): "Alle tien OK" → bijschrift OK YS01, YS02, YS03, YS04, YS05, YS06, YS07, YS08, YS09, YS10
 - Andries in de sessie van Manon, ma 9 nov 2026 ±12:40, op de vraag "Zet ik het AI-label automatisch aan bij elke Reel, zoals op YouTube?" (Instagram kanaal 1, API-veld is_ai_generated): "Nee, geen label" → geen AI-label op Instagram; automaat blijft zoals hij is
