@@ -37,7 +37,7 @@
 - Scripts zonder `stijl` worden gemaakt zoals voorheen.
 - De krabbels in YS33 verschijnen alleen in stijl 2.
 
-**Gevraagd:** "stijl OK stijl 2". Een stijl OK geldt voor de hele reeks (C30), dus ook voor YS33–YS39.
+**Besluit:** "Stijl OK stijl 2" (Andries, ma 9 nov 2026, in de sessie). Stijl 2 geldt voor de YS-reeks vanaf YS33; YS01–YS32 blijven zoals gepland.
 - Komt die OK, dan maak ik YS33–YS39 opnieuw in stijl 2, met krabbels per short. Script, bronnen en titels blijven gelijk.
 - Daarna geldt stijl 2 voor alle nieuwe shorts.
 - YS01–YS32 blijven zoals ze zijn, want die staan al gepland.

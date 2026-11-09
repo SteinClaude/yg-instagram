@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T19:30:00+01:00",
+  "tijd": "2026-11-09T19:28:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-09T10:35:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-09T19:30:00+01:00 YS03 geplaatst op Instagram kanaal 1 (run 42673854617, met de hand gestart in de Chrome van Andries na \"Ja, start nu\"; gedaan.json 19:25, eigen omslag); profiel toont 3 berichten",
     "2026-11-09T19:25:00+01:00 Proef stijl 2 ronde 3 (tekst gelijk met de stem, studiomix, geluid bij krabbels, levende camera, CRF 17, leestijd): YS33-proef 30,5 s, -14,3 LUFS; voor/na docs/proef-stijl-2-voor-na.jpg; video alleen lokaal",
@@ -79,12 +79,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "YS33–YS39 opnieuw in stijl 2 (na stijl OK stijl 2)",
   "volgende": "Na stijl OK stijl 2: YS33–YS39 opnieuw renderen in stijl 2; na pakket OK en bijschrift OK YS33–YS39: Instagram 17–23 nov en Studio 9–15 dec 18:00; daarna YS40–YS54. Weekverslag ma 9 nov.",
   "kanNietVerder": null,
   "vragen": [
     "Automaat Instagram: GitHub draait de uurlijkse klok onbetrouwbaar (9 nov geen run tussen 10:18 en 19:25) · voorstel: extra starttijden rond 17:00–18:00 op rustige minuten (na controle Eva, go Andries, B30) of een externe wekker (account van Andries) · ondertussen: elke dag na 18:00 nakijken en zo nodig met de hand starten na zijn ja · blokkeert: nee",
-    "stijl OK stijl 2 (docs/proef-stijl-2.md)? · aanname: ja, dan YS33–YS39 opnieuw in stijl 2 vóór het inplannen (script, bronnen en titel gelijk) · ondertussen: niets ingepland · blokkeert: ja, voor YS33–YS39",
     "stijl OK vorm 3, pakket OK YS33–YS39 en bijschrift OK YS33–YS39? · niets inplannen zonder · ondertussen: weekverslag · blokkeert: ja, voor Instagram vanaf 17 nov",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -94,6 +93,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-09T19:28:00+01:00 Andries in sessie (±19:28): \"Stijl OK stijl 2\"",
     "2026-11-09T19:25:00+01:00 Chrome van Andries: workflow \"Plaatsen op Instagram\" met de hand gestart (Run workflow, proefvelden leeg) → run 42673854617 geslaagd, YS03 geplaatst; profiel kanaal 1 nagekeken: 3 berichten.",
     "2026-11-09T19:20:00+01:00 Andries in sessie (±19:20): \"Ja, start nu\" (automaat Instagram met de hand starten voor YS03). Claude in Chrome niet bereikbaar (2x geprobeerd); Andries gevraagd de run zelf te starten.",
     "2026-11-09T19:00:00+01:00 Andries in sessie (±19:00): \"upgrade naar maximale kwaliteit en profesionele\"",

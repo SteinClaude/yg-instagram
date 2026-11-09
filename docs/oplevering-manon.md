@@ -164,6 +164,8 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- ma 9 nov 2026 ±19:28: "Stijl OK stijl 2" — stijl 2 (docs/proef-stijl-2.md: geen nummer bovenaan, papierstructuur, voortgangsbalk, markeerstift, krabbels, bronstempel, tekst gelijk met de stem, studiomix, levende camera) geldt voor de YS-reeks vanaf YS33. YS01–YS32 blijven zoals gepland.
+
 - ma 9 nov 2026 ±19:20: "Ja, start nu" — de automaat met de hand starten zodat YS03 op Instagram kanaal 1 komt (GitHub sloeg de uurlijkse runs over).
 - Andries in de sessie van Manon, ma 9 nov 2026 ±13:39: "ik wil voor instagram vooraad bij te vullen tot dat die gelijk is aan youtube, aleen wil ik hier nieuwe videos voor maken, zodat we alvast de verbteringen kunnen toepassen ect". Op de keuzes daarna: verbeteringen "Mijn voorstel" (korter 25–40 s, vraag/feit in de eerste seconde, tekst binnen het veilige vlak van Instagram, einde dat terugloopt naar het begin; stem, letters en bronnen blijven); YouTube "Ja, als YS33+" (eerst Instagram, vanaf 9 dec ook YouTube); tempo "Eerst 7, dan de rest" (YS33–YS39 voor 17–23 nov ter keuring, met nieuwe stijl OK als de stijl verandert). Keurlijst bijschriften YS11–YS32 vervalt voor Instagram.
 - Andries in de sessie van Manon, ma 9 nov 2026 ±13:30: "oke de instagram voorraad doen we net zo ver vooruit krijgen als youtube, hier gaan we dan wel nieuwe content voor maken" → keurlijst bijschriften YS11–YS32 (Instagram tot 8 dec, gelijk met YouTube); nieuwe content (YS33+) na de eerste cijfers
