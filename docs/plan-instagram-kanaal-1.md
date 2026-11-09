@@ -1,6 +1,6 @@
 # Plan — shorts van kanaal 1 als Reels op Instagram kanaal 1
 
-**Opgesteld:** ma 9 nov 2026 — Manon · **Status:** plan, nog niets gebouwd of ingepland.
+**Opgesteld:** ma 9 nov 2026 — Manon · **Status:** gebouwd op tak `manon/instagram-kanaal-1` (commit 7fbf229, ma 9 nov 11:05), nog niet live: wacht op Eva (meekijken) en go van Andries (B30). Niets ingepland.
 
 Andries, ma 9 nov 2026 ±10:35: *"zullen we de shorts die gemaakt zijn ook inplannen voor het instagram kanaal, dit wil ik het zelfde als voor het ygdigital.nl instagram, we plannen dat in via een extrene die plaats het dan automatisch ect"*. Op zijn keuzes daarna:
 
@@ -26,9 +26,9 @@ Dit is dat plan. Er wordt niets gebouwd en niets ingepland zonder het volgende w
 3. **Een sleutel maken** (Generate token) voor kanaal 1.
 4. **Twee geheimen in GitHub zetten** (Settings → Secrets → Actions): `IG_TOKEN_K1` (de sleutel) en `IG_USER_ID_K1` (het accountnummer). Het accountnummer van kanaal 1 komt **niet** in deze repo, alleen in de geheimen. De repo is openbaar en het nummer verwijst naar het account.
 
-Ongeveer 15 minuten. De precieze klikstappen schrijf ik pas uit als het besluit over de bouw er is (punt 6).
+Ongeveer 15 minuten. De klikstappen staan in `LEESMIJ.md`, deel "Tweede account: Instagram van kanaal 1" (op de tak; na de go ook op main).
 
-## 3. Wat er aan de automaat verandert (nog niet gebouwd)
+## 3. Wat er aan de automaat verandert (gebouwd op tak `manon/instagram-kanaal-1`, nog niet live)
 
 | Bestand | Verandering |
 |---|---|
@@ -73,7 +73,7 @@ Verschillen met YouTube:
 
 ## 6. Open punten voor Andries
 
-1. **Wie bouwt de aanpassing** (punt 3), en wanneer? Mijn advies: ik bouw hem op een aparte tak, Eva kijkt mee, en na jouw "go" gaat hij live.
+1. ~~Wie bouwt de aanpassing~~: Manon (Andries, 9 nov ±10:58: "Ja, Manon bouwt"). Gebouwd op tak `manon/instagram-kanaal-1`; live na meekijken Eva en jouw go.
 2. **AI-label.** Op YouTube staat het AI-label aan (de stem is AI). Instagram vraagt bij een realistische AI-stem ook een label, maar volgens mij heeft de API daar geen veld voor. Dat zoek ik uit in de proefdraai. Kan het via de API niet, dan zijn er twee keuzes: jij zet het label per Reel in de app, of er komt één regel "Voice: AI" in het bijschrift.
 3. **Tweede platform eerder dan gepland.** In de koers stond: tweede platform pas na de evaluatie van 30 dagen. Met dit besluit komt Instagram er eerder bij. Instagram betaalt in Nederland niet uit; het levert bereik op. Ik meld dit aan Eva, zodat zij de regel in de koers kan bijwerken.
 4. **De keurlijst bijschriften.** Ik begin met de eerste 10 (YS01–YS10, de bijloop-week) zodra je dat zegt, of samen met de bouw.

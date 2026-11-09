@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T10:58:00+01:00",
+  "tijd": "2026-11-09T11:05:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-09T10:35:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-09T11:05:00+01:00 Automaat tweede account (Instagram kanaal 1) gebouwd op tak manon/instagram-kanaal-1 · 7fbf229; getest zonder plaatsen; nog niet live",
     "2026-11-09T10:45:00+01:00 Plan Reels op Instagram kanaal 1 via de automaat: docs/plan-instagram-kanaal-1.md (niets gebouwd of ingepland)",
     "2026-11-08T14:43:00+01:00 Instagram kanaal 1: profielfoto YK01 + bio (Kort B) gezet na bio OK kanaal 1; \"Profiel opgeslagen.\"",
     "2026-11-08T14:30:00+01:00 YS26–YS32 ingepland in Studio (kanaal 1), 2–8 dec 18:00, na pakket OK 8 nov ±14:11",
@@ -66,10 +67,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Automaat uitbreiden voor Instagram kanaal 1, op tak manon/instagram-kanaal-1",
-  "volgende": "Weekverslag ma 9 nov met eerste cijfers; daarna YS33–YS39 afgestemd op die cijfers. Instagram kanaal 1 Reels: plan ligt klaar (docs/plan-instagram-kanaal-1.md), Andries beslist later wie bouwt. Weergavenaam Instagram kanaal 1 ligt bij Andries",
+  "bezig": "-",
+  "volgende": "Go Andries voor de automaat (na meekijken Eva); daarna zet Andries de sleutel van kanaal 1 (LEESMIJ op de tak) en draaien we de proef. Intussen: weekverslag ma 9 nov, keurlijst bijschriften YS01–YS10. Daarna YS33–YS39 op de eerste cijfers",
   "kanNietVerder": null,
   "vragen": [
+    "Go voor de automaat van Instagram kanaal 1 (tak manon/instagram-kanaal-1 naar main)? · mijn aanname: eerst meekijken door Eva, dan go van Andries (B30) · ondertussen: weekverslag, bijschriften YS01–YS10 voor de keurlijst · blokkeert: ja, voor de Reels",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
       "aanname": "laten staan (advies: de eerste drie dagen zonder stem zijn een nuttige vergelijking; vervangen kost een upload per short en raakt al geplande video's)",
@@ -504,6 +506,11 @@
   ],
   "voorEva": [
     {
+      "id": "V-manon-ig2",
+      "aan": "Eva",
+      "wat": "Graag meekijken: tak manon/instagram-kanaal-1 (7fbf229): src/plaatsen.cjs, plaatsen.yml, plan-reel.cjs, gereedschap/short/instagram.cjs, index.html, LEESMIJ. Tweede Instagram-account in de automaat; @ygdigital.nl ongewijzigd; naam/nummer kanaal 1 nooit in logboek of status. Na jouw blik vraag ik Andries de go (B30)."
+    },
+    {
       "id": "V-manon-ig1",
       "aan": "Eva",
       "wat": "Andries wil de shorts van kanaal 1 ook als Reels op Instagram kanaal 1, via de automaat (9 nov ±10:35). Dat is het tweede platform eerder dan na de 30-daagse evaluatie, en de automaat gaat dan ook voor een tweede account gelden. CLAUDE.md zegt nu: automaat alleen voor @ygdigital.nl. Graag de koers en die regel bijwerken als Andries het plan doorzet. Plan: docs/plan-instagram-kanaal-1.md"
@@ -552,6 +559,7 @@
   "raakt": [
     "youtube-studio",
     "instagram-kanaal-1",
-    "planning.json"
+    "planning.json",
+    "github-actions-plaatsen"
   ]
 }
