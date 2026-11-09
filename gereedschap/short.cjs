@@ -327,7 +327,11 @@ function voorbereidStem(script, map) {
         s._woorden = JSON.parse(fs.readFileSync(tijden, 'utf8')).map(w => ({ ...w, start: w.start + (s.stemStart ?? 0.12), eind: w.eind + (s.stemStart ?? 0.12) }));
       }
       const smp = new Float32Array(pcm.buffer, pcm.byteOffset, pcm.length / 4), start = s.stemStart ?? 0.12, lengte = smp.length / GELUID.RATE;
-      s.duur = Math.max(s.duur, start + lengte + 0.25);
+      // Stijl 2: de tekst loopt gelijk met de stem, dus het laatste woord verschijnt pas als het gezegd is. Daarom
+      // 0,3 s extra om de hele zin te lezen, en in de laatste scène ook de lus erbij, zodat de slotzin niet pas
+      // tijdens het terugvloeien in beeld komt.
+      const st2 = (script.stijl || 1) >= 2, laatste = i === script.scenes.length - 1;
+      s.duur = Math.max(s.duur, start + lengte + 0.25 + (st2 ? 0.3 : 0) + (st2 && laatste && script.lus ? script.lus + 0.4 : 0));
       sporen.push({ begin: t0 + start, smp });
       tekst += `${i + 1}. ${s.stem}\n`;
     }
