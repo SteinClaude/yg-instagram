@@ -1,0 +1,11 @@
+Why is there an @ in every email address?
+
+In 1971, engineer Ray Tomlinson was building an early email system at BBN. He needed a way to separate the user's name from the machine's name, and he picked a symbol that was rarely used in computing: @.
+
+His first messages went between two computers in his own office, with the keyboards about 10 feet apart. And what did the first email say? Even he called it completely forgettable.
+
+Sources: NPR, "In memoriam: Ray Tomlinson, who put the @ sign in your email" (2016); Internet Hall of Fame.
+
+New every day at 18:00 (Amsterdam).
+
+#history #email #technology #internet #todayilearned

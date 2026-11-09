@@ -1,3 +1,4 @@
+KLAAR: keurlijst Instagram-bijschriften kanaal 1 YS01–YS10 (docs/keurlijst-instagram-YS01-YS10.md; bestanden in pakketten/<map>/instagram/bijschrift.txt); wacht op "bijschrift OK <code>" per code · ma 9 nov 11:08
 KLAAR: automaat voor Instagram kanaal 1 gebouwd op tak manon/instagram-kanaal-1 (7fbf229): tweede account met eigen sleutel, @ygdigital.nl ongewijzigd, naam/nummer van kanaal 1 nooit in logboek of status; getest zonder plaatsen. Niet live: wacht op meekijken Eva en go van Andries (B30) · ma 9 nov 11:05
 KLAAR: plan Reels op Instagram kanaal 1 via de automaat (docs/plan-instagram-kanaal-1.md): stappen voor Andries, aanpassing automaat (niet gebouwd), bijloopritme, vorm bijschrift; wacht op besluit wie bouwt · ma 9 nov 10:45
 KLAAR: stand nagelopen op vraag van Andries (zo 8 nov ±21:07): Studio kanaal 1 gepland t/m 8 dec 18:00, niets in te plannen; YS33–YS39 pas na de eerste cijfers of op zijn woord · zo 8 nov 21:08

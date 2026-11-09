@@ -1,0 +1,11 @@
+This moth was the first "actual" computer bug. The word is older.
+
+On 9 September 1947, a team at Harvard found a moth stuck between the relay contacts of the Mark II computer. They taped it into the logbook with the note: "First actual case of bug being found."
+
+The joke only works because "bug" already meant a fault. In an 1878 letter, Thomas Edison wrote about "bugs": little faults and difficulties. Grace Hopper was there and later made the story famous. The logbook, moth included, is now at the Smithsonian.
+
+Sources: Computer History Museum, "This Day in History: September 9"; JSTOR Daily, "The Bug in the Computer Bug Story".
+
+New every day at 18:00 (Amsterdam).
+
+#history #computers #programming #technology #todayilearned

@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T11:06:00+01:00",
+  "tijd": "2026-11-09T11:08:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-09T10:35:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-09T11:08:00+01:00 Keurlijst Instagram-bijschriften YS01–YS10: docs/keurlijst-instagram-YS01-YS10.md",
     "2026-11-09T11:05:00+01:00 Automaat tweede account (Instagram kanaal 1) gebouwd op tak manon/instagram-kanaal-1 · 7fbf229; getest zonder plaatsen; nog niet live",
     "2026-11-09T10:45:00+01:00 Plan Reels op Instagram kanaal 1 via de automaat: docs/plan-instagram-kanaal-1.md (niets gebouwd of ingepland)",
     "2026-11-08T14:43:00+01:00 Instagram kanaal 1: profielfoto YK01 + bio (Kort B) gezet na bio OK kanaal 1; \"Profiel opgeslagen.\"",
@@ -67,10 +68,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Instagram-bijschriften YS01–YS10 voor de keurlijst",
-  "volgende": "Go Andries voor de automaat (na meekijken Eva); daarna zet Andries de sleutel van kanaal 1 (LEESMIJ op de tak) en draaien we de proef. Intussen: weekverslag ma 9 nov, keurlijst bijschriften YS01–YS10. Daarna YS33–YS39 op de eerste cijfers",
+  "bezig": "-",
+  "volgende": "Andries: bijschrift OK YS01–YS10 (keurlijst) en go voor de automaat (na meekijken Eva, tak manon/instagram-kanaal-1); daarna sleutel kanaal 1 en proef. Intussen: weekverslag ma 9 nov; daarna YS33–YS39 op de eerste cijfers",
   "kanNietVerder": null,
   "vragen": [
+    "bijschrift OK YS01 t/m YS10 (Instagram kanaal 1)? · mijn aanname: geen; niets in de planning zonder OK per code · ondertussen: weekverslag · blokkeert: ja, voor de Reels",
     "Go voor de automaat van Instagram kanaal 1 (tak manon/instagram-kanaal-1 naar main)? · mijn aanname: eerst meekijken door Eva, dan go van Andries (B30) · ondertussen: weekverslag, bijschriften YS01–YS10 voor de keurlijst · blokkeert: ja, voor de Reels",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",

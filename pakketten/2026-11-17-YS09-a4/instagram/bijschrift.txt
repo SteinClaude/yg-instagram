@@ -1,0 +1,11 @@
+Fold A4 in half and it keeps its shape. Here's why.
+
+A4 looks like a random size: 210 by 297 mm. It isn't. In ISO paper sizes, the long side divided by the short side is always the square root of two. Cut the page in half and you get the same shape again, one size smaller.
+
+A0 is exactly one square metre; halve it four times and you have A4. The idea is old: a 1786 letter by Georg Christoph Lichtenberg, a French paper-tax law of 1798, the German DIN 476 standard in 1922 and ISO 216 in 1975. Today it is used almost everywhere, except North America.
+
+Source: Markus Kuhn, "International standard paper sizes" (University of Cambridge).
+
+New every day at 18:00 (Amsterdam).
+
+#history #paper #design #maths #todayilearned
