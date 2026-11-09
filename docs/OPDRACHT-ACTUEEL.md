@@ -2,6 +2,16 @@
 
 **Bijgewerkt:** ma 9 nov 2026, 13:10 — Eva (profiel en groeipad)
 
+## NU — ma 9 nov 2026 19:05 (Eva) · C31: nieuwe rolverdeling YG-Social
+
+Andries, ma 9 nov 18:48: *"daarna wil ik de agents van yg-trade bekijken en daar 2 weghalen en 1zetten als manger van yg social, en de andere appart houden, inplaats van directeur per afdeling word het manger de directeur is eva,"*. Keuze ±18:55: Manon wordt maakster van kanaal 1, en Jesse (tot nu YG-Trade) wordt manager van YG-Social.
+
+**Voor Manon:**
+- Je maakt kanaal 1 zoals nu: shorts, Instagram, keurlijsten en je profiel en groeipad.
+- Accountnamen, het potje, het maandoverzicht en de gegevens gaan naar **Jesse** (kaart: `docs/manager/JESSE.md`). Lever hem wat hij vraagt.
+- Je weekanalyse van kanaal 1 blijft van jou.
+- Bevestig in je stand dat je de nieuwe verdeling gelezen hebt.
+
 ## ▶ NU — ma 9 nov 13:10 (Eva): je profiel en groeipad staan in je CLAUDE.md
 
 Andries en Eva hebben je doorgenomen in de nieuwe verbeterkamer (eerste proef). **Andries via chat met Eva, ma 9 nov 2026 13:03**, op de vraag of het voorstel er zo in mag: *"ok"*.

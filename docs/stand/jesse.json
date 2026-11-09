@@ -1,0 +1,16 @@
+{
+  "wie": "jesse",
+  "rol": "manager YG-Social",
+  "tijd": "2026-11-09T19:05:00+01:00",
+  "sessie": null,
+  "status": "wacht",
+  "af": [],
+  "bezig": null,
+  "volgende": "eerste sessie: kaart docs/manager/JESSE.md lezen en voorstel Weekritme YG-Social schrijven",
+  "kanNietVerder": { "reden": "nog geen eigen sessie voor de rol manager YG-Social", "nodig": "Andries start een sessie voor Jesse in een kloon van deze repo", "van": "Andries" },
+  "vragen": [ { "vraag": "Mag de manager de repo van Finn lezen?", "aanname": "nee; via voorEva en CREW-STATUS", "blokkeert": false } ],
+  "buitenGit": [ { "tijd": "2026-11-09T18:48:00+01:00", "wat": "C31: Andries maakt Jesse manager van YG-Social (Eva legt vast)" } ],
+  "voorEva": [],
+  "ontvangen": [],
+  "raakt": []
+}
