@@ -1,0 +1,10 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. This smiley exists because of a fake warning.
+2. September 1982. A message board at Carnegie Mellon.
+3. A joke post warns: the elevator is contaminated with mercury.
+4. Many people take it seriously.
+5. Others suggest joke markers. A star. A percent sign.
+6. Then Scott Fahlman proposes this. Read it sideways.
+7. His post was lost, until an old backup tape was found in 2002.
+8. A joke marker, born from a joke that went wrong.

@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T13:41:00+01:00",
+  "tijd": "2026-11-09T13:59:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "werkt",
   "af": [
+    "2026-11-09T13:59:00+01:00 YS33 af (27,8 s, vorm 3); scripts YS34–YS39 en Instagram-bijschriften YS33–YS39 geschreven (bronnen gelezen 9 nov)",
     "2026-11-09T13:33:00+01:00 Keurlijst Instagram-bijschriften YS11–YS32: docs/keurlijst-instagram-YS11-YS32.md",
     "2026-11-09T13:03:00+01:00 YS01 en YS02 geplaatst op Instagram kanaal 1 (run 42613214266, met de hand gestart in de Chrome van Andries); profiel toont 2 berichten",
     "2026-11-09T12:45:00+01:00 Instagram kanaal 1: YS01–YS10 in planning.json (9 nov 15:00 t/m 16 nov 18:00); Instagram-versies en omslagen (YS06 op 2600 ms, YS10 op 1700 ms, rest 2000 ms)",
@@ -73,7 +74,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Nieuwe shorts YS33–YS39 (verbeterde vorm) voor Instagram kanaal 1, 17–23 nov",
+  "bezig": "YS34–YS39 renderen (achtergrond), daarna pakketten, Instagram-versies en keurlijst YS33–YS39 (pakket OK, bijschrift OK, stijl OK vorm 3)",
   "volgende": "YS33–YS39 maken in de verbeterde vorm (Instagram 17–23 nov, YouTube vanaf 9 dec), ter keuring met stijl OK; daarna YS40–YS54. Weekverslag ma 9 nov (cijfers via Eva)",
   "kanNietVerder": null,
   "vragen": [
