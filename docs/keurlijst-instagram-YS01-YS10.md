@@ -1,5 +1,7 @@
 # Keurlijst Instagram-bijschriften kanaal 1 · YS01–YS10
 
+**Gekeurd:** Andries, ma 9 nov 2026 ±12:43: "Alle tien OK" (bijschrift OK YS01–YS10).
+
 **Gemaakt:** ma 9 nov 2026 — Manon, op "Ja, schrijf ze" van Andries.
 
 Een short gaat pas in de planning voor Instagram kanaal 1 na **"bijschrift OK <code>"**. Het "pakket OK" dat er al is, dekt video, script, bronnen en titel. Plan: `docs/plan-instagram-kanaal-1.md`.
