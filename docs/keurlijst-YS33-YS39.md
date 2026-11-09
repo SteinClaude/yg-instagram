@@ -2,28 +2,29 @@
 
 **Gemaakt:** ma 9 nov 2026 — Manon, op "ik wil voor instagram vooraad bij te vullen ... nieuwe videos ... zodat we alvast de verbteringen kunnen toepassen" (Andries) met de keuzes "Mijn voorstel", "Ja, als YS33+" en "Eerst 7, dan de rest".
 
-**Gevraagd (drie soorten OK, C15/C30):**
-1. **stijl OK vorm 3**: de nieuwe vorm voor de YS-reeks: korter (25–40 s), de haak (vraag of verrassend feit) in de eerste seconde, een slotzin die terugkoppelt naar het begin en een beeld dat terugvloeit in het eerste beeld (lus). Stem, letters, kleuren en bronregels blijven zoals in "stijl OK YS".
-2. **pakket OK YS33 … YS39**: script, bronnen en titel per code.
-3. **bijschrift OK YS33 … YS39**: de Instagram-tekst per code.
+**Stijl:** "Stijl OK stijl 2" (Andries, ma 9 nov 2026 ±19:28): alle zeven zijn opnieuw gemaakt in stijl 2 (`docs/proef-stijl-2.md`): geen nummer bovenaan, papierstructuur, voortgangsbalk, markeerstift, rode krabbels, bronstempel, tekst gelijk met de stem, studiomix, levende camera. Script, bronnen en titels zijn niet veranderd.
+
+**Nog gevraagd (C15):**
+1. **pakket OK YS33 … YS39**: script, bronnen en titel per code.
+2. **bijschrift OK YS33 … YS39**: de Instagram-tekst per code.
 
 Na de OK's: Instagram kanaal 1 via de automaat (17–23 nov, 18:00); YouTube kanaal 1 via Studio (9–15 dec, 18:00, aansluitend op YS32). Geen AI-label op Instagram (besluit Andries); op YouTube wel, zoals alle YS-shorts (AI-stem).
 
 | Code | Titel | Duur | Instagram | YouTube |
 |---|---|---|---|---|
-| YS33 | Twitter said this symbol would never catch on # | 27,8 s | di 17 nov 18:00 | woensdag 9 december 18:00 |
-| YS34 | The first :-) was invented because of a fake warning | 27,8 s | wo 18 nov 18:00 | donderdag 10 december 18:00 |
-| YS35 | Why is Bluetooth named after a Viking king? | 32,4 s | do 19 nov 18:00 | vrijdag 11 december 18:00 |
-| YS36 | The recycling symbol was a student's contest entry | 25,5 s | vr 20 nov 18:00 | zaterdag 12 december 18:00 |
-| YS37 | Why the Olympic rings have exactly those colours | 28,0 s | za 21 nov 18:00 | zondag 13 december 18:00 |
-| YS38 | Sliced bread was invented by a jeweller | 30,2 s | zo 22 nov 18:00 | maandag 14 december 18:00 |
-| YS39 | Why is the power button a 1 and a 0? | 25,7 s | ma 23 nov 18:00 | dinsdag 15 december 18:00 |
+| YS33 | Twitter said this symbol would never catch on # | 30,5 s | di 17 nov 18:00 | woensdag 9 december 18:00 |
+| YS34 | The first :-) was invented because of a fake warning | 30,5 s | wo 18 nov 18:00 | donderdag 10 december 18:00 |
+| YS35 | Why is Bluetooth named after a Viking king? | 35,2 s | do 19 nov 18:00 | vrijdag 11 december 18:00 |
+| YS36 | The recycling symbol was a student's contest entry | 28,0 s | vr 20 nov 18:00 | zaterdag 12 december 18:00 |
+| YS37 | Why the Olympic rings have exactly those colours | 30,4 s | za 21 nov 18:00 | zondag 13 december 18:00 |
+| YS38 | Sliced bread was invented by a jeweller | 33,5 s | zo 22 nov 18:00 | maandag 14 december 18:00 |
+| YS39 | Why is the power button a 1 and a 0? | 27,8 s | ma 23 nov 18:00 | dinsdag 15 december 18:00 |
 
-Wat er anders is dan YS01–YS32: gemiddeld 28 s in plaats van 45 s; de eerste zin staat binnen 0,1 s in beeld; geen eindkaart "Sources in the description" meer (de bron staat per scène in beeld en in de beschrijving); de laatste halve seconde vloeit over in het eerste beeld.
+Wat er anders is dan YS01–YS32: korter (vorm 3); de eerste zin staat binnen 0,1 s in beeld; geen eindkaart "Sources in the description" meer (de bron staat per scène als stempel in beeld en in de beschrijving); het laatste halve seconde vloeit over in het eerste beeld; stijl 2 (zie boven).
 
 ## YS33 · Twitter said this symbol would never catch on #
 
-Pakket: `pakketten/2026-12-09-YS33-hashtag/` (video.mp4 27,8 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
+Pakket: `pakketten/2026-12-09-YS33-hashtag/` (video.mp4 30,5 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
 
 **Ingesproken tekst:** Twitter said this symbol would never catch on. August 2007. Chris Messina asks: how about using it for groups? Chat rooms already used it to name their channels. Twitter thought it looked clunky. October 2007. Wildfires in San Diego. Messina asks a friend to tag his fire updates. Others copy the tag. In 2014, hashtag entered the Oxford English Dictionary. Never catch on? Now every trend starts with it.
 
@@ -52,7 +53,7 @@ New every day at 18:00 (Amsterdam).
 
 ## YS34 · The first :-) was invented because of a fake warning
 
-Pakket: `pakketten/2026-12-10-YS34-smiley/` (video.mp4 27,8 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
+Pakket: `pakketten/2026-12-10-YS34-smiley/` (video.mp4 30,5 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
 
 **Ingesproken tekst:** This smiley exists because of a fake warning. September 1982. A message board at Carnegie Mellon. A joke post warns: the elevator is contaminated with mercury. Many people take it seriously. Others suggest joke markers. A star. A percent sign. Then Scott Fahlman proposes this. Read it sideways. His post was lost, until an old backup tape was found in 2002. A joke marker, born from a joke that went wrong.
 
@@ -81,7 +82,7 @@ New every day at 18:00 (Amsterdam).
 
 ## YS35 · Why is Bluetooth named after a Viking king?
 
-Pakket: `pakketten/2026-12-11-YS35-bluetooth/` (video.mp4 32,4 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
+Pakket: `pakketten/2026-12-11-YS35-bluetooth/` (video.mp4 35,2 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
 
 **Ingesproken tekst:** Your headphones are named after a Viking king. Harald Bluetooth. King of Denmark, more than a thousand years ago. The nickname is said to come from a dead, blue-grey tooth. His runestone claims he won all of Denmark and Norway. Late 1990s. Engineer Jim Kardach needs a code name. Harald unified Denmark. This radio link would unite computers and phones. It was only a placeholder. The other names failed in time. And the logo? His initials, in runes. So yes: a Viking king, in your ears.
 
@@ -110,7 +111,7 @@ New every day at 18:00 (Amsterdam).
 
 ## YS36 · The recycling symbol was a student's contest entry
 
-Pakket: `pakketten/2026-12-12-YS36-recycling/` (video.mp4 25,5 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
+Pakket: `pakketten/2026-12-12-YS36-recycling/` (video.mp4 28,0 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
 
 **Ingesproken tekst:** A twenty-three-year-old student drew this. You see it every day. 1970. The year of the first Earth Day. A cardboard company holds a contest for a recycling symbol. Gary Anderson, a student in California, enters. He is inspired by a Möbius strip: a loop with a twist. He wins two thousand five hundred dollars. And the symbol goes into the public domain. Free for everyone. That is why you see it everywhere.
 
@@ -139,7 +140,7 @@ New every day at 18:00 (Amsterdam).
 
 ## YS37 · Why the Olympic rings have exactly those colours
 
-Pakket: `pakketten/2026-12-13-YS37-olympische-kleuren/` (video.mp4 28,0 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
+Pakket: `pakketten/2026-12-13-YS37-olympische-kleuren/` (video.mp4 30,4 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
 
 **Ingesproken tekst:** These colours were picked to match every flag in the world. 1913. Pierre de Coubertin presents the Olympic rings. Five rings, for five parts of the world. Blue, yellow, black, green and red. On white. Together, he wrote, those six colours reproduce the colours of all the nations. With no exception. The flag first flew in 1914, in Egypt. At the Olympics, in 1920. Six colours. Every flag. That was the idea.
 
@@ -166,7 +167,7 @@ New every day at 18:00 (Amsterdam).
 
 ## YS38 · Sliced bread was invented by a jeweller
 
-Pakket: `pakketten/2026-12-14-YS38-brood/` (video.mp4 30,2 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
+Pakket: `pakketten/2026-12-14-YS38-brood/` (video.mp4 33,5 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
 
 **Ingesproken tekst:** Sliced bread was invented by a jeweller. Otto Rohwedder ran three jewellery stores in Missouri. He designs a bread slicer. In 1917, a fire destroys his blueprints. Sliced bread goes stale. So his new machine slices, and wraps. 1928. A bakery in Chillicothe, Missouri, buys the first machine. July seventh: the first sliced loaf is sold. In 1943, the US government even banned it. For seven weeks. The greatest thing since sliced bread? Thank a jeweller.
 
@@ -194,7 +195,7 @@ New every day at 18:00 (Amsterdam).
 
 ## YS39 · Why is the power button a 1 and a 0?
 
-Pakket: `pakketten/2026-12-15-YS39-aan-uit/` (video.mp4 25,7 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
+Pakket: `pakketten/2026-12-15-YS39-aan-uit/` (video.mp4 27,8 s, overzicht.jpg, studio.txt, bron/bronnen.md, instagram/)
 
 **Ingesproken tekst:** Your power button hides two numbers. A one, and a zero. In binary terms, one means on. Zero means off. Push them together, and you get this. The symbols are defined in an international standard: IEC 60417. For years they were only pictures. In 2015, Unicode accepted them as text. On and off, in one symbol. Press it, and it all starts again.
 

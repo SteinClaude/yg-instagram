@@ -1,3 +1,4 @@
+KLAAR: YS33–YS39 opnieuw in stijl 2 (na "Stijl OK stijl 2"), met pakket, Instagram-versie (omslag op het einde van scène 1) en bijgewerkte keurlijst docs/keurlijst-YS33-YS39.md; wacht op pakket OK en bijschrift OK per code · ma 9 nov 20:15
 KLAAR: YS03 op Instagram kanaal 1 geplaatst (run 42673854617, 19:25, met de hand gestart na "Ja, start nu"); profiel toont 3 berichten · ma 9 nov 19:30
 KLAAR: proef stijl 2, ronde 3 (professioneel: tekst gelijk met de stem, studiomix, geluid bij markeerstift en krabbels, levende camera, CRF 17); wacht op "stijl OK stijl 2" · ma 9 nov 19:25
 KAN NIET VERDER: YS03 op Instagram kanaal 1 (9 nov 18:00) niet geplaatst, GitHub sloeg de uurlijkse runs over · nodig: ja van Andries om de automaat nu met de hand te starten; structurele oplossing na controle Eva en go Andries · ma 9 nov 19:20

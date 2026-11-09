@@ -2,8 +2,8 @@ STUDIO.TXT — YS39 (YouTube Studio, uploadscherm van boven naar beneden)
 Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS39" van Andries.
 
 == Bestand ==
-video.mp4   1080x1920 (9:16), 30 fps, H.264, 25,7 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt
-video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (6,4 MB; H.264 twee passen, 2000kbit/s, AAC 96k); deze upload je via Chrome
+video.mp4   1080x1920 (9:16), 30 fps, H.264, 27,8 s, Engelse stem (Kokoro-82M, open source, stem "fenrir", lokaal gemaakt) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt
+video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (6,9 MB; H.264 twee passen, 2000kbit/s, AAC 96k); deze upload je via Chrome
 
 == Details ==
 Titel (36/100 tekens):

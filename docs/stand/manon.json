@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T19:45:00+01:00",
+  "tijd": "2026-11-09T20:15:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-09T10:35:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-09T20:15:00+01:00 YS33–YS39 opnieuw gemaakt in stijl 2 (na \"Stijl OK stijl 2\"): video, studio.txt, upload 6,9–8,9 MB, Instagram-versie met omslag op het einde van scène 1; 27,8–35,2 s; keurlijst docs/keurlijst-YS33-YS39.md bijgewerkt",
     "2026-11-09T19:30:00+01:00 YS03 geplaatst op Instagram kanaal 1 (run 42673854617, met de hand gestart in de Chrome van Andries na \"Ja, start nu\"; gedaan.json 19:25, eigen omslag); profiel toont 3 berichten",
     "2026-11-09T19:25:00+01:00 Proef stijl 2 ronde 3 (tekst gelijk met de stem, studiomix, geluid bij krabbels, levende camera, CRF 17, leestijd): YS33-proef 30,5 s, -14,3 LUFS; voor/na docs/proef-stijl-2-voor-na.jpg; video alleen lokaal",
     "2026-11-09T19:05:00+01:00 Proef stijl 2 ronde 2: geen nummer bovenaan, papierstructuur, voortgangsbalk, markeerstift, krabbels, bronstempel; voor/na uit beide echte video's in docs/proef-stijl-2-voor-na.jpg; proefvideo YS33 alleen lokaal",
@@ -79,12 +80,12 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "YS33–YS39 renderen in stijl 2 (video, pakket, Instagram-versie); daarna keurlijst bijwerken",
-  "volgende": "Na stijl OK stijl 2: YS33–YS39 opnieuw renderen in stijl 2; na pakket OK en bijschrift OK YS33–YS39: Instagram 17–23 nov en Studio 9–15 dec 18:00; daarna YS40–YS54. Weekverslag ma 9 nov.",
+  "bezig": "-",
+  "volgende": "Na pakket OK en bijschrift OK YS33–YS39: plan-reel --account kanaal-1 (17–23 nov 18:00; --omslag-ms YS33 2369, YS34 2561, YS35 2561, YS36 3756, YS37 2988, YS38 2369, YS39 2100) en Studio 9–15 dec 18:00; daarna YS40–YS54 in stijl 2. Elke dag na 18:00 nakijken of de Instagram-automaat heeft gedraaid. Weekverslag ma 9 nov.",
   "kanNietVerder": null,
   "vragen": [
+    "pakket OK YS33–YS39 en bijschrift OK YS33–YS39 (stijl 2, docs/keurlijst-YS33-YS39.md)? · niets inplannen zonder · blokkeert: ja, voor Instagram vanaf 17 nov",
     "Automaat Instagram: GitHub draait de uurlijkse klok onbetrouwbaar (9 nov geen run tussen 10:18 en 19:25) · voorstel: extra starttijden rond 17:00–18:00 op rustige minuten (na controle Eva, go Andries, B30) of een externe wekker (account van Andries) · ondertussen: elke dag na 18:00 nakijken en zo nodig met de hand starten na zijn ja · blokkeert: nee",
-    "stijl OK vorm 3, pakket OK YS33–YS39 en bijschrift OK YS33–YS39? · niets inplannen zonder · ondertussen: weekverslag · blokkeert: ja, voor Instagram vanaf 17 nov",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
       "aanname": "laten staan (advies: de eerste drie dagen zonder stem zijn een nuttige vergelijking; vervangen kost een upload per short en raakt al geplande video's)",
