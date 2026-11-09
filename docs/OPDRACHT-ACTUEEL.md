@@ -31,6 +31,14 @@
   6. Wat mag het kosten aan zijn tijd per week (keuren, inloggen)?
   7. Account bestaat al of moet nog worden aangemaakt (dat doet Andries).
 
+**Account 3: kwaliteit boven aantal.** Andries via chat met Eva, ma 9 nov 2026 22:36: *"Ik wil het 3e acount echt goed maken met veel tijd en moeite per video"*. Dat is dus geen 7-per-week-account. Werk in het gesprek uit:
+- **Ritme:** hoeveel per week of per maand. Advies van Eva: begin met 1 per week en ga pas omhoog als de kwaliteit blijft.
+- **Vorm:** shorts van hoge kwaliteit, of langere video's? Langere video's tellen mee voor de drempel van 4.000 kijkuren. Reclame halverwege kan pas vanaf 8 minuten en na 1.000 abonnees.
+- **Wat "veel moeite" concreet is:** script en onderzoek, eigen animatie, stem, montage. En wat daarvan Andries zelf wil doen.
+- **Maker:** wie de tijd heeft. Manon en Finn hebben allebei een dagritme. Advies van Eva: een eigen maker voor dit account.
+- **Keuren:** script eerst ("script OK", zoals bij Finn), dan pas maken. Zo gaat de moeite niet zitten in een verkeerd script.
+- **Meten:** kijkduur en terugkerende kijkers wegen hier zwaarder dan het aantal views.
+
 **2. In het gesprek:**
 - Eerst 5 minuten je open besluit: **Weekritme YG-Social** (je voorstel van 19:45).
 - Dan de accounts, één voor één.
