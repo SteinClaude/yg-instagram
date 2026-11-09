@@ -210,6 +210,12 @@ function svgVoor(script, tijd) {
         const vorige = beeldVan(script, sc[i - 1], sc[i - 1].duur - 0.001);
         lijf = B.overgang(scene.in, B.uit(t / B.OVERGANG_DUUR), vorige, lijf, i);
       }
+      // Lus (vorm 3, vanaf YS33): de laatste `script.lus` seconden vloeien over in het eerste beeld van de short,
+      // zodat een Reel of Short die opnieuw begint naadloos doorloopt.
+      if (script.lus && i === sc.length - 1 && t > scene.duur - script.lus) {
+        const e = B.zacht((t - (scene.duur - script.lus)) / script.lus);
+        lijf = `${lijf}<g opacity="${e.toFixed(3)}">${beeldVan(script, sc[0], 0.001)}</g>`;
+      }
       return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${script.versie === 2 ? B.DEFS : ''}${lijf}</svg>`;
     }
     t0 += scene.duur;
