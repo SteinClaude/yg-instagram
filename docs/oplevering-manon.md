@@ -1,3 +1,4 @@
+KLAAR: automaat tweede account (Instagram kanaal 1) samengevoegd naar main (853989c), na goedkeuring Eva en go Andries via Eva (ma 9 nov 11:51); plaatst nog niets (geen item, geen sleutel) · ma 9 nov 12:02
 KLAAR: keurlijst Instagram-bijschriften kanaal 1 YS01–YS10 (docs/keurlijst-instagram-YS01-YS10.md; bestanden in pakketten/<map>/instagram/bijschrift.txt); wacht op "bijschrift OK <code>" per code · ma 9 nov 11:08
 KLAAR: automaat voor Instagram kanaal 1 gebouwd op tak manon/instagram-kanaal-1 (7fbf229): tweede account met eigen sleutel, @ygdigital.nl ongewijzigd, naam/nummer van kanaal 1 nooit in logboek of status; getest zonder plaatsen. Niet live: wacht op meekijken Eva en go van Andries (B30) · ma 9 nov 11:05
 KLAAR: plan Reels op Instagram kanaal 1 via de automaat (docs/plan-instagram-kanaal-1.md): stappen voor Andries, aanpassing automaat (niet gebouwd), bijloopritme, vorm bijschrift; wacht op besluit wie bouwt · ma 9 nov 10:45
@@ -151,6 +152,7 @@ KLAAR: pakket YS01 klaar (niet ingepland) · adcf422
 KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reeksen, pakketformaat short, ritme 7/week, API later) · 634997a
 
 ## Besluiten met Andries
+- Andries via chat met Eva, ma 9 nov 2026 11:51 (in OPDRACHT-ACTUEEL 12:05): "geef manon opdracht om verder te gaan als jij dat goedkeurd" → Eva keurde de tak goed; geldt als go (B30) om de automaat naar main te zetten
 - Andries in de sessie van Manon, ma 9 nov 2026 ±11:06, op de vraag "Mag ik de bijschriften van YS01–YS10 alvast voor de keurlijst schrijven?": "Ja, schrijf ze"
 - Andries in de sessie van Manon, ma 9 nov 2026 ±10:58, op de vraag "Laat je Manon de automaat bouwen?" (Reels Instagram kanaal 1): "Ja, Manon bouwt" → bouw op een aparte tak, Eva kijkt mee, live pas na go van Andries (B30)
 - Andries in de sessie van Manon, ma 9 nov 2026 ±10:44, op de vraag wie de aanpassing van de automaat (Reels Instagram kanaal 1) bouwt: "Later beslissen" → niets gebouwd; plan blijft liggen tot zijn besluit
