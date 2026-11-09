@@ -11,7 +11,7 @@ Hoe ik ze schreef:
 - **Precies 5 hashtags,** zonder #Shorts. Geen link, geen YG Digital, geen prijzen.
 - **Slotregel:** "New every day at 18:00 (Amsterdam)."
 
-**Nog open (niet per bijschrift):** het AI-label (de stem is AI). Dat test ik bij de proef; kan het niet via de API, dan kies jij: zelf in de app, of een regel "Voice: AI" in elk bijschrift.
+**AI-label:** geen (Andries, 9 nov: "Nee, geen label").
 
 | Code | YouTube-titel | Tekens | Hashtags |
 |---|---|---|---|

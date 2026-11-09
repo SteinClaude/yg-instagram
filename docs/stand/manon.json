@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T12:39:00+01:00",
+  "tijd": "2026-11-09T12:40:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -71,10 +71,9 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "-",
-  "volgende": "Andries: AI-label via de API (ja/nee) en bijschrift OK YS01–YS10; daarna AI-label in de automaat (Eva kijkt mee), Instagram-versies YS02–YS10 maken en de bijloop inplannen. Weekverslag ma 9 nov (cijfers via Eva)",
+  "volgende": "Andries: bijschrift OK YS01–YS10; daarna Instagram-versies YS02–YS10 maken en de bijloop inplannen (3 per dag, dan gelijk met YouTube). Weekverslag ma 9 nov (cijfers via Eva)",
   "kanNietVerder": null,
   "vragen": [
-    "AI-label Instagram kanaal 1: de API kent is_ai_generated (sinds juni 2026). Aanzetten bij elke Reel, zoals op YouTube? · mijn aanname: ja, automatisch via de automaat (kleine aanpassing, Eva kijkt mee) · ondertussen: niets inplannen · blokkeert: ja, vóór de eerste Reel",
     "bijschrift OK YS01 t/m YS10 (Instagram kanaal 1)? · mijn aanname: geen; niets in de planning zonder OK per code · ondertussen: weekverslag · blokkeert: ja, voor de Reels",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -84,6 +83,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-09T12:40:00+01:00 Andries in sessie: \"Nee, geen label\" (geen AI-label op Instagram kanaal 1)",
     "2026-11-09T12:39:00+01:00 Andries in sessie: \"Geheimen staan\". In GitHub (Chrome, door Andries ingelogd): lijst toont IG_TOKEN, IG_TOKEN_K1, IG_USER_ID, IG_USER_ID_K1 (alleen namen gezien). Proef gestart via Run workflow (proefaccount kanaal-1, video + omslag YS01, 800 ms): geslaagd, niets gepubliceerd.",
     "2026-11-09T12:25:00+01:00 Andries in sessie: \"Add geklikt\" en \"Geaccepteerd\" — kanaal 1 is Instagram Tester van de Meta-app (eerst Pending, uitnodiging door Andries geaccepteerd). Chrome: Meta-pagina API-configuratie met Instagram-aanmelding klaargezet (kanaal 1 staat bij Generate access tokens; niet op Generate token geklikt, niets van sleutel of accountnummer gelezen). Tweede tabblad GitHub: niet ingelogd, dus de geheimen-pagina gaf 404; Andries logt zelf in.",
     "2026-11-09T12:22:00+01:00 Chrome van Andries, op zijn verzoek (\"okedoe dit zo veel mogelijk voor mij de stappen kijk waar ik was en wat er nog moet zet dit dan zo goed mogelijk klaar voor mij\"): nagekeken dat Instagram kanaal 1 al professioneel is (Creator) en nog geen Instagram Tester in de Meta-app; venster \"Add people\" klaargezet met rol Instagram Tester en het account van kanaal 1 ingevuld — niet op Add geklikt (dat doet Andries). Geen sleutel gezien of aangeraakt.",

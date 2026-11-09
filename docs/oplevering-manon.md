@@ -154,6 +154,7 @@ KLAAR: pakket YS01 klaar (niet ingepland) · adcf422
 KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reeksen, pakketformaat short, ritme 7/week, API later) · 634997a
 
 ## Besluiten met Andries
+- Andries in de sessie van Manon, ma 9 nov 2026 ±12:40, op de vraag "Zet ik het AI-label automatisch aan bij elke Reel, zoals op YouTube?" (Instagram kanaal 1, API-veld is_ai_generated): "Nee, geen label" → geen AI-label op Instagram; automaat blijft zoals hij is
 - Andries in de sessie van Manon, ma 9 nov 2026: "okedoe dit zo veel mogelijk voor mij de stappen kijk waar ik was en wat er nog moet zet dit dan zo goed mogelijk klaar voor mij"; daarna "Add geklikt", "Geaccepteerd", "Geheimen staan" (sleutel kanaal 1 door Andries zelf gemaakt en in GitHub gezet; Manon heeft hem niet gezien)
 - Andries via chat met Eva, ma 9 nov 2026 11:51 (in OPDRACHT-ACTUEEL 12:05): "geef manon opdracht om verder te gaan als jij dat goedkeurd" → Eva keurde de tak goed; geldt als go (B30) om de automaat naar main te zetten
 - Andries in de sessie van Manon, ma 9 nov 2026 ±11:06, op de vraag "Mag ik de bijschriften van YS01–YS10 alvast voor de keurlijst schrijven?": "Ja, schrijf ze"

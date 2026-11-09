@@ -74,6 +74,6 @@ Verschillen met YouTube:
 ## 6. Open punten voor Andries
 
 1. ~~Wie bouwt de aanpassing~~: Manon (Andries, 9 nov ±10:58: "Ja, Manon bouwt"). Gebouwd op tak `manon/instagram-kanaal-1`; live na meekijken Eva en jouw go.
-2. **AI-label.** Uitgezocht na de proef (ma 9 nov): de Instagram-API heeft sinds juni 2026 een eigen veld, `is_ai_generated` (zelfmelding van AI, zet het label "AI-info" bij publiceren; niet achteraf). Advies: aanzetten bij elke Reel van kanaal 1, zoals het AI-label op YouTube. Vraagt een kleine aanpassing van de automaat.
+2. **AI-label.** Uitgezocht na de proef (ma 9 nov): de Instagram-API heeft sinds juni 2026 een eigen veld, `is_ai_generated` (zelfmelding van AI, zet het label "AI-info" bij publiceren; niet achteraf). Advies: aanzetten bij elke Reel van kanaal 1, zoals het AI-label op YouTube. Vraagt een kleine aanpassing van de automaat. **Besluit Andries 9 nov: "Nee, geen label"** — geen AI-label op Instagram.
 3. **Tweede platform eerder dan gepland.** In de koers stond: tweede platform pas na de evaluatie van 30 dagen. Met dit besluit komt Instagram er eerder bij. Instagram betaalt in Nederland niet uit; het levert bereik op. Ik meld dit aan Eva, zodat zij de regel in de koers kan bijwerken.
 4. **De keurlijst bijschriften.** Ik begin met de eerste 10 (YS01–YS10, de bijloop-week) zodra je dat zegt, of samen met de bouw.
