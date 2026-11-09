@@ -82,10 +82,10 @@ module.exports = {
       teken: h => vuur(h, h.klem((h.t - 0.2) / 1.0)) + h.kin('*October 2007*: wildfires in San Diego.', { y: 300, g: 100, t: h.t, start: 0.05, kleur: '#F3F0E8', accent: h.K.geel }).svg },
     // 6 · #sandiegofire
     { duur: 3.4, stem: 'Messina asks a friend to tag his fire updates. Others copy the tag.', in: 'op', bron: CNBC, bronStart: 2.0, camera: { zoom: [1, 1.05], stoot: [1.6] }, geluid: [[0.9, 'pop', 0.5], [1.4, 'pop', 0.5], [1.9, 'pop', 0.5]],
-      teken: h => [0, 1, 2].map(i => kaart(h, 580 + i * 190, '', h.klem((h.t - 0.7 - i * 0.45) / 0.35), '#sandiegofire')).join('') + h.kin('One tag. Then *everyone* used it.', { y: 300, g: 104, t: h.t, start: 0.05 }).svg },
+      teken: h => [0, 1, 2].map(i => kaart(h, h.stijl >= 2 ? 540 + i * 236 : 580 + i * 190, '', h.klem((h.t - 0.7 - i * 0.45) / 0.35), '#sandiegofire')).join('') + h.kin('One tag. Then *everyone* used it.', { y: 300, g: 104, t: h.t, start: 0.05 }).svg },
     // 7 · OED 2014
     { duur: 3.0, stem: 'In 2014, hashtag entered the Oxford English Dictionary.', in: 'zweep', bron: REG, bronStart: 1.6, camera: { zoom: [1, 1.05], stoot: [0.3] }, geluid: [[0.3, 'klap', 0.6], [1.2, 'ding', 0.5]],
-      teken: h => boek(h, h.klem((h.t - 0.2) / 0.4)) + (h.stijl >= 2 ? h.krabbel.cirkel(505, 898, 262, 78, { t: h.t, start: 1.2 }) : '') + h.kin('*2014*: it is in the dictionary.', { y: 300, g: 108, t: h.t, start: 0.05 }).svg },
+      teken: h => boek(h, h.klem((h.t - 0.2) / 0.4)) + (h.stijl >= 2 ? h.krabbel.cirkel(522, 898, 292, 80, { t: h.t, start: 1.2 }) : '') + h.kin('*2014*: it is in the dictionary.', { y: 300, g: 108, t: h.t, start: 0.05 }).svg },
     // 8 · SLOT, loopt terug naar het begin
     { duur: 2.8, stem: 'Never catch on? Now every trend starts with it.', in: 'zoom', camera: { zoom: [1.03, 1.0] }, geluid: [[0.3, 'stijg', 0.5]],
       teken: h => hekje(h, 1180, 640) + (h.stijl >= 2 ? h.krabbel.cirkel(540, 968, 262, 262, { t: h.t, start: 1.2 }) : '') + h.kin('Never catch on? Every trend *starts with it*.', { y: 300, g: 100, t: h.t, start: 0.05 }).svg },

@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T19:05:00+01:00",
+  "tijd": "2026-11-09T19:08:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-09T10:35:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-09T19:05:00+01:00 Proef stijl 2 ronde 2: geen nummer bovenaan, papierstructuur, voortgangsbalk, markeerstift, krabbels, bronstempel; voor/na uit beide echte video's in docs/proef-stijl-2-voor-na.jpg; proefvideo YS33 alleen lokaal",
     "2026-11-09T18:45:00+01:00 Proef stijl 2 (markeerstift, bronstempel, voortgangslijn, dossierlabel): generator met --stijl 2, voor/na-blad docs/proef-stijl-2-voor-na.jpg, uitleg docs/proef-stijl-2.md; proefvideo YS33 alleen lokaal",
@@ -77,7 +77,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "Proef stijl 2, ronde 3 (professioneel): tekst gelijk met de stem, studiomix, geluid bij krabbels, levende camera, hogere kwaliteit; YS33 rendert",
   "volgende": "Na stijl OK stijl 2: YS33–YS39 opnieuw renderen in stijl 2; na pakket OK en bijschrift OK YS33–YS39: Instagram 17–23 nov en Studio 9–15 dec 18:00; daarna YS40–YS54. Weekverslag ma 9 nov.",
   "kanNietVerder": null,
   "vragen": [
@@ -91,6 +91,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-09T19:00:00+01:00 Andries in sessie (±19:00): \"upgrade naar maximale kwaliteit en profesionele\"",
     "2026-11-09T18:47:00+01:00 Andries in sessie (±18:47): \"kan het nog beter ik wil ook dat vootaan de no.(nummer) bovenaan de video eruit gaat dit is slordig, maar upgrade nog beter\"",
     "2026-11-09T18:30:00+01:00 Andries in sessie (±18:30): \"kunnen we onze style een upgrade geven dat de kijkers ook verbetering zien maar welke de zelfde style.\"",
     "2026-11-09T13:39:00+01:00 Andries in sessie: \"ik wil voor instagram vooraad bij te vullen tot dat die gelijk is aan youtube, aleen wil ik hier nieuwe videos voor maken, zodat we alvast de verbteringen kunnen toepassen ect\"; keuzes: \"Mijn voorstel\" (verbeteringen), \"Ja, als YS33+\", \"Eerst 7, dan de rest\"",

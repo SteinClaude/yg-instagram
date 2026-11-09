@@ -16,6 +16,20 @@
 6. **Bronstempel.** De bron staat in een stempel met een rood label SOURCE en komt met een zachte stempelklap neer. Op een telefoon is hij goed te lezen.
 7. **Drukschaduw.** Onder de grote letters ligt een lichte schaduw, wat diepte geeft.
 
+**Ronde 3, professionele afwerking.** Andries (±19:00): *"upgrade naar maximale kwaliteit en profesionele"*
+
+8. **Tekst gelijk met de stem.** Elk woord van de kop verschijnt op het moment dat het wordt uitgesproken, met het beeld net voor het geluid (0,06 s), zoals in professionele montage. Het nieuwe `gereedschap/short/woordtijden.py` haalt de woordtijden uit de opname zelf:
+   - eerst de pauzes;
+   - dan de zinsdelen, die over de spraak worden verdeeld;
+   - dan per woord het aantal klanken.
+
+   Woorden die niet letterlijk gezegd worden (een # waar de stem "this symbol" zegt) vallen ertussen. Labels in tekeningen houden hun eigen tijden.
+9. **Studiomix van de stem.** Dezelfde stem (Kokoro fenrir), maar gemixt: rommel onder 75 Hz weg, minder dreun, meer helderheid, een compressor voor een gelijkmatig volume en een de-esser tegen scherpe s-klanken. De luidheid blijft -14 LUFS.
+10. **Geluid bij elke aantekening.** De markeerstift krijgt een zachte haal en een cirkel of pijl een pen die krast. De momenten worden automatisch uit het beeld gehaald.
+11. **Levende camera.** Een heel lichte, doorlopende beweging, alsof er uit de hand gefilmd wordt. Het beeld staat daardoor nooit helemaal stil.
+12. **Hogere beeldkwaliteit.** Gecodeerd met x264 CRF 17 en preset slow, waar het eerst CRF 20 was. De uploadversie blijft onder 10 MB.
+13. **YS33-kaartjes.** De drie gestapelde berichten laten nu alle drie #sandiegofire zien.
+
 **Voor en na:** `docs/proef-stijl-2-voor-na.jpg` (YS33, oud links en nieuw rechts).
 
 **Techniek:**

@@ -158,6 +158,13 @@ function papierBeeld(nacht) {
   }
   return PAPIER[k];
 }
+// Vooraf (in maak): het papier als jpg, dat resvg per beeld veel sneller inleest dan een png.
+async function bereidPapier() {
+  for (const nacht of [false, true]) {
+    const png = Buffer.from(papierBeeld(nacht).split(',')[1], 'base64');
+    PAPIER[nacht ? 'nacht' : 'dag'] = 'data:image/jpeg;base64,' + (await sharp(png).jpeg({ quality: 93 }).toBuffer()).toString('base64');
+  }
+}
 // Voortgangsbalk (stijl 2): dun spoor bovenaan het veilige vlak, loopt rood vol terwijl de short speelt.
 function voortgang(script, scene, abs) {
   const p = klem(abs / totaal(script)), y = 212;
@@ -225,19 +232,22 @@ function bronRegel(tekst, t, start, nacht, stijl = 1) {
   return blok('Source: ' + tekst, { y: 1330, g: 30, gewicht: 'mono', kleur: nacht ? '#C9C6BC' : K.grijs, accent: K.signaal, t, start, max: 800, regelHoogte: 1.3 }).svg;
 }
 
-const HULP = (script = {}) => ({ K, blok, fase, zacht, uit, klem, stopbord, vorm, klok, toetsen, veelhoek, W, H, esc, maat, FONT,
-  kin: (tekst, o = {}) => B.kin(tekst, { stijl: script.stijl || 1, ...o }), veer: B.veer, foto,
+// Stijl 2: kinetische tekst loopt gelijk met de stem (scene._woorden, uit short/woordtijden.py), tenzij het script
+// zelf `sync: false` meegeeft. Tekst die niet op de gesproken zin lijkt (labels in een tekening) houdt zijn eigen tijden.
+const HULP = (script = {}, scene = {}) => ({ K, blok, fase, zacht, uit, klem, stopbord, vorm, klok, toetsen, veelhoek, W, H, esc, maat, FONT,
+  kin: (tekst, o = {}) => B.kin(tekst, { stijl: script.stijl || 1, sync: (script.stijl || 1) >= 2 ? scene._woorden : null, ...o }), veer: B.veer, foto,
   stijl: script.stijl || 1, krabbel: B.krabbel });
 // Eén volledig beeld van een scène op tijd t (achtergrond, kop, inhoud, bronregel), zonder <svg>-omhulsel.
 function beeldVan(script, scene, t, abs = 0) {
-  const inhoud = scene.teken({ t, duur: scene.duur, ...HULP(script) });
+  B.sceneStart = abs - t;   // voor de geluidsopname van markeerstift en krabbels (stijl 2)
+  const inhoud = scene.teken({ t, duur: scene.duur, ...HULP(script, scene) });
   if (script.versie !== 2) return `${kader(script, scene, t)}${inhoud}${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht)}`;
   if (script.kanaal === 2) { const cam = B.camera(t, scene.duur, scene.camera), achter = scene.achter ? scene.achter({ t, duur: scene.duur, ...HULP() }) : '';
     return `${kader2(script)}<g transform="${cam}">${achter}</g>${verloop2()}<g transform="${cam}">${inhoud}</g>` +
     `${kop2(script)}${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, true)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`; }
   const licht = scene.nacht ? '' : `<rect width="${W}" height="${H}" fill="url(#licht)"/>`;
   if ((script.stijl || 1) >= 2) {   // stijl 2: geen kop; voortgangsbalk boven het licht
-    return `${kader(script, scene, t, abs)}${licht}<g transform="${B.camera(t, scene.duur, scene.camera)}">${inhoud}</g>${voortgang(script, scene, abs)}` +
+    return `${kader(script, scene, t, abs)}${licht}<g transform="${B.camera(t, scene.duur, { ...scene.camera, drift: abs })}">${inhoud}</g>${voortgang(script, scene, abs)}` +
       `${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht, script.stijl)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`;
   }
   return `${kader(script, scene, t, abs)}${licht}<g transform="${B.camera(t, scene.duur, scene.camera)}">${inhoud}</g>` +
@@ -307,7 +317,15 @@ function voorbereidStem(script, map) {
       const sleutel = require('crypto').createHash('sha1').update(`${stem}|${tempo}|uitspraak2|${s.stem}`).digest('hex').slice(0, 16);
       const wav = path.join(cache, sleutel + '.wav');
       if (!fs.existsSync(wav)) execFileSync(KOKORO_PY, [path.join(__dirname, 'short', 'stem.py'), wav, stem, String(tempo), s.stem]);
-      const pcm = execFileSync('ffmpeg', ['-v', 'error', '-i', wav, '-ac', '1', '-ar', String(GELUID.RATE), '-f', 'f32le', 'pipe:1'], { maxBuffer: 64 << 20 });
+      // Stijl 2: de stem gemixt zoals in een studio: rommel onder 75 Hz weg, minder dreun, meer helderheid, een
+      // compressor voor een gelijkmatig volume en een de-esser tegen scherpe s-klanken.
+      const mix2 = (script.stijl || 1) >= 2 ? ['-af', 'highpass=f=75,equalizer=f=220:t=q:w=1.1:g=-2,equalizer=f=3200:t=q:w=1:g=2.5,equalizer=f=10000:t=q:w=1:g=1.5,acompressor=threshold=0.1:ratio=3:attack=5:release=70:makeup=1.6,deesser=i=0.35'] : [];
+      const pcm = execFileSync('ffmpeg', ['-v', 'error', '-i', wav, ...mix2, '-ac', '1', '-ar', String(GELUID.RATE), '-f', 'f32le', 'pipe:1'], { maxBuffer: 64 << 20 });
+      if ((script.stijl || 1) >= 2) {
+        const tijden = wav.replace(/\.wav$/, '.woorden.json');
+        if (!fs.existsSync(tijden)) fs.writeFileSync(tijden, execFileSync(KOKORO_PY, [path.join(__dirname, 'short', 'woordtijden.py'), wav, stem[0] === 'b' ? 'en-gb' : 'en-us', s.stem]));
+        s._woorden = JSON.parse(fs.readFileSync(tijden, 'utf8')).map(w => ({ ...w, start: w.start + (s.stemStart ?? 0.12), eind: w.eind + (s.stemStart ?? 0.12) }));
+      }
       const smp = new Float32Array(pcm.buffer, pcm.byteOffset, pcm.length / 4), start = s.stemStart ?? 0.12, lengte = smp.length / GELUID.RATE;
       s.duur = Math.max(s.duur, start + lengte + 0.25);
       sporen.push({ begin: t0 + start, smp });
@@ -337,6 +355,7 @@ async function maak(code, alleenBeelden, opties = {}) {
   const map = opties.map ? path.resolve(opties.map) : path.join(WORTEL, 'pakketten', script.map);
   fs.mkdirSync(path.join(map, 'bron'), { recursive: true });
   const stemSporen = voorbereidStem(script, map);
+  if ((script.stijl || 1) >= 2) await bereidPapier();
   const duur = totaal(script), n = Math.round(duur * FPS);
   console.log(`${code}: ${duur.toFixed(1)} s, ${n} beelden -> ${path.relative(WORTEL, map)}`);
 
@@ -355,7 +374,16 @@ async function maak(code, alleenBeelden, opties = {}) {
   const v2 = script.versie === 2;
   let audioIn = ['-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=48000'];
   if (v2) {
-    const lijst = geluidLijst(script), pcm = mengStem(GELUID.mix(lijst, duur), stemSporen);
+    const lijst = geluidLijst(script);
+    if ((script.stijl || 1) >= 2) {   // markeerstift en krabbels: hun momenten opnemen door alle beelden één keer als tekst te maken
+      const gezien = new Map();
+      B.opname = (tm, naam) => { const k = `${naam}@${tm.toFixed(2)}`; if (!gezien.has(k)) gezien.set(k, [tm, naam]); };
+      for (let i = 0; i < n; i++) svgVoor(script, i / FPS);
+      B.opname = null;
+      const vol = { streep: 0.3, kras: 0.38 };
+      for (const [tm, naam] of gezien.values()) if (tm >= 0 && tm < duur) lijst.push([tm, naam, vol[naam] ?? 0.3, 0]);
+    }
+    const pcm = mengStem(GELUID.mix(lijst, duur), stemSporen);
     const tmp = path.join(require('os').tmpdir(), `short-${code}-geluid.f32`);
     fs.writeFileSync(tmp, Buffer.from(pcm.buffer));
     audioIn = ['-f', 'f32le', '-ar', String(GELUID.RATE), '-ac', '2', '-i', tmp];
@@ -365,7 +393,7 @@ async function maak(code, alleenBeelden, opties = {}) {
     '-f', 'rawvideo', '-pix_fmt', 'rgba', '-s', `${W}x${H}`, '-r', String(FPS), '-i', '-',
     ...audioIn,
     '-map', '0:v', '-map', '1:a', '-shortest',
-    '-c:v', 'libx264', '-preset', 'medium', '-crf', v2 ? '20' : '18', ...(v2 ? ['-maxrate', '7M', '-bufsize', '14M'] : []),   // korrel comprimeert slecht: v2 begrensd (GitHub weigert bestanden > 100 MB)
+    '-c:v', 'libx264', '-preset', (script.stijl || 1) >= 2 ? 'slow' : 'medium', '-crf', (script.stijl || 1) >= 2 ? '17' : v2 ? '20' : '18', ...(v2 ? ['-maxrate', '7M', '-bufsize', '14M'] : []),   // korrel comprimeert slecht: v2 begrensd (GitHub weigert bestanden > 100 MB)
     '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-movflags', '+faststart',
     ...(stemSporen.length ? ['-af', 'loudnorm=I=-14:TP=-1.5:LRA=11'] : []),   // met stem: luidheid zoals YouTube die afspeelt (-14 LUFS)
     '-c:a', 'aac', '-b:a', v2 ? '192k' : '128k', doel], { stdio: ['pipe', 'inherit', 'inherit'] });

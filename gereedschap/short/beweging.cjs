@@ -18,15 +18,35 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
   // ------------------------------------------------------------ kinetische tekst
   // *woord* = sleutelwoord. nadruk 'kleur' (signaalrood, kleine stoot) of 'balk' (gele markeerbalk die eronder groeit).
   // weg: tijd waarop de woorden er snel weer uit vliegen (voor een scène die met een nieuwe zin verdergaat).
+  // Woordtijden van de stem op de woorden van de kop leggen. Gelijke woorden (zonder hoofdletters en leestekens) krijgen
+  // de tijd waarop ze gezegd worden, iets eerder (beeld net voor geluid voelt strak); woorden die niet gezegd worden
+  // (een # in plaats van "this symbol") vallen ertussen. Lijkt minder dan 40% op de zin, dan geen sync (null).
+  const kaal = w => String(w).toLowerCase().replace(/[^a-z0-9#']/g, '');
+  function syncTijden(kop, gesproken) {
+    const uitk = new Array(kop.length).fill(null); let j = 0, raak = 0;
+    kop.forEach((w, i) => { const k = kaal(w); if (!k) return;
+      for (let m = j; m < Math.min(gesproken.length, j + 5); m++) if (kaal(gesproken[m].w) === k) { uitk[i] = gesproken[m].start - 0.06; j = m + 1; raak++; return; } });
+    if (raak < Math.max(1, kop.length * 0.4)) return null;
+    for (let i = 0; i < kop.length; i++) if (uitk[i] == null) {
+      let a = i - 1; while (a >= 0 && uitk[a] == null) a--;
+      let b = i + 1; while (b < kop.length && uitk[b] == null) b++;
+      const ta = a >= 0 ? uitk[a] : null, tb = b < kop.length ? uitk[b] : null;
+      uitk[i] = ta != null && tb != null ? ta + (tb - ta) * (i - a) / (b - a) : ta != null ? ta + 0.14 * (i - a) : Math.max(0, tb - 0.14 * (b - i));
+    }
+    for (let i = 0; i < uitk.length; i++) uitk[i] = Math.max(i ? uitk[i - 1] + 0.04 : 0, uitk[i]);
+    return uitk;
+  }
+
   function kin(tekst, o = {}) {
     const { x = 100, y, g = 96, max = 880, t, start = 0, stap = 0.085, duurW = 0.36, gewicht = 'bold',
-      kleur = K.inkt, accent = K.signaal, midden = false, regelHoogte = 1.1, nadruk = 'kleur', balk = K.geel, weg = null, stijl = 1 } = o;
+      kleur = K.inkt, accent = K.signaal, midden = false, regelHoogte = 1.1, nadruk = 'kleur', balk = K.geel, weg = null, stijl = 1, sync = null } = o;
     // Stijl 2 (proef ma 9 nov 2026): een markeerstift die onder het sleutelwoord doorhaalt nadat het is geland (op donker
     // papier een rode onderstreping) en een lichte drukschaduw onder de letters.
     const markeer = stijl >= 2 && nadruk === 'kleur', donker = kleur !== K.inkt;
     const font = gewicht === 'bold' ? FONT.bold : gewicht === 'mono' ? FONT.mono : FONT.regular;
     const fam = gewicht === 'mono' ? 'IBM Plex Mono' : 'Instrument Sans', fw = gewicht === 'regular' ? 400 : 700;
     const regels = breek(tekst, g, max, font), sp = maat(font, ' ', g);
+    const tijden = sync ? syncTijden(regels.flat().map(z => z.w), sync) : null;
     let svg = '', i = 0;
     const wegP = weg == null ? 0 : uit((t - weg) / 0.28);
     regels.forEach((r, ri) => {
@@ -34,7 +54,7 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
       let cx0 = midden ? (W - breedte) / 2 : x;
       const by = y + g * 0.82 + ri * g * regelHoogte;
       for (let j = 0; j < r.length; j++) {
-        const z = r[j], wb = maat(font, z.w, g), ts = start + i * stap, u = (t - ts) / duurW;
+        const z = r[j], wb = maat(font, z.w, g), ts = tijden ? tijden[i] : start + i * stap, u = (t - ts) / duurW;
         const acc = z.stukken.some(s => s.accent);
         if (u > 0 && wegP < 1) {
           const p = veer(u), op = klem(u * 2.6) * (1 - wegP);
@@ -48,6 +68,7 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
             if (bw > 0) w += `<rect x="${(cx0 - 12).toFixed(1)}" y="${(by - g * 0.8).toFixed(1)}" width="${((wb + 24) * bw).toFixed(1)}" height="${(g * 1.0).toFixed(1)}" rx="8" fill="${balk}"/>`;
           }
           if (acc && markeer) {
+            if (api.opname && !(j > 0 && r[j - 1].stukken.some(s => s.accent))) api.opname(api.sceneStart + ts + duurW * 0.55, 'streep');
             const mw = uit((t - ts - duurW * 0.55) / 0.24);
             if (mw > 0) {
               const verder = j < r.length - 1 && r[j + 1].stukken.some(s => s.accent);
@@ -79,6 +100,9 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
     if (c.draai) d = c.draai[0] + (c.draai[1] - c.draai[0]) * p;
     for (const ts of c.stoot || []) if (t >= ts) z += 0.07 * Math.exp(-(t - ts) * 7) * klem((t - ts) / 0.05);
     for (const ts of c.schud || []) if (t >= ts) { const a = 16 * Math.exp(-(t - ts) * 9); dx += a * Math.sin((t - ts) * 73); dy += a * Math.cos((t - ts) * 61); }
+    if (c.drift != null) {   // stijl 2: een camera die licht ademt, alsof hij uit de hand filmt (op de absolute tijd: loopt door over scènes)
+      const T = c.drift; dx += 3.2 * Math.sin(T * 0.83) + 1.6 * Math.sin(T * 2.11 + 1); dy += 2.6 * Math.sin(T * 0.61 + 2) + 1.4 * Math.sin(T * 1.73); d += 0.14 * Math.sin(T * 0.47 + 0.5);
+    }
     const [mx, my] = c.midden || [540, 860];
     return `translate(${(mx + dx).toFixed(2)} ${(my + dy).toFixed(2)}) rotate(${d.toFixed(3)}) scale(${z.toFixed(4)}) translate(${-mx} ${-my})`;
   }
@@ -133,6 +157,7 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
     return `<path d="${dPad(pts)}" fill="none" stroke="${kleur}" stroke-width="${dikte}" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="${L.toFixed(1)} ${(L + 10).toFixed(1)}" stroke-dashoffset="${(L * (1 - p)).toFixed(1)}"/>`; };
   const krabbel = {
     cirkel(cx, cy, rx, ry, { t, start = 0, duur = 0.5, kleur = K.signaal, dikte = 15, draai = -6 } = {}) {
+      if (api.opname) api.opname(api.sceneStart + start, 'kras');
       const p = uit((t - start) / duur); if (p <= 0) return '';
       const n = 72, rond = 1.13, a0 = -Math.PI * 0.62, pts = [];
       for (let i = 0; i <= n; i++) { const f = i / n, a = a0 + rond * 2 * Math.PI * f, r = 1 + 0.035 * Math.sin(f * 9) + 0.07 * f;
@@ -140,6 +165,7 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
       return `<g transform="rotate(${draai} ${cx} ${cy})">${lijn(pts, p, kleur, dikte)}</g>`;
     },
     pijl(x1, y1, x2, y2, { t, start = 0, duur = 0.4, kleur = K.signaal, dikte = 13, bocht = 0.28 } = {}) {
+      if (api.opname) api.opname(api.sceneStart + start, 'kras');
       const p = uit((t - start) / duur); if (p <= 0) return '';
       const mx = (x1 + x2) / 2 - (y2 - y1) * bocht, my = (y1 + y2) / 2 + (x2 - x1) * bocht, pts = [];
       for (let i = 0; i <= 30; i++) { const f = i / 30; pts.push([(1 - f) ** 2 * x1 + 2 * (1 - f) * f * mx + f * f * x2, (1 - f) ** 2 * y1 + 2 * (1 - f) * f * my + f * f * y2]); }
@@ -150,11 +176,13 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
       return s;
     },
     streep(x1, y, x2, { t, start = 0, duur = 0.35, kleur = K.signaal, dikte = 13 } = {}) {
+      if (api.opname) api.opname(api.sceneStart + start, 'streep');
       const p = uit((t - start) / duur); if (p <= 0) return '';
       const pts = []; for (let i = 0; i <= 24; i++) { const f = i / 24; pts.push([x1 + (x2 - x1) * f, y + 5 * Math.sin(f * 7) - 6 * f]); }
       return lijn(pts, p, kleur, dikte);
     },
   };
 
-  return { kin, camera, overgang, krabbel, OVERGANG_DUUR, DEFS, veer, klem, uit, zacht };
+  const api = { kin, camera, overgang, krabbel, OVERGANG_DUUR, DEFS, veer, klem, uit, zacht, sceneStart: 0, opname: null };
+  return api;
 };
