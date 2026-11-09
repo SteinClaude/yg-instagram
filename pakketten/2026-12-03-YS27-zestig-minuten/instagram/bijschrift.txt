@@ -1,0 +1,11 @@
+Why does an hour have 60 minutes? Not 10, not 100.
+
+Sixty is ancient. The Babylonians calculated in base 60, a system they inherited from the Sumerians. Why the Sumerians chose it isn't clear, but 60 divides evenly by 1 to 6, and by 10, 12, 15, 20 and 30.
+
+The Egyptians split light and dark into 12 hours each: 24 in all. Around AD 150, the astronomer Ptolemy divided each degree into 60 parts, and each of those into 60 again. The first small parts became the "minute", the second ones the "second".
+
+Sources: Michael A. Lombardi (NIST), Scientific American (2007); BBC News (2026).
+
+New every day at 18:00 (Amsterdam).
+
+#history #time #maths #science #todayilearned

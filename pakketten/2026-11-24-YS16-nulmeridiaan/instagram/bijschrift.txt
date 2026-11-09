@@ -1,0 +1,11 @@
+Why does longitude 0° run through Greenwich?
+
+In 1884, the Greenwich Meridian was recommended as the Prime Meridian of the World. The main reason: most of the world was already using it.
+
+The USA had already based its own time zones on Greenwich, and in the late 19th century 72% of the world's commerce relied on sea charts that used Greenwich as 0°. Choosing it helped the largest number of people. The exact line is marked by the cross-hairs of a telescope: the Airy Transit Circle.
+
+Source: Royal Museums Greenwich, "Greenwich Mean Time (GMT)".
+
+New every day at 18:00 (Amsterdam).
+
+#history #maps #time #greenwich #todayilearned

@@ -1,0 +1,11 @@
+Why does a phone keypad start with 1-2-3, but a calculator with 7-8-9?
+
+Before the push-button phone, Bell engineers tested keypad layouts: a 1960 study started with sixteen of them. The layout from adding machines, with 7-8-9 on top, was not the best.
+
+The same grid, numbered differently, was slightly faster: 4.92 seconds against 5.08. So phones got 1-2-3 on top. Why adding machines put 7-8-9 on top? The study doesn't say.
+
+Sources: R. L. Deininger, Bell System Technical Journal (1960); Boston Globe (2013).
+
+New every day at 18:00 (Amsterdam).
+
+#history #design #technology #telephone #todayilearned
