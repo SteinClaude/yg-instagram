@@ -1,6 +1,27 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** zo 8 nov 2026, 21:30 — Eva (avondronde, terugval)
+**Bijgewerkt:** ma 9 nov 2026, 12:05 — Eva (automaat nagekeken en goedgekeurd)
+
+## ▶ ERBIJ — ma 9 nov 12:05 (Eva): automaat Instagram kanaal 1 nagekeken en goedgekeurd — ga verder
+
+**Andries via chat met Eva, ma 9 nov 2026 11:51:** *"geef manon opdracht om verder te gaan als jij dat goedkeurd"*. Eva heeft je tak `manon/instagram-kanaal-1` (`7fbf229`) nagekeken en keurt hem goed; daarmee geldt dit citaat als de go van Andries (B30) om de automaat naar `main` te zetten.
+
+**Wat Eva nakeek (in orde):**
+- Tweede account als losse sleutels (`IG_TOKEN_K1`, `IG_USER_ID_K1`); ontbreken ze, dan wachten de items van kanaal 1 en draait @ygdigital.nl gewoon door. Een geweigerde sleutel van het ene account legt het andere niet stil.
+- Accountnummer van kanaal 1 wordt met `schoon()` uit elke foutmelding, `status.json` en de melding op GitHub gehaald; logboek en status noemen alleen "kanaal 1". Ook `src/instagram.cjs` logt het nummer nergens zelf.
+- Dubbel-plaatsen-slot (recente media) en sleutelteller (60 dagen) per account; `sleutel.json` houdt @ygdigital.nl bovenaan, zodat het dashboard blijft werken.
+- `plan-reel.cjs --account kanaal-1`: alleen YSxx, alleen bestanden uit `pakketten/<map>/instagram/`, geen kopie in `beeld/reels`, eigen id `<datum>-k1-<code>`, botsingscontrole per account.
+- `short/instagram.cjs`: beeld ongewijzigd, geluid naar AAC 48 kHz, geen edit list, moov vooraan, en het controleert dat zelf.
+- Bijschriften YS01–YS10: geen handle, kanaalnaam, link of YG Digital (gecontroleerd op de keurlijst).
+
+**Volgorde vanaf nu:**
+1. **Samenvoegen:** `manon/instagram-kanaal-1` naar `main`, push. Citeer bovenstaande zin in de commit. Plaatst nog niets: er staat geen item voor kanaal 1 in `planning.json` en de sleutel ontbreekt.
+2. **Sleutel:** Andries zet zelf `IG_TOKEN_K1` en `IG_USER_ID_K1` bij Settings › Secrets van deze repo (jouw stappen in LEESMIJ.md, "Tweede account"). Jij vraagt, leest of toont de sleutel nooit.
+3. **Proef:** daarna één proefdraai via de workflow met `proefaccount = kanaal-1` en de video van YS01 (zet een container klaar, publiceert niet). Meld wat Instagram zegt, ook over het AI-label.
+4. **Keuren:** Andries keurt de bijschriften per code ("bijschrift OK YS01" … "YS10") in jouw sessie; pas daarna `plan-reel.cjs --account kanaal-1` per code. Het ritme blijft zoals hij koos: de al online shorts eerst bijlopen, daarna gelijk met YouTube.
+5. **Weekverslag ma 9 nov:** schrijf het met wat jij kunt zien (wat online staat, wat gepland is). De kijkcijfers haalt Eva op; zet in je verslag "cijfers volgen via Eva". YS33–YS39 blijven wachten tot de cijfers er zijn ("Na eerste cijfers", zo 8 nov 21:15).
+
+Zet dit blok in `ontvangen`.
 
 ## ▶ ERBIJ — zo 8 nov 21:30 (Eva, avondronde terugval)
 
