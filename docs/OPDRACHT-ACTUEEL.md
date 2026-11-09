@@ -1,6 +1,65 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 9 nov 2026, 21:40 — Eva (avondronde, terugval)
+**Bijgewerkt:** ma 9 nov 2026, 22:40 — Eva (opdracht Jesse: intake nieuwe accounts)
+
+## ▶ NU voor Jesse — di 10 nov 2026: intake nieuwe accounts met Andries (Eva, ma 9 nov 22:40)
+
+**Andries via chat met Eva, ma 9 nov 2026 22:35:** *"Ik wil voor jesse en opdracht maken, ik wil meerde acounts nog gaan toevoegen, ik heb zelf al voor een paar acounts content gezien/bedacht laten we hier een opdracht voor jesse maken zodat hij morgen dit net mij kan door nemen"*
+
+**Doel:** morgen in je sessie met Andries zijn ideeën voor nieuwe accounts doornemen. Daarna leg je per idee een uitgewerkt voorstel neer, zodat hij per account kan kiezen: starten, later of niet. Dit is een wat-vraag: Andries beslist, jij adviseert (C27).
+
+**1. Voorbereiden (vóór het gesprek, zonder Andries):**
+- **Capaciteit nu:**
+  - Manon maakt kanaal 1: 7 per week op YouTube, plus Instagram.
+  - Finn maakt kanaal 2; de stand loopt via Eva (jesse-1).
+  - Jesse maakt zelf geen content.
+  - Gevolg: elk nieuw account heeft een **maker** nodig. Dat kan een bestaande maker zijn (wat levert die dan in?) of een nieuw crewlid (besluit Andries).
+- **Lat waar elk idee langs moet** (uit de koers van YG-Social):
+  - zonder gezicht;
+  - geen betaalde credits of stock zonder OK per bedrag;
+  - alleen muziek uit de bibliotheek van het platform;
+  - **nooit materiaal van andere makers**: een formule of stijl nadoen mag, hun beeld niet ("dit verdient niks", Andries 3 nov);
+  - feiten altijd met bron;
+  - geen herkenbare mensen belachelijk maken.
+- **Uitbetaaldrempels per platform** (YouTube, TikTok alleen 1+ minuut, Instagram NL zonder vaste uitbetaling): zie de kennis in `CLAUDE.md`.
+- **Je vragenlijst per idee.** Hoogstens 4 vragen per keer, met de vragenknoppen, en steeds je advies als eerste keuze:
+  1. Wat zag of bedacht hij? Laat het voorbeeld zien (link). Wat trekt hem erin?
+  2. Onderwerp en doelgroep, taal, platform(s).
+  3. Vorm: lengte, vaste reeks, stem of geen stem, hoe vaak per week.
+  4. Waarom dit account: bereik, geld, of steun voor iets anders?
+  5. Wie maakt het?
+  6. Wat mag het kosten aan zijn tijd per week (keuren, inloggen)?
+  7. Account bestaat al of moet nog worden aangemaakt (dat doet Andries).
+
+**2. In het gesprek:**
+- Eerst 5 minuten je open besluit: **Weekritme YG-Social** (je voorstel van 19:45).
+- Dan de accounts, één voor één.
+- **Wees eerlijk.** Past een idee niet bij de lat, zeg dat en geef het alternatief dat wel past. Zie je dat te veel accounts tegelijk de doelen van kanaal 1 en 2 raken (1.000 abonnees vóór 31 maart 2027, 7 per week met 1 week voorraad), zeg dat ook. Advies van Eva: start **hoogstens één nieuw account tegelijk**, met een proef van 2 weken en criteria vooraf.
+
+**3. Opleveren (zelfde dag):**
+- `docs/manager/nieuwe-accounts.md`, per idee:
+  - wat het is;
+  - de antwoorden van Andries, letterlijk;
+  - toets aan de lat;
+  - maker;
+  - tijd per week;
+  - verdienpad en drempel;
+  - risico's;
+  - de proef met criteria;
+  - je advies: start, later of niet;
+  - de volgorde.
+- **Openbare repo:** noem accounts hier "account A, B, C…". Echte namen, handles en links naar zijn eigen accounts gaan via `voorEva` naar het Project van Eva, nooit in deze repo.
+- **Besluiten** van Andries citeer je letterlijk (datum en tijd) in de commit, onder "Besluiten met Andries" in je oplevering en in `buitenGit`.
+- **Wat Eva of een ander moet regelen** zet je in `voorEva`: een nieuw crewlid of nieuwe repo, accountnamen, een maker die werk inlevert.
+- Zet bovenaan je oplevering `KLAAR: intake nieuwe accounts · <commit>`, of `KAN NIET VERDER` met wat je mist.
+
+**Grenzen (ongewijzigd):**
+- **Accounts:** geen accounts aanmaken, geen namen kiezen, nergens inloggen.
+- **Geld:** geen uitgaven.
+- **Makers:** geen opdrachten aan Manon of Finn buiten hun opdracht; dat loopt via Eva.
+- **Na het gesprek:** niets starten voordat Andries per account "start" zegt.
+
+Zet dit blok (id **jesse-4**) in `ontvangen`.
 
 ## ▶ ERBIJ — ma 9 nov 21:40 (Eva, avondronde terugval)
 
