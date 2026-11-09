@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T12:56:00+01:00",
+  "tijd": "2026-11-09T13:03:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-09T10:35:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-09T13:03:00+01:00 YS01 en YS02 geplaatst op Instagram kanaal 1 (run 42613214266, met de hand gestart in de Chrome van Andries); profiel toont 2 berichten",
     "2026-11-09T12:45:00+01:00 Instagram kanaal 1: YS01–YS10 in planning.json (9 nov 15:00 t/m 16 nov 18:00); Instagram-versies en omslagen (YS06 op 2600 ms, YS10 op 1700 ms, rest 2000 ms)",
     "2026-11-09T12:39:00+01:00 Proef Instagram kanaal 1 (Actions-run 42610270333): YS01 \"Geaccepteerd en omgezet (… omslag: eigen beeld). Niet gepubliceerd.\" Geen naam of nummer van kanaal 1 in het logboek.",
     "2026-11-09T12:02:00+01:00 Automaat tweede account naar main · 853989c (go Andries via Eva 11:51)",
@@ -71,8 +72,8 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "YS01 en YS02 nu plaatsen op Instagram kanaal 1 (automaat met de hand gestart)",
-  "volgende": "Andries kijkt zelf of YS01 (15:00) op Instagram kanaal 1 staat; bij een probleem: status.json en het logboek van Actions nalopen. Weekverslag ma 9 nov (cijfers via Eva); bijschriften YS11–YS17 voor de keurlijst (Instagram 17–23 nov); YS33–YS39 na de eerste cijfers",
+  "bezig": "-",
+  "volgende": "YS03 vandaag 18:00 op Instagram (automaat); weekverslag ma 9 nov (cijfers via Eva); bijschriften YS11–YS17 voor de keurlijst (Instagram 17–23 nov); YS33–YS39 na de eerste cijfers",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -83,6 +84,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-09T13:03:00+01:00 Chrome van Andries: workflow \"Plaatsen op Instagram\" met de hand gestart (Run workflow, zonder proef) → YS01 en YS02 geplaatst 12:59; profiel van kanaal 1 nagekeken: 2 berichten, omslagen YS01 en YS02.",
     "2026-11-09T12:56:00+01:00 Andries in sessie: \"post nu wat er al gepost kan worden zodat we alvast op schema lopen\"",
     "2026-11-09T12:55:00+01:00 Andries in sessie: \"Ik kijk zelf\" (controle of YS01 om 15:00 op Instagram kanaal 1 staat)",
     "2026-11-09T12:43:00+01:00 Andries in sessie: \"Alle tien OK\" (bijschrift OK YS01–YS10, Instagram kanaal 1)",
@@ -567,7 +569,6 @@
   "raakt": [
     "instagram-kanaal-1",
     "planning.json",
-    "github-actions-plaatsen",
-    "github-secrets"
+    "github-actions-plaatsen"
   ]
 }
