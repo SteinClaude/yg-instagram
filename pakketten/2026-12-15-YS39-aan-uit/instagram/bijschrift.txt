@@ -1,0 +1,11 @@
+Why is the power button a 1 and a 0?
+
+The power symbol combines a 1 and a 0: "on" and "off" in binary terms. The symbols are defined in an international standard, IEC 60417.
+
+For years they existed only as pictures. In 2015, a proposal was accepted to add them to Unicode, so they could finally be typed and searched as text.
+
+Sources: 99% Invisible (2017); Unicode proposal L2/14-009R (2014).
+
+New every day at 18:00 (Amsterdam).
+
+#history #design #technology #symbols #todayilearned

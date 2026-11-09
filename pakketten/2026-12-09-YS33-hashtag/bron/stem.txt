@@ -1,0 +1,10 @@
+Stem: Kokoro-82M (Apache-2.0), stem am_fenrir, tempo 1.1; lokaal gemaakt met gereedschap/short/stem.py.
+Ingesproken tekst per scène:
+1. Twitter said this symbol would never catch on.
+2. August 2007. Chris Messina asks: how about using it for groups?
+3. Chat rooms already used it to name their channels.
+4. Twitter thought it looked clunky.
+5. October 2007. Wildfires in San Diego.
+6. Messina asks a friend to tag his fire updates. Others copy the tag.
+7. In 2014, hashtag entered the Oxford English Dictionary.
+8. Never catch on? Now every trend starts with it.
