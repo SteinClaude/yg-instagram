@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-09T12:45:00+01:00",
+  "tijd": "2026-11-09T12:55:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -72,7 +72,7 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "-",
-  "volgende": "Nagaan of YS01 om 15:00 echt op Instagram kanaal 1 staat (gedaan.json / status.json); weekverslag ma 9 nov (cijfers via Eva); bijschriften YS11–YS17 voor de keurlijst (gelijk met YouTube 17–23 nov); YS33–YS39 na de eerste cijfers",
+  "volgende": "Andries kijkt zelf of YS01 (15:00) op Instagram kanaal 1 staat; bij een probleem: status.json en het logboek van Actions nalopen. Weekverslag ma 9 nov (cijfers via Eva); bijschriften YS11–YS17 voor de keurlijst (Instagram 17–23 nov); YS33–YS39 na de eerste cijfers",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -83,6 +83,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-09T12:55:00+01:00 Andries in sessie: \"Ik kijk zelf\" (controle of YS01 om 15:00 op Instagram kanaal 1 staat)",
     "2026-11-09T12:43:00+01:00 Andries in sessie: \"Alle tien OK\" (bijschrift OK YS01–YS10, Instagram kanaal 1)",
     "2026-11-09T12:40:00+01:00 Andries in sessie: \"Nee, geen label\" (geen AI-label op Instagram kanaal 1)",
     "2026-11-09T12:39:00+01:00 Andries in sessie: \"Geheimen staan\". In GitHub (Chrome, door Andries ingelogd): lijst toont IG_TOKEN, IG_TOKEN_K1, IG_USER_ID, IG_USER_ID_K1 (alleen namen gezien). Proef gestart via Run workflow (proefaccount kanaal-1, video + omslag YS01, 800 ms): geslaagd, niets gepubliceerd.",
