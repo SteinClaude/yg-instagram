@@ -1,3 +1,4 @@
+KLAAR: YS33–YS39 in planning.json voor Instagram kanaal 1, 17–23 nov 18:00 (na "Alles OK", ma 9 nov ±21:36) · c424c7a · di 10 nov 16:58; Studio (9–15 dec) volgt zodra Andries naar kanaal 1 wisselt ("Later", di 10 nov 16:57)
 KLAAR: YS33–YS39 opnieuw in stijl 2 (na "Stijl OK stijl 2"), met pakket, Instagram-versie (omslag op het einde van scène 1) en bijgewerkte keurlijst docs/keurlijst-YS33-YS39.md; wacht op pakket OK en bijschrift OK per code · ma 9 nov 20:15
 KLAAR: YS03 op Instagram kanaal 1 geplaatst (run 42673854617, 19:25, met de hand gestart na "Ja, start nu"); profiel toont 3 berichten · ma 9 nov 19:30
 KLAAR: proef stijl 2, ronde 3 (professioneel: tekst gelijk met de stem, studiomix, geluid bij markeerstift en krabbels, levende camera, CRF 17); wacht op "stijl OK stijl 2" · ma 9 nov 19:25
