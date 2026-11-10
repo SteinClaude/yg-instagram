@@ -1,6 +1,6 @@
 # CREW-STATUS — stand van alle sporen
 
-**Bijgewerkt:** di 10 nov 2026, 08:50 — Eva (kantoor-check)
+**Bijgewerkt:** di 10 nov 2026, 18:55 — Eva (kantoor-check)
 
 ## Werkwijze voor iedereen
 - Andries beslist. Eva (chef de staf) zet opdrachten in `docs/OPDRACHT-ACTUEEL.md` en leest jullie stand en opleveringen.
@@ -14,7 +14,7 @@
 |---|---|---|
 | Eva | chef de staf | leest je stand, oplevering en besluiten mee; zet je opdracht klaar; grijpt in waar nodig (C27) |
 | Jesse | manager YG-Social (C31, ma 9 nov) | voorstel weekritme YG-Social en doelenbewaking (`6ff0971`); stand `wacht` op besluit Andries over het weekritme; eerste weekoverzicht ma 16 nov (cijfers via Eva) |
-| Manon | maakster kanaal 1 (C31) | YS01–YS32 in Studio t/m di 8 dec (18:00). Instagram kanaal 1: YS01–YS03 geplaatst (YS03 met de hand gestart, de uurklok van GitHub sloeg runs over), automaat t/m YS10 (16 nov). **"Stijl OK stijl 2"** (Andries ±19:28, in haar sessie, `f87dfb5`); YS33–YS39 opnieuw in stijl 2 (`f1ef295`). Ma 9 nov ±21:36 "Alles OK": pakket OK + bijschrift OK YS33–YS39 (`54e68a9`); YS33–YS39 in planning.json voor Instagram 17–23 nov 18:00 (`c424c7a`). Volgende: Studio 9–15 dec 18:00, daarna YS40–YS54 in stijl 2. Bijschrift OK YS11–YS32 nog open. Weekanalyse ma 9 nov (top 3, flop 3, proef) nog niet in de oplevering |
+| Manon | maakster kanaal 1 (C31) | YS01–YS32 in Studio t/m di 8 dec (18:00). Instagram kanaal 1: YS01–YS03 geplaatst (YS03 met de hand gestart, de uurklok van GitHub sloeg runs over), automaat t/m YS10 (16 nov). **"Stijl OK stijl 2"** (Andries ±19:28, in haar sessie, `f87dfb5`); YS33–YS39 opnieuw in stijl 2 (`f1ef295`). Ma 9 nov ±21:36 "Alles OK": pakket OK + bijschrift OK YS33–YS39 (`54e68a9`); YS33–YS39 in planning.json voor Instagram 17–23 nov 18:00 (`c424c7a`). Stand 16:58 (`9e9a9ea`): YS33–YS39 in Studio (9–15 dec 18:00) zodra Andries in Studio naar kanaal 1 wisselt (blokkeert niet); ondertussen YS40–YS54 in stijl 2; elke dag na 18:00 nakijken of de Instagram-automaat draaide. Bijschrift OK YS11–YS32 nog open. Weekanalyse ma 9 nov (top 3, flop 3, proef) nog niet in de oplevering |
 
 Kanaal 2 is sinds 5 nov van crewlid Finn, in een eigen privé-repo. De overige sporen van de crew zijn privé. Wat Manon van een ander crewlid moet weten, zet Eva in haar opdracht.
 
