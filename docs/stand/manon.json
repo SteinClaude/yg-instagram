@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-12T23:45:00+01:00",
+  "tijd": "2026-11-12T23:50:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-12T23:50:00+01:00 Extra starttijden automaat Instagram gebouwd op tak manon/cron-extra (8a74843): 6 starts per uur in 16 en 17 UTC (18:00 Amsterdam in zomer en winter) en 3 in 18 UTC; alleen plaatsen.yml, script en planning ongewijzigd; nog niet op main",
     "2026-11-12T23:45:00+01:00 Instagram kanaal 1 nagekeken op vraag van Andries: YS04, YS05 en YS06 zijn geplaatst (gedaan.json), maar 3–5,5 uur te laat: 10 nov 21:20, 11 nov 23:32, 12 nov 21:42 in plaats van 18:00. Oorzaak: GitHub start de uurlijkse klok (cron \"5 * * * *\") maar ±3 keer per dag (runs 10–12 nov om ±04:15, 13:16, 21:18 · 02:04, 08:42, 16:54, 23:31 · 04:38, 13:17, 21:40)",
     "2026-11-10T16:58:00+01:00 Instagram kanaal 1: YS33–YS39 in planning.json, 17–23 nov 18:00, eigen omslag op het einde van scène 1 (c424c7a), na \"Alles OK\" (pakket OK en bijschrift OK YS33–YS39, 54e68a9)",
     "2026-11-09T20:15:00+01:00 YS33–YS39 opnieuw gemaakt in stijl 2 (na \"Stijl OK stijl 2\"): video, studio.txt, upload 6,9–8,9 MB, Instagram-versie met omslag op het einde van scène 1; 27,8–35,2 s; keurlijst docs/keurlijst-YS33-YS39.md bijgewerkt",
@@ -83,10 +84,10 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "-",
-  "volgende": "Antwoord Andries op de automaat (A of B) doorzetten via voorEva V-manon-cron. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Daarna YS40–YS54 in stijl 2. Weekverslag (cijfers via Eva).",
+  "volgende": "Na controle Eva en go Andries: manon/cron-extra naar main, daarna een week bijhouden hoe laat de Reels komen (blijft het uitlopen: voorstel B, externe wekker). YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. YS40–YS54 in stijl 2. Weekverslag (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
-    "Automaat Instagram plaatst 3–5,5 uur te laat (GitHub start de uurklok maar ±3× per dag) · keuze voor Andries: (A) extra starttijden rond 17:00–18:00 in plaatsen.yml (gratis, niet gegarandeerd; controle Eva, go Andries B30) of (B) een externe wekker die om 17:55 de automaat start (betrouwbaar; account en sleutel maakt Andries) · mijn advies: A nu, B als het binnen een week nog steeds uitloopt · ondertussen: elke Reel komt wel, alleen later · blokkeert: nee",
+    "Go voor tak manon/cron-extra naar main (extra starttijden automaat Instagram)? · wacht op controle Eva (V-manon-cron) en daarna go Andries (B30) · ondertussen: Reels komen wel, alleen later · blokkeert: nee",
     "Studio kanaal 1: wanneer wissel je naar kanaal 1, zodat ik YS33–YS39 inplan (9–15 dec 18:00, pakket OK is er)? · aanname: ruim op tijd vóór 9 dec, geen haast · ondertussen: YS40–YS54 in stijl 2 · blokkeert: nee (YouTube is gepland t/m 8 dec)",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -96,6 +97,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-12T23:40:00+01:00 Andries in de sessie, op \"Welke oplossing voor de te late Instagram-posts?\": \"A: extra starttijden\"",
     "2026-11-12T23:38:00+01:00 Andries in de sessie: \"volgens mij loopt de insta niet goed of wel?\" — nagekeken; Claude in Chrome was niet verbonden, dus alleen gedaan.json en de run-lijst van GitHub gebruikt",
     "2026-11-10T16:57:00+01:00 Andries in de sessie, op \"Wissel je in Chrome naar kanaal 1 in Studio? Dan plan ik YS33–YS39 in voor 9–15 dec, 18:00.\": \"Later\" — Studio opende op een account zonder kanaal; niets ingepland in Studio, tabblad niet gebruikt",
     "2026-11-09T21:36:00+01:00 Andries in de sessie, op \"Geef je pakket OK en bijschrift OK voor YS33–YS39?\": \"Alles OK\"",
@@ -544,7 +546,7 @@
     {
       "id": "V-manon-cron",
       "aan": "Eva",
-      "wat": "plaatsen.yml (cron 5 * * * *) draaide op 9 nov na 10:18 UTC+1 niet meer; YS03 Instagram kanaal 1 (18:00) is daardoor niet geplaatst. Voorstel: extra cron-tijden rond 17:00–18:00 op rustige minuten of externe wekker. Wil jij meekijken vóór de wijziging (B30)?"
+      "wat": "Controle gevraagd van tak manon/cron-extra (8a74843): alleen .github/workflows/plaatsen.yml, twee extra cron-regels ('3,13,23,34,44,53 16,17 * * *' en '9,27,48 18 * * *') naast '5 * * * *'. Reden: GitHub startte 10–12 nov maar ±3 keer per dag, YS04–YS06 kwamen 3–5,5 uur te laat. Andries koos do 12 nov ±23:40 \"A: extra starttijden\". Na jouw controle vraag ik Andries de go om naar main te zetten (B30)."
     },
     {
       "id": "V-manon-profiel",

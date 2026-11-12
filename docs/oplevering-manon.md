@@ -1,3 +1,4 @@
+KLAAR: extra starttijden automaat Instagram op tak manon/cron-extra (8a74843), na "A: extra starttijden"; wacht op controle Eva (V-manon-cron) en go Andries (B30) · do 12 nov 23:50
 KLAAR: Instagram kanaal 1 nagekeken: YS04–YS06 geplaatst, maar 3–5,5 uur te laat (GitHub start de uurklok maar ±3× per dag); keuze A/B voor de automaat ligt bij Andries · do 12 nov 23:45
 KLAAR: YS33–YS39 in planning.json voor Instagram kanaal 1, 17–23 nov 18:00 (na "Alles OK", ma 9 nov ±21:36) · c424c7a · di 10 nov 16:58; Studio (9–15 dec) volgt zodra Andries naar kanaal 1 wisselt ("Later", di 10 nov 16:57)
 KLAAR: YS33–YS39 opnieuw in stijl 2 (na "Stijl OK stijl 2"), met pakket, Instagram-versie (omslag op het einde van scène 1) en bijgewerkte keurlijst docs/keurlijst-YS33-YS39.md; wacht op pakket OK en bijschrift OK per code · ma 9 nov 20:15
