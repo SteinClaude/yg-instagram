@@ -167,6 +167,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- do 12 nov 2026 ±23:40: "A: extra starttijden" — antwoord op "Welke oplossing voor de te late Instagram-posts?" (A: extra starttijden rond 17:00–18:00 in plaatsen.yml; B: externe wekker). Manon bouwt A op een eigen tak; naar main pas na controle Eva en go Andries (B30).
 - ma 9 nov 2026 ±21:36: "Alles OK" — antwoord op "Geef je pakket OK en bijschrift OK voor YS33–YS39?" → pakket OK YS33, YS34, YS35, YS36, YS37, YS38, YS39 en bijschrift OK YS33, YS34, YS35, YS36, YS37, YS38, YS39 (keurlijst docs/keurlijst-YS33-YS39.md, stijl 2). Instagram kanaal 1 via de automaat 17–23 nov 18:00; YouTube kanaal 1 via Studio 9–15 dec 18:00.
 - ma 9 nov 2026 ±19:28: "Stijl OK stijl 2" — stijl 2 (docs/proef-stijl-2.md: geen nummer bovenaan, papierstructuur, voortgangsbalk, markeerstift, krabbels, bronstempel, tekst gelijk met de stem, studiomix, levende camera) geldt voor de YS-reeks vanaf YS33. YS01–YS32 blijven zoals gepland.
 
