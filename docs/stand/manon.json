@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-10T16:58:00+01:00",
+  "tijd": "2026-11-12T23:45:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-12T23:45:00+01:00 Instagram kanaal 1 nagekeken op vraag van Andries: YS04, YS05 en YS06 zijn geplaatst (gedaan.json), maar 3–5,5 uur te laat: 10 nov 21:20, 11 nov 23:32, 12 nov 21:42 in plaats van 18:00. Oorzaak: GitHub start de uurlijkse klok (cron \"5 * * * *\") maar ±3 keer per dag (runs 10–12 nov om ±04:15, 13:16, 21:18 · 02:04, 08:42, 16:54, 23:31 · 04:38, 13:17, 21:40)",
     "2026-11-10T16:58:00+01:00 Instagram kanaal 1: YS33–YS39 in planning.json, 17–23 nov 18:00, eigen omslag op het einde van scène 1 (c424c7a), na \"Alles OK\" (pakket OK en bijschrift OK YS33–YS39, 54e68a9)",
     "2026-11-09T20:15:00+01:00 YS33–YS39 opnieuw gemaakt in stijl 2 (na \"Stijl OK stijl 2\"): video, studio.txt, upload 6,9–8,9 MB, Instagram-versie met omslag op het einde van scène 1; 27,8–35,2 s; keurlijst docs/keurlijst-YS33-YS39.md bijgewerkt",
     "2026-11-09T19:30:00+01:00 YS03 geplaatst op Instagram kanaal 1 (run 42673854617, met de hand gestart in de Chrome van Andries na \"Ja, start nu\"; gedaan.json 19:25, eigen omslag); profiel toont 3 berichten",
@@ -82,11 +83,11 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "-",
-  "volgende": "YS33–YS39 in Studio inplannen (9–15 dec 18:00, video-upload.mp4) zodra Andries naar kanaal 1 wisselt. Daarna YS40–YS54 in stijl 2. Elke dag na 18:00 nakijken of de Instagram-automaat heeft gedraaid (YS04 op 10 nov). Weekverslag ma 9 nov (cijfers via Eva).",
+  "volgende": "Antwoord Andries op de automaat (A of B) doorzetten via voorEva V-manon-cron. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Daarna YS40–YS54 in stijl 2. Weekverslag (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
+    "Automaat Instagram plaatst 3–5,5 uur te laat (GitHub start de uurklok maar ±3× per dag) · keuze voor Andries: (A) extra starttijden rond 17:00–18:00 in plaatsen.yml (gratis, niet gegarandeerd; controle Eva, go Andries B30) of (B) een externe wekker die om 17:55 de automaat start (betrouwbaar; account en sleutel maakt Andries) · mijn advies: A nu, B als het binnen een week nog steeds uitloopt · ondertussen: elke Reel komt wel, alleen later · blokkeert: nee",
     "Studio kanaal 1: wanneer wissel je naar kanaal 1, zodat ik YS33–YS39 inplan (9–15 dec 18:00, pakket OK is er)? · aanname: ruim op tijd vóór 9 dec, geen haast · ondertussen: YS40–YS54 in stijl 2 · blokkeert: nee (YouTube is gepland t/m 8 dec)",
-    "Automaat Instagram: GitHub draait de uurlijkse klok onbetrouwbaar (9 nov geen run tussen 10:18 en 19:25) · voorstel: extra starttijden rond 17:00–18:00 op rustige minuten (na controle Eva, go Andries, B30) of een externe wekker (account van Andries) · ondertussen: elke dag na 18:00 nakijken en zo nodig met de hand starten na zijn ja · blokkeert: nee",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
       "aanname": "laten staan (advies: de eerste drie dagen zonder stem zijn een nuttige vergelijking; vervangen kost een upload per short en raakt al geplande video's)",
@@ -95,6 +96,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-12T23:38:00+01:00 Andries in de sessie: \"volgens mij loopt de insta niet goed of wel?\" — nagekeken; Claude in Chrome was niet verbonden, dus alleen gedaan.json en de run-lijst van GitHub gebruikt",
     "2026-11-10T16:57:00+01:00 Andries in de sessie, op \"Wissel je in Chrome naar kanaal 1 in Studio? Dan plan ik YS33–YS39 in voor 9–15 dec, 18:00.\": \"Later\" — Studio opende op een account zonder kanaal; niets ingepland in Studio, tabblad niet gebruikt",
     "2026-11-09T21:36:00+01:00 Andries in de sessie, op \"Geef je pakket OK en bijschrift OK voor YS33–YS39?\": \"Alles OK\"",
     "2026-11-09T19:28:00+01:00 Andries in sessie (±19:28): \"Stijl OK stijl 2\"",
