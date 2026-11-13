@@ -1,10 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-13T12:20:00+01:00",
-  "sessie": { "plek": "pc", "sinds": "2026-11-13T11:45:00+01:00" },
+  "tijd": "2026-11-13T12:40:00+01:00",
+  "sessie": {
+    "plek": "pc",
+    "sinds": "2026-11-13T11:45:00+01:00"
+  },
   "status": "wacht",
   "af": [
+    "2026-11-13T12:40:00+01:00 Naamvoorstellen account 3 in de sessie aan Andries, met controle of de handle vrij lijkt op YouTube en TikTok (namen niet in de repo)",
     "2026-11-13T12:20:00+01:00 Intake account 3 (GTA 6, uitgelegd) in docs/manager/nieuwe-accounts.md; advies start",
     "2026-11-13T12:20:00+01:00 Eerste keurlijst van de week: docs/keurlijst-week.md",
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
@@ -13,18 +17,56 @@
   "volgende": "Andries maakt kanaal account 3 aan (merkaccount) en kiest een naam; Eva zet het nieuwe crewlid op; eerste weekoverzicht YG-Social ma 16 nov (cijfers via Eva); volgende keurlijst vr 20 nov",
   "kanNietVerder": null,
   "vragen": [
-    { "vraag": "Naam voor account 3?", "aanname": "Andries kiest uit voorstellen van Jesse in de sessie; naam nooit in de repo", "blokkeert": false }
+    {
+      "vraag": "Naam voor account 3?",
+      "aanname": "Andries kiest uit voorstellen van Jesse in de sessie; naam nooit in de repo",
+      "blokkeert": false
+    }
   ],
   "buitenGit": [
-    { "tijd": "2026-11-13T11:57:00+01:00", "wat": "Op verzoek van Andries WhatsApp geopend op zijn pc, groep Yg-social gelezen (niets verstuurd)" },
-    { "tijd": "2026-11-13T11:58:00+01:00", "wat": "Andries: \"ja we gaan ook een eigen gta-acount met een eigen invalshoek maken, ik heb al een google acount hier voor alee nog geen youtube kanaal\"" },
-    { "tijd": "2026-11-13T12:10:00+01:00", "wat": "Andries (vragenknoppen): Weekritme \"Akkoord\"; account 3: \"Ja, dit is account 3\", \"3 shorts/week, uitleg\", \"Nieuw crewlid\", \"youtube, instagram, tiktok\", \"Engels, AI-stem\", \"Bereik nu, geld later\", \"±1 uur\"" }
+    {
+      "tijd": "2026-11-13T11:57:00+01:00",
+      "wat": "Op verzoek van Andries WhatsApp geopend op zijn pc, groep Yg-social gelezen (niets verstuurd)"
+    },
+    {
+      "tijd": "2026-11-13T11:58:00+01:00",
+      "wat": "Andries: \"ja we gaan ook een eigen gta-acount met een eigen invalshoek maken, ik heb al een google acount hier voor alee nog geen youtube kanaal\""
+    },
+    {
+      "tijd": "2026-11-13T12:10:00+01:00",
+      "wat": "Andries (vragenknoppen): Weekritme \"Akkoord\"; account 3: \"Ja, dit is account 3\", \"3 shorts/week, uitleg\", \"Nieuw crewlid\", \"youtube, instagram, tiktok\", \"Engels, AI-stem\", \"Bereik nu, geld later\", \"±1 uur\""
+    },
+    {
+      "tijd": "2026-11-13T12:35:00+01:00",
+      "wat": "Openbare profielpagina's van YouTube, TikTok en Instagram opgevraagd om te zien of naamvoorstellen voor account 3 vrij lijken (niet ingelogd, niets aangemaakt)"
+    },
+    {
+      "tijd": "2026-11-13T12:30:00+01:00",
+      "wat": "Andries: \"nederlands en we gaan veder\""
+    }
   ],
   "voorEva": [
-    { "id": "jesse-5", "aan": "Eva", "wat": "Nieuw crewlid + eigen privé-repo voor account 3 (GTA 6, uitgelegd; besluit Andries vr 13 nov ±12:10 \"Nieuw crewlid\"). Kaart en lat: docs/manager/nieuwe-accounts.md. Script OK vóór maken." },
-    { "id": "jesse-6", "aan": "Eva", "wat": "Na de keuze van Andries: naam/handles van account 3 (YouTube, Instagram, TikTok) in het Project van Eva, niet in deze repo." },
-    { "id": "jesse-7", "aan": "Eva", "wat": "Weekritme YG-Social is akkoord (Andries vr 13 nov ±12:10): maandag cijfers (jesse-2) ook voor account 3 zodra die loopt; keurlijst van de week elke vrijdag in docs/keurlijst-week.md." }
+    {
+      "id": "jesse-5",
+      "aan": "Eva",
+      "wat": "Nieuw crewlid + eigen privé-repo voor account 3 (GTA 6, uitgelegd; besluit Andries vr 13 nov ±12:10 \"Nieuw crewlid\"). Kaart en lat: docs/manager/nieuwe-accounts.md. Script OK vóór maken."
+    },
+    {
+      "id": "jesse-6",
+      "aan": "Eva",
+      "wat": "Na de keuze van Andries: naam/handles van account 3 (YouTube, Instagram, TikTok) in het Project van Eva, niet in deze repo."
+    },
+    {
+      "id": "jesse-7",
+      "aan": "Eva",
+      "wat": "Weekritme YG-Social is akkoord (Andries vr 13 nov ±12:10): maandag cijfers (jesse-2) ook voor account 3 zodra die loopt; keurlijst van de week elke vrijdag in docs/keurlijst-week.md."
+    }
   ],
-  "ontvangen": ["jesse-1", "jesse-2", "jesse-3", "jesse-4"],
+  "ontvangen": [
+    "jesse-1",
+    "jesse-2",
+    "jesse-3",
+    "jesse-4"
+  ],
   "raakt": []
 }
