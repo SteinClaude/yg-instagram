@@ -1,28 +1,23 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-13T12:40:00+01:00",
+  "tijd": "2026-11-13T12:55:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-13T11:45:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-13T12:55:00+01:00 Naam account 3 gekozen door Andries (niet in de repo; via jesse-6)",
     "2026-11-13T12:40:00+01:00 Naamvoorstellen account 3 in de sessie aan Andries, met controle of de handle vrij lijkt op YouTube en TikTok (namen niet in de repo)",
     "2026-11-13T12:20:00+01:00 Intake account 3 (GTA 6, uitgelegd) in docs/manager/nieuwe-accounts.md; advies start",
     "2026-11-13T12:20:00+01:00 Eerste keurlijst van de week: docs/keurlijst-week.md",
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
   "bezig": null,
-  "volgende": "Andries maakt kanaal account 3 aan (merkaccount) en kiest een naam; Eva zet het nieuwe crewlid op; eerste weekoverzicht YG-Social ma 16 nov (cijfers via Eva); volgende keurlijst vr 20 nov",
+  "volgende": "Andries maakt YouTube-kanaal (merkaccount), Instagram (professioneel) en TikTok aan met de gekozen handle; Eva zet het nieuwe crewlid op (jesse-5); eerste weekoverzicht YG-Social ma 16 nov; keurlijst vr 20 nov",
   "kanNietVerder": null,
-  "vragen": [
-    {
-      "vraag": "Naam voor account 3?",
-      "aanname": "Andries kiest uit voorstellen van Jesse in de sessie; naam nooit in de repo",
-      "blokkeert": false
-    }
-  ],
+  "vragen": [],
   "buitenGit": [
     {
       "tijd": "2026-11-13T11:57:00+01:00",
@@ -43,6 +38,10 @@
     {
       "tijd": "2026-11-13T12:30:00+01:00",
       "wat": "Andries: \"nederlands en we gaan veder\""
+    },
+    {
+      "tijd": "2026-11-13T12:55:00+01:00",
+      "wat": "Andries kiest de naam van account 3: \"[weggelaten]\" (naam via jesse-6)"
     }
   ],
   "voorEva": [
@@ -54,7 +53,7 @@
     {
       "id": "jesse-6",
       "aan": "Eva",
-      "wat": "Na de keuze van Andries: naam/handles van account 3 (YouTube, Instagram, TikTok) in het Project van Eva, niet in deze repo."
+      "wat": "Naam account 3 is gekozen door Andries (vr 13 nov ±12:55): Jesse geeft naam en handle in de sessie aan Eva door voor het Project; niet in deze repo. Handle leek vrij op YouTube en TikTok (13 nov 12:50), Instagram niet te controleren."
     },
     {
       "id": "jesse-7",
