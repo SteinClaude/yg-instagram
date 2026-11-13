@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-13T15:18:00+01:00",
+  "tijd": "2026-11-13T15:22:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-13T11:45:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-13T15:22:00+01:00 Stop-hook herkende deze sessie als Manon: .claude/crew.json kreeg mapLid (map yg-social-jesse = jesse); Manons eigen map blijft manon",
     "2026-11-13T15:18:00+01:00 Verzoek aan Eva: nieuw crewlid voor account 3 eerst opzetten in een eigen sessie (jesse-8)",
     "2026-11-13T12:55:00+01:00 Naam account 3 gekozen door Andries (niet in de repo; via jesse-6)",
     "2026-11-13T12:40:00+01:00 Naamvoorstellen account 3 in de sessie aan Andries, met controle of de handle vrij lijkt op YouTube en TikTok (namen niet in de repo)",
@@ -69,6 +70,11 @@
       "id": "jesse-8",
       "aan": "Eva",
       "wat": "Besluit Andries vr 13 nov 15:18: eerst het nieuwe crewlid voor account 3 maken, in een eigen sessie; Andries doet dat met Eva. Daarna loopt account 3 (kanaal aanmaken, stijlproef, 3 scripts, proef van 2 weken) in die sessie, niet bij Jesse. Uitgangspunt voor de kaart: docs/manager/nieuwe-accounts.md (lat, vorm 61-90 s, script OK voor maken, proefcriteria). Naam en handle (jesse-6) geeft Andries in die sessie of aan Eva; niet in een openbare repo. Jesse blijft manager: weekoverzicht, keurlijst en proefuitkomst ook voor account 3."
+    },
+    {
+      "id": "jesse-9",
+      "aan": "Eva",
+      "wat": "Ter info: .claude/crew.json kreeg mapLid {\"yg-social-jesse\":\"jesse\"}, zodat de stop-hook in de Jesse-map docs/stand/jesse.json bewaakt in plaats van manon.json. Standaard blijft lid manon; voor Manon verandert niets. Graag nakijken."
     }
   ],
   "ontvangen": [
@@ -77,5 +83,7 @@
     "jesse-3",
     "jesse-4"
   ],
-  "raakt": []
+  "raakt": [
+    ".claude/crew.json (stop-hook, gedeeld met Manon)"
+  ]
 }
