@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-13T12:55:00+01:00",
+  "tijd": "2026-11-13T15:18:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-13T11:45:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-13T15:18:00+01:00 Verzoek aan Eva: nieuw crewlid voor account 3 eerst opzetten in een eigen sessie (jesse-8)",
     "2026-11-13T12:55:00+01:00 Naam account 3 gekozen door Andries (niet in de repo; via jesse-6)",
     "2026-11-13T12:40:00+01:00 Naamvoorstellen account 3 in de sessie aan Andries, met controle of de handle vrij lijkt op YouTube en TikTok (namen niet in de repo)",
     "2026-11-13T12:20:00+01:00 Intake account 3 (GTA 6, uitgelegd) in docs/manager/nieuwe-accounts.md; advies start",
@@ -15,7 +16,7 @@
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
   "bezig": null,
-  "volgende": "Andries maakt YouTube-kanaal (merkaccount), Instagram (professioneel) en TikTok aan met de gekozen handle; Eva zet het nieuwe crewlid op (jesse-5); eerste weekoverzicht YG-Social ma 16 nov; keurlijst vr 20 nov",
+  "volgende": "Andries zet met Eva het nieuwe crewlid voor account 3 op in een eigen sessie (jesse-5, jesse-8); daar gaat account 3 verder. Kanaal en accounts maakt Andries aan. Eerste weekoverzicht YG-Social ma 16 nov; keurlijst vr 20 nov",
   "kanNietVerder": null,
   "vragen": [],
   "buitenGit": [
@@ -42,6 +43,10 @@
     {
       "tijd": "2026-11-13T12:55:00+01:00",
       "wat": "Andries kiest de naam van account 3: \"[weggelaten]\" (naam via jesse-6)"
+    },
+    {
+      "tijd": "2026-11-13T15:18:00+01:00",
+      "wat": "Andries: \"zullen we eerst de agent maken in een nieuwe sessie zodat we dit veder kunnen doen in die sessie,  schrijf dit naar eva dan maak ik met haar de nieuwe agent\""
     }
   ],
   "voorEva": [
@@ -59,6 +64,11 @@
       "id": "jesse-7",
       "aan": "Eva",
       "wat": "Weekritme YG-Social is akkoord (Andries vr 13 nov ±12:10): maandag cijfers (jesse-2) ook voor account 3 zodra die loopt; keurlijst van de week elke vrijdag in docs/keurlijst-week.md."
+    },
+    {
+      "id": "jesse-8",
+      "aan": "Eva",
+      "wat": "Besluit Andries vr 13 nov 15:18: eerst het nieuwe crewlid voor account 3 maken, in een eigen sessie; Andries doet dat met Eva. Daarna loopt account 3 (kanaal aanmaken, stijlproef, 3 scripts, proef van 2 weken) in die sessie, niet bij Jesse. Uitgangspunt voor de kaart: docs/manager/nieuwe-accounts.md (lat, vorm 61-90 s, script OK voor maken, proefcriteria). Naam en handle (jesse-6) geeft Andries in die sessie of aan Eva; niet in een openbare repo. Jesse blijft manager: weekoverzicht, keurlijst en proefuitkomst ook voor account 3."
     }
   ],
   "ontvangen": [
