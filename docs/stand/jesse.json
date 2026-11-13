@@ -1,28 +1,30 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-09T19:45:00+01:00",
-  "sessie": { "plek": "pc", "sinds": "2026-11-09T19:35:00+01:00" },
+  "tijd": "2026-11-13T12:20:00+01:00",
+  "sessie": { "plek": "pc", "sinds": "2026-11-13T11:45:00+01:00" },
   "status": "wacht",
   "af": [
-    "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social in docs/oplevering-jesse.md (weekdagen, cijfers via Eva, proef 1 met criteria vooraf, gebundelde keurlijst) plus doelenbewaking"
+    "2026-11-13T12:20:00+01:00 Intake account 3 (GTA 6, uitgelegd) in docs/manager/nieuwe-accounts.md; advies start",
+    "2026-11-13T12:20:00+01:00 Eerste keurlijst van de week: docs/keurlijst-week.md",
+    "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
   "bezig": null,
-  "volgende": "Na besluit Andries: docs/keurlijst-week.md elke vrijdag; eerste weekoverzicht YG-Social ma 16 nov (cijfers via Eva)",
+  "volgende": "Andries maakt kanaal account 3 aan (merkaccount) en kiest een naam; Eva zet het nieuwe crewlid op; eerste weekoverzicht YG-Social ma 16 nov (cijfers via Eva); volgende keurlijst vr 20 nov",
   "kanNietVerder": null,
   "vragen": [
-    { "vraag": "Weekritme YG-Social zoals voorgesteld (keurzitting vrijdagavond, proef 1 haak vs. oud)?", "aanname": "ja", "blokkeert": false },
-    { "vraag": "Mag de manager de repo van Finn lezen?", "aanname": "nee; via voorEva en CREW-STATUS", "blokkeert": false }
+    { "vraag": "Naam voor account 3?", "aanname": "Andries kiest uit voorstellen van Jesse in de sessie; naam nooit in de repo", "blokkeert": false }
   ],
   "buitenGit": [
-    { "tijd": "2026-11-09T18:48:00+01:00", "wat": "C31: Andries maakt Jesse manager van YG-Social (Eva legt vast)" },
-    { "tijd": "2026-11-09T19:35:00+01:00", "wat": "Eerste sessie Jesse gestart door Andries op de pc (\"jij bent jesse ga veder\")" }
+    { "tijd": "2026-11-13T11:57:00+01:00", "wat": "Op verzoek van Andries WhatsApp geopend op zijn pc, groep Yg-social gelezen (niets verstuurd)" },
+    { "tijd": "2026-11-13T11:58:00+01:00", "wat": "Andries: \"ja we gaan ook een eigen gta-acount met een eigen invalshoek maken, ik heb al een google acount hier voor alee nog geen youtube kanaal\"" },
+    { "tijd": "2026-11-13T12:10:00+01:00", "wat": "Andries (vragenknoppen): Weekritme \"Akkoord\"; account 3: \"Ja, dit is account 3\", \"3 shorts/week, uitleg\", \"Nieuw crewlid\", \"youtube, instagram, tiktok\", \"Engels, AI-stem\", \"Bereik nu, geld later\", \"±1 uur\"" }
   ],
   "voorEva": [
-    { "id": "jesse-1", "aan": "Finn (via Eva)", "wat": "Stand kanaal 2: wat is gepland t/m welke datum (YouTube), voorraad, open keuringen (codes + plaatsdatum). Voor de doelenbewaking en de keurlijst van de week." },
-    { "id": "jesse-2", "aan": "Eva", "wat": "Vanaf ma 16 nov elke maandag de weekcijfers beide kanalen in vaste vorm (per short 72 u na plaatsing: code · platform · weergaven · weergegeven-vs-weggeswipet % · kijkpercentage · nieuwe abonnees; plus abonnees/volgers begin-eind week, 90-dagen Shorts-weergaven, uitgaven potje). Zie docs/oplevering-jesse.md §2." },
-    { "id": "jesse-3", "aan": "Eva", "wat": "Instagram kanaal 1 loopt achter op YouTube (gepland t/m 16 nov vs 8 dec) en de automaat sloeg op 9 nov runs over; graag bewaken dat bijschrift OK YS11–YS32 deze week bij Manon langskomt." }
+    { "id": "jesse-5", "aan": "Eva", "wat": "Nieuw crewlid + eigen privé-repo voor account 3 (GTA 6, uitgelegd; besluit Andries vr 13 nov ±12:10 \"Nieuw crewlid\"). Kaart en lat: docs/manager/nieuwe-accounts.md. Script OK vóór maken." },
+    { "id": "jesse-6", "aan": "Eva", "wat": "Na de keuze van Andries: naam/handles van account 3 (YouTube, Instagram, TikTok) in het Project van Eva, niet in deze repo." },
+    { "id": "jesse-7", "aan": "Eva", "wat": "Weekritme YG-Social is akkoord (Andries vr 13 nov ±12:10): maandag cijfers (jesse-2) ook voor account 3 zodra die loopt; keurlijst van de week elke vrijdag in docs/keurlijst-week.md." }
   ],
-  "ontvangen": [],
+  "ontvangen": ["jesse-1", "jesse-2", "jesse-3", "jesse-4"],
   "raakt": []
 }

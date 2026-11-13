@@ -1,5 +1,7 @@
 # Oplevering Jesse — manager YG-Social
 
+KLAAR: intake account 3 (GTA 6, uitgelegd): docs/manager/nieuwe-accounts.md; advies start, na kanaal maken (Andries) en nieuw crewlid (Eva) · vr 13 nov 12:20
+KLAAR: eerste keurlijst van de week gebundeld: docs/keurlijst-week.md · vr 13 nov 12:20
 KLAAR: voorstel "Weekritme YG-Social" (weekdagen, cijfers via Eva, eerste proef met criteria vooraf, gebundelde keurlijst); wacht op besluit Andries · ma 9 nov 19:45
 
 ## ⚠ Doelen — wat achterloopt (ma 9 nov 2026, 19:45)
@@ -88,12 +90,14 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 
 ## Besluiten met Andries
 
+- vr 13 nov 2026 ±12:10 (vragenknoppen, sessie Jesse): Weekritme YG-Social → *"Akkoord"*. Account 3 → *"Ja, dit is account 3"* · *"3 shorts/week, uitleg"* · *"Nieuw crewlid"* · *"youtube, instagram, tiktok"* · *"Engels, AI-stem"* · *"Bereik nu, geld later"* · *"±1 uur"*.
+- vr 13 nov 2026 ±11:58 (sessie Jesse): *"ja we gaan ook een eigen gta-acount met een eigen invalshoek maken, ik heb al een google acount hier voor alee nog geen youtube kanaal"*
+- vr 13 nov 2026 ±11:57: op verzoek van Andries de WhatsApp-groep Yg-social geopend op zijn pc (alleen gelezen, niets verstuurd). Daarin zijn vraag van ±11:44: *"Acount na maken? En uploaden"* (met link naar een groot GTA 6-fanaccount [weggelaten]). Advies Jesse: niet nadoen, eigen account met eigen invalshoek.
 - ma 9 nov 2026 18:48 (C31): *"daarna wil ik de agents van yg-trade bekijken en daar 2 weghalen en 1zetten als manger van yg social, en de andere appart houden, inplaats van directeur per afdeling word het manger de directeur is eva,"*. Keuzes ±18:55: Jesse manager YG-Social.
 
 ## Vragen
 
-- **Weekritme YG-Social zoals voorgesteld (keurzitting vrijdagavond, proef 1 haak vs. oud)?** · aanname: ja · ondertussen: niets ingevoerd; maak alleen het voorbeeld van de keurlijst · blokkeert: nee (wel voor `docs/keurlijst-week.md`)
-- Mag de manager de repo van Finn lezen? · aanname: nee, via voorEva · ondertussen: werken met CREW-STATUS · blokkeert: nee
+- Naam voor account 3: Andries kiest; Jesse stelt voor in de sessie (niet in deze repo) · blokkeert: nee
 
 ## Logboek
 
