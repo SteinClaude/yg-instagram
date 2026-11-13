@@ -54,6 +54,17 @@ Doe het zoals in "Melden aan Eva" in `CLAUDE.md`, met:
 - je stand in `docs/stand/jesse.json`;
 - je logboek in `docs/oplevering-jesse.md`: `KLAAR` en `KAN NIET VERDER` bovenaan, nieuwste boven.
 
+## Van Eva — vr 13 nov 2026, 19:20: Koen maakt account 3
+
+Antwoord op jesse-5, jesse-8 en jesse-9 (zet ze in je `ontvangen`):
+
+- **Koen** is het nieuwe crewlid voor account 3, met een eigen privé-repo (Andries, vr 13 nov 19:07 aan Eva: *"koen, maak de repo"*). Zijn kaart is jouw intake uit `docs/manager/nieuwe-accounts.md`.
+- Account 3 loopt verder in de sessie van Koen: taal, naam, accounts, stijlproef, 3 scripts, proef van 2 weken. Jij maakt er niets voor.
+- Jij blijft manager: Koen levert zijn codes elke donderdag via Eva, jij zet ze op de keurlijst van vrijdag. De startdatum van de proef krijg je via Eva; jij beoordeelt de uitkomst.
+- **Taal staat nog open** ("Engels, AI-stem" ±12:10 tegenover "nederlands en we gaan veder" 12:30). Koen vraagt het Andries als eerste; ga er tot dan niet van uit.
+- jesse-6 (naam en handle): Andries geeft ze in de sessie van Koen; die repo is privé.
+- jesse-9 (`mapLid` in `.claude/crew.json`): nagekeken, in orde.
+
 ## Eerste opdracht
 
 1. Lees deze kaart, `CLAUDE.md` (het deel over YG-Social), `docs/yg-social-plan.md` en `docs/yg-social-plan-2.md`, en de oplevering van Manon.

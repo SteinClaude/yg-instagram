@@ -16,7 +16,7 @@
 | Jesse | manager YG-Social (C31, ma 9 nov) | voorstel weekritme YG-Social en doelenbewaking (`6ff0971`); stand `wacht` op besluit Andries over het weekritme; eerste weekoverzicht ma 16 nov (cijfers via Eva) |
 | Manon | maakster kanaal 1 (C31) | Instagram kanaal 1: YS01–YS06 geplaatst, YS04–YS06 wel 3–5,5 uur te laat (GitHub start de uurklok maar ±3× per dag). Do 12 nov ±23:40 "A: extra starttijden" (in haar sessie, `27ae45d`): tak `manon/cron-extra` (`8a74843`), alleen twee extra cron-regels in plaatsen.yml; Eva keek de tak na vr 13 nov 08:50 (alleen cron-regels, een concurrency-groep voorkomt twee runs tegelijk): geen bezwaar; naar main pas na de go van Andries in haar sessie. YS01–YS32 in Studio t/m di 8 dec 18:00; YS33–YS39 in planning.json voor Instagram 17–23 nov 18:00 en in Studio (9–15 dec) zodra Andries naar kanaal 1 wisselt. Ondertussen YS40–YS54 in stijl 2. Bijschrift OK YS11–YS32 en de weekanalyse nog open. @ygdigital.nl op pauze; de plaatser meldt sinds vr 02:44 dat de sleutel daarvan geweigerd wordt (code 190), kanaal 1 loopt door |
 
-Kanaal 2 is sinds 5 nov van crewlid Finn, in een eigen privé-repo. De overige sporen van de crew zijn privé. Wat Manon van een ander crewlid moet weten, zet Eva in haar opdracht.
+Kanaal 2 is sinds 5 nov van crewlid Finn, in een eigen privé-repo. Account 3 is sinds vr 13 nov van crewlid Koen, ook in een eigen privé-repo (Andries 19:07: "koen, maak de repo"). De overige sporen van de crew zijn privé. Wat Manon van een ander crewlid moet weten, zet Eva in haar opdracht.
 
 - Manon do 12 nov ±23:40 (in haar sessie): "A: extra starttijden" voor de automaat Instagram (tak `manon/cron-extra`, nog niet op main).
 - Manon ma 9 nov ±21:36 (in haar sessie): "Alles OK" — pakket OK en bijschrift OK YS33–YS39.
