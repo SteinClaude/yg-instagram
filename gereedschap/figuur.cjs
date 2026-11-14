@@ -61,14 +61,21 @@ const wenkbrauw = (x, y, b, hoek = 0, hoog = 0, kleur = K.inkt, dik = 9) => {
 };
 const wangen = (x, y, afstand, r = 16) => `<ellipse cx="${x - afstand}" cy="${y}" rx="${r}" ry="${r * 0.6}" fill="${K.wang}" opacity="0.55"/><ellipse cx="${x + afstand}" cy="${y}" rx="${r}" ry="${r * 0.6}" fill="${K.wang}" opacity="0.55"/>`;
 
+// Een open mond: breedte w en diepte d, met tanden bovenin en een tong onderin.
+const mondOpen = (x, y, w, d) => {
+  const id = 'mond' + (++teller), p = `M ${x - w / 2} ${y - 4} Q ${x} ${y - 10} ${x + w / 2} ${y - 4} Q ${x + w * 0.4} ${y + d * 0.975} ${x} ${y + d} Q ${x - w * 0.4} ${y + d * 0.975} ${x - w / 2} ${y - 4} Z`;
+  return `<clipPath id="${id}"><path d="${p}"/></clipPath><path d="${p}" fill="${K.inkt}"/>` +
+    `<g clip-path="url(#${id})"><rect x="${x - w * 0.4}" y="${y - 10}" width="${w * 0.8}" height="${Math.min(w * 0.2, d * 0.36)}" rx="4" fill="#fff"/><ellipse cx="${x}" cy="${y + d * 0.975}" rx="${w * 0.34}" ry="${d * 0.3}" fill="${K.signaal}"/></g>` +
+    `<path d="${p}" fill="none" stroke="${K.inkt}" stroke-width="${LIJN * 0.7}" stroke-linejoin="round"/>`;
+};
 const mond = (x, y, b, type) => {
   if (type === 'o') return `<ellipse cx="${x}" cy="${y + 6}" rx="${b * 0.26}" ry="${b * 0.34}" fill="${K.inkt}"/><ellipse cx="${x}" cy="${y + 6 + b * 0.16}" rx="${b * 0.16}" ry="${b * 0.1}" fill="${K.signaal}"/>`;
-  if (type === 'open') {
-    const id = 'mond' + (++teller), d = `M ${x - b / 2} ${y - 4} Q ${x} ${y - 10} ${x + b / 2} ${y - 4} Q ${x + b * 0.4} ${y + b * 0.78} ${x} ${y + b * 0.8} Q ${x - b * 0.4} ${y + b * 0.78} ${x - b / 2} ${y - 4} Z`;
-    return `<clipPath id="${id}"><path d="${d}"/></clipPath><path d="${d}" fill="${K.inkt}"/>` +
-      `<g clip-path="url(#${id})"><rect x="${x - b * 0.4}" y="${y - 10}" width="${b * 0.8}" height="${b * 0.2}" rx="4" fill="#fff"/><ellipse cx="${x}" cy="${y + b * 0.78}" rx="${b * 0.34}" ry="${b * 0.24}" fill="${K.signaal}"/></g>` +
-      `<path d="${d}" fill="none" stroke="${K.inkt}" stroke-width="${LIJN * 0.7}" stroke-linejoin="round"/>`;
-  }
+  // standen bij het praten (de generator kiest ze per klank): wijd open, half, klein, breed en dicht
+  if (type === 'open') return mondOpen(x, y, b, b * 0.8);
+  if (type === 'half') return mondOpen(x, y, b * 0.88, b * 0.52);
+  if (type === 'klein') return mondOpen(x, y, b * 0.68, b * 0.3);
+  if (type === 'breed') return mondOpen(x, y, b * 1.16, b * 0.4);
+  if (type === 'dicht') return `<path d="M ${x - b * 0.36} ${y + 1} Q ${x} ${y + b * 0.17} ${x + b * 0.36} ${y + 1}" fill="none" stroke="${K.inkt}" stroke-width="${LIJN * 0.85}" stroke-linecap="round"/>`;
   return `<path d="M ${x - b / 2} ${y} Q ${x} ${y + b * 0.55} ${x + b / 2} ${y}" fill="none" stroke="${K.inkt}" stroke-width="${LIJN * 0.85}" stroke-linecap="round"/>` +
     `<path d="M ${x - b / 2 - 5} ${y - 3} Q ${x - b / 2} ${y + 2} ${x - b / 2 + 3} ${y + 5}" fill="none" stroke="${K.inkt}" stroke-width="${LIJN * 0.6}" stroke-linecap="round"/>`;
 };
@@ -273,7 +280,7 @@ function D(o) {
   const br = pose === 'verbaasd' ? 16 : pose === 'wijst' ? 6 : 0;
   s += wenkbrauw(-46, -466, 42, -8, br) + wenkbrauw(46, -466, 42, pose === 'wijst' ? -14 : 8, pose === 'wijst' ? br + 8 : br);
   s += oog(-44, -428, 28, kijk, open) + oog(44, -428, 28, kijk, open);
-  s += wangen(0, -390, 78, 16) + mond(0, -388, 44, mondType);
+  s += wangen(0, -390, 82, 16) + mond(0, -390, 56, mondType);
   if (pose === 'wijst') {
     s += arm(66, -228, 196, -330, -18) + handschoen(196, -330, hoekVan(66, -228, 196, -330) - 8, 'wijs');
     s += arm(-66, -224, -140, -150, 16) + handschoen(-140, -150, 120, 'vuist');

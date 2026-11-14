@@ -288,6 +288,52 @@ function beeldVan(script, scene, t, abs = 0) {
 // (Peertje gloeit op zolang hij praat). De figuren staan los van de overgangen: het beeld erachter wisselt,
 // zij blijven staan. Wie praat staat groter, beweegt de mond op de woordtijden van de stem en wijst naar het beeld;
 // de ander luistert en kijkt naar de spreker. In de lus keert de stand terug naar die van de eerste scène.
+// Mond van de figuren (stijl 3). Elke klank krijgt een stand: dicht bij m/b/p, rond bij o/u/w, breed bij e/i, wijd open
+// bij a. De klanken komen grof uit de spelling van het woord en worden over de tijd van dat woord verdeeld; de
+// sterkte van de stem bepaalt hoe ver de mond opengaat. Tussen twee woorden die aansluiten blijft de mond even dicht.
+function klankenVan(woord) {
+  const w = String(woord).toLowerCase().replace(/[^a-z]/g, ''), uit = [];
+  if (w.length === 1 && !'aeiou'.includes(w)) return [['klein', 0.6], ['breed', 1.4]];   // een letter bij naam: "tee", "ex"
+  for (let i = 0; i < w.length; i++) {
+    const c = w[i], d = w.slice(i, i + 2);
+    if (['oo', 'ou', 'ow', 'oa', 'aw', 'au'].includes(d)) { uit.push(['o', 1.8]); i++; }
+    else if (['ee', 'ea', 'ie', 'ei', 'ey'].includes(d)) { uit.push(['breed', 1.8]); i++; }
+    else if (['ai', 'ay'].includes(d)) { uit.push(['open', 1.8]); i++; }
+    else if (['th', 'sh', 'ch', 'ck', 'ng', 'll', 'ss', 'tt', 'pp', 'bb', 'mm'].includes(d)) { uit.push(['pbm'.includes(c) ? 'dicht' : 'klein', 1]); i++; }
+    else if (c === 'a') uit.push(['open', 1.6]);
+    else if (c === 'e') { if (i === w.length - 1 && w.length > 2) continue; uit.push(['breed', 1.4]); }   // stille e
+    else if (c === 'i' || c === 'y') uit.push([c === 'y' && i === 0 ? 'klein' : 'breed', 1.4]);
+    else if (c === 'o') uit.push(['o', 1.6]);
+    else if (c === 'u') uit.push(['half', 1.4]);
+    else if ('mbp'.includes(c)) uit.push(['dicht', 0.8]);
+    else if (c === 'w') uit.push(['o', 0.8]);
+    else uit.push(['klein', 0.8]);
+  }
+  return uit.length ? uit : [['half', 1]];
+}
+// sterkte van de stem op tijd t in de scène (0..1), licht gladgestreken
+function stemNiveau(scene, t) {
+  const m = scene._mond; if (!m) return 0;
+  const k = Math.floor((t - m.start) * FPS), nv = j => m.niveaus[k + j] || 0;
+  return (nv(-1) + 2 * nv(0) + nv(1)) / 4;
+}
+function mondVorm(scene, t) {
+  if (!scene._mond) return 'glim';
+  const niveau = stemNiveau(scene, t), wd = scene._woorden;
+  if (!wd || !wd.length) return niveau > 0.16 ? (Math.sin(t * 25) > -0.45 ? 'open' : 'klein') : 'glim';
+  const w = wd.find(x => t >= x.start - 0.02 && t < x.eind + 0.03);
+  if (!w) {   // tussen twee woorden: kort dicht, bij een echte pauze de gewone glimlach
+    const vorig = wd.filter(x => x.eind <= t).pop(), volgend = wd.find(x => x.start > t);
+    return vorig && volgend && volgend.start - vorig.eind < 0.3 ? 'dicht' : 'glim';
+  }
+  if (niveau < 0.045) return 'dicht';
+  if (!w._kl) { let som = 0; w._kl = klankenVan(w.w).map(([v, g]) => [v, som += g]); w._som = som; }
+  const waar = klem((t - w.start) / Math.max(0.06, w.eind - w.start)) * w._som;
+  let v = (w._kl.find(k => waar <= k[1]) || w._kl[w._kl.length - 1])[0];
+  if (v === 'open' && niveau < 0.32) v = 'half';
+  else if (v === 'half' && niveau < 0.18) v = 'klein';
+  return v;
+}
 function figuren(script, tijd) {
   const sc = script.scenes, duo = script.duo; let t0 = 0, i = 0;
   for (; i < sc.length - 1 && tijd >= t0 + sc[i].duur; i++) t0 += sc[i].duur;
@@ -303,17 +349,16 @@ function figuren(script, tijd) {
     if (dicht && scene.wie !== naam) return '';
     const d = duo[naam], spreekt = scene.wie === naam && !inLus, s = dicht ? 1.6 : 0.66 + 0.16 * gewicht;
     const fx = dicht ? 540 : d.x, vloer = dicht ? duo.vloer + 420 : duo.vloer;
-    let mond = 'glim';
-    // de mond volgt de stem zelf: open zolang er geluid is, met een snelle klep zodat hij niet blijft openstaan
-    if (spreekt && scene._mond) { const nv = scene._mond.niveaus[Math.floor((t - scene._mond.start) * FPS)] || 0; if (nv > 0.16 && Math.sin(t * 25) > -0.45) mond = 'open'; }
+    // de mond volgt de klanken van elk woord (mondVorm); de sterkte van de stem laat de figuur meebewegen
+    const mond = spreekt ? mondVorm(scene, t) : 'glim', nv = spreekt ? stemNiveau(scene, t) : 0;
     const pose = (scene.pose && scene.pose[naam]) || (spreekt && !dicht ? 'wijst' : 'rust');
     const knipper = ((tijd + d.fase) % 3.3) < 0.12 ? 1 : 0;
     // Peertje gloeit op zolang hij praat (Andries za 14 nov 2026: geen ping meer, "laat hem opgloeien als hij praat")
     let aan = 0;
-    if (naam === 'antwoord') aan = inLus ? 0 : scene.wie === naam ? (snede || vorige === naam ? 1 : klem(t / 0.25)) * (mond === 'open' ? 1 : 0.82)
+    if (naam === 'antwoord') aan = inLus ? 0 : scene.wie === naam ? (snede || vorige === naam ? 1 : klem(t / 0.25)) * (0.82 + 0.18 * klem(nv * 1.6))
       : (!snede && vorige === naam ? 1 - klem(t / 0.3) : 0);
     const hop = spreekt && !snede && i > 0 && vorige !== naam ? -26 * Math.sin(Math.PI * klem(t / 0.3)) : 0;
-    const wieg = Math.sin(tijd * 2.1 + d.fase * 2) * 3 + (mond === 'open' ? -7 : 0);
+    const wieg = Math.sin(tijd * 2.1 + d.fase * 2) * 3 - 9 * klem(nv * 1.4);
     return `<ellipse cx="${fx}" cy="${vloer + 6}" rx="${(150 * s).toFixed(1)}" ry="${(22 * s).toFixed(1)}" fill="${K.inkt}" opacity="0.16"/>`
       + FIG.teken(d.code, { x: fx, y: +(vloer + hop + wieg).toFixed(2), s: +s.toFixed(4), pose, mond, knipper, spiegel: d.spiegel, kijk: dicht ? (pose === 'verbaasd' ? null : [0.1, -0.05]) : spreekt ? null : [0.8, -0.15], aan });
   };
@@ -426,6 +471,7 @@ function voorbereidStem(script, map) {
       const cfg = (script.stemmen && s.wie && script.stemmen[s.wie]) || script.stem, el = cfg.dienst === 'elevenlabs';
       const { stem = 'am_fenrir', tempo = 1.1 } = cfg;
       let wav, elWoorden = null;
+      const elTempo = el ? (cfg.tempo || 1) : 1;   // ElevenLabs: de stem versnellen met behoud van toonhoogte (kost geen tegoed)
       if (el) {   // betaald: de aanroep bewaart elke zin en weigert boven het plafond
         const r = JSON.parse(execFileSync(process.execPath, [path.join(__dirname, 'short', 'elevenlabs.cjs'), 'spreek'], { maxBuffer: 16 << 20,
           input: JSON.stringify({ tekst: s.stem, stem, model: cfg.model || 'eleven_v4', instellingen: cfg.instellingen || null, werk: script.stemWerk || script.code, plafond: script.stemPlafond || 1500 }) }).toString());
@@ -438,11 +484,11 @@ function voorbereidStem(script, map) {
       // Stijl 2: de stem gemixt zoals in een studio: rommel onder 75 Hz weg, minder dreun, meer helderheid, een
       // compressor voor een gelijkmatig volume en een de-esser tegen scherpe s-klanken.
       // ElevenLabs is al af gemixt: alleen rommel onder 75 Hz weg en een lichte compressor.
-      const mix2 = el ? ['-af', 'highpass=f=75,acompressor=threshold=0.1:ratio=2.5:attack=5:release=80:makeup=1.3'] : (script.stijl || 1) >= 2 ? ['-af', 'highpass=f=75,equalizer=f=220:t=q:w=1.1:g=-2,equalizer=f=3200:t=q:w=1:g=2.5,equalizer=f=10000:t=q:w=1:g=1.5,acompressor=threshold=0.1:ratio=3:attack=5:release=70:makeup=1.6,deesser=i=0.35'] : [];
+      const mix2 = el ? ['-af', (elTempo !== 1 ? `atempo=${elTempo},` : '') + 'highpass=f=75,acompressor=threshold=0.1:ratio=2.5:attack=5:release=80:makeup=1.3'] : (script.stijl || 1) >= 2 ? ['-af', 'highpass=f=75,equalizer=f=220:t=q:w=1.1:g=-2,equalizer=f=3200:t=q:w=1:g=2.5,equalizer=f=10000:t=q:w=1:g=1.5,acompressor=threshold=0.1:ratio=3:attack=5:release=70:makeup=1.6,deesser=i=0.35'] : [];
       const pcm = execFileSync('ffmpeg', ['-v', 'error', '-i', wav, ...mix2, '-ac', '1', '-ar', String(GELUID.RATE), '-f', 'f32le', 'pipe:1'], { maxBuffer: 64 << 20 });
       let elSmp = null;
       if (el) {   // woordtijden komen van de dienst zelf; stiltes korter, volume gelijk
-        const k = strakkeStem(new Float32Array(pcm.buffer, pcm.byteOffset, pcm.length / 4), GELUID.RATE, elWoorden);
+        const k = strakkeStem(new Float32Array(pcm.buffer, pcm.byteOffset, pcm.length / 4), GELUID.RATE, elWoorden.map(w => ({ w: w.w, start: w.start / elTempo, eind: w.eind / elTempo })), { max: 0.38, doel: 0.26 });
         elSmp = k.smp; elWeg += k.weg;
         s._woorden = k.woorden.map(w => ({ ...w, start: w.start + (s.stemStart ?? 0.12), eind: w.eind + (s.stemStart ?? 0.12) }));
       } else if ((script.stijl || 1) >= 2) {
@@ -464,7 +510,7 @@ function voorbereidStem(script, map) {
       // 0,3 s extra om de hele zin te lezen, en in de laatste scène ook de lus erbij, zodat de slotzin niet pas
       // tijdens het terugvloeien in beeld komt.
       const st2 = (script.stijl || 1) >= 2, laatste = i === script.scenes.length - 1;
-      s.duur = Math.max(s.duur, start + lengte + 0.25 + (st2 ? 0.3 : 0) + (st2 && laatste && script.lus ? script.lus + 0.4 : 0));
+      s.duur = Math.max(s.duur, start + lengte + 0.25 + (st2 ? (el ? 0.1 : 0.3) : 0) + (st2 && laatste && script.lus ? script.lus + 0.4 : 0));
       sporen.push({ begin: t0 + start, smp });
       tekst += `${i + 1}. ${s.wie ? `[${s.wie}, ${cfg.naam || stem}] ` : ''}${s.stem}\n`;
     }
@@ -473,7 +519,7 @@ function voorbereidStem(script, map) {
   const alle = script.stemmen ? Object.entries(script.stemmen) : [['stem', script.stem]];
   if (alle.some(([, v]) => v.dienst === 'elevenlabs')) {
     console.log(`ElevenLabs: ${elTekens} tekens in deze ronde (bewaarde zinnen kosten niets); ${elWeg.toFixed(1)} s stilte ingekort`);
-    fs.writeFileSync(path.join(map, 'bron', 'stem.txt'), `Stem: ElevenLabs (tekst naar spraak, betaald abonnement), ${alle.map(([k, v]) => `${k} = ${v.naam || v.stem} (${v.model || 'eleven_v4'})`).join(', ')}; gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.\nIngesproken tekst per scène:\n${tekst}`);
+    fs.writeFileSync(path.join(map, 'bron', 'stem.txt'), `Stem: ElevenLabs (tekst naar spraak, betaald abonnement), ${alle.map(([k, v]) => `${k} = ${v.naam || v.stem} (${v.model || 'eleven_v4'}${v.tempo ? ', tempo ' + v.tempo : ''})`).join(', ')}; gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.\nIngesproken tekst per scène:\n${tekst}`);
     return sporen;
   }
   fs.writeFileSync(path.join(map, 'bron', 'stem.txt'), `Stem: Kokoro-82M (Apache-2.0), stem ${script.stemmen ? Object.entries(script.stemmen).map(([k, v]) => `${k} = ${v.stem}`).join(', ') : script.stem.stem}, tempo ${script.stem.tempo || 1.1}; lokaal gemaakt met gereedschap/short/stem.py.\nIngesproken tekst per scène:\n${tekst}`);
