@@ -45,6 +45,7 @@ Wat ik niet overneem: hun figuren, hun beeld, spelbeelden of muziek. Alle decors
 **Techniek:**
 - Figuren: `gereedschap/figuur.cjs` (vector; ontwerp A en D). Generator: `gereedschap/short.cjs`, alleen voor scripts met `stijl: 3` en een `duo`. Scripts met stijl 1 of 2 worden gemaakt zoals voorheen (YS01–YS39 veranderen niet).
 - Per scène: `wie: 'vraag' | 'antwoord'`, `decor` (kamer, klas of rome), optioneel `shot: 'dichtbij'` en `pose`. Per figuur een stem in `stemmen`.
-- Geen betaald hulpmiddel; het potje is niet aangesproken.
+- **Ronde 4 (za 14 nov 20:17): stemmen van ElevenLabs.** Andries koos na zes stemproeven (za 14 nov 2026 ±20:02): "vraag tegen laura, peertje liam". Het Vraagteken spreekt met de stem Laura, Peertje met de stem Liam (model eleven_v4, standaardinstellingen). De woordtijden komen van de dienst zelf, dus tekst en mond lopen gelijk met de stem; lange stiltes zijn ingekort en beide stemmen staan even hard. De proef duurt nu 50,8 s (was 37,6 s): de nieuwe stemmen spreken rustiger. Sneller kan zonder tegoed (de stem 8–10% versnellen in de generator).
+- Betaald hulpmiddel: ElevenLabs, voor de stemmen (besluit Andries 14 nov ±15:31). Verbruik tot nu toe: 994 tekens (stemproeven en deze proef), binnen de 2.000 van zijn ja van 19:55. Het bedrag van het abonnement staat niet in deze repo.
 
 **Gevraagd:** "stijl OK stijl 3" (figuren, stemmen, decors, close-ups, indeling en beweging). Dat dekt de weergave voor de YS-reeks vanaf YS40. Script, bronnen en titel van YS40 komen daarna apart ter keuring ("pakket OK YS40").
