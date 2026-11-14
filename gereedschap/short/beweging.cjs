@@ -22,10 +22,12 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
   // de tijd waarop ze gezegd worden, iets eerder (beeld net voor geluid voelt strak); woorden die niet gezegd worden
   // (een # in plaats van "this symbol") vallen ertussen. Lijkt minder dan 40% op de zin, dan geen sync (null).
   const kaal = w => String(w).toLowerCase().replace(/[^a-z0-9#']/g, '');
-  function syncTijden(kop, gesproken) {
+  // venster: hoe ver vooruit in de gesproken zin een woord van de kop gezocht wordt (stijl 3: de hele zin, omdat
+  // de figuren meer zeggen dan er in de kop staat)
+  function syncTijden(kop, gesproken, venster = 5) {
     const uitk = new Array(kop.length).fill(null); let j = 0, raak = 0;
     kop.forEach((w, i) => { const k = kaal(w); if (!k) return;
-      for (let m = j; m < Math.min(gesproken.length, j + 5); m++) if (kaal(gesproken[m].w) === k) { uitk[i] = gesproken[m].start - 0.06; j = m + 1; raak++; return; } });
+      for (let m = j; m < Math.min(gesproken.length, j + venster); m++) if (kaal(gesproken[m].w) === k) { uitk[i] = gesproken[m].start - 0.06; j = m + 1; raak++; return; } });
     if (raak < Math.max(1, kop.length * 0.4)) return null;
     for (let i = 0; i < kop.length; i++) if (uitk[i] == null) {
       let a = i - 1; while (a >= 0 && uitk[a] == null) a--;
@@ -39,14 +41,14 @@ module.exports = function ({ FONT, maat, esc, K, W, H, woorden, breek }) {
 
   function kin(tekst, o = {}) {
     const { x = 100, y, g = 96, max = 880, t, start = 0, stap = 0.085, duurW = 0.36, gewicht = 'bold',
-      kleur = K.inkt, accent = K.signaal, midden = false, regelHoogte = 1.1, nadruk = 'kleur', balk = K.geel, weg = null, stijl = 1, sync = null } = o;
+      kleur = K.inkt, accent = K.signaal, midden = false, regelHoogte = 1.1, nadruk = 'kleur', balk = K.geel, weg = null, stijl = 1, sync = null, venster = 5 } = o;
     // Stijl 2 (proef ma 9 nov 2026): een markeerstift die onder het sleutelwoord doorhaalt nadat het is geland (op donker
     // papier een rode onderstreping) en een lichte drukschaduw onder de letters.
     const markeer = stijl >= 2 && nadruk === 'kleur', donker = kleur !== K.inkt;
     const font = gewicht === 'bold' ? FONT.bold : gewicht === 'mono' ? FONT.mono : FONT.regular;
     const fam = gewicht === 'mono' ? 'IBM Plex Mono' : 'Instrument Sans', fw = gewicht === 'regular' ? 400 : 700;
     const regels = breek(tekst, g, max, font), sp = maat(font, ' ', g);
-    const tijden = sync ? syncTijden(regels.flat().map(z => z.w), sync) : null;
+    const tijden = sync ? syncTijden(regels.flat().map(z => z.w), sync, venster) : null;
     let svg = '', i = 0;
     const wegP = weg == null ? 0 : uit((t - weg) / 0.28);
     regels.forEach((r, ri) => {

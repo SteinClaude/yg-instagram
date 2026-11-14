@@ -256,7 +256,7 @@ function bronRegel(tekst, t, start, nacht, stijl = 1) {
 const kaal = x => String(x).toLowerCase().replace(/[^a-z0-9]/g, '');
 const woordTijd = (scene, woord, n = 0) => { const m = (scene._woorden || []).filter(w => kaal(w.w).startsWith(kaal(woord))); return m[n] ? m[n].start : null; };
 const HULP = (script = {}, scene = {}) => ({ K, blok, fase, zacht, uit, klem, stopbord, vorm, klok, toetsen, veelhoek, W, H, esc, maat, FONT,
-  kin: (tekst, o = {}) => B.kin(tekst, { stijl: script.stijl || 1, sync: (script.stijl || 1) >= 2 ? scene._woorden : null, ...o }), veer: B.veer, foto,
+  kin: (tekst, o = {}) => B.kin(tekst, { stijl: script.stijl || 1, sync: (script.stijl || 1) >= 2 ? scene._woorden : null, venster: (script.stijl || 1) >= 3 ? 99 : 5, ...o }), veer: B.veer, foto,
   // op('woord'): het moment waarop dat woord in deze scène gezegd wordt (voor beeld dat op de stem moet vallen)
   op: (woord, terugval = 0, n = 0) => woordTijd(scene, woord, n) ?? terugval,
   stijl: script.stijl || 1, krabbel: B.krabbel, wie: scene.wie, vlak: DECOR.VLAK, vlakInkt: DECOR.INKT[scene.decor] || K.inkt });
