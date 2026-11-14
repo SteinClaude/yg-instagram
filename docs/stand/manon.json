@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T21:55:00+01:00",
+  "tijd": "2026-11-14T22:19:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-14T13:55:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-14T22:18:00+01:00 YS34–YS39 ingepland in YouTube Studio (kanaal 1): 10, 11, 12, 13, 14 en 15 december 2026 om 18:00; Studio meldt per video \"Video gepland\". De lijst Shorts in Studio toont YS33–YS39 als Gepland (9–15 dec) en YS40 op 15 nov, zonder meldingen. Bij YS36 gaf Studio eerst de melding dat de controle nog liep (\"We zijn je content nog aan het controleren\"); met OK bevestigd, daarna gepland.",
     "2026-11-14T21:53:00+01:00 YS40 ingepland in YouTube Studio (kanaal 1): Studio meldt \"Video gepland\", openbaar op 15 november 2026 om 20:00; Instagram: planning.json zo 15 nov 20:00 (911c640)",
     "2026-11-14T21:49:00+01:00 YS33 ingepland in YouTube Studio (kanaal 1): Studio meldt \"Video gepland\", openbaar op 9 december 2026 om 18:00",
     "2026-11-14T20:47:00+01:00 YS40 als pakket in stijl 3 (pakketten/2026-12-16-YS40-ampersand): video.mp4 (44,3 s), studio.txt (wo 16 dec 2026 18:00), video-upload.mp4 (8,9 MB), bron/bronnen.md en stem.txt, Instagram-versie (reel 9,1 MB, omslag op 3,2 s) met bijschrift, en pakket.json met de vraag om pakket OK en bijschrift OK (20:46); het controleprogramma van het paneel meldt \"Alles klopt\". gereedschap/short/pakket.cjs kent nu de ElevenLabs-stemmen. Geen nieuw tegoed gebruikt.",
@@ -102,13 +103,12 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "YS34–YS39 inplannen in YouTube Studio (9–15 dec 18:00)",
-  "volgende": "Na pakket OK YS40 en bijschrift OK YS40 (paneel of sessie): keuring.json vastleggen, Instagram inplannen (planning.json, eerste vrije dag na 23 nov) en YouTube in Studio zodra het venster op kanaal 1 staat. Verder: YS41–YS46 in stijl 3 (onderwerpen met bron, gesprek, eigen beeld in de decors; ongeveer 550 tekens ElevenLabs per short). Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag ma 16 nov (cijfers via Eva).",
+  "bezig": "-",
+  "volgende": "YS41 maken in stijl 3 voor ma 16 nov 20:00 (onderwerp met bron, gesprek, pakket met kaart; pakket OK en bijschrift OK vragen), daarna elke dag een nieuwe (YS42 e.v.). Zo 15 nov na 20:00 nakijken of YS40 op YouTube en Instagram staat. Na go Andries: manon/cron-extra naar main. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
     "Go voor tak manon/cron-extra naar main (extra starttijden automaat Instagram)? Eva keek de tak na (vr 13 nov 08:50): geen bezwaar · blokkeert: nee",
-    "Studio kanaal 1: wanneer wissel je naar kanaal 1, zodat ik YS33–YS39 inplan (9–15 dec 18:00, pakket OK is er)? · aanname: ruim op tijd vóór 9 dec, geen haast · ondertussen: YS40–YS54 in stijl 2 · blokkeert: nee (YouTube is gepland t/m 8 dec)",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
       "aanname": "laten staan (advies: de eerste drie dagen zonder stem zijn een nuttige vergelijking; vervangen kost een upload per short en raakt al geplande video's)",
@@ -117,6 +117,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T22:18:00+01:00 In de Chrome van Andries, YouTube Studio kanaal 1: YS34–YS39 geüpload en ingepland (10–15 dec 18:00); niet voor kinderen, AI-gebruik ja, taal Engels, categorie Educatief, tags uit studio.txt. Bij YS36 kwamen drie klikken op vaste teksten terecht (geen wijziging; nagekeken en hersteld vóór het inplannen). Tabblad gesloten.",
     "2026-11-14T21:53:00+01:00 In de Chrome van Andries, YouTube Studio kanaal 1: YS33 (9 dec 18:00) en YS40 (15 nov 20:00) geüpload en ingepland; niet voor kinderen, AI-gebruik ja, taal Engels, categorie Educatief, tags uit studio.txt.",
     "2026-11-14T21:46:00+01:00 Andries in de sessie (±21:44): \"laten we beginnen met de nieuwe videos die we gemaakt hebben met de animaties personages te gebruiken\"; op mijn vraag hoe de nieuwe moeten starten koos hij (±21:45): \"Nieuwe erbij, vanaf morgen (Recommended)\" = de oude shorts blijven om 18:00, de nieuwe komen er elke dag bij om 20:00, te beginnen met YS40 op zo 15 nov, op YouTube en Instagram.",
     "2026-11-14T21:40:00+01:00 In de Chrome van Andries: YouTube Studio staat op kanaal 1. Upload van YS33 gestart (concept, privé; titel en beschrijving ingevuld, nog niet ingepland).",
@@ -593,6 +594,11 @@
     }
   ],
   "voorEva": [
+    {
+      "id": "V-manon-nieuwe-reeks",
+      "aan": "Eva en Jesse",
+      "wat": "Andries (za 14 nov 2026 ±21:44–21:45, in mijn sessie): \"laten we beginnen met de nieuwe videos die we gemaakt hebben met de animaties personages te gebruiken\" · keuze \"Nieuwe erbij, vanaf morgen (Recommended)\". Kanaal 1 plaatst vanaf zo 15 nov twee shorts per dag: de oude om 18:00 (YouTube gepland t/m 15 dec, Instagram t/m 23 nov) en de nieuwe met het duo om 20:00 (YS40 op 15 nov, YouTube en Instagram). Per nieuwe short pakket OK en bijschrift OK. ElevenLabs: ongeveer 550 tekens per short. De extra starttijden voor de automaat (manon/cron-extra) worden hiermee belangrijker: er zijn nu twee momenten per dag."
+    },
     {
       "id": "V-manon-stijl3",
       "aan": "Eva en Jesse",

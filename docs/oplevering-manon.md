@@ -1,3 +1,4 @@
+KLAAR: YS33–YS39 ingepland in YouTube Studio, 9–15 december 2026 om 18:00 (Studio meldt per video "Video gepland"; pakket OK "Alles OK", ma 9 nov) · za 14 nov 22:19
 KLAAR: YS40 ingepland: YouTube Studio meldt "Video gepland", 15 november 2026 om 20:00; Instagram in planning.json voor zo 15 nov 20:00 (na "Beide OK YS40" en "Nieuwe erbij, vanaf morgen") · za 14 nov 21:55
 KLAAR: YS33 ingepland in YouTube Studio: "Video gepland", 9 december 2026 om 18:00 · za 14 nov 21:55
 KLAAR: pakket YS40 klaar in stijl 3 (na "stijl OK stijl 3", Andries za 14 nov ±20:43): video 44,3 s, studio.txt, upload, Instagram-versie met bijschrift, kaart; wacht op pakket OK YS40 en bijschrift OK YS40 (paneel, gevraagd 20:46) · za 14 nov 20:48
