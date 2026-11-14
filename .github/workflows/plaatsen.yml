@@ -12,6 +12,10 @@ on:
     # het drukst is. Een start zonder werk doet niets en maakt geen commit.
     - cron: '3,13,23,34,44,53 16,17 * * *'
     - cron: '9,27,48 18 * * *'
+    # Extra starts rond de tweede plaatstijd van 20:00 Amsterdam (de nieuwe shorts van kanaal 1,
+    # sinds zo 15 nov 2026). Zelfde opzet: 19 UTC = 20 uur in de winter, 18 UTC = 20 uur in de zomer.
+    - cron: '3,13,23,34,44,53 18,19 * * *'
+    - cron: '9,27,48 20 * * *'
   workflow_dispatch:          # knop om het met de hand te draaien
     inputs:
       proefvideo:
