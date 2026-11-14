@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T14:26:00+01:00",
+  "tijd": "2026-11-14T14:37:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "werkt",
   "af": [
+    "2026-11-14T14:37:00+01:00 Stijl 3 gebouwd in gereedschap/short.cjs (duo onderin beeld, mond op de stem, Peertje gaat aan, twee stemmen); script YS40 (ampersand; bronnen Dictionary.com 2020 en Saturday Evening Post 2021, gelezen 14 nov); uitleg docs/proef-stijl-3.md, beelden docs/proef-stijl-3-overzicht.jpg",
     "2026-11-14T14:23:00+01:00 Ronde 3 figuren (op \"andere mogelijkheden\"): D Peertje (gloeilamp), E Robot (archiefkast), F Mol (mijnhelm); docs/figuur/ontwerp-D/E/F.jpg, ontwerpen-overzicht-2.jpg, ontwerpen-in-beeld-2.jpg",
     "2026-11-14T14:15:00+01:00 Ronde 2 figuren (op \"betere figuren\"): celschaduw en glans, handschoentjes, ogen met lichtpuntjes, wenkbrauwen per houding, lijf buigt mee; bladen en voorbeeldframes opnieuw in docs/figuur/",
     "2026-11-14T14:00:00+01:00 Drie ontwerpen vaste figuur kanaal 1 (jesse-10): A Vraagteken, B Memo, C Ekster; elk in drie houdingen plus een voorbeeldframe van een short; docs/figuur/ (LEESMIJ.md, ontwerp-A/B/C.jpg, ontwerpen-overzicht.jpg, ontwerpen-in-beeld.jpg); vector in gereedschap/figuur.cjs, bladen met gereedschap/figuur-blad.cjs; geen betaald hulpmiddel",
@@ -86,7 +87,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Stijlproef YS40 met het duo Vraagteken (vragen) en Peertje (antwoorden): generator stijl 3, script en bronnen YS40",
+  "bezig": "Stijlproef YS40 (stijl 3, duo Vraagteken en Peertje): video rendert lokaal",
   "volgende": "Na de keuze van de figuur: stijlproef YS40 (script en bronnen eerst, dan weergave met de figuur) voor \"stijl OK\". Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [

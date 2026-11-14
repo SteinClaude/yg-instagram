@@ -22,6 +22,7 @@
 const fs = require('fs'), path = require('path');
 const { spawn, execFileSync } = require('child_process');
 const { Resvg } = require('@resvg/resvg-js');
+const FIG = require('./figuur.cjs');
 const opentype = require('opentype.js');
 const sharp = require('sharp');
 
@@ -213,12 +214,12 @@ function foto(pad, { x = -40, y = -40, w = W + 80, h = H + 80, t = 0, duur = 1, 
   return `<defs><clipPath id="${id}"><rect x="${x}" y="${y}" width="${w}" height="${h}"/></clipPath></defs><g clip-path="url(#${id})">${img}</g>`;
 }
 // Stijl 2: de bron als stempel op het dossier (rood label SOURCE + de bron), die met een kleine klap neerkomt.
-function bronStempel(tekst, t, start, nacht) {
+function bronStempel(tekst, t, start, nacht, y = 1326) {
   const u = (t - start) / 0.22; if (u <= 0 || !tekst) return '';
   const lab = 'SOURCE', gl = 24; let g = 28;
   const lb = maat(FONT.mono, lab, gl) + 24;
   while (g > 20 && lb + maat(FONT.mono, tekst, g) + 40 > 860) g -= 1;
-  const bw = lb + maat(FONT.mono, tekst, g) + 34, x = 100, y = 1326, h = 50;
+  const bw = lb + maat(FONT.mono, tekst, g) + 34, x = 100, h = 50;
   const sc = 1 + 0.45 * (1 - B.veer(u, 1.2)), op = klem(u * 3);
   return `<g opacity="${op.toFixed(3)}" transform="translate(${x} ${y + h / 2}) rotate(-1.2) scale(${sc.toFixed(4)}) translate(${-x} ${-(y + h / 2)})">`
     + `<rect x="${x}" y="${y}" width="${bw.toFixed(1)}" height="${h}" rx="5" fill="${nacht ? '#232738' : '#F7F2E6'}" stroke="${K.signaal}" stroke-width="3.5"/>`
@@ -227,7 +228,7 @@ function bronStempel(tekst, t, start, nacht) {
     + `<text x="${(x + lb + 16).toFixed(1)}" y="${y + 34}" font-family="IBM Plex Mono" font-size="${g}" fill="${nacht ? '#E8E4DA' : K.inkt}" xml:space="preserve">${esc(tekst)}</text></g>`;
 }
 function bronRegel(tekst, t, start, nacht, stijl = 1) {
-  if (stijl >= 2) return bronStempel(tekst, t, start, nacht);
+  if (stijl >= 2) return bronStempel(tekst, t, start, nacht, stijl >= 3 ? 1040 : 1326);   // stijl 3: boven de figuren
   const p = fase(t, start, 0.5); if (p <= 0 || !tekst) return '';
   return blok('Source: ' + tekst, { y: 1330, g: 30, gewicht: 'mono', kleur: nacht ? '#C9C6BC' : K.grijs, accent: K.signaal, t, start, max: 800, regelHoogte: 1.3 }).svg;
 }
@@ -236,7 +237,7 @@ function bronRegel(tekst, t, start, nacht, stijl = 1) {
 // zelf `sync: false` meegeeft. Tekst die niet op de gesproken zin lijkt (labels in een tekening) houdt zijn eigen tijden.
 const HULP = (script = {}, scene = {}) => ({ K, blok, fase, zacht, uit, klem, stopbord, vorm, klok, toetsen, veelhoek, W, H, esc, maat, FONT,
   kin: (tekst, o = {}) => B.kin(tekst, { stijl: script.stijl || 1, sync: (script.stijl || 1) >= 2 ? scene._woorden : null, ...o }), veer: B.veer, foto,
-  stijl: script.stijl || 1, krabbel: B.krabbel });
+  stijl: script.stijl || 1, krabbel: B.krabbel, wie: scene.wie });
 // Eén volledig beeld van een scène op tijd t (achtergrond, kop, inhoud, bronregel), zonder <svg>-omhulsel.
 function beeldVan(script, scene, t, abs = 0) {
   B.sceneStart = abs - t;   // voor de geluidsopname van markeerstift en krabbels (stijl 2)
@@ -252,6 +253,35 @@ function beeldVan(script, scene, t, abs = 0) {
   }
   return `${kader(script, scene, t, abs)}${licht}<g transform="${B.camera(t, scene.duur, scene.camera)}">${inhoud}</g>` +
     `${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht, script.stijl)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`;
+}
+// Stijl 3 (vanaf YS40, Andries za 14 nov 2026): het vaste duo. `script.duo` = { vloer, vraag: { code, x, spiegel, fase },
+// antwoord: {...} }; elke scène heeft `wie: 'vraag' | 'antwoord'` (wie er praat), optioneel `pose: { vraag, antwoord }`
+// en `aha: seconden` (vanaf dan brandt Peertje). De figuren staan los van de overgangen: het beeld erachter wisselt,
+// zij blijven staan. Wie praat staat groter, beweegt de mond op de woordtijden van de stem en wijst naar het beeld;
+// de ander luistert en kijkt naar de spreker. In de lus keert de stand terug naar die van de eerste scène.
+function figuren(script, tijd) {
+  const sc = script.scenes, duo = script.duo; let t0 = 0, i = 0;
+  for (; i < sc.length - 1 && tijd >= t0 + sc[i].duur; i++) t0 += sc[i].duur;
+  const scene = sc[i], t = tijd - t0, vorige = i > 0 ? sc[i - 1].wie : scene.wie;
+  const doel = scene.wie === 'antwoord' ? 1 : 0, van = vorige === 'antwoord' ? 1 : 0;
+  let mix = van + (doel - van) * zacht(t / 0.28);   // 0 = de vraag praat, 1 = het antwoord praat
+  let inLus = false;
+  if (script.lus && i === sc.length - 1 && t > scene.duur - script.lus) { inLus = true;
+    mix += ((sc[0].wie === 'antwoord' ? 1 : 0) - mix) * zacht((t - (scene.duur - script.lus)) / script.lus); }
+  const rol = (naam, gewicht) => {
+    const d = duo[naam], spreekt = scene.wie === naam && !inLus, s = 0.66 + 0.16 * gewicht;
+    let mond = 'glim';
+    if (spreekt && scene._woorden) { const wd = scene._woorden.find(x => t >= x.start - 0.03 && t < x.eind); if (wd) mond = Math.sin((t - wd.start) * 26) > -0.35 ? 'open' : 'glim'; }
+    const pose = (scene.pose && scene.pose[naam]) || (spreekt ? 'wijst' : 'rust');
+    const knipper = ((tijd + d.fase) % 3.3) < 0.12 ? 1 : 0;
+    const aan = naam === 'antwoord' && scene.aha != null && t >= scene.aha;
+    const hop = spreekt && i > 0 && vorige !== naam ? -26 * Math.sin(Math.PI * klem(t / 0.3)) : 0;
+    const wieg = Math.sin(tijd * 2.1 + d.fase * 2) * 3 + (mond === 'open' ? -4 : 0);
+    return `<ellipse cx="${d.x}" cy="${duo.vloer + 6}" rx="${(150 * s).toFixed(1)}" ry="${(22 * s).toFixed(1)}" fill="${K.inkt}" opacity="0.13"/>`
+      + FIG.teken(d.code, { x: d.x, y: +(duo.vloer + hop + wieg).toFixed(2), s: +s.toFixed(4), pose, mond, knipper, spiegel: d.spiegel, kijk: spreekt ? null : [0.8, -0.15], aan });
+  };
+  // de luisteraar eerst, de spreker ervoor
+  return mix >= 0.5 ? rol('vraag', 1 - mix) + rol('antwoord', mix) : rol('antwoord', mix) + rol('vraag', 1 - mix);
 }
 function svgVoor(script, tijd) {
   let t0 = 0;
@@ -271,6 +301,7 @@ function svgVoor(script, tijd) {
         const e = B.zacht((t - (scene.duur - script.lus)) / script.lus);
         lijf = `${lijf}<g opacity="${e.toFixed(3)}">${beeldVan(script, sc[0], 0.001)}</g>`;
       }
+      if ((script.stijl || 1) >= 3 && script.duo) lijf += figuren(script, tijd);
       return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${script.versie === 2 ? B.DEFS : ''}${lijf}</svg>`;
     }
     t0 += scene.duur;
@@ -282,6 +313,7 @@ function geluidLijst(script) {
   script.scenes.forEach((s, i) => {
     if (s.in && i > 0) lijst.push([Math.max(0, t0 - 0.16), 'whoosh', 0.55]);
     if ((script.stijl || 1) >= 2 && s.bron) lijst.push([t0 + (s.bronStart ?? 0.6), 'stempel', 0.45]);
+    if ((script.stijl || 1) >= 3 && s.aha != null) lijst.push([t0 + s.aha, 'ding', 0.4]);   // Peertje gaat aan
     for (const [t, naam, vol, pan] of s.geluid || []) lijst.push([t0 + (t < 0 ? s.duur + t : t), naam, vol ?? 1, pan ?? 0]);   // negatieve tijd = vanaf het eind van de scène
     t0 += s.duur;
   });
@@ -311,9 +343,11 @@ const KOKORO_PY = process.env.KOKORO_PY || 'C:/Users/gijsm/yg-gereedschap/kokoro
 function voorbereidStem(script, map) {
   if (!script.stem) return [];
   const cache = path.join(require('os').tmpdir(), 'yg-stem'); fs.mkdirSync(cache, { recursive: true });
-  const { stem = 'am_fenrir', tempo = 1.1 } = script.stem, sporen = []; let t0 = 0, tekst = '';
+  const sporen = []; let t0 = 0, tekst = '';
   script.scenes.forEach((s, i) => {
     if (s.stem) {
+      // stijl 3: elke figuur een eigen stem (script.stemmen = { vraag: {...}, antwoord: {...} }); anders script.stem
+      const { stem = 'am_fenrir', tempo = 1.1 } = (script.stemmen && s.wie && script.stemmen[s.wie]) || script.stem;
       const sleutel = require('crypto').createHash('sha1').update(`${stem}|${tempo}|uitspraak2|${s.stem}`).digest('hex').slice(0, 16);
       const wav = path.join(cache, sleutel + '.wav');
       if (!fs.existsSync(wav)) execFileSync(KOKORO_PY, [path.join(__dirname, 'short', 'stem.py'), wav, stem, String(tempo), s.stem]);
@@ -333,11 +367,11 @@ function voorbereidStem(script, map) {
       const st2 = (script.stijl || 1) >= 2, laatste = i === script.scenes.length - 1;
       s.duur = Math.max(s.duur, start + lengte + 0.25 + (st2 ? 0.3 : 0) + (st2 && laatste && script.lus ? script.lus + 0.4 : 0));
       sporen.push({ begin: t0 + start, smp });
-      tekst += `${i + 1}. ${s.stem}\n`;
+      tekst += `${i + 1}. ${s.wie ? `[${s.wie}, ${stem}] ` : ''}${s.stem}\n`;
     }
     t0 += s.duur;
   });
-  fs.writeFileSync(path.join(map, 'bron', 'stem.txt'), `Stem: Kokoro-82M (Apache-2.0), stem ${stem}, tempo ${tempo}; lokaal gemaakt met gereedschap/short/stem.py.\nIngesproken tekst per scène:\n${tekst}`);
+  fs.writeFileSync(path.join(map, 'bron', 'stem.txt'), `Stem: Kokoro-82M (Apache-2.0), stem ${script.stemmen ? Object.entries(script.stemmen).map(([k, v]) => `${k} = ${v.stem}`).join(', ') : script.stem.stem}, tempo ${script.stem.tempo || 1.1}; lokaal gemaakt met gereedschap/short/stem.py.\nIngesproken tekst per scène:\n${tekst}`);
   return sporen;
 }
 // Stem in de mix: effecten zachter (0,5) zodat de stem boven ligt, daarna een begrenzer tegen oversturen.

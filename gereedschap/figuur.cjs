@@ -246,7 +246,7 @@ function C(o) {
 // Een gloeilamp die oplicht als hij iets ontdekt: het "aha" van elke short.
 function D(o) {
   const { pose, kijk, mondType, open } = o;
-  const aan = pose === 'verbaasd';
+  const aan = o.aan ?? pose === 'verbaasd';
   let s = '';
   s += been(-34, -150, 0, -1) + been(34, -150, 0, 1);
   if (aan) s += Array.from({ length: 9 }, (_, i) => {
@@ -391,14 +391,14 @@ const ONTWERPEN = {
   F: { naam: 'Mol', teken: F, kleuren: ['#6F5D55', '#F3A0A2', K.geel, K.inkt], regel: 'Een mol met mijnhelm en bril die de geschiedenis van gewone dingen opgraaft.' },
 };
 
-function teken(code, { x = 0, y = 0, s = 1, pose = 'rust', kijk = null, mond: mondType = 'glim', knipper = 0, spiegel = false } = {}) {
+function teken(code, { x = 0, y = 0, s = 1, pose = 'rust', kijk = null, mond: mondType = 'glim', knipper = 0, spiegel = false, aan = undefined } = {}) {
   const O = ONTWERPEN[code];
   if (!O) throw new Error('onbekend ontwerp ' + code);
   const k = kijk || (pose === 'wijst' ? [0.75, -0.55] : pose === 'verbaasd' ? [0, -0.35] : [0.2, 0.1]);
   const mt = pose === 'verbaasd' && mondType === 'glim' ? 'o' : mondType;
   // het lijf buigt mee met de houding: wijzen = iets naar de kant leunen, verbaasd = sprongetje en rekken
   const houding = pose === 'wijst' ? `rotate(4 0 0)` : pose === 'verbaasd' ? `translate(0 -18) scale(0.97 1.04)` : '';
-  return `<g transform="translate(${x} ${y}) scale(${spiegel ? -s : s} ${s})"><g transform="${houding}">${O.teken({ pose, kijk: k, mondType: mt, open: 1 - knipper })}</g></g>`;
+  return `<g transform="translate(${x} ${y}) scale(${spiegel ? -s : s} ${s})"><g transform="${houding}">${O.teken({ pose, kijk: k, mondType: mt, open: 1 - knipper, aan })}</g></g>`;
 }
 
 module.exports = { teken, ONTWERPEN, K };
