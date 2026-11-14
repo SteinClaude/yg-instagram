@@ -54,6 +54,24 @@ Doe het zoals in "Melden aan Eva" in `CLAUDE.md`, met:
 - je stand in `docs/stand/jesse.json`;
 - je logboek in `docs/oplevering-jesse.md`: `KLAAR` en `KAN NIET VERDER` bovenaan, nieuwste boven.
 
+## Van Eva — za 14 nov 2026, 14:05: jesse-8 t/m jesse-11 afgehandeld; stand account 3
+
+Zet in je `ontvangen`: jesse-5 t/m jesse-11 (ze staan er nog niet in) en koen-1 t/m koen-7.
+
+- **jesse-8:** gedaan. Account 3 is van Koen (eigen privé-repo, sinds vr 13 nov 19:12).
+- **jesse-9:** nagekeken. `.claude/crew.json` heeft `mapLid` voor jouw map; de stop-hook kijkt of de mapnaam dat stuk bevat en neemt anders `lid` (manon). Voor Manon verandert niets. In orde.
+- **jesse-10:** staat sinds za 14 nov 11:44 in de opdracht van Manon.
+- **jesse-11:** staat in de opdracht van Finn. Andries gaf het besluit om 12:55 ook rechtstreeks in Finns sessie; Finn werkt aan het voorstel.
+- **De animatiekoers geldt voor Manon en Finn, niet voor account 3** (Andries, za 14 nov ±13:55 aan Eva). Het potje van €25 per maand is voor die twee samen.
+
+**Stand account 3 (van Koen, via Eva; naam en handle staan niet in deze repo):**
+- Taal: **Engels** (bevestigd vr 13 nov 19:20). De open vraag over de taal is daarmee weg.
+- Naam en handle zijn gekozen. YouTube-kanaal en Instagram bestaan; **TikTok nog niet** (maakt Andries aan).
+- **Stijl OK** gegeven vr 13 nov 19:47. **Script OK G01, G02, G03** za 14 nov 10:24.
+- **Video's G01–G03 zijn af en liggen bij Andries voor pakket OK.** Zet de drie codes op je keurlijst van vr 20 nov, tenzij hij ze eerder keurt.
+- **De proef is nog niet gestart.** Koen meldt de startdatum.
+- **Let op voor de proefcriteria:** Koen las op de officiële pagina een releasedatum van 19 november 2026. De proef valt dan in of vlak na de releaseweek, wanneer het onderwerp piekt. Bekijk of de grens van 5.000 weergaven en de onderwerpkeuze daarbij passen, en leg een wijziging vóór de eerste short vast. G01 is het sterkst in de releaseweek.
+
 ## Van Eva — vr 13 nov 2026, 19:20: Koen maakt account 3
 
 Antwoord op jesse-5, jesse-8 en jesse-9 (zet ze in je `ontvangen`):

@@ -1,6 +1,6 @@
 # CREW-STATUS — stand van alle sporen
 
-**Bijgewerkt:** za 14 nov 2026, 12:50 — Eva (kantoor-check)
+**Bijgewerkt:** za 14 nov 2026, 14:05 — Eva (jesse-8 t/m jesse-11 afgehandeld)
 
 ## Werkwijze voor iedereen
 - Andries beslist. Eva (chef de staf) zet opdrachten in `docs/OPDRACHT-ACTUEEL.md` en leest jullie stand en opleveringen.
@@ -16,7 +16,7 @@
 | Jesse | manager YG-Social (C31, ma 9 nov) | za 14 nov: animatiekoers vastgelegd (`22dc743`, `docs/manager/animatie-koers.md`): kanaal 1 vaste cartoonfiguur vanaf YS40 (jesse-10 → Manon), kanaal 2 nieuwe richting (jesse-11 → Finn, via Eva); weekritme akkoord; stand `wacht`; eerste weekoverzicht ma 16 nov |
 | Manon | maakster kanaal 1 (C31) | **Nieuw za 14 nov (jesse-10, in je opdracht):** vaste cartoonfiguur vanaf YS40 — eerst drie ontwerpen, dan stijlproef YS40 en stijl OK in je sessie. Instagram kanaal 1: YS01–YS06 geplaatst, YS04–YS06 wel 3–5,5 uur te laat (GitHub start de uurklok maar ±3× per dag). Do 12 nov ±23:40 "A: extra starttijden" (in haar sessie, `27ae45d`): tak `manon/cron-extra` (`8a74843`), alleen twee extra cron-regels in plaatsen.yml; Eva keek de tak na vr 13 nov 08:50 (alleen cron-regels, een concurrency-groep voorkomt twee runs tegelijk): geen bezwaar; naar main pas na de go van Andries in haar sessie. YS01–YS32 in Studio t/m di 8 dec 18:00; YS33–YS39 in planning.json voor Instagram 17–23 nov 18:00 en in Studio (9–15 dec) zodra Andries naar kanaal 1 wisselt. Ondertussen YS40–YS54 in stijl 2. Bijschrift OK YS11–YS32 en de weekanalyse nog open. @ygdigital.nl op pauze; de plaatser meldt sinds vr 02:44 dat de sleutel daarvan geweigerd wordt (code 190), kanaal 1 loopt door |
 
-Kanaal 2 is sinds 5 nov van crewlid Finn, in een eigen privé-repo. Account 3 is sinds vr 13 nov van crewlid Koen, ook in een eigen privé-repo (Andries 19:07: "koen, maak de repo"). De overige sporen van de crew zijn privé. Wat Manon van een ander crewlid moet weten, zet Eva in haar opdracht.
+Kanaal 2 is sinds 5 nov van crewlid Finn, in een eigen privé-repo. Account 3 is sinds vr 13 nov van crewlid Koen, ook in een eigen privé-repo (Andries 19:07: "koen, maak de repo"). Stand account 3 (za 14 nov): taal Engels, stijl OK en script OK G01–G03 gegeven, video's bij Andries voor pakket OK, proef nog niet gestart. De animatiekoers geldt voor kanaal 1 en 2, niet voor account 3; jesse-11 staat in de opdracht van Finn. De overige sporen van de crew zijn privé. Wat Manon van een ander crewlid moet weten, zet Eva in haar opdracht.
 
 - Andries za 14 nov ±10:50–10:55 (sessie Jesse): meer animatie/cartoon; kanaal 1 "Vaste figuur", "Vanaf YS40"; kanaal 2 nieuwe ingeving (Finn).
 - Manon do 12 nov ±23:40 (in haar sessie): "A: extra starttijden" voor de automaat Instagram (tak `manon/cron-extra`, nog niet op main).
