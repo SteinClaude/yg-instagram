@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-13T15:22:00+01:00",
+  "tijd": "2026-11-14T10:57:00+01:00",
   "sessie": {
     "plek": "pc",
-    "sinds": "2026-11-13T11:45:00+01:00"
+    "sinds": "2026-11-14T10:45:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-14T10:57:00+01:00 Animatiekoers YG-Social vastgelegd: docs/manager/animatie-koers.md (besluit Andries; uitwerking via jesse-10 Manon, jesse-11 Finn)",
     "2026-11-13T15:22:00+01:00 Stop-hook herkende deze sessie als Manon: .claude/crew.json kreeg mapLid (map yg-social-jesse = jesse); Manons eigen map blijft manon",
     "2026-11-13T15:18:00+01:00 Verzoek aan Eva: nieuw crewlid voor account 3 eerst opzetten in een eigen sessie (jesse-8)",
     "2026-11-13T12:55:00+01:00 Naam account 3 gekozen door Andries (niet in de repo; via jesse-6)",
@@ -17,7 +18,7 @@
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
   "bezig": null,
-  "volgende": "Andries zet met Eva het nieuwe crewlid voor account 3 op in een eigen sessie (jesse-5, jesse-8); daar gaat account 3 verder. Kanaal en accounts maakt Andries aan. Eerste weekoverzicht YG-Social ma 16 nov; keurlijst vr 20 nov",
+  "volgende": "Manon: drie ontwerpen vaste figuur, dan stijlproef YS40 (stijl OK in haar sessie). Finn: voorbeelden in de WhatsApp-groep bekijken en een nieuwe richting voorstellen. Account 3 via Koen. Eerste weekoverzicht ma 16 nov; keurlijst vr 20 nov",
   "kanNietVerder": null,
   "vragen": [],
   "buitenGit": [
@@ -48,6 +49,14 @@
     {
       "tijd": "2026-11-13T15:18:00+01:00",
       "wat": "Andries: \"zullen we eerst de agent maken in een nieuwe sessie zodat we dit veder kunnen doen in die sessie,  schrijf dit naar eva dan maak ik met haar de nieuwe agent\""
+    },
+    {
+      "tijd": "2026-11-14T10:50:00+01:00",
+      "wat": "Andries: \"ik wil de content en video kwaliteit voor finn en manon vereteren, ik wil meer naar animaties/cartoons gaan, manon houdt wel de zelfde inhoudelijk stof aleen andere weergave, finn krijgt een hele nieuwe ingeving voor nieuwe content/animaties\""
+    },
+    {
+      "tijd": "2026-11-14T10:55:00+01:00",
+      "wat": "Andries (vragenknoppen): stijl Manon \"Vaste figuur\"; \"Vanaf YS40\"; Finn: \"ik wil finn in de whatsapp groep yg-social laten kijken ik heb hier vandaag wat voorbeelden gestuurd\"; geld: \"Potje €25/mnd mag\""
     }
   ],
   "voorEva": [
@@ -75,6 +84,16 @@
       "id": "jesse-9",
       "aan": "Eva",
       "wat": "Ter info: .claude/crew.json kreeg mapLid {\"yg-social-jesse\":\"jesse\"}, zodat de stop-hook in de Jesse-map docs/stand/jesse.json bewaakt in plaats van manon.json. Standaard blijft lid manon; voor Manon verandert niets. Graag nakijken."
+    },
+    {
+      "id": "jesse-10",
+      "aan": "Manon (via Eva)",
+      "wat": "Nieuwe weergave kanaal 1 vanaf YS40: zelfde onderwerp en bronnen, maar met een vaste eigen cartoonfiguur (besluit Andries za 14 nov ±10:55). Eerst drie ontwerpen van de figuur, dan stijlproef YS40 en \"stijl OK\" in haar sessie; YS01-YS39 blijven. Betaald hulpmiddel alleen uit het potje na OK per bedrag. Zie docs/manager/animatie-koers.md."
+    },
+    {
+      "id": "jesse-11",
+      "aan": "Finn (via Eva)",
+      "wat": "Andries wil een hele nieuwe ingeving voor kanaal 2, meer animatie/cartoon: Finn bekijkt de voorbeelden die Andries za 14 nov in de WhatsApp-groep Yg-social stuurde en stelt in zijn sessie een nieuwe richting voor (wat, vorm, lengte, proefbeeld); Andries kiest. Betaald hulpmiddel alleen uit het potje van €25/mnd na OK per bedrag. Zie docs/manager/animatie-koers.md."
     }
   ],
   "ontvangen": [

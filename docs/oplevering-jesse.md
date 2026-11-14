@@ -1,5 +1,6 @@
 # Oplevering Jesse — manager YG-Social
 
+KLAAR: animatiekoers YG-Social vastgelegd (Manon vaste cartoonfiguur vanaf YS40, Finn nieuwe richting uit de WhatsApp-voorbeelden, potje mag na OK per bedrag): docs/manager/animatie-koers.md; via voorEva jesse-10 en jesse-11 · za 14 nov 10:57
 KLAAR: naam account 3 gekozen door Andries (vier rondes voorstellen, handle vrij op YouTube en TikTok; naam niet in de repo, via voorEva jesse-6) · vr 13 nov 12:55
 KLAAR: intake account 3 (GTA 6, uitgelegd): docs/manager/nieuwe-accounts.md; advies start, na kanaal maken (Andries) en nieuw crewlid (Eva) · vr 13 nov 12:20
 KLAAR: eerste keurlijst van de week gebundeld: docs/keurlijst-week.md · vr 13 nov 12:20
@@ -91,6 +92,7 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 
 ## Besluiten met Andries
 
+- za 14 nov 2026 ±10:50–10:55 (sessie Jesse): *"ik wil de content en video kwaliteit voor finn en manon vereteren, ik wil meer naar animaties/cartoons gaan, manon houdt wel de zelfde inhoudelijk stof aleen andere weergave, finn krijgt een hele nieuwe ingeving voor nieuwe content/animaties"*. Knoppen: *"Vaste figuur"* · *"Vanaf YS40"* · Finn: *"ik wil finn in de whatsapp groep yg-social laten kijken ik heb hier vandaag wat voorbeelden gestuurd"* · *"Potje €25/mnd mag"* → docs/manager/animatie-koers.md.
 - vr 13 nov 2026 ±12:55 (sessie Jesse), keuze naam account 3: *"[weggelaten]"* (naam en handle via voorEva jesse-6 naar het Project van Eva).
 - vr 13 nov 2026 ±12:10 (vragenknoppen, sessie Jesse): Weekritme YG-Social → *"Akkoord"*. Account 3 → *"Ja, dit is account 3"* · *"3 shorts/week, uitleg"* · *"Nieuw crewlid"* · *"youtube, instagram, tiktok"* · *"Engels, AI-stem"* · *"Bereik nu, geld later"* · *"±1 uur"*.
 - vr 13 nov 2026 ±11:58 (sessie Jesse): *"ja we gaan ook een eigen gta-acount met een eigen invalshoek maken, ik heb al een google acount hier voor alee nog geen youtube kanaal"*
