@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T16:12:00+01:00",
+  "tijd": "2026-11-14T16:15:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-14T16:15:00+01:00 gereedschap/sleutel-zetten.cjs: veilig hulpje waarmee Andries zelf een sleutel als Windows-gebruikersvariabele zet (verborgen invoer, korte test bij ElevenLabs die abonnement en tegoed meldt); getest op de weigerpaden, er is geen sleutel gezet",
     "2026-11-14T15:45:00+01:00 Stijl 3 ronde 3: geen ping, Peertje gloeit zolang hij praat, gesprek YS40 in hele enthousiaste zinnen (9 scènes, 37,6 s), woordtijden versie 2 en mond op de sterkte van de stem; proefvideo alleen lokaal, aan Andries getoond; uitspraak niet door mij beluisterd; stemmen nog Kokoro (ElevenLabs volgt)",
     "2026-11-14T15:01:00+01:00 Proefvideo YS40 in stijl 3 ronde 2 gerenderd (27,2 s, -14,1 LUFS; alleen lokaal, aan Andries getoond in de sessie); uitspraak niet door mij beluisterd",
     "2026-11-14T14:57:00+01:00 Stijl 3 ronde 2: getekende decors (gereedschap/short/decor.cjs: kamer, klas, rome), onderwerp op een vlak in het decor, kop op een papieren kaartje, close-ups met harde snede; YS40 omgezet; docs/proef-stijl-3.md en -overzicht.jpg bijgewerkt",
@@ -107,6 +108,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T16:13:00+01:00 Andries in de sessie: \"help met met de sleutel koppelen aan het kantoor\" — hulpje gemaakt (gereedschap/sleutel-zetten.cjs): Andries plakt de sleutel zelf, verborgen, in zijn eigen terminal; hij komt als gebruikersvariabele ELEVENLABS_API_KEY in Windows, niet in een bestand of in git. Ik heb geen sleutel gezien of gezet.",
     "2026-11-14T16:11:00+01:00 Andries in de sessie, op \"Is het ElevenLabs-account er al, met de sleutel op deze pc?\": \"acount staat klaar sleutel weet ik niet\" — nagekeken (alleen of de variabele bestaat, de waarde niet gelezen): ELEVENLABS_API_KEY staat nog niet op de pc; stappen aan Andries uitgelegd",
     "2026-11-14T15:31:00+01:00 Andries in de sessie: \"we gaan elevenlabs gebruiken zo voor de stemmen\"",
     "2026-11-14T15:07:00+01:00 Andries in de sessie, na de proef met decors: \"ik vindt dat hij te vaak een ping geluid maakt de lamp laat hem opgloeien als hij praat, ook wil ik dat de tekst die ze zeggen wat beter word nu zijn het gewoon losse worden bijna wat ze zeggen maar ze moeten het echt leuk en entousiasht vetellen, dus mogen ook wat extra worden/zinnen manier van vertelle worden toegevoegd aangepast,\"",
@@ -564,6 +566,11 @@
   ],
   "voorEva": [
     {
+      "id": "V-manon-sleutel-kantoor",
+      "aan": "Eva",
+      "wat": "Andries (za 14 nov 2026 ±16:13, in de sessie van Manon): \"help met met de sleutel koppelen aan het kantoor\". Op deze pc komt de ElevenLabs-sleutel als Windows-gebruikersvariabele ELEVENLABS_API_KEY (Andries zet hem zelf met gereedschap/sleutel-zetten.cjs); elk crewlid dat op deze pc draait kan hem zo gebruiken. Of het Kantoor zelf een plek voor sleutels krijgt (en voor crewleden die niet op deze pc draaien), is niet aan mij: graag oppakken of laten weten hoe het hoort."
+    },
+    {
       "id": "V-manon-elevenlabs",
       "aan": "Jesse (potje YG-Social)",
       "wat": "Andries (za 14 nov 2026 ±15:31, in de sessie van Manon): \"we gaan elevenlabs gebruiken zo voor de stemmen\". Betaald hulpmiddel voor de stemmen van kanaal 1 vanaf YS40; het bedrag volgt zodra Andries het abonnement kiest en per bedrag OK geeft. Graag opnemen in het potje en het maandoverzicht."
@@ -636,6 +643,7 @@
   "raakt": [
     "instagram-kanaal-1",
     "planning.json",
-    "github-actions-plaatsen"
+    "github-actions-plaatsen",
+    "pc-omgevingsvariabelen"
   ]
 }
