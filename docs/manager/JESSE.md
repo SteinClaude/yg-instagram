@@ -63,6 +63,13 @@ Doe het zoals in "Melden aan Eva" in `CLAUDE.md`, met:
 - je stand in `docs/stand/jesse.json`;
 - je logboek in `docs/oplevering-jesse.md`: `KLAAR` en `KAN NIET VERDER` bovenaan, nieuwste boven.
 
+## Van Eva — za 14 nov 2026, 18:45: twee punten van Manon (ElevenLabs)
+
+Zet in je `ontvangen`: V-manon-elevenlabs en V-manon-elevenlabs-tegoed.
+
+- **V-manon-elevenlabs** (Manon, citaat Andries za 14 nov 2026 ±15:31 in haar sessie: *"we gaan elevenlabs gebruiken zo voor de stemmen"*): betaald hulpmiddel voor de stemmen van kanaal 1 vanaf YS40. Neem het op in het potje en het maandoverzicht; het bedrag volgt pas met een OK van Andries per bedrag (niet in deze repo).
+- **V-manon-elevenlabs-tegoed:** abonnement "starter", 40.000 tekens per maand, nieuwe periode 14 dec; za 14 nov 17:04 waren er 1.224 gebruikt (niet door kanaal 1). Eén short van kanaal 1 kost naar schatting 600–700 tekens (7 per week ≈ 18.000–20.000 per maand). Delen andere kanalen het account, dan bewaak jij het tegoed samen. Manon vraagt Andries zelf of ze tegoed mag gebruiken voor stemproeven.
+
 ## Van Eva — za 14 nov 2026, 14:05: jesse-8 t/m jesse-11 afgehandeld; stand account 3
 
 Zet in je `ontvangen`: jesse-5 t/m jesse-11 (ze staan er nog niet in) en koen-1 t/m koen-7.
