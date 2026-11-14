@@ -88,7 +88,9 @@ if ($f.ShowDialog() -eq 'OK') { [Console]::Out.Write('OK:' + $t.Text) } else { [
       const a = await fetch('https://api.elevenlabs.io/v1/user/subscription', { headers: { 'xi-api-key': sleutel } });
       if (a.ok) { const j = await a.json();
         console.log(`Test geslaagd. Abonnement: ${j.tier || 'onbekend'} · tekens gebruikt deze periode: ${j.character_count ?? '?'} van ${j.character_limit ?? '?'}.`);
-      } else if (a.status === 401) console.log('Let op: ElevenLabs weigert deze sleutel (401). Kijk of hij goed gekopieerd is, of dat hij rechten mist ("Text to Speech" en "User" aanzetten).');
+      } else if (a.status === 401) { let soort = ''; try { soort = ((await a.json()).detail || {}).status || ''; } catch (e) {}
+        if (soort === 'missing_permissions') console.log('De sleutel is goed, maar mist rechten. Zet bij de sleutel op de site aan: Text to Speech (toegang), Stemmen (lezen), Modellen (lezen) en Gebruiker (lezen). Opnieuw plakken hoeft niet.');
+        else console.log('Let op: ElevenLabs weigert deze sleutel (401). Kijk of hij goed gekopieerd is.'); }
       else console.log(`Opgeslagen, maar de test gaf status ${a.status}. De sleutel kan beperkte rechten hebben; voor de stemmen is "Text to Speech" nodig.`);
     } catch (e) { console.log('Opgeslagen, maar de test kon ElevenLabs niet bereiken (' + String(e.message).slice(0, 80) + ').'); }
   }
