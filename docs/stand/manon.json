@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T20:18:00+01:00",
+  "tijd": "2026-11-14T20:27:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-14T13:55:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-14T20:17:00+01:00 Proef YS40 ronde 4 met de stemmen van ElevenLabs (Vraagteken = Laura, Peertje = Liam; model eleven_v4): 50,8 s (was 37,6 s met de oude stem; de nieuwe stemmen spreken rustiger), -14,4 LUFS; 445 nieuwe tekens, samen met de stemproeven 994 van de 2.000. Video alleen lokaal, aan Andries getoond in de sessie; ik heb de stemmen niet beluisterd.",
     "2026-11-14T20:05:00+01:00 gereedschap/short.cjs: stem van ElevenLabs voor stijl 3 (dienst per figuur in `stemmen`; woordtijden van de dienst voor tekst en mond; lange stiltes ingekort; twee stemmen op gelijk volume; plafond per werk met --werk en --plafond); stijl 1 en 2 en de Kokoro-stem werken zoals voorheen",
@@ -98,7 +98,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "Proef YS40 ronde 5: mond van Peertje beter laten bewegen en het gesprek wat sneller (geen nieuw tegoed nodig)",
   "volgende": "Na \"stijl OK stijl 3\": YS40 als pakket met kaart (pakket OK en bijschrift OK via het paneel) en YS41–YS46. Wil Andries het tempo hoger: de stem 8–10% versnellen in de generator (kost geen tegoed) en de proef opnieuw. Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
@@ -114,6 +114,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T20:25:00+01:00 Andries in de sessie, na de proef van YS40 met de nieuwe stemmen: \"peertje ze mond moet beter bewegen, en kan wat sneller\"",
     "2026-11-14T20:17:00+01:00 Proefvideo YS40 ronde 4 (50,8 s) aan Andries gestuurd in de sessie; alleen in de tijdelijke map van de sessie.",
     "2026-11-14T20:16:00+01:00 ElevenLabs: 8 nieuwe zinnen ingesproken voor de proef van YS40 (445 tekens; één zin van Liam was al bewaard). Mijn logboek: 994 tekens voor \"stemproef\" (plafond 2.000). De teller van het abonnement stond om 20:16 op 1.622 van 40.000 (was 1.224 vóór mijn werk, dus 398 erbij; hij telt anders of loopt achter).",
     "2026-11-14T20:02:00+01:00 Andries in de sessie, na de zes stemproeven, op \"Welke twee stemmen kies je voor het duo?\": \"vraag tegen laura, peertje liam\"",
