@@ -177,6 +177,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- za 14 nov 2026 ±20:02, in de sessie, na de zes stemproeven, op "Welke twee stemmen kies je voor het duo?": "vraag tegen laura, peertje liam" → het Vraagteken krijgt de stem Laura, Peertje de stem Liam (ElevenLabs). Dit is de stemkeuze voor de proef; "stijl OK stijl 3" vraag ik na de nieuwe proef van YS40.
 - za 14 nov 2026 ±19:55, in de sessie, op "Mag ik hoogstens 2.000 tekens gebruiken om je stemproeven te laten horen?": "Ja, maak stemproeven" → ik maak stemproeven met ElevenLabs en gebruik daarvoor hoogstens 2.000 tekens van het tegoed.
 - za 14 nov 2026 ±17:00, in de sessie, op "Zal ik daar de rechten voor je aanzetten en op 'Wijzigingen opslaan' klikken?": "Ja, alleen wat nodig is (Recommended)" → rechten van de ElevenLabs-sleutel aangezet (Modellen, Gebruiker, Stemmen lezen) en opgeslagen.
 - za 14 nov 2026 ±15:31, in de sessie: "we gaan elevenlabs gebruiken zo voor de stemmen" → de stemmen van het duo komen van ElevenLabs (betaald hulpmiddel). Nog nodig: account en abonnement door Andries, zijn OK per bedrag (potje YG-Social, Jesse houdt het bij) en de sleutel op de pc (niet in git, ik krijg hem niet te zien). Tot dan blijft de proef met de gratis Kokoro-stemmen.

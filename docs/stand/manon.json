@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T20:01:00+01:00",
+  "tijd": "2026-11-14T20:03:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-14T13:55:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-14T20:00:00+01:00 Zes stemproeven gemaakt met ElevenLabs (model eleven_v4, standaardinstellingen): Vraagteken = Jessica, Laura, Hope; Peertje = Liam, Charlie, Callum; elk één zin uit YS40; samen 549 tekens volgens mijn logboek (plafond 2.000). Eén filmpje van 51 s met de naam in beeld, aan Andries getoond in de sessie; de bestanden staan alleen lokaal (niet in git). Ik heb de stemmen niet beluisterd.",
     "2026-11-14T19:58:00+01:00 gereedschap/short/elevenlabs.cjs (sleutel alleen uit de Windows-variabele, nooit getoond; elke zin één keer inspreken en bewaren; plafond per werk met logboek buiten git; woordtijden uit de dienst) en gereedschap/stemproef.cjs (stemproeven met naam in beeld)",
@@ -96,11 +96,10 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "ElevenLabs in de generator (stijl 3) en de proef van YS40 opnieuw met Laura (Vraagteken) en Liam (Peertje)",
   "volgende": "Na de stemkeuze van Andries (één voor het Vraagteken, één voor Peertje): ElevenLabs in gereedschap/short.cjs (stijl 3: stem, woordtijden en mond uit de dienst), proef YS40 opnieuw, dan \"stijl OK stijl 3\" vragen; daarna YS40 als pakket met kaart (pakket OK en bijschrift OK via het paneel) en YS41–YS46. Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
-    "Stemkeuze duo: welke stem voor het Vraagteken (Jessica, Laura of Hope) en welke voor Peertje (Liam, Charlie of Callum)? Of andere stemmen proberen? · aanname: geen, ik wacht op zijn oor · ondertussen: niets inspreken · blokkeert: ja, voor de nieuwe proef van YS40",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
     "\"stijl OK stijl 3\" voor de YS-reeks vanaf YS40 (duo, decors, close-ups, gesprek; docs/proef-stijl-3.md)? De stemmen worden nog vervangen door ElevenLabs en komen dan opnieuw ter keuring · ondertussen: koppeling ElevenLabs voorbereiden · blokkeert: ja, voor YS40–YS46",
     "Go voor tak manon/cron-extra naar main (extra starttijden automaat Instagram)? Eva keek de tak na (vr 13 nov 08:50): geen bezwaar · blokkeert: nee",
@@ -113,6 +112,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T20:02:00+01:00 Andries in de sessie, na de zes stemproeven, op \"Welke twee stemmen kies je voor het duo?\": \"vraag tegen laura, peertje liam\"",
     "2026-11-14T20:00:00+01:00 Filmpje met de zes stemproeven (51 s) aan Andries gestuurd in de sessie; bestanden alleen in de tijdelijke map van de sessie.",
     "2026-11-14T19:59:00+01:00 Zes aanroepen bij ElevenLabs (tekst naar spraak met tijden, model eleven_v4): 549 tekens volgens mijn logboek. De teller van het abonnement stond om 20:00 nog op 1.224 van 40.000 (loopt mogelijk achter). Bewaarde zinnen en logboek: tijdelijke map van de pc (yg-stem-el), niet in git.",
     "2026-11-14T19:55:00+01:00 Andries in de sessie, op \"Mag ik hoogstens 2.000 tekens gebruiken om je stemproeven te laten horen?\": \"Ja, maak stemproeven\"",
