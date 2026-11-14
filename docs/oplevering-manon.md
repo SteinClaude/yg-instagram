@@ -1,3 +1,4 @@
+KLAAR: ElevenLabs-sleutel staat op de pc en werkt (abonnement starter, 29 stemmen; rechten aangezet na ja van Andries); nog niets ingesproken, wacht op OK voor stemproeven · za 14 nov 17:06
 KLAAR: hulpje gereedschap/sleutel-zetten.cjs (Andries zet zelf de ElevenLabs-sleutel als Windows-variabele, verborgen invoer); sleutel staat er nog niet · za 14 nov 16:15
 KLAAR: stijlproef YS40 ronde 3 (geen ping, lamp gloeit bij praten, gesprek in hele zinnen, 37,6 s); stemmen nog Kokoro, ElevenLabs volgt na account, OK per bedrag en sleutel van Andries · a2f99a4 · za 14 nov 15:45
 KLAAR: stijlproef YS40 ronde 2 (stijl 3 met getekende decors, onderwerp in het decor, close-ups; docs/proef-stijl-3.md); wacht op "stijl OK stijl 3" · ae1177f · za 14 nov 15:01
@@ -175,6 +176,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- za 14 nov 2026 ±17:00, in de sessie, op "Zal ik daar de rechten voor je aanzetten en op 'Wijzigingen opslaan' klikken?": "Ja, alleen wat nodig is (Recommended)" → rechten van de ElevenLabs-sleutel aangezet (Modellen, Gebruiker, Stemmen lezen) en opgeslagen.
 - za 14 nov 2026 ±15:31, in de sessie: "we gaan elevenlabs gebruiken zo voor de stemmen" → de stemmen van het duo komen van ElevenLabs (betaald hulpmiddel). Nog nodig: account en abonnement door Andries, zijn OK per bedrag (potje YG-Social, Jesse houdt het bij) en de sleutel op de pc (niet in git, ik krijg hem niet te zien). Tot dan blijft de proef met de gratis Kokoro-stemmen.
 - za 14 nov 2026 ±15:07, in de sessie, na de proef met decors: "ik vindt dat hij te vaak een ping geluid maakt de lamp laat hem opgloeien als hij praat, ook wil ik dat de tekst die ze zeggen wat beter word nu zijn het gewoon losse worden bijna wat ze zeggen maar ze moeten het echt leuk en entousiasht vetellen, dus mogen ook wat extra worden/zinnen manier van vertelle worden toegevoegd aangepast," → de ping vervalt; Peertje gloeit op zolang hij praat; het gesprek wordt in hele, enthousiaste zinnen verteld (feiten blijven uit de bronnen).
 - za 14 nov 2026 ±14:49, in de sessie, na de stijlproef YS40: "oke dit ziet er al super goed uit, ik wil dit nu uitwerken naar een variatie op hoe [weggelaten] ze videos maakt kwa achtergronden en samenvoegen van dingen" → stijl 3 verder uitwerken met de achtergronden en het samenvoegen van een voorbeeldkanaal als inspiratie (eigen variatie, geen beeld van anderen). Nog geen stijl OK.
