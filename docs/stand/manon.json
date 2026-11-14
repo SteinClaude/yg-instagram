@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T14:41:00+01:00",
+  "tijd": "2026-11-14T14:52:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -92,6 +92,7 @@
   "volgende": "Na \"stijl OK stijl 3\": YS40 als pakket (pakket OK en bijschrift OK) en YS41–YS46 in stijl 3. Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
+    "Welke maker bedoelt Andries als voorbeeld voor de achtergronden en het samenvoegen (naam niet eenduidig te vinden)? · nodig: een link naar het kanaal of één video · ondertussen: niets gebouwd · blokkeert: ja, voor de uitwerking van stijl 3",
     "\"stijl OK stijl 3\" voor de YS-reeks vanaf YS40 (duo Vraagteken en Peertje, twee stemmen, indeling; docs/proef-stijl-3.md)? · ondertussen: niets; YS40–YS46 volgen op de stijl OK · blokkeert: ja, voor YS40–YS46 (Instagram is gevuld t/m 23 nov, YouTube t/m 8 dec plus YS33–YS39)",
     "Go voor tak manon/cron-extra naar main (extra starttijden automaat Instagram)? Eva keek de tak na (vr 13 nov 08:50): geen bezwaar · blokkeert: nee",
     "Studio kanaal 1: wanneer wissel je naar kanaal 1, zodat ik YS33–YS39 inplan (9–15 dec 18:00, pakket OK is er)? · aanname: ruim op tijd vóór 9 dec, geen haast · ondertussen: YS40–YS54 in stijl 2 · blokkeert: nee (YouTube is gepland t/m 8 dec)",
@@ -103,6 +104,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T14:49:00+01:00 Andries in de sessie, na de stijlproef YS40: \"oke dit ziet er al super goed uit, ik wil dit nu uitwerken naar een variatie op hoe [weggelaten] ze videos maakt kwa achtergronden en samenvoegen van dingen\" — het genoemde kanaal is niet eenduidig te vinden; aan Andries gevraagd welke maker hij bedoelt (link)",
     "2026-11-14T14:28:00+01:00 Andries in de sessie, direct na \"peertje\": \"met het vraag taken samen\" · \"je snapt waarom denk ik\" · \"bij vragen vraag tegen bij antwoorde peertje\" · \"zo veel mogelijk ect\"",
     "2026-11-14T14:26:00+01:00 Andries in de sessie, op \"Welke van de zes figuren (A–F) wordt het vaste gezicht van kanaal 1?\": \"peertje\"",
     "2026-11-14T14:20:00+01:00 Andries in de sessie, na ronde 2 van de figuren: \"andere mogelijkheden\"",
