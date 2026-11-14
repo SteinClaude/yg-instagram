@@ -43,7 +43,8 @@ module.exports = {
   lus: 0.5,
   stijl: 3,   // PROEF: nog geen stijl OK (za 14 nov 2026)
   stem: { stem: 'am_fenrir', tempo: 1.1 },
-  stemmen: { vraag: { stem: 'af_heart', tempo: 1.1 }, antwoord: { stem: 'am_fenrir', tempo: 1.1 } },
+  // Stemmen van ElevenLabs, gekozen door Andries (za 14 nov 2026 ±20:02: "vraag tegen laura, peertje liam")
+  stemmen: { vraag: { dienst: 'elevenlabs', stem: 'FGY2WhTYpPnrIDTdsKH5', naam: 'Laura' }, antwoord: { dienst: 'elevenlabs', stem: 'TX3LPaxmHKxFdv7VOQHJ', naam: 'Liam' } },
   duo: { vloer: 1590, vraag: { code: 'A', x: 285, spiegel: false, fase: 0.4 }, antwoord: { code: 'D', x: 785, spiegel: true, fase: 1.9 } },
   map: '2026-12-16-YS40-ampersand',
   nummer: 'No. 40',

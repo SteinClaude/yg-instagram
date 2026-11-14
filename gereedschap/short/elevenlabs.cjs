@@ -103,5 +103,9 @@ if (require.main === module) (async () => {
   const wat = process.argv[2];
   if (wat === 'tegoed') { const t = await tegoed(); console.log(`Abonnement ${t.abonnement}: ${t.gebruikt} van ${t.limiet} tekens gebruikt, ${t.over} over${t.nieuwePeriode ? '; nieuwe periode ' + t.nieuwePeriode : ''}.`); }
   else if (wat === 'verbruik') { const l = verbruik(); console.log(Object.keys(l.werk).length ? Object.entries(l.werk).map(([k, v]) => `${k}: ${v} tekens`).join('\n') : 'Nog niets gebruikt door dit gereedschap.'); }
+  else if (wat === 'spreek') {   // voor de generator: opdracht als JSON op de invoer, uitkomst als JSON op de uitvoer
+    const r = await spreek(JSON.parse(fs.readFileSync(0, 'utf8')));
+    process.stdout.write(JSON.stringify(r));
+  }
   else console.log('Gebruik: node gereedschap/short/elevenlabs.cjs tegoed | verbruik');
 })().catch(e => { console.error(String(e.message)); process.exit(1); });

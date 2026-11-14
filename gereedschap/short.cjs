@@ -375,23 +375,77 @@ const teken = svg => new Resvg(svg, { font: { fontFiles, loadSystemFonts: false,
 // Stem (besluit Andries do 5 nov 2026: Kokoro, stem "fenrir"). script.stem = { stem: 'am_fenrir', tempo: 1.1 } en per
 // scène `stem: 'tekst'` (optioneel `stemStart`, standaard 0.12 s). Een scène duurt minstens zo lang als haar zin + 0,25 s.
 // De wav's komen in een cache buiten de repo (te groot voor git); de tekst staat in het script en in bron/stem.txt.
+// Sinds 14 nov 2026 kan een stem ook van ElevenLabs komen (betaald; `dienst: 'elevenlabs'`, zie short/elevenlabs.cjs):
+//   stemmen: { vraag: { dienst: 'elevenlabs', stem: '<voice_id>', naam: 'Laura' }, ... }
+// Elke zin wordt één keer ingesproken en bewaard; het script of --plafond zegt hoeveel tekens het werk mag kosten.
+// ElevenLabs-stem (stijl 3): lange stiltes tussen zinnen inkorten (de stem laat tot een seconde vallen, dat is te
+// traag voor een short) en elke zin op hetzelfde volume zetten, zodat twee stemmen even hard klinken. De woordtijden
+// schuiven mee met wat eruit geknipt is.
+function strakkeStem(smp, rate, woorden, { max = 0.45, doel = 0.3, niveau = 0.094 } = {}) {
+  const stap = Math.round(rate / 100), n = Math.floor(smp.length / stap), rms = new Float32Array(n);
+  for (let i = 0; i < n; i++) { let q = 0; for (let k = i * stap; k < (i + 1) * stap; k++) q += smp[k] * smp[k]; rms[i] = Math.sqrt(q / stap); }
+  let top = 0; for (const x of rms) if (x > top) top = x;
+  if (!(top > 0)) return { smp, woorden, weg: 0 };
+  const grens = Math.max(top * 0.03, 1e-4);
+  let eerste = 0; while (eerste < n && rms[eerste] <= grens) eerste++;
+  let laatste = n - 1; while (laatste > eerste && rms[laatste] <= grens) laatste--;
+  const knip = [];   // [van, tot) in samples: dat stuk stilte gaat eruit
+  if (eerste > 3) knip.push([0, (eerste - 3) * stap]);
+  for (let i = eerste; i <= laatste;) {
+    if (rms[i] > grens) { i++; continue; }
+    let j = i; while (j <= laatste && rms[j] <= grens) j++;
+    if ((j - i) / 100 > max) { const houd = Math.round(doel * 50); knip.push([(i + houd) * stap, (j - houd) * stap]); }
+    i = j;
+  }
+  if (n - 1 - laatste > 12) knip.push([(laatste + 12) * stap, smp.length]);
+  const weg = knip.reduce((a, [v, t]) => a + (t - v), 0), uit = new Float32Array(smp.length - weg), rand = Math.round(rate * 0.004);
+  let pos = 0, vorige = 0;
+  const stuk = (v, t) => {   // kopieer met een korte in- en uitloop, zodat een snede niet tikt
+    for (let k = v; k < t; k++) { const f = Math.min(1, (k - v + 1) / rand, (t - k) / rand); uit[pos++] = smp[k] * f; }
+  };
+  for (const [v, t] of knip) { if (v > vorige) stuk(vorige, v); vorige = t; }
+  if (vorige < smp.length) stuk(vorige, smp.length);
+  // volume: de gemiddelde sterkte van de spraak naar `niveau`, zonder te oversturen
+  let q = 0, m = 0, piek = 0;
+  for (let i = 0; i < n; i++) if (rms[i] > top * 0.05) { q += rms[i] * rms[i]; m++; }
+  for (let k = 0; k < uit.length; k++) { const a = Math.abs(uit[k]); if (a > piek) piek = a; }
+  const versterk = Math.min(niveau / Math.sqrt(q / Math.max(1, m)), 0.92 / Math.max(piek, 1e-6));
+  for (let k = 0; k < uit.length; k++) uit[k] *= versterk;
+  const schuif = t => { let d = 0; for (const [v, e] of knip) d += Math.max(0, Math.min(t, e / rate) - v / rate); return +(t - d).toFixed(3); };
+  return { smp: uit, woorden: (woorden || []).map(w => ({ w: w.w, start: schuif(w.start), eind: schuif(w.eind) })), weg: weg / rate };
+}
 const KOKORO_PY = process.env.KOKORO_PY || 'C:/Users/gijsm/yg-gereedschap/kokoro-venv/Scripts/python.exe';
 function voorbereidStem(script, map) {
   if (!script.stem) return [];
+  let elTekens = 0, elWeg = 0;
   const cache = path.join(require('os').tmpdir(), 'yg-stem'); fs.mkdirSync(cache, { recursive: true });
   const sporen = []; let t0 = 0, tekst = '';
   script.scenes.forEach((s, i) => {
     if (s.stem) {
       // stijl 3: elke figuur een eigen stem (script.stemmen = { vraag: {...}, antwoord: {...} }); anders script.stem
-      const { stem = 'am_fenrir', tempo = 1.1 } = (script.stemmen && s.wie && script.stemmen[s.wie]) || script.stem;
-      const sleutel = require('crypto').createHash('sha1').update(`${stem}|${tempo}|uitspraak2|${s.stem}`).digest('hex').slice(0, 16);
-      const wav = path.join(cache, sleutel + '.wav');
-      if (!fs.existsSync(wav)) execFileSync(KOKORO_PY, [path.join(__dirname, 'short', 'stem.py'), wav, stem, String(tempo), s.stem]);
+      const cfg = (script.stemmen && s.wie && script.stemmen[s.wie]) || script.stem, el = cfg.dienst === 'elevenlabs';
+      const { stem = 'am_fenrir', tempo = 1.1 } = cfg;
+      let wav, elWoorden = null;
+      if (el) {   // betaald: de aanroep bewaart elke zin en weigert boven het plafond
+        const r = JSON.parse(execFileSync(process.execPath, [path.join(__dirname, 'short', 'elevenlabs.cjs'), 'spreek'], { maxBuffer: 16 << 20,
+          input: JSON.stringify({ tekst: s.stem, stem, model: cfg.model || 'eleven_v4', instellingen: cfg.instellingen || null, werk: script.stemWerk || script.code, plafond: script.stemPlafond || 1500 }) }).toString());
+        wav = r.mp3; elWoorden = r.woorden; elTekens += r.tekens;
+      } else {
+        const sleutel = require('crypto').createHash('sha1').update(`${stem}|${tempo}|uitspraak2|${s.stem}`).digest('hex').slice(0, 16);
+        wav = path.join(cache, sleutel + '.wav');
+        if (!fs.existsSync(wav)) execFileSync(KOKORO_PY, [path.join(__dirname, 'short', 'stem.py'), wav, stem, String(tempo), s.stem]);
+      }
       // Stijl 2: de stem gemixt zoals in een studio: rommel onder 75 Hz weg, minder dreun, meer helderheid, een
       // compressor voor een gelijkmatig volume en een de-esser tegen scherpe s-klanken.
-      const mix2 = (script.stijl || 1) >= 2 ? ['-af', 'highpass=f=75,equalizer=f=220:t=q:w=1.1:g=-2,equalizer=f=3200:t=q:w=1:g=2.5,equalizer=f=10000:t=q:w=1:g=1.5,acompressor=threshold=0.1:ratio=3:attack=5:release=70:makeup=1.6,deesser=i=0.35'] : [];
+      // ElevenLabs is al af gemixt: alleen rommel onder 75 Hz weg en een lichte compressor.
+      const mix2 = el ? ['-af', 'highpass=f=75,acompressor=threshold=0.1:ratio=2.5:attack=5:release=80:makeup=1.3'] : (script.stijl || 1) >= 2 ? ['-af', 'highpass=f=75,equalizer=f=220:t=q:w=1.1:g=-2,equalizer=f=3200:t=q:w=1:g=2.5,equalizer=f=10000:t=q:w=1:g=1.5,acompressor=threshold=0.1:ratio=3:attack=5:release=70:makeup=1.6,deesser=i=0.35'] : [];
       const pcm = execFileSync('ffmpeg', ['-v', 'error', '-i', wav, ...mix2, '-ac', '1', '-ar', String(GELUID.RATE), '-f', 'f32le', 'pipe:1'], { maxBuffer: 64 << 20 });
-      if ((script.stijl || 1) >= 2) {
+      let elSmp = null;
+      if (el) {   // woordtijden komen van de dienst zelf; stiltes korter, volume gelijk
+        const k = strakkeStem(new Float32Array(pcm.buffer, pcm.byteOffset, pcm.length / 4), GELUID.RATE, elWoorden);
+        elSmp = k.smp; elWeg += k.weg;
+        s._woorden = k.woorden.map(w => ({ ...w, start: w.start + (s.stemStart ?? 0.12), eind: w.eind + (s.stemStart ?? 0.12) }));
+      } else if ((script.stijl || 1) >= 2) {
         const v2t = (script.stijl || 1) >= 3;   // stijl 3: woordtijden versie 2 (lange zinnen met veel komma's)
         const tijden = wav.replace(/\.wav$/, v2t ? '.woorden2.json' : '.woorden.json');
         if (!fs.existsSync(tijden)) fs.writeFileSync(tijden, execFileSync(KOKORO_PY, [path.join(__dirname, 'short', 'woordtijden.py'), wav, stem[0] === 'b' ? 'en-gb' : 'en-us', s.stem, ...(v2t ? ['--v2'] : [])]));
@@ -400,7 +454,7 @@ function voorbereidStem(script, map) {
       // stijl 3: `bronStart: 'woord'` en geluid `['woord', naam, volume]` vallen op het moment dat dat woord gezegd wordt
       if (typeof s.bronStart === 'string') s.bronStart = woordTijd(s, s.bronStart) ?? 0.6;
       for (const g of s.geluid || []) if (typeof g[0] === 'string') g[0] = woordTijd(s, g[0]) ?? 0.3;
-      const smp = new Float32Array(pcm.buffer, pcm.byteOffset, pcm.length / 4), start = s.stemStart ?? 0.12, lengte = smp.length / GELUID.RATE;
+      const smp = elSmp || new Float32Array(pcm.buffer, pcm.byteOffset, pcm.length / 4), start = s.stemStart ?? 0.12, lengte = smp.length / GELUID.RATE;
       if ((script.stijl || 1) >= 3) {   // mond van de figuur: de sterkte van de stem per beeld (0..1)
         const per = Math.round(GELUID.RATE / FPS), niveaus = [];
         for (let a = 0; a < smp.length; a += per) { let q = 0; const b = Math.min(smp.length, a + per); for (let k = a; k < b; k++) q += smp[k] * smp[k]; niveaus.push(Math.sqrt(q / (b - a))); }
@@ -412,10 +466,16 @@ function voorbereidStem(script, map) {
       const st2 = (script.stijl || 1) >= 2, laatste = i === script.scenes.length - 1;
       s.duur = Math.max(s.duur, start + lengte + 0.25 + (st2 ? 0.3 : 0) + (st2 && laatste && script.lus ? script.lus + 0.4 : 0));
       sporen.push({ begin: t0 + start, smp });
-      tekst += `${i + 1}. ${s.wie ? `[${s.wie}, ${stem}] ` : ''}${s.stem}\n`;
+      tekst += `${i + 1}. ${s.wie ? `[${s.wie}, ${cfg.naam || stem}] ` : ''}${s.stem}\n`;
     }
     t0 += s.duur;
   });
+  const alle = script.stemmen ? Object.entries(script.stemmen) : [['stem', script.stem]];
+  if (alle.some(([, v]) => v.dienst === 'elevenlabs')) {
+    console.log(`ElevenLabs: ${elTekens} tekens in deze ronde (bewaarde zinnen kosten niets); ${elWeg.toFixed(1)} s stilte ingekort`);
+    fs.writeFileSync(path.join(map, 'bron', 'stem.txt'), `Stem: ElevenLabs (tekst naar spraak, betaald abonnement), ${alle.map(([k, v]) => `${k} = ${v.naam || v.stem} (${v.model || 'eleven_v4'})`).join(', ')}; gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.\nIngesproken tekst per scène:\n${tekst}`);
+    return sporen;
+  }
   fs.writeFileSync(path.join(map, 'bron', 'stem.txt'), `Stem: Kokoro-82M (Apache-2.0), stem ${script.stemmen ? Object.entries(script.stemmen).map(([k, v]) => `${k} = ${v.stem}`).join(', ') : script.stem.stem}, tempo ${script.stem.tempo || 1.1}; lokaal gemaakt met gereedschap/short/stem.py.\nIngesproken tekst per scène:\n${tekst}`);
   return sporen;
 }
@@ -434,6 +494,8 @@ function mengStem(pcm, sporen) {
 
 async function maak(code, alleenBeelden, opties = {}) {
   const script = require(path.join(WORTEL, 'teksten', 'shorts', code + '.cjs'));
+  if (opties.werk) script.stemWerk = opties.werk;         // --werk / --plafond: onder welke naam en tot hoeveel tekens
+  if (opties.plafond) script.stemPlafond = opties.plafond; // de ElevenLabs-stem tegoed mag gebruiken
   if (opties.stijl) script.stijl = opties.stijl;   // --stijl 2: proef met de nieuwe stijl zonder het script te wijzigen
   const map = opties.map ? path.resolve(opties.map) : path.join(WORTEL, 'pakketten', script.map);
   fs.mkdirSync(path.join(map, 'bron'), { recursive: true });
@@ -515,7 +577,7 @@ async function controleBlad(script, map, doel) {
 
 if (require.main === module) {
   const a = process.argv.slice(2), code = a[0], waarde = v => { const i = a.indexOf(v); return i > 0 ? a[i + 1] : undefined; };
-  if (!code) { console.error('gebruik: node gereedschap/short.cjs YS01 [--frames] [--stijl 2] [--map <uitvoermap>]'); process.exit(1); }
-  maak(code, a.includes('--frames'), { stijl: Number(waarde('--stijl')) || 0, map: waarde('--map') }).catch(e => { console.error(e); process.exit(1); });
+  if (!code) { console.error('gebruik: node gereedschap/short.cjs YS01 [--frames] [--stijl 2] [--map <uitvoermap>] [--werk <naam> --plafond <tekens>]'); process.exit(1); }
+  maak(code, a.includes('--frames'), { stijl: Number(waarde('--stijl')) || 0, map: waarde('--map'), werk: waarde('--werk'), plafond: Number(waarde('--plafond')) || 0 }).catch(e => { console.error(e); process.exit(1); });
 }
 module.exports = { maak, svgVoor, teken, K, geluidLijst };
