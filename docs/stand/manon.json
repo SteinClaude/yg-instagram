@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T15:01:00+01:00",
+  "tijd": "2026-11-14T15:16:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-14T13:55:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-14T15:01:00+01:00 Proefvideo YS40 in stijl 3 ronde 2 gerenderd (27,2 s, -14,1 LUFS; alleen lokaal, aan Andries getoond in de sessie); uitspraak niet door mij beluisterd",
     "2026-11-14T14:57:00+01:00 Stijl 3 ronde 2: getekende decors (gereedschap/short/decor.cjs: kamer, klas, rome), onderwerp op een vlak in het decor, kop op een papieren kaartje, close-ups met harde snede; YS40 omgezet; docs/proef-stijl-3.md en -overzicht.jpg bijgewerkt",
@@ -90,7 +90,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "Stijl 3 ronde 3: ping weg, Peertje gloeit bij praten, gesprek YS40 herschreven; proef rendert lokaal",
   "volgende": "Na \"stijl OK stijl 3\": YS40 als pakket (pakket OK en bijschrift OK) en YS41–YS46 in stijl 3. Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
@@ -105,6 +105,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T15:07:00+01:00 Andries in de sessie, na de proef met decors: \"ik vindt dat hij te vaak een ping geluid maakt de lamp laat hem opgloeien als hij praat, ook wil ik dat de tekst die ze zeggen wat beter word nu zijn het gewoon losse worden bijna wat ze zeggen maar ze moeten het echt leuk en entousiasht vetellen, dus mogen ook wat extra worden/zinnen manier van vertelle worden toegevoegd aangepast,\"",
     "2026-11-14T14:53:00+01:00 Andries in de sessie, op de vraag welke maker hij bedoelde: \"[weggelaten]\" (de juiste naam van het voorbeeldkanaal; niet in de repo). Openbare miniaturen van dat kanaal bekeken als voorbeeld van de aanpak; niets ervan bewaard of gebruikt.",
     "2026-11-14T14:49:00+01:00 Andries in de sessie, na de stijlproef YS40: \"oke dit ziet er al super goed uit, ik wil dit nu uitwerken naar een variatie op hoe [weggelaten] ze videos maakt kwa achtergronden en samenvoegen van dingen\" — het genoemde kanaal is niet eenduidig te vinden; aan Andries gevraagd welke maker hij bedoelt (link)",
     "2026-11-14T14:28:00+01:00 Andries in de sessie, direct na \"peertje\": \"met het vraag taken samen\" · \"je snapt waarom denk ik\" · \"bij vragen vraag tegen bij antwoorde peertje\" · \"zo veel mogelijk ect\"",

@@ -13,7 +13,7 @@
 1. **Het duo staat onderin beeld**, de hele short. Het beeld erachter wisselt per scène; zij blijven staan.
 2. **Wie praat, staat groter en vooraan.** Die beweegt de mond op de woorden van de stem en wijst naar het beeld. De ander luistert en kijkt naar de spreker.
 3. **Vragen komen van het Vraagteken, antwoorden van Peertje.** Elke scène is een vraag of een antwoord.
-4. **Peertje gaat aan** (met een zacht belletje) op het moment dat het antwoord valt.
+4. **Peertje gloeit op zolang hij praat** (sinds ronde 3; eerst ging hij aan met een belletje).
 5. **Twee stemmen:** het Vraagteken heeft een eigen stem (Kokoro "heart"), Peertje houdt de vaste stem van het kanaal (Kokoro "fenrir"). Beide zijn gratis en lokaal gemaakt.
 6. **Kleine dingen die het levend maken:** knipperen, licht wiegen, een sprongetje bij het overnemen van het woord, en verbazing bij het Vraagteken.
 7. **Indeling:** de kop bovenaan, het beeld in het midden (kleiner dan in stijl 2), de bronstempel daaronder en het duo onderaan. De gezichten blijven binnen het veilige vlak van YouTube en Instagram.
@@ -30,15 +30,21 @@
 
 Wat ik niet overneem: hun figuren, hun beeld, spelbeelden of muziek. Alle decors zijn eigen tekenwerk (`gereedschap/short/decor.cjs`), in dezelfde dikke lijn en kleuren als het duo. De bronstempel, de voortgangsbalk, de krabbels en de tekst gelijk met de stem blijven.
 
+**Ronde 3, lamp en vertelstijl.** Andries (za 14 nov 2026 ±15:07, in de sessie): *"ik vindt dat hij te vaak een ping geluid maakt de lamp laat hem opgloeien als hij praat, ook wil ik dat de tekst die ze zeggen wat beter word nu zijn het gewoon losse worden bijna wat ze zeggen maar ze moeten het echt leuk en entousiasht vetellen, dus mogen ook wat extra worden/zinnen manier van vertelle worden toegevoegd aangepast,"*
+
+- **Geen ping meer.** Peertje gloeit op zolang hij praat en dooft als het Vraagteken het woord neemt.
+- **Een echt gesprek.** Hele zinnen, reacties op elkaar ("Ooh, good one!", "Wait, what?", "No way!") en een opbouw naar het antwoord. Elk feit staat in de bronnen; de uitroepen eromheen zijn vertelstijl.
+- **Beeld op de stem.** Wat op het bord gebeurt, valt op het woord waarop het gezegd wordt (`h.op('woord')`).
+
 **De proef: YS40, "Why is "&" called an ampersand?"**
-- Script: `teksten/shorts/YS40.cjs` (8 scènes: vraag, antwoord, vraag, antwoord, vraag, drie keer antwoord).
+- Script: `teksten/shorts/YS40.cjs` (9 scènes, om en om vraag en antwoord).
 - Bronnen, gelezen za 14 nov 2026: Dictionary.com, "What Character Was Removed From The Alphabet?" (7 sep 2020); Andy Hollandbeck, "In a Word: And & Ampersand", The Saturday Evening Post (2 sep 2021).
 - Niet gezegd: een jaartal (de twee bronnen verschillen daarover).
 - De video van de proef staat alleen lokaal; `docs/proef-stijl-3-overzicht.jpg` toont het eind van elke scène.
 
 **Techniek:**
 - Figuren: `gereedschap/figuur.cjs` (vector; ontwerp A en D). Generator: `gereedschap/short.cjs`, alleen voor scripts met `stijl: 3` en een `duo`. Scripts met stijl 1 of 2 worden gemaakt zoals voorheen (YS01–YS39 veranderen niet).
-- Per scène: `wie: 'vraag' | 'antwoord'`, `decor` (kamer, klas of rome), optioneel `shot: 'dichtbij'`, `pose` en `aha` (het moment waarop Peertje aangaat). Per figuur een stem in `stemmen`.
+- Per scène: `wie: 'vraag' | 'antwoord'`, `decor` (kamer, klas of rome), optioneel `shot: 'dichtbij'` en `pose`. Per figuur een stem in `stemmen`.
 - Geen betaald hulpmiddel; het potje is niet aangesproken.
 
 **Gevraagd:** "stijl OK stijl 3" (figuren, stemmen, decors, close-ups, indeling en beweging). Dat dekt de weergave voor de YS-reeks vanaf YS40. Script, bronnen en titel van YS40 komen daarna apart ter keuring ("pakket OK YS40").
