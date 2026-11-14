@@ -13,6 +13,8 @@
 - `ontwerpen-overzicht.jpg`: de drie bladen naast elkaar.
 - `ontwerpen-in-beeld.jpg`: elk ontwerp in een voorbeeldframe van een short. De kop is alleen een voorbeeld, geen gekeurd onderwerp.
 
+**Ronde 2** (Andries, za 14 nov ±14:15, in de sessie: "betere figuren"): elke vorm heeft nu een celschaduw en een glans, er zijn handschoentjes met vingers (een wijzende hand), de ogen hebben een schaduw en twee lichtpuntjes, de figuren hebben wenkbrauwen die met de houding meebewegen, een open mond met tanden en tong, en schoenen met een zool. Het lijf buigt mee: bij wijzen leunt de figuur, bij verbazing maakt hij een sprongetje. Daarnaast heeft elk ontwerp eigen details: A een loep met messing rand, B papierlijntjes, plakband en een omgekrulde hoek, C een getrapte staart met groenblauwe glans, witte schoudervlekken, een tas met gesp en een snavel die opengaat. Op het blad staat de figuur nu groot in de houding "legt uit".
+
 **Hoe gemaakt:**
 - Eigen werk, als vector in `gereedschap/figuur.cjs`; de bladen maak je met `node gereedschap/figuur-blad.cjs`.
 - Geen bestaand personage, geen AI-beeld en geen betaald hulpmiddel. Het potje is niet aangesproken.

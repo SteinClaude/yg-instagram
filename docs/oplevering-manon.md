@@ -1,3 +1,4 @@
+KLAAR: ronde 2 figuren (op "betere figuren"): A Vraagteken, B Memo en C Ekster opnieuw getekend met schaduw, glans, handschoentjes en expressievere gezichten; docs/figuur/; wacht op keuze Andries · za 14 nov 14:15
 KLAAR: jesse-10 stap 1, drie ontwerpen vaste figuur kanaal 1 (A Vraagteken, B Memo, C Ekster) in docs/figuur/; wacht op keuze Andries · za 14 nov 14:00
 KLAAR: extra starttijden automaat Instagram op tak manon/cron-extra (8a74843), na "A: extra starttijden"; wacht op controle Eva (V-manon-cron) en go Andries (B30) · do 12 nov 23:50
 KLAAR: Instagram kanaal 1 nagekeken: YS04–YS06 geplaatst, maar 3–5,5 uur te laat (GitHub start de uurklok maar ±3× per dag); keuze A/B voor de automaat ligt bij Andries · do 12 nov 23:45

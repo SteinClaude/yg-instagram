@@ -25,10 +25,12 @@ async function blad(code) {
   let s = papier(w, h);
   s += `<text x="72" y="118" font-family="IBM Plex Mono" font-weight="700" font-size="34" fill="${K.signaal}">ONTWERP ${code}</text>`;
   s += `<text x="72" y="196" font-family="Instrument Sans" font-weight="700" font-size="76" fill="${K.inkt}">${O.naam}</text>`;
-  poses.forEach(([p, label], i) => {
-    const x = 200 + i * 340, y = 900;
-    s += schaduw(x, y, 100) + F.teken(code, { x, y, s: 0.66, pose: p, mond: p === 'wijst' ? 'open' : 'glim' });
-    s += `<text x="${x}" y="${y + 70}" text-anchor="middle" font-family="IBM Plex Mono" font-size="30" fill="${K.grijs}">${label}</text>`;
+  // groot: legt uit; rechts klein: rust en ontdekt iets
+  const plek = { wijst: [380, 960, 1.08], rust: [870, 540, 0.5], verbaasd: [870, 990, 0.5] };
+  poses.forEach(([p, label]) => {
+    const [x, y, sc] = plek[p];
+    s += schaduw(x, y, 150 * sc) + F.teken(code, { x, y, s: sc, pose: p, mond: p === 'wijst' ? 'open' : 'glim' });
+    s += `<text x="${x}" y="${y + 50}" text-anchor="middle" font-family="IBM Plex Mono" font-size="28" fill="${K.grijs}">${label}</text>`;
   });
   // knipperen en praten
   s += `<text x="72" y="1086" font-family="IBM Plex Mono" font-size="26" fill="${K.grijs}">KLEUREN</text>`;

@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T14:00:00+01:00",
+  "tijd": "2026-11-14T14:15:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-14T14:15:00+01:00 Ronde 2 figuren (op \"betere figuren\"): celschaduw en glans, handschoentjes, ogen met lichtpuntjes, wenkbrauwen per houding, lijf buigt mee; bladen en voorbeeldframes opnieuw in docs/figuur/",
     "2026-11-14T14:00:00+01:00 Drie ontwerpen vaste figuur kanaal 1 (jesse-10): A Vraagteken, B Memo, C Ekster; elk in drie houdingen plus een voorbeeldframe van een short; docs/figuur/ (LEESMIJ.md, ontwerp-A/B/C.jpg, ontwerpen-overzicht.jpg, ontwerpen-in-beeld.jpg); vector in gereedschap/figuur.cjs, bladen met gereedschap/figuur-blad.cjs; geen betaald hulpmiddel",
     "2026-11-12T23:50:00+01:00 Extra starttijden automaat Instagram gebouwd op tak manon/cron-extra (8a74843): 6 starts per uur in 16 en 17 UTC (18:00 Amsterdam in zomer en winter) en 3 in 18 UTC; alleen plaatsen.yml, script en planning ongewijzigd; nog niet op main",
     "2026-11-12T23:45:00+01:00 Instagram kanaal 1 nagekeken op vraag van Andries: YS04, YS05 en YS06 zijn geplaatst (gedaan.json), maar 3–5,5 uur te laat: 10 nov 21:20, 11 nov 23:32, 12 nov 21:42 in plaats van 18:00. Oorzaak: GitHub start de uurlijkse klok (cron \"5 * * * *\") maar ±3 keer per dag (runs 10–12 nov om ±04:15, 13:16, 21:18 · 02:04, 08:42, 16:54, 23:31 · 04:38, 13:17, 21:40)",
@@ -99,6 +100,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T14:15:00+01:00 Andries in de sessie, na de eerste drie ontwerpen: \"betere figuren\"",
     "2026-11-14T13:55:00+01:00 Andries in de sessie: \"ga verder. Nieuw besluit (Andries za 14 nov ±10:55): vanaf YS40 een nieuwe weergave met een vaste eigen cartoonfiguur die elke short iets uitzoekt. Het onderwerp en de bronnen blijven gelijk; YS01–YS39 blijven zoals gepland. Stop met YS40+ in stijl 2. Maak eerst drie ontwerpen van de figuur (stilstaand beeld) zodat ik kan kiezen, daarna een stijlproef van YS40 voor “stijl OK”. Een betaald hulpmiddel mag uit het potje van €25/mnd, alleen na mijn OK per bedrag. Uitleg: docs/manager/animatie-koers.md.\"",
     "2026-11-12T23:40:00+01:00 Andries in de sessie, op \"Welke oplossing voor de te late Instagram-posts?\": \"A: extra starttijden\"",
     "2026-11-12T23:38:00+01:00 Andries in de sessie: \"volgens mij loopt de insta niet goed of wel?\" — nagekeken; Claude in Chrome was niet verbonden, dus alleen gedaan.json en de run-lijst van GitHub gebruikt",
