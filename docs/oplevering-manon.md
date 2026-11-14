@@ -1,3 +1,4 @@
+KLAAR: stijlproef YS40 ronde 3 (geen ping, lamp gloeit bij praten, gesprek in hele zinnen, 37,6 s); stemmen nog Kokoro, ElevenLabs volgt na account, OK per bedrag en sleutel van Andries · a2f99a4 · za 14 nov 15:45
 KLAAR: stijlproef YS40 ronde 2 (stijl 3 met getekende decors, onderwerp in het decor, close-ups; docs/proef-stijl-3.md); wacht op "stijl OK stijl 3" · ae1177f · za 14 nov 15:01
 KLAAR: jesse-10 stap 2, stijlproef YS40 in stijl 3 (duo Vraagteken en Peertje; 27,2 s; docs/proef-stijl-3.md); wacht op "stijl OK stijl 3" · 63bc3e7 · za 14 nov 14:41
 KLAAR: ronde 3 figuren (op "andere mogelijkheden"): D Peertje, E Robot, F Mol erbij; zes ontwerpen in docs/figuur/; wacht op keuze Andries · za 14 nov 14:23
