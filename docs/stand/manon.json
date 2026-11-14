@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T15:16:00+01:00",
+  "tijd": "2026-11-14T15:31:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -94,6 +94,7 @@
   "volgende": "Na \"stijl OK stijl 3\": YS40 als pakket (pakket OK en bijschrift OK) en YS41–YS46 in stijl 3. Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
+    "ElevenLabs voor de stemmen: welk abonnement en welk bedrag keurt Andries goed (OK per bedrag, potje YG-Social), en zet hij de sleutel op de pc als omgevingsvariabele ELEVENLABS_API_KEY? · aanname: betaald abonnement met gebruiksrecht voor publicatie · ondertussen: proef met Kokoro, koppeling voorbereiden zonder sleutel · blokkeert: nee, tot de stemmen definitief worden",
     "\"stijl OK stijl 3\" voor de YS-reeks vanaf YS40 (duo Vraagteken en Peertje, twee stemmen, getekende decors, close-ups; docs/proef-stijl-3.md)? · ondertussen: niets; YS40–YS46 volgen op de stijl OK · blokkeert: ja, voor YS40–YS46",
     "Go voor tak manon/cron-extra naar main (extra starttijden automaat Instagram)? Eva keek de tak na (vr 13 nov 08:50): geen bezwaar · blokkeert: nee",
     "Studio kanaal 1: wanneer wissel je naar kanaal 1, zodat ik YS33–YS39 inplan (9–15 dec 18:00, pakket OK is er)? · aanname: ruim op tijd vóór 9 dec, geen haast · ondertussen: YS40–YS54 in stijl 2 · blokkeert: nee (YouTube is gepland t/m 8 dec)",
@@ -105,6 +106,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T15:31:00+01:00 Andries in de sessie: \"we gaan elevenlabs gebruiken zo voor de stemmen\"",
     "2026-11-14T15:07:00+01:00 Andries in de sessie, na de proef met decors: \"ik vindt dat hij te vaak een ping geluid maakt de lamp laat hem opgloeien als hij praat, ook wil ik dat de tekst die ze zeggen wat beter word nu zijn het gewoon losse worden bijna wat ze zeggen maar ze moeten het echt leuk en entousiasht vetellen, dus mogen ook wat extra worden/zinnen manier van vertelle worden toegevoegd aangepast,\"",
     "2026-11-14T14:53:00+01:00 Andries in de sessie, op de vraag welke maker hij bedoelde: \"[weggelaten]\" (de juiste naam van het voorbeeldkanaal; niet in de repo). Openbare miniaturen van dat kanaal bekeken als voorbeeld van de aanpak; niets ervan bewaard of gebruikt.",
     "2026-11-14T14:49:00+01:00 Andries in de sessie, na de stijlproef YS40: \"oke dit ziet er al super goed uit, ik wil dit nu uitwerken naar een variatie op hoe [weggelaten] ze videos maakt kwa achtergronden en samenvoegen van dingen\" — het genoemde kanaal is niet eenduidig te vinden; aan Andries gevraagd welke maker hij bedoelt (link)",
@@ -559,6 +561,11 @@
     }
   ],
   "voorEva": [
+    {
+      "id": "V-manon-elevenlabs",
+      "aan": "Jesse (potje YG-Social)",
+      "wat": "Andries (za 14 nov 2026 ±15:31, in de sessie van Manon): \"we gaan elevenlabs gebruiken zo voor de stemmen\". Betaald hulpmiddel voor de stemmen van kanaal 1 vanaf YS40; het bedrag volgt zodra Andries het abonnement kiest en per bedrag OK geeft. Graag opnemen in het potje en het maandoverzicht."
+    },
     {
       "id": "V-manon-cron",
       "aan": "Eva",
