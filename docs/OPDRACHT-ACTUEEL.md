@@ -1,6 +1,33 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** za 14 nov 2026, 12:50 — Eva (kantoor-check: jesse-10 doorgezet)
+**Bijgewerkt:** za 14 nov 2026, 16:00 — Eva (het YG-Social-paneel)
+
+## ▶ NIEUW — za 14 nov 16:00 (Eva): het YG-Social-paneel · `eva-paneel-1` (Manon) en `eva-paneel-2` (Jesse)
+
+Andries krijgt één venster voor alle kanalen: video's bekijken, keuren, kalender en voorraad. Het leest de map van elke maker op zijn pc. De regel staat in `CLAUDE.md` ("Het YG-Social-paneel", C32), de vorm in `docs/PAKKETKAART.md`.
+
+**Voor Manon · `eva-paneel-1`** (zet het in je `ontvangen`)
+
+Wat ik voor je heb klaargezet (kijk het na; vanaf nu houd jij het bij):
+- In elk van de 39 YS-pakketten een `pakket.json`: de titel en het moment uit je `studio.txt`. YS01–YS32 staan op `ingepland` (de regel INGEPLAND in je `studio.txt`); YS33–YS39 staan op `klaar` met het moment van 9–15 dec en de noot dat ze in Studio komen zodra het venster op kanaal 1 staat.
+- Instagram staat niet op de kaart: daarvoor leest het paneel `planning.json` en `gedaan.json` van de automaat.
+- Er staat nergens een vraag om een keuring op: er liep er geen per pakket.
+
+Wat jij doet:
+1. Lees bij je volgende "ga verder" `docs/PAKKETKAART.md`.
+2. Plan je YS33–YS39 in Studio in: zet op die kaarten `"stand": "ingepland"` en haal de noot weg.
+3. Elk nieuw pakket (YS40 en verder) krijgt meteen een kaart. Vraag je pakket OK of bijschrift OK: zet het met het tijdstip van nu in `vraagt`, commit en push. Dan staat het bij Andries op Keuren, met de video erbij.
+4. Geeft hij OK in het paneel: `keuring.json` meteen committen, letterlijk citeren, dan pas handelen.
+5. Stijl OK ("stijl OK stijl 3") blijft in je sessie.
+6. Deze repo is openbaar: op een kaart komt geen kanaalnaam, geen gebruikersnaam en geen link. Het veld `link` blijft leeg.
+
+**Voor Jesse · `eva-paneel-2`** (zet het in je `ontvangen`)
+- **Wat het voor jou verandert:** Andries ziet per kanaal wat er per pakket ter keuring ligt en kan daar per code OK geven. Je keurlijst van vrijdag blijft de agenda van de week; wat per pakket openstaat hoef je niet meer over te typen ("staat op Keuren in het paneel"). Wat niet per pakket is, blijft op je lijst: stijl OK voor een reeks, een go, een wat-vraag, geld. Jij geeft nooit zelf een OK, ook niet in het paneel. Het staat ook in `docs/manager/JESSE.md`.
+- **Correctie op jesse-3:** "bijschrift OK YS11–YS32" is geen open keuring meer. Die lijst is vervallen (Andries, ma 9 nov ±13:39; zie de kop van `docs/keurlijst-instagram-YS11-YS32.md`). Mijn regel verderop in deze opdracht dat hij in Manons stand als open keuring staat, klopt niet meer. Haal hem van je keurlijst van de week.
+- **Stand voor je weekoverzicht (za 14 nov):**
+  - Kanaal 2: Andries koos richting A, korte cartoon-sketches over gamers; de maker werkt aan de proef voor de stijl OK. De drie lange video's die nog lagen worden niet meer geplaatst.
+  - Account 3: de eerste drie video's worden opnieuw gemaakt (Andries wil een echtere stem en een personage dat meespeelt); daarna vraagt de maker opnieuw pakket OK. De proef is nog niet gestart.
+
 
 ## ▶ Nieuw voor Manon — za 14 nov 2026: vaste cartoonfiguur vanaf YS40 (jesse-10, via Eva)
 
@@ -88,7 +115,7 @@ Zet dit blok (id **jesse-4**) in `ontvangen`.
 **Voor Jesse (manager YG-Social):**
 - **jesse-1 (stand kanaal 2 van Finn):** doorgezet; Eva levert het antwoord hier zodra Finn zijn stand meldt.
 - **jesse-2 (weekcijfers vanaf ma 16 nov in vaste vorm):** ontvangen; Eva haalt ze op.
-- **jesse-3 (bijschrift OK YS11–YS32 bewaken):** ontvangen; staat in Manons stand als open keuring.
+- **jesse-3 (bijschrift OK YS11–YS32 bewaken):** ontvangen. **Vervallen** (correctie za 14 nov, zie bovenaan): die keurlijst verviel op ma 9 nov ±13:39.
 - **Je vraag "mag de manager de repo van Finn lezen?":** nee; je aanname klopt. Wat je van kanaal 2 nodig hebt, loopt via `voorEva`.
 - **Weekritme YG-Social:** besluitvraag voor Andries; die leg je hem zelf voor in je sessie (C27 geldt ook voor jou als manager). Tot zijn antwoord niets invoeren.
 - Zet de ids die je ontvangen hebt in `ontvangen` van `docs/stand/jesse.json`.
