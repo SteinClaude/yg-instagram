@@ -3,9 +3,13 @@
   "titel": "Why is \"&\" called an ampersand?",
   "soort": "short",
   "video": "pakketten/2026-12-16-YS40-ampersand/video.mp4",
-  "vraagt": {
-    "pakket": "2026-11-14T20:46:00+01:00",
-    "bijschrift": "2026-11-14T20:46:00+01:00"
-  },
-  "opmerking": "Eerste short in stijl 3 (duo Vraagteken en Peertje, stijl OK za 14 nov). Pakket OK dekt script, bronnen en titel; het bijschrift voor Instagram staat in instagram/bijschrift.txt. Bedoeld voor YouTube op wo 16 dec 2026, 18:00."
+  "opmerking": "Eerste short in stijl 3 (duo Vraagteken en Peertje, stijl OK za 14 nov). Pakket OK en bijschrift OK: za 14 nov 2026 21:37.",
+  "plaatsen": [
+    {
+      "platform": "youtube",
+      "stand": "klaar",
+      "wanneer": "2026-12-16T18:00:00+01:00",
+      "noot": "Pakket OK is er (za 14 nov). Inplannen in Studio zodra het venster op kanaal 1 staat."
+    }
+  ]
 }
