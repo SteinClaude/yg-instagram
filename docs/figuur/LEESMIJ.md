@@ -34,4 +34,6 @@ Let op bij de keuze: een gloeilamp met een gezicht en een tekenfilmmol zijn veel
 
 **Besluit:** "peertje" (Andries, za 14 nov 2026 ±14:26, in de sessie): ontwerp D, Peertje, is de vaste figuur.
 
+**Aanvulling** (Andries, za 14 nov 2026 ±14:28, in de sessie): "met het vraag taken samen" · "je snapt waarom denk ik" · "bij vragen vraag tegen bij antwoorde peertje" · "zo veel mogelijk ect". Het wordt dus een duo: het Vraagteken (A) stelt de vraag, Peertje (D) geeft het antwoord en licht op. Ze komen zo veel mogelijk in beeld.
+
 **Volgende stap:** Daarna maak ik de stijlproef van YS40 met die figuur, voor "stijl OK".
