@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-15T00:52:00+01:00",
+  "tijd": "2026-11-15T00:50:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-14T13:55:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-15T00:50:00+01:00 Extra starttijden van de Instagram-automaat staan op main (c1f8c83; go Andries zo 15 nov 2026 ±00:49: \"Go, zet live\"): zes extra starts in het uur vóór en na 18:00 Amsterdam en drie in het uur daarna. Voor het nieuwe moment van 20:00 ligt een aparte tak klaar (manon/cron-2000), niet op main.",
     "2026-11-14T22:18:00+01:00 YS34–YS39 ingepland in YouTube Studio (kanaal 1): 10, 11, 12, 13, 14 en 15 december 2026 om 18:00; Studio meldt per video \"Video gepland\". De lijst Shorts in Studio toont YS33–YS39 als Gepland (9–15 dec) en YS40 op 15 nov, zonder meldingen. Bij YS36 gaf Studio eerst de melding dat de controle nog liep (\"We zijn je content nog aan het controleren\"); met OK bevestigd, daarna gepland.",
     "2026-11-14T21:53:00+01:00 YS40 ingepland in YouTube Studio (kanaal 1): Studio meldt \"Video gepland\", openbaar op 15 november 2026 om 20:00; Instagram: planning.json zo 15 nov 20:00 (911c640)",
     "2026-11-14T21:49:00+01:00 YS33 ingepland in YouTube Studio (kanaal 1): Studio meldt \"Video gepland\", openbaar op 9 december 2026 om 18:00",
@@ -103,10 +104,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "tak manon/cron-extra naar main (extra starttijden automaat Instagram), na de go van Andries",
-  "volgende": "YS41 maken in stijl 3 voor ma 16 nov 20:00 (onderwerp met bron, gesprek, pakket met kaart; pakket OK en bijschrift OK vragen), daarna elke dag een nieuwe (YS42 e.v.). Zo 15 nov na 20:00 nakijken of YS40 op YouTube en Instagram staat. Na go Andries: manon/cron-extra naar main. Weekverslag ma 16 nov (cijfers via Eva).",
+  "bezig": "-",
+  "volgende": "YS41 maken in stijl 3 voor ma 16 nov 20:00 (onderwerp met bron, gesprek, pakket met kaart; pakket OK en bijschrift OK vragen), daarna elke dag een nieuwe (YS42 e.v.). Zo 15 nov: na 18:00 kijken hoe laat de automaat YS09 plaatste (eerste dag met de extra starts) en na 20:00 of YS40 op YouTube en Instagram staat. Na controle Eva en go Andries: manon/cron-2000 naar main. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
+    "Go voor tak manon/cron-2000 naar main (extra starts rond 20:00 Amsterdam, het moment van de nieuwe shorts)? Eerst de controle van Eva (V-manon-cron-2000) · aanname: tot die tijd gaat de Reel van 20:00 mee met de gewone uurstart · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -594,6 +596,11 @@
     }
   ],
   "voorEva": [
+    {
+      "id": "V-manon-cron-2000",
+      "aan": "Eva",
+      "wat": "Andries gaf zo 15 nov 2026 ±00:49 de go (\"Go, zet live\"); manon/cron-extra staat op main (c1f8c83). Sinds za 14 nov plaatst kanaal 1 ook om 20:00 (de nieuwe shorts, vanaf YS40). Daarvoor staat tak manon/cron-2000 klaar: alleen twee extra cron-regels in plaatsen.yml, dezelfde vorm als de vorige, voor 20:00 Amsterdam (18 en 19 UTC, plus drie in het uur erna). Niet op main. Graag nakijken; daarna vraag ik Andries de go."
+    },
     {
       "id": "V-manon-nieuwe-reeks",
       "aan": "Eva en Jesse",
