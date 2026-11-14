@@ -1,0 +1,11 @@
+Stem: ElevenLabs (tekst naar spraak, betaald abonnement), vraag = Laura (eleven_v4, tempo 1.12), antwoord = Liam (eleven_v4, tempo 1.12); gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.
+Ingesproken tekst per scène:
+1. [vraag, Laura] Why on earth is this squiggle called an ampersand?
+2. [antwoord, Liam] Ooh, good one! Believe it or not, it used to be in the alphabet. Right at the end: number twenty-seven!
+3. [vraag, Laura] Wait, what? A letter? Made of what?
+4. [antwoord, Liam] Two letters, actually! An E and a T, squished together. Et! Latin for and.
+5. [vraag, Laura] Okay, that's kind of cool. But why ampersand?
+6. [antwoord, Liam] Here's the best part. Kids ended the alphabet like this: X, Y, Z, and, per say, and.
+7. [antwoord, Liam] Per say means by itself. Now say it fast: and per say and, and per say and... ampersand!
+8. [vraag, Laura] No way! The name is just one big mumble?
+9. [antwoord, Liam] Exactly! Go on, ask me again!

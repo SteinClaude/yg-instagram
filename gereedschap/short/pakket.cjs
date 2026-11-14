@@ -33,12 +33,16 @@ const naam = b => b.titel.replace(/^File:/, '').replace(/\.[a-z]+$/i, '');
 const beeldRegels = beelden.map(([, b]) => `"${naam(b)}" by ${b.maker || 'unknown'} (${b.licentie}), via Wikimedia Commons: ${b.pagina}`);
 
 const meer = p.bronnen.length > 1;
-const stem = script.stem ? `Kokoro-82M, open source, stem "${(script.stem.stem || 'am_fenrir').replace(/^am_/, '')}", lokaal gemaakt` : null;   // shorts met stem (besluit Andries do 5 nov 2026)
+// Stijl 3 (vanaf YS40): de stemmen van het duo komen van ElevenLabs (besluit Andries za 14 nov 2026)
+const elStemmen = script.stemmen ? Object.entries(script.stemmen).filter(([, v]) => v.dienst === 'elevenlabs') : [];
+const el = elStemmen.length > 0, elNamen = elStemmen.map(([k, v]) => `${v.naam || v.stem} (${k === 'vraag' ? 'het Vraagteken' : k === 'antwoord' ? 'Peertje' : k})`).join(' en ');
+const stem = el ? `ElevenLabs, betaald abonnement met commerciële licentie; stemmen ${elNamen}`
+  : script.stem ? `Kokoro-82M, open source, stem "${(script.stem.stem || 'am_fenrir').replace(/^am_/, '')}", lokaal gemaakt` : null;   // shorts met stem (besluit Andries do 5 nov 2026)
 const studio = `STUDIO.TXT — ${code} (YouTube Studio, uploadscherm van boven naar beneden)${k2 ? ' · KANAAL 2' : ''}
 Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK ${code}" van Andries.${k2 ? '\nVóór het uploaden: controleer in Studio (accountmenu rechtsboven) dat kanaal 2 actief is.' : ''}
 
 == Bestand ==
-video.mp4   1080x1920 (9:16), 30 fps, H.264, ${duur} s, ${stem ? `Engelse stem (${stem}) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt` : 'met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)'}
+video.mp4   1080x1920 (9:16), 30 fps, H.264, ${duur} s, ${stem ? `Engelse ${el ? 'stemmen' : 'stem'} (${stem}) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt` : 'met eigen geluidseffecten (zelf gemaakt met ffmpeg; geen muziek, geen stem)'}
 video-upload.mp4   zelfde video, opnieuw gecodeerd onder 10 MB (${mb.toFixed(1).replace('.', ',')} MB; H.264 twee passen, ${kbps}bit/s, AAC 96k); deze upload je via Chrome
 
 == Details ==
@@ -63,7 +67,7 @@ Leeftijdsbeperking: Nee.
 
 == Meer weergeven ==
 Betaalde promotie: Nee.
-Gewijzigde of synthetische content (AI-label): ${stem ? 'Ja — de stem is een realistische AI-stem (Kokoro). Beeld: eigen getekende animatie en tekst; geen AI-beelden, geen echte personen nagebootst' : `Nee — ${k2 ? 'echte foto\'s met een vrije licentie (zie Images), eigen tekst en animatie; geen AI-beeld, geen AI-stem' : 'eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen'}`}.
+Gewijzigde of synthetische content (AI-label): ${stem ? `Ja — ${el ? 'de stemmen zijn realistische AI-stemmen (ElevenLabs)' : 'de stem is een realistische AI-stem (Kokoro)'}. Beeld: eigen getekende animatie en tekst; geen AI-beelden, geen echte personen nagebootst` : `Nee — ${k2 ? 'echte foto\'s met een vrije licentie (zie Images), eigen tekst en animatie; geen AI-beeld, geen AI-stem' : 'eigen getekende animatie en tekst; geen realistische AI-beelden, geen AI-stem, geen echte personen'}`}.
 Tags:
 ${p.tags}
 Taal van de video: Engels.
@@ -96,7 +100,7 @@ ${p.niet}
 ## Beeld, letters en geluid
 ${beeldMd}
 - Letters: Instrument Sans en IBM Plex Mono, SIL Open Font License (gereedschap/short/fonts/).
-- Geluid: eigen geluidseffecten (whoosh, tik, klap, dreun, stijgende toon, bel, plop, rol), zelf gesynthetiseerd met ffmpeg uit sinus en ruis (gereedschap/short/geluid.cjs).${stem ? ` Stem: Engelse AI-stem Kokoro-82M (open source, Apache-2.0, stem "${(script.stem.stem || 'am_fenrir').replace(/^am_/, '')}"), lokaal gemaakt; ingesproken tekst in bron/stem.txt. Geen muziek, geen audio van anderen.` : ' Geen muziek, geen stem, geen audio van anderen.'}
+- Geluid: eigen geluidseffecten (whoosh, tik, klap, dreun, stijgende toon, bel, plop, rol), zelf gesynthetiseerd met ffmpeg uit sinus en ruis (gereedschap/short/geluid.cjs).${el ? ` Stemmen: Engelse AI-stemmen van ElevenLabs (betaald abonnement met commerciële licentie volgens de prijspagina van de dienst, gelezen 14 nov 2026): ${elNamen}; gemaakt met gereedschap/short/elevenlabs.cjs, ingesproken tekst in bron/stem.txt. Figuren en decors: eigen tekenwerk (gereedschap/figuur.cjs, gereedschap/short/decor.cjs). Geen muziek, geen audio van anderen.` : stem ? ` Stem: Engelse AI-stem Kokoro-82M (open source, Apache-2.0, stem "${(script.stem.stem || 'am_fenrir').replace(/^am_/, '')}"), lokaal gemaakt; ingesproken tekst in bron/stem.txt. Geen muziek, geen audio van anderen.` : ' Geen muziek, geen stem, geen audio van anderen.'}
 - Controle: bron/controle-beweging.jpg (beelden uit de mp4, midden in de bewegingen).
 `;
 fs.writeFileSync(path.join(D, 'bron', 'bronnen.md'), md);
