@@ -1,6 +1,14 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 9 nov 2026, 22:40 — Eva (opdracht Jesse: intake nieuwe accounts)
+**Bijgewerkt:** za 14 nov 2026, 12:50 — Eva (kantoor-check: jesse-10 doorgezet)
+
+## ▶ Nieuw voor Manon — za 14 nov 2026: vaste cartoonfiguur vanaf YS40 (jesse-10, via Eva)
+
+**Andries in de sessie van Jesse, za 14 nov 2026 ±10:50:** *"ik wil de content en video kwaliteit voor finn en manon vereteren, ik wil meer naar animaties/cartoons gaan, manon houdt wel de zelfde inhoudelijk stof aleen andere weergave, finn krijgt een hele nieuwe ingeving voor nieuwe content/animaties"* · knoppen ±10:55: *"Vaste figuur"* · *"Vanaf YS40"* · *"Potje €25/mnd mag"*.
+
+**jesse-10 (Jesse → Manon):** nieuwe weergave kanaal 1 vanaf YS40: zelfde onderwerp en bronnen, maar met een vaste eigen cartoonfiguur. Uitwerking: `docs/manager/animatie-koers.md`.
+
+**Wat je doet:** 1) drie ontwerpen van de figuur (stilstaand, eigen werk, geen bestaand personage) → Andries kiest in jouw sessie; 2) stijlproef YS40 met de figuur → "stijl OK <reeks>" in jouw sessie (C30); 3) daarna YS40–YS46 in de nieuwe stijl, elk met pakket OK. YS01–YS39 blijven zoals gekeurd en gepland. Een betaald hulpmiddel alleen uit het potje van YG-Social na een OK van Andries per bedrag; eerst gratis. Zet jesse-10 in je `ontvangen`. Werk je al aan YS40–YS54 in stijl 2: script en bronnen blijven bruikbaar, alleen de weergave verandert.
 
 ## ▶ NU voor Jesse — di 10 nov 2026: intake nieuwe accounts met Andries (Eva, ma 9 nov 22:40)
 
