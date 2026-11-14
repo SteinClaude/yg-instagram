@@ -1,3 +1,4 @@
+KLAAR: proef YS40 ronde 5 (mond van Peertje volgt de klanken, zeven mondstanden; stem 12% sneller, 44,3 s in plaats van 50,8 s; geen nieuw tegoed); wacht op "stijl OK stijl 3" · a229624 · za 14 nov 20:43
 KLAAR: proef YS40 ronde 4 met de stemmen van ElevenLabs (Vraagteken = Laura, Peertje = Liam, na "vraag tegen laura, peertje liam"); 50,8 s; 994 van de 2.000 tekens gebruikt; wacht op "stijl OK stijl 3" · 2ccb0f1 · za 14 nov 20:18
 KLAAR: zes stemproeven met ElevenLabs (Vraagteken: Jessica, Laura, Hope · Peertje: Liam, Charlie, Callum; 549 tekens, plafond 2.000) na "Ja, maak stemproeven"; aanroep in gereedschap/short/elevenlabs.cjs; wacht op de stemkeuze van Andries · beeb71f · za 14 nov 20:01
 KLAAR: ElevenLabs-sleutel staat op de pc en werkt (abonnement starter, 29 stemmen; rechten aangezet na ja van Andries); nog niets ingesproken, wacht op OK voor stemproeven · za 14 nov 17:06

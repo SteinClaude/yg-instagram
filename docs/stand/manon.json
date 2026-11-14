@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T20:27:00+01:00",
+  "tijd": "2026-11-14T20:43:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-14T13:55:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-14T20:42:00+01:00 Proef YS40 ronde 5 (na \"peertje ze mond moet beter bewegen, en kan wat sneller\"): de mond volgt de klanken van elk woord met zeven standen (glimlach, dicht, klein, half, breed, rond, wijd open), Peertje heeft een grotere mond en beweegt mee met de sterkte van de stem; de stem is 12% versneld (toonhoogte gelijk), stiltes en de adempauze na elke beurt zijn korter: 44,3 s (was 50,8 s), -14,4 LUFS. Geen nieuw tegoed gebruikt (alle zinnen waren bewaard; het logboek staat op 994 tekens). Beeld voor beeld nagekeken op een strook van 32 beelden; de stemmen heb ik niet beluisterd. Video alleen lokaal, aan Andries getoond in de sessie.",
     "2026-11-14T20:17:00+01:00 Proef YS40 ronde 4 met de stemmen van ElevenLabs (Vraagteken = Laura, Peertje = Liam; model eleven_v4): 50,8 s (was 37,6 s met de oude stem; de nieuwe stemmen spreken rustiger), -14,4 LUFS; 445 nieuwe tekens, samen met de stemproeven 994 van de 2.000. Video alleen lokaal, aan Andries getoond in de sessie; ik heb de stemmen niet beluisterd.",
     "2026-11-14T20:05:00+01:00 gereedschap/short.cjs: stem van ElevenLabs voor stijl 3 (dienst per figuur in `stemmen`; woordtijden van de dienst voor tekst en mond; lange stiltes ingekort; twee stemmen op gelijk volume; plafond per werk met --werk en --plafond); stijl 1 en 2 en de Kokoro-stem werken zoals voorheen",
     "2026-11-14T20:00:00+01:00 Zes stemproeven gemaakt met ElevenLabs (model eleven_v4, standaardinstellingen): Vraagteken = Jessica, Laura, Hope; Peertje = Liam, Charlie, Callum; elk één zin uit YS40; samen 549 tekens volgens mijn logboek (plafond 2.000). Eén filmpje van 51 s met de naam in beeld, aan Andries getoond in de sessie; de bestanden staan alleen lokaal (niet in git). Ik heb de stemmen niet beluisterd.",
@@ -98,11 +99,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Proef YS40 ronde 5: mond van Peertje beter laten bewegen en het gesprek wat sneller (geen nieuw tegoed nodig)",
-  "volgende": "Na \"stijl OK stijl 3\": YS40 als pakket met kaart (pakket OK en bijschrift OK via het paneel) en YS41–YS46. Wil Andries het tempo hoger: de stem 8–10% versnellen in de generator (kost geen tegoed) en de proef opnieuw. Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag ma 16 nov (cijfers via Eva).",
+  "bezig": "-",
+  "volgende": "Na \"stijl OK stijl 3\": YS40 als pakket met kaart (pakket OK en bijschrift OK via het paneel) en YS41–YS46. Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
-    "\"stijl OK stijl 3\" voor de YS-reeks vanaf YS40 (duo, decors, close-ups, gesprek, stemmen Laura en Liam; docs/proef-stijl-3.md)? En: tempo zo laten (50,8 s) of iets sneller? · aanname: geen, stijl OK is van Andries · ondertussen: niets inspreken · blokkeert: ja, voor YS40–YS46",
+    "\"stijl OK stijl 3\" voor de YS-reeks vanaf YS40 (duo, decors, close-ups, gesprek, stemmen Laura en Liam, mond op de klanken, tempo 1,12; docs/proef-stijl-3.md)? · aanname: geen, stijl OK is van Andries · ondertussen: niets inspreken · blokkeert: ja, voor YS40–YS46",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
     "Go voor tak manon/cron-extra naar main (extra starttijden automaat Instagram)? Eva keek de tak na (vr 13 nov 08:50): geen bezwaar · blokkeert: nee",
     "Studio kanaal 1: wanneer wissel je naar kanaal 1, zodat ik YS33–YS39 inplan (9–15 dec 18:00, pakket OK is er)? · aanname: ruim op tijd vóór 9 dec, geen haast · ondertussen: YS40–YS54 in stijl 2 · blokkeert: nee (YouTube is gepland t/m 8 dec)",
@@ -114,6 +115,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T20:42:00+01:00 Proefvideo YS40 ronde 5 (44,3 s) aan Andries gestuurd in de sessie; alleen in de tijdelijke map van de sessie.",
     "2026-11-14T20:25:00+01:00 Andries in de sessie, na de proef van YS40 met de nieuwe stemmen: \"peertje ze mond moet beter bewegen, en kan wat sneller\"",
     "2026-11-14T20:17:00+01:00 Proefvideo YS40 ronde 4 (50,8 s) aan Andries gestuurd in de sessie; alleen in de tijdelijke map van de sessie.",
     "2026-11-14T20:16:00+01:00 ElevenLabs: 8 nieuwe zinnen ingesproken voor de proef van YS40 (445 tekens; één zin van Liam was al bewaard). Mijn logboek: 994 tekens voor \"stemproef\" (plafond 2.000). De teller van het abonnement stond om 20:16 op 1.622 van 40.000 (was 1.224 vóór mijn werk, dus 398 erbij; hij telt anders of loopt achter).",
