@@ -73,7 +73,7 @@ module.exports = {
     { wie: 'vraag', decor: 'kamer', duur: 2.4, stem: 'Why on earth is this squiggle called an ampersand?', stemStart: 0.05, camera: { zoom: [1, 1.05], stoot: [0.15] }, geluid: [[0.12, 'klap'], [0.12, 'boem', 0.7]],
       teken: h => amp(h) + h.krabbel.cirkel(540, 838, 190, 150, { t: h.t, start: h.op('squiggle', 1.0) }) + h.kin('Why is *&* called an *ampersand*?', { y: 300, g: 104, t: h.t, start: 0, stap: 0.07 }).svg },
     { wie: 'antwoord', decor: 'klas', duur: 3.2, stem: 'Ooh, good one! Believe it or not, it used to be in the alphabet. Right at the end: number twenty-seven!', in: 'zweep', bron: DIC, bronStart: 'number', camera: { zoom: [1, 1.05] }, geluid: [['twenty', 'klap', 0.5]],
-      teken: h => rij(h, h.klem((h.t - h.op('alphabet', 2.5)) / (h.op('twenty', 5) - h.op('alphabet', 2.5) + 0.25))) + h.kin('It was *number 27* in the alphabet!', { y: 300, g: 104, t: h.t, start: 0.05 }).svg },
+      teken: h => rij(h, h.klem((h.t - h.op('alphabet', 2.5)) / (h.op('twenty', 5) - h.op('alphabet', 2.5) + 0.25))) + h.kin('In the alphabet: *number 27*!', { y: 300, g: 104, t: h.t, start: 0.05 }).svg },
     { wie: 'vraag', decor: 'klas', shot: 'dichtbij', duur: 2.0, stem: 'Wait, what? A letter? Made of what?', pose: { vraag: 'verbaasd' }, camera: { zoom: [1, 1.04] }, geluid: [[0.02, 'klap', 0.4]],
       teken: h => h.kin('Wait, what? *A letter?*', { y: 300, g: 110, t: h.t, start: 0.05 }).svg },
     { wie: 'antwoord', decor: 'rome', duur: 3.6, stem: 'Two letters, actually! An E and a T, squished together. Et! Latin for and.', in: 'zweep', bron: SEP, bronStart: 'latin', camera: { zoom: [1, 1.06] }, geluid: [['squished', 'whoosh', 0.5], ['et', 'klap', 0.6]],
