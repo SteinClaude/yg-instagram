@@ -23,6 +23,7 @@ const fs = require('fs'), path = require('path');
 const { spawn, execFileSync } = require('child_process');
 const { Resvg } = require('@resvg/resvg-js');
 const FIG = require('./figuur.cjs');
+const DECOR = require('./short/decor.cjs');
 const opentype = require('opentype.js');
 const sharp = require('sharp');
 
@@ -166,6 +167,23 @@ async function bereidPapier() {
     PAPIER[nacht ? 'nacht' : 'dag'] = 'data:image/jpeg;base64,' + (await sharp(png).jpeg({ quality: 93 }).toBuffer()).toString('base64');
   }
 }
+// Stijl 3: decors (short/decor.cjs) één keer vooraf tekenen en daarna als afbeelding gebruiken.
+const DECORBEELD = {};
+async function bereidDecor(script) {
+  for (const naam of new Set(script.scenes.map(s => s.decor).filter(Boolean))) if (!DECORBEELD[naam]) {
+    const png = new Resvg(DECOR.svg(naam), { font: { fontFiles, loadSystemFonts: false, defaultFontFamily: 'Instrument Sans' }, fitTo: { mode: 'width', value: 1800 } }).render().asPng();
+    DECORBEELD[naam] = 'data:image/jpeg;base64,' + (await sharp(png).jpeg({ quality: 92 }).toBuffer()).toString('base64');
+  }
+}
+// Stijl 3 met decor: de kop staat op een papieren kaartje (ons dossierpapier) dat met plakband bovenin hangt.
+function kaart(scene) {
+  const x = 56, y = 166, w = 968, h = scene.kaartH || 400; let s = '';
+  s += `<rect x="${x + 8}" y="${y + 12}" width="${w}" height="${h}" rx="18" fill="#000000" opacity="0.25"/>`;
+  s += `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" fill="${K.papier}" stroke="${K.inkt}" stroke-width="6"/>`;
+  for (let yy = y + 96; yy < y + h - 24; yy += 96) s += `<line x1="${x + 16}" y1="${yy}" x2="${x + w - 16}" y2="${yy}" stroke="#E2DBCD" stroke-width="2"/>`;
+  for (const [tx, hoek] of [[x + 110, -7], [x + w - 110, 6]]) s += `<rect x="${tx - 60}" y="${y - 22}" width="120" height="42" rx="4" fill="#FFFFFF" fill-opacity="0.6" stroke="#A8A196" stroke-width="3" transform="rotate(${hoek} ${tx} ${y})"/>`;
+  return s;
+}
 // Voortgangsbalk (stijl 2): dun spoor bovenaan het veilige vlak, loopt rood vol terwijl de short speelt.
 function voortgang(script, scene, abs) {
   const p = klem(abs / totaal(script)), y = 212;
@@ -237,7 +255,7 @@ function bronRegel(tekst, t, start, nacht, stijl = 1) {
 // zelf `sync: false` meegeeft. Tekst die niet op de gesproken zin lijkt (labels in een tekening) houdt zijn eigen tijden.
 const HULP = (script = {}, scene = {}) => ({ K, blok, fase, zacht, uit, klem, stopbord, vorm, klok, toetsen, veelhoek, W, H, esc, maat, FONT,
   kin: (tekst, o = {}) => B.kin(tekst, { stijl: script.stijl || 1, sync: (script.stijl || 1) >= 2 ? scene._woorden : null, ...o }), veer: B.veer, foto,
-  stijl: script.stijl || 1, krabbel: B.krabbel, wie: scene.wie });
+  stijl: script.stijl || 1, krabbel: B.krabbel, wie: scene.wie, vlak: DECOR.VLAK, vlakInkt: DECOR.INKT[scene.decor] || K.inkt });
 // Eén volledig beeld van een scène op tijd t (achtergrond, kop, inhoud, bronregel), zonder <svg>-omhulsel.
 function beeldVan(script, scene, t, abs = 0) {
   B.sceneStart = abs - t;   // voor de geluidsopname van markeerstift en krabbels (stijl 2)
@@ -247,6 +265,13 @@ function beeldVan(script, scene, t, abs = 0) {
     return `${kader2(script)}<g transform="${cam}">${achter}</g>${verloop2()}<g transform="${cam}">${inhoud}</g>` +
     `${kop2(script)}${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, true)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`; }
   const licht = scene.nacht ? '' : `<rect width="${W}" height="${H}" fill="url(#licht)"/>`;
+  if ((script.stijl || 1) >= 3 && scene.decor) {   // stijl 3: decor, kaartje met de kop, alles in één camera
+    const cam = B.camera(t, scene.duur, { ...scene.camera, drift: abs }), d = script.duo && script.duo[scene.wie];
+    const zoom = scene.shot === 'dichtbij' && d ? ` transform="translate(540 1250) scale(1.75) translate(${-d.x} -1300)"` : '';
+    return `<rect width="${W}" height="${H}" fill="${K.nacht}"/><g transform="${cam}"><image href="${DECORBEELD[scene.decor]}" x="-60" y="-60" width="1200" height="2040"${zoom}/>` +
+      `${kaart(scene)}${inhoud}${voortgang(script, scene, abs)}</g>` +
+      `${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht, script.stijl)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`;
+  }
   if ((script.stijl || 1) >= 2) {   // stijl 2: geen kop; voortgangsbalk boven het licht
     return `${kader(script, scene, t, abs)}${licht}<g transform="${B.camera(t, scene.duur, { ...scene.camera, drift: abs })}">${inhoud}</g>${voortgang(script, scene, abs)}` +
       `${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht, script.stijl)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`;
@@ -264,21 +289,25 @@ function figuren(script, tijd) {
   for (; i < sc.length - 1 && tijd >= t0 + sc[i].duur; i++) t0 += sc[i].duur;
   const scene = sc[i], t = tijd - t0, vorige = i > 0 ? sc[i - 1].wie : scene.wie;
   const doel = scene.wie === 'antwoord' ? 1 : 0, van = vorige === 'antwoord' ? 1 : 0;
-  let mix = van + (doel - van) * zacht(t / 0.28);   // 0 = de vraag praat, 1 = het antwoord praat
+  // shot 'dichtbij': alleen de spreker, groot en in het midden; een wissel van of naar dichtbij is een harde snede
+  const dicht = scene.shot === 'dichtbij', snede = dicht || (i > 0 && sc[i - 1].shot === 'dichtbij');
+  let mix = snede ? doel : van + (doel - van) * zacht(t / 0.28);   // 0 = de vraag praat, 1 = het antwoord praat
   let inLus = false;
   if (script.lus && i === sc.length - 1 && t > scene.duur - script.lus) { inLus = true;
     mix += ((sc[0].wie === 'antwoord' ? 1 : 0) - mix) * zacht((t - (scene.duur - script.lus)) / script.lus); }
   const rol = (naam, gewicht) => {
-    const d = duo[naam], spreekt = scene.wie === naam && !inLus, s = 0.66 + 0.16 * gewicht;
+    if (dicht && scene.wie !== naam) return '';
+    const d = duo[naam], spreekt = scene.wie === naam && !inLus, s = dicht ? 1.6 : 0.66 + 0.16 * gewicht;
+    const fx = dicht ? 540 : d.x, vloer = dicht ? duo.vloer + 420 : duo.vloer;
     let mond = 'glim';
     if (spreekt && scene._woorden) { const wd = scene._woorden.find(x => t >= x.start - 0.03 && t < x.eind); if (wd) mond = Math.sin((t - wd.start) * 26) > -0.35 ? 'open' : 'glim'; }
-    const pose = (scene.pose && scene.pose[naam]) || (spreekt ? 'wijst' : 'rust');
+    const pose = (scene.pose && scene.pose[naam]) || (spreekt && !dicht ? 'wijst' : 'rust');
     const knipper = ((tijd + d.fase) % 3.3) < 0.12 ? 1 : 0;
     const aan = naam === 'antwoord' && scene.aha != null && t >= scene.aha;
-    const hop = spreekt && i > 0 && vorige !== naam ? -26 * Math.sin(Math.PI * klem(t / 0.3)) : 0;
+    const hop = spreekt && !snede && i > 0 && vorige !== naam ? -26 * Math.sin(Math.PI * klem(t / 0.3)) : 0;
     const wieg = Math.sin(tijd * 2.1 + d.fase * 2) * 3 + (mond === 'open' ? -4 : 0);
-    return `<ellipse cx="${d.x}" cy="${duo.vloer + 6}" rx="${(150 * s).toFixed(1)}" ry="${(22 * s).toFixed(1)}" fill="${K.inkt}" opacity="0.13"/>`
-      + FIG.teken(d.code, { x: d.x, y: +(duo.vloer + hop + wieg).toFixed(2), s: +s.toFixed(4), pose, mond, knipper, spiegel: d.spiegel, kijk: spreekt ? null : [0.8, -0.15], aan });
+    return `<ellipse cx="${fx}" cy="${vloer + 6}" rx="${(150 * s).toFixed(1)}" ry="${(22 * s).toFixed(1)}" fill="${K.inkt}" opacity="0.16"/>`
+      + FIG.teken(d.code, { x: fx, y: +(vloer + hop + wieg).toFixed(2), s: +s.toFixed(4), pose, mond, knipper, spiegel: d.spiegel, kijk: dicht ? (pose === 'verbaasd' ? null : [0.1, -0.05]) : spreekt ? null : [0.8, -0.15], aan });
   };
   // de luisteraar eerst, de spreker ervoor
   return mix >= 0.5 ? rol('vraag', 1 - mix) + rol('antwoord', mix) : rol('antwoord', mix) + rol('vraag', 1 - mix);
@@ -394,6 +423,7 @@ async function maak(code, alleenBeelden, opties = {}) {
   fs.mkdirSync(path.join(map, 'bron'), { recursive: true });
   const stemSporen = voorbereidStem(script, map);
   if ((script.stijl || 1) >= 2) await bereidPapier();
+  if ((script.stijl || 1) >= 3) await bereidDecor(script);
   const duur = totaal(script), n = Math.round(duur * FPS);
   console.log(`${code}: ${duur.toFixed(1)} s, ${n} beelden -> ${path.relative(WORTEL, map)}`);
 
