@@ -304,7 +304,8 @@ function figuren(script, tijd) {
     const d = duo[naam], spreekt = scene.wie === naam && !inLus, s = dicht ? 1.6 : 0.66 + 0.16 * gewicht;
     const fx = dicht ? 540 : d.x, vloer = dicht ? duo.vloer + 420 : duo.vloer;
     let mond = 'glim';
-    if (spreekt && scene._woorden) { const wd = scene._woorden.find(x => t >= x.start - 0.03 && t < x.eind); if (wd) mond = Math.sin((t - wd.start) * 26) > -0.35 ? 'open' : 'glim'; }
+    // de mond volgt de stem zelf: open zolang er geluid is, met een snelle klep zodat hij niet blijft openstaan
+    if (spreekt && scene._mond) { const nv = scene._mond.niveaus[Math.floor((t - scene._mond.start) * FPS)] || 0; if (nv > 0.16 && Math.sin(t * 25) > -0.45) mond = 'open'; }
     const pose = (scene.pose && scene.pose[naam]) || (spreekt && !dicht ? 'wijst' : 'rust');
     const knipper = ((tijd + d.fase) % 3.3) < 0.12 ? 1 : 0;
     // Peertje gloeit op zolang hij praat (Andries za 14 nov 2026: geen ping meer, "laat hem opgloeien als hij praat")
@@ -391,14 +392,20 @@ function voorbereidStem(script, map) {
       const mix2 = (script.stijl || 1) >= 2 ? ['-af', 'highpass=f=75,equalizer=f=220:t=q:w=1.1:g=-2,equalizer=f=3200:t=q:w=1:g=2.5,equalizer=f=10000:t=q:w=1:g=1.5,acompressor=threshold=0.1:ratio=3:attack=5:release=70:makeup=1.6,deesser=i=0.35'] : [];
       const pcm = execFileSync('ffmpeg', ['-v', 'error', '-i', wav, ...mix2, '-ac', '1', '-ar', String(GELUID.RATE), '-f', 'f32le', 'pipe:1'], { maxBuffer: 64 << 20 });
       if ((script.stijl || 1) >= 2) {
-        const tijden = wav.replace(/\.wav$/, '.woorden.json');
-        if (!fs.existsSync(tijden)) fs.writeFileSync(tijden, execFileSync(KOKORO_PY, [path.join(__dirname, 'short', 'woordtijden.py'), wav, stem[0] === 'b' ? 'en-gb' : 'en-us', s.stem]));
+        const v2t = (script.stijl || 1) >= 3;   // stijl 3: woordtijden versie 2 (lange zinnen met veel komma's)
+        const tijden = wav.replace(/\.wav$/, v2t ? '.woorden2.json' : '.woorden.json');
+        if (!fs.existsSync(tijden)) fs.writeFileSync(tijden, execFileSync(KOKORO_PY, [path.join(__dirname, 'short', 'woordtijden.py'), wav, stem[0] === 'b' ? 'en-gb' : 'en-us', s.stem, ...(v2t ? ['--v2'] : [])]));
         s._woorden = JSON.parse(fs.readFileSync(tijden, 'utf8')).map(w => ({ ...w, start: w.start + (s.stemStart ?? 0.12), eind: w.eind + (s.stemStart ?? 0.12) }));
       }
       // stijl 3: `bronStart: 'woord'` en geluid `['woord', naam, volume]` vallen op het moment dat dat woord gezegd wordt
       if (typeof s.bronStart === 'string') s.bronStart = woordTijd(s, s.bronStart) ?? 0.6;
       for (const g of s.geluid || []) if (typeof g[0] === 'string') g[0] = woordTijd(s, g[0]) ?? 0.3;
       const smp = new Float32Array(pcm.buffer, pcm.byteOffset, pcm.length / 4), start = s.stemStart ?? 0.12, lengte = smp.length / GELUID.RATE;
+      if ((script.stijl || 1) >= 3) {   // mond van de figuur: de sterkte van de stem per beeld (0..1)
+        const per = Math.round(GELUID.RATE / FPS), niveaus = [];
+        for (let a = 0; a < smp.length; a += per) { let q = 0; const b = Math.min(smp.length, a + per); for (let k = a; k < b; k++) q += smp[k] * smp[k]; niveaus.push(Math.sqrt(q / (b - a))); }
+        const top = Math.max(1e-6, ...niveaus); s._mond = { start, niveaus: niveaus.map(x => x / top) };
+      }
       // Stijl 2: de tekst loopt gelijk met de stem, dus het laatste woord verschijnt pas als het gezegd is. Daarom
       // 0,3 s extra om de hele zin te lezen, en in de laatste scène ook de lus erbij, zodat de slotzin niet pas
       // tijdens het terugvloeien in beeld komt.
