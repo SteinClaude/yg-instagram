@@ -1,3 +1,4 @@
+KLAAR: jesse-10 stap 1, drie ontwerpen vaste figuur kanaal 1 (A Vraagteken, B Memo, C Ekster) in docs/figuur/; wacht op keuze Andries · za 14 nov 14:00
 KLAAR: extra starttijden automaat Instagram op tak manon/cron-extra (8a74843), na "A: extra starttijden"; wacht op controle Eva (V-manon-cron) en go Andries (B30) · do 12 nov 23:50
 KLAAR: Instagram kanaal 1 nagekeken: YS04–YS06 geplaatst, maar 3–5,5 uur te laat (GitHub start de uurklok maar ±3× per dag); keuze A/B voor de automaat ligt bij Andries · do 12 nov 23:45
 KLAAR: YS33–YS39 in planning.json voor Instagram kanaal 1, 17–23 nov 18:00 (na "Alles OK", ma 9 nov ±21:36) · c424c7a · di 10 nov 16:58; Studio (9–15 dec) volgt zodra Andries naar kanaal 1 wisselt ("Later", di 10 nov 16:57)
