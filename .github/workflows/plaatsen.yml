@@ -5,6 +5,13 @@ on:
     # Elk uur. De tijden in planning.json staan in Amsterdamse tijd;
     # het script rekent dat zelf om, dus zomertijd maakt niet uit.
     - cron: '5 * * * *'
+    # Extra starts rond de vaste plaatstijd van 18:00 Amsterdam (Andries, do 12 nov 2026 ±23:40:
+    # "A: extra starttijden"). GitHub sloeg de uurlijkse start 10–12 nov zo vaak over dat
+    # de Reels 3–5,5 uur te laat kwamen. Cron rekent in UTC: 17 UTC = 18 uur in de winter,
+    # 16 UTC = 18 uur in de zomer. Rustige minuten (niet :00), omdat GitHub het hele uur
+    # het drukst is. Een start zonder werk doet niets en maakt geen commit.
+    - cron: '3,13,23,34,44,53 16,17 * * *'
+    - cron: '9,27,48 18 * * *'
   workflow_dispatch:          # knop om het met de hand te draaien
     inputs:
       proefvideo:
