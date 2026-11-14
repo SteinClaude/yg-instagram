@@ -176,6 +176,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- za 14 nov 2026 ±19:55, in de sessie, op "Mag ik hoogstens 2.000 tekens gebruiken om je stemproeven te laten horen?": "Ja, maak stemproeven" → ik maak stemproeven met ElevenLabs en gebruik daarvoor hoogstens 2.000 tekens van het tegoed.
 - za 14 nov 2026 ±17:00, in de sessie, op "Zal ik daar de rechten voor je aanzetten en op 'Wijzigingen opslaan' klikken?": "Ja, alleen wat nodig is (Recommended)" → rechten van de ElevenLabs-sleutel aangezet (Modellen, Gebruiker, Stemmen lezen) en opgeslagen.
 - za 14 nov 2026 ±15:31, in de sessie: "we gaan elevenlabs gebruiken zo voor de stemmen" → de stemmen van het duo komen van ElevenLabs (betaald hulpmiddel). Nog nodig: account en abonnement door Andries, zijn OK per bedrag (potje YG-Social, Jesse houdt het bij) en de sleutel op de pc (niet in git, ik krijg hem niet te zien). Tot dan blijft de proef met de gratis Kokoro-stemmen.
 - za 14 nov 2026 ±15:07, in de sessie, na de proef met decors: "ik vindt dat hij te vaak een ping geluid maakt de lamp laat hem opgloeien als hij praat, ook wil ik dat de tekst die ze zeggen wat beter word nu zijn het gewoon losse worden bijna wat ze zeggen maar ze moeten het echt leuk en entousiasht vetellen, dus mogen ook wat extra worden/zinnen manier van vertelle worden toegevoegd aangepast," → de ping vervalt; Peertje gloeit op zolang hij praat; het gesprek wordt in hele, enthousiaste zinnen verteld (feiten blijven uit de bronnen).

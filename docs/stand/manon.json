@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T17:06:00+01:00",
+  "tijd": "2026-11-14T19:57:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-14T13:55:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-14T17:06:00+01:00 ElevenLabs-sleutel werkt: rechten aangezet (Modellen, Gebruiker, Stemmen lezen; Text to Speech stond al aan) en opgeslagen in de Chrome van Andries, na zijn ja; test (alleen lezen, geen tegoed gebruikt): abonnement starter, 1.224 van 40.000 tekens gebruikt deze periode (niet door mij), 29 stemmen, modellen o.a. eleven_v3 en eleven_v4",
     "2026-11-14T16:55:00+01:00 ElevenLabs-sleutel staat op de pc (Windows-gebruikersvariabele ELEVENLABS_API_KEY; door Andries zelf geplakt in het venster van gereedschap/sleutel-zetten.cjs --venster). De sleutel is geldig maar mist rechten (user_read, voices_read, models_read); er is nog niets ingesproken en geen tegoed gebruikt",
@@ -94,11 +94,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "ElevenLabs-aanroep bouwen en stemproeven maken (hoogstens 2.000 tekens), na het ja van Andries",
   "volgende": "ElevenLabs: zodra Andries account, OK per bedrag en sleutel (ELEVENLABS_API_KEY op de pc) heeft, koppeling bouwen en testen, twee stemmen laten kiezen, proef YS40 opnieuw. Daarna \"stijl OK stijl 3\", YS40 als pakket en YS41–YS46. Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
-    "ElevenLabs: mag ik tegoed gebruiken voor stemproeven (hoogstens 2.000 van de 40.000 tekens van deze maand), en wat is het bedrag van het abonnement met zijn OK (voor het potje)? · ondertussen: koppeling bouwen zonder iets in te spreken · blokkeert: ja, voor de stemkeuze",
+    "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · ondertussen: stemproeven maken (ja van Andries, hoogstens 2.000 tekens) · blokkeert: nee",
     "\"stijl OK stijl 3\" voor de YS-reeks vanaf YS40 (duo, decors, close-ups, gesprek; docs/proef-stijl-3.md)? De stemmen worden nog vervangen door ElevenLabs en komen dan opnieuw ter keuring · ondertussen: koppeling ElevenLabs voorbereiden · blokkeert: ja, voor YS40–YS46",
     "Go voor tak manon/cron-extra naar main (extra starttijden automaat Instagram)? Eva keek de tak na (vr 13 nov 08:50): geen bezwaar · blokkeert: nee",
     "Studio kanaal 1: wanneer wissel je naar kanaal 1, zodat ik YS33–YS39 inplan (9–15 dec 18:00, pakket OK is er)? · aanname: ruim op tijd vóór 9 dec, geen haast · ondertussen: YS40–YS54 in stijl 2 · blokkeert: nee (YouTube is gepland t/m 8 dec)",
@@ -110,6 +110,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T19:55:00+01:00 Andries in de sessie, op \"Mag ik hoogstens 2.000 tekens gebruiken om je stemproeven te laten horen?\": \"Ja, maak stemproeven\"",
     "2026-11-14T17:03:00+01:00 In de Chrome van Andries (ElevenLabs, API-sleutels → YG-Social → Bewerken): Modellen = Toegang, Gebruiker = Toegang, Stemmen = Lezen gezet en op \"Wijzigingen opslaan\" geklikt; de site meldde \"API-sleutel bijgewerkt\". De overige rechten heb ik gelaten zoals ze stonden. Tabblad daarna gesloten.",
     "2026-11-14T16:58:00+01:00 Andries in de sessie: \"Vind het niet\" (waar de rechten staan); op de vraag \"Zal ik daar de rechten voor je aanzetten en op 'Wijzigingen opslaan' klikken?\": \"Ja, alleen wat nodig is (Recommended)\"",
     "2026-11-14T16:52:00+01:00 Andries plakte de ElevenLabs-sleutel zelf in het venster; opgeslagen als gebruikersvariabele op de pc. Test bij ElevenLabs (alleen lezen, geen tegoed): 401 missing_permissions voor user_read, voices_read en models_read. De waarde is niet getoond of opgeslagen in de repo.",
@@ -631,6 +632,12 @@
     }
   ],
   "ontvangen": [
+    {
+      "id": "eva-paneel-1",
+      "van": "Eva",
+      "wat": "Het YG-Social-paneel (C32): pakket.json per pakket bijhouden, keuring vragen via \"vraagt\", keuring.json lezen bij elke \"ga verder\"",
+      "stand": "gelezen (docs/PAKKETKAART.md); za 14 nov 19:56 geen keuring.json aanwezig, geen nieuwe besluiten"
+    },
     {
       "id": "jesse-10",
       "van": "Jesse via Eva",
