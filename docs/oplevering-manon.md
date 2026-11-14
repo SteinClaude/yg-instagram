@@ -1,3 +1,4 @@
+KLAAR: zes stemproeven met ElevenLabs (Vraagteken: Jessica, Laura, Hope · Peertje: Liam, Charlie, Callum; 549 tekens, plafond 2.000) na "Ja, maak stemproeven"; aanroep in gereedschap/short/elevenlabs.cjs; wacht op de stemkeuze van Andries · beeb71f · za 14 nov 20:01
 KLAAR: ElevenLabs-sleutel staat op de pc en werkt (abonnement starter, 29 stemmen; rechten aangezet na ja van Andries); nog niets ingesproken, wacht op OK voor stemproeven · za 14 nov 17:06
 KLAAR: hulpje gereedschap/sleutel-zetten.cjs (Andries zet zelf de ElevenLabs-sleutel als Windows-variabele, verborgen invoer); sleutel staat er nog niet · za 14 nov 16:15
 KLAAR: stijlproef YS40 ronde 3 (geen ping, lamp gloeit bij praten, gesprek in hele zinnen, 37,6 s); stemmen nog Kokoro, ElevenLabs volgt na account, OK per bedrag en sleutel van Andries · a2f99a4 · za 14 nov 15:45

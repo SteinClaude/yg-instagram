@@ -1,13 +1,15 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T19:57:00+01:00",
+  "tijd": "2026-11-14T20:01:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-14T13:55:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-14T20:00:00+01:00 Zes stemproeven gemaakt met ElevenLabs (model eleven_v4, standaardinstellingen): Vraagteken = Jessica, Laura, Hope; Peertje = Liam, Charlie, Callum; elk één zin uit YS40; samen 549 tekens volgens mijn logboek (plafond 2.000). Eén filmpje van 51 s met de naam in beeld, aan Andries getoond in de sessie; de bestanden staan alleen lokaal (niet in git). Ik heb de stemmen niet beluisterd.",
+    "2026-11-14T19:58:00+01:00 gereedschap/short/elevenlabs.cjs (sleutel alleen uit de Windows-variabele, nooit getoond; elke zin één keer inspreken en bewaren; plafond per werk met logboek buiten git; woordtijden uit de dienst) en gereedschap/stemproef.cjs (stemproeven met naam in beeld)",
     "2026-11-14T17:06:00+01:00 ElevenLabs-sleutel werkt: rechten aangezet (Modellen, Gebruiker, Stemmen lezen; Text to Speech stond al aan) en opgeslagen in de Chrome van Andries, na zijn ja; test (alleen lezen, geen tegoed gebruikt): abonnement starter, 1.224 van 40.000 tekens gebruikt deze periode (niet door mij), 29 stemmen, modellen o.a. eleven_v3 en eleven_v4",
     "2026-11-14T16:55:00+01:00 ElevenLabs-sleutel staat op de pc (Windows-gebruikersvariabele ELEVENLABS_API_KEY; door Andries zelf geplakt in het venster van gereedschap/sleutel-zetten.cjs --venster). De sleutel is geldig maar mist rechten (user_read, voices_read, models_read); er is nog niets ingesproken en geen tegoed gebruikt",
     "2026-11-14T16:15:00+01:00 gereedschap/sleutel-zetten.cjs: veilig hulpje waarmee Andries zelf een sleutel als Windows-gebruikersvariabele zet (verborgen invoer, korte test bij ElevenLabs die abonnement en tegoed meldt); getest op de weigerpaden, er is geen sleutel gezet",
@@ -94,11 +96,12 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "ElevenLabs-aanroep bouwen en stemproeven maken (hoogstens 2.000 tekens), na het ja van Andries",
-  "volgende": "ElevenLabs: zodra Andries account, OK per bedrag en sleutel (ELEVENLABS_API_KEY op de pc) heeft, koppeling bouwen en testen, twee stemmen laten kiezen, proef YS40 opnieuw. Daarna \"stijl OK stijl 3\", YS40 als pakket en YS41–YS46. Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag (cijfers via Eva).",
+  "bezig": "-",
+  "volgende": "Na de stemkeuze van Andries (één voor het Vraagteken, één voor Peertje): ElevenLabs in gereedschap/short.cjs (stijl 3: stem, woordtijden en mond uit de dienst), proef YS40 opnieuw, dan \"stijl OK stijl 3\" vragen; daarna YS40 als pakket met kaart (pakket OK en bijschrift OK via het paneel) en YS41–YS46. Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
-    "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · ondertussen: stemproeven maken (ja van Andries, hoogstens 2.000 tekens) · blokkeert: nee",
+    "Stemkeuze duo: welke stem voor het Vraagteken (Jessica, Laura of Hope) en welke voor Peertje (Liam, Charlie of Callum)? Of andere stemmen proberen? · aanname: geen, ik wacht op zijn oor · ondertussen: niets inspreken · blokkeert: ja, voor de nieuwe proef van YS40",
+    "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
     "\"stijl OK stijl 3\" voor de YS-reeks vanaf YS40 (duo, decors, close-ups, gesprek; docs/proef-stijl-3.md)? De stemmen worden nog vervangen door ElevenLabs en komen dan opnieuw ter keuring · ondertussen: koppeling ElevenLabs voorbereiden · blokkeert: ja, voor YS40–YS46",
     "Go voor tak manon/cron-extra naar main (extra starttijden automaat Instagram)? Eva keek de tak na (vr 13 nov 08:50): geen bezwaar · blokkeert: nee",
     "Studio kanaal 1: wanneer wissel je naar kanaal 1, zodat ik YS33–YS39 inplan (9–15 dec 18:00, pakket OK is er)? · aanname: ruim op tijd vóór 9 dec, geen haast · ondertussen: YS40–YS54 in stijl 2 · blokkeert: nee (YouTube is gepland t/m 8 dec)",
@@ -110,6 +113,8 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T20:00:00+01:00 Filmpje met de zes stemproeven (51 s) aan Andries gestuurd in de sessie; bestanden alleen in de tijdelijke map van de sessie.",
+    "2026-11-14T19:59:00+01:00 Zes aanroepen bij ElevenLabs (tekst naar spraak met tijden, model eleven_v4): 549 tekens volgens mijn logboek. De teller van het abonnement stond om 20:00 nog op 1.224 van 40.000 (loopt mogelijk achter). Bewaarde zinnen en logboek: tijdelijke map van de pc (yg-stem-el), niet in git.",
     "2026-11-14T19:55:00+01:00 Andries in de sessie, op \"Mag ik hoogstens 2.000 tekens gebruiken om je stemproeven te laten horen?\": \"Ja, maak stemproeven\"",
     "2026-11-14T17:03:00+01:00 In de Chrome van Andries (ElevenLabs, API-sleutels → YG-Social → Bewerken): Modellen = Toegang, Gebruiker = Toegang, Stemmen = Lezen gezet en op \"Wijzigingen opslaan\" geklikt; de site meldde \"API-sleutel bijgewerkt\". De overige rechten heb ik gelaten zoals ze stonden. Tabblad daarna gesloten.",
     "2026-11-14T16:58:00+01:00 Andries in de sessie: \"Vind het niet\" (waar de rechten staan); op de vraag \"Zal ik daar de rechten voor je aanzetten en op 'Wijzigingen opslaan' klikken?\": \"Ja, alleen wat nodig is (Recommended)\"",
@@ -574,6 +579,11 @@
   ],
   "voorEva": [
     {
+      "id": "V-manon-elevenlabs-verbruik-1",
+      "aan": "Jesse (potje YG-Social)",
+      "wat": "Kanaal 1 gebruikte za 14 nov 20:00 voor het eerst ElevenLabs-tegoed: 549 tekens voor zes stemproeven (ja van Andries, 19:55, hoogstens 2.000). De teller van het abonnement toonde dat om 20:00 nog niet (1.224 van 40.000)."
+    },
+    {
       "id": "V-manon-elevenlabs-tegoed",
       "aan": "Jesse (potje YG-Social)",
       "wat": "ElevenLabs staat op het abonnement \"starter\": 40.000 tekens per maand, nieuwe periode 14 dec; za 14 nov 17:04 waren er 1.224 gebruikt (niet door kanaal 1). Eén short van kanaal 1 kost naar schatting 600–700 tekens, dus 7 per week is ongeveer 18.000–20.000 per maand. Delen andere kanalen dit account, dan is het tegoed samen te bewaken. Het bedrag staat niet in deze repo; Andries geeft het met zijn OK."
@@ -663,6 +673,7 @@
     "instagram-kanaal-1",
     "planning.json",
     "github-actions-plaatsen",
-    "pc-omgevingsvariabelen"
+    "pc-omgevingsvariabelen",
+    "elevenlabs-tegoed"
   ]
 }
