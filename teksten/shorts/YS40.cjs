@@ -50,7 +50,8 @@ module.exports = {
   nummer: 'No. 40',
   onderwerp: 'THE AMPERSAND',
   pakket: {
-    dag: 'woensdag 16 december 2026', gelezen: 'za 14 nov 2026',
+    dag: 'zondag 15 november 2026', tijd: '20:00',   // nieuwe reeks erbij om 20:00 (Andries za 14 nov 2026 ±21:45)
+     gelezen: 'za 14 nov 2026',
     titel: 'Why is "&" called an ampersand?',
     intro: 'The & sign used to sit at the end of the alphabet. Children reciting it said "and per se and", and that phrase slurred into one word.',
     feiten: ['The & "was actually once the 27th member of the alphabet" (Dictionary.com).',

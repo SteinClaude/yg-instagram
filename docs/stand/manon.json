@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T21:38:00+01:00",
+  "tijd": "2026-11-14T21:47:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -100,7 +100,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "YS40 inplannen voor Instagram na pakket OK en bijschrift OK",
+  "bezig": "YS40 naar zo 15 nov 20:00 (Instagram en YouTube Studio); daarna YS33–YS39 in Studio",
   "volgende": "Na pakket OK YS40 en bijschrift OK YS40 (paneel of sessie): keuring.json vastleggen, Instagram inplannen (planning.json, eerste vrije dag na 23 nov) en YouTube in Studio zodra het venster op kanaal 1 staat. Verder: YS41–YS46 in stijl 3 (onderwerpen met bron, gesprek, eigen beeld in de decors; ongeveer 550 tekens ElevenLabs per short). Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
@@ -115,6 +115,8 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T21:46:00+01:00 Andries in de sessie (±21:44): \"laten we beginnen met de nieuwe videos die we gemaakt hebben met de animaties personages te gebruiken\"; op mijn vraag hoe de nieuwe moeten starten koos hij (±21:45): \"Nieuwe erbij, vanaf morgen (Recommended)\" = de oude shorts blijven om 18:00, de nieuwe komen er elke dag bij om 20:00, te beginnen met YS40 op zo 15 nov, op YouTube en Instagram.",
+    "2026-11-14T21:40:00+01:00 In de Chrome van Andries: YouTube Studio staat op kanaal 1. Upload van YS33 gestart (concept, privé; titel en beschrijving ingevuld, nog niet ingepland).",
     "2026-11-14T21:37:00+01:00 Andries in de sessie, op \"Geef je pakket OK en bijschrift OK voor YS40?\": \"Beide OK YS40\" (vastgelegd in pakketten/2026-12-16-YS40-ampersand/keuring.json, via sessie)",
     "2026-11-14T20:45:00+01:00 Controleprogramma van het paneel gedraaid (alleen lezen): 40 pakketten, wacht op Andries: pakket OK YS40 en bijschrift OK YS40, alles klopt.",
     "2026-11-14T20:43:00+01:00 Andries in de sessie, na proef YS40 ronde 5, op \"Geef je \\\"stijl OK stijl 3\\\" voor de reeks vanaf YS40?\": \"stijl OK stijl 3\"",

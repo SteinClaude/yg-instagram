@@ -180,6 +180,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- za 14 nov 2026 ±21:44, in de sessie: "laten we beginnen met de nieuwe videos die we gemaakt hebben met de animaties personages te gebruiken"; op mijn vraag "Hoe wil je de nieuwe laten starten?" (±21:45): "Nieuwe erbij, vanaf morgen (Recommended)" → de oude shorts blijven elke dag om 18:00 staan; de nieuwe shorts met het duo komen er elke dag bij om 20:00, te beginnen met YS40 op zo 15 nov 2026, op YouTube en Instagram. Elke nieuwe short blijft per code ter keuring.
 - za 14 nov 2026 ±21:37, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS40?": "Beide OK YS40" → pakket OK YS40 (script, bronnen, titel) en bijschrift OK YS40 (Instagram); vastgelegd in keuring.json van het pakket.
 - za 14 nov 2026 ±20:43, in de sessie, na proef YS40 ronde 5, op "Geef je \"stijl OK stijl 3\" voor de reeks vanaf YS40?": "stijl OK stijl 3" → stijl 3 (duo Vraagteken en Peertje, getekende decors, close-ups, gesprek, stemmen Laura en Liam van ElevenLabs, mond op de klanken, tempo 1,12) geldt voor de YS-reeks vanaf YS40. Script, bronnen en titel blijven per pakket ter keuring ("pakket OK <code>").
 - za 14 nov 2026 ±20:25, in de sessie, na de proef van YS40 met de nieuwe stemmen: "peertje ze mond moet beter bewegen, en kan wat sneller" → de mond van Peertje krijgt meer standen en volgt de klanken; het gesprek gaat sneller. Nog geen stijl OK.

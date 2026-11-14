@@ -79,7 +79,7 @@ Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
 Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
 
 == Zichtbaarheid ==
-Plannen: ${p.dag}, ${k2 ? '19:00' : '18:00'} (Amsterdam)
+Plannen: ${p.dag}, ${p.tijd || (k2 ? '19:00' : '18:00')} (Amsterdam)
 `;
 fs.writeFileSync(path.join(D, 'studio.txt'), studio);
 
