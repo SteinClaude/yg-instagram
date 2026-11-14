@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T21:47:00+01:00",
+  "tijd": "2026-11-14T21:55:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,8 @@
   },
   "status": "werkt",
   "af": [
+    "2026-11-14T21:53:00+01:00 YS40 ingepland in YouTube Studio (kanaal 1): Studio meldt \"Video gepland\", openbaar op 15 november 2026 om 20:00; Instagram: planning.json zo 15 nov 20:00 (911c640)",
+    "2026-11-14T21:49:00+01:00 YS33 ingepland in YouTube Studio (kanaal 1): Studio meldt \"Video gepland\", openbaar op 9 december 2026 om 18:00",
     "2026-11-14T20:47:00+01:00 YS40 als pakket in stijl 3 (pakketten/2026-12-16-YS40-ampersand): video.mp4 (44,3 s), studio.txt (wo 16 dec 2026 18:00), video-upload.mp4 (8,9 MB), bron/bronnen.md en stem.txt, Instagram-versie (reel 9,1 MB, omslag op 3,2 s) met bijschrift, en pakket.json met de vraag om pakket OK en bijschrift OK (20:46); het controleprogramma van het paneel meldt \"Alles klopt\". gereedschap/short/pakket.cjs kent nu de ElevenLabs-stemmen. Geen nieuw tegoed gebruikt.",
     "2026-11-14T20:42:00+01:00 Proef YS40 ronde 5 (na \"peertje ze mond moet beter bewegen, en kan wat sneller\"): de mond volgt de klanken van elk woord met zeven standen (glimlach, dicht, klein, half, breed, rond, wijd open), Peertje heeft een grotere mond en beweegt mee met de sterkte van de stem; de stem is 12% versneld (toonhoogte gelijk), stiltes en de adempauze na elke beurt zijn korter: 44,3 s (was 50,8 s), -14,4 LUFS. Geen nieuw tegoed gebruikt (alle zinnen waren bewaard; het logboek staat op 994 tekens). Beeld voor beeld nagekeken op een strook van 32 beelden; de stemmen heb ik niet beluisterd. Video alleen lokaal, aan Andries getoond in de sessie.",
     "2026-11-14T20:17:00+01:00 Proef YS40 ronde 4 met de stemmen van ElevenLabs (Vraagteken = Laura, Peertje = Liam; model eleven_v4): 50,8 s (was 37,6 s met de oude stem; de nieuwe stemmen spreken rustiger), -14,4 LUFS; 445 nieuwe tekens, samen met de stemproeven 994 van de 2.000. Video alleen lokaal, aan Andries getoond in de sessie; ik heb de stemmen niet beluisterd.",
@@ -100,7 +102,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "YS40 naar zo 15 nov 20:00 (Instagram en YouTube Studio); daarna YS33–YS39 in Studio",
+  "bezig": "YS34–YS39 inplannen in YouTube Studio (9–15 dec 18:00)",
   "volgende": "Na pakket OK YS40 en bijschrift OK YS40 (paneel of sessie): keuring.json vastleggen, Instagram inplannen (planning.json, eerste vrije dag na 23 nov) en YouTube in Studio zodra het venster op kanaal 1 staat. Verder: YS41–YS46 in stijl 3 (onderwerpen met bron, gesprek, eigen beeld in de decors; ongeveer 550 tekens ElevenLabs per short). Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
@@ -115,6 +117,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T21:53:00+01:00 In de Chrome van Andries, YouTube Studio kanaal 1: YS33 (9 dec 18:00) en YS40 (15 nov 20:00) geüpload en ingepland; niet voor kinderen, AI-gebruik ja, taal Engels, categorie Educatief, tags uit studio.txt.",
     "2026-11-14T21:46:00+01:00 Andries in de sessie (±21:44): \"laten we beginnen met de nieuwe videos die we gemaakt hebben met de animaties personages te gebruiken\"; op mijn vraag hoe de nieuwe moeten starten koos hij (±21:45): \"Nieuwe erbij, vanaf morgen (Recommended)\" = de oude shorts blijven om 18:00, de nieuwe komen er elke dag bij om 20:00, te beginnen met YS40 op zo 15 nov, op YouTube en Instagram.",
     "2026-11-14T21:40:00+01:00 In de Chrome van Andries: YouTube Studio staat op kanaal 1. Upload van YS33 gestart (concept, privé; titel en beschrijving ingevuld, nog niet ingepland).",
     "2026-11-14T21:37:00+01:00 Andries in de sessie, op \"Geef je pakket OK en bijschrift OK voor YS40?\": \"Beide OK YS40\" (vastgelegd in pakketten/2026-12-16-YS40-ampersand/keuring.json, via sessie)",
@@ -692,6 +695,7 @@
     "github-actions-plaatsen",
     "pc-omgevingsvariabelen",
     "elevenlabs-tegoed",
-    "paneel-kaarten"
+    "paneel-kaarten",
+    "youtube-studio-kanaal-1"
   ]
 }
