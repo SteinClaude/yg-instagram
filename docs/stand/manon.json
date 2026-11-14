@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T16:15:00+01:00",
+  "tijd": "2026-11-14T16:46:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -108,6 +108,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-14T16:44:00+01:00 Andries in de sessie: \"kan je die site voor me klaar zetten\" — in de Chrome van Andries (hij was al ingelogd) de pagina met API-sleutels van ElevenLabs geopend; er stond nog geen sleutel. Niets aangeklikt of aangemaakt; de sleutel maakt Andries zelf en ik kijk daarna niet meer naar dat tabblad.",
     "2026-11-14T16:13:00+01:00 Andries in de sessie: \"help met met de sleutel koppelen aan het kantoor\" — hulpje gemaakt (gereedschap/sleutel-zetten.cjs): Andries plakt de sleutel zelf, verborgen, in zijn eigen terminal; hij komt als gebruikersvariabele ELEVENLABS_API_KEY in Windows, niet in een bestand of in git. Ik heb geen sleutel gezien of gezet.",
     "2026-11-14T16:11:00+01:00 Andries in de sessie, op \"Is het ElevenLabs-account er al, met de sleutel op deze pc?\": \"acount staat klaar sleutel weet ik niet\" — nagekeken (alleen of de variabele bestaat, de waarde niet gelezen): ELEVENLABS_API_KEY staat nog niet op de pc; stappen aan Andries uitgelegd",
     "2026-11-14T15:31:00+01:00 Andries in de sessie: \"we gaan elevenlabs gebruiken zo voor de stemmen\"",
