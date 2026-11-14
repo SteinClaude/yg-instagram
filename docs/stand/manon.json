@@ -1,14 +1,15 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T15:05:00+01:00",
+  "tijd": "2026-11-14T15:01:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-14T13:55:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
-    "2026-11-14T15:05:00+01:00 Stijl 3 ronde 2: getekende decors (gereedschap/short/decor.cjs: kamer, klas, rome), onderwerp op een vlak in het decor, kop op een papieren kaartje, close-ups met harde snede; YS40 omgezet; docs/proef-stijl-3.md en -overzicht.jpg bijgewerkt",
+    "2026-11-14T15:01:00+01:00 Proefvideo YS40 in stijl 3 ronde 2 gerenderd (27,2 s, -14,1 LUFS; alleen lokaal, aan Andries getoond in de sessie); uitspraak niet door mij beluisterd",
+    "2026-11-14T14:57:00+01:00 Stijl 3 ronde 2: getekende decors (gereedschap/short/decor.cjs: kamer, klas, rome), onderwerp op een vlak in het decor, kop op een papieren kaartje, close-ups met harde snede; YS40 omgezet; docs/proef-stijl-3.md en -overzicht.jpg bijgewerkt",
     "2026-11-14T14:41:00+01:00 Stijlproef YS40 in stijl 3 gerenderd (27,2 s, 1080×1920, -14,1 LUFS; video alleen lokaal en aan Andries getoond in de sessie); uitspraak niet door mij beluisterd",
     "2026-11-14T14:37:00+01:00 Stijl 3 gebouwd in gereedschap/short.cjs (duo onderin beeld, mond op de stem, Peertje gaat aan, twee stemmen); script YS40 (ampersand; bronnen Dictionary.com 2020 en Saturday Evening Post 2021, gelezen 14 nov); uitleg docs/proef-stijl-3.md, beelden docs/proef-stijl-3-overzicht.jpg",
     "2026-11-14T14:23:00+01:00 Ronde 3 figuren (op \"andere mogelijkheden\"): D Peertje (gloeilamp), E Robot (archiefkast), F Mol (mijnhelm); docs/figuur/ontwerp-D/E/F.jpg, ontwerpen-overzicht-2.jpg, ontwerpen-in-beeld-2.jpg",
@@ -89,11 +90,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Stijl 3 ronde 2 (decors, onderwerp in het decor, close-ups): proefvideo YS40 rendert lokaal",
+  "bezig": "-",
   "volgende": "Na \"stijl OK stijl 3\": YS40 als pakket (pakket OK en bijschrift OK) en YS41–YS46 in stijl 3. Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
-    "\"stijl OK stijl 3\" voor de YS-reeks vanaf YS40 (duo Vraagteken en Peertje, twee stemmen, indeling; docs/proef-stijl-3.md)? · ondertussen: niets; YS40–YS46 volgen op de stijl OK · blokkeert: ja, voor YS40–YS46 (Instagram is gevuld t/m 23 nov, YouTube t/m 8 dec plus YS33–YS39)",
+    "\"stijl OK stijl 3\" voor de YS-reeks vanaf YS40 (duo Vraagteken en Peertje, twee stemmen, getekende decors, close-ups; docs/proef-stijl-3.md)? · ondertussen: niets; YS40–YS46 volgen op de stijl OK · blokkeert: ja, voor YS40–YS46",
     "Go voor tak manon/cron-extra naar main (extra starttijden automaat Instagram)? Eva keek de tak na (vr 13 nov 08:50): geen bezwaar · blokkeert: nee",
     "Studio kanaal 1: wanneer wissel je naar kanaal 1, zodat ik YS33–YS39 inplan (9–15 dec 18:00, pakket OK is er)? · aanname: ruim op tijd vóór 9 dec, geen haast · ondertussen: YS40–YS54 in stijl 2 · blokkeert: nee (YouTube is gepland t/m 8 dec)",
     {
