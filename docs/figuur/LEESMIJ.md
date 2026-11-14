@@ -32,4 +32,6 @@ Let op bij de keuze: een gloeilamp met een gezicht en een tekenfilmmol zijn veel
 - Geen bestaand personage, geen AI-beeld en geen betaald hulpmiddel. Het potje is niet aangesproken.
 - Omdat de figuur uit losse delen bestaat (ogen, mond, armen), kan `short.cjs` hem per beeld laten knipperen, praten op de stem, wijzen en schrikken.
 
-**Volgende stap:** Andries kiest A, B, C, D, E of F. Daarna maak ik de stijlproef van YS40 met die figuur, voor "stijl OK".
+**Besluit:** "peertje" (Andries, za 14 nov 2026 ±14:26, in de sessie): ontwerp D, Peertje, is de vaste figuur.
+
+**Volgende stap:** Daarna maak ik de stijlproef van YS40 met die figuur, voor "stijl OK".
