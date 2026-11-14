@@ -1,5 +1,5 @@
 // YS40 — Why is "&" called an ampersand?
-// Reeks A · Signs & Symbols. VORM 3 (haak in de eerste seconde, kort, lus) en STIJL 3 (PROEF, nog geen stijl OK):
+// Reeks A · Signs & Symbols. VORM 3 (haak in de eerste seconde, kort, lus) en STIJL 3 (Andries za 14 nov 2026 ±20:43: "stijl OK stijl 3"):
 // het vaste duo in getekende decors (gereedschap/short/decor.cjs), met wijd beeld en close-ups. Het Vraagteken stelt de vragen, Peertje geeft de antwoorden (Andries, za 14 nov 2026: "peertje" ·
 // "met het vraag taken samen" · "bij vragen vraag tegen bij antwoorde peertje" · "zo veel mogelijk ect").
 // Bronnen (gelezen za 14 nov 2026): Dictionary.com, "What Character Was Removed From The Alphabet?" (7 sep 2020);
@@ -41,7 +41,7 @@ module.exports = {
   versie: 2,
   vorm: 3,
   lus: 0.5,
-  stijl: 3,   // PROEF: nog geen stijl OK (za 14 nov 2026)
+  stijl: 3,   // stijl OK: Andries za 14 nov 2026 ±20:43, "stijl OK stijl 3"
   stem: { stem: 'am_fenrir', tempo: 1.1 },
   // Stemmen van ElevenLabs, gekozen door Andries (za 14 nov 2026 ±20:02: "vraag tegen laura, peertje liam")
   stemmen: { vraag: { dienst: 'elevenlabs', stem: 'FGY2WhTYpPnrIDTdsKH5', naam: 'Laura', tempo: 1.12 }, antwoord: { dienst: 'elevenlabs', stem: 'TX3LPaxmHKxFdv7VOQHJ', naam: 'Liam', tempo: 1.12 } },

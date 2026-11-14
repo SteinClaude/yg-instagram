@@ -1,3 +1,5 @@
+> **Stijl OK gegeven.** Andries, za 14 nov 2026 ±20:43, in de sessie van Manon, na ronde 5: "stijl OK stijl 3". Stijl 3 geldt voor de YS-reeks vanaf YS40.
+
 # Proef stijl 3 · het duo: Vraagteken en Peertje
 
 **Gemaakt:** za 14 nov 2026, Manon. Aanleiding (jesse-10, `docs/manager/animatie-koers.md`): vanaf YS40 een vaste eigen cartoonfiguur die elke short iets uitzoekt. Andries koos in de sessie, za 14 nov 2026:
