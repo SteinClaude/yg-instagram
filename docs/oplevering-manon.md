@@ -1,3 +1,4 @@
+KLAAR: jesse-10 stap 2, stijlproef YS40 in stijl 3 (duo Vraagteken en Peertje; 27,2 s; docs/proef-stijl-3.md); wacht op "stijl OK stijl 3" · 63bc3e7 · za 14 nov 14:41
 KLAAR: ronde 3 figuren (op "andere mogelijkheden"): D Peertje, E Robot, F Mol erbij; zes ontwerpen in docs/figuur/; wacht op keuze Andries · za 14 nov 14:23
 KLAAR: ronde 2 figuren (op "betere figuren"): A Vraagteken, B Memo en C Ekster opnieuw getekend met schaduw, glans, handschoentjes en expressievere gezichten; docs/figuur/; wacht op keuze Andries · za 14 nov 14:15
 KLAAR: jesse-10 stap 1, drie ontwerpen vaste figuur kanaal 1 (A Vraagteken, B Memo, C Ekster) in docs/figuur/; wacht op keuze Andries · za 14 nov 14:00

@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-14T14:37:00+01:00",
+  "tijd": "2026-11-14T14:41:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-14T13:55:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-14T14:41:00+01:00 Stijlproef YS40 in stijl 3 gerenderd (27,2 s, 1080×1920, -14,1 LUFS; video alleen lokaal en aan Andries getoond in de sessie); uitspraak niet door mij beluisterd",
     "2026-11-14T14:37:00+01:00 Stijl 3 gebouwd in gereedschap/short.cjs (duo onderin beeld, mond op de stem, Peertje gaat aan, twee stemmen); script YS40 (ampersand; bronnen Dictionary.com 2020 en Saturday Evening Post 2021, gelezen 14 nov); uitleg docs/proef-stijl-3.md, beelden docs/proef-stijl-3-overzicht.jpg",
     "2026-11-14T14:23:00+01:00 Ronde 3 figuren (op \"andere mogelijkheden\"): D Peertje (gloeilamp), E Robot (archiefkast), F Mol (mijnhelm); docs/figuur/ontwerp-D/E/F.jpg, ontwerpen-overzicht-2.jpg, ontwerpen-in-beeld-2.jpg",
     "2026-11-14T14:15:00+01:00 Ronde 2 figuren (op \"betere figuren\"): celschaduw en glans, handschoentjes, ogen met lichtpuntjes, wenkbrauwen per houding, lijf buigt mee; bladen en voorbeeldframes opnieuw in docs/figuur/",
@@ -87,10 +88,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Stijlproef YS40 (stijl 3, duo Vraagteken en Peertje): video rendert lokaal",
-  "volgende": "Na de keuze van de figuur: stijlproef YS40 (script en bronnen eerst, dan weergave met de figuur) voor \"stijl OK\". Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag (cijfers via Eva).",
+  "bezig": "-",
+  "volgende": "Na \"stijl OK stijl 3\": YS40 als pakket (pakket OK en bijschrift OK) en YS41–YS46 in stijl 3. Na go Andries: manon/cron-extra naar main. YS33–YS39 in Studio zodra Andries naar kanaal 1 wisselt. Weekverslag (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
+    "\"stijl OK stijl 3\" voor de YS-reeks vanaf YS40 (duo Vraagteken en Peertje, twee stemmen, indeling; docs/proef-stijl-3.md)? · ondertussen: niets; YS40–YS46 volgen op de stijl OK · blokkeert: ja, voor YS40–YS46 (Instagram is gevuld t/m 23 nov, YouTube t/m 8 dec plus YS33–YS39)",
     "Go voor tak manon/cron-extra naar main (extra starttijden automaat Instagram)? Eva keek de tak na (vr 13 nov 08:50): geen bezwaar · blokkeert: nee",
     "Studio kanaal 1: wanneer wissel je naar kanaal 1, zodat ik YS33–YS39 inplan (9–15 dec 18:00, pakket OK is er)? · aanname: ruim op tijd vóór 9 dec, geen haast · ondertussen: YS40–YS54 in stijl 2 · blokkeert: nee (YouTube is gepland t/m 8 dec)",
     {
@@ -600,7 +602,7 @@
       "id": "jesse-10",
       "van": "Jesse via Eva",
       "wat": "Vaste cartoonfiguur vanaf YS40: drie ontwerpen → keuze Andries → stijlproef YS40 → stijl OK → YS40–YS46",
-      "stand": "figuur gekozen: D Peertje; stijlproef YS40 in de maak"
+      "stand": "duo gekozen (Vraagteken + Peertje); stijlproef YS40 af, wacht op stijl OK stijl 3"
     },
     "2026-11-09 13:10 Eva NU-blok: profiel en groeipad in CLAUDE.md (Andries 13:03 \"ok\") — gelezen en bevestigd: ik werk er vanaf nu naar (toon creatief en enthousiast; planning/volgorde, tijdstip 17:00–20:00 en proeven beslis ik zelf en meld ik achteraf; hoe-vragen zelf, wat-vragen naar Andries; vanaf YS33 haak in 2 s, nieuwsgierige titels, sterker einde; elke maandag top 3, flop 3 en 1 proef; één groot idee per week; zelfevaluatie bij elk weekverslag; groeipad tot ma 7 dec). Harde regels ongewijzigd.",
     "2026-11-08 21:30 Eva avondronde: stand opschonen (YS01–YS03-vraag weg), H-manon-8 kanaal controleren vóór upload, YS33–YS39 na cijfers",
