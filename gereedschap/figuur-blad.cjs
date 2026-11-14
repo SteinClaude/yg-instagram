@@ -58,22 +58,26 @@ function frame(code) {
     s += `<text x="${x + 58}" y="${y + 76}" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="56" fill="${K.inkt}">${l}</text>`;
   });
   s += `<ellipse cx="540" cy="760" rx="440" ry="120" fill="none" stroke="${K.signaal}" stroke-width="13" stroke-linecap="round" transform="rotate(-3 540 760)"/>`;
-  s += schaduw(560, 1640, 170) + F.teken(code, { x: 560, y: 1640, s: 1.3, pose: 'wijst', mond: 'open' });
+  const fs2 = code === 'E' ? 1.1 : 1.3;   // de robot is hoger (antenne)
+  s += schaduw(560, 1640, 170) + F.teken(code, { x: 560, y: 1640, s: fs2, pose: 'wijst', mond: 'open' });
   s += `<rect x="90" y="1290" width="330" height="58" rx="6" fill="${K.wit}" stroke="${K.inkt}" stroke-width="4" opacity="0"/>`;
   s += `<text x="540" y="1830" text-anchor="middle" font-family="IBM Plex Mono" font-size="30" fill="${K.grijs}">voorbeeldframe · ontwerp ${code}</text>`;
   return render(`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${s}</svg>`, w);
 }
 
+// node gereedschap/figuur-blad.cjs [D E F] [--naam -2]  (standaard A B C)
+const arg = process.argv.slice(2), ni = arg.indexOf('--naam'), NAAM = ni >= 0 ? arg.splice(ni, 2)[1] : '';
+const CODES = arg.length ? arg : ['A', 'B', 'C'];
 (async () => {
-  for (const c of ['A', 'B', 'C']) await blad(c);
-  const delen = ['A', 'B', 'C'].map(frame);
+  for (const c of CODES) await blad(c);
+  const delen = CODES.map(frame);
   const breed = 720, hoog = 1280, marge = 40;
   const lijst = await Promise.all(delen.map(b => sharp(b).resize(breed, hoog).png().toBuffer()));
   await sharp({ create: { width: breed * 3 + marge * 4, height: hoog + marge * 2, channels: 3, background: '#2A2A2E' } })
     .composite(lijst.map((b, i) => ({ input: b, left: marge + i * (breed + marge), top: marge })))
-    .jpeg({ quality: 88 }).toFile(path.join(UIT, 'ontwerpen-in-beeld.jpg'));
+    .jpeg({ quality: 88 }).toFile(path.join(UIT, `ontwerpen-in-beeld${NAAM}.jpg`));
   await sharp({ create: { width: 1080 * 3 + 80, height: 1350 + 40, channels: 3, background: '#2A2A2E' } })
-    .composite(['A', 'B', 'C'].map((c, i) => ({ input: path.join(UIT, `ontwerp-${c}.jpg`), left: 20 + i * 1100, top: 20 })))
-    .png().toBuffer().then(b => sharp(b).resize(2400).jpeg({ quality: 88 }).toFile(path.join(UIT, 'ontwerpen-overzicht.jpg')));
+    .composite(CODES.map((c, i) => ({ input: path.join(UIT, `ontwerp-${c}.jpg`), left: 20 + i * 1100, top: 20 })))
+    .png().toBuffer().then(b => sharp(b).resize(2400).jpeg({ quality: 88 }).toFile(path.join(UIT, `ontwerpen-overzicht${NAAM}.jpg`)));
   console.log('ok', fs.readdirSync(UIT));
 })();

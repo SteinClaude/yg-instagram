@@ -1,3 +1,4 @@
+KLAAR: ronde 3 figuren (op "andere mogelijkheden"): D Peertje, E Robot, F Mol erbij; zes ontwerpen in docs/figuur/; wacht op keuze Andries · za 14 nov 14:23
 KLAAR: ronde 2 figuren (op "betere figuren"): A Vraagteken, B Memo en C Ekster opnieuw getekend met schaduw, glans, handschoentjes en expressievere gezichten; docs/figuur/; wacht op keuze Andries · za 14 nov 14:15
 KLAAR: jesse-10 stap 1, drie ontwerpen vaste figuur kanaal 1 (A Vraagteken, B Memo, C Ekster) in docs/figuur/; wacht op keuze Andries · za 14 nov 14:00
 KLAAR: extra starttijden automaat Instagram op tak manon/cron-extra (8a74843), na "A: extra starttijden"; wacht op controle Eva (V-manon-cron) en go Andries (B30) · do 12 nov 23:50

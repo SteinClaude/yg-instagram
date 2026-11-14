@@ -15,9 +15,21 @@
 
 **Ronde 2** (Andries, za 14 nov ±14:05, in de sessie: "betere figuren"): elke vorm heeft nu een celschaduw en een glans, er zijn handschoentjes met vingers (een wijzende hand), de ogen hebben een schaduw en twee lichtpuntjes, de figuren hebben wenkbrauwen die met de houding meebewegen, een open mond met tanden en tong, en schoenen met een zool. Het lijf buigt mee: bij wijzen leunt de figuur, bij verbazing maakt hij een sprongetje. Daarnaast heeft elk ontwerp eigen details: A een loep met messing rand, B papierlijntjes, plakband en een omgekrulde hoek, C een getrapte staart met groenblauwe glans, witte schoudervlekken, een tas met gesp en een snavel die opengaat. Op het blad staat de figuur nu groot in de houding "legt uit".
 
+**Ronde 3, andere mogelijkheden** (Andries, za 14 nov ±14:20, in de sessie: "andere mogelijkheden"): drie nieuwe figuren met elk een ander idee, in dezelfde afwerking.
+
+| Ontwerp | Wat | Waarom het past |
+|---|---|---|
+| **D · Peertje** | gloeilamp met gezicht; licht op als hij iets ontdekt | het aha-moment van elke short zit in de figuur zelf |
+| **E · Robot** | archiefrobot; zijn lijf is een archiefkast met laden A–Z | de bronnen komen letterlijk uit zijn lade; past bij "altijd met bron" |
+| **F · Mol** | mol met mijnhelm, bril en kwastje | hij graaft de geschiedenis van gewone dingen op |
+
+Bestanden: `ontwerp-D.jpg`, `ontwerp-E.jpg`, `ontwerp-F.jpg`, `ontwerpen-overzicht-2.jpg`, `ontwerpen-in-beeld-2.jpg` (maken: `node gereedschap/figuur-blad.cjs D E F --naam -2`).
+
+Let op bij de keuze: een gloeilamp met een gezicht en een tekenfilmmol zijn veelgebruikte ideeën. De tekeningen zijn eigen werk, maar A, B, C en E zijn als idee het meest eigen.
+
 **Hoe gemaakt:**
 - Eigen werk, als vector in `gereedschap/figuur.cjs`; de bladen maak je met `node gereedschap/figuur-blad.cjs`.
 - Geen bestaand personage, geen AI-beeld en geen betaald hulpmiddel. Het potje is niet aangesproken.
 - Omdat de figuur uit losse delen bestaat (ogen, mond, armen), kan `short.cjs` hem per beeld laten knipperen, praten op de stem, wijzen en schrikken.
 
-**Volgende stap:** Andries kiest A, B of C. Daarna maak ik de stijlproef van YS40 met die figuur, voor "stijl OK".
+**Volgende stap:** Andries kiest A, B, C, D, E of F. Daarna maak ik de stijlproef van YS40 met die figuur, voor "stijl OK".

@@ -13,7 +13,7 @@
 
 const K = {
   papier: '#EFEAE0', inkt: '#16161A', grijs: '#6E6A62', signaal: '#D9432B', geel: '#F2C230', wit: '#FFFDF7',
-  glas: '#CFE3EA', rood: '#E24A30', roodDiep: '#A9311E', roodLicht: '#FF8A6E',
+  glas: '#CFE3EA', oranje: '#E8962E', rood: '#E24A30', roodDiep: '#A9311E', roodLicht: '#FF8A6E',
   memo: '#F8CC3E', memoDiep: '#D9A21C', memoLicht: '#FFE68A',
   zwart: '#23253A', zwartDiep: '#101119', blauw: '#2D4C86', groenblauw: '#2F7E86', witDiep: '#D9D2C4',
   wang: '#FF7D6B', huid: '#FFFDF7', handDiep: '#DCD5C7', messing: '#C9962E',
@@ -242,10 +242,153 @@ function C(o) {
   return s;
 }
 
+// ------------------------------------------------------------------ D · Peertje
+// Een gloeilamp die oplicht als hij iets ontdekt: het "aha" van elke short.
+function D(o) {
+  const { pose, kijk, mondType, open } = o;
+  const aan = pose === 'verbaasd';
+  let s = '';
+  s += been(-34, -150, 0, -1) + been(34, -150, 0, 1);
+  if (aan) s += Array.from({ length: 9 }, (_, i) => {
+    const a = (-180 + i * 22.5) * Math.PI / 180, r1 = 170, r2 = 214;
+    return `<path d="M ${Math.cos(a) * r1} ${-400 + Math.sin(a) * r1} L ${Math.cos(a) * r2} ${-400 + Math.sin(a) * r2}" stroke="${K.geel}" stroke-width="14" stroke-linecap="round"/>` +
+      `<path d="M ${Math.cos(a) * r1} ${-400 + Math.sin(a) * r1} L ${Math.cos(a) * r2} ${-400 + Math.sin(a) * r2}" stroke="${K.inkt}" stroke-width="3" stroke-linecap="round" opacity="0.25"/>`;
+  }).join('') + `<circle cx="0" cy="-400" r="190" fill="${K.geel}" opacity="0.18"/>`;
+  // fitting: metalen ringen
+  const fitting = c => `<path d="M -70 -262 L 70 -262 L 64 -180 Q 0 -168 -64 -180 Z" fill="${c}"/>`;
+  s += cel(fitting, '#C4BFB5', '#8F8A81', null, { dx: 8, dy: 6 });
+  s += [-240, -218, -196].map(v => `<path d="M -68 ${v} Q 0 ${v + 10} 68 ${v}" fill="none" stroke="${K.inkt}" stroke-width="6" stroke-linecap="round"/>`).join('');
+  s += `<path d="M -30 -176 Q 0 -150 30 -176 Z" fill="${K.inkt}"/>`;
+  // glas
+  const glasvorm = 'M -66 -262 C -66 -300 -146 -328 -146 -408 C -146 -492 -80 -548 0 -548 C 80 -548 146 -492 146 -408 C 146 -328 66 -300 66 -262 Z';
+  const bol = c => `<path d="${glasvorm}" fill="${c}"/>`;
+  s += cel(bol, aan ? '#FFE56B' : '#FFF5D2', aan ? '#F4C53A' : '#EADDB0', null, { dx: 16, dy: 14 });
+  // gloeidraad
+  s += `<path d="M -22 -264 L -26 -318 M 22 -264 L 26 -318" stroke="#8F8A81" stroke-width="5" fill="none"/>`;
+  s += `<path d="M -26 -318 q 6 -14 12 0 q 6 14 12 0 q 6 -14 12 0 q 6 14 12 0" fill="none" stroke="${aan ? K.signaal : K.oranje || '#E8962E'}" stroke-width="6" stroke-linecap="round"/>`;
+  s += glans('M -112 -420 C -110 -476 -74 -514 -24 -524', 16, 0.8) + glans('M -116 -380 L -114 -364', 14, 0.7);
+  const br = pose === 'verbaasd' ? 16 : pose === 'wijst' ? 6 : 0;
+  s += wenkbrauw(-46, -466, 42, -8, br) + wenkbrauw(46, -466, 42, pose === 'wijst' ? -14 : 8, pose === 'wijst' ? br + 8 : br);
+  s += oog(-44, -428, 28, kijk, open) + oog(44, -428, 28, kijk, open);
+  s += wangen(0, -390, 78, 16) + mond(0, -388, 44, mondType);
+  if (pose === 'wijst') {
+    s += arm(66, -228, 196, -330, -18) + handschoen(196, -330, hoekVan(66, -228, 196, -330) - 8, 'wijs');
+    s += arm(-66, -224, -140, -150, 16) + handschoen(-140, -150, 120, 'vuist');
+  } else if (pose === 'verbaasd') {
+    s += arm(66, -228, 176, -320, -18) + handschoen(176, -320, -60, 'open');
+    s += arm(-66, -228, -176, -320, 18) + handschoen(-176, -320, -120, 'open', 1).replace('scale(1)', 'scale(1 -1)');
+  } else {
+    s += arm(66, -224, 128, -150, -14) + handschoen(128, -150, 70, 'vuist');
+    s += arm(-66, -224, -128, -150, 14) + handschoen(-128, -150, 110, 'vuist');
+  }
+  return s;
+}
+
+// ------------------------------------------------------------------ E · Robot
+// Een archiefrobot: zijn lijf is een archiefkast met een lade vol bronnen.
+function E(o) {
+  const { pose, kijk, mondType, open } = o;
+  const T = '#3E9A94', TD = '#2A6E6A';
+  let s = '';
+  s += been(-46, -120, 0, -1, 16) + been(46, -120, 0, 1, 16);
+  // lijf: archiefkast
+  const kast = c => `<rect x="-118" y="-338" width="236" height="222" rx="22" fill="${c}"/>`;
+  s += cel(kast, T, TD, null, { dx: 14, dy: 12 });
+  s += [[-80, -306], [80, -306], [-80, -148], [80, -148]].map(([x, y]) => `<circle cx="${x + (x < 0 ? -18 : 18)}" cy="${y}" r="6" fill="${TD}" stroke="${K.inkt}" stroke-width="3"/>`).join('');
+  const lade = (y, h, uit) => {
+    let l = '';
+    if (uit) l += `<g transform="rotate(-6 -30 ${y})"><rect x="-48" y="${y - 44}" width="66" height="60" rx="3" fill="${K.wit}" stroke="${K.inkt}" stroke-width="5"/><path d="M -38 ${y - 30} L 6 ${y - 30} M -38 ${y - 18} L 6 ${y - 18}" stroke="#B9B2A4" stroke-width="4"/></g>` +
+      `<g transform="rotate(8 30 ${y})"><rect x="0" y="${y - 50}" width="62" height="60" rx="3" fill="${K.memo}" stroke="${K.inkt}" stroke-width="5"/></g>`;
+    l += `<rect x="-86" y="${y}" width="172" height="${h}" rx="10" fill="#49ABA4" stroke="${K.inkt}" stroke-width="7" ${uit ? 'transform="translate(0 10)"' : ''}/>`;
+    l += `<rect x="-34" y="${y + 14}" width="68" height="30" rx="4" fill="${K.wit}" stroke="${K.inkt}" stroke-width="5" ${uit ? 'transform="translate(0 10)"' : ''}/>`;
+    l += `<text x="0" y="${y + 37}" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="20" fill="${K.inkt}" ${uit ? 'transform="translate(0 10)"' : ''}>A–Z</text>`;
+    l += `<rect x="-26" y="${y + h - 22}" width="52" height="12" rx="6" fill="#C4BFB5" stroke="${K.inkt}" stroke-width="4" ${uit ? 'transform="translate(0 10)"' : ''}/>`;
+    return l;
+  };
+  s += lade(-310, 96, pose === 'verbaasd') + lade(-200, 70, false);
+  // nek
+  s += `<rect x="-26" y="-372" width="52" height="40" fill="#8F8A81" stroke="${K.inkt}" stroke-width="7"/>`;
+  // kop
+  const kop = c => `<rect x="-128" y="-552" width="256" height="186" rx="40" fill="${c}"/>`;
+  s += `<path d="M 0 -552 L 0 -612" stroke="${K.inkt}" stroke-width="9"/>`;
+  s += `<circle cx="0" cy="-622" r="${pose === 'verbaasd' ? 22 : 18}" fill="${K.signaal}" stroke="${K.inkt}" stroke-width="6"/>` + glans('M -8 -630 L -4 -634', 6, 0.8);
+  if (pose === 'verbaasd') s += `<circle cx="0" cy="-622" r="40" fill="${K.signaal}" opacity="0.2"/>`;
+  s += [-1, 1].map(z => `<rect x="${z * 128 - (z < 0 ? 22 : 0)}" y="-492" width="22" height="62" rx="8" fill="#C4BFB5" stroke="${K.inkt}" stroke-width="6"/>`).join('');
+  s += cel(kop, T, TD, null, { dx: 14, dy: 12 });
+  s += glans('M -100 -520 L -100 -470', 12, 0.45);
+  s += `<rect x="-104" y="-530" width="208" height="140" rx="28" fill="#DDEFEA" stroke="${K.inkt}" stroke-width="6"/>`;
+  const br = pose === 'verbaasd' ? 14 : pose === 'wijst' ? 5 : 0;
+  s += wenkbrauw(-44, -500, 40, -8, br, K.inkt, 8) + wenkbrauw(44, -500, 40, pose === 'wijst' ? -14 : 8, pose === 'wijst' ? br + 8 : br, K.inkt, 8);
+  s += oog(-44, -462, 26, kijk, open) + oog(44, -462, 26, kijk, open);
+  s += wangen(0, -426, 76, 14) + mond(0, -428, 40, mondType);
+  if (pose === 'wijst') {
+    s += arm(116, -300, 226, -396, -18) + handschoen(226, -396, hoekVan(116, -300, 226, -396) - 8, 'wijs');
+    s += arm(-116, -290, -186, -200, 16) + handschoen(-186, -200, 120, 'vuist');
+  } else if (pose === 'verbaasd') {
+    s += arm(116, -300, 214, -420, -18) + handschoen(214, -420, -70, 'open');
+    s += arm(-116, -300, -214, -420, 18) + handschoen(-214, -420, -110, 'open').replace('scale(1)', 'scale(1 -1)') + verbaasdStreepjes(0, -660);
+  } else {
+    s += arm(116, -290, 162, -170, -14) + handschoen(162, -170, 70, 'vuist');
+    s += arm(-116, -290, -162, -170, 14) + handschoen(-162, -170, 110, 'vuist');
+  }
+  return s;
+}
+
+// ------------------------------------------------------------------ F · Mol
+// Een mol die de geschiedenis opgraaft: mijnhelm met lamp, grote bril (mollen zien slecht), graafpoten en een kwastje.
+function F(o) {
+  const { pose, kijk, mondType, open } = o;
+  const BR = '#6F5D55', BD = '#4A3D38', ROZE = '#F3A0A2', ROZED = '#D97A80';
+  let s = '';
+  // voeten
+  s += [-1, 1].map(z => `<g transform="translate(${z * 44} -8) scale(${z} 1)"><path d="M -30 8 Q -34 -30 8 -28 Q 50 -24 50 4 Z" fill="${ROZE}" stroke="${K.inkt}" stroke-width="7" stroke-linejoin="round"/>` +
+    `<path d="M 30 -6 L 30 6 M 42 -8 L 42 4" stroke="${ROZED}" stroke-width="5" stroke-linecap="round"/></g>`).join('');
+  // lijf
+  const lijf = c => `<path d="M 0 -480 C 96 -480 136 -390 138 -290 C 140 -160 104 -40 0 -40 C -104 -40 -140 -160 -138 -290 C -136 -390 -96 -480 0 -480 Z" fill="${c}"/>`;
+  s += cel(lijf, BR, BD, null, { dx: 16, dy: 14 });
+  s += Array.from({ length: 10 }, (_, i) => { const x = -96 + (i % 5) * 46, y = -230 + Math.floor(i / 5) * 90 + (i % 2) * 20; return `<path d="M ${x} ${y} q 6 -10 12 0" fill="none" stroke="${BD}" stroke-width="4" stroke-linecap="round" opacity="0.7"/>`; }).join('');
+  const buik = c => `<ellipse cx="6" cy="-170" rx="76" ry="96" fill="${c}"/>`;
+  s += cel(buik, '#A79387', '#8C796E', null, { dx: 8, dy: 8, omtrek: 3 });
+  // snuit, neus, snorharen
+  s += `<ellipse cx="0" cy="-322" rx="58" ry="40" fill="#8E7B72" stroke="${K.inkt}" stroke-width="7"/>`;
+  s += `<path d="M -50 -318 L -110 -330 M -50 -306 L -108 -300 M 50 -318 L 110 -330 M 50 -306 L 108 -300" stroke="${K.inkt}" stroke-width="4" stroke-linecap="round"/>`;
+  const neus = c => `<ellipse cx="0" cy="-346" rx="32" ry="24" fill="${c}"/>`;
+  s += cel(neus, ROZE, ROZED, null, { dx: 6, dy: 6, omtrek: 4 }) + glans('M -14 -356 Q -8 -362 0 -362', 6, 0.9);
+  s += mond(0, -304, 32, mondType);
+  // bril met kleine oogjes
+  s += oog(-44, -402, 16, kijk, open) + oog(44, -402, 16, kijk, open);
+  s += [-44, 44].map(x => `<circle cx="${x}" cy="-402" r="36" fill="${K.glas}" fill-opacity="0.35" stroke="${K.inkt}" stroke-width="10"/>` + glans(`M ${x - 22} -412 A 24 24 0 0 1 ${x - 6} -428`, 5, 0.9)).join('');
+  s += `<path d="M -8 -406 Q 0 -414 8 -406" fill="none" stroke="${K.inkt}" stroke-width="8"/><path d="M -80 -408 L -120 -420 M 80 -408 L 120 -420" stroke="${K.inkt}" stroke-width="8" stroke-linecap="round"/>`;
+  const br = pose === 'verbaasd' ? 12 : pose === 'wijst' ? 4 : 0;
+  s += wenkbrauw(-44, -446, 36, -8, br, K.inkt, 8) + wenkbrauw(44, -446, 36, pose === 'wijst' ? -14 : 8, pose === 'wijst' ? br + 6 : br, K.inkt, 8);
+  // helm met lamp
+  const helm = c => `<path d="M -112 -452 C -110 -560 110 -560 112 -452 Z" fill="${c}"/>`;
+  s += cel(helm, K.geel, '#C99A12', null, { dx: 10, dy: 8 });
+  s += `<path d="M -134 -452 Q 0 -440 134 -452" fill="none" stroke="${K.inkt}" stroke-width="16" stroke-linecap="round"/><path d="M -134 -452 Q 0 -440 134 -452" fill="none" stroke="#E2AE1C" stroke-width="7" stroke-linecap="round"/>`;
+  s += `<path d="M 0 -548 L 0 -470" stroke="#E2AE1C" stroke-width="10" opacity="0.8"/>` + glans('M -80 -488 Q -70 -520 -40 -532', 9, 0.6);
+  if (pose === 'verbaasd') s += `<path d="M -16 -516 L -150 -680 L 150 -680 L 16 -516 Z" fill="${K.geel}" opacity="0.28"/>`;
+  s += `<circle cx="0" cy="-506" r="26" fill="${pose === 'verbaasd' ? '#FFF2A8' : K.wit}" stroke="${K.inkt}" stroke-width="7"/><circle cx="0" cy="-506" r="12" fill="${K.geel}"/>`;
+  // graafpoten
+  const poot = (x, y, hoek, wijs = false) => `<g transform="translate(${x} ${y}) rotate(${hoek})">` +
+    `<path d="M -10 -24 Q 30 -34 40 -10 Q 46 14 20 24 Q -10 30 -16 6 Z" fill="${ROZE}" stroke="${K.inkt}" stroke-width="7" stroke-linejoin="round"/>` +
+    (wijs ? `<path d="M 36 -6 L 70 -10" stroke="${K.inkt}" stroke-width="16" stroke-linecap="round"/><path d="M 36 -6 L 70 -10" stroke="${K.wit}" stroke-width="6" stroke-linecap="round"/>`
+      : [-14, 0, 14].map(v => `<path d="M 38 ${v} L 52 ${v + 2}" stroke="${K.inkt}" stroke-width="9" stroke-linecap="round"/><path d="M 38 ${v} L 50 ${v + 2}" stroke="${K.wit}" stroke-width="3" stroke-linecap="round"/>`).join('')) + `</g>`;
+  const armB = (sx, sy, hx, hy, buig) => arm(sx, sy, hx, hy, buig, 40, K.inkt) + arm(sx, sy, hx, hy, buig, 26, BR);
+  const kwast = (x, y, hoek) => `<g transform="translate(${x} ${y}) rotate(${hoek})"><rect x="-10" y="-6" width="76" height="14" rx="6" fill="#B07A45" stroke="${K.inkt}" stroke-width="5"/>` +
+    `<rect x="62" y="-10" width="16" height="22" fill="#C4BFB5" stroke="${K.inkt}" stroke-width="5"/><path d="M 76 -12 Q 108 -14 112 0 Q 108 14 76 14 Z" fill="#E8D8B8" stroke="${K.inkt}" stroke-width="5"/></g>`;
+  if (pose === 'wijst') s += armB(112, -280, 214, -380, -18) + poot(214, -380, hoekVan(112, -280, 214, -380), true) + armB(-112, -270, -170, -180, 16) + kwast(-170, -180, -120) + poot(-170, -180, 200);
+  else if (pose === 'verbaasd') s += armB(112, -290, 200, -420, -18) + poot(200, -420, -70) + armB(-112, -290, -200, -420, 18) + poot(-200, -420, -110);
+  else s += armB(112, -270, 150, -170, -14) + kwast(150, -170, -70) + poot(150, -170, 70) + armB(-112, -270, -150, -170, 14) + poot(-150, -170, 110);
+  return s;
+}
+
 const ONTWERPEN = {
   A: { naam: 'Vraagteken', teken: A, kleuren: [K.rood, K.roodDiep, K.inkt, K.huid], regel: 'Een rood vraagteken, want het kanaal gaat over "waarom". Hij zoekt alles uit met zijn loep.' },
   B: { naam: 'Memo', teken: B, kleuren: [K.memo, K.memoDiep, K.inkt, K.rood], regel: 'Een geel plakbriefje met een rode pen. Hij zet de rode krabbels en de bron zelf in beeld.' },
   C: { naam: 'Ekster', teken: C, kleuren: [K.zwart, K.wit, K.blauw, K.rood], regel: 'Een nieuwsgierige ekster die gewone dingen verzamelt, met een rode tas en een notitieboekje.' },
+  D: { naam: 'Peertje', teken: D, kleuren: ['#FFF5D2', K.geel, '#C4BFB5', K.inkt], regel: 'Een gloeilamp die oplicht als hij iets ontdekt: het aha-moment van elke short.' },
+  E: { naam: 'Robot', teken: E, kleuren: ['#3E9A94', '#DDEFEA', K.signaal, K.inkt], regel: 'Een archiefrobot: zijn lijf is een kast met een lade vol bronnen, die openschiet bij een ontdekking.' },
+  F: { naam: 'Mol', teken: F, kleuren: ['#6F5D55', '#F3A0A2', K.geel, K.inkt], regel: 'Een mol met mijnhelm en bril die de geschiedenis van gewone dingen opgraaft.' },
 };
 
 function teken(code, { x = 0, y = 0, s = 1, pose = 'rust', kijk = null, mond: mondType = 'glim', knipper = 0, spiegel = false } = {}) {
