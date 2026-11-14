@@ -253,8 +253,12 @@ function bronRegel(tekst, t, start, nacht, stijl = 1) {
 
 // Stijl 2: kinetische tekst loopt gelijk met de stem (scene._woorden, uit short/woordtijden.py), tenzij het script
 // zelf `sync: false` meegeeft. Tekst die niet op de gesproken zin lijkt (labels in een tekening) houdt zijn eigen tijden.
+const kaal = x => String(x).toLowerCase().replace(/[^a-z0-9]/g, '');
+const woordTijd = (scene, woord, n = 0) => { const m = (scene._woorden || []).filter(w => kaal(w.w).startsWith(kaal(woord))); return m[n] ? m[n].start : null; };
 const HULP = (script = {}, scene = {}) => ({ K, blok, fase, zacht, uit, klem, stopbord, vorm, klok, toetsen, veelhoek, W, H, esc, maat, FONT,
   kin: (tekst, o = {}) => B.kin(tekst, { stijl: script.stijl || 1, sync: (script.stijl || 1) >= 2 ? scene._woorden : null, ...o }), veer: B.veer, foto,
+  // op('woord'): het moment waarop dat woord in deze scène gezegd wordt (voor beeld dat op de stem moet vallen)
+  op: (woord, terugval = 0, n = 0) => woordTijd(scene, woord, n) ?? terugval,
   stijl: script.stijl || 1, krabbel: B.krabbel, wie: scene.wie, vlak: DECOR.VLAK, vlakInkt: DECOR.INKT[scene.decor] || K.inkt });
 // Eén volledig beeld van een scène op tijd t (achtergrond, kop, inhoud, bronregel), zonder <svg>-omhulsel.
 function beeldVan(script, scene, t, abs = 0) {
@@ -281,7 +285,7 @@ function beeldVan(script, scene, t, abs = 0) {
 }
 // Stijl 3 (vanaf YS40, Andries za 14 nov 2026): het vaste duo. `script.duo` = { vloer, vraag: { code, x, spiegel, fase },
 // antwoord: {...} }; elke scène heeft `wie: 'vraag' | 'antwoord'` (wie er praat), optioneel `pose: { vraag, antwoord }`
-// en `aha: seconden` (vanaf dan brandt Peertje). De figuren staan los van de overgangen: het beeld erachter wisselt,
+// (Peertje gloeit op zolang hij praat). De figuren staan los van de overgangen: het beeld erachter wisselt,
 // zij blijven staan. Wie praat staat groter, beweegt de mond op de woordtijden van de stem en wijst naar het beeld;
 // de ander luistert en kijkt naar de spreker. In de lus keert de stand terug naar die van de eerste scène.
 function figuren(script, tijd) {
@@ -303,9 +307,12 @@ function figuren(script, tijd) {
     if (spreekt && scene._woorden) { const wd = scene._woorden.find(x => t >= x.start - 0.03 && t < x.eind); if (wd) mond = Math.sin((t - wd.start) * 26) > -0.35 ? 'open' : 'glim'; }
     const pose = (scene.pose && scene.pose[naam]) || (spreekt && !dicht ? 'wijst' : 'rust');
     const knipper = ((tijd + d.fase) % 3.3) < 0.12 ? 1 : 0;
-    const aan = naam === 'antwoord' && scene.aha != null && t >= scene.aha;
+    // Peertje gloeit op zolang hij praat (Andries za 14 nov 2026: geen ping meer, "laat hem opgloeien als hij praat")
+    let aan = 0;
+    if (naam === 'antwoord') aan = inLus ? 0 : scene.wie === naam ? (snede || vorige === naam ? 1 : klem(t / 0.25)) * (mond === 'open' ? 1 : 0.82)
+      : (!snede && vorige === naam ? 1 - klem(t / 0.3) : 0);
     const hop = spreekt && !snede && i > 0 && vorige !== naam ? -26 * Math.sin(Math.PI * klem(t / 0.3)) : 0;
-    const wieg = Math.sin(tijd * 2.1 + d.fase * 2) * 3 + (mond === 'open' ? -4 : 0);
+    const wieg = Math.sin(tijd * 2.1 + d.fase * 2) * 3 + (mond === 'open' ? -7 : 0);
     return `<ellipse cx="${fx}" cy="${vloer + 6}" rx="${(150 * s).toFixed(1)}" ry="${(22 * s).toFixed(1)}" fill="${K.inkt}" opacity="0.16"/>`
       + FIG.teken(d.code, { x: fx, y: +(vloer + hop + wieg).toFixed(2), s: +s.toFixed(4), pose, mond, knipper, spiegel: d.spiegel, kijk: dicht ? (pose === 'verbaasd' ? null : [0.1, -0.05]) : spreekt ? null : [0.8, -0.15], aan });
   };
@@ -342,7 +349,6 @@ function geluidLijst(script) {
   script.scenes.forEach((s, i) => {
     if (s.in && i > 0) lijst.push([Math.max(0, t0 - 0.16), 'whoosh', 0.55]);
     if ((script.stijl || 1) >= 2 && s.bron) lijst.push([t0 + (s.bronStart ?? 0.6), 'stempel', 0.45]);
-    if ((script.stijl || 1) >= 3 && s.aha != null) lijst.push([t0 + s.aha, 'ding', 0.4]);   // Peertje gaat aan
     for (const [t, naam, vol, pan] of s.geluid || []) lijst.push([t0 + (t < 0 ? s.duur + t : t), naam, vol ?? 1, pan ?? 0]);   // negatieve tijd = vanaf het eind van de scène
     t0 += s.duur;
   });
@@ -389,6 +395,9 @@ function voorbereidStem(script, map) {
         if (!fs.existsSync(tijden)) fs.writeFileSync(tijden, execFileSync(KOKORO_PY, [path.join(__dirname, 'short', 'woordtijden.py'), wav, stem[0] === 'b' ? 'en-gb' : 'en-us', s.stem]));
         s._woorden = JSON.parse(fs.readFileSync(tijden, 'utf8')).map(w => ({ ...w, start: w.start + (s.stemStart ?? 0.12), eind: w.eind + (s.stemStart ?? 0.12) }));
       }
+      // stijl 3: `bronStart: 'woord'` en geluid `['woord', naam, volume]` vallen op het moment dat dat woord gezegd wordt
+      if (typeof s.bronStart === 'string') s.bronStart = woordTijd(s, s.bronStart) ?? 0.6;
+      for (const g of s.geluid || []) if (typeof g[0] === 'string') g[0] = woordTijd(s, g[0]) ?? 0.3;
       const smp = new Float32Array(pcm.buffer, pcm.byteOffset, pcm.length / 4), start = s.stemStart ?? 0.12, lengte = smp.length / GELUID.RATE;
       // Stijl 2: de tekst loopt gelijk met de stem, dus het laatste woord verschijnt pas als het gezegd is. Daarom
       // 0,3 s extra om de hele zin te lezen, en in de laatste scène ook de lus erbij, zodat de slotzin niet pas

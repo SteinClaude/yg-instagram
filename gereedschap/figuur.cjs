@@ -20,6 +20,8 @@ const K = {
 };
 const LIJN = 9;
 let teller = 0;
+// twee hex-kleuren mengen (p = 0 → a, p = 1 → b)
+const meng = (a, b, p) => '#' + [1, 3, 5].map(i => Math.round(parseInt(a.slice(i, i + 2), 16) * (1 - p) + parseInt(b.slice(i, i + 2), 16) * p).toString(16).padStart(2, '0')).join('');
 
 // ------------------------------------------------------------------ bouwstenen
 // Celschaduw: de vorm in de basiskleur, met een schaduwsikkel rechtsonder en een glans linksboven.
@@ -246,14 +248,15 @@ function C(o) {
 // Een gloeilamp die oplicht als hij iets ontdekt: het "aha" van elke short.
 function D(o) {
   const { pose, kijk, mondType, open } = o;
-  const aan = o.aan ?? pose === 'verbaasd';
+  // gloei: 0 = uit, 1 = volop aan (een getal ertussen = opgloeien); zonder opgave brandt hij alleen bij verbazing
+  const gloei = typeof o.aan === 'number' ? Math.max(0, Math.min(1, o.aan)) : (o.aan ?? pose === 'verbaasd') ? 1 : 0, aan = gloei > 0.5;
   let s = '';
   s += been(-34, -150, 0, -1) + been(34, -150, 0, 1);
-  if (aan) s += Array.from({ length: 9 }, (_, i) => {
+  if (gloei > 0.02) s += `<g opacity="${gloei.toFixed(3)}">` + Array.from({ length: 9 }, (_, i) => {
     const a = (-180 + i * 22.5) * Math.PI / 180, r1 = 170, r2 = 214;
     return `<path d="M ${Math.cos(a) * r1} ${-400 + Math.sin(a) * r1} L ${Math.cos(a) * r2} ${-400 + Math.sin(a) * r2}" stroke="${K.geel}" stroke-width="14" stroke-linecap="round"/>` +
       `<path d="M ${Math.cos(a) * r1} ${-400 + Math.sin(a) * r1} L ${Math.cos(a) * r2} ${-400 + Math.sin(a) * r2}" stroke="${K.inkt}" stroke-width="3" stroke-linecap="round" opacity="0.25"/>`;
-  }).join('') + `<circle cx="0" cy="-400" r="190" fill="${K.geel}" opacity="0.18"/>`;
+  }).join('') + `<circle cx="0" cy="-400" r="190" fill="${K.geel}" opacity="0.18"/></g>`;
   // fitting: metalen ringen
   const fitting = c => `<path d="M -70 -262 L 70 -262 L 64 -180 Q 0 -168 -64 -180 Z" fill="${c}"/>`;
   s += cel(fitting, '#C4BFB5', '#8F8A81', null, { dx: 8, dy: 6 });
@@ -262,7 +265,7 @@ function D(o) {
   // glas
   const glasvorm = 'M -66 -262 C -66 -300 -146 -328 -146 -408 C -146 -492 -80 -548 0 -548 C 80 -548 146 -492 146 -408 C 146 -328 66 -300 66 -262 Z';
   const bol = c => `<path d="${glasvorm}" fill="${c}"/>`;
-  s += cel(bol, aan ? '#FFE56B' : '#FFF5D2', aan ? '#F4C53A' : '#EADDB0', null, { dx: 16, dy: 14 });
+  s += cel(bol, meng('#FFF5D2', '#FFE56B', gloei), meng('#EADDB0', '#F4C53A', gloei), null, { dx: 16, dy: 14 });
   // gloeidraad
   s += `<path d="M -22 -264 L -26 -318 M 22 -264 L 26 -318" stroke="#8F8A81" stroke-width="5" fill="none"/>`;
   s += `<path d="M -26 -318 q 6 -14 12 0 q 6 14 12 0 q 6 -14 12 0 q 6 14 12 0" fill="none" stroke="${aan ? K.signaal : K.oranje || '#E8962E'}" stroke-width="6" stroke-linecap="round"/>`;
