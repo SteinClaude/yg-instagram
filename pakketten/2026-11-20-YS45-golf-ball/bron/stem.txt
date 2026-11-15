@@ -1,0 +1,12 @@
+Stem: ElevenLabs (tekst naar spraak, betaald abonnement), vraag = Laura (eleven_v4, tempo 1.12), antwoord = Liam (eleven_v4, tempo 1.12); gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.
+Ingesproken tekst per scène:
+1. [vraag, Laura] Why is a golf ball full of dents? Did someone hit it too hard?
+2. [antwoord, Liam] Ha! In the early days of golf in Scotland, the balls were smooth.
+3. [antwoord, Liam] But golfers found that their old, beat-up balls flew farther than the new smooth ones!
+4. [vraag, Laura] Wait, the beat-up ones flew better?
+5. [antwoord, Liam] Yep! So golfers started denting their brand-new balls on purpose.
+6. [antwoord, Liam] And by nineteen oh five, golf balls were being made with dimples.
+7. [vraag, Laura] But how do little dents help?
+8. [antwoord, Liam] The dents make the air hug the ball longer, so the wake behind it is smaller and pulls it back less.
+9. [vraag, Laura] So how much farther does it fly?
+10. [antwoord, Liam] Nearly twice as far as a smooth ball! So those dents? Not damage. They're why it flies.

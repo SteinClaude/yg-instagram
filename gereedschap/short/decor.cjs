@@ -177,9 +177,38 @@ function straat() {
   return s;
 }
 
-const DECORS = { kamer, klas, rome, atelier, baan, straat };
+// ------------------------------------------------------------------ green: een golfbaan met heuvels, een vlag en een houten bord
+function green() {
+  let s = `<rect x="-60" y="-60" width="1200" height="1300" fill="#BFE3F0"/>`;
+  s += [[230, 470, 1], [860, 540, 0.85]].map(([x, y, k]) => `<g fill="#FFFFFF" opacity="0.9"><ellipse cx="${x}" cy="${y}" rx="${90 * k}" ry="${30 * k}"/><ellipse cx="${x - 40 * k}" cy="${y - 22 * k}" rx="${46 * k}" ry="${28 * k}"/><ellipse cx="${x + 30 * k}" cy="${y - 26 * k}" rx="${54 * k}" ry="${32 * k}"/></g>`).join('');
+  // heuvels in de verte
+  s += `<path d="M -60 1200 Q 160 1060 380 1160 Q 600 1040 820 1150 Q 980 1080 1140 1140 L 1140 1480 L -60 1480 Z" fill="#7DB86A" ${o(5)}/>`;
+  s += `<path d="M -60 1300 Q 240 1220 520 1290 Q 800 1230 1140 1300 L 1140 1480 L -60 1480 Z" fill="#69A85A" ${o(5)}/>`;
+  // bomen
+  for (const [x, y, k] of [[60, 1150, 1], [990, 1130, 0.9], [1080, 1170, 0.7]]) s += `<rect x="${x - 8 * k}" y="${y}" width="${16 * k}" height="${70 * k}" fill="#8A5A34" ${o(4)}/><circle cx="${x}" cy="${y - 20 * k}" r="${48 * k}" fill="#3F8A4F" ${o(5)}/>`;
+  // zandbak
+  s += `<ellipse cx="900" cy="1420" rx="150" ry="34" fill="#EAD8A4" ${o(5)}/>`;
+  // de green met de vlag
+  s += `<ellipse cx="200" cy="1440" rx="210" ry="44" fill="#8FD17A" ${o(5)}/><ellipse cx="230" cy="1442" rx="22" ry="7" fill="${I}"/>`;
+  s += `<path d="M 230 1442 L 230 1250" ${o(6)}/><path d="M 233 1252 L 312 1276 L 233 1300 Z" fill="#D9432B" ${o(5)}/>`;
+  // voorgrond: fairway met maaibanen
+  s += `<rect x="-60" y="1470" width="1200" height="520" fill="#5FA85B"/>`;
+  for (let i = -4; i < 4; i += 2) s += `<path d="M ${540 + i * 100} 1470 L ${540 + (i + 1) * 100} 1470 L ${540 + (i + 1) * 300} 1990 L ${540 + i * 300} 1990 Z" fill="#57A054"/>`;
+  s += `<path d="M -60 1470 L 1140 1470" ${o()}/>`;
+  // houten bord op palen
+  s += [250, 830].map(x => `<rect x="${x - 12}" y="1016" width="24" height="200" fill="#6E4627" ${o(5)}/>`).join('');
+  s += `<rect x="126" y="660" width="844" height="374" rx="14" fill="#000" opacity="0.2"/>`;
+  s += `<rect x="118" y="648" width="844" height="374" rx="14" fill="#8A5A34" ${o()}/><rect x="${VLAK.x}" y="${VLAK.y}" width="${VLAK.w}" height="${VLAK.h}" rx="4" fill="#FBF6EA" ${o(4)}/>`;
+  s += [[152, 660], [928, 660], [152, 1010], [928, 1010]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="6" fill="${I}"/>`).join('');
+  // tas met clubs rechts
+  s += `<path d="M 1012 1300 L 1000 1180 M 1040 1300 L 1046 1170 M 1066 1300 L 1086 1186" ${o(6)}/><path d="M 990 1176 l 22 -8 M 1040 1166 l 20 0 M 1080 1182 l 22 6" ${o(10)}/>`;
+  s += `<rect x="990" y="1290" width="96" height="300" rx="22" fill="#2F7E86" ${o(6)}/><path d="M 990 1360 L 1086 1360" stroke="#F4F1E6" stroke-width="8"/>`;
+  return s;
+}
+
+const DECORS = { kamer, klas, rome, atelier, baan, straat, green };
 // kleur voor tekst en tekeningen op het vlak
-const INKT = { kamer: '#16161A', klas: '#F4F1E6', rome: '#16161A', atelier: '#16161A', baan: '#F4F1E6', straat: '#16161A' };
+const INKT = { kamer: '#16161A', klas: '#F4F1E6', rome: '#16161A', atelier: '#16161A', baan: '#F4F1E6', straat: '#16161A', green: '#16161A' };
 const svg = naam => { if (!DECORS[naam]) throw new Error('onbekend decor ' + naam);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2040" viewBox="-60 -60 1200 2040">${DECORS[naam]()}</svg>`; };
 
