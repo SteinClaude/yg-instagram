@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-15T17:38:00+01:00",
+  "tijd": "2026-11-15T17:54:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-15T17:54:00+01:00 YS44 ingepland in YouTube Studio (kanaal 1): Studio meldt \"Video gepland\", openbaar op 19 november 2026 om 20:00; de lijst Shorts toont hem als Gepland, \"Geen meldingen\". Instagram staat voor hetzelfde moment in planning.json (545538d).",
     "2026-11-15T17:38:00+01:00 YS44: pakket OK en bijschrift OK vastgelegd (0ffd327); Instagram ingepland voor do 19 nov 2026 20:00 (planning.json, 545538d). YouTube Studio nog niet: Andries stopte mij, Finn gaat eerst.",
     "2026-11-15T17:22:00+01:00 Pakket YS44 klaar in stijl 3, de eerste met watermerk: \"Why are school buses yellow?\" (44,0 s, -14,2 LUFS; tien scènes; nieuw decor straat). Bronnen gelezen zo 15 nov: een tijdschrift (2013) en een kindermuseum (2020). video.mp4, video-upload.mp4 (8,9 MB), studio.txt (do 19 nov 20:00), bron/bronnen.md en stem.txt, Instagram-versie (omslag op 3200 ms) met bijschrift, kaart met vraag om pakket OK en bijschrift OK. Watermerk in de video nagekeken: staat stil, goed leesbaar op donker en blauw, zwakker op de lichte ochtendlucht. Niets ingepland.",
     "2026-11-15T13:26:00+01:00 Plek van het watermerk gekozen door Andries: A, direct onder het kaartje, rechts (zo 15 nov ±13:26). Dat is de standaard in de generator (watermerk: true). Gaat aan vanaf YS44; YS40–YS43 blijven zonder.",
@@ -119,7 +120,7 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "-",
-  "volgende": "Zodra Andries zegt dat Finn klaar is met Studio: nakijken dat het venster op kanaal 1 staat, YS44 uploaden en inplannen (do 19 nov 20:00), kaart en studio.txt bijwerken. YS45–YS47 pas als Andries het zegt (jesse-12). Zo 15 nov: na 18:00 kijken hoe laat de automaat YS09 plaatste en na 20:00 hoe laat YS40 op Instagram kwam en of hij op YouTube staat; kaart YS40 dan op geplaatst. Weekverslag ma 16 nov (cijfers via Eva).",
+  "volgende": "YS45–YS47 maken pas als Andries het zegt (jesse-12); vóór elk script docs/manager/bedoeling-per-kanaal.md lezen. Zo 15 nov: na 18:00 kijken hoe laat de automaat YS09 plaatste en na 20:00 hoe laat YS40 op Instagram kwam en of hij op YouTube staat; kaart YS40 dan op geplaatst. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
@@ -131,6 +132,8 @@
     }
   ],
   "buitenGit": [
+    "2026-11-15T17:51:00+01:00 Andries in de sessie, op \"Zeg je het als Finn klaar is met Studio?\": \"Finn is klaar\"",
+    "2026-11-15T17:54:00+01:00 In de Chrome van Andries, YouTube Studio kanaal 1 (nagekeken aan de nieuwste short op het dashboard): YS44 geüpload (video-upload.mp4) en ingepland voor 19 nov 2026 20:00; niet voor kinderen, geen betaalde promotie, AI-gebruik ja, 12 tags, taal Engels, categorie Educatief; beschrijving in twee delen getypt en nagekeken. Lijst Shorts: Gepland, \"Geen meldingen\". Tabblad gesloten.",
     "2026-11-15T17:38:00+01:00 Andries in de sessie, terwijl ik Studio opende voor YS44: \"finn gat eerst op studio\". Ik ben gestopt; mijn tabblad (studio.youtube.com) kan nog open staan, ik heb er niets in aangeklikt of geüpload.",
     "2026-11-15T17:37:00+01:00 Andries in de sessie, op \"Geef je pakket OK en bijschrift OK voor YS44?\": \"Beide OK YS44\"",
     "2026-11-15T17:11:00+01:00 Andries in de sessie, op \"Zal ik nu YS44 maken, de eerste met het watermerk?\": \"Ja, maak YS44\"",
