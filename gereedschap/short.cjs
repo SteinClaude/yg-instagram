@@ -176,7 +176,7 @@ async function bereidDecor(script) {
   }
 }
 // Stijl 3: watermerk (Andries zo 15 nov 2026 ±12:50: "zet ook bij elke video voortaan een watermerk van het kanaal en
-// yg-digital"; ±13:00 na de eerste proef: "Andere plek, Minder opvallend"): het kanaalmerk (rondje met vraagteken, bewust
+// yg-digital"; ±13:00 na de eerste proef: "Andere plek, Minder opvallend"; ±13:26: "A, onder het kaartje"): het kanaalmerk (rondje met vraagteken, bewust
 // zonder kanaalnaam: die hoort niet in deze openbare repo) en het logo van YG Digital, los en half doorzichtig in wit
 // met een zachte schaduw, zodat het op elk decor leesbaar blijft. Het staat stil in elke scène (buiten de camera).
 // Alleen als het script `watermerk` heeft (vanaf YS44) of met --watermerk [plek]; plek = 'onder' (direct onder het
