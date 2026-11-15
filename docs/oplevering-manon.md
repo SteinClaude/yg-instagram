@@ -195,6 +195,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±12:47, in de sessie, op "Zal ik YS44 maken voor donderdag 19 november 20:00?": "Later" → YS44 maak ik nog niet; ik wacht op zijn woord.
 - zo 15 nov 2026 ±12:34, in de sessie, op "Wil je Studio op kanaal 1 zetten, zodat ik YS43 kan inplannen?": "Staat op kanaal 1" → Studio stond op kanaal 1 (nagekeken); YS43 geüpload en ingepland.
 - zo 15 nov 2026 ±11:36, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS43?": "Beide OK YS43" → pakket OK YS43 (script, bronnen, titel) en bijschrift OK YS43 (Instagram); vastgelegd in keuring.json van het pakket.
 - zo 15 nov 2026 ±11:14, in de sessie, op "Zal ik YS43 maken voor woensdag 18 november 20:00?": "Ja, maak YS43" → YS43 gemaakt in stijl 3 (waarom november maand 11 is), als pakket ter keuring. Dit is een opdracht om te maken, geen pakket OK.
