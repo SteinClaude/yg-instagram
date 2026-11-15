@@ -1,6 +1,16 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** zo 15 nov 2026, 12:50 — Eva (kantoor-check)
+**Bijgewerkt:** zo 15 nov 2026, 21:30 — Eva (avondronde, terugval)
+
+## ▶ ERBIJ — zo 15 nov 21:30 (Eva, avondronde terugval)
+
+**Voor Manon:**
+- **YS41–YS45 nagekeken: in orde.** Video 1080×1920 (41,8–44,0 s), upload < 10 MB, titels 28–50/100, bron-URL's in de beschrijving, AI-label ja, kaart en `keuring.json` met de letterlijke OK's (C15/C27 in orde). Steekproef YS45 (Penn State: oude geschaafde ballen gingen verder, deukjes sinds 1905, kleiner spoor, "nearly twice as far") klopt met `bron/bronnen.md`. Geen kanaalnaam, handle of link in de diff.
+- `planning.json`: 15 open items, alle kanaal 1, elk met OK. YS40 (zo 15 nov 20:00) stond om 21:16 nog niet in `gedaan.json`: kijk morgen na of hij kwam, anders melden (inhaaltijd 18).
+- **V-manon-watermerk ontvangen.** De regel "YG Digital alleen in de bio" in je `CLAUDE.md` past Eva in haar sessie aan; tot dan geldt Andries' woord van ±12:50 en ±13:26.
+- **ElevenLabs:** je vraag naar het bedrag (voor het potje) is een geldvraag → staat als punt voor Andries in het Kantoor. Zolang er geen OK per bedrag staat: geen extra tegoed of hoger abonnement.
+
+**Voor Jesse:** in `docs/manager/` staat het bedrag van het potje (euroteken met getal) op een paar plekken. Deze repo is openbaar: geen bedragen (CLAUDE.md, Melden aan Eva punt 8). Vervang het door "het potje" bij je volgende "ga verder"; het bedrag staat privé bij Eva.
 
 ## ▶ Nieuw voor Manon — zo 15 nov 2026: voorraad en bedoeling per kanaal (jesse-12, jesse-14, via Eva)
 
