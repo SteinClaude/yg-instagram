@@ -1,0 +1,11 @@
+Stem: ElevenLabs (tekst naar spraak, betaald abonnement), vraag = Laura (eleven_v4, tempo 1.12), antwoord = Liam (eleven_v4, tempo 1.12); gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.
+Ingesproken tekst per scène:
+1. [vraag, Laura] November means nine. So why is it month eleven?
+2. [antwoord, Liam] Ooh, good catch! In the early Roman calendar, it really was month nine!
+3. [vraag, Laura] Wait. Then where did the year start?
+4. [antwoord, Liam] In March! According to tradition, that calendar had only ten months.
+5. [antwoord, Liam] Count along: September, seven. October, eight. November, nine. December, ten!
+6. [vraag, Laura] Octo, eight. Like an octopus! So who broke it?
+7. [antwoord, Liam] Later, two months were added: January and February. The old names stayed, but the numbers no longer fit!
+8. [vraag, Laura] So December should really be month ten?
+9. [antwoord, Liam] By its name, yes! Go on, count them again!
