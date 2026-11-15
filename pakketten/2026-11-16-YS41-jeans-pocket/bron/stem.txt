@@ -1,0 +1,12 @@
+Stem: ElevenLabs (tekst naar spraak, betaald abonnement), vraag = Laura (eleven_v4, tempo 1.12), antwoord = Liam (eleven_v4, tempo 1.12); gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.
+Ingesproken tekst per scène:
+1. [vraag, Laura] Okay, what is this tiny pocket in my jeans even for?
+2. [antwoord, Liam] Ooh, I love this one! It's called a watch pocket. It was made to hold a pocket watch!
+3. [vraag, Laura] A pocket watch? Who even carries one of those?
+4. [antwoord, Liam] Back in the late eighteen hundreds? Lots of people did!
+5. [antwoord, Liam] These riveted pockets were patented in eighteen seventy-three.
+6. [antwoord, Liam] The original pants had four pockets. This little one included!
+7. [vraag, Laura] Wait. Four? Isn't this the famous fifth pocket?
+8. [antwoord, Liam] People call it that, but nope! The fifth pocket is the back left one. It only showed up in nineteen oh one!
+9. [vraag, Laura] But I don't even own a pocket watch!
+10. [antwoord, Liam] Neither do I! The pocket stayed anyway. Go on, check your jeans!

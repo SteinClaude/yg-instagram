@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-15T00:50:00+01:00",
+  "tijd": "2026-11-15T01:12:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-14T13:55:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-15T00:50:00+01:00 Extra starttijden van de Instagram-automaat staan op main (c1f8c83; go Andries zo 15 nov 2026 ±00:49: \"Go, zet live\"): zes extra starts in het uur vóór en na 18:00 Amsterdam en drie in het uur daarna. Voor het nieuwe moment van 20:00 ligt een aparte tak klaar (manon/cron-2000), niet op main.",
     "2026-11-14T22:18:00+01:00 YS34–YS39 ingepland in YouTube Studio (kanaal 1): 10, 11, 12, 13, 14 en 15 december 2026 om 18:00; Studio meldt per video \"Video gepland\". De lijst Shorts in Studio toont YS33–YS39 als Gepland (9–15 dec) en YS40 op 15 nov, zonder meldingen. Bij YS36 gaf Studio eerst de melding dat de controle nog liep (\"We zijn je content nog aan het controleren\"); met OK bevestigd, daarna gepland.",
@@ -104,7 +104,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "YS41 (het kleine zakje in je spijkerbroek) in stijl 3: script, decor atelier en stemmen klaar; video rendert, daarna pakket en keuringsvraag",
   "volgende": "YS41 maken in stijl 3 voor ma 16 nov 20:00 (onderwerp met bron, gesprek, pakket met kaart; pakket OK en bijschrift OK vragen), daarna elke dag een nieuwe (YS42 e.v.). Zo 15 nov: na 18:00 kijken hoe laat de automaat YS09 plaatste (eerste dag met de extra starts) en na 20:00 of YS40 op YouTube en Instagram staat. Na controle Eva en go Andries: manon/cron-2000 naar main. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
@@ -118,6 +118,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-15T01:12:00+01:00 Andries in de sessie (zo 15 nov 2026 ±00:58): \"maak ys41\". ElevenLabs: 616 tekens ingesproken voor YS41 (mijn telling; stemmen Laura en Liam, model eleven_v4).",
     "2026-11-15T00:49:00+01:00 Andries in de sessie, op \"Geef je go om de extra starttijden van de Instagram-automaat live te zetten?\": \"Go, zet live\"",
     "2026-11-14T22:18:00+01:00 In de Chrome van Andries, YouTube Studio kanaal 1: YS34–YS39 geüpload en ingepland (10–15 dec 18:00); niet voor kinderen, AI-gebruik ja, taal Engels, categorie Educatief, tags uit studio.txt. Bij YS36 kwamen drie klikken op vaste teksten terecht (geen wijziging; nagekeken en hersteld vóór het inplannen). Tabblad gesloten.",
     "2026-11-14T21:53:00+01:00 In de Chrome van Andries, YouTube Studio kanaal 1: YS33 (9 dec 18:00) en YS40 (15 nov 20:00) geüpload en ingepland; niet voor kinderen, AI-gebruik ja, taal Engels, categorie Educatief, tags uit studio.txt.",
