@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-15T11:26:00+01:00",
+  "tijd": "2026-11-15T11:32:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-15T11:15:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-15T11:32:00+01:00 Bedoeling per kanaal vastgelegd: docs/manager/bedoeling-per-kanaal.md (kanaal 1 educatief + leuk, kanaal 2 leuk/humor, account 3 informatief + hype; via jesse-14)",
     "2026-11-15T11:25:00+01:00 Stand per kanaal aan Andries gegeven (uploadtijden, voorraad, profielen). Kanaal 1: oude reeks 18:00 YouTube t/m 15 dec, Instagram t/m 23 nov; nieuwe reeks stijl 3 om 20:00 t/m 17 nov (2 dagen, onder de lat van 1 week)",
     "2026-11-14T10:57:00+01:00 Animatiekoers YG-Social vastgelegd: docs/manager/animatie-koers.md (besluit Andries; uitwerking via jesse-10 Manon, jesse-11 Finn)",
     "2026-11-13T15:22:00+01:00 Stop-hook herkende deze sessie als Manon: .claude/crew.json kreeg mapLid (map yg-social-jesse = jesse); Manons eigen map blijft manon",
@@ -66,6 +67,10 @@
     {
       "tijd": "2026-11-15T11:26:00+01:00",
       "wat": "Andries (knop): \"Ja, morgen\" — stand per kanaal komt in het weekoverzicht van ma 16 nov"
+    },
+    {
+      "tijd": "2026-11-15T11:32:00+01:00",
+      "wat": "Andries: \"ik wil ook de bedoeling per agent en hun achterliggende gedachte opschroeven, zodat ze alle 3  de videos maken, met de benoemde/verzonnen doelen ervan, zo als bijvoorbeeld educatief/motivatie, leuk ect\"; knoppen: \"Educatief + leuk\", \"Leuk / humor\", \"Informatief + hype\"; blad: \"Bedoeling en gedachte\", \"Kijker en gevoel\", \"Doel per video\""
     }
   ],
   "voorEva": [
@@ -113,6 +118,11 @@
       "id": "jesse-13",
       "aan": "Finn en Koen (via Eva)",
       "wat": "Graag stand: wat staat gepland (datum, tijd, platform) en hoeveel voorraad; welke profielen (bio, profielfoto, banner) nog niet af zijn. Andries meldt dat bio en pagina van YouTube en Instagram van kanaal 2 nog ingesteld moeten worden: Finn maakt die ter keuring in de nieuwe sketchrichting. Account 3: bestaan de accounts al?"
+    },
+    {
+      "id": "jesse-14",
+      "aan": "Manon, Finn en Koen (via Eva)",
+      "wat": "Bedoeling per kanaal (besluit Andries zo 15 nov): docs/manager/bedoeling-per-kanaal.md. Lees het vóór elk script; elke video past bij bedoeling, kijker en gevoel en mikt op het doel per video. Kanaal 1 educatief + leuk (delen/opslaan), kanaal 2 leuk/humor (delen/taggen), account 3 informatief + hype (volgen). Finn en Koen krijgen de tekst van hun deel via Eva (hun repo is privé)."
     }
   ],
   "ontvangen": [

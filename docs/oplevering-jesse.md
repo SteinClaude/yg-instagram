@@ -1,5 +1,6 @@
 # Oplevering Jesse — manager YG-Social
 
+KLAAR: bedoeling per kanaal (bedoeling, kijker en gevoel, doel per video): docs/manager/bedoeling-per-kanaal.md; via voorEva jesse-14 · zo 15 nov 11:32
 KLAAR: stand per kanaal aan Andries (tijden, voorraad, profielen); ⚠ voorraad nieuwe reeks kanaal 1 (20:00) maar t/m di 17 nov; vragen via voorEva jesse-12 en jesse-13 · zo 15 nov 11:25
 KLAAR: animatiekoers YG-Social vastgelegd (Manon vaste cartoonfiguur vanaf YS40, Finn nieuwe richting uit de WhatsApp-voorbeelden, potje mag na OK per bedrag): docs/manager/animatie-koers.md; via voorEva jesse-10 en jesse-11 · za 14 nov 10:57
 KLAAR: naam account 3 gekozen door Andries (vier rondes voorstellen, handle vrij op YouTube en TikTok; naam niet in de repo, via voorEva jesse-6) · vr 13 nov 12:55
@@ -93,6 +94,7 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±11:32 (sessie Jesse): *"ik wil ook de bedoeling per agent en hun achterliggende gedachte opschroeven, zodat ze alle 3  de videos maken, met de benoemde/verzonnen doelen ervan, zo als bijvoorbeeld educatief/motivatie, leuk ect"*. Knoppen: *"Educatief + leuk"* · *"Leuk / humor"* · *"Informatief + hype"* · blad: *"Bedoeling en gedachte"*, *"Kijker en gevoel"*, *"Doel per video"* → docs/manager/bedoeling-per-kanaal.md.
 - zo 15 nov 2026 (sessie Jesse), op "Zet ik dit overzicht in mijn weekoverzicht van morgen?": *"Ja, morgen"*.
 - za 14 nov 2026 ±10:50–10:55 (sessie Jesse): *"ik wil de content en video kwaliteit voor finn en manon vereteren, ik wil meer naar animaties/cartoons gaan, manon houdt wel de zelfde inhoudelijk stof aleen andere weergave, finn krijgt een hele nieuwe ingeving voor nieuwe content/animaties"*. Knoppen: *"Vaste figuur"* · *"Vanaf YS40"* · Finn: *"ik wil finn in de whatsapp groep yg-social laten kijken ik heb hier vandaag wat voorbeelden gestuurd"* · *"Potje €25/mnd mag"* → docs/manager/animatie-koers.md.
 - vr 13 nov 2026 ±12:55 (sessie Jesse), keuze naam account 3: *"[weggelaten]"* (naam en handle via voorEva jesse-6 naar het Project van Eva).
