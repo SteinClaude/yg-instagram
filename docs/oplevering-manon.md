@@ -1,3 +1,4 @@
+KLAAR: planning nagekeken: 18:00 YouTube t/m 15 dec, Instagram t/m 23 nov; 20:00 beide t/m 19 nov; YS09 om 18:38 op Instagram (gisteren YS08 19:59) · zo 15 nov 19:31
 KLAAR: YS44 ingepland: YouTube Studio meldt "Video gepland", 19 november 2026 om 20:00 (lijst Shorts: Gepland, geen meldingen); Instagram in planning.json voor do 19 nov 20:00 · zo 15 nov 17:54
 KLAAR: YS44 pakket OK en bijschrift OK ("Beide OK YS44", zo 15 nov ±17:37); Instagram ingepland voor do 19 nov 2026 20:00; YouTube Studio wacht tot Finn klaar is · 545538d · zo 15 nov 17:38
 KLAAR: pakket YS44 klaar in stijl 3 met watermerk, "Why are school buses yellow?" (44,0 s; bronnen: een tijdschrift, 2013, en een kindermuseum, 2020); wacht op pakket OK YS44 en bijschrift OK YS44 (paneel, gevraagd 17:22); niets ingepland · zo 15 nov 17:22
