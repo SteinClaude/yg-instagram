@@ -1,3 +1,4 @@
+KLAAR: pakket YS45 klaar ter keuring (waarom golfballen vol deukjes zitten; pakket OK en bijschrift OK gevraagd; bedoeld voor vr 20 nov 20:00) · e68ffe1 · zo 15 nov 19:47
 KLAAR: planning nagekeken: 18:00 YouTube t/m 15 dec, Instagram t/m 23 nov; 20:00 beide t/m 19 nov; YS09 om 18:38 op Instagram (gisteren YS08 19:59) · zo 15 nov 19:31
 KLAAR: YS44 ingepland: YouTube Studio meldt "Video gepland", 19 november 2026 om 20:00 (lijst Shorts: Gepland, geen meldingen); Instagram in planning.json voor do 19 nov 20:00 · zo 15 nov 17:54
 KLAAR: YS44 pakket OK en bijschrift OK ("Beide OK YS44", zo 15 nov ±17:37); Instagram ingepland voor do 19 nov 2026 20:00; YouTube Studio wacht tot Finn klaar is · 545538d · zo 15 nov 17:38
@@ -202,6 +203,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±19:33, in de sessie, op "Zal ik YS45 maken voor vr 20 nov 20:00?": "Ja, maak YS45" → YS45 gemaakt (e68ffe1), ter keuring. Geldt niet als pakket OK.
 - zo 15 nov 2026 ±17:51, in de sessie, op "Zeg je het als Finn klaar is met Studio?": "Finn is klaar" → Studio stond op kanaal 1 (nagekeken); YS44 geüpload en ingepland.
 - zo 15 nov 2026 ±17:38, in de sessie, terwijl ik Studio opende voor YS44: "finn gat eerst op studio" → ik wacht met Studio tot hij zegt dat het vrij is.
 - zo 15 nov 2026 ±17:37, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS44?": "Beide OK YS44" → pakket OK YS44 (script, bronnen, titel) en bijschrift OK YS44 (Instagram); vastgelegd in keuring.json van het pakket.
