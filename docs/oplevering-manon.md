@@ -1,3 +1,4 @@
+KLAAR: YS41 ingepland: YouTube Studio meldt "Video gepland", 16 november 2026 om 20:00; Instagram in planning.json voor ma 16 nov 20:00 (na "Beide OK YS41"); het bordje van 01:48 is hiermee opgelost · zo 15 nov 01:53
 KAN NIET VERDER: YS41 kan niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · zo 15 nov 01:48
 KLAAR: YS41 pakket OK en bijschrift OK ("Beide OK YS41", zo 15 nov ±01:47); Instagram ingepland voor ma 16 nov 2026 20:00 · fb339d9 · zo 15 nov 01:48
 KLAAR: pakket YS41 klaar in stijl 3, "Why do your jeans have that tiny pocket?" (41,8 s; bronnen: de maker van de broek, 2017, en het octrooi uit 1873); wacht op pakket OK YS41 en bijschrift OK YS41 (paneel, gevraagd 01:40); niets ingepland · zo 15 nov 01:40
@@ -187,6 +188,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±01:50, in de sessie, op "Wil je Studio op kanaal 1 zetten, zodat ik YS41 kan inplannen?": "Staat op kanaal 1" → Studio stond op kanaal 1 (nagekeken); YS41 geüpload en ingepland.
 - zo 15 nov 2026 ±01:47, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS41?": "Beide OK YS41" → pakket OK YS41 (script, bronnen, titel) en bijschrift OK YS41 (Instagram); vastgelegd in keuring.json van het pakket.
 - zo 15 nov 2026 ±00:58, in de sessie: "maak ys41" → YS41 gemaakt in stijl 3 (het kleine zakje in je spijkerbroek), als pakket ter keuring. Dit is een opdracht om te maken, geen pakket OK: ingepland wordt er pas na "pakket OK YS41" en "bijschrift OK YS41".
 - zo 15 nov 2026 ±00:49, in de sessie, op "Geef je go om de extra starttijden van de Instagram-automaat live te zetten?": "Go, zet live" → de tak manon/cron-extra (8a74843, alleen twee extra cron-regels in .github/workflows/plaatsen.yml; door Eva nagekeken vr 13 nov 08:50, geen bezwaar) gaat naar main. De go geldt voor precies die tak: extra starts rond 18:00 Amsterdam. Extra starts rond 20:00 zitten er niet in; dat is een nieuwe wijziging met een eigen controle en go.
