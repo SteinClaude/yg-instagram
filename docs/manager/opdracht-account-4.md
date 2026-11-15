@@ -2,7 +2,7 @@
 
 **Jesse, manager YG-Social · zo 15 nov 2026 17:44.**
 
-> **STATUS: KLAAR, NIET UITVOEREN.** Deze opdracht ligt klaar. Er wordt niets aangemaakt, gemaakt of opgezet tot Andries letterlijk zegt dat account 4 mag starten. De keuzes onderaan maakt Andries eerst.
+> **STATUS: KLAAR, NIET UITVOEREN.** Deze opdracht ligt klaar. Er wordt niets aangemaakt, gemaakt of opgezet tot Andries letterlijk zegt dat account 4 mag starten. De keuzes van Andries staan in punt 8 (zo 15 nov).
 
 ## Wat Andries vroeg (letterlijk)
 
@@ -73,16 +73,33 @@ Een kanaal waar een vaste stem met humor commentaar geeft op grappige en virale 
 - **Extra voor dit account:** **nul claims en nul strikes**. Eén strike = direct stoppen en de vorm herzien.
 - 2 van de 3 = doorgaan en bijsturen; 0 of 1 = stoppen of herzien, met voorstel aan Andries.
 
-## 8. Wat Andries eerst kiest (wat-vragen)
+## 8. Keuzes van Andries (letterlijk, zo 15 nov 2026 ±18:24, vragenknoppen in de sessie van Jesse)
 
-| # | Vraag | Advies Jesse |
-|---|---|---|
-| 1 | Beeld: A, B, C of D (of B + C) | **B, later + C** |
-| 2 | Regel "nooit materiaal van andere makers" voor dit account aanpassen? Alleen nodig bij A | nee, niet nodig bij B/C |
-| 3 | Wanneer starten | na de proef van account 3 |
-| 4 | Maker | nieuw crewlid |
-| 5 | Platforms en taal | YT, Instagram, TikTok · Engels |
-| 6 | Mag een betaalde stem of licentie uit het potje? | alleen de stem, na OK per bedrag |
+| # | Vraag | Antwoord Andries | Advies Jesse was |
+|---|---|---|---|
+| 1 | Beeld | *"A: fragment + commentaar"* | B, later + C |
+| 2 | Wanneer | *"Na proef account 3"* | idem |
+| 3 | Maker | *"Nieuw crewlid"* | idem |
+| 4 | Platforms, taal, geld | *"YT+Insta+TikTok, Engels, stem uit potje"* | idem |
+
+**Gevolg van keuze A:** de regel "nooit materiaal van andere makers" geldt voor account 4 alleen in de aangepaste vorm hieronder. Voor de andere kanalen blijft hij ongewijzigd. Een betaalde stem mag uit het potje, na een OK per bedrag; gekochte clips niet.
+
+### Spelregels bij vorm A (zo klein mogelijk risico)
+
+1. **Kort fragment:** per filmpje hoogstens een paar seconden achter elkaar. Nooit het hele filmpje, en nooit meer dan de helft van onze video aan beeld van anderen.
+2. **Veel eigen toevoeging, de hele video lang:** eigen stem, freeze frames, zoom, pijlen, tekst, eigen animatie en een eigen clou. Zonder ons commentaar moet de video niet werken.
+3. **Geen geluid of muziek van het origineel** onder de stem, alleen waar het moment het nodig heeft (een paar seconden). Muziek komt alleen uit de bibliotheek van het platform.
+4. **Bron bij elk fragment:** maker en link in de beschrijving en in `bron/`, en de naam van de maker kort in beeld.
+5. **Geen clips van licentiebureaus** (filmpjes met een watermerk of een vermelding dat ze in licentie zijn) en geen fragmenten uit films, series, sport of tv. Die worden het snelst geclaimd.
+6. **Echte mensen:** we lachen om de situatie, nooit om de persoon. Niets met kinderen, ongelukken met letsel, of mensen in een kwetsbare situatie.
+7. **Verzoek van een maker om weg te halen:** meteen weghalen, zonder discussie.
+8. **Claim of strike:** bij een claim stopt de maker met die bron en meldt het aan Jesse. Bij een strike stoppen alle uploads en krijgt Andries een voorstel om de vorm te herzien (bijvoorbeeld naar B).
+9. **Eerlijk over uitbetaling:** YouTube kan het kanaal weigeren voor het Partnerprogramma ("hergebruikte inhoud"). We beginnen met bereik (zoals bij de andere kanalen) en kijken bij de aanvraag of de eigen toevoeging genoeg is.
+
+## 8b. Nog open
+
+- **Naam en handle:** Jesse stelt namen voor zodra de start dichtbij is; Andries kiest.
+- **Startdatum:** na de uitkomst van de proef van account 3.
 
 ## 9. Zodra Andries "start" zegt
 

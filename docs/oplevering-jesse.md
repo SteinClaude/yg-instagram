@@ -1,5 +1,6 @@
 # Oplevering Jesse — manager YG-Social
 
+KLAAR: keuzes account 4 vastgelegd (vorm A met spelregels, na proef account 3, nieuw crewlid); opdracht blijft klaar, niet uitvoeren · zo 15 nov 18:24
 KLAAR: opdracht account 4 (voice-over bij grappige/virale filmpjes) klaargezet, NIET uitvoeren: docs/manager/opdracht-account-4.md · zo 15 nov 17:44
 KLAAR: bedoeling per kanaal (bedoeling, kijker en gevoel, doel per video): docs/manager/bedoeling-per-kanaal.md; via voorEva jesse-14 · zo 15 nov 11:32
 KLAAR: stand per kanaal aan Andries (tijden, voorraad, profielen); ⚠ voorraad nieuwe reeks kanaal 1 (20:00) maar t/m di 17 nov; vragen via voorEva jesse-12 en jesse-13 · zo 15 nov 11:25
@@ -95,6 +96,7 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±18:24 (vragenknoppen, sessie Jesse), account 4: *"A: fragment + commentaar"* · *"Na proef account 3"* · *"Nieuw crewlid"* · *"YT+Insta+TikTok, Engels, stem uit potje"* → docs/manager/opdracht-account-4.md punt 8.
 - zo 15 nov 2026 ±17:40–17:43 (sessie Jesse): *"we gaan ook een nieuw kanaal maken waar een voice over komt over grappige videos en andere leuke filmpjes of viral videos"* · *"ik wil hier een opdracht voor klaar maken maar nog niet uitvoeren, dus alles wel door nemen ect"* → docs/manager/opdracht-account-4.md (klaar, niet uitvoeren).
 - zo 15 nov 2026 ±11:32 (sessie Jesse): *"ik wil ook de bedoeling per agent en hun achterliggende gedachte opschroeven, zodat ze alle 3  de videos maken, met de benoemde/verzonnen doelen ervan, zo als bijvoorbeeld educatief/motivatie, leuk ect"*. Knoppen: *"Educatief + leuk"* · *"Leuk / humor"* · *"Informatief + hype"* · blad: *"Bedoeling en gedachte"*, *"Kijker en gevoel"*, *"Doel per video"* → docs/manager/bedoeling-per-kanaal.md.
 - zo 15 nov 2026 (sessie Jesse), op "Zet ik dit overzicht in mijn weekoverzicht van morgen?": *"Ja, morgen"*.
@@ -107,7 +109,6 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 
 ## Vragen
 
-- Account 4: welke beeldvorm (A/B/C/D) en wanneer starten? · aanname: B, later + C; na de proef van account 3 · ondertussen: opdracht ligt klaar, niets uitgevoerd · blokkeert: nee
 
 ## Logboek
 

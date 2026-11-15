@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-15T17:44:00+01:00",
+  "tijd": "2026-11-15T18:24:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-15T11:15:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-15T18:24:00+01:00 Keuzes account 4 vastgelegd in docs/manager/opdracht-account-4.md (vorm A met spelregels; na proef account 3; nieuw crewlid; YT+Insta+TikTok, Engels, stem uit potje); nog steeds niet uitvoeren",
     "2026-11-15T17:44:00+01:00 Opdracht account 4 (voice-over bij grappige/virale filmpjes) klaargezet, NIET uitvoeren: docs/manager/opdracht-account-4.md; toets aan de lat (beeld van anderen botst), vier beeldvormen, advies B (nagespeeld als cartoon) + later C",
     "2026-11-15T11:32:00+01:00 Bedoeling per kanaal vastgelegd: docs/manager/bedoeling-per-kanaal.md (kanaal 1 educatief + leuk, kanaal 2 leuk/humor, account 3 informatief + hype; via jesse-14)",
     "2026-11-15T11:25:00+01:00 Stand per kanaal aan Andries gegeven (uploadtijden, voorraad, profielen). Kanaal 1: oude reeks 18:00 YouTube t/m 15 dec, Instagram t/m 23 nov; nieuwe reeks stijl 3 om 20:00 t/m 17 nov (2 dagen, onder de lat van 1 week)",
@@ -23,14 +24,7 @@
   "bezig": null,
   "volgende": "Ma 16 nov: weekoverzicht YG-Social met daarin de stand per kanaal (tijden, voorraad per reeks, profielen; besluit Andries \"Ja, morgen\"); keurlijst vr 20 nov",
   "kanNietVerder": null,
-  "vragen": [
-    {
-      "vraag": "Account 4: welke beeldvorm (A fragment+commentaar, B nagespeeld als cartoon, C ingestuurd met toestemming, D licentie) en wanneer starten?",
-      "aanname": "B, later + C; start na de proef van account 3",
-      "ondertussen": "opdracht ligt klaar; niets uitgevoerd",
-      "blokkeert": "nee"
-    }
-  ],
+  "vragen": [],
   "buitenGit": [
     {
       "tijd": "2026-11-13T11:57:00+01:00",
@@ -87,6 +81,10 @@
     {
       "tijd": "2026-11-15T17:43:00+01:00",
       "wat": "Andries: \"ik wil hier een opdracht voor klaar maken maar nog niet uitvoeren, dus alles wel door nemen ect\""
+    },
+    {
+      "tijd": "2026-11-15T18:24:00+01:00",
+      "wat": "Andries (knoppen, account 4): \"A: fragment + commentaar\" · \"Na proef account 3\" · \"Nieuw crewlid\" · \"YT+Insta+TikTok, Engels, stem uit potje\""
     }
   ],
   "voorEva": [
@@ -143,7 +141,7 @@
     {
       "id": "jesse-15",
       "aan": "Eva",
-      "wat": "Ter info, niet uitvoeren: opdracht account 4 (voice-over bij grappige/virale filmpjes) ligt klaar in docs/manager/opdracht-account-4.md. Niets opzetten tot Andries letterlijk start zegt. Beeld van anderen botst met de lat; advies: nagespeeld als cartoon."
+      "wat": "Ter info, niet uitvoeren: opdracht account 4 (voice-over bij grappige/virale filmpjes) in docs/manager/opdracht-account-4.md. Keuzes Andries zo 15 nov: vorm A (kort fragment + eigen commentaar, met spelregels), start na de proef van account 3, nieuw crewlid, YT+Insta+TikTok, Engels, stem uit potje na OK per bedrag. Niets opzetten tot Andries letterlijk start zegt."
     }
   ],
   "ontvangen": [
