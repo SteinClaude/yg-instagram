@@ -1,3 +1,5 @@
+KAN NIET VERDER: YS41 kan niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · zo 15 nov 01:48
+KLAAR: YS41 pakket OK en bijschrift OK ("Beide OK YS41", zo 15 nov ±01:47); Instagram ingepland voor ma 16 nov 2026 20:00 · fb339d9 · zo 15 nov 01:48
 KLAAR: pakket YS41 klaar in stijl 3, "Why do your jeans have that tiny pocket?" (41,8 s; bronnen: de maker van de broek, 2017, en het octrooi uit 1873); wacht op pakket OK YS41 en bijschrift OK YS41 (paneel, gevraagd 01:40); niets ingepland · zo 15 nov 01:40
 KLAAR: extra starttijden van de Instagram-automaat op main (go Andries zo 15 nov ±00:49: "Go, zet live"); tak manon/cron-2000 voor het moment van 20:00 klaar voor de controle van Eva, niet op main · c1f8c83 · zo 15 nov 00:50
 KLAAR: YS33–YS39 ingepland in YouTube Studio, 9–15 december 2026 om 18:00 (Studio meldt per video "Video gepland"; pakket OK "Alles OK", ma 9 nov) · za 14 nov 22:19
