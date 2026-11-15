@@ -760,6 +760,23 @@
       "eenmalig": true
     },
     {
+      "id": "2026-11-15-k1-ys40",
+      "datum": "2026-11-15",
+      "tijd": "20:00",
+      "soort": "bericht",
+      "taal": "en",
+      "account": "kanaal-1",
+      "beeld": [
+        "pakketten/2026-12-16-YS40-ampersand/instagram/reel.mp4"
+      ],
+      "omslag": "pakketten/2026-12-16-YS40-ampersand/instagram/omslag.jpg",
+      "omslagMs": 3200,
+      "titel": "Kanaal 1 YS40: Why is \"&\" called an ampersand?",
+      "tekst": "Why is \"&\" called an ampersand?\n\nThe & sign was once the 27th member of the alphabet. It was formed from the letters in \"et\", the Latin word for \"and\".\n\nBecause \"X, Y, Z, and\" sounded confusing, students said \"and per se and\"; per se means \"by itself\". Over time that phrase was slurred together into one word: ampersand.\n\nSources: Dictionary.com (2020); The Saturday Evening Post (2021).\n\nNew every day at 18:00 (Amsterdam).\n\n#history #language #words #etymology #todayilearned",
+      "inhaaluren": 18,
+      "eenmalig": true
+    },
+    {
       "id": "2026-11-16-k1-ys10",
       "datum": "2026-11-16",
       "tijd": "18:00",
@@ -773,6 +790,23 @@
       "omslagMs": 1700,
       "titel": "Kanaal 1 YS10: This moth was the first \"actual\" computer bug. The word is o",
       "tekst": "This moth was the first \"actual\" computer bug. The word is older.\n\nOn 9 September 1947, a team at Harvard found a moth stuck between the relay contacts of the Mark II computer. They taped it into the logbook with the note: \"First actual case of bug being found.\"\n\nThe joke only works because \"bug\" already meant a fault. In an 1878 letter, Thomas Edison wrote about \"bugs\": little faults and difficulties. Grace Hopper was there and later made the story famous. The logbook, moth included, is now at the Smithsonian.\n\nSources: Computer History Museum, \"This Day in History: September 9\"; JSTOR Daily, \"The Bug in the Computer Bug Story\".\n\nNew every day at 18:00 (Amsterdam).\n\n#history #computers #programming #technology #todayilearned",
+      "inhaaluren": 18,
+      "eenmalig": true
+    },
+    {
+      "id": "2026-11-16-k1-ys41",
+      "datum": "2026-11-16",
+      "tijd": "20:00",
+      "soort": "bericht",
+      "taal": "en",
+      "account": "kanaal-1",
+      "beeld": [
+        "pakketten/2026-11-16-YS41-jeans-pocket/instagram/reel.mp4"
+      ],
+      "omslag": "pakketten/2026-11-16-YS41-jeans-pocket/instagram/omslag.jpg",
+      "omslagMs": 3300,
+      "titel": "Kanaal 1 YS41: Why do your jeans have that tiny pocket?",
+      "tekst": "Why do your jeans have that tiny pocket?\n\nIt is called a watch pocket: it was made to hold a pocket watch, a typical thing to carry in the late 1800s.\n\nThe riveted pockets were patented in 1873, and the original pants had four pockets, the little one included. The \"fifth pocket\" is actually the back left one, which only showed up in 1901.\n\nSources: Levi Strauss & Co. (2017); US Patent No. 139,121 (1873).\n\nNew every day.\n\n#history #jeans #denim #everydaythings #todayilearned",
       "inhaaluren": 18,
       "eenmalig": true
     },
@@ -892,23 +926,6 @@
       "omslagMs": 2100,
       "titel": "Kanaal 1 YS39: Why is the power button a 1 and a 0?",
       "tekst": "Why is the power button a 1 and a 0?\n\nThe power symbol combines a 1 and a 0: \"on\" and \"off\" in binary terms. The symbols are defined in an international standard, IEC 60417.\n\nFor years they existed only as pictures. In 2015, a proposal was accepted to add them to Unicode, so they could finally be typed and searched as text.\n\nSources: 99% Invisible (2017); Unicode proposal L2/14-009R (2014).\n\nNew every day at 18:00 (Amsterdam).\n\n#history #design #technology #symbols #todayilearned",
-      "inhaaluren": 18,
-      "eenmalig": true
-    },
-    {
-      "id": "2026-11-15-k1-ys40",
-      "datum": "2026-11-15",
-      "tijd": "20:00",
-      "soort": "bericht",
-      "taal": "en",
-      "account": "kanaal-1",
-      "beeld": [
-        "pakketten/2026-12-16-YS40-ampersand/instagram/reel.mp4"
-      ],
-      "omslag": "pakketten/2026-12-16-YS40-ampersand/instagram/omslag.jpg",
-      "omslagMs": 3200,
-      "titel": "Kanaal 1 YS40: Why is \"&\" called an ampersand?",
-      "tekst": "Why is \"&\" called an ampersand?\n\nThe & sign was once the 27th member of the alphabet. It was formed from the letters in \"et\", the Latin word for \"and\".\n\nBecause \"X, Y, Z, and\" sounded confusing, students said \"and per se and\"; per se means \"by itself\". Over time that phrase was slurred together into one word: ampersand.\n\nSources: Dictionary.com (2020); The Saturday Evening Post (2021).\n\nNew every day at 18:00 (Amsterdam).\n\n#history #language #words #etymology #todayilearned",
       "inhaaluren": 18,
       "eenmalig": true
     }
