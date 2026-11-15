@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-15T11:32:00+01:00",
+  "tijd": "2026-11-15T17:44:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-15T11:15:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-15T17:44:00+01:00 Opdracht account 4 (voice-over bij grappige/virale filmpjes) klaargezet, NIET uitvoeren: docs/manager/opdracht-account-4.md; toets aan de lat (beeld van anderen botst), vier beeldvormen, advies B (nagespeeld als cartoon) + later C",
     "2026-11-15T11:32:00+01:00 Bedoeling per kanaal vastgelegd: docs/manager/bedoeling-per-kanaal.md (kanaal 1 educatief + leuk, kanaal 2 leuk/humor, account 3 informatief + hype; via jesse-14)",
     "2026-11-15T11:25:00+01:00 Stand per kanaal aan Andries gegeven (uploadtijden, voorraad, profielen). Kanaal 1: oude reeks 18:00 YouTube t/m 15 dec, Instagram t/m 23 nov; nieuwe reeks stijl 3 om 20:00 t/m 17 nov (2 dagen, onder de lat van 1 week)",
     "2026-11-14T10:57:00+01:00 Animatiekoers YG-Social vastgelegd: docs/manager/animatie-koers.md (besluit Andries; uitwerking via jesse-10 Manon, jesse-11 Finn)",
@@ -22,7 +23,14 @@
   "bezig": null,
   "volgende": "Ma 16 nov: weekoverzicht YG-Social met daarin de stand per kanaal (tijden, voorraad per reeks, profielen; besluit Andries \"Ja, morgen\"); keurlijst vr 20 nov",
   "kanNietVerder": null,
-  "vragen": [],
+  "vragen": [
+    {
+      "vraag": "Account 4: welke beeldvorm (A fragment+commentaar, B nagespeeld als cartoon, C ingestuurd met toestemming, D licentie) en wanneer starten?",
+      "aanname": "B, later + C; start na de proef van account 3",
+      "ondertussen": "opdracht ligt klaar; niets uitgevoerd",
+      "blokkeert": "nee"
+    }
+  ],
   "buitenGit": [
     {
       "tijd": "2026-11-13T11:57:00+01:00",
@@ -71,6 +79,14 @@
     {
       "tijd": "2026-11-15T11:32:00+01:00",
       "wat": "Andries: \"ik wil ook de bedoeling per agent en hun achterliggende gedachte opschroeven, zodat ze alle 3  de videos maken, met de benoemde/verzonnen doelen ervan, zo als bijvoorbeeld educatief/motivatie, leuk ect\"; knoppen: \"Educatief + leuk\", \"Leuk / humor\", \"Informatief + hype\"; blad: \"Bedoeling en gedachte\", \"Kijker en gevoel\", \"Doel per video\""
+    },
+    {
+      "tijd": "2026-11-15T17:40:00+01:00",
+      "wat": "Andries: \"we gaan ook een nieuw kanaal maken waar een voice over komt over grappige videos en andere leuke filmpjes of viral videos\""
+    },
+    {
+      "tijd": "2026-11-15T17:43:00+01:00",
+      "wat": "Andries: \"ik wil hier een opdracht voor klaar maken maar nog niet uitvoeren, dus alles wel door nemen ect\""
     }
   ],
   "voorEva": [
@@ -123,6 +139,11 @@
       "id": "jesse-14",
       "aan": "Manon, Finn en Koen (via Eva)",
       "wat": "Bedoeling per kanaal (besluit Andries zo 15 nov): docs/manager/bedoeling-per-kanaal.md. Lees het vóór elk script; elke video past bij bedoeling, kijker en gevoel en mikt op het doel per video. Kanaal 1 educatief + leuk (delen/opslaan), kanaal 2 leuk/humor (delen/taggen), account 3 informatief + hype (volgen). Finn en Koen krijgen de tekst van hun deel via Eva (hun repo is privé)."
+    },
+    {
+      "id": "jesse-15",
+      "aan": "Eva",
+      "wat": "Ter info, niet uitvoeren: opdracht account 4 (voice-over bij grappige/virale filmpjes) ligt klaar in docs/manager/opdracht-account-4.md. Niets opzetten tot Andries letterlijk start zegt. Beeld van anderen botst met de lat; advies: nagespeeld als cartoon."
     }
   ],
   "ontvangen": [
