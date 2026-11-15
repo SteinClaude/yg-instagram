@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-15T13:26:00+01:00",
+  "tijd": "2026-11-15T17:16:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
-    "sinds": "2026-11-15T13:26:00+01:00"
+    "sinds": "2026-11-15T17:11:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-15T13:26:00+01:00 Plek van het watermerk gekozen door Andries: A, direct onder het kaartje, rechts (zo 15 nov ±13:26). Dat is de standaard in de generator (watermerk: true). Gaat aan vanaf YS44; YS40–YS43 blijven zonder.",
     "2026-11-15T13:05:00+01:00 Watermerk aangepast na \"Aanpassen\" en \"Andere plek, Minder opvallend\": geen labeltje meer, de twee merken staan los, wit en half doorzichtig met een zachte schaduw. Drie plekken naast elkaar in docs/proef-watermerk.jpg: A onder het kaartje rechts, B boven midden, C rechtsboven. Nog in geen video gebruikt.",
@@ -116,7 +116,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "YS44 (waarom schoolbussen geel zijn) in stijl 3 met watermerk: script, decor straat en stemmen klaar; video rendert, daarna pakket en keuringsvraag",
   "volgende": "YS44 maken in stijl 3 mét watermerk (watermerk: true) voor do 19 nov 20:00 zodra Andries het zegt (zo 15 nov ±12:47: \"Later\"); daarna YS45–YS47 (jesse-12). Vóór elk script docs/manager/bedoeling-per-kanaal.md lezen (jesse-14). Zo 15 nov: na 18:00 kijken hoe laat de automaat YS09 plaatste en na 20:00 hoe laat YS40 op Instagram kwam en of hij op YouTube staat; kaart YS40 dan op geplaatst. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
@@ -129,6 +129,8 @@
     }
   ],
   "buitenGit": [
+    "2026-11-15T17:11:00+01:00 Andries in de sessie, op \"Zal ik nu YS44 maken, de eerste met het watermerk?\": \"Ja, maak YS44\"",
+    "2026-11-15T17:16:00+01:00 ElevenLabs: YS44 kostte 627 tekens (mijn telling); deze maand samen 3.373.",
     "2026-11-15T13:26:00+01:00 Andries in de sessie, op \"Welke plek wil je voor het watermerk?\": \"A, onder het kaartje\"",
     "2026-11-15T12:59:00+01:00 Andries in de sessie, op \"Is het watermerk zo goed voor YS44 en verder?\": \"Aanpassen\"",
     "2026-11-15T13:00:00+01:00 Andries in de sessie, op \"Wat wil je anders aan het watermerk (het labeltje bovenaan met het kanaalmerk en het logo van YG Digital)?\": \"Andere plek,Minder opvallend\"",

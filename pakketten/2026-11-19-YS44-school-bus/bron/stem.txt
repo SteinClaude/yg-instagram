@@ -1,0 +1,12 @@
+Stem: ElevenLabs (tekst naar spraak, betaald abonnement), vraag = Laura (eleven_v4, tempo 1.12), antwoord = Liam (eleven_v4, tempo 1.12); gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.
+Ingesproken tekst per scène:
+1. [vraag, Laura] Why are school buses yellow? Why not red, or blue?
+2. [antwoord, Liam] Ooh! Before nineteen thirty-nine, school buses had no standard colour at all.
+3. [vraag, Laura] So who picked yellow?
+4. [antwoord, Liam] Professor Frank Cyr! In nineteen thirty-nine, he gathered experts to set school bus rules.
+5. [antwoord, Liam] They lined up shades on a wall, from lemon yellow to orange-red, and picked one.
+6. [vraag, Laura] Wait, why that one?
+7. [antwoord, Liam] It's the easiest colour to see in the early morning and evening, exactly when buses drive!
+8. [antwoord, Liam] Plus, your side vision catches yellow better than red. One point two four times better!
+9. [vraag, Laura] No way! So the colour is just called yellow?
+10. [antwoord, Liam] Nope! It's National School Bus Chrome. Now ask me again: why not red?
