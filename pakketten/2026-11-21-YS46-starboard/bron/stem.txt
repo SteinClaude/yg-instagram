@@ -1,0 +1,12 @@
+Stem: ElevenLabs (tekst naar spraak, betaald abonnement), vraag = Laura (eleven_v4, tempo 1.12), antwoord = Liam (eleven_v4, tempo 1.12); gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.
+Ingesproken tekst per scène:
+1. [vraag, Laura] Why is the right side of a ship called starboard? Is it about the stars?
+2. [antwoord, Liam] Ha! Long ago, before ships had a rudder in the middle, they were steered with a big oar.
+3. [antwoord, Liam] Most sailors were right-handed, so the steering oar went on the right side.
+4. [vraag, Laura] So the right side was the steering side?
+5. [antwoord, Liam] Yep! In Old English: steer, plus board, the side of a boat. Steer-board became starboard!
+6. [vraag, Laura] And the left side?
+7. [antwoord, Liam] The other side became the side for loading at the dock. It was called larboard.
+8. [vraag, Laura] Larboard? Starboard? That sounds almost the same!
+9. [antwoord, Liam] Exactly! Way too easy to mix up. So in eighteen forty-four, the Royal Navy said: call it port, the side that faces the dock.
+10. [antwoord, Liam] So starboard has nothing to do with stars. It's just the side where you steer!

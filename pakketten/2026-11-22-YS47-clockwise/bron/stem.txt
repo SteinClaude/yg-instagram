@@ -1,0 +1,12 @@
+Stem: ElevenLabs (tekst naar spraak, betaald abonnement), vraag = Laura (eleven_v4, tempo 1.12), antwoord = Liam (eleven_v4, tempo 1.12); gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.
+Ingesproken tekst per scène:
+1. [vraag, Laura] Why do clocks go clockwise? Who picked this direction?
+2. [antwoord, Liam] Ha! Before clocks, people told time with sundials: a stick and its shadow.
+3. [antwoord, Liam] In the northern half of the world, the sun crosses the southern sky, so the shadow sweeps around like this!
+4. [vraag, Laura] Wait, the shadow goes clockwise?
+5. [antwoord, Liam] Yep! And when clocks came along, their hands copied the shadow.
+6. [vraag, Laura] And south of the equator?
+7. [antwoord, Liam] There, the sun is in the northern sky, and a sundial's shadow turns the other way!
+8. [vraag, Laura] So clocks could have gone the other way?
+9. [antwoord, Liam] If clocks had been invented in the south, clockwise would mean the opposite!
+10. [antwoord, Liam] So who picked clockwise? The sun did!

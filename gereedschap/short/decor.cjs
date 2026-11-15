@@ -206,9 +206,36 @@ function green() {
   return s;
 }
 
-const DECORS = { kamer, klas, rome, atelier, baan, straat, green };
+// ------------------------------------------------------------------ haven: kade met zee, een zeilbootje en een vuurtoren (YS46)
+function haven() {
+  let s = `<rect x="-60" y="-60" width="1200" height="1300" fill="#CDE8F2"/>`;
+  s += [[250, 460, 1], [880, 520, 0.8]].map(([x, y, k]) => `<g fill="#FFFFFF" opacity="0.9"><ellipse cx="${x}" cy="${y}" rx="${90 * k}" ry="${30 * k}"/><ellipse cx="${x - 40 * k}" cy="${y - 22 * k}" rx="${46 * k}" ry="${28 * k}"/><ellipse cx="${x + 30 * k}" cy="${y - 26 * k}" rx="${54 * k}" ry="${32 * k}"/></g>`).join('');
+  // meeuwen
+  s += [[180, 600], [240, 570], [900, 640]].map(([x, y]) => `<path d="M ${x - 18} ${y} q 9 -12 18 0 q 9 -12 18 0" fill="none" ${o(4)}/>`).join('');
+  // zee tot aan de horizon
+  s += `<rect x="-60" y="1160" width="1200" height="330" fill="#3E8FB0"/><path d="M -60 1160 L 1140 1160" ${o(5)}/>`;
+  for (const [y, d] of [[1210, 0], [1270, 60], [1340, 20], [1410, 90]]) for (let x = -60 + d; x < 1140; x += 180) s += `<path d="M ${x} ${y} q 20 -14 40 0 q 20 -14 40 0" fill="none" stroke="#DDF1F7" stroke-width="5" stroke-linecap="round" opacity="0.8"/>`;
+  // vuurtoren links in de verte
+  s += `<path d="M 40 1170 L 52 1040 L 88 1040 L 100 1170 Z" fill="#FFFFFF" ${o(5)}/><path d="M 46 1110 L 94 1110 L 92 1080 L 48 1080 Z" fill="#D9432B"/><rect x="50" y="1010" width="40" height="30" fill="#F2C230" ${o(5)}/><path d="M 44 1010 L 70 986 L 96 1010 Z" fill="#D9432B" ${o(5)}/>`;
+  // zeilbootje rechts in de verte
+  s += `<path d="M 930 1190 L 1060 1190 L 1040 1216 L 950 1216 Z" fill="#8A5A34" ${o(5)}/><path d="M 995 1188 L 995 1060" ${o(5)}/><path d="M 999 1066 L 1052 1180 L 999 1180 Z" fill="#FFFFFF" ${o(4)}/><path d="M 991 1080 L 950 1180 L 991 1180 Z" fill="#F4F1E6" ${o(4)}/>`;
+  // kade: houten planken met meerpalen
+  s += houtVloer('#B98A5A', '#8A5A34');
+  s += [70, 1010].map(x => `<rect x="${x - 26}" y="1400" width="52" height="110" rx="10" fill="#6E4627" ${o(6)}/><rect x="${x - 32}" y="1392" width="64" height="20" rx="8" fill="#16161A"/>`).join('');
+  s += `<path d="M 96 1440 Q 160 1470 220 1450" fill="none" stroke="#D9B98A" stroke-width="10" stroke-linecap="round"/>`;
+  // houten bord op palen
+  s += [250, 830].map(x => `<rect x="${x - 12}" y="1016" width="24" height="200" fill="#6E4627" ${o(5)}/>`).join('');
+  s += `<rect x="126" y="660" width="844" height="374" rx="14" fill="#000" opacity="0.2"/>`;
+  s += `<rect x="118" y="648" width="844" height="374" rx="14" fill="#2F5E86" ${o()}/><rect x="${VLAK.x}" y="${VLAK.y}" width="${VLAK.w}" height="${VLAK.h}" rx="4" fill="#FBF6EA" ${o(4)}/>`;
+  s += [[152, 660], [928, 660], [152, 1010], [928, 1010]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="6" fill="#F4F1E6"/>`).join('');
+  // reddingsboei aan het bord
+  s += `<circle cx="1010" cy="900" r="52" fill="none" stroke="#D9432B" stroke-width="26"/><circle cx="1010" cy="900" r="52" fill="none" stroke="#FFFFFF" stroke-width="26" stroke-dasharray="20 62"/><circle cx="1010" cy="900" r="66" fill="none" ${o(4)}/><circle cx="1010" cy="900" r="38" fill="none" ${o(4)}/>`;
+  return s;
+}
+
+const DECORS = { kamer, klas, rome, atelier, baan, straat, green, haven };
 // kleur voor tekst en tekeningen op het vlak
-const INKT = { kamer: '#16161A', klas: '#F4F1E6', rome: '#16161A', atelier: '#16161A', baan: '#F4F1E6', straat: '#16161A', green: '#16161A' };
+const INKT = { kamer: '#16161A', klas: '#F4F1E6', rome: '#16161A', atelier: '#16161A', baan: '#F4F1E6', straat: '#16161A', green: '#16161A', haven: '#16161A' };
 const svg = naam => { if (!DECORS[naam]) throw new Error('onbekend decor ' + naam);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2040" viewBox="-60 -60 1200 2040">${DECORS[naam]()}</svg>`; };
 
