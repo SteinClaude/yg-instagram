@@ -26,19 +26,19 @@ const horloge = (h, cx, cy, r, { ketting = false } = {}) => { const I = h.K.inkt
   return s + wijzer(305, 0.4, 1, I) + wijzer(60 + a / 12, 0.6, 0.8, I) + wijzer(a, 0.66, 0.4, h.K.signaal) + `<circle cx="${cx}" cy="${cy}" r="${(r * 0.07).toFixed(1)}" fill="${I}"/>`; };
 
 // Het voorpand van een spijkerbroek, van dichtbij, op het vlak van het decor: band, grote zak en daarin het kleine zakje.
-//   val: 0..1, het zakhorloge zakt in het kleine zakje · gloed: 0..1, gele rand om het kleine zakje
-const zak = (h, { intro = true, val = -1, gloed = 0 } = {}) => { const I = h.K.inkt, q = intro ? h.veer(h.klem(h.t / 0.35)) : 1;
-  const hy = 712 + 132 * h.klem(val), puls = 0.6 + 0.4 * Math.sin(h.t * 7);
+//   toon: 0..1, het zakhorloge verschijnt boven het kleine zakje · val: 0..1, het zakt erin · gloed: 0..1, gele rand
+const zak = (h, { intro = true, toon = 0, val = 0, gloed = 0 } = {}) => { const I = h.K.inkt, q = intro ? h.veer(h.klem(h.t / 0.35)) : 1;
+  const hy = 742 + 104 * h.klem(val), tq = h.veer(h.klem(toon)), puls = 0.6 + 0.4 * Math.sin(h.t * 7);
   return `<clipPath id="zakvlak"><rect x="230" y="684" width="620" height="302" rx="16"/></clipPath>`
     + `<g opacity="${(intro ? h.klem(h.t / 0.08) : 1).toFixed(3)}" transform="translate(540 835) scale(${(0.72 + 0.28 * q).toFixed(3)}) translate(-540 -835)">`
     + `<rect x="238" y="694" width="620" height="302" rx="16" fill="#000" opacity="0.2"/><g clip-path="url(#zakvlak)">`
     + `<rect x="230" y="684" width="620" height="302" fill="${DENIM}"/>`
     + `<path d="M 398 732 Q 418 940 850 958 L 850 732 Z" fill="${DIEP}" stroke="${I}" stroke-width="6" stroke-linejoin="round"/>` + naad('M 378 736 Q 398 962 850 980')
-    + (val >= 0 ? horloge(h, 685, hy, 50) : '')
-    + `<path d="M 610 764 L 760 764 L 760 896 Q 685 916 610 896 Z" fill="${DENIM}" stroke="${I}" stroke-width="6" stroke-linejoin="round"/>` + naad('M 624 784 L 746 784') + naad('M 624 790 L 624 884 Q 685 900 746 884 L 746 790')
-    + klink(h, 616, 770) + klink(h, 754, 770)
     + `<rect x="230" y="684" width="620" height="48" fill="${DIEP}"/><path d="M 230 732 L 850 732" stroke="${I}" stroke-width="6"/>` + naad('M 240 698 L 840 698') + naad('M 240 720 L 840 720')
     + `<rect x="452" y="676" width="34" height="74" rx="5" fill="${DENIM}" stroke="${I}" stroke-width="5"/>` + klink(h, 404, 746)
+    + (toon > 0 ? `<g opacity="${h.klem(toon * 3).toFixed(3)}" transform="translate(685 ${hy.toFixed(1)}) scale(${(0.5 + 0.5 * tq).toFixed(3)}) translate(-685 ${(-hy).toFixed(1)})">${horloge(h, 685, hy, 50)}</g>` : '')
+    + `<path d="M 610 764 L 760 764 L 760 896 Q 685 916 610 896 Z" fill="${DENIM}" stroke="${I}" stroke-width="6" stroke-linejoin="round"/>` + naad('M 624 784 L 746 784') + naad('M 624 790 L 624 884 Q 685 900 746 884 L 746 790')
+    + klink(h, 616, 770) + klink(h, 754, 770)
     + `</g><rect x="230" y="684" width="620" height="302" rx="16" fill="none" stroke="${I}" stroke-width="7"/>`
     + (gloed > 0 ? `<path d="M 600 754 L 770 754 L 770 904 Q 685 928 600 904 Z" fill="none" stroke="${GOUD}" stroke-width="11" stroke-linejoin="round" opacity="${(h.klem(gloed) * puls).toFixed(3)}"/>` : '') + `</g>`; };
 
@@ -90,7 +90,7 @@ module.exports = {
     dag: 'maandag 16 november 2026', tijd: '20:00',   // nieuwe reeks om 20:00 (Andries za 14 nov 2026 ±21:45)
     gelezen: 'zo 15 nov 2026',
     titel: 'Why do your jeans have that tiny pocket?',
-    intro: 'That small pocket inside the front pocket of your jeans has a name and a job: it was made to hold a pocket watch. And it is not the "fifth pocket".',
+    intro: 'That small pocket on the right front side of your jeans has a name and a job: it was made to hold a pocket watch. And it is not the "fifth pocket".',
     feiten: ['"The small pocket on the right front side is called a watch pocket, since it was intended to store a pocket watch", "a typical possession during the late 1800s" (Levi Strauss & Co.).',
       'US Patent No. 139,121, "Improvement in Fastening Pocket-Openings", was granted on May 20, 1873, to Jacob W. Davis, assigned to himself and Levi Strauss & Company. It describes "a metal rivet or eyelet at each edge of the pocket-opening".',
       '"There were four pockets on the original pants and all of them were riveted", "including a small pocket above the larger right pocket" (Levi Strauss & Co.).',
@@ -115,7 +115,7 @@ module.exports = {
     { wie: 'vraag', decor: 'kamer', duur: 2.4, stem: 'Okay, what is this tiny pocket in my jeans even for?', stemStart: 0.05, camera: { zoom: [1, 1.05], stoot: [0.15] }, geluid: [[0.12, 'klap'], [0.12, 'boem', 0.7]],
       teken: h => zak(h, { gloed: (h.t - h.op('tiny', 0.9)) / 0.2 }) + h.krabbel.cirkel(685, 832, 128, 104, { t: h.t, start: h.op('tiny', 0.9) }) + h.kin('What is this *tiny pocket* for?', { y: 300, g: 104, t: h.t, start: 0, stap: 0.07 }).svg },
     { wie: 'antwoord', decor: 'atelier', duur: 3.4, stem: "Ooh, I love this one! It's called a watch pocket. It was made to hold a pocket watch!", in: 'zweep', bron: LEVI, bronStart: 'made', camera: { zoom: [1, 1.05] }, geluid: [['hold', 'whoosh', 0.5], [-0.5, 'pop', 0.6]],
-      teken: h => zak(h, { val: h.zacht((h.t - h.op('hold', 2.4)) / 0.7), gloed: (h.t - h.op('watch', 1.4)) / 0.2 }) + h.kin("It's called a *watch pocket*!", { y: 300, g: 104, t: h.t, start: 0.05 }).svg },
+      teken: h => zak(h, { toon: (h.t - h.op('made', 2.0)) / 0.3, val: h.zacht((h.t - h.op('hold', 2.4) - 0.15) / 0.7), gloed: (h.t - h.op('watch', 1.4)) / 0.2 }) + h.kin("It's called a *watch pocket*!", { y: 300, g: 104, t: h.t, start: 0.05 }).svg },
     { wie: 'vraag', decor: 'atelier', shot: 'dichtbij', duur: 2.0, stem: 'A pocket watch? Who even carries one of those?', pose: { vraag: 'verbaasd' }, camera: { zoom: [1, 1.04] }, geluid: [[0.02, 'klap', 0.4]],
       teken: h => h.kin('A *pocket watch*? Who has one?', { y: 300, g: 100, t: h.t, start: 0.05 }).svg },
     { wie: 'antwoord', decor: 'atelier', duur: 2.8, stem: 'Back in the late eighteen hundreds? Lots of people did!', bron: LEVI, bronStart: 'lots', camera: { zoom: [1, 1.06] }, geluid: [[0.1, 'tik', 0.5], [0.6, 'tik', 0.5], ['eighteen', 'klap', 0.5]],

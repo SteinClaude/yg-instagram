@@ -1,3 +1,4 @@
+KLAAR: pakket YS41 klaar in stijl 3, "Why do your jeans have that tiny pocket?" (41,8 s; bronnen: de maker van de broek, 2017, en het octrooi uit 1873); wacht op pakket OK YS41 en bijschrift OK YS41 (paneel, gevraagd 01:40); niets ingepland · zo 15 nov 01:40
 KLAAR: extra starttijden van de Instagram-automaat op main (go Andries zo 15 nov ±00:49: "Go, zet live"); tak manon/cron-2000 voor het moment van 20:00 klaar voor de controle van Eva, niet op main · c1f8c83 · zo 15 nov 00:50
 KLAAR: YS33–YS39 ingepland in YouTube Studio, 9–15 december 2026 om 18:00 (Studio meldt per video "Video gepland"; pakket OK "Alles OK", ma 9 nov) · za 14 nov 22:19
 KLAAR: YS40 ingepland: YouTube Studio meldt "Video gepland", 15 november 2026 om 20:00; Instagram in planning.json voor zo 15 nov 20:00 (na "Beide OK YS40" en "Nieuwe erbij, vanaf morgen") · za 14 nov 21:55
@@ -184,6 +185,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±00:58, in de sessie: "maak ys41" → YS41 gemaakt in stijl 3 (het kleine zakje in je spijkerbroek), als pakket ter keuring. Dit is een opdracht om te maken, geen pakket OK: ingepland wordt er pas na "pakket OK YS41" en "bijschrift OK YS41".
 - zo 15 nov 2026 ±00:49, in de sessie, op "Geef je go om de extra starttijden van de Instagram-automaat live te zetten?": "Go, zet live" → de tak manon/cron-extra (8a74843, alleen twee extra cron-regels in .github/workflows/plaatsen.yml; door Eva nagekeken vr 13 nov 08:50, geen bezwaar) gaat naar main. De go geldt voor precies die tak: extra starts rond 18:00 Amsterdam. Extra starts rond 20:00 zitten er niet in; dat is een nieuwe wijziging met een eigen controle en go.
 - za 14 nov 2026 ±21:44, in de sessie: "laten we beginnen met de nieuwe videos die we gemaakt hebben met de animaties personages te gebruiken"; op mijn vraag "Hoe wil je de nieuwe laten starten?" (±21:45): "Nieuwe erbij, vanaf morgen (Recommended)" → de oude shorts blijven elke dag om 18:00 staan; de nieuwe shorts met het duo komen er elke dag bij om 20:00, te beginnen met YS40 op zo 15 nov 2026, op YouTube en Instagram. Elke nieuwe short blijft per code ter keuring.
 - za 14 nov 2026 ±21:37, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS40?": "Beide OK YS40" → pakket OK YS40 (script, bronnen, titel) en bijschrift OK YS40 (Instagram); vastgelegd in keuring.json van het pakket.
