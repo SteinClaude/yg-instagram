@@ -199,6 +199,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±17:37, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS44?": "Beide OK YS44" → pakket OK YS44 (script, bronnen, titel) en bijschrift OK YS44 (Instagram); vastgelegd in keuring.json van het pakket.
 - zo 15 nov 2026 ±17:11, in de sessie, op "Zal ik nu YS44 maken, de eerste met het watermerk?": "Ja, maak YS44" → YS44 gemaakt in stijl 3 met watermerk (waarom schoolbussen geel zijn), als pakket ter keuring. Dit is een opdracht om te maken, geen pakket OK.
 - zo 15 nov 2026 ±13:26, in de sessie, op "Welke plek wil je voor het watermerk?": "A, onder het kaartje" → het watermerk (kanaalmerk zonder naam plus logo YG Digital, los, wit en half doorzichtig) staat direct onder het kaartje, rechts, in elke short vanaf YS44. YS40–YS43 blijven zoals ze zijn.
 - zo 15 nov 2026 ±13:00, in de sessie, op "Wat wil je anders aan het watermerk (het labeltje bovenaan met het kanaalmerk en het logo van YG Digital)?": "Andere plek,Minder opvallend" → geen labeltje meer; de merken staan los, wit en half doorzichtig; drie plekken ter keuze.
