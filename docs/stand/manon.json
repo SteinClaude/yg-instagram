@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-15T21:25:00+01:00",
+  "tijd": "2026-11-15T21:40:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-15T21:38:00+01:00 Pakketten YS46 en YS47 gemaakt (40b2185), stijl 3 met watermerk. YS46: waarom de rechterkant van een schip \"starboard\" heet (47,0 s; nieuw decor haven; bronnen NOAA National Ocean Service, bijgewerkt 2026, en word histories, 2016). YS47: waarom klokken met de klok mee draaien (39,6 s; bronnen The Irish Times, 2001, en The Old Farmer's Almanac). Elk met video, upload (8,9 MB), studio.txt (za 21 en zo 22 nov 20:00), Instagram-versie met bijschrift, bronnen en kaart met vraag om pakket OK en bijschrift OK. ElevenLabs: 712 + 590 tekens (deze maand volgens mijn telling 5.301). Niets ingepland.",
     "2026-11-15T21:22:00+01:00 YS40 nagekeken: op YouTube online (dashboard kanaal 1: nieuwste short, ±630 weergaven om 21:10); kaart YS40 op geplaatst. Op Instagram nog niet: de automaat draaide zo 15 nov voor het laatst om 18:35 (YS09); GitHub start de geplande runs maar om de paar uur, ondanks de extra starttijden. YS40 mag tot 18 uur inhalen en gaat mee met de volgende run.",
     "2026-11-15T21:20:00+01:00 YS45 ingepland in YouTube Studio (kanaal 1, nagekeken aan de nieuwste short op het dashboard): Studio meldt \"Video gepland\", openbaar op 20 november 2026 om 20:00; de lijst Shorts toont hem als Gepland, \"Geen meldingen\". Instagram staat voor hetzelfde moment in planning.json (489b411). Keuring vastgelegd in keuring.json (48f1217).",
     "2026-11-15T19:47:00+01:00 Pakket YS45 gemaakt (e68ffe1): waarom golfballen vol deukjes zitten, stijl 3 met watermerk, nieuw decor golfbaan; bronnen Penn State News (2007) en The Physics FAQ; video 42,4 s, upload 8,8 MB, Instagram-versie en bijschrift, kaart met vraagt pakket en bijschrift. ElevenLabs: 626 tekens (deze maand volgens mijn telling 3.999).",
@@ -124,9 +125,10 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "-",
-  "volgende": "Morgen nakijken of YS40 op Instagram is gekomen (gedaan.json). YS46–YS47 pas op het woord van Andries (jesse-12); vóór elk script docs/manager/bedoeling-per-kanaal.md lezen. 20:00 staat nu t/m vr 20 nov; Instagram 18:00 heeft na ma 23 nov nog niets gepland. Weekverslag ma 16 nov (cijfers via Eva).",
+  "volgende": "Na \"pakket OK\" en \"bijschrift OK\" voor YS46 en YS47: inplannen in Studio (kanaal 1 controleren) en in planning.json op za 21 en zo 22 nov 20:00. Morgen nakijken of YS40 op Instagram is gekomen (gedaan.json). jesse-12 (YS43–YS47) is daarmee gemaakt. Instagram 18:00 heeft na ma 23 nov nog niets gepland. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
+    "Pakket OK en bijschrift OK YS46 (starboard, za 21 nov 20:00) en YS47 (clockwise, zo 22 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -136,6 +138,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-15T21:24:00+01:00 Andries in de sessie, na mijn melding dat YS46 en YS47 komen zodra hij het zegt: \"maak ze alvast\"",
     "2026-11-15T21:20:00+01:00 In de Chrome van Andries, YouTube Studio kanaal 1 (nagekeken aan de nieuwste short op het dashboard): YS45 geüpload (video-upload.mp4) en ingepland voor 20 nov 2026 20:00; niet voor kinderen, geen betaalde promotie, AI-gebruik ja, 12 tags, taal Engels, categorie Educatief. Studio: \"Video gepland\", lijst Shorts: Gepland, Geen meldingen.",
     "2026-11-15T21:09:00+01:00 Andries in de sessie, op \"Keur je YS45 voor YouTube en Instagram?\": \"Beide OK YS45\"",
     "2026-11-15T19:33:00+01:00 Andries in de sessie, op \"Zal ik YS45 maken voor vr 20 nov 20:00?\": \"Ja, maak YS45\"",
@@ -749,7 +752,7 @@
       "id": "jesse-12",
       "van": "Jesse via Eva",
       "wat": "Voorraad nieuwe reeks: YS43–YS47 maken voor één week voorraad, ter keuring",
-      "stand": "YS43 gemaakt en ingepland (wo 18 nov 20:00); YS44–YS47 pas als Andries het zegt (zo 15 nov ±12:47: \"Later\")"
+      "stand": "YS43–YS47 gemaakt; YS43–YS45 ingepland (18–20 nov 20:00); YS46 en YS47 wachten op pakket OK en bijschrift OK (zo 15 nov 21:38, na \"maak ze alvast\")"
     },
     {
       "id": "jesse-14",
