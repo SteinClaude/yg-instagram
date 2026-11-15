@@ -175,6 +175,25 @@ async function bereidDecor(script) {
     DECORBEELD[naam] = 'data:image/jpeg;base64,' + (await sharp(png).jpeg({ quality: 92 }).toBuffer()).toString('base64');
   }
 }
+// Stijl 3: watermerk (Andries zo 15 nov 2026 ±12:50: "zet ook bij elke video voortaan een watermerk van het kanaal en
+// yg-digital"): het kanaalmerk (rood rondje met vraagteken, bewust zonder kanaalnaam: die hoort niet in deze openbare
+// repo) en het logo van YG Digital, samen op een klein papieren labeltje bovenaan in het midden. Het staat stil in
+// elke scène (buiten de camera) en valt buiten de knoppen van YouTube en Instagram. Alleen als het script `watermerk: true` heeft (vanaf YS44) of met
+// --watermerk; de bestanden staan in short/merk/.
+const MERK = {};
+async function bereidMerk() {
+  if (MERK.kanaal) return; const map = path.join(__dirname, 'short', 'merk');
+  MERK.kanaal = 'data:image/png;base64,' + (await sharp(path.join(map, 'kanaal.png')).resize(216, 216).png().toBuffer()).toString('base64');
+  MERK.yg = 'data:image/png;base64,' + (await sharp(path.join(map, 'yg-digital.svg'), { density: 220 }).resize({ height: 216 }).png().toBuffer()).toString('base64');
+}
+function merk(script) {
+  if (!script.watermerk || !MERK.kanaal) return '';
+  const h = 60, lw = h * 489.889 / 116, e = 54, bw = 30 + e + 18 + lw + 34, bh = 84, x = (W - bw) / 2, y = 44;
+  return `<g><rect x="${(x + 4).toFixed(1)}" y="${y + 6}" width="${bw.toFixed(1)}" height="${bh}" rx="${bh / 2}" fill="#000000" opacity="0.22"/>` +
+    `<rect x="${x.toFixed(1)}" y="${y}" width="${bw.toFixed(1)}" height="${bh}" rx="${bh / 2}" fill="${K.papier}" stroke="${K.inkt}" stroke-width="5"/>` +
+    `<image href="${MERK.kanaal}" x="${(x + 30).toFixed(1)}" y="${y + (bh - e) / 2}" width="${e}" height="${e}"/>` +
+    `<image href="${MERK.yg}" x="${(x + 30 + e + 18).toFixed(1)}" y="${y + (bh - h) / 2}" width="${lw.toFixed(1)}" height="${h}"/></g>`;
+}
 // Stijl 3 met decor: de kop staat op een papieren kaartje (ons dossierpapier) dat met plakband bovenin hangt.
 function kaart(scene) {
   const x = 56, y = 166, w = 968, h = scene.kaartH || 400; let s = '';
@@ -274,7 +293,7 @@ function beeldVan(script, scene, t, abs = 0) {
     const zoom = scene.shot === 'dichtbij' && d ? ` transform="translate(540 1250) scale(1.75) translate(${-d.x} -1300)"` : '';
     return `<rect width="${W}" height="${H}" fill="${K.nacht}"/><g transform="${cam}"><image href="${DECORBEELD[scene.decor]}" x="-60" y="-60" width="1200" height="2040"${zoom}/>` +
       `${kaart(scene)}${inhoud}${voortgang(script, scene, abs)}</g>` +
-      `${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht, script.stijl)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>`;
+      `${bronRegel(scene.bron, t, scene.bronStart ?? 0.6, scene.nacht, script.stijl)}<rect width="${W}" height="${H}" fill="url(#vignet)"/>${merk(script)}`;
   }
   if ((script.stijl || 1) >= 2) {   // stijl 2: geen kop; voortgangsbalk boven het licht
     return `${kader(script, scene, t, abs)}${licht}<g transform="${B.camera(t, scene.duur, { ...scene.camera, drift: abs })}">${inhoud}</g>${voortgang(script, scene, abs)}` +
@@ -542,12 +561,14 @@ async function maak(code, alleenBeelden, opties = {}) {
   const script = require(path.join(WORTEL, 'teksten', 'shorts', code + '.cjs'));
   if (opties.werk) script.stemWerk = opties.werk;         // --werk / --plafond: onder welke naam en tot hoeveel tekens
   if (opties.plafond) script.stemPlafond = opties.plafond; // de ElevenLabs-stem tegoed mag gebruiken
+  if (opties.watermerk) script.watermerk = true;          // --watermerk: proef met het watermerk zonder het script te wijzigen
   if (opties.stijl) script.stijl = opties.stijl;   // --stijl 2: proef met de nieuwe stijl zonder het script te wijzigen
   const map = opties.map ? path.resolve(opties.map) : path.join(WORTEL, 'pakketten', script.map);
   fs.mkdirSync(path.join(map, 'bron'), { recursive: true });
   const stemSporen = voorbereidStem(script, map);
   if ((script.stijl || 1) >= 2) await bereidPapier();
   if ((script.stijl || 1) >= 3) await bereidDecor(script);
+  if ((script.stijl || 1) >= 3 && script.watermerk) await bereidMerk();
   const duur = totaal(script), n = Math.round(duur * FPS);
   console.log(`${code}: ${duur.toFixed(1)} s, ${n} beelden -> ${path.relative(WORTEL, map)}`);
 
@@ -623,7 +644,7 @@ async function controleBlad(script, map, doel) {
 
 if (require.main === module) {
   const a = process.argv.slice(2), code = a[0], waarde = v => { const i = a.indexOf(v); return i > 0 ? a[i + 1] : undefined; };
-  if (!code) { console.error('gebruik: node gereedschap/short.cjs YS01 [--frames] [--stijl 2] [--map <uitvoermap>] [--werk <naam> --plafond <tekens>]'); process.exit(1); }
-  maak(code, a.includes('--frames'), { stijl: Number(waarde('--stijl')) || 0, map: waarde('--map'), werk: waarde('--werk'), plafond: Number(waarde('--plafond')) || 0 }).catch(e => { console.error(e); process.exit(1); });
+  if (!code) { console.error('gebruik: node gereedschap/short.cjs YS01 [--frames] [--stijl 2] [--map <uitvoermap>] [--werk <naam> --plafond <tekens>] [--watermerk]'); process.exit(1); }
+  maak(code, a.includes('--frames'), { stijl: Number(waarde('--stijl')) || 0, map: waarde('--map'), werk: waarde('--werk'), plafond: Number(waarde('--plafond')) || 0, watermerk: a.includes('--watermerk') }).catch(e => { console.error(e); process.exit(1); });
 }
 module.exports = { maak, svgVoor, teken, K, geluidLijst };
