@@ -1,3 +1,5 @@
+KAN NIET VERDER: YS43 kan niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · zo 15 nov 11:37
+KLAAR: YS43 pakket OK en bijschrift OK ("Beide OK YS43", zo 15 nov ±11:36); Instagram ingepland voor wo 18 nov 2026 20:00 · fc05aba · zo 15 nov 11:37
 KLAAR: pakket YS43 klaar in stijl 3, waarom november maand 11 is terwijl de naam negen betekent (42,8 s; bronnen: een kalendersite en een almanak, 2026); wacht op pakket OK YS43 en bijschrift OK YS43 (paneel, gevraagd 11:24); niets ingepland · zo 15 nov 11:24
 KLAAR: extra starttijden rond 20:00 van de Instagram-automaat op main (go Andries zo 15 nov ±11:13: "Go, zet live") · zo 15 nov 11:14
 KLAAR: YS42 ingepland: YouTube Studio meldt "Video gepland", 17 november 2026 om 20:00 (lijst Shorts: Gepland, geen meldingen); Instagram in planning.json voor di 17 nov 20:00 (na "Beide OK YS42", zo 15 nov ±10:19) · zo 15 nov 10:25
