@@ -5,7 +5,7 @@
 //
 // Elk decor is 1080 × 1920 met 60 px extra rondom (voor de camerabeweging), heeft de vloer op y = 1470 en in het
 // midden een VLAK (140..940 × 670..1000) waarop de short zijn onderwerp tekent: een prikbord, een schoolbord, een
-// perkamentrol of een vel patroonpapier. short.cjs tekent elk decor één keer vooraf en gebruikt het daarna als afbeelding.
+// perkamentrol, een vel patroonpapier of een scorebord. short.cjs tekent elk decor één keer vooraf en gebruikt het daarna als afbeelding.
 //
 //   const D = require('./decor.cjs');  D.svg('klas')  → volledige <svg> (1200 × 2040, viewBox -60 -60 1200 2040)
 //   D.VLAK = { x: 140, y: 670, w: 800, h: 330 };  D.INKT[naam] = kleur voor tekst op het vlak
@@ -117,9 +117,37 @@ function atelier() {
   return s;
 }
 
-const DECORS = { kamer, klas, rome, atelier };
+// ------------------------------------------------------------------ baan: een tennisbaan op gras, met een scorebord
+function baan() {
+  let s = `<rect x="-60" y="-60" width="1200" height="1200" fill="#BFE3F0"/>`;
+  s += [[190, 520, 1], [880, 470, 0.8]].map(([x, y, k]) => `<g fill="#FFFFFF" opacity="0.9"><ellipse cx="${x}" cy="${y}" rx="${90 * k}" ry="${30 * k}"/><ellipse cx="${x - 40 * k}" cy="${y - 22 * k}" rx="${46 * k}" ry="${28 * k}"/><ellipse cx="${x + 30 * k}" cy="${y - 26 * k}" rx="${54 * k}" ry="${32 * k}"/></g>`).join('');
+  // heg achter de baan
+  s += `<path d="M -60 1100 Q 60 1060 180 1096 Q 300 1056 420 1094 Q 540 1058 660 1094 Q 780 1056 900 1096 Q 1020 1060 1140 1100 L 1140 1470 L -60 1470 Z" fill="#2F6B4F" ${o(6)}/>`;
+  for (let x = -20; x < 1140; x += 96) s += `<path d="M ${x} 1180 q 18 -22 36 0 M ${x + 46} 1300 q 18 -22 36 0" fill="none" stroke="#255A41" stroke-width="6" stroke-linecap="round"/>`;
+  // gras met maaibanen en lijnen
+  s += `<rect x="-60" y="1470" width="1200" height="520" fill="#5FA85B"/>`;
+  for (let i = -4; i < 4; i += 2) s += `<path d="M ${540 + i * 100} 1470 L ${540 + (i + 1) * 100} 1470 L ${540 + (i + 1) * 300} 1990 L ${540 + i * 300} 1990 Z" fill="#57A054"/>`;
+  s += `<path d="M -60 1760 L 1140 1760 M 540 1470 L 540 1760" stroke="#F4F1E6" stroke-width="12" fill="none"/><path d="M -60 1470 L 1140 1470" ${o()}/>`;
+  // net
+  s += `<rect x="-60" y="1352" width="1200" height="118" fill="#16161A" opacity="0.28"/>`;
+  for (let x = -40; x < 1140; x += 44) s += `<path d="M ${x} 1352 L ${x} 1470" stroke="#16161A" stroke-width="3" opacity="0.35"/>`;
+  for (const y of [1392, 1430]) s += `<path d="M -60 ${y} L 1140 ${y}" stroke="#16161A" stroke-width="3" opacity="0.35"/>`;
+  s += `<rect x="-60" y="1338" width="1200" height="20" fill="#F4F1E6" ${o(5)}/>`;
+  // scorebord op palen
+  s += [250, 830].map(x => `<rect x="${x - 12}" y="1016" width="24" height="110" fill="#8A5A34" ${o(5)}/>`).join('');
+  s += `<rect x="126" y="660" width="844" height="374" rx="14" fill="#000" opacity="0.2"/>`;
+  s += `<rect x="118" y="648" width="844" height="374" rx="14" fill="#F4EEDF" ${o()}/><rect x="${VLAK.x}" y="${VLAK.y}" width="${VLAK.w}" height="${VLAK.h}" rx="4" fill="#1F4D3A" ${o(4)}/>`;
+  s += [[152, 660], [928, 660], [152, 1010], [928, 1010]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="6" fill="${I}"/>`).join('');
+  // scheidsrechtersstoel links
+  s += `<path d="M 8 1590 L 30 1290 M 96 1590 L 74 1290 M 16 1490 L 88 1490 M 22 1400 L 82 1400" fill="none" ${o(8)}/><rect x="14" y="1250" width="76" height="46" rx="6" fill="#F4EEDF" ${o(6)}/><rect x="14" y="1190" width="76" height="60" rx="6" fill="#D9432B" ${o(6)}/>`;
+  // bankje rechts met handdoek
+  s += `<rect x="960" y="1520" width="130" height="18" rx="5" fill="#8A5A34" ${o(5)}/><path d="M 976 1538 L 976 1590 M 1074 1538 L 1074 1590" ${o(8)}/><path d="M 1010 1520 L 1060 1520 L 1060 1566 Q 1035 1574 1010 1566 Z" fill="#F4EEDF" ${o(5)}/><path d="M 1010 1540 L 1060 1540" stroke="#2F7E86" stroke-width="6"/>`;
+  return s;
+}
+
+const DECORS = { kamer, klas, rome, atelier, baan };
 // kleur voor tekst en tekeningen op het vlak
-const INKT = { kamer: '#16161A', klas: '#F4F1E6', rome: '#16161A', atelier: '#16161A' };
+const INKT = { kamer: '#16161A', klas: '#F4F1E6', rome: '#16161A', atelier: '#16161A', baan: '#F4F1E6' };
 const svg = naam => { if (!DECORS[naam]) throw new Error('onbekend decor ' + naam);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2040" viewBox="-60 -60 1200 2040">${DECORS[naam]()}</svg>`; };
 

@@ -1,3 +1,4 @@
+KLAAR: pakket YS42 klaar in stijl 3, "Why are tennis balls yellow?" (42,5 s; bronnen: de internationale tennisbond en een persbureau, 2024); wacht op pakket OK YS42 en bijschrift OK YS42 (paneel, gevraagd 02:21); niets ingepland · zo 15 nov 02:21
 KLAAR: YS41 ingepland: YouTube Studio meldt "Video gepland", 16 november 2026 om 20:00; Instagram in planning.json voor ma 16 nov 20:00 (na "Beide OK YS41"); het bordje van 01:48 is hiermee opgelost · zo 15 nov 01:53
 KAN NIET VERDER: YS41 kan niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · zo 15 nov 01:48
 KLAAR: YS41 pakket OK en bijschrift OK ("Beide OK YS41", zo 15 nov ±01:47); Instagram ingepland voor ma 16 nov 2026 20:00 · fb339d9 · zo 15 nov 01:48
@@ -188,6 +189,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±01:58, in de sessie, op "Zal ik YS42 maken voor dinsdag 17 november 20:00?": "Ja, maak YS42" → YS42 gemaakt in stijl 3 (waarom tennisballen geel zijn), als pakket ter keuring. Dit is een opdracht om te maken, geen pakket OK.
 - zo 15 nov 2026 ±01:50, in de sessie, op "Wil je Studio op kanaal 1 zetten, zodat ik YS41 kan inplannen?": "Staat op kanaal 1" → Studio stond op kanaal 1 (nagekeken); YS41 geüpload en ingepland.
 - zo 15 nov 2026 ±01:47, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS41?": "Beide OK YS41" → pakket OK YS41 (script, bronnen, titel) en bijschrift OK YS41 (Instagram); vastgelegd in keuring.json van het pakket.
 - zo 15 nov 2026 ±00:58, in de sessie: "maak ys41" → YS41 gemaakt in stijl 3 (het kleine zakje in je spijkerbroek), als pakket ter keuring. Dit is een opdracht om te maken, geen pakket OK: ingepland wordt er pas na "pakket OK YS41" en "bijschrift OK YS41".

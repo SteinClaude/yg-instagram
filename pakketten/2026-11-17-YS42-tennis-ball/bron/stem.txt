@@ -1,0 +1,13 @@
+Stem: ElevenLabs (tekst naar spraak, betaald abonnement), vraag = Laura (eleven_v4, tempo 1.12), antwoord = Liam (eleven_v4, tempo 1.12); gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.
+Ingesproken tekst per scène:
+1. [vraag, Laura] Why are tennis balls yellow? Who decided that?
+2. [antwoord, Liam] Ooh, they weren't always! For a long time, tennis balls were white. Or black!
+3. [vraag, Laura] Black tennis balls? Why?
+4. [antwoord, Liam] It depended on the colour of the court behind them.
+5. [vraag, Laura] So who made them yellow?
+6. [antwoord, Liam] Television! Research showed that yellow balls were easier to see for people watching at home.
+7. [antwoord, Liam] So in nineteen seventy-two, yellow balls went into the rules of tennis.
+8. [vraag, Laura] And everyone switched right away?
+9. [antwoord, Liam] Nope! Wimbledon kept its white balls until nineteen eighty-six. They were getting stained green by the grass!
+10. [vraag, Laura] Hang on. Isn't it actually green?
+11. [antwoord, Liam] Oh no. Not this again! Ask me something else!
