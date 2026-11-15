@@ -1,0 +1,23 @@
+{
+  "code": "YS45",
+  "besluiten": [
+    {
+      "soort": "pakket",
+      "uitkomst": "ok",
+      "tekst": "Beide OK YS45",
+      "tijd": "2026-11-15T21:09:00+01:00",
+      "via": "sessie",
+      "door": "Andries",
+      "opVraag": "2026-11-15T19:46:00+01:00"
+    },
+    {
+      "soort": "bijschrift",
+      "uitkomst": "ok",
+      "tekst": "Beide OK YS45",
+      "tijd": "2026-11-15T21:09:00+01:00",
+      "via": "sessie",
+      "door": "Andries",
+      "opVraag": "2026-11-15T19:46:00+01:00"
+    }
+  ]
+}
