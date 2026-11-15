@@ -1,3 +1,4 @@
+KLAAR: YS42 ingepland: YouTube Studio meldt "Video gepland", 17 november 2026 om 20:00 (lijst Shorts: Gepland, geen meldingen); Instagram in planning.json voor di 17 nov 20:00 (na "Beide OK YS42", zo 15 nov ±10:19) · zo 15 nov 10:25
 KLAAR: pakket YS42 klaar in stijl 3, "Why are tennis balls yellow?" (42,5 s; bronnen: de internationale tennisbond en een persbureau, 2024); wacht op pakket OK YS42 en bijschrift OK YS42 (paneel, gevraagd 02:21); niets ingepland · zo 15 nov 02:21
 KLAAR: YS41 ingepland: YouTube Studio meldt "Video gepland", 16 november 2026 om 20:00; Instagram in planning.json voor ma 16 nov 20:00 (na "Beide OK YS41"); het bordje van 01:48 is hiermee opgelost · zo 15 nov 01:53
 KAN NIET VERDER: YS41 kan niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · zo 15 nov 01:48
