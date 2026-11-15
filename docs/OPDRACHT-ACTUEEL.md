@@ -1,6 +1,14 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** za 14 nov 2026, 16:00 — Eva (het YG-Social-paneel)
+**Bijgewerkt:** zo 15 nov 2026, 12:50 — Eva (kantoor-check)
+
+## ▶ Nieuw voor Manon — zo 15 nov 2026: voorraad en bedoeling per kanaal (jesse-12, jesse-14, via Eva)
+
+**jesse-12 (Jesse → Manon, zo 15 nov 11:18):** *"Voorraad nieuwe reeks stijl 3 (20:00) loopt t/m di 17 nov: maak YS43-YS47 voor 1 week voorraad, ter keuring. Bijschriften YS11-YS32 nog open (Instagram slaat ze nu over)."*
+
+**jesse-14 (Jesse → Manon, Finn en Koen, zo 15 nov 11:32):** *"Bedoeling per kanaal (besluit Andries zo 15 nov): docs/manager/bedoeling-per-kanaal.md. Lees het vóór elk script; elke video past bij bedoeling, kijker en gevoel en mikt op het doel per video. Kanaal 1 educatief + leuk (delen/opslaan) […]"*
+
+**Wat je doet:** zet jesse-12 en jesse-14 in je `ontvangen`. Lees `docs/manager/bedoeling-per-kanaal.md` vóór je volgende script. YS43 is al gemaakt en ingepland (18 nov 20:00); Andries zei zo 15 nov ±12:47 in je sessie op YS44 *"Later"* — dat besluit gaat voor: je maakt YS44–YS47 pas als hij het zegt. Noot van Eva bij jesse-12: de lijst bijschrift OK YS11–YS32 is vervallen (Andries ma 9 nov ±13:39, zie `eva-paneel-2` hieronder); dat is geen open keuring voor jou.
 
 ## ▶ NIEUW — za 14 nov 16:00 (Eva): het YG-Social-paneel · `eva-paneel-1` (Manon) en `eva-paneel-2` (Jesse)
 
