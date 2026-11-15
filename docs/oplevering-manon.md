@@ -1,3 +1,4 @@
+KLAAR: pakket YS44 klaar in stijl 3 met watermerk, "Why are school buses yellow?" (44,0 s; bronnen: een tijdschrift, 2013, en een kindermuseum, 2020); wacht op pakket OK YS44 en bijschrift OK YS44 (paneel, gevraagd 17:22); niets ingepland · zo 15 nov 17:22
 KLAAR: watermerk vastgesteld (plek A, onder het kaartje rechts; "A, onder het kaartje", Andries zo 15 nov ±13:26); gaat aan vanaf YS44 · zo 15 nov 13:26
 KLAAR: watermerk aangepast (los, wit, half doorzichtig) en drie plekken naast elkaar gezet (docs/proef-watermerk.jpg); wacht op de keuze van Andries; nog in geen video gebruikt · zo 15 nov 13:05
 KLAAR: watermerk gebouwd (kanaalmerk zonder naam plus logo YG Digital, labeltje bovenaan in het midden) en proef gemaakt op YS43 (docs/proef-watermerk.jpg); nog in geen video gebruikt, wacht op akkoord van Andries op de proef · zo 15 nov 12:57
