@@ -1,5 +1,6 @@
 # Oplevering Jesse — manager YG-Social
 
+KLAAR: stand per kanaal aan Andries (tijden, voorraad, profielen); ⚠ voorraad nieuwe reeks kanaal 1 (20:00) maar t/m di 17 nov; vragen via voorEva jesse-12 en jesse-13 · zo 15 nov 11:25
 KLAAR: animatiekoers YG-Social vastgelegd (Manon vaste cartoonfiguur vanaf YS40, Finn nieuwe richting uit de WhatsApp-voorbeelden, potje mag na OK per bedrag): docs/manager/animatie-koers.md; via voorEva jesse-10 en jesse-11 · za 14 nov 10:57
 KLAAR: naam account 3 gekozen door Andries (vier rondes voorstellen, handle vrij op YouTube en TikTok; naam niet in de repo, via voorEva jesse-6) · vr 13 nov 12:55
 KLAAR: intake account 3 (GTA 6, uitgelegd): docs/manager/nieuwe-accounts.md; advies start, na kanaal maken (Andries) en nieuw crewlid (Eva) · vr 13 nov 12:20
