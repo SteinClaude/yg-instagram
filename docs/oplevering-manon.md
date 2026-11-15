@@ -192,6 +192,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±11:36, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS43?": "Beide OK YS43" → pakket OK YS43 (script, bronnen, titel) en bijschrift OK YS43 (Instagram); vastgelegd in keuring.json van het pakket.
 - zo 15 nov 2026 ±11:14, in de sessie, op "Zal ik YS43 maken voor woensdag 18 november 20:00?": "Ja, maak YS43" → YS43 gemaakt in stijl 3 (waarom november maand 11 is), als pakket ter keuring. Dit is een opdracht om te maken, geen pakket OK.
 - zo 15 nov 2026 ±11:13, in de sessie, op "Geef je go om de extra starttijden rond 20:00 live te zetten?": "Go, zet live" → de tak manon/cron-2000 (4a9034e, alleen twee extra cron-regels in .github/workflows/plaatsen.yml; door Eva nagekeken zo 15 nov 08:50: in orde) gaat naar main.
 - zo 15 nov 2026 ±10:19, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS42?": "Beide OK YS42" → pakket OK YS42 (script, bronnen, titel) en bijschrift OK YS42 (Instagram); vastgelegd in keuring.json van het pakket.

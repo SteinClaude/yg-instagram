@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-15T11:24:00+01:00",
+  "tijd": "2026-11-15T11:37:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-15T11:13:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-15T11:24:00+01:00 Pakket YS43 klaar in stijl 3: \"Why is November month 11 if its name means \"nine\"?\" (42,8 s, -14,2 LUFS; negen scènes; decors kamer, rome, klas). Bronnen gelezen zo 15 nov: een kalendersite (The Roman Calendar) en een almanak (5 aug 2026). video.mp4, video-upload.mp4 (8,9 MB), studio.txt (wo 18 nov 20:00), bron/bronnen.md en stem.txt, Instagram-versie (omslag op 3300 ms) met bijschrift, kaart met vraag om pakket OK en bijschrift OK. Niets ingepland.",
     "2026-11-15T11:14:00+01:00 Extra starttijden rond 20:00 Amsterdam staan op main (tak manon/cron-2000; go Andries zo 15 nov 2026 ±11:13: \"Go, zet live\"; Eva keek de tak na zo 15 nov 08:50: in orde). De automaat start nu elk uur plus negen keer extra rond 18:00 en negen keer extra rond 20:00.",
@@ -111,11 +111,10 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "YS43 inplannen na pakket OK en bijschrift OK: Instagram (planning.json) en YouTube Studio, wo 18 nov 20:00",
   "volgende": "Na \"pakket OK YS43\" en \"bijschrift OK YS43\": YS43 inplannen in YouTube Studio (wo 18 nov 20:00; eerst nakijken dat het venster op kanaal 1 staat) en in planning.json (Instagram). Daarna YS44 voor do 19 nov 20:00. Zo 15 nov: na 18:00 kijken hoe laat de automaat YS09 plaatste en na 20:00 hoe laat YS40 op Instagram kwam en of hij op YouTube staat; kaart YS40 dan op geplaatst. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
-    "\"pakket OK YS43\" en \"bijschrift OK YS43\"? (kaart in het paneel, gevraagd 11:24) · aanname: geen; zonder OK plan ik niets in · ondertussen: niets ingepland · blokkeert: ja, voor het inplannen van YS43 (wo 18 nov 20:00)",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -125,6 +124,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-15T11:36:00+01:00 Andries in de sessie, op \"Geef je pakket OK en bijschrift OK voor YS43?\": \"Beide OK YS43\"",
     "2026-11-15T11:14:00+01:00 Andries in de sessie, op \"Zal ik YS43 maken voor woensdag 18 november 20:00?\": \"Ja, maak YS43\"",
     "2026-11-15T11:24:00+01:00 ElevenLabs: YS43 kostte 530 tekens (mijn telling); deze maand samen 2.746 (stemproeven en YS40 994, YS41 616, YS42 606, YS43 530). Uitspraak niet door mij beluisterd.",
     "2026-11-15T11:13:00+01:00 Andries in de sessie, op \"Geef je go om de extra starttijden rond 20:00 live te zetten?\": \"Go, zet live\"",
