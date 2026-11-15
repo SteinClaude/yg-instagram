@@ -1,0 +1,23 @@
+{
+  "code": "YS41",
+  "besluiten": [
+    {
+      "soort": "pakket",
+      "uitkomst": "ok",
+      "tekst": "Beide OK YS41",
+      "tijd": "2026-11-15T01:47:00+01:00",
+      "via": "sessie",
+      "door": "Andries",
+      "opVraag": "2026-11-15T01:40:00+01:00"
+    },
+    {
+      "soort": "bijschrift",
+      "uitkomst": "ok",
+      "tekst": "Beide OK YS41",
+      "tijd": "2026-11-15T01:47:00+01:00",
+      "via": "sessie",
+      "door": "Andries",
+      "opVraag": "2026-11-15T01:40:00+01:00"
+    }
+  ]
+}

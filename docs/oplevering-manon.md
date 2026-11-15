@@ -185,6 +185,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±01:47, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS41?": "Beide OK YS41" → pakket OK YS41 (script, bronnen, titel) en bijschrift OK YS41 (Instagram); vastgelegd in keuring.json van het pakket.
 - zo 15 nov 2026 ±00:58, in de sessie: "maak ys41" → YS41 gemaakt in stijl 3 (het kleine zakje in je spijkerbroek), als pakket ter keuring. Dit is een opdracht om te maken, geen pakket OK: ingepland wordt er pas na "pakket OK YS41" en "bijschrift OK YS41".
 - zo 15 nov 2026 ±00:49, in de sessie, op "Geef je go om de extra starttijden van de Instagram-automaat live te zetten?": "Go, zet live" → de tak manon/cron-extra (8a74843, alleen twee extra cron-regels in .github/workflows/plaatsen.yml; door Eva nagekeken vr 13 nov 08:50, geen bezwaar) gaat naar main. De go geldt voor precies die tak: extra starts rond 18:00 Amsterdam. Extra starts rond 20:00 zitten er niet in; dat is een nieuwe wijziging met een eigen controle en go.
 - za 14 nov 2026 ±21:44, in de sessie: "laten we beginnen met de nieuwe videos die we gemaakt hebben met de animaties personages te gebruiken"; op mijn vraag "Hoe wil je de nieuwe laten starten?" (±21:45): "Nieuwe erbij, vanaf morgen (Recommended)" → de oude shorts blijven elke dag om 18:00 staan; de nieuwe shorts met het duo komen er elke dag bij om 20:00, te beginnen met YS40 op zo 15 nov 2026, op YouTube en Instagram. Elke nieuwe short blijft per code ter keuring.

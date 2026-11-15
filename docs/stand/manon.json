@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-15T01:40:00+01:00",
+  "tijd": "2026-11-15T01:48:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-14T13:55:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-15T01:40:00+01:00 Pakket YS41 klaar in stijl 3: \"Why do your jeans have that tiny pocket?\" (41,8 s, -14,4 LUFS; tien scènes; nieuw decor atelier). Bronnen gelezen zo 15 nov: de maker van de broek (artikel uit 2017) en het octrooi uit 1873. video.mp4, video-upload.mp4 (8,9 MB), studio.txt (ma 16 nov 20:00), bron/bronnen.md en stem.txt, Instagram-versie (reel 9,0 MB, omslag op 3300 ms) met bijschrift, kaart met vraag om pakket OK en bijschrift OK. Niets ingepland.",
     "2026-11-15T00:50:00+01:00 Extra starttijden van de Instagram-automaat staan op main (c1f8c83; go Andries zo 15 nov 2026 ±00:49: \"Go, zet live\"): zes extra starts in het uur vóór en na 18:00 Amsterdam en drie in het uur daarna. Voor het nieuwe moment van 20:00 ligt een aparte tak klaar (manon/cron-2000), niet op main.",
@@ -105,11 +105,10 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "YS41 inplannen na pakket OK en bijschrift OK: Instagram (planning.json) en YouTube Studio, ma 16 nov 20:00",
   "volgende": "Na \"pakket OK YS41\" en \"bijschrift OK YS41\": YS41 inplannen in YouTube Studio (ma 16 nov 20:00) en in planning.json (Instagram, zelfde moment). Daarna YS42 voor di 17 nov 20:00. Zo 15 nov: na 18:00 kijken hoe laat de automaat YS09 plaatste (eerste dag met de extra starts) en na 20:00 of YS40 op YouTube en Instagram staat. Na controle Eva en go Andries: manon/cron-2000 naar main. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
-    "\"pakket OK YS41\" en \"bijschrift OK YS41\"? (kaart in het paneel, gevraagd 01:40) · aanname: geen; zonder OK plan ik niets in · ondertussen: niets ingepland · blokkeert: ja, voor het inplannen van YS41 (ma 16 nov 20:00)",
     "Go voor tak manon/cron-2000 naar main (extra starts rond 20:00 Amsterdam, het moment van de nieuwe shorts)? Eerst de controle van Eva (V-manon-cron-2000) · aanname: tot die tijd gaat de Reel van 20:00 mee met de gewone uurstart · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
     {
@@ -120,6 +119,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-15T01:47:00+01:00 Andries in de sessie, op \"Geef je pakket OK en bijschrift OK voor YS41?\": \"Beide OK YS41\"",
     "2026-11-15T01:40:00+01:00 ElevenLabs: YS41 kostte 616 tekens (mijn telling); stemproeven en YS40 samen 994. De tweede render en de pakketbestanden kostten geen tegoed (bewaarde zinnen). Uitspraak niet door mij beluisterd.",
     "2026-11-15T01:12:00+01:00 Andries in de sessie (zo 15 nov 2026 ±00:58): \"maak ys41\". ElevenLabs: 616 tekens ingesproken voor YS41 (mijn telling; stemmen Laura en Liam, model eleven_v4).",
     "2026-11-15T00:49:00+01:00 Andries in de sessie, op \"Geef je go om de extra starttijden van de Instagram-automaat live te zetten?\": \"Go, zet live\"",
