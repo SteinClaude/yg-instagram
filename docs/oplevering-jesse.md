@@ -93,6 +93,7 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 (sessie Jesse), op "Zet ik dit overzicht in mijn weekoverzicht van morgen?": *"Ja, morgen"*.
 - za 14 nov 2026 ±10:50–10:55 (sessie Jesse): *"ik wil de content en video kwaliteit voor finn en manon vereteren, ik wil meer naar animaties/cartoons gaan, manon houdt wel de zelfde inhoudelijk stof aleen andere weergave, finn krijgt een hele nieuwe ingeving voor nieuwe content/animaties"*. Knoppen: *"Vaste figuur"* · *"Vanaf YS40"* · Finn: *"ik wil finn in de whatsapp groep yg-social laten kijken ik heb hier vandaag wat voorbeelden gestuurd"* · *"Potje €25/mnd mag"* → docs/manager/animatie-koers.md.
 - vr 13 nov 2026 ±12:55 (sessie Jesse), keuze naam account 3: *"[weggelaten]"* (naam en handle via voorEva jesse-6 naar het Project van Eva).
 - vr 13 nov 2026 ±12:10 (vragenknoppen, sessie Jesse): Weekritme YG-Social → *"Akkoord"*. Account 3 → *"Ja, dit is account 3"* · *"3 shorts/week, uitleg"* · *"Nieuw crewlid"* · *"youtube, instagram, tiktok"* · *"Engels, AI-stem"* · *"Bereik nu, geld later"* · *"±1 uur"*.
