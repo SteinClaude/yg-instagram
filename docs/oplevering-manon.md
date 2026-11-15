@@ -189,6 +189,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±10:19, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS42?": "Beide OK YS42" → pakket OK YS42 (script, bronnen, titel) en bijschrift OK YS42 (Instagram); vastgelegd in keuring.json van het pakket.
 - zo 15 nov 2026 ±01:58, in de sessie, op "Zal ik YS42 maken voor dinsdag 17 november 20:00?": "Ja, maak YS42" → YS42 gemaakt in stijl 3 (waarom tennisballen geel zijn), als pakket ter keuring. Dit is een opdracht om te maken, geen pakket OK.
 - zo 15 nov 2026 ±01:50, in de sessie, op "Wil je Studio op kanaal 1 zetten, zodat ik YS41 kan inplannen?": "Staat op kanaal 1" → Studio stond op kanaal 1 (nagekeken); YS41 geüpload en ingepland.
 - zo 15 nov 2026 ±01:47, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS41?": "Beide OK YS41" → pakket OK YS41 (script, bronnen, titel) en bijschrift OK YS41 (Instagram); vastgelegd in keuring.json van het pakket.

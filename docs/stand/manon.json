@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-15T02:21:00+01:00",
+  "tijd": "2026-11-15T10:20:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
-    "sinds": "2026-11-14T13:55:00+01:00"
+    "sinds": "2026-11-15T10:19:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-15T02:21:00+01:00 Pakket YS42 klaar in stijl 3: \"Why are tennis balls yellow?\" (42,5 s, -14,2 LUFS; elf scènes; nieuw decor baan). Bronnen gelezen zo 15 nov: de internationale tennisbond (History of Tennis Balls) en een persbureau (2 jul 2024). video.mp4, video-upload.mp4 (8,9 MB), studio.txt (di 17 nov 20:00), bron/bronnen.md en stem.txt, Instagram-versie (reel 9,1 MB, omslag op 2500 ms) met bijschrift, kaart met vraag om pakket OK en bijschrift OK. Niets ingepland.",
     "2026-11-15T01:53:00+01:00 YS41 ingepland in YouTube Studio (kanaal 1): Studio meldt \"Video gepland\", openbaar op 16 november 2026 om 20:00. Instagram staat voor hetzelfde moment in planning.json (fb339d9).",
@@ -108,11 +108,10 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "YS42 inplannen na pakket OK en bijschrift OK: Instagram (planning.json) en YouTube Studio, di 17 nov 20:00",
   "volgende": "Na \"pakket OK YS42\" en \"bijschrift OK YS42\": YS42 inplannen in YouTube Studio (di 17 nov 20:00; eerst nakijken dat het venster op kanaal 1 staat) en in planning.json (Instagram). Daarna YS43 voor wo 18 nov 20:00. Zo 15 nov: na 18:00 kijken hoe laat de automaat YS09 plaatste (eerste dag met de extra starts) en na 20:00 of YS40 op YouTube en Instagram staat; kaart YS40 dan op geplaatst. Na controle Eva en go Andries: manon/cron-2000 naar main. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
-    "\"pakket OK YS42\" en \"bijschrift OK YS42\"? (kaart in het paneel, gevraagd 02:21) · aanname: geen; zonder OK plan ik niets in · ondertussen: niets ingepland · blokkeert: ja, voor het inplannen van YS42 (di 17 nov 20:00)",
     "Go voor tak manon/cron-2000 naar main (extra starts rond 20:00 Amsterdam, het moment van de nieuwe shorts)? Eerst de controle van Eva (V-manon-cron-2000) · aanname: tot die tijd gaat de Reel van 20:00 mee met de gewone uurstart · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
     {
@@ -123,6 +122,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-15T10:19:00+01:00 Andries in de sessie, op \"Geef je pakket OK en bijschrift OK voor YS42?\": \"Beide OK YS42\"",
     "2026-11-15T01:58:00+01:00 Andries in de sessie, op \"Zal ik YS42 maken voor dinsdag 17 november 20:00?\": \"Ja, maak YS42\"",
     "2026-11-15T02:21:00+01:00 ElevenLabs: YS42 kostte 606 tekens (mijn telling); deze maand samen 2.216 (stemproeven en YS40 994, YS41 616, YS42 606). Uitspraak niet door mij beluisterd.",
     "2026-11-15T01:50:00+01:00 Andries in de sessie, op \"Wil je Studio op kanaal 1 zetten, zodat ik YS41 kan inplannen?\": \"Staat op kanaal 1\"",
