@@ -1,5 +1,5 @@
 STUDIO.TXT — YS44 (YouTube Studio, uploadscherm van boven naar beneden)
-Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS44" van Andries.
+Status: pakket OK YS44 ("Beide OK YS44", Andries zo 15 nov 2026 ±17:37); stijl OK stijl 3 (za 14 nov 2026 ±20:43). NOG NIET ingepland in Studio: Finn gebruikt Studio eerst (Andries zo 15 nov 17:38).
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 44,0 s, Engelse stemmen (ElevenLabs, betaald abonnement met commerciële licentie; stemmen Laura (het Vraagteken) en Liam (Peertje)) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt

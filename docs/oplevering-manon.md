@@ -1,3 +1,4 @@
+KLAAR: YS44 pakket OK en bijschrift OK ("Beide OK YS44", zo 15 nov ±17:37); Instagram ingepland voor do 19 nov 2026 20:00; YouTube Studio wacht tot Finn klaar is · 545538d · zo 15 nov 17:38
 KLAAR: pakket YS44 klaar in stijl 3 met watermerk, "Why are school buses yellow?" (44,0 s; bronnen: een tijdschrift, 2013, en een kindermuseum, 2020); wacht op pakket OK YS44 en bijschrift OK YS44 (paneel, gevraagd 17:22); niets ingepland · zo 15 nov 17:22
 KLAAR: watermerk vastgesteld (plek A, onder het kaartje rechts; "A, onder het kaartje", Andries zo 15 nov ±13:26); gaat aan vanaf YS44 · zo 15 nov 13:26
 KLAAR: watermerk aangepast (los, wit, half doorzichtig) en drie plekken naast elkaar gezet (docs/proef-watermerk.jpg); wacht op de keuze van Andries; nog in geen video gebruikt · zo 15 nov 13:05
@@ -199,6 +200,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±17:38, in de sessie, terwijl ik Studio opende voor YS44: "finn gat eerst op studio" → ik wacht met Studio tot hij zegt dat het vrij is.
 - zo 15 nov 2026 ±17:37, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS44?": "Beide OK YS44" → pakket OK YS44 (script, bronnen, titel) en bijschrift OK YS44 (Instagram); vastgelegd in keuring.json van het pakket.
 - zo 15 nov 2026 ±17:11, in de sessie, op "Zal ik nu YS44 maken, de eerste met het watermerk?": "Ja, maak YS44" → YS44 gemaakt in stijl 3 met watermerk (waarom schoolbussen geel zijn), als pakket ter keuring. Dit is een opdracht om te maken, geen pakket OK.
 - zo 15 nov 2026 ±13:26, in de sessie, op "Welke plek wil je voor het watermerk?": "A, onder het kaartje" → het watermerk (kanaalmerk zonder naam plus logo YG Digital, los, wit en half doorzichtig) staat direct onder het kaartje, rechts, in elke short vanaf YS44. YS40–YS43 blijven zoals ze zijn.
