@@ -1,3 +1,4 @@
+KLAAR: watermerk aangepast (los, wit, half doorzichtig) en drie plekken naast elkaar gezet (docs/proef-watermerk.jpg); wacht op de keuze van Andries; nog in geen video gebruikt · zo 15 nov 13:05
 KLAAR: watermerk gebouwd (kanaalmerk zonder naam plus logo YG Digital, labeltje bovenaan in het midden) en proef gemaakt op YS43 (docs/proef-watermerk.jpg); nog in geen video gebruikt, wacht op akkoord van Andries op de proef · zo 15 nov 12:57
 KLAAR: YS43 ingepland: YouTube Studio meldt "Video gepland", 18 november 2026 om 20:00 (lijst Shorts: Gepland, geen melding); Instagram in planning.json voor wo 18 nov 20:00; het bordje van 11:37 is hiermee opgelost · zo 15 nov 12:44
 KAN NIET VERDER: YS43 kan niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · zo 15 nov 11:37
@@ -196,6 +197,8 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±13:00, in de sessie, op "Wat wil je anders aan het watermerk (het labeltje bovenaan met het kanaalmerk en het logo van YG Digital)?": "Andere plek,Minder opvallend" → geen labeltje meer; de merken staan los, wit en half doorzichtig; drie plekken ter keuze.
+- zo 15 nov 2026 ±12:59, in de sessie, op "Is het watermerk zo goed voor YS44 en verder?": "Aanpassen".
 - zo 15 nov 2026 ±12:50, in de sessie: "zet ook bij elke video voortaan een watermerk van het kanaal en yg-digital" → elke nieuwe short krijgt een watermerk met het kanaalmerk en het logo van YG Digital. Dit vervangt voor kanaal 1 de keuze van 2 nov ("YG Digital: alleen in de bio, nooit in de video"). Mijn uitvoering (hoe): het kanaalmerk zonder kanaalnaam, omdat de naam niet in deze openbare repo hoort; vanaf YS44; YS40–YS43 blijven zoals ze zijn; eerst zijn akkoord op de proef.
 - zo 15 nov 2026 ±12:47, in de sessie, op "Zal ik YS44 maken voor donderdag 19 november 20:00?": "Later" → YS44 maak ik nog niet; ik wacht op zijn woord.
 - zo 15 nov 2026 ±12:34, in de sessie, op "Wil je Studio op kanaal 1 zetten, zodat ik YS43 kan inplannen?": "Staat op kanaal 1" → Studio stond op kanaal 1 (nagekeken); YS43 geüpload en ingepland.

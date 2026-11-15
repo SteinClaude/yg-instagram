@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-15T12:57:00+01:00",
+  "tijd": "2026-11-15T13:05:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-15T13:05:00+01:00 Watermerk aangepast na \"Aanpassen\" en \"Andere plek, Minder opvallend\": geen labeltje meer, de twee merken staan los, wit en half doorzichtig met een zachte schaduw. Drie plekken naast elkaar in docs/proef-watermerk.jpg: A onder het kaartje rechts, B boven midden, C rechtsboven. Nog in geen video gebruikt.",
     "2026-11-15T12:57:00+01:00 Watermerk gebouwd in de generator (gereedschap/short.cjs, bestanden in gereedschap/short/merk/): een labeltje bovenaan in het midden met het kanaalmerk (rood rondje met vraagteken, zonder kanaalnaam) en het logo van YG Digital. Staat uit tenzij een script watermerk: true heeft of met --watermerk. Proef op YS43: docs/proef-watermerk.jpg. Nog in geen enkele video gebruikt; YS40–YS43 zijn ongewijzigd.",
     "2026-11-15T12:44:00+01:00 YS43 ingepland in YouTube Studio (kanaal 1): Studio meldt \"Video gepland\", openbaar op 18 november 2026 om 20:00; de lijst Shorts toont hem als Gepland, zonder melding. Instagram staat voor hetzelfde moment in planning.json (fc05aba).",
     "2026-11-15T11:37:00+01:00 YS43: pakket OK en bijschrift OK vastgelegd (620b4a5); Instagram ingepland voor wo 18 nov 2026 20:00 (planning.json, fc05aba). YouTube Studio nog niet: venster stond op een ander kanaal, niets geüpload.",
@@ -118,7 +119,7 @@
   "volgende": "Na akkoord op het watermerk: vanaf YS44 watermerk: true in elk script. YS44 maken in stijl 3 voor do 19 nov 20:00 zodra Andries het zegt (zo 15 nov ±12:47: \"Later\"). Zo 15 nov: na 18:00 kijken hoe laat de automaat YS09 plaatste en na 20:00 hoe laat YS40 op Instagram kwam en of hij op YouTube staat; kaart YS40 dan op geplaatst. Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
-    "Is het watermerk zo goed (docs/proef-watermerk.jpg) voor YS44 en verder? · aanname: ja, zodra hij het zegt; tot dan zet ik het in geen enkele video · ondertussen: YS40–YS43 blijven zonder watermerk (al ingepland; vervangen is in Studio verwijderen en opnieuw uploaden) · blokkeert: nee",
+    "Welke plek voor het watermerk: A onder het kaartje rechts, B boven midden of C rechtsboven (docs/proef-watermerk.jpg)? · mijn advies: A (boven in beeld zetten YouTube en Instagram hun eigen knoppen) · aanname: geen; tot zijn keuze zet ik het in geen enkele video · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -128,6 +129,8 @@
     }
   ],
   "buitenGit": [
+    "2026-11-15T12:59:00+01:00 Andries in de sessie, op \"Is het watermerk zo goed voor YS44 en verder?\": \"Aanpassen\"",
+    "2026-11-15T13:00:00+01:00 Andries in de sessie, op \"Wat wil je anders aan het watermerk (het labeltje bovenaan met het kanaalmerk en het logo van YG Digital)?\": \"Andere plek,Minder opvallend\"",
     "2026-11-15T12:50:00+01:00 Andries in de sessie: \"zet ook bij elke video voortaan een watermerk van het kanaal en yg-digital\"",
     "2026-11-15T12:47:00+01:00 Andries in de sessie, op \"Zal ik YS44 maken voor donderdag 19 november 20:00?\": \"Later\"",
     "2026-11-15T12:34:00+01:00 Andries in de sessie, op \"Wil je Studio op kanaal 1 zetten, zodat ik YS43 kan inplannen?\": \"Staat op kanaal 1\"",

@@ -176,23 +176,27 @@ async function bereidDecor(script) {
   }
 }
 // Stijl 3: watermerk (Andries zo 15 nov 2026 ±12:50: "zet ook bij elke video voortaan een watermerk van het kanaal en
-// yg-digital"): het kanaalmerk (rood rondje met vraagteken, bewust zonder kanaalnaam: die hoort niet in deze openbare
-// repo) en het logo van YG Digital, samen op een klein papieren labeltje bovenaan in het midden. Het staat stil in
-// elke scène (buiten de camera) en valt buiten de knoppen van YouTube en Instagram. Alleen als het script `watermerk: true` heeft (vanaf YS44) of met
-// --watermerk; de bestanden staan in short/merk/.
+// yg-digital"; ±13:00 na de eerste proef: "Andere plek, Minder opvallend"): het kanaalmerk (rondje met vraagteken, bewust
+// zonder kanaalnaam: die hoort niet in deze openbare repo) en het logo van YG Digital, los en half doorzichtig in wit
+// met een zachte schaduw, zodat het op elk decor leesbaar blijft. Het staat stil in elke scène (buiten de camera).
+// Alleen als het script `watermerk` heeft (vanaf YS44) of met --watermerk [plek]; plek = 'onder' (direct onder het
+// kaartje, rechts; standaard bij true), 'midden' (boven, midden) of 'hoek' (rechtsboven). Bestanden in short/merk/.
 const MERK = {};
 async function bereidMerk() {
-  if (MERK.kanaal) return; const map = path.join(__dirname, 'short', 'merk');
-  MERK.kanaal = 'data:image/png;base64,' + (await sharp(path.join(map, 'kanaal.png')).resize(216, 216).png().toBuffer()).toString('base64');
-  MERK.yg = 'data:image/png;base64,' + (await sharp(path.join(map, 'yg-digital.svg'), { density: 220 }).resize({ height: 216 }).png().toBuffer()).toString('base64');
+  if (MERK.wit) return; const map = path.join(__dirname, 'short', 'merk');
+  const png = await sharp(path.join(map, 'yg-digital.svg'), { density: 220 }).resize({ height: 216 }).ensureAlpha().png().toBuffer();
+  const { width, height } = await sharp(png).metadata(), alfa = await sharp(png).extractChannel('alpha').toBuffer();
+  const vlak = async kleur => 'data:image/png;base64,' + (await sharp({ create: { width, height, channels: 3, background: kleur } }).joinChannel(alfa).png().toBuffer()).toString('base64');
+  MERK.wit = await vlak('#FFFFFF'); MERK.zwart = await vlak('#000000');
 }
 function merk(script) {
-  if (!script.watermerk || !MERK.kanaal) return '';
-  const h = 60, lw = h * 489.889 / 116, e = 54, bw = 30 + e + 18 + lw + 34, bh = 84, x = (W - bw) / 2, y = 44;
-  return `<g><rect x="${(x + 4).toFixed(1)}" y="${y + 6}" width="${bw.toFixed(1)}" height="${bh}" rx="${bh / 2}" fill="#000000" opacity="0.22"/>` +
-    `<rect x="${x.toFixed(1)}" y="${y}" width="${bw.toFixed(1)}" height="${bh}" rx="${bh / 2}" fill="${K.papier}" stroke="${K.inkt}" stroke-width="5"/>` +
-    `<image href="${MERK.kanaal}" x="${(x + 30).toFixed(1)}" y="${y + (bh - e) / 2}" width="${e}" height="${e}"/>` +
-    `<image href="${MERK.yg}" x="${(x + 30 + e + 18).toFixed(1)}" y="${y + (bh - h) / 2}" width="${lw.toFixed(1)}" height="${h}"/></g>`;
+  if (!script.watermerk || !MERK.wit) return '';
+  const plek = script.watermerk === true ? 'onder' : script.watermerk, h = plek === 'onder' ? 50 : 56, lw = h * 489.889 / 116, e = h * 0.84, bw = e + 16 + lw;
+  const x = plek === 'midden' ? (W - bw) / 2 : plek === 'hoek' ? W - 44 - bw : W - 62 - bw, y = plek === 'onder' ? 582 : plek === 'midden' ? 64 : 58;
+  const teken = (dx, dy, kleur, beeld) => `<g transform="translate(${dx} ${dy})"><circle cx="${(x + e / 2).toFixed(1)}" cy="${(y + h / 2).toFixed(1)}" r="${(e / 2 - 3).toFixed(1)}" fill="none" stroke="${kleur}" stroke-width="5"/>` +
+    `<text x="${(x + e / 2).toFixed(1)}" y="${(y + h / 2 + e * 0.23).toFixed(1)}" text-anchor="middle" font-family="Instrument Sans" font-weight="700" font-size="${(e * 0.66).toFixed(1)}" fill="${kleur}">?</text>` +
+    `<image href="${beeld}" x="${(x + e + 16).toFixed(1)}" y="${y}" width="${lw.toFixed(1)}" height="${h}"/></g>`;
+  return `<g opacity="0.3">${teken(2, 3, '#000000', MERK.zwart)}</g><g opacity="0.74">${teken(0, 0, '#FFFFFF', MERK.wit)}</g>`;
 }
 // Stijl 3 met decor: de kop staat op een papieren kaartje (ons dossierpapier) dat met plakband bovenin hangt.
 function kaart(scene) {
@@ -561,7 +565,7 @@ async function maak(code, alleenBeelden, opties = {}) {
   const script = require(path.join(WORTEL, 'teksten', 'shorts', code + '.cjs'));
   if (opties.werk) script.stemWerk = opties.werk;         // --werk / --plafond: onder welke naam en tot hoeveel tekens
   if (opties.plafond) script.stemPlafond = opties.plafond; // de ElevenLabs-stem tegoed mag gebruiken
-  if (opties.watermerk) script.watermerk = true;          // --watermerk: proef met het watermerk zonder het script te wijzigen
+  if (opties.watermerk) script.watermerk = opties.watermerk;   // --watermerk [plek]: proef met het watermerk zonder het script te wijzigen
   if (opties.stijl) script.stijl = opties.stijl;   // --stijl 2: proef met de nieuwe stijl zonder het script te wijzigen
   const map = opties.map ? path.resolve(opties.map) : path.join(WORTEL, 'pakketten', script.map);
   fs.mkdirSync(path.join(map, 'bron'), { recursive: true });
@@ -644,7 +648,7 @@ async function controleBlad(script, map, doel) {
 
 if (require.main === module) {
   const a = process.argv.slice(2), code = a[0], waarde = v => { const i = a.indexOf(v); return i > 0 ? a[i + 1] : undefined; };
-  if (!code) { console.error('gebruik: node gereedschap/short.cjs YS01 [--frames] [--stijl 2] [--map <uitvoermap>] [--werk <naam> --plafond <tekens>] [--watermerk]'); process.exit(1); }
-  maak(code, a.includes('--frames'), { stijl: Number(waarde('--stijl')) || 0, map: waarde('--map'), werk: waarde('--werk'), plafond: Number(waarde('--plafond')) || 0, watermerk: a.includes('--watermerk') }).catch(e => { console.error(e); process.exit(1); });
+  if (!code) { console.error('gebruik: node gereedschap/short.cjs YS01 [--frames] [--stijl 2] [--map <uitvoermap>] [--werk <naam> --plafond <tekens>] [--watermerk [onder|midden|hoek]]'); process.exit(1); }
+  maak(code, a.includes('--frames'), { stijl: Number(waarde('--stijl')) || 0, map: waarde('--map'), werk: waarde('--werk'), plafond: Number(waarde('--plafond')) || 0, watermerk: a.includes('--watermerk') ? (['onder', 'midden', 'hoek'].includes(waarde('--watermerk')) ? waarde('--watermerk') : true) : false }).catch(e => { console.error(e); process.exit(1); });
 }
 module.exports = { maak, svgVoor, teken, K, geluidLijst };
