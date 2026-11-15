@@ -1,3 +1,4 @@
+KLAAR: YS43 ingepland: YouTube Studio meldt "Video gepland", 18 november 2026 om 20:00 (lijst Shorts: Gepland, geen melding); Instagram in planning.json voor wo 18 nov 20:00; het bordje van 11:37 is hiermee opgelost · zo 15 nov 12:44
 KAN NIET VERDER: YS43 kan niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · zo 15 nov 11:37
 KLAAR: YS43 pakket OK en bijschrift OK ("Beide OK YS43", zo 15 nov ±11:36); Instagram ingepland voor wo 18 nov 2026 20:00 · fc05aba · zo 15 nov 11:37
 KLAAR: pakket YS43 klaar in stijl 3, waarom november maand 11 is terwijl de naam negen betekent (42,8 s; bronnen: een kalendersite en een almanak, 2026); wacht op pakket OK YS43 en bijschrift OK YS43 (paneel, gevraagd 11:24); niets ingepland · zo 15 nov 11:24
@@ -194,6 +195,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- zo 15 nov 2026 ±12:34, in de sessie, op "Wil je Studio op kanaal 1 zetten, zodat ik YS43 kan inplannen?": "Staat op kanaal 1" → Studio stond op kanaal 1 (nagekeken); YS43 geüpload en ingepland.
 - zo 15 nov 2026 ±11:36, in de sessie, op "Geef je pakket OK en bijschrift OK voor YS43?": "Beide OK YS43" → pakket OK YS43 (script, bronnen, titel) en bijschrift OK YS43 (Instagram); vastgelegd in keuring.json van het pakket.
 - zo 15 nov 2026 ±11:14, in de sessie, op "Zal ik YS43 maken voor woensdag 18 november 20:00?": "Ja, maak YS43" → YS43 gemaakt in stijl 3 (waarom november maand 11 is), als pakket ter keuring. Dit is een opdracht om te maken, geen pakket OK.
 - zo 15 nov 2026 ±11:13, in de sessie, op "Geef je go om de extra starttijden rond 20:00 live te zetten?": "Go, zet live" → de tak manon/cron-2000 (4a9034e, alleen twee extra cron-regels in .github/workflows/plaatsen.yml; door Eva nagekeken zo 15 nov 08:50: in orde) gaat naar main.

@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-15T11:37:00+01:00",
+  "tijd": "2026-11-15T12:44:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
-    "sinds": "2026-11-15T11:13:00+01:00"
+    "sinds": "2026-11-15T12:34:00+01:00"
   },
-  "status": "kan-niet-verder",
+  "status": "wacht",
   "af": [
+    "2026-11-15T12:44:00+01:00 YS43 ingepland in YouTube Studio (kanaal 1): Studio meldt \"Video gepland\", openbaar op 18 november 2026 om 20:00; de lijst Shorts toont hem als Gepland, zonder melding. Instagram staat voor hetzelfde moment in planning.json (fc05aba).",
     "2026-11-15T11:37:00+01:00 YS43: pakket OK en bijschrift OK vastgelegd (620b4a5); Instagram ingepland voor wo 18 nov 2026 20:00 (planning.json, fc05aba). YouTube Studio nog niet: venster stond op een ander kanaal, niets geüpload.",
     "2026-11-15T11:24:00+01:00 Pakket YS43 klaar in stijl 3: \"Why is November month 11 if its name means \"nine\"?\" (42,8 s, -14,2 LUFS; negen scènes; decors kamer, rome, klas). Bronnen gelezen zo 15 nov: een kalendersite (The Roman Calendar) en een almanak (5 aug 2026). video.mp4, video-upload.mp4 (8,9 MB), studio.txt (wo 18 nov 20:00), bron/bronnen.md en stem.txt, Instagram-versie (omslag op 3300 ms) met bijschrift, kaart met vraag om pakket OK en bijschrift OK. Niets ingepland.",
     "2026-11-15T11:14:00+01:00 Extra starttijden rond 20:00 Amsterdam staan op main (tak manon/cron-2000; go Andries zo 15 nov 2026 ±11:13: \"Go, zet live\"; Eva keek de tak na zo 15 nov 08:50: in orde). De automaat start nu elk uur plus negen keer extra rond 18:00 en negen keer extra rond 20:00.",
@@ -113,8 +114,8 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "-",
-  "volgende": "Zodra Studio op kanaal 1 staat: YS43 uploaden en inplannen (wo 18 nov 20:00), kaart en studio.txt bijwerken. Daarna YS44 voor do 19 nov 20:00. Zo 15 nov: na 18:00 kijken hoe laat de automaat YS09 plaatste en na 20:00 hoe laat YS40 op Instagram kwam en of hij op YouTube staat; kaart YS40 dan op geplaatst. Weekverslag ma 16 nov (cijfers via Eva).",
-  "kanNietVerder": "YS43 kan niet in YouTube Studio: het venster in de Chrome van Andries staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie; daarna plan ik YS43 in (wo 18 nov 20:00)",
+  "volgende": "YS44 maken in stijl 3 voor do 19 nov 20:00 (pakket OK en bijschrift OK vragen), daarna elke dag een nieuwe. Zo 15 nov: na 18:00 kijken hoe laat de automaat YS09 plaatste en na 20:00 hoe laat YS40 op Instagram kwam en of hij op YouTube staat; kaart YS40 dan op geplaatst. Weekverslag ma 16 nov (cijfers via Eva).",
+  "kanNietVerder": null,
   "vragen": [
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
     {
@@ -125,6 +126,8 @@
     }
   ],
   "buitenGit": [
+    "2026-11-15T12:34:00+01:00 Andries in de sessie, op \"Wil je Studio op kanaal 1 zetten, zodat ik YS43 kan inplannen?\": \"Staat op kanaal 1\"",
+    "2026-11-15T12:44:00+01:00 In de Chrome van Andries, YouTube Studio kanaal 1 (nagekeken aan de nieuwste short op het dashboard): YS43 geüpload (video-upload.mp4) en ingepland voor 18 nov 2026 20:00; niet voor kinderen, geen betaalde promotie, AI-gebruik ja, 13 tags, taal Engels, categorie Educatief; Studio: \"Controles voltooid. Geen problemen gevonden.\" Tijdens het typen van de beschrijving viel de verbinding met het tabblad weg en hing het tabblad ruim een minuut; de beschrijving stond er voor het grootste deel, het ontbrekende slot heb ik aangevuld en nagekeken (1107 tekens, compleet). Tabblad gesloten.",
     "2026-11-15T11:37:00+01:00 In de Chrome van Andries YouTube Studio geopend voor YS43: het dashboard was van een ander kanaal dan kanaal 1 (ander profielbeeld, nog geen video's). Niets aangeklikt, niets geüpload, niet van kanaal gewisseld; tabblad gesloten.",
     "2026-11-15T11:36:00+01:00 Andries in de sessie, op \"Geef je pakket OK en bijschrift OK voor YS43?\": \"Beide OK YS43\"",
     "2026-11-15T11:14:00+01:00 Andries in de sessie, op \"Zal ik YS43 maken voor woensdag 18 november 20:00?\": \"Ja, maak YS43\"",
@@ -618,6 +621,11 @@
     }
   ],
   "voorEva": [
+    {
+      "id": "V-manon-studio-venster",
+      "aan": "Eva",
+      "wat": "Het venster van YouTube Studio in de Chrome van Andries wordt door meer kanalen gebruikt en stond zo 15 nov twee keer op een ander kanaal toen ik wilde inplannen (±01:48 en ±11:37). Ik kijk het kanaal elke keer na aan de nieuwste short op het dashboard en upload niets als het niet kanaal 1 is; ik wissel zelf niet. Graag dezelfde controle bij de andere makers, zodat niemand op het verkeerde kanaal uploadt."
+    },
     {
       "id": "V-manon-cron-2000-live",
       "aan": "Eva",
