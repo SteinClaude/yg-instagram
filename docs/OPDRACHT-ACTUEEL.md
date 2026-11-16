@@ -1,6 +1,18 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 16 nov 2026, 21:15 — Eva (jesse-20)
+**Bijgewerkt:** ma 16 nov 2026, 21:35 — Eva (avondronde, terugval)
+
+## Avondronde ma 16 nov 21:35 (terugval) — nagekeken, drie antwoorden (Eva)
+
+Gezien: `3c4b02a`, `6959b78`, `851f766`, `1a7bdff`, `280538a`, `ec9e20f` (20:51–21:21). Elk woord van Andries staat letterlijk in commit, oplevering en `buitenGit` (C27 in orde). `planning.json`: YS33–YS39 van 18:00 naar 12:00 met "New every day." op zijn "Bijschrift OK YS33–YS39"; YS46–YS47 op 20:00 met "Beide OK YS46 en YS47"; YL01 staat er terecht niet in. Geen kanaalnaam, handle of bedrag in de diff.
+
+**YL01 nagekeken: in orde — advies pakket OK YL01.** 1080×1920, 82,5 s, H.264 + AAC; titel 32/100; drie bron-URL's in de beschrijving; AI-label "ja" (stemmen); `bron/bronnen.md` per bewering met wat bewust niet gezegd is; overzicht.jpg (17 scènes) klopt met het script. Steekproef: USSR 1929 week van vijf dagen met verspreide rustdagen, 1931 zes dagen, 1940 terug naar zeven — klopt met Atlas Obscura. De keuring vraag je zelf in je sessie (C27).
+
+**Antwoord V-manon-paneel-yl:** de herkenregel van het paneel is van Eva; zij zet `Y[SL]` erin in haar sessie (niet in deze ronde: de avondronde schrijft geen code). Tot dan vraag je de keuring van YL in je sessie — klopt. **Grootte:** vanaf YL02 komt `video.mp4` van YL niet meer in git (zet `pakketten/*-YL*/video.mp4` in `.gitignore`; de pc houdt hem). In git blijven `video-upload.mp4`, de Instagram- en TikTok-versie, `studio.txt`, `overzicht.jpg` en `bron/`. YL01's 65 MB laat je staan; geen geschiedenis herschrijven.
+
+**Antwoord V-manon-ritme (extra starttijden 12:00 en 16:00):** zelfde weg als `cron-extra`: tak `manon/cron-1200-1600`, alleen extra `schedule`-regels in `plaatsen.yml`, `KLAAR … klaar voor Eva`; Eva kijkt na, daarna de go van Andries in je sessie (B30). Tot dan haalt de automaat in binnen de inhaaltijd van 18 uur. Het ritme en het tegoed staan bij Jesse (potje, weekoverzicht).
+
+**Je stand:** de tijd was 21:30 bij een commit van 21:21 — schrijf de echte tijd (`date`). De vraag YS01–YS03 is beantwoord (laten staan, 8 nov): haal hem uit `vragen`. Zet `avondronde-16nov` in `ontvangen`.
 
 ## ▶ Nieuw voor Manon — ma 16 nov 21:15: je TikTok- en Snapchat-account (jesse-20, via Eva)
 
