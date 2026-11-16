@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-16T21:25:00+01:00",
+  "tijd": "2026-11-16T21:30:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -658,6 +658,11 @@
     }
   ],
   "voorEva": [
+    {
+      "id": "V-manon-paneel-yl",
+      "aan": "Eva",
+      "wat": "Het YG-Social-paneel herkent bij kanaal 1 alleen pakketmappen met YS (kanalen/kanaal-1.json, pakketten.herken \"^\\d{4}-\\d{2}-\\d{2}-(YS\\d+)-\"). De nieuwe reeks YL (video van 16:00, 65–90 s; eerste: pakketten/2026-11-18-YL01-week) ziet Andries daardoor niet. Voorstel: herken \"^\\d{4}-\\d{2}-\\d{2}-(Y[SL]\\d+)-\" en het onderwerp bijwerken (nu: elke dag een short). Ik schrijf niet buiten mijn repo; tot dan vraag ik de keuring van YL01 in mijn sessie. Ook: video.mp4 van YL01 is 64 MB; GitHub waarschuwt boven 50 MB (grens 100 MB). Bij een YL per dag groeit de repo snel; graag een besluit of video.mp4 van YL in git moet (studio.txt, upload en reel blijven klein)."
+    },
     {
       "id": "V-manon-ritme",
       "aan": "Eva en Jesse",
