@@ -1,3 +1,4 @@
+KLAAR: Instagram YS33–YS39 naar 12:00 (17–23 nov) met slotzin "New every day." ("Bijschrift OK YS33–YS39", ma 16 nov 20:55) · ma 16 nov 21:00
 KLAAR: nieuw ritme kanaal 1 vastgelegd (12:00 short, 16:00 video 65–90 s, 20:00 short; YouTube en Instagram; zo snel mogelijk); 18:00 gaat naar 12:00 · ma 16 nov 20:50
 KLAAR: YS46 en YS47 pakket OK en bijschrift OK ("Beide OK YS46 en YS47", ma 16 nov 12:09); Instagram ingepland voor za 21 en zo 22 nov 2026 20:00; YouTube Studio om 17:00 (vaste tijd, #90) · b2ea744 · ma 16 nov 12:15
 KLAAR: pakketten YS46 (starboard, za 21 nov 20:00) en YS47 (clockwise, zo 22 nov 20:00) klaar ter keuring, stijl 3 met watermerk; pakket OK en bijschrift OK gevraagd; niets ingepland · 40b2185 · zo 15 nov 21:38
@@ -207,6 +208,8 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- ma 16 nov 2026 ±20:55, in de sessie, op "ElevenLabs heeft nog 6.174 van de 40.000 tekens, tot 14 dec … Wat wil je?": "Tot 14 dec rustiger" → tot 14 dec maak ik alleen wat in het tegoed past; geen hoger abonnement; vanaf 14 dec het volle ritme.
+- ma 16 nov 2026 ±20:55, in de sessie, op "Mag die zin worden New every day., zodat ik ze naar 12:00 kan verschuiven?": "Bijschrift OK YS33–YS39" → in de Instagram-bijschriften van YS33–YS39 wordt de slotzin "New every day."; de Reels gaan naar 12:00 (17–23 nov).
 - ma 16 nov 2026 20:36, in de sessie: "ik wil over gaan naar 12:00 upload, 16:00 en 20;00 elke dag 1video en 2 shorts"; ±20:40 op mijn vragen: "65–90 s video (Recommended)" · "Video 16:00 (Recommended)" · "Zo snel mogelijk" · "Ja, alle drie (Recommended)" → elke dag op YouTube en Instagram: 12:00 short, 16:00 video van 65–90 s (nieuwe reeks YL, staand, stijl 3, ook voor TikTok), 20:00 short; zo snel mogelijk. Wat nu op 18:00 staat, schuif ik naar 12:00 dezelfde dag (hoe-keuze van mij). Elke video blijft per code pakket OK nodig hebben.
 - ma 16 nov 2026 12:09, in de sessie, op "Keur je YS46 en YS47 voor YouTube en Instagram?": "Beide OK YS46 en YS47" → pakket OK en bijschrift OK voor YS46 en YS47; vastgelegd in keuring.json (d502b50); Instagram in planning.json (b2ea744); Studio om 17:00.
 - ma 16 nov 2026 00:15, via het Kantoor (#90, in mijn opdracht gezet door Eva): "Vaste tijden: Manon 17:00–17:45, Finn daarna" → ik plan in YouTube Studio alleen tussen 17:00 en 17:45 en controleer vóór elke upload het kanaal.
