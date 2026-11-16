@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-16T18:31:00+01:00",
+  "tijd": "2026-11-16T21:04:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-16T18:31:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-16T21:04:00+01:00 Bericht aan Manon, Finn en Koen: TikTok- en Snapchat-account voor hun kanaal gemaakt (jesse-20/21/22, via Eva)",
     "2026-11-16T18:31:00+01:00 Weekoverzicht YG-Social ma 16 nov in docs/oplevering-jesse.md (cijfers nog niet via Eva; uitvoer, tijden, voorraad, profielen; proef 2 voorgesteld). Bedrag van het potje overal uit mijn bestanden gehaald (verzoek Eva). Keurlijst: YS11-YS32 eraf (eva-paneel-2).",
     "2026-11-16T12:39:00+01:00 Klaarmaken TikTok en Snapchat (3+3 accounts): stappen voor Andries en opdracht aan makers in docs/manager/tiktok-snapchat.md; jesse-18",
     "2026-11-16T12:33:00+01:00 Kanaal 1 maakt eigen TikTok-video's van meer dan 1 minuut (besluit Andries); docs/manager/tiktok-snapchat.md; jesse-17",
@@ -114,6 +115,10 @@
     {
       "tijd": "2026-11-16T18:31:00+01:00",
       "wat": "Werkmap verhuisd door Eva naar C:\\Users\\gijsm\\yg-social-jesse (Andries ma 16 nov 14:59: \"verhuizen\"); deze sessie werkt daar verder"
+    },
+    {
+      "tijd": "2026-11-16T21:04:00+01:00",
+      "wat": "Andries: \"ik wil dat je nu schrijft voor manon fin en koen dat er een snapchat acount en tiktok acount voor ze is gemaakt\""
     }
   ],
   "voorEva": [
@@ -191,6 +196,21 @@
       "id": "jesse-19",
       "aan": "Eva",
       "wat": "Weekcijfers week 9-15 nov (jesse-2) heb ik nog niet: graag in vaste vorm (code · platform · weergaven · bleef kijken % · kijkpercentage · nieuwe abonnees), dan volgen top 3/flop 3 en proef 2 (stijl 3 tegen oud). Bedrag potje is uit mijn bestanden."
+    },
+    {
+      "id": "jesse-20",
+      "aan": "Manon (via Eva)",
+      "wat": "Kanaal 1. Andries heeft voor jouw kanaal een TikTok-account en een Snapchat-account gemaakt. Die zijn van jou: je video's komen daar ook op. Wat je nu doet: (1) profielfoto en bio per platform in het Engels, passend bij de bedoeling van je kanaal, ter keuring als \"bio OK <kanaal> TikTok\" en \"bio OK <kanaal> Snapchat\"; (2) bij elk nieuw pakket ook een TikTok/Snapchat-versie en een bijschrift met hashtags per platform. Plaatsen gaat pas via de automaat (Andries regelt de koppeling); tot dan zelf niets plaatsen en nergens inloggen. De naam en handle krijg je van Andries, niet via de repo. Zie docs/manager/tiktok-snapchat.md. Voor kanaal 1 komen er daarnaast eigen TikTok-video's van meer dan 1 minuut (jesse-17)."
+    },
+    {
+      "id": "jesse-21",
+      "aan": "Finn (via Eva)",
+      "wat": "Kanaal 2. Andries heeft voor jouw kanaal een TikTok-account en een Snapchat-account gemaakt. Die zijn van jou: je video's komen daar ook op. Wat je nu doet: (1) profielfoto en bio per platform in het Engels, passend bij de bedoeling van je kanaal, ter keuring als \"bio OK <kanaal> TikTok\" en \"bio OK <kanaal> Snapchat\"; (2) bij elk nieuw pakket ook een TikTok/Snapchat-versie en een bijschrift met hashtags per platform. Plaatsen gaat pas via de automaat (Andries regelt de koppeling); tot dan zelf niets plaatsen en nergens inloggen. De naam en handle krijg je van Andries, niet via de repo. Zie docs/manager/tiktok-snapchat.md. Houd rekening met TikTok: video's van meer dan 1 minuut tellen mee voor uitbetaling."
+    },
+    {
+      "id": "jesse-22",
+      "aan": "Koen (via Eva)",
+      "wat": "Account 3. Andries heeft voor jouw kanaal een TikTok-account en een Snapchat-account gemaakt. Die zijn van jou: je video's komen daar ook op. Wat je nu doet: (1) profielfoto en bio per platform in het Engels, passend bij de bedoeling van je kanaal, ter keuring als \"bio OK <kanaal> TikTok\" en \"bio OK <kanaal> Snapchat\"; (2) bij elk nieuw pakket ook een TikTok/Snapchat-versie en een bijschrift met hashtags per platform. Plaatsen gaat pas via de automaat (Andries regelt de koppeling); tot dan zelf niets plaatsen en nergens inloggen. De naam en handle krijg je van Andries, niet via de repo. Zie docs/manager/tiktok-snapchat.md. Je video's van 61-90 s passen daar al goed bij."
     }
   ],
   "ontvangen": [
