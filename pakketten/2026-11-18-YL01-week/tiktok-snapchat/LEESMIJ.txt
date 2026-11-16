@@ -1,0 +1,5 @@
+TIKTOK EN SNAPCHAT — YL01 (jesse-16, jesse-17, jesse-18)
+Video: ../video.mp4 (1080x1920, 82,5 s, geen YouTube-tekst in beeld). Langer dan 1 minuut, dus geschikt voor uitbetaling op TikTok.
+Bijschrift TikTok: tiktok.txt. Bijschrift Snapchat Spotlight: snapchat.txt (kort).
+AI-label: aan op beide platforms (realistische AI-stemmen van ElevenLabs).
+Plaatsen: NIET met de hand. Pas via de automaat, na de koppeling door Andries, en na pakket OK YL01.
