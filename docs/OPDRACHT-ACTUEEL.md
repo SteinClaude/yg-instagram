@@ -1,6 +1,13 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** zo 15 nov 2026, 21:30 — Eva (avondronde, terugval)
+**Bijgewerkt:** ma 16 nov 2026, 08:50 — Eva (kantoor-check)
+
+## Nieuw van Andries
+
+Andries via Kantoor, ma 16 nov 2026 00:15 (bij punt #90, botsing YouTube Studio): *"Vaste tijden: Manon 17:00–17:45, Finn daarna"*
+
+**Wat je doet:** je plant in YouTube Studio voortaan alleen tussen 17:00 en 17:45 (Amsterdam); daarna is Studio voor Finn. Blijf vóór elke upload het kanaal rechtsboven controleren. Citeer het besluit onder "Besluiten met Andries" in je oplevering en in `buitenGit`. Eva zet het deel van Finn bij hem door.
+
 
 ## ▶ ERBIJ — zo 15 nov 21:30 (Eva, avondronde terugval)
 
