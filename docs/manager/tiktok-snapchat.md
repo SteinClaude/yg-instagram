@@ -20,10 +20,20 @@
 
 Bronnen: [TikTok Direct Post-reference](https://developers.tiktok.com/doc/content-posting-api-reference-direct-post) · [TikTok Content Sharing Guidelines](https://developers.tiktok.com/docs/en/content-sharing-guidelines) · [Ayrshare, gids Snapchat-API](https://www.ayrshare.com/blog/complete-guide-to-snapchat-api-integration/) (verkoper; de eigen documentatie van Snap nog niet gelezen).
 
+## Kanaal 1: eigen TikTok-video's van meer dan 1 minuut
+
+Andries, ma 16 nov 2026 ±12:33: *"voor kanaal 1 maken we nieuwe videos die langer dan 1min zijn voor de tiktok,"*
+
+- Kanaal 1 maakt **nieuwe video's van meer dan 1 minuut** voor TikTok (richtlijn 65–90 s), zodat ze meetellen voor uitbetaling. Het onderwerp, de bronnen en stijl 3 (het duo) blijven zoals ze zijn.
+- Het zijn nieuwe pakketten, dus per code **pakket OK** (script, bronnen, titel). De stijl OK van stijl 3 geldt al.
+- Langer betekent niet trager: de haak blijft in 2 seconden, en elke 10–15 seconden komt er een nieuw verrassend feit of een wending, zodat mensen blijven kijken.
+- Hoe ze precies worden (een eigen code, ritme, opbouw) beslist Manon. Het ritme stelt ze voor in haar weekverslag. Ze mogen ook op YouTube (Shorts mogen tot 3 minuten), als Manon dat zinvol vindt.
+- Plaatsen gaat pas via de automaat (zie boven).
+
 ## Wat de makers nu al doen
 
 - Per video een versie die ook op TikTok en Snapchat past: 1080×1920, geen YouTube-tekst in beeld ("abonneer"), en een eigen bijschrift met hashtags per platform, in het pakket.
-- **TikTok betaalt alleen bij video's langer dan 1 minuut.** Kanaal 1 maakt nu shorts van ±40 seconden. Die gaan wel op TikTok, maar tellen niet voor uitbetaling. Langer maken is een keuze voor later (na de eerste cijfers).
+- **TikTok betaalt alleen bij video's langer dan 1 minuut.** Kanaal 2 en account 3 houden daar rekening mee (account 3: 61–90 s). Kanaal 1 maakt daarvoor eigen, langere video's (zie boven).
 - **Snapchat:** AI-stem en labels volgens de regels van Snap. De maker zoekt dat na voor de eerste upload.
 
 ## Volgende stappen
