@@ -9,7 +9,7 @@
   - Cartoonstijl Manon → *"Vaste figuur"*
   - Vanaf wanneer → *"Vanaf YS40"*
   - Nieuwe richting Finn → *"ik wil finn in de whatsapp groep yg-social laten kijken ik heb hier vandaag wat voorbeelden gestuurd"*
-  - Geld voor gereedschap → *"Potje €25/mnd mag"*
+  - Geld voor gereedschap → *"Potje [weggelaten] mag"*
 
 ## Kanaal 1 — Manon: zelfde stof, nieuwe weergave
 
@@ -27,8 +27,8 @@
 
 ## Geld
 
-- Een betaald animatiehulpmiddel mag **uit het potje van €25 per maand**, maar **alleen na een OK van Andries per bedrag** (wat, hoeveel, per maand of eenmalig). Eerst gratis proberen waar dat kan.
-- Jesse houdt het potje bij in het maandoverzicht. Twee makers samen blijven onder €25 per maand.
+- Een betaald animatiehulpmiddel mag **uit het potje**, maar **alleen na een OK van Andries per bedrag** (wat, hoeveel, per maand of eenmalig). Eerst gratis proberen waar dat kan.
+- Jesse houdt het potje bij in het maandoverzicht. Twee makers samen blijven binnen het potje.
 
 ## Wat ik meet
 

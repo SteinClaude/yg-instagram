@@ -6,12 +6,13 @@
 
 | Kanaal | Wat | Soort | Plaatsdatum | Waar te zien / wie |
 |---|---|---|---|---|
-| 1 | YS11–YS32 Instagram-bijschriften | bijschrift OK (per code) | Instagram vanaf 24 nov (na YS39) | `docs/keurlijst-instagram-YS11-YS32.md` · Manon |
 | 1 | Extra starttijden van de automaat (tak `manon/cron-extra`) | go (B30) | nu (de Reels komen 3–5 uur te laat) | eerst controle Eva, dan de go in de sessie van Manon |
 | 1 | YS33–YS39 in Studio inplannen | geen OK nodig (pakket OK is er); Andries moet naar kanaal 1 wisselen | YouTube 9–15 dec 18:00 | sessie Manon |
 | 1 | YS01–YS03 zonder stem laten staan of vervangen | wat-vraag | — | sessie Manon (advies Manon: laten staan) |
 | 2 | ? | ? | ? | stand via Eva (jesse-1) |
 | 3 | nog niets: eerst het kanaal aanmaken en het crewlid opzetten | — | — | `docs/manager/nieuwe-accounts.md` |
+
+_Ma 16 nov: bijschriften YS11–YS32 van de lijst gehaald. Die lijst verviel ma 9 nov ±13:39 (correctie Eva, eva-paneel-2). Wat per pakket openstaat, staat op Keuren in het paneel._
 
 ## Gekeurd deze week (ter controle)
 

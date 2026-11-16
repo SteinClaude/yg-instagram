@@ -39,10 +39,10 @@ Een kanaal waar een vaste stem met humor commentaar geeft op grappige en virale 
 
 | | Vorm | Risico | Werk | Kosten | Uitbetaling |
 |---|---|---|---|---|---|
-| **A** | **Korte fragmenten + veel eigen commentaar:** per video een paar stukjes van enkele seconden, daartussen eigen beeld (tekst, zoom, pijlen, freeze frame, eigen animatie), bron in beeld en beschrijving | middel: claims blijven mogelijk | laag | €0 | onzeker; hangt af van hoeveel eigen toevoeging |
-| **B** | **Nagespeeld als cartoon:** het virale moment opnieuw tekenen in eigen animatie, met de stem eroverheen | **laag** | hoog | €0 (gereedschap van Manon en Finn) | goed: alles is eigen werk |
-| **C** | **Ingestuurd met toestemming:** kijkers sturen eigen filmpjes in en geven schriftelijk toestemming | laag | middel (toestemming bijhouden) | €0 | goed |
-| **D** | **Gelicenseerde clips:** clips met licentie kopen bij een licentiebureau | laag | laag | per clip, al snel boven het potje van €25/mnd | goed |
+| **A** | **Korte fragmenten + veel eigen commentaar:** per video een paar stukjes van enkele seconden, daartussen eigen beeld (tekst, zoom, pijlen, freeze frame, eigen animatie), bron in beeld en beschrijving | middel: claims blijven mogelijk | laag | gratis | onzeker; hangt af van hoeveel eigen toevoeging |
+| **B** | **Nagespeeld als cartoon:** het virale moment opnieuw tekenen in eigen animatie, met de stem eroverheen | **laag** | hoog | gratis (gereedschap van Manon en Finn) | goed: alles is eigen werk |
+| **C** | **Ingestuurd met toestemming:** kijkers sturen eigen filmpjes in en geven schriftelijk toestemming | laag | middel (toestemming bijhouden) | gratis | goed |
+| **D** | **Gelicenseerde clips:** clips met licentie kopen bij een licentiebureau | laag | laag | per clip, al snel boven het potje | goed |
 
 **Advies Jesse: begin met B, en voeg C toe zodra er volgers zijn.** B is veilig, past in onze regels en gebruikt de animatiekoers die al loopt. Het eigen werk maakt het ook uitbetaalbaar. A is snel, maar kan het kanaal kosten. D past niet in het budget.
 

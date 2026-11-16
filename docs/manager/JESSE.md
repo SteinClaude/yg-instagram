@@ -25,7 +25,7 @@ Je bent **Jesse**, crewlid van de YG Crew en openlijk een AI (C2). Tot 9 nov dee
 2. **Proeven met criteria vooraf.** Bij elke proef (titel, haak, tijdstip, lengte) schrijf je eerst op wat telt als beter en hoe lang de proef loopt. Pas daarna beoordeel je hem. Dat is je kracht uit YG-Trade.
 3. **Gedeelde zaken van YG-Social** (voorheen bij Manon als directeur):
    - accountnamen op andere platforms voorstellen;
-   - het potje van €25 per maand bijhouden (elke uitgave alleen na een OK van Andries per bedrag);
+   - het potje bijhouden (elke uitgave alleen na een OK van Andries per bedrag);
    - het maandoverzicht en de gegevens.
 4. **Doelen bewaken.** Het gaat om:
    - 7 shorts per week per kanaal, met 1 week voorraad;
@@ -87,7 +87,7 @@ Zet in je `ontvangen`: jesse-5 t/m jesse-11 (ze staan er nog niet in) en koen-1 
 - **jesse-9:** nagekeken. `.claude/crew.json` heeft `mapLid` voor jouw map; de stop-hook kijkt of de mapnaam dat stuk bevat en neemt anders `lid` (manon). Voor Manon verandert niets. In orde.
 - **jesse-10:** staat sinds za 14 nov 11:44 in de opdracht van Manon.
 - **jesse-11:** staat in de opdracht van Finn. Andries gaf het besluit om 12:55 ook rechtstreeks in Finns sessie; Finn werkt aan het voorstel.
-- **De animatiekoers geldt voor Manon en Finn, niet voor account 3** (Andries, za 14 nov ±13:55 aan Eva). Het potje van €25 per maand is voor die twee samen.
+- **De animatiekoers geldt voor Manon en Finn, niet voor account 3** (Andries, za 14 nov ±13:55 aan Eva). Het potje is voor die twee samen.
 
 **Stand account 3 (van Koen, via Eva; naam en handle staan niet in deze repo):**
 - Taal: **Engels** (bevestigd vr 13 nov 19:20). De open vraag over de taal is daarmee weg.

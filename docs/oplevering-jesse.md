@@ -1,5 +1,6 @@
 # Oplevering Jesse — manager YG-Social
 
+KLAAR: weekoverzicht YG-Social ma 16 nov (zonder cijfers; uitvoer, tijden, voorraad, profielen, proef 2 voorgesteld); bedrag potje uit de repo · ma 16 nov 18:31
 KLAAR: klaarmaken TikTok en Snapchat (stappen Andries, opdracht makers): docs/manager/tiktok-snapchat.md; voorEva jesse-18 · ma 16 nov 12:39
 KLAAR: kanaal 1 maakt eigen TikTok-video's van meer dan 1 minuut (docs/manager/tiktok-snapchat.md; voorEva jesse-17) · ma 16 nov 12:33
 KLAAR: TikTok en Snapchat voor kanaal 1, 2 en account 3 uitgezet (zelfde video's, eerst een automaat): docs/manager/tiktok-snapchat.md; via voorEva jesse-16 · ma 16 nov 12:30
@@ -14,6 +15,61 @@ KLAAR: intake account 3 (GTA 6, uitgelegd): docs/manager/nieuwe-accounts.md; adv
 KLAAR: eerste keurlijst van de week gebundeld: docs/keurlijst-week.md · vr 13 nov 12:20
 KLAAR: voorstel "Weekritme YG-Social" (weekdagen, cijfers via Eva, eerste proef met criteria vooraf, gebundelde keurlijst); wacht op besluit Andries · ma 9 nov 19:45
 
+## Weekoverzicht YG-Social — ma 16 nov 2026 (week 9–15 nov)
+
+**Cijfers:** nog niet ontvangen via Eva (jesse-2). Top 3 en flop 3 per kanaal volgen zodra ze er zijn. Dit overzicht gaat over wat te zien is: wat online kwam, wat gepland staat, de voorraad en de profielen (besluit Andries zo 15 nov: *"Ja, morgen"*).
+
+### 1. Wat er online kwam en om welke tijd
+
+| Kanaal | Platform | Reeks | Tijd | Vorige week |
+|---|---|---|---|---|
+| 1 | YouTube | YS (stijl 1/2) | 18:00 | elke dag één short (Studio) |
+| 1 | YouTube | YS stijl 3 (duo) | 20:00 | YS40 op zo 15 nov, de eerste in de nieuwe stijl |
+| 1 | Instagram | YS | 18:00 | YS01–YS09 geplaatst (10 Reels met YS40) |
+| 1 | Instagram | stijl 3 | 20:00 | YS40 |
+| 2 | — | sketches (richting A) | — | niets: de stijlproef loopt; de drie lange video's vervallen |
+| 3 | — | GTA 6, uitgelegd | — | niets: G01–G03 worden opnieuw gemaakt; de proef is niet gestart |
+
+**⚠ Instagram komt te laat.** De Reels moeten om 18:00 of 20:00 online, maar kwamen vorige week te laat: YS04–YS06 3–5,5 uur, YS08 2 uur, YS07 en YS09 ruim een half uur, en YS40 2 uur (22:00 in plaats van 20:00). Op zo 15 nov kwamen de extra starttijden op main. YS40 was daarna nog steeds 2 uur te laat. Deze week kijk ik elke dag of het helpt. Blijft het uitlopen, dan komt Manons voorstel B (een externe wekker) ter keuze bij Andries.
+
+### 2. Voorraad (op ma 16 nov)
+
+| Kanaal | Reeks | YouTube t/m | Instagram t/m | Oordeel |
+|---|---|---|---|---|
+| 1 | YS 18:00 | YS39 · di 15 dec | YS39 · ma 23 nov | ✓ ruim |
+| 1 | stijl 3 20:00 | YS47 · zo 22 nov | YS47 · zo 22 nov | ⚠ 6 dagen, net onder de lat van 1 week. YS44–YS47 kwamen er dit weekend bij; voor ma 23 nov is er een nieuwe nodig |
+| 2 | — | niets | niets | ✗ geen voorraad |
+| 3 | — | niets | niets | nog niet gestart |
+| 1, 2, 3 | TikTok en Snapchat | — | — | wacht op de automaat (besluit Andries) |
+
+Na ma 23 nov loopt Instagram om 18:00 leeg. De lijst met bijschriften YS11–YS32 is vervallen (Andries ma 9 nov ±13:39). Wil Andries op Instagram om 18:00 doorgaan na YS39, dan is dat een wat-vraag voor de keurlijst van vrijdag.
+
+### 3. Profielen
+
+| Account | Stand |
+|---|---|
+| Kanaal 1 YouTube en Instagram | af (profielfoto, banner, bio). Tip: het duo als profielfoto |
+| Kanaal 1 TikTok en Snapchat | bestaan; foto en bio ter keuring door Manon (jesse-18) |
+| Kanaal 2 YouTube en Instagram | **niet af** (bio en pagina, melding Andries zo 15 nov); Finn levert ter keuring |
+| Kanaal 2 TikTok en Snapchat | bestaan; Finn levert foto en bio |
+| Account 3 (alle platforms) | TikTok en Snapchat bestaan; YouTube en Instagram onbekend; Koen levert foto en bio |
+
+### 4. Besluiten van de week (Andries)
+
+Animatiekoers (za 14 nov) · stijl 3 met het duo en een tweede reeks om 20:00 (Manon) · vaste tijden in Studio: Manon 17:00–17:45, Finn daarna (#90) · bedoeling per kanaal (zo 15 nov) · account 3 met Koen · opdracht account 4 klaar, niet uitvoeren · TikTok en Snapchat: dezelfde video's, eerst een automaat · kanaal 1 maakt eigen TikTok-video's van 65–90 s.
+
+### 5. Lopende proef en nieuwe proef
+
+- **Proef 1** (haak YS33–YS39 tegen YS26–YS32) loopt zoals afgesproken. Uitkomst in het weekoverzicht van ma 21 dec.
+- **Proef 2 voor deze week (voorstel, criteria vooraf):** de nieuwe stijl 3 (YS40–YS46, 20:00) tegen de oude stijl in dezelfde dagen (YS09–YS15, 18:00 op YouTube). Elke short wordt 72 uur na plaatsing gemeten. **Beter** = mediaan "Weergegeven" minstens 5 procentpunt hoger en mediaan kijkpercentage niet lager. **Zwakte:** het tijdstip verschilt (18:00 tegen 20:00). Is de uitkomst krap (minder dan 5 punt), dan herhalen we met de tijden omgewisseld. Uitkomst in het weekoverzicht van ma 23 nov, als de cijfers er zijn.
+
+### 6. Wat achterloopt en wat ik doe
+
+1. **Kanaal 2 en account 3 plaatsen nog niets.** Ik vraag via Eva de planning per maker (jesse-13) en zet die op de keurlijst van vrijdag.
+2. **Instagram komt te laat** (zie boven): ik kijk het elke dag na.
+3. **Nieuwe reeks kanaal 1:** voorraad tot zo 22 nov. Manon maakt YS48+ zodra Andries dat zegt.
+4. **TikTok en Snapchat:** wachten op Andries (TikTok-app en audit, toegang bij Snap).
+
 ## ⚠ Doelen — wat achterloopt (ma 9 nov 2026, 19:45)
 
 | Doel | Stand | Oordeel | Voorstel |
@@ -23,7 +79,7 @@ KLAAR: voorstel "Weekritme YG-Social" (weekdagen, cijfers via Eva, eerste proef 
 | Automaat Instagram betrouwbaar | ma 9 nov sloeg GitHub de uurlijkse runs over; YS03 ging pas 19:25 (met de hand) | **risico** | structurele oplossing door Manon, na controle Eva en go Andries (B30) — staat al bij Manon |
 | Kanaal 2: 7 per week, 1 week voorraad | onbekend voor mij (repo van Finn lees ik niet) | onbekend | stand via Eva (`voorEva` jesse-1) |
 | 1.000 abonnees vóór 31 mrt 2027 | nog geen cijfers; eerste short openbaar sinds za 7 nov | onbekend | cijfers via Eva vanaf ma 16 nov (`voorEva` jesse-2) |
-| Potje €25 per maand | geen uitgave bekend in november | op koers | Eva bevestigt (jesse-2) |
+| Potje | geen uitgave bekend in november | op koers | Eva bevestigt (jesse-2) |
 
 ## Voorstel: Weekritme YG-Social (vraag aan Andries)
 
@@ -108,7 +164,7 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 - zo 15 nov 2026 ±17:40–17:43 (sessie Jesse): *"we gaan ook een nieuw kanaal maken waar een voice over komt over grappige videos en andere leuke filmpjes of viral videos"* · *"ik wil hier een opdracht voor klaar maken maar nog niet uitvoeren, dus alles wel door nemen ect"* → docs/manager/opdracht-account-4.md (klaar, niet uitvoeren).
 - zo 15 nov 2026 ±11:32 (sessie Jesse): *"ik wil ook de bedoeling per agent en hun achterliggende gedachte opschroeven, zodat ze alle 3  de videos maken, met de benoemde/verzonnen doelen ervan, zo als bijvoorbeeld educatief/motivatie, leuk ect"*. Knoppen: *"Educatief + leuk"* · *"Leuk / humor"* · *"Informatief + hype"* · blad: *"Bedoeling en gedachte"*, *"Kijker en gevoel"*, *"Doel per video"* → docs/manager/bedoeling-per-kanaal.md.
 - zo 15 nov 2026 (sessie Jesse), op "Zet ik dit overzicht in mijn weekoverzicht van morgen?": *"Ja, morgen"*.
-- za 14 nov 2026 ±10:50–10:55 (sessie Jesse): *"ik wil de content en video kwaliteit voor finn en manon vereteren, ik wil meer naar animaties/cartoons gaan, manon houdt wel de zelfde inhoudelijk stof aleen andere weergave, finn krijgt een hele nieuwe ingeving voor nieuwe content/animaties"*. Knoppen: *"Vaste figuur"* · *"Vanaf YS40"* · Finn: *"ik wil finn in de whatsapp groep yg-social laten kijken ik heb hier vandaag wat voorbeelden gestuurd"* · *"Potje €25/mnd mag"* → docs/manager/animatie-koers.md.
+- za 14 nov 2026 ±10:50–10:55 (sessie Jesse): *"ik wil de content en video kwaliteit voor finn en manon vereteren, ik wil meer naar animaties/cartoons gaan, manon houdt wel de zelfde inhoudelijk stof aleen andere weergave, finn krijgt een hele nieuwe ingeving voor nieuwe content/animaties"*. Knoppen: *"Vaste figuur"* · *"Vanaf YS40"* · Finn: *"ik wil finn in de whatsapp groep yg-social laten kijken ik heb hier vandaag wat voorbeelden gestuurd"* · *"Potje [weggelaten] mag"* → docs/manager/animatie-koers.md.
 - vr 13 nov 2026 ±12:55 (sessie Jesse), keuze naam account 3: *"[weggelaten]"* (naam en handle via voorEva jesse-6 naar het Project van Eva).
 - vr 13 nov 2026 ±12:10 (vragenknoppen, sessie Jesse): Weekritme YG-Social → *"Akkoord"*. Account 3 → *"Ja, dit is account 3"* · *"3 shorts/week, uitleg"* · *"Nieuw crewlid"* · *"youtube, instagram, tiktok"* · *"Engels, AI-stem"* · *"Bereik nu, geld later"* · *"±1 uur"*.
 - vr 13 nov 2026 ±11:58 (sessie Jesse): *"ja we gaan ook een eigen gta-acount met een eigen invalshoek maken, ik heb al een google acount hier voor alee nog geen youtube kanaal"*

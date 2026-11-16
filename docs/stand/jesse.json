@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-16T12:39:00+01:00",
+  "tijd": "2026-11-16T18:31:00+01:00",
   "sessie": {
     "plek": "pc",
-    "sinds": "2026-11-16T12:12:00+01:00"
+    "sinds": "2026-11-16T18:31:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-16T18:31:00+01:00 Weekoverzicht YG-Social ma 16 nov in docs/oplevering-jesse.md (cijfers nog niet via Eva; uitvoer, tijden, voorraad, profielen; proef 2 voorgesteld). Bedrag van het potje overal uit mijn bestanden gehaald (verzoek Eva). Keurlijst: YS11-YS32 eraf (eva-paneel-2).",
     "2026-11-16T12:39:00+01:00 Klaarmaken TikTok en Snapchat (3+3 accounts): stappen voor Andries en opdracht aan makers in docs/manager/tiktok-snapchat.md; jesse-18",
     "2026-11-16T12:33:00+01:00 Kanaal 1 maakt eigen TikTok-video's van meer dan 1 minuut (besluit Andries); docs/manager/tiktok-snapchat.md; jesse-17",
     "2026-11-16T12:30:00+01:00 TikTok en Snapchat voor kanaal 1, 2 en account 3: docs/manager/tiktok-snapchat.md (zelfde video's; eerst een automaat; TikTok-audit en Snap-toegang nagezocht)",
@@ -26,7 +27,7 @@
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
   "bezig": null,
-  "volgende": "Ma 16 nov: weekoverzicht YG-Social met daarin de stand per kanaal (tijden, voorraad per reeks, profielen; besluit Andries \"Ja, morgen\"); keurlijst vr 20 nov",
+  "volgende": "Elke dag nakijken of de Reels op tijd komen; via Eva de planning van Finn en Koen (jesse-13) en de weekcijfers (jesse-2); keurlijst vr 20 nov; uitkomst proef 2 ma 23 nov",
   "kanNietVerder": null,
   "vragen": [],
   "buitenGit": [
@@ -64,7 +65,7 @@
     },
     {
       "tijd": "2026-11-14T10:55:00+01:00",
-      "wat": "Andries (vragenknoppen): stijl Manon \"Vaste figuur\"; \"Vanaf YS40\"; Finn: \"ik wil finn in de whatsapp groep yg-social laten kijken ik heb hier vandaag wat voorbeelden gestuurd\"; geld: \"Potje €25/mnd mag\""
+      "wat": "Andries (vragenknoppen): stijl Manon \"Vaste figuur\"; \"Vanaf YS40\"; Finn: \"ik wil finn in de whatsapp groep yg-social laten kijken ik heb hier vandaag wat voorbeelden gestuurd\"; geld: \"Potje [weggelaten] mag\""
     },
     {
       "tijd": "2026-11-15T11:17:00+01:00",
@@ -109,6 +110,10 @@
     {
       "tijd": "2026-11-16T12:39:00+01:00",
       "wat": "Andries: \"oke ik wil nu voor alle 3 de snapchat en tiktok klaarmaken, en hun moeten ook weten dat dit er is en erop geplaats kan worden\""
+    },
+    {
+      "tijd": "2026-11-16T18:31:00+01:00",
+      "wat": "Werkmap verhuisd door Eva naar C:\\Users\\gijsm\\yg-social-jesse (Andries ma 16 nov 14:59: \"verhuizen\"); deze sessie werkt daar verder"
     }
   ],
   "voorEva": [
@@ -145,7 +150,7 @@
     {
       "id": "jesse-11",
       "aan": "Finn (via Eva)",
-      "wat": "Andries wil een hele nieuwe ingeving voor kanaal 2, meer animatie/cartoon: Finn bekijkt de voorbeelden die Andries za 14 nov in de WhatsApp-groep Yg-social stuurde en stelt in zijn sessie een nieuwe richting voor (wat, vorm, lengte, proefbeeld); Andries kiest. Betaald hulpmiddel alleen uit het potje van €25/mnd na OK per bedrag. Zie docs/manager/animatie-koers.md."
+      "wat": "Andries wil een hele nieuwe ingeving voor kanaal 2, meer animatie/cartoon: Finn bekijkt de voorbeelden die Andries za 14 nov in de WhatsApp-groep Yg-social stuurde en stelt in zijn sessie een nieuwe richting voor (wat, vorm, lengte, proefbeeld); Andries kiest. Betaald hulpmiddel alleen uit het potje na OK per bedrag. Zie docs/manager/animatie-koers.md."
     },
     {
       "id": "jesse-12",
@@ -181,13 +186,19 @@
       "id": "jesse-18",
       "aan": "Manon, Finn en Koen (via Eva)",
       "wat": "Er zijn nu per kanaal (1, 2, account 3) een TikTok- en een Snapchat-account; je video's mogen er straks op. Lever profielfoto en bio per platform ter keuring (\"bio OK <kanaal> TikTok/Snapchat\") en vanaf nu per pakket een TikTok/Snapchat-versie met bijschrift. Plaatsen pas via de automaat. Zie docs/manager/tiktok-snapchat.md. Andries geeft de handles zelf (niet in de repo)."
+    },
+    {
+      "id": "jesse-19",
+      "aan": "Eva",
+      "wat": "Weekcijfers week 9-15 nov (jesse-2) heb ik nog niet: graag in vaste vorm (code · platform · weergaven · bleef kijken % · kijkpercentage · nieuwe abonnees), dan volgen top 3/flop 3 en proef 2 (stijl 3 tegen oud). Bedrag potje is uit mijn bestanden."
     }
   ],
   "ontvangen": [
     "jesse-1",
     "jesse-2",
     "jesse-3",
-    "jesse-4"
+    "jesse-4",
+    "eva-paneel-2"
   ],
   "raakt": [
     ".claude/crew.json (stop-hook, gedeeld met Manon)"
