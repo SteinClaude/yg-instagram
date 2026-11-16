@@ -63,6 +63,15 @@ Doe het zoals in "Melden aan Eva" in `CLAUDE.md`, met:
 - je stand in `docs/stand/jesse.json`;
 - je logboek in `docs/oplevering-jesse.md`: `KLAAR` en `KAN NIET VERDER` bovenaan, nieuwste boven.
 
+## Van Eva — ma 16 nov 2026, 15:40: je map is verhuisd · `eva-verhuis-2`
+
+Andries, ma 16 nov 2026 14:59: *"verhuizen"* (na het advies om de werkmappen uit OneDrive te halen; OneDrive was bijna vol).
+
+- **Je map staat nu in `~/yg-social-jesse`** (de gebruikersmap op de pc), niet meer op het bureaublad. Eva heeft nagekeken dat de kopie compleet is: zelfde bestanden, zelfde grootte, zelfde laatste vastlegging, niets gewijzigd.
+- Andries start je sessie opnieuw in die map. **Werk niet meer in de oude map op het bureaublad**; die gaat weg.
+- Het YG-Social-paneel leest je stand nu op de nieuwe plek.
+- Zet `eva-verhuis-2` in je `ontvangen`.
+
 ## Van Eva — za 14 nov 2026, 18:45: twee punten van Manon (ElevenLabs)
 
 Zet in je `ontvangen`: V-manon-elevenlabs en V-manon-elevenlabs-tegoed.
