@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-16T12:20:00+01:00",
+  "tijd": "2026-11-16T20:50:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
-    "sinds": "2026-11-16T12:09:00+01:00"
+    "sinds": "2026-11-16T20:36:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-16T20:45:00+01:00 Nieuw ritme vastgelegd (Andries 20:36). Uitgezocht: 29 shorts staan in Studio op 18:00 (YS09–YS39, 17 nov–15 dec), 7 Reels op 18:00 in planning.json (YS33–YS39, 17–23 nov, bijschrift met \"New every day at 18:00 (Amsterdam).\"). ElevenLabs volgens de eigen teller: Starter, 33.826 van 40.000 tekens gebruikt, nieuwe tekens op 14 dec. Studio-venster 17:00 van vandaag gemist (wachttaak stopte met de vorige sessie).",
     "2026-11-16T12:12:00+01:00 YS40 nagekeken: op Instagram geplaatst (gedaan.json: zo 15 nov 22:00, run van 22:01), op YouTube al sinds zo 15 nov 20:00.",
     "2026-11-16T12:15:00+01:00 YS46 en YS47 na \"Beide OK YS46 en YS47\" (12:09) vastgelegd in keuring.json (d502b50) en in planning.json voor Instagram kanaal 1: za 21 nov en zo 22 nov 2026 20:00, omslag op 4000 en 3000 ms (b2ea744).",
     "2026-11-15T21:38:00+01:00 Pakketten YS46 en YS47 gemaakt (40b2185), stijl 3 met watermerk. YS46: waarom de rechterkant van een schip \"starboard\" heet (47,0 s; nieuw decor haven; bronnen NOAA National Ocean Service, bijgewerkt 2026, en word histories, 2016). YS47: waarom klokken met de klok mee draaien (39,6 s; bronnen The Irish Times, 2001, en The Old Farmer's Almanac). Elk met video, upload (8,9 MB), studio.txt (za 21 en zo 22 nov 20:00), Instagram-versie met bijschrift, bronnen en kaart met vraag om pakket OK en bijschrift OK. ElevenLabs: 712 + 590 tekens (deze maand volgens mijn telling 5.301). Niets ingepland.",
@@ -126,10 +127,12 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "YS46 en YS47 wachten op het Studio-venster van 17:00–17:45 (besluit #90).",
-  "volgende": "Om 17:00 (vaste Studio-tijd, besluit #90): YS46 (za 21 nov 20:00) en YS47 (zo 22 nov 20:00) uploaden en inplannen in Studio, eerst kanaal 1 controleren; daarna kaarten op ingepland. Instagram 18:00 heeft na ma 23 nov nog niets gepland. Weekverslag ma 16 nov (cijfers via Eva).",
+  "bezig": "Nieuw ritme kanaal 1 (YouTube en Instagram): 12:00 short, 16:00 video van 65–90 s (nieuwe reeks YL), 20:00 short.",
+  "volgende": "Ma 17 nov 17:00 (Studio): YS46 en YS47 uploaden en inplannen (za 21 en zo 22 nov 20:00); daarna de 18:00-shorts vanaf 18 nov één voor één naar 12:00 dezelfde dag (YS09 op 17 nov blijft 18:00: 12:00 is dan al voorbij). Na bijschrift OK: Instagram YS33–YS39 naar 12:00. Reeks YL (65–90 s, 16:00, ook voor TikTok) en nieuwe YS-shorts voor 20:00 vanaf ma 23 nov, zodra het stemtegoed het toelaat.",
   "kanNietVerder": null,
   "vragen": [
+    "Bijschrift OK YS33–YS39 (Instagram): \"New every day at 18:00 (Amsterdam).\" wordt \"New every day.\" en de Reels gaan naar 12:00 · aanname: tot dan blijven ze op 18:00 · blokkeert: ja, voor het verschuiven op Instagram",
+    "ElevenLabs: nog 6.174 tekens tot 14 dec; het nieuwe ritme vraagt ±55.000 per maand. Hoger abonnement (geld: OK per bedrag, Andries regelt het zelf)? · aanname: tot zijn antwoord maak ik alleen wat in het tegoed past · blokkeert: ja, voor de nieuwe video's",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -139,6 +142,7 @@
     }
   ],
   "buitenGit": [
+    "2026-11-16T20:36:00+01:00 Andries in de sessie: \"ik wil over gaan naar 12:00 upload, 16:00 en 20;00 elke dag 1video en 2 shorts\"; ±20:40 op mijn vragen: \"65–90 s video (Recommended)\" · \"Video 16:00 (Recommended)\" · \"Zo snel mogelijk\" · \"Ja, alle drie (Recommended)\"",
     "2026-11-16T12:10:00+01:00 Besluit Andries via Kantoor (ma 16 nov 00:15, #90, in mijn opdracht): \"Vaste tijden: Manon 17:00–17:45, Finn daarna\" → ik plan in Studio alleen tussen 17:00 en 17:45.",
     "2026-11-16T12:09:00+01:00 Andries in de sessie, op \"Keur je YS46 en YS47 voor YouTube en Instagram?\": \"Beide OK YS46 en YS47\"",
     "2026-11-15T21:24:00+01:00 Andries in de sessie, na mijn melding dat YS46 en YS47 komen zodra hij het zegt: \"maak ze alvast\"",
