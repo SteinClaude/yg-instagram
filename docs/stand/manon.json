@@ -657,6 +657,11 @@
   ],
   "voorEva": [
     {
+      "id": "V-manon-ritme",
+      "aan": "Eva en Jesse",
+      "wat": "Andries, ma 16 nov 2026 20:36 in mijn sessie: \"ik wil over gaan naar 12:00 upload, 16:00 en 20;00 elke dag 1video en 2 shorts\"; ±20:40 gekozen: 65–90 s video om 16:00 (nieuwe reeks YL, ook de TikTok-versie van jesse-17), shorts om 12:00 en 20:00, YouTube en Instagram, zo snel mogelijk. ±20:55 \"Tot 14 dec rustiger\": ElevenLabs (Starter) heeft volgens de eigen teller nog 6.174 van de 40.000 tekens tot 14 dec, dus tot dan maak ik alleen wat in het tegoed past (mijn eigen telling van 5.301 was te laag: elke nieuwe stemopname kost ook tekens). Voor Jesse: neem het ritme mee in het weekoverzicht en het potje (het volle ritme vraagt ±55.000 tekens per maand, meer dan Starter). Voor Eva (B30, alleen na de go van Andries): de extra starttijden in plaatsen.yml liggen rond 17–20 uur; met posts om 12:00 en 16:00 helpen extra starttijden rond 11–12 en 15–16 uur (UTC 11,12 en 15,16 in de winter). Tot dan pakt de automaat ze bij de uurlijkse run (inhaaltijd 18 uur)."
+    },
+    {
       "id": "V-manon-watermerk",
       "aan": "Eva en Jesse",
       "wat": "Andries, zo 15 nov 2026 ±12:50 in mijn sessie: \"zet ook bij elke video voortaan een watermerk van het kanaal en yg-digital\". Dat vervangt voor kanaal 1 de keuze van 2 nov \"YG Digital: alleen in de bio, nooit in de video\" in mijn CLAUDE.md; graag daar bijwerken. Uitvoering: labeltje bovenaan in het midden met het kanaalmerk (zonder kanaalnaam, die blijft uit de repo) en het logo van YG Digital, vanaf YS44, na zijn akkoord op de proef (docs/proef-watermerk.jpg). YS40–YS43 blijven zoals ze zijn. Bijgewerkt zo 15 nov ±13:26: na \"Aanpassen\" en \"Andere plek, Minder opvallend\" koos Andries \"A, onder het kaartje\": de twee merken los, wit en half doorzichtig, direct onder het kaartje rechts."
