@@ -1,0 +1,19 @@
+Stem: ElevenLabs (tekst naar spraak, betaald abonnement), vraag = Laura (eleven_v4, tempo 1.12), antwoord = Liam (eleven_v4, tempo 1.12); gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.
+Ingesproken tekst per scène:
+1. [vraag, Laura] Why does a week have seven days? Why not five, or ten?
+2. [antwoord, Liam] Ha! Most likely, thank the ancient Babylonians. They counted seven special lights in the sky.
+3. [antwoord, Liam] The Sun, the Moon, Mercury, Venus, Mars, Jupiter and Saturn. So seven became a holy number.
+4. [vraag, Laura] Seven lights, seven days?
+5. [antwoord, Liam] Pretty much! And it fit the Moon: a month of about twenty-nine days splits into four parts of about seven.
+6. [antwoord, Liam] And the seventh day was for rest.
+7. [vraag, Laura] And where do the names come from?
+8. [antwoord, Liam] The Romans named the days after those seven lights. Sunday is the Sun's day. Monday, the Moon's day. Saturday, Saturn's day!
+9. [vraag, Laura] So the Romans always had seven days?
+10. [antwoord, Liam] Nope! They also kept an older eight-day cycle, until Emperor Constantine banned it in the year three hundred twenty-one.
+11. [vraag, Laura] Has anyone tried to change it since?
+12. [antwoord, Liam] Yes! In nineteen twenty-nine, the Soviet Union switched to a five-day week, so the factories never had to stop.
+13. [antwoord, Liam] Every worker got a different day off. Families and friends often couldn't rest on the same day!
+14. [vraag, Laura] That sounds terrible!
+15. [antwoord, Liam] It was! In nineteen thirty-one they tried six days. And in nineteen forty, they gave up and went back to seven.
+16. [vraag, Laura] So why seven, and not five or ten?
+17. [antwoord, Liam] Because long ago, people counted seven lights in the sky. And the seven stuck!

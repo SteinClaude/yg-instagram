@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-16T21:05:00+01:00",
+  "tijd": "2026-11-16T21:25:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-16T21:22:00+01:00 Pakket YL01 gemaakt (eerste video van 16:00): waarom een week zeven dagen heeft, 82,5 s, stijl 3 met watermerk, elke 10–15 s een nieuw feit. Bronnen Atlas Obscura (2015), The Conversation via Astronomy.com (2024), The Old Farmer’s Almanac (2026). Met video, upload (8,8 MB), studio.txt (wo 18 nov 16:00), Instagram-versie met bijschrift, bijschriften voor TikTok en Snapchat (niet plaatsen tot de automaat), kaart met vraag om pakket OK en bijschrift OK. ElevenLabs: 1.201 tekens; nog ±4.970 tot 14 dec.",
     "2026-11-16T21:00:00+01:00 Instagram YS33–YS39 (17–23 nov) van 18:00 naar 12:00; slotzin \"New every day at 18:00 (Amsterdam).\" wordt \"New every day.\" in planning.json en instagram/bijschrift.txt; besluit in keuring.json (via sessie). Paneelcontrole: alles klopt.",
     "2026-11-16T20:45:00+01:00 Nieuw ritme vastgelegd (Andries 20:36). Uitgezocht: 29 shorts staan in Studio op 18:00 (YS09–YS39, 17 nov–15 dec), 7 Reels op 18:00 in planning.json (YS33–YS39, 17–23 nov, bijschrift met \"New every day at 18:00 (Amsterdam).\"). ElevenLabs volgens de eigen teller: Starter, 33.826 van 40.000 tekens gebruikt, nieuwe tekens op 14 dec. Studio-venster 17:00 van vandaag gemist (wachttaak stopte met de vorige sessie).",
     "2026-11-16T12:12:00+01:00 YS40 nagekeken: op Instagram geplaatst (gedaan.json: zo 15 nov 22:00, run van 22:01), op YouTube al sinds zo 15 nov 20:00.",
@@ -128,10 +129,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Nieuw ritme kanaal 1 (YouTube en Instagram): 12:00 short, 16:00 video van 65–90 s (nieuwe reeks YL), 20:00 short.",
-  "volgende": "Ma 17 nov 17:00 (Studio): YS46 en YS47 uploaden en inplannen (za 21 en zo 22 nov 20:00); daarna de YouTube-shorts van 18:00 vanaf 18 nov naar 12:00 dezelfde dag (YS09 op 17 nov blijft 18:00). Tot 14 dec rustiger (6.174 stemtekens): eerst YL01 (16:00, 65–90 s, ook TikTok) als proef, daarna wat in het tegoed past voor 16:00 en 20:00; vanaf 14 dec het volle ritme.",
+  "bezig": "-",
+  "volgende": "Ma 17 nov 17:00 (Studio): YS46 en YS47 uploaden en inplannen (za 21 en zo 22 nov 20:00); YL01 erbij als pakket OK en bijschrift OK er dan zijn (wo 18 nov 16:00, Instagram via planning.json); daarna de YouTube-shorts van 18:00 vanaf 18 nov naar 12:00. Tot 14 dec rustiger: met ±4.970 stemtekens nog ±2 video’s YL en ±3 shorts voor 20:00 (vanaf ma 23 nov). Weekverslag ma 16 nov (cijfers via Eva).",
   "kanNietVerder": null,
   "vragen": [
+    "Pakket OK en bijschrift OK YL01 (waarom een week zeven dagen heeft, wo 18 nov 16:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee",
     {
       "vraag": "YS01–YS03 staan in Studio zonder stem: laten staan of vervangen door een versie met stem (= in Studio verwijderen en opnieuw uploaden, na zijn \"ja\")?",
@@ -797,7 +799,22 @@
     "NU-blok Eva do 5 nov 13:45 (kanaal 1 volgens draaiboek; kanaal 2 van Finn)",
     "NU-blok Eva do 5 nov 19:37 (C30: keuren tekst-eerst, stijl OK YS, Commons beperkt ja)",
     "ERBIJ-blok Eva do 5 nov 19:58 (keuring YS09–YS18 onder C30, YS01–YS03 keuze, vrijdag 19:30)",
-    "H-finn-1 via Eva: kanaal 2 wordt \"verhalen over de gamewereld\"; geen overlap met vreemd maar waar (zie ik ook niet)"
+    "H-finn-1 via Eva: kanaal 2 wordt \"verhalen over de gamewereld\"; geen overlap met vreemd maar waar (zie ik ook niet)",
+    {
+      "id": "jesse-16",
+      "van": "Jesse via Eva",
+      "stand": "bijschriften TikTok/Snapchat vanaf YL01 in het pakket (tiktok-snapchat/); niets geplaatst; profielfoto en bio per platform volgen"
+    },
+    {
+      "id": "jesse-17",
+      "van": "Jesse via Eva",
+      "stand": "YL01 gemaakt (82,5 s, eerste video van 16:00 en TikTok-versie); ritme in het weekverslag"
+    },
+    {
+      "id": "jesse-18",
+      "van": "Jesse via Eva",
+      "stand": "bijschriften TikTok/Snapchat vanaf YL01 in het pakket (tiktok-snapchat/); niets geplaatst; profielfoto en bio per platform volgen"
+    }
   ],
   "raakt": [
     "instagram-kanaal-1",
@@ -806,6 +823,7 @@
     "pc-omgevingsvariabelen",
     "elevenlabs-tegoed",
     "paneel-kaarten",
-    "youtube-studio-kanaal-1"
+    "youtube-studio-kanaal-1",
+    "tiktok-snapchat-voorraad"
   ]
 }

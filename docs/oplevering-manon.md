@@ -1,3 +1,4 @@
+KLAAR: pakket YL01 klaar ter keuring ("Why does a week have seven days?", 82,5 s, eerste video van 16:00, ook TikTok-versie); pakket OK en bijschrift OK gevraagd; bedoeld voor wo 18 nov 16:00; niets ingepland · ma 16 nov 21:22
 KLAAR: Instagram YS33–YS39 naar 12:00 (17–23 nov) met slotzin "New every day." ("Bijschrift OK YS33–YS39", ma 16 nov 20:55) · ma 16 nov 21:00
 KLAAR: nieuw ritme kanaal 1 vastgelegd (12:00 short, 16:00 video 65–90 s, 20:00 short; YouTube en Instagram; zo snel mogelijk); 18:00 gaat naar 12:00 · ma 16 nov 20:50
 KLAAR: YS46 en YS47 pakket OK en bijschrift OK ("Beide OK YS46 en YS47", ma 16 nov 12:09); Instagram ingepland voor za 21 en zo 22 nov 2026 20:00; YouTube Studio om 17:00 (vaste tijd, #90) · b2ea744 · ma 16 nov 12:15
