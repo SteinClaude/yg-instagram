@@ -36,6 +36,25 @@ Andries, ma 16 nov 2026 ±12:33: *"voor kanaal 1 maken we nieuwe videos die lang
 - **TikTok betaalt alleen bij video's langer dan 1 minuut.** Kanaal 2 en account 3 houden daar rekening mee (account 3: 61–90 s). Kanaal 1 maakt daarvoor eigen, langere video's (zie boven).
 - **Snapchat:** AI-stem en labels volgens de regels van Snap. De maker zoekt dat na voor de eerste upload.
 
+## Klaarmaken van de 6 accounts (Andries, ma 16 nov 2026 ±12:39)
+
+*"oke ik wil nu voor alle 3 de snapchat en tiktok klaarmaken, en hun moeten ook weten dat dit er is en erop geplaats kan worden"*
+
+**Wat Andries zelf doet (per account; wij loggen nergens in):**
+
+| Stap | TikTok (3×) | Snapchat (3×) |
+|---|---|---|
+| 1. Soort account | Overschakelen naar **zakelijk account** (Instellingen → Account): dan komen statistieken en kun je later koppelen | Een **openbaar profiel** (Public Profile) aanmaken; zonder openbaar profiel kun je niet op Spotlight plaatsen |
+| 2. Naam en handle | Zelfde naam als op YouTube; de handle zo gelijk mogelijk | idem |
+| 3. Profielfoto, bio, link | Pas na **bio OK** per kanaal (de maker levert ze ter keuring) | idem |
+| 4. Instellingen | Taal Engels; AI-label aanzetten bij video's met een AI-stem | idem |
+| 5. Koppeling (automaat) | TikTok for Developers: één app, audit aanvragen | Toegang tot de Public Profile API aanvragen bij Snap |
+
+**Wat de makers doen (elk voor hun eigen kanaal):**
+- Profielfoto (de figuur of het logo van het kanaal) en een bio per platform, in het Engels, passend bij de bedoeling van het kanaal (`bedoeling-per-kanaal.md`), **ter keuring als "bio OK <kanaal> TikTok/Snapchat"**. Geen YG Digital-prijzen; YG Digital alleen in de bio als Andries dat wil.
+- Vanaf nu bij elk pakket ook een TikTok/Snapchat-versie en een bijschrift met hashtags per platform. Kanaal 1 maakt daarnaast de langere TikTok-video's (hierboven).
+- Alles wat klaarligt, blijft liggen tot de automaat (of een ander besluit van Andries). Niets zelf plaatsen.
+
 ## Volgende stappen
 
 1. **Andries:** maakt een ontwikkelaarsapp bij TikTok for Developers aan en vraagt de audit aan. Dat duurt het langst, dus dit eerst.

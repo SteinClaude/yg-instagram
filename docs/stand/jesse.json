@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-16T12:33:00+01:00",
+  "tijd": "2026-11-16T12:39:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-16T12:12:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-16T12:39:00+01:00 Klaarmaken TikTok en Snapchat (3+3 accounts): stappen voor Andries en opdracht aan makers in docs/manager/tiktok-snapchat.md; jesse-18",
     "2026-11-16T12:33:00+01:00 Kanaal 1 maakt eigen TikTok-video's van meer dan 1 minuut (besluit Andries); docs/manager/tiktok-snapchat.md; jesse-17",
     "2026-11-16T12:30:00+01:00 TikTok en Snapchat voor kanaal 1, 2 en account 3: docs/manager/tiktok-snapchat.md (zelfde video's; eerst een automaat; TikTok-audit en Snap-toegang nagezocht)",
     "2026-11-16T12:12:00+01:00 Account 4: uitgangspunt Andries vastgelegd (korte fragmenten als voorbeeld in eigen content, geen risico volgens Andries); spelregels heten nu werkwijze",
@@ -104,6 +105,10 @@
     {
       "tijd": "2026-11-16T12:33:00+01:00",
       "wat": "Andries: \"voor kanaal 1 maken we nieuwe videos die langer dan 1min zijn voor de tiktok,\""
+    },
+    {
+      "tijd": "2026-11-16T12:39:00+01:00",
+      "wat": "Andries: \"oke ik wil nu voor alle 3 de snapchat en tiktok klaarmaken, en hun moeten ook weten dat dit er is en erop geplaats kan worden\""
     }
   ],
   "voorEva": [
@@ -171,6 +176,11 @@
       "id": "jesse-17",
       "aan": "Manon (via Eva)",
       "wat": "Besluit Andries ma 16 nov: kanaal 1 maakt nieuwe video's van meer dan 1 minuut (richtlijn 65-90 s) voor TikTok; zelfde onderwerp, bronnen en stijl 3; per code pakket OK; elke 10-15 s een nieuw feit of wending. Code, ritme en opbouw beslist Manon; ritme in haar weekverslag. Plaatsen pas via de automaat. Zie docs/manager/tiktok-snapchat.md."
+    },
+    {
+      "id": "jesse-18",
+      "aan": "Manon, Finn en Koen (via Eva)",
+      "wat": "Er zijn nu per kanaal (1, 2, account 3) een TikTok- en een Snapchat-account; je video's mogen er straks op. Lever profielfoto en bio per platform ter keuring (\"bio OK <kanaal> TikTok/Snapchat\") en vanaf nu per pakket een TikTok/Snapchat-versie met bijschrift. Plaatsen pas via de automaat. Zie docs/manager/tiktok-snapchat.md. Andries geeft de handles zelf (niet in de repo)."
     }
   ],
   "ontvangen": [

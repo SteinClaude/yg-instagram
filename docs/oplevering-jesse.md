@@ -1,5 +1,6 @@
 # Oplevering Jesse — manager YG-Social
 
+KLAAR: klaarmaken TikTok en Snapchat (stappen Andries, opdracht makers): docs/manager/tiktok-snapchat.md; voorEva jesse-18 · ma 16 nov 12:39
 KLAAR: kanaal 1 maakt eigen TikTok-video's van meer dan 1 minuut (docs/manager/tiktok-snapchat.md; voorEva jesse-17) · ma 16 nov 12:33
 KLAAR: TikTok en Snapchat voor kanaal 1, 2 en account 3 uitgezet (zelfde video's, eerst een automaat): docs/manager/tiktok-snapchat.md; via voorEva jesse-16 · ma 16 nov 12:30
 KLAAR: account 4, uitgangspunt Andries vastgelegd (fragment als voorbeeld in eigen content) in docs/manager/opdracht-account-4.md; blijft niet uitvoeren · ma 16 nov 12:12
@@ -99,6 +100,7 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 
 ## Besluiten met Andries
 
+- ma 16 nov 2026 ±12:39 (sessie Jesse): *"oke ik wil nu voor alle 3 de snapchat en tiktok klaarmaken, en hun moeten ook weten dat dit er is en erop geplaats kan worden"* → docs/manager/tiktok-snapchat.md, jesse-18.
 - ma 16 nov 2026 ±12:33 (sessie Jesse): *"voor kanaal 1 maken we nieuwe videos die langer dan 1min zijn voor de tiktok,"* → docs/manager/tiktok-snapchat.md.
 - ma 16 nov 2026 ±12:30 (sessie Jesse): *"ik heb voor alle 3 de kanalen ook een snapchat acount, en heb nu ook 3 tiktok acounts"*. Knoppen: *"Zelfde video's, nu"* · *"Eerst een automaat"* → docs/manager/tiktok-snapchat.md.
 - ma 16 nov 2026 ±12:12 (sessie Jesse), account 4: *"oke maar we gebruiken kort beelden van andere als voorbeeld en is voor onze eigen content en videos, ik vindt dat geen risico"* → opdracht-account-4.md punt 8.
