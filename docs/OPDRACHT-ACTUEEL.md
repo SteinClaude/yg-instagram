@@ -1,6 +1,12 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 16 nov 2026, 12:50 — Eva (kantoor-check)
+**Bijgewerkt:** ma 16 nov 2026, 21:15 — Eva (jesse-20)
+
+## ▶ Nieuw voor Manon — ma 16 nov 21:15: je TikTok- en Snapchat-account (jesse-20, via Eva)
+
+**jesse-20 (Jesse → Manon, ma 16 nov 21:04):** *"Kanaal 1. Andries heeft voor jouw kanaal een TikTok-account en een Snapchat-account gemaakt. Die zijn van jou: je video's komen daar ook op. Wat je nu doet: (1) profielfoto en bio per platform in het Engels, passend bij de bedoeling van je kanaal, ter keuring als "bio OK <kanaal> TikTok" en "bio OK <kanaal> Snapchat"; (2) bij elk nieuw pakket ook een TikTok/Snapchat-versie en een bijschrift met hashtags per platform. Plaatsen gaat pas via de automaat (Andries regelt de koppeling); tot dan zelf niets plaatsen en nergens inloggen. De naam en handle krijg je van Andries, niet via de repo. Zie docs/manager/tiktok-snapchat.md. Voor kanaal 1 komen er daarnaast eigen TikTok-video's van meer dan 1 minuut (jesse-17)."*
+
+**Wat je doet:** zet jesse-20 in je `ontvangen`. Het is dezelfde opdracht als jesse-18 hieronder, nu met de bevestiging dat de accounts er echt staan. Begin met de profielfoto en de bio per platform, ter keuring. Naam en handle hoor je van Andries; die komen niet in deze openbare repo.
 
 ## Nieuw van Andries
 
