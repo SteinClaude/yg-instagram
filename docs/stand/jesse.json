@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-16T12:12:00+01:00",
+  "tijd": "2026-11-16T12:30:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-16T12:12:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-16T12:30:00+01:00 TikTok en Snapchat voor kanaal 1, 2 en account 3: docs/manager/tiktok-snapchat.md (zelfde video's; eerst een automaat; TikTok-audit en Snap-toegang nagezocht)",
     "2026-11-16T12:12:00+01:00 Account 4: uitgangspunt Andries vastgelegd (korte fragmenten als voorbeeld in eigen content, geen risico volgens Andries); spelregels heten nu werkwijze",
     "2026-11-15T18:24:00+01:00 Keuzes account 4 vastgelegd in docs/manager/opdracht-account-4.md (vorm A met spelregels; na proef account 3; nieuw crewlid; YT+Insta+TikTok, Engels, stem uit potje); nog steeds niet uitvoeren",
     "2026-11-15T17:44:00+01:00 Opdracht account 4 (voice-over bij grappige/virale filmpjes) klaargezet, NIET uitvoeren: docs/manager/opdracht-account-4.md; toets aan de lat (beeld van anderen botst), vier beeldvormen, advies B (nagespeeld als cartoon) + later C",
@@ -90,6 +91,14 @@
     {
       "tijd": "2026-11-16T12:12:00+01:00",
       "wat": "Andries: \"oke maar we gebruiken kort beelden van andere als voorbeeld en is voor onze eigen content en videos, ik vindt dat geen risico\""
+    },
+    {
+      "tijd": "2026-11-16T12:30:00+01:00",
+      "wat": "Andries: \"ik heb voor alle 3 de kanalen ook een snapchat acount, en heb nu ook 3 tiktok acounts\"; knoppen: \"Zelfde video's, nu\" · \"Eerst een automaat\""
+    },
+    {
+      "tijd": "2026-11-16T12:30:00+01:00",
+      "wat": "Openbare documentatie van TikTok (Content Posting API) en een gids over de Snapchat-API gelezen (niet ingelogd)"
     }
   ],
   "voorEva": [
@@ -147,6 +156,11 @@
       "id": "jesse-15",
       "aan": "Eva",
       "wat": "Ter info, niet uitvoeren: opdracht account 4 (voice-over bij grappige/virale filmpjes) in docs/manager/opdracht-account-4.md. Keuzes Andries zo 15 nov: vorm A (kort fragment + eigen commentaar, met spelregels), start na de proef van account 3, nieuw crewlid, YT+Insta+TikTok, Engels, stem uit potje na OK per bedrag. Niets opzetten tot Andries letterlijk start zegt."
+    },
+    {
+      "id": "jesse-16",
+      "aan": "Eva (Manon, Finn, Koen)",
+      "wat": "Andries heeft per kanaal (1, 2, account 3) een TikTok- en een Snapchat-account (namen via Andries, niet in de repo). Besluit: zelfde video's erop, maar eerst een automaat; tot dan niets plaatsen. Makers leveren per pakket een versie en bijschrift voor TikTok/Snapchat. Automaat bouwt Manon na de koppeling (Andries: TikTok-app + audit, Snap-toegang). Zie docs/manager/tiktok-snapchat.md."
     }
   ],
   "ontvangen": [
