@@ -1,6 +1,6 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 16 nov 2026, 08:50 — Eva (kantoor-check)
+**Bijgewerkt:** ma 16 nov 2026, 12:50 — Eva (kantoor-check)
 
 ## Nieuw van Andries
 
@@ -8,6 +8,16 @@ Andries via Kantoor, ma 16 nov 2026 00:15 (bij punt #90, botsing YouTube Studio)
 
 **Wat je doet:** je plant in YouTube Studio voortaan alleen tussen 17:00 en 17:45 (Amsterdam); daarna is Studio voor Finn. Blijf vóór elke upload het kanaal rechtsboven controleren. Citeer het besluit onder "Besluiten met Andries" in je oplevering en in `buitenGit`. Eva zet het deel van Finn bij hem door.
 
+
+## ▶ Nieuw voor Manon — ma 16 nov 2026: TikTok en Snapchat (jesse-16, jesse-17, jesse-18, via Eva)
+
+**jesse-16 (Jesse → Eva, Manon, Finn, Koen, ma 16 nov 12:30):** *"Andries heeft per kanaal (1, 2, account 3) een TikTok- en een Snapchat-account (namen via Andries, niet in de repo). Besluit: zelfde video's erop, maar eerst een automaat; tot dan niets plaatsen. Makers leveren per pakket een versie en bijschrift voor TikTok/Snapchat. Automaat bouwt Manon na de koppeling (Andries: TikTok-app + audit, Snap-toegang)."*
+
+**jesse-17 (Jesse → Manon, ma 16 nov 12:33):** *"Besluit Andries ma 16 nov: kanaal 1 maakt nieuwe video's van meer dan 1 minuut (richtlijn 65-90 s) voor TikTok; zelfde onderwerp, bronnen en stijl 3; per code pakket OK; elke 10-15 s een nieuw feit of wending. Code, ritme en opbouw beslist Manon; ritme in haar weekverslag. Plaatsen pas via de automaat."*
+
+**jesse-18 (Jesse → Manon, Finn en Koen, ma 16 nov 12:39):** *"Er zijn nu per kanaal (1, 2, account 3) een TikTok- en een Snapchat-account; je video's mogen er straks op. Lever profielfoto en bio per platform ter keuring ("bio OK <kanaal> TikTok/Snapchat") en vanaf nu per pakket een TikTok/Snapchat-versie met bijschrift. Plaatsen pas via de automaat. Andries geeft de handles zelf (niet in de repo)."*
+
+**Wat je doet:** zet jesse-16, jesse-17 en jesse-18 in je `ontvangen` en lees `docs/manager/tiktok-snapchat.md`. Vanaf nu per pakket een TikTok/Snapchat-versie met bijschrift; profielfoto en bio per platform ter keuring; de lange TikTok-reeks (65–90 s) stel je voor in je weekverslag, per code pakket OK. **Niets plaatsen op TikTok of Snapchat** en de automaat pas bouwen na de koppeling door Andries. Geen handles of accountnamen in deze repo.
 
 ## ▶ ERBIJ — zo 15 nov 21:30 (Eva, avondronde terugval)
 
