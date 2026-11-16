@@ -82,9 +82,11 @@ Een kanaal waar een vaste stem met humor commentaar geeft op grappige en virale 
 | 3 | Maker | *"Nieuw crewlid"* | idem |
 | 4 | Platforms, taal, geld | *"YT+Insta+TikTok, Engels, stem uit potje"* | idem |
 
+**Uitgangspunt van Andries** (ma 16 nov 2026 ±12:12, sessie Jesse): *"oke maar we gebruiken kort beelden van andere als voorbeeld en is voor onze eigen content en videos, ik vindt dat geen risico"*. De korte fragmenten zijn dus een voorbeeld binnen onze eigen video. Het product is ons eigen commentaar en beeld. De werkwijze hieronder zorgt dat elke video zo blijft.
+
 **Gevolg van keuze A:** de regel "nooit materiaal van andere makers" geldt voor account 4 alleen in de aangepaste vorm hieronder. Voor de andere kanalen blijft hij ongewijzigd. Een betaalde stem mag uit het potje, na een OK per bedrag; gekochte clips niet.
 
-### Spelregels bij vorm A (zo klein mogelijk risico)
+### Werkwijze bij vorm A (fragment als voorbeeld in eigen content)
 
 1. **Kort fragment:** per filmpje hoogstens een paar seconden achter elkaar. Nooit het hele filmpje, en nooit meer dan de helft van onze video aan beeld van anderen.
 2. **Veel eigen toevoeging, de hele video lang:** eigen stem, freeze frames, zoom, pijlen, tekst, eigen animatie en een eigen clou. Zonder ons commentaar moet de video niet werken.

@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-15T18:24:00+01:00",
+  "tijd": "2026-11-16T12:12:00+01:00",
   "sessie": {
     "plek": "pc",
-    "sinds": "2026-11-15T11:15:00+01:00"
+    "sinds": "2026-11-16T12:12:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-16T12:12:00+01:00 Account 4: uitgangspunt Andries vastgelegd (korte fragmenten als voorbeeld in eigen content, geen risico volgens Andries); spelregels heten nu werkwijze",
     "2026-11-15T18:24:00+01:00 Keuzes account 4 vastgelegd in docs/manager/opdracht-account-4.md (vorm A met spelregels; na proef account 3; nieuw crewlid; YT+Insta+TikTok, Engels, stem uit potje); nog steeds niet uitvoeren",
     "2026-11-15T17:44:00+01:00 Opdracht account 4 (voice-over bij grappige/virale filmpjes) klaargezet, NIET uitvoeren: docs/manager/opdracht-account-4.md; toets aan de lat (beeld van anderen botst), vier beeldvormen, advies B (nagespeeld als cartoon) + later C",
     "2026-11-15T11:32:00+01:00 Bedoeling per kanaal vastgelegd: docs/manager/bedoeling-per-kanaal.md (kanaal 1 educatief + leuk, kanaal 2 leuk/humor, account 3 informatief + hype; via jesse-14)",
@@ -85,6 +86,10 @@
     {
       "tijd": "2026-11-15T18:24:00+01:00",
       "wat": "Andries (knoppen, account 4): \"A: fragment + commentaar\" · \"Na proef account 3\" · \"Nieuw crewlid\" · \"YT+Insta+TikTok, Engels, stem uit potje\""
+    },
+    {
+      "tijd": "2026-11-16T12:12:00+01:00",
+      "wat": "Andries: \"oke maar we gebruiken kort beelden van andere als voorbeeld en is voor onze eigen content en videos, ik vindt dat geen risico\""
     }
   ],
   "voorEva": [

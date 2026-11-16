@@ -1,5 +1,6 @@
 # Oplevering Jesse — manager YG-Social
 
+KLAAR: account 4, uitgangspunt Andries vastgelegd (fragment als voorbeeld in eigen content) in docs/manager/opdracht-account-4.md; blijft niet uitvoeren · ma 16 nov 12:12
 KLAAR: keuzes account 4 vastgelegd (vorm A met spelregels, na proef account 3, nieuw crewlid); opdracht blijft klaar, niet uitvoeren · zo 15 nov 18:24
 KLAAR: opdracht account 4 (voice-over bij grappige/virale filmpjes) klaargezet, NIET uitvoeren: docs/manager/opdracht-account-4.md · zo 15 nov 17:44
 KLAAR: bedoeling per kanaal (bedoeling, kijker en gevoel, doel per video): docs/manager/bedoeling-per-kanaal.md; via voorEva jesse-14 · zo 15 nov 11:32
@@ -96,6 +97,7 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 
 ## Besluiten met Andries
 
+- ma 16 nov 2026 ±12:12 (sessie Jesse), account 4: *"oke maar we gebruiken kort beelden van andere als voorbeeld en is voor onze eigen content en videos, ik vindt dat geen risico"* → opdracht-account-4.md punt 8.
 - zo 15 nov 2026 ±18:24 (vragenknoppen, sessie Jesse), account 4: *"A: fragment + commentaar"* · *"Na proef account 3"* · *"Nieuw crewlid"* · *"YT+Insta+TikTok, Engels, stem uit potje"* → docs/manager/opdracht-account-4.md punt 8.
 - zo 15 nov 2026 ±17:40–17:43 (sessie Jesse): *"we gaan ook een nieuw kanaal maken waar een voice over komt over grappige videos en andere leuke filmpjes of viral videos"* · *"ik wil hier een opdracht voor klaar maken maar nog niet uitvoeren, dus alles wel door nemen ect"* → docs/manager/opdracht-account-4.md (klaar, niet uitvoeren).
 - zo 15 nov 2026 ±11:32 (sessie Jesse): *"ik wil ook de bedoeling per agent en hun achterliggende gedachte opschroeven, zodat ze alle 3  de videos maken, met de benoemde/verzonnen doelen ervan, zo als bijvoorbeeld educatief/motivatie, leuk ect"*. Knoppen: *"Educatief + leuk"* · *"Leuk / humor"* · *"Informatief + hype"* · blad: *"Bedoeling en gedachte"*, *"Kijker en gevoel"*, *"Doel per video"* → docs/manager/bedoeling-per-kanaal.md.
