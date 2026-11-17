@@ -1,6 +1,29 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** di 17 nov 2026, 08:45 — Eva (kantoor-check)
+**Bijgewerkt:** di 17 nov 2026, 13:05 — Eva (Instagram-pagina vanmiddag afmaken)
+
+## ▶ NU — di 17 nov 13:05 (Eva): je Instagram-pagina vanmiddag bijstellen en afmaken · `eva-insta-1`
+
+Andries, di 17 nov 2026 12:57 (aan Eva): *"Oke check, dan wil ik dat manon de instagram pagina vammidag bijstelt en afmaakt,  zelfde voor finn en koen,"*
+
+**Doel:** vanmiddag staat je Instagram-pagina af. Wie hem opent, ziet in 3 seconden waar het kanaal over gaat en waarom je het moet volgen. Het moet passen bij de bedoeling van je kanaal.
+
+1. **Kijk wat er nu staat** (alleen kijken). Doe dat in de Chrome van Andries, waar hij al is ingelogd. Controleer eerst of het juiste account actief is.
+2. **Loop dit lijstje na:**
+   - naam en profielfoto;
+   - bio (hoogstens 150 tekens);
+   - links;
+   - professioneel account;
+   - 1 tot 3 vastgezette posts die het kanaal het best laten zien;
+   - het raster (omslagen en titels die bij elkaar passen);
+   - posts die niet (meer) bij het kanaal horen;
+   - eventueel hoogtepunten.
+   - Bij jou ook: past de profielfoto nog bij stijl 3 (het duo)? De bio staat sinds 8 nov ("bio OK kanaal 1"); stel hem alleen bij als hij niet meer klopt met het nieuwe ritme. Openbare repo: geen naam, handle of link in je bestanden.
+
+3. **Leg Andries in één keer voor wat je wilt veranderen**, met de vragenknoppen (hoogstens 4 per keer) en je advies erbij. Wat al goedgekeurd is en goed staat, laat je staan.
+4. **Na zijn OK per onderdeel** zet je het in zijn Chrome, met hem erbij. Pas alleen aan wat hij goedkeurde. Een gebruikersnaam, iets verwijderen of archiveren doe je alleen na een apart OK daarvoor. Je logt nergens in en betaalt niets.
+5. **Eén tegelijk in Chrome:** Manon, dan Finn, dan Koen. Je voorstel maak je meteen; het instellen in Chrome doe je pas als de vorige klaar is (zie de stand van de anderen in `CREW-STATUS.md`, of vraag het Andries).
+6. **Klaar:** een schermafbeelding van de pagina in je map, `KLAAR: Instagram-pagina af · <commit>` bovenaan je oplevering, elk OK letterlijk op de drie plekken. Zet `eva-insta-1` in je `ontvangen`.
 
 ## ▶ Nieuw voor Manon — di 17 nov 08:45: vraag van Bram over de automaat (H-bram-3, via Eva)
 
