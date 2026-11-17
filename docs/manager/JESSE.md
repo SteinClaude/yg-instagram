@@ -63,6 +63,46 @@ Doe het zoals in "Melden aan Eva" in `CLAUDE.md`, met:
 - je stand in `docs/stand/jesse.json`;
 - je logboek in `docs/oplevering-jesse.md`: `KLAAR` en `KAN NIET VERDER` bovenaan, nieuwste boven.
 
+## Van Eva — di 17 nov 2026, 07:20: status van alle kanalen voor Andries · `eva-status-1`
+
+Andries, di 17 nov 2026 07:14 (aan Eva): *"Kan je een opdrachr voor jesse geven om een status te geven van de kanalen"*
+
+**Wat je doet bij je eerstvolgende "ga verder" (vóór ander werk):** schrijf één statusoverzicht van kanaal 1, kanaal 2 en account 3 in `docs/manager/status-kanalen-2026-11-17.md`, met bovenaan je oplevering een regel `KLAAR: status kanalen · <commit>`. Push en zet `eva-status-1` in je `ontvangen`.
+
+**Vorm (kort, gewone woorden, voor Andries):**
+1. **Bovenaan, in vijf regels:** hoe het er per kanaal voor staat, en wat er nu bij Andries ligt (keuringen, accounts, iets in Studio), met per punt het ene woord of de ene klik die hij moet doen.
+2. **Per kanaal een blok:**
+   - geplaatst: per platform (YouTube, Instagram, TikTok, Snapchat) hoeveel, en de laatste met datum;
+   - ingepland: wat en wanneer, de komende 7 dagen;
+   - voorraad: tot welke datum het kanaal gevuld is, en waar een gat zit;
+   - keuring open: welke codes en welke soort (script, pakket, bijschrift, bio);
+   - vast: wat niet verder kan, en wie of wat nodig is;
+   - profielen: wat er per platform nog niet af is (bio, profielfoto, banner);
+   - volgende stap van de maker.
+3. **Cijfers:** heb je ze, zet ze erbij in de vaste vorm van jesse-19. Heb je ze niet, schrijf dan "cijfers volgen" en houd de status daar niet voor op.
+4. **Eén advies van jou:** het belangrijkste dat deze week beter moet, met de reden.
+
+**Openbare repo:** geen kanaalnamen, handles, links naar kanalen of video's, of bedragen. Gebruik "kanaal 1", "kanaal 2" en "account 3".
+
+**Kanaal 1** haal je zelf uit deze repo (stand en oplevering van Manon, `planning.json`, `gedaan.json`, pakketkaarten).
+
+**Kanaal 2 en account 3**: hun repo's lees je niet. Hieronder staat wat Eva er op di 17 nov 07:15 in zag (stand van ma 16 nov ±21:15). Neem dit over en zet erbij dat het van die tijd is.
+
+*Kanaal 2 (Finn), stand `wacht`:*
+- Geplaatst op YouTube: drie lange video's (K2-L12 op 10 nov, L02 en L03 op 13 nov) en de shorts K2-C01, W02, W03 en W04 (15 nov). Op Instagram onder andere W01 (15 nov) en W05 (16 nov).
+- Vast sinds ma 16 nov 14:48: W05 op YouTube. In Studio stond het verkeerde kanaal actief. Andries zet het juiste kanaal actief en zegt "ga verder" bij Finn.
+- Keuring open: script OK K2-W06, W07 en W08 (gevraagd ma 16 nov 21:15).
+- Vervallen: C02–C05, C07–C10, L01, L06 en L11 (Andries za 14 nov 13:49: "Laten liggen").
+- Bio YouTube: Andries ma 16 nov: "Laat zo". TikTok en Snapchat: jesse-21 is ma 16 nov 21:07 doorgezet; bio en profielfoto daar nog niet gemaakt.
+
+*Account 3 (Koen), stand `wacht`:*
+- YouTube: G01 geplaatst (zo 15 nov 18:00). Ingepland: G02 (di 17 nov 18:00), G03 (wo 18 nov), G05 (vr 20 nov) en G06 (di 24 nov), steeds 18:00.
+- Instagram: G02, G03, G05 en G06 rond dezelfde dagen, telkens na een "ga verder".
+- Keuring open: pakket OK G07 (gevraagd ma 16 nov 18:54, in het paneel). Daarna gaat G07 op YouTube op zo 22 nov 18:00. G08 en G09 zijn nog niet gemaakt. G04 vervalt.
+- Gat in de voorraad: 25 nov t/m 14 dec. Het stemtegoed wacht tot 14 dec; Koen wil het gat het komende weekend vullen.
+- Wo 18 nov: eerste meting van G01 na 72 uur, voor jou.
+- TikTok: Koen schreef nog dat het account niet bestaat. jesse-22 (accounts bestaan wel) is ma 16 nov 21:07 doorgezet; dat verschil haalt hij bij zijn volgende "ga verder" recht.
+
 ## Van Eva — ma 16 nov 2026, 15:40: je map is verhuisd · `eva-verhuis-2`
 
 Andries, ma 16 nov 2026 14:59: *"verhuizen"* (na het advies om de werkmappen uit OneDrive te halen; OneDrive was bijna vol).
