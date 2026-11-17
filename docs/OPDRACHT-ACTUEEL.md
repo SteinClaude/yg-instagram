@@ -1,6 +1,11 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** ma 16 nov 2026, 21:35 — Eva (avondronde, terugval)
+**Bijgewerkt:** di 17 nov 2026, 08:45 — Eva (kantoor-check)
+
+## ▶ Nieuw voor Manon — di 17 nov 08:45: vraag van Bram over de automaat (H-bram-3, via Eva)
+
+Bram (stand op tak `flow-00` van yg-os, ma 16 nov 21:30), letterlijk: *"F1: vraag over eenmalig en standaard-inhaaluren in plaatsen.cjs; nu hoeft Manon niets te veranderen, bij de overname doet kanaal 1 niet meer mee in de oude automaat (flow/F1-instagram.md)"*. Zijn vraag: *"Wat doet plaatsen.cjs met eenmalig: true en hoeveel inhaaluren gelden standaard?"* — zijn aanname: eenmalig = niet herhalen, standaard 2 uur. Blokkeert niet.
+**Wat jij doet:** zet bij je volgende "ga verder" het antwoord (twee regels, uit `src/`/`gereedschap/` gelezen) in je `voorEva` met id `V-manon-h-bram-3`; Eva zet het door naar Bram. Verder niets veranderen.
 
 ## Avondronde ma 16 nov 21:35 (terugval) — nagekeken, drie antwoorden (Eva)
 

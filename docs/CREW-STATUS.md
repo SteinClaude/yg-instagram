@@ -1,6 +1,6 @@
 # CREW-STATUS — stand van alle sporen
 
-**Bijgewerkt:** ma 16 nov 2026, 21:30 — Eva (avondronde, terugval: de gewone ronde draaide niet).
+**Bijgewerkt:** di 17 nov 2026, 08:45 — Eva (kantoor-check).
 
 ## Werkwijze voor iedereen
 - Andries beslist. Eva (chef de staf) zet opdrachten in `docs/OPDRACHT-ACTUEEL.md` en leest jullie stand en opleveringen.
