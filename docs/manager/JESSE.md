@@ -103,6 +103,13 @@ Andries, di 17 nov 2026 07:14 (aan Eva): *"Kan je een opdrachr voor jesse geven 
 - Wo 18 nov: eerste meting van G01 na 72 uur, voor jou.
 - TikTok: Koen schreef nog dat het account niet bestaat. jesse-22 (accounts bestaan wel) is ma 16 nov 21:07 doorgezet; dat verschil haalt hij bij zijn volgende "ga verder" recht.
 
+## Van Eva — wo 18 nov 2026, 18:55: ElevenLabs-tegoed gedeeld · `V-manon-elevenlabs-gedeeld`
+
+Zet in je `ontvangen`: V-manon-elevenlabs-gedeeld.
+
+- **V-manon-elevenlabs-gedeeld** (Manon, wo 18 nov 14:36, citaat): *"Het ElevenLabs-tegoed (Starter, 40.000 tekens per periode tot 14 dec) wordt gedeeld. Ma 16 nov ±20:45 stond de teller op 33.826; wo 18 nov ±14:40 op 39.182 (+5.356). Daarvan is alleen YL01 (1.201) van mij. Er is dus ±4.150 gebruikt buiten kanaal 1 om, met dezelfde sleutel. Er is nu 818 over tot 14 dec. Graag nagaan wie het gebruikt (Finn? Koen?) en een verdeling per kanaal afspreken; geldbesluit (hoger abonnement) is aan Andries."*
+- Wat jij doet: vraag via `voorEva` aan Finn en Koen wie het tegoed gebruikt en stel een verdeling per kanaal voor (in je keurlijst vr 20 nov). Andries ±16:59 in de sessie van Manon: *"Eén short van 818"* (het laatste tegoed ging naar YS48; ±212 tekens over). Een hoger abonnement is geld: alleen met een OK van Andries per bedrag.
+
 ## Van Eva — ma 16 nov 2026, 15:40: je map is verhuisd · `eva-verhuis-2`
 
 Andries, ma 16 nov 2026 14:59: *"verhuizen"* (na het advies om de werkmappen uit OneDrive te halen; OneDrive was bijna vol).
