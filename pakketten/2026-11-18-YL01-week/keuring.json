@@ -1,0 +1,23 @@
+{
+  "code": "YL01",
+  "besluiten": [
+    {
+      "soort": "pakket",
+      "uitkomst": "ok",
+      "tekst": "Beide OK YL01",
+      "tijd": "2026-11-18T12:09:00+01:00",
+      "via": "sessie",
+      "door": "Andries",
+      "opVraag": "2026-11-16T21:20:00+01:00"
+    },
+    {
+      "soort": "bijschrift",
+      "uitkomst": "ok",
+      "tekst": "Beide OK YL01",
+      "tijd": "2026-11-18T12:09:00+01:00",
+      "via": "sessie",
+      "door": "Andries",
+      "opVraag": "2026-11-16T21:20:00+01:00"
+    }
+  ]
+}
