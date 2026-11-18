@@ -211,6 +211,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 18 nov 2026 ±13:29, in de sessie, op mijn voorstellen voor de bio (docs/bio.md): "bio OK kanaal 1 IG (Recommended)", "bio OK kanaal 1 TikTok (Recommended)", "bio OK kanaal 1 Snapchat (Recommended)" → nieuwe Instagram-bio met de tijden 12:00, 16:00 en 20:00; bio voor TikTok en Snapchat vastgelegd (jesse-20). Op de vraag of Instagram op kanaal 1 wil staan: "Staat nu op kanaal 1".
 - wo 18 nov 2026 12:09, in de sessie, op "Keur je YL01 voor YouTube en Instagram?": "Beide OK YL01" → pakket OK en bijschrift OK YL01 (dekt ook de bijschriften voor TikTok en Snapchat); vastgelegd in keuring.json (25f51c3); ingepland voor do 19 nov 2026 16:00 (wo 18 nov 16:00 lukte niet meer: Studio pas om 17:00).
 - ma 16 nov 2026 ±20:55, in de sessie, op "ElevenLabs heeft nog 6.174 van de 40.000 tekens, tot 14 dec … Wat wil je?": "Tot 14 dec rustiger" → tot 14 dec maak ik alleen wat in het tegoed past; geen hoger abonnement; vanaf 14 dec het volle ritme.
 - ma 16 nov 2026 ±20:55, in de sessie, op "Mag die zin worden New every day., zodat ik ze naar 12:00 kan verschuiven?": "Bijschrift OK YS33–YS39" → in de Instagram-bijschriften van YS33–YS39 wordt de slotzin "New every day."; de Reels gaan naar 12:00 (17–23 nov).

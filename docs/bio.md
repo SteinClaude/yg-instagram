@@ -28,3 +28,16 @@ Begint met de merkzin; iets meer sfeer, iets minder letterlijk.
 - **Weergavenaam:** YG Digital (ongewijzigd).
 - **Knoppen:** e-mail, bellen, WhatsApp (ongewijzigd).
 - De pijl "→" telt als één teken; Instagram toont hem gewoon.
+
+## Bio's per platform, kanaal 1 (wo 18 nov 2026, na het nieuwe ritme)
+
+Andries in de sessie van Manon, wo 18 nov 2026 ±13:29, op de voorstellen: "bio OK kanaal 1 IG (Recommended)", "bio OK kanaal 1 TikTok (Recommended)", "bio OK kanaal 1 Snapchat (Recommended)".
+
+- **Instagram** (148 tekens; vervangt "Kort B" van 8 nov, omdat 18:00 niet meer klopt):
+  Why is a stop sign octagonal?
+  Ordinary things, and how they got that way. Always with sources.
+  New 3× a day: 12:00, 16:00, 20:00 (CET)
+  By YG Digital
+- **TikTok** (76 van 80 tekens): Why ordinary things are the way they are. Always with sources. By YG Digital
+- **Snapchat** (123 tekens): Why is a stop sign octagonal? Ordinary things, and how they got that way. Always with sources. New every day. By YG Digital
+- Profielfoto op TikTok en Snapchat: dezelfde als op YouTube en Instagram. TikTok en Snapchat worden pas ingesteld met Andries erbij of via de automaat; niets plaatsen.
