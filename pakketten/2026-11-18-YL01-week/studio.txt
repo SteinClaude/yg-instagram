@@ -1,5 +1,5 @@
 STUDIO.TXT — YL01 (YouTube Studio, uploadscherm van boven naar beneden)
-Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YL01" van Andries.
+Status: pakket OK YL01 ("Beide OK YL01", wo 18 nov 2026 12:09); stijl OK stijl 3 (za 14 nov 2026 ±20:43).
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 82,5 s, Engelse stemmen (ElevenLabs, betaald abonnement met commerciële licentie; stemmen Laura (het Vraagteken) en Liam (Peertje)) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt
@@ -45,4 +45,4 @@ Reacties: Aan (Andries plaatst antwoorden; Manon schrijft concepten).
 Muziek: geen in het bestand. Wil Andries muziek, dan alleen uit de gratis bibliotheek van YouTube zelf.
 
 == Zichtbaarheid ==
-Plannen: woensdag 18 november 2026, 16:00 (Amsterdam)
+Plannen: donderdag 19 november 2026, 16:00 (Amsterdam)

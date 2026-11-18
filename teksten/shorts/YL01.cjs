@@ -132,7 +132,7 @@ module.exports = {
   nummer: 'No. L1',
   onderwerp: 'THE WEEK',
   pakket: {
-    dag: 'woensdag 18 november 2026', tijd: '16:00',   // nieuw ritme: video om 16:00 (Andries ma 16 nov 2026 ±20:40)
+    dag: 'donderdag 19 november 2026', tijd: '16:00',   // nieuw ritme: video om 16:00 (Andries ma 16 nov 2026 ±20:40); van wo 18 naar do 19 nov omdat het OK pas wo 12:09 kwam en Studio pas om 17:00 vrij is
     gelezen: 'ma 16 nov 2026',
     titel: 'Why does a week have seven days?',
     intro: 'Most likely because ancient Babylonian sky-watchers counted seven special lights in the sky. The Romans named the days after them, and when the Soviet Union tried a five-day week, it didn\'t last.',

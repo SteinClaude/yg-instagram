@@ -18,7 +18,7 @@
 //
 // Tweede account (sinds 9 nov 2026): --account kanaal-1 zet een short van YouTube-kanaal 1 in de planning
 // voor het Instagram-account van kanaal 1. Dan:
-//   * code YSxx; video en omslag moeten in het pakket staan (pakketten/<map>/instagram/reel.mp4 en omslag.jpg,
+//   * code YSxx (short) of YLxx (video van 16:00, sinds 16 nov 2026); video en omslag moeten in het pakket staan (pakketten/<map>/instagram/reel.mp4 en omslag.jpg,
 //     gemaakt met gereedschap/short/instagram.cjs) en worden NIET gekopieerd: het item wijst er rechtstreeks
 //     naar, zodat de openbare site niet twee keer dezelfde video draagt;
 //   * id <datum>-k1-<code>, taal en, veld "account": "kanaal-1";
@@ -44,7 +44,7 @@ for (let i = 0; i < args.length; i++) {
 }
 const [video, omslag, bijschrift, datum, tijd, code] = pos;
 const K1 = ACCOUNT === 'kanaal-1';
-if (pos.length !== 6 || !/^\d{4}-\d{2}-\d{2}$/.test(datum || '') || !/^\d{2}:\d{2}$/.test(tijd || '') || !(K1 ? /^YS\d{2}$/ : /^[A-Z]\d{2}$/).test(code || '')) stop(GEBRUIK);
+if (pos.length !== 6 || !/^\d{4}-\d{2}-\d{2}$/.test(datum || '') || !/^\d{2}:\d{2}$/.test(tijd || '') || !(K1 ? /^Y[SL]\d{2}$/ : /^[A-Z]\d{2}$/).test(code || '')) stop(GEBRUIK);
 for (const f of [video, omslag, bijschrift]) if (!fs.existsSync(f)) stop(`bestand niet gevonden: ${f}`);
 // kanaal 1: pad binnen de repo, onder pakketten/ (zo haalt de automaat het op via GitHub Pages)
 const inRepo = f => path.relative(WORTEL, path.resolve(f)).split(path.sep).join('/');

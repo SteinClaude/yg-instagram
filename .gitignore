@@ -28,3 +28,6 @@ pakketten/*/bron/render/
 pakketten/*/bron/plaat-*.html
 pakketten/*/bron/overzicht.html
 pakketten/*/bron/telefooncontrole.html
+
+# Video van de reeks YL (65 MB+) niet in git; de pc houdt hem. Upload, Instagram/TikTok-versie, studio.txt, overzicht en bron/ wel (Eva, avondronde ma 16 nov 21:35). YL01 blijft staan.
+pakketten/*-YL*/video.mp4
