@@ -16,6 +16,13 @@ on:
     # sinds zo 15 nov 2026). Zelfde opzet: 19 UTC = 20 uur in de winter, 18 UTC = 20 uur in de zomer.
     - cron: '3,13,23,34,44,53 18,19 * * *'
     - cron: '9,27,48 20 * * *'
+    # Extra starts rond de nieuwe plaatstijden 12:00 en 16:00 Amsterdam (nieuw ritme kanaal 1, Andries ma 16 nov
+    # 2026 20:36: "ik wil over gaan naar 12:00 upload, 16:00 en 20;00 elke dag 1video en 2 shorts"). Zelfde opzet:
+    # 11 UTC = 12 uur en 15 UTC = 16 uur in de winter, 10 en 14 UTC in de zomer.
+    - cron: '3,13,23,34,44,53 10,11 * * *'
+    - cron: '9,27,48 12 * * *'
+    - cron: '3,13,23,34,44,53 14,15 * * *'
+    - cron: '9,27,48 16 * * *'
   workflow_dispatch:          # knop om het met de hand te draaien
     inputs:
       proefvideo:
