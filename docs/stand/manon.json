@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-18T14:31:00+01:00",
+  "tijd": "2026-11-18T14:36:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "werkt",
   "af": [
+    "2026-11-18T14:36:00+01:00 Bronnen uitgezocht voor YL02 (schrikkeljaar) en vier shorts (kapperspaal, uien, flamingo’s, gele potloden) in docs/bronnen-voorraad.md. Niets ingesproken: ElevenLabs meldt 39.182 van 40.000 tekens gebruikt (818 over tot 14 dec).",
     "2026-11-18T13:34:00+01:00 Instagram kanaal 1 (Chrome van Andries, na \"Staat nu op kanaal 1\"): nieuwe bio gezet na \"bio OK kanaal 1 IG\" (148 tekens, met 12:00, 16:00, 20:00 en By YG Digital); profiel toont hem. Pagina nagekeken: professioneel account, 14 Reels (4 in stijl 3, 10 in stijl 2), profielfoto het vraagteken (past bij het duo), geen vastgezette posts, geen hoogtepunten, geen link. Verder niets aangeraakt. Schermafbeelding niet in git (toont de handle).",
     "2026-11-18T12:15:00+01:00 Tak manon/cron-1200-1600 (041ef21): alleen extra schedule-regels in plaatsen.yml rond 12:00 en 16:00; klaar voor Eva; naar main pas na go Andries (B30).",
     "2026-11-18T12:10:00+01:00 YL01 na \"Beide OK YL01\" (wo 18 nov 12:09): keuring.json (25f51c3); verschoven van wo 18 naar do 19 nov 16:00, omdat Studio pas om 17:00 vrij is (YouTube en Instagram blijven gelijk); in planning.json voor Instagram (plan-reel.cjs kent nu ook YLxx); video.mp4 van YL vanaf YL02 in .gitignore (Eva).",
@@ -132,10 +133,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "YS48–YS51 (20:00, ma 23 t/m do 26 nov) en YL02 (16:00, vr 20 nov) maken; onderwerpen: kapperspaal, uien, flamingo’s, gele potloden; YL02 schrikkeljaar. Bronnen worden uitgezocht.",
+  "bezig": "YS48–YS51 en YL02: bronnen uitgezocht (docs/bronnen-voorraad.md), niets ingesproken: stemtegoed bijna op. Om 17:00 Studio: YL01, YS46, YS47.",
   "volgende": "17:00 Studio: YL01 (do 19 nov 16:00), YS46 en YS47; daarna 18:00-shorts naar 12:00. Vanavond met Andries: TikTok en Snapchat (bio v2 met tijden, profielfoto) en vastzetten op Instagram. Tot 14 dec rustiger met de stemtekens.",
   "kanNietVerder": null,
   "vragen": [
+    "Stemtegoed: nog 818 tekens tot 14 dec (genoeg voor hoogstens één short). De laatste 818 gebruiken voor één short (YS48), bewaren, of een hoger abonnement (geld)? · aanname: niets inspreken tot zijn antwoord · blokkeert: ja, voor YS48–YS51 en YL02",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
@@ -660,6 +662,11 @@
     }
   ],
   "voorEva": [
+    {
+      "id": "V-manon-elevenlabs-gedeeld",
+      "aan": "Eva en Jesse",
+      "wat": "Het ElevenLabs-tegoed (Starter, 40.000 tekens per periode tot 14 dec) wordt gedeeld. Ma 16 nov ±20:45 stond de teller op 33.826; wo 18 nov ±14:40 op 39.182 (+5.356). Daarvan is alleen YL01 (1.201) van mij (mijn logboek: gereedschap/short/elevenlabs.cjs verbruik). Er is dus ±4.150 gebruikt buiten kanaal 1 om, met dezelfde sleutel. Er is nu 818 over tot 14 dec. Graag nagaan wie het gebruikt (Finn? Koen?) en een verdeling per kanaal afspreken; geldbesluit (hoger abonnement) is aan Andries."
+    },
     {
       "id": "V-manon-h-bram-3",
       "aan": "Eva → Bram",

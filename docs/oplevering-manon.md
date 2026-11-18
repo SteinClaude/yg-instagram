@@ -1,3 +1,4 @@
+KAN NIET VERDER: YS48–YS51 en YL02 inspreken · nodig: stemtegoed (818 tekens over tot 14 dec; ±4.150 sinds ma avond buiten kanaal 1 om gebruikt) — besluit van Andries (laatste 818 gebruiken, bewaren of hoger abonnement) · wo 18 nov 14:36
 KLAAR: Instagram kanaal 1 — nieuwe bio gezet (met 12:00, 16:00, 20:00 en YG Digital; "bio OK kanaal 1 IG", wo 18 nov ±13:29); pagina nagekeken; vastzetten en TikTok/Snapchat vanavond met Andries · wo 18 nov 13:34
 KLAAR: tak manon/cron-1200-1600 klaar voor Eva: extra starttijden in plaatsen.yml rond 12:00 en 16:00 Amsterdam (10,11 en 14,15 UTC plus :09/:27/:48 in 12 en 16 UTC); naar main pas na Eva en go Andries (B30) · 041ef21 · wo 18 nov 12:15
 KLAAR: YL01 pakket OK en bijschrift OK ("Beide OK YL01", wo 18 nov 12:09); Instagram ingepland voor do 19 nov 2026 16:00 (eerst wo 18 nov; Studio is pas om 17:00 vrij); YouTube Studio vandaag om 17:00 · wo 18 nov 12:10
