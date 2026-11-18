@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-18T17:43:00+01:00",
+  "tijd": "2026-11-18T18:13:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-18T12:09:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-18T18:13:00+01:00 Pakket YS48 gemaakt (flamingo’s, 41,4 s, stijl 3 met watermerk; bronnen Smithsonian’s National Zoo en San Diego Zoo; 606 stemtekens, ElevenLabs nu ). Overgang naar scène 5 zonder \"zweep\": resvg liep daar vast. Met Instagram-versie, bijschriften TikTok/Snapchat en kaart met vraag om pakket OK en bijschrift OK.",
     "2026-11-18T17:40:00+01:00 YL01 ingepland in YouTube Studio (kanaal 1 nagekeken: avatar vraagteken, nieuwste short de tennisballen). Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 19 november 2026 om 16:00\"; lijst Shorts: Gepland 19 nov 2026. Instagram staat al voor dezelfde tijd. YS46 en YS47 niet meer gelukt binnen 17:00–17:45 (begon om 17:37): do 19 nov 17:00.",
     "2026-11-18T14:36:00+01:00 Bronnen uitgezocht voor YL02 (schrikkeljaar) en vier shorts (kapperspaal, uien, flamingo’s, gele potloden) in docs/bronnen-voorraad.md. Niets ingesproken: ElevenLabs meldt 39.182 van 40.000 tekens gebruikt (818 over tot 14 dec).",
     "2026-11-18T13:34:00+01:00 Instagram kanaal 1 (Chrome van Andries, na \"Staat nu op kanaal 1\"): nieuwe bio gezet na \"bio OK kanaal 1 IG\" (148 tekens, met 12:00, 16:00, 20:00 en By YG Digital); profiel toont hem. Pagina nagekeken: professioneel account, 14 Reels (4 in stijl 3, 10 in stijl 2), profielfoto het vraagteken (past bij het duo), geen vastgezette posts, geen hoogtepunten, geen link. Verder niets aangeraakt. Schermafbeelding niet in git (toont de handle).",
@@ -134,10 +135,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "YS48 (flamingo’s, ma 23 nov 20:00) maken binnen de laatste 818 stemtekens.",
-  "volgende": "Do 19 nov 17:00 (Studio): YS46 (za 21 nov 20:00) en YS47 (zo 22 nov 20:00) inplannen; daarna de 18:00-shorts naar 12:00. YS48 ter keuring. Vanavond met Andries: TikTok en Snapchat (bio v2), vastzetten op Instagram. Na 14 dec (nieuw tegoed): YS49–YS51 en YL02 uit docs/bronnen-voorraad.md.",
+  "bezig": "-",
+  "volgende": "Do 19 nov 17:00 (Studio): YS46 en YS47 inplannen, YS48 erbij als er een OK is; daarna 18:00-shorts naar 12:00. Vanavond met Andries: TikTok en Snapchat (bio v2), vastzetten op Instagram. Na 14 dec (nieuw tegoed): YS49–YS51 en YL02 uit docs/bronnen-voorraad.md.",
   "kanNietVerder": null,
   "vragen": [
+    "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],

@@ -1,0 +1,13 @@
+Stem: ElevenLabs (tekst naar spraak, betaald abonnement), vraag = Laura (eleven_v4, tempo 1.12), antwoord = Liam (eleven_v4, tempo 1.12); gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.
+Ingesproken tekst per scène:
+1. [vraag, Laura] Why are flamingos pink? Wait, they aren't even born pink?
+2. [antwoord, Liam] Nope! Flamingo chicks hatch white and gray. The pink comes later, from their food.
+3. [antwoord, Liam] They eat algae and tiny brine shrimp, full of red and orange pigments called carotenoids.
+4. [vraag, Laura] So the color comes from the food?
+5. [antwoord, Liam] Yep! Their body processes those pigments, and their feathers turn pink.
+6. [antwoord, Liam] And they eat with their heads upside down, using their bill as a filter!
+7. [vraag, Laura] And in a zoo?
+8. [antwoord, Liam] Zoos add a pigment to their food to keep them pink.
+9. [vraag, Laura] Can a flamingo lose its pink?
+10. [antwoord, Liam] Yes! Parents feeding their chicks can fade to pale pink, or even white.
+11. [antwoord, Liam] So flamingos really are what they eat!
