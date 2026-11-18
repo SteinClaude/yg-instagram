@@ -1,3 +1,4 @@
+KLAAR: Instagram kanaal 1 — nieuwe bio gezet (met 12:00, 16:00, 20:00 en YG Digital; "bio OK kanaal 1 IG", wo 18 nov ±13:29); pagina nagekeken; vastzetten en TikTok/Snapchat vanavond met Andries · wo 18 nov 13:34
 KLAAR: tak manon/cron-1200-1600 klaar voor Eva: extra starttijden in plaatsen.yml rond 12:00 en 16:00 Amsterdam (10,11 en 14,15 UTC plus :09/:27/:48 in 12 en 16 UTC); naar main pas na Eva en go Andries (B30) · 041ef21 · wo 18 nov 12:15
 KLAAR: YL01 pakket OK en bijschrift OK ("Beide OK YL01", wo 18 nov 12:09); Instagram ingepland voor do 19 nov 2026 16:00 (eerst wo 18 nov; Studio is pas om 17:00 vrij); YouTube Studio vandaag om 17:00 · wo 18 nov 12:10
 KLAAR: pakket YL01 klaar ter keuring ("Why does a week have seven days?", 82,5 s, eerste video van 16:00, ook TikTok-versie); pakket OK en bijschrift OK gevraagd; bedoeld voor wo 18 nov 16:00; niets ingepland · ma 16 nov 21:22
@@ -211,6 +212,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 18 nov 2026 ±13:35, in de sessie: "ik wil op elke platform duidelijk een bio hebben zo als deze punten.  De referentie naar YG-DIGITAL, de upload tijden, en een trekkende tekst" → elke bio krijgt een haak, de uploadtijden en YG Digital; TikTok en Snapchat v2 voorgesteld (docs/bio.md). Daarna: "snapchat en tiktok gaan we vanavond doen" / "tik tok en snapchat komen vanavond".
 - wo 18 nov 2026 ±13:29, in de sessie, op mijn voorstellen voor de bio (docs/bio.md): "bio OK kanaal 1 IG (Recommended)", "bio OK kanaal 1 TikTok (Recommended)", "bio OK kanaal 1 Snapchat (Recommended)" → nieuwe Instagram-bio met de tijden 12:00, 16:00 en 20:00; bio voor TikTok en Snapchat vastgelegd (jesse-20). Op de vraag of Instagram op kanaal 1 wil staan: "Staat nu op kanaal 1".
 - wo 18 nov 2026 12:09, in de sessie, op "Keur je YL01 voor YouTube en Instagram?": "Beide OK YL01" → pakket OK en bijschrift OK YL01 (dekt ook de bijschriften voor TikTok en Snapchat); vastgelegd in keuring.json (25f51c3); ingepland voor do 19 nov 2026 16:00 (wo 18 nov 16:00 lukte niet meer: Studio pas om 17:00).
 - ma 16 nov 2026 ±20:55, in de sessie, op "ElevenLabs heeft nog 6.174 van de 40.000 tekens, tot 14 dec … Wat wil je?": "Tot 14 dec rustiger" → tot 14 dec maak ik alleen wat in het tegoed past; geen hoger abonnement; vanaf 14 dec het volle ritme.

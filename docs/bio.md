@@ -41,3 +41,7 @@ Andries in de sessie van Manon, wo 18 nov 2026 ±13:29, op de voorstellen: "bio 
 - **TikTok** (76 van 80 tekens): Why ordinary things are the way they are. Always with sources. By YG Digital
 - **Snapchat** (123 tekens): Why is a stop sign octagonal? Ordinary things, and how they got that way. Always with sources. New every day. By YG Digital
 - Profielfoto op TikTok en Snapchat: dezelfde als op YouTube en Instagram. TikTok en Snapchat worden pas ingesteld met Andries erbij of via de automaat; niets plaatsen.
+
+**Andries wo 18 nov ±13:35:** *"ik wil op elke platform duidelijk een bio hebben zo als deze punten.  De referentie naar YG-DIGITAL, de upload tijden, en een trekkende tekst"*. De Instagram-bio heeft alle drie. TikTok en Snapchat hierboven missen de tijden; daarom deze **voorstellen v2** (nog niet goedgekeurd; keuring vanavond, Andries: *"tik tok en snapchat komen vanavond"*):
+- **TikTok v2** (74 van 80): Why is a stop sign octagonal? Daily 12:00, 16:00, 20:00 CET. By YG Digital
+- **Snapchat v2** (149): Why is a stop sign octagonal? Ordinary things, and how they got that way. Always with sources. New 3× a day: 12:00, 16:00, 20:00 (CET). By YG Digital
