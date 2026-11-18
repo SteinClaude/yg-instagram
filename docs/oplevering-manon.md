@@ -212,6 +212,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 18 nov 2026 ±14:31, in de sessie, op "Zal ik met het stemtegoed YS48–YS51 voor 20:00 en YL02 voor 16:00 maken?": "Ja, maak ze" → ik maak YS48–YS51 (20:00, ma 23 t/m do 26 nov) en YL02 (16:00, vr 20 nov) binnen het stemtegoed tot 14 dec. Geldt niet als pakket OK.
 - wo 18 nov 2026 ±13:35, in de sessie: "ik wil op elke platform duidelijk een bio hebben zo als deze punten.  De referentie naar YG-DIGITAL, de upload tijden, en een trekkende tekst" → elke bio krijgt een haak, de uploadtijden en YG Digital; TikTok en Snapchat v2 voorgesteld (docs/bio.md). Daarna: "snapchat en tiktok gaan we vanavond doen" / "tik tok en snapchat komen vanavond".
 - wo 18 nov 2026 ±13:29, in de sessie, op mijn voorstellen voor de bio (docs/bio.md): "bio OK kanaal 1 IG (Recommended)", "bio OK kanaal 1 TikTok (Recommended)", "bio OK kanaal 1 Snapchat (Recommended)" → nieuwe Instagram-bio met de tijden 12:00, 16:00 en 20:00; bio voor TikTok en Snapchat vastgelegd (jesse-20). Op de vraag of Instagram op kanaal 1 wil staan: "Staat nu op kanaal 1".
 - wo 18 nov 2026 12:09, in de sessie, op "Keur je YL01 voor YouTube en Instagram?": "Beide OK YL01" → pakket OK en bijschrift OK YL01 (dekt ook de bijschriften voor TikTok en Snapchat); vastgelegd in keuring.json (25f51c3); ingepland voor do 19 nov 2026 16:00 (wo 18 nov 16:00 lukte niet meer: Studio pas om 17:00).
