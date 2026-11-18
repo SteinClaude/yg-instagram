@@ -1,3 +1,4 @@
+KLAAR: tak manon/cron-1200-1600 klaar voor Eva: extra starttijden in plaatsen.yml rond 12:00 en 16:00 Amsterdam (10,11 en 14,15 UTC plus :09/:27/:48 in 12 en 16 UTC); naar main pas na Eva en go Andries (B30) · 041ef21 · wo 18 nov 12:15
 KLAAR: YL01 pakket OK en bijschrift OK ("Beide OK YL01", wo 18 nov 12:09); Instagram ingepland voor do 19 nov 2026 16:00 (eerst wo 18 nov; Studio is pas om 17:00 vrij); YouTube Studio vandaag om 17:00 · wo 18 nov 12:10
 KLAAR: pakket YL01 klaar ter keuring ("Why does a week have seven days?", 82,5 s, eerste video van 16:00, ook TikTok-versie); pakket OK en bijschrift OK gevraagd; bedoeld voor wo 18 nov 16:00; niets ingepland · ma 16 nov 21:22
 KLAAR: Instagram YS33–YS39 naar 12:00 (17–23 nov) met slotzin "New every day." ("Bijschrift OK YS33–YS39", ma 16 nov 20:55) · ma 16 nov 21:00

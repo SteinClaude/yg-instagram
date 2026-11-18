@@ -8,6 +8,7 @@
   },
   "status": "werkt",
   "af": [
+    "2026-11-18T12:15:00+01:00 Tak manon/cron-1200-1600 (041ef21): alleen extra schedule-regels in plaatsen.yml rond 12:00 en 16:00; klaar voor Eva; naar main pas na go Andries (B30).",
     "2026-11-18T12:10:00+01:00 YL01 na \"Beide OK YL01\" (wo 18 nov 12:09): keuring.json (25f51c3); verschoven van wo 18 naar do 19 nov 16:00, omdat Studio pas om 17:00 vrij is (YouTube en Instagram blijven gelijk); in planning.json voor Instagram (plan-reel.cjs kent nu ook YLxx); video.mp4 van YL vanaf YL02 in .gitignore (Eva).",
     "2026-11-16T21:22:00+01:00 Pakket YL01 gemaakt (eerste video van 16:00): waarom een week zeven dagen heeft, 82,5 s, stijl 3 met watermerk, elke 10–15 s een nieuw feit. Bronnen Atlas Obscura (2015), The Conversation via Astronomy.com (2024), The Old Farmer’s Almanac (2026). Met video, upload (8,8 MB), studio.txt (wo 18 nov 16:00), Instagram-versie met bijschrift, bijschriften voor TikTok en Snapchat (niet plaatsen tot de automaat), kaart met vraag om pakket OK en bijschrift OK. ElevenLabs: 1.201 tekens; nog ±4.970 tot 14 dec.",
     "2026-11-16T21:00:00+01:00 Instagram YS33–YS39 (17–23 nov) van 18:00 naar 12:00; slotzin \"New every day at 18:00 (Amsterdam).\" wordt \"New every day.\" in planning.json en instagram/bijschrift.txt; besluit in keuring.json (via sessie). Paneelcontrole: alles klopt.",
@@ -131,7 +132,7 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "YL01 goedgekeurd; om 17:00 in Studio: YL01 (do 19 nov 16:00), YS46 (za 21 nov 20:00), YS47 (zo 22 nov 20:00).",
-  "volgende": "Wo 18 nov 17:00 (Studio): YL01 (do 19 nov 16:00), YS46 en YS47 inplannen; daarna de 18:00-shorts naar 12:00 (vanaf do 19 nov). eva-insta-1: Instagram-pagina nakijken en voorstel aan Andries (één tegelijk in Chrome: Manon, Finn, Koen). jesse-20: profielfoto en bio TikTok en Snapchat ter keuring. Tak manon/cron-1200-1600 (B30). Tot 14 dec rustiger met de stemtekens.",
+  "volgende": "Wo 18 nov 17:00 (Studio): YL01 (do 19 nov 16:00), YS46 en YS47 inplannen; daarna de 18:00-shorts naar 12:00 (vanaf do 19 nov). eva-insta-1: Instagram-pagina nakijken en voorstel aan Andries (één tegelijk in Chrome: Manon, Finn, Koen). jesse-20: profielfoto en bio TikTok en Snapchat ter keuring. Tak manon/cron-1200-1600 wacht op Eva en go Andries (B30). Tot 14 dec rustiger met de stemtekens.",
   "kanNietVerder": null,
   "vragen": [
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
