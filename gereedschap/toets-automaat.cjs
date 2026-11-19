@@ -733,9 +733,9 @@ async function deelInplannen() {
     gelijk(f('Why is a stop sign an octagon?\n\nIn the 1920s, U.S. engineers (e.g. in the U.S.A.) met at 3.5 p.m. No.1 rule... wait...what?\n\nSource: a museum (2024).\n\n#history #design'), [], 'een gewoon bijschrift');
     gelijk(f('The @ sign is old. People write @. or (@) for it.'), [], 'het teken @ zelf mag');
     waar(f('Follow @iemand for more').length === 1, 'een handle');
-    waar(f('Mail naar iemand@voorbeeld.nl').length === 1, 'een e-mailadres');
-    waar(f('Lees meer op https://voorbeeld.nl/pagina').length === 1, 'een link');
-    waar(f('Lees meer op www.voorbeeld.nl').length === 1, 'een link met www');
+    waar(f('Mail naar iemand@example.com').length === 1, 'een e-mailadres');
+    waar(f('Lees meer op https://example.com/pagina').length === 1, 'een link');
+    waar(f('Lees meer op www.example.com').length === 1, 'een link met www');
     waar(f('Sources: Dictionary.com (2021).').length === 1, 'een domeinnaam');
     gelijk(f('Sources: Dictionary.com (2021); timeanddate.com.', { bron: ['dictionary.com', 'timeanddate.com'] }), [], 'domeinnamen die als bron zijn genoemd');
     gelijk(I.controleerBijschrift('Sources: Dictionary.com.', { bron: ['dictionary.com'] }).bronnen, ['dictionary.com'], 'de bron komt in het verslag');
@@ -864,7 +864,7 @@ async function deelInplannen() {
     const env = { YG_VERBODEN_WOORDEN: lijst };
     const gevallen = [
       ['K2-B01', 'Follow @nepkanaaltwee for more\n\n#test', 'een @naam'],
-      ['K2-B02', 'More on https://voorbeeld.nl/x\n\n#test', 'er staat een link in'],
+      ['K2-B02', 'More on https://example.com/x\n\n#test', 'er staat een link in'],
       ['K2-B03', 'Sources: Dictionary.com (2021).\n\n#test', 'lijkt op een domeinnaam'],
       ['K2-B04', 'Welcome to Nep Kanaal Twee!\n\n#test', 'een woord uit de lijst met verboden woorden'],
       ['K2-B05', '', 'het bijschrift is leeg'],
@@ -1067,6 +1067,27 @@ async function deelInplannen() {
     const opnieuw = plan(a, argumenten(a, 'kanaal-2', 'K2-F02', { tijd: '19:00' }));
     gelijk(opnieuw.code, 0, 'opnieuw inplannen\n' + opnieuw.uit);
     gelijk(planningOp(a).items.map(i => i.id), ['2026-11-01-k2-k2-f01', `${m}-k3-g60`, `${m}-k2-k2-f02`], 'het staat er opnieuw in');
+  });
+
+  await toets('de kleine kopie van de automaat uit LEESMIJ.md (ondiep, zonder inhoud, alleen gereedschap en src) is genoeg voor het commando', () => {
+    const a = nepAutomaat('kleine-kopie', { bestanden: { 'pakketten/2026-12-15-YS50-proef/video.mp4': Buffer.alloc(200 * 1024, 3) } });
+    const klein = path.join(a.basis, 'yg-automaat');
+    git(a.basis, ['clone', '-q', '--depth', '1', '--filter=blob:none', '--sparse', a.url, klein]);
+    git(klein, ['sparse-checkout', 'set', 'gereedschap', 'src']);
+    git(klein, ['config', 'user.email', 'pc@voorbeeld.invalid']);
+    waar(bestaat(path.join(klein, 'gereedschap', 'inplannen.cjs')) && bestaat(path.join(klein, 'src', 'accounts.cjs')) && bestaat(path.join(klein, 'planning.json')), 'het commando, de tabel en de hoofdmap zijn er');
+    waar(!bestaat(path.join(klein, 'pakketten')) && !bestaat(path.join(klein, 'beeld')), 'de pakketten en het beeld zijn niet opgehaald');
+    maakPakket(a, 'G70');
+    const r = spawnSync(process.execPath, [path.join(klein, 'gereedschap', 'inplannen.cjs'), ...argumenten(a, 'account-3', 'G70')], { cwd: a.maker, env: { ...process.env, YG_VERBODEN_WOORDEN: '' }, encoding: 'utf8' });
+    gelijk(r.status, 0, 'inplannen vanuit de kleine kopie\n' + r.stdout + r.stderr);
+    gelijk(planningOp(a).items.map(i => i.id), [`${MORGEN()}-k3-g70`], 'het item staat op GitHub');
+    gelijk(git(klein, ['status', '--porcelain']), '', 'de kleine kopie zelf is niet gewijzigd');
+    // later legt een ander iets vast; de kleine kopie haalt de nieuwste versie op met pull --ff-only
+    maakPakket(a, 'K2-J01');
+    gelijk(plan(a, argumenten(a, 'kanaal-2', 'K2-J01', { tijd: '19:00' })).code, 0, 'een ander plant in');
+    git(klein, ['pull', '-q', '--ff-only']);
+    gelijk(git(klein, ['rev-parse', 'HEAD']), kopVan(a), 'de kleine kopie loopt weer gelijk');
+    waar(!bestaat(path.join(klein, 'beeld')), 'ook na het ophalen komt er geen beeld bij');
   });
 
   await toets('een verouderd commando, een onbekend account, een kapotte planning: stoppen zonder iets te wijzigen', () => {
