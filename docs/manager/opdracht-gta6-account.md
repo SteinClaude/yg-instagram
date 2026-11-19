@@ -2,7 +2,7 @@
 
 **Jesse, manager YG-Social · do 19 nov 2026.** Opdracht eva-gta6-1 en eva-gta6-2, met H-noor-8 en H-noor-10.
 
-> **STATUS: TER BESLISSING.** Er wordt niets aangemaakt of gemaakt tot Andries de keuzes in punt 1, 2 en 4 heeft beslist. Het account heet hier "het GTA 6-fanaccount". De naam staat niet in de repo.
+> **STATUS: BESLIST (do 19 nov ±19:34).** Weg A (één nieuw account, ook voor het clippen), beeld van campagnes en korte trailercitaten, Koen maakt het. Volgende stap: Andries kiest de naam en maakt het account aan. Het account heet hier "het GTA 6-fanaccount". De naam staat niet in de repo.
 
 ## Wat Andries vroeg (letterlijk)
 
@@ -12,8 +12,10 @@
 
 ## Besluiten van Andries (do 19 nov 2026 ±19:32, sessie Jesse)
 
-- **Clippen:** *"appart clip-acount. wel met het thema ect van kanaal 3"*. Een apart clip-account met het thema van account 3. Of dat ook het fanaccount is, vraag ik na.
+- **Clippen:** *"appart clip-acount. wel met het thema ect van kanaal 3"*. Een apart clip-account met het thema van account 3.
 - **Punt 4, maker:** *"Koen erbij (Recommended)"*.
+- **Eén of twee accounts** (±19:34): *"Eén account voor beide (Recommended)"*. Het clip-account is ook het GTA 6-fan- en nieuwsaccount: één nieuw account op TikTok en Instagram.
+- **Punt 2, beeld** (±19:34): *"Campagne + kort trailerbeeld (Recommended)"*. De eerste 2 weken geen uitgave. Eigen opnames komen pas als de proef slaagt, en alleen na een OK per bedrag.
 
 ## 1. Onderwerp en de drie wegen
 

@@ -1,5 +1,6 @@
 # Oplevering Jesse — manager YG-Social
 
+KLAAR: clippen en GTA 6-fanaccount beslist (één nieuw account, beeld van campagnes en trailercitaten, Koen maakt het; jesse-24 naar Koen). Wacht op Andries: naam en account · do 19 nov 19:34
 KLAAR: opdracht clippen (proef 2 weken, 4 beslispunten) en voorstel GTA 6-fanaccount ter beslissing: docs/manager/opdracht-clippen.md, docs/manager/opdracht-gta6-account.md (H-noor-11, eva-gta6-1/2) · do 19 nov 19:30
 KLAAR: bericht aan Manon, Finn en Koen dat hun TikTok- en Snapchat-account er is (voorEva jesse-20/21/22) · ma 16 nov 21:04
 KLAAR: weekoverzicht YG-Social ma 16 nov (zonder cijfers; uitvoer, tijden, voorraad, profielen, proef 2 voorgesteld); bedrag potje uit de repo · ma 16 nov 18:31
@@ -158,6 +159,7 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 
 ## Besluiten met Andries
 
+- do 19 nov 2026 ±19:34 (sessie Jesse): *"Eén account voor beide (Recommended)"* · *"Campagne + kort trailerbeeld (Recommended)"* → opdracht-clippen.md, opdracht-gta6-account.md, jesse-24.
 - do 19 nov 2026 ±19:32 (sessie Jesse), clippen: account *"appart clip-acount. wel met het thema ect van kanaal 3"* · keuring *"Dagelijkse zitting 15 min (Recommended)"* · uitzondering *"Ja, deze zin geldt (Recommended)"* · maker *"Koen erbij (Recommended)"* → opdracht-clippen.md, opdracht-gta6-account.md.
 - ma 16 nov 2026 ±21:04 (sessie Jesse): *"ik wil dat je nu schrijft voor manon fin en koen dat er een snapchat acount en tiktok acount voor ze is gemaakt"* → voorEva jesse-20 (Manon), jesse-21 (Finn), jesse-22 (Koen).
 - ma 16 nov 2026 ±12:39 (sessie Jesse): *"oke ik wil nu voor alle 3 de snapchat en tiktok klaarmaken, en hun moeten ook weten dat dit er is en erop geplaats kan worden"* → docs/manager/tiktok-snapchat.md, jesse-18.

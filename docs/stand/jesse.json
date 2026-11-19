@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-19T19:32:00+01:00",
+  "tijd": "2026-11-19T19:34:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-19T19:30:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-19T19:34:00+01:00 Besluiten Andries: één account voor clippen en fan/nieuws; beeld van campagnes en trailercitaten; Koen erbij (jesse-24)",
     "2026-11-19T19:32:00+01:00 Besluiten Andries clippen 3a-3c en maker vastgelegd in opdracht-clippen.md en opdracht-gta6-account.md",
     "2026-11-19T19:30:00+01:00 docs/manager/opdracht-clippen.md (proef 2 weken, 4 beslispunten) en docs/manager/opdracht-gta6-account.md (8 punten, ter beslissing)",
     "2026-11-16T21:04:00+01:00 Bericht aan Manon, Finn en Koen: TikTok- en Snapchat-account voor hun kanaal gemaakt (jesse-20/21/22, via Eva)",
@@ -29,8 +30,8 @@
     "2026-11-13T12:20:00+01:00 Eerste keurlijst van de week: docs/keurlijst-week.md",
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
-  "bezig": "Clippen en het GTA 6-fanaccount: de keuzes liggen bij Andries in de sessie",
-  "volgende": "Antwoorden van Andries vastleggen (clippen 3a-3d, GTA 6 punt 2 en 4); daarna status kanalen (eva-status-1); keurlijst vr 20 nov; uitkomst proef 2 ma 23 nov",
+  "bezig": null,
+  "volgende": "Wacht op Andries: naam kiezen en account + Content Rewards aanmaken; daarna start Koen. Status kanalen (eva-status-1); keurlijst vr 20 nov; uitkomst proef 2 ma 23 nov",
   "kanNietVerder": null,
   "vragen": [],
   "buitenGit": [
@@ -141,6 +142,14 @@
     {
       "tijd": "2026-11-19T19:32:00+01:00",
       "wat": "Andries (maker): \"Koen erbij (Recommended)\""
+    },
+    {
+      "tijd": "2026-11-19T19:34:00+01:00",
+      "wat": "Andries: \"Eén account voor beide (Recommended)\"; \"Campagne + kort trailerbeeld (Recommended)\""
+    },
+    {
+      "tijd": "2026-11-19T19:34:00+01:00",
+      "wat": "Naamvoorstellen voor het GTA 6-clip/fanaccount alleen in de sessie gegeven (niet in de repo); beschikbaarheid niet nagekeken"
     }
   ],
   "voorEva": [
@@ -238,6 +247,11 @@
       "id": "jesse-23",
       "aan": "Eva",
       "wat": "yg-kennis staat niet op deze pc, dus opdracht-clipping-jesse.md en onderzoek-clipping.md kon ik niet lezen. Graag de meetlat (goedgekeurde views per maand waarbij het iets oplevert) en het tarief privé aan Andries/mij, niet in deze repo. opdracht-clippen.md en opdracht-gta6-account.md staan klaar; de keuzes leg ik Andries nu voor in de sessie."
+    },
+    {
+      "id": "jesse-24",
+      "aan": "Koen (via Eva)",
+      "wat": "Besluit Andries do 19 nov: jij maakt in een proef van 2 weken GTA 6-clips voor een NIEUW account (fan/nieuws + betaalde campagneclips; niet op account 3, niet op YouTube). 2 clips per dag: één opvallend detail + een vraag aan de kijker; beeld alleen van campagnes die het beeld noemen en betalen (met reclamevermelding) en korte trailercitaten met eigen uitleg; geen einde/spoilers/cutscenes/muziek/radio/cheats/leaks. Uitzondering op \"nooit werk van andere makers\" geldt ALLEEN voor dit account (Andries: \"Ja, deze zin geldt\"). Keuring: dagelijkse zitting van 15 min met Andries (clip OK <code>), dan plaatsen met de hand in zijn browser en binnen 30 min insturen. Meten per clip in je privé-repo (met opbrengst); zonder bedragen naar mij. Start pas als Andries het account en Content Rewards heeft. Test eerst Clips Kitty op één video. Zie docs/manager/opdracht-clippen.md en opdracht-gta6-account.md."
     }
   ],
   "ontvangen": [

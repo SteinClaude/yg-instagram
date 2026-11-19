@@ -12,10 +12,12 @@
 
 ## Besluiten van Andries (do 19 nov 2026 ±19:32, sessie Jesse)
 
-- **3a, account:** *"appart clip-acount. wel met het thema ect van kanaal 3"*. Dat wordt **een apart clip-account**, los van account 3, met het thema en de stijl van account 3 (GTA 6). Of dit hetzelfde account is als het GTA 6-fanaccount, vraag ik na.
+- **3a, account:** *"appart clip-acount. wel met het thema ect van kanaal 3"*. Dat wordt **een apart clip-account**, los van account 3, met het thema en de stijl van account 3 (GTA 6).
 - **3b, keuring:** *"Dagelijkse zitting 15 min (Recommended)"*. Elke dag een zitting van ±15 minuten: Andries keurt 2 clips ("clip OK <code>"), ze worden geplaatst en binnen 30 minuten ingestuurd.
 - **3c, uitzondering:** *"Ja, deze zin geldt (Recommended)"*. Op het clip-account mogen clips met beeld van een ander, alleen voor een campagne die dat beeld zelf noemt en betaalt, met de reclamevermelding en volgens de regels van de campagne en de uitgever. **Dit geldt alleen voor het clip-account.** Op kanaal 1, kanaal 2 en account 3 blijven de oude regels gelden.
 - **Maker:** *"Koen erbij (Recommended)"*. Koen maakt de clips in de proef van 2 weken.
+- **Eén of twee accounts** (±19:34): *"Eén account voor beide (Recommended)"*. Het clip-account is ook het GTA 6-fan- en nieuwsaccount: één nieuw account op TikTok en Instagram.
+- **Punt 2, beeld** (±19:34): *"Campagne + kort trailerbeeld (Recommended)"*. De eerste 2 weken geen uitgave. Eigen opnames komen pas als de proef slaagt, en alleen na een OK per bedrag.
 
 ## 1. De proef in het kort
 
