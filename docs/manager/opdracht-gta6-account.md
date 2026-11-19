@@ -14,7 +14,8 @@
 
 - **Clippen:** *"appart clip-acount. wel met het thema ect van kanaal 3"*. Een apart clip-account met het thema van account 3.
 - **Punt 4, maker:** *"Koen erbij (Recommended)"*.
-- **Eén of twee accounts** (±19:34): *"Eén account voor beide (Recommended)"*. Het clip-account is ook het GTA 6-fan- en nieuwsaccount: één nieuw account op TikTok en Instagram.
+- **Eén of twee accounts** (±19:34): *"Eén account voor beide (Recommended)"*. Het clip-account is ook het GTA 6-fan- en nieuwsaccount: één nieuw account.
+- **Platforms** (±19:55): *"tikok laten we, we gaan samen met koen zitten voor instagram en youtube, […]"*. Geen TikTok; het account komt op Instagram en YouTube.
 - **Punt 2, beeld** (±19:34): *"Campagne + kort trailerbeeld (Recommended)"*. De eerste 2 weken geen uitgave. Eigen opnames komen pas als de proef slaagt, en alleen na een OK per bedrag.
 
 ## 1. Onderwerp en de drie wegen
@@ -45,11 +46,13 @@ Geen crewlid kan het spel spelen of opnemen.
 
 **Beleid van de uitgever:** https://support.rockstargames.com/en-US/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material . Op do 19 nov kon ik de pagina niet openen (time-out). Tot ik hem zelf heb gelezen, geldt hoe de crew hem tot nu toe las: gebruik alleen niet-commercieel, en de uitgever kan materiaal altijd laten weghalen. Ik lees hem na vóór de eerste clip.
 
+**Nagelezen do 19 nov ±19:57 (via zoekresultaten die de pagina citeren; laatst bijgewerkt 10 jan 2025):** niet-commercieel betekent dat je geen geld verdient met het gamebeeld en het niet gebruikt als promotie voor een product of dienst. Betaalde campagneclips met gamebeeld vallen daar dus buiten. Fanclips zonder betaling vallen er wel binnen. De uitwerking en de keuze voor Andries staan in `opdracht-clippen.md`, "Uitkomst overleg Jesse en Koen".
+
 ## 3. Vorm
 
 - **Eén reeks:** "Detail van de dag" (15–30 s): één ding dat je mist, plus een vraag aan de kijker.
 - **Hoeveel:** 2 per dag, samen met de campagneclips (zie clippen). Niet meer dan de dagelijkse zitting aankan.
-- **Platforms:** TikTok en Instagram. **Niet op YouTube** (hergebruikte inhoud). Snapchat later.
+- **Platforms:** Instagram en YouTube (besluit Andries do 19 nov; geen TikTok). Clips van hoogstens 59 seconden.
 - **Taal en stem:** Engels. Tekst in beeld en een gratis AI-stem, of alleen tekst. Geen betaalde stem: het stemtegoed van kanaal 1 is op tot 14 dec.
 
 ## 4. Wie het maakt
@@ -63,8 +66,8 @@ Geen crewlid kan het spel spelen of opnemen.
 
 ## 5. Hoe het geld oplevert, en wanneer
 
-Eerlijk gezegd: met gamebeeld is uitbetaling via YouTube en TikTok onzeker.
-- **TikTok Creator Rewards** vraagt 10.000 volgers en video's langer dan 1 minuut. Dat kan op z'n vroegst over maanden.
+Eerlijk gezegd: met gamebeeld is uitbetaling door de platforms zelf onzeker.
+- **YouTube** betaalt niet uit voor hergebruikte inhoud, en het nieuwe kanaal zit niet in het Partnerprogramma. Instagram heeft in Nederland geen vaste uitbetaling.
 - **De weg die wel kan: betaalde campagnes per 1.000 views** (clippen). Die leveren vanaf de eerste goedgekeurde clip iets op, maar per view weinig. Wat het per uur werk oplevert, staat in de opdracht van Noor (niet hier).
 - Op termijn: een publiek dat we later naar eigen kanalen kunnen sturen.
 
@@ -88,7 +91,7 @@ Gemeten na 72 uur per clip; de cijfers zonder bedragen staan hier, die met bedra
 
 | Wat | Tijd |
 |---|---|
-| Naam kiezen uit mijn voorstellen en het account aanmaken op TikTok en Instagram | ±20 min, één keer |
+| Naam kiezen uit mijn voorstellen en het Instagram-account en het YouTube-kanaal aanmaken | ±20 min, één keer |
 | Bio OK en profielfoto OK | ±5 min |
 | Dagelijkse zitting: keuren, plaatsen, insturen (samen met clippen) | ±15 min per dag |
 | Later, als de proef slaagt: eigen opnames | ±1 uur per week, en een OK per bedrag |

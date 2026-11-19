@@ -2,6 +2,8 @@
 
 **Jesse, manager YG-Social · do 19 nov 2026.** Opdracht van Andries (H-noor-11, via Noor en Eva).
 
+> **⚠ Do 19 nov ±19:57: de check op commercieel gebruik staat op rood (zie "Uitkomst overleg Jesse en Koen"). Geen betaalde clip met gamebeeld tot Andries kiest.**
+>
 > **STATUS: BESLIST (3a–3c en de maker, do 19 nov ±19:32).** Er wordt niets ingestuurd tot Andries het clip-account en Content Rewards heeft aangemaakt. Openbare repo: geen namen, handles of bedragen.
 
 ## Wat Andries vroeg (letterlijk, do 19 nov 2026, sessie van Noor)
@@ -16,7 +18,7 @@
 - **3b, keuring:** *"Dagelijkse zitting 15 min (Recommended)"*. Elke dag een zitting van ±15 minuten: Andries keurt 2 clips ("clip OK <code>"), ze worden geplaatst en binnen 30 minuten ingestuurd.
 - **3c, uitzondering:** *"Ja, deze zin geldt (Recommended)"*. Op het clip-account mogen clips met beeld van een ander, alleen voor een campagne die dat beeld zelf noemt en betaalt, met de reclamevermelding en volgens de regels van de campagne en de uitgever. **Dit geldt alleen voor het clip-account.** Op kanaal 1, kanaal 2 en account 3 blijven de oude regels gelden.
 - **Maker:** *"Koen erbij (Recommended)"*. Koen maakt de clips in de proef van 2 weken.
-- **Eén of twee accounts** (±19:34): *"Eén account voor beide (Recommended)"*. Het clip-account is ook het GTA 6-fan- en nieuwsaccount: één nieuw account op TikTok en Instagram.
+- **Eén of twee accounts** (±19:34): *"Eén account voor beide (Recommended)"*. Het clip-account is ook het GTA 6-fan- en nieuwsaccount: één nieuw account. (De platforms zijn daarna gewijzigd in Instagram en YouTube, zie "Platforms en zitting".)
 - **Punt 2, beeld** (±19:34): *"Campagne + kort trailerbeeld (Recommended)"*. De eerste 2 weken geen uitgave. Eigen opnames komen pas als de proef slaagt, en alleen na een OK per bedrag.
 
 ## Platforms en zitting (Andries, do 19 nov 2026 ±19:49, sessie Jesse)
@@ -28,13 +30,75 @@
 - **Let op YouTube:** voor hergebruikte inhoud betaalt YouTube niet uit, en dat geldt voor het hele kanaal. Op dit nieuwe account kost dat alleen de eigen YouTube-uitbetaling van dit account. Kanaal 1, kanaal 2 en account 3 blijven erbuiten. De betaling per view via de campagnes staat daar los van, maar elke campagne moet YouTube wel toestaan.
 - Jesse en Koen stemmen de uitwerking samen af (cross-session).
 
+## Uitkomst overleg Jesse en Koen (do 19 nov 2026 ±19:57)
+
+Andries vroeg ons samen te overleggen. Dit is waar we op uitkomen. De keuzes die bij Andries horen, staan onder "Ter beslissing".
+
+### ⚠ De check op commercieel gebruik staat op rood
+
+- **Beleid van de uitgever** (laatst bijgewerkt 10 jan 2025). De pagina zelf gaf vier keer een time-out; de zinnen hieronder komen uit zoekresultaten die de officiële pagina citeren. Koen legt de letterlijke tekst vast zodra hij de pagina in Chrome kan openen.
+  - *"Non-commercial" means that you don't make money through the game footage you post or use the material as part of a promotion for a product or service.*
+  - De uitgever heeft in het algemeen geen bezwaar tegen niet-commercieel gebruik dat het verhaal niet bewust verklapt.
+  - De uitgever mag materiaal op elk moment laten weghalen.
+  - Het beleid geldt niet voor advertenties.
+- **Wat dat betekent:** een betaalde campagneclip met gamebeeld is geld verdienen met het beeld én promotie. Dat valt buiten de toestemming. Een campagne van een streamer dekt zijn eigen stream, maar niet het beeld van het spel.
+- **Gevolg:** geen betaalde clip met GTA-gamebeeld, tenzij een campagne schriftelijke toestemming van de rechthebbende van het spel laat zien, of Andries zelf anders beslist.
+- **Fanclips zonder betaling** op een account dat niets verdient, vallen wel binnen "niet-commercieel", zolang we de regels in deel 2 volgen.
+
+### YouTube: een waarschuwing kan andere kanalen raken
+
+- Officiële hulppagina van YouTube: na 3 auteursrechtwaarschuwingen *"Your account, along with any associated channels, is subject to termination"* en *"You can't create new YouTube channels"*. Een waarschuwing vervalt na 90 dagen als je Copyright School doet.
+- YouTube zegt niet hoe het bepaalt welke kanalen bij elkaar horen. Andere bronnen noemen hetzelfde Google-account, telefoonnummer, herstelmailadres, AdSense-account of apparaat. Dat is niet officieel.
+- **Wat dat betekent:** een waarschuwing op het clipkanaal is een risico voor kanaal 1, kanaal 2 en account 3. Een eigen Google-account voor het clipkanaal verkleint dat, maar is geen garantie. De echte bescherming is geen waarschuwingen krijgen.
+- Uitbetaling door YouTube speelt in de proef niet: het nieuwe kanaal zit niet in het Partnerprogramma.
+
+### Afspraken tussen Jesse en Koen (hoe-vragen, zelf beslist)
+
+- **Dag 1:** twee clips zonder campagne en zonder beeld van een ander: één opvallend detail uit een officiële bron, het duo dat reageert, en een vraag. Zo testen we keuren, plaatsen op twee platforms en meten, zonder geld en zonder risico.
+- **Eigen toevoeging in elke clip** (vast in het sjabloon van Koen): een haak bovenaan, de clip op ongeveer een derde van het beeld en nooit schermvullend, een stilstaand beeld met zoom op het ene detail met een pijl of kader en één regel uitleg, de reactie van het duo, en de vraag als slot.
+- **Hoogstens 59 seconden.** Een Short van meer dan een minuut met een actieve claim wordt wereldwijd geblokkeerd. Per campagne letten we op een minimumlengte.
+- **Zonder stem tot 14 dec** (de stemcredits zijn op). Zonder commentaar is de eigen toevoeging zwakker dan met.
+- **Per campagne een kaart** (Koen, in zijn privé-repo), met letterlijke zinnen en datum: wie de campagne voert, wie het beeld levert en welk beeld, of gamebeeld mag en wie als rechthebbende wordt genoemd, platforms, landen en de verplichte vermelding. Staat YouTube niet bij de platforms, dan gaat die clip alleen naar Instagram.
+- **Labels bij elke campagneclip:** de vermelding in beeld én het label van het platform (betaald partnerschap op Instagram, "bevat betaalde promotie" op YouTube).
+- **Eerste campagneclip** pas als Whop er is, de campagnekaart klopt en de keuze hieronder gemaakt is.
+
+### Voorstel voor de zitting (Koen)
+
+Elke dag om **19:00**, ±25 minuten. Manon zit van 17:00 tot 17:45 in Studio en Finn daarna; er kan er één tegelijk in Chrome.
+
+| Minuut | Wat |
+|---|---|
+| 0–5 | Andries bekijkt beide clips en teksten en zegt per clip "clip OK <code>" |
+| 5–7 | Nakijken dat het clip-account actief is op Instagram en in Studio. Andries wisselt van account; Koen nooit |
+| 7–12 | Clip 1 op Instagram en YouTube |
+| 12–15 | Clip 1 insturen (beide links). Koen vult het formulier in, Andries ziet het en zegt ja |
+| 15–20 | Clip 2 plaatsen |
+| 20–23 | Clip 2 insturen |
+| 23–25 | Links nakijken en vastleggen |
+
+Voorwaarde: Chrome staat open en niet geminimaliseerd. Alternatief bij 15 minuten: de eerste week 2 clips op alleen Instagram, en YouTube erbij zodra het loopt.
+
+### Ter beslissing van Andries
+
+1. **Betaalde clips en gamebeeld:**
+   - **A.** Betaalde clips alleen voor campagnes zonder gamebeeld, of met schriftelijke toestemming van de rechthebbende van het spel. GTA 6 blijft het thema van de fanclips. **Advies van Jesse en Koen.**
+   - **B.** Geen betaalde clips, alleen het fanaccount.
+   - **C.** Het risico nemen met GTA-campagnes.
+2. **De zitting:** 19:00 en ±25 minuten op beide platforms, of 15 minuten met de eerste week alleen Instagram.
+3. **Het YouTube-kanaal van het clip-account:** onder een eigen Google-account, los van de andere kanalen (advies), of onder een bestaand account.
+
+### Bronnen van dit overleg
+
+- YouTube, auteursrechtwaarschuwingen: https://support.google.com/youtube/answer/2814000
+- Beleid van de uitgever: https://support.rockstargames.com/en-US/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material (niet zelf geopend; via zoekresultaten)
+
 ## Takenverdeling (overleg Jesse en Koen, do 19 nov 2026 ±19:47)
 
 Andries vroeg: *"koppel dit eerst samen moet koen ga even in overleg en verdeel de taken,"*. Koen is akkoord, met drie aanpassingen (in de lijst verwerkt).
 
 | Wie | Taken |
 |---|---|
-| **Andries** | Naam en handle kiezen; het account op TikTok en Instagram aanmaken; het Content Rewards/Whop-account. **Elke dag een campagne kiezen uit de lijst van Koen en meedoen** (de voorwaarden accepteren op zijn Whop-account). Ja of nee op elke download (campagnebeeld en trailerbeeld). De dagelijkse zitting. Beslissen over Clips Kitty (installeren is zijn keuze). Chrome open laten staan tijdens de zitting. |
+| **Andries** | Naam en handle kiezen; het Instagram-account en het YouTube-kanaal aanmaken; het Content Rewards/Whop-account. **Elke dag een campagne kiezen uit de lijst van Koen en meedoen** (de voorwaarden accepteren op zijn Whop-account). Ja of nee op elke download (campagnebeeld en trailerbeeld). De dagelijkse zitting. Beslissen over Clips Kitty (installeren is zijn keuze). Chrome open laten staan tijdens de zitting. |
 | **Koen** | Elke dag een korte lijst kandidaat-campagnes: per view, bron genoemd, landeneisen en de volledige regels gelezen. 2 clips per dag met zijn sjabloon (ffmpeg, `tools/clip.py`: haak, bron in beeld, ondertitels, reactie van het duo in een ballonnetje) plus de reclamevermelding aan het begin. Het detail moet kloppen en uit de clip zelf of een officiële bron komen; geen geruchten of leaks. Vóór elke download vraagt hij Andries (bestandsnaam, bron, grootte). Plaatsen en insturen in de zitting. Meten per clip in zijn privé-repo: de cijfers leest hij in de browser van Andries, zonder in te loggen. Bio en profielfoto ter keuring. |
 | **Jesse** | Regels en criteria bewaken. **Vóór de eerste clip nagaan of commercieel gebruik gedekt is** (zie het risico hieronder). Weekoverzicht zonder bedragen. Na 14 dagen een voorstel: doorgaan, opschalen of stoppen. |
 
@@ -60,7 +124,7 @@ Andries vroeg: *"koppel dit eerst samen moet koen ga even in overleg en verdeel 
 | **Duur** | 14 dagen, vanaf de dag dat de vier punten hieronder beslist zijn en Andries het account bij Content Rewards heeft. |
 | **Aantal** | 2 clips per dag, dus 28 clips. |
 | **Campagnes** | Alleen met **betaling per view** (geen vaste pot: die betaalt pas boven honderdduizenden views). Alleen campagnes die **de bron noemen** (een streamer of eigen gameplay), want dan is de toestemming geregeld. Van elke campagne de volledige regels lezen na "join", ook de landeneisen. |
-| **Formaat** | Het sterkste formaat uit de voorbeelden van Andries: **één opvallend detail uit de game plus een vraag aan de kijker.** 20–45 s; voor TikTok-uitbetaling geldt de eigen regel van de campagne. |
+| **Formaat** | Het sterkste formaat uit de voorbeelden van Andries: **één opvallend detail uit de game plus een vraag aan de kijker.** Hoogstens 59 s; per campagne letten we op een minimumlengte. |
 | **Meten per clip** | Campagne · platform · views na 72 uur · goedgekeurd/afgekeurd (en de reden) · opbrengst · minuten werk. De tabel met opbrengst staat in de **privé-repo van account 3**. Hier komt alleen wat zonder bedrag kan: aantal clips, goedkeurpercentage, views en minuten. |
 | **Na 14 dagen** | Een voorstel aan Andries: **doorgaan, opschalen of stoppen.** |
 
@@ -121,7 +185,7 @@ Zonder deze uitzondering maakt geen maker een campagneclip.
 | Wat | Tijd |
 |---|---|
 | Account bij Content Rewards/Whop aanmaken, voorwaarden accepteren, bankgegevens invullen | ±20 min, één keer |
-| Bij weg A: het nieuwe account op TikTok en Instagram aanmaken (de naam kiest hij, zie het GTA 6-voorstel) | ±20 min, één keer |
+| Het nieuwe account op Instagram en het YouTube-kanaal aanmaken (de naam kiest hij, zie het GTA 6-voorstel) | ±20 min, één keer |
 | De dagelijkse zitting (3b en 3d) | ±15 min per dag |
 | Een betaald gereedschap of een sleutel | alleen na een OK per bedrag; voor de proef is het niet nodig |
 

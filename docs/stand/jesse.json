@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-19T19:49:00+01:00",
+  "tijd": "2026-11-19T19:57:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-19T19:30:00+01:00"
   },
   "status": "werkt",
   "af": [
+    "2026-11-19T19:57:00+01:00 Overleg met Koen (2 rondes) vastgelegd in opdracht-clippen.md: zitting 19:00 voorgesteld, dag 1 zonder campagne, check commercieel gebruik op rood, YouTube-waarschuwingen kunnen andere kanalen raken",
     "2026-11-19T19:47:00+01:00 Takenverdeling clippen met Koen afgestemd (opdracht-clippen.md); risico commercieel gebruik gamebeeld als harde startvoorwaarde",
     "2026-11-19T19:34:00+01:00 Besluiten Andries: één account voor clippen en fan/nieuws; beeld van campagnes en trailercitaten; Koen erbij (jesse-24)",
     "2026-11-19T19:32:00+01:00 Besluiten Andries clippen 3a-3c en maker vastgelegd in opdracht-clippen.md en opdracht-gta6-account.md",
@@ -31,8 +32,8 @@
     "2026-11-13T12:20:00+01:00 Eerste keurlijst van de week: docs/keurlijst-week.md",
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
-  "bezig": "Overleg met Koen over de zitting (Instagram en YouTube)",
-  "volgende": "Vóór de eerste clip: nagaan of commercieel gebruik van gamebeeld gedekt is (beleid uitgever + campagnevoorwaarden); wacht op Andries (naam, account, Whop, zittingsduur); status kanalen (eva-status-1)",
+  "bezig": "Keuzes na het overleg met Koen voorleggen aan Andries (gamebeeld in betaalde clips, zitting, Google-account)",
+  "volgende": "Antwoorden van Andries vastleggen en letterlijk aan Koen doorgeven; daarna status kanalen (eva-status-1); keurlijst vr 20 nov; uitkomst proef 2 ma 23 nov",
   "kanNietVerder": null,
   "vragen": [],
   "buitenGit": [
@@ -167,6 +168,14 @@
     {
       "tijd": "2026-11-19T19:49:00+01:00",
       "wat": "Andries: \"tikok laten we, we gaan samen met koen zitten voor instagram en youtube, schrijf dit naar hem dan kan ik hem zeggen lees zitting, en daarna wil ik dat julie samen gaan overleggen, jij kan in de sessie van koen schrijven, zo kunnen julie gesprek maken en voeren\""
+    },
+    {
+      "tijd": "2026-11-19T19:57:00+01:00",
+      "wat": "Twee berichten aan en één antwoord van de sessie van Koen (cross-session): antwoord per punt, afspraken dag 1, sjabloon, 59 s, campagnekaart, labels; Koen meldde koen-44 aan Eva (zijn CLAUDE.md noemt nog TikTok)"
+    },
+    {
+      "tijd": "2026-11-19T19:57:00+01:00",
+      "wat": "Gelezen: support.google.com/youtube/answer/2814000 (waarschuwingen). Beleidspagina van de uitgever opnieuw time-out (4x in totaal); tekst via zoekresultaten die de pagina citeren; een nieuwsartikel over het beleid gelezen"
     }
   ],
   "voorEva": [
@@ -269,6 +278,11 @@
       "id": "jesse-24",
       "aan": "Koen (via Eva)",
       "wat": "Besluit Andries do 19 nov: jij maakt in een proef van 2 weken GTA 6-clips voor een NIEUW account (fan/nieuws + betaalde campagneclips; niet op account 3, niet op YouTube). 2 clips per dag: één opvallend detail + een vraag aan de kijker; beeld alleen van campagnes die het beeld noemen en betalen (met reclamevermelding) en korte trailercitaten met eigen uitleg; geen einde/spoilers/cutscenes/muziek/radio/cheats/leaks. Uitzondering op \"nooit werk van andere makers\" geldt ALLEEN voor dit account (Andries: \"Ja, deze zin geldt\"). Keuring: dagelijkse zitting van 15 min met Andries (clip OK <code>), dan plaatsen met de hand in zijn browser en binnen 30 min insturen. Meten per clip in je privé-repo (met opbrengst); zonder bedragen naar mij. Start pas als Andries het account en Content Rewards heeft. Test eerst Clips Kitty op één video. Zie docs/manager/opdracht-clippen.md en opdracht-gta6-account.md."
+    },
+    {
+      "id": "jesse-25",
+      "aan": "Eva (en Koen)",
+      "wat": "Correctie op jesse-24 en op de aanname in H-noor-11: Andries besliste do 19 nov ±19:55 \"tikok laten we, we gaan samen met koen zitten voor instagram en youtube\": het clip-/fanaccount komt op Instagram en YouTube, geen TikTok. Verder: de check op commercieel gebruik staat op rood (beleid uitgever: niet-commercieel = geen geld verdienen met het gamebeeld, geen promotie), en 3 YouTube-waarschuwingen kunnen ook \"associated channels\" raken. Keuze A/B/C ligt bij Andries in mijn sessie. Alles in docs/manager/opdracht-clippen.md, \"Uitkomst overleg Jesse en Koen\"."
     }
   ],
   "ontvangen": [
