@@ -2,6 +2,8 @@
 
 **Jesse, manager YG-Social · do 19 nov 2026.** Opdracht van Andries (H-noor-11, via Noor en Eva).
 
+> **VERVALLEN (Andries, do 19 nov 2026 ±19:59, sessie Jesse): *"we gaan dit toch laten, er komt geen extra kanaal"*.** Er komt geen extra kanaal. Het clip- en fanaccount wordt niet aangemaakt en de proef start niet. Alles hieronder is bewaard als naslag: het onderzoek, de regels en de uitkomst van het overleg met Koen. Er wordt niets van uitgevoerd tot Andries opnieuw beslist.
+
 > **⚠ Do 19 nov ±19:57: de check op commercieel gebruik staat op rood (zie "Uitkomst overleg Jesse en Koen"). Geen betaalde clip met gamebeeld tot Andries kiest.**
 >
 > **STATUS: BESLIST (3a–3c en de maker, do 19 nov ±19:32).** Er wordt niets ingestuurd tot Andries het clip-account en Content Rewards heeft aangemaakt. Openbare repo: geen namen, handles of bedragen.

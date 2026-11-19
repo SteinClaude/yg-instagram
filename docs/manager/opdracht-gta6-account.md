@@ -2,6 +2,8 @@
 
 **Jesse, manager YG-Social · do 19 nov 2026.** Opdracht eva-gta6-1 en eva-gta6-2, met H-noor-8 en H-noor-10.
 
+> **VERVALLEN (Andries, do 19 nov 2026 ±19:59, sessie Jesse): *"we gaan dit toch laten, er komt geen extra kanaal"*.** Er komt geen extra kanaal. Het clip- en fanaccount wordt niet aangemaakt en de proef start niet. Alles hieronder is bewaard als naslag: het onderzoek, de regels en de uitkomst van het overleg met Koen. Er wordt niets van uitgevoerd tot Andries opnieuw beslist.
+
 > **STATUS: BESLIST (do 19 nov ±19:34).** Weg A (één nieuw account, ook voor het clippen), beeld van campagnes en korte trailercitaten, Koen maakt het. Volgende stap: Andries kiest de naam en maakt het account aan. Het account heet hier "het GTA 6-fanaccount". De naam staat niet in de repo.
 
 ## Wat Andries vroeg (letterlijk)

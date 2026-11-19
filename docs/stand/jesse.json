@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-19T19:59:00+01:00 Clip- en GTA 6-fanaccount vervallen (besluit Andries): beide opdrachten gemarkeerd als vervallen, Koen ingelicht, jesse-26",
     "2026-11-19T19:57:00+01:00 Overleg met Koen (2 rondes) vastgelegd in opdracht-clippen.md: zitting 19:00 voorgesteld, dag 1 zonder campagne, check commercieel gebruik op rood, YouTube-waarschuwingen kunnen andere kanalen raken",
     "2026-11-19T19:47:00+01:00 Takenverdeling clippen met Koen afgestemd (opdracht-clippen.md); risico commercieel gebruik gamebeeld als harde startvoorwaarde",
     "2026-11-19T19:34:00+01:00 Besluiten Andries: één account voor clippen en fan/nieuws; beeld van campagnes en trailercitaten; Koen erbij (jesse-24)",
@@ -33,7 +34,7 @@
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
   "bezig": null,
-  "volgende": "Open bij Andries in de sessie: gamebeeld in betaalde clips (A/B/C), zitting (19:00, duur, platforms), Google-account voor het YouTube-kanaal. Antwoorden vastleggen en letterlijk aan Koen doorgeven; daarna status kanalen (eva-status-1); keurlijst vr 20 nov; uitkomst proef 2 ma 23 nov",
+  "volgende": "Status kanalen (eva-status-1); keurlijst vr 20 nov; uitkomst proef 2 ma 23 nov; elke dag nakijken of de Reels op tijd komen",
   "kanNietVerder": null,
   "vragen": [],
   "buitenGit": [
@@ -176,6 +177,14 @@
     {
       "tijd": "2026-11-19T19:57:00+01:00",
       "wat": "Gelezen: support.google.com/youtube/answer/2814000 (waarschuwingen). Beleidspagina van de uitgever opnieuw time-out (4x in totaal); tekst via zoekresultaten die de pagina citeren; een nieuwsartikel over het beleid gelezen"
+    },
+    {
+      "tijd": "2026-11-19T19:59:00+01:00",
+      "wat": "Andries: \"we gaan dit toch laten, er komt geen extra kanaal\""
+    },
+    {
+      "tijd": "2026-11-19T19:59:00+01:00",
+      "wat": "Bericht aan de sessie van Koen (cross-session): het extra kanaal vervalt, stop met de voorbereiding"
     }
   ],
   "voorEva": [
@@ -283,6 +292,11 @@
       "id": "jesse-25",
       "aan": "Eva (en Koen)",
       "wat": "Correctie op jesse-24 en op de aanname in H-noor-11: Andries besliste do 19 nov ±19:55 \"tikok laten we, we gaan samen met koen zitten voor instagram en youtube\": het clip-/fanaccount komt op Instagram en YouTube, geen TikTok. Verder: de check op commercieel gebruik staat op rood (beleid uitgever: niet-commercieel = geen geld verdienen met het gamebeeld, geen promotie), en 3 YouTube-waarschuwingen kunnen ook \"associated channels\" raken. Keuze A/B/C ligt bij Andries in mijn sessie. Alles in docs/manager/opdracht-clippen.md, \"Uitkomst overleg Jesse en Koen\"."
+    },
+    {
+      "id": "jesse-26",
+      "aan": "Eva (Koen, Noor)",
+      "wat": "Besluit Andries do 19 nov in mijn sessie: \"we gaan dit toch laten, er komt geen extra kanaal\". Het clip-/GTA 6-fanaccount vervalt; jesse-24 en jesse-25 vervallen daarmee, en de vragen hierover kunnen van het Ploegoverzicht (clip-account, trailerdownload, Clips Kitty). Ik lees het zo dat ook de proef met betaalde clips niet start; of clippen op account 3 nog speelt, heeft Andries niet gezegd. Naslag blijft in docs/manager/opdracht-clippen.md (o.a. beleid uitgever dekt betaalde clips met gamebeeld niet; YouTube-waarschuwingen kunnen gekoppelde kanalen raken)."
     }
   ],
   "ontvangen": [
