@@ -1,6 +1,43 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** do 19 nov 2026, 19:48 — Eva (de automaat voor alle kanalen loopt, als deelagent van Eva)
+**Bijgewerkt:** do 19 nov 2026, 21:50 — Eva (de tak van de automaat is nagekeken; hij wacht op het ja van Andries)
+
+## ▶ NAGEKEKEN — do 19 nov 21:50 (Eva): de tak van de automaat is in orde; hij wacht op het ja van Andries · `eva-automaat-4`
+
+Je bouwde dit als mijn deelagent (klaar 21:23; tak `manon/automaat-alle-kanalen`, laatste commit a180aa1). **Je pc-sessie start hier niets voor en voegt niets samen**: het samenvoegen doe ik, na het ja van Andries in mijn sessie.
+
+**Eva: nagekeken, akkoord voor `main` (do 19 nov 2026, 21:50), op a180aa1.** Het ja van Andries ontbreekt nog; zonder dat gaat er niets naar `main`.
+
+**Wat ik deed**
+- De 48 toetsen zelf gedraaid: 48 goed.
+- De workflow door actionlint (1.7.12) gehaald: geen opmerkingen.
+- Het zuinige ophalen nagebootst tegen GitHub zelf (alleen de hoofdmap en `src/`): 1 seconde en 356 kB, in plaats van ruim 2 GB. `planning.json`, `gedaan.json`, `status.json` en `sleutel.json` zijn er, en het script draait er (proef).
+- De stap die het logboek bewaart nagebootst in zo'n zuinige, ondiepe werkmap terwijl `main` twee commits verder was: vastleggen, ophalen, er bovenop zetten, niets kwijt. Niets gepusht.
+- Alles wat de tak toevoegt doorzocht op namen, handles, bedragen en adressen van de kanalen: niets gevonden.
+- De proef-samenvoeging: alleen `docs/stand/manon.json` en `docs/oplevering-manon.md` botsen. Daar neem ik de versie van `main` en zet ik de regels van de tak erbij.
+
+**Mijn oordeel op je punten voor mij**
+- *Punt 1, wachten na een mislukte post (10, 20, 40, 55 minuten) en latere items van hetzelfde account laten doorgaan:* akkoord, ook voor kanaal 1.
+- *Punt 2, `toJSON(secrets)`:* akkoord. In die stap draait alleen onze eigen code, en wie mag pushen kan de workflow toch al aanpassen.
+- *Punt 3, `status.json`:* de drie velden bovenaan zijn gelijk gebleven; het dashboard leest die. Voor @ygdigital.nl staat niets meer open, dus na de eerste run staat de stand weer op "in orde".
+- *Punt 7, de lijst met starts (alleen gelezen):* **het ligt aan de klok van GitHub, niet aan de run.** Sinds 29 okt 100 starts in 22 dagen: 3 tot 8 per dag, terwijl er elk uur een gepland stond. Vandaag zes: 01:06, 01:15, 02:51, 03:57, 12:14 en 21:05. Geen rode en geen lange run (de langste 6 minuten). De extra regels rond 18:00 en 20:00 gaven geen starts rond die tijden. Elke tien minuten mag blijven staan, maar lost het dus niet op: er is een wekker van buiten nodig.
+- *Nieuw, niet in je stuk:* de openbare site neerzetten duurt nu 6 tot 7 minuten per keer, en 26 van de laatste 40 keer is het afgebroken door een nieuwere push. Je regel 2 (de site kleiner) is daarmee het dringendst. Het dashboard noemt `video.mp4` en `video-upload.mp4` nergens bij naam; dat spreekt voor je voorstel, maar het blijft invoeren met een controle.
+
+**Wat er nu bij Andries ligt, op het Ploegoverzicht** (hij klikt; zijn antwoord komt hier of bij Jesse)
+- wie de automaat op tijd start: Eva drukt op de plaatstijden op de knop, een klok bij Google, of zo laten (staat bij Jesse; uitvoeren doe ik);
+- de map kleiner maken, je drie regels (advies: ja, regel 2 eerst);
+- video's van kanaal 2 en account 3 vooraf openbaar (advies: ja);
+- bij Jesse: het bijschrift van kanaal 2 en account 3 apart keuren of niet (advies: één OK).
+
+De proef met een release-bestand (je besluit 5) houd ik vast tot de map kleiner is; ik breng hem terug in het weekoverzicht.
+
+**Na het ja voor `main`** (de volgorde uit je stuk): samenvoegen, één start met de hand en het logboek lezen, de eerstvolgende post van kanaal 1 volgen. Daarna pas: Andries koppelt kanaal 2, de regel voor Finn en Koen komt in hun `CLAUDE.md`, en de kleine kopie komt op de pc.
+
+**Voor jou, op een eigen tak, pas na de antwoorden van Andries hierboven**
+1. De lijst met verboden woorden **verplicht** voor elk account dat niet openbaar is (kanaal 1, kanaal 2 en account 3): zonder lijst plant het commando niets in en zegt het wat Andries moet doen. Nu loopt het door met "geen lijst ingesteld", en een hashtag met de naam van een kanaal komt dan in deze openbare repo. Met een toets.
+2. De site kleiner (regel 2), met de controle die je zelf beschrijft.
+
+De tak `manon/cron-1200-1600` vervalt zodra dit op `main` staat; de vraag daarover heb ik van het Ploegoverzicht gehaald.
 
 ## ▶ LOOPT — do 19 nov 19:48 (Eva): de automaat voor alle kanalen wordt nu gebouwd, door jou als deelagent van Eva · `eva-automaat-3`
 

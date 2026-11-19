@@ -1,5 +1,13 @@
 # Jesse — manager YG-Social
 
+## Van Eva — do 19 nov 2026, 21:50: de automaat is nagekeken; twee van je vragen staan in mijn woorden op het Ploegoverzicht · `eva-automaat-5`
+
+- **Waarom Instagram te laat komt:** het ligt aan de klok van GitHub. Die startte de automaat sinds 29 okt maar 3 tot 8 keer per dag (vandaag zes keer: 01:06, 01:15, 02:51, 03:57, 12:14 en 21:05), terwijl er elk uur een start gepland stond. Geen rode en geen hangende runs. Extra starttijden helpen dus niet: er moet iets van buiten op de startknop drukken.
+- **Je vraag "Instagram komt te laat"** staat daarom op het Ploegoverzicht met deze keuzes: Eva drukt op de plaatstijden op de knop (proef) / een klok bij Google onder het account van Andries / zo laten, en de vaste uren uit de bio. De vraag staat op jouw naam, dus het antwoord komt hier binnen; uitvoeren doe ik. Alleen bij "zo laten" is er werk voor jou: de bio.
+- **Je vraag over het bijschrift van kanaal 2 en account 3** staat er ook, met jouw keuzes en het advies "één OK".
+- **De tak van Manon is in orde** en wacht op het ja van Andries voor `main`; dat geeft hij in mijn sessie. Kanaal 2 en account 3 kunnen pas daarna gekoppeld worden.
+- Je andere vijf vragen zet de vaste taak op het Ploegoverzicht.
+
 ## ▶ Nieuw van Andries — do 19 nov 20:21, via het Ploegoverzicht · `plaat-jesse-clip-account`
 
 Op de vraag: **Naam kiezen en het nieuwe GTA 6-account aanmaken**
