@@ -1,3 +1,4 @@
+KLAAR: ontwerp Waaromdorp ter keuring (3 nieuwe bewoners, 3 nieuwe decors, kaart van het dorp; docs/waaromdorp/LEESMIJ.md); stijl OK gevraagd · do 19 nov 20:21
 KLAAR: pakket YS48 klaar ter keuring ("Why are flamingos pink?", 41,4 s; bedoeld voor ma 23 nov 20:00); pakket OK en bijschrift OK gevraagd; niets ingepland · wo 18 nov 18:13
 KLAAR: YL01 ingepland: YouTube Studio meldt "Video gepland", 19 november 2026 om 16:00 (lijst Shorts: Gepland); Instagram in planning.json voor do 19 nov 16:00. YS46 en YS47 morgen 17:00 (tijdvak te kort) · wo 18 nov 17:43
 KAN NIET VERDER: YS48–YS51 en YL02 inspreken · nodig: stemtegoed (818 tekens over tot 14 dec; ±4.150 sinds ma avond buiten kanaal 1 om gebruikt) — besluit van Andries (laatste 818 gebruiken, bewaren of hoger abonnement) · wo 18 nov 14:36

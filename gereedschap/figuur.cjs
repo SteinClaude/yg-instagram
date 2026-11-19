@@ -392,6 +392,161 @@ function F(o) {
   return s;
 }
 
+// ================================================================== Waaromdorp (do 19 nov 2026)
+// Nieuwe bewoners voor de wereld van kanaal 1, na Andries do 19 nov 2026 ±20:16: "waaromdorp met museum en tijdreizen".
+// Het Vraagteken en Peertje blijven de hoofdrolspelers; deze drie zijn nieuw (geen keuze uit B, C, E, F: "nieuwe opties").
+
+// ------------------------------------------------------------------ G · Opa Klok
+// Een staande klok, de oudste bewoner van Waaromdorp. In zijn kast zit de tijdmachine: als de slinger gaat zwaaien,
+// reist het duo naar het moment waarop iets is ontstaan.
+function G(o) {
+  const { pose, kijk, mondType, open } = o;
+  const H = '#9A5B34', HD = '#6E3F22', HL = '#C98A5A';
+  let s = '';
+  s += been(-48, -70, 0, -1, 15) + been(48, -70, 0, 1, 15);
+  // voet (plint) en kast
+  const plint = c => `<rect x="-128" y="-128" width="256" height="66" rx="12" fill="${c}"/>`;
+  s += cel(plint, H, HD, null, { dx: 10, dy: 8 });
+  const kast = c => `<rect x="-104" y="-420" width="208" height="300" rx="10" fill="${c}"/>`;
+  s += cel(kast, H, HD, null, { dx: 14, dy: 12 });
+  // raampje met de slinger
+  s += `<rect x="-58" y="-380" width="116" height="214" rx="54" fill="#3A2416" stroke="${K.inkt}" stroke-width="7"/>`;
+  const sl = pose === 'verbaasd' ? 16 : pose === 'wijst' ? -8 : 4;
+  s += `<g transform="rotate(${sl} 0 -372)"><path d="M 0 -372 L 0 -228" stroke="${K.messing}" stroke-width="8"/><circle cx="0" cy="-214" r="30" fill="${K.messing}" stroke="${K.inkt}" stroke-width="6"/>` + glans('M -14 -222 Q -10 -232 0 -236', 5, 0.8) + `</g>`;
+  s += `<rect x="-58" y="-380" width="116" height="214" rx="54" fill="#FFFFFF" opacity="0.08"/>` + glans('M -40 -350 L -40 -300', 6, 0.35);
+  // kap met boog en knop
+  const kap = c => `<path d="M -134 -420 L -134 -560 Q -134 -640 0 -650 Q 134 -640 134 -560 L 134 -420 Z" fill="${c}"/>`;
+  s += cel(kap, H, HD, HL, { dx: 14, dy: 12 });
+  s += `<circle cx="0" cy="-666" r="18" fill="${K.messing}" stroke="${K.inkt}" stroke-width="6"/>`;
+  s += [-1, 1].map(z => `<rect x="${z * 134 - (z < 0 ? 0 : 20)}" y="-560" width="20" height="132" rx="6" fill="${HL}" stroke="${K.inkt}" stroke-width="5"/>`).join('');
+  // wijzerplaat = gezicht
+  s += `<circle cx="0" cy="-522" r="104" fill="${K.messing}" stroke="${K.inkt}" stroke-width="8"/><circle cx="0" cy="-522" r="88" fill="${K.wit}" stroke="${K.inkt}" stroke-width="5"/>`;
+  s += Array.from({ length: 12 }, (_, i) => { const a = i * Math.PI / 6, r1 = 78, r2 = i % 3 ? 70 : 62; return `<path d="M ${Math.sin(a) * r1} ${-522 - Math.cos(a) * r1} L ${Math.sin(a) * r2} ${-522 - Math.cos(a) * r2}" stroke="${K.inkt}" stroke-width="${i % 3 ? 3 : 6}" stroke-linecap="round"/>`; }).join('');
+  const br = pose === 'verbaasd' ? 12 : pose === 'wijst' ? 4 : 0;
+  // borstelige grijze wenkbrauwen, ogen achter een brilletje, witte snor
+  s += wenkbrauw(-32, -568, 38, -10, br, '#E9E4DA', 14) + wenkbrauw(32, -568, 38, pose === 'wijst' ? -16 : 10, pose === 'wijst' ? br + 6 : br, '#E9E4DA', 14);
+  s += wenkbrauw(-32, -568, 38, -10, br, K.inkt, 3) + wenkbrauw(32, -568, 38, pose === 'wijst' ? -16 : 10, pose === 'wijst' ? br + 6 : br, K.inkt, 3);
+  s += oog(-30, -536, 18, kijk, open) + oog(30, -536, 18, kijk, open);
+  s += [-30, 30].map(x => `<circle cx="${x}" cy="-536" r="27" fill="none" stroke="${K.inkt}" stroke-width="6"/>`).join('') + `<path d="M -4 -538 Q 0 -544 4 -538" fill="none" stroke="${K.inkt}" stroke-width="5"/>`;
+  s += mond(0, -478, 30, mondType);
+  s += `<path d="M -4 -500 Q -30 -520 -62 -500 Q -56 -484 -36 -488 Q -14 -490 -4 -500 Z M 4 -500 Q 30 -520 62 -500 Q 56 -484 36 -488 Q 14 -490 4 -500 Z" fill="#F4F1EA" stroke="${K.inkt}" stroke-width="5" stroke-linejoin="round"/>`;
+  s += `<circle cx="0" cy="-502" r="7" fill="${K.inkt}"/>`;
+  // armen uit de zijkant van de kast; in de rust-houding steunt hij op een wandelstok
+  if (pose === 'wijst') {
+    s += arm(100, -380, 220, -470, -18) + handschoen(220, -470, hoekVan(100, -380, 220, -470) - 8, 'wijs');
+    s += arm(-100, -360, -176, -260, 16) + handschoen(-176, -260, 120, 'vuist');
+  } else if (pose === 'verbaasd') {
+    s += arm(100, -380, 206, -500, -18) + handschoen(206, -500, -70, 'open');
+    s += arm(-100, -380, -206, -500, 18) + handschoen(-206, -500, -110, 'open').replace('scale(1)', 'scale(1 -1)') + verbaasdStreepjes(0, -700);
+  } else {
+    s += `<path d="M 176 -250 L 196 0" stroke="${K.inkt}" stroke-width="18" stroke-linecap="round"/><path d="M 176 -250 L 196 0" stroke="#7A4B2A" stroke-width="8" stroke-linecap="round"/><path d="M 176 -250 Q 170 -290 140 -284" fill="none" stroke="${K.inkt}" stroke-width="18" stroke-linecap="round"/><path d="M 176 -250 Q 170 -290 140 -284" fill="none" stroke="#7A4B2A" stroke-width="8" stroke-linecap="round"/>`;
+    s += arm(100, -360, 172, -262, -14) + handschoen(172, -262, 80, 'vuist');
+    s += arm(-100, -360, -150, -250, 14) + handschoen(-150, -250, 110, 'vuist');
+  }
+  return s;
+}
+
+// ------------------------------------------------------------------ H · Professor Globe
+// De conservator van het Museum van Gewone Dingen: een wereldbol op een standaard, met een rond brilletje,
+// een vlinderdas en een koperen meridiaanring. Weet waar alles vandaan komt.
+function H(o) {
+  const { pose, kijk, mondType, open } = o;
+  const Z = '#4E9CC4', ZD = '#2F6F95', LAND = '#8CC36A', LANDD = '#5F9446';
+  let s = '';
+  s += been(-40, -96, 0, -1, 14) + been(40, -96, 0, 1, 14);
+  // voet en steel
+  const voet = c => `<ellipse cx="0" cy="-104" rx="104" ry="30" fill="${c}"/>`;
+  s += cel(voet, '#7A4B2A', '#4F2F19', null, { dx: 8, dy: 6 });
+  s += `<rect x="-16" y="-226" width="32" height="118" rx="8" fill="#7A4B2A" stroke="${K.inkt}" stroke-width="7"/>`;
+  // vlinderdas op de steel
+  s += `<path d="M 0 -214 L -46 -238 Q -54 -214 -46 -190 Z M 0 -214 L 46 -238 Q 54 -214 46 -190 Z" fill="${K.rood}" stroke="${K.inkt}" stroke-width="6" stroke-linejoin="round"/><circle cx="0" cy="-214" r="12" fill="${K.roodDiep}" stroke="${K.inkt}" stroke-width="5"/>`;
+  // de bol, met verzonnen land (geen echte kaart)
+  const bol = c => `<circle cx="0" cy="-420" r="168" fill="${c}"/>`;
+  s += cel(bol, Z, ZD, null, { dx: 18, dy: 16 });
+  const id = 'land' + (++teller);
+  s += `<clipPath id="${id}"><circle cx="0" cy="-420" r="160"/></clipPath><g clip-path="url(#${id})">` +
+    `<path d="M -170 -500 Q -120 -560 -60 -540 Q -30 -520 -70 -490 Q -110 -470 -100 -430 Q -120 -400 -170 -420 Z" fill="${LAND}" stroke="${LANDD}" stroke-width="5"/>` +
+    `<path d="M 80 -580 Q 150 -560 168 -500 Q 150 -470 110 -480 Q 70 -500 80 -540 Z" fill="${LAND}" stroke="${LANDD}" stroke-width="5"/>` +
+    `<path d="M 60 -330 Q 130 -340 150 -300 Q 120 -260 70 -270 Q 40 -290 60 -330 Z" fill="${LAND}" stroke="${LANDD}" stroke-width="5"/>` +
+    `<path d="M -150 -330 Q -110 -320 -110 -290 Q -140 -270 -168 -290 Z" fill="${LAND}" stroke="${LANDD}" stroke-width="5"/>` +
+    `<ellipse cx="0" cy="-420" rx="160" ry="44" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.35"/><ellipse cx="0" cy="-420" rx="70" ry="160" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.35"/></g>`;
+  s += glans('M -126 -470 C -118 -530 -76 -568 -24 -578', 16, 0.7);
+  // meridiaanring (koper), half om de bol
+  s += `<path d="M -150 -300 A 196 196 0 1 1 150 -300" fill="none" stroke="${K.inkt}" stroke-width="24" stroke-linecap="round" transform="rotate(-18 0 -420)"/><path d="M -150 -300 A 196 196 0 1 1 150 -300" fill="none" stroke="${K.messing}" stroke-width="12" stroke-linecap="round" transform="rotate(-18 0 -420)"/>`;
+  // gezicht: wenkbrauwen, ogen met rond brilletje, wangen, mond
+  const br = pose === 'verbaasd' ? 14 : pose === 'wijst' ? 5 : 0;
+  s += wenkbrauw(-50, -484, 40, -8, br) + wenkbrauw(50, -484, 40, pose === 'wijst' ? -14 : 8, pose === 'wijst' ? br + 8 : br);
+  s += `<circle cx="-50" cy="-446" r="38" fill="${K.wit}"/><circle cx="50" cy="-446" r="38" fill="${K.wit}"/>`;
+  s += oog(-50, -446, 24, kijk, open) + oog(50, -446, 24, kijk, open);
+  s += [-50, 50].map(x => `<circle cx="${x}" cy="-446" r="38" fill="none" stroke="${K.inkt}" stroke-width="8"/>`).join('') + `<path d="M -12 -450 Q 0 -460 12 -450" fill="none" stroke="${K.inkt}" stroke-width="7"/>`;
+  s += wangen(0, -390, 92, 16) + mond(0, -384, 50, mondType);
+  if (pose === 'wijst') {
+    s += arm(150, -400, 262, -500, -18) + handschoen(262, -500, hoekVan(150, -400, 262, -500) - 8, 'wijs');
+    s += arm(-150, -380, -210, -280, 16) + handschoen(-210, -280, 120, 'vuist');
+  } else if (pose === 'verbaasd') {
+    s += arm(150, -420, 250, -540, -18) + handschoen(250, -540, -70, 'open');
+    s += arm(-150, -420, -250, -540, 18) + handschoen(-250, -540, -110, 'open').replace('scale(1)', 'scale(1 -1)') + verbaasdStreepjes(0, -650) + sterretje(-200, -620) + sterretje(210, -630, 11);
+  } else {
+    s += arm(150, -390, 196, -270, -14) + handschoen(196, -270, 70, 'vuist');
+    s += arm(-150, -390, -196, -270, 14) + handschoen(-196, -270, 110, 'vuist');
+  }
+  return s;
+}
+
+// ------------------------------------------------------------------ I · Krantje
+// De krantenjongen van Waaromdorp: een opgevouwen krant ("THE DAILY WHY") met een pet en een tas vol kranten.
+// Hij brengt aan het begin van elke video de vraag van de dag.
+function I(o) {
+  const { pose, kijk, mondType, open } = o;
+  const P = '#F3EEE2', PD = '#D6CCB8', PET = '#44506B', PETD = '#2C354A';
+  let s = '';
+  s += been(-46, -150, 0, -1) + been(46, -150, 0, 1);
+  // tasband (achter het lijf)
+  s += `<path d="M -110 -430 L 120 -190" stroke="${K.inkt}" stroke-width="26" stroke-linecap="round"/><path d="M -110 -430 L 120 -190" stroke="#8A5A34" stroke-width="15" stroke-linecap="round"/>`;
+  // lijf: krant met een vouw
+  const krant = c => `<path d="M -130 -500 L 122 -506 Q 132 -330 126 -156 L -126 -150 Q -136 -330 -130 -500 Z" fill="${c}"/>`;
+  s += cel(krant, P, PD, null, { dx: 16, dy: 14 });
+  s += `<path d="M -128 -330 Q 0 -322 126 -332" fill="none" stroke="${PD}" stroke-width="6"/>`;
+  // kop van de krant
+  s += `<rect x="-112" y="-486" width="226" height="38" fill="${K.inkt}"/><text x="2" y="-458" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="22" fill="${K.wit}" letter-spacing="2">THE DAILY WHY</text>`;
+  // kolommen en fotootje onder de vouw
+  s += [-300, -282, -264, -246, -228, -210].map((y, i) => `<path d="M -104 ${y} L ${i % 3 === 2 ? -34 : -14} ${y}" stroke="#A8A196" stroke-width="7" stroke-linecap="round"/>`).join('');
+  s += `<rect x="14" y="-306" width="90" height="70" fill="#CFC6B6" stroke="${K.inkt}" stroke-width="4"/><text x="59" y="-256" text-anchor="middle" font-family="Instrument Sans" font-weight="700" font-size="48" fill="${K.signaal}">?</text>`;
+  s += [-216, -198, -180].map(y => `<path d="M 14 ${y} L 104 ${y}" stroke="#A8A196" stroke-width="7" stroke-linecap="round"/>`).join('');
+  s += glans('M -112 -436 L -114 -360', 10, 0.5);
+  // gezicht in het bovenste vak
+  const br = pose === 'verbaasd' ? 14 : pose === 'wijst' ? 5 : 0;
+  s += wenkbrauw(-44, -424, 38, -8, br) + wenkbrauw(44, -424, 38, pose === 'wijst' ? -14 : 8, pose === 'wijst' ? br + 8 : br);
+  s += oog(-42, -392, 24, kijk, open) + oog(42, -392, 24, kijk, open);
+  s += wangen(0, -358, 78, 15) + mond(0, -356, 44, mondType);
+  // sproetjes
+  s += [[-76, -366], [-66, -356], [-84, -352], [76, -366], [66, -356], [84, -352]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="3" fill="#C98A5A"/>`).join('');
+  // pet met klep
+  const pet = c => `<path d="M -120 -506 Q -118 -590 0 -596 Q 118 -590 122 -506 Z" fill="${c}"/>`;
+  s += cel(pet, PET, PETD, null, { dx: 12, dy: 10 });
+  s += `<path d="M -10 -508 Q 90 -520 168 -498 Q 150 -480 60 -486 Q 10 -490 -10 -508 Z" fill="${PETD}" stroke="${K.inkt}" stroke-width="7" stroke-linejoin="round"/>`;
+  s += `<circle cx="0" cy="-596" r="12" fill="${PET}" stroke="${K.inkt}" stroke-width="5"/>` + glans('M -80 -548 Q -60 -572 -24 -578', 8, 0.4);
+  // tas met kranten
+  s += `<rect x="70" y="-232" width="34" height="70" rx="3" fill="${P}" stroke="${K.inkt}" stroke-width="4" transform="rotate(8 87 -197)"/><rect x="96" y="-238" width="34" height="74" rx="3" fill="${P}" stroke="${K.inkt}" stroke-width="4" transform="rotate(-6 113 -201)"/>`;
+  const tas = c => `<rect x="60" y="-200" width="126" height="96" rx="16" fill="${c}"/>`;
+  s += cel(tas, '#A8693C', '#7A4B2A', null, { dx: 8, dy: 8, omtrek: 4 });
+  s += `<path d="M 60 -166 Q 123 -150 186 -166" fill="none" stroke="${K.inkt}" stroke-width="6"/><rect x="114" y="-162" width="18" height="18" rx="3" fill="${K.messing}" stroke="${K.inkt}" stroke-width="4"/>`;
+  if (pose === 'wijst') {
+    s += arm(-124, -300, -250, -420, 18) + handschoen(-250, -420, hoekVan(-124, -300, -250, -420) + 8, 'wijs');
+    s += arm(124, -300, 220, -390, -18);
+    // hij houdt een krant omhoog
+    s += `<g transform="rotate(-12 236 -440)"><rect x="186" y="-500" width="110" height="130" rx="4" fill="${P}" stroke="${K.inkt}" stroke-width="6"/><rect x="194" y="-490" width="94" height="22" fill="${K.inkt}"/><text x="241" y="-410" text-anchor="middle" font-family="Instrument Sans" font-weight="700" font-size="62" fill="${K.signaal}">?</text></g>`;
+    s += handschoen(220, -390, -60, 'vuist');
+  } else if (pose === 'verbaasd') {
+    s += arm(124, -320, 222, -450, -18) + handschoen(222, -450, -70, 'open');
+    s += arm(-124, -320, -222, -450, 18) + handschoen(-222, -450, -110, 'open').replace('scale(1)', 'scale(1 -1)') + verbaasdStreepjes(0, -650);
+  } else {
+    s += arm(124, -300, 170, -186, -14) + handschoen(170, -186, 70, 'vuist');
+    s += arm(-124, -300, -170, -186, 14) + handschoen(-170, -186, 110, 'vuist');
+  }
+  return s;
+}
+
 const ONTWERPEN = {
   A: { naam: 'Vraagteken', teken: A, kleuren: [K.rood, K.roodDiep, K.inkt, K.huid], regel: 'Een rood vraagteken, want het kanaal gaat over "waarom". Hij zoekt alles uit met zijn loep.' },
   B: { naam: 'Memo', teken: B, kleuren: [K.memo, K.memoDiep, K.inkt, K.rood], regel: 'Een geel plakbriefje met een rode pen. Hij zet de rode krabbels en de bron zelf in beeld.' },
@@ -399,6 +554,9 @@ const ONTWERPEN = {
   D: { naam: 'Peertje', teken: D, kleuren: ['#FFF5D2', K.geel, '#C4BFB5', K.inkt], regel: 'Een gloeilamp die oplicht als hij iets ontdekt: het aha-moment van elke short.' },
   E: { naam: 'Robot', teken: E, kleuren: ['#3E9A94', '#DDEFEA', K.signaal, K.inkt], regel: 'Een archiefrobot: zijn lijf is een kast met een lade vol bronnen, die openschiet bij een ontdekking.' },
   F: { naam: 'Mol', teken: F, kleuren: ['#6F5D55', '#F3A0A2', K.geel, K.inkt], regel: 'Een mol met mijnhelm en bril die de geschiedenis van gewone dingen opgraaft.' },
+  G: { naam: 'Opa Klok', teken: G, kleuren: ['#9A5B34', K.messing, K.wit, K.inkt], regel: 'De oudste bewoner van Waaromdorp. In zijn kast zit de tijdmachine: zwaait de slinger, dan reist het duo terug in de tijd.' },
+  H: { naam: 'Professor Globe', teken: H, kleuren: ['#4E9CC4', '#8CC36A', K.messing, K.rood], regel: 'Conservator van het Museum van Gewone Dingen. Weet waar alles vandaan komt en toont de echte voorwerpen.' },
+  I: { naam: 'Krantje', teken: I, kleuren: ['#F3EEE2', '#44506B', '#A8693C', K.signaal], regel: 'De krantenjongen van Waaromdorp. Brengt aan het begin van elke video de vraag van de dag.' },
 };
 
 function teken(code, { x = 0, y = 0, s = 1, pose = 'rust', kijk = null, mond: mondType = 'glim', knipper = 0, spiegel = false, aan = undefined } = {}) {
