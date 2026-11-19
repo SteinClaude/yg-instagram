@@ -15,7 +15,7 @@
 - **Eén commando voor de makers** (`gereedschap/inplannen.cjs`): het kijkt de keuring van Andries na, de video, het bijschrift en of iets dubbel is, en legt dan één item vast. Alleen de eigen paden, alleen het eigen account. Met `--proef` verandert er niets.
 - **Per account een eigen stand, sleutelteller, slot en melding.** Een account zonder werk (zoals het gepauzeerde account met de geweigerde sleutel) zet de rest niet meer op "staat stil".
 - **Een fout raakt alleen het eigen account.** Een post die mislukt, wacht (10, 20, 40, 55 minuten) en houdt de andere accounts niet op.
-- **46 toetsen, alle goed**, zonder netwerk en zonder sleutels.
+- **48 toetsen, alle goed**, zonder netwerk en zonder sleutels.
 - **Twee dingen los ik hiermee niet op:** de repo blijft groeien (zie A1) en GitHub start de automaat vaak te laat (zie A3). Voor beide ligt hieronder een voorstel met een besluit voor Andries.
 
 ---
@@ -26,7 +26,7 @@ Hoe ik las: "opgehaald" betekent dat ik de pagina vandaag (do 19 nov 2026) heb l
 
 ### A1. Waar de video's staan, en de omvang
 
-**Gemeten** (do 19 nov, `node gereedschap/omvang.cjs`; leest alleen, uit git):
+**Gemeten** (do 19 nov, op de stand van 19:48; `node gereedschap/omvang.cjs`; leest alleen, uit git):
 
 | | Grootte | Bestanden |
 |---|---|---|
@@ -55,7 +55,7 @@ De automaat heeft dus 78 MB nodig van een openbare site van ruim 2 GB. Driekwart
 
 | | Wat het is | Wat het vraagt | Bewezen? | Wat er kapot kan |
 |---|---|---|---|---|
-| **a. In deze repo blijven** en de werkmap opschonen | zoals nu: de video in git, Instagram haalt hem op via Pages | niets nieuws | ja: 17 Reels van kanaal 1 geplaatst sinds 9 nov | de geschiedenis groeit door; Pages boven de regel van 1 GB; weigert Pages, dan staan alle accounts stil |
+| **a. In deze repo blijven** en de werkmap opschonen | zoals nu: de video in git, Instagram haalt hem op via Pages | niets nieuws | ja: 19 Reels van kanaal 1 geplaatst sinds 9 nov | de geschiedenis groeit door; Pages boven de regel van 1 GB; weigert Pages, dan staan alle accounts stil |
 | **b. Release-bestanden** | de video als bijlage bij een release; na plaatsen echt weg te halen | een manier om te uploaden (het programma `gh` op de pc, één keer inloggen door Andries) | **nee**. Het adres verwijst door naar een tijdelijk adres en levert de video als `application/octet-stream` met "attachment" (zelf gemeten bij een openbare repo). Meta zegt alleen dat de video *"must be hosted on a publicly accessible server at the time of the attempt"* en: *"We cURL media used in publishing attempts."* Of Instagram een doorverwijzing en dit soort bestand aanneemt, staat er niet en weet ik niet. | neemt Instagram het niet aan, dan werkt het niet; één proef met de proefknop zegt het |
 | **c. Rechtstreeks uploaden** (`upload_type=resumable`) | de automaat stuurt de video zelf naar Instagram | — | **kan niet met onze sleutel.** Meta, op twee pagina's: *"Only for apps that have implemented Facebook Login for Business"*. Wij gebruiken Instagram-login (`graph.instagram.com`, zie `src/instagram.cjs`); de Facebook-weg werkte bij ons niet (LEESMIJ, "Hoe dit met Meta praat"). | n.v.t. |
 | **d. Een aparte openbare media-repo** die regelmatig wordt leeggemaakt | zelfde techniek als nu, in een repo waar alleen video's staan | een nieuwe repo (ja van Andries), Pages aan, een opruimtaak | de techniek ja, de opzet niet | twee repo's bijhouden; dezelfde regel van 1 GB geldt daar ook |
@@ -88,18 +88,23 @@ Wat het oplevert: de site en elke verse kloon blijven klein. **Wat het niet doet
 
 **Wat GitHub zegt** (opgehaald): *"The `schedule` event can be delayed during periods of high loads of GitHub Actions workflow runs."* Drukke momenten zijn onder meer het begin van elk uur. *"If the load is sufficiently high enough, some queued jobs may be dropped."* En: *"The shortest interval you can run scheduled workflows is once every 5 minutes."* Elke tien minuten mag dus. **Het kost niets:** standaardrunners in een openbare repo zijn gratis.
 
-**Wat wij zelf meten** (uit `planning.json` en `gedaan.json`, 17 Reels van kanaal 1):
+**Wat wij zelf meten** (uit `planning.json` en `gedaan.json` op `main`, do 19 nov 21:10; 19 Reels van kanaal 1, waarvan 16 in deze tabel. De drie van ma 9 nov tellen niet mee: twee gingen bij de start uit, en de derde is na 1:25 met de hand gestart):
 
 | Periode | Starts | Te laat |
 |---|---|---|
 | 10–14 nov | elk uur | 0:34 · 1:59 · 3:20 · 3:42 · 5:32 (middelste: 3:20) |
-| 15–19 nov, 18:00 en 20:00 | elk uur plus zes extra per uur rond die tijden | 0:38 · 1:52 · 2:00 · 2:12 · 2:34 · 3:52 |
+| 15–19 nov, 18:00 en 20:00 | elk uur plus zes extra per uur rond die tijden | 0:38 · 1:09 · 1:52 · 2:00 · 2:12 · 2:34 · 3:52 |
 | 15–19 nov, 12:00 | alleen elk uur | 0:17 · 1:46 · 1:55 |
-| do 19 nov, 16:00 (YL01) | alleen elk uur | om 19:48 nog niet geplaatst |
+| do 19 nov, 16:00 (YL01) | elk uur, en vanaf 17:00 de extra starts voor 18:00 en 20:00 | 5:09 |
 
-De extra starts van 15 nov hebben iets geholpen (de middelste ging van 3:20 naar ±1:55), maar niet genoeg. Op wo 18 nov stonden er na 20:00 elf starts gepland vóór die van 22:05; geen daarvan heeft iets gedaan. De post ging om 22:12 uit. Er was ook geen mislukte poging, want die laat een spoor na in `status.json`. De automaat is in die tijd dus niet gestart, of zo vroeg gestrand dat er niets van te zien is. Meer starts inplannen is dus geen garantie. Waarom GitHub er zo weinig start, kan ik niet zien (de lijst met runs is vanuit mijn werkplek geblokkeerd). In een gesprek op het forum van GitHub (juli 2026) melden anderen hetzelfde, met als meest genoemde uitweg: de automaat van buitenaf starten. Dat is ervaring van gebruikers, geen uitspraak van GitHub.
+De extra starts van 15 nov hebben iets geholpen (de middelste ging van 3:20 naar ±1:55), maar niet genoeg. Twee avonden laten zien waarom:
 
-**Wat ik op de tak heb gezet:** één regel, elke tien minuten op rustige minuten (`3,13,23,33,43,53`), de hele dag. Dat vervangt de losse regels per plaatstijd en de tak `manon/cron-1200-1600`: 12:00 en 16:00 zijn nu ook gedekt, en een account of een tijd erbij vraagt geen nieuwe regel. Een start zonder werk doet niets en maakt geen commit. De automaat haalt per start nog maar een paar MB op in plaats van ruim 2 GB.
+- **wo 18 nov:** na 20:00 stonden er elf starts gepland vóór die van 22:05; geen daarvan heeft iets gedaan. De post ging om 22:12 uit.
+- **do 19 nov (vanavond, terwijl ik hieraan werkte):** de video van 16:00 en de short van 20:00 gingen samen uit om 21:09. Tussen 16:00 en 21:05 stonden er 32 starts gepland. Geen daarvan heeft iets geplaatst.
+
+Er was op die avonden ook geen mislukte poging, want die laat een spoor na in `status.json`. De automaat is in die tijd dus niet gestart, óf een run is zo vroeg gestrand dat er niets van te zien is, óf één run bleef hangen en hield de rest tegen. Dat laatste kan: er draait nooit meer dan één run tegelijk, en GitHub breekt een run pas na zes uur zelf af (*"Default: 360"*). Welke van de drie het was, kan ik niet zien: de lijst met runs is vanuit mijn werkplek geblokkeerd. **Eva of Andries ziet het in één blik** (Actions → *Plaatsen op Instagram*, do 19 nov tussen 16:00 en 21:10): staan daar geen runs, dan start GitHub ze niet; staat er één lange run, dan hing die; staan er rode runs, dan zegt het logboek waarom. Meer starts inplannen is in geen van de drie gevallen een garantie. In een gesprek op het forum van GitHub (juli 2026) melden anderen hetzelfde, met als meest genoemde uitweg: de automaat van buitenaf starten. Dat is ervaring van gebruikers, geen uitspraak van GitHub.
+
+**Wat ik op de tak heb gezet:** één regel, elke tien minuten op rustige minuten (`3,13,23,33,43,53`), de hele dag. Dat vervangt de losse regels per plaatstijd en de tak `manon/cron-1200-1600`: 12:00 en 16:00 zijn nu ook gedekt, en een account of een tijd erbij vraagt geen nieuwe regel. Een start zonder werk doet niets en maakt geen commit. De automaat haalt per start nog maar een paar MB op in plaats van ruim 2 GB. Daarnaast een **tijdsgrens**: het plaatsen stopt na 30 minuten en de hele run na 45 (was: geen grens, dus zes uur). Een run die blijft hangen, houdt de volgende starts zo hoogstens drie kwartier tegen. Het script legt elke post meteen vast, dus wat nog niet aan de beurt kwam, gaat met de volgende start mee.
 
 **Een betrouwbaardere wekker, zonder kosten en zonder nieuw account.** De automaat heeft al een knop (`workflow_dispatch`); wie daar op het goede moment op drukt, is de wekker.
 
@@ -111,7 +116,7 @@ De extra starts van 15 nov hebben iets geholpen (de middelste ging van 3:20 naar
 | Een taak op de pc van Andries | geen | nee | de pc moet aan staan; `gh` met inlog | de pc slaapt 's nachts en onderweg |
 | YG Flow (Bram) | — | — | een server | later |
 
-**Advies:** de regel van tien minuten live zetten, en een week lang een vaste taak van Eva op de plaatstijden laten meedrukken. Dan na die week meten met dezelfde tabel als hierboven. Blijft het boven een kwartier, dan de klok bij Google.
+**Advies:** eerst de lijst met runs van vanavond bekijken (zie boven); dat kost een minuut en zegt waar het aan ligt. Is het de klok van GitHub: de regel van tien minuten live zetten, en een week lang een vaste taak van Eva op de plaatstijden laten meedrukken. Dan na die week meten met dezelfde tabel als hierboven. Blijft het boven een kwartier, dan de klok bij Google.
 
 Bewust **niet** gebouwd: de automaat laten "wachten in de run" tot de plaatstijd. Dat houdt urenlang een computer van GitHub bezet om één Reel te plaatsen.
 
@@ -146,12 +151,12 @@ Niets gedaan. Die wachten op hun eigen koppeling (besluit van ma 16 nov, `docs/m
 | `src/accounts.cjs` (nieuw) | De tabel. Per account: naam, label, de twee geheimen, de vorm van de codes, welke keuringen nodig zijn, de maker. |
 | `src/plaatsen.cjs` | Leest de tabel. Alles per account. Nieuwe vorm van `status.json`. Een fout raakt alleen het eigen account. |
 | `gereedschap/inplannen.cjs` (nieuw) | Het commando voor de makers, met `--proef` en `--intrekken`. |
-| `.github/workflows/plaatsen.yml` | Geheimen voor kanaal 2 en account 3, de proefknop voor elk account, elke tien minuten, zuinig ophalen, een melding per account. |
+| `.github/workflows/plaatsen.yml` | Geheimen voor kanaal 2 en account 3, de proefknop voor elk account, elke tien minuten, zuinig ophalen, een tijdsgrens, een melding per account. |
 | `gereedschap/plan-reel.cjs`, `plan-carrousel.cjs`, `controleer.cjs` | Lezen de tabel. Verder zoals ze waren. |
-| `gereedschap/toets-automaat.cjs` (nieuw) | 46 toetsen. |
+| `gereedschap/toets-automaat.cjs` (nieuw) | 48 toetsen. |
 | `gereedschap/omvang.cjs` (nieuw) | Meet de omvang. Leest alleen. |
 | `LEESMIJ.md` | "Meer accounts" en "Inplannen door de maker". |
-| `.gitignore` | De map met meldingen. |
+| `.gitignore` | De map met meldingen en de hulpbestanden van het schrijven. |
 
 Niet aangeraakt: de inhoud van `planning.json`, `gedaan.json`, `sleutel.json` en `status.json`, het dashboard (`index.html`), de pakketten, `CLAUDE.md` en `docs/manager/`.
 
@@ -194,6 +199,7 @@ Het gewone plaatsen is gelijk gebleven. Dat is getoetst door de versie van `main
 4. **Een onleesbaar `gedaan.json` of `planning.json`**: er wordt niets geplaatst. Voorheen gold een onleesbaar logboek als leeg, en dan zou alles binnen de inhaaltijd opnieuw uitgaan.
 5. **Meldingen op GitHub** per account, op de precieze titel. Voorheen hield een open melding voor het ene account de waarschuwing voor het andere tegen. Staat de melding over de sleutel van @ygdigital.nl nog open, dan was de waarschuwing dat de sleutel van kanaal 1 bijna verloopt (die komt rond eind december) niet aangekomen.
 6. **`--proef`** schrijft niets meer en heeft geen sleutels nodig.
+7. **Een tijdsgrens.** Het plaatsen stopt na 30 minuten, de hele run na 45. Voorheen was er geen grens en kon één hangende run alle volgende starts zes uur tegenhouden. Wat al geplaatst is, wordt ook na zo'n stop bewaard; het slot tegen dubbel plaatsen vangt de post op die net onderweg was. Het script schrijft `gedaan.json`, `status.json` en `sleutel.json` daarom nu in twee stappen (eerst ernaast, dan op zijn plek): een afgebroken run laat nooit een half bestand achter.
 
 ### Het commando voor de makers
 
@@ -222,13 +228,13 @@ De makers hoeven de map van Manon niet te gebruiken. In `LEESMIJ.md` staat hoe j
 
 ## Hoe het getoetst is
 
-`node gereedschap/toets-automaat.cjs`: **46 goed, 0 fout** (do 19 nov 2026). Zonder netwerk, zonder sleutels; ruim een halve minuut.
+`node gereedschap/toets-automaat.cjs`: **48 goed, 0 fout** (do 19 nov 2026). Zonder netwerk, zonder sleutels; ongeveer een halve minuut.
 
 | Deel | Toetsen | Hoe |
 |---|---|---|
-| plaatsen | 22 | `src/plaatsen.cjs` draait in een tijdelijke map met nagemaakte accounts en een nagemaakte Instagram-module, die opschrijft wat er gevraagd wordt en alarm slaat als een account met de sleutel van een ander wordt aangesproken. |
+| plaatsen | 23 | `src/plaatsen.cjs` draait in een tijdelijke map met nagemaakte accounts en een nagemaakte Instagram-module, die opschrijft wat er gevraagd wordt en alarm slaat als een account met de sleutel van een ander wordt aangesproken. |
 | inplannen | 16 | Het commando draait tegen een nagemaakte GitHub (een kale git-map), met proefpakketten en proefvideo's die ffmpeg ter plekke maakt. |
-| workflow | 6 | De twee stappen na het plaatsen zijn letterlijk uit `plaatsen.yml` gehaald (vergeleken met een YAML-lezer) en gedraaid in een werkmap zoals `actions/checkout` hem maakt. |
+| workflow | 7 | De twee stappen na het plaatsen zijn letterlijk uit `plaatsen.yml` gehaald (vergeleken met een YAML-lezer) en gedraaid in een werkmap zoals `actions/checkout` hem maakt. De starttijden, de geheimen en de tijdsgrenzen zijn als tekst nagekeken. |
 | plangereedschap | 2 | `plan-reel.cjs` en `plan-carrousel.cjs` met de tabel (alleen als `npm ci` is gedraaid). |
 
 Wat de opdracht noemde, en waar het zit:
@@ -238,12 +244,13 @@ Wat de opdracht noemde, en waar het zit:
 - **Een ontbrekende of geweigerde sleutel** raakt alleen dat account; de andere plaatsen in dezelfde run.
 - **Er lekt geen accountnummer:** na elke run wordt alles wat openbaar wordt (logboek, `status.json`, `gedaan.json`, `sleutel.json`, de meldingen) doorzocht op het nummer, de naam en de sleutel van de nagemaakte accounts. Ook als Instagram ze zelf in een foutmelding zet.
 - **Inplannen:** goed pakket, geen keuring, keuring van een ander pakket, ingetrokken, niet OK, opnieuw gevraagd, niet van Andries, fout bijschrift (zes soorten), dubbel (vier soorten), tegelijk inplannen door twee makers, tegelijk met een botsing, een video die omgezet moet worden, een video die niet kan, een verkeerde omslag, intrekken, een verouderd commando, een kapotte planning op GitHub.
+- **Een run die halverwege wordt afgebroken** (de tijdsgrens): wat al geplaatst is, staat heel in `gedaan.json`; de volgende start plaatst alleen de rest, niets dubbel.
 - **De stap die `gedaan.json` bewaart:** niets nieuws geeft geen commit; een wijziging wordt vastgelegd; als een maker net iets vastlegde, wordt opgehaald en opnieuw geprobeerd; ook met een onbereikbare GitHub eindigt de stap goed. Zonder `sleutel.json` (de fout van 15 september) gaat het goed.
 - **De echte bestanden van nu:** alle 72 items van `planning.json` horen bij een bekend account en de 9 open items kloppen.
 
 De toetsen vonden twee dingen die ik heb hersteld: een gebruikersnaam in een foutmelding van Instagram kon in het logboek komen als de sleutel van dat account niet werkte, en mijn eigen toets las een stap uit de workflow verkeerd uit (daarom nu de vergelijking met een YAML-lezer).
 
-**Niet getoetst, omdat het alleen op GitHub of bij Instagram kan:** de workflow zelf (het zuinige ophalen, de geheimen als JSON, de melding per account, de klok van tien minuten), en alles wat Instagram antwoordt. Daarom de volgorde hieronder.
+**Niet getoetst, omdat het alleen op GitHub of bij Instagram kan:** de workflow zelf (het zuinige ophalen, de geheimen als JSON, de melding per account, de klok van tien minuten, de tijdsgrens), en alles wat Instagram antwoordt. Daarom de volgorde hieronder.
 
 ---
 
@@ -277,7 +284,7 @@ Advies: ja. Het hoort bij hoe de automaat werkt, en er komt geen naam, handle of
 Er wordt niets weggehaald dat je nodig hebt: de pc houdt alles. Ik bouw de opruimstap pas na je ja.
 
 **3. Op tijd plaatsen.**
-GitHub start de automaat te laat; meer starts inplannen hielp maar half.
+De automaat plaatst te laat; meer starts inplannen hielp maar half. Vanavond kwam de video van 16:00 pas om 21:09. Eva kijkt eerst in de lijst met runs wat daar gebeurde (A3): ligt het aan iets in de run zelf en niet aan de klok van GitHub, dan gaat dat voor en vervalt deze vraag.
 - *Een week proberen: elke tien minuten, en Eva drukt op de plaatstijden op de knop* **(advies)**
 - *Alleen elke tien minuten, en afwachten*
 - *Meteen een klok bij Google onder je eigen account* (vraagt één nieuwe sleutel)
@@ -316,6 +323,8 @@ Voor account 3 hetzelfde met `--account account-3`. Voor Manon: kanaal 1 mag ook
 4. **Het paneel voor kanaal 2 en account 3:** leest het de planning van de automaat ook voor die accounts? Zo niet, dan zetten Finn en Koen "instagram ingepland" op hun kaart; het commando zegt welke regel.
 5. **De regel "geen @" en "geen domeinnaam"** zoals ik hem heb uitgelegd (hoe-vragen 1 en 2).
 6. **De tak `manon/cron-1200-1600`** vervalt hiermee.
+7. **De lijst met runs van do 19 nov, 16:00 tot 21:10** (A3). Ik kan hem niet zien. Wat daar staat, zegt of de klok van GitHub het probleem is (geen runs), of iets in de run zelf (één lange run, of rode runs). In het tweede geval helpt de wekker van besluit 3 niet en moet eerst die oorzaak weg.
+8. **`status.json` op `main` noemt nu het accountnummer van @ygdigital.nl** in de foutmelding (sinds 13 nov). Dat nummer staat ook in `LEESMIJ.md` (stap 4 en 5), dus het is geen nieuw lek. De nieuwe versie laat een accountnummer toch overal weg, voor elk account (getoetst); bij de eerste run op `main` wordt `status.json` opnieuw geschreven, zonder nummer.
 
 ---
 
@@ -340,6 +349,7 @@ Opgehaald op do 19 nov 2026, tenzij anders vermeld.
 - Grenzen van een repo: https://docs.github.com/en/repositories/creating-and-managing-repositories/repository-limits
 - Releases: https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases
 - Geplande workflows (het deel over `schedule`): https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows
+- De opbouw van een workflow (`timeout-minutes`, standaard 360; wat er met een wachtende run gebeurt): https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax
 - Kosten van Actions: https://docs.github.com/en/billing/concepts/product-billing/github-actions
 - Forum, geplande runs die uren te laat komen (ervaringen van gebruikers, juli 2026): https://github.com/orgs/community/discussions/201738
 - Voorwaarden voor Actions en Pages (versie van 27 aug 2026): https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features

@@ -102,6 +102,11 @@ async function recenteMedia(igId, token) {
 }
 function plaats(wat, igId, token, urls, tekst, extra) {
   const a = account(igId, token, wat);
+  if (a.stopBij && urls.some(u => u.includes(a.stopBij))) {   // de run wordt hier afgebroken, zoals bij de tijdsgrens van de workflow
+    log({ wat: 'afgebroken', account: a.naam, urls });
+    process.kill(process.pid, 'SIGKILL');
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 10000);
+  }
   const f = (a.faal || []).find(x => urls.some(u => u.includes(x.bevat)));
   log({ wat, account: a.naam, urls, tekst, ...extra, mislukt: !!f });
   if (f) throw new Error(vul(f.melding, a));
@@ -410,6 +415,28 @@ async function deelPlaatsen() {
     gelijk([r5.code, r5.plaatsingen.map(p => p.mislukt)], [0, [false]], 'vijfde run lukt');
     const s5 = lees(map, 'status.json');
     gelijk([s5.stand, s5.accounts['kanaal-2'].stand, s5.accounts['kanaal-2'].mislukt], ['in orde', 'in orde', undefined], 'stand na herstel');
+  });
+
+  await toets('een run die halverwege wordt afgebroken (de tijdsgrens): wat al geplaatst is staat heel in gedaan.json, de volgende start plaatst alleen de rest', () => {
+    const m = amsterdam(4);
+    const planning = [reelK1('YS60', m), reelAnder('kanaal-2', 'k2', 'K2-A01', m), reelAnder('account-3', 'k3', 'G21', m)];
+    const accounts = { ...NEP, 'kanaal-2': { ...NEP['kanaal-2'], stopBij: 'K2-A01' } };
+    const map = zandbak('afgebroken', { planning, accounts });
+    const r = draai(map, geheimen(VIER));
+    waar(r.code !== 0, 'de run is afgebroken, dus geen nette afsluiting\n' + r.uit);
+    gelijk(r.plaatsingen.map(p => p.account), ['kanaal-1'], 'vóór het afbreken is alleen kanaal 1 geplaatst');
+    waar(r.aanroepen.some(a => a.wat === 'afgebroken' && a.account === 'kanaal-2'), 'afgebroken tijdens de post van kanaal 2');
+    gelijk(lees(map, 'gedaan.json').items.map(i => i.id), [`${m.datum}-k1-ys60`], 'gedaan.json is heel en bevat wat al geplaatst is');
+    gelijk(fs.readdirSync(map).filter(f => f.endsWith('.tmp')), [], 'geen half geschreven bestand');
+
+    // de volgende start: kanaal 1 niet nog eens, de twee andere wel
+    fs.writeFileSync(path.join(map, 'scenario.json'), JSON.stringify({ accounts: NEP }));
+    const r2 = draai(map, geheimen(VIER));
+    gelijk(r2.code, 0, 'de volgende start is groen\n' + r2.uit);
+    gelijk(r2.plaatsingen.map(p => p.account), ['kanaal-2', 'account-3'], 'alleen wat nog niet geplaatst was');
+    gelijk(lees(map, 'gedaan.json').items.map(i => i.id), [`${m.datum}-k1-ys60`, `${m.datum}-k2-k2-a01`, `${m.datum}-k3-g21`], 'alles staat er nu precies één keer in');
+    gelijk(fs.readdirSync(map).filter(f => f.endsWith('.tmp')), [], 'ook na een gewone run blijft er geen hulpbestand achter');
+    geenLek(alleUitvoer(map, r) + alleUitvoer(map, r2));
   });
 
   await toets('het slot tegen dubbel plaatsen werkt per account', () => {
@@ -1198,6 +1225,25 @@ async function deelWorkflow() {
     const volgorde = ['Plaatsen wat aan de beurt is', 'Bijhouden wat geplaatst is', 'Waarschuwen als een sleutel niet meer werkt of bijna verloopt'].map(n => y.indexOf(`- name: ${n}`));
     waar(volgorde[0] < volgorde[1] && volgorde[1] < volgorde[2], 'eerst plaatsen, dan het logboek bewaren, dan pas melden');
     bevatNiet(stap('Bijhouden wat geplaatst is').script, '${{', 'de stap die het logboek bewaart gebruikt geen ingevulde waarden');
+  });
+
+  await toets('een run die blijft hangen houdt de volgende starts niet urenlang tegen: een tijdsgrens op de job en een kortere op het plaatsen', () => {
+    const y = WORKFLOW();
+    const job = /^jobs:\n  plaatsen:\n(?:    .*\n|\s*\n)*?    timeout-minutes: (\d+)\s*\n/m.exec(y);
+    waar(job, 'de job heeft geen timeout-minutes (de standaard van GitHub is zes uur, en er draait nooit meer dan één run)');
+    const grens = s => { const k = s.kop.find(x => x.startsWith('timeout-minutes:')); return k ? Number(k.split(':')[1]) : null; };
+    const plaats = grens(stap('Plaatsen wat aan de beurt is')), proef = grens(stap('Proef met een video (er wordt niets geplaatst)'));
+    waar(Number.isInteger(plaats) && plaats >= 15 && plaats < Number(job[1]), `het plaatsen heeft een eigen grens, korter dan die van de job: ${plaats} tegen ${job[1]}`);
+    waar(Number.isInteger(proef) && proef < Number(job[1]), 'de proef heeft een eigen grens, korter dan die van de job');
+    waar(Number(job[1]) <= 60, 'de job stopt binnen het uur');
+    // Het logboek bewaren mag nooit klappen: geen eigen grens. Het draait ook als het plaatsen op zijn grens is gestopt.
+    for (const naam of ['Bijhouden wat geplaatst is', 'Waarschuwen als een sleutel niet meer werkt of bijna verloopt']) {
+      gelijk(grens(stap(naam)), null, `"${naam}" heeft geen eigen grens`);
+      waar(stap(naam).kop.includes('if: always()'), `"${naam}" draait ook na een gestopte stap`);
+    }
+    const py = spawnSync('python3', ['-c', 'import sys, json, yaml\nd = yaml.safe_load(open(sys.argv[1], encoding="utf-8"))\nj = d["jobs"]["plaatsen"]\nprint(json.dumps([j.get("timeout-minutes")] + [s.get("timeout-minutes") for s in j["steps"]]))', path.join(WORTEL, '.github', 'workflows', 'plaatsen.yml')], { encoding: 'utf8' });
+    if (py.status !== 0) { console.log('        (de vergelijking met een YAML-lezer is overgeslagen: python3 met yaml is hier niet beschikbaar)'); return; }
+    gelijk(JSON.parse(py.stdout), [Number(job[1]), null, null, plaats, proef, null, null], 'de grenzen zoals een YAML-lezer ze ziet: job, ophalen, node, plaatsen, proef, bewaren, melden');
   });
 
   await toets('de stappen die hier worden gedraaid zijn letterlijk de stappen uit plaatsen.yml (vergeleken met een YAML-lezer)', () => {

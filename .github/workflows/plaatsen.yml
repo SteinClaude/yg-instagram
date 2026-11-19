@@ -43,6 +43,10 @@ concurrency:
 jobs:
   plaatsen:
     runs-on: ubuntu-latest
+    # Er draait nooit meer dan één run tegelijk (concurrency hierboven). Een run die blijft hangen, houdt
+    # dus elke volgende start tegen, voor alle accounts. Zonder grens kan dat zes uur duren (de standaard
+    # van GitHub). Een gewone run is in een paar minuten klaar.
+    timeout-minutes: 45
     steps:
       # Alleen wat de automaat nodig heeft: de bestanden in de hoofdmap (planning.json, gedaan.json,
       # sleutel.json, status.json) en src/. De video's en pakketten (ruim 2 GB) haalt hij niet op;
@@ -56,8 +60,12 @@ jobs:
         with:
           node-version: '22'
 
+      # De grens op deze stap is korter dan die van de job: loopt hij vast, dan stopt alleen deze stap en
+      # bewaart de stap "Bijhouden wat geplaatst is" daarna gewoon wat er al geplaatst is. Het script legt
+      # elke post meteen vast, dus wat nog niet aan de beurt kwam, gaat met de volgende start mee.
       - name: Plaatsen wat aan de beurt is
         if: github.event.inputs.proefvideo == ''
+        timeout-minutes: 30
         env:
           # Per account twee geheimen: de sleutel en het accountnummer. Leeg = dat account doet niet mee
           # en zijn items wachten. Welke namen bij welk account horen, staat in src/accounts.cjs.
@@ -79,6 +87,7 @@ jobs:
       # reel klaar bij Instagram zonder te publiceren, om te zien of hij geaccepteerd wordt.
       - name: Proef met een video (er wordt niets geplaatst)
         if: github.event.inputs.proefvideo != ''
+        timeout-minutes: 15
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}

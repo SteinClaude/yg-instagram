@@ -103,6 +103,14 @@ function leesJson(bestand) {
   try { return { bestaat: true, ok: true, data: JSON.parse(fs.readFileSync(bestand, 'utf8')) }; }
   catch (e) { return { bestaat: true, ok: false, fout: e.message }; }
 }
+// Schrijven in twee stappen: eerst naast het bestand, dan in één keer op zijn plek. Wordt de run midden in het
+// schrijven afgebroken (de tijdsgrens in de workflow, of een annulering), dan staat er het oude bestand of het
+// nieuwe, nooit een half. Een half gedaan.json zou het plaatsen stilleggen tot iemand het herstelt.
+function schrijf(bestand, tekst) {
+  const naast = `${bestand}.tmp`;
+  fs.writeFileSync(naast, tekst);
+  fs.renameSync(naast, bestand);
+}
 
 // Klopt een item uit planning.json genoeg om het te mogen plaatsen? Geeft de reden terug, of null.
 // Zonder deze controle telde een tijd als "18.00" als "nu aan de beurt" en ging het item er meteen uit.
@@ -177,7 +185,7 @@ function bewaarStatus(open = {}, algemeen = null, extra = '') {
   const sinds = OUD.stand === top.stand && OUD.bericht === top.bericht && OUD.sinds ? OUD.sinds : moment;
   const tekst = JSON.stringify({ stand: top.stand, bericht: top.bericht, sinds, accounts }, null, 1);
   if (PROEF || tekst === geschreven) return;
-  fs.writeFileSync(STATUS, tekst);
+  schrijf(STATUS, tekst);
   geschreven = tekst;
   console.log(`Toestand: ${top.stand} — ${top.bericht}`);
 }
@@ -326,7 +334,7 @@ async function main() {
   const planning = p.data || { items: [] };
   const gedaan = g.data || { items: [] };
   const alGedaan = new Set(gedaan.items.map(i => i && i.id));
-  const bewaarGedaan = () => { if (!PROEF) fs.writeFileSync(GEDAAN, JSON.stringify(gedaan, null, 1)); };
+  const bewaarGedaan = () => { if (!PROEF) schrijf(GEDAAN, JSON.stringify(gedaan, null, 1)); };
 
   const nu = nuInAmsterdam();
   const nuMin = naarMinuten(nu.datum, nu.tijd);
@@ -549,7 +557,7 @@ function controleerSleutels(werkt) {
     }
   }
 
-  if (veranderd) fs.writeFileSync(SLEUTELBESTAND, JSON.stringify(alles, null, 1));
+  if (veranderd) schrijf(SLEUTELBESTAND, JSON.stringify(alles, null, 1));
   schrijfMeldingen();
 }
 

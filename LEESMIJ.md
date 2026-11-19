@@ -425,6 +425,11 @@ terug met `inplannen.cjs --intrekken`.
 **Groen, maar er verschijnt niets.** Kijk in de logs naar "Nu in Amsterdam";
 waarschijnlijk was er niets aan de beurt, of het stond al in `gedaan.json`.
 
+**Een post komt uren te laat.** Kijk in de lijst met runs (Actions → *Plaatsen op Instagram*) rond de
+plaatstijd. Staan er geen runs, dan heeft GitHub ze niet gestart; druk op *Run workflow*. Staat er één run
+die lang loopt, dan houdt die de rest tegen: er draait er nooit meer dan één. Zo'n run stopt vanzelf (het
+plaatsen na 30 minuten, de hele run na 45); wat al geplaatst is, wordt dan nog bewaard.
+
 **Alles moet stoppen.** Repo → Settings → Actions → *Disable actions*. Of
 verwijder de twee secrets; dan stopt het script met een nette melding.
 
