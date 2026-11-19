@@ -215,6 +215,9 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- do 19 nov 2026 19:43, aan Eva (door Eva in mijn opdracht gezet, `eva-automaat-3`): "laat jij dit uitzoeken en maken voor de automaat we gaan dit in orde maken voor yg-social zodat de agents de post kunnen inplannen voor alle kanalen" → Eva startte mij als deelagent; ik zoek uit en bouw op de tak `manon/automaat-alle-kanalen` dat de makers zelf hun posts inplannen, met één commando, alleen voor hun eigen account en alleen na een vastgelegde keuring. Niets naar main zonder de controle van Eva en zijn ja.
+- do 19 nov 2026 ±19:32, knop, op de vraag van Eva "[…] Voor kanaal 2 en account 3 werkt hij nog niet. Wil je dat hij daar ook Instagram gaat doen?" (door Eva in mijn opdracht gezet, `eva-automaat-1`): "Ja, kanaal 2 en account 3 (Recommended)" → de automaat krijgt kanaal 2 en account 3 erbij, naast @ygdigital.nl en kanaal 1.
+- Zijn vaste wens, za 14 nov 2026 14:03 (over het paneel, geldt hier ook): "maak het ook zo dat als er toekomstige kanalen komen dat dit ook makelijk toe te voegen is […] perfectie en geen fouten" → één tabel met accounts; een volgend account is één regel plus twee geheimen.
 - wo 18 nov 2026 ±21:16, in de sessie, op "Zal ik met die 576 tekens ook YS49 (kapperspaal) maken?": "Nee, bewaren" → de laatste 576 stemtekens tot 14 dec blijven over; YS49 niet maken.
 - wo 18 nov 2026 ±16:59, in de sessie, op de vraag wat ik doe met YS48–YS51 en YL02 nu er nog 818 stemtekens zijn: "Eén short van 818 (Recommended)" → alleen YS48 (flamingo’s, ma 23 nov 20:00), onder de 818 tekens; de rest wacht tot 14 dec of meer tegoed.
 - wo 18 nov 2026 ±14:31, in de sessie, op "Zal ik met het stemtegoed YS48–YS51 voor 20:00 en YL02 voor 16:00 maken?": "Ja, maak ze" → ik maak YS48–YS51 (20:00, ma 23 t/m do 26 nov) en YL02 (16:00, vr 20 nov) binnen het stemtegoed tot 14 dec. Geldt niet als pakket OK.

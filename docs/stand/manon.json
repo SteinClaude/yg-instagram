@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-18T21:16:00+01:00",
+  "tijd": "2026-11-19T20:18:00+01:00",
   "sessie": {
-    "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
-    "plek": "pc",
-    "sinds": "2026-11-18T12:09:00+01:00"
+    "id": "019pEAmihggBZjJoDAjxGAfM (deelagent van Eva)",
+    "plek": "deelagent",
+    "sinds": "2026-11-19T19:49:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-18T18:13:00+01:00 Pakket YS48 gemaakt (flamingo’s, 41,4 s, stijl 3 met watermerk; bronnen Smithsonian’s National Zoo en San Diego Zoo; 606 stemtekens, ElevenLabs-teller wo 18 nov 21:15: 39.424 van 40.000, 576 over tot 14 dec; YS48 kostte op de teller 242, minder dan de 606 tekens van de tekst). Overgang naar scène 5 zonder \"zweep\": resvg liep daar vast. Met Instagram-versie, bijschriften TikTok/Snapchat en kaart met vraag om pakket OK en bijschrift OK.",
     "2026-11-18T17:40:00+01:00 YL01 ingepland in YouTube Studio (kanaal 1 nagekeken: avatar vraagteken, nieuwste short de tennisballen). Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 19 november 2026 om 16:00\"; lijst Shorts: Gepland 19 nov 2026. Instagram staat al voor dezelfde tijd. YS46 en YS47 niet meer gelukt binnen 17:00–17:45 (begon om 17:37): do 19 nov 17:00.",
@@ -135,8 +135,8 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
-  "volgende": "Do 19 nov 17:00 (Studio): YS46 en YS47 inplannen, YS48 erbij als er een OK is; daarna 18:00-shorts naar 12:00. Vanavond met Andries: TikTok en Snapchat (bio v2), vastzetten op Instagram. Stemtegoed (576 tekens) bewaren, niets inspreken; na 14 dec (nieuw tegoed): YS49–YS51 en YL02 uit docs/bronnen-voorraad.md.",
+  "bezig": "De automaat voor alle kanalen (eva-automaat-3, eva-automaat-1): uitzoeken en bouwen op tak manon/automaat-alle-kanalen, als deelagent van Eva. Niets op main, niets live.",
+  "volgende": "Deelagent: uitzoeken (docs/automaat-alle-kanalen.md), tabel met accounts, stand per account, commando voor de makers, workflow, toetsen; daarna KLAAR voor de controle van Eva. · Pc-sessie (ongewijzigd): Do 19 nov 17:00 (Studio): YS46 en YS47 inplannen, YS48 erbij als er een OK is; daarna 18:00-shorts naar 12:00. Vanavond met Andries: TikTok en Snapchat (bio v2), vastzetten op Instagram. Stemtegoed (576 tekens) bewaren, niets inspreken; na 14 dec (nieuw tegoed): YS49–YS51 en YL02 uit docs/bronnen-voorraad.md.",
   "kanNietVerder": null,
   "vragen": [
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
@@ -144,6 +144,9 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-19T20:18:00+01:00 Andries via Eva (in mijn opdracht, eva-automaat-3), do 19 nov 2026 19:43 aan Eva: \"laat jij dit uitzoeken en maken voor de automaat we gaan dit in orde maken voor yg-social zodat de agents de post kunnen inplannen voor alle kanalen\"",
+    "2026-11-19T20:18:00+01:00 Andries via Eva (in mijn opdracht, eva-automaat-1), do 19 nov 2026 ±19:32 (knop), op de vraag van Eva \"[…] Voor kanaal 2 en account 3 werkt hij nog niet. Wil je dat hij daar ook Instagram gaat doen?\": \"Ja, kanaal 2 en account 3 (Recommended)\"",
+    "2026-11-19T20:18:00+01:00 Eva startte mij als deelagent in haar sessie, in een eigen werkkopie op de tak manon/automaat-alle-kanalen (opdracht eva-automaat-3, do 19 nov 19:48).",
     "2026-11-18T21:16:00+01:00 Andries in de sessie, op \"Zal ik met die 576 tekens ook YS49 (kapperspaal) maken?\": \"Nee, bewaren\"",
     "2026-11-18T17:40:00+01:00 YouTube Studio (Chrome van Andries, kanaal 1): YL01 geüpload en ingepland voor do 19 nov 2026 16:00.",
     "2026-11-18T16:59:00+01:00 Andries in de sessie, op de vraag wat ik doe met YS48–YS51 en YL02 nu er 818 stemtekens over zijn: \"Eén short van 818 (Recommended)\"",
@@ -787,6 +790,16 @@
   ],
   "ontvangen": [
     {
+      "id": "eva-automaat-3",
+      "van": "Eva",
+      "stand": "loopt: als deelagent van Eva op tak manon/automaat-alle-kanalen; de makers plannen zelf in met één commando"
+    },
+    {
+      "id": "eva-automaat-1",
+      "van": "Eva",
+      "stand": "loopt: kanaal 2 en account 3 erbij, stand per account, omvang van de repo uitzoeken (doel bijgesteld door eva-automaat-3)"
+    },
+    {
       "id": "jesse-12",
       "van": "Jesse via Eva",
       "wat": "Voorraad nieuwe reeks: YS43–YS47 maken voor één week voorraad, ter keuring",
@@ -868,6 +881,8 @@
     "elevenlabs-tegoed",
     "paneel-kaarten",
     "youtube-studio-kanaal-1",
-    "tiktok-snapchat-voorraad"
+    "tiktok-snapchat-voorraad",
+    "automaat",
+    "status.json"
   ]
 }
