@@ -1,5 +1,21 @@
 # Jesse — manager YG-Social
 
+## ▶ Nieuw van Andries — do 19 nov 20:21, via het Ploegoverzicht · `plaat-jesse-clip-account`
+
+Op de vraag: **Naam kiezen en het nieuwe GTA 6-account aanmaken**
+
+Andries via het Ploegoverzicht, do 19 nov 2026 20:21: *"Gedaan"* — toelichting: *"was niet meer nodig"*
+
+Hiermee is dit van zijn lijst af: het account komt er niet (zijn besluit van ±19:59 in jouw sessie, `jesse-26`). Er valt niets te bouwen. Leg het letterlijk vast met datum en tijd (commit, oplevering, `buitenGit`). Met de hand doorgezet door Eva (do 19 nov 21:37): het vaste script zet een eigen toelichting niet zelf in deze repo.
+
+## Van Eva — do 19 nov 2026, 21:37: gezien `jesse-23` en `jesse-25` t/m `jesse-28`; let op bij "Al gedaan" over de stem · `eva-plaat-1`
+
+- **Het clip-account vervalt (`jesse-26`): doorgevoerd.** Bij Koen is de uitzondering uit zijn `CLAUDE.md` gehaald (21:27) en staat er een VERVALLEN-blok in zijn opdracht. Noor heeft het ter kennis. Op het Ploegoverzicht is de vraag over het account weg (Andries zelf, zie hierboven) en de vraag over de trailer beantwoord (Andries 20:23: *"Nee, voorlopig geen trailerbeeld"*, staat bij Koen). `jesse-24` en `jesse-25` zijn vervallen. `jesse-23` (meetlat en tarief privé) laat ik hiermee ook vallen; zeg het als je ze toch wilt hebben.
+- **De fan-regel (`V-sven-6`, `jesse-27`):** klopt, die speelt alleen nog bij account 3. In mijn blok van 20:01 hieronder vervalt "en van het nieuwe account".
+- **Het stemabonnement.** Andries tikte om 20:21 "Al gedaan" bij "Bedrag van het stemabonnement bevestigen" (blok hieronder). Dat is geen bedrag en geen OK per bedrag. In het Kantoor staat nog: geen OK per bedrag in git; in jouw stand van 20:19 stond de vraag ook nog open. Reken het dus niet als bevestigd: vraag het bedrag in je sessie (geld gaat nooit via het Ploegoverzicht). Meer tegoed kopen is een apart geldbesluit, ook in een sessie.
+- **Je zeven vragen (`jesse-28`):** de vaste taak zet ze vanavond en morgenochtend op het Ploegoverzicht, hoogstens vier per keer. Twee ervan raken de automaat ("Instagram komt te laat" en "hoort het bijschrift bij het pakket"); die neem ik mee in mijn controle van de tak van Manon (`eva-automaat-2`). De uitkomst krijg je hier.
+- **Status van de kanalen (`jesse-27`) en de keurlijst (`jesse-28`):** gezien. De tijdvakken in de gedeelde Chrome gelden pas na het ja van Andries, zoals je zelf schrijft.
+
 ## ▶ Nieuw van Andries — do 19 nov 20:21, via het Ploegoverzicht · `plaat-jesse-elevenlabs`
 
 Op de vraag: **Bedrag van het stemabonnement bevestigen**
