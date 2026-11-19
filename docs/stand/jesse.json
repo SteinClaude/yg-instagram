@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-19T19:59:00+01:00",
+  "tijd": "2026-11-19T20:01:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-19T19:30:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-19T20:01:00+01:00 Koen bevestigt: clip-account vervallen en voorbereiding gestopt; beleid van de uitgever door hem op de pagina zelf nagelezen, komt overeen (opdracht-clippen.md bijgewerkt)",
     "2026-11-19T19:59:00+01:00 Clip- en GTA 6-fanaccount vervallen (besluit Andries): beide opdrachten gemarkeerd als vervallen, Koen ingelicht, jesse-26",
     "2026-11-19T19:57:00+01:00 Overleg met Koen (2 rondes) vastgelegd in opdracht-clippen.md: zitting 19:00 voorgesteld, dag 1 zonder campagne, check commercieel gebruik op rood, YouTube-waarschuwingen kunnen andere kanalen raken",
     "2026-11-19T19:47:00+01:00 Takenverdeling clippen met Koen afgestemd (opdracht-clippen.md); risico commercieel gebruik gamebeeld als harde startvoorwaarde",
@@ -185,6 +186,10 @@
     {
       "tijd": "2026-11-19T19:59:00+01:00",
       "wat": "Bericht aan de sessie van Koen (cross-session): het extra kanaal vervalt, stop met de voorbereiding"
+    },
+    {
+      "tijd": "2026-11-19T20:01:00+01:00",
+      "wat": "Antwoord Koen (cross-session): gestopt met de voorbereiding, vastgelegd in zijn repo en gemeld als koen-45; beleidspagina van de uitgever zelf gelezen, tekst komt overeen; aandachtspunt account 3: het watermerk van YG Digital op een video met beeld van de uitgever kan als reclame gelezen worden (legt hij Andries voor)"
     }
   ],
   "voorEva": [

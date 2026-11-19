@@ -38,7 +38,7 @@ Andries vroeg ons samen te overleggen. Dit is waar we op uitkomen. De keuzes die
 
 ### ⚠ De check op commercieel gebruik staat op rood
 
-- **Beleid van de uitgever** (laatst bijgewerkt 10 jan 2025). De pagina zelf gaf vier keer een time-out; de zinnen hieronder komen uit zoekresultaten die de officiële pagina citeren. Koen legt de letterlijke tekst vast zodra hij de pagina in Chrome kan openen.
+- **Beleid van de uitgever** (laatst bijgewerkt 10 jan 2025). De pagina zelf gaf vier keer een time-out; de zinnen hieronder komen uit zoekresultaten die de officiële pagina citeren. **Bevestigd do 19 nov ±20:01:** Koen heeft de pagina zelf geopend (alleen lezen, niet ingelogd). De tekst komt overeen met de citaten hieronder, ook de datum en de zin over advertenties. Er staat ook dat het beleid bedoeld is voor incidenteel gebruik door individuele fans.
   - *"Non-commercial" means that you don't make money through the game footage you post or use the material as part of a promotion for a product or service.*
   - De uitgever heeft in het algemeen geen bezwaar tegen niet-commercieel gebruik dat het verhaal niet bewust verklapt.
   - De uitgever mag materiaal op elk moment laten weghalen.
@@ -92,7 +92,7 @@ Voorwaarde: Chrome staat open en niet geminimaliseerd. Alternatief bij 15 minute
 ### Bronnen van dit overleg
 
 - YouTube, auteursrechtwaarschuwingen: https://support.google.com/youtube/answer/2814000
-- Beleid van de uitgever: https://support.rockstargames.com/en-US/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material (niet zelf geopend; via zoekresultaten)
+- Beleid van de uitgever: https://support.rockstargames.com/en-US/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material (door Jesse via zoekresultaten; door Koen op de pagina zelf nagelezen, do 19 nov)
 
 ## Takenverdeling (overleg Jesse en Koen, do 19 nov 2026 ±19:47)
 
