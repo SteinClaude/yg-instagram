@@ -2,20 +2,17 @@ name: Plaatsen op Instagram
 
 on:
   schedule:
-    # Elk uur. De tijden in planning.json staan in Amsterdamse tijd;
-    # het script rekent dat zelf om, dus zomertijd maakt niet uit.
-    - cron: '5 * * * *'
-    # Extra starts rond de vaste plaatstijd van 18:00 Amsterdam (Andries, do 12 nov 2026 ±23:40:
-    # "A: extra starttijden"). GitHub sloeg de uurlijkse start 10–12 nov zo vaak over dat
-    # de Reels 3–5,5 uur te laat kwamen. Cron rekent in UTC: 17 UTC = 18 uur in de winter,
-    # 16 UTC = 18 uur in de zomer. Rustige minuten (niet :00), omdat GitHub het hele uur
-    # het drukst is. Een start zonder werk doet niets en maakt geen commit.
-    - cron: '3,13,23,34,44,53 16,17 * * *'
-    - cron: '9,27,48 18 * * *'
-    # Extra starts rond de tweede plaatstijd van 20:00 Amsterdam (de nieuwe shorts van kanaal 1,
-    # sinds zo 15 nov 2026). Zelfde opzet: 19 UTC = 20 uur in de winter, 18 UTC = 20 uur in de zomer.
-    - cron: '3,13,23,34,44,53 18,19 * * *'
-    - cron: '9,27,48 20 * * *'
+    # Elke tien minuten, op rustige minuten (niet op het hele uur: dan is GitHub het drukst).
+    # De tijden in planning.json staan in Amsterdamse tijd; het script rekent dat zelf om. Zomertijd
+    # maakt dus niet uit, en een account of een plaatstijd erbij vraagt hier geen nieuwe regel.
+    # Een start zonder werk doet niets en maakt geen commit.
+    #
+    # Waarom zo vaak: GitHub start geplande runs laat of slaat ze over (10-19 nov 2026: de Reels van
+    # kanaal 1 kwamen 5 minuten tot 5,5 uur te laat, ook met de extra starts rond 18:00 en 20:00 van
+    # 15 nov). Vaker starten mag (GitHub: kortste tussentijd 5 minuten) en kost in een openbare repo
+    # niets, maar het is geen garantie. Zie docs/automaat-alle-kanalen.md, "Op tijd plaatsen".
+    # Dit vervangt de losse regels per plaatstijd (18:00 en 20:00) en de tak manon/cron-1200-1600.
+    - cron: '3,13,23,33,43,53 * * * *'
   workflow_dispatch:          # knop om het met de hand te draaien
     inputs:
       proefvideo:
@@ -31,7 +28,7 @@ on:
         required: false
         default: ''
       proefaccount:
-        description: 'Proef: op welk account (ygdigital of kanaal-1)'
+        description: 'Proef: op welk account (ygdigital, kanaal-1, kanaal-2 of account-3; de namen uit src/accounts.cjs)'
         required: false
         default: 'ygdigital'
 
@@ -47,7 +44,13 @@ jobs:
   plaatsen:
     runs-on: ubuntu-latest
     steps:
+      # Alleen wat de automaat nodig heeft: de bestanden in de hoofdmap (planning.json, gedaan.json,
+      # sleutel.json, status.json) en src/. De video's en pakketten (ruim 2 GB) haalt hij niet op;
+      # Instagram haalt een video zelf op van het openbare adres.
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            src
 
       - uses: actions/setup-node@v4
         with:
@@ -56,11 +59,19 @@ jobs:
       - name: Plaatsen wat aan de beurt is
         if: github.event.inputs.proefvideo == ''
         env:
+          # Per account twee geheimen: de sleutel en het accountnummer. Leeg = dat account doet niet mee
+          # en zijn items wachten. Welke namen bij welk account horen, staat in src/accounts.cjs.
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
-          # tweede account: Instagram van kanaal 1 (YG-Social). Leeg = dat account doet niet mee.
           IG_TOKEN_K1: ${{ secrets.IG_TOKEN_K1 }}
           IG_USER_ID_K1: ${{ secrets.IG_USER_ID_K1 }}
+          IG_TOKEN_K2: ${{ secrets.IG_TOKEN_K2 }}
+          IG_USER_ID_K2: ${{ secrets.IG_USER_ID_K2 }}
+          IG_TOKEN_K3: ${{ secrets.IG_TOKEN_K3 }}
+          IG_USER_ID_K3: ${{ secrets.IG_USER_ID_K3 }}
+          # Alle geheimen van de repo in één keer. Zo werkt een account dat later in src/accounts.cjs
+          # bij komt zonder dat dit bestand verandert; het script kiest op naam en toont er nooit een.
+          IG_GEHEIMEN: ${{ toJSON(secrets) }}
           REPO_RAW: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
         run: node src/plaatsen.cjs
 
@@ -71,9 +82,13 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
-          # tweede account: Instagram van kanaal 1 (YG-Social). Leeg = dat account doet niet mee.
           IG_TOKEN_K1: ${{ secrets.IG_TOKEN_K1 }}
           IG_USER_ID_K1: ${{ secrets.IG_USER_ID_K1 }}
+          IG_TOKEN_K2: ${{ secrets.IG_TOKEN_K2 }}
+          IG_USER_ID_K2: ${{ secrets.IG_USER_ID_K2 }}
+          IG_TOKEN_K3: ${{ secrets.IG_TOKEN_K3 }}
+          IG_USER_ID_K3: ${{ secrets.IG_USER_ID_K3 }}
+          IG_GEHEIMEN: ${{ toJSON(secrets) }}
           REPO_RAW: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
           PROEF_VIDEO: ${{ github.event.inputs.proefvideo }}
           PROEF_OMSLAG: ${{ github.event.inputs.proefomslag }}
@@ -83,7 +98,7 @@ jobs:
 
       # Deze stap mag NOOIT klappen. Gebeurt dat toch, dan wordt gedaan.json niet
       # bewaard, denkt de volgende run dat er nog niets geplaatst is en gaat
-      # hetzelfde bericht er nog een keer uit - elk uur opnieuw. Dat is op
+      # hetzelfde bericht er nog een keer uit - elke run opnieuw. Dat is op
       # 15 september 2026 gebeurd: "git add sleutel.json" viel over een bestand
       # dat er niet altijd is, en twee items zijn zesmaal geplaatst.
       - name: Bijhouden wat geplaatst is
@@ -101,8 +116,8 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add $bestanden
           git commit -m "geplaatst op $(TZ=Europe/Amsterdam date '+%d-%m-%Y %H:%M')"
-          # opnieuw proberen als er ondertussen iets anders is gepusht
-          for poging in 1 2 3; do
+          # opnieuw proberen als er ondertussen iets anders is gepusht (een maker die inplant)
+          for poging in 1 2 3 4 5; do
             if git push; then exit 0; fi
             echo "push mislukt, poging $poging; eerst ophalen"
             git pull --rebase --autostash || true
@@ -110,15 +125,27 @@ jobs:
           done
           echo "kon het logboek niet wegschrijven; volgende run probeert het opnieuw"
 
-      - name: Waarschuwen als de sleutel bijna verloopt
+      # Per account een eigen melding (src/plaatsen.cjs zet per account een bestand klaar in
+      # waarschuwingen/; regel 1 is de titel). Zo blijft een waarschuwing voor het ene account
+      # niet hangen achter een melding van een ander account die nog open staat.
+      # Mislukt hier iets, dan heeft dat geen gevolgen: het logboek is hierboven al bewaard.
+      - name: Waarschuwen als een sleutel niet meer werkt of bijna verloopt
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if [ -f waarschuwing.txt ]; then
-            if [ -z "$(gh issue list --state open --search 'Sleutel vernieuwen in:title' --json number --jq '.[0].number')" ]; then
-              gh issue create --title "Sleutel vernieuwen" --body-file waarschuwing.txt
-            else
-              echo "melding staat al open"
+          shopt -s nullglob
+          for f in waarschuwingen/*.txt; do
+            titel="$(head -n 1 "$f")"
+            [ -n "$titel" ] || continue
+            tail -n +3 "$f" > "$RUNNER_TEMP/melding.txt"
+            if ! open="$(gh issue list --state open --limit 200 --json title --jq '.[].title')"; then
+              echo "kon de open meldingen niet opvragen; de volgende run probeert het opnieuw"
+              exit 0
             fi
-          fi
+            if printf '%s\n' "$open" | grep -Fxq -- "$titel"; then
+              echo "melding \"$titel\" staat al open"
+            else
+              gh issue create --title "$titel" --body-file "$RUNNER_TEMP/melding.txt" || echo "kon de melding \"$titel\" niet maken; de volgende run probeert het opnieuw"
+            fi
+          done

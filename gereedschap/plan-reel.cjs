@@ -25,6 +25,10 @@
 //   * alleen na "pakket OK <code>" én "bijschrift OK <code>" van Andries (C15), geciteerd in de commit.
 //   bv. node gereedschap/plan-reel.cjs --account kanaal-1 pakketten/2026-11-09-YS01-stopbord/instagram/reel.mp4 \
 //         pakketten/2026-11-09-YS01-stopbord/instagram/omslag.jpg pakketten/2026-11-09-YS01-stopbord/instagram/bijschrift.txt 2026-11-16 12:00 YS01 --proef
+//
+// Meer accounts (sinds 19 nov 2026): de accounts en de vorm van de codes staan in src/accounts.cjs. Voor kanaal 2 en
+// account 3 werkt dit gereedschap niet (hun video's staan niet in deze repo): die makers plannen in met
+// gereedschap/inplannen.cjs. Dat commando kijkt ook de keuring na (keuring.json) en kan ook voor kanaal 1.
 const fs = require('fs'), path = require('path'), crypto = require('crypto');
 const { execFileSync } = require('child_process');
 const sharp = require('sharp');
@@ -32,19 +36,24 @@ const sharp = require('sharp');
 const WORTEL = path.join(__dirname, '..');
 const stop = m => { console.error('STOP: ' + m); process.exit(1); };
 const GEBRUIK = 'gebruik: node gereedschap/plan-reel.cjs [--account kanaal-1] <video.mp4> <omslag.jpg> <bijschrift.txt> <jjjj-mm-dd> <uu:mm> <CODE, bv. R17 of YS01> [--omslag-ms 800] [--proef]';
-const ACCOUNTS = ['ygdigital', 'kanaal-1'];
+const T = require('../src/accounts.cjs');
+const HIER = [T.EERSTE, 'kanaal-1'];                       // de accounts waarvoor dit gereedschap kan inplannen
 const args = process.argv.slice(2), pos = [];
-let PROEF = false, OMSLAG_MS = 800, ACCOUNT = 'ygdigital';
+let PROEF = false, OMSLAG_MS = 800, ACCOUNT = T.EERSTE;
 for (let i = 0; i < args.length; i++) {
   if (args[i] === '--proef') PROEF = true;
-  else if (args[i] === '--account') { ACCOUNT = args[++i]; if (!ACCOUNTS.includes(ACCOUNT)) stop(`onbekend account "${ACCOUNT}"; kies uit ${ACCOUNTS.join(', ')}`); }
+  else if (args[i] === '--account') {
+    ACCOUNT = args[++i];
+    if (!T.zoek(ACCOUNT)) stop(`onbekend account "${ACCOUNT}"; kies uit ${T.namen().join(', ')}`);
+    if (!HIER.includes(ACCOUNT)) stop(`voor ${T.zoek(ACCOUNT).label} plan je in met gereedschap/inplannen.cjs (dit gereedschap is voor ${HIER.join(' en ')})`);
+  }
   else if (args[i] === '--omslag-ms') { if (!/^\d+$/.test(args[i + 1] || '')) stop('--omslag-ms vraagt een geheel aantal milliseconden'); OMSLAG_MS = Number(args[++i]); }
   else if (args[i].startsWith('--')) stop(`onbekende optie ${args[i]}\n${GEBRUIK}`);
   else pos.push(args[i]);
 }
 const [video, omslag, bijschrift, datum, tijd, code] = pos;
 const K1 = ACCOUNT === 'kanaal-1';
-if (pos.length !== 6 || !/^\d{4}-\d{2}-\d{2}$/.test(datum || '') || !/^\d{2}:\d{2}$/.test(tijd || '') || !(K1 ? /^Y[SL]\d{2}$/ : /^[A-Z]\d{2}$/).test(code || '')) stop(GEBRUIK);
+if (pos.length !== 6 || !/^\d{4}-\d{2}-\d{2}$/.test(datum || '') || !/^\d{2}:\d{2}$/.test(tijd || '') || !T.zoek(ACCOUNT).codes.test(code || '')) stop(GEBRUIK);
 for (const f of [video, omslag, bijschrift]) if (!fs.existsSync(f)) stop(`bestand niet gevonden: ${f}`);
 // kanaal 1: pad binnen de repo, onder pakketten/ (zo haalt de automaat het op via GitHub Pages)
 const inRepo = f => path.relative(WORTEL, path.resolve(f)).split(path.sep).join('/');
@@ -68,13 +77,13 @@ const sha = f => crypto.createHash('sha256').update(fs.readFileSync(f)).digest('
 (async () => {
   const lees = f => JSON.parse(fs.readFileSync(path.join(WORTEL, f), 'utf8'));
   const planning = lees('planning.json'), gedaan = lees('gedaan.json');
-  const id = K1 ? `${datum}-k1-${code.toLowerCase()}` : `${datum}-reel-${code.toLowerCase()}`;
-  const vanAccount = i => (i.account || 'ygdigital') === ACCOUNT;
+  const id = K1 ? T.itemId('kanaal-1', datum, code) : `${datum}-reel-${code.toLowerCase()}`;
+  const vanAccount = i => T.accountVan(i) === ACCOUNT;
   const REELS = path.join(WORTEL, 'beeld', 'reels');
   if ([...planning.items, ...gedaan.items].some(i => i.id === id)) stop(`id ${id} bestaat al`);
   if (planning.items.some(i => vanAccount(i) && i.datum === datum && i.tijd === tijd)) stop(`op ${datum} ${tijd} staat voor ${ACCOUNT} al iets gepland`);
   if (K1) {
-    const al = [...planning.items, ...gedaan.items].find(i => new RegExp(`-k1-${code.toLowerCase()}$`).test(i.id));
+    const al = [...planning.items, ...gedaan.items].find(i => T.idVanCode('kanaal-1', code)(i.id));
     if (al) stop(`${code} staat voor kanaal 1 al in planning of gedaan (${al.id})`);
   } else if (fs.readdirSync(REELS).some(f => f.startsWith(code + '.') || f.startsWith(code + '-'))) stop(`code ${code} is al in gebruik in beeld/reels`);
 

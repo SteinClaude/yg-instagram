@@ -11,6 +11,7 @@
 //                zandbak), met proefpakketten en proefvideo's die hier met ffmpeg worden gemaakt.
 //   * workflow   de stappen uit .github/workflows/plaatsen.yml die het logboek bewaren en meldingen maken,
 //                letterlijk uit het bestand gehaald en in de zandbak gedraaid (met een nagemaakte gh).
+//   * plangereedschap   plan-reel.cjs en plan-carrousel.cjs met de tabel (alleen als het pakket sharp er is: npm ci).
 // Er gaat niets naar Instagram of GitHub. Alles staat in een tijdelijke map die na afloop wordt weggehaald
 // (bewaren: zet YG_TOETS_BEWAAR=1).
 'use strict';
@@ -34,13 +35,15 @@ async function toets(naam, fn) {
   try { await fn(); uitslag.push({ deel: deelNu, naam, fout: null }); console.log(`  goed  ${naam}`); }
   catch (e) {
     uitslag.push({ deel: deelNu, naam, fout: e });
-    console.log(`  FOUT  ${naam}\n        ${String(e && e.stack ? e.stack : e).split('\n').slice(0, 12).join('\n        ')}`);
+    console.log(`  FOUT  ${naam}\n        ${String(e && e.stack ? e.stack : e).split('\n').slice(0, 30).join('\n        ')}`);
   }
 }
 const waar = (v, wat) => { if (!v) throw new Error(wat); };
 const gelijk = (kreeg, verwacht, wat) => {
   const x = JSON.stringify(kreeg), y = JSON.stringify(verwacht);
-  if (x !== y) throw new Error(`${wat}\n   verwacht: ${y}\n   kreeg:    ${x}`);
+  if (x === y) return;
+  const [kop, ...rest] = String(wat).split('\n');                 // eerst wat er afwijkt, dan pas de uitvoer die erbij hoort
+  throw new Error(`${kop}\n   verwacht: ${y}\n   kreeg:    ${x}${rest.length ? '\n' + rest.join('\n') : ''}`);
 };
 const bevat = (tekst, stuk, wat) => { if (!String(tekst).includes(stuk)) throw new Error(`${wat}: "${stuk}" staat er niet in\n${String(tekst).slice(0, 1500)}`); };
 const bevatNiet = (tekst, stuk, wat) => { if (String(tekst).includes(stuk)) throw new Error(`${wat}: "${stuk}" staat er wel in`); };
@@ -1099,8 +1102,283 @@ async function deelInplannen() {
 }
 
 // =================================================================================
+// De workflow. De twee stappen na het plaatsen (het logboek bewaren, meldingen maken) staan als tekst in
+// .github/workflows/plaatsen.yml; hier halen we ze er letterlijk uit en draaien we ze in de zandbak.
+const WORKFLOW = () => fs.readFileSync(path.join(WORTEL, '.github', 'workflows', 'plaatsen.yml'), 'utf8');
+function stap(naam) {
+  const regels = WORKFLOW().split('\n');
+  const begin = regels.findIndex(r => r.trim() === `- name: ${naam}`);
+  if (begin < 0) throw new Error(`stap "${naam}" staat niet in plaatsen.yml`);
+  let eind = regels.findIndex((r, i) => i > begin && /^\s*- (name|uses):/.test(r));
+  if (eind < 0) eind = regels.length;
+  const blok = regels.slice(begin, eind);
+  const r = blok.findIndex(x => /^\s*run: \|\s*$/.test(x));
+  const kop = (r < 0 ? blok : blok.slice(0, r)).map(x => x.trim());
+  let script = null;
+  if (r >= 0) {
+    // Het blok na "run: |": alle regels die dieper inspringen dan "run:". De eerste regel die dat niet doet
+    // (commentaar boven de volgende stap) hoort er niet meer bij.
+    const inspring = blok[r].match(/^\s*/)[0].length + 2, uit = [];
+    for (const x of blok.slice(r + 1)) {
+      if (x.trim() !== '' && x.match(/^\s*/)[0].length < inspring) break;
+      uit.push(x.slice(inspring));
+    }
+    while (uit.length && uit[uit.length - 1].trim() === '') uit.pop();
+    script = uit.join('\n') + '\n';
+  }
+  return { kop, script, tekst: blok.join('\n') };
+}
+const heeftBash = () => spawnSync('bash', ['--version'], { encoding: 'utf8' }).status === 0;
+// GitHub draait een stap zonder eigen "shell" als: bash -e <bestand>
+function draaiStap(script, map, env = {}) {
+  const f = path.join(TMP, `stap-${Math.random().toString(36).slice(2)}.sh`);
+  fs.writeFileSync(f, script);
+  const r = spawnSync('bash', ['-e', f], { cwd: map, env: { ...process.env, ...env }, encoding: 'utf8' });
+  return { code: r.status, uit: `${r.stdout}${r.stderr}` };
+}
+// Een werkmap zoals actions/checkout hem maakt met "sparse-checkout: src": ondiep, zonder inhoud van bestanden
+// die niet nodig zijn, alleen de hoofdmap en src/.
+function runnerKloon(a, naam) {
+  const map = path.join(a.basis, naam);
+  fs.mkdirSync(map);
+  git(map, ['init', '-q', '-b', 'main']);
+  git(map, ['remote', 'add', 'origin', a.url]);
+  git(map, ['-c', 'protocol.version=2', 'fetch', '-q', '--no-tags', '--prune', '--no-recurse-submodules', '--depth=1', '--filter=blob:none', 'origin', '+refs/heads/main:refs/remotes/origin/main']);
+  git(map, ['sparse-checkout', 'set', 'src']);
+  git(map, ['checkout', '-q', '--force', '-B', 'main', 'refs/remotes/origin/main']);
+  return map;
+}
+
+async function deelWorkflow() {
+  const T = require(path.join(WORTEL, 'src', 'accounts.cjs'));
+
+  await toets('plaatsen.yml: elke tien minuten, alle geheimen doorgegeven, de proefknop, en de twee stappen die altijd draaien', () => {
+    const y = WORKFLOW();
+    const crons = [...y.matchAll(/^\s*- cron: '([^']+)'\s*$/gm)].map(m => m[1]);
+    gelijk(crons.length, 1, 'één regel met starttijden');
+    const [min, uur, dag, maand, weekdag] = crons[0].split(' ');
+    gelijk([uur, dag, maand, weekdag], ['*', '*', '*', '*'], 'elk uur, elke dag');
+    const minuten = min.split(',').map(Number);
+    waar(minuten.length === 6 && minuten.every(m => Number.isInteger(m) && m > 0 && m < 60), 'zes starts per uur, niet op het hele uur: ' + min);
+    waar(minuten.every((m, i) => (i ? m - minuten[i - 1] : m + 60 - minuten[minuten.length - 1]) >= 5), 'nooit korter dan 5 minuten na elkaar (de grens van GitHub)');
+    const plaats = stap('Plaatsen wat aan de beurt is'), proef = stap('Proef met een video (er wordt niets geplaatst)');
+    for (const st of [plaats, proef]) {
+      for (const acc of T.ACCOUNTS) for (const g of [acc.geheim, acc.geheimId]) waar(st.kop.includes(`${g}: \${{ secrets.${g} }}`), `${g} wordt niet doorgegeven`);
+      waar(st.kop.includes('IG_GEHEIMEN: ${{ toJSON(secrets) }}'), 'IG_GEHEIMEN (alle geheimen, voor een account dat er later bij komt) ontbreekt');
+      waar(st.kop.some(k => k.startsWith('REPO_RAW: https://raw.githubusercontent.com/${{ github.repository }}/')), 'REPO_RAW ontbreekt');
+    }
+    waar(plaats.kop.includes("if: github.event.inputs.proefvideo == ''") && proef.kop.includes("if: github.event.inputs.proefvideo != ''"), 'plaatsen en proef sluiten elkaar uit');
+    waar(plaats.tekst.includes('run: node src/plaatsen.cjs'), 'het script wordt gestart');
+    waar(proef.tekst.includes('${PROEF_ACCOUNT:+--account "$PROEF_ACCOUNT"}'), 'de proefknop geeft het account door');
+    for (const acc of T.ACCOUNTS) waar(new RegExp(`proefaccount:[\\s\\S]{0,200}${acc.naam}`).test(y), `de proefknop noemt ${acc.naam} niet`);
+    for (const naam of ['Bijhouden wat geplaatst is', 'Waarschuwen als een sleutel niet meer werkt of bijna verloopt']) waar(stap(naam).kop.includes('if: always()'), `"${naam}" moet altijd draaien`);
+    waar(/concurrency:\s*\n\s*group: plaatsen\s/.test(y) && /cancel-in-progress: false/.test(y), 'nooit twee runs tegelijk');
+    waar(/- uses: actions\/checkout@v4\s*\n\s*with:\s*\n\s*sparse-checkout: \|\s*\n\s*src\s*\n/.test(y), 'alleen de hoofdmap en src/ ophalen');
+    const volgorde = ['Plaatsen wat aan de beurt is', 'Bijhouden wat geplaatst is', 'Waarschuwen als een sleutel niet meer werkt of bijna verloopt'].map(n => y.indexOf(`- name: ${n}`));
+    waar(volgorde[0] < volgorde[1] && volgorde[1] < volgorde[2], 'eerst plaatsen, dan het logboek bewaren, dan pas melden');
+    bevatNiet(stap('Bijhouden wat geplaatst is').script, '${{', 'de stap die het logboek bewaart gebruikt geen ingevulde waarden');
+  });
+
+  await toets('de stappen die hier worden gedraaid zijn letterlijk de stappen uit plaatsen.yml (vergeleken met een YAML-lezer)', () => {
+    const py = spawnSync('python3', ['-c', 'import sys, json, yaml\nd = yaml.safe_load(open(sys.argv[1], encoding="utf-8"))\nprint(json.dumps({s["name"]: s.get("run") for j in d["jobs"].values() for s in j["steps"] if "name" in s}))', path.join(WORTEL, '.github', 'workflows', 'plaatsen.yml')], { encoding: 'utf8' });
+    if (py.status !== 0) { console.log('        (overgeslagen: python3 met yaml is hier niet beschikbaar)'); return; }
+    const echt = JSON.parse(py.stdout);
+    for (const naam of ['Bijhouden wat geplaatst is', 'Waarschuwen als een sleutel niet meer werkt of bijna verloopt']) gelijk(stap(naam).script, echt[naam], `de stap "${naam}"`);
+    gelijk(Object.keys(echt), ['Plaatsen wat aan de beurt is', 'Proef met een video (er wordt niets geplaatst)', 'Bijhouden wat geplaatst is', 'Waarschuwen als een sleutel niet meer werkt of bijna verloopt'], 'de stappen van de workflow, in volgorde');
+  });
+
+  if (!heeftBash()) { console.log('        (de stappen zelf zijn niet gedraaid: bash ontbreekt op deze computer)'); return; }
+
+  await toets('het logboek bewaren: niets nieuws = geen commit; een wijziging wordt vastgelegd, ook in de zuinige werkmap', () => {
+    const groot = Buffer.alloc(300 * 1024, 7);
+    const a = nepAutomaat('bijhouden', { planning: [reelK1('YS50', amsterdam(5))], bestanden: { 'src/plaatsen.cjs': '// script\n', 'pakketten/2026-12-15-YS50-proef/video.mp4': groot, 'status.json': '{"stand":"in orde"}' } });
+    const script = stap('Bijhouden wat geplaatst is').script;
+    const run = runnerKloon(a, 'runner-1');
+    waar(bestaat(path.join(run, 'gedaan.json')) && bestaat(path.join(run, 'planning.json')) && bestaat(path.join(run, 'src', 'plaatsen.cjs')), 'de hoofdmap en src/ zijn er');
+    waar(!bestaat(path.join(run, 'pakketten')) && !bestaat(path.join(run, 'gereedschap')), 'de pakketten en het gereedschap worden niet opgehaald');
+    const voor = kopVan(a);
+    const r0 = draaiStap(script, run);
+    gelijk(r0.code, 0, 'zonder wijziging\n' + r0.uit); bevat(r0.uit, 'niets nieuws om te bewaren', 'melding'); gelijk(kopVan(a), voor, 'geen commit');
+    // de automaat plaatste iets: gedaan.json en status.json veranderen, sleutel.json is er (nog) niet
+    fs.writeFileSync(path.join(run, 'gedaan.json'), JSON.stringify({ items: [{ id: 'x', wanneer: '2026-11-19 20:00', resultaat: 'geplaatst', mediaId: '1' }] }, null, 1));
+    fs.writeFileSync(path.join(run, 'status.json'), '{"stand":"in orde","bericht":"nieuw"}');
+    waar(!bestaat(path.join(run, 'sleutel.json')), 'sleutel.json ontbreekt in deze proef (de fout van 15 september)');
+    const r1 = draaiStap(script, run);
+    gelijk(r1.code, 0, 'met wijziging\n' + r1.uit);
+    gelijk(gewijzigdIn(a), ['M gedaan.json', 'M status.json'], 'vastgelegd op GitHub');
+    bevat(gitRuw(a.origin, ['log', '-1', '--format=%an|%s', 'main']), 'YG plaatser|geplaatst op ', 'de commit van de automaat');
+    gelijk(JSON.parse(gitRuw(a.origin, ['show', 'main:gedaan.json'])).items[0].id, 'x', 'het logboek staat er');
+    waar(lijstOp(a).includes('pakketten/2026-12-15-YS50-proef/video.mp4'), 'wat niet was opgehaald, staat er nog gewoon');
+    gelijk(draaiStap(script, run).uit.includes('niets nieuws om te bewaren'), true, 'daarna weer niets nieuws');
+  });
+
+  await toets('het logboek bewaren terwijl een maker net iets vastlegde: ophalen, opnieuw proberen, niets kwijt', () => {
+    const a = nepAutomaat('bijhouden-race', { bestanden: { 'src/plaatsen.cjs': '// script\n' } });
+    const script = stap('Bijhouden wat geplaatst is').script;
+    const run = runnerKloon(a, 'runner-2');
+    // intussen plant een maker iets in (met het echte commando): planning.json, een video en een omslag erbij
+    maakPakket(a, 'K2-H01');
+    gelijk(plan(a, argumenten(a, 'kanaal-2', 'K2-H01')).code, 0, 'de maker plant in');
+    fs.writeFileSync(path.join(run, 'gedaan.json'), JSON.stringify({ items: [{ id: 'y', wanneer: '2026-11-19 20:10', resultaat: 'geplaatst', mediaId: '2' }] }, null, 1));
+    fs.writeFileSync(path.join(run, 'sleutel.json'), '{"afdruk":"abc","sinds":"2026-11-19"}');
+    const r = draaiStap(script, run);
+    gelijk(r.code, 0, 'afsluitcode\n' + r.uit);
+    bevat(r.uit, 'push mislukt, poging 1; eerst ophalen', 'de eerste poging botst');
+    gelijk(aantalCommits(a), 3, 'begin, de maker, de automaat');
+    gelijk(JSON.parse(gitRuw(a.origin, ['show', 'main:gedaan.json'])).items[0].id, 'y', 'het logboek staat er');
+    gelijk(planningOp(a).items.map(i => i.id), [`${MORGEN()}-k2-k2-h01`], 'het item van de maker staat er ook nog');
+    waar(lijstOp(a).includes('beeld/kanaal-2/K2-H01.mp4') && lijstOp(a).includes('sleutel.json'), 'de video van de maker en de sleutelteller staan er');
+    gelijk(git(a.origin, ['rev-list', '--merges', '--count', 'main']), '0', 'geen merge-commit');
+  });
+
+  await toets('het logboek bewaren klapt nooit: ook als GitHub onbereikbaar is, eindigt de stap goed', () => {
+    const a = nepAutomaat('bijhouden-stuk', { bestanden: { 'src/plaatsen.cjs': '// script\n' } });
+    const script = stap('Bijhouden wat geplaatst is').script;
+    const run = runnerKloon(a, 'runner-3');
+    fs.writeFileSync(path.join(run, 'gedaan.json'), JSON.stringify({ items: [{ id: 'z' }] }));
+    git(run, ['remote', 'set-url', 'origin', 'file://' + path.join(a.basis, 'bestaat-niet.git').split(path.sep).join('/')]);
+    const r = draaiStap(script.replace(/sleep 3/g, 'sleep 0'), run);
+    gelijk(r.code, 0, 'afsluitcode\n' + r.uit);
+    bevat(r.uit, 'kon het logboek niet wegschrijven; volgende run probeert het opnieuw', 'melding');
+    gelijk((r.uit.match(/push mislukt, poging/g) || []).length, 5, 'vijf pogingen');
+  });
+
+  await toets('meldingen: per account één, met de juiste titel en tekst; wat al open staat komt er niet nog eens', () => {
+    const map = path.join(TMP, 'melden'), bak = path.join(map, 'bin');
+    fs.mkdirSync(path.join(map, 'waarschuwingen'), { recursive: true }); fs.mkdirSync(bak);
+    fs.writeFileSync(path.join(bak, 'gh'), `#!/usr/bin/env bash
+echo "gh $*" >> "$NEP_GH_LOG"
+if [ "$1 $2" = "issue list" ]; then
+  if [ -n "$NEP_GH_FAAL_LIJST" ]; then echo "HTTP 502" >&2; exit 1; fi
+  [ -f "$NEP_GH_OPEN" ] && cat "$NEP_GH_OPEN"
+  exit 0
+fi
+if [ "$1 $2" = "issue create" ]; then
+  shift 2; titel=""; tekst=""
+  while [ $# -gt 0 ]; do case "$1" in --title) titel="$2"; shift 2;; --body-file) tekst="$2"; shift 2;; *) shift;; esac; done
+  if [ -n "$NEP_GH_FAAL_MAAK" ]; then echo "maken mislukt" >&2; exit 1; fi
+  echo "$titel" >> "$NEP_GH_OPEN"; { echo "== $titel"; cat "$tekst"; } >> "$NEP_GH_GEMAAKT"
+  exit 0
+fi
+exit 1
+`, { mode: 0o755 });
+    const script = stap('Waarschuwen als een sleutel niet meer werkt of bijna verloopt').script;
+    const env = { PATH: `${bak}${path.delimiter}${process.env.PATH}`, RUNNER_TEMP: map, GH_TOKEN: 'nep', NEP_GH_LOG: path.join(map, 'gh.log'), NEP_GH_OPEN: path.join(map, 'open.txt'), NEP_GH_GEMAAKT: path.join(map, 'gemaakt.txt') };
+    const opnieuw = () => { for (const f of ['gh.log', 'open.txt', 'gemaakt.txt']) fs.rmSync(path.join(map, f), { force: true }); };
+    const gemaakt = () => bestaat(env.NEP_GH_GEMAAKT) ? fs.readFileSync(env.NEP_GH_GEMAAKT, 'utf8') : '';
+    const titels = () => gemaakt().split('\n').filter(r => r.startsWith('== ')).map(r => r.slice(3));
+    // zonder map met meldingen: niets doen, gh niet eens aanroepen
+    fs.rmSync(path.join(map, 'waarschuwingen'), { recursive: true });
+    const r0 = draaiStap(script, map, env);
+    gelijk([r0.code, bestaat(env.NEP_GH_LOG)], [0, false], 'zonder meldingen\n' + r0.uit);
+    // de bestanden zoals src/plaatsen.cjs ze schrijft
+    fs.mkdirSync(path.join(map, 'waarschuwingen'));
+    fs.writeFileSync(path.join(map, 'waarschuwingen', 'ygdigital.txt'), 'Sleutel vernieuwen\n\nDe Instagram-sleutel van @ygdigital.nl werkt niet meer.\n\nTweede alinea.\n');
+    fs.writeFileSync(path.join(map, 'waarschuwingen', 'kanaal-2.txt'), 'Sleutel vernieuwen: kanaal 2\n\nDe Instagram-sleutel van kanaal 2 verloopt over ongeveer 5 dagen.\n');
+    const r1 = draaiStap(script, map, env);
+    gelijk(r1.code, 0, 'eerste keer\n' + r1.uit);
+    gelijk(titels().sort(), ['Sleutel vernieuwen', 'Sleutel vernieuwen: kanaal 2'], 'twee meldingen');
+    bevat(gemaakt(), '== Sleutel vernieuwen\nDe Instagram-sleutel van @ygdigital.nl werkt niet meer.\n\nTweede alinea.\n', 'de tekst zonder de titelregel');
+    const r2 = draaiStap(script, map, env);
+    gelijk([r2.code, titels().length], [0, 2], 'tweede keer: niets erbij'); bevat(r2.uit, 'staat al open', 'melding');
+    // precies de titel telt: een open melding van het ene account houdt die van het andere niet tegen
+    opnieuw(); fs.writeFileSync(env.NEP_GH_OPEN, 'Sleutel vernieuwen\nIets anders\n');
+    draaiStap(script, map, env);
+    gelijk(titels(), ['Sleutel vernieuwen: kanaal 2'], 'alleen kanaal 2 erbij');
+    opnieuw(); fs.writeFileSync(env.NEP_GH_OPEN, 'Sleutel vernieuwen: kanaal 2\n');
+    draaiStap(script, map, env);
+    gelijk(titels(), ['Sleutel vernieuwen'], 'alleen het eerste account erbij');
+    // gh doet het niet: de stap eindigt goed en maakt niets dubbel
+    opnieuw();
+    const r3 = draaiStap(script, map, { ...env, NEP_GH_FAAL_LIJST: '1' });
+    gelijk([r3.code, titels().length], [0, 0], 'de lijst opvragen mislukt\n' + r3.uit);
+    const r4 = draaiStap(script, map, { ...env, NEP_GH_FAAL_MAAK: '1' });
+    gelijk([r4.code, titels().length], [0, 0], 'een melding maken mislukt\n' + r4.uit);
+  });
+}
+
+// =================================================================================
+// De oude plan-gereedschappen (plan-reel.cjs, plan-carrousel.cjs) met de tabel. Ze vragen het pakket "sharp";
+// is dat niet geïnstalleerd (npm ci), dan slaan we dit deel over.
+async function deelPlangereedschap() {
+  let heeftSharp = true;
+  try { require.resolve('sharp', { paths: [WORTEL] }); } catch { heeftSharp = false; }
+  if (!heeftSharp) { console.log('        (overgeslagen: het pakket sharp is niet geïnstalleerd; draai eerst npm ci)'); return; }
+  try { maakMedia(); } catch (e) { await toets('ffmpeg maakt de proefvideo\'s', () => { throw new Error('ffmpeg ontbreekt: ' + e.message); }); return; }
+  const env = { ...process.env, NODE_PATH: path.join(WORTEL, 'node_modules') };
+  const pakket = 'pakketten/2026-12-20-YS60-proef';
+  function werkmap(naam, planning = []) {
+    const map = path.join(TMP, naam);
+    for (const d of ['gereedschap', 'src', 'mini', 'beeld/reels', 'beeld/berichten/nl', `${pakket}/instagram`, 'carrousel']) fs.mkdirSync(path.join(map, d), { recursive: true });
+    for (const f of ['gereedschap/plan-reel.cjs', 'gereedschap/plan-carrousel.cjs', 'src/accounts.cjs']) fs.copyFileSync(path.join(WORTEL, ...f.split('/')), path.join(map, ...f.split('/')));
+    fs.writeFileSync(path.join(map, 'planning.json'), JSON.stringify({ tijdzone: 'Europe/Amsterdam', gemaakt: '2026-09-20', items: planning }, null, 2) + '\n');
+    fs.writeFileSync(path.join(map, 'gedaan.json'), JSON.stringify({ items: [] }, null, 1));
+    fs.copyFileSync(media('goed.mp4'), path.join(map, pakket, 'instagram', 'reel.mp4'));
+    fs.copyFileSync(media('omslag.jpg'), path.join(map, pakket, 'instagram', 'omslag.jpg'));
+    fs.writeFileSync(path.join(map, pakket, 'instagram', 'bijschrift.txt'), 'Why is this a test?\n\nBecause.\n\n#test');
+    return map;
+  }
+  const reel = (map, args) => { const r = spawnSync(process.execPath, [path.join(map, 'gereedschap', 'plan-reel.cjs'), ...args], { cwd: map, env, encoding: 'utf8' }); return { code: r.status, uit: `${r.stdout}${r.stderr}` }; };
+  const k1 = (...extra) => ['--account', 'kanaal-1', `${pakket}/instagram/reel.mp4`, `${pakket}/instagram/omslag.jpg`, `${pakket}/instagram/bijschrift.txt`, MORGEN(), '20:00', 'YS60', '--omslag-ms', '2100', ...extra];
+
+  await toets('plan-reel.cjs werkt voor @ygdigital.nl en kanaal 1 zoals het deed, en verwijst kanaal 2 en account 3 naar inplannen.cjs', () => {
+    const map = werkmap('plan-reel');
+    const voor = fs.readFileSync(path.join(map, 'planning.json'), 'utf8');
+    const proef = reel(map, k1('--proef'));
+    gelijk(proef.code, 0, 'proef kanaal 1\n' + proef.uit);
+    bevat(proef.uit, `item ${MORGEN()}-k1-ys60 (kanaal-1)`, 'het item');
+    gelijk(fs.readFileSync(path.join(map, 'planning.json'), 'utf8'), voor, 'proef schrijft niets');
+    const echt = reel(map, k1());
+    gelijk(echt.code, 0, 'kanaal 1\n' + echt.uit);
+    const item = lees(map, 'planning.json').items[0];
+    gelijk(item, { id: `${MORGEN()}-k1-ys60`, datum: MORGEN(), tijd: '20:00', soort: 'bericht', taal: 'en', account: 'kanaal-1', beeld: [`${pakket}/instagram/reel.mp4`], omslag: `${pakket}/instagram/omslag.jpg`, omslagMs: 2100,
+      titel: 'Kanaal 1 YS60: Why is this a test?', tekst: 'Why is this a test?\n\nBecause.\n\n#test', inhaaluren: 18, eenmalig: true }, 'het item van kanaal 1');
+    waar(bestaat(path.join(map, 'mini', 'pakketten-2026-12-20-YS60-proef-instagram-omslag.jpg')), 'het kleintje');
+    const dubbel = reel(map, k1());
+    gelijk(dubbel.code, 1, 'nog een keer'); bevat(dubbel.uit, 'bestaat al', 'dubbel');
+    const yg = reel(map, [`${pakket}/instagram/reel.mp4`, `${pakket}/instagram/omslag.jpg`, `${pakket}/instagram/bijschrift.txt`, MORGEN(), '20:00', 'R99']);
+    gelijk(yg.code, 0, '@ygdigital.nl op hetzelfde moment als kanaal 1\n' + yg.uit);
+    const r99 = lees(map, 'planning.json').items.find(i => i.id === `${MORGEN()}-reel-r99`);
+    gelijk([r99.account, r99.beeld, r99.omslag, r99.taal], [undefined, ['reels/R99.mp4'], 'reels/R99.jpg', 'nl'], 'het item van @ygdigital.nl heeft geen "account"');
+    waar(bestaat(path.join(map, 'beeld', 'reels', 'R99.mp4')), 'de video staat in beeld/reels');
+    for (const [acc, code] of [['kanaal-2', 'K2-W06'], ['account-3', 'G11']]) {
+      const r = reel(map, ['--account', acc, `${pakket}/instagram/reel.mp4`, `${pakket}/instagram/omslag.jpg`, `${pakket}/instagram/bijschrift.txt`, MORGEN(), '21:00', code]);
+      gelijk(r.code, 1, acc); bevat(r.uit, 'plan je in met gereedschap/inplannen.cjs', acc);
+    }
+    const onbekend = reel(map, ['--account', 'kanaal-9', 'a', 'b', 'c', MORGEN(), '21:00', 'YS61']);
+    gelijk(onbekend.code, 1, 'onbekend account'); bevat(onbekend.uit, 'kies uit ygdigital, kanaal-1, kanaal-2, account-3', 'onbekend account');
+    const fouteCode = reel(map, ['--account', 'kanaal-1', `${pakket}/instagram/reel.mp4`, `${pakket}/instagram/omslag.jpg`, `${pakket}/instagram/bijschrift.txt`, MORGEN(), '21:00', 'G11']);
+    gelijk(fouteCode.code, 1, 'een code van een ander account');
+
+    // inplannen.cjs maakt voor hetzelfde pakket precies hetzelfde item
+    const a = nepAutomaat('plan-reel-gelijk', { bestanden: { [`${pakket}/instagram/reel.mp4`]: media('goed.mp4'), [`${pakket}/instagram/omslag.jpg`]: media('omslag.jpg') } });
+    const pm = path.join(a.pc, ...pakket.split('/'));
+    fs.writeFileSync(path.join(pm, 'pakket.json'), JSON.stringify({ code: 'YS60', titel: 'Proef' }));
+    fs.writeFileSync(path.join(pm, 'keuring.json'), JSON.stringify({ code: 'YS60', besluiten: [besluit('pakket', 'ok', 'Beide OK YS60', 60), besluit('bijschrift', 'ok', 'Beide OK YS60', 60)] }));
+    fs.writeFileSync(path.join(pm, 'instagram', 'bijschrift.txt'), 'Why is this a test?\n\nBecause.\n\n#test');
+    const r = plan(a, ['--account', 'kanaal-1', '--pakket', pm, '--video', path.join(pm, 'instagram', 'reel.mp4'), '--omslag', path.join(pm, 'instagram', 'omslag.jpg'), '--bijschrift', path.join(pm, 'instagram', 'bijschrift.txt'), '--datum', MORGEN(), '--tijd', '20:00', '--omslag-ms', '2100']);
+    gelijk(r.code, 0, 'inplannen.cjs\n' + r.uit);
+    gelijk(planningOp(a).items[0], item, 'inplannen.cjs en plan-reel.cjs maken hetzelfde item');
+  });
+
+  await toets('plan-carrousel.cjs: een ander account op hetzelfde moment zit niet in de weg, het eigen account wel', () => {
+    const m = MORGEN();
+    const map = werkmap('plan-carrousel', [reelK1('YS50', { datum: m, tijd: '19:00' })]);
+    const ff = args => execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...args], { stdio: ['ignore', 'pipe', 'pipe'] });
+    for (const n of [1, 2]) ff(['-f', 'lavfi', '-i', 'testsrc2=size=1080x1350:rate=1', '-frames:v', '1', '-q:v', '6', path.join(map, 'carrousel', `plaat-${n}.jpg`)]);
+    fs.writeFileSync(path.join(map, 'carrousel', 'bijschrift.txt'), 'Een carrousel.\n\n#toets');
+    const car = (tijd, code) => { const r = spawnSync(process.execPath, [path.join(map, 'gereedschap', 'plan-carrousel.cjs'), 'carrousel', m, tijd, code], { cwd: map, env, encoding: 'utf8' }); return { code: r.status, uit: `${r.stdout}${r.stderr}` }; };
+    const r1 = car('19:00', 'K90');
+    gelijk(r1.code, 0, 'zelfde moment als kanaal 1\n' + r1.uit);
+    gelijk(lees(map, 'planning.json').items.map(i => [i.id, i.account]), [[`${m}-k1-ys50`, 'kanaal-1'], [`${m}-bericht-k90`, undefined]], 'beide staan erin');
+    const r2 = car('19:00', 'K91');
+    gelijk(r2.code, 1, 'het eigen account op hetzelfde moment'); bevat(r2.uit, 'staat voor @ygdigital.nl al iets gepland', 'melding');
+  });
+}
+
+// =================================================================================
 (async () => {
-  const delen = [['plaatsen', deelPlaatsen], ['inplannen', deelInplannen]];
+  const delen = [['plaatsen', deelPlaatsen], ['inplannen', deelInplannen], ['workflow', deelWorkflow], ['plangereedschap', deelPlangereedschap]];
   for (const [naam, fn] of delen) {
     if (!doetMee(naam)) continue;
     deelNu = naam;
