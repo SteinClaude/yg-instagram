@@ -1,13 +1,19 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-19T20:18:00+01:00",
+  "tijd": "2026-11-19T21:22:00+01:00",
   "sessie": {
     "id": "019pEAmihggBZjJoDAjxGAfM (deelagent van Eva)",
     "plek": "deelagent",
     "sinds": "2026-11-19T19:49:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-19T21:22:00+01:00 Tijdsgrens op de run (45 minuten, het plaatsen 30, de proef 15) zodat één hangende run de volgende starts niet urenlang tegenhoudt; gedaan.json, status.json en sleutel.json worden in twee stappen geschreven (nooit een half bestand); de meting van vanavond in het stuk (video van 16:00 en short van 20:00 samen om 21:09). Toetsen: 48 goed, 0 fout. Tak manon/automaat-alle-kanalen, niets op main · 1ce974d",
+    "2026-11-19T21:22:00+01:00 Het stuk docs/automaat-alle-kanalen.md (uitzoekwerk met bronnen: omvang en waar de video's staan, grenzen van Instagram, op tijd plaatsen, YouTube via de Data API; wat gebouwd en getoetst is; volgorde van invoeren; vijf besluiten voor Andries; voorstel voor de regel voor de makers), LEESMIJ.md (\"Meer accounts\", \"Inplannen door de maker\"), gereedschap/omvang.cjs (meet de omvang, leest alleen) · e1342a2",
+    "2026-11-19T21:22:00+01:00 Workflow voor alle accounts: geheimen van kanaal 2 en account 3, de proefknop voor elk account, elke tien minuten, zuinig ophalen (alleen hoofdmap en src), per account een eigen melding; plan-reel.cjs, plan-carrousel.cjs en controleer.cjs lezen de tabel · 66fc821",
+    "2026-11-19T21:22:00+01:00 gereedschap/inplannen.cjs: één commando waarmee een maker zijn eigen post inplant (keuring uit keuring.json, video, bijschrift, dubbel; legt alleen de eigen paden vast, rechtstreeks op de stand van GitHub; --proef en --intrekken) · cbabd73",
+    "2026-11-19T21:22:00+01:00 src/accounts.cjs (één tabel met accounts: @ygdigital.nl, kanaal 1, kanaal 2, account 3) en src/plaatsen.cjs per account (stand, sleutelteller, slot en melding per account; een fout raakt alleen het eigen account; nieuwe vorm van status.json met de drie oude velden bovenaan) · 5d08a2d",
+    "2026-11-19T21:22:00+01:00 Gestart als deelagent van Eva (eva-automaat-3, eva-automaat-1); de besluiten van Andries van do 19 nov ±19:32 en 19:43 vastgelegd · a268bd8",
     "2026-11-18T18:13:00+01:00 Pakket YS48 gemaakt (flamingo’s, 41,4 s, stijl 3 met watermerk; bronnen Smithsonian’s National Zoo en San Diego Zoo; 606 stemtekens, ElevenLabs-teller wo 18 nov 21:15: 39.424 van 40.000, 576 over tot 14 dec; YS48 kostte op de teller 242, minder dan de 606 tekens van de tekst). Overgang naar scène 5 zonder \"zweep\": resvg liep daar vast. Met Instagram-versie, bijschriften TikTok/Snapchat en kaart met vraag om pakket OK en bijschrift OK.",
     "2026-11-18T17:40:00+01:00 YL01 ingepland in YouTube Studio (kanaal 1 nagekeken: avatar vraagteken, nieuwste short de tennisballen). Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 19 november 2026 om 16:00\"; lijst Shorts: Gepland 19 nov 2026. Instagram staat al voor dezelfde tijd. YS46 en YS47 niet meer gelukt binnen 17:00–17:45 (begon om 17:37): do 19 nov 17:00.",
     "2026-11-18T14:36:00+01:00 Bronnen uitgezocht voor YL02 (schrikkeljaar) en vier shorts (kapperspaal, uien, flamingo’s, gele potloden) in docs/bronnen-voorraad.md. Niets ingesproken: ElevenLabs meldt 39.182 van 40.000 tekens gebruikt (818 over tot 14 dec).",
@@ -135,15 +141,71 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "De automaat voor alle kanalen (eva-automaat-3, eva-automaat-1): uitzoeken en bouwen op tak manon/automaat-alle-kanalen, als deelagent van Eva. Niets op main, niets live.",
-  "volgende": "Deelagent: uitzoeken (docs/automaat-alle-kanalen.md), tabel met accounts, stand per account, commando voor de makers, workflow, toetsen; daarna KLAAR voor de controle van Eva. · Pc-sessie (ongewijzigd): Do 19 nov 17:00 (Studio): YS46 en YS47 inplannen, YS48 erbij als er een OK is; daarna 18:00-shorts naar 12:00. Vanavond met Andries: TikTok en Snapchat (bio v2), vastzetten op Instagram. Stemtegoed (576 tekens) bewaren, niets inspreken; na 14 dec (nieuw tegoed): YS49–YS51 en YL02 uit docs/bronnen-voorraad.md.",
+  "bezig": "-",
+  "volgende": "Deelagent (automaat voor alle kanalen, tak manon/automaat-alle-kanalen): wacht op de controle van Eva en op de vijf besluiten van Andries in docs/automaat-alle-kanalen.md. Naar main pas na de controle van Eva en het ja van Andries (B30). Na zijn ja voor het opruimen bouw ik de opruimstap. · Pc-sessie: die werkte vanavond door op main; haar stand staat in docs/stand/manon.json op main en gaat bij het samenvoegen voor.",
   "kanNietVerder": null,
   "vragen": [
+    {
+      "vraag": "Automaat, besluit 1: mogen de Reels van kanaal 2 en account 3, net als die van kanaal 1, vóór het plaatsen al in de openbare map van de automaat staan (video, omslag en bijschrift; nooit een naam, handle of link)? (docs/automaat-alle-kanalen.md, \"Besluiten voor Andries\")",
+      "aan": "andries",
+      "keuzes": [
+        "Ja, zoals bij kanaal 1",
+        "Nee, eerst een andere plek voor de video's"
+      ],
+      "advies": "Ja. Instagram kan een video alleen van een openbaar adres ophalen, en het commando weigert namen, handles en links.",
+      "blokkeert": true
+    },
+    {
+      "vraag": "Automaat, besluit 2: mag de map van de automaat klein blijven met drie opruimregels? (docs/automaat-alle-kanalen.md, \"Besluiten voor Andries\")",
+      "aan": "andries",
+      "keuzes": [
+        "Ja, alle drie",
+        "Alleen de openbare site kleiner",
+        "Nu niets"
+      ],
+      "advies": "Ja, alle drie: alleen de Instagram-versie in de map, wat Instagram niet ophaalt niet meer op de openbare site, en een Instagram-versie zeven dagen na het plaatsen weg uit de werkmap. De pc houdt alles; ik bouw de opruimstap pas na je ja.",
+      "blokkeert": false
+    },
+    {
+      "vraag": "Automaat, besluit 3: de automaat plaatst vaak te laat (vanavond kwam de video van 16:00 om 21:09). Wat doen we? (docs/automaat-alle-kanalen.md, \"Besluiten voor Andries\")",
+      "aan": "andries",
+      "keuzes": [
+        "Een week proberen: elke tien minuten, en Eva drukt op de plaatstijden op de knop",
+        "Alleen elke tien minuten, en afwachten",
+        "Meteen een klok bij Google onder je eigen account",
+        "Laten zoals het is tot YG Flow het overneemt"
+      ],
+      "advies": "Een week proberen met de knop van Eva erbij, en dan meten. Eva kijkt eerst in de lijst met runs wat er vanavond gebeurde; ligt het aan de run zelf, dan gaat dat voor.",
+      "blokkeert": false
+    },
+    {
+      "vraag": "Automaat, besluit 4: hoeveel keer keur je een Reel van kanaal 2 of account 3 voor Instagram? (docs/automaat-alle-kanalen.md, \"Besluiten voor Andries\")",
+      "aan": "andries",
+      "keuzes": [
+        "Eén keer: je OK voor het pakket dekt ook het bijschrift voor Instagram",
+        "Twee keer, zoals bij kanaal 1: ook apart het bijschrift, per code"
+      ],
+      "advies": "Eén keer (zo staat het nu ingesteld). Het scheelt je klikken, en het commando weigert hoe dan ook een bijschrift met een naam, handle of link.",
+      "blokkeert": false
+    },
+    {
+      "vraag": "Automaat, besluit 5: één proef doen met een video als bijlage bij een release op GitHub? Dat is de enige weg die de map echt klein houdt zonder nieuwe repo. (docs/automaat-alle-kanalen.md, \"Besluiten voor Andries\")",
+      "aan": "andries",
+      "keuzes": [
+        "Ja, één proef; er wordt niets geplaatst",
+        "Niet nodig; over twee maanden opnieuw kijken"
+      ],
+      "advies": "Ja: vijf minuten in de browser en één druk op de proefknop. Dan weten we of Instagram zo'n adres aanneemt.",
+      "blokkeert": false
+    },
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-19T21:22:00+01:00 Deelagent: op main gelezen (git fetch, alleen lezen) dat de automaat om 21:09 de video van 16:00 (YL01) en de short van 20:00 (YS44) plaatste; tussen 16:00 en 21:05 stonden 32 starts gepland die niets plaatsten. De lijst met runs kon ik niet zien.",
+    "2026-11-19T21:22:00+01:00 Deelagent: webpagina's van GitHub, Meta en Google gelezen (alleen lezen; de adressen staan onderaan docs/automaat-alle-kanalen.md). Twee adressen waren vanuit de werkplek geblokkeerd (de openbare site en de lijst met runs); niet omzeild. Niets tegen Instagram of de GitHub-API gedraaid, de workflow niet gestart, geen geheim gevraagd of gezien.",
+    "2026-11-19T21:22:00+01:00 Deelagent: in de eigen werkkopie npm ci gedraaid (node_modules, niet in git) en proefbestanden in /tmp gemaakt. Nergens anders geschreven; de kloon van Eva en de andere mappen niet aangeraakt.",
     "2026-11-19T20:18:00+01:00 Andries via Eva (in mijn opdracht, eva-automaat-3), do 19 nov 2026 19:43 aan Eva: \"laat jij dit uitzoeken en maken voor de automaat we gaan dit in orde maken voor yg-social zodat de agents de post kunnen inplannen voor alle kanalen\"",
     "2026-11-19T20:18:00+01:00 Andries via Eva (in mijn opdracht, eva-automaat-1), do 19 nov 2026 ±19:32 (knop), op de vraag van Eva \"[…] Voor kanaal 2 en account 3 werkt hij nog niet. Wil je dat hij daar ook Instagram gaat doen?\": \"Ja, kanaal 2 en account 3 (Recommended)\"",
     "2026-11-19T20:18:00+01:00 Eva startte mij als deelagent in haar sessie, in een eigen werkkopie op de tak manon/automaat-alle-kanalen (opdracht eva-automaat-3, do 19 nov 19:48).",
@@ -671,6 +733,32 @@
   ],
   "voorEva": [
     {
+      "id": "V-manon-automaat-klaar",
+      "aan": "Eva",
+      "pad": "docs/automaat-alle-kanalen.md",
+      "wat": "De automaat voor alle kanalen is klaar voor je controle op tak manon/automaat-alle-kanalen (eva-automaat-3, eva-automaat-1). Niets op main, niets live, de workflow niet gestart. Toetsen: node gereedschap/toets-automaat.cjs → 48 goed, 0 fout (git, ffmpeg en bash nodig; npm ci alleen voor de laatste twee). Vooral nakijken: (1) src/plaatsen.cjs na een mislukte post (plaatsAlles): wachttijd per item van 10, 20, 40, 55 minuten, en latere items van hetzelfde account gaan door; dat is een bewuste verandering voor kanaal 1. (2) .github/workflows/plaatsen.yml: sparse-checkout src, IG_GEHEIMEN met toJSON(secrets), de tijdsgrenzen, de stap met meldingen per account; alleen als tekst en per stap getoetst, niet op GitHub. (3) De vorm van status.json: de drie velden bovenaan zijn gelijk, \"accounts\" is erbij; leest het paneel of het Kantoor dat bestand? (4) Mijn uitleg van \"geen @\" (een @naam wordt geweigerd, een los @ mag) en \"geen domeinnaam\" (alleen met --bron). (5) Kanaal 2 en account 3 vragen nu alleen de keuring \"pakket\" (besluit 4 voor Andries)."
+    },
+    {
+      "id": "V-manon-automaat-runs",
+      "aan": "Eva",
+      "wat": "Kijk in de lijst met runs van do 19 nov tussen 16:00 en 21:10 (Actions → Plaatsen op Instagram). Op main gingen de video van 16:00 en de short van 20:00 samen uit om 21:09; 32 geplande starts daartussen plaatsten niets. Ik kan die lijst niet zien. Staan er geen runs, dan start GitHub ze niet; staat er één lange run, dan hing die en hield hij de rest tegen (daarvoor staat nu een tijdsgrens op de tak); staan er rode runs, dan zegt het logboek waarom. De uitkomst bepaalt besluit 3 voor Andries."
+    },
+    {
+      "id": "V-manon-automaat-samenvoegen",
+      "aan": "Eva",
+      "wat": "Bij het samenvoegen naar main (pas na het ja van Andries): docs/stand/manon.json en de bovenste regels van docs/oplevering-manon.md botsen met de pc-sessie, die vanavond op main doorwerkte. Neem van die twee de versie van main en zet mijn regels erbij (ze noemen \"deelagent\" of \"automaat\"). Start de workflow niet vanaf de tak: die heeft een oud gedaan.json. Na het samenvoegen één keer met de hand starten op main en het logboek lezen (het stuk, \"Volgorde van invoeren\", stap 3). De tak manon/cron-1200-1600 vervalt: de regel van elke tien minuten dekt 12:00 en 16:00."
+    },
+    {
+      "id": "V-manon-automaat-makers",
+      "aan": "Eva → Finn, Koen en Jesse",
+      "wat": "Het voorstel voor de regel waarmee Finn en Koen zelf inplannen staat in docs/automaat-alle-kanalen.md (\"Voorstel: de regel voor de makers\"): alleen via inplannen.cjs, alleen het eigen account, pas na het pakket OK in keuring.json, eerst met --proef, geen naam, handle of link. Jij legt hem vast in hun regels; ik schrijf niet in hun repo en heb die niet gelezen. Vraag daarbij: leest het YG-Social-paneel de planning van de automaat ook voor kanaal-2 en account-3? Zo niet, dan zetten zij de regel voor Instagram zelf op hun kaart; het commando zegt welke."
+    },
+    {
+      "id": "V-manon-automaat-andries",
+      "aan": "Eva → Andries",
+      "wat": "Voor Andries, na zijn ja voor main: de lijst met verboden woorden buiten git zetten (2 minuten) en kanaal 2 koppelen (±15 minuten, met de proefknop), daarna account 3. De stappen staan in LEESMIJ.md, \"Meer accounts\". Geen sleutel delen met een crewlid."
+    },
+    {
       "id": "V-manon-elevenlabs-gedeeld",
       "aan": "Eva en Jesse",
       "wat": "Het ElevenLabs-tegoed (Starter, 40.000 tekens per periode tot 14 dec) wordt gedeeld. Ma 16 nov ±20:45 stond de teller op 33.826; wo 18 nov ±14:40 op 39.182 (+5.356). Daarvan is alleen YL01 (1.201) van mij (mijn logboek: gereedschap/short/elevenlabs.cjs verbruik). Er is dus ±4.150 gebruikt buiten kanaal 1 om, met dezelfde sleutel. Er is nu 818 over tot 14 dec. Graag nagaan wie het gebruikt (Finn? Koen?) en een verdeling per kanaal afspreken; geldbesluit (hoger abonnement) is aan Andries."
@@ -792,12 +880,12 @@
     {
       "id": "eva-automaat-3",
       "van": "Eva",
-      "stand": "loopt: als deelagent van Eva op tak manon/automaat-alle-kanalen; de makers plannen zelf in met één commando"
+      "stand": "klaar voor controle door Eva op tak manon/automaat-alle-kanalen · 1ce974d (do 19 nov): de makers plannen zelf in met één commando (gereedschap/inplannen.cjs); stuk in docs/automaat-alle-kanalen.md"
     },
     {
       "id": "eva-automaat-1",
       "van": "Eva",
-      "stand": "loopt: kanaal 2 en account 3 erbij, stand per account, omvang van de repo uitzoeken (doel bijgesteld door eva-automaat-3)"
+      "stand": "klaar voor controle door Eva op tak manon/automaat-alle-kanalen · 1ce974d (do 19 nov): kanaal 2 en account 3 in de tabel, stand per account, omvang uitgezocht met een opruimvoorstel (niets weggehaald)"
     },
     {
       "id": "jesse-12",

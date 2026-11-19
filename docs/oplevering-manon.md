@@ -1,3 +1,4 @@
+KLAAR: automaat voor alle kanalen klaar voor controle door Eva · 1ce974d · tak manon/automaat-alle-kanalen, niets op main, niets live; stuk in docs/automaat-alle-kanalen.md (uitzoekwerk met bronnen, vijf besluiten voor Andries); 48 toetsen goed, 0 fout; als deelagent van Eva (eva-automaat-3, eva-automaat-1) · do 19 nov 21:22
 KLAAR: pakket YS48 klaar ter keuring ("Why are flamingos pink?", 41,4 s; bedoeld voor ma 23 nov 20:00); pakket OK en bijschrift OK gevraagd; niets ingepland · wo 18 nov 18:13
 KLAAR: YL01 ingepland: YouTube Studio meldt "Video gepland", 19 november 2026 om 16:00 (lijst Shorts: Gepland); Instagram in planning.json voor do 19 nov 16:00. YS46 en YS47 morgen 17:00 (tijdvak te kort) · wo 18 nov 17:43
 KAN NIET VERDER: YS48–YS51 en YL02 inspreken · nodig: stemtegoed (818 tekens over tot 14 dec; ±4.150 sinds ma avond buiten kanaal 1 om gebruikt) — besluit van Andries (laatste 818 gebruiken, bewaren of hoger abonnement) · wo 18 nov 14:36
