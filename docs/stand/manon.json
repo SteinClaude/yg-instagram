@@ -147,7 +147,7 @@
   "vragen": [
     {
       "vraag": "Automaat, besluit 1: mogen de Reels van kanaal 2 en account 3, net als die van kanaal 1, vóór het plaatsen al in de openbare map van de automaat staan (video, omslag en bijschrift; nooit een naam, handle of link)? (docs/automaat-alle-kanalen.md, \"Besluiten voor Andries\")",
-      "aan": "andries",
+      "aan": "eva (do 19 nov 2026 21:49: Eva legt dit aan Andries voor; besluit 1 t/m 4 staan op het Ploegoverzicht, besluit 5 houdt zij vast)",
       "keuzes": [
         "Ja, zoals bij kanaal 1",
         "Nee, eerst een andere plek voor de video's"
@@ -157,7 +157,7 @@
     },
     {
       "vraag": "Automaat, besluit 2: mag de map van de automaat klein blijven met drie opruimregels? (docs/automaat-alle-kanalen.md, \"Besluiten voor Andries\")",
-      "aan": "andries",
+      "aan": "eva (do 19 nov 2026 21:49: Eva legt dit aan Andries voor; besluit 1 t/m 4 staan op het Ploegoverzicht, besluit 5 houdt zij vast)",
       "keuzes": [
         "Ja, alle drie",
         "Alleen de openbare site kleiner",
@@ -168,7 +168,7 @@
     },
     {
       "vraag": "Automaat, besluit 3: de automaat plaatst vaak te laat (vanavond kwam de video van 16:00 om 21:09). Wat doen we? (docs/automaat-alle-kanalen.md, \"Besluiten voor Andries\")",
-      "aan": "andries",
+      "aan": "eva (do 19 nov 2026 21:49: Eva legt dit aan Andries voor; besluit 1 t/m 4 staan op het Ploegoverzicht, besluit 5 houdt zij vast)",
       "keuzes": [
         "Een week proberen: elke tien minuten, en Eva drukt op de plaatstijden op de knop",
         "Alleen elke tien minuten, en afwachten",
@@ -180,7 +180,7 @@
     },
     {
       "vraag": "Automaat, besluit 4: hoeveel keer keur je een Reel van kanaal 2 of account 3 voor Instagram? (docs/automaat-alle-kanalen.md, \"Besluiten voor Andries\")",
-      "aan": "andries",
+      "aan": "eva (do 19 nov 2026 21:49: Eva legt dit aan Andries voor; besluit 1 t/m 4 staan op het Ploegoverzicht, besluit 5 houdt zij vast)",
       "keuzes": [
         "Eén keer: je OK voor het pakket dekt ook het bijschrift voor Instagram",
         "Twee keer, zoals bij kanaal 1: ook apart het bijschrift, per code"
@@ -190,7 +190,7 @@
     },
     {
       "vraag": "Automaat, besluit 5: één proef doen met een video als bijlage bij een release op GitHub? Dat is de enige weg die de map echt klein houdt zonder nieuwe repo. (docs/automaat-alle-kanalen.md, \"Besluiten voor Andries\")",
-      "aan": "andries",
+      "aan": "eva (do 19 nov 2026 21:49: Eva legt dit aan Andries voor; besluit 1 t/m 4 staan op het Ploegoverzicht, besluit 5 houdt zij vast)",
       "keuzes": [
         "Ja, één proef; er wordt niets geplaatst",
         "Niet nodig; over twee maanden opnieuw kijken"
