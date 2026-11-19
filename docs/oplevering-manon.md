@@ -1,3 +1,4 @@
+KLAAR: 3D-proef (de rechercheur loopt 5 s door het bureau, Blender, gratis CC0-figuur) en vergelijking AI-videodiensten; docs/waaromdorp/3d-proef.md · do 19 nov 21:15
 KLAAR: rechercheurs ontworpen (J, K, decor bureau; docs/waaromdorp/rechercheurs.jpg), ter keuring · do 19 nov 20:33
 KLAAR: ontwerp Waaromdorp ter keuring (3 nieuwe bewoners, 3 nieuwe decors, kaart van het dorp; docs/waaromdorp/LEESMIJ.md); stijl OK gevraagd · do 19 nov 20:21
 KLAAR: pakket YS48 klaar ter keuring ("Why are flamingos pink?", 41,4 s; bedoeld voor ma 23 nov 20:00); pakket OK en bijschrift OK gevraagd; niets ingepland · wo 18 nov 18:13

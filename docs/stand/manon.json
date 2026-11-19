@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-19T20:41:00+01:00",
+  "tijd": "2026-11-19T21:11:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-18T12:09:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-19T21:11:00+01:00 3D-proef in Blender gemaakt (de rechercheur loopt 5 s door het recherchebureau) en AI-videodiensten vergeleken; samenvatting zonder bedragen in docs/waaromdorp/3d-proef.md.",
     "2026-11-19T20:33:00+01:00 Rechercheurs getekend: J de rechercheur en K de collega (gereedschap/figuur.cjs), nieuw decor bureau (gereedschap/short/decor.cjs), bladen docs/figuur/ontwerp-J/K.jpg, ontwerpen-overzicht-rechercheurs.jpg en docs/waaromdorp/rechercheurs.jpg (in bureau, museum en tijdmachine). Ter keuring; niets in een video gebruikt.",
     "2026-11-19T20:21:00+01:00 Ontwerp Waaromdorp gemaakt (docs/waaromdorp/LEESMIJ.md): drie nieuwe bewoners (G Opa Klok met de tijdmachine, H Professor Globe van het museum, I Krantje met de vraag van de dag; gereedschap/figuur.cjs), drie nieuwe decors (plein, museum, tijdmachine; gereedschap/short/decor.cjs), bladen docs/figuur/ontwerp-G/H/I.jpg en ontwerpen-overzicht-waaromdorp.jpg, docs/waaromdorp/plekken.jpg en kaart.jpg (gereedschap/waaromdorp-blad.cjs). Niets in een video gebruikt; geen stemtekens.",
     "2026-11-18T18:13:00+01:00 Pakket YS48 gemaakt (flamingo’s, 41,4 s, stijl 3 met watermerk; bronnen Smithsonian’s National Zoo en San Diego Zoo; 606 stemtekens, ElevenLabs-teller wo 18 nov 21:15: 39.424 van 40.000, 576 over tot 14 dec; YS48 kostte op de teller 242, minder dan de 606 tekens van de tekst). Overgang naar scène 5 zonder \"zweep\": resvg liep daar vast. Met Instagram-versie, bijschriften TikTok/Snapchat en kaart met vraag om pakket OK en bijschrift OK.",
@@ -137,15 +138,17 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "3D-proef: Blender installeren (blender.org) en een proef van ±10 s (rechercheur loopt door het bureau); tegelijk AI-videodiensten en prijzen uitzoeken voor Andries.",
-  "volgende": "Antwoord van Andries op Waaromdorp (stijl OK, rol, proef); vr 20 nov 17:00 (Studio): YS46 en YS47 inplannen, YS48 na OK; daarna 18:00-shorts naar 12:00. TikTok en Snapchat (bio v2) en vastzetten op Instagram met Andries. Stemtegoed (576) bewaren.",
+  "bezig": "-",
+  "volgende": "Antwoord van Andries op de 3D-route. Vr 20 nov 17:00 (Studio): YS46 en YS47 inplannen, YS48 na OK; daarna 18:00-shorts naar 12:00. TikTok en Snapchat (bio v2) en vastzetten op Instagram met Andries. Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
+    "3D-proef: verder met AI-video (betaalde proef, Andries kiest dienst en bedrag en maakt het account), met Blender en betere figuren, of terug naar 2D? · aanname: niets betalen of aanmaken zonder zijn OK · blokkeert: ja, voor de nieuwe stijl",
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-19T20:45:00+01:00 Gedownload en geïnstalleerd (na \"Ja, installeer Blender\"): Blender 5.3.0 (download.blender.org, draagbare zip, sha256 klopt) in C:Usersgijsm\tools; via Chrome van Andries op itch.io de gratis CC0-pakketten Quaternius \"Universal Base Characters [Standard]\" en \"Universal Animation Library [Standard]\" (niets betaald; in zijn map Downloads en uitgepakt in toolsassets). 3D-proef op de pc in toolsproef3d (buiten de repo).",
     "2026-11-19T20:41:00+01:00 Andries in de sessie: \"ik wil ze echt 3d hebben en door het door zien lopen als of het echt lijkt maar niks is onmogelijk in de realiteit hierzo\"; op de vraag welke route: \"Allebei een proef\"; op de vraag of ik Blender (blender.org, gratis, ±350 MB) en gratis CC0-modellen mag downloaden en installeren: \"Ja, installeer Blender\"",
     "2026-11-19T20:35:00+01:00 Andries in de sessie, op \"Geef je stijl OK voor de rechercheurs, of moet er iets anders?\": \"Aanpassen\" (wat precies volgt)",
     "2026-11-19T20:35:00+01:00 Andries in de sessie, op de vier richtingen voor volwassen figuren: \"Rechercheurs (Recommended)\"",
@@ -883,6 +886,7 @@
     "elevenlabs-tegoed",
     "paneel-kaarten",
     "youtube-studio-kanaal-1",
-    "tiktok-snapchat-voorraad"
+    "tiktok-snapchat-voorraad",
+    "pc-software (Blender in tools)"
   ]
 }
