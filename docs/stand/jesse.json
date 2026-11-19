@@ -1,12 +1,12 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-19T19:57:00+01:00",
+  "tijd": "2026-11-19T19:59:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-19T19:30:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
     "2026-11-19T19:57:00+01:00 Overleg met Koen (2 rondes) vastgelegd in opdracht-clippen.md: zitting 19:00 voorgesteld, dag 1 zonder campagne, check commercieel gebruik op rood, YouTube-waarschuwingen kunnen andere kanalen raken",
     "2026-11-19T19:47:00+01:00 Takenverdeling clippen met Koen afgestemd (opdracht-clippen.md); risico commercieel gebruik gamebeeld als harde startvoorwaarde",
@@ -32,8 +32,8 @@
     "2026-11-13T12:20:00+01:00 Eerste keurlijst van de week: docs/keurlijst-week.md",
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
-  "bezig": "Keuzes na het overleg met Koen voorleggen aan Andries (gamebeeld in betaalde clips, zitting, Google-account)",
-  "volgende": "Antwoorden van Andries vastleggen en letterlijk aan Koen doorgeven; daarna status kanalen (eva-status-1); keurlijst vr 20 nov; uitkomst proef 2 ma 23 nov",
+  "bezig": null,
+  "volgende": "Open bij Andries in de sessie: gamebeeld in betaalde clips (A/B/C), zitting (19:00, duur, platforms), Google-account voor het YouTube-kanaal. Antwoorden vastleggen en letterlijk aan Koen doorgeven; daarna status kanalen (eva-status-1); keurlijst vr 20 nov; uitkomst proef 2 ma 23 nov",
   "kanNietVerder": null,
   "vragen": [],
   "buitenGit": [
