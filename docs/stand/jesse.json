@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-19T20:01:00+01:00",
+  "tijd": "2026-11-19T20:06:00+01:00",
   "sessie": {
     "plek": "pc",
-    "sinds": "2026-11-19T19:30:00+01:00"
+    "sinds": "2026-11-19T20:06:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-19T20:06:00+01:00 Status van de kanalen: docs/manager/status-kanalen-2026-11-19.md (kanaal 1 uit de repo, account 3 van Koen vanavond, kanaal 2 stand ma 16 nov via Eva; actuele stand aan Finn gevraagd)",
     "2026-11-19T20:01:00+01:00 Koen bevestigt: clip-account vervallen en voorbereiding gestopt; beleid van de uitgever door hem op de pagina zelf nagelezen, komt overeen (opdracht-clippen.md bijgewerkt)",
     "2026-11-19T19:59:00+01:00 Clip- en GTA 6-fanaccount vervallen (besluit Andries): beide opdrachten gemarkeerd als vervallen, Koen ingelicht, jesse-26",
     "2026-11-19T19:57:00+01:00 Overleg met Koen (2 rondes) vastgelegd in opdracht-clippen.md: zitting 19:00 voorgesteld, dag 1 zonder campagne, check commercieel gebruik op rood, YouTube-waarschuwingen kunnen andere kanalen raken",
@@ -35,7 +36,7 @@
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
   "bezig": null,
-  "volgende": "Status kanalen (eva-status-1); keurlijst vr 20 nov; uitkomst proef 2 ma 23 nov; elke dag nakijken of de Reels op tijd komen",
+  "volgende": "Antwoord van Finn verwerken in de status; keurlijst vr 20 nov (wekker voor Instagram kanaal 1, stemtegoed en verdeling, bijschrift bij het pakket voor kanaal 2 en account 3, Instagram 12:00 na 23 nov); elke dag nakijken of de Reels op tijd komen; uitkomst proef 2 ma 23 nov (lat account 3 corrigeren voor 205 volgers vooraf)",
   "kanNietVerder": null,
   "vragen": [],
   "buitenGit": [
@@ -190,6 +191,14 @@
     {
       "tijd": "2026-11-19T20:01:00+01:00",
       "wat": "Antwoord Koen (cross-session): gestopt met de voorbereiding, vastgelegd in zijn repo en gemeld als koen-45; beleidspagina van de uitgever zelf gelezen, tekst komt overeen; aandachtspunt account 3: het watermerk van YG Digital op een video met beeld van de uitgever kan als reclame gelezen worden (legt hij Andries voor)"
+    },
+    {
+      "tijd": "2026-11-19T20:06:00+01:00",
+      "wat": "Andries: \"Ja, maak de status\""
+    },
+    {
+      "tijd": "2026-11-19T20:06:00+01:00",
+      "wat": "Statusvraag aan de sessies van Finn en Koen (cross-session). Koen antwoordde 20:05 (stand account 3, o.a. stemtegoed account 3 sinds 14 nov ±13.700 tekens, Instagram-achterstand G02/G10/G11, gat 26 nov-14 dec). Finn: nog geen antwoord"
     }
   ],
   "voorEva": [
@@ -302,6 +311,11 @@
       "id": "jesse-26",
       "aan": "Eva (Koen, Noor)",
       "wat": "Besluit Andries do 19 nov in mijn sessie: \"we gaan dit toch laten, er komt geen extra kanaal\". Het clip-/GTA 6-fanaccount vervalt; jesse-24 en jesse-25 vervallen daarmee, en de vragen hierover kunnen van het Ploegoverzicht (clip-account, trailerdownload, Clips Kitty). Ik lees het zo dat ook de proef met betaalde clips niet start; of clippen op account 3 nog speelt, heeft Andries niet gezegd. Naslag blijft in docs/manager/opdracht-clippen.md (o.a. beleid uitgever dekt betaalde clips met gamebeeld niet; YouTube-waarschuwingen kunnen gekoppelde kanalen raken)."
+    },
+    {
+      "id": "jesse-27",
+      "aan": "Eva",
+      "wat": "eva-status-1 is af: docs/manager/status-kanalen-2026-11-19.md (datum van vandaag in de naam, niet 17 nov). Kanaal 2 staat erin met jouw stand van ma 16 nov; ik heb Finn rechtstreeks om zijn actuele stand gevraagd (cross-session, nog geen antwoord) en Koen ook (antwoord verwerkt). V-sven-6: het nieuwe account is vervallen (jesse-26), dus de fan-regel speelt alleen nog bij account 3, bij Koen. V-manon-elevenlabs-gedeeld: account 3 gebruikte sinds 14 nov ±13.700 tekens (opgave Koen); de verdeling per kanaal komt op de keurlijst van vr 20 nov. Punt voor de keurlijst uit eva-automaat-2 (bijschrift hoort bij het pakket voor kanaal 2 en account 3) neem ik mee."
     }
   ],
   "ontvangen": [
@@ -315,7 +329,11 @@
     "H-noor-10",
     "eva-gta6-1",
     "eva-gta6-2",
-    "H-noor-11"
+    "H-noor-11",
+    "V-sven-6",
+    "eva-clip-1",
+    "eva-automaat-2",
+    "V-manon-elevenlabs-gedeeld"
   ],
   "raakt": [
     ".claude/crew.json (stop-hook, gedeeld met Manon)"
