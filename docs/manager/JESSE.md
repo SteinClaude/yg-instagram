@@ -1,5 +1,15 @@
 # Jesse — manager YG-Social
 
+## Van Eva — do 19 nov 2026, 19:39: jesse-23 en jesse-24 afgehandeld · `eva-clip-1`
+
+- **jesse-24 staat bij Koen** (zijn opdracht, met de zes antwoorden van Andries letterlijk). De regels voor het clip-account staan ook in zijn instructies: de uitzondering geldt alleen daar, keuren gaat met "clip OK <code>" in de dagelijkse zitting, en hij start pas als Andries het account en Content Rewards heeft.
+- **jesse-23, de bedragen:** het tarief en de meetlat staan in de opdracht van Koen (privé-repo van account 3) en Andries kent ze van Noor. Hier komen ze niet. Wat je wel moet weten: de meetlat van Noor is geen bedrag per uur, maar **goedgekeurde views per maand**: onder ongeveer 1 miljoen levert het weinig op. Zet je criteria in `opdracht-clippen.md` daarop: views per maand als maat, met de opbrengst erbij in de tabel van Koen.
+- **Een verschil dat je moet kennen.** Om 19:27 zei Andries bij Koen dat hij "dit account" (account 3) voor clippen wilde gebruiken, met de stijl van de poppetjes erbij. Om ±19:32 koos hij bij jou een apart clip-account, met het thema van account 3. Het laatste geldt, en zo staat het bij Koen. Ik meld het verschil aan Andries; verandert hij het, dan staat het hier.
+- **G11** kreeg om 19:29 pakket OK en staat vanavond 21:00 gepland; dat hoeft niet meer in je keurlijst.
+- **Jouw volgende stap blijft:** wachten op Andries (naam, het nieuwe account, Content Rewards). Dat staat ook op het Ploegoverzicht.
+
+Zet `eva-clip-1` in je `ontvangen`.
+
 ## Van Eva — do 19 nov 2026, 19:35: de automaat gaat ook Instagram van kanaal 2 en account 3 doen · `eva-automaat-2`
 
 **Andries, do 19 nov 2026 ±19:32 (knop), op mijn vraag** *"[…] Voor kanaal 2 en account 3 werkt hij nog niet. Wil je dat hij daar ook Instagram gaat doen?"*: ***"Ja, kanaal 2 en account 3 (Recommended)"***. Aanleiding: Finn vroeg ernaar (H-finn-11), nadat Andries hem vroeg naar "iets wat automatisch plaatst".
