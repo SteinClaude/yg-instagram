@@ -1,5 +1,6 @@
 # Oplevering Jesse — manager YG-Social
 
+KLAAR: opdracht clippen (proef 2 weken, 4 beslispunten) en voorstel GTA 6-fanaccount ter beslissing: docs/manager/opdracht-clippen.md, docs/manager/opdracht-gta6-account.md (H-noor-11, eva-gta6-1/2) · do 19 nov 19:30
 KLAAR: bericht aan Manon, Finn en Koen dat hun TikTok- en Snapchat-account er is (voorEva jesse-20/21/22) · ma 16 nov 21:04
 KLAAR: weekoverzicht YG-Social ma 16 nov (zonder cijfers; uitvoer, tijden, voorraad, profielen, proef 2 voorgesteld); bedrag potje uit de repo · ma 16 nov 18:31
 KLAAR: klaarmaken TikTok en Snapchat (stappen Andries, opdracht makers): docs/manager/tiktok-snapchat.md; voorEva jesse-18 · ma 16 nov 12:39
