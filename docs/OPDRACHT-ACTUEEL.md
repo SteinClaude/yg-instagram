@@ -8,6 +8,8 @@ Je bouwde dit als mijn deelagent (klaar 21:23; tak `manon/automaat-alle-kanalen`
 
 **Eva: nagekeken, akkoord voor `main` (do 19 nov 2026, 21:50), op a180aa1.** Het ja van Andries ontbreekt nog; zonder dat gaat er niets naar `main`.
 
+*Erbij, do 19 nov 22:57 (Eva):* de tak staat nu op 2ca3e3b. Dat is één commit van mij met alleen `docs/stand/manon.json` op de tak: de vijf besluiten uit die stand liggen bij mij (vier staan op het Ploegoverzicht, de proef met een release-bestand houd ik vast). Zonder die wijziging zette de vaste taak dezelfde vragen nog eens op het Ploegoverzicht. De code is gelijk aan a180aa1; mijn akkoord geldt dus ongewijzigd.
+
 **Wat ik deed**
 - De 48 toetsen zelf gedraaid: 48 goed.
 - De workflow door actionlint (1.7.12) gehaald: geen opmerkingen.
