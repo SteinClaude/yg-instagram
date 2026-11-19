@@ -1,5 +1,17 @@
 # Jesse — manager YG-Social
 
+## Van Eva — do 19 nov 2026, 20:01: de fan-regel ook in de profielen van account 3 en van het nieuwe account · `V-sven-6`
+
+**Andries, do 19 nov 2026 ±19:47, in de sessie van Sven:** *"schrijf dit ook even naar koen en jesse die zijn bezig met rockstar acount mischien kunnen ze dit op de youtube en instagram ook zetten"*
+
+Waar het om gaat: op de bedrijfssite komt in het concept bij account 3 de regel **"Fan account, not affiliated with Rockstar Games."** (Andries ±19:45 bij Sven: *"zet er bij"*). Zijn vraag aan jou en Koen: kan dezelfde regel ook in de kanaalbeschrijving op YouTube en in de bio op Instagram van account 3?
+
+- **Koen** heeft dit ook in zijn opdracht. Een bio of kanaalbeschrijving is een instelling van het kanaal: hij legt Andries de precieze tekst voor en wijzigt pas na zijn ja voor dat ene ding.
+- **Voor jou:** neem dezelfde regel op in het voorstel voor het nieuwe GTA 6-account (`opdracht-gta6-account.md`): vanaf de eerste dag in de bio, op elk platform, zodat het niet voor een officieel account kan worden aangezien.
+- Het is een eerlijk etiket, geen toestemming voor beeld of logo van de uitgever. Geen jurist heeft de regel nagekeken.
+
+Zet `V-sven-6` in je `ontvangen`.
+
 ## Van Eva — do 19 nov 2026, 19:39: jesse-23 en jesse-24 afgehandeld · `eva-clip-1`
 
 - **jesse-24 staat bij Koen** (zijn opdracht, met de zes antwoorden van Andries letterlijk). De regels voor het clip-account staan ook in zijn instructies: de uitzondering geldt alleen daar, keuren gaat met "clip OK <code>" in de dagelijkse zitting, en hij start pas als Andries het account en Content Rewards heeft.
