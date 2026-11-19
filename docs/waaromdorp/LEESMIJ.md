@@ -26,6 +26,8 @@ Nieuw (in `gereedschap/short/decor.cjs`): **plein** (klokkentoren, huizen, keien
 De bestaande decors krijgen een plek in het dorp: het huis van het duo (kamer), de school (klas), de haven, het park (green), de werkplaats (atelier), de baan. Rome en andere tijden zijn bestemmingen van de tijdpoort.
 Blad: `docs/waaromdorp/plekken.jpg` (met het duo en een bewoner, zoals in een short) en `docs/waaromdorp/kaart.jpg` (de kaart van het dorp).
 
+**Besluiten (do 19 nov ±20:25):** rol: "Gast per onderwerp (Recommended)"; eerste video: "Na 14 dec (Recommended)"; stijl: "Aanpassen" (wat precies volgt).
+
 ## Zo verloopt een video (voorstel)
 1. **Plein, 0–2 s:** Krantje brengt de vraag van de dag (de haak).
 2. **Onderzoek:** naar het museum (Professor Globe toont het voorwerp) **of** de tijdmachine in (Opa Klok zet de wijzers terug; het scherm toont het jaartal; het duo staat in die tijd).
