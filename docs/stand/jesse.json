@@ -1,7 +1,7 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-19T19:34:00+01:00",
+  "tijd": "2026-11-19T19:45:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-19T19:30:00+01:00"
@@ -30,8 +30,8 @@
     "2026-11-13T12:20:00+01:00 Eerste keurlijst van de week: docs/keurlijst-week.md",
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
-  "bezig": null,
-  "volgende": "Wacht op Andries: naam kiezen en account + Content Rewards aanmaken; daarna start Koen. Status kanalen (eva-status-1); keurlijst vr 20 nov; uitkomst proef 2 ma 23 nov",
+  "bezig": "Overleg met Koen over de takenverdeling clippen/GTA 6-account",
+  "volgende": "Antwoord van Koen verwerken in opdracht-clippen.md (takenverdeling); daarna status kanalen (eva-status-1)",
   "kanNietVerder": null,
   "vragen": [],
   "buitenGit": [
@@ -150,6 +150,14 @@
     {
       "tijd": "2026-11-19T19:34:00+01:00",
       "wat": "Naamvoorstellen voor het GTA 6-clip/fanaccount alleen in de sessie gegeven (niet in de repo); beschikbaarheid niet nagekeken"
+    },
+    {
+      "tijd": "2026-11-19T19:45:00+01:00",
+      "wat": "Andries: \"koppel dit eerst samen moet koen ga even in overleg en verdeel de taken,\""
+    },
+    {
+      "tijd": "2026-11-19T19:45:00+01:00",
+      "wat": "Bericht aan de sessie van Koen (cross-session, op deze pc): voorstel takenverdeling (Andries: account, Whop, zitting · Koen: test, campagnes, 2 clips/dag, plaatsen/insturen, meten privé, bio · Jesse: regels, criteria, weekoverzicht, eindvoorstel) en 4 vragen; wacht op antwoord"
     }
   ],
   "voorEva": [
