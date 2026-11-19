@@ -2,13 +2,20 @@
 
 **Jesse, manager YG-Social · do 19 nov 2026.** Opdracht van Andries (H-noor-11, via Noor en Eva).
 
-> **STATUS: TER BESLISSING.** Er wordt niets aangemaakt, gemaakt of ingestuurd tot Andries de vier punten in deel 3 heeft beslist. Openbare repo: geen namen, handles of bedragen.
+> **STATUS: BESLIST (3a–3c en de maker, do 19 nov ±19:32).** Er wordt niets ingestuurd tot Andries het clip-account en Content Rewards heeft aangemaakt. Openbare repo: geen namen, handles of bedragen.
 
 ## Wat Andries vroeg (letterlijk, do 19 nov 2026, sessie van Noor)
 
 - 12:57: *"We gaan clipping doen /clip farmen zoek alvast t een en anders uit"*
 - 13:04: *"Dus we kunnen doorpakken met clippen/clip farmen, ik zou hiervoor dan [weggelaten] voor gebruiken en deze de focus laten leggen op clippen/clipfarmen"* (weggelaten: de naam van account 3)
 - 18:52: *"[…] daarna wil ik dat je de opdracht over clippen/clipfarmen naar jesse schrijft, dit met de beetalde vieuws wat besproken was"*
+
+## Besluiten van Andries (do 19 nov 2026 ±19:32, sessie Jesse)
+
+- **3a, account:** *"appart clip-acount. wel met het thema ect van kanaal 3"*. Dat wordt **een apart clip-account**, los van account 3, met het thema en de stijl van account 3 (GTA 6). Of dit hetzelfde account is als het GTA 6-fanaccount, vraag ik na.
+- **3b, keuring:** *"Dagelijkse zitting 15 min (Recommended)"*. Elke dag een zitting van ±15 minuten: Andries keurt 2 clips ("clip OK <code>"), ze worden geplaatst en binnen 30 minuten ingestuurd.
+- **3c, uitzondering:** *"Ja, deze zin geldt (Recommended)"*. Op het clip-account mogen clips met beeld van een ander, alleen voor een campagne die dat beeld zelf noemt en betaalt, met de reclamevermelding en volgens de regels van de campagne en de uitgever. **Dit geldt alleen voor het clip-account.** Op kanaal 1, kanaal 2 en account 3 blijven de oude regels gelden.
+- **Maker:** *"Koen erbij (Recommended)"*. Koen maakt de clips in de proef van 2 weken.
 
 ## 1. De proef in het kort
 

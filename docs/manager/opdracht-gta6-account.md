@@ -10,6 +10,11 @@
 - do 19 nov 2026 10:22, chat met Eva: *"Stel dit allemaal op voor vammidag"*
 - do 19 nov 2026 13:04, over clippen: zie `opdracht-clippen.md`.
 
+## Besluiten van Andries (do 19 nov 2026 ±19:32, sessie Jesse)
+
+- **Clippen:** *"appart clip-acount. wel met het thema ect van kanaal 3"*. Een apart clip-account met het thema van account 3. Of dat ook het fanaccount is, vraag ik na.
+- **Punt 4, maker:** *"Koen erbij (Recommended)"*.
+
 ## 1. Onderwerp en de drie wegen
 
 **In één zin:** het snelste onofficiële GTA 6-nieuws en fanaccount. Elke dag een opvallend detail, een nieuwtje of een vraag aan de fans, in beeld uit de game.

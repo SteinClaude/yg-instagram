@@ -158,6 +158,7 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 
 ## Besluiten met Andries
 
+- do 19 nov 2026 ±19:32 (sessie Jesse), clippen: account *"appart clip-acount. wel met het thema ect van kanaal 3"* · keuring *"Dagelijkse zitting 15 min (Recommended)"* · uitzondering *"Ja, deze zin geldt (Recommended)"* · maker *"Koen erbij (Recommended)"* → opdracht-clippen.md, opdracht-gta6-account.md.
 - ma 16 nov 2026 ±21:04 (sessie Jesse): *"ik wil dat je nu schrijft voor manon fin en koen dat er een snapchat acount en tiktok acount voor ze is gemaakt"* → voorEva jesse-20 (Manon), jesse-21 (Finn), jesse-22 (Koen).
 - ma 16 nov 2026 ±12:39 (sessie Jesse): *"oke ik wil nu voor alle 3 de snapchat en tiktok klaarmaken, en hun moeten ook weten dat dit er is en erop geplaats kan worden"* → docs/manager/tiktok-snapchat.md, jesse-18.
 - ma 16 nov 2026 ±12:33 (sessie Jesse): *"voor kanaal 1 maken we nieuwe videos die langer dan 1min zijn voor de tiktok,"* → docs/manager/tiktok-snapchat.md.
