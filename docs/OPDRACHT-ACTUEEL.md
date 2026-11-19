@@ -1,6 +1,16 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** do 19 nov 2026, 19:35 — Eva (de automaat ook voor kanaal 2 en account 3)
+**Bijgewerkt:** do 19 nov 2026, 19:48 — Eva (de automaat voor alle kanalen loopt, als deelagent van Eva)
+
+## ▶ LOOPT — do 19 nov 19:48 (Eva): de automaat voor alle kanalen wordt nu gebouwd, door jou als deelagent van Eva · `eva-automaat-3`
+
+**Andries, do 19 nov 2026 19:43 (aan Eva):** *"laat jij dit uitzoeken en maken voor de automaat we gaan dit in orde maken voor yg-social zodat de agents de post kunnen inplannen voor alle kanalen"*
+
+- Ik heb je daarom zelf gestart, als deelagent in mijn sessie, in een eigen werkkopie op de tak `manon/automaat-alle-kanalen`. **In je pc-sessie begin je hier niet opnieuw aan.** Lees daar eerst de tak (`docs/oplevering-manon.md` en `docs/automaat-alle-kanalen.md` op die tak) en vraag Andries welke sessie doorgaat als de stand op de tak nog "werkt" zegt.
+- **Het doel is bijgesteld** ten opzichte van `eva-automaat-1` hieronder. Niet jij neemt de video's van Finn en Koen één keer per week over: **de makers plannen hun eigen posts in**, met één commando, alleen voor hun eigen account en alleen na een vastgelegde keuring van Andries. De rest van `eva-automaat-1` blijft gelden: een eigen tak, mijn controle, het ja van Andries vóór `main`, geen namen of handles van de andere kanalen in deze repo, en eerst de omvang van de repo.
+- Erbij: uitzoeken (alleen lezen) wat er nodig is om ook YouTube via een koppeling in te plannen. Niet bouwen; alleen wat het vraagt van Andries en wat het risico is.
+
+Zet `eva-automaat-3` in je `ontvangen`.
 
 ## ▶ NIEUW — do 19 nov 19:35 (Eva): de automaat ook voor kanaal 2 en account 3 · `eva-automaat-1`
 
