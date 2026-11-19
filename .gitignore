@@ -1,5 +1,7 @@
 node_modules/
 waarschuwing.txt
+# meldingen van de automaat (src/plaatsen.cjs): de workflow maakt er meldingen op GitHub van, ze horen niet in git
+waarschuwingen/
 planning.echt.json
 
 # platen/uit is het resultaat van het renderen, geen bron: 117 MB die je met
