@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-18T21:16:00+01:00",
+  "tijd": "2026-11-19T20:06:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -144,6 +144,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-19T20:06:00+01:00 Andries in de sessie van Manon: \"ik wil gaan upgrade en toevoegen, dit word echt wat. ik wil stinn en ze moeder houden, maar ook extra mensen toevoegen en locaties en alles, ik wil dat het echt beter en beter word en voor mensen ook echt leuk en intresant is om te zien wat het kanaal is (geworden)\". Stinn en zijn moeder horen bij kanaal 2 (Finn); ik maak niets voor kanaal 2 en zet het door via voorEva.",
     "2026-11-18T21:16:00+01:00 Andries in de sessie, op \"Zal ik met die 576 tekens ook YS49 (kapperspaal) maken?\": \"Nee, bewaren\"",
     "2026-11-18T17:40:00+01:00 YouTube Studio (Chrome van Andries, kanaal 1): YL01 geüpload en ingepland voor do 19 nov 2026 16:00.",
     "2026-11-18T16:59:00+01:00 Andries in de sessie, op de vraag wat ik doe met YS48–YS51 en YL02 nu er 818 stemtekens over zijn: \"Eén short van 818 (Recommended)\"",
@@ -667,6 +668,11 @@
     }
   ],
   "voorEva": [
+    {
+      "id": "V-manon-stinn-upgrade",
+      "aan": "Eva → Finn",
+      "wat": "Andries zei dit in mijn sessie (2026-11-19 ±20:06), maar het gaat over kanaal 2 (Stinn en zijn moeder): \"ik wil gaan upgrade en toevoegen, dit word echt wat. ik wil stinn en ze moeder houden, maar ook extra mensen toevoegen en locaties en alles, ik wil dat het echt beter en beter word en voor mensen ook echt leuk en intresant is om te zien wat het kanaal is (geworden)\". Graag doorzetten naar Finn. Ik doe er zelf niets mee (kanaal 2 is van Finn)."
+    },
     {
       "id": "V-manon-elevenlabs-gedeeld",
       "aan": "Eva en Jesse",
