@@ -1,12 +1,12 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-19T19:47:00+01:00",
+  "tijd": "2026-11-19T19:49:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-19T19:30:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-19T19:47:00+01:00 Takenverdeling clippen met Koen afgestemd (opdracht-clippen.md); risico commercieel gebruik gamebeeld als harde startvoorwaarde",
     "2026-11-19T19:34:00+01:00 Besluiten Andries: één account voor clippen en fan/nieuws; beeld van campagnes en trailercitaten; Koen erbij (jesse-24)",
@@ -31,21 +31,10 @@
     "2026-11-13T12:20:00+01:00 Eerste keurlijst van de week: docs/keurlijst-week.md",
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
-  "bezig": null,
+  "bezig": "Overleg met Koen over de zitting (Instagram en YouTube)",
   "volgende": "Vóór de eerste clip: nagaan of commercieel gebruik van gamebeeld gedekt is (beleid uitgever + campagnevoorwaarden); wacht op Andries (naam, account, Whop, zittingsduur); status kanalen (eva-status-1)",
   "kanNietVerder": null,
-  "vragen": [
-    {
-      "vraag": "Zitting clippen: 2 clips op 2 platforms kost 20-25 min per dag in plaats van 15. Wat kies je?",
-      "aan": "andries",
-      "keuzes": [
-        "Zitting 25 min, beide platforms",
-        "Start met 1 platform (TikTok), 15 min"
-      ],
-      "advies": "Start met 1 platform: past in 15 min en we leren sneller; Instagram erbij na week 1",
-      "blokkeert": false
-    }
-  ],
+  "vragen": [],
   "buitenGit": [
     {
       "tijd": "2026-11-13T11:57:00+01:00",
@@ -174,6 +163,10 @@
     {
       "tijd": "2026-11-19T19:47:00+01:00",
       "wat": "Antwoord Koen (cross-session): akkoord met verdeling; Andries kiest campagnes (Whop-voorwaarden), Koen meet in browser Andries zonder inloggen; zitting 20-25 min; risico commercieel gebruik; geen stem tot 14 dec; Chrome open laten"
+    },
+    {
+      "tijd": "2026-11-19T19:49:00+01:00",
+      "wat": "Andries: \"tikok laten we, we gaan samen met koen zitten voor instagram en youtube, schrijf dit naar hem dan kan ik hem zeggen lees zitting, en daarna wil ik dat julie samen gaan overleggen, jij kan in de sessie van koen schrijven, zo kunnen julie gesprek maken en voeren\""
     }
   ],
   "voorEva": [

@@ -19,6 +19,15 @@
 - **Eén of twee accounts** (±19:34): *"Eén account voor beide (Recommended)"*. Het clip-account is ook het GTA 6-fan- en nieuwsaccount: één nieuw account op TikTok en Instagram.
 - **Punt 2, beeld** (±19:34): *"Campagne + kort trailerbeeld (Recommended)"*. De eerste 2 weken geen uitgave. Eigen opnames komen pas als de proef slaagt, en alleen na een OK per bedrag.
 
+## Platforms en zitting (Andries, do 19 nov 2026 ±19:49, sessie Jesse)
+
+*"tikok laten we, we gaan samen met koen zitten voor instagram en youtube, schrijf dit naar hem dan kan ik hem zeggen lees zitting, en daarna wil ik dat julie samen gaan overleggen, jij kan in de sessie van koen schrijven, zo kunnen julie gesprek maken en voeren"*
+
+- **Geen TikTok.** Het clip-account komt op **Instagram en YouTube**.
+- De dagelijkse zitting doet Andries samen met Koen, voor Instagram en YouTube.
+- **Let op YouTube:** voor hergebruikte inhoud betaalt YouTube niet uit, en dat geldt voor het hele kanaal. Op dit nieuwe account kost dat alleen de eigen YouTube-uitbetaling van dit account. Kanaal 1, kanaal 2 en account 3 blijven erbuiten. De betaling per view via de campagnes staat daar los van, maar elke campagne moet YouTube wel toestaan.
+- Jesse en Koen stemmen de uitwerking samen af (cross-session).
+
 ## Takenverdeling (overleg Jesse en Koen, do 19 nov 2026 ±19:47)
 
 Andries vroeg: *"koppel dit eerst samen moet koen ga even in overleg en verdeel de taken,"*. Koen is akkoord, met drie aanpassingen (in de lijst verwerkt).

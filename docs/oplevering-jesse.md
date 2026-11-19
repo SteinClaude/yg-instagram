@@ -160,6 +160,7 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 
 ## Besluiten met Andries
 
+- do 19 nov 2026 ±19:49 (sessie Jesse): *"tikok laten we, we gaan samen met koen zitten voor instagram en youtube, schrijf dit naar hem dan kan ik hem zeggen lees zitting, en daarna wil ik dat julie samen gaan overleggen, jij kan in de sessie van koen schrijven, zo kunnen julie gesprek maken en voeren"* → opdracht-clippen.md (geen TikTok; Instagram en YouTube; zitting met Koen).
 - do 19 nov 2026 ±19:45 (sessie Jesse): *"koppel dit eerst samen moet koen ga even in overleg en verdeel de taken,"* → overleg met Koen gestart (voorstel takenverdeling en 4 vragen).
 - do 19 nov 2026 ±19:34 (sessie Jesse): *"Eén account voor beide (Recommended)"* · *"Campagne + kort trailerbeeld (Recommended)"* → opdracht-clippen.md, opdracht-gta6-account.md, jesse-24.
 - do 19 nov 2026 ±19:32 (sessie Jesse), clippen: account *"appart clip-acount. wel met het thema ect van kanaal 3"* · keuring *"Dagelijkse zitting 15 min (Recommended)"* · uitzondering *"Ja, deze zin geldt (Recommended)"* · maker *"Koen erbij (Recommended)"* → opdracht-clippen.md, opdracht-gta6-account.md.
