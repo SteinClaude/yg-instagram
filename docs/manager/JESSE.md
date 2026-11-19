@@ -1,5 +1,62 @@
 # Jesse — manager YG-Social
 
+## Van Eva — do 19 nov 2026, 19:06: opdracht van Andries: clippen met betaalde views, proef van twee weken · `H-noor-11`
+
+Dit is een opdracht van Andries, opgeschreven door Noor (do 19 nov 2026 18:55) en door mij doorgezet. Zet `H-noor-11` in je `ontvangen`. Clippen is hiermee een eigen opdracht en geen onderdeel meer van het voorstel voor het GTA 6-fanaccount; wat in `eva-gta6-2` hieronder over het onderzoek staat, blijft kloppen.
+
+**Wat Andries zei** (in de sessie van Noor, do 19 nov 2026):
+- 12:57: *"We gaan clipping doen /clip farmen zoek alvast t een en anders uit"*
+- 13:04: *"Dus we kunnen doorpakken met clippen/clip farmen, ik zou hiervoor dan [weggelaten] voor gebruiken en deze de focus laten leggen op clippen/clipfarmen"* (weggelaten: de naam van account 3)
+- 18:52: *"[…] daarna wil ik dat je de opdracht over clippen/clipfarmen naar jesse schrijft, dit met de beetalde vieuws wat besproken was"*
+
+**Doel:** geld verdienen met clips via campagnes die per 1.000 views betalen. Account 3 (Koen) legt hier de focus op.
+
+**Wat "betaalde views" is**
+- Streamers, merken en labels zetten een budget klaar op Content Rewards (uitbetaling via Whop).
+- Je plaatst clips op het eigen account en stuurt ze in. Na goedkeuring betaalt de campagne per 1.000 views.
+- Het tarief, de kosten en de rekensom staan in de opdracht van Noor (zie "Lezen" onderaan). Bedragen horen niet in deze openbare repo.
+- Op do 19 nov stonden er 13 campagnes rond GTA 6 open. Het aanbod wisselt per dag.
+
+**De opdracht: een proef van twee weken**
+1. **Kies campagnes die per view betalen.** Geen campagnes met een vaste pot: die betalen niets onder 400.000 tot 750.000 views.
+2. **Kies campagnes die de bron noemen** (een streamer of eigen gameplay). Dan is de toestemming geregeld. Lees van elke campagne de volledige regels na "join", ook de landeneisen.
+3. **2 clips per dag**, veertien dagen. Sterkste formaat uit de voorbeelden van Andries: één opvallend detail uit de game plus een vraag aan de kijker.
+4. **Meet per clip:** campagne, views, goedgekeurd of afgekeurd, opbrengst, minuten werk (waar de tabel komt: zie punt 4 van "Van mij erbij").
+5. **Na twee weken een voorstel aan Andries:** doorgaan, opschalen of stoppen. De meetlat (bij hoeveel goedgekeurde views per maand het iets oplevert) staat in de opdracht van Noor.
+
+**Regels die niet mogen misgaan**
+- **Reclamevermelding** aan het begin van elke campagneclip. Zonder: afgekeurd.
+- **Insturen binnen 30 minuten** na plaatsen.
+- **Nooit views kopen of bots gebruiken:** permanente ban.
+- **Dezelfde clip niet bij twee campagnes** insturen.
+- **De uitgever van het spel:** geen einde, geen grote verhaalonthullingen, geen losse cutscenes, geen in-game tv-shows, geen cheats of glitches, geen gelekte beelden. Geen radio of muziek uit de game.
+- **Nooit op kanaal 1 of 2.** YouTube kan een kanaal met herplaatste clips zijn bereik en zijn hele monetisatie afnemen.
+
+**Open keuze (Andries heeft nog niet gekozen)**
+Account 3 staat ook op YouTube. Aanname van Noor: campagneclips komen alleen op TikTok en Instagram, niet op YouTube. De keuze: op account 3 (alleen TikTok en Instagram) of op een apart nieuw clip-account. Advies van Noor: een apart clip-account, zodat account 3 schoon blijft. Mijn advies is hetzelfde: één nieuw account, dat ook het GTA 6-fanaccount is (`eva-gta6-1`).
+
+Deze vraag staat al met de keuzes op het Ploegoverzicht. Antwoordt Andries daar, dan zet ik zijn antwoord in je kaart; stel hem dan niet opnieuw. Beantwoordt hij hem in jouw sessie, leg het dan vast zoals altijd en meld het in `voorEva`; ik haal hem dan van de plaat.
+
+**Wat alleen Andries doet (harde stops)**
+- Het account bij Content Rewards/Whop aanmaken, de voorwaarden accepteren en bankgegevens invullen.
+- Nieuwe accounts op TikTok of Instagram aanmaken.
+- Elk bedrag (betaalde tools, sleutels).
+- Publiceren en keuren gaat volgens de bestaande regels van YG-Social.
+
+**Gereedschap (nog niet getest):** Clips Kitty (gratis Windows-app, draait lokaal), OpenShorts en SupoClip (zelf hosten; SupoClip vraagt betaalde sleutels). Eerst op één video testen, pas daarna erop bouwen.
+
+**Van mij erbij: vier dingen die de proef tegenhouden als je ze niet eerst oplost.** Zet ze in je startplan, met per punt wat het Andries kost, en leg ze hem voor (vragenknoppen, hoogstens 4 per keer):
+1. **De keuring.** Nu geldt per video een pakket OK. Twee clips per dag is 28 keuringen in twee weken, terwijl Andries voor account 3 ongeveer een uur per week heeft. Stel hem een vorm voor die past, bijvoorbeeld één korte zitting per dag waarin hij keurt, de clips geplaatst worden en ze meteen worden ingestuurd (dan is "binnen 30 minuten" ook geregeld). Hij beslist; tot dan geldt de bestaande regel.
+2. **De regel "nooit werk van andere makers".** Die geldt voor elke maker (bij Koen en Finn als harde regel; bij Manon: hoogstens een kort fragment als citaat). Een campagneclip is beeld van een ander, mét opdracht en toestemming. Dat is een uitzondering op een harde regel, en die geeft alleen Andries, in zijn eigen woorden. Leg hem de zin voor waar het om gaat. Zonder die uitzondering maakt geen maker een campagneclip.
+3. **Plaatsen.** TikTok bestaat nog niet voor account 3, en er is voor account 3 geen automaat die plaatst: Koen plaatst met de hand, in de browser van Andries. Reken uit hoe vaak Andries erbij moet zijn en hoeveel minuten per dag dat is.
+4. **De cijfers met bedragen.** Deze repo is openbaar. De tabel per clip (met de opbrengst) hoort in de privé-repo van account 3; hier alleen wat zonder bedrag kan.
+
+**Wat je eerst doet bij je volgende "ga verder":** maak `docs/manager/opdracht-clippen.md` (kort: de proef, de vier punten hierboven, wat Andries zelf moet doen en hoeveel tijd dat kost, en wat de eerste clip kan zijn) en leg het hem voor. Het voorstel voor het GTA 6-fanaccount (`eva-gta6-1`) blijft staan; doe beide in één zitting met hem, clippen eerst. Koen krijgt zijn deel van jou, via `voorEva`, zodra Andries de open keuze en punt 1 en 2 heeft beslist.
+
+**Lezen (alleen lezen, precies deze twee, in de privé-repo `yg-kennis`):** `docs/klaargezet/opdracht-clipping-jesse.md` (de volledige opdracht, met tarief en rekensom) en `docs/notities/onderzoek-clipping.md` (het onderzoek). Kun je er niet bij, vraag de bedragen dan aan Andries in je sessie of via `voorEva`.
+
+**Grenzen (ongewijzigd):** je maakt geen account aan, accepteert geen voorwaarden, vult geen bankgegevens in, geeft niets uit en plaatst niets. In deze repo staan geen namen, handles of bedragen.
+
 ## Van Eva — do 19 nov 2026, 10:26: het GTA 6-account vanmiddag ter beslissing · `eva-gta6-1`
 
 Andries via chat met Eva, do 19 nov 2026 10:22, over wat er vanmiddag kan starten (GTA 6 stond bovenaan): *"Stel dit allemaal op voor vammidag"*.
