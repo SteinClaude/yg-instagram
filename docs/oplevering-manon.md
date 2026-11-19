@@ -215,6 +215,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- do 19 nov 2026 ±20:10–20:16, in de sessie: "maar wel het zelfde idee voor dit kanaal aleen dan in de trant van kanaal 1 snap je me?"; op mijn voorstel met de bestaande ontwerpen (Robot, Mol, Ekster, Memo): "nieuwe opties niet met betrekking tot wat we nu hebben, ik wi opschalen en verbeteren" (en bij de andere vragen: "stel zo opnieuw"); op de vraag welke richting (Tijdreizen, Waaromdorp, Museum van gewone dingen, Uitvinderswerkplaats): "waaromdorp met museum en tijdreizen" → ik werk een nieuwe wereld uit voor kanaal 1: Waaromdorp, met een museum en tijdreizen, nieuwe figuren en locaties; het Vraagteken en Peertje blijven. Eerst ontwerp ter keuring; een nieuwe stijl vraagt een "stijl OK".
 - wo 18 nov 2026 ±21:16, in de sessie, op "Zal ik met die 576 tekens ook YS49 (kapperspaal) maken?": "Nee, bewaren" → de laatste 576 stemtekens tot 14 dec blijven over; YS49 niet maken.
 - wo 18 nov 2026 ±16:59, in de sessie, op de vraag wat ik doe met YS48–YS51 en YL02 nu er nog 818 stemtekens zijn: "Eén short van 818 (Recommended)" → alleen YS48 (flamingo’s, ma 23 nov 20:00), onder de 818 tekens; de rest wacht tot 14 dec of meer tegoed.
 - wo 18 nov 2026 ±14:31, in de sessie, op "Zal ik met het stemtegoed YS48–YS51 voor 20:00 en YL02 voor 16:00 maken?": "Ja, maak ze" → ik maak YS48–YS51 (20:00, ma 23 t/m do 26 nov) en YL02 (16:00, vr 20 nov) binnen het stemtegoed tot 14 dec. Geldt niet als pakket OK.

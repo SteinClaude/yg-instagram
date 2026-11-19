@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-19T20:07:00+01:00",
+  "tijd": "2026-11-19T20:16:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-18T12:09:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-18T18:13:00+01:00 Pakket YS48 gemaakt (flamingo’s, 41,4 s, stijl 3 met watermerk; bronnen Smithsonian’s National Zoo en San Diego Zoo; 606 stemtekens, ElevenLabs-teller wo 18 nov 21:15: 39.424 van 40.000, 576 over tot 14 dec; YS48 kostte op de teller 242, minder dan de 606 tekens van de tekst). Overgang naar scène 5 zonder \"zweep\": resvg liep daar vast. Met Instagram-versie, bijschriften TikTok/Snapchat en kaart met vraag om pakket OK en bijschrift OK.",
     "2026-11-18T17:40:00+01:00 YL01 ingepland in YouTube Studio (kanaal 1 nagekeken: avatar vraagteken, nieuwste short de tennisballen). Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 19 november 2026 om 16:00\"; lijst Shorts: Gepland 19 nov 2026. Instagram staat al voor dezelfde tijd. YS46 en YS47 niet meer gelukt binnen 17:00–17:45 (begon om 17:37): do 19 nov 17:00.",
@@ -135,7 +135,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "Nieuwe wereld voor kanaal 1 uitwerken en tekenen: Waaromdorp met museum en tijdreizen; het Vraagteken en Peertje blijven de hoofdrolspelers. Eerst ontwerp ter keuring (stijl OK), geen stemtekens.",
   "volgende": "Vr 20 nov 17:00 (Studio): YS46 (za 21 nov 20:00) en YS47 (zo 22 nov 20:00) inplannen; do 19 nov is het tijdvak niet gebruikt (geen sessie). YS48 erbij als er een OK is; daarna 18:00-shorts naar 12:00. TikTok en Snapchat (bio v2) en vastzetten op Instagram met Andries. Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
@@ -144,6 +144,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-19T20:16:00+01:00 Andries in de sessie: \"maar wel het zelfde idee voor dit kanaal aleen dan in de trant van kanaal 1 snap je me?\"; op de vraag welke bestaande figuren erbij: \"nieuwe opties niet met betrekking tot wat we nu hebben, ik wi opschalen en verbeteren\" (en bij de andere vragen: \"stel zo opnieuw\"); op de vraag welke richting: \"waaromdorp met museum en tijdreizen\"",
     "2026-11-19T20:07:00+01:00 Andries in de sessie: \"ik maakte een vergising\" (het bericht over Stinn was voor een andere sessie bedoeld); V-manon-stinn-upgrade ingetrokken.",
     "2026-11-19T20:06:00+01:00 Andries in de sessie van Manon: \"ik wil gaan upgrade en toevoegen, dit word echt wat. ik wil stinn en ze moeder houden, maar ook extra mensen toevoegen en locaties en alles, ik wil dat het echt beter en beter word en voor mensen ook echt leuk en intresant is om te zien wat het kanaal is (geworden)\". Stinn en zijn moeder horen bij kanaal 2 (Finn); ik maak niets voor kanaal 2 en zet het door via voorEva.",
     "2026-11-18T21:16:00+01:00 Andries in de sessie, op \"Zal ik met die 576 tekens ook YS49 (kapperspaal) maken?\": \"Nee, bewaren\"",
