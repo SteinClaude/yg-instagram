@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-19T20:08:00+01:00",
+  "tijd": "2026-11-19T20:19:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-19T20:06:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-19T20:19:00+01:00 Keurlijst van de week (vr 20 nov) klaargezet in docs/keurlijst-week.md: 2 keuringen in het paneel, 8 handelingen, 7 wat-vragen met advies (Instagram op tijd, stemtegoed, tijdvakken Chrome, bijschrift bij pakket, Instagram 12:00, TikTok/Snapchat, lat proef account 3), geld, gekeurd deze week",
     "2026-11-19T20:08:00+01:00 Status van de kanalen aangevuld met de stand van Finn (do 19 nov 20:08): kanaal 2 gevuld t/m za 21 nov, geen keuring open, 3x vast door verkeerd account in de gedeelde Chrome, gebruikt het stemtegoed ook",
     "2026-11-19T20:06:00+01:00 Status van de kanalen: docs/manager/status-kanalen-2026-11-19.md (kanaal 1 uit de repo, account 3 van Koen vanavond, kanaal 2 stand ma 16 nov via Eva; actuele stand aan Finn gevraagd)",
     "2026-11-19T20:01:00+01:00 Koen bevestigt: clip-account vervallen en voorbereiding gestopt; beleid van de uitgever door hem op de pagina zelf nagelezen, komt overeen (opdracht-clippen.md bijgewerkt)",
@@ -37,9 +38,84 @@
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
   "bezig": null,
-  "volgende": "Keurlijst vr 20 nov (wekker voor Instagram kanaal 1, vaste tijdvakken in de gedeelde Chrome, stemtegoed en verdeling, bijschrift bij het pakket voor kanaal 2 en account 3, Instagram 12:00 na 23 nov); elke dag nakijken of de Reels op tijd komen; uitkomst proef 2 ma 23 nov (lat account 3 corrigeren voor 205 volgers vooraf)",
+  "volgende": "Vr 20 nov: de keurlijst met Andries doornemen en zijn antwoorden vastleggen en doorzetten; elke dag nakijken of de Reels op tijd komen; ma 23 nov weekoverzicht en uitkomst proef 2 (als de cijfers er zijn); zo 29 nov einde proef account 3",
   "kanNietVerder": null,
-  "vragen": [],
+  "vragen": [
+    {
+      "vraag": "Instagram van kanaal 1 komt elke dag 2 tot 4 uur te laat, ook na de extra starttijden. Wat doen we?",
+      "aan": "andries",
+      "keuzes": [
+        "Een wekker van buiten laten bouwen door Manon",
+        "Zo laten",
+        "Geen vaste uren meer beloven in de bio"
+      ],
+      "advies": "Een wekker van buiten: kost geen geld, hoogstens 10 minuten van jou als er een account nodig is",
+      "blokkeert": false
+    },
+    {
+      "vraag": "Het stemtegoed is op tot 14 dec en de afgesproken ritmes vragen ruim drie keer het tegoed. Leggen we een verdeling per kanaal vast (kanaal 1 16.000, account 3 14.000, kanaal 2 10.000 tekens) en vullen we de gaten tot 14 dec met video's zonder nieuwe stem? (Meer tegoed is geld: dat gaat in een sessie, niet hier.)",
+      "aan": "andries",
+      "keuzes": [
+        "Ja, verdeling en gaten vullen zonder nieuwe stem",
+        "Verdeling ja, gaten laten",
+        "Eerst in een sessie bespreken"
+      ],
+      "advies": "Ja: anders valt alles met een stem tussen 22 en 26 nov stil",
+      "blokkeert": true
+    },
+    {
+      "vraag": "De drie makers lopen vast in de gedeelde Chrome (verkeerd kanaal actief, geminimaliseerd). Vaste tijdvakken?",
+      "aan": "andries",
+      "keuzes": [
+        "Manon 17:00, Finn 17:45, Koen 18:30",
+        "Eén Chrome-profiel per kanaal uitproberen",
+        "Zo laten"
+      ],
+      "advies": "De drie tijdvakken nu, en een profiel per kanaal uitproberen met één kanaal",
+      "blokkeert": false
+    },
+    {
+      "vraag": "Kanaal 2 en account 3 krijgen de automaat voor Instagram. Hoort het bijschrift daar bij het pakket?",
+      "aan": "andries",
+      "keuzes": [
+        "Ja, één pakket OK dekt ook het bijschrift",
+        "Nee, apart bijschrift OK per code"
+      ],
+      "advies": "Ja (voorstel Eva): geen extra keuring",
+      "blokkeert": false
+    },
+    {
+      "vraag": "Instagram van kanaal 1 heeft om 12:00 na ma 23 nov niets meer. YS11–YS32 (oude stijl, staan al op YouTube) toch op Instagram zetten?",
+      "aan": "andries",
+      "keuzes": [
+        "Ja, YS11–YS32 op Instagram",
+        "Nee, 12:00 leeg laten"
+      ],
+      "advies": "Ja: vult 12:00 tot half december; het bijschrift keur je per code in één zitting",
+      "blokkeert": false
+    },
+    {
+      "vraag": "TikTok en Snapchat: er is nog niets geplaatst, en de koppeling moet jij aanvragen. Wat doen we tot die tijd?",
+      "aan": "andries",
+      "keuzes": [
+        "Wachten op de automaat",
+        "Met de hand plaatsen",
+        "Voorlopig parkeren"
+      ],
+      "advies": "Wachten, en de aanvraag pas doen als Instagram op tijd loopt",
+      "blokkeert": false
+    },
+    {
+      "vraag": "Proef account 3: het Instagram-account had vóór de start al 205 volgers, dus de lat \"samen 100 volgers\" is zonder iets te doen al gehaald. Alleen nieuwe volgers sinds zo 15 nov tellen?",
+      "aan": "andries",
+      "keuzes": [
+        "Ja, alleen nieuwe volgers tellen",
+        "Nee, de lat laten staan"
+      ],
+      "advies": "Ja: de lat wordt strenger, niet soepeler",
+      "blokkeert": false
+    }
+  ],
   "buitenGit": [
     {
       "tijd": "2026-11-13T11:57:00+01:00",
@@ -204,6 +280,10 @@
     {
       "tijd": "2026-11-19T20:08:00+01:00",
       "wat": "Antwoord Finn (cross-session, 20:08): stand kanaal 2; hij noemde namen van andere accounts, die staan niet in de repo"
+    },
+    {
+      "tijd": "2026-11-19T20:19:00+01:00",
+      "wat": "Andries: \"Ja, zet klaar\" (de keurlijst voor vr 20 nov)"
     }
   ],
   "voorEva": [
@@ -321,6 +401,11 @@
       "id": "jesse-27",
       "aan": "Eva",
       "wat": "eva-status-1 is af: docs/manager/status-kanalen-2026-11-19.md (datum van vandaag in de naam, niet 17 nov). Kanaal 2 staat erin met jouw stand van ma 16 nov; ik heb Finn rechtstreeks om zijn actuele stand gevraagd (cross-session, nog geen antwoord) en Koen ook (antwoord verwerkt). V-sven-6: het nieuwe account is vervallen (jesse-26), dus de fan-regel speelt alleen nog bij account 3, bij Koen. V-manon-elevenlabs-gedeeld: account 3 gebruikte sinds 14 nov ±13.700 tekens (opgave Koen); de verdeling per kanaal komt op de keurlijst van vr 20 nov. Punt voor de keurlijst uit eva-automaat-2 (bijschrift hoort bij het pakket voor kanaal 2 en account 3) neem ik mee."
+    },
+    {
+      "id": "jesse-28",
+      "aan": "Eva (Manon, Finn, Koen)",
+      "wat": "Keurlijst vr 20 nov staat klaar: docs/keurlijst-week.md. Zeven wat-vragen staan ook in mijn stand onder vragen (voor het Ploegoverzicht); meer stemtegoed is geld en gaat alleen in een sessie. Voorstel tijdvakken in de gedeelde Chrome: Manon 17:00-17:45, Finn 17:45-18:30, Koen 18:30-19:15 (geldt pas na een ja van Andries). Voor Manon: do 19 nov om 20:16 stonden YL01 (16:00) en YS44 (20:00) nog niet op Instagram; als Andries voor de wekker van buiten kiest, werkt zij haar tweede voorstel uit."
     }
   ],
   "ontvangen": [
