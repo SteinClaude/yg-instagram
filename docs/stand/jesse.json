@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-19T19:45:00+01:00",
+  "tijd": "2026-11-19T19:47:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-19T19:30:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-19T19:47:00+01:00 Takenverdeling clippen met Koen afgestemd (opdracht-clippen.md); risico commercieel gebruik gamebeeld als harde startvoorwaarde",
     "2026-11-19T19:34:00+01:00 Besluiten Andries: één account voor clippen en fan/nieuws; beeld van campagnes en trailercitaten; Koen erbij (jesse-24)",
     "2026-11-19T19:32:00+01:00 Besluiten Andries clippen 3a-3c en maker vastgelegd in opdracht-clippen.md en opdracht-gta6-account.md",
     "2026-11-19T19:30:00+01:00 docs/manager/opdracht-clippen.md (proef 2 weken, 4 beslispunten) en docs/manager/opdracht-gta6-account.md (8 punten, ter beslissing)",
@@ -30,10 +31,21 @@
     "2026-11-13T12:20:00+01:00 Eerste keurlijst van de week: docs/keurlijst-week.md",
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
-  "bezig": "Overleg met Koen over de takenverdeling clippen/GTA 6-account",
-  "volgende": "Antwoord van Koen verwerken in opdracht-clippen.md (takenverdeling); daarna status kanalen (eva-status-1)",
+  "bezig": null,
+  "volgende": "Vóór de eerste clip: nagaan of commercieel gebruik van gamebeeld gedekt is (beleid uitgever + campagnevoorwaarden); wacht op Andries (naam, account, Whop, zittingsduur); status kanalen (eva-status-1)",
   "kanNietVerder": null,
-  "vragen": [],
+  "vragen": [
+    {
+      "vraag": "Zitting clippen: 2 clips op 2 platforms kost 20-25 min per dag in plaats van 15. Wat kies je?",
+      "aan": "andries",
+      "keuzes": [
+        "Zitting 25 min, beide platforms",
+        "Start met 1 platform (TikTok), 15 min"
+      ],
+      "advies": "Start met 1 platform: past in 15 min en we leren sneller; Instagram erbij na week 1",
+      "blokkeert": false
+    }
+  ],
   "buitenGit": [
     {
       "tijd": "2026-11-13T11:57:00+01:00",
@@ -158,6 +170,10 @@
     {
       "tijd": "2026-11-19T19:45:00+01:00",
       "wat": "Bericht aan de sessie van Koen (cross-session, op deze pc): voorstel takenverdeling (Andries: account, Whop, zitting · Koen: test, campagnes, 2 clips/dag, plaatsen/insturen, meten privé, bio · Jesse: regels, criteria, weekoverzicht, eindvoorstel) en 4 vragen; wacht op antwoord"
+    },
+    {
+      "tijd": "2026-11-19T19:47:00+01:00",
+      "wat": "Antwoord Koen (cross-session): akkoord met verdeling; Andries kiest campagnes (Whop-voorwaarden), Koen meet in browser Andries zonder inloggen; zitting 20-25 min; risico commercieel gebruik; geen stem tot 14 dec; Chrome open laten"
     }
   ],
   "voorEva": [

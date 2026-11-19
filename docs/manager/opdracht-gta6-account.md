@@ -56,7 +56,7 @@ Geen crewlid kan het spel spelen of opnemen.
 
 | Keuze | Voor | Tegen |
 |---|---|---|
-| **Koen erbij** (hij kent GTA 6 al) | Geen nieuw crewlid; de kennis is er al. | Account 3 zit midden in het opnieuw maken van G01–G03, en de proef is niet gestart. |
+| **Koen erbij** (hij kent GTA 6 al) | Geen nieuw crewlid; de kennis is er al. | Account 3 loopt ook (rechtzetting Koen, 19 nov: G01–G03 zijn al opnieuw gemaakt en online; het dagritme begint op 14 dec, dus er is nu ruimte). |
 | **Nieuw crewlid** (Eva maakt hem) | Gescheiden van account 3. | Opstarttijd (±1 dag). |
 
 **Advies:** Koen erbij, voor de proef van 2 weken. Clippen en fanclips zijn snel knipwerk en geen animatie. Blijkt het te zwaar naast account 3, dan komt er na de proef een nieuw crewlid. De uitkomst van de proef van account 3 (ma 23 nov) weegt mee.

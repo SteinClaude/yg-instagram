@@ -19,6 +19,30 @@
 - **Eén of twee accounts** (±19:34): *"Eén account voor beide (Recommended)"*. Het clip-account is ook het GTA 6-fan- en nieuwsaccount: één nieuw account op TikTok en Instagram.
 - **Punt 2, beeld** (±19:34): *"Campagne + kort trailerbeeld (Recommended)"*. De eerste 2 weken geen uitgave. Eigen opnames komen pas als de proef slaagt, en alleen na een OK per bedrag.
 
+## Takenverdeling (overleg Jesse en Koen, do 19 nov 2026 ±19:47)
+
+Andries vroeg: *"koppel dit eerst samen moet koen ga even in overleg en verdeel de taken,"*. Koen is akkoord, met drie aanpassingen (in de lijst verwerkt).
+
+| Wie | Taken |
+|---|---|
+| **Andries** | Naam en handle kiezen; het account op TikTok en Instagram aanmaken; het Content Rewards/Whop-account. **Elke dag een campagne kiezen uit de lijst van Koen en meedoen** (de voorwaarden accepteren op zijn Whop-account). Ja of nee op elke download (campagnebeeld en trailerbeeld). De dagelijkse zitting. Beslissen over Clips Kitty (installeren is zijn keuze). Chrome open laten staan tijdens de zitting. |
+| **Koen** | Elke dag een korte lijst kandidaat-campagnes: per view, bron genoemd, landeneisen en de volledige regels gelezen. 2 clips per dag met zijn sjabloon (ffmpeg, `tools/clip.py`: haak, bron in beeld, ondertitels, reactie van het duo in een ballonnetje) plus de reclamevermelding aan het begin. Het detail moet kloppen en uit de clip zelf of een officiële bron komen; geen geruchten of leaks. Vóór elke download vraagt hij Andries (bestandsnaam, bron, grootte). Plaatsen en insturen in de zitting. Meten per clip in zijn privé-repo: de cijfers leest hij in de browser van Andries, zonder in te loggen. Bio en profielfoto ter keuring. |
+| **Jesse** | Regels en criteria bewaken. **Vóór de eerste clip nagaan of commercieel gebruik gedekt is** (zie het risico hieronder). Weekoverzicht zonder bedragen. Na 14 dagen een voorstel: doorgaan, opschalen of stoppen. |
+
+**Tijd (schatting van Koen):**
+- per clip ±40 minuten in week 1, daarna ±25 (moment zoeken, regels nalopen, knippen, sjabloon, ondertitels, bijschrift);
+- de zitting: 2 clips op 2 platforms keuren, plaatsen en insturen kost **±20–25 minuten per dag**, niet 15. De 15 minuten uit 3b zijn dus te krap; Andries kiest of de zitting langer wordt of dat we beginnen met 1 platform.
+
+**Ruimte bij Koen:**
+- G01–G03 zijn al opnieuw gemaakt en staan sinds 15–18 nov op YouTube (G01 en G03 ook op Instagram);
+- G05, G06, G08 en G11 zijn ingepland; G07 wacht op een pakket OK en G09 op stemcredits;
+- het dagritme van account 3 begint pas op 14 dec. Er is dus ruimte voor 2 clips per dag. Gaat het knellen, dan kiest Andries wat voorgaat.
+
+**Risico's (Koen, overgenomen):**
+1. **Commercieel gebruik van gamebeeld.** Volgens de lezing van de crew staat het beleid van de uitgever alleen niet-commercieel gebruik toe, en betaalde campagneclips zijn commercieel. **Vóór de eerste clip gaan we zwart-op-wit na of de campagne of de rechthebbende dat dekt.** Zo niet, dan komt er geen GTA-beeld in betaalde clips: anders volgen claims of strikes op het nieuwe account. Dit is een harde voorwaarde voor de start.
+2. **Stem:** de ElevenLabs-credits zijn op tot 14 dec. De clips krijgen alleen tekst en reacties, zonder ingesproken stem. Credits kopen alleen na een OK per bedrag.
+3. **Chrome van Andries moet open staan.** Vanavond stond het geminimaliseerd, en daardoor bleef Instagram van account 3 liggen.
+
 ## 1. De proef in het kort
 
 | | |

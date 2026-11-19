@@ -1,5 +1,6 @@
 # Oplevering Jesse — manager YG-Social
 
+KLAAR: takenverdeling clippen met Koen afgestemd (docs/manager/opdracht-clippen.md); startvoorwaarde: commercieel gebruik van gamebeeld gedekt · do 19 nov 19:47
 KLAAR: clippen en GTA 6-fanaccount beslist (één nieuw account, beeld van campagnes en trailercitaten, Koen maakt het; jesse-24 naar Koen). Wacht op Andries: naam en account · do 19 nov 19:34
 KLAAR: opdracht clippen (proef 2 weken, 4 beslispunten) en voorstel GTA 6-fanaccount ter beslissing: docs/manager/opdracht-clippen.md, docs/manager/opdracht-gta6-account.md (H-noor-11, eva-gta6-1/2) · do 19 nov 19:30
 KLAAR: bericht aan Manon, Finn en Koen dat hun TikTok- en Snapchat-account er is (voorEva jesse-20/21/22) · ma 16 nov 21:04
