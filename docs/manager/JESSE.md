@@ -28,6 +28,21 @@ Andries via chat met Eva, do 19 nov 2026 10:22, over wat er vanmiddag kan starte
 
 **Grenzen (ongewijzigd):** je maakt geen account aan, kiest geen naam, geeft niets uit en plaatst niets. In deze repo staan geen namen, handles of bedragen; het nieuwe account heet hier "het GTA 6-fanaccount".
 
+### Aanvulling, do 19 nov 18:53 (Eva): clippen hoort bij dit voorstel · `eva-gta6-2`
+
+Stand van nu: Noor weet inmiddels dat Andries account 3 bedoelde (zie H-noor-10 hieronder). Ze vraagt hem nu waar de campagneclips komen: op account 3 (alleen TikTok en Instagram), op een apart nieuw clip-account, of ook op YouTube van account 3. Mijn advies aan hem: een apart nieuw account, en dat hetzelfde laten zijn als het GTA 6-fanaccount. Hij beslist, op het Ploegoverzicht of in een sessie; je hoort het via je kaart. Zet `eva-gta6-2` in je `ontvangen`.
+
+Wat je uit het onderzoek van Noor nodig hebt (je hoeft het niet op te vragen):
+- Een merk, streamer of label zet een budget klaar. Clippers plaatsen korte video's op hun eigen account en krijgen betaald per 1.000 views, na goedkeuring van de clip. De grootste marktplaats heet Content Rewards (uitbetaling via Whop).
+- Per 1.000 views is het weinig: je hebt veel views nodig. Campagnes met een vaste pot vragen honderdduizenden goedgekeurde views; voor een nieuw account is dat niet haalbaar.
+- Regels van de campagnes: een duidelijke reclamevermelding aan het begin van elke clip; binnen 30 minuten na plaatsen insturen; alleen beelden die de opdracht noemt (bij een streamer: de streamer in beeld); geen gekochte views; dezelfde clip niet bij twee campagnes.
+- Op do 19 nov stonden er campagnes rond GTA 6 open. Geen ervan is van de uitgever.
+- YouTube: het beleid over hergebruikte inhoud geldt voor het hele kanaal, ook met toestemming van de maker. Daarom nooit clippen op een kanaal waar uitbetaling beschermd moet worden.
+- Rechtzetting op mijn blok hierboven: er is geen algemene blokkade voor Nederland gevonden en uitbetalen naar Nederland kan. Sommige campagnes eisen wel dat een groot deel van de kijkers uit Engelstalige landen komt.
+- Gereedschap om clips te maken is nog niet getest. Sleutels of abonnementen kosten geld en zijn dus een besluit van Andries.
+
+In je voorstel: werk bij punt 1 de variant "fanaccount en clip-account zijn één account" uit. Zet bij punt 5 wat clippen kan opleveren en wat het per dag aan tijd kost (insturen binnen 30 minuten vraagt iemand die erbij is).
+
 ## Nieuw van Andries (via Noor, H-noor-10; doorgezet door Eva, kantoor-check do 19 nov 2026 18:47)
 
 Andries, do 19 nov 2026 13:04, in de sessie van Noor (na haar onderzoek naar clipping): *"Dus we kunnen doorpakken met clippen/clip farmen, ik zou hiervoor dan [weggelaten] voor gebruiken en deze de focus laten leggen op clippen/clipfarmen"*. Het weggelaten stuk is de naam van een account; in het Kantoor is dat de naam van account 3 (Koen). Noor vraagt Andries na of hij dat account bedoelt.
