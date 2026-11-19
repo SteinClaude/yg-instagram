@@ -339,9 +339,39 @@ function tijdmachine() {
   return s;
 }
 
-const DECORS = { kamer, klas, rome, atelier, baan, straat, green, haven, plein, museum, tijdmachine };
+// ------------------------------------------------------------------ bureau: het recherchebureau (volwassener: gedempte kleuren, lamplicht)
+// Andries do 19 nov 2026 ±20:35: "Rechercheurs (Recommended)". Het vlak is een prikbord met foto's en rode touwtjes.
+function bureau() {
+  let s = `<defs><radialGradient id="lamp" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#F6D9A0" stop-opacity="0.35"/><stop offset="1" stop-color="#F6D9A0" stop-opacity="0"/></radialGradient></defs>`;
+  s += `<rect x="-60" y="-60" width="1200" height="1600" fill="#2F4A4C"/>`;
+  s += Array.from({ length: 14 }, (_, i) => `<rect x="${-60 + i * 90}" y="-60" width="44" height="1600" fill="#000" opacity="0.05"/>`).join('');
+  // raam met jaloezieën en lichtstrepen
+  s += `<rect x="640" y="140" width="380" height="420" fill="#1C2B33" ${o()}/>` + Array.from({ length: 12 }, (_, i) => `<rect x="650" y="${152 + i * 34}" width="360" height="16" fill="#D9C89A" opacity="0.85"/>`).join('');
+  s += `<path d="M 640 560 L 300 1470 L 700 1470 L 1020 560 Z" fill="#F6D9A0" opacity="0.06"/>`;
+  // dossierkasten links
+  s += [0, 1].map(k => `<rect x="${-40 + k * 130}" y="1060" width="120" height="410" fill="#5D6B5E" ${o(6)}/>` + [1100, 1230, 1360].map(y => `<rect x="${-28 + k * 130}" y="${y}" width="96" height="110" rx="4" fill="#6E7D6F" ${o(4)}/><rect x="${2 + k * 130}" y="${y + 20}" width="36" height="12" rx="4" fill="#C9C4BA" ${o(3)}/>`).join('')).join('');
+  // bureau met lamp rechts
+  s += `<rect x="760" y="1250" width="380" height="40" fill="#5A3B26" ${o(6)}/><rect x="780" y="1290" width="30" height="180" fill="#4A3020" ${o(5)}/><rect x="1080" y="1290" width="30" height="180" fill="#4A3020" ${o(5)}/>`;
+  s += `<path d="M 900 1250 L 900 1150 L 960 1100" fill="none" ${o(8)}/><path d="M 930 1080 L 1010 1060 L 1000 1130 Z" fill="#2F5E3A" ${o(5)}/><ellipse cx="960" cy="1250" rx="40" ry="10" fill="#16161A"/>`;
+  s += `<rect x="820" y="1222" width="70" height="28" rx="3" fill="#D9B970" ${o(4)}/><rect x="1040" y="1210" width="34" height="40" rx="4" fill="#E9E4DA" ${o(4)}/>`;
+  s += `<rect x="-60" y="-60" width="1200" height="1600" fill="url(#lamp)"/>`;
+  // vloer: donker hout
+  s += houtVloer('#5A3B26', '#432B1B');
+  // prikbord (het vlak) met foto's, kaartjes en rode touwtjes
+  s += `<rect x="126" y="660" width="844" height="374" rx="8" fill="#000" opacity="0.3"/>`;
+  s += `<rect x="112" y="642" width="856" height="386" rx="8" fill="#6E4627" ${o()}/><rect x="${VLAK.x}" y="${VLAK.y}" width="${VLAK.w}" height="${VLAK.h}" rx="2" fill="#C8A577" ${o(4)}/>`;
+  s += Array.from({ length: 40 }, (_, i) => `<circle cx="${VLAK.x + 20 + (i * 97) % (VLAK.w - 40)}" cy="${VLAK.y + 20 + (i * 61) % (VLAK.h - 40)}" r="2.5" fill="#A88457"/>`).join('');
+  // kleine papiertjes in de hoeken, zodat het midden vrij blijft voor het onderwerp
+  const kaartje = (x, y, r, c = '#F4EFE4') => `<g transform="rotate(${r} ${x} ${y})"><rect x="${x - 34}" y="${y - 24}" width="68" height="48" fill="${c}" ${o(3)}/><path d="M ${x - 22} ${y - 6} L ${x + 22} ${y - 6} M ${x - 22} ${y + 6} L ${x + 10} ${y + 6}" stroke="#A8A196" stroke-width="3"/></g><circle cx="${x}" cy="${y - 20}" r="6" fill="#D9432B" ${o(2)}/>`;
+  s += kaartje(190, 712, -6) + kaartje(890, 712, 5) + kaartje(196, 958, 4, '#E8D8B8') + kaartje(884, 956, -5, '#E8D8B8');
+  s += `<path d="M 190 692 L 890 692 M 196 938 L 884 936" fill="none" stroke="#B3261E" stroke-width="3" opacity="0.8"/>`;
+  s += `<rect x="440" y="1040" width="200" height="34" rx="4" fill="#E9E4DA" ${o(4)}/><text x="540" y="1064" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="20" fill="#16161A" letter-spacing="3">CASE FILE</text>`;
+  return s;
+}
+
+const DECORS = { kamer, klas, rome, atelier, baan, straat, green, haven, plein, museum, tijdmachine, bureau };
 // kleur voor tekst en tekeningen op het vlak
-const INKT = { kamer: '#16161A', klas: '#F4F1E6', rome: '#16161A', atelier: '#16161A', baan: '#F4F1E6', straat: '#16161A', green: '#16161A', haven: '#16161A', plein: '#16161A', museum: '#16161A', tijdmachine: '#8FE3C9' };
+const INKT = { kamer: '#16161A', klas: '#F4F1E6', rome: '#16161A', atelier: '#16161A', baan: '#F4F1E6', straat: '#16161A', green: '#16161A', haven: '#16161A', plein: '#16161A', museum: '#16161A', tijdmachine: '#8FE3C9', bureau: '#16161A' };
 const svg = naam => { if (!DECORS[naam]) throw new Error('onbekend decor ' + naam);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2040" viewBox="-60 -60 1200 2040">${DECORS[naam]()}</svg>`; };
 

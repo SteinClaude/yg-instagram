@@ -7,6 +7,16 @@
 
 Dit is een **ontwerp**. Er is nog niets van in een video gebruikt. Nieuwe figuren en decors zijn een stijlwijziging, dus eerst een **"stijl OK"** van Andries.
 
+## Bijgesteld do 19 nov ±20:33: rechercheurs, volwassener
+Andries: *"ik wil ook nieuwe figureren en het meer voor vollwase maken ook"*; het duo: *"Vervangen"*; volwassener in *"Beeld, Toon en tekst, Stemmen"*; richting: *"Rechercheurs (Recommended)"*.
+- **Hoofdpersonen (nieuw, verzonnen):** J **de rechercheur** (lange camelkleurige jas, roestrode sjaal; vraagt door, droog en scherp) en K **de collega** (ouder, grijze baard, brilletje, gilet, map "SOURCES"; controleert elk feit). Namen kiest Andries; vóór gebruik zoek ik na of ze niet bestaan.
+- **Opzet:** elk alledaags ding is een dossier ("Case #48: The pink flamingo"). Het **recherchebureau** (nieuw decor `bureau`: prikbord met touwtjes, jaloezieën, lamplicht) is de thuisbasis; het **museum** is de bewijskamer ("Exhibit A"); de **tijdmachine** verhoort het verleden ("Destination: 1844"). Het dorp blijft de wereld eromheen.
+- **Volwassener:** dunnere lijnen, kleine ogen, geen blosjes, mensenhanden, gedempte kleuren, droge toon zonder kinderlijke uitroepen; rustige stemmen (na 14 dec).
+- **Vervalt** in deze richting: het Vraagteken en Peertje als hoofdpersonen en de bewoners G, H, I uit de eerste ronde (blijven als ontwerp bewaard). Al goedgekeurde video’s t/m YS48 en YL01 blijven zoals ze zijn.
+- Bladen: `docs/figuur/ontwerp-J.jpg`, `ontwerp-K.jpg`, `ontwerpen-overzicht-rechercheurs.jpg`, `docs/waaromdorp/rechercheurs.jpg` (`node gereedschap/waaromdorp-blad.cjs --rechercheurs`).
+
+## Eerste ronde (G, H, I met het duo)
+
 ## Het idee in één zin
 Het Vraagteken en Peertje wonen in een eigen dorp. Elke video begint op het dorpsplein met een vraag. Het antwoord zoeken ze in het museum, of ze reizen met de tijdmachine naar het moment waarop het ontstond.
 

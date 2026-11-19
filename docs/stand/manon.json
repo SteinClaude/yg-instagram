@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-19T20:30:00+01:00",
+  "tijd": "2026-11-19T20:33:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-19T20:33:00+01:00 Rechercheurs getekend: J de rechercheur en K de collega (gereedschap/figuur.cjs), nieuw decor bureau (gereedschap/short/decor.cjs), bladen docs/figuur/ontwerp-J/K.jpg, ontwerpen-overzicht-rechercheurs.jpg en docs/waaromdorp/rechercheurs.jpg (in bureau, museum en tijdmachine). Ter keuring; niets in een video gebruikt.",
     "2026-11-19T20:21:00+01:00 Ontwerp Waaromdorp gemaakt (docs/waaromdorp/LEESMIJ.md): drie nieuwe bewoners (G Opa Klok met de tijdmachine, H Professor Globe van het museum, I Krantje met de vraag van de dag; gereedschap/figuur.cjs), drie nieuwe decors (plein, museum, tijdmachine; gereedschap/short/decor.cjs), bladen docs/figuur/ontwerp-G/H/I.jpg en ontwerpen-overzicht-waaromdorp.jpg, docs/waaromdorp/plekken.jpg en kaart.jpg (gereedschap/waaromdorp-blad.cjs). Niets in een video gebruikt; geen stemtekens.",
     "2026-11-18T18:13:00+01:00 Pakket YS48 gemaakt (flamingo’s, 41,4 s, stijl 3 met watermerk; bronnen Smithsonian’s National Zoo en San Diego Zoo; 606 stemtekens, ElevenLabs-teller wo 18 nov 21:15: 39.424 van 40.000, 576 over tot 14 dec; YS48 kostte op de teller 242, minder dan de 606 tekens van de tekst). Overgang naar scène 5 zonder \"zweep\": resvg liep daar vast. Met Instagram-versie, bijschriften TikTok/Snapchat en kaart met vraag om pakket OK en bijschrift OK.",
     "2026-11-18T17:40:00+01:00 YL01 ingepland in YouTube Studio (kanaal 1 nagekeken: avatar vraagteken, nieuwste short de tennisballen). Studio: \"Video gepland — Je video wordt als openbaar ingesteld op 19 november 2026 om 16:00\"; lijst Shorts: Gepland 19 nov 2026. Instagram staat al voor dezelfde tijd. YS46 en YS47 niet meer gelukt binnen 17:00–17:45 (begon om 17:37): do 19 nov 17:00.",
@@ -140,12 +141,13 @@
   "volgende": "Antwoord van Andries op Waaromdorp (stijl OK, rol, proef); vr 20 nov 17:00 (Studio): YS46 en YS47 inplannen, YS48 na OK; daarna 18:00-shorts naar 12:00. TikTok en Snapchat (bio v2) en vastzetten op Instagram met Andries. Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
-    "Waaromdorp: wat moet er anders aan de figuren of plekken (\"Aanpassen\")? · aanname: niets gebruiken tot stijl OK · blokkeert: ja, voor de stijl OK",
+    "Stijl OK voor de rechercheurs (J, K) en het bureau, of aanpassen? · aanname: niets gebruiken tot stijl OK · blokkeert: ja, voor video’s in de nieuwe stijl",
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-19T20:35:00+01:00 Andries in de sessie, op de vier richtingen voor volwassen figuren: \"Rechercheurs (Recommended)\"",
     "2026-11-19T20:30:00+01:00 Andries in de sessie: \"ik wil ook nieuwe figureren en het meer voor vollwase maken ook\"; op \"Wat gebeurt er met het Vraagteken en Peertje?\": \"Vervangen\"; op \"Wat voor nieuwe figuren wil je in het dorp?\": \"Something else\" (zonder toelichting); op \"Wat moet er volwassener worden?\": \"Beeld, Toon en tekst, Stemmen\"",
     "2026-11-19T20:25:00+01:00 Andries in de sessie, op \"Zijn de nieuwe bewoners ... goed zo, als stijl voor kanaal 1?\": \"Aanpassen\"; op \"Hoe spelen de bewoners mee?\": \"Gast per onderwerp (Recommended)\"; op \"Wanneer maken we de eerste video in Waaromdorp?\": \"Na 14 dec (Recommended)\"",
     "2026-11-19T20:16:00+01:00 Andries in de sessie: \"maar wel het zelfde idee voor dit kanaal aleen dan in de trant van kanaal 1 snap je me?\"; op de vraag welke bestaande figuren erbij: \"nieuwe opties niet met betrekking tot wat we nu hebben, ik wi opschalen en verbeteren\" (en bij de andere vragen: \"stel zo opnieuw\"); op de vraag welke richting: \"waaromdorp met museum en tijdreizen\"",

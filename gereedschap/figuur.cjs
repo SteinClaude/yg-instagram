@@ -547,6 +547,115 @@ function I(o) {
   return s;
 }
 
+// ================================================================== Rechercheurs (do 19 nov 2026, ±20:35)
+// Andries: "ik wil ook nieuwe figureren en het meer voor vollwase maken ook"; het duo: "Vervangen"; richting:
+// "Rechercheurs (Recommended)". Volwassener: dunnere lijnen, kleinere ogen, geen blosjes, rustige kleuren, mensenhanden.
+// Verzonnen personen; namen kiest Andries later.
+const hand = (x, y, hoek, soort, huid, schaal = 0.9) => handschoen(x, y, hoek, soort, schaal)
+  .split(K.huid).join(huid).split(K.handDiep).join(meng(huid, '#000000', 0.18));
+// mouw: inktrand met de stofkleur erin
+const mouw = (sx, sy, hx, hy, buig, kleur, dik = 30) => arm(sx, sy, hx, hy, buig, dik + 10, K.inkt) + arm(sx, sy, hx, hy, buig, dik, kleur);
+const ogen = (x, y, afstand, kijk, open, r = 12) => oog(x - afstand, y, r, kijk, open) + oog(x + afstand, y, r, kijk, open);
+
+// ------------------------------------------------------------------ J · Rechercheur (hoofdpersoon)
+// Lange camelkleurige jas met ceintuur, roestrode sjaal, donker kort haar met een scheiding. Scherp, droog, vraagt door.
+function J(o) {
+  const { pose, kijk, mondType, open } = o;
+  const JAS = '#B98E55', JASD = '#8C6A3C', BROEK = '#2C3142', HUID = '#E7B48E', HAAR = '#25232B', SJAAL = '#9C4632';
+  let s = '';
+  // benen en schoenen
+  s += [-26, 26].map(x => `<path d="M ${x} -250 L ${x} -22" stroke="${K.inkt}" stroke-width="40" stroke-linecap="round"/><path d="M ${x} -250 L ${x} -22" stroke="${BROEK}" stroke-width="30" stroke-linecap="round"/>`).join('');
+  s += [-1, 1].map(z => `<g transform="translate(${z * 26} 0) scale(${z} 1)"><path d="M -16 0 Q -18 -24 6 -24 Q 36 -22 40 -4 Q 40 0 34 0 Z" fill="#4A2E1E" stroke="${K.inkt}" stroke-width="6" stroke-linejoin="round"/></g>`).join('');
+  // jas
+  const jas = c => `<path d="M -84 -470 Q 0 -488 84 -470 L 118 -214 Q 0 -196 -118 -214 Z" fill="${c}"/>`;
+  s += cel(jas, JAS, JASD, null, { dx: 12, dy: 10, omtrek: 5 });
+  s += `<path d="M 0 -474 L 0 -206" stroke="${JASD}" stroke-width="5"/>`;
+  s += `<path d="M -40 -476 L -6 -380 L -54 -420 Z M 40 -476 L 6 -380 L 54 -420 Z" fill="${JASD}" stroke="${K.inkt}" stroke-width="5" stroke-linejoin="round"/>`;
+  s += `<rect x="-104" y="-352" width="208" height="20" fill="${JASD}" stroke="${K.inkt}" stroke-width="5"/><rect x="-14" y="-356" width="28" height="28" rx="3" fill="none" stroke="#C9962E" stroke-width="5"/>`;
+  s += [-58, 58].map(x => `<circle cx="${x}" cy="-300" r="6" fill="${JASD}" stroke="${K.inkt}" stroke-width="3"/><circle cx="${x}" cy="-260" r="6" fill="${JASD}" stroke="${K.inkt}" stroke-width="3"/>`).join('');
+  // hals en sjaal
+  s += `<rect x="-18" y="-506" width="36" height="40" fill="${HUID}" stroke="${K.inkt}" stroke-width="5"/>`;
+  s += `<path d="M -46 -480 Q 0 -456 46 -480 Q 50 -462 30 -452 Q 0 -440 -30 -452 Q -50 -462 -46 -480 Z" fill="${SJAAL}" stroke="${K.inkt}" stroke-width="5" stroke-linejoin="round"/><path d="M 20 -452 L 34 -380 L 12 -384 L 6 -450 Z" fill="${SJAAL}" stroke="${K.inkt}" stroke-width="5" stroke-linejoin="round"/>`;
+  // hoofd
+  const hoofd = c => `<ellipse cx="0" cy="-566" rx="50" ry="62" fill="${c}"/>`;
+  s += cel(hoofd, HUID, meng(HUID, '#000000', 0.15), null, { dx: 8, dy: 6, omtrek: 5 });
+  s += `<ellipse cx="-52" cy="-562" rx="9" ry="14" fill="${HUID}" stroke="${K.inkt}" stroke-width="4"/><ellipse cx="52" cy="-562" rx="9" ry="14" fill="${HUID}" stroke="${K.inkt}" stroke-width="4"/>`;
+  // haar: korte bob met scheiding
+  s += `<path d="M -58 -548 Q -66 -640 0 -638 Q 66 -640 58 -548 Q 56 -520 50 -516 Q 44 -580 10 -600 Q -30 -578 -46 -560 Q -50 -530 -58 -520 Z" fill="${HAAR}" stroke="${K.inkt}" stroke-width="5" stroke-linejoin="round"/>`;
+  s += glans('M -30 -620 Q -10 -632 14 -628', 5, 0.25);
+  // gezicht: smalle wenkbrauwen, kleine ogen, neus, mond
+  const br = pose === 'verbaasd' ? 10 : pose === 'wijst' ? 3 : 0;
+  s += wenkbrauw(-20, -584, 26, -6, br, HAAR, 6) + wenkbrauw(22, -584, 26, pose === 'wijst' ? -16 : 4, pose === 'wijst' ? br + 4 : br, HAAR, 6);
+  s += ogen(1, -566, 20, kijk, open, 10);
+  s += `<path d="M 4 -560 Q 12 -540 2 -536" fill="none" stroke="${meng(HUID, '#000000', 0.35)}" stroke-width="4" stroke-linecap="round"/>`;
+  s += mond(2, -522, 22, mondType === 'glim' ? 'dicht' : mondType === 'open' ? 'half' : mondType);
+  // armen
+  if (pose === 'wijst') {
+    s += mouw(78, -456, 196, -560, -16, JAS) + hand(196, -560, hoekVan(78, -456, 196, -560) - 8, 'wijs', HUID);
+    s += mouw(-78, -456, -118, -320, 14, JAS) + boekje(-130, -300, 10) + hand(-118, -320, 110, 'vuist', HUID);
+  } else if (pose === 'verbaasd') {
+    s += mouw(78, -456, 160, -580, -16, JAS) + hand(160, -580, -70, 'open', HUID);
+    s += mouw(-78, -456, -160, -580, 16, JAS) + hand(-160, -580, -110, 'open', HUID).replace('scale(0.9)', 'scale(0.9 -0.9)');
+  } else {
+    s += mouw(78, -456, 112, -300, -10, JAS) + hand(112, -300, 80, 'vuist', HUID);
+    s += mouw(-78, -456, -110, -330, 10, JAS) + boekje(-122, -310, 10) + hand(-110, -330, 100, 'vuist', HUID);
+  }
+  return s;
+}
+
+// ------------------------------------------------------------------ K · De collega (bronnen)
+// Oudere rechercheur: grijs haar en baard, rond brilletje, wit overhemd met opgerolde mouwen, olijfgroen gilet,
+// donkerrode das, een map met bronnen onder de arm. Hij controleert elk feit.
+function Kfig(o) {
+  const { pose, kijk, mondType, open } = o;
+  const GILET = '#5E6440', GILETD = '#454A2E', HEMD = '#ECE7DC', BROEK = '#4E453E', HUID = '#B9805A', GRIJS = '#C9C4BA', DAS = '#7A2E2A';
+  let s = '';
+  s += [-30, 30].map(x => `<path d="M ${x} -230 L ${x} -22" stroke="${K.inkt}" stroke-width="44" stroke-linecap="round"/><path d="M ${x} -230 L ${x} -22" stroke="${BROEK}" stroke-width="34" stroke-linecap="round"/>`).join('');
+  s += [-1, 1].map(z => `<g transform="translate(${z * 30} 0) scale(${z} 1)"><path d="M -18 0 Q -20 -26 6 -26 Q 40 -24 44 -4 Q 44 0 38 0 Z" fill="#1E1E24" stroke="${K.inkt}" stroke-width="6" stroke-linejoin="round"/></g>`).join('');
+  // overhemd (lijf) en gilet
+  const hemd = c => `<path d="M -92 -440 Q 0 -458 92 -440 Q 112 -330 100 -226 Q 0 -212 -100 -226 Q -112 -330 -92 -440 Z" fill="${c}"/>`;
+  s += cel(hemd, HEMD, '#CFC8BA', null, { dx: 10, dy: 8, omtrek: 5 });
+  s += `<path d="M 0 -446 L -12 -420 L -6 -300 L 0 -286 L 6 -300 L 12 -420 Z" fill="${DAS}" stroke="${K.inkt}" stroke-width="4" stroke-linejoin="round"/>`;
+  const gilet = c => `<path d="M -92 -436 L -24 -436 L 0 -330 L 24 -436 L 92 -436 Q 110 -330 100 -226 Q 0 -212 -100 -226 Q -110 -330 -92 -436 Z" fill="${c}"/>`;
+  s += cel(gilet, GILET, GILETD, null, { dx: 10, dy: 8, omtrek: 5 });
+  s += [-300, -268, -236].map(y => `<circle cx="0" cy="${y}" r="6" fill="#C9962E" stroke="${K.inkt}" stroke-width="3"/>`).join('');
+  s += `<rect x="40" y="-390" width="36" height="8" fill="${GILETD}"/><path d="M 52 -390 Q 40 -360 20 -352" fill="none" stroke="#C9962E" stroke-width="3"/>`;
+  // hals en hoofd
+  s += `<rect x="-22" y="-476" width="44" height="36" fill="${HUID}" stroke="${K.inkt}" stroke-width="5"/>`;
+  const hoofd = c => `<ellipse cx="0" cy="-534" rx="56" ry="60" fill="${c}"/>`;
+  s += cel(hoofd, HUID, meng(HUID, '#000000', 0.15), null, { dx: 8, dy: 6, omtrek: 5 });
+  s += `<ellipse cx="-58" cy="-532" rx="10" ry="15" fill="${HUID}" stroke="${K.inkt}" stroke-width="4"/><ellipse cx="58" cy="-532" rx="10" ry="15" fill="${HUID}" stroke="${K.inkt}" stroke-width="4"/>`;
+  // grijs haar aan de zijkant, kale kruin, baard
+  s += `<path d="M -58 -540 Q -64 -590 -30 -598 Q -40 -570 -46 -540 Z M 58 -540 Q 64 -590 30 -598 Q 40 -570 46 -540 Z" fill="${GRIJS}" stroke="${K.inkt}" stroke-width="4" stroke-linejoin="round"/>`;
+  s += glans('M -24 -584 Q -6 -592 14 -588', 6, 0.35);
+  s += `<path d="M -54 -530 Q -56 -476 0 -470 Q 56 -476 54 -530 Q 44 -500 20 -500 Q 0 -492 -20 -500 Q -44 -500 -54 -530 Z" fill="${GRIJS}" stroke="${K.inkt}" stroke-width="4" stroke-linejoin="round"/>`;
+  const br = pose === 'verbaasd' ? 10 : pose === 'wijst' ? 3 : 0;
+  s += wenkbrauw(-24, -566, 30, -4, br, GRIJS, 9) + wenkbrauw(24, -566, 30, pose === 'wijst' ? -14 : 4, pose === 'wijst' ? br + 4 : br, GRIJS, 9);
+  s += ogen(0, -544, 24, kijk, open, 10);
+  s += [-24, 24].map(x => `<circle cx="${x}" cy="-544" r="19" fill="#CFE3EA" fill-opacity="0.25" stroke="${K.inkt}" stroke-width="5"/>`).join('') + `<path d="M -6 -546 Q 0 -552 6 -546" fill="none" stroke="${K.inkt}" stroke-width="4"/>`;
+  s += `<path d="M 0 -538 Q 10 -518 0 -514" fill="none" stroke="${meng(HUID, '#000000', 0.35)}" stroke-width="4" stroke-linecap="round"/>`;
+  s += `<path d="M -26 -506 Q 0 -516 26 -506" fill="none" stroke="${GRIJS}" stroke-width="10" stroke-linecap="round"/>`;
+  s += mond(0, -496, 22, mondType === 'glim' ? 'dicht' : mondType === 'open' ? 'half' : mondType);
+  // map met bronnen
+  const map = (x, y, hoek) => `<g transform="translate(${x} ${y}) rotate(${hoek})"><rect x="-50" y="-64" width="100" height="128" rx="4" fill="#D9B970" stroke="${K.inkt}" stroke-width="5"/><path d="M -50 -64 L -14 -64 L -6 -74 L 20 -74 L 26 -64" fill="#D9B970" stroke="${K.inkt}" stroke-width="5" stroke-linejoin="round"/>` +
+    `<rect x="-36" y="-40" width="72" height="22" fill="#F4EFE4" stroke="${K.inkt}" stroke-width="3"/><text x="0" y="-23" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="15" fill="${K.inkt}">SOURCES</text>` +
+    `<path d="M 50 -50 L 58 -46 L 58 60 L 50 64" fill="#F4EFE4" stroke="${K.inkt}" stroke-width="3"/></g>`;
+  // armen: opgerolde mouwen (hemd) en onderarmen
+  const onderarm = (sx, sy, hx, hy, buig) => { const mx = sx + (hx - sx) * 0.55, my = sy + (hy - sy) * 0.55;
+    return mouw(sx, sy, mx, my, buig / 2, HEMD, 32) + `<circle cx="${mx}" cy="${my}" r="19" fill="${HEMD}" stroke="${K.inkt}" stroke-width="5"/>` + arm(mx, my, hx, hy, buig / 2, 30, K.inkt) + arm(mx, my, hx, hy, buig / 2, 20, HUID); };
+  if (pose === 'wijst') {
+    s += onderarm(-86, -424, -206, -520, 16) + hand(-206, -520, hoekVan(-86, -424, -206, -520) + 8, 'wijs', HUID);
+    s += onderarm(86, -424, 124, -290, -12) + hand(124, -300, 70, 'vuist', HUID) + map(150, -300, 6);
+  } else if (pose === 'verbaasd') {
+    s += onderarm(86, -424, 170, -556, -16) + hand(170, -556, -70, 'open', HUID);
+    s += onderarm(-86, -424, -170, -556, 16) + hand(-170, -556, -110, 'open', HUID).replace('scale(0.9)', 'scale(0.9 -0.9)');
+  } else {
+    s += onderarm(86, -424, 124, -290, -12) + hand(124, -300, 70, 'vuist', HUID) + map(150, -300, 6);
+    s += onderarm(-86, -424, -122, -280, 12) + hand(-122, -280, 110, 'vuist', HUID);
+  }
+  return s;
+}
+
 const ONTWERPEN = {
   A: { naam: 'Vraagteken', teken: A, kleuren: [K.rood, K.roodDiep, K.inkt, K.huid], regel: 'Een rood vraagteken, want het kanaal gaat over "waarom". Hij zoekt alles uit met zijn loep.' },
   B: { naam: 'Memo', teken: B, kleuren: [K.memo, K.memoDiep, K.inkt, K.rood], regel: 'Een geel plakbriefje met een rode pen. Hij zet de rode krabbels en de bron zelf in beeld.' },
@@ -557,6 +666,8 @@ const ONTWERPEN = {
   G: { naam: 'Opa Klok', teken: G, kleuren: ['#9A5B34', K.messing, K.wit, K.inkt], regel: 'De oudste bewoner van Waaromdorp. In zijn kast zit de tijdmachine: zwaait de slinger, dan reist het duo terug in de tijd.' },
   H: { naam: 'Professor Globe', teken: H, kleuren: ['#4E9CC4', '#8CC36A', K.messing, K.rood], regel: 'Conservator van het Museum van Gewone Dingen. Weet waar alles vandaan komt en toont de echte voorwerpen.' },
   I: { naam: 'Krantje', teken: I, kleuren: ['#F3EEE2', '#44506B', '#A8693C', K.signaal], regel: 'De krantenjongen van Waaromdorp. Brengt aan het begin van elke video de vraag van de dag.' },
+  J: { naam: 'De rechercheur', teken: J, kleuren: ['#B98E55', '#2C3142', '#9C4632', '#E7B48E'], regel: 'Hoofdpersoon. Elk alledaags ding is een dossier; zij vraagt door tot het klopt. Droog en scherp.' },
+  K: { naam: 'De collega', teken: Kfig, kleuren: ['#5E6440', '#ECE7DC', '#7A2E2A', '#C9C4BA'], regel: 'Oudere rechercheur met de map vol bronnen. Hij controleert elk feit voordat het dossier dicht gaat.' },
 };
 
 function teken(code, { x = 0, y = 0, s = 1, pose = 'rust', kijk = null, mond: mondType = 'glim', knipper = 0, spiegel = false, aan = undefined } = {}) {

@@ -68,7 +68,32 @@ function kaart() {
   return render(`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${s}</svg>`, w);
 }
 
+// Rechercheurs (Andries do 19 nov ±20:35): de twee rechercheurs in een plek, met een voorbeeld van een dossier op het vlak
+function frameR(decor, titel, regel, vlak) {
+  let s = binnen(decor);
+  const vloer = 1610;
+  s += vlak;
+  s += schaduw(330, vloer, 120) + F.teken('J', { x: 330, y: vloer, s: 0.86, pose: 'wijst', mond: 'open' });
+  s += schaduw(760, vloer, 130) + F.teken('K', { x: 760, y: vloer, s: 0.86, pose: 'rust' });
+  s += `<rect x="70" y="150" width="940" height="170" rx="22" fill="#FFFDF7" stroke="${I}" stroke-width="7"/>`;
+  s += `<text x="540" y="228" text-anchor="middle" font-family="Instrument Sans" font-weight="700" font-size="68" fill="${I}">${titel}</text>`;
+  s += `<text x="540" y="286" text-anchor="middle" font-family="IBM Plex Mono" font-size="30" fill="#6E6A62">${regel}</text>`;
+  return render(`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">${s}</svg>`, 1080);
+}
+const dossier = (kop, tekst, kleur = I) => `<text x="540" y="800" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="34" fill="#9C4632" letter-spacing="4">${kop}</text>` +
+  `<text x="540" y="880" text-anchor="middle" font-family="Instrument Sans" font-weight="700" font-size="58" fill="${kleur}">${tekst}</text>`;
+
 (async () => {
+  if (process.argv.includes('--rechercheurs')) {
+    const delen = [frameR('bureau', 'Het recherchebureau', 'elk alledaags ding is een dossier', `<g transform="rotate(-2 540 840)"><rect x="300" y="740" width="480" height="190" fill="#F4EFE4" stroke="${I}" stroke-width="5"/>${dossier('CASE #48', 'The pink flamingo')}</g>`),
+      frameR('museum', 'Het museum', 'de bewijskamer: het echte voorwerp', dossier('EXHIBIT A', 'Brine shrimp, 1 jar')),
+      frameR('tijdmachine', 'De tijdmachine', 'het verleden verhoren', dossier('DESTINATION', '1844 · Royal Navy', '#8FE3C9'))];
+    const b = 720, hgt = 1280, m = 40;
+    const lijst = await Promise.all(delen.map(x => sharp(x).resize(b, hgt).png().toBuffer()));
+    await sharp({ create: { width: b * 3 + m * 4, height: hgt + m * 2, channels: 3, background: '#2A2A2E' } })
+      .composite(lijst.map((x, i) => ({ input: x, left: m + i * (b + m), top: m }))).jpeg({ quality: 88 }).toFile(path.join(UIT, 'rechercheurs.jpg'));
+    console.log('ok rechercheurs.jpg'); return;
+  }
   const delen = [frame('plein', 'I', 'Het dorpsplein', 'Krantje brengt de vraag van de dag'), frame('museum', 'H', 'Het museum', 'Professor Globe toont het echte voorwerp'), frame('tijdmachine', 'G', 'De tijdmachine', 'Opa Klok zet de wijzers terug')];
   const b = 720, hgt = 1280, m = 40;
   const lijst = await Promise.all(delen.map(x => sharp(x).resize(b, hgt).png().toBuffer()));
