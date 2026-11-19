@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-19T20:06:00+01:00",
+  "tijd": "2026-11-19T20:08:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-19T20:06:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-19T20:08:00+01:00 Status van de kanalen aangevuld met de stand van Finn (do 19 nov 20:08): kanaal 2 gevuld t/m za 21 nov, geen keuring open, 3x vast door verkeerd account in de gedeelde Chrome, gebruikt het stemtegoed ook",
     "2026-11-19T20:06:00+01:00 Status van de kanalen: docs/manager/status-kanalen-2026-11-19.md (kanaal 1 uit de repo, account 3 van Koen vanavond, kanaal 2 stand ma 16 nov via Eva; actuele stand aan Finn gevraagd)",
     "2026-11-19T20:01:00+01:00 Koen bevestigt: clip-account vervallen en voorbereiding gestopt; beleid van de uitgever door hem op de pagina zelf nagelezen, komt overeen (opdracht-clippen.md bijgewerkt)",
     "2026-11-19T19:59:00+01:00 Clip- en GTA 6-fanaccount vervallen (besluit Andries): beide opdrachten gemarkeerd als vervallen, Koen ingelicht, jesse-26",
@@ -36,7 +37,7 @@
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
   "bezig": null,
-  "volgende": "Antwoord van Finn verwerken in de status; keurlijst vr 20 nov (wekker voor Instagram kanaal 1, stemtegoed en verdeling, bijschrift bij het pakket voor kanaal 2 en account 3, Instagram 12:00 na 23 nov); elke dag nakijken of de Reels op tijd komen; uitkomst proef 2 ma 23 nov (lat account 3 corrigeren voor 205 volgers vooraf)",
+  "volgende": "Keurlijst vr 20 nov (wekker voor Instagram kanaal 1, vaste tijdvakken in de gedeelde Chrome, stemtegoed en verdeling, bijschrift bij het pakket voor kanaal 2 en account 3, Instagram 12:00 na 23 nov); elke dag nakijken of de Reels op tijd komen; uitkomst proef 2 ma 23 nov (lat account 3 corrigeren voor 205 volgers vooraf)",
   "kanNietVerder": null,
   "vragen": [],
   "buitenGit": [
@@ -199,6 +200,10 @@
     {
       "tijd": "2026-11-19T20:06:00+01:00",
       "wat": "Statusvraag aan de sessies van Finn en Koen (cross-session). Koen antwoordde 20:05 (stand account 3, o.a. stemtegoed account 3 sinds 14 nov ±13.700 tekens, Instagram-achterstand G02/G10/G11, gat 26 nov-14 dec). Finn: nog geen antwoord"
+    },
+    {
+      "tijd": "2026-11-19T20:08:00+01:00",
+      "wat": "Antwoord Finn (cross-session, 20:08): stand kanaal 2; hij noemde namen van andere accounts, die staan niet in de repo"
     }
   ],
   "voorEva": [

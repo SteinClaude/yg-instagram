@@ -4,7 +4,7 @@
 
 Waar de gegevens vandaan komen:
 - **Kanaal 1:** deze repo (planning, wat de automaat plaatste, de pakketkaarten, de stand van Manon van wo 18 nov 21:16). YouTube staat hier zoals het in Studio is ingepland; ik heb niet in Studio gekeken.
-- **Kanaal 2:** de stand van ma 16 nov ±21:15, via Eva. De actuele stand heb ik vanavond aan Finn gevraagd; die vul ik aan.
+- **Kanaal 2:** de stand die Finn mij vanavond om 20:08 gaf.
 - **Account 3:** de stand die Koen mij vanavond om 20:05 gaf.
 - **Cijfers:** volgen. Ik heb ze nog niet (gevraagd via Eva, jesse-19).
 
@@ -12,7 +12,7 @@ Waar de gegevens vandaan komen:
 
 1. **Kanaal 1 loopt op YouTube, maar Instagram komt elke dag te laat.** Deze week 2 tot 4 uur; de video van 16:00 stond om 20:04 nog niet op Instagram.
 2. **Kanaal 1 raakt door zijn voorraad heen.** De reeks van 20:00 is gevuld tot zo 22 nov (ma 23 nov na een OK) en de reeks van 16:00 heeft één video. Het stemtegoed is op tot 14 dec.
-3. **Kanaal 2** (stand ma 16 nov): plaatst sketches; één short stond vast in Studio en drie scripts wachten op een OK.
+3. **Kanaal 2 loopt:** elke dag één sketch om 20:00, maar de voorraad reikt maar tot za 21 nov. Er staat geen keuring open.
 4. **Account 3 loopt op YouTube:** vier video's staan erop en vier zijn ingepland, tot en met wo 25 nov. Instagram loopt drie Reels achter, en na 25 nov is er niets tot 14 dec.
 5. **TikTok en Snapchat:** op geen enkel kanaal is iets geplaatst. Dat wacht op de koppeling.
 
@@ -26,9 +26,9 @@ Waar de gegevens vandaan komen:
 | Instagram account 3: achterstand G02, G10 en G11 | Een sessie met Koen, met Chrome open |
 | Instagram account 3: een oude Reel uit 2025 | Kiezen: in de app verwijderen of laten staan |
 | TikTok en Snapchat van account 3 | Naam en handle aan Koen geven, in zijn sessie |
-| Scripts W06, W07 en W08 (kanaal 2, stand ma 16 nov) | Script OK bij Finn |
+| Instagram kanaal 2: de weergavenaam is nog die van kanaal 1 | Zelf aanpassen zodra Instagram het toestaat |
 | Bio voor TikTok en Snapchat van kanaal 1 (tweede versie, met tijden) | Bio OK bij Manon |
-| Chrome | Open laten staan en niet minimaliseren rond de Studio-tijden (17:00 Manon, daarna Finn en Koen) |
+| Chrome | Open laten staan en niet minimaliseren rond de Studio-tijden (17:00 Manon, daarna Finn en Koen), en vóór elke maker het juiste kanaal actief zetten |
 
 ## Kanaal 1 (Manon)
 
@@ -89,27 +89,35 @@ Om 16:00 staat er na vandaag niets meer.
 
 **Volgende stap van Manon:** YS46 en YS47 in Studio inplannen (YS48 erbij na een OK), en daarna de shorts van 18:00 op YouTube naar 12:00 zetten.
 
-## Kanaal 2 (Finn) — stand van ma 16 nov ±21:15, via Eva
+## Kanaal 2 (Finn) — stand van do 19 nov 20:08, van Finn
 
 **Geplaatst**
-- YouTube: drie lange video's (L12 op 10 nov, L02 en L03 op 13 nov) en de shorts C01, W02, W03 en W04 (15 nov).
-- Instagram: onder andere W01 (15 nov) en W05 (16 nov).
-- TikTok en Snapchat: niets.
+- **YouTube:** de nieuwe sketchreeks W01 t/m W06. De laatste: W06, vandaag 20:00. W05 staat sinds wo 18 nov openbaar. De oudere video's van vóór de nieuwe richting blijven staan.
+- **Instagram: 9 Reels** (C01 en W01–W08). De laatste: W06–W08 op wo 18 nov.
+- **TikTok en Snapchat:** niets.
 
-**Ingepland en voorraad:** onbekend; gevraagd aan Finn.
+**Ingepland**
+- YouTube: W07 op vr 20 nov 20:00 en W08 op za 21 nov 20:00.
+- Vast ritme sinds wo 18 nov (Andries 22:04, in de sessie van Finn: *"Eén per dag, 20:00"*).
 
-**Keuring open:** script OK W06, W07 en W08 (gevraagd ma 16 nov 21:15).
+**Voorraad:** gevuld tot en met za 21 nov. **Vanaf zo 22 nov een gat:** W09–W11 zijn nog niet geschreven.
 
-**Vast:** W05 op YouTube sinds ma 16 nov 14:48. In Studio stond het verkeerde kanaal actief. Andries zet het juiste kanaal actief en zegt "ga verder" bij Finn. Of dat al gebeurd is, weet ik niet.
+**Keuring open:** niets.
+
+**Vast:** op dit moment niets. W05 is opgelost. Wel liep Finn op 18 en 19 nov **drie keer vast** doordat Studio of Instagram in de gedeelde Chrome op het account van een ander kanaal stond. Andries zette het telkens terug.
 
 **Vervallen:** C02–C05, C07–C10, L01, L06 en L11 (Andries za 14 nov 13:49: *"Laten liggen"*).
 
 **Profielen**
-- YouTube: bio blijft zoals hij is (Andries ma 16 nov: *"Laat zo"*).
-- Instagram: Andries vroeg di 17 nov om de pagina bij te stellen en af te maken; de stand ken ik niet.
-- TikTok en Snapchat: bio en profielfoto waren maandag nog niet gemaakt.
+- YouTube: beschrijving, profielfoto en links zijn af (18 nov). De banner is niet nagekeken.
+- Instagram: de bio is af (19 nov). De weergavenaam is nog die van kanaal 1; Andries past hem aan zodra Instagram dat toestaat. Het raster en de vastgezette posts zijn nog open.
+- TikTok en Snapchat: bio en profielfoto zijn nog niet gemaakt.
+
+**Stemtegoed (ElevenLabs):** kanaal 2 gebruikt het gedeelde tegoed ook: naar schatting 6.000 tot 8.000 tekens sinds 14 nov. Finn heeft geen exacte telling.
 
 **Nieuw sinds do 19 nov:** de automaat gaat ook Instagram van kanaal 2 doen (Andries ±19:32: *"Ja, kanaal 2 en account 3 (Recommended)"*). Manon bouwt dat; Andries koppelt Instagram één keer.
+
+**Volgende stap van Finn:** Andries wil kanaal 2 vanavond uitbreiden: de twee vaste figuren blijven, en er komen figuren en locaties bij. Finn maakt daar een voorstel voor. Daarna de scripts W09 en verder en de Instagram-pagina.
 
 ## Account 3 (Koen) — stand van do 19 nov 20:05, van Koen
 
@@ -171,4 +179,6 @@ Cijfers volgen. Zodra Eva ze geeft, komen ze hier in de vaste vorm: code · plat
 1. Geef Manon de go voor de tak met starttijden rond 12:00 en 16:00. Dat helpt de video van 16:00 meteen.
 2. Extra starttijden hielpen om 20:00 niet genoeg. Laat Manon daarom haar tweede voorstel uitwerken: een wekker van buiten die de automaat precies op tijd start. Dat komt als keuze op de keurlijst van vrijdag.
 
-**Het tweede punt, ook voor vrijdag:** het stemtegoed is op tot 14 dec en wordt door meer kanalen gebruikt. Zonder besluit staan de reeksen van 16:00 en 20:00 van kanaal 1 en account 3 na wo 25 nov drie weken stil, terwijl de bio van kanaal 1 "3× per dag" belooft. De keuzes (meer tegoed, een gratis stem, of video's zonder stem) leg ik vrijdag voor, met een verdeling per kanaal.
+**Het tweede punt, voor vrijdag: de gedeelde Chrome.** Alle drie de makers werken in dezelfde Chrome. Deze week stond drie keer het verkeerde kanaal actief (kanaal 2), stond Chrome een keer geminimaliseerd (account 3) en haalde Manon haar tijdvak een keer niet. Ik stel vrijdag vaste tijdvakken per kanaal voor, met Koen erbij: nu hebben alleen Manon en Finn er een.
+
+**Het derde punt, ook voor vrijdag:** het stemtegoed is op tot 14 dec en wordt door alle drie de kanalen gebruikt (account 3 ±13.700 tekens sinds 14 nov, kanaal 2 naar schatting 6.000–8.000, de rest kanaal 1). Zonder besluit staan de reeksen van 16:00 en 20:00 van kanaal 1 en account 3 na wo 25 nov drie weken stil, terwijl de bio van kanaal 1 "3× per dag" belooft. De keuzes (meer tegoed, een gratis stem, of video's zonder stem) leg ik vrijdag voor, met een verdeling per kanaal.
