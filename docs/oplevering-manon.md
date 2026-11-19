@@ -217,6 +217,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- do 19 nov 2026 ±20:35, in de sessie, op "Geef je stijl OK voor de rechercheurs, of moet er iets anders?": "Aanpassen" → nog geen stijl OK; wat precies volgt.
 - do 19 nov 2026 ±20:35, in de sessie, op de vier richtingen (Rechercheurs, Dieren met karakter, Eén verteller, Tijdreiziger-duo): "Rechercheurs (Recommended)" → twee volwassen rechercheurs, elk ding een dossier; museum als bewijskamer, tijdmachine voor het verleden.
 - do 19 nov 2026 ±20:30, in de sessie: "ik wil ook nieuwe figureren en het meer voor vollwase maken ook"; op "Wat gebeurt er met het Vraagteken en Peertje?": "Vervangen"; op "Wat voor nieuwe figuren wil je in het dorp?": "Something else" (zonder toelichting); op "Wat moet er volwassener worden?": "Beeld, Toon en tekst, Stemmen" → nieuwe hoofdpersonen in plaats van het duo, volwassener in beeld, toon en stemmen; welke figuren volgt. Al goedgekeurde en ingeplande video’s (t/m YS48, YL01) blijven zoals ze zijn.
 - do 19 nov 2026 ±20:25, in de sessie, op "Zijn de nieuwe bewoners ... goed zo, als stijl voor kanaal 1?": "Aanpassen"; op "Hoe spelen de bewoners mee?": "Gast per onderwerp (Recommended)"; op "Wanneer maken we de eerste video in Waaromdorp?": "Na 14 dec (Recommended)" → nog geen stijl OK (aanpassen; wat precies volgt); bewoners als gast per onderwerp; eerste video in Waaromdorp na 14 dec.

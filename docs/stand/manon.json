@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-19T20:33:00+01:00",
+  "tijd": "2026-11-19T20:35:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -141,12 +141,13 @@
   "volgende": "Antwoord van Andries op Waaromdorp (stijl OK, rol, proef); vr 20 nov 17:00 (Studio): YS46 en YS47 inplannen, YS48 na OK; daarna 18:00-shorts naar 12:00. TikTok en Snapchat (bio v2) en vastzetten op Instagram met Andries. Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
-    "Stijl OK voor de rechercheurs (J, K) en het bureau, of aanpassen? · aanname: niets gebruiken tot stijl OK · blokkeert: ja, voor video’s in de nieuwe stijl",
+    "Rechercheurs: wat moet er anders (\"Aanpassen\", do 19 nov)? · aanname: niets gebruiken tot stijl OK · blokkeert: ja, voor de stijl OK",
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-19T20:35:00+01:00 Andries in de sessie, op \"Geef je stijl OK voor de rechercheurs, of moet er iets anders?\": \"Aanpassen\" (wat precies volgt)",
     "2026-11-19T20:35:00+01:00 Andries in de sessie, op de vier richtingen voor volwassen figuren: \"Rechercheurs (Recommended)\"",
     "2026-11-19T20:30:00+01:00 Andries in de sessie: \"ik wil ook nieuwe figureren en het meer voor vollwase maken ook\"; op \"Wat gebeurt er met het Vraagteken en Peertje?\": \"Vervangen\"; op \"Wat voor nieuwe figuren wil je in het dorp?\": \"Something else\" (zonder toelichting); op \"Wat moet er volwassener worden?\": \"Beeld, Toon en tekst, Stemmen\"",
     "2026-11-19T20:25:00+01:00 Andries in de sessie, op \"Zijn de nieuwe bewoners ... goed zo, als stijl voor kanaal 1?\": \"Aanpassen\"; op \"Hoe spelen de bewoners mee?\": \"Gast per onderwerp (Recommended)\"; op \"Wanneer maken we de eerste video in Waaromdorp?\": \"Na 14 dec (Recommended)\"",
