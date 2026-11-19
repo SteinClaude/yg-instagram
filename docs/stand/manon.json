@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-19T20:35:00+01:00",
+  "tijd": "2026-11-19T20:41:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-18T12:09:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-19T20:33:00+01:00 Rechercheurs getekend: J de rechercheur en K de collega (gereedschap/figuur.cjs), nieuw decor bureau (gereedschap/short/decor.cjs), bladen docs/figuur/ontwerp-J/K.jpg, ontwerpen-overzicht-rechercheurs.jpg en docs/waaromdorp/rechercheurs.jpg (in bureau, museum en tijdmachine). Ter keuring; niets in een video gebruikt.",
     "2026-11-19T20:21:00+01:00 Ontwerp Waaromdorp gemaakt (docs/waaromdorp/LEESMIJ.md): drie nieuwe bewoners (G Opa Klok met de tijdmachine, H Professor Globe van het museum, I Krantje met de vraag van de dag; gereedschap/figuur.cjs), drie nieuwe decors (plein, museum, tijdmachine; gereedschap/short/decor.cjs), bladen docs/figuur/ontwerp-G/H/I.jpg en ontwerpen-overzicht-waaromdorp.jpg, docs/waaromdorp/plekken.jpg en kaart.jpg (gereedschap/waaromdorp-blad.cjs). Niets in een video gebruikt; geen stemtekens.",
@@ -137,16 +137,16 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "3D-proef: Blender installeren (blender.org) en een proef van ±10 s (rechercheur loopt door het bureau); tegelijk AI-videodiensten en prijzen uitzoeken voor Andries.",
   "volgende": "Antwoord van Andries op Waaromdorp (stijl OK, rol, proef); vr 20 nov 17:00 (Studio): YS46 en YS47 inplannen, YS48 na OK; daarna 18:00-shorts naar 12:00. TikTok en Snapchat (bio v2) en vastzetten op Instagram met Andries. Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
-    "Rechercheurs: wat moet er anders (\"Aanpassen\", do 19 nov)? · aanname: niets gebruiken tot stijl OK · blokkeert: ja, voor de stijl OK",
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-19T20:41:00+01:00 Andries in de sessie: \"ik wil ze echt 3d hebben en door het door zien lopen als of het echt lijkt maar niks is onmogelijk in de realiteit hierzo\"; op de vraag welke route: \"Allebei een proef\"; op de vraag of ik Blender (blender.org, gratis, ±350 MB) en gratis CC0-modellen mag downloaden en installeren: \"Ja, installeer Blender\"",
     "2026-11-19T20:35:00+01:00 Andries in de sessie, op \"Geef je stijl OK voor de rechercheurs, of moet er iets anders?\": \"Aanpassen\" (wat precies volgt)",
     "2026-11-19T20:35:00+01:00 Andries in de sessie, op de vier richtingen voor volwassen figuren: \"Rechercheurs (Recommended)\"",
     "2026-11-19T20:30:00+01:00 Andries in de sessie: \"ik wil ook nieuwe figureren en het meer voor vollwase maken ook\"; op \"Wat gebeurt er met het Vraagteken en Peertje?\": \"Vervangen\"; op \"Wat voor nieuwe figuren wil je in het dorp?\": \"Something else\" (zonder toelichting); op \"Wat moet er volwassener worden?\": \"Beeld, Toon en tekst, Stemmen\"",
