@@ -1,6 +1,39 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** di 17 nov 2026, 13:05 — Eva (Instagram-pagina vanmiddag afmaken)
+**Bijgewerkt:** do 19 nov 2026, 19:35 — Eva (de automaat ook voor kanaal 2 en account 3)
+
+## ▶ NIEUW — do 19 nov 19:35 (Eva): de automaat ook voor kanaal 2 en account 3 · `eva-automaat-1`
+
+**Andries, do 19 nov 2026 ±19:32 (knop), op mijn vraag** *"[…] Voor kanaal 2 en account 3 werkt hij nog niet. Wil je dat hij daar ook Instagram gaat doen?"*: ***"Ja, kanaal 2 en account 3 (Recommended)"***
+
+Aanleiding: Finn en Koen plaatsen hun Reels met de hand in de browser van Andries. Dat hangt aan het account dat daar toevallig actief is en aan zijn "ga verder": Koen miste er deze week twee plaatstijden door, Finn liep op 18 nov vast op het verkeerde account. Jij bouwde de automaat en het tweede account; dit is dezelfde stap, twee keer.
+
+**Wat je bouwt** (op een eigen tak, bijvoorbeeld `manon/automaat-kanaal-2-3`; niet op `main`):
+1. **Twee accounts erbij:** `kanaal-2` en `account-3`, naast `ygdigital` en `kanaal-1`. Geheimen: `IG_TOKEN_K2` en `IG_USER_ID_K2`, `IG_TOKEN_K3` en `IG_USER_ID_K3`. Alles wat voor kanaal 1 geldt, geldt ook hier: ontbreekt een sleutel, dan wachten alleen de items van dat account; een geweigerde sleutel legt de andere accounts niet stil; het slot tegen dubbel plaatsen en de sleutelteller werken per account; een accountnummer komt nooit in een logboek, in `status.json` of in een melding.
+2. **`plan-reel.cjs --account kanaal-2` en `--account account-3`**, met dezelfde controles als bij kanaal 1. Hun codes zien er anders uit dan YSxx: kanaal 2 gebruikt `K2-` plus letters en een nummer (bijvoorbeeld K2-W06), account 3 een G met een nummer (bijvoorbeeld G11).
+3. **De proefknop** van de workflow kan ook `kanaal-2` en `account-3` aan.
+4. **`LEESMIJ.md`:** de stappen voor Andries per account, zoals "Tweede account", met de nieuwe namen van de geheimen.
+5. **De vorm van een item blijft gelijk** (alleen een andere waarde bij `account`): het paneel van Andries leest `planning.json` en `gedaan.json`. Moet de vorm toch anders, meld het mij eerst.
+6. **`status.json`** zegt nu "staat stil" voor de hele automaat, omdat de sleutel van het gepauzeerde account geweigerd wordt, terwijl kanaal 1 gewoon plaatst. Met vier accounts wordt dat verwarrend: maak de stand per account.
+
+**Hoe de video's van Finn en Koen hier komen** (binnen de regels van nu: zij schrijven niet in deze repo, jij niet in die van hen):
+- Zij maken per pakket een Instagram-versie, een omslag en een bijschrift in de vorm die jouw gereedschap vraagt, en zetten die drie bestanden in een inlevermap op de pc. Welke map en welke bestandsnamen: stel ze voor in je oplevering; ik zet ze in hun opdracht.
+- Jij neemt ze één keer per week over, na de keuring van Andries, en zet ze in de planning, met zijn citaat in de commit. Hun bijschrift houdt zich aan de regel van deze repo: geen handle, geen kanaalnaam, geen link.
+- Zie je een eenvoudiger weg die net zo veilig is, stel hem voor. Een weg waarbij een andere maker in deze repo schrijft, is een wijziging van een regel: die leg je Andries voor en voer je niet uit.
+
+**Eerst nakijken, vóór je bouwt: de omvang van deze repo.** Gemeten op do 19 nov 19:27 in een verse kloon: de werkmap is 2,2 GB, waarvan `pakketten` 1,9 GB (155 mp4-bestanden, samen bijna 2 GB; de 27 Instagram-versies zijn samen 237 MB). GitHub schrijft voor Pages: een gepubliceerde site hoogstens 1 GB en een bronrepo liefst tot 1 GB (https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits; gelezen in zoekresultaten, lees de pagina zelf na). Het werkt nu nog, maar met twee kanalen erbij groeit het sneller, en als Pages weigert, staat ook kanaal 1 stil. Zoek uit wat er echt gepubliceerd wordt en stel een regel voor waarmee het klein blijft (bijvoorbeeld: van de andere kanalen alleen de Instagram-versie hier, en die weer weg zodra hij een week geplaatst is). **Niets weghalen en geen geschiedenis herschrijven zonder het ja van Andries:** alleen een voorstel, met wat het oplevert en wat er mis kan gaan.
+
+**Volgorde en keuring**
+1. Tak pushen en `KLAAR: automaat voor kanaal 2 en account 3 klaar voor controle · <commit>` bovenaan je oplevering.
+2. Ik kijk de tak na, zoals op 9 nov, en zet de uitkomst hier.
+3. Pas daarna naar `main`, met het ja van Andries. Tot dan verandert er op `main` niets en plaatst de automaat gewoon door voor kanaal 1.
+4. Andries koppelt per account één keer Instagram, met jouw stappen in `LEESMIJ.md`. Je vraagt, leest of toont nooit een sleutel. Daarna per account één proef met de proefknop.
+
+**Houd het klein.** YG Flow neemt het plaatsen later over (F1 bij Bram; dat wacht nu op een server). Bouw er dus niets nieuws omheen: alleen de twee accounts erbij, de stand per account en de regel voor de omvang.
+
+**Wat niet verandert:** je eigen shorts en Reels van kanaal 1 gaan voor; dit doe je ernaast. Geen namen of handles van kanaal 2 of account 3 in deze repo. TikTok en Snapchat blijven wachten op hun eigen koppeling (besluit van ma 16 nov).
+
+Zet `eva-automaat-1` in je `ontvangen`.
 
 ## ▶ NU — di 17 nov 13:05 (Eva): je Instagram-pagina vanmiddag bijstellen en afmaken · `eva-insta-1`
 

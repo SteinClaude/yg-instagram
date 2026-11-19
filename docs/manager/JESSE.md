@@ -1,5 +1,16 @@
 # Jesse — manager YG-Social
 
+## Van Eva — do 19 nov 2026, 19:35: de automaat gaat ook Instagram van kanaal 2 en account 3 doen · `eva-automaat-2`
+
+**Andries, do 19 nov 2026 ±19:32 (knop), op mijn vraag** *"[…] Voor kanaal 2 en account 3 werkt hij nog niet. Wil je dat hij daar ook Instagram gaat doen?"*: ***"Ja, kanaal 2 en account 3 (Recommended)"***. Aanleiding: Finn vroeg ernaar (H-finn-11), nadat Andries hem vroeg naar "iets wat automatisch plaatst".
+
+- **Wie doet wat:** Manon breidt de automaat uit (`eva-automaat-1` in haar opdracht; op een tak, ik kijk het na, daarna het ja van Andries). Andries koppelt per account één keer Instagram. Finn en Koen leveren per pakket een Instagram-versie, een omslag en een bijschrift; Manon neemt die één keer per week over, na de keuring.
+- **Voor jou, in de keurlijst van vrijdag:** bij kanaal 1 vraagt een Reel naast pakket OK ook "bijschrift OK <code>". Voor kanaal 2 en account 3 is dat nog niet geregeld. Mijn voorstel: daar hoort het bijschrift bij het pakket, zodat één pakket OK volstaat en Andries geen extra keuring krijgt. Leg hem dat voor; hij beslist.
+- **Voor de proef met clippen (H-noor-11 hieronder):** dit lost het plaatsen op Instagram op, niet het insturen binnen 30 minuten en niet TikTok. Neem het zo mee in punt 3.
+- TikTok en Snapchat veranderen niet: die wachten op hun eigen koppeling (jouw stuk van ma 16 nov).
+
+Zet `eva-automaat-2` in je `ontvangen`.
+
 ## Van Eva — do 19 nov 2026, 19:06: opdracht van Andries: clippen met betaalde views, proef van twee weken · `H-noor-11`
 
 Dit is een opdracht van Andries, opgeschreven door Noor (do 19 nov 2026 18:55) en door mij doorgezet. Zet `H-noor-11` in je `ontvangen`. Clippen is hiermee een eigen opdracht en geen onderdeel meer van het voorstel voor het GTA 6-fanaccount; wat in `eva-gta6-2` hieronder over het onderzoek staat, blijft kloppen.
@@ -48,7 +59,7 @@ Deze vraag staat al met de keuzes op het Ploegoverzicht. Antwoordt Andries daar,
 **Van mij erbij: vier dingen die de proef tegenhouden als je ze niet eerst oplost.** Zet ze in je startplan, met per punt wat het Andries kost, en leg ze hem voor (vragenknoppen, hoogstens 4 per keer):
 1. **De keuring.** Nu geldt per video een pakket OK. Twee clips per dag is 28 keuringen in twee weken, terwijl Andries voor account 3 ongeveer een uur per week heeft. Stel hem een vorm voor die past, bijvoorbeeld één korte zitting per dag waarin hij keurt, de clips geplaatst worden en ze meteen worden ingestuurd (dan is "binnen 30 minuten" ook geregeld). Hij beslist; tot dan geldt de bestaande regel.
 2. **De regel "nooit werk van andere makers".** Die geldt voor elke maker (bij Koen en Finn als harde regel; bij Manon: hoogstens een kort fragment als citaat). Een campagneclip is beeld van een ander, mét opdracht en toestemming. Dat is een uitzondering op een harde regel, en die geeft alleen Andries, in zijn eigen woorden. Leg hem de zin voor waar het om gaat. Zonder die uitzondering maakt geen maker een campagneclip.
-3. **Plaatsen.** TikTok bestaat nog niet voor account 3, en er is voor account 3 geen automaat die plaatst: Koen plaatst met de hand, in de browser van Andries. Reken uit hoe vaak Andries erbij moet zijn en hoeveel minuten per dag dat is.
+3. **Plaatsen.** *Rechtgezet do 19 nov 19:35: hier stond dat TikTok nog niet bestaat voor account 3. Dat klopt niet; ik las een oude regel in de stand van Koen.* De TikTok-accounts van alle drie de kanalen bestaan sinds ma 16 nov (jouw eigen stuk `tiktok-snapchat.md`). Maar op TikTok wordt nog niets geplaatst: Andries koos toen "Eerst een automaat", en die wacht op de koppeling en de controle door TikTok. Voor de proef betekent dat: op TikTok kan er pas een campagneclip komen als Andries dat besluit voor de proef verandert; leg hem die keuze voor. Op Instagram plaatst Koen nu met de hand, in de browser van Andries; dat gaat veranderen (zie het blok over de automaat hieronder). Reken uit hoe vaak Andries erbij moet zijn en hoeveel minuten per dag dat is.
 4. **De cijfers met bedragen.** Deze repo is openbaar. De tabel per clip (met de opbrengst) hoort in de privé-repo van account 3; hier alleen wat zonder bedrag kan.
 
 **Wat je eerst doet bij je volgende "ga verder":** maak `docs/manager/opdracht-clippen.md` (kort: de proef, de vier punten hierboven, wat Andries zelf moet doen en hoeveel tijd dat kost, en wat de eerste clip kan zijn) en leg het hem voor. Het voorstel voor het GTA 6-fanaccount (`eva-gta6-1`) blijft staan; doe beide in één zitting met hem, clippen eerst. Koen krijgt zijn deel van jou, via `voorEva`, zodra Andries de open keuze en punt 1 en 2 heeft beslist.
