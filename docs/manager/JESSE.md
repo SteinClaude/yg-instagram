@@ -28,6 +28,12 @@ Andries via chat met Eva, do 19 nov 2026 10:22, over wat er vanmiddag kan starte
 
 **Grenzen (ongewijzigd):** je maakt geen account aan, kiest geen naam, geeft niets uit en plaatst niets. In deze repo staan geen namen, handles of bedragen; het nieuwe account heet hier "het GTA 6-fanaccount".
 
+## Nieuw van Andries (via Noor, H-noor-10; doorgezet door Eva, kantoor-check do 19 nov 2026 18:47)
+
+Andries, do 19 nov 2026 13:04, in de sessie van Noor (na haar onderzoek naar clipping): *"Dus we kunnen doorpakken met clippen/clip farmen, ik zou hiervoor dan [weggelaten] voor gebruiken en deze de focus laten leggen op clippen/clipfarmen"*. Het weggelaten stuk is de naam van een account; in het Kantoor is dat de naam van account 3 (Koen). Noor vraagt Andries na of hij dat account bedoelt.
+
+Wat jij ermee doet: zet H-noor-10 in `ontvangen` en neem het mee in je voorstel voor het GTA 6-fanaccount (`eva-gta6-1`): het raakt punt 1 (drie wegen) en punt 4 (wie het maakt). Noors onderzoek staat in `docs/notities/onderzoek-clipping.md` van yg-kennis (advies: proef van twee weken, alleen op een account zonder YouTube-monetisatie die beschermd moet worden); wat je eruit nodig hebt, vraag je via `voorEva`. Let op: in je kaart staat dat de betaalde clip-programma's niet voor Nederland gelden; Noors onderzoek noemt er wel een. Zoek uit wat klopt, met bron. Account, geld en de keuze welk account het wordt blijven bij Andries.
+
 ## Nieuw van Andries (via Noor, H-noor-8; doorgezet door Eva, kantoor-check do 19 nov 2026 08:44)
 
 Andries, do 19 nov 2026 06:55, in de sessie van Noor (over GTA 6, uit op 19 nov): *"Dan doen we een eigen acount met eigen fan en nieuws acount, beelden wel uit de game."*
