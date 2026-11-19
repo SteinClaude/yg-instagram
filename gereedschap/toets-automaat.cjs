@@ -19,6 +19,11 @@ const { spawnSync, execFileSync } = require('child_process');
 
 const WORTEL = path.join(__dirname, '..');
 const TMP = fs.mkdtempSync(path.join(os.tmpdir(), 'yg-toets-'));
+// Git in de toetsen leest geen instellingen van deze computer (ondertekenen, een proxy): overal dezelfde uitkomst.
+fs.writeFileSync(path.join(TMP, 'gitconfig-leeg'), '');
+process.env.GIT_CONFIG_GLOBAL = path.join(TMP, 'gitconfig-leeg');
+process.env.GIT_CONFIG_NOSYSTEM = '1';
+for (const k of ['GIT_DIR', 'GIT_WORK_TREE', 'GIT_INDEX_FILE']) delete process.env[k];
 const ALLEEN = process.argv.slice(2).filter(a => !a.startsWith('--'));
 const doetMee = deel => !ALLEEN.length || ALLEEN.some(a => deel.startsWith(a));
 
@@ -604,8 +609,498 @@ async function deelPlaatsen() {
 }
 
 // =================================================================================
+// inplannen.cjs: een nagemaakte "GitHub" (een kale git-map), een kloon "op de pc" waar het commando in staat, en
+// de map van een maker met een pakket. De proefvideo's maakt ffmpeg hier ter plekke (klein, een paar seconden).
+let MEDIA = null;
+function maakMedia() {
+  if (MEDIA) return MEDIA;
+  const m = path.join(TMP, 'media');
+  fs.mkdirSync(m, { recursive: true });
+  const ff = args => execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...args], { stdio: ['ignore', 'pipe', 'pipe'] });
+  const beeld = (maat = '1080x1920') => ['-f', 'lavfi', '-i', `testsrc2=size=${maat}:rate=30:duration=3.2`];
+  const toon = (hz = 48000) => ['-f', 'lavfi', '-i', `sine=frequency=440:sample_rate=${hz}:duration=3.2`];
+  const x264 = (pix = 'yuv420p') => ['-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '40', '-pix_fmt', pix];
+  const netjes = ['-movflags', '+faststart', '-use_editlist', '0'];
+  ff([...beeld(), ...toon(), ...x264(), '-c:a', 'aac', '-b:a', '128k', '-ac', '2', ...netjes, path.join(m, 'goed.mp4')]);
+  ff([...beeld(), ...toon(96000), ...x264(), '-c:a', 'aac', '-ar', '96000', '-ac', '2', path.join(m, 'geluid-96k.mp4')]);     // 96 kHz, moov achteraan, edit list
+  ff([...beeld('720x1280'), ...toon(), ...x264(), '-c:a', 'aac', ...netjes, path.join(m, 'te-klein.mp4')]);
+  ff([...beeld(), ...toon(), ...x264('yuv444p'), '-c:a', 'aac', ...netjes, path.join(m, 'kleur-444.mp4')]);
+  ff([...beeld(), ...x264(), '-an', ...netjes, path.join(m, 'stil.mp4')]);
+  ff(['-f', 'lavfi', '-i', 'testsrc2=size=1080x1920:rate=1', '-frames:v', '1', '-q:v', '6', path.join(m, 'omslag.jpg')]);
+  ff(['-f', 'lavfi', '-i', 'testsrc2=size=1080x1350:rate=1', '-frames:v', '1', '-q:v', '6', path.join(m, 'omslag-4x5.jpg')]);
+  ff(['-f', 'lavfi', '-i', 'testsrc2=size=1080x1920:rate=1', '-frames:v', '1', path.join(m, 'plaatje.png')]);
+  fs.copyFileSync(path.join(m, 'plaatje.png'), path.join(m, 'png-als.jpg'));
+  return (MEDIA = m);
+}
+const media = naam => path.join(maakMedia(), naam);
+const gitRuw = (map, args) => execFileSync('git', args, { cwd: map, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 1 << 26 });
+const WIE = ['-c', 'user.name=Toets', '-c', 'user.email=toets@voorbeeld.invalid'];
+
+// De nagemaakte automaat: origin.git (wat op GitHub staat) en pc (de kloon waar het commando in staat).
+function nepAutomaat(naam, { planning = [], gedaan = [], status = null, bestanden = {} } = {}) {
+  const basis = path.join(TMP, naam), bron = path.join(basis, 'bron'), origin = path.join(basis, 'origin.git'), pc = path.join(basis, 'pc');
+  for (const d of ['gereedschap', 'src', 'mini', 'beeld']) fs.mkdirSync(path.join(bron, d), { recursive: true });
+  fs.copyFileSync(path.join(WORTEL, 'gereedschap', 'inplannen.cjs'), path.join(bron, 'gereedschap', 'inplannen.cjs'));
+  fs.copyFileSync(path.join(WORTEL, 'src', 'accounts.cjs'), path.join(bron, 'src', 'accounts.cjs'));
+  fs.copyFileSync(path.join(WORTEL, '.gitattributes'), path.join(bron, '.gitattributes'));
+  fs.writeFileSync(path.join(bron, 'planning.json'), JSON.stringify({ tijdzone: 'Europe/Amsterdam', gemaakt: '2026-09-20', items: planning }, null, 2) + '\n');
+  fs.writeFileSync(path.join(bron, 'gedaan.json'), JSON.stringify({ items: gedaan }, null, 1));
+  if (status) fs.writeFileSync(path.join(bron, 'status.json'), JSON.stringify(status, null, 1));
+  fs.writeFileSync(path.join(bron, 'mini', 'bestaand.jpg'), 'een bestaand kleintje');
+  fs.writeFileSync(path.join(bron, 'beeld', 'bestaand.jpg'), 'een bestaande plaat');
+  for (const [pad, inhoud] of Object.entries(bestanden)) { fs.mkdirSync(path.dirname(path.join(bron, pad)), { recursive: true }); if (typeof inhoud === 'string' && bestaat(inhoud)) fs.copyFileSync(inhoud, path.join(bron, pad)); else fs.writeFileSync(path.join(bron, pad), inhoud); }
+  git(bron, ['init', '-q', '-b', 'main']); git(bron, ['add', '-A']); git(bron, [...WIE, 'commit', '-q', '-m', 'begin']);
+  git(basis, ['clone', '-q', '--bare', bron, origin]);
+  git(origin, ['config', 'uploadpack.allowFilter', 'true']); git(origin, ['config', 'uploadpack.allowAnySHA1InWant', 'true']);
+  const url = 'file://' + origin.split(path.sep).join('/');
+  git(basis, ['clone', '-q', url, pc]);
+  git(pc, ['config', 'user.name', 'Pc van de toets']); git(pc, ['config', 'user.email', 'pc@voorbeeld.invalid']);
+  fs.mkdirSync(path.join(basis, 'maker'), { recursive: true });
+  return { basis, origin, pc, url, maker: path.join(basis, 'maker'), commando: path.join(pc, 'gereedschap', 'inplannen.cjs') };
+}
+const kopVan = a => git(a.origin, ['rev-parse', 'main']);
+const planningOp = a => JSON.parse(gitRuw(a.origin, ['show', 'main:planning.json']));
+const lijstOp = (a, commit = 'main') => git(a.origin, ['ls-tree', '-r', '--name-only', commit]).split('\n');
+const gewijzigdIn = (a, commit = 'main') => git(a.origin, ['diff-tree', '-r', '--no-commit-id', '--name-status', commit]).split('\n').map(r => r.replace('\t', ' ')).sort();
+const aantalCommits = a => Number(git(a.origin, ['rev-list', '--count', 'main']));
+
+const isoGeleden = min => new Date(Date.now() - min * 60000).toISOString().replace(/\.\d+Z$/, '+00:00');
+const besluit = (soort, uitkomst, tekst, minGeleden, extra = {}) => ({ soort, uitkomst, tekst, tijd: isoGeleden(minGeleden), via: 'paneel', door: 'Andries', ...extra });
+// Een pakket in de map van de maker: pakket.json, keuring.json en bijschrift.txt.
+function maakPakket(a, code, { besluiten = [besluit('pakket', 'ok', `pakket OK ${code}`, 90)], vraagt, bijschrift, keuringCode, zonderKeuring = false } = {}) {
+  const map = path.join(a.maker, 'pakketten', code);
+  fs.mkdirSync(map, { recursive: true });
+  fs.writeFileSync(path.join(map, 'pakket.json'), JSON.stringify({ code, titel: `Titel van ${code}`, soort: 'short', ...(vraagt ? { vraagt } : {}) }, null, 2));
+  if (!zonderKeuring) fs.writeFileSync(path.join(map, 'keuring.json'), JSON.stringify({ code: keuringCode || code, besluiten }, null, 2));
+  fs.writeFileSync(path.join(map, 'bijschrift.txt'), bijschrift !== undefined ? bijschrift : `Why does ${code} exist?\r\n\r\nBecause every test needs a caption. The U.S. had one at 3.5 p.m.\r\n\r\nSource: a museum (2024).\r\n\r\n#test #everydaythings\r\n`);
+  return map;
+}
+const MORGEN = () => amsterdam(-60 * 30).datum;
+function argumenten(a, account, code, { video = 'goed.mp4', omslag = 'omslag.jpg', datum = MORGEN(), tijd = '18:00', extra = [] } = {}) {
+  const map = path.join(a.maker, 'pakketten', code);
+  return ['--account', account, '--pakket', map, '--video', media(video), '--omslag', media(omslag), '--bijschrift', path.join(map, 'bijschrift.txt'), '--datum', datum, '--tijd', tijd, ...extra];
+}
+function plan(a, args, env = {}) {
+  const r = spawnSync(process.execPath, [a.commando, ...args], { cwd: a.maker, env: { ...process.env, YG_VERBODEN_WOORDEN: '', ...env }, encoding: 'utf8' });
+  return { code: r.status, uit: `${r.stdout}${r.stderr}` };
+}
+// Een run die niets mag veranderen: de stand op "GitHub" en de kloon op de pc blijven precies gelijk.
+function ongewijzigd(a, voor, wat) {
+  gelijk(kopVan(a), voor, `${wat}: er is toch iets vastgelegd`);
+  gelijk(git(a.pc, ['status', '--porcelain']), '', `${wat}: de kloon op de pc is gewijzigd`);
+}
+
+async function deelInplannen() {
+  const I = require(path.join(WORTEL, 'gereedschap', 'inplannen.cjs'));
+  try { maakMedia(); } catch (e) { await toets('ffmpeg maakt de proefvideo\'s', () => { throw new Error('ffmpeg ontbreekt of kan geen H.264 maken: ' + e.message); }); return; }
+
+  await toets('keuring: het laatste besluit per soort telt; niet-ok, ingetrokken en een nieuwe vraag zijn geen OK', () => {
+    const k = (besluiten, soorten = ['pakket'], vraagt) => I.beoordeelKeuring({ code: 'X', vraagt }, { code: 'X', besluiten }, soorten).map(r => r.ok);
+    const reden = (besluiten, vraagt) => I.beoordeelKeuring({ code: 'X', vraagt }, { code: 'X', besluiten }, ['pakket'])[0].reden;
+    gelijk(k([besluit('pakket', 'ok', 'pakket OK X', 60)]), [true], 'gewoon OK');
+    gelijk(k([besluit('pakket', 'ok', 'OK', 60, { via: 'sessie' })]), [true], 'OK uit de sessie');
+    gelijk(k([]), [false], 'geen besluit');
+    gelijk(k([besluit('script', 'ok', 'script OK X', 60)]), [false], 'alleen een script OK is geen pakket OK');
+    gelijk(k([besluit('pakket', 'ok', 'OK', 90), besluit('pakket', 'niet-ok', 'nee', 30, { opmerking: 'de stem' })]), [false], 'daarna niet OK');
+    bevat(reden([besluit('pakket', 'ok', 'OK', 90), besluit('pakket', 'niet-ok', 'nee', 30, { opmerking: 'de stem' })]), 'niet OK', 'reden');
+    gelijk(k([besluit('pakket', 'ok', 'OK', 90), besluit('pakket', 'ingetrokken', 'toch niet', 30)]), [false], 'ingetrokken');
+    bevat(reden([besluit('pakket', 'ok', 'OK', 90), besluit('pakket', 'ingetrokken', 'toch niet', 30)]), 'ingetrokken', 'reden');
+    gelijk(k([besluit('pakket', 'niet-ok', 'nee', 90), besluit('pakket', 'ok', 'nu wel', 30)]), [true], 'eerst niet OK, daarna OK');
+    gelijk(k([besluit('pakket', 'ok', 'OK', 90), besluit('pakket', 'ingetrokken', 'x', 60), besluit('pakket', 'ok', 'opnieuw OK', 30)]), [true], 'ingetrokken en daarna opnieuw OK');
+    gelijk(k([besluit('pakket', 'ok', 'OK', 30), besluit('pakket', 'niet-ok', 'nee', 90)]), [false], 'volgorde en tijd spreken elkaar tegen');
+    gelijk(k([besluit('pakket', 'ok', 'OK', 60)], ['pakket'], { pakket: isoGeleden(120) }), [true], 'de vraag was van vóór het OK');
+    gelijk(k([besluit('pakket', 'ok', 'OK', 60)], ['pakket'], { pakket: isoGeleden(10) }), [false], 'opnieuw gevraagd na het OK');
+    bevat(reden([besluit('pakket', 'ok', 'OK', 60)], { pakket: isoGeleden(10) }), 'nieuwe vraag', 'reden');
+    gelijk(k([besluit('pakket', 'ok', 'OK', 60)], ['pakket'], { bijschrift: isoGeleden(10) }), [true], 'een nieuwe vraag van een andere soort telt niet');
+    gelijk(k([besluit('pakket', 'ok', 'OK', 60, { door: 'Finn' })]), [false], 'niet van Andries');
+    gelijk(k([besluit('pakket', 'ok', 'OK', 60, { door: undefined })]), [false], 'zonder "door"');
+    gelijk(k([besluit('pakket', 'ok', 'OK', 60, { via: 'ploegoverzicht' })]), [false], 'een keuring komt nooit via het Ploegoverzicht');
+    gelijk(k([besluit('pakket', 'ok', '  ', 60)]), [false], 'zonder woorden');
+    gelijk(k([besluit('pakket', 'ok', 'OK', -60)]), [false], 'een tijd in de toekomst');
+    gelijk(k([{ soort: 'pakket', uitkomst: 'ok', tekst: 'OK', tijd: 'gisteren', via: 'paneel', door: 'Andries' }]), [false], 'onleesbare tijd');
+    gelijk(k([besluit('pakket', 'OK', 'OK', 60)]), [false], 'uitkomst moet precies "ok" zijn');
+    gelijk(k([besluit('pakket', 'ok', 'Beide OK', 60), besluit('bijschrift', 'ok', 'Beide OK', 60)], ['pakket', 'bijschrift']), [true, true], 'twee soorten');
+    gelijk(k([besluit('pakket', 'ok', 'OK', 60)], ['pakket', 'bijschrift']), [true, false], 'bijschrift ontbreekt');
+    gelijk(I.beoordeelKeuring({}, { besluiten: 'x' }, ['pakket'])[0].ok, false, 'geen lijst');
+    gelijk(I.beoordeelKeuring({}, null, ['pakket'])[0].ok, false, 'geen keuring');
+  });
+
+  await toets('bijschrift: lengte, hashtags, geen @naam, geen link, geen domeinnaam (tenzij als bron genoemd), geen verboden woord', () => {
+    const f = (t, o) => I.controleerBijschrift(t, o).fouten;
+    gelijk(f('Why is a stop sign an octagon?\n\nIn the 1920s, U.S. engineers (e.g. in the U.S.A.) met at 3.5 p.m. No.1 rule... wait...what?\n\nSource: a museum (2024).\n\n#history #design'), [], 'een gewoon bijschrift');
+    gelijk(f('The @ sign is old. People write @. or (@) for it.'), [], 'het teken @ zelf mag');
+    waar(f('Follow @iemand for more').length === 1, 'een handle');
+    waar(f('Mail naar iemand@voorbeeld.nl').length === 1, 'een e-mailadres');
+    waar(f('Lees meer op https://voorbeeld.nl/pagina').length === 1, 'een link');
+    waar(f('Lees meer op www.voorbeeld.nl').length === 1, 'een link met www');
+    waar(f('Sources: Dictionary.com (2021).').length === 1, 'een domeinnaam');
+    gelijk(f('Sources: Dictionary.com (2021); timeanddate.com.', { bron: ['dictionary.com', 'timeanddate.com'] }), [], 'domeinnamen die als bron zijn genoemd');
+    gelijk(I.controleerBijschrift('Sources: Dictionary.com.', { bron: ['dictionary.com'] }).bronnen, ['dictionary.com'], 'de bron komt in het verslag');
+    gelijk(f('Photo: Jan Jansen, CC BY 4.0, https://commons.wikimedia.org/wiki/File:X.jpg', { bron: ['commons.wikimedia.org'] }), [], 'een bronlink die is genoemd');
+    waar(f('Zie https://youtube.com/watch?v=1', { bron: ['youtube.com'] }).length >= 1, 'een eigen platform mag nooit, ook niet als bron');
+    waar(f('Zie linktr.ee/iets', { bron: ['linktr.ee'] }).length >= 1, 'een doorverwijzer mag nooit');
+    waar(f('').length === 1 && f('  \n ').length === 1, 'leeg');
+    waar(f('x'.repeat(2201)).length === 1 && f('x'.repeat(2200)).length === 0, '2200 tekens');
+    waar(f('tekst ' + '#a '.repeat(31)).length === 1 && f('tekst ' + '#a '.repeat(30)).length === 0, '30 hashtags');
+    const lijst = { regels: [{ nr: 1, woord: 'Nep Kanaal' }, { nr: 2, woord: 'ab' }, { nr: 3, woord: 'nepkanaaltwee' }] };
+    bevat(f('Welcome to nep kanaal!', { verboden: lijst })[0], 'regel 1', 'verboden woord, andere hoofdletters');
+    bevat(f('Welcome to NepKanaal!', { verboden: lijst })[0], 'regel 1', 'verboden woord, aan elkaar');
+    bevat(f('Welcome to nep-kanaal-twee!', { verboden: lijst })[0], 'regel 1, 3 van die lijst', 'verboden woord, met streepjes (past op twee regels van de lijst)');
+    gelijk(f('About a cab and a lab.', { verboden: lijst }), [], 'een woord van twee letters op de lijst doet niets');
+    bevatNiet(f('Welcome to nep kanaal!', { verboden: lijst })[0], 'Nep Kanaal', 'de melding noemt het woord zelf niet');
+    gelijk(I.controleerBijschrift('﻿Eerste regel\r\nTweede\r\n\r\n').tekst, 'Eerste regel\nTweede', 'BOM en Windows-regeleinden eruit');
+    gelijk(I.openbaar('pakket OK K2-W06 voor Nep Kanaal, zie @iemand en https://x.nl/y', lijst), 'pakket OK K2-W06 voor [weggelaten], zie [weggelaten] en [weggelaten]', 'een citaat voor een openbare commit');
+  });
+
+  await toets('video en omslag: wat klopt, wat de Instagram-versie oplost en wat niet kan', () => {
+    const goed = I.onderzoekVideo(media('goed.mp4'));
+    gelijk([goed.vast, goed.herstelbaar], [[], []], 'de goede video');
+    const k96 = I.onderzoekVideo(media('geluid-96k.mp4'));
+    gelijk(k96.vast, [], '96 kHz: niets wat niet kan');
+    waar(k96.herstelbaar.some(x => x.includes('96000 Hz')) && k96.herstelbaar.some(x => x.includes('moov')) && k96.herstelbaar.some(x => x.includes('edit list')), '96 kHz, moov achteraan en edit list zijn herstelbaar: ' + JSON.stringify(k96.herstelbaar));
+    waar(I.onderzoekVideo(media('te-klein.mp4')).vast.some(x => x.includes('720x1280')), 'verkeerde maat');
+    waar(I.onderzoekVideo(media('kleur-444.mp4')).vast.some(x => x.includes('4:2:0')), 'geen 4:2:0');
+    waar(I.onderzoekVideo(media('stil.mp4')).vast.some(x => x.includes('geen geluidsspoor')), 'geen geluid');
+    waar(I.onderzoekVideo(media('goed.mp4'), 0.01).vast.some(x => x.includes('hoogstens 0.01 MB')), 'te groot voor de repo');
+    gelijk(I.mp4Opbouw(media('goed.mp4')).moovVooraan, true, 'moov vooraan');
+    gelijk(I.mp4Opbouw(media('geluid-96k.mp4')).moovVooraan, false, 'moov achteraan');
+    gelijk(I.onderzoekOmslag(media('omslag.jpg')).fouten, [], 'de goede omslag');
+    waar(I.onderzoekOmslag(media('omslag-4x5.jpg')).fouten[0].includes('1080x1350'), 'omslag in de verkeerde maat');
+    waar(I.onderzoekOmslag(media('png-als.jpg')).fouten[0].includes('geen JPEG'), 'een png met de naam .jpg');
+  });
+
+  await toets('goed pakket: één item erbij, alleen de eigen paden, het OK van Andries in de commit, de pc-kloon onaangeroerd', () => {
+    const bestaand = [reelK1('YS50', { datum: MORGEN(), tijd: '12:00' }), reelK1('YS51', { datum: MORGEN(), tijd: '20:00' })];
+    const a = nepAutomaat('goed', { planning: bestaand });
+    maakPakket(a, 'K2-W06');
+    const voor = kopVan(a), pcVoor = git(a.pc, ['rev-parse', 'HEAD']);
+    const r = plan(a, argumenten(a, 'kanaal-2', 'K2-W06', { extra: ['--naschrift', 'Co-Authored-By: Iemand <iemand@voorbeeld.invalid>'] }));
+    gelijk(r.code, 0, 'afsluitcode\n' + r.uit);
+    gelijk(aantalCommits(a), 2, 'precies één commit erbij');
+    gelijk(git(a.origin, ['rev-parse', 'main~1']), voor, 'de nieuwe commit volgt op de oude');
+    const id = `${MORGEN()}-k2-k2-w06`;
+    const p = planningOp(a);
+    gelijk(p.items.map(i => i.id), [bestaand[0].id, id, bestaand[1].id], 'het item staat op zijn plek, tussen 12:00 en 20:00');
+    gelijk(p.items.find(i => i.id === id), { id, datum: MORGEN(), tijd: '18:00', soort: 'bericht', taal: 'en', account: 'kanaal-2', beeld: ['kanaal-2/K2-W06.mp4'], omslag: 'kanaal-2/K2-W06.jpg', omslagMs: 800,
+      titel: 'Kanaal 2 K2-W06: Why does K2-W06 exist?', tekst: 'Why does K2-W06 exist?\n\nBecause every test needs a caption. The U.S. had one at 3.5 p.m.\n\nSource: a museum (2024).\n\n#test #everydaythings', inhaaluren: 18, eenmalig: true }, 'het item, in de vorm van plan-reel.cjs');
+    gelijk([p.items[0], p.items[2]], bestaand, 'de items van een ander zijn onaangeroerd');
+    gelijk(gitRuw(a.origin, ['show', 'main:planning.json']), JSON.stringify(p, null, 2) + '\n', 'planning.json houdt zijn opmaak');
+    gelijk(gewijzigdIn(a), ['A beeld/kanaal-2/K2-W06.jpg', 'A beeld/kanaal-2/K2-W06.mp4', 'A mini/kanaal-2-K2-W06.jpg', 'M planning.json'], 'alleen de eigen paden en de planning');
+    gelijk(git(a.origin, ['rev-parse', 'main:beeld/kanaal-2/K2-W06.mp4']), git(a.pc, ['hash-object', '--no-filters', media('goed.mp4')]), 'de video is precies het bestand van de maker');
+    gelijk(git(a.origin, ['rev-parse', 'main:beeld/kanaal-2/K2-W06.jpg']), git(a.pc, ['hash-object', '--no-filters', media('omslag.jpg')]), 'de omslag is precies het bestand van de maker');
+    waar(lijstOp(a).includes('mini/bestaand.jpg') && lijstOp(a).includes('beeld/bestaand.jpg') && lijstOp(a).includes('gereedschap/inplannen.cjs'), 'de rest van de repo staat er nog');
+    const bericht = gitRuw(a.origin, ['log', '-1', '--format=%an <%ae>%n%cn%n%B', 'main']);
+    bevat(bericht, 'Finn (YG Crew) <pc@voorbeeld.invalid>', 'de maker is de auteur');
+    bevat(bericht, `Inplannen kanaal 2 K2-W06: Instagram ${I.leesbareDag(MORGEN())} 18:00 (pakket OK: "pakket OK K2-W06", Andries `, 'onderwerp met het letterlijke OK');
+    bevat(bericht, 'Keuring pakket: "pakket OK K2-W06" · ', 'het OK met de tijd');
+    bevat(bericht, 'via paneel', 'waar het OK vandaan kwam');
+    bevat(bericht, 'Co-Authored-By: Iemand <iemand@voorbeeld.invalid>', 'het naschrift van de maker');
+    bevat(r.uit, `{ "platform": "instagram", "stand": "ingepland", "wanneer": "${MORGEN()}T18:00:00+0`, 'de regel voor de kaart');
+    gelijk([git(a.pc, ['rev-parse', 'HEAD']), git(a.pc, ['status', '--porcelain'])], [pcVoor, ''], 'de kloon op de pc is niet aangeraakt');
+    waar(!bestaat(path.join(a.maker, 'pakketten', 'K2-W06', 'instagram')), 'in de map van de maker komt niets bij');
+
+    // en de automaat kan het item plaatsen: de video via Pages onder beeld/kanaal-2/
+    const nu = amsterdam(3);
+    const map = zandbak('goed-plaatsen', { planning: p.items.map(i => i.id === id ? { ...i, datum: nu.datum, tijd: nu.tijd } : i) });
+    const rp = draai(map, geheimen(['kanaal-2']));
+    gelijk(rp.plaatsingen.map(x => [x.account, x.urls[0], x.omslag]), [['kanaal-2', `${PAGES}/beeld/kanaal-2/K2-W06.mp4`, { url: `${RAW}/beeld/kanaal-2/K2-W06.jpg`, ms: 800 }]], 'plaatsen.cjs plaatst het item');
+  });
+
+  await toets('--proef: alles nalopen en tonen, niets wijzigen', () => {
+    const a = nepAutomaat('proef-plan', {});
+    maakPakket(a, 'G11');
+    const voor = kopVan(a);
+    const r = plan(a, argumenten(a, 'account-3', 'G11', { extra: ['--proef'] }));
+    gelijk(r.code, 0, 'afsluitcode\n' + r.uit);
+    bevat(r.uit, `"id": "${MORGEN()}-k3-g11"`, 'het item wordt getoond');
+    bevat(r.uit, 'Inplannen account 3 G11: Instagram', 'de commit wordt getoond');
+    bevat(r.uit, '(proef: niets gewijzigd)', 'melding');
+    ongewijzigd(a, voor, 'proef');
+  });
+
+  await toets('geen keuring, een keuring van een ander pakket, ingetrokken of niet OK: er wordt niets ingepland', () => {
+    const a = nepAutomaat('keuring', {});
+    const voor = kopVan(a);
+    const gevallen = [
+      ['K2-A01', { zonderKeuring: true }, 'keuring.json (de keuring van Andries) ontbreekt'],
+      ['K2-A02', { besluiten: [] }, 'er staat geen besluit "pakket"'],
+      ['K2-A03', { keuringCode: 'K2-A99' }, 'keuring.json is van een ander pakket'],
+      ['K2-A04', { besluiten: [besluit('pakket', 'ok', 'pakket OK K2-A04', 90), besluit('pakket', 'ingetrokken', 'toch niet', 20)] }, 'is ingetrokken'],
+      ['K2-A05', { besluiten: [besluit('pakket', 'niet-ok', 'nee', 20, { opmerking: 'de titel klopt niet' })] }, 'is niet OK'],
+      ['K2-A06', { besluiten: [besluit('pakket', 'ok', 'pakket OK K2-A06', 90)], vraagt: { pakket: isoGeleden(5) } }, 'er staat een nieuwe vraag "pakket" open'],
+      ['K2-A07', { besluiten: [besluit('script', 'ok', 'script OK K2-A07', 90)] }, 'er staat geen besluit "pakket"'],
+      ['K2-A08', { besluiten: [besluit('pakket', 'ok', 'pakket OK K2-A08', 90, { door: 'Finn' })] }, 'is niet van Andries'],
+    ];
+    for (const [code, pakket, verwacht] of gevallen) {
+      maakPakket(a, code, pakket);
+      const r = plan(a, argumenten(a, 'kanaal-2', code));
+      gelijk(r.code, 1, `${code}: afsluitcode\n${r.uit}`);
+      bevat(r.uit, 'STOP:', code);
+      bevat(r.uit, verwacht, code);
+      ongewijzigd(a, voor, code);
+    }
+    // kanaal 1 vraagt ook een bijschrift OK
+    maakPakket(a, 'YS60', { besluiten: [besluit('pakket', 'ok', 'pakket OK YS60', 90)] });
+    const r1 = plan(a, argumenten(a, 'kanaal-1', 'YS60'));
+    gelijk(r1.code, 1, 'kanaal 1 zonder bijschrift OK\n' + r1.uit);
+    bevat(r1.uit, 'er staat geen besluit "bijschrift"', 'kanaal 1');
+    ongewijzigd(a, voor, 'kanaal 1 zonder bijschrift OK');
+    // een code die niet bij het account past (het pakket van een ander account)
+    maakPakket(a, 'G12');
+    const r2 = plan(a, argumenten(a, 'kanaal-2', 'G12'));
+    gelijk(r2.code, 1, 'verkeerde code');
+    bevat(r2.uit, 'past niet bij kanaal 2', 'verkeerde code');
+    ongewijzigd(a, voor, 'verkeerde code');
+  });
+
+  await toets('fout bijschrift: @naam, link, domeinnaam, verboden woord: er wordt niets ingepland; een genoemde bron mag', () => {
+    const a = nepAutomaat('bijschrift', {});
+    const voor = kopVan(a);
+    const lijst = path.join(a.basis, 'verboden-woorden.txt');
+    fs.writeFileSync(lijst, '# namen van kanalen, een per regel\nNep Kanaal Twee\n\nnepkanaaltwee\n');
+    const env = { YG_VERBODEN_WOORDEN: lijst };
+    const gevallen = [
+      ['K2-B01', 'Follow @nepkanaaltwee for more\n\n#test', 'een @naam'],
+      ['K2-B02', 'More on https://voorbeeld.nl/x\n\n#test', 'er staat een link in'],
+      ['K2-B03', 'Sources: Dictionary.com (2021).\n\n#test', 'lijkt op een domeinnaam'],
+      ['K2-B04', 'Welcome to Nep Kanaal Twee!\n\n#test', 'een woord uit de lijst met verboden woorden'],
+      ['K2-B05', '', 'het bijschrift is leeg'],
+      ['K2-B06', 'tekst ' + '#tag '.repeat(31), '31 hashtags'],
+    ];
+    for (const [code, tekst, verwacht] of gevallen) {
+      maakPakket(a, code, { bijschrift: tekst });
+      const r = plan(a, argumenten(a, 'kanaal-2', code), env);
+      gelijk(r.code, 1, `${code}: afsluitcode\n${r.uit}`);
+      bevat(r.uit, verwacht, code);
+      ongewijzigd(a, voor, code);
+    }
+    bevatNiet(plan(a, argumenten(a, 'kanaal-2', 'K2-B04'), env).uit, 'Nep Kanaal Twee', 'de melding noemt het verboden woord niet');
+    // de lijst is ingesteld maar bestaat niet, of staat in een git-map: stoppen
+    const weg = plan(a, argumenten(a, 'kanaal-2', 'K2-B03', { extra: ['--bron', 'dictionary.com'] }), { YG_VERBODEN_WOORDEN: path.join(a.basis, 'bestaat-niet.txt') });
+    gelijk(weg.code, 1, 'lijst niet gevonden'); bevat(weg.uit, 'is niet gevonden', 'lijst niet gevonden');
+    fs.writeFileSync(path.join(a.pc, 'woorden.txt'), 'iets\n');
+    const inGit = plan(a, argumenten(a, 'kanaal-2', 'K2-B03', { extra: ['--bron', 'dictionary.com'] }), { YG_VERBODEN_WOORDEN: path.join(a.pc, 'woorden.txt') });
+    gelijk(inGit.code, 1, 'lijst in een git-map'); bevat(inGit.uit, 'staat in een map van git', 'lijst in een git-map');
+    fs.rmSync(path.join(a.pc, 'woorden.txt'));
+    ongewijzigd(a, voor, 'lijst');
+    // met de bron genoemd gaat het wel, en dat staat in de commit; het OK met een kanaalnaam erin wordt in de commit weggelaten
+    maakPakket(a, 'K2-B03', { bijschrift: 'Sources: Dictionary.com (2021).\n\n#test', besluiten: [besluit('pakket', 'ok', 'pakket OK K2-B03, mooi voor Nep Kanaal Twee', 30)] });
+    const goed = plan(a, argumenten(a, 'kanaal-2', 'K2-B03', { extra: ['--bron', 'Dictionary.com'] }), env);
+    gelijk(goed.code, 0, 'met --bron\n' + goed.uit);
+    const bericht = gitRuw(a.origin, ['log', '-1', '--format=%B', 'main']);
+    bevat(bericht, 'bron in de tekst: dictionary.com', 'de bron staat in de commit');
+    bevat(bericht, 'verboden woorden: lijst van 2 regels nagekeken', 'de lijst staat in de commit (alleen het aantal)');
+    bevat(bericht, '"pakket OK K2-B03, mooi voor [weggelaten]"', 'de kanaalnaam is uit het citaat gehaald');
+    bevatNiet(gitRuw(a.origin, ['log', '-1', '-p', 'main']).toLowerCase(), 'nep kanaal twee', 'de kanaalnaam staat nergens in de commit');
+  });
+
+  await toets('dubbel: dezelfde code, hetzelfde tijdstip of een al geplaatste code wordt geweigerd', () => {
+    const m = MORGEN();
+    const a = nepAutomaat('dubbel', { planning: [reelAnder('kanaal-2', 'k2', 'K2-C02', { datum: '2026-11-01', tijd: '18:00' }), reelAnder('kanaal-2', 'k2', 'K2-C01', { datum: m, tijd: '18:00' }), reelAnder('account-3', 'k3', 'G20', { datum: m, tijd: '19:00' })],
+      gedaan: [{ id: '2026-11-01-k2-k2-c02', wanneer: '2026-11-01 18:07', resultaat: 'geplaatst', mediaId: '1' }] });
+    const voor = kopVan(a);
+    for (const [code, opties, verwacht] of [
+      ['K2-C01', { tijd: '20:00' }, 'K2-C01 staat voor kanaal 2 al in de planning'],
+      ['K2-C01', { tijd: '18:00' }, 'K2-C01 staat voor kanaal 2 al in de planning'],
+      ['K2-C02', { tijd: '20:00' }, 'K2-C02 is voor kanaal 2 al geplaatst'],
+      ['K2-C03', { tijd: '18:00' }, `op ${m} 18:00 staat voor kanaal 2 al iets gepland`],
+    ]) {
+      maakPakket(a, code);
+      const r = plan(a, argumenten(a, 'kanaal-2', code, opties));
+      gelijk(r.code, 1, `${code} ${opties.tijd}: afsluitcode\n${r.uit}`);
+      bevat(r.uit, verwacht, `${code} ${opties.tijd}`);
+      ongewijzigd(a, voor, `${code} ${opties.tijd}`);
+    }
+    // hetzelfde tijdstip als een ander account mag wel
+    const r = plan(a, argumenten(a, 'kanaal-2', 'K2-C03', { tijd: '19:00' }));
+    gelijk(r.code, 0, 'zelfde tijd als een ander account\n' + r.uit);
+    gelijk(planningOp(a).items.map(i => i.id).slice(-3), [`${m}-k2-k2-c01`, `${m}-k3-g20`, `${m}-k2-k2-c03`], 'het item staat erbij, na het item van 19:00 dat er al stond');
+  });
+
+  await toets('tijd: minstens een uur vooruit, een bestaande datum en tijd', () => {
+    const a = nepAutomaat('tijd', {});
+    maakPakket(a, 'G30');
+    const voor = kopVan(a), straks = amsterdam(-30);
+    for (const [opties, verwacht] of [[{ datum: straks.datum, tijd: straks.tijd }, 'niet minstens een uur in de toekomst'], [{ datum: '2027-02-30' }, 'geen bestaande datum'], [{ tijd: '24:00' }, 'geen bestaande tijd'], [{ tijd: '18.00' }, 'geen bestaande tijd'], [{ datum: '2029-01-01' }, 'meer dan een jaar vooruit']]) {
+      const r = plan(a, argumenten(a, 'account-3', 'G30', opties));
+      gelijk(r.code, 1, JSON.stringify(opties) + '\n' + r.uit);
+      bevat(r.uit, verwacht, JSON.stringify(opties));
+      ongewijzigd(a, voor, JSON.stringify(opties));
+    }
+  });
+
+  await toets('een video die niet aan de eisen voldoet: het geluid en de verpakking lost het commando zelf op, de rest wordt geweigerd', () => {
+    const a = nepAutomaat('video', {});
+    const voor = kopVan(a);
+    for (const [code, video, verwacht] of [['G41', 'te-klein.mp4', '720x1280'], ['G42', 'kleur-444.mp4', '4:2:0'], ['G43', 'stil.mp4', 'geen geluidsspoor']]) {
+      maakPakket(a, code);
+      const r = plan(a, argumenten(a, 'account-3', code, { video }));
+      gelijk(r.code, 1, `${code}\n${r.uit}`);
+      bevat(r.uit, verwacht, code);
+      ongewijzigd(a, voor, code);
+    }
+    for (const [code, omslag, verwacht] of [['G44', 'omslag-4x5.jpg', '1080x1350'], ['G45', 'png-als.jpg', 'geen JPEG']]) {
+      maakPakket(a, code);
+      const r = plan(a, argumenten(a, 'account-3', code, { omslag }));
+      gelijk(r.code, 1, `${code}\n${r.uit}`);
+      bevat(r.uit, verwacht, code);
+      ongewijzigd(a, voor, code);
+    }
+    maakPakket(a, 'G46');
+    const bron = media('geluid-96k.mp4'), bronSha = git(a.pc, ['hash-object', '--no-filters', bron]);
+    const r = plan(a, argumenten(a, 'account-3', 'G46', { video: 'geluid-96k.mp4', tijd: '17:00' }));
+    gelijk(r.code, 0, 'de video met 96 kHz\n' + r.uit);
+    bevat(r.uit, 'Instagram-versie gemaakt', 'melding');
+    gelijk(git(a.pc, ['hash-object', '--no-filters', bron]), bronSha, 'het bestand van de maker is niet gewijzigd');
+    const uit = path.join(a.basis, 'uit.mp4');
+    fs.writeFileSync(uit, execFileSync('git', ['cat-file', 'blob', 'main:beeld/account-3/G46.mp4'], { cwd: a.origin, maxBuffer: 1 << 28 }));
+    const na = I.onderzoekVideo(uit);
+    gelijk([na.vast, na.herstelbaar, Number(na.a.sample_rate), na.a.codec_name, na.v.codec_name], [[], [], 48000, 'aac', 'h264'], 'wat er op GitHub staat voldoet');
+    bevat(gitRuw(a.origin, ['log', '-1', '--format=%B', 'main']), 'omgezet voor Instagram (beeld gekopieerd)', 'het staat in de commit');
+  });
+
+  await toets('twee makers tegelijk: beide items komen erin, zonder samenvoegconflict; elk legt alleen zijn eigen paden vast', async () => {
+    const a = nepAutomaat('tegelijk', { planning: [reelK1('YS50', { datum: MORGEN(), tijd: '12:00' })] });
+    maakPakket(a, 'K2-D01'); maakPakket(a, 'G50');
+    const J = require(a.commando);
+    const regels = [];
+    let tussendoor = null;
+    const r = await J.hoofd(argumenten(a, 'kanaal-2', 'K2-D01', { tijd: '18:00' }), { uit: t => regels.push(t), haken: { voorPush: async poging => {
+      if (poging === 1) tussendoor = plan(a, argumenten(a, 'account-3', 'G50', { tijd: '18:00' }));    // de ander is net iets eerder
+    } } });
+    gelijk(tussendoor && tussendoor.code, 0, 'de tweede maker\n' + (tussendoor && tussendoor.uit));
+    gelijk(r.code, 0, 'de eerste maker\n' + regels.join('\n'));
+    bevat(regels.join('\n'), 'iemand anders legde intussen iets vast', 'de eerste rekent opnieuw');
+    const p = planningOp(a);
+    gelijk(p.items.map(i => i.id), [`${MORGEN()}-k1-ys50`, `${MORGEN()}-k3-g50`, `${MORGEN()}-k2-k2-d01`], 'beide items staan erin');
+    gelijk(aantalCommits(a), 3, 'twee commits erbij, geen samenvoeging');
+    gelijk(git(a.origin, ['rev-list', '--merges', '--count', 'main']), '0', 'geen merge-commit');
+    gelijk(gewijzigdIn(a, 'main'), ['A beeld/kanaal-2/K2-D01.jpg', 'A beeld/kanaal-2/K2-D01.mp4', 'A mini/kanaal-2-K2-D01.jpg', 'M planning.json'], 'de commit van kanaal 2');
+    gelijk(gewijzigdIn(a, 'main~1'), ['A beeld/account-3/G50.jpg', 'A beeld/account-3/G50.mp4', 'A mini/account-3-G50.jpg', 'M planning.json'], 'de commit van account 3');
+    waar(lijstOp(a).includes('beeld/account-3/G50.mp4') && lijstOp(a).includes('beeld/kanaal-2/K2-D01.mp4'), 'beide video\'s staan er');
+  });
+
+  await toets('tegelijk, en de ander nam net hetzelfde tijdstip of dezelfde code: de tweede stopt, er komt niets dubbel', async () => {
+    const a = nepAutomaat('tegelijk-botsing', {});
+    maakPakket(a, 'K2-E01'); maakPakket(a, 'K2-E02'); maakPakket(a, 'K2-E03');
+    const J = require(a.commando);
+    for (const [eerste, tweede, verwacht] of [[['K2-E01', '18:00'], ['K2-E02', '18:00'], 'staat voor kanaal 2 al iets gepland'], [['K2-E03', '20:00'], ['K2-E03', '21:00'], 'K2-E03 staat voor kanaal 2 al in de planning']]) {
+      const regels = [];
+      let tussendoor = null;
+      const voor = aantalCommits(a);
+      const r = await J.hoofd(argumenten(a, 'kanaal-2', eerste[0], { tijd: eerste[1] }), { uit: t => regels.push(t), haken: { voorPush: async poging => {
+        if (poging === 1) tussendoor = plan(a, argumenten(a, 'kanaal-2', tweede[0], { tijd: tweede[1] }));
+      } } });
+      gelijk(tussendoor && tussendoor.code, 0, 'de ander\n' + (tussendoor && tussendoor.uit));
+      gelijk(r.code, 1, 'de eerste moet stoppen\n' + regels.join('\n'));
+      bevat(regels.join('\n'), verwacht, 'reden');
+      gelijk(aantalCommits(a), voor + 1, 'alleen de commit van de ander');
+    }
+    const ids = planningOp(a).items.map(i => i.id);
+    gelijk(ids.length, new Set(ids).size, 'geen dubbele ids');
+    gelijk(ids.length, 2, 'twee items in totaal');
+  });
+
+  await toets('kanaal 1 met een pakket in deze repo: het item wijst naar het pakket, de video wordt niet nog eens neergezet', () => {
+    const pakket = 'pakketten/2026-12-20-YS60-proef';
+    const a = nepAutomaat('in-repo', { bestanden: { [`${pakket}/instagram/reel.mp4`]: media('goed.mp4'), [`${pakket}/instagram/omslag.jpg`]: media('omslag.jpg') } });
+    const map = path.join(a.pc, ...pakket.split('/'));
+    fs.writeFileSync(path.join(map, 'pakket.json'), JSON.stringify({ code: 'YS60', titel: 'Proef' }));
+    fs.writeFileSync(path.join(map, 'keuring.json'), JSON.stringify({ code: 'YS60', besluiten: [besluit('pakket', 'ok', 'Beide OK YS60', 60, { via: 'sessie' }), besluit('bijschrift', 'ok', 'Beide OK YS60', 60, { via: 'sessie' })] }));
+    fs.writeFileSync(path.join(map, 'instagram', 'bijschrift.txt'), 'Why is this a test?\n\nBecause.\n\n#test');
+    const args = ['--account', 'kanaal-1', '--pakket', map, '--video', path.join(map, 'instagram', 'reel.mp4'), '--omslag', path.join(map, 'instagram', 'omslag.jpg'), '--bijschrift', path.join(map, 'instagram', 'bijschrift.txt'), '--datum', MORGEN(), '--tijd', '20:00', '--omslag-ms', '2100'];
+    const r = plan(a, args);
+    gelijk(r.code, 0, 'afsluitcode\n' + r.uit);
+    gelijk(gewijzigdIn(a), ['A mini/pakketten-2026-12-20-YS60-proef-instagram-omslag.jpg', 'M planning.json'], 'alleen het kleintje en de planning');
+    const item = planningOp(a).items[0];
+    gelijk([item.id, item.account, item.beeld, item.omslag, item.omslagMs, item.titel], [`${MORGEN()}-k1-ys60`, 'kanaal-1', [`${pakket}/instagram/reel.mp4`], `${pakket}/instagram/omslag.jpg`, 2100, 'Kanaal 1 YS60: Why is this a test?'], 'het item, zoals plan-reel.cjs het maakte');
+    const bericht = gitRuw(a.origin, ['log', '-1', '--format=%an%n%B', 'main']);
+    bevat(bericht, 'Manon (YG Crew)', 'auteur');
+    bevat(bericht, '(pakket OK en bijschrift OK: "Beide OK YS60", Andries ', 'beide keuringen in één citaat');
+    bevat(bericht, 'via de sessie', 'waar het OK vandaan kwam');
+    // staat het pakket nog niet op GitHub, dan eerst vastleggen
+    const pakket2 = 'pakketten/2026-12-21-YS61-proef', map2 = path.join(a.pc, ...pakket2.split('/'));
+    fs.mkdirSync(path.join(map2, 'instagram'), { recursive: true });
+    fs.copyFileSync(media('goed.mp4'), path.join(map2, 'instagram', 'reel.mp4')); fs.copyFileSync(media('omslag.jpg'), path.join(map2, 'instagram', 'omslag.jpg'));
+    fs.writeFileSync(path.join(map2, 'pakket.json'), JSON.stringify({ code: 'YS61', titel: 'Proef' }));
+    fs.writeFileSync(path.join(map2, 'keuring.json'), JSON.stringify({ code: 'YS61', besluiten: [besluit('pakket', 'ok', 'Beide OK YS61', 60), besluit('bijschrift', 'ok', 'Beide OK YS61', 60)] }));
+    fs.writeFileSync(path.join(map2, 'instagram', 'bijschrift.txt'), 'Another test.\n\n#test');
+    const voor = kopVan(a);
+    const r2 = plan(a, ['--account', 'kanaal-1', '--pakket', map2, '--video', path.join(map2, 'instagram', 'reel.mp4'), '--omslag', path.join(map2, 'instagram', 'omslag.jpg'), '--bijschrift', path.join(map2, 'instagram', 'bijschrift.txt'), '--datum', MORGEN(), '--tijd', '12:00']);
+    gelijk(r2.code, 1, 'pakket nog niet op GitHub\n' + r2.uit);
+    bevat(r2.uit, 'staat nog niet op GitHub', 'melding');
+    gelijk(kopVan(a), voor, 'niets vastgelegd');
+  });
+
+  await toets('intrekken: een eigen item dat nog niet geplaatst is gaat uit de planning; daarna kan het opnieuw', () => {
+    const m = MORGEN();
+    const a = nepAutomaat('intrekken', { planning: [reelAnder('kanaal-2', 'k2', 'K2-F01', { datum: '2026-11-01', tijd: '18:00' }), reelAnder('kanaal-2', 'k2', 'K2-F02', { datum: '2026-11-02', tijd: '18:00' }), reelAnder('account-3', 'k3', 'G60', { datum: m, tijd: '18:00' })],
+      gedaan: [{ id: '2026-11-01-k2-k2-f01', wanneer: '2026-11-01 18:04', resultaat: 'geplaatst', mediaId: '1' }, { id: '2026-11-02-k2-k2-f02', wanneer: '2026-11-03 13:00', resultaat: 'overgeslagen' }] });
+    maakPakket(a, 'K2-F02'); maakPakket(a, 'K2-F03');
+    const voor = kopVan(a);
+    const geplaatst = plan(a, ['--intrekken', '--account', 'kanaal-2', '--code', 'K2-F01', '--reden', 'de keuring is ingetrokken']);
+    gelijk(geplaatst.code, 1, 'een geplaatst item\n' + geplaatst.uit); bevat(geplaatst.uit, 'is al geplaatst', 'geplaatst');
+    const nietDaar = plan(a, ['--intrekken', '--account', 'kanaal-2', '--code', 'K2-F09', '--reden', 'de keuring is ingetrokken']);
+    gelijk(nietDaar.code, 1, 'een code die er niet staat'); bevat(nietDaar.uit, 'staat voor kanaal 2 niet in de planning', 'niet in de planning');
+    const zonderReden = plan(a, ['--intrekken', '--account', 'kanaal-2', '--code', 'K2-F02']);
+    gelijk(zonderReden.code, 1, 'zonder reden'); bevat(zonderReden.uit, '--reden ontbreekt', 'zonder reden');
+    const vanAnder = plan(a, ['--intrekken', '--account', 'kanaal-2', '--code', 'G60', '--reden', 'de keuring is ingetrokken']);
+    gelijk(vanAnder.code, 1, 'de code van een ander account'); bevat(vanAnder.uit, 'past niet bij kanaal 2', 'code van een ander');
+    ongewijzigd(a, voor, 'geweigerde intrekkingen');
+    // het overgeslagen item zit het opnieuw inplannen in de weg, tot het is ingetrokken
+    const bezet = plan(a, argumenten(a, 'kanaal-2', 'K2-F02'));
+    gelijk(bezet.code, 1, 'overgeslagen item staat er nog'); bevat(bezet.uit, 'dat item is overgeslagen', 'melding'); bevat(bezet.uit, '--intrekken --account kanaal-2 --code K2-F02', 'de melding zegt hoe');
+    const proef = plan(a, ['--intrekken', '--account', 'kanaal-2', '--code', 'K2-F02', '--reden', 'te laat geworden, komt opnieuw', '--proef']);
+    gelijk(proef.code, 0, 'proef'); ongewijzigd(a, voor, 'intrekken --proef');
+    const weg = plan(a, ['--intrekken', '--account', 'kanaal-2', '--code', 'K2-F02', '--reden', 'te laat geworden, komt opnieuw']);
+    gelijk(weg.code, 0, 'intrekken\n' + weg.uit);
+    gelijk(gewijzigdIn(a), ['M planning.json'], 'alleen de planning verandert');
+    gelijk(planningOp(a).items.map(i => i.id), ['2026-11-01-k2-k2-f01', `${m}-k3-g60`], 'het item is weg, de rest staat er');
+    bevat(gitRuw(a.origin, ['log', '-1', '--format=%an%n%B', 'main']), 'Intrekken kanaal 2 K2-F02: 2026-11-02-k2-k2-f02 (2026-11-02 18:00) uit de planning (te laat geworden, komt opnieuw)', 'de commit');
+    // op dezelfde dag als het overgeslagen item kan niet: dat id staat in het logboek en zou worden overgeslagen
+    const zelfdeDag = I.magErbij.bind(null, { items: [] }, { items: [{ id: '2026-11-02-k2-k2-f02', wanneer: 'x', resultaat: 'overgeslagen' }] }, 'kanaal-2', 'K2-F02', '2026-11-02', '20:00');
+    let melding = ''; try { zelfdeDag(); } catch (e) { melding = e.message; }
+    bevat(melding, 'staat al in het logboek', 'zelfde dag als het overgeslagen item');
+    const opnieuw = plan(a, argumenten(a, 'kanaal-2', 'K2-F02', { tijd: '19:00' }));
+    gelijk(opnieuw.code, 0, 'opnieuw inplannen\n' + opnieuw.uit);
+    gelijk(planningOp(a).items.map(i => i.id), ['2026-11-01-k2-k2-f01', `${m}-k3-g60`, `${m}-k2-k2-f02`], 'het staat er opnieuw in');
+  });
+
+  await toets('een verouderd commando, een onbekend account, een kapotte planning: stoppen zonder iets te wijzigen', () => {
+    const a = nepAutomaat('randen', { status: { stand: 'in orde', bericht: 'x', sinds: '2026-11-19 10:00', accounts: { 'kanaal-2': { naam: 'kanaal 2', stand: 'niet ingesteld', bericht: 'x', sinds: 'x' } } } });
+    maakPakket(a, 'K2-G01');
+    const voor = kopVan(a);
+    for (const [account, verwacht] of [['kanaal-9', 'onbekend account "kanaal-9"; kies uit kanaal-1, kanaal-2, account-3'], ['ygdigital', 'werkt dit commando niet']]) {
+      const r = plan(a, argumenten(a, account, 'K2-G01'));
+      gelijk(r.code, 1, account); bevat(r.uit, verwacht, account);
+    }
+    const onbekend = plan(a, [...argumenten(a, 'kanaal-2', 'K2-G01'), '--snel']);
+    gelijk(onbekend.code, 1, 'onbekende optie'); bevat(onbekend.uit, 'onbekende optie --snel', 'onbekende optie');
+    // de stand van het account komt als waarschuwing mee
+    const proef = plan(a, argumenten(a, 'kanaal-2', 'K2-G01', { extra: ['--proef'] }));
+    gelijk(proef.code, 0, 'proef\n' + proef.uit);
+    bevat(proef.uit, 'LET OP: de automaat kan voor kanaal 2 nu niet plaatsen (niet ingesteld)', 'waarschuwing over de stand');
+    // het commando op de pc is niet de versie van GitHub
+    fs.appendFileSync(a.commando, '\n// een oude of gewijzigde versie\n');
+    const oud = plan(a, argumenten(a, 'kanaal-2', 'K2-G01'));
+    gelijk(oud.code, 1, 'verouderd commando\n' + oud.uit); bevat(oud.uit, 'is niet de versie die op GitHub staat', 'verouderd commando');
+    gelijk(kopVan(a), voor, 'niets vastgelegd');
+    git(a.pc, ['checkout', '-q', '--', 'gereedschap/inplannen.cjs']);
+    // planning.json op GitHub is kapot: niets aanraken
+    const kapot = nepAutomaat('randen-kapot', {});
+    maakPakket(kapot, 'K2-G02');
+    fs.writeFileSync(path.join(kapot.pc, 'planning.json'), '{ "items": [ kapot');
+    git(kapot.pc, ['add', 'planning.json']); git(kapot.pc, [...WIE, 'commit', '-q', '-m', 'kapot']); git(kapot.pc, ['push', '-q', 'origin', 'main']);
+    const voorKapot = kopVan(kapot);
+    const rk = plan(kapot, argumenten(kapot, 'kanaal-2', 'K2-G02'));
+    gelijk(rk.code, 1, 'kapotte planning\n' + rk.uit); bevat(rk.uit, 'planning.json op GitHub is geen geldige JSON', 'kapotte planning');
+    gelijk(kopVan(kapot), voorKapot, 'niets vastgelegd');
+  });
+}
+
+// =================================================================================
 (async () => {
-  const delen = [['plaatsen', deelPlaatsen]];
+  const delen = [['plaatsen', deelPlaatsen], ['inplannen', deelInplannen]];
   for (const [naam, fn] of delen) {
     if (!doetMee(naam)) continue;
     deelNu = naam;
