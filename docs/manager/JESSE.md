@@ -1,5 +1,33 @@
 # Jesse — manager YG-Social
 
+## Van Eva — do 19 nov 2026, 10:26: het GTA 6-account vanmiddag ter beslissing · `eva-gta6-1`
+
+Andries via chat met Eva, do 19 nov 2026 10:22, over wat er vanmiddag kan starten (GTA 6 stond bovenaan): *"Stel dit allemaal op voor vammidag"*.
+
+**Bij je eerstvolgende "ga verder" doe je eerst dit**, vóór het weekritme. Zet `eva-gta6-1` in je `ontvangen`. Andries wil vanmiddag kunnen beslissen: GTA 6 is vandaag uitgekomen, en elke dag later kost bereik. Dit werkt het blok hieronder (H-noor-8) uit; het besluit zelf staat daar.
+
+**Wat je maakt:** `docs/manager/opdracht-gta6-account.md`, in dezelfde vorm als `opdracht-account-4.md`, met de status "ter beslissing". Daarna leg je Andries in je sessie de keuzes voor met de vragenknoppen (hoogstens 4 per keer), met je advies erbij. Zijn antwoorden leg je vast zoals altijd.
+
+**Wat je al weet** (uit de kaarten van Noor; je hoeft dit niet meer op te vragen):
+- Het wordt een eigen fan- en nieuwsaccount met een eigen naam, duidelijk onofficieel. Het officiële account van de uitgever wordt niet nagemaakt: geen naam, logo of stijl die erop lijkt.
+- Er komen beelden uit de game in. Aandachtspunten: zelf gameplay opnemen en geen geknipte streams van anderen; geen spoilers van verhaalmomenten; geen radio of muziek uit de game (claims).
+- De betaalde clip-programma's gelden niet voor Nederland.
+- Het beleid van de uitgever lees je zelf na, met de bron in je stuk: https://support.rockstargames.com/en-US/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material . De crew las het tot nu toe zo: gebruik alleen niet-commercieel, en de uitgever kan materiaal altijd laten weghalen. YouTube betaalt niet uit voor hergebruikte inhoud zonder eigen toevoeging: https://support.google.com/youtube/answer/1311392 .
+
+**Wat er in je voorstel staat** (kort; het is om op te beslissen):
+1. **Onderwerp in één zin**, en het verschil met account 3, dat GTA 6 uitlegt met eigen animatie. Zet drie wegen naast elkaar: een nieuw account, een tweede reeks op account 3, of kanaal 2. Andries koos een eigen account; laat zien wat dat kost en oplevert tegenover de andere twee, en zeg wat jij zou doen.
+2. **Waar het beeld vandaan komt, vanaf dag 1.** Dit is het knelpunt: geen crewlid kan het spel spelen of opnemen. Reken uit wat het Andries per week kost (opnemen, bestanden aanleveren) en wat ervoor nodig is (een apparaat en het spel: dat is een uitgave, dus een OK per bedrag; het bedrag komt niet in deze repo). Geef ook de weg zonder eigen opnames (kort officieel beeld als citaat binnen eigen uitleg) en het risico daarvan.
+3. **Vorm:** reeksen, lengte, hoeveel per week, platforms, taal en stem. Houd het klein genoeg om vol te houden.
+4. **Wie het maakt:** een bestaand crewlid erbij of een nieuw crewlid, met de reden. Weeg de proef van account 3 mee (uitkomst ma 23 nov) en je eigen advies "hoogstens één nieuw account tegelijk".
+5. **Hoe het geld oplevert, en wanneer.** Eerlijk: met gamebeeld is uitbetaling onzeker. Welke weg is er dan wel?
+6. **De eerste 72 uur:** wat kan er binnen de regels deze week nog online, nu de aandacht het grootst is?
+7. **Proef met criteria vooraf** (twee weken): wat telt als gelukt, en wanneer stoppen we.
+8. **Wat Andries zelf moet doen** en hoeveel tijd dat kost: account aanmaken, naam kiezen, opnemen.
+
+**Namen:** stel er drie tot vijf voor en kijk na of ze vrij zijn. Noem ze alleen in je sessie met Andries, niet in deze repo.
+
+**Grenzen (ongewijzigd):** je maakt geen account aan, kiest geen naam, geeft niets uit en plaatst niets. In deze repo staan geen namen, handles of bedragen; het nieuwe account heet hier "het GTA 6-fanaccount".
+
 ## Nieuw van Andries (via Noor, H-noor-8; doorgezet door Eva, kantoor-check do 19 nov 2026 08:44)
 
 Andries, do 19 nov 2026 06:55, in de sessie van Noor (over GTA 6, uit op 19 nov): *"Dan doen we een eigen acount met eigen fan en nieuws acount, beelden wel uit de game."*
