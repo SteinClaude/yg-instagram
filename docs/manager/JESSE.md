@@ -1,5 +1,13 @@
 # Jesse — manager YG-Social
 
+## ▶ Nieuw van Andries — do 19 nov 20:21, via het Ploegoverzicht · `plaat-jesse-elevenlabs`
+
+Op de vraag: **Bedrag van het stemabonnement bevestigen**
+
+Andries via het Ploegoverzicht, do 19 nov 2026 20:21: *"Al gedaan"*
+
+Andries zegt dat hij dit zelf heeft gedaan. Kijk het na voor je erop bouwt. Leg het letterlijk vast met datum en tijd (commit, oplevering, `buitenGit`) en handel er dan naar.
+
 ## Van Eva — do 19 nov 2026, 20:01: de fan-regel ook in de profielen van account 3 en van het nieuwe account · `V-sven-6`
 
 **Andries, do 19 nov 2026 ±19:47, in de sessie van Sven:** *"schrijf dit ook even naar koen en jesse die zijn bezig met rockstar acount mischien kunnen ze dit op de youtube en instagram ook zetten"*
