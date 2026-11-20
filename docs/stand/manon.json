@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-20T17:14:00+01:00",
+  "tijd": "2026-11-20T17:08:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,7 +8,7 @@
   },
   "status": "werkt",
   "af": [
-    "2026-11-20T17:14:00+01:00 YS46 en YS47 ingepland in YouTube Studio (kanaal 1 nagekeken: avatar vraagteken, nieuwste short de schoolbussen). Studio meldt per video eerst \"We zijn je content nog aan het controleren\" (OK), daarna \"Video gepland\": YS46 21 november 2026 om 20:00, YS47 22 november 2026 om 20:00. Lijst Shorts: Gepland 21 en 22 nov 2026. Categorie Educatief (standaard van het kanaal). Kaarten bijgewerkt; paneelcontrole: alles klopt.",
+    "2026-11-20T17:08:00+01:00 YS46 en YS47 ingepland in YouTube Studio (kanaal 1 nagekeken: avatar vraagteken, nieuwste short de schoolbussen). Studio meldt per video eerst \"We zijn je content nog aan het controleren\" (OK), daarna \"Video gepland\": YS46 21 november 2026 om 20:00, YS47 22 november 2026 om 20:00. Lijst Shorts: Gepland 21 en 22 nov 2026. Categorie Educatief (standaard van het kanaal). Kaarten bijgewerkt; paneelcontrole: alles klopt.",
     "2026-11-20T16:35:00+01:00 Proefpakket voor de kleine AI-proef gemaakt (docs/waaromdorp/ai-proef.md): twee verzonnen rechercheurs (J en K), 3 referentiebeelden per personage, drie clips van 5 s (binnenkomen, de collega, samen bij het bord) met prompts, wat niet mag, en hoe ik beoordeel. Niets betaald, niets aangemaakt.",
     "2026-11-19T21:11:00+01:00 3D-proef in Blender gemaakt (de rechercheur loopt 5 s door het recherchebureau) en AI-videodiensten vergeleken; samenvatting zonder bedragen in docs/waaromdorp/3d-proef.md.",
     "2026-11-19T20:33:00+01:00 Rechercheurs getekend: J de rechercheur en K de collega (gereedschap/figuur.cjs), nieuw decor bureau (gereedschap/short/decor.cjs), bladen docs/figuur/ontwerp-J/K.jpg, ontwerpen-overzicht-rechercheurs.jpg en docs/waaromdorp/rechercheurs.jpg (in bureau, museum en tijdmachine). Ter keuring; niets in een video gebruikt.",
@@ -150,9 +150,9 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
-    "2026-11-20T17:04:00+01:00 Andries in de sessie, op de vraag of hij Studio op kanaal 1 wil zetten: \"Staat nu op kanaal 1\"",
-    "2026-11-20T17:12:00+01:00 YouTube Studio (Chrome van Andries, kanaal 1): YS46 en YS47 geüpload en gepland (21 en 22 nov 2026 20:00). Niets anders gewijzigd.",
-    "2026-11-20T17:02:00+01:00 YouTube Studio geopend in de Chrome van Andries: het dashboard toont een ander kanaal dan kanaal 1 (avatar S, andere shorts). Niets geüpload, niet gewisseld.",
+    "2026-11-20T17:01:00+01:00 Andries in de sessie, op de vraag of hij Studio op kanaal 1 wil zetten: \"Staat nu op kanaal 1\"",
+    "2026-11-20T17:07:00+01:00 YouTube Studio (Chrome van Andries, kanaal 1): YS46 en YS47 geüpload en gepland (21 en 22 nov 2026 20:00). Niets anders gewijzigd.",
+    "2026-11-20T17:00:00+01:00 YouTube Studio geopend in de Chrome van Andries: het dashboard toont een ander kanaal dan kanaal 1 (avatar S, andere shorts). Niets geüpload, niet gewisseld.",
     "2026-11-20T16:38:00+01:00 Andries in de sessie, op de vraag welke dienst en welk bedrag voor de AI-proef (keuzes: Gemini Omni met een plafond, Kling kleinste plan): \"Something else\" (zonder toelichting)",
     "2026-11-20T16:27:00+01:00 Andries in de sessie, op \"Welke 3D-route kies je?\": \"Kleine AI-proef\"",
     "2026-11-19T20:45:00+01:00 Gedownload en geïnstalleerd (na \"Ja, installeer Blender\"): Blender 5.3.0 (download.blender.org, draagbare zip, sha256 klopt) in C:Usersgijsm\tools; via Chrome van Andries op itch.io de gratis CC0-pakketten Quaternius \"Universal Base Characters [Standard]\" en \"Universal Animation Library [Standard]\" (niets betaald; in zijn map Downloads en uitgepakt in toolsassets). 3D-proef op de pc in toolsproef3d (buiten de repo).",
