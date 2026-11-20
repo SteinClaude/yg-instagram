@@ -12,7 +12,8 @@ De stand per kanaal staat in `docs/manager/status-kanalen-2026-11-19.md`.
 
 - **Kanaal 1:** de sleutel van de automaat wordt sinds 10:55 geweigerd. Er gaat niets uit tot Andries een nieuwe sleutel zet (stappen van Eva).
 - **Kanaal 2:** had een beperking en is terug.
-- **Account 3 (bijgewerkt 16:53):** het Instagram-account is definitief uitgeschakeld, zonder reden en zonder bezwaar. Mijn advies: nu geen nieuw account, eerst kanaal 1 en 2 stabiel, na zo 29 nov opnieuw beslissen. Eerder vandaag: het Instagram-account was niet meer te vinden. Andries, ±16:40: *"we moeten koen even een nieuwe insta geven omdat [weggelaten] weg is"*. De stappen staan in `docs/manager/instagram-account-3-nieuw.md`.
+- **Account 3 (bijgewerkt 16:54):** Andries heeft het nieuwe Instagram-account al aangemaakt (*"is al gemaakt"*). Nu nodig: de handle aan Koen, bio OK, en koppelen aan de automaat. Afspraken in `docs/manager/instagram-account-3-nieuw.md`.
+- **Account 3 (eerder, 16:53):** het Instagram-account is definitief uitgeschakeld, zonder reden en zonder bezwaar. Mijn advies: nu geen nieuw account, eerst kanaal 1 en 2 stabiel, na zo 29 nov opnieuw beslissen. Eerder vandaag: het Instagram-account was niet meer te vinden. Andries, ±16:40: *"we moeten koen even een nieuwe insta geven omdat [weggelaten] weg is"*. De stappen staan in `docs/manager/instagram-account-3-nieuw.md`.
 - **Niemand plaatst nog met de hand op Instagram** (correctie Eva, 07:02). De handeling "Instagram: G02, G10 en G11 plaatsen" in deel 2 vervalt, net als de oude Reel uit 2025.
 - **G07** heeft een pakket OK, maar staat nog niet in Studio: daar staat een ander kanaal actief. Andries wisselt zelf naar account 3.
 - **Punt 3.7 verandert:** het nieuwe Instagram-account begint op nul. Voorstel: in de proef van account 3 volgers en abonnees alleen op YouTube tellen, en Instagram buiten de proef houden.

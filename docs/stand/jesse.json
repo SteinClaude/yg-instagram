@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-20T16:53:00+01:00",
+  "tijd": "2026-11-20T16:54:00+01:00",
   "sessie": {
     "plek": "pc",
     "sinds": "2026-11-20T16:43:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-20T16:54:00+01:00 Nieuw Instagram-account voor account 3 bestaat (door Andries zelf aangemaakt; niet door mij nagekeken): vervolgstappen en afspraken in docs/manager/instagram-account-3-nieuw.md; jesse-31",
     "2026-11-20T16:53:00+01:00 Instagram account 3: definitief uitgeschakeld (Andries). Advies in docs/manager/instagram-account-3-nieuw.md: nu geen nieuw account, eerst kanaal 1 en 2 stabiel, na zo 29 nov opnieuw beslissen; keuze ligt bij Andries",
     "2026-11-20T16:43:00+01:00 Nieuw Instagram-account voor account 3: stappen voor Andries, wat Koen klaarzet en de gevolgen in docs/manager/instagram-account-3-nieuw.md; keurlijst en status aangevuld met de stand van Instagram op vr 20 nov",
     "2026-11-19T20:19:00+01:00 Keurlijst van de week (vr 20 nov) klaargezet in docs/keurlijst-week.md: 2 keuringen in het paneel, 8 handelingen, 7 wat-vragen met advies (Instagram op tijd, stemtegoed, tijdvakken Chrome, bijschrift bij pakket, Instagram 12:00, TikTok/Snapchat, lat proef account 3), geld, gekeurd deze week",
@@ -40,7 +41,7 @@
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
   "bezig": null,
-  "volgende": "Wacht op Andries: nieuw Instagram-account voor account 3 nu of na zo 29 nov; nieuwe sleutel kanaal 1; in Studio wisselen naar account 3 voor G07. Keurlijst doornemen; bedrag stemabonnement in de sessie vragen; ma 23 nov weekoverzicht; zo 29 nov einde proef account 3",
+  "volgende": "Wacht op Andries: handle aan Koen, bio OK account 3 IG, ja voor main en koppelen; nieuwe sleutel kanaal 1; in Studio wisselen naar account 3 voor G07. Keurlijst doornemen; bedrag stemabonnement in de sessie vragen; ma 23 nov weekoverzicht; zo 29 nov einde proef account 3",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -115,16 +116,6 @@
         "Nee, de proef opnieuw starten als het nieuwe account er is"
       ],
       "advies": "Ja: zo zegt de proef op zo 29 nov nog iets",
-      "blokkeert": false
-    },
-    {
-      "vraag": "Het Instagram-account van account 3 is definitief uitgeschakeld. Een nieuw Instagram-account voor account 3: nu, of wachten tot na de proef (zo 29 nov)?",
-      "aan": "andries",
-      "keuzes": [
-        "Wachten tot na zo 29 nov",
-        "Nu toch een nieuw account aanmaken"
-      ],
-      "advies": "Wachten: een nieuw account kan opnieuw worden uitgeschakeld en dan ook kanaal 1 en 2 raken, die vandaag al een melding hadden",
       "blokkeert": false
     }
   ],
@@ -324,6 +315,14 @@
     {
       "tijd": "2026-11-20T16:53:00+01:00",
       "wat": "Bericht aan de sessie van Koen (cross-session): het oude account is definitief uitgeschakeld; nieuw account wacht op de keuze van Andries; voorbereiden mag, niets voorleggen of plaatsen"
+    },
+    {
+      "tijd": "2026-11-20T16:54:00+01:00",
+      "wat": "Andries, op de vraag nu aanmaken of wachten tot na 29 nov: \"is al gemaakt\" (het nieuwe Instagram-account voor account 3 heeft hij zelf aangemaakt; niet nagekeken)"
+    },
+    {
+      "tijd": "2026-11-20T16:54:00+01:00",
+      "wat": "Bericht aan de sessie van Koen (cross-session): het nieuwe account bestaat; handle komt van Andries; bio voorleggen; afspraken voor het account"
     }
   ],
   "voorEva": [
@@ -456,6 +455,11 @@
       "id": "jesse-30",
       "aan": "Eva (Koen, Manon, Finn)",
       "wat": "Andries vr 20 nov in mijn sessie over het oude Instagram-account van account 3: \"Ja, het is uitgeschakeld\", reden \"Geen reden genoemd\", bezwaar \"Nee, het is definitief\". Mijn advies aan hem (docs/manager/instagram-account-3-nieuw.md): nu geen nieuw Instagram-account voor account 3, eerst kanaal 1 (nieuwe sleutel) en kanaal 2 stabiel via de automaat, na zo 29 nov opnieuw beslissen. Hij heeft nog niet gekozen; de vraag staat in mijn stand. Koppel account 3 dus nog niet. Voor iedereen: de voorwaarden van Instagram staan een nieuw account na een uitgeschakeld account wegens overtreding niet toe; dat weegt mee."
+    },
+    {
+      "id": "jesse-31",
+      "aan": "Eva (Koen, Manon)",
+      "wat": "Vervangt het advies in jesse-30: Andries vr 20 nov in mijn sessie: \"is al gemaakt\". Het nieuwe Instagram-account voor account 3 bestaat (door hem zelf aangemaakt; niemand van de crew heeft het nagekeken). Nodig: (1) de koppelstappen voor dit account zodra hij ja zegt voor main; nakijken dat het een professioneel account is; (2) de vorm van het bijschrift voor de automaat voor Koen; (3) Koen krijgt de handle van Andries in zijn sessie en legt de bio voor. Afspraken voor het account (alleen via de automaat, hoogstens 1 Reel per dag, geen bulk, naam niet meer wijzigen, niets met de hand in Chrome) staan in docs/manager/instagram-account-3-nieuw.md. eva-ig-stop-1 blijft gelden."
     }
   ],
   "ontvangen": [

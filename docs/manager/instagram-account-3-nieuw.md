@@ -7,6 +7,30 @@
 - vr 20 nov 2026 06:59, in de sessie van Eva: *"De automaat is voor alle 3 de kanalen, [weggelaten] is met een beperking, ik kan deze niet meer vinden op isntagram, [weggelaten] had dit ook maar is terug"*
 - vr 20 nov 2026 ±16:40, in de sessie van Jesse: *"we moeten koen even een nieuwe insta geven omdat [weggelaten] weg is"*
 
+## Het nieuwe account bestaat (Andries, vr 20 nov 2026 ±16:54, sessie Jesse)
+
+Op de vraag of hij het nieuwe Instagram-account nu maakt of wacht tot na zo 29 nov: *"is al gemaakt"*
+
+Andries heeft het nieuwe Instagram-account voor account 3 dus zelf al aangemaakt. Ik heb het niet nagekeken: niemand van de crew opent Instagram. Mijn advies om te wachten vervalt daarmee; wat blijft, is het account zo rustig mogelijk opzetten.
+
+**Wat er nu nog moet gebeuren**
+
+| Wie | Wat |
+|---|---|
+| Andries | De naam en handle aan Koen geven, in de sessie van Koen (niet in de repo) |
+| Andries | Nakijken dat het een professioneel account is. Dat is nodig voor de automaat |
+| Koen | De bio (127 tekens, met de fan-regel) voorleggen: "bio OK account 3 IG" |
+| Andries | Bio en profielfoto zelf invullen, op de telefoon, in één keer |
+| Andries en Eva | Het account koppelen aan de automaat, na zijn ja voor `main` |
+| Koen | Per code de Instagram-versie, de omslag en het bijschrift aanleveren in de vorm van de automaat |
+
+**Afspraken voor dit account** (om een nieuwe uitschakeling te voorkomen)
+- Plaatsen alleen via de automaat, hoogstens 1 Reel per dag in de eerste twee weken.
+- Geen reeksen achter elkaar, niets in bulk wijzigen of verwijderen.
+- De naam en handle na vandaag niet meer veranderen.
+- Niets met de hand in de gedeelde Chrome.
+- Geen beeld van andere makers en geen beeld van de uitgever: alleen de eigen video's van account 3.
+
 ## Uitkomst van de melding (Andries, vr 20 nov 2026 ±16:53, sessie Jesse)
 
 - Op "Heb je de melding op het oude Instagram-account al gelezen?": *"Ja, het is uitgeschakeld"*
@@ -18,7 +42,7 @@
 - Instagram schakelt een account uit als het de regels overtreden vindt. Een reden staat er niet bij, maar daar moeten we van uitgaan. Volgens de gebruiksvoorwaarden mag wie zo een account kwijtraakt, de dienst niet opnieuw gebruiken. Een nieuw account voor hetzelfde project valt daar waarschijnlijk onder.
 - **Het risico zit bij kanaal 1 en 2.** Een nieuw account kan opnieuw worden uitgeschakeld, en dat kan de andere accounts van dezelfde eigenaar meenemen. Die hadden vandaag al iets: kanaal 2 een beperking, kanaal 1 een geweigerde sleutel. Kanaal 1 heeft 17 Reels en een werkende automaat; account 3 had er 2.
 
-**Mijn advies: nu geen nieuw Instagram-account voor account 3.**
+**Mijn advies was: nu geen nieuw Instagram-account voor account 3.** (Achterhaald: het account is al gemaakt, zie bovenaan.)
 1. Eerst Instagram van kanaal 1 en 2 weer stabiel krijgen: de nieuwe sleutel voor kanaal 1, en alles alleen nog via de automaat.
 2. Account 3 gaat door op YouTube. Daar loopt het, en daar zit de proef.
 3. Na de proef (zo 29 nov) opnieuw beslissen over Instagram voor account 3, als kanaal 1 en 2 dan twee weken zonder melding hebben gedraaid.

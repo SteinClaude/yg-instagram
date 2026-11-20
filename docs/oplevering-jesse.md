@@ -1,5 +1,6 @@
 # Oplevering Jesse — manager YG-Social
 
+KLAAR: nieuw Instagram-account account 3 bestaat (Andries zelf); vervolgstappen en afspraken in docs/manager/instagram-account-3-nieuw.md; jesse-31 · vr 20 nov 16:54
 KLAAR: Instagram account 3 definitief uitgeschakeld; advies "nu geen nieuw account, na zo 29 nov opnieuw beslissen" in docs/manager/instagram-account-3-nieuw.md; keuze bij Andries; jesse-30 · vr 20 nov 16:53
 KLAAR: stappen voor een nieuw Instagram-account voor account 3 (docs/manager/instagram-account-3-nieuw.md); keurlijst en status aangevuld; jesse-29 · vr 20 nov 16:43
 KLAAR: keurlijst van de week (vr 20 nov) klaargezet: docs/keurlijst-week.md; ⚠ dringendst: de stem (alles met een stem valt tussen 22 en 26 nov stil) · do 19 nov 20:19
@@ -166,6 +167,7 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 
 ## Besluiten met Andries
 
+- vr 20 nov 2026 ±16:54 (sessie Jesse), op "nieuw Instagram-account nu of na 29 nov": *"is al gemaakt"* → het account bestaat; docs/manager/instagram-account-3-nieuw.md, jesse-31.
 - vr 20 nov 2026 ±16:53 (sessie Jesse), over het oude Instagram-account van account 3: *"Ja, het is uitgeschakeld"* · reden: *"Geen reden genoemd"* · bezwaar: *"Nee, het is definitief"* → docs/manager/instagram-account-3-nieuw.md; de keuze voor een nieuw account is nog niet gemaakt.
 - vr 20 nov 2026 ±16:40 (sessie Jesse): *"we moeten koen even een nieuwe insta geven omdat [weggelaten] weg is"* → docs/manager/instagram-account-3-nieuw.md, jesse-29.
 - do 19 nov 2026 20:21 (via het Ploegoverzicht), op "Bedrag van het stemabonnement bevestigen": *"Al gedaan"*. Geen bedrag en geen OK per bedrag; het bedrag vraag ik in een sessie.
