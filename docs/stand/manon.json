@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-20T18:25:00+01:00",
+  "tijd": "2026-11-21T00:56:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -145,7 +145,7 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "-",
-  "volgende": "Antwoord van Andries op de AI-proef (OK per bedrag voor de hele proef via de Gemini API, beelden en clips; of eerst de gratis voorproef in Flow door hem). YS48 na pakket OK en bijschrift OK (Studio ma 23 nov 20:00, binnen 17:00–17:45). Instagram niet openen (eva-ig-stop-1); niets opnieuw inplannen op Instagram tot Eva meldt dat de sleutel werkt (eva-ig-sleutel-1). Stemtegoed (576) bewaren.",
+  "volgende": "Andries vernieuwt de Instagram-sleutel van kanaal 1 (alleen hij; daarna meldt Eva of hij werkt, dan plan ik YS36, YS45 en wat verder gemist is opnieuw in). YS48: na pakket OK en bijschrift OK in Studio om 17:00 (uiterlijk ma 23 nov 17:45) voor ma 23 nov 20:00. AI-proef: wacht (gratis voorproef in Flow doet Andries zelf als hij wil). Ma 23 nov: weekanalyse (top 3, flop 3, 1 proef; cijfers via Eva). Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
     "AI-proef via de Gemini API (beelden en clips): OK per bedrag? Andries vr 20 nov 17:54: \"Nog niet\". Alternatief zonder kosten: hij doet zelf de voorproef in Flow (referentiebeelden en scène 1 in 360p) · aanname: niets betalen of aanmaken · blokkeert: ja, voor de proef",
@@ -828,6 +828,12 @@
     }
   ],
   "ontvangen": [
+    {
+      "id": "eva-ronde-20nov",
+      "van": "Eva",
+      "wat": "Avondronde vr 20 nov 21:40: werk van vr nagekeken en in orde; V-manon-bedragen-5174800 afgehandeld (geschiedenis niet herschrijven; voortaan git diff --cached nalezen op bedragen); V-manon-ypp-2027 doorgezet naar Jesse (doel 1.000 abonnees vóór 31 mrt 2027 blijft tot Andries anders beslist); AI-proef: niets betalen, geen account, geen sleutel; Instagram kanaal 1 staat stil (Kantoor-punt bij Andries); YS48 wacht op pakket OK en bijschrift OK (#147).",
+      "stand": "gelezen; ik volg het: vóór elke commit git diff --cached op bedragen; YS48 opnieuw ter keuring aangeboden in de sessie (za 21 nov 00:56)"
+    },
     {
       "id": "eva-ig-sleutel-1",
       "van": "Eva",
