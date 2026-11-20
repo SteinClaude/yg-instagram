@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-20T17:08:00+01:00",
+  "tijd": "2026-11-20T17:21:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-18T12:09:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-20T17:21:00+01:00 18:00-shorts van kanaal 1 in YouTube Studio naar 12:00 op dezelfde dag (nieuw ritme, Andries ma 16 nov ±20:36): 25 shorts, YS15–YS39 (21 nov t/m 15 dec). Per video vóór het opslaan nagekeken dat hij op 18:00 stond en daarna op 12:00; Studio meldde telkens \"Wijzigingen opgeslagen\"; steekproef na herladen (23 nov, 15 dec): 12:00. YS14 (vandaag) blijft 18:00. Kaarten (plaatsen.wanneer) en studio.txt bijgewerkt; paneelcontrole: alles klopt.",
     "2026-11-20T17:08:00+01:00 YS46 en YS47 ingepland in YouTube Studio (kanaal 1 nagekeken: avatar vraagteken, nieuwste short de schoolbussen). Studio meldt per video eerst \"We zijn je content nog aan het controleren\" (OK), daarna \"Video gepland\": YS46 21 november 2026 om 20:00, YS47 22 november 2026 om 20:00. Lijst Shorts: Gepland 21 en 22 nov 2026. Categorie Educatief (standaard van het kanaal). Kaarten bijgewerkt; paneelcontrole: alles klopt.",
     "2026-11-20T16:35:00+01:00 Proefpakket voor de kleine AI-proef gemaakt (docs/waaromdorp/ai-proef.md): twee verzonnen rechercheurs (J en K), 3 referentiebeelden per personage, drie clips van 5 s (binnenkomen, de collega, samen bij het bord) met prompts, wat niet mag, en hoe ik beoordeel. Niets betaald, niets aangemaakt.",
     "2026-11-19T21:11:00+01:00 3D-proef in Blender gemaakt (de rechercheur loopt 5 s door het recherchebureau) en AI-videodiensten vergeleken; samenvatting zonder bedragen in docs/waaromdorp/3d-proef.md.",
@@ -140,8 +141,8 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "18:00-shorts in Studio naar 12:00 verplaatsen",
-  "volgende": "18:00-shorts in Studio naar 12:00 (zelfde dag) zolang het venster tot 17:45 loopt; anders morgen 17:00. AI-proef: onderzoek naar Gemini loopt; daarna advies aan Andries. YS48 na pakket OK en bijschrift OK. Instagram niet openen (eva-ig-stop-1); niets opnieuw inplannen op Instagram tot Eva meldt dat de sleutel werkt (eva-ig-sleutel-1).",
+  "bezig": "-",
+  "volgende": "Antwoord van Andries op het Gemini-onderzoek (loopt) en de AI-proef (dienst en bedrag). YS48 na pakket OK en bijschrift OK (Studio ma 23 nov 20:00, binnen 17:00–17:45). Instagram niet openen (eva-ig-stop-1); niets opnieuw inplannen op Instagram tot Eva meldt dat de sleutel werkt (eva-ig-sleutel-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
     "Kleine AI-proef: welke dienst en welk bedrag dan wel? Op Gemini Omni of Kling betaald koos Andries \"Something else\" zonder toelichting. Mogelijk: het gratis plan van Kling (dagelijkse credits, met watermerk) · aanname: niets betalen of aanmaken zonder zijn OK · blokkeert: ja, voor de proef",
@@ -150,6 +151,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-20T17:20:00+01:00 YouTube Studio (Chrome van Andries, kanaal 1): bij 25 geplande shorts (21 nov t/m 15 dec) alleen de publicatietijd van 18:00 naar 12:00 gezet; verder niets gewijzigd.",
     "2026-11-20T17:01:00+01:00 Andries in de sessie, op de vraag of hij Studio op kanaal 1 wil zetten: \"Staat nu op kanaal 1\"",
     "2026-11-20T17:07:00+01:00 YouTube Studio (Chrome van Andries, kanaal 1): YS46 en YS47 geüpload en gepland (21 en 22 nov 2026 20:00). Niets anders gewijzigd.",
     "2026-11-20T17:00:00+01:00 YouTube Studio geopend in de Chrome van Andries: het dashboard toont een ander kanaal dan kanaal 1 (avatar S, andere shorts). Niets geüpload, niet gewisseld.",

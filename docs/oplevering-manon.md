@@ -1,4 +1,5 @@
-KLAAR: YS46 en YS47 ingepland: YouTube Studio meldt "Video gepland", 21 en 22 november 2026 om 20:00 (lijst Shorts: Gepland); het bordje van 17:03 is hiermee opgelost · vr 20 nov 17:08
+KLAAR: 18:00-shorts naar 12:00 in YouTube Studio: 25 shorts (YS15–YS39, 21 nov t/m 15 dec), per video nagekeken, Studio meldt "Wijzigingen opgeslagen" · vr 20 nov 17:21
+KLAAR: YS46 en YS47 ingepland: YouTube Studio meldt "Video gepland", 21 en 22 november 2026 om 20:00 (lijst Shorts: Gepland); het bordje van 17:00 is hiermee opgelost · vr 20 nov 17:08
 KAN NIET VERDER: YS46 en YS47 kunnen niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · vr 20 nov 17:00
 KLAAR: proefpakket kleine AI-proef (twee rechercheurs, referentiebeelden, drie clips met prompts; docs/waaromdorp/ai-proef.md); wacht op dienst en bedrag van Andries · vr 20 nov 16:35
 KLAAR: 3D-proef (de rechercheur loopt 5 s door het bureau, Blender, gratis CC0-figuur) en vergelijking AI-videodiensten; docs/waaromdorp/3d-proef.md · do 19 nov 21:15
