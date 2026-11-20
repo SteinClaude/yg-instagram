@@ -1,3 +1,4 @@
+KLAAR: onderzoek Gemini voor de rechercheurs (deels: alleen Omni 1.2 Flash via de API past; zwak in bewegende mensen; kosten ver boven het potje); docs/waaromdorp/gemini-onderzoek.md; proef wacht op OK per bedrag · vr 20 nov 17:50
 KLAAR: 18:00-shorts naar 12:00 in YouTube Studio: 25 shorts (YS15–YS39, 21 nov t/m 15 dec), per video nagekeken, Studio meldt "Wijzigingen opgeslagen" · vr 20 nov 17:21
 KLAAR: YS46 en YS47 ingepland: YouTube Studio meldt "Video gepland", 21 en 22 november 2026 om 20:00 (lijst Shorts: Gepland); het bordje van 17:00 is hiermee opgelost · vr 20 nov 17:08
 KAN NIET VERDER: YS46 en YS47 kunnen niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · vr 20 nov 17:00
@@ -222,6 +223,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- vr 20 nov 2026 ±16:50 en ±17:00, in de sessie (vragen, geen besluit): "wat kunnen we nog meer gebruiken voor beelden, Midjourney?" en "kunnen we met gemini dit goed doen?" → Midjourney kort uitgezocht (mag niet met een bot, dus hij doet het zelf); Gemini uitgebreid onderzocht (docs/waaromdorp/gemini-onderzoek.md).
 - vr 20 nov 2026 ±17:01, in de sessie, op de vraag of hij Studio op kanaal 1 wil zetten: "Staat nu op kanaal 1" → kanaal 1 nagekeken, YS46 en YS47 ingepland.
 - vr 20 nov 2026 ±16:38, in de sessie, op de vraag welke dienst en welk bedrag voor de AI-proef (keuzes: Gemini Omni met een plafond; Kling, kleinste plan): "Something else" (zonder toelichting) → geen van beide; niets betaald of aangemaakt; ik vraag wat hij wel wil.
 - vr 20 nov 2026 ±16:27, in de sessie, op "Welke 3D-route kies je?" (keuzes: Kleine AI-proef, Blender verbeteren): "Kleine AI-proef" → proefpakket gemaakt (docs/waaromdorp/ai-proef.md); dienst en bedrag zijn nog een apart geldbesluit; Andries maakt het account.

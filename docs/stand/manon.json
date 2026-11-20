@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-20T17:21:00+01:00",
+  "tijd": "2026-11-20T17:50:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-20T17:50:00+01:00 Onderzoek of Gemini de rechercheurs goed kan maken (zes invalshoeken, elk nagekeken in officiële bronnen): deels. Alleen Gemini Omni 1.2 Flash via de betaalde Gemini API past (twee vaste personages per clip, 9:16, aansturen vanuit onze pijplijn mag); zwak in echt lijkende bewegende mensen, gelijk blijven over veel clips niet onafhankelijk getest, geen lipsync op onze stem, kosten per maand ver boven het potje. Verslag zonder bedragen: docs/waaromdorp/gemini-onderzoek.md; bedragen alleen in de sessie.",
     "2026-11-20T17:21:00+01:00 18:00-shorts van kanaal 1 in YouTube Studio naar 12:00 op dezelfde dag (nieuw ritme, Andries ma 16 nov ±20:36): 25 shorts, YS15–YS39 (21 nov t/m 15 dec). Per video vóór het opslaan nagekeken dat hij op 18:00 stond en daarna op 12:00; Studio meldde telkens \"Wijzigingen opgeslagen\"; steekproef na herladen (23 nov, 15 dec): 12:00. YS14 (vandaag) blijft 18:00. Kaarten (plaatsen.wanneer) en studio.txt bijgewerkt; paneelcontrole: alles klopt.",
     "2026-11-20T17:08:00+01:00 YS46 en YS47 ingepland in YouTube Studio (kanaal 1 nagekeken: avatar vraagteken, nieuwste short de schoolbussen). Studio meldt per video eerst \"We zijn je content nog aan het controleren\" (OK), daarna \"Video gepland\": YS46 21 november 2026 om 20:00, YS47 22 november 2026 om 20:00. Lijst Shorts: Gepland 21 en 22 nov 2026. Categorie Educatief (standaard van het kanaal). Kaarten bijgewerkt; paneelcontrole: alles klopt.",
     "2026-11-20T16:35:00+01:00 Proefpakket voor de kleine AI-proef gemaakt (docs/waaromdorp/ai-proef.md): twee verzonnen rechercheurs (J en K), 3 referentiebeelden per personage, drie clips van 5 s (binnenkomen, de collega, samen bij het bord) met prompts, wat niet mag, en hoe ik beoordeel. Niets betaald, niets aangemaakt.",
@@ -142,15 +143,16 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "-",
-  "volgende": "Antwoord van Andries op het Gemini-onderzoek (loopt) en de AI-proef (dienst en bedrag). YS48 na pakket OK en bijschrift OK (Studio ma 23 nov 20:00, binnen 17:00–17:45). Instagram niet openen (eva-ig-stop-1); niets opnieuw inplannen op Instagram tot Eva meldt dat de sleutel werkt (eva-ig-sleutel-1). Stemtegoed (576) bewaren.",
+  "volgende": "Antwoord van Andries op de Gemini-proef (bedrag; hij maakt project en sleutel). YS48 na pakket OK en bijschrift OK (Studio ma 23 nov 20:00, binnen 17:00–17:45). Instagram niet openen (eva-ig-stop-1); niets opnieuw inplannen op Instagram tot Eva meldt dat de sleutel werkt (eva-ig-sleutel-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
-    "Kleine AI-proef: welke dienst en welk bedrag dan wel? Op Gemini Omni of Kling betaald koos Andries \"Something else\" zonder toelichting. Mogelijk: het gratis plan van Kling (dagelijkse credits, met watermerk) · aanname: niets betalen of aanmaken zonder zijn OK · blokkeert: ja, voor de proef",
+    "AI-proef met Gemini Omni 1.2 Flash via de Gemini API: mag een kleine proef tot het bedrag dat ik in de sessie noemde (vooruitbetalen, plafond op dat bedrag)? Andries maakt het project en de sleutel · aanname: niets betalen of aanmaken zonder zijn OK per bedrag · blokkeert: ja, voor de proef",
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-20T17:00:00+01:00 Andries in de sessie: \"kunnen we met gemini dit goed doen?\" (eerder ±16:50: \"wat kunnen we nog meer gebruiken voor beelden, Midjourney?\")",
     "2026-11-20T17:20:00+01:00 YouTube Studio (Chrome van Andries, kanaal 1): bij 25 geplande shorts (21 nov t/m 15 dec) alleen de publicatietijd van 18:00 naar 12:00 gezet; verder niets gewijzigd.",
     "2026-11-20T17:01:00+01:00 Andries in de sessie, op de vraag of hij Studio op kanaal 1 wil zetten: \"Staat nu op kanaal 1\"",
     "2026-11-20T17:07:00+01:00 YouTube Studio (Chrome van Andries, kanaal 1): YS46 en YS47 geüpload en gepland (21 en 22 nov 2026 20:00). Niets anders gewijzigd.",
@@ -689,6 +691,11 @@
     }
   ],
   "voorEva": [
+    {
+      "id": "V-manon-ypp-2027",
+      "aan": "eva, jesse",
+      "wat": "YouTube verhoogt per 1 feb 2027 de drempels van het partnerprogramma: nieuwe kanalen 20 mln gekwalificeerde Shorts-weergaven in 90 dagen of 8.000 kijkuren in 365 dagen (nu 10 mln of 4.000); daarna minstens 10 mln Shorts-weergaven per 90 dagen om aan Shorts te verdienen; voorwaarden accepteren vóór 31 jan 2027. Bron: blog.youtube (10 aug 2026, YouTube Partner Program updates for 2027) en helppagina 12504220. Of 1.000 abonnees blijft, is niet bevestigd. Raakt de missie (tot de uitbetaaldrempels) en het blok Kennis in mijn CLAUDE.md; voor Jesse ook kanaal 2 en account 3. Verslag: docs/waaromdorp/gemini-onderzoek.md."
+    },
     {
       "id": "V-manon-bedragen-5174800",
       "aan": "eva",
