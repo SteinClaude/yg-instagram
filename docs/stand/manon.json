@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-20T16:35:00+01:00",
+  "tijd": "2026-11-20T17:03:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-18T12:09:00+01:00"
   },
-  "status": "wacht",
+  "status": "kan-niet-verder",
   "af": [
     "2026-11-20T16:35:00+01:00 Proefpakket voor de kleine AI-proef gemaakt (docs/waaromdorp/ai-proef.md): twee verzonnen rechercheurs (J en K), 3 referentiebeelden per personage, drie clips van 5 s (binnenkomen, de collega, samen bij het bord) met prompts, wat niet mag, en hoe ik beoordeel. Niets betaald, niets aangemaakt.",
     "2026-11-19T21:11:00+01:00 3D-proef in Blender gemaakt (de rechercheur loopt 5 s door het recherchebureau) en AI-videodiensten vergeleken; samenvatting zonder bedragen in docs/waaromdorp/3d-proef.md.",
@@ -141,7 +141,7 @@
   ],
   "bezig": "-",
   "volgende": "Vr 20 nov 17:00 (Studio): YS46 en YS47 inplannen, YS48 na OK; daarna 18:00-shorts naar 12:00. AI-proef zodra Andries dienst en bedrag kiest en het account heeft. Instagram niet openen (eva-ig-stop-1); niets opnieuw inplannen op Instagram tot Eva meldt dat de sleutel werkt (eva-ig-sleutel-1). Stemtegoed (576) bewaren.",
-  "kanNietVerder": null,
+  "kanNietVerder": "YS46 en YS47 kunnen niet in YouTube Studio: het venster staat op een ander kanaal dan kanaal 1 (17:02) · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie (vóór 17:45)",
   "vragen": [
     "Kleine AI-proef: welke dienst en welk bedrag dan wel? Op Gemini Omni of Kling betaald koos Andries \"Something else\" zonder toelichting. Mogelijk: het gratis plan van Kling (dagelijkse credits, met watermerk) · aanname: niets betalen of aanmaken zonder zijn OK · blokkeert: ja, voor de proef",
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
@@ -149,6 +149,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-20T17:02:00+01:00 YouTube Studio geopend in de Chrome van Andries: het dashboard toont een ander kanaal dan kanaal 1 (avatar S, andere shorts). Niets geüpload, niet gewisseld.",
     "2026-11-20T16:38:00+01:00 Andries in de sessie, op de vraag welke dienst en welk bedrag voor de AI-proef (keuzes: Gemini Omni met een plafond, Kling kleinste plan): \"Something else\" (zonder toelichting)",
     "2026-11-20T16:27:00+01:00 Andries in de sessie, op \"Welke 3D-route kies je?\": \"Kleine AI-proef\"",
     "2026-11-19T20:45:00+01:00 Gedownload en geïnstalleerd (na \"Ja, installeer Blender\"): Blender 5.3.0 (download.blender.org, draagbare zip, sha256 klopt) in C:Usersgijsm\tools; via Chrome van Andries op itch.io de gratis CC0-pakketten Quaternius \"Universal Base Characters [Standard]\" en \"Universal Animation Library [Standard]\" (niets betaald; in zijn map Downloads en uitgepakt in toolsassets). 3D-proef op de pc in toolsproef3d (buiten de repo).",

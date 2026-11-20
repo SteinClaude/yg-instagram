@@ -1,3 +1,4 @@
+KAN NIET VERDER: YS46 en YS47 kunnen niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · vr 20 nov 17:03
 KLAAR: proefpakket kleine AI-proef (twee rechercheurs, referentiebeelden, drie clips met prompts; docs/waaromdorp/ai-proef.md); wacht op dienst en bedrag van Andries · vr 20 nov 16:35
 KLAAR: 3D-proef (de rechercheur loopt 5 s door het bureau, Blender, gratis CC0-figuur) en vergelijking AI-videodiensten; docs/waaromdorp/3d-proef.md · do 19 nov 21:15
 KLAAR: rechercheurs ontworpen (J, K, decor bureau; docs/waaromdorp/rechercheurs.jpg), ter keuring · do 19 nov 20:33
