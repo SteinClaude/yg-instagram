@@ -7,13 +7,32 @@
 - vr 20 nov 2026 06:59, in de sessie van Eva: *"De automaat is voor alle 3 de kanalen, [weggelaten] is met een beperking, ik kan deze niet meer vinden op isntagram, [weggelaten] had dit ook maar is terug"*
 - vr 20 nov 2026 ±16:40, in de sessie van Jesse: *"we moeten koen even een nieuwe insta geven omdat [weggelaten] weg is"*
 
+## Uitkomst van de melding (Andries, vr 20 nov 2026 ±16:53, sessie Jesse)
+
+- Op "Heb je de melding op het oude Instagram-account al gelezen?": *"Ja, het is uitgeschakeld"*
+- Op "Welke reden noemt Instagram in de melding?": *"Geen reden genoemd"*
+- Op "Biedt de melding een mogelijkheid om bezwaar te maken?": *"Nee, het is definitief"*
+
+**Wat dat betekent**
+- Het oude account komt niet terug. De 2 Reels en de 205 volgers zijn weg.
+- Instagram schakelt een account uit als het de regels overtreden vindt. Een reden staat er niet bij, maar daar moeten we van uitgaan. Volgens de gebruiksvoorwaarden mag wie zo een account kwijtraakt, de dienst niet opnieuw gebruiken. Een nieuw account voor hetzelfde project valt daar waarschijnlijk onder.
+- **Het risico zit bij kanaal 1 en 2.** Een nieuw account kan opnieuw worden uitgeschakeld, en dat kan de andere accounts van dezelfde eigenaar meenemen. Die hadden vandaag al iets: kanaal 2 een beperking, kanaal 1 een geweigerde sleutel. Kanaal 1 heeft 17 Reels en een werkende automaat; account 3 had er 2.
+
+**Mijn advies: nu geen nieuw Instagram-account voor account 3.**
+1. Eerst Instagram van kanaal 1 en 2 weer stabiel krijgen: de nieuwe sleutel voor kanaal 1, en alles alleen nog via de automaat.
+2. Account 3 gaat door op YouTube. Daar loopt het, en daar zit de proef.
+3. Na de proef (zo 29 nov) opnieuw beslissen over Instagram voor account 3, als kanaal 1 en 2 dan twee weken zonder melding hebben gedraaid.
+4. Wil Andries nog één officiële weg proberen: in het Helpcentrum van Instagram stond een formulier voor accounts die ten onrechte zijn uitgeschakeld. Of dat er nog is, heb ik niet nagekeken. Alleen hij kan het invullen.
+
+De keuze is aan Andries. Kiest hij toch voor nu, dan gelden de stappen hieronder, met dit risico erbij.
+
 ## Stand van Instagram op vr 20 nov
 
 | Kanaal | Stand | Wat nodig is |
 |---|---|---|
 | 1 | De sleutel van de automaat wordt sinds 10:55 geweigerd. Er gaat niets uit | Andries zet een nieuwe sleutel (hij heeft de stappen van Eva) |
 | 2 | Had een beperking, is terug | Niets; plaatsen alleen nog via de automaat |
-| 3 | **Niet meer te vinden.** De 2 geplaatste Reels en de 205 volgers zijn daarmee weg | Dit stuk |
+| 3 | **Uitgeschakeld, definitief** (zie hierboven). De 2 geplaatste Reels en de 205 volgers zijn weg | Dit stuk |
 
 Sinds vanochtend opent niemand van de crew Instagram nog in de Chrome van Andries (correctie van Eva, `eva-ig-stop-1`). De reden: op de twee getroffen accounts is veel met de hand in de browser gedaan, in één Chrome met meerdere accounts. Dat blijft gelden voor het nieuwe account.
 
