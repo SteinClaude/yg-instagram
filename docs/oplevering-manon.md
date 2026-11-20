@@ -223,6 +223,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- vr 20 nov 2026 ±17:54, in de sessie, na zijn vraag "maken we echte mensen of bijna echte mensen": op "Welke stijl testen we in de proef?" (keuzes: Allebei testen, Bijna echt, Echt): "Allebei testen (Recommended)"; op de vraag of de proef met Gemini Omni via Google AI Studio tot [bedrag weggelaten] mag kosten: "Nog niet" → de proef test beide stijlen (3 shots echt, 3 shots bijna echt, dezelfde scènes); er wordt niets uitgegeven; ik maak alleen prompts en plan klaar.
 - vr 20 nov 2026 ±16:50 en ±17:00, in de sessie (vragen, geen besluit): "wat kunnen we nog meer gebruiken voor beelden, Midjourney?" en "kunnen we met gemini dit goed doen?" → Midjourney kort uitgezocht (mag niet met een bot, dus hij doet het zelf); Gemini uitgebreid onderzocht (docs/waaromdorp/gemini-onderzoek.md).
 - vr 20 nov 2026 ±17:01, in de sessie, op de vraag of hij Studio op kanaal 1 wil zetten: "Staat nu op kanaal 1" → kanaal 1 nagekeken, YS46 en YS47 ingepland.
 - vr 20 nov 2026 ±16:38, in de sessie, op de vraag welke dienst en welk bedrag voor de AI-proef (keuzes: Gemini Omni met een plafond; Kling, kleinste plan): "Something else" (zonder toelichting) → geen van beide; niets betaald of aangemaakt; ik vraag wat hij wel wil.
