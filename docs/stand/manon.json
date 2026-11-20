@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-20T17:54:00+01:00",
+  "tijd": "2026-11-20T17:57:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "werkt",
   "af": [
+    "2026-11-20T17:57:00+01:00 Proefplan AI voor beide stijlen (docs/waaromdorp/ai-proef.md, 111e616): vaste personagetekst, 12 referentiebeelden (6 echt, 6 bijna echt), 3 scènes × 2 stijlen × 2 pogingen met prompts en instellingen, beoordeling, montage en beslisregel. Niets betaald of aangemaakt (\"Nog niet\").",
     "2026-11-20T17:48:00+01:00 Onderzoek of Gemini de rechercheurs goed kan maken (zes invalshoeken, elk nagekeken in officiële bronnen): deels. Alleen Gemini Omni 1.2 Flash via de betaalde Gemini API past (twee vaste personages per clip, 9:16, aansturen vanuit onze pijplijn mag); zwak in echt lijkende bewegende mensen, gelijk blijven over veel clips niet onafhankelijk getest, geen lipsync op onze stem, kosten per maand ver boven het potje. Verslag zonder bedragen: docs/waaromdorp/gemini-onderzoek.md; bedragen alleen in de sessie.",
     "2026-11-20T17:21:00+01:00 18:00-shorts van kanaal 1 in YouTube Studio naar 12:00 op dezelfde dag (nieuw ritme, Andries ma 16 nov ±20:36): 25 shorts, YS15–YS39 (21 nov t/m 15 dec). Per video vóór het opslaan nagekeken dat hij op 18:00 stond en daarna op 12:00; Studio meldde telkens \"Wijzigingen opgeslagen\"; steekproef na herladen (23 nov, 15 dec): 12:00. YS14 (vandaag) blijft 18:00. Kaarten (plaatsen.wanneer) en studio.txt bijgewerkt; paneelcontrole: alles klopt.",
     "2026-11-20T17:08:00+01:00 YS46 en YS47 ingepland in YouTube Studio (kanaal 1 nagekeken: avatar vraagteken, nieuwste short de schoolbussen). Studio meldt per video eerst \"We zijn je content nog aan het controleren\" (OK), daarna \"Video gepland\": YS46 21 november 2026 om 20:00, YS47 22 november 2026 om 20:00. Lijst Shorts: Gepland 21 en 22 nov 2026. Categorie Educatief (standaard van het kanaal). Kaarten bijgewerkt; paneelcontrole: alles klopt.",
@@ -142,7 +143,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Proefplan voor beide stijlen (echt en bijna echt) uitwerken: referentiebeelden en prompts",
+  "bezig": "Twee controleurs lopen het proefplan na (Omni-documentatie; regels en beleid); daarna verwerk ik hun verbeteringen",
   "volgende": "Antwoord van Andries op de Gemini-proef (bedrag; hij maakt project en sleutel). YS48 na pakket OK en bijschrift OK (Studio ma 23 nov 20:00, binnen 17:00–17:45). Instagram niet openen (eva-ig-stop-1); niets opnieuw inplannen op Instagram tot Eva meldt dat de sleutel werkt (eva-ig-sleutel-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
