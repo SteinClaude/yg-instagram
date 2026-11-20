@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-20T17:57:00+01:00",
+  "tijd": "2026-11-20T18:25:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-18T12:09:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-20T18:25:00+01:00 Proefplan AI nagelopen door twee controleurs (Omni-documentatie en API; regels en beleid van Google, YouTube en de EU) en verbeterd: vaste personagetekst met gezichtstrekken en kleuren uit de ontwerpen (map manillageel met wit etiket), personageblok dat de 6 referentiebeelden aan de twee personages koppelt, referentiebeelden van echt naar bijna echt uit dezelfde goedgekeurde foto, scènes met vaste camera en tijdcodes, positief geformuleerd slot, filtertoets per stijl van 3 s in 360p met stopregel (niet om het filter heen), keuring van gelijkenis en leeftijd door Andries, EU-punten nagekeken in C(2026) 7702 final (punt 113, 114, 117, 122, 142, 143) en het citaat uit de Gemini API-voorwaarden. Niets betaald of aangemaakt.",
     "2026-11-20T17:57:00+01:00 Proefplan AI voor beide stijlen (docs/waaromdorp/ai-proef.md, 111e616): vaste personagetekst, 12 referentiebeelden (6 echt, 6 bijna echt), 3 scènes × 2 stijlen × 2 pogingen met prompts en instellingen, beoordeling, montage en beslisregel. Niets betaald of aangemaakt (\"Nog niet\").",
     "2026-11-20T17:48:00+01:00 Onderzoek of Gemini de rechercheurs goed kan maken (zes invalshoeken, elk nagekeken in officiële bronnen): deels. Alleen Gemini Omni 1.2 Flash via de betaalde Gemini API past (twee vaste personages per clip, 9:16, aansturen vanuit onze pijplijn mag); zwak in echt lijkende bewegende mensen, gelijk blijven over veel clips niet onafhankelijk getest, geen lipsync op onze stem, kosten per maand ver boven het potje. Verslag zonder bedragen: docs/waaromdorp/gemini-onderzoek.md; bedragen alleen in de sessie.",
     "2026-11-20T17:21:00+01:00 18:00-shorts van kanaal 1 in YouTube Studio naar 12:00 op dezelfde dag (nieuw ritme, Andries ma 16 nov ±20:36): 25 shorts, YS15–YS39 (21 nov t/m 15 dec). Per video vóór het opslaan nagekeken dat hij op 18:00 stond en daarna op 12:00; Studio meldde telkens \"Wijzigingen opgeslagen\"; steekproef na herladen (23 nov, 15 dec): 12:00. YS14 (vandaag) blijft 18:00. Kaarten (plaatsen.wanneer) en studio.txt bijgewerkt; paneelcontrole: alles klopt.",
@@ -143,11 +144,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Twee controleurs lopen het proefplan na (Omni-documentatie; regels en beleid); daarna verwerk ik hun verbeteringen",
-  "volgende": "Antwoord van Andries op de Gemini-proef (bedrag; hij maakt project en sleutel). YS48 na pakket OK en bijschrift OK (Studio ma 23 nov 20:00, binnen 17:00–17:45). Instagram niet openen (eva-ig-stop-1); niets opnieuw inplannen op Instagram tot Eva meldt dat de sleutel werkt (eva-ig-sleutel-1). Stemtegoed (576) bewaren.",
+  "bezig": "-",
+  "volgende": "Antwoord van Andries op de AI-proef (OK per bedrag voor de hele proef via de Gemini API, beelden en clips; of eerst de gratis voorproef in Flow door hem). YS48 na pakket OK en bijschrift OK (Studio ma 23 nov 20:00, binnen 17:00–17:45). Instagram niet openen (eva-ig-stop-1); niets opnieuw inplannen op Instagram tot Eva meldt dat de sleutel werkt (eva-ig-sleutel-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
-    "AI-proef met Gemini Omni 1.2 Flash via de Gemini API: mag een kleine proef tot het bedrag uit de sessie? Andries vr 20 nov 17:54: \"Nog niet\". Andries maakt project en sleutel · aanname: niets betalen of aanmaken; ik maak alleen prompts en plan klaar · blokkeert: ja, voor de proef",
+    "AI-proef via de Gemini API (beelden en clips): OK per bedrag? Andries vr 20 nov 17:54: \"Nog niet\". Alternatief zonder kosten: hij doet zelf de voorproef in Flow (referentiebeelden en scène 1 in 360p) · aanname: niets betalen of aanmaken · blokkeert: ja, voor de proef",
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"

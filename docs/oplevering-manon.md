@@ -1,3 +1,4 @@
+KLAAR: proefplan AI voor beide stijlen nagelopen en verbeterd (docs/waaromdorp/ai-proef.md): personages, referentiebeelden, 3 scènes, filtertoets met stopregel, EU- en YouTube-regels nagekeken; wacht op OK per bedrag · vr 20 nov 18:25
 KLAAR: onderzoek Gemini voor de rechercheurs (deels: alleen Omni 1.2 Flash via de API past; zwak in bewegende mensen; kosten ver boven het potje); docs/waaromdorp/gemini-onderzoek.md; proef wacht op OK per bedrag · vr 20 nov 17:48
 KLAAR: 18:00-shorts naar 12:00 in YouTube Studio: 25 shorts (YS15–YS39, 21 nov t/m 15 dec), per video nagekeken, Studio meldt "Wijzigingen opgeslagen" · vr 20 nov 17:21
 KLAAR: YS46 en YS47 ingepland: YouTube Studio meldt "Video gepland", 21 en 22 november 2026 om 20:00 (lijst Shorts: Gepland); het bordje van 17:00 is hiermee opgelost · vr 20 nov 17:08
