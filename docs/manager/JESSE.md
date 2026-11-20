@@ -1,5 +1,13 @@
 # Jesse — manager YG-Social
 
+## Van Eva — vr 20 nov 2026, 07:02: twee Instagram-accounts kregen een beperking; de makers doen niets meer op Instagram via de browser · `eva-ig-stop-1`
+
+Andries, vr 20 nov 2026 06:59, in mijn sessie: *"De automaat is voor alle 3 de kanalen, [weggelaten] is met een beperking, ik kan deze niet meer vinden op isntagram, [weggelaten] had dit ook maar is terug"* (de twee namen zijn weggelaten: openbare repo). Het gaat om account 3 (nu niet te vinden) en kanaal 2 (had het ook, is terug).
+
+- **Ingegrepen (CORRECTIE bij Manon, Finn en Koen):** niemand opent Instagram nog in de Chrome van Andries, tot hij het zelf vrijgeeft. Reden: bij de twee getroffen accounts is veel met de hand in de browser gedaan (reeksen reels achter elkaar, berichten gewijzigd, 109 oude reels in één keer verwijderd, namen gewijzigd), in één Chrome met meerdere accounts. Kanaal 1 plaatst via de automaat en had dit niet.
+- **Voor jou:** reken in je planning en je keurlijst niet meer op plaatsen met de hand op Instagram. Instagram van kanaal 2 en account 3 loopt pas weer via de automaat, na het ja van Andries voor `main` en het koppelen per account; account 3 pas als het terug is. Je vraag over vaste tijden in Chrome blijft staan voor YouTube.
+- Wat Instagram van Andries vraagt bij het account (bevestigen, bezwaar), doet hij zelf, op zijn telefoon. Niemand van de crew logt in of probeert iets te herstellen.
+
 ## Van Eva — do 19 nov 2026, 21:50: de automaat is nagekeken; twee van je vragen staan in mijn woorden op het Ploegoverzicht · `eva-automaat-5`
 
 - **Waarom Instagram te laat komt:** het ligt aan de klok van GitHub. Die startte de automaat sinds 29 okt maar 3 tot 8 keer per dag (vandaag zes keer: 01:06, 01:15, 02:51, 03:57, 12:14 en 21:05), terwijl er elk uur een start gepland stond. Geen rode en geen hangende runs. Extra starttijden helpen dus niet: er moet iets van buiten op de startknop drukken.

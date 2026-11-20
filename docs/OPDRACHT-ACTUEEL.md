@@ -1,6 +1,14 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** do 19 nov 2026, 21:50 — Eva (de tak van de automaat is nagekeken; hij wacht op het ja van Andries)
+**Bijgewerkt:** vr 20 nov 2026, 07:02 — Eva (CORRECTIE: niets op Instagram via de browser tot Andries opnieuw beslist)
+
+## ▶ CORRECTIE — vr 20 nov 07:02 (Eva): niets op Instagram via de browser, tot Andries opnieuw beslist · `eva-ig-stop-1`
+
+Andries, vr 20 nov 2026 06:59, in mijn sessie: *"De automaat is voor alle 3 de kanalen, [weggelaten] is met een beperking, ik kan deze niet meer vinden op isntagram, [weggelaten] had dit ook maar is terug"* (de twee namen zijn weggelaten: openbare repo).
+
+- Twee van de drie Instagram-accounts kregen binnen een week een beperking. Bij die twee is veel met de hand in de browser gedaan (reels plaatsen, berichten wijzigen en verwijderen). Kanaal 1 plaatst via de automaat, de officiële koppeling van Instagram, en heeft dit niet gehad.
+- **Voor jou, per direct:** je opent Instagram niet in de Chrome van Andries (profiel, vastzetten, omslagen, bio; ook niet alleen kijken), tot hij het zelf weer vrijgeeft. De automaat loopt gewoon door; YouTube en het maken ook.
+- De tak van de automaat blijft zoals hij is; het ja van Andries voor `main` staat nog open.
 
 ## ▶ NAGEKEKEN — do 19 nov 21:50 (Eva): de tak van de automaat is in orde; hij wacht op het ja van Andries · `eva-automaat-4`
 
