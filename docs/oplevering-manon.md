@@ -1,3 +1,4 @@
+KLAAR: YS46 en YS47 ingepland: YouTube Studio meldt "Video gepland", 21 en 22 november 2026 om 20:00 (lijst Shorts: Gepland); het bordje van 17:03 is hiermee opgelost · vr 20 nov 17:14
 KAN NIET VERDER: YS46 en YS47 kunnen niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · vr 20 nov 17:03
 KLAAR: proefpakket kleine AI-proef (twee rechercheurs, referentiebeelden, drie clips met prompts; docs/waaromdorp/ai-proef.md); wacht op dienst en bedrag van Andries · vr 20 nov 16:35
 KLAAR: 3D-proef (de rechercheur loopt 5 s door het bureau, Blender, gratis CC0-figuur) en vergelijking AI-videodiensten; docs/waaromdorp/3d-proef.md · do 19 nov 21:15
@@ -220,6 +221,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- vr 20 nov 2026 ±17:04, in de sessie, op de vraag of hij Studio op kanaal 1 wil zetten: "Staat nu op kanaal 1" → kanaal 1 nagekeken, YS46 en YS47 ingepland.
 - vr 20 nov 2026 ±16:38, in de sessie, op de vraag welke dienst en welk bedrag voor de AI-proef (keuzes: Gemini Omni met een plafond; Kling, kleinste plan): "Something else" (zonder toelichting) → geen van beide; niets betaald of aangemaakt; ik vraag wat hij wel wil.
 - vr 20 nov 2026 ±16:27, in de sessie, op "Welke 3D-route kies je?" (keuzes: Kleine AI-proef, Blender verbeteren): "Kleine AI-proef" → proefpakket gemaakt (docs/waaromdorp/ai-proef.md); dienst en bedrag zijn nog een apart geldbesluit; Andries maakt het account.
 - do 19 nov 2026 ±20:41, in de sessie: "ik wil ze echt 3d hebben en door het door zien lopen als of het echt lijkt maar niks is onmogelijk in de realiteit hierzo"; op de vraag welke route: "Allebei een proef"; op de vraag of ik Blender (blender.org, gratis, ±350 MB) en gratis CC0-modellen mag downloaden en installeren: "Ja, installeer Blender" → de rechercheurs worden 3D en lopen door de plekken; eerst twee proeven: gratis in Blender (eigen 3D-werk) en een vergelijking van betaalde AI-videodiensten (geld blijft een apart OK per bedrag).

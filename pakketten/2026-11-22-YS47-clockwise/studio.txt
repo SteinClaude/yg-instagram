@@ -1,5 +1,6 @@
 STUDIO.TXT — YS47 (YouTube Studio, uploadscherm van boven naar beneden)
-Status: gemaakt, NIET ingepland. Inplannen pas na "pakket OK YS47" van Andries.
+Status: pakket OK YS47 (Beide OK YS46 en YS47, ma 16 nov 2026 12:09); stijl OK stijl 3 (za 14 nov 2026 ±20:43).
+INGEPLAND door Manon in YouTube Studio, venster van kanaal 1 (Chrome van Andries), vr 20 nov 2026 ±17:12. Studio meldt eerst "We zijn je content nog aan het controleren" (gewone melding, OK), daarna "Video gepland — Je video wordt als openbaar ingesteld op 22 november 2026 om 20:00". Geüpload: video-upload.mp4; AI-label ja; niet voor kinderen; taal Engels; categorie Educatief; alle tags uit dit bestand.
 
 == Bestand ==
 video.mp4   1080x1920 (9:16), 30 fps, H.264, 39,6 s, Engelse stemmen (ElevenLabs, betaald abonnement met commerciële licentie; stemmen Laura (het Vraagteken) en Liam (Peertje)) plus eigen geluidseffecten; geen muziek. Ingesproken tekst: bron/stem.txt

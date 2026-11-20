@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-20T17:03:00+01:00",
+  "tijd": "2026-11-20T17:14:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-18T12:09:00+01:00"
   },
-  "status": "kan-niet-verder",
+  "status": "werkt",
   "af": [
+    "2026-11-20T17:14:00+01:00 YS46 en YS47 ingepland in YouTube Studio (kanaal 1 nagekeken: avatar vraagteken, nieuwste short de schoolbussen). Studio meldt per video eerst \"We zijn je content nog aan het controleren\" (OK), daarna \"Video gepland\": YS46 21 november 2026 om 20:00, YS47 22 november 2026 om 20:00. Lijst Shorts: Gepland 21 en 22 nov 2026. Categorie Educatief (standaard van het kanaal). Kaarten bijgewerkt; paneelcontrole: alles klopt.",
     "2026-11-20T16:35:00+01:00 Proefpakket voor de kleine AI-proef gemaakt (docs/waaromdorp/ai-proef.md): twee verzonnen rechercheurs (J en K), 3 referentiebeelden per personage, drie clips van 5 s (binnenkomen, de collega, samen bij het bord) met prompts, wat niet mag, en hoe ik beoordeel. Niets betaald, niets aangemaakt.",
     "2026-11-19T21:11:00+01:00 3D-proef in Blender gemaakt (de rechercheur loopt 5 s door het recherchebureau) en AI-videodiensten vergeleken; samenvatting zonder bedragen in docs/waaromdorp/3d-proef.md.",
     "2026-11-19T20:33:00+01:00 Rechercheurs getekend: J de rechercheur en K de collega (gereedschap/figuur.cjs), nieuw decor bureau (gereedschap/short/decor.cjs), bladen docs/figuur/ontwerp-J/K.jpg, ontwerpen-overzicht-rechercheurs.jpg en docs/waaromdorp/rechercheurs.jpg (in bureau, museum en tijdmachine). Ter keuring; niets in een video gebruikt.",
@@ -139,9 +140,9 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
-  "volgende": "Vr 20 nov 17:00 (Studio): YS46 en YS47 inplannen, YS48 na OK; daarna 18:00-shorts naar 12:00. AI-proef zodra Andries dienst en bedrag kiest en het account heeft. Instagram niet openen (eva-ig-stop-1); niets opnieuw inplannen op Instagram tot Eva meldt dat de sleutel werkt (eva-ig-sleutel-1). Stemtegoed (576) bewaren.",
-  "kanNietVerder": "YS46 en YS47 kunnen niet in YouTube Studio: het venster staat op een ander kanaal dan kanaal 1 (17:02) · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie (vóór 17:45)",
+  "bezig": "18:00-shorts in Studio naar 12:00 verplaatsen",
+  "volgende": "18:00-shorts in Studio naar 12:00 (zelfde dag) zolang het venster tot 17:45 loopt; anders morgen 17:00. AI-proef: onderzoek naar Gemini loopt; daarna advies aan Andries. YS48 na pakket OK en bijschrift OK. Instagram niet openen (eva-ig-stop-1); niets opnieuw inplannen op Instagram tot Eva meldt dat de sleutel werkt (eva-ig-sleutel-1).",
+  "kanNietVerder": null,
   "vragen": [
     "Kleine AI-proef: welke dienst en welk bedrag dan wel? Op Gemini Omni of Kling betaald koos Andries \"Something else\" zonder toelichting. Mogelijk: het gratis plan van Kling (dagelijkse credits, met watermerk) · aanname: niets betalen of aanmaken zonder zijn OK · blokkeert: ja, voor de proef",
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
@@ -149,6 +150,8 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-20T17:04:00+01:00 Andries in de sessie, op de vraag of hij Studio op kanaal 1 wil zetten: \"Staat nu op kanaal 1\"",
+    "2026-11-20T17:12:00+01:00 YouTube Studio (Chrome van Andries, kanaal 1): YS46 en YS47 geüpload en gepland (21 en 22 nov 2026 20:00). Niets anders gewijzigd.",
     "2026-11-20T17:02:00+01:00 YouTube Studio geopend in de Chrome van Andries: het dashboard toont een ander kanaal dan kanaal 1 (avatar S, andere shorts). Niets geüpload, niet gewisseld.",
     "2026-11-20T16:38:00+01:00 Andries in de sessie, op de vraag welke dienst en welk bedrag voor de AI-proef (keuzes: Gemini Omni met een plafond, Kling kleinste plan): \"Something else\" (zonder toelichting)",
     "2026-11-20T16:27:00+01:00 Andries in de sessie, op \"Welke 3D-route kies je?\": \"Kleine AI-proef\"",
