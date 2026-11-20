@@ -1,3 +1,4 @@
+KLAAR: proefpakket kleine AI-proef (twee rechercheurs, referentiebeelden, drie clips met prompts; docs/waaromdorp/ai-proef.md); wacht op dienst en bedrag van Andries · vr 20 nov 16:35
 KLAAR: 3D-proef (de rechercheur loopt 5 s door het bureau, Blender, gratis CC0-figuur) en vergelijking AI-videodiensten; docs/waaromdorp/3d-proef.md · do 19 nov 21:15
 KLAAR: rechercheurs ontworpen (J, K, decor bureau; docs/waaromdorp/rechercheurs.jpg), ter keuring · do 19 nov 20:33
 KLAAR: ontwerp Waaromdorp ter keuring (3 nieuwe bewoners, 3 nieuwe decors, kaart van het dorp; docs/waaromdorp/LEESMIJ.md); stijl OK gevraagd · do 19 nov 20:21
@@ -218,6 +219,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- vr 20 nov 2026 ±16:27, in de sessie, op "Welke 3D-route kies je?" (keuzes: Kleine AI-proef, Blender verbeteren): "Kleine AI-proef" → proefpakket gemaakt (docs/waaromdorp/ai-proef.md); dienst en bedrag zijn nog een apart geldbesluit; Andries maakt het account.
 - do 19 nov 2026 ±20:41, in de sessie: "ik wil ze echt 3d hebben en door het door zien lopen als of het echt lijkt maar niks is onmogelijk in de realiteit hierzo"; op de vraag welke route: "Allebei een proef"; op de vraag of ik Blender (blender.org, gratis, ±350 MB) en gratis CC0-modellen mag downloaden en installeren: "Ja, installeer Blender" → de rechercheurs worden 3D en lopen door de plekken; eerst twee proeven: gratis in Blender (eigen 3D-werk) en een vergelijking van betaalde AI-videodiensten (geld blijft een apart OK per bedrag).
 - do 19 nov 2026 ±20:35, in de sessie, op "Geef je stijl OK voor de rechercheurs, of moet er iets anders?": "Aanpassen" → nog geen stijl OK; wat precies volgt.
 - do 19 nov 2026 ±20:35, in de sessie, op de vier richtingen (Rechercheurs, Dieren met karakter, Eén verteller, Tijdreiziger-duo): "Rechercheurs (Recommended)" → twee volwassen rechercheurs, elk ding een dossier; museum als bewijskamer, tijdmachine voor het verleden.
