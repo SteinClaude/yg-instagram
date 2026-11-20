@@ -143,12 +143,13 @@
   "volgende": "Vr 20 nov 17:00 (Studio): YS46 en YS47 inplannen, YS48 na OK; daarna 18:00-shorts naar 12:00. AI-proef zodra Andries dienst en bedrag kiest en het account heeft. Instagram niet openen (eva-ig-stop-1); niets opnieuw inplannen op Instagram tot Eva meldt dat de sleutel werkt (eva-ig-sleutel-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
-    "Kleine AI-proef: welke dienst (Kling, kleinste plan, of Gemini Omni Flash, per seconde) en welk bedrag, met zijn OK? Andries maakt het account en betaalt · aanname: niets betalen of aanmaken zonder zijn OK; proefpakket ligt klaar · blokkeert: ja, voor de proef",
+    "Kleine AI-proef: welke dienst en welk bedrag dan wel? Op Gemini Omni of Kling betaald koos Andries \"Something else\" zonder toelichting. Mogelijk: het gratis plan van Kling (dagelijkse credits, met watermerk) · aanname: niets betalen of aanmaken zonder zijn OK · blokkeert: ja, voor de proef",
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-20T16:38:00+01:00 Andries in de sessie, op de vraag welke dienst en welk bedrag voor de AI-proef (keuzes: Gemini Omni max $5, Kling kleinste plan $6,99): \"Something else\" (zonder toelichting)",
     "2026-11-20T16:27:00+01:00 Andries in de sessie, op \"Welke 3D-route kies je?\": \"Kleine AI-proef\"",
     "2026-11-19T20:45:00+01:00 Gedownload en geïnstalleerd (na \"Ja, installeer Blender\"): Blender 5.3.0 (download.blender.org, draagbare zip, sha256 klopt) in C:Usersgijsm\tools; via Chrome van Andries op itch.io de gratis CC0-pakketten Quaternius \"Universal Base Characters [Standard]\" en \"Universal Animation Library [Standard]\" (niets betaald; in zijn map Downloads en uitgepakt in toolsassets). 3D-proef op de pc in toolsproef3d (buiten de repo).",
     "2026-11-19T20:41:00+01:00 Andries in de sessie: \"ik wil ze echt 3d hebben en door het door zien lopen als of het echt lijkt maar niks is onmogelijk in de realiteit hierzo\"; op de vraag welke route: \"Allebei een proef\"; op de vraag of ik Blender (blender.org, gratis, ±350 MB) en gratis CC0-modellen mag downloaden en installeren: \"Ja, installeer Blender\"",

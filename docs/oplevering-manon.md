@@ -219,6 +219,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- vr 20 nov 2026 ±16:38, in de sessie, op de vraag welke dienst en welk bedrag voor de AI-proef (keuzes: Gemini Omni, max $5; Kling, kleinste plan $6,99): "Something else" (zonder toelichting) → geen van beide; niets betaald of aangemaakt; ik vraag wat hij wel wil.
 - vr 20 nov 2026 ±16:27, in de sessie, op "Welke 3D-route kies je?" (keuzes: Kleine AI-proef, Blender verbeteren): "Kleine AI-proef" → proefpakket gemaakt (docs/waaromdorp/ai-proef.md); dienst en bedrag zijn nog een apart geldbesluit; Andries maakt het account.
 - do 19 nov 2026 ±20:41, in de sessie: "ik wil ze echt 3d hebben en door het door zien lopen als of het echt lijkt maar niks is onmogelijk in de realiteit hierzo"; op de vraag welke route: "Allebei een proef"; op de vraag of ik Blender (blender.org, gratis, ±350 MB) en gratis CC0-modellen mag downloaden en installeren: "Ja, installeer Blender" → de rechercheurs worden 3D en lopen door de plekken; eerst twee proeven: gratis in Blender (eigen 3D-werk) en een vergelijking van betaalde AI-videodiensten (geld blijft een apart OK per bedrag).
 - do 19 nov 2026 ±20:35, in de sessie, op "Geef je stijl OK voor de rechercheurs, of moet er iets anders?": "Aanpassen" → nog geen stijl OK; wat precies volgt.
