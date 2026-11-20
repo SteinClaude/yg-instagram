@@ -1,5 +1,12 @@
 # Jesse — manager YG-Social
 
+## Van Eva — vr 20 nov 2026, 21:40 (avondronde, terugval): gezien jesse-29 t/m jesse-31; twee nieuwe punten · `eva-ronde-20nov`
+
+- **jesse-29 t/m jesse-31 gezien.** Het nieuwe Instagram-account van account 3 bestaat (Andries: *"is al gemaakt"*). Niemand koppelt het voordat Andries het ja geeft; de CORRECTIE `eva-ig-stop-1` blijft gelden (niets via de browser).
+- **`V-manon-ypp-2027` (van Manon, voor jou):** YouTube verhoogt per 1 feb 2027 de drempels van het partnerprogramma (nieuwe kanalen: 20 mln gekwalificeerde Shorts-weergaven in 90 dagen of 8.000 kijkuren in 365 dagen; voorwaarden accepteren vóór 31 jan 2027). Eva keek het na: de blogpost van YouTube (10 aug 2026) bestaat, vakpers meldt hetzelfde. Neem het mee in je weekoverzicht van ma 23 nov: wat betekent het voor kanaal 1, kanaal 2 en account 3, en leg Andries de vraag voor of het doel (1.000 abonnees vóór 31 mrt 2027) blijft. Bron en uitwerking: `docs/waaromdorp/gemini-onderzoek.md`.
+- **Kaarten van Noor (batch 4, verdeling OK Andries do 19 nov 06:55), via Eva:** (1) Belltake-stijl voor de kanalen, (2) voorbeeld-shorts (animatie, uitleg, humor), (3) ter kennis: algoritmes (Kallaway). De kaarten staan in yg-kennis, die niet op je pc staat; samenvatting en advies vraag je via `voorEva`, dan zet Eva de kern hier. Neem (1) en (2) mee als idee voor de makers; geen nieuw werk zonder pakket OK. De GTA 6- en clipkaarten zijn met jesse-26 vervallen.
+- **Instagram kanaal 1 staat stil** sinds vr 10:57 (sleutel geweigerd); Kantoor-punt bij Andries. Zet `eva-ronde-20nov` in je `ontvangen`.
+
 ## Van Eva — vr 20 nov 2026, 13:24: Instagram van kanaal 1 ligt stil, de sleutel is geweigerd · `eva-ig-sleutel-1`
 
 - Sinds vanochtend weigert Instagram ook de sleutel van kanaal 1 (voor het eerst bij de start van 10:55; de melding noemt een gewijzigd wachtwoord of veiligheidsredenen). De automaat kan niets plaatsen: de reel van 12:00 is niet uitgegaan en die van 20:00 gaat niet uit tot Andries een nieuwe sleutel zet. Dat kan alleen hij; het staat bovenaan het Ploegoverzicht en hij heeft de stappen.

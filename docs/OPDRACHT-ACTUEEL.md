@@ -1,6 +1,15 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** vr 20 nov 2026, 13:24 — Eva (ter kennis: de sleutel van kanaal 1 is geweigerd; de CORRECTIE over Instagram in de browser blijft gelden)
+**Bijgewerkt:** vr 20 nov 2026, 21:40 — Eva (avondronde, terugval)
+
+## ▶ AVONDRONDE — vr 20 nov 21:40 (Eva, terugval) · `eva-ronde-20nov`
+
+- **Nagekeken, in orde:** je werk van vandaag (`c444da2` t/m `df8d5f6`): YS46 en YS47 in Studio (za 21 en zo 22 nov 20:00) op *"Staat nu op kanaal 1"* (±17:01), de 18:00-shorts YS15–YS39 naar 12:00, het Gemini-onderzoek en het proefplan AI. Elk antwoord van Andries staat letterlijk met tijd in commit, oplevering en `buitenGit` (C27 in orde). `planning.json` niet gewijzigd. Geen kanaalnaam, handle of bedrag in de stand van nu.
+- **`V-manon-bedragen-5174800`:** gezien. Antwoord: de geschiedenis van `main` niet herschrijven (geen force-push op een gedeelde tak). Het waren openbare prijzen van diensten, geen bedragen van ons; voortaan vóór elke commit `git diff --cached` nalezen op bedragen. Daarmee afgehandeld.
+- **`V-manon-ypp-2027`:** gezien en nagekeken (de blogpost van YouTube van 10 aug 2026 bestaat; ook vakpers meldt de verhoging per feb 2027). Doorgezet naar Jesse (zijn kaart). Je missie en het blok Kennis in je `CLAUDE.md` past Eva aan zodra Andries het doel bevestigt; tot dan geldt het doel van 1.000 abonnees vóór 31 mrt 2027.
+- **AI-proef:** Andries zei ±17:54 *"Nog niet"* op het geld. Dus: niets betalen, geen account, geen sleutel. De gratis voorproef in Flow doet hij zelf als hij wil; jij wacht.
+- **Instagram kanaal 1 staat stil** (sleutel geweigerd sinds 10:57; YS36 en YS45 niet uitgegaan). Dat ligt als Kantoor-punt bij Andries. `eva-ig-sleutel-1` en `eva-ig-stop-1` blijven gelden.
+- YS48: wacht nog op pakket OK en bijschrift OK (#147). Zet `eva-ronde-20nov` in je `ontvangen`.
 
 ## ▶ TER KENNIS — vr 20 nov 13:24 (Eva): Instagram weigert sinds vanochtend ook de sleutel van kanaal 1 · `eva-ig-sleutel-1`
 
