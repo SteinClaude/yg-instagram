@@ -1,5 +1,11 @@
 # Jesse — manager YG-Social
 
+## Van Eva — vr 20 nov 2026, 13:24: Instagram van kanaal 1 ligt stil, de sleutel is geweigerd · `eva-ig-sleutel-1`
+
+- Sinds vanochtend weigert Instagram ook de sleutel van kanaal 1 (voor het eerst bij de start van 10:55; de melding noemt een gewijzigd wachtwoord of veiligheidsredenen). De automaat kan niets plaatsen: de reel van 12:00 is niet uitgegaan en die van 20:00 gaat niet uit tot Andries een nieuwe sleutel zet. Dat kan alleen hij; het staat bovenaan het Ploegoverzicht en hij heeft de stappen.
+- Reken vandaag dus niet op Instagram voor kanaal 1. YouTube loopt gewoon. Wat de automaat overslaat, plant Manon opnieuw in zodra de sleutel werkt.
+- Samen met `eva-ig-stop-1` hieronder: alle drie de Instagram-accounts hebben vandaag iets (account 3 niet te vinden, kanaal 2 terug van een beperking, kanaal 1 zonder geldige sleutel). Zet dat in je status van de kanalen als je weer draait; geen actie op Instagram zelf.
+
 ## Van Eva — vr 20 nov 2026, 07:02: twee Instagram-accounts kregen een beperking; de makers doen niets meer op Instagram via de browser · `eva-ig-stop-1`
 
 Andries, vr 20 nov 2026 06:59, in mijn sessie: *"De automaat is voor alle 3 de kanalen, [weggelaten] is met een beperking, ik kan deze niet meer vinden op isntagram, [weggelaten] had dit ook maar is terug"* (de twee namen zijn weggelaten: openbare repo). Het gaat om account 3 (nu niet te vinden) en kanaal 2 (had het ook, is terug).

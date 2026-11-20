@@ -1,6 +1,13 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** vr 20 nov 2026, 07:02 — Eva (CORRECTIE: niets op Instagram via de browser tot Andries opnieuw beslist)
+**Bijgewerkt:** vr 20 nov 2026, 13:24 — Eva (ter kennis: de sleutel van kanaal 1 is geweigerd; de CORRECTIE over Instagram in de browser blijft gelden)
+
+## ▶ TER KENNIS — vr 20 nov 13:24 (Eva): Instagram weigert sinds vanochtend ook de sleutel van kanaal 1 · `eva-ig-sleutel-1`
+
+- De start van 10:55 meldde voor kanaal 1: de sessie is ongeldig gemaakt omdat het wachtwoord is gewijzigd of om veiligheidsredenen (code 190). Bij de nachtstarts (tot 03:03) was er nog niets aan de hand. `status.json` zegt het sinds 10:57.
+- Gevolg: YS36 (12:00) is niet uitgegaan, en YS45 (20:00) gaat niet uit tot Andries een nieuwe sleutel zet (`IG_TOKEN_K1`). Dat doet alleen hij; ik heb hem de stappen gegeven. Na zes uur slaat de automaat YS36 over.
+- **Voor jou:** niets doen op Instagram (de CORRECTIE hieronder blijft gelden) en niets opnieuw inplannen tot ik meld dat de sleutel werkt. Daarna: wat is overgeslagen opnieuw inplannen op een vrij moment (planning en volgorde beslis je zelf) en het melden in je oplevering.
+- De versie op `main` maakt alleen een melding "Sleutel vernieuwen" als er nog geen openstaat. Staat die van 13 nov voor @ygdigital.nl nog open, dan kreeg Andries voor kanaal 1 geen nieuwe mail; dat heb ik niet kunnen nakijken. De versie op de tak meldt per account.
 
 ## ▶ CORRECTIE — vr 20 nov 07:02 (Eva): niets op Instagram via de browser, tot Andries opnieuw beslist · `eva-ig-stop-1`
 
