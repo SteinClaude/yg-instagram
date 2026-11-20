@@ -1,13 +1,14 @@
 {
   "wie": "jesse",
   "rol": "manager YG-Social",
-  "tijd": "2026-11-19T20:19:00+01:00",
+  "tijd": "2026-11-20T16:43:00+01:00",
   "sessie": {
     "plek": "pc",
-    "sinds": "2026-11-19T20:06:00+01:00"
+    "sinds": "2026-11-20T16:43:00+01:00"
   },
   "status": "wacht",
   "af": [
+    "2026-11-20T16:43:00+01:00 Nieuw Instagram-account voor account 3: stappen voor Andries, wat Koen klaarzet en de gevolgen in docs/manager/instagram-account-3-nieuw.md; keurlijst en status aangevuld met de stand van Instagram op vr 20 nov",
     "2026-11-19T20:19:00+01:00 Keurlijst van de week (vr 20 nov) klaargezet in docs/keurlijst-week.md: 2 keuringen in het paneel, 8 handelingen, 7 wat-vragen met advies (Instagram op tijd, stemtegoed, tijdvakken Chrome, bijschrift bij pakket, Instagram 12:00, TikTok/Snapchat, lat proef account 3), geld, gekeurd deze week",
     "2026-11-19T20:08:00+01:00 Status van de kanalen aangevuld met de stand van Finn (do 19 nov 20:08): kanaal 2 gevuld t/m za 21 nov, geen keuring open, 3x vast door verkeerd account in de gedeelde Chrome, gebruikt het stemtegoed ook",
     "2026-11-19T20:06:00+01:00 Status van de kanalen: docs/manager/status-kanalen-2026-11-19.md (kanaal 1 uit de repo, account 3 van Koen vanavond, kanaal 2 stand ma 16 nov via Eva; actuele stand aan Finn gevraagd)",
@@ -38,7 +39,7 @@
     "2026-11-09T19:45:00+01:00 Voorstel Weekritme YG-Social (op 13 nov akkoord)"
   ],
   "bezig": null,
-  "volgende": "Vr 20 nov: de keurlijst met Andries doornemen en zijn antwoorden vastleggen en doorzetten; elke dag nakijken of de Reels op tijd komen; ma 23 nov weekoverzicht en uitkomst proef 2 (als de cijfers er zijn); zo 29 nov einde proef account 3",
+  "volgende": "Wacht op Andries: melding op het oude Instagram-account lezen, nieuw account aanmaken, nieuwe sleutel kanaal 1, wisselen naar account 3 in Studio voor G07. Keurlijst vr 20 nov doornemen; bedrag stemabonnement in de sessie vragen; elke dag nakijken of de Reels uitgaan; ma 23 nov weekoverzicht; zo 29 nov einde proef account 3",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -106,13 +107,13 @@
       "blokkeert": false
     },
     {
-      "vraag": "Proef account 3: het Instagram-account had vóór de start al 205 volgers, dus de lat \"samen 100 volgers\" is zonder iets te doen al gehaald. Alleen nieuwe volgers sinds zo 15 nov tellen?",
+      "vraag": "Proef account 3: het Instagram-account is weg en een nieuw account begint op nul. Tellen we in de proef volgers en abonnees alleen op YouTube, en houden we Instagram buiten de proef?",
       "aan": "andries",
       "keuzes": [
-        "Ja, alleen nieuwe volgers tellen",
-        "Nee, de lat laten staan"
+        "Ja, alleen YouTube tellen",
+        "Nee, de proef opnieuw starten als het nieuwe account er is"
       ],
-      "advies": "Ja: de lat wordt strenger, niet soepeler",
+      "advies": "Ja: zo zegt de proef op zo 29 nov nog iets",
       "blokkeert": false
     }
   ],
@@ -284,6 +285,26 @@
     {
       "tijd": "2026-11-19T20:19:00+01:00",
       "wat": "Andries: \"Ja, zet klaar\" (de keurlijst voor vr 20 nov)"
+    },
+    {
+      "tijd": "2026-11-20T16:43:00+01:00",
+      "wat": "Andries: \"we moeten koen even een nieuwe insta geven omdat [weggelaten] weg is\""
+    },
+    {
+      "tijd": "2026-11-20T16:43:00+01:00",
+      "wat": "Andries via het Ploegoverzicht, do 19 nov 2026 20:21, op \"Naam kiezen en het nieuwe GTA 6-account aanmaken\": \"Gedaan\" — toelichting: \"was niet meer nodig\" (het account komt er niet; klopt met zijn besluit van ±19:59)"
+    },
+    {
+      "tijd": "2026-11-20T16:43:00+01:00",
+      "wat": "Andries via het Ploegoverzicht, do 19 nov 2026 20:21, op \"Bedrag van het stemabonnement bevestigen\": \"Al gedaan\". Dit is geen bedrag en geen OK per bedrag (Eva, eva-plaat-1); het bedrag vraag ik in een sessie"
+    },
+    {
+      "tijd": "2026-11-20T16:43:00+01:00",
+      "wat": "Vraag aan en antwoord van de sessie van Koen (cross-session, 16:50): voorgeschiedenis van het oude Instagram-account (ouder account, 110 overgenomen Reels, op 15 nov hernoemd en 109 Reels in één keer verwijderd), wat klaarligt, bio van 127 tekens ter keuring, G07 nog niet in Studio (ander kanaal actief)"
+    },
+    {
+      "tijd": "2026-11-20T16:43:00+01:00",
+      "wat": "Gezocht naar de gebruiksvoorwaarden van Instagram over een nieuw account na een uitgeschakeld account (zoekresultaten; help.instagram.com/581066165581870). Handles voor het nieuwe account alleen in de sessie genoemd, niet nagekeken of ze vrij zijn"
     }
   ],
   "voorEva": [
@@ -406,6 +427,11 @@
       "id": "jesse-28",
       "aan": "Eva (Manon, Finn, Koen)",
       "wat": "Keurlijst vr 20 nov staat klaar: docs/keurlijst-week.md. Zeven wat-vragen staan ook in mijn stand onder vragen (voor het Ploegoverzicht); meer stemtegoed is geld en gaat alleen in een sessie. Voorstel tijdvakken in de gedeelde Chrome: Manon 17:00-17:45, Finn 17:45-18:30, Koen 18:30-19:15 (geldt pas na een ja van Andries). Voor Manon: do 19 nov om 20:16 stonden YL01 (16:00) en YS44 (20:00) nog niet op Instagram; als Andries voor de wekker van buiten kiest, werkt zij haar tweede voorstel uit."
+    },
+    {
+      "id": "jesse-29",
+      "aan": "Eva (Koen, Manon)",
+      "wat": "Andries vr 20 nov ±16:40 in mijn sessie: \"we moeten koen even een nieuwe insta geven omdat [weggelaten] weg is\". Stappen in docs/manager/instagram-account-3-nieuw.md: Andries leest eerst de melding op het oude account (bezwaar?), maakt het nieuwe account zelf op zijn telefoon, professioneel account, daarna koppelen aan de automaat. Nodig van jou: de precieze vorm van het bijschrift voor de automaat voor Koen (zijn huidige bijschriften bevatten de kanaalnaam en bronlinks) en de koppelstappen voor het nieuwe account. Koen: bio (127 tekens, met de fan-regel) ter keuring, omslagen vandaag; G11 overslaan op Instagram als het account er za 21 nov niet is; G07 heeft pakket OK maar staat nog niet in Studio (ander kanaal actief). eva-ig-stop-1 blijft gelden. Ploegoverzicht: \"Gedaan / was niet meer nodig\" en \"Al gedaan\" vastgelegd; het bedrag van het stemabonnement reken ik niet als bevestigd."
     }
   ],
   "ontvangen": [
@@ -423,7 +449,13 @@
     "V-sven-6",
     "eva-clip-1",
     "eva-automaat-2",
-    "V-manon-elevenlabs-gedeeld"
+    "V-manon-elevenlabs-gedeeld",
+    "eva-ig-sleutel-1",
+    "eva-ig-stop-1",
+    "eva-automaat-5",
+    "plaat-jesse-clip-account",
+    "eva-plaat-1",
+    "plaat-jesse-elevenlabs"
   ],
   "raakt": [
     ".claude/crew.json (stop-hook, gedeeld met Manon)"

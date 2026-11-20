@@ -8,6 +8,8 @@ Waar de gegevens vandaan komen:
 - **Account 3:** de stand die Koen mij vanavond om 20:05 gaf.
 - **Cijfers:** volgen. Ik heb ze nog niet (gevraagd via Eva, jesse-19).
 
+> **Aanvulling vr 20 nov 16:43 (Instagram):** kanaal 1: de sleutel van de automaat wordt sinds 10:55 geweigerd, er gaat niets uit. Kanaal 2: had een beperking en is terug. Account 3: het account is niet meer te vinden; Andries wil een nieuw account (`instagram-account-3-nieuw.md`). Niemand plaatst nog met de hand op Instagram.
+
 ## In het kort
 
 1. **Kanaal 1 loopt op YouTube, maar Instagram komt elke dag te laat.** Deze week 2 tot 4 uur; de video van 16:00 stond om 20:04 nog niet op Instagram.

@@ -1,5 +1,6 @@
 # Oplevering Jesse — manager YG-Social
 
+KLAAR: stappen voor een nieuw Instagram-account voor account 3 (docs/manager/instagram-account-3-nieuw.md); keurlijst en status aangevuld; jesse-29 · vr 20 nov 16:43
 KLAAR: keurlijst van de week (vr 20 nov) klaargezet: docs/keurlijst-week.md; ⚠ dringendst: de stem (alles met een stem valt tussen 22 en 26 nov stil) · do 19 nov 20:19
 KLAAR: status kanalen (eva-status-1): docs/manager/status-kanalen-2026-11-19.md; ⚠ Instagram kanaal 1 elke dag 2–4 uur te laat, voorraad 16:00/20:00 op na 23 nov, account 3 gat 26 nov–14 dec · do 19 nov 20:06
 KLAAR: clip- en GTA 6-fanaccount vervallen op besluit van Andries; opdrachten gemarkeerd, Koen ingelicht, jesse-26 · do 19 nov 19:59
@@ -164,6 +165,9 @@ Akkoord op het ritme zoals hierboven, met de keurzitting op **vrijdagavond**. De
 
 ## Besluiten met Andries
 
+- vr 20 nov 2026 ±16:40 (sessie Jesse): *"we moeten koen even een nieuwe insta geven omdat [weggelaten] weg is"* → docs/manager/instagram-account-3-nieuw.md, jesse-29.
+- do 19 nov 2026 20:21 (via het Ploegoverzicht), op "Bedrag van het stemabonnement bevestigen": *"Al gedaan"*. Geen bedrag en geen OK per bedrag; het bedrag vraag ik in een sessie.
+- do 19 nov 2026 20:21 (via het Ploegoverzicht), op "Naam kiezen en het nieuwe GTA 6-account aanmaken": *"Gedaan"*, toelichting *"was niet meer nodig"*. Het account komt er niet.
 - do 19 nov 2026 ±20:19 (sessie Jesse): *"Ja, zet klaar"* → docs/keurlijst-week.md (keurlijst vr 20 nov).
 - do 19 nov 2026 ±20:06 (sessie Jesse): *"Ja, maak de status"* → docs/manager/status-kanalen-2026-11-19.md.
 - do 19 nov 2026 ±19:59 (sessie Jesse): *"we gaan dit toch laten, er komt geen extra kanaal"* → opdracht-clippen.md en opdracht-gta6-account.md vervallen; jesse-26.
