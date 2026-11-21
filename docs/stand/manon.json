@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-21T01:58:00+01:00",
+  "tijd": "2026-11-21T02:16:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -147,7 +147,7 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "-",
-  "volgende": "Andries: gratis voorproef in Flow (docs/waaromdorp/flow-stappen.md), en een keuze op het advies (Gemini eerst; Kling als tweede; Seedance alleen bij bijna echt). Instagram-sleutel kanaal 1 vernieuwen (alleen Andries). YS48: na pakket OK en bijschrift OK in Studio om 17:00 (uiterlijk ma 23 nov 17:45). Ma 23 nov: weekanalyse. Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
+  "volgende": "Andries doet de gratis voorproef in Flow (docs/waaromdorp/flow-stappen.md, eerst 1a en 1b); ik beoordeel. Daarna, als echt tegenvalt: betaalde proef Gemini tegen Kling 3.0 Omni (alleen na OK per bedrag; Andries maakt accounts). Seedance alleen als bijna echt wint. Instagram-sleutel kanaal 1 vernieuwen (alleen Andries). YS48: na pakket OK en bijschrift OK in Studio om 17:00 (uiterlijk ma 23 nov 17:45). Ma 23 nov: weekanalyse. Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
     "AI-proef via de Gemini API (beelden en clips): OK per bedrag? Andries vr 20 nov 17:54: \"Nog niet\". Alternatief zonder kosten: hij doet zelf de voorproef in Flow (referentiebeelden en scène 1 in 360p) · aanname: niets betalen of aanmaken · blokkeert: ja, voor de proef",
@@ -156,6 +156,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-21T02:16:00+01:00 Andries in de sessie, op \"Ga je akkoord met deze volgorde?\" (1. gratis proef met Gemini in Flow; 2. valt echt tegen, dan betaalde proef Gemini tegen Kling 3.0 Omni na OK per bedrag; 3. Seedance alleen als bijna echt wint) (keuzes: Akkoord, Liever Seedance): \"Akkoord\"",
     "2026-11-21T01:30:00+01:00 Andries in de sessie, op \"Zal ik Seedance en Kling uitzoeken terwijl jij Flow doet?\": \"Ja, uitzoeken\"",
     "2026-11-21T01:28:00+01:00 Andries in de sessie: \"welke dienst wou je gebruiken wat het beste resultaat geeft\"; daarna \"maar we zouden bijan echte mensen doen toch?\"; op \"Wordt het alleen bijna echt?\" (keuzes: Alleen bijna echt, Toch allebei): \"Toch allebei\"",
     "2026-11-21T00:58:00+01:00 Andries in de sessie: \"we zouden toch wat nieuws maken/proberen kwa personages ectr\"",

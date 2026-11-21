@@ -226,6 +226,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- za 21 nov 2026 ±02:16, in de sessie, op "Ga je akkoord met deze volgorde?" (1. gratis proef met Gemini in Flow; 2. valt echt tegen, dan een betaalde proef Gemini tegen Kling 3.0 Omni, alleen na OK per bedrag; 3. Seedance alleen als bijna echt wint) (keuzes: Akkoord, Liever Seedance): "Akkoord" → volgorde vastgelegd; geen geld uitgegeven.
 - za 21 nov 2026 ±01:30, in de sessie, op "Zal ik Seedance en Kling uitzoeken terwijl jij Flow doet?": "Ja, uitzoeken" → Seedance 2.5 en Kling worden net zo grondig uitgezocht als Gemini; niets betalen of aanmaken.
 - za 21 nov 2026 ±01:28, in de sessie, na "welke dienst wou je gebruiken wat het beste resultaat geeft" en "maar we zouden bijan echte mensen doen toch?": op "Wordt het alleen bijna echt?" (keuzes: Alleen bijna echt, Toch allebei): "Toch allebei" → de proef blijft echt en bijna echt naast elkaar testen; stappenkaart en proefplan ongewijzigd.
 - za 21 nov 2026 ±00:58, in de sessie (geen besluit, een aansporing): "we zouden toch wat nieuws maken/proberen kwa personages ectr" → nieuwe personages naar voren gehaald; stappenkaart voor de gratis voorproef in Flow gemaakt (geen geld, past bij "Nog niet").
