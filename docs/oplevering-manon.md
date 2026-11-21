@@ -1,3 +1,4 @@
+KLAAR: stappenkaart gratis voorproef in Flow voor de nieuwe personages (docs/waaromdorp/flow-stappen.md; 18 ingevulde prompts, 48 van de 50 gratis credits); Andries doet het met de hand · za 21 nov 01:00
 KLAAR: proefplan AI voor beide stijlen nagelopen en verbeterd (docs/waaromdorp/ai-proef.md): personages, referentiebeelden, 3 scènes, filtertoets met stopregel, EU- en YouTube-regels nagekeken; wacht op OK per bedrag · vr 20 nov 18:25
 KLAAR: onderzoek Gemini voor de rechercheurs (deels: alleen Omni 1.2 Flash via de API past; zwak in bewegende mensen; kosten ver boven het potje); docs/waaromdorp/gemini-onderzoek.md; proef wacht op OK per bedrag · vr 20 nov 17:48
 KLAAR: 18:00-shorts naar 12:00 in YouTube Studio: 25 shorts (YS15–YS39, 21 nov t/m 15 dec), per video nagekeken, Studio meldt "Wijzigingen opgeslagen" · vr 20 nov 17:21
@@ -224,6 +225,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- za 21 nov 2026 ±00:58, in de sessie (geen besluit, een aansporing): "we zouden toch wat nieuws maken/proberen kwa personages ectr" → nieuwe personages naar voren gehaald; stappenkaart voor de gratis voorproef in Flow gemaakt (geen geld, past bij "Nog niet").
 - vr 20 nov 2026 ±17:54, in de sessie, na zijn vraag "maken we echte mensen of bijna echte mensen": op "Welke stijl testen we in de proef?" (keuzes: Allebei testen, Bijna echt, Echt): "Allebei testen (Recommended)"; op de vraag of de proef met Gemini Omni via Google AI Studio tot [bedrag weggelaten] mag kosten: "Nog niet" → de proef test beide stijlen (3 shots echt, 3 shots bijna echt, dezelfde scènes); er wordt niets uitgegeven; ik maak alleen prompts en plan klaar.
 - vr 20 nov 2026 ±16:50 en ±17:00, in de sessie (vragen, geen besluit): "wat kunnen we nog meer gebruiken voor beelden, Midjourney?" en "kunnen we met gemini dit goed doen?" → Midjourney kort uitgezocht (mag niet met een bot, dus hij doet het zelf); Gemini uitgebreid onderzocht (docs/waaromdorp/gemini-onderzoek.md).
 - vr 20 nov 2026 ±17:01, in de sessie, op de vraag of hij Studio op kanaal 1 wil zetten: "Staat nu op kanaal 1" → kanaal 1 nagekeken, YS46 en YS47 ingepland.

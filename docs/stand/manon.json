@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-21T00:56:00+01:00",
+  "tijd": "2026-11-21T01:00:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-21T01:00:00+01:00 Stappenkaart voor de gratis voorproef in Flow (docs/waaromdorp/flow-stappen.md): 18 volledig ingevulde prompts (6 echte foto's, 6 bijna echt, 6 clips van 8 s in 360p = 48 van de 50 gratis credits), met opslagnamen in C:Usersgijsm\toolsai-proef\flow (map gemaakt, buiten git). Andries doet het met de hand; ik beoordeel. Niets betaald of aangemaakt.",
     "2026-11-20T18:25:00+01:00 Proefplan AI nagelopen door twee controleurs (Omni-documentatie en API; regels en beleid van Google, YouTube en de EU) en verbeterd: vaste personagetekst met gezichtstrekken en kleuren uit de ontwerpen (map manillageel met wit etiket), personageblok dat de 6 referentiebeelden aan de twee personages koppelt, referentiebeelden van echt naar bijna echt uit dezelfde goedgekeurde foto, scènes met vaste camera en tijdcodes, positief geformuleerd slot, filtertoets per stijl van 3 s in 360p met stopregel (niet om het filter heen), keuring van gelijkenis en leeftijd door Andries, EU-punten nagekeken in C(2026) 7702 final (punt 113, 114, 117, 122, 142, 143) en het citaat uit de Gemini API-voorwaarden. Niets betaald of aangemaakt.",
     "2026-11-20T17:57:00+01:00 Proefplan AI voor beide stijlen (docs/waaromdorp/ai-proef.md, 111e616): vaste personagetekst, 12 referentiebeelden (6 echt, 6 bijna echt), 3 scènes × 2 stijlen × 2 pogingen met prompts en instellingen, beoordeling, montage en beslisregel. Niets betaald of aangemaakt (\"Nog niet\").",
     "2026-11-20T17:48:00+01:00 Onderzoek of Gemini de rechercheurs goed kan maken (zes invalshoeken, elk nagekeken in officiële bronnen): deels. Alleen Gemini Omni 1.2 Flash via de betaalde Gemini API past (twee vaste personages per clip, 9:16, aansturen vanuit onze pijplijn mag); zwak in echt lijkende bewegende mensen, gelijk blijven over veel clips niet onafhankelijk getest, geen lipsync op onze stem, kosten per maand ver boven het potje. Verslag zonder bedragen: docs/waaromdorp/gemini-onderzoek.md; bedragen alleen in de sessie.",
@@ -145,7 +146,7 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "-",
-  "volgende": "Andries vernieuwt de Instagram-sleutel van kanaal 1 (alleen hij; daarna meldt Eva of hij werkt, dan plan ik YS36, YS45 en wat verder gemist is opnieuw in). YS48: na pakket OK en bijschrift OK in Studio om 17:00 (uiterlijk ma 23 nov 17:45) voor ma 23 nov 20:00. AI-proef: wacht (gratis voorproef in Flow doet Andries zelf als hij wil). Ma 23 nov: weekanalyse (top 3, flop 3, 1 proef; cijfers via Eva). Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
+  "volgende": "Gratis voorproef in Flow: Andries maakt stap 1a en 1b (twee foto's), ik kijk mee; daarna de rest van de kaart en mijn beoordeling met vergelijkingsblad. Instagram-sleutel kanaal 1 vernieuwen (alleen Andries; Eva meldt of hij werkt, dan plan ik gemiste Reels opnieuw in). YS48: na pakket OK en bijschrift OK in Studio om 17:00 (uiterlijk ma 23 nov 17:45). Ma 23 nov: weekanalyse. Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
     "AI-proef via de Gemini API (beelden en clips): OK per bedrag? Andries vr 20 nov 17:54: \"Nog niet\". Alternatief zonder kosten: hij doet zelf de voorproef in Flow (referentiebeelden en scène 1 in 360p) · aanname: niets betalen of aanmaken · blokkeert: ja, voor de proef",
@@ -154,6 +155,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-21T00:58:00+01:00 Andries in de sessie: \"we zouden toch wat nieuws maken/proberen kwa personages ectr\"",
     "2026-11-20T17:54:00+01:00 Andries in de sessie: \"maken we echte mensen of bijna echte mensen\"; op \"Welke stijl testen we in de proef?\" (keuzes: Allebei testen, Bijna echt, Echt): \"Allebei testen (Recommended)\"; op de vraag of de proef met Gemini Omni via Google AI Studio tot [bedrag weggelaten] mag kosten: \"Nog niet\"",
     "2026-11-20T17:00:00+01:00 Andries in de sessie: \"kunnen we met gemini dit goed doen?\" (eerder ±16:50: \"wat kunnen we nog meer gebruiken voor beelden, Midjourney?\")",
     "2026-11-20T17:20:00+01:00 YouTube Studio (Chrome van Andries, kanaal 1): bij 25 geplande shorts (21 nov t/m 15 dec) alleen de publicatietijd van 18:00 naar 12:00 gezet; verder niets gewijzigd.",
