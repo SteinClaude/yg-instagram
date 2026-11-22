@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-22T02:48:00+01:00",
+  "tijd": "2026-11-22T02:50:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-18T12:09:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
     "2026-11-22T02:22:00+01:00 Vijf keuzebladen voor Flow (docs/waaromdorp/keuzebladen.md): stijl van echt naar geanimeerd, gezicht en haar van de rechercheur, van de collega, kleding en kleuren van het duo, en sfeer van het bureau; elk één beeld met opties A–D (verzonnen mensen, geen credits). Geen foto's van internet als voorbeeld (gelijkenis met bestaande personen, gebruiksrecht).",
     "2026-11-22T01:30:00+01:00 Stappenkaart Flow aangepast aan Google AI Pro (docs/waaromdorp/flow-stappen.md): clips in 720p in plaats van 360p, elke clip twee keer (288 credits van zijn maandtegoed), beste versie gratis opschalen naar 1080p; nieuwe bestandsnamen per versie.",
@@ -148,8 +148,8 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Stappenkaart en proefplan omzetten naar de stijlen A, B en D",
-  "volgende": "Andries doet de gratis voorproef in Flow (docs/waaromdorp/flow-stappen.md, eerst 1a en 1b); ik beoordeel. Daarna, als echt tegenvalt: betaalde proef Gemini tegen Kling 3.0 Omni (alleen na OK per bedrag; Andries maakt accounts). Seedance alleen als bijna echt wint. Instagram-sleutel kanaal 1 vernieuwen (alleen Andries). YS48: na pakket OK en bijschrift OK in Studio om 17:00 (uiterlijk ma 23 nov 17:45). Ma 23 nov: weekanalyse. Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
+  "bezig": "-",
+  "volgende": "Andries: keuzeblad 2 (de rechercheur) maken of zeggen wat er anders moet aan de vrouw; daarna blad 3 t/m 5. Daarna zet ik de stappenkaart en het proefplan om naar de stijlen A, B en D met de gekozen personages. Instagram-sleutel kanaal 1 vernieuwen (alleen Andries). YS48: na pakket OK en bijschrift OK in Studio (uiterlijk ma 23 nov 17:45). Ma 23 nov: weekanalyse. Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
     "Keuzebladen: mag ik ze via de Gemini API maken tot het kleine bedrag uit de sessie (Andries maakt project, plafond en sleutel), of maakt hij ze zelf in Flow? · aanname: niets betalen of aanmaken; geen bot in Flow · blokkeert: ja, voor de keuzes",
@@ -158,6 +158,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-22T02:50:00+01:00 Andries in de sessie: \"de vrouw wil ik ook nog aanpassen\" → keuzeblad 2 (vier vrouwen) gegeven; zijn wensen voor de vrouw gevraagd. Het omzetten van stappenkaart en proefplan naar A, B en D volgt na de keuze van het gezicht.",
     "2026-11-22T02:48:00+01:00 Keuzeblad 1 (stijl) door Andries gemaakt in Flow; kopie buiten git in tools/ai-proef/flow/keuze-1-stijl-uit-chat.webp. Andries in de sessie, op \"welke stijlen testen we in de proef?\" (keuzes: B gepolijst echt, C bijna echt, A echt filmbeeld, D getekend; meer mogelijk): \"B, gepolijst echt (Recommended),A, echt filmbeeld,D, getekend\"",
     "2026-11-22T02:26:00+01:00 Andries in de sessie: \"kan jij dit doen voor me?\" (de keuzebladen maken). Niet in Flow (geen browser-automatisering, risico voor zijn Google-account). Aangeboden: zelf via de Gemini API met een klein bedrag (vooruitbetalen en plafond, sleutel via gereedschap/sleutel-zetten.cjs GEMINI_API_KEY --venster), of hij plakt de vijf prompts zelf in Flow.",
     "2026-11-22T02:25:00+01:00 Andries in de sessie: \"we gaan hier eerst wat voorbeelden bespreken zoek/maak wat voorbeeld afbeledingen die we kunnen pakken als richtlijn voor mijn keuzes\"",
