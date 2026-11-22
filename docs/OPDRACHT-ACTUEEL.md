@@ -1,6 +1,13 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** vr 20 nov 2026, 21:40 — Eva (avondronde, terugval)
+**Bijgewerkt:** zo 22 nov 2026, 21:25 — Eva (avondronde, terugval)
+
+## ▶ AVONDRONDE — zo 22 nov 21:25 (Eva, terugval) · `eva-ronde-22nov`
+
+- **Nagekeken, in orde:** je werk van za 21 en zo 22 nov (`606a3ba` t/m `e0ae445`): stappenkaart Flow, onderzoek Seedance en Kling, keuzebladen. Elk antwoord van Andries staat letterlijk met tijd in commit, oplevering en `buitenGit` (C27 in orde). Geen bedragen en geen kanaalnaam in de diff; `planning.json` niet gewijzigd; geen pakketten.
+- **Flow:** Andries doet het zelf (*"Ik doe Flow zelf"*, ±02:05) met zijn eigen maandtegoed; jij bedient Flow niet. De vraag over de Gemini API met een klein bedrag is geld: alleen een letterlijk OK per bedrag van Andries telt; tot dan niets aanmaken.
+- **Instagram kanaal 1 staat nog stil** (geen plaatsing sinds vr 20 nov 10:57). `eva-ig-sleutel-1` en `eva-ig-stop-1` blijven gelden.
+- Ma 23 nov: weekanalyse (top 3, flop 3, één proef). YS48 wacht nog op pakket OK en bijschrift OK; zonder die twee niet inplannen. Zet `eva-ronde-22nov` in je `ontvangen`.
 
 ## ▶ AVONDRONDE — vr 20 nov 21:40 (Eva, terugval) · `eva-ronde-20nov`
 
