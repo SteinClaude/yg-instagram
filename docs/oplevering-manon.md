@@ -1,3 +1,4 @@
+KLAAR: advies abonnement AI-proef gegeven (nu geen abonnement, gratis Flow-proef eerst; later per seconde via de API); keuze ligt bij Andries · zo 22 nov 01:25
 KLAAR: Seedance 2.5 en Kling uitgezocht naast Gemini (docs/waaromdorp/seedance-kling-onderzoek.md); advies: eerst gratis Flow-proef, daarna eventueel Gemini tegen Kling 3.0 Omni · za 21 nov 01:58
 KLAAR: stappenkaart gratis voorproef in Flow voor de nieuwe personages (docs/waaromdorp/flow-stappen.md; 18 ingevulde prompts, 48 van de 50 gratis credits); Andries doet het met de hand · za 21 nov 01:00
 KLAAR: proefplan AI voor beide stijlen nagelopen en verbeterd (docs/waaromdorp/ai-proef.md): personages, referentiebeelden, 3 scènes, filtertoets met stopregel, EU- en YouTube-regels nagekeken; wacht op OK per bedrag · vr 20 nov 18:25
