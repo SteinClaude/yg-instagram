@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-22T02:21:00+01:00",
+  "tijd": "2026-11-22T02:22:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-22T02:22:00+01:00 Vijf keuzebladen voor Flow (docs/waaromdorp/keuzebladen.md): stijl van echt naar geanimeerd, gezicht en haar van de rechercheur, van de collega, kleding en kleuren van het duo, en sfeer van het bureau; elk één beeld met opties A–D (verzonnen mensen, geen credits). Geen foto's van internet als voorbeeld (gelijkenis met bestaande personen, gebruiksrecht).",
     "2026-11-22T01:30:00+01:00 Stappenkaart Flow aangepast aan Google AI Pro (docs/waaromdorp/flow-stappen.md): clips in 720p in plaats van 360p, elke clip twee keer (288 credits van zijn maandtegoed), beste versie gratis opschalen naar 1080p; nieuwe bestandsnamen per versie.",
     "2026-11-21T01:58:00+01:00 Seedance 2.5 en Kling uitgezocht naast Gemini (docs/waaromdorp/seedance-kling-onderzoek.md, zonder bedragen), beslissende feiten nagekeken in de officiële bronnen. Seedance: beste beeld, maar weigert echte gezichten als referentie (behalve eigen beelden van hetzelfde account, max. 30 dagen, onbewerkt) en is ±3× zo duur. Kling: geen gezichtsregel, Elements voor vaste personages, API commercieel toegestaan (web-app niet), lager op de lijsten. Advies: eerst gratis Flow-proef met Gemini; valt echt tegen, dan betaalde proef Gemini tegen Kling 3.0 Omni; Seedance alleen bij bijna echt.",
     "2026-11-21T01:00:00+01:00 Stappenkaart voor de gratis voorproef in Flow (docs/waaromdorp/flow-stappen.md): 18 volledig ingevulde prompts (6 echte foto's, 6 bijna echt, 6 clips van 8 s in 360p = 48 van de 50 gratis credits), met opslagnamen in tools/ai-proef/flow/ op de pc van Andries (map gemaakt, buiten git). Andries doet het met de hand; ik beoordeel. Niets betaald of aangemaakt.",
@@ -151,12 +152,13 @@
   "volgende": "Andries doet de gratis voorproef in Flow (docs/waaromdorp/flow-stappen.md, eerst 1a en 1b); ik beoordeel. Daarna, als echt tegenvalt: betaalde proef Gemini tegen Kling 3.0 Omni (alleen na OK per bedrag; Andries maakt accounts). Seedance alleen als bijna echt wint. Instagram-sleutel kanaal 1 vernieuwen (alleen Andries). YS48: na pakket OK en bijschrift OK in Studio om 17:00 (uiterlijk ma 23 nov 17:45). Ma 23 nov: weekanalyse. Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
-    "Gratis proef in Flow: Andries maakt stap 1a en 1b (docs/waaromdorp/flow-stappen.md) en zegt klaar; ik kijk mee · aanname: geen API, niets betalen · blokkeert: ja, voor de beoordeling",
+    "Keuzebladen: Andries maakt de vijf bladen in Flow (docs/waaromdorp/keuzebladen.md) en stuurt ze; we bespreken ze en hij kiest per blad · aanname: geen kosten, beelden in Flow kosten geen credits · blokkeert: ja, voor de referentiebeelden",
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-22T02:25:00+01:00 Andries in de sessie: \"we gaan hier eerst wat voorbeelden bespreken zoek/maak wat voorbeeld afbeledingen die we kunnen pakken als richtlijn voor mijn keuzes\"",
     "2026-11-22T02:21:00+01:00 Flow-proef: Andries maakte beeld 1a (de rechercheur, echt) en liet het zien; mijn beoordeling: klopt met de beschrijving, haar iets langer dan tot de kaak; kopie buiten git in tools/ai-proef/flow/echt-J-a-uit-chat.jpg. Andries op \"Keur je dit gezicht goed als de rechercheur?\" (keuzes: Goed, door naar 1b; Nieuwe maken): \"Nieuwe maken\". Nieuwe prompt gegeven (haar scherper: bob precies op kaakhoogte, duidelijke scheiding; vier versies om uit te kiezen).",
     "2026-11-22T02:05:00+01:00 Andries in de sessie, op \"Hoe doen we de proef?\" (keuzes: API tot [bedrag weggelaten], Ik doe Flow zelf): \"Ik doe Flow zelf\"",
     "2026-11-22T01:52:00+01:00 Andries in de sessie: \"kan jij dit doen\" (Flow bedienen). Niet gedaan: eigen regel geen browser-automatisering (uitzondering alleen YouTube Studio), Flow heeft geen API en een bot op zijn Google-account is een risico. Aangeboden: zelf via de Gemini API (OK per bedrag nodig; Andries maakt project, plafond en sleutel) of Flow met de hand door hem.",
