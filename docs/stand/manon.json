@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-22T01:25:00+01:00",
+  "tijd": "2026-11-22T01:27:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -150,12 +150,13 @@
   "volgende": "Andries doet de gratis voorproef in Flow (docs/waaromdorp/flow-stappen.md, eerst 1a en 1b); ik beoordeel. Daarna, als echt tegenvalt: betaalde proef Gemini tegen Kling 3.0 Omni (alleen na OK per bedrag; Andries maakt accounts). Seedance alleen als bijna echt wint. Instagram-sleutel kanaal 1 vernieuwen (alleen Andries). YS48: na pakket OK en bijschrift OK in Studio om 17:00 (uiterlijk ma 23 nov 17:45). Ma 23 nov: weekanalyse. Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
-    "Abonnement voor de AI-proef: eerst gratis in Flow (advies) of het kleinste Google AI-abonnement? Andries neemt het zelf af; OK per bedrag · aanname: niets betalen of aanmaken · blokkeert: nee, de gratis proef kan meteen",
+    "Gratis voorproef in Flow: Andries begint met stap 1a en 1b (docs/waaromdorp/flow-stappen.md) en zegt klaar · aanname: geen abonnement, niets betalen · blokkeert: ja, voor de beoordeling",
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-22T01:27:00+01:00 Andries in de sessie, op \"Welke kies je voor de proef?\" (keuzes: Eerst gratis, het kleinste Google AI-abonnement [bedrag weggelaten]): \"Eerst gratis\"",
     "2026-11-22T01:25:00+01:00 Andries in de sessie: \"welke abonoment gaan we nemen?\". Advies gegeven (bedragen alleen in de sessie): nu geen abonnement, de gratis Flow-proef past in de credits van één dag; wil hij meteen betere kwaliteit zien, dan het kleinste Google AI-abonnement (maandelijks opzegbaar); voor dagelijkse productie later betalen per seconde via de API met plafond, geen abonnement (Flow alleen met de hand; Kling-webabonnement verbiedt commercieel gebruik). Flow-map nog leeg; YS48 nog zonder keuring.",
     "2026-11-21T02:16:00+01:00 Andries in de sessie, op \"Ga je akkoord met deze volgorde?\" (1. gratis proef met Gemini in Flow; 2. valt echt tegen, dan betaalde proef Gemini tegen Kling 3.0 Omni na OK per bedrag; 3. Seedance alleen als bijna echt wint) (keuzes: Akkoord, Liever Seedance): \"Akkoord\"",
     "2026-11-21T01:30:00+01:00 Andries in de sessie, op \"Zal ik Seedance en Kling uitzoeken terwijl jij Flow doet?\": \"Ja, uitzoeken\"",
