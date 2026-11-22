@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-22T02:22:00+01:00",
+  "tijd": "2026-11-22T02:26:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -152,12 +152,13 @@
   "volgende": "Andries doet de gratis voorproef in Flow (docs/waaromdorp/flow-stappen.md, eerst 1a en 1b); ik beoordeel. Daarna, als echt tegenvalt: betaalde proef Gemini tegen Kling 3.0 Omni (alleen na OK per bedrag; Andries maakt accounts). Seedance alleen als bijna echt wint. Instagram-sleutel kanaal 1 vernieuwen (alleen Andries). YS48: na pakket OK en bijschrift OK in Studio om 17:00 (uiterlijk ma 23 nov 17:45). Ma 23 nov: weekanalyse. Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
-    "Keuzebladen: Andries maakt de vijf bladen in Flow (docs/waaromdorp/keuzebladen.md) en stuurt ze; we bespreken ze en hij kiest per blad · aanname: geen kosten, beelden in Flow kosten geen credits · blokkeert: ja, voor de referentiebeelden",
+    "Keuzebladen: mag ik ze via de Gemini API maken tot het kleine bedrag uit de sessie (Andries maakt project, plafond en sleutel), of maakt hij ze zelf in Flow? · aanname: niets betalen of aanmaken; geen bot in Flow · blokkeert: ja, voor de keuzes",
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-22T02:26:00+01:00 Andries in de sessie: \"kan jij dit doen voor me?\" (de keuzebladen maken). Niet in Flow (geen browser-automatisering, risico voor zijn Google-account). Aangeboden: zelf via de Gemini API met een klein bedrag (vooruitbetalen en plafond, sleutel via gereedschap/sleutel-zetten.cjs GEMINI_API_KEY --venster), of hij plakt de vijf prompts zelf in Flow.",
     "2026-11-22T02:25:00+01:00 Andries in de sessie: \"we gaan hier eerst wat voorbeelden bespreken zoek/maak wat voorbeeld afbeledingen die we kunnen pakken als richtlijn voor mijn keuzes\"",
     "2026-11-22T02:21:00+01:00 Flow-proef: Andries maakte beeld 1a (de rechercheur, echt) en liet het zien; mijn beoordeling: klopt met de beschrijving, haar iets langer dan tot de kaak; kopie buiten git in tools/ai-proef/flow/echt-J-a-uit-chat.jpg. Andries op \"Keur je dit gezicht goed als de rechercheur?\" (keuzes: Goed, door naar 1b; Nieuwe maken): \"Nieuwe maken\". Nieuwe prompt gegeven (haar scherper: bob precies op kaakhoogte, duidelijke scheiding; vier versies om uit te kiezen).",
     "2026-11-22T02:05:00+01:00 Andries in de sessie, op \"Hoe doen we de proef?\" (keuzes: API tot [bedrag weggelaten], Ik doe Flow zelf): \"Ik doe Flow zelf\"",
