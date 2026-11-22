@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-22T01:30:00+01:00",
+  "tijd": "2026-11-22T01:52:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -151,12 +151,13 @@
   "volgende": "Andries doet de gratis voorproef in Flow (docs/waaromdorp/flow-stappen.md, eerst 1a en 1b); ik beoordeel. Daarna, als echt tegenvalt: betaalde proef Gemini tegen Kling 3.0 Omni (alleen na OK per bedrag; Andries maakt accounts). Seedance alleen als bijna echt wint. Instagram-sleutel kanaal 1 vernieuwen (alleen Andries). YS48: na pakket OK en bijschrift OK in Studio om 17:00 (uiterlijk ma 23 nov 17:45). Ma 23 nov: weekanalyse. Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
-    "Gratis voorproef in Flow: Andries begint met stap 1a en 1b (docs/waaromdorp/flow-stappen.md) en zegt klaar · aanname: geen abonnement, niets betalen · blokkeert: ja, voor de beoordeling",
+    "AI-proef: doet Andries Flow zelf (gratis), of mag ik het via de Gemini API doen tot het bedrag uit de sessie (hij maakt project, plafond en sleutel)? · aanname: niets betalen of aanmaken; geen bot in Flow · blokkeert: ja, voor de proef",
     "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-22T01:52:00+01:00 Andries in de sessie: \"kan jij dit doen\" (Flow bedienen). Niet gedaan: eigen regel geen browser-automatisering (uitzondering alleen YouTube Studio), Flow heeft geen API en een bot op zijn Google-account is een risico. Aangeboden: zelf via de Gemini API (OK per bedrag nodig; Andries maakt project, plafond en sleutel) of Flow met de hand door hem.",
     "2026-11-22T01:30:00+01:00 Andries in de sessie: \"ik heb al pro volgens mij kijk maar ik heb hem open staan\". Nagekeken in de Chrome van Andries (alleen gekeken, niets aangeklikt of gemaakt; eigen tabblad, daarna gesloten): Google Flow toont \"PRO tier\". Hij heeft dus al een Google AI-abonnement (Pro); geen nieuwe kosten.",
     "2026-11-22T01:27:00+01:00 Andries in de sessie, op \"Welke kies je voor de proef?\" (keuzes: Eerst gratis, het kleinste Google AI-abonnement [bedrag weggelaten]): \"Eerst gratis\"",
     "2026-11-22T01:25:00+01:00 Andries in de sessie: \"welke abonoment gaan we nemen?\". Advies gegeven (bedragen alleen in de sessie): nu geen abonnement, de gratis Flow-proef past in de credits van één dag; wil hij meteen betere kwaliteit zien, dan het kleinste Google AI-abonnement (maandelijks opzegbaar); voor dagelijkse productie later betalen per seconde via de API met plafond, geen abonnement (Flow alleen met de hand; Kling-webabonnement verbiedt commercieel gebruik). Flow-map nog leeg; YS48 nog zonder keuring.",
