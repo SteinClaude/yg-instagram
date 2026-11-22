@@ -228,6 +228,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- zo 22 nov 2026 ±02:05, in de sessie, op "Hoe doen we de proef?" (keuzes: API tot [bedrag weggelaten], Ik doe Flow zelf): "Ik doe Flow zelf" → geen API, geen kosten; Andries maakt de beelden en clips in Flow met de stappenkaart, ik kijk na elke stap mee.
 - zo 22 nov 2026 ±01:27, in de sessie, op "Welke kies je voor de proef?" (keuzes: Eerst gratis, het kleinste Google AI-abonnement [bedrag weggelaten]): "Eerst gratis" → geen abonnement; de proef gaat met de gratis credits in Flow.
 - za 21 nov 2026 ±02:16, in de sessie, op "Ga je akkoord met deze volgorde?" (1. gratis proef met Gemini in Flow; 2. valt echt tegen, dan een betaalde proef Gemini tegen Kling 3.0 Omni, alleen na OK per bedrag; 3. Seedance alleen als bijna echt wint) (keuzes: Akkoord, Liever Seedance): "Akkoord" → volgorde vastgelegd; geen geld uitgegeven.
 - za 21 nov 2026 ±01:30, in de sessie, op "Zal ik Seedance en Kling uitzoeken terwijl jij Flow doet?": "Ja, uitzoeken" → Seedance 2.5 en Kling worden net zo grondig uitgezocht als Gemini; niets betalen of aanmaken.
