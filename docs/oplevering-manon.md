@@ -1,3 +1,4 @@
+KLAAR: keuzeblad 1 verwerkt (stijlen A, B en D); keuzeblad 2 (de rechercheur) klaar voor Andries; morgen verder · zo 22 nov 02:56
 KLAAR: vijf keuzebladen voor Flow (docs/waaromdorp/keuzebladen.md): stijl, rechercheur, collega, kleuren, sfeer, elk met opties A–D · zo 22 nov 02:22
 KLAAR: stappenkaart Flow aangepast aan Google AI Pro (720p, twee versies per clip, gratis opschalen naar 1080p) · zo 22 nov 01:30
 KLAAR: advies abonnement AI-proef gegeven (nu geen abonnement, gratis Flow-proef eerst; later per seconde via de API); keuze ligt bij Andries · zo 22 nov 01:25
