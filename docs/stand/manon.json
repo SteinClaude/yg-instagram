@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-22T01:27:00+01:00",
+  "tijd": "2026-11-22T01:30:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -8,6 +8,7 @@
   },
   "status": "wacht",
   "af": [
+    "2026-11-22T01:30:00+01:00 Stappenkaart Flow aangepast aan Google AI Pro (docs/waaromdorp/flow-stappen.md): clips in 720p in plaats van 360p, elke clip twee keer (288 credits van zijn maandtegoed), beste versie gratis opschalen naar 1080p; nieuwe bestandsnamen per versie.",
     "2026-11-21T01:58:00+01:00 Seedance 2.5 en Kling uitgezocht naast Gemini (docs/waaromdorp/seedance-kling-onderzoek.md, zonder bedragen), beslissende feiten nagekeken in de officiële bronnen. Seedance: beste beeld, maar weigert echte gezichten als referentie (behalve eigen beelden van hetzelfde account, max. 30 dagen, onbewerkt) en is ±3× zo duur. Kling: geen gezichtsregel, Elements voor vaste personages, API commercieel toegestaan (web-app niet), lager op de lijsten. Advies: eerst gratis Flow-proef met Gemini; valt echt tegen, dan betaalde proef Gemini tegen Kling 3.0 Omni; Seedance alleen bij bijna echt.",
     "2026-11-21T01:00:00+01:00 Stappenkaart voor de gratis voorproef in Flow (docs/waaromdorp/flow-stappen.md): 18 volledig ingevulde prompts (6 echte foto's, 6 bijna echt, 6 clips van 8 s in 360p = 48 van de 50 gratis credits), met opslagnamen in tools/ai-proef/flow/ op de pc van Andries (map gemaakt, buiten git). Andries doet het met de hand; ik beoordeel. Niets betaald of aangemaakt.",
     "2026-11-20T18:25:00+01:00 Proefplan AI nagelopen door twee controleurs (Omni-documentatie en API; regels en beleid van Google, YouTube en de EU) en verbeterd: vaste personagetekst met gezichtstrekken en kleuren uit de ontwerpen (map manillageel met wit etiket), personageblok dat de 6 referentiebeelden aan de twee personages koppelt, referentiebeelden van echt naar bijna echt uit dezelfde goedgekeurde foto, scènes met vaste camera en tijdcodes, positief geformuleerd slot, filtertoets per stijl van 3 s in 360p met stopregel (niet om het filter heen), keuring van gelijkenis en leeftijd door Andries, EU-punten nagekeken in C(2026) 7702 final (punt 113, 114, 117, 122, 142, 143) en het citaat uit de Gemini API-voorwaarden. Niets betaald of aangemaakt.",
@@ -156,6 +157,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-22T01:30:00+01:00 Andries in de sessie: \"ik heb al pro volgens mij kijk maar ik heb hem open staan\". Nagekeken in de Chrome van Andries (alleen gekeken, niets aangeklikt of gemaakt; eigen tabblad, daarna gesloten): Google Flow toont \"PRO tier\". Hij heeft dus al een Google AI-abonnement (Pro); geen nieuwe kosten.",
     "2026-11-22T01:27:00+01:00 Andries in de sessie, op \"Welke kies je voor de proef?\" (keuzes: Eerst gratis, het kleinste Google AI-abonnement [bedrag weggelaten]): \"Eerst gratis\"",
     "2026-11-22T01:25:00+01:00 Andries in de sessie: \"welke abonoment gaan we nemen?\". Advies gegeven (bedragen alleen in de sessie): nu geen abonnement, de gratis Flow-proef past in de credits van één dag; wil hij meteen betere kwaliteit zien, dan het kleinste Google AI-abonnement (maandelijks opzegbaar); voor dagelijkse productie later betalen per seconde via de API met plafond, geen abonnement (Flow alleen met de hand; Kling-webabonnement verbiedt commercieel gebruik). Flow-map nog leeg; YS48 nog zonder keuring.",
     "2026-11-21T02:16:00+01:00 Andries in de sessie, op \"Ga je akkoord met deze volgorde?\" (1. gratis proef met Gemini in Flow; 2. valt echt tegen, dan betaalde proef Gemini tegen Kling 3.0 Omni na OK per bedrag; 3. Seedance alleen als bijna echt wint) (keuzes: Akkoord, Liever Seedance): \"Akkoord\"",
