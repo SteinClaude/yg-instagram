@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-22T02:05:00+01:00",
+  "tijd": "2026-11-22T02:21:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -157,6 +157,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-22T02:21:00+01:00 Flow-proef: Andries maakte beeld 1a (de rechercheur, echt) en liet het zien; mijn beoordeling: klopt met de beschrijving, haar iets langer dan tot de kaak; kopie buiten git in tools/ai-proef/flow/echt-J-a-uit-chat.jpg. Andries op \"Keur je dit gezicht goed als de rechercheur?\" (keuzes: Goed, door naar 1b; Nieuwe maken): \"Nieuwe maken\". Nieuwe prompt gegeven (haar scherper: bob precies op kaakhoogte, duidelijke scheiding; vier versies om uit te kiezen).",
     "2026-11-22T02:05:00+01:00 Andries in de sessie, op \"Hoe doen we de proef?\" (keuzes: API tot [bedrag weggelaten], Ik doe Flow zelf): \"Ik doe Flow zelf\"",
     "2026-11-22T01:52:00+01:00 Andries in de sessie: \"kan jij dit doen\" (Flow bedienen). Niet gedaan: eigen regel geen browser-automatisering (uitzondering alleen YouTube Studio), Flow heeft geen API en een bot op zijn Google-account is een risico. Aangeboden: zelf via de Gemini API (OK per bedrag nodig; Andries maakt project, plafond en sleutel) of Flow met de hand door hem.",
     "2026-11-22T01:30:00+01:00 Andries in de sessie: \"ik heb al pro volgens mij kijk maar ik heb hem open staan\". Nagekeken in de Chrome van Andries (alleen gekeken, niets aangeklikt of gemaakt; eigen tabblad, daarna gesloten): Google Flow toont \"PRO tier\". Hij heeft dus al een Google AI-abonnement (Pro); geen nieuwe kosten.",
