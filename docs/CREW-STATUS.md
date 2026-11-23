@@ -1,6 +1,6 @@
 # CREW-STATUS — stand van alle sporen
 
-**Bijgewerkt:** zo 22 nov 2026, 21:25 — Eva (avondronde, terugval: de gewone ronde draaide niet).
+**Bijgewerkt:** ma 23 nov 2026, 21:25 — Eva (avondronde, terugval: de gewone ronde draaide niet; geen crew-commits sinds zo 22 nov 21:18, stand verder ongewijzigd).
 
 ## Werkwijze voor iedereen
 - Andries beslist. Eva (chef de staf) zet opdrachten in `docs/OPDRACHT-ACTUEEL.md` en leest jullie stand en opleveringen.
