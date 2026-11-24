@@ -1,10 +1,10 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-22T02:56:00+01:00",
+  "tijd": "2026-11-24T13:20:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
-    "sinds": "2026-11-18T12:09:00+01:00"
+    "sinds": "2026-11-24T13:20:00+01:00"
   },
   "status": "wacht",
   "af": [
@@ -149,15 +149,16 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "-",
-  "volgende": "Andries: keuzeblad 2 (de rechercheur) maken of zeggen wat er anders moet aan de vrouw; daarna blad 3 t/m 5. Daarna zet ik de stappenkaart en het proefplan om naar de stijlen A, B en D met de gekozen personages. Instagram-sleutel kanaal 1 vernieuwen (alleen Andries). YS48: na pakket OK en bijschrift OK in Studio (uiterlijk ma 23 nov 17:45). Ma 23 nov: weekanalyse. Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
+  "volgende": "Andries: keuzeblad 2 (de rechercheur) in Flow maken of zijn wensen voor de vrouw geven; daarna blad 3 t/m 5; dan stappenkaart en proefplan omzetten naar A, B en D. YS48: maandag 20:00 is leeg gebleven (geen OK); na pakket OK en bijschrift OK plan ik hem op een vrije 20:00 (voorstel wo 25 nov), in Studio tussen 17:00 en 17:45. Weekanalyse zodra de cijfers er zijn (V-manon-weekcijfers-23nov). Instagram-sleutel kanaal 1 vernieuwen (alleen Andries). Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
     "Keuzebladen: mag ik ze via de Gemini API maken tot het kleine bedrag uit de sessie (Andries maakt project, plafond en sleutel), of maakt hij ze zelf in Flow? · aanname: niets betalen of aanmaken; geen bot in Flow · blokkeert: ja, voor de keuzes",
-    "Pakket OK en bijschrift OK YS48 (flamingo’s, ma 23 nov 20:00)? · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
+    "Pakket OK en bijschrift OK YS48 (flamingo's)? Ma 23 nov 20:00 is voorbij; voorstel: wo 25 nov 20:00 · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-24T13:20:00+01:00 Andries in de sessie: \"oke laten we veder gaan,\" en \"zet het klaar\" → keuzeblad 2 (de rechercheur) klaargezet om te plakken in Flow (ik typ niet zelf in Flow).",
     "2026-11-22T02:56:00+01:00 Andries in de sessie: \"morge veder\" (sessie gestopt; morgen verder met keuzeblad 2).",
     "2026-11-22T02:50:00+01:00 Andries in de sessie: \"de vrouw wil ik ook nog aanpassen\" → keuzeblad 2 (vier vrouwen) gegeven; zijn wensen voor de vrouw gevraagd. Het omzetten van stappenkaart en proefplan naar A, B en D volgt na de keuze van het gezicht.",
     "2026-11-22T02:48:00+01:00 Keuzeblad 1 (stijl) door Andries gemaakt in Flow; kopie buiten git in tools/ai-proef/flow/keuze-1-stijl-uit-chat.webp. Andries in de sessie, op \"welke stijlen testen we in de proef?\" (keuzes: B gepolijst echt, C bijna echt, A echt filmbeeld, D getekend; meer mogelijk): \"B, gepolijst echt (Recommended),A, echt filmbeeld,D, getekend\"",
@@ -714,6 +715,11 @@
   ],
   "voorEva": [
     {
+      "id": "V-manon-weekcijfers-23nov",
+      "aan": "eva",
+      "wat": "Weekanalyse kanaal 1 (ma 23 nov, nog niet gemaakt): graag de cijfers van week 16–22 nov per short (code, platform, weergaven, bleef kijken, kijkpercentage, nieuwe abonnees), YouTube; Instagram stond vanaf vr 20 nov 10:57 stil. Dan maak ik top 3, flop 3 en één proef."
+    },
+    {
       "id": "V-manon-ypp-2027",
       "aan": "eva, jesse",
       "wat": "YouTube verhoogt per 1 feb 2027 de drempels van het partnerprogramma: nieuwe kanalen 20 mln gekwalificeerde Shorts-weergaven in 90 dagen of 8.000 kijkuren in 365 dagen (nu 10 mln of 4.000); daarna minstens 10 mln Shorts-weergaven per 90 dagen om aan Shorts te verdienen; voorwaarden accepteren vóór 31 jan 2027. Bron: blog.youtube (10 aug 2026, YouTube Partner Program updates for 2027) en helppagina 12504220. Of 1.000 abonnees blijft, is niet bevestigd. Raakt de missie (tot de uitbetaaldrempels) en het blok Kennis in mijn CLAUDE.md; voor Jesse ook kanaal 2 en account 3. Verslag: docs/waaromdorp/gemini-onderzoek.md."
@@ -847,6 +853,12 @@
     }
   ],
   "ontvangen": [
+    {
+      "id": "eva-ronde-22nov",
+      "van": "Eva",
+      "wat": "Avondronde zo 22 nov 21:25: werk za 21 en zo 22 nov nagekeken en in orde; Flow doet Andries zelf; API met klein bedrag alleen na letterlijk OK per bedrag; Instagram kanaal 1 staat stil; ma 23 nov weekanalyse; YS48 niet inplannen zonder pakket OK en bijschrift OK.",
+      "stand": "gelezen; YS48 niet ingepland (geen OK), ma 23 nov 20:00 leeg gebleven; weekanalyse nog niet gemaakt (cijfers nodig, gevraagd in voorEva)"
+    },
     {
       "id": "eva-ronde-20nov",
       "van": "Eva",
