@@ -1,6 +1,6 @@
 # Waaromdorp — de nieuwe wereld van kanaal 1 (ontwerp, ter keuring)
 
-> **Bijgesteld di 24 nov 2026 ±13:25:** Andries: *"ik wil peertje en vraag teken houden, voor de nieuwe content/project maak ik een nieuw acount aan"*. Het Vraagteken en Peertje blijven op kanaal 1; de rechercheurs en de AI-proef (`ai-proef.md`, `flow-stappen.md`, `keuzebladen.md`) zijn voor een nieuw account, dat Andries zelf aanmaakt.
+> **Bijgesteld di 24 nov 2026 ±13:25:** Andries: *"ik wil peertje en vraag teken houden, voor de nieuwe content/project maak ik een nieuw acount aan"*. Het Vraagteken en Peertje blijven op kanaal 1; de rechercheurs en de AI-proef (`ai-proef.md`, `flow-stappen.md`, `keuzebladen.md`) zijn voor een nieuw account, dat Andries zelf aanmaakt. Platform: *"YouTube en Instagram"*. Wie maakt: *"Eerst Manon, later nieuw (Recommended)"* (later een eigen crewlid).
 
 **Gemaakt:** do 19 nov 2026, Manon. Aanleiding, Andries in de sessie:
 - ±20:10: *"maar wel het zelfde idee voor dit kanaal aleen dan in de trant van kanaal 1 snap je me?"* (opschalen: figuren en locaties erbij, "dat het echt beter en beter word en voor mensen ook echt leuk en intresant is om te zien wat het kanaal is (geworden)")

@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-24T13:25:00+01:00",
+  "tijd": "2026-11-24T13:43:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -149,7 +149,7 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "YS48 naar wo 25 nov 20:00 en om 17:00 inplannen in Studio",
-  "volgende": "Andries: keuzeblad 2 (de rechercheur) in Flow maken of zijn wensen voor de vrouw geven; daarna blad 3 t/m 5; dan stappenkaart en proefplan omzetten naar A, B en D. YS48: maandag 20:00 is leeg gebleven (geen OK); na pakket OK en bijschrift OK plan ik hem op een vrije 20:00 (voorstel wo 25 nov), in Studio tussen 17:00 en 17:45. Weekanalyse zodra de cijfers er zijn (V-manon-weekcijfers-23nov). Instagram-sleutel kanaal 1 vernieuwen (alleen Andries). Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
+  "volgende": "17:00–17:45 Studio: YS48 inplannen voor wo 25 nov 20:00 (kanaal 1 eerst nakijken). Nieuw account (rechercheurs): Andries maakt het aan (YouTube en Instagram); ik ga door met de keuzebladen (blad 2 de rechercheur ligt klaar in Flow). Duo op kanaal 1: na 14 dec weer een voorraad voor 20:00. Weekanalyse zodra de cijfers er zijn. Instagram-sleutel kanaal 1 (alleen Andries). Instagram niet openen (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
     "Keuzebladen: mag ik ze via de Gemini API maken tot het kleine bedrag uit de sessie (Andries maakt project, plafond en sleutel), of maakt hij ze zelf in Flow? · aanname: niets betalen of aanmaken; geen bot in Flow · blokkeert: ja, voor de keuzes",
@@ -157,6 +157,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-24T13:43:00+01:00 Andries in de sessie, op \"Moeten er weer nieuwe shorts met het duo komen?\": \"Na 14 dec weer maken (Recommended)\"; op \"Wie maakt de content voor het nieuwe account met de rechercheurs?\": \"Eerst Manon, later nieuw (Recommended)\"; op \"Op welk platform komt het nieuwe account?\": \"YouTube en Instagram\"",
     "2026-11-24T13:25:00+01:00 Andries in de sessie: \"ik wil peertje en vraag teken houden, voor de nieuwe content/project maak ik een nieuw acount aan\"",
     "2026-11-24T13:25:00+01:00 Andries in de sessie, op \"Mag YS48 woensdag 25 nov om 20:00?\": \"Beide OK YS48\"",
     "2026-11-24T13:23:00+01:00 Andries in de sessie: \"we waren toch bezig met nieuwe content? en laat me ys48 zien, ook wil de vooraad van peertje en vraag tegen zien, deze hoeft niet bij gevuld te worden\" → YS48 (video en overzicht) getoond; voorraad duo (Vraagteken en Peertje, stijl 3): YS40–YS47 en YL01 zijn geplaatst, alleen YS48 ligt nog klaar (zonder OK); er worden geen nieuwe duo-shorts gemaakt.",
@@ -719,7 +720,7 @@
     {
       "id": "V-manon-nieuw-account",
       "aan": "eva, jesse",
-      "wat": "Andries di 24 nov 2026 ±13:25 in mijn sessie: \"ik wil peertje en vraag teken houden, voor de nieuwe content/project maak ik een nieuw acount aan\". Gevolg: het Vraagteken en Peertje blijven op kanaal 1 (het besluit van do 19 nov \"Vervangen\" vervalt daarmee voor kanaal 1); de nieuwe personages (de rechercheurs, AI-proef in docs/waaromdorp/) gaan naar een nieuw account dat Andries zelf aanmaakt. Open: wie maakt de content voor dat account en op welk platform; dat leg ik nu aan Andries voor. Naam en handle komen niet in deze repo."
+      "wat": "Andries di 24 nov 2026 ±13:25 in mijn sessie: \"ik wil peertje en vraag teken houden, voor de nieuwe content/project maak ik een nieuw acount aan\". Gevolg: het Vraagteken en Peertje blijven op kanaal 1 (het besluit van do 19 nov \"Vervangen\" vervalt daarmee voor kanaal 1); de nieuwe personages (de rechercheurs, AI-proef in docs/waaromdorp/) gaan naar een nieuw account dat Andries zelf aanmaakt. Open: wie maakt de content voor dat account en op welk platform; dat leg ik nu aan Andries voor. Naam en handle komen niet in deze repo. Aanvulling 13:43, Andries: \"Eerst Manon, later nieuw (Recommended)\" (ik doe de proef en de keuzes; als het account dagelijks draait een eigen crewlid, zoals Finn voor kanaal 2) en platform \"YouTube en Instagram\". Duo op kanaal 1: \"Na 14 dec weer maken (Recommended)\"."
     },
     {
       "id": "V-manon-weekcijfers-23nov",
