@@ -230,6 +230,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- di 24 nov 2026 ±13:23, in de sessie, over de voorraad van het Vraagteken en Peertje: "deze hoeft niet bij gevuld te worden" → geen nieuwe shorts met het duo; YS48 is de laatste in voorraad (nog zonder OK). De nieuwe personages gaan voor.
 - zo 22 nov 2026 ±02:48, in de sessie, op keuzeblad 1 (stijl; "welke stijlen testen we in de proef?", keuzes: B gepolijst echt, C bijna echt, A echt filmbeeld, D getekend; meer mogelijk): "B, gepolijst echt (Recommended),A, echt filmbeeld,D, getekend" → de proef test A (echt filmbeeld), B (gepolijst echt) en D (getekend); C (bijna echt, filmische 3D) vervalt.
 - zo 22 nov 2026 ±02:21, in de sessie, op "Keur je dit gezicht goed als de rechercheur?" (beeld 1a uit Flow; keuzes: Goed, door naar 1b; Nieuwe maken): "Nieuwe maken" → nieuwe versie van 1a, prompt scherper op het haar, vier versies om uit te kiezen.
 - zo 22 nov 2026 ±02:05, in de sessie, op "Hoe doen we de proef?" (keuzes: API tot [bedrag weggelaten], Ik doe Flow zelf): "Ik doe Flow zelf" → geen API, geen kosten; Andries maakt de beelden en clips in Flow met de stappenkaart, ik kijk na elke stap mee.
