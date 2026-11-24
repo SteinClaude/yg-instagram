@@ -1,0 +1,23 @@
+{
+  "code": "YS48",
+  "besluiten": [
+    {
+      "soort": "pakket",
+      "uitkomst": "ok",
+      "tekst": "Beide OK YS48",
+      "tijd": "2026-11-24T13:25:00+01:00",
+      "via": "sessie",
+      "door": "Andries",
+      "opVraag": "2026-11-18T18:13:00+01:00"
+    },
+    {
+      "soort": "bijschrift",
+      "uitkomst": "ok",
+      "tekst": "Beide OK YS48",
+      "tijd": "2026-11-24T13:25:00+01:00",
+      "via": "sessie",
+      "door": "Andries",
+      "opVraag": "2026-11-18T18:13:00+01:00"
+    }
+  ]
+}

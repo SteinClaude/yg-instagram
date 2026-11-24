@@ -1,3 +1,4 @@
+KLAAR: YS48 pakket OK en bijschrift OK ("Beide OK YS48", di 24 nov 13:25); YouTube wo 25 nov 20:00 (Studio vandaag 17:00); Instagram pas als de sleutel weer werkt · di 24 nov 13:25
 KLAAR: keuzeblad 1 verwerkt (stijlen A, B en D); keuzeblad 2 (de rechercheur) klaar voor Andries; morgen verder · zo 22 nov 02:56
 KLAAR: vijf keuzebladen voor Flow (docs/waaromdorp/keuzebladen.md): stijl, rechercheur, collega, kleuren, sfeer, elk met opties A–D · zo 22 nov 02:22
 KLAAR: stappenkaart Flow aangepast aan Google AI Pro (720p, twee versies per clip, gratis opschalen naar 1080p) · zo 22 nov 01:30
@@ -230,6 +231,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- di 24 nov 2026 ±13:25, in de sessie, op "Mag YS48 woensdag 25 nov om 20:00?": "Beide OK YS48" → pakket OK en bijschrift OK YS48 (keuring.json); YouTube wo 25 nov 2026 20:00, in Studio vandaag tussen 17:00 en 17:45; Instagram pas na het bericht van Eva dat de sleutel werkt.
 - di 24 nov 2026 ±13:23, in de sessie, over de voorraad van het Vraagteken en Peertje: "deze hoeft niet bij gevuld te worden" → geen nieuwe shorts met het duo; YS48 is de laatste in voorraad (nog zonder OK). De nieuwe personages gaan voor.
 - zo 22 nov 2026 ±02:48, in de sessie, op keuzeblad 1 (stijl; "welke stijlen testen we in de proef?", keuzes: B gepolijst echt, C bijna echt, A echt filmbeeld, D getekend; meer mogelijk): "B, gepolijst echt (Recommended),A, echt filmbeeld,D, getekend" → de proef test A (echt filmbeeld), B (gepolijst echt) en D (getekend); C (bijna echt, filmische 3D) vervalt.
 - zo 22 nov 2026 ±02:21, in de sessie, op "Keur je dit gezicht goed als de rechercheur?" (beeld 1a uit Flow; keuzes: Goed, door naar 1b; Nieuwe maken): "Nieuwe maken" → nieuwe versie van 1a, prompt scherper op het haar, vier versies om uit te kiezen.

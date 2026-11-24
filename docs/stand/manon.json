@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-24T13:23:00+01:00",
+  "tijd": "2026-11-24T13:25:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-24T13:20:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-22T02:22:00+01:00 Vijf keuzebladen voor Flow (docs/waaromdorp/keuzebladen.md): stijl van echt naar geanimeerd, gezicht en haar van de rechercheur, van de collega, kleding en kleuren van het duo, en sfeer van het bureau; elk één beeld met opties A–D (verzonnen mensen, geen credits). Geen foto's van internet als voorbeeld (gelijkenis met bestaande personen, gebruiksrecht).",
     "2026-11-22T01:30:00+01:00 Stappenkaart Flow aangepast aan Google AI Pro (docs/waaromdorp/flow-stappen.md): clips in 720p in plaats van 360p, elke clip twee keer (288 credits van zijn maandtegoed), beste versie gratis opschalen naar 1080p; nieuwe bestandsnamen per versie.",
@@ -148,16 +148,16 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "YS48 naar wo 25 nov 20:00 en om 17:00 inplannen in Studio",
   "volgende": "Andries: keuzeblad 2 (de rechercheur) in Flow maken of zijn wensen voor de vrouw geven; daarna blad 3 t/m 5; dan stappenkaart en proefplan omzetten naar A, B en D. YS48: maandag 20:00 is leeg gebleven (geen OK); na pakket OK en bijschrift OK plan ik hem op een vrije 20:00 (voorstel wo 25 nov), in Studio tussen 17:00 en 17:45. Weekanalyse zodra de cijfers er zijn (V-manon-weekcijfers-23nov). Instagram-sleutel kanaal 1 vernieuwen (alleen Andries). Instagram niet openen (eva-ig-stop-1). Stemtegoed (576) bewaren.",
   "kanNietVerder": null,
   "vragen": [
     "Keuzebladen: mag ik ze via de Gemini API maken tot het kleine bedrag uit de sessie (Andries maakt project, plafond en sleutel), of maakt hij ze zelf in Flow? · aanname: niets betalen of aanmaken; geen bot in Flow · blokkeert: ja, voor de keuzes",
-    "Pakket OK en bijschrift OK YS48 (flamingo's)? Ma 23 nov 20:00 is voorbij; voorstel: wo 25 nov 20:00 · aanname: zonder OK niets inplannen · blokkeert: ja, voor het inplannen",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-24T13:25:00+01:00 Andries in de sessie, op \"Mag YS48 woensdag 25 nov om 20:00?\": \"Beide OK YS48\"",
     "2026-11-24T13:23:00+01:00 Andries in de sessie: \"we waren toch bezig met nieuwe content? en laat me ys48 zien, ook wil de vooraad van peertje en vraag tegen zien, deze hoeft niet bij gevuld te worden\" → YS48 (video en overzicht) getoond; voorraad duo (Vraagteken en Peertje, stijl 3): YS40–YS47 en YL01 zijn geplaatst, alleen YS48 ligt nog klaar (zonder OK); er worden geen nieuwe duo-shorts gemaakt.",
     "2026-11-24T13:20:00+01:00 Andries in de sessie: \"oke laten we veder gaan,\" en \"zet het klaar\" → keuzeblad 2 (de rechercheur) klaargezet om te plakken in Flow (ik typ niet zelf in Flow).",
     "2026-11-22T02:56:00+01:00 Andries in de sessie: \"morge veder\" (sessie gestopt; morgen verder met keuzeblad 2).",
