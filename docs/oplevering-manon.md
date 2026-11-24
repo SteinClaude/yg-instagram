@@ -231,6 +231,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- di 24 nov 2026 ±13:59, in de sessie: "we gaan veder met flow, de acounts kunnen ook als de videos echt klaar zijn" → eerst verder met de keuzebladen en de proef in Flow; het nieuwe account maakt Andries pas als de video's klaar zijn.
 - di 24 nov 2026 ±13:43, in de sessie, op "Moeten er weer nieuwe shorts met het duo komen?": "Na 14 dec weer maken (Recommended)"; op "Wie maakt de content voor het nieuwe account met de rechercheurs?": "Eerst Manon, later nieuw (Recommended)"; op "Op welk platform komt het nieuwe account?": "YouTube en Instagram" → duo-shorts op kanaal 1 na 14 dec weer maken; ik doe de proef en de keuzes voor het nieuwe account, later een eigen crewlid; het nieuwe account komt op YouTube en Instagram (Andries maakt het aan).
 - di 24 nov 2026 ±13:25, in de sessie: "ik wil peertje en vraag teken houden, voor de nieuwe content/project maak ik een nieuw acount aan" → het Vraagteken en Peertje blijven op kanaal 1 ("Vervangen" van do 19 nov vervalt voor kanaal 1); de rechercheurs gaan naar een nieuw account dat Andries zelf aanmaakt. Gemeld aan Eva en Jesse (V-manon-nieuw-account).
 - di 24 nov 2026 ±13:25, in de sessie, op "Mag YS48 woensdag 25 nov om 20:00?": "Beide OK YS48" → pakket OK en bijschrift OK YS48 (keuring.json); YouTube wo 25 nov 2026 20:00, in Studio vandaag tussen 17:00 en 17:45; Instagram pas na het bericht van Eva dat de sleutel werkt.
