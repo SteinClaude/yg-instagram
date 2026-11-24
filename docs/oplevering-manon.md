@@ -231,6 +231,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- di 24 nov 2026 ±13:25, in de sessie: "ik wil peertje en vraag teken houden, voor de nieuwe content/project maak ik een nieuw acount aan" → het Vraagteken en Peertje blijven op kanaal 1 ("Vervangen" van do 19 nov vervalt voor kanaal 1); de rechercheurs gaan naar een nieuw account dat Andries zelf aanmaakt. Gemeld aan Eva en Jesse (V-manon-nieuw-account).
 - di 24 nov 2026 ±13:25, in de sessie, op "Mag YS48 woensdag 25 nov om 20:00?": "Beide OK YS48" → pakket OK en bijschrift OK YS48 (keuring.json); YouTube wo 25 nov 2026 20:00, in Studio vandaag tussen 17:00 en 17:45; Instagram pas na het bericht van Eva dat de sleutel werkt.
 - di 24 nov 2026 ±13:23, in de sessie, over de voorraad van het Vraagteken en Peertje: "deze hoeft niet bij gevuld te worden" → geen nieuwe shorts met het duo; YS48 is de laatste in voorraad (nog zonder OK). De nieuwe personages gaan voor.
 - zo 22 nov 2026 ±02:48, in de sessie, op keuzeblad 1 (stijl; "welke stijlen testen we in de proef?", keuzes: B gepolijst echt, C bijna echt, A echt filmbeeld, D getekend; meer mogelijk): "B, gepolijst echt (Recommended),A, echt filmbeeld,D, getekend" → de proef test A (echt filmbeeld), B (gepolijst echt) en D (getekend); C (bijna echt, filmische 3D) vervalt.

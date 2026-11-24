@@ -157,6 +157,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-24T13:25:00+01:00 Andries in de sessie: \"ik wil peertje en vraag teken houden, voor de nieuwe content/project maak ik een nieuw acount aan\"",
     "2026-11-24T13:25:00+01:00 Andries in de sessie, op \"Mag YS48 woensdag 25 nov om 20:00?\": \"Beide OK YS48\"",
     "2026-11-24T13:23:00+01:00 Andries in de sessie: \"we waren toch bezig met nieuwe content? en laat me ys48 zien, ook wil de vooraad van peertje en vraag tegen zien, deze hoeft niet bij gevuld te worden\" → YS48 (video en overzicht) getoond; voorraad duo (Vraagteken en Peertje, stijl 3): YS40–YS47 en YL01 zijn geplaatst, alleen YS48 ligt nog klaar (zonder OK); er worden geen nieuwe duo-shorts gemaakt.",
     "2026-11-24T13:20:00+01:00 Andries in de sessie: \"oke laten we veder gaan,\" en \"zet het klaar\" → keuzeblad 2 (de rechercheur) klaargezet om te plakken in Flow (ik typ niet zelf in Flow).",
@@ -715,6 +716,11 @@
     }
   ],
   "voorEva": [
+    {
+      "id": "V-manon-nieuw-account",
+      "aan": "eva, jesse",
+      "wat": "Andries di 24 nov 2026 ±13:25 in mijn sessie: \"ik wil peertje en vraag teken houden, voor de nieuwe content/project maak ik een nieuw acount aan\". Gevolg: het Vraagteken en Peertje blijven op kanaal 1 (het besluit van do 19 nov \"Vervangen\" vervalt daarmee voor kanaal 1); de nieuwe personages (de rechercheurs, AI-proef in docs/waaromdorp/) gaan naar een nieuw account dat Andries zelf aanmaakt. Open: wie maakt de content voor dat account en op welk platform; dat leg ik nu aan Andries voor. Naam en handle komen niet in deze repo."
+    },
     {
       "id": "V-manon-weekcijfers-23nov",
       "aan": "eva",
