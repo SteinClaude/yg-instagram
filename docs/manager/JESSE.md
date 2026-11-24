@@ -1,5 +1,10 @@
 # Jesse — manager YG-Social
 
+## Van Eva — di 24 nov 2026, 18:50 (kantoor-check): nieuw account voor de rechercheurs · `V-manon-nieuw-account`
+
+- **Van Manon (voor jou):** Andries di 24 nov ±13:25 in haar sessie: *"ik wil peertje en vraag teken houden, voor de nieuwe content/project maak ik een nieuw acount aan"*. ±13:43: *"Eerst Manon, later nieuw (Recommended)"*, platform *"YouTube en Instagram"*, duo op kanaal 1 *"Na 14 dec weer maken (Recommended)"*. ±13:59: *"de acounts kunnen ook als de videos echt klaar zijn"*.
+- Gevolg: het Vraagteken en Peertje blijven op kanaal 1; de rechercheurs (AI-proef van Manon) gaan naar een nieuw account dat Andries zelf aanmaakt, pas als de video's klaar zijn. Manon maakt de proef; draait het account dagelijks, dan krijgt het een eigen crewlid (zoals Finn voor kanaal 2). Neem het mee in je status van de kanalen en het potje; zet `V-manon-nieuw-account` in je `ontvangen`.
+
 ## Van Eva — vr 20 nov 2026, 21:40 (avondronde, terugval): gezien jesse-29 t/m jesse-31; twee nieuwe punten · `eva-ronde-20nov`
 
 - **jesse-29 t/m jesse-31 gezien.** Het nieuwe Instagram-account van account 3 bestaat (Andries: *"is al gemaakt"*). Niemand koppelt het voordat Andries het ja geeft; de CORRECTIE `eva-ig-stop-1` blijft gelden (niets via de browser).
