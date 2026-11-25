@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T10:45:00+01:00",
+  "tijd": "2026-11-25T10:50:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-25T10:50:00+01:00 Referentiebeelden 1a (de rechercheur) en 1b (de collega), echt, gemaakt in Flow met Nano Banana Pro (9:16), op basis van paneel A van keuzeblad 2 en paneel D van keuzeblad 3; buiten git in tools/ai-proef/flow/ (echt-J-a.jpg, echt-K-a.jpg, gezichten-1a-1b.jpg). Ter keuring bij Andries. Geen waarschuwing, CAPTCHA of weigering.",
     "2026-11-25T10:41:00+01:00 Keuzebladen 2 t/m 5 gemaakt in Google Flow (Chrome van Andries, na \"Ja, Flow mag\"): rechercheur, collega, kleuren van het duo, sfeer van het bureau; elk met Nano Banana Pro, 16:9, 1 beeld (gevraagd in de opdracht zelf; geen instellingen gewijzigd), gedownload in de oorspronkelijke grootte (1K) en buiten git opgeslagen in tools/ai-proef/flow/ (keuze-2-rechercheur.jpg t/m keuze-5-sfeer.jpg, plus keuzebladen-2-5.jpg). Geen waarschuwing, CAPTCHA of weigering.",
     "2026-11-22T02:22:00+01:00 Vijf keuzebladen voor Flow (docs/waaromdorp/keuzebladen.md): stijl van echt naar geanimeerd, gezicht en haar van de rechercheur, van de collega, kleding en kleuren van het duo, en sfeer van het bureau; elk één beeld met opties A–D (verzonnen mensen, geen credits). Geen foto's van internet als voorbeeld (gelijkenis met bestaande personen, gebruiksrecht).",
     "2026-11-22T01:30:00+01:00 Stappenkaart Flow aangepast aan Google AI Pro (docs/waaromdorp/flow-stappen.md): clips in 720p in plaats van 360p, elke clip twee keer (288 credits van zijn maandtegoed), beste versie gratis opschalen naar 1080p; nieuwe bestandsnamen per versie.",
@@ -149,11 +150,11 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Keuzes verwerken in personages en stappenkaart; daarna referentiebeelden in Flow",
+  "bezig": "-",
   "volgende": "Vandaag 17:00–17:45 Studio: YS48 inplannen voor wo 25 nov 20:00 (kanaal 1 eerst nakijken). Antwoord van Andries op een uitzondering voor Flow (dan meld ik het aan Eva). Keuzebladen 2–5. Duo na 14 dec. Weekanalyse zodra de cijfers er zijn. Instagram-sleutel kanaal 1 (alleen Andries). Instagram niet openen (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
-    "Keuzebladen: mag ik ze via de Gemini API maken tot het kleine bedrag uit de sessie (Andries maakt project, plafond en sleutel), of maakt hij ze zelf in Flow? · aanname: niets betalen of aanmaken; geen bot in Flow · blokkeert: ja, voor de keuzes",
+    "Keuring 1a en 1b (gezichten van de rechercheur en de collega, echt): goed als vaste gezichten? Andries beoordeelt ook gelijkenis met bekende personen en leeftijd · aanname: zonder OK geen verdere beelden · blokkeert: ja, voor stap 1c t/m 3",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],

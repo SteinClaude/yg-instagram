@@ -1,3 +1,4 @@
+KLAAR: gezichten 1a en 1b (rechercheur en collega, echt) gemaakt in Flow op basis van zijn keuzes; ter keuring · wo 25 nov 10:50
 KLAAR: keuzebladen 2 t/m 5 gemaakt in Flow (rechercheur, collega, kleuren, sfeer), buiten git in tools/ai-proef/flow/; ter keuze bij Andries · wo 25 nov 10:41
 KAN NIET VERDER: YS48 niet ingepland op di 24 nov (wachttaak stopte met de sessie) · nodig: niets van Andries; ik plan hem vandaag 17:00–17:45 in voor wo 25 nov 20:00 · wo 25 nov 10:08
 KLAAR: YS48 pakket OK en bijschrift OK ("Beide OK YS48", di 24 nov 13:25); YouTube wo 25 nov 20:00 (Studio vandaag 17:00); Instagram pas als de sleutel weer werkt · di 24 nov 13:25
