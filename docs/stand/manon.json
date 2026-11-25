@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T19:01:00+01:00",
+  "tijd": "2026-11-25T19:03:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -168,7 +168,17 @@
   "kanNietVerder": null,
   "vragen": [
     {
-      "vraag": "De voorraad van 7 dagen staat (12:00 elke dag ingepland tot 15 dec; 20:00: YS48 do 26 nov en YC01 di 1 dec ter keuring). Is het goed zo voor nu?",
+      "vraag": "Nieuwe duo-filmpjes (Peertje en het Vraagteken) nu al maken, nu er weer stemtegoed is (Creator), in plaats van na 14 dec?",
+      "aan": "andries",
+      "keuzes": [
+        "Ja, nu al",
+        "Na 14 dec"
+      ],
+      "advies": "Ja: 2–3 per week om 20:00 naast de 2 zaken van de rechercheurs, zodat 20:00 elke dag gevuld is.",
+      "blokkeert": false
+    },
+    {
+      "vraag": "De voorraad van 7 dagen staat: 12:00 elke dag ingepland tot 15 dec (uitleg-shorts in de oude stijl, YS20–YS39); 20:00: YS48 (do 26 nov, het laatste duo-filmpje dat klaarstaat) en YC01 (di 1 dec, ter keuring). Is het goed zo voor nu?",
       "aan": "andries",
       "keuzes": [
         "Ja, goed zo",
@@ -201,6 +211,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T19:03:00+01:00 Andries in de sessie: \"oke laat me even zien welke videos we hebben, zodat ik ze kan bekijken\" → overzichtsblad docs/voorraad-kanaal-1.jpg en de video's van de komende 7 dagen getoond. Herstel van mijn eerdere antwoord: YS20–YS39 (12:00) zijn uitleg-shorts in de oude stijl, niet het duo; het laatste duo-filmpje dat klaarstaat is YS48.",
     "2026-11-25T19:01:00+01:00 Andries in de sessie (eigen bericht, in plaats van antwoord op de keuring van YC01, de stijl OK YC en de vraag over de voorraad): \"dus dit is de eerste video van het nieuwe concept toch? en dan hebben we nog filmpjes van peertje?\" Geen keuring gegeven; de drie vragen staan nog open.",
     "2026-11-25T18:47:00+01:00 Flow (Chrome van Andries): referentiebeeld kapperszaak in Wonderwick (gratis) en 4 videoaanvragen voor YC01 (haak bij de paal, oude kapperszaak, doeken om de paal, slot bij de kapperszaak), elk 2 versies, elk met \"Goedkeuren\"; 8 clips in 720p en de gekozen versies in 1080p buiten git in tools/ai-proef/flow/yc01/. ElevenLabs: 506 tekens met Lily.",
     "2026-11-25T18:27:00+01:00 Andries in de sessie, op \"Wat doen we hierna?\" (keuzes: Eerste zaak maken; Eerst meer plekken; mijn advies: de rood-witte paal van de kapper): \"Eerste zaak maken\"",
