@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T19:44:00+01:00",
+  "tijd": "2026-11-25T19:53:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-25T19:44:00+01:00 YS20–YS39 (20 uitleg-shorts) in YouTube Studio openbaar gezet op besluit van Andries (\"Toch alles vandaag\"); Studio stond op kanaal 1 na \"Staat nu op kanaal 1\". Studio meldt bij alle 20: Openbaar, 25 nov 2026, Gepubliceerd; geen short meer op Gepland. Kaarten (plaatsen: geplaatst) en studio.txt bijgewerkt.",
     "2026-11-25T18:53:00+01:00 Pakket YC01 gemaakt (eerste zaak van de rechercheurs, nieuwe reeks YC): \"Why do barber poles have red and white stripes?\", 34 s, 1080×1920, −14,6 LUFS; video.mp4, video-upload.mp4 (8,5 MB), studio.txt (di 1 dec 2026 20:00), bron/bronnen.md, bron/stem.txt, overzicht.jpg, instagram/ (reel 21,6 MB, omslag met titel, bijschrift), pakket.json met de vraag om pakket OK en bijschrift OK. Bronnen: The Worshipful Company of Barbers, TheCollector (2026), Kearny County Museum (2023); het hart van het verhaal als overlevering gebracht.",
@@ -164,20 +164,10 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Niets: YS20–YS39 staan openbaar. Open: keuring YC01, stijl OK YC, voorraadvraag, duo-filmpjes nu of na 14 dec.",
+  "bezig": "Nieuwe duo-filmpjes (stijl 3, Laura en Liam): YS49 (waarom uien je laten huilen) en YS50 (waarom potloden geel zijn), met de bronnen uit docs/bronnen-voorraad.md.",
   "volgende": "Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00 (kanaal 1 eerst nakijken). 12:00 heeft nu geen voorraad meer: nieuwe shorts nodig (duo nu al, of rechercheurs vaker) — vraag aan Andries. Na keuring YC01: inplannen di 1 dec 20:00. YC02 voor vr 4 dec. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
-    {
-      "vraag": "Nieuwe duo-filmpjes (Peertje en het Vraagteken) nu al maken, nu er weer stemtegoed is (Creator), in plaats van na 14 dec?",
-      "aan": "andries",
-      "keuzes": [
-        "Ja, nu al",
-        "Na 14 dec"
-      ],
-      "advies": "Ja: 2–3 per week om 20:00 naast de 2 zaken van de rechercheurs, zodat 20:00 elke dag gevuld is.",
-      "blokkeert": false
-    },
     {
       "vraag": "De voorraad van 7 dagen staat: 12:00 elke dag ingepland tot 15 dec (uitleg-shorts in de oude stijl, YS20–YS39); 20:00: YS48 (do 26 nov, het laatste duo-filmpje dat klaarstaat) en YC01 (di 1 dec, ter keuring). Is het goed zo voor nu?",
       "aan": "andries",
@@ -212,6 +202,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T19:53:00+01:00 Andries in de sessie, op \"Nieuwe duo-filmpjes nu al maken voor de lege plekken?\" (keuzes: Ja, nu al; Na 14 dec): \"Ja, nu al\"",
     "2026-11-25T19:10:00+01:00 Andries in de sessie, op \"YouTube Studio staat op een ander kanaal dan kanaal 1 … Wil je Studio op kanaal 1 zetten?\" (keuzes: Staat nu op kanaal 1; Later): \"Staat nu op kanaal 1\"",
     "2026-11-25T19:44:00+01:00 YouTube Studio (Chrome van Andries, kanaal 1, rood vraagteken nagekeken): YS39 t/m YS20 één voor één van Gepland naar Openbaar → Publiceren. Eén keer laadde de pagina te laat en kwam een klik in het planvenster van YS21; daarna nagekeken: YS21 stond nog ongewijzigd op Gepland 27 nov en is daarna gewoon openbaar gezet. Geen andere video's aangeraakt.",
     "2026-11-25T19:26:00+01:00 Andries in de sessie, op \"Wat doen we met de 20 uitleg-shorts zonder Peertje (YS20–YS39)?\" (na zijn bericht \"de videos zonder peertje wil ik nu vandaag allemaal posten zodat ze niet verloren gaan maar wel alvast gepost zijn,\"; keuzes: Laten staan; Sneller, 2 per dag; Toch alles vandaag — met de uitleg dat ze al ingepland staan, dat alles op één dag bereik kost en dat het buiten mijn Studio-tijd 17:00–17:45 valt): \"Toch alles vandaag\"",
