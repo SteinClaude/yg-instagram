@@ -238,6 +238,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 25 nov 2026 ±15:37, in de sessie, op "Welke ElevenLabs-stem wordt de rechercheur?" (filmpje stemproef-rechercheur.mp4, zelfde zin; keuzes: 1 Lily; 2 Sarah; 3 Alice): "1 Lily (Recommended)" → de rechercheur spreekt met de ElevenLabs-stem Lily (Brits, zelfverzekerd).
 - wo 25 nov 2026 ±15:19, in de sessie, op "Wat moet er anders aan de tekst in beeld?" (meer keuzes mogelijk: Woord voor woord, groter; Dossierletter; Minder tekst; Titel en stempel anders): "Woord voor woord, groter"
 - wo 25 nov 2026 ±15:19, in de sessie, op "Welke stem wil je voor de rechercheur in de proefshort?" (keuzes: Gratis, 3 proefstemmen; ElevenLabs — "kost tegoed"): "ElevenLabs"
 - wo 25 nov 2026 ±15:18, in de sessie, op "Wat moet er anders?" (meer keuzes mogelijk: Beeld bij het verhaal; Andere stem; Tekst in beeld; Langer of rustiger): "Beeld bij het verhaal,Andere stem,Tekst in beeld"

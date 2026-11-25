@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T15:19:00+01:00",
+  "tijd": "2026-11-25T15:38:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -163,6 +163,9 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T15:38:00+01:00 Flow (Chrome van Andries): drie nieuwe aanvragen in stijl D bij het verhaal (scène 1 met wandklok, scène 2 met een foto van een zonnewijzer in de map, scène 3 achter een verlichte wijzerplaat in een klokkentoren), elk 2 versies, elk met \"Goedkeuren\"; geen waarschuwing of weigering.",
+    "2026-11-25T15:38:00+01:00 ElevenLabs: drie proefstemmen (Lily, Sarah, Alice; 225 tekens) en de rest van proefshort 2 met Lily (244 tekens); bewaard buiten git in tools/ai-proef/flow/proefshort2/.",
+    "2026-11-25T15:37:00+01:00 Andries in de sessie, op \"Welke ElevenLabs-stem wordt de rechercheur?\" (filmpje stemproef-rechercheur.mp4, zelfde zin; keuzes: 1 Lily; 2 Sarah; 3 Alice): \"1 Lily (Recommended)\"",
     "2026-11-25T15:19:00+01:00 ElevenLabs-tegoed gelezen (alleen lezen, kost niets): het abonnement is nu Creator, met een nieuwe periode op 22 dec; er is ruim tegoed. Dat heeft Andries zelf gedaan, buiten deze sessie.",
     "2026-11-25T15:17:00+01:00 Andries in de sessie, op \"Is de proefshort de goede richting voor het nieuwe account?\" (keuzes: Goede richting; Aanpassen): \"Aanpassen\"",
     "2026-11-25T15:18:00+01:00 Andries in de sessie, op \"Wat moet er anders?\" (meer keuzes mogelijk: Beeld bij het verhaal; Andere stem; Tekst in beeld; Langer of rustiger): \"Beeld bij het verhaal,Andere stem,Tekst in beeld\"",
