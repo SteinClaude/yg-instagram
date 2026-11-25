@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T10:08:00+01:00",
+  "tijd": "2026-11-25T10:24:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-22T02:22:00+01:00 Vijf keuzebladen voor Flow (docs/waaromdorp/keuzebladen.md): stijl van echt naar geanimeerd, gezicht en haar van de rechercheur, van de collega, kleding en kleuren van het duo, en sfeer van het bureau; elk één beeld met opties A–D (verzonnen mensen, geen credits). Geen foto's van internet als voorbeeld (gelijkenis met bestaande personen, gebruiksrecht).",
     "2026-11-22T01:30:00+01:00 Stappenkaart Flow aangepast aan Google AI Pro (docs/waaromdorp/flow-stappen.md): clips in 720p in plaats van 360p, elke clip twee keer (288 credits van zijn maandtegoed), beste versie gratis opschalen naar 1080p; nieuwe bestandsnamen per versie.",
@@ -148,7 +148,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "Keuzeblad 2 in Flow maken (Chrome van Andries)",
   "volgende": "Vandaag 17:00–17:45 Studio: YS48 inplannen voor wo 25 nov 20:00 (kanaal 1 eerst nakijken). Antwoord van Andries op een uitzondering voor Flow (dan meld ik het aan Eva). Keuzebladen 2–5. Duo na 14 dec. Weekanalyse zodra de cijfers er zijn. Instagram-sleutel kanaal 1 (alleen Andries). Instagram niet openen (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
@@ -157,6 +157,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T10:24:00+01:00 Andries in de sessie, op \"Mag ik Flow voor je bedienen, met deze voorwaarden?\" (alleen onze prompts uit keuzebladen en stappenkaart; resultaten downloaden naar tools/ai-proef/flow/; geen instellingen, abonnement of account; niets kopen; stoppen bij waarschuwing, CAPTCHA of weigering; nooit om een filter heen; rustig tempo) (keuzes: Ja, Flow mag; Nee, ik doe het): \"Ja, Flow mag\"",
     "2026-11-25T10:08:00+01:00 Andries in de sessie: \"jij kan toch me pc besturen, dus als ik dit open zet kan jij dit toch doen\" (Flow). Voorgelegd: uitzondering op de harde regel geen browser-automatisering, alleen voor Flow, met voorwaarden (alleen onze prompts, downloads naar tools/ai-proef/flow/, geen instellingen of account, stoppen bij waarschuwing, CAPTCHA of weigering, nooit om een filter heen). Geen expliciet verbod gevonden in de algemene voorwaarden van Google; wel risico op beperking bij misbruik.",
     "2026-11-25T10:08:00+01:00 Di 24 nov: de wachttaak voor 17:00 stopte toen de sessie sloot; YS48 is niet in Studio gezet. Vandaag 17:00–17:45 alsnog, voor wo 25 nov 20:00.",
     "2026-11-24T13:59:00+01:00 Andries in de sessie: \"we gaan veder met flow, de acounts kunnen ook als de videos echt klaar zijn\"",
@@ -720,6 +721,11 @@
     }
   ],
   "voorEva": [
+    {
+      "id": "V-manon-flow-uitzondering",
+      "aan": "eva",
+      "wat": "Andries wo 25 nov 2026 ±10:24 in mijn sessie, op \"Mag ik Flow voor je bedienen, met deze voorwaarden?\": \"Ja, Flow mag\". Uitzondering op de harde regel geen browser-automatisering, alleen voor Google Flow in zijn Chrome (Claude in Chrome), voor de AI-proef van het nieuwe account. Voorwaarden: alleen onze prompts; downloads naar tools/ai-proef/flow/ buiten git; geen instellingen, abonnement of account; niets kopen; stoppen bij waarschuwing, CAPTCHA of weigering; nooit om een filter heen. Graag opnemen in mijn CLAUDE.md als je dat nodig vindt."
+    },
     {
       "id": "V-manon-nieuw-account",
       "aan": "eva, jesse",
