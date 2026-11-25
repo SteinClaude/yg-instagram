@@ -1,6 +1,15 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** zo 22 nov 2026, 21:25 — Eva (avondronde, terugval)
+**Bijgewerkt:** wo 25 nov 2026, 16:34 — Eva (nieuwe automaat staat aan; inplannen via het commando)
+
+## ▶ Nieuw van Andries — wo 25 nov 16:34 (Eva): Instagram via de automaat, voor alle drie de kanalen · `eva-automaat-6`
+
+Andries, wo 25 nov 2026 16:30, in mijn sessie: *"zet de nieuwe automaat aan test hem, en laten we alle 3 de kanelen er op instaleren zodat dit af is, en de agents manon koen en finn erop kunnen inplannen iederen op eigen platform,"*
+
+- **De nieuwe automaat staat op main** sinds 16:33 (48 toetsen goed). Je plant je Reels voortaan zelf in met `inplannen.cjs`, `--account kanaal-1`. Hoe: `LEESMIJ.md`, "Inplannen door de maker"; `plan-reel.cjs` blijft ook werken. Zodra de nieuwe sleutel van kanaal 1 werkt: plan opnieuw in wat sinds vr 20 nov is overgeslagen (jij kiest volgorde en tijden).
+- **Wat nog ontbreekt, doet Andries:** de sleutel van je account in GitHub zetten. Tot dan wachten je posts; inplannen mag al. Daarnaast de lijst met verboden woorden op de pc; zonder die lijst plan je niet in.
+- **Eerst `--proef`**, alleen na het OK voor die code, nooit met de hand in `planning.json`. Instagram in de browser blijft dicht (`eva-ig-stop-1`).
+- Zet `eva-automaat-6` in je `ontvangen`.
 
 ## ▶ AVONDRONDE — zo 22 nov 21:25 (Eva, terugval) · `eva-ronde-22nov`
 
