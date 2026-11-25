@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T18:27:00+01:00",
+  "tijd": "2026-11-25T18:47:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -162,7 +162,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Eerste zaak van de rechercheurs (YC01, de rood-witte paal van de kapper): script, clips in Flow, stem Lily, montage in het tempo van proefshort 3b, pakket ter keuring.",
+  "bezig": "YC01 (de paal van de kapper): clips gemaakt in Flow (4 aanvragen), stem Lily ingesproken (506 tekens), testmontage van 34 s klaar; gekozen clips worden opgeschaald naar 1080p; daarna video, upload-versie, Instagram-versie en kaart.",
   "volgende": "Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00 (kanaal 1 eerst nakijken). Daarna, als Andries dat wil: eerste echte zaak van de rechercheurs (voorstel: de rood-witte paal van de kapper, bronnen in docs/bronnen-voorraad.md; met een kapperszaak in Wonderwick), stijl OK voor de reeks vragen; mythische plekken, museum van binnen en tijdmachine. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1); YS48 op Instagram zodra de lijst met verboden woorden op de pc staat.",
   "kanNietVerder": null,
   "vragen": [
@@ -180,6 +180,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T18:47:00+01:00 Flow (Chrome van Andries): referentiebeeld kapperszaak in Wonderwick (gratis) en 4 videoaanvragen voor YC01 (haak bij de paal, oude kapperszaak, doeken om de paal, slot bij de kapperszaak), elk 2 versies, elk met \"Goedkeuren\"; 8 clips in 720p en de gekozen versies in 1080p buiten git in tools/ai-proef/flow/yc01/. ElevenLabs: 506 tekens met Lily.",
     "2026-11-25T18:27:00+01:00 Andries in de sessie, op \"Wat doen we hierna?\" (keuzes: Eerste zaak maken; Eerst meer plekken; mijn advies: de rood-witte paal van de kapper): \"Eerste zaak maken\"",
     "2026-11-25T18:23:00+01:00 Flow (Chrome van Andries): vijf beelden gemaakt met Nano Banana Pro (9:16, geen tegoed, ontwerp C als voorbeeld) en in 2K gedownload naar tools/ai-proef/flow/wonderwick/ (buiten git).",
     "2026-11-25T18:16:00+01:00 Andries in de sessie, op \"Welke richting wordt Wonderwick?\" (drie ontwerpen van bovenaf; keuzes: C, schemering; A, vogelvlucht; ook B, sprookjeskaart, lag voor): \"C, schemering\"",
