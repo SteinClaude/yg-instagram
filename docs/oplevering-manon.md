@@ -234,6 +234,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 25 nov 2026 ±11:04, in de sessie, op "Wat bedoel je met de bijna echte?" (keuzes: Getekend (D); Toch bijna echt (C); Allebei (C en D)): "Allebei (C en D)" → C (bijna echt, filmische 3D) komt terug naast D (getekend); van beide gezichten maak ik beide versies.
 - wo 25 nov 2026 ±11:02, in de sessie, op "Keur je deze twee gezichten goed?" (1a de rechercheur, 1b de collega, echt): "ja oke nu de bijna echte" → gezichten 1a en 1b goedgekeurd als vaste gezichten; welke stijl met "de bijna echte" bedoeld is, vraag ik na.
 - wo 25 nov 2026 ±10:45, in de sessie, op blad 2 (rechercheur): "A, donkere bob"; op blad 3 (collega): "D, snor"; op blad 4 (kleuren): "A, camel en roest (Recommended)"; op blad 5 (sfeer): "A, zonsondergang (Recommended)" → rechercheur: donkere bob (paneel A van blad 2); collega: donkere huid, kort grijs haar, snor, rond goudkleurig brilletje (paneel D van blad 3); kleuren camel en roest met olijfgroen en bordeaux; sfeer van het bureau: zonsondergang.
 - wo 25 nov 2026 ±10:24, in de sessie, op "Mag ik Flow voor je bedienen, met deze voorwaarden?" (alleen onze prompts; resultaten naar tools/ai-proef/flow/; geen instellingen, abonnement of account; niets kopen; stoppen bij waarschuwing, CAPTCHA of weigering; nooit om een filter heen) (keuzes: Ja, Flow mag; Nee, ik doe het): "Ja, Flow mag" → uitzondering op geen browser-automatisering, alleen voor Flow; gemeld aan Eva (V-manon-flow-uitzondering).
