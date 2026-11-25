@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T16:00:00+01:00",
+  "tijd": "2026-11-25T16:32:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-25T16:32:00+01:00 Proefshort 3 gemaakt (na \"Nog aanpassen\" en \"Langer en meer verhaal,Meer beweging in beeld,Haak en einde sterker\"): zes scènes, 49 s, 1080×1920, −14 LUFS. Vier nieuwe clips met bewegende camera (klok in close-up met terugrijdende camera, meelopende camera naar het bureau, rond de zonnewijzer in een tuin, omhoog naar de wijzers in de klokkentoren) plus twee clips uit proefshort 2; alle in 1080p. Haak \"Every clock you own is copying something…\", slot \"…you're reading a shadow. Case closed.\"; stem Lily (478 tekens). Alleen lokaal, buiten git in tools/ai-proef/flow/proefshort3/; niets geplaatst.",
     "2026-11-25T15:58:00+01:00 Proefshort 2 gemaakt (na \"Aanpassen\", \"Beeld bij het verhaal,Andere stem,Tekst in beeld\", \"ElevenLabs\", \"Woord voor woord, groter\" en \"1 Lily (Recommended)\"): drie nieuwe clips in stijl D bij het verhaal (wandklok, zonnewijzer in de map, klokkentoren), beste versie per scène opgeschaald naar 1080p; stem Lily (ElevenLabs) op tempo 1,1; één groot woord tegelijk, kernwoorden goudgeel. 26,4 s, 1080×1920. Alleen lokaal, buiten git in tools/ai-proef/flow/proefshort2/; niets geplaatst. Uitleg in docs/waaromdorp/ai-proef.md.",
     "2026-11-25T15:13:00+01:00 Stijlkeuze D vastgelegd (60e1e08).",
     "2026-11-25T15:13:00+01:00 Proefshort in stijl D gemaakt (na \"D, getekend\", ±15:06): \"Case #001 — Why clocks go clockwise\", 26,4 s, 1080×1920, −14 LUFS. Beeld: versie 1 van scène 1–3, in Flow gratis opgeschaald naar 1080p; stem Kokoro (gratis, lokaal, af_heart) als voice-over; ondertitels van hoogstens drie woorden; stempel \"CASE CLOSED\". Bronnen dezelfde als YS47 (The Irish Times 2001, The Old Farmer's Almanac). Alleen lokaal, buiten git in tools/ai-proef/flow/proefshort/; niets geplaatst. Uitleg in docs/waaromdorp/ai-proef.md.",
@@ -156,14 +157,15 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Proefshort 3: ±50 s in zes scènes, camerabeweging in de nieuwe clips, sterkere haak en slot; stem Lily.",
-  "volgende": "Vandaag 17:00–17:45 Studio: YS48 inplannen voor wo 25 nov 20:00 (kanaal 1 eerst nakijken). Reactie van Andries op proefshort 2. Duo na 14 dec. Weekanalyse zodra de cijfers er zijn. Instagram-sleutel kanaal 1 (alleen Andries). Instagram niet openen (eva-ig-stop-1).",
+  "bezig": "Niets: proefshort 3 ligt bij Andries. Om 17:00 YS48 in Studio.",
+  "volgende": "Vandaag 17:00–17:45 Studio: YS48 inplannen voor wo 25 nov 20:00 (kanaal 1 eerst nakijken). Reactie van Andries op proefshort 3. Duo na 14 dec. Weekanalyse zodra de cijfers er zijn. Instagram-sleutel kanaal 1 (alleen Andries). Instagram niet openen (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T16:32:00+01:00 Flow (Chrome van Andries): tegoed gelezen (618 punten om 16:00, nieuwe periode 24 dec); vier nieuwe aanvragen in stijl D met bewegende camera, elk 2 versies, elk met \"Goedkeuren\" (clip 4 gaf eerst \"Er ging iets mis\", dezelfde aanvraag lukte de tweede keer); vier gekozen versies opgeschaald naar 1080p. ElevenLabs: 478 tekens met Lily. Alles buiten git in tools/ai-proef/flow/.",
     "2026-11-25T15:59:00+01:00 Andries in de sessie, op \"Is proefshort 2 goed zo?\" (keuzes: Goed zo; Nog aanpassen): \"Nog aanpassen\"",
     "2026-11-25T16:00:00+01:00 Andries in de sessie, op \"Wat moet er nog anders?\" (meer keuzes mogelijk: Langer en meer verhaal; Meer beweging in beeld; Stem of tempo; Haak en einde sterker): \"Langer en meer verhaal,Meer beweging in beeld,Haak en einde sterker\"",
     "2026-11-25T15:58:00+01:00 Flow (Chrome van Andries): de gekozen versies van de nieuwe scène 1, 2 en 3 opgeschaald naar 1080p via de downloadknop, één tegelijk; geen tegoed gevraagd, geen instellingen gewijzigd. Clips buiten git in tools/ai-proef/flow/ (nieuw-scene*).",

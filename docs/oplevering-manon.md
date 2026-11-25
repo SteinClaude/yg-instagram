@@ -1,3 +1,4 @@
+KLAAR: proefshort 3 stijl D (zes scènes, 49 s, bewegende camera, sterkere haak en slot, stem Lily) buiten git in tools/ai-proef/flow/proefshort3/; aan Andries getoond · wo 25 nov 16:32
 KLAAR: proefshort 2 stijl D (beeld bij het verhaal, stem Lily, woord voor woord groter; 26,4 s) buiten git in tools/ai-proef/flow/proefshort2/; aan Andries getoond · wo 25 nov 15:58
 KLAAR: proefshort stijl D ("Case #001 — Why clocks go clockwise", 26,4 s, gratis Kokoro-stem, clips in 1080p) buiten git in tools/ai-proef/flow/proefshort/; aan Andries getoond · wo 25 nov 15:13
 KLAAR: clips van de rechercheurs in Flow, stijl B (gepolijst echt) en D (getekend), 3 scènes × 2 versies per stijl; vergelijkingsvideo vergelijking-B-D.mp4 buiten git; stijlkeuze bij Andries · wo 25 nov 12:07
