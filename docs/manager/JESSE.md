@@ -1,5 +1,15 @@
 # Jesse — manager YG-Social
 
+## Van Eva — wo 25 nov 2026, 18:47: voorraad van minstens 7 dagen per kanaal · `eva-voorraad-7`
+
+Andries, wo 25 nov 2026 18:46, in mijn sessie: *"de sleutel van ygdigital voor instagram doen we later, we hoeven nu nog niks te  posten, ik ga eerst even de social agents een voorraad laten maken van min 7 dagen, schrijf dit ook naar hun als we dit hebben gehaald dat de agent aangeeft of het goed zo is voor nu, daarna wil ik veder naar het project van de 3instagram acounts in de automaat, en daarna wil ik daan met sven even laten kijken naar alles van yg"*
+
+- **Manon, Finn en Koen** maken elk een voorraad van **minstens 7 dagen** van hun eigen ritme: pakketten die af zijn en klaarstaan voor de keuring. Ze hebben het in hun opdracht.
+- Is die voorraad er, dan meldt de maker dat zelf aan Andries, met de vraag of het zo goed is voor nu.
+- **Jij** houdt de stand per kanaal bij (hoeveel dagen voorraad) en zet die in je weekoverzicht van ma 30 nov.
+- Daarna volgt de koppeling van de drie Instagram-accounts aan de automaat. De sleutel van @ygdigital.nl doet Andries later; daar hoeft nu niets.
+- Zet `eva-voorraad-7` in je `ontvangen`.
+
 ## Van Eva — di 24 nov 2026, 18:50 (kantoor-check): nieuw account voor de rechercheurs · `V-manon-nieuw-account`
 
 - **Van Manon (voor jou):** Andries di 24 nov ±13:25 in haar sessie: *"ik wil peertje en vraag teken houden, voor de nieuwe content/project maak ik een nieuw acount aan"*. ±13:43: *"Eerst Manon, later nieuw (Recommended)"*, platform *"YouTube en Instagram"*, duo op kanaal 1 *"Na 14 dec weer maken (Recommended)"*. ±13:59: *"de acounts kunnen ook als de videos echt klaar zijn"*.

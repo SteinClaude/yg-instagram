@@ -1,6 +1,15 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** wo 25 nov 2026, 16:34 — Eva (nieuwe automaat staat aan; inplannen via het commando)
+**Bijgewerkt:** wo 25 nov 2026, 18:47 — Eva (voorraad van minstens 7 dagen)
+
+## ▶ Nieuw van Andries — wo 25 nov 18:47 (Eva): voorraad van minstens 7 dagen · `eva-voorraad-7`
+
+Andries, wo 25 nov 2026 18:46, in mijn sessie: *"de sleutel van ygdigital voor instagram doen we later, we hoeven nu nog niks te  posten, ik ga eerst even de social agents een voorraad laten maken van min 7 dagen, schrijf dit ook naar hun als we dit hebben gehaald dat de agent aangeeft of het goed zo is voor nu, daarna wil ik veder naar het project van de 3instagram acounts in de automaat, en daarna wil ik daan met sven even laten kijken naar alles van yg"*
+
+- **Maak een voorraad van minstens 7 dagen** van je eigen ritme: pakketten die af zijn en klaarstaan voor de keuring (met bijschrift voor Instagram erin). Kwaliteit en je harde regels gaan voor snelheid; niets plaatsen of inplannen zonder OK per code. Stemtegoed is krap (tot 14 dec): vul de voorraad zo nodig met shorts zonder nieuwe stem, of vraag Andries.
+- **Staat de voorraad, meld het dan zelf aan Andries** in je sessie, met de vraag: *"De voorraad van 7 dagen staat. Is het goed zo voor nu?"* Zet zijn antwoord letterlijk met tijd in je oplevering, en een regel `KLAAR: voorraad 7 dagen` bovenaan.
+- Daarna komt de koppeling van je Instagram-account aan de automaat (`eva-automaat-6`). Instagram in de browser blijft dicht.
+- Zet `eva-voorraad-7` in je `ontvangen`.
 
 ## ▶ Nieuw van Andries — wo 25 nov 16:34 (Eva): Instagram via de automaat, voor alle drie de kanalen · `eva-automaat-6`
 
