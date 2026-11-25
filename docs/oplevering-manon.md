@@ -246,6 +246,8 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 25 nov 2026 ±17:48, in de sessie, op "Wat bedoel je met anders?" (bij het museum; keuzes: Museum wel, niet elke video; Het dorp is het hart; Museum als eigen reeks): "Het dorp is het hart" → Waaromdorp zelf is het herkenbare hart; het museum is één van de plekken.
+- wo 25 nov 2026 ±17:46, in de sessie, op vier vragen over het totaalplan: museum als hart: "Nee, anders" · duo ook in het museum: "Ja, ook het duo (Recommended)" · ritme rechercheurs: "2 per week (Recommended)" · namen: "Ja, zoek opties (Recommended)" → plan-totaal.md bijgesteld.
 - wo 25 nov 2026 ±17:45, in de sessie (eigen bericht): "hoe zit het met het totale plan, van ons dorp musuem dit moet echt een incoons ding worden van ons" → totaalplan geschreven (docs/waaromdorp/plan-totaal.md), keuzes voorgelegd.
 - wo 25 nov 2026 ±17:42, in de sessie, op "Is het tempo nu goed?" (proefshort 3b; keuzes: Tempo goed; Nog sneller): "ja dit is goed," → het tempo van proefshort 3b is de maat voor de rechercheurs (geen stijl OK of pakket OK; die vraag ik apart).
 - wo 25 nov 2026 ±17:37, in de sessie (eigen bericht, na proefshort 3): "de proef video moet sneller,flotter verlopen er zit te veel stilte tussen de woorden" → pauzes in de stem ingekort, stem sneller, elke scène zo lang als zijn zin, clips licht versneld (proefshort 3b).

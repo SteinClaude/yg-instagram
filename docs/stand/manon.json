@@ -6,7 +6,7 @@
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-25T17:50:00+01:00 Totaalplan Waaromdorp en het museum geschreven (docs/waaromdorp/plan-totaal.md): elke zaak een genummerd stuk in het museum, vaste opbouw en herkenbare dingen, referentiebeelden voor de plekken, kosten in Flow-punten, planning en vier keuzes voor Andries.",
     "2026-11-25T17:41:00+01:00 Proefshort 3b gemaakt (na \"de proef video moet sneller,flotter verlopen er zit te veel stilte tussen de woorden\", ±17:37): zelfde verhaal en beelden, pauzes in de stem ingekort tot 0,1 s, stem op tempo 1,15, elke scène zo lang als zijn zin, clips 1,2–1,3 keer versneld, eigen whoosh en klap; 31 s (was 49 s), geen stilte langer dan 0,3 s, −14,4 LUFS. Geen nieuw tegoed. Alleen lokaal, buiten git in tools/ai-proef/flow/proefshort3b/.",
@@ -160,8 +160,8 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Wacht op de keuzes van Andries over het totaalplan (museum als hart, duo erbij, ritme, namen).",
-  "volgende": "Do 26 nov 17:00–17:45 Studio: YS48 inplannen voor do 26 nov 20:00 (kanaal 1 eerst nakijken). Rechercheurs op kanaal 1, afwisselend met het duo: ritme en eerste onderwerp voorstellen (niet opnieuw klokken: dat was YS47); stijl OK voor de reeks vragen. Reactie van Andries op proefshort 3. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1).",
+  "bezig": "Namen voor het dorp en het museum zoeken en nazoeken (Engels).",
+  "volgende": "Namen voorleggen. Daarna: referentiebeelden van de plekken (dorpsplein, bureau, museum, tijdmachine; gratis in Flow), eerste zaak van de rechercheurs (nieuw onderwerp, bronnen uit docs/bronnen-voorraad.md), stijl OK reeks vragen; 2 per week om 20:00. Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00 (kanaal 1 eerst nakijken). Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -178,6 +178,8 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T17:48:00+01:00 Andries in de sessie, op \"Je koos bij het museum Nee, anders … Wat bedoel je met anders?\" (keuzes: Museum wel, niet elke video; Het dorp is het hart; Museum als eigen reeks): \"Het dorp is het hart\"",
+    "2026-11-25T17:46:00+01:00 Andries in de sessie, op vier vragen over het totaalplan (museum als hart; duo ook in het museum; ritme rechercheurs; namen): \"Nee, anders\" · \"Ja, ook het duo (Recommended)\" · \"2 per week (Recommended)\" · \"Ja, zoek opties (Recommended)\"",
     "2026-11-25T17:42:00+01:00 Andries in de sessie, op \"Is het tempo nu goed?\" (proefshort 3b; keuzes: Tempo goed; Nog sneller): \"ja dit is goed,\"",
     "2026-11-25T17:45:00+01:00 Andries in de sessie (eigen bericht): \"hoe zit het met het totale plan, van ons dorp musuem dit moet echt een incoons ding worden van ons\"",
     "2026-11-25T17:30:00+01:00 Andries in de sessie: \"laat proef zien\" (proefshort 3 opnieuw getoond, met overzicht van 12 beelden).",

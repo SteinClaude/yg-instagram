@@ -4,7 +4,23 @@
 
 Dit is een voorstel van Manon. Wat erin staat, beslist Andries (zie "Keuzes voor Andries" onderaan). Namen zijn werknamen; vóór gebruik zoek ik na of ze niet al van een bestaand bedrijf, spel of kanaal zijn.
 
-## Het idee in één zin
+## Besluiten van Andries (wo 25 nov 2026, in de sessie)
+- ±17:46, op "wordt het museum het hart van kanaal 1?": *"Nee, anders"*. Doorgevraagd ±17:48, op "Wat bedoel je met anders?": *"Het dorp is het hart"* → **Waaromdorp zelf is het herkenbare hart; het museum is één van de plekken.** Geen vaste museumscène aan het eind van elke video.
+- ±17:46, op "Krijgen ook de antwoorden van het Vraagteken en Peertje een stuk in hetzelfde museum?": *"Ja, ook het duo (Recommended)"* → het museum verzamelt de stukken van beide reeksen, met één nummering; het komt in beeld waar het past.
+- ±17:46, ritme: *"2 per week (Recommended)"* → de rechercheurs komen 2 keer per week om 20:00 op kanaal 1 (YouTube en Instagram); het duo om 12:00.
+- ±17:46, namen: *"Ja, zoek opties (Recommended)"* → ik zoek namen voor het dorp en het museum na en leg ze voor.
+
+## Bijgesteld na die besluiten
+- **Het hart is het dorp.** Wat steeds terugkomt en het herkenbaar maakt:
+  - het dorpsplein als vast beginpunt of als overgang;
+  - het kaartje van het dorp, dat laat zien waar we zijn;
+  - de vaste plekken (bureau, museum, tijdmachine, plein, en later meer);
+  - de bewoners.
+- **De opbouw** van een zaak van de rechercheurs wordt: haak → onderzoek op de plek die bij het onderwerp past → antwoord met bron → "CASE CLOSED".
+- **Het museum** is de plek waar alle stukken samenkomen, van beide reeksen, met één nummering. Het hoeft niet in elke video. Een rondleiding (bij EXHIBIT 010) blijft een mogelijkheid.
+- **Wat hieronder over "het museum als hart" en "het museum groeit in elke video" staat, geldt niet meer.**
+
+## Het idee in één zin (eerste voorstel)
 Kanaal 1 wordt één wereld: **Waaromdorp**. In het dorp staat **het museum van het waarom**, en **elke vraag die we oplossen, wordt een stuk in dat museum**. Kijkers zien het museum met elke video voller worden.
 
 ## Wat het iconisch maakt
