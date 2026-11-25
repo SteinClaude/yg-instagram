@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T15:58:00+01:00",
+  "tijd": "2026-11-25T16:00:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-25T15:58:00+01:00 Proefshort 2 gemaakt (na \"Aanpassen\", \"Beeld bij het verhaal,Andere stem,Tekst in beeld\", \"ElevenLabs\", \"Woord voor woord, groter\" en \"1 Lily (Recommended)\"): drie nieuwe clips in stijl D bij het verhaal (wandklok, zonnewijzer in de map, klokkentoren), beste versie per scène opgeschaald naar 1080p; stem Lily (ElevenLabs) op tempo 1,1; één groot woord tegelijk, kernwoorden goudgeel. 26,4 s, 1080×1920. Alleen lokaal, buiten git in tools/ai-proef/flow/proefshort2/; niets geplaatst. Uitleg in docs/waaromdorp/ai-proef.md.",
     "2026-11-25T15:13:00+01:00 Stijlkeuze D vastgelegd (60e1e08).",
@@ -156,7 +156,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Niets: proefshort 2 ligt bij Andries.",
+  "bezig": "Proefshort 3: ±50 s in zes scènes, camerabeweging in de nieuwe clips, sterkere haak en slot; stem Lily.",
   "volgende": "Vandaag 17:00–17:45 Studio: YS48 inplannen voor wo 25 nov 20:00 (kanaal 1 eerst nakijken). Reactie van Andries op proefshort 2. Duo na 14 dec. Weekanalyse zodra de cijfers er zijn. Instagram-sleutel kanaal 1 (alleen Andries). Instagram niet openen (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
@@ -164,6 +164,8 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T15:59:00+01:00 Andries in de sessie, op \"Is proefshort 2 goed zo?\" (keuzes: Goed zo; Nog aanpassen): \"Nog aanpassen\"",
+    "2026-11-25T16:00:00+01:00 Andries in de sessie, op \"Wat moet er nog anders?\" (meer keuzes mogelijk: Langer en meer verhaal; Meer beweging in beeld; Stem of tempo; Haak en einde sterker): \"Langer en meer verhaal,Meer beweging in beeld,Haak en einde sterker\"",
     "2026-11-25T15:58:00+01:00 Flow (Chrome van Andries): de gekozen versies van de nieuwe scène 1, 2 en 3 opgeschaald naar 1080p via de downloadknop, één tegelijk; geen tegoed gevraagd, geen instellingen gewijzigd. Clips buiten git in tools/ai-proef/flow/ (nieuw-scene*).",
     "2026-11-25T15:38:00+01:00 Flow (Chrome van Andries): drie nieuwe aanvragen in stijl D bij het verhaal (scène 1 met wandklok, scène 2 met een foto van een zonnewijzer in de map, scène 3 achter een verlichte wijzerplaat in een klokkentoren), elk 2 versies, elk met \"Goedkeuren\"; geen waarschuwing of weigering.",
     "2026-11-25T15:38:00+01:00 ElevenLabs: drie proefstemmen (Lily, Sarah, Alice; 225 tekens) en de rest van proefshort 2 met Lily (244 tekens); bewaard buiten git in tools/ai-proef/flow/proefshort2/.",
