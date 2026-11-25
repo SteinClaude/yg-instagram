@@ -1,4 +1,5 @@
-KLAAR: proefshort 3b (sneller en flotter: 31 s, geen stilte langer dan 0,3 s) buiten git in tools/ai-proef/flow/proefshort3b/; aan Andries getoond · wo 25 nov 17:50
+KLAAR: totaalplan Waaromdorp en het museum (docs/waaromdorp/plan-totaal.md), keuzes bij Andries · wo 25 nov 17:50
+KLAAR: proefshort 3b (sneller en flotter: 31 s, geen stilte langer dan 0,3 s) buiten git in tools/ai-proef/flow/proefshort3b/; aan Andries getoond · wo 25 nov 17:41
 KLAAR: proef YS48 Instagram via de nieuwe automaat (do 26 nov 20:00) in orde; echt inplannen wacht op de lijst met verboden woorden op de pc (Andries) · wo 25 nov 17:18
 KLAAR: YS48 naar do 26 nov 20:00 (Studio stond op een ander kanaal; Andries "Later"); KAN NIET VERDER van 17:02 opgelost · wo 25 nov 17:14
 KAN NIET VERDER: YS48 kan niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · wo 25 nov 17:02
@@ -245,6 +246,8 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 25 nov 2026 ±17:45, in de sessie (eigen bericht): "hoe zit het met het totale plan, van ons dorp musuem dit moet echt een incoons ding worden van ons" → totaalplan geschreven (docs/waaromdorp/plan-totaal.md), keuzes voorgelegd.
+- wo 25 nov 2026 ±17:42, in de sessie, op "Is het tempo nu goed?" (proefshort 3b; keuzes: Tempo goed; Nog sneller): "ja dit is goed," → het tempo van proefshort 3b is de maat voor de rechercheurs (geen stijl OK of pakket OK; die vraag ik apart).
 - wo 25 nov 2026 ±17:37, in de sessie (eigen bericht, na proefshort 3): "de proef video moet sneller,flotter verlopen er zit te veel stilte tussen de woorden" → pauzes in de stem ingekort, stem sneller, elke scène zo lang als zijn zin, clips licht versneld (proefshort 3b).
 - wo 25 nov 2026 ±17:12, in de sessie (eigen bericht): "peertje en vraag tegen, en de recheurs gaan samen op de zelfde kanalen komen zo blijft het variabel en niet eentonig," → de rechercheurs komen op kanaal 1 (YouTube en Instagram), afwisselend met het Vraagteken en Peertje; geen apart nieuw account meer.
 - wo 25 nov 2026 ±17:03, in de sessie, op "Wil je Studio op kanaal 1 zetten, zodat ik YS48 voor 17:45 kan inplannen voor vanavond 20:00?" (keuzes: Staat nu op kanaal 1; Later): "Later" → YS48 gaat do 26 nov in Studio, voor do 26 nov 20:00 (planning kies ik zelf).
