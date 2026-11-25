@@ -235,6 +235,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 25 nov 2026 ±11:25, in de sessie, op "Welke stijlen gaan door naar de clips?" (keuzes: B gepolijst echt; D getekend; A echt filmbeeld; C bijna echt; meer mogelijk): "B, gepolijst echt (Recommended),D, getekend (Recommended)" → de clips komen in B (met de echte referentiebeelden) en D (getekend); A en C vallen af voor de clips.
 - wo 25 nov 2026 ±11:04, in de sessie, op "Wat bedoel je met de bijna echte?" (keuzes: Getekend (D); Toch bijna echt (C); Allebei (C en D)): "Allebei (C en D)" → C (bijna echt, filmische 3D) komt terug naast D (getekend); van beide gezichten maak ik beide versies.
 - wo 25 nov 2026 ±11:02, in de sessie, op "Keur je deze twee gezichten goed?" (1a de rechercheur, 1b de collega, echt): "ja oke nu de bijna echte" → gezichten 1a en 1b goedgekeurd als vaste gezichten; welke stijl met "de bijna echte" bedoeld is, vraag ik na.
 - wo 25 nov 2026 ±10:45, in de sessie, op blad 2 (rechercheur): "A, donkere bob"; op blad 3 (collega): "D, snor"; op blad 4 (kleuren): "A, camel en roest (Recommended)"; op blad 5 (sfeer): "A, zonsondergang (Recommended)" → rechercheur: donkere bob (paneel A van blad 2); collega: donkere huid, kort grijs haar, snor, rond goudkleurig brilletje (paneel D van blad 3); kleuren camel en roest met olijfgroen en bordeaux; sfeer van het bureau: zonsondergang.
