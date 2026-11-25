@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T18:23:00+01:00",
+  "tijd": "2026-11-25T18:27:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-25T18:23:00+01:00 Wonderwick richting C uitgewerkt (na \"C, schemering\"): staande versie (9:16) en referentiebeelden van vier plekken (plein met klokkentoren, The Museum of Why, bureau, haven met vuurtoren), in Flow met C als voorbeeld, gratis, 2K. Buiten git in tools/ai-proef/flow/wonderwick/ (overzicht-plekken.jpg).",
     "2026-11-25T18:15:00+01:00 Ontwerp van Wonderwick van bovenaf (na het bericht van Andries ±17:48): drie versies in Flow als beeld (gratis, 2K): A vogelvlucht, B sprookjeskaart van bovenaf, C schemering met lantaarns; met plein en klokkentoren, The Museum of Why, het bureau, haven, vuurtoren, zwevend eiland, reuzenboom, steenkring, slapende draak, waterval, lichtgevende paddenstoelen. Buiten git in tools/ai-proef/flow/wonderwick/ (overzicht-wonderwick.jpg). Uitleg in docs/waaromdorp/plan-totaal.md.",
@@ -162,7 +162,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Niets: de plekken van Wonderwick liggen bij Andries.",
+  "bezig": "Eerste zaak van de rechercheurs (YC01, de rood-witte paal van de kapper): script, clips in Flow, stem Lily, montage in het tempo van proefshort 3b, pakket ter keuring.",
   "volgende": "Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00 (kanaal 1 eerst nakijken). Daarna, als Andries dat wil: eerste echte zaak van de rechercheurs (voorstel: de rood-witte paal van de kapper, bronnen in docs/bronnen-voorraad.md; met een kapperszaak in Wonderwick), stijl OK voor de reeks vragen; mythische plekken, museum van binnen en tijdmachine. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1); YS48 op Instagram zodra de lijst met verboden woorden op de pc staat.",
   "kanNietVerder": null,
   "vragen": [
@@ -180,6 +180,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T18:27:00+01:00 Andries in de sessie, op \"Wat doen we hierna?\" (keuzes: Eerste zaak maken; Eerst meer plekken; mijn advies: de rood-witte paal van de kapper): \"Eerste zaak maken\"",
     "2026-11-25T18:23:00+01:00 Flow (Chrome van Andries): vijf beelden gemaakt met Nano Banana Pro (9:16, geen tegoed, ontwerp C als voorbeeld) en in 2K gedownload naar tools/ai-proef/flow/wonderwick/ (buiten git).",
     "2026-11-25T18:16:00+01:00 Andries in de sessie, op \"Welke richting wordt Wonderwick?\" (drie ontwerpen van bovenaf; keuzes: C, schemering; A, vogelvlucht; ook B, sprookjeskaart, lag voor): \"C, schemering\"",
     "2026-11-25T18:15:00+01:00 Flow (Chrome van Andries): drie beelden gemaakt met Nano Banana Pro (16:9, geen tegoed) en in 2K gedownload naar tools/ai-proef/flow/wonderwick/ (buiten git). Geen instellingen gewijzigd.",
