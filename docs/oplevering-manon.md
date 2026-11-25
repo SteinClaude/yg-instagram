@@ -1,3 +1,4 @@
+KAN NIET VERDER: eerste clip in Flow mislukt twee keer ("Er ging iets mis", geen uitleg) · nodig: keuze van Andries hoe verder (eenvoudiger proberen, zelf met de hand, of later) · wo 25 nov 11:42
 KLAAR: gezichten in bijna echt (C) en getekend (D) gemaakt in Flow, naast echt (A/B); vergelijkingsblad aan Andries getoond · wo 25 nov 11:11
 KLAAR: gezichten 1a en 1b (rechercheur en collega, echt) gemaakt in Flow op basis van zijn keuzes; ter keuring · wo 25 nov 10:50
 KLAAR: keuzebladen 2 t/m 5 gemaakt in Flow (rechercheur, collega, kleuren, sfeer), buiten git in tools/ai-proef/flow/; ter keuze bij Andries · wo 25 nov 10:41
