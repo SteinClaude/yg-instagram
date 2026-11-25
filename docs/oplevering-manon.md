@@ -238,6 +238,10 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 25 nov 2026 ±15:19, in de sessie, op "Wat moet er anders aan de tekst in beeld?" (meer keuzes mogelijk: Woord voor woord, groter; Dossierletter; Minder tekst; Titel en stempel anders): "Woord voor woord, groter"
+- wo 25 nov 2026 ±15:19, in de sessie, op "Welke stem wil je voor de rechercheur in de proefshort?" (keuzes: Gratis, 3 proefstemmen; ElevenLabs — "kost tegoed"): "ElevenLabs"
+- wo 25 nov 2026 ±15:18, in de sessie, op "Wat moet er anders?" (meer keuzes mogelijk: Beeld bij het verhaal; Andere stem; Tekst in beeld; Langer of rustiger): "Beeld bij het verhaal,Andere stem,Tekst in beeld"
+- wo 25 nov 2026 ±15:17, in de sessie, op "Is de proefshort de goede richting voor het nieuwe account?" (keuzes: Goede richting; Aanpassen): "Aanpassen" → proefshort 2: nieuwe clips in Flow die bij het verhaal passen, een ElevenLabs-stem voor de rechercheur (eerst drie proefstemmen) en grote woorden in beeld die één voor één verschijnen.
 - wo 25 nov 2026 ±15:06, in de sessie, op "Welke stijl krijgt het nieuwe account?" (keuzes: D, getekend; B, gepolijst echt; na de vergelijkingsvideo vergelijking-B-D.mp4): "D, getekend" → het nieuwe account met de twee rechercheurs krijgt de getekende stijl (D); B vervalt.
 - wo 25 nov 2026 ±11:44, in de sessie, op "Hoe gaan we verder?" (eerste clip in Flow twee keer mislukt; keuzes: Eenvoudiger proberen; Ik probeer het zelf; Later opnieuw): "Eenvoudiger proberen (Recommended)" → zelfde scène met een kortere prompt en 4 referentiebeelden; mislukt het weer, dan stop ik.
 - wo 25 nov 2026 ±11:25, in de sessie, op "Welke stijlen gaan door naar de clips?" (keuzes: B gepolijst echt; D getekend; A echt filmbeeld; C bijna echt; meer mogelijk): "B, gepolijst echt (Recommended),D, getekend (Recommended)" → de clips komen in B (met de echte referentiebeelden) en D (getekend); A en C vallen af voor de clips.
