@@ -237,6 +237,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 25 nov 2026 ±15:06, in de sessie, op "Welke stijl krijgt het nieuwe account?" (keuzes: D, getekend; B, gepolijst echt; na de vergelijkingsvideo vergelijking-B-D.mp4): "D, getekend" → het nieuwe account met de twee rechercheurs krijgt de getekende stijl (D); B vervalt.
 - wo 25 nov 2026 ±11:44, in de sessie, op "Hoe gaan we verder?" (eerste clip in Flow twee keer mislukt; keuzes: Eenvoudiger proberen; Ik probeer het zelf; Later opnieuw): "Eenvoudiger proberen (Recommended)" → zelfde scène met een kortere prompt en 4 referentiebeelden; mislukt het weer, dan stop ik.
 - wo 25 nov 2026 ±11:25, in de sessie, op "Welke stijlen gaan door naar de clips?" (keuzes: B gepolijst echt; D getekend; A echt filmbeeld; C bijna echt; meer mogelijk): "B, gepolijst echt (Recommended),D, getekend (Recommended)" → de clips komen in B (met de echte referentiebeelden) en D (getekend); A en C vallen af voor de clips.
 - wo 25 nov 2026 ±11:04, in de sessie, op "Wat bedoel je met de bijna echte?" (keuzes: Getekend (D); Toch bijna echt (C); Allebei (C en D)): "Allebei (C en D)" → C (bijna echt, filmische 3D) komt terug naast D (getekend); van beide gezichten maak ik beide versies.

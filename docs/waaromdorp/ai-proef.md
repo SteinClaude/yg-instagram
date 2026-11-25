@@ -1,6 +1,7 @@
 # Kleine AI-proef kanaal 1: echt en bijna echt (vr 20 nov 2026)
 
 ## Besluiten (nieuwste boven)
+- **wo 25 nov 2026 ±15:06.** Op "Welke stijl krijgt het nieuwe account?", na de vergelijkingsvideo van B en D: *"D, getekend"*. Het nieuwe account krijgt de getekende stijl.
 - **vr 20 nov 2026 ±17:54.** Andries in de sessie: *"maken we echte mensen of bijna echte mensen"*.
   - Op "Welke stijl testen we in de proef?": *"Allebei testen (Recommended)"*.
   - Op de vraag of de proef met Gemini Omni via Google AI Studio tot [bedrag weggelaten] mag kosten: *"Nog niet"*.
