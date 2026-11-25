@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T10:50:00+01:00",
+  "tijd": "2026-11-25T11:02:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -154,11 +154,12 @@
   "volgende": "Vandaag 17:00–17:45 Studio: YS48 inplannen voor wo 25 nov 20:00 (kanaal 1 eerst nakijken). Antwoord van Andries op een uitzondering voor Flow (dan meld ik het aan Eva). Keuzebladen 2–5. Duo na 14 dec. Weekanalyse zodra de cijfers er zijn. Instagram-sleutel kanaal 1 (alleen Andries). Instagram niet openen (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
-    "Keuring 1a en 1b (gezichten van de rechercheur en de collega, echt): goed als vaste gezichten? Andries beoordeelt ook gelijkenis met bekende personen en leeftijd · aanname: zonder OK geen verdere beelden · blokkeert: ja, voor stap 1c t/m 3",
+    "Welke stijl bedoelt Andries met \"de bijna echte\": getekend (D, zoals gekozen) of toch bijna echt (C, filmische 3D)? · aanname: navragen voordat ik beelden maak · blokkeert: ja, voor stap 2",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T11:02:00+01:00 Andries in de sessie, op \"Keur je deze twee gezichten goed?\" (1a rechercheur, 1b collega): \"ja oke nu de bijna echte\"",
     "2026-11-25T10:45:00+01:00 Andries in de sessie, op blad 2 (rechercheur): \"A, donkere bob\"; op blad 3 (collega): \"D, snor\"; op blad 4 (kleuren): \"A, camel en roest (Recommended)\"; op blad 5 (sfeer): \"A, zonsondergang (Recommended)\"",
     "2026-11-25T10:41:00+01:00 Google Flow (Chrome van Andries, project van keuzeblad 1): vier opdrachten gegeven en vier beelden gedownload; daarna mijn tabblad gesloten.",
     "2026-11-25T10:24:00+01:00 Andries in de sessie, op \"Mag ik Flow voor je bedienen, met deze voorwaarden?\" (alleen onze prompts uit keuzebladen en stappenkaart; resultaten downloaden naar tools/ai-proef/flow/; geen instellingen, abonnement of account; niets kopen; stoppen bij waarschuwing, CAPTCHA of weigering; nooit om een filter heen; rustig tempo) (keuzes: Ja, Flow mag; Nee, ik doe het): \"Ja, Flow mag\"",
