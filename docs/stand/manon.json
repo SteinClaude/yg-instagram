@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T19:03:00+01:00",
+  "tijd": "2026-11-25T19:26:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-25T18:53:00+01:00 Pakket YC01 gemaakt (eerste zaak van de rechercheurs, nieuwe reeks YC): \"Why do barber poles have red and white stripes?\", 34 s, 1080×1920, −14,6 LUFS; video.mp4, video-upload.mp4 (8,5 MB), studio.txt (di 1 dec 2026 20:00), bron/bronnen.md, bron/stem.txt, overzicht.jpg, instagram/ (reel 21,6 MB, omslag met titel, bijschrift), pakket.json met de vraag om pakket OK en bijschrift OK. Bronnen: The Worshipful Company of Barbers, TheCollector (2026), Kearny County Museum (2023); het hart van het verhaal als overlevering gebracht.",
     "2026-11-25T18:23:00+01:00 Wonderwick richting C uitgewerkt (na \"C, schemering\"): staande versie (9:16) en referentiebeelden van vier plekken (plein met klokkentoren, The Museum of Why, bureau, haven met vuurtoren), in Flow met C als voorbeeld, gratis, 2K. Buiten git in tools/ai-proef/flow/wonderwick/ (overzicht-plekken.jpg).",
@@ -163,7 +163,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Niets: YC01 ligt ter keuring bij Andries (pakket OK, bijschrift OK en stijl OK YC).",
+  "bezig": "YS20–YS39 vandaag in YouTube Studio openbaar zetten (besluit Andries); wacht tot Studio op kanaal 1 staat.",
   "volgende": "Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00 (kanaal 1 eerst nakijken). Na de keuring van YC01: inplannen di 1 dec 20:00 (YouTube in Studio; Instagram via de automaat zodra de lijst met verboden woorden er is). Volgende zaak YC02 (2 per week). Mythische plekken, museum van binnen en tijdmachine. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
@@ -211,6 +211,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T19:26:00+01:00 Andries in de sessie, op \"Wat doen we met de 20 uitleg-shorts zonder Peertje (YS20–YS39)?\" (na zijn bericht \"de videos zonder peertje wil ik nu vandaag allemaal posten zodat ze niet verloren gaan maar wel alvast gepost zijn,\"; keuzes: Laten staan; Sneller, 2 per dag; Toch alles vandaag — met de uitleg dat ze al ingepland staan, dat alles op één dag bereik kost en dat het buiten mijn Studio-tijd 17:00–17:45 valt): \"Toch alles vandaag\"",
     "2026-11-25T19:03:00+01:00 Andries in de sessie: \"oke laat me even zien welke videos we hebben, zodat ik ze kan bekijken\" → overzichtsblad docs/voorraad-kanaal-1.jpg en de video's van de komende 7 dagen getoond. Herstel van mijn eerdere antwoord: YS20–YS39 (12:00) zijn uitleg-shorts in de oude stijl, niet het duo; het laatste duo-filmpje dat klaarstaat is YS48.",
     "2026-11-25T19:01:00+01:00 Andries in de sessie (eigen bericht, in plaats van antwoord op de keuring van YC01, de stijl OK YC en de vraag over de voorraad): \"dus dit is de eerste video van het nieuwe concept toch? en dan hebben we nog filmpjes van peertje?\" Geen keuring gegeven; de drie vragen staan nog open.",
     "2026-11-25T18:47:00+01:00 Flow (Chrome van Andries): referentiebeeld kapperszaak in Wonderwick (gratis) en 4 videoaanvragen voor YC01 (haak bij de paal, oude kapperszaak, doeken om de paal, slot bij de kapperszaak), elk 2 versies, elk met \"Goedkeuren\"; 8 clips in 720p en de gekozen versies in 1080p buiten git in tools/ai-proef/flow/yc01/. ElevenLabs: 506 tekens met Lily.",
@@ -819,6 +820,11 @@
     }
   ],
   "voorEva": [
+    {
+      "id": "V-manon-studio-buiten-tijd",
+      "aan": "eva",
+      "wat": "Andries koos wo 25 nov ±19:26 \"Toch alles vandaag\": YS20–YS39 vandaag openbaar in YouTube Studio. Dat valt buiten mijn vaste Studio-tijd (17:00–17:45, #90; daarna Finn). Graag aan Finn melden dat ik vanavond in Studio werk op kanaal 1."
+    },
     {
       "id": "V-manon-rechercheurs-kanaal1",
       "aan": "eva",
