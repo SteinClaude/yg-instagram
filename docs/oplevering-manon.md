@@ -244,6 +244,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 25 nov 2026 ±17:37, in de sessie (eigen bericht, na proefshort 3): "de proef video moet sneller,flotter verlopen er zit te veel stilte tussen de woorden" → pauzes in de stem ingekort, stem sneller, elke scène zo lang als zijn zin, clips licht versneld (proefshort 3b).
 - wo 25 nov 2026 ±17:12, in de sessie (eigen bericht): "peertje en vraag tegen, en de recheurs gaan samen op de zelfde kanalen komen zo blijft het variabel en niet eentonig," → de rechercheurs komen op kanaal 1 (YouTube en Instagram), afwisselend met het Vraagteken en Peertje; geen apart nieuw account meer.
 - wo 25 nov 2026 ±17:03, in de sessie, op "Wil je Studio op kanaal 1 zetten, zodat ik YS48 voor 17:45 kan inplannen voor vanavond 20:00?" (keuzes: Staat nu op kanaal 1; Later): "Later" → YS48 gaat do 26 nov in Studio, voor do 26 nov 20:00 (planning kies ik zelf).
 - wo 25 nov 2026 ±16:00, in de sessie, op "Wat moet er nog anders?" (meer keuzes mogelijk: Langer en meer verhaal; Meer beweging in beeld; Stem of tempo; Haak en einde sterker): "Langer en meer verhaal,Meer beweging in beeld,Haak en einde sterker" → proefshort 3: zes scènes (±50 s), vier nieuwe clips met bewegende camera, een haak die prikkelt en een slot dat terugkoppelt naar het begin.
