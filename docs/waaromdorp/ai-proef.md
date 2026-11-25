@@ -27,7 +27,7 @@
 - **Kleuren:** camel en roest, met olijfgroen en bordeaux (keuzeblad 4, A). **Sfeer van het bureau:** zonsondergang (keuzeblad 5, A).
 - **Wie bedient Flow:** Manon, na *"Ja, Flow mag"* (wo 25 nov ±10:24).
 - **Voor welk account:** het nieuwe account op YouTube en Instagram (di 24 nov). Het Vraagteken en Peertje blijven op kanaal 1.
-- De actuele prompts staan in  (versie 2). De tekst hieronder is de eerste versie van het plan.
+- De actuele prompts staan in `flow-stappen.md` (versie 2). De tekst hieronder is de eerste versie van het plan.
 
 ## Wat de proef moet laten zien
 1. **Welke stijl werkt beter: echt of bijna echt?** Dezelfde drie scènes in beide stijlen, naast elkaar.
