@@ -1,3 +1,4 @@
+KLAAR: proef YS48 Instagram via de nieuwe automaat (do 26 nov 20:00) in orde; echt inplannen wacht op de lijst met verboden woorden op de pc (Andries) · wo 25 nov 17:18
 KLAAR: YS48 naar do 26 nov 20:00 (Studio stond op een ander kanaal; Andries "Later"); KAN NIET VERDER van 17:02 opgelost · wo 25 nov 17:14
 KAN NIET VERDER: YS48 kan niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · wo 25 nov 17:02
 KLAAR: proefshort 3 stijl D (zes scènes, 49 s, bewegende camera, sterkere haak en slot, stem Lily) buiten git in tools/ai-proef/flow/proefshort3/; aan Andries getoond · wo 25 nov 16:32

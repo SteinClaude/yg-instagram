@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T17:14:00+01:00",
+  "tijd": "2026-11-25T17:18:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-25T17:18:00+01:00 Kleine kopie van de automaat gemaakt volgens LEESMIJ (USERPROFILE/yg-automaat, alleen gereedschap en src). YS48 Instagram met inplannen.cjs --account kanaal-1 --proef voor do 26 nov 20:00: keuring (pakket en bijschrift \"Beide OK YS48\"), video, omslag en bijschrift in orde. Niet echt ingepland: geen lijst met verboden woorden op de pc (YG_VERBODEN_WOORDEN), en zonder die lijst plan ik niet in (eva-automaat-6).",
     "2026-11-25T16:32:00+01:00 Proefshort 3 gemaakt (na \"Nog aanpassen\" en \"Langer en meer verhaal,Meer beweging in beeld,Haak en einde sterker\"): zes scènes, 49 s, 1080×1920, −14 LUFS. Vier nieuwe clips met bewegende camera (klok in close-up met terugrijdende camera, meelopende camera naar het bureau, rond de zonnewijzer in een tuin, omhoog naar de wijzers in de klokkentoren) plus twee clips uit proefshort 2; alle in 1080p. Haak \"Every clock you own is copying something…\", slot \"…you're reading a shadow. Case closed.\"; stem Lily (478 tekens). Alleen lokaal, buiten git in tools/ai-proef/flow/proefshort3/; niets geplaatst.",
     "2026-11-25T15:58:00+01:00 Proefshort 2 gemaakt (na \"Aanpassen\", \"Beeld bij het verhaal,Andere stem,Tekst in beeld\", \"ElevenLabs\", \"Woord voor woord, groter\" en \"1 Lily (Recommended)\"): drie nieuwe clips in stijl D bij het verhaal (wandklok, zonnewijzer in de map, klokkentoren), beste versie per scène opgeschaald naar 1080p; stem Lily (ElevenLabs) op tempo 1,1; één groot woord tegelijk, kernwoorden goudgeel. 26,4 s, 1080×1920. Alleen lokaal, buiten git in tools/ai-proef/flow/proefshort2/; niets geplaatst. Uitleg in docs/waaromdorp/ai-proef.md.",
     "2026-11-25T15:13:00+01:00 Stijlkeuze D vastgelegd (60e1e08).",
@@ -157,14 +158,25 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "YS48 Instagram via de nieuwe automaat (inplannen.cjs, eerst --proef) voor do 26 nov 20:00.",
+  "bezig": "Niets: wacht op Andries (lijst met verboden woorden en sleutel voor Instagram; reactie op proefshort 3).",
   "volgende": "Do 26 nov 17:00–17:45 Studio: YS48 inplannen voor do 26 nov 20:00 (kanaal 1 eerst nakijken). Rechercheurs op kanaal 1, afwisselend met het duo: ritme en eerste onderwerp voorstellen (niet opnieuw klokken: dat was YS47); stijl OK voor de reeks vragen. Reactie van Andries op proefshort 3. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
+    {
+      "vraag": "Zet je de lijst met verboden woorden (YG_VERBODEN_WOORDEN) op de pc? Zonder die lijst plan ik YS48 niet in op Instagram (de proef voor do 26 nov 20:00 is in orde).",
+      "aan": "andries",
+      "keuzes": [
+        "Gedaan",
+        "Later"
+      ],
+      "advies": "Zetten; daarna plan ik YS48 en wat sinds 20 nov is overgeslagen meteen in.",
+      "blokkeert": false
+    },
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T17:18:00+01:00 Map USERPROFILE/yg-automaat aangemaakt (git clone --depth 1 --sparse van deze repo, sparse-checkout gereedschap src), zoals LEESMIJ \"Inplannen door de maker\" voorschrijft. Proef inplannen YS48 Instagram: niets gewijzigd.",
     "2026-11-25T17:03:00+01:00 Andries in de sessie, op \"Wil je Studio op kanaal 1 zetten, zodat ik YS48 voor 17:45 kan inplannen voor vanavond 20:00?\" (keuzes: Staat nu op kanaal 1; Later): \"Later\"",
     "2026-11-25T17:12:00+01:00 Andries in de sessie (eigen bericht): \"peertje en vraag tegen, en de recheurs gaan samen op de zelfde kanalen komen zo blijft het variabel en niet eentonig,\"",
     "2026-11-25T17:02:00+01:00 YouTube Studio geopend in een nieuw tabblad (Chrome van Andries): het dashboard toont een ander kanaal dan kanaal 1 (geen rood vraagteken). Niet zelf gewisseld; niets gewijzigd.",
@@ -1021,6 +1033,7 @@
     "paneel-kaarten",
     "youtube-studio-kanaal-1",
     "tiktok-snapchat-voorraad",
-    "pc-software (Blender in tools)"
+    "pc-software (Blender in tools)",
+    "automaat-kopie-pc"
   ]
 }
