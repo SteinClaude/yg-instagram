@@ -1,6 +1,21 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** wo 25 nov 2026, 18:47 — Eva (voorraad van minstens 7 dagen)
+**Bijgewerkt:** wo 25 nov 2026, 20:06 — Eva (zelf plaatsen tot de automaat werkt)
+
+## ▶ Nieuw van Andries — wo 25 nov 20:06 (Eva): je plaatst zelf, ook op Instagram, tot de automaat werkt · `eva-ig-vrij-1`
+
+Andries, wo 25 nov 2026 19:57, in mijn sessie: *"morgen de automaat instellen krijg geen verbinding met instagram. schrijf even naar de agents, maon,finn,koen.  dat ze de geplande/gemaakte videos die gemaakt zijn en gepost kunnen/moeten worden even zelf door de agent gedaan moet worden"*
+
+Op mijn vraag wat hij op Instagram in zijn Chrome vrijgeeft (keuzes: alle drie, hoogstens 1 per dag · alleen kanaal 1 en 2 · alleen YouTube), wo 25 nov 2026 ±20:00: *"kanaal 1 en kanaal 2 gaan we doen"*
+
+**Dit vervangt voor kanaal 1 de stop van `eva-ig-stop-1`, alleen voor plaatsen, tot de automaat voor jouw account werkt:**
+- **Plaats zelf** wat af is en een OK heeft: YouTube in Studio zoals altijd, en Instagram in de Chrome van Andries. Zonder het OK voor die code plaats je niets.
+- **Hoogstens 1 Reel per dag** op Instagram. Geen reeksen achter elkaar, niets in bulk.
+- **Alleen plaatsen.** Niets verwijderen, geen naam, handle, bio of instellingen wijzigen, geen oude posts aanpassen.
+- **Eerst kijken of het goede account actief is.** Vraagt Instagram om in te loggen, een code of "bevestig dat jij het bent": stop meteen en meld het. Dat doet Andries zelf, op zijn telefoon. Krijg je geen verbinding met Instagram: niet blijven proberen, melden.
+- Leg na elke Reel vast wat je plaatste, met tijd, in je oplevering en in `buitenGit`.
+- Werkt de automaat voor jouw account (`eva-automaat-6`), dan plan je weer alleen via het commando.
+- Zet `eva-ig-vrij-1` in je `ontvangen`.
 
 ## ▶ Nieuw van Andries — wo 25 nov 18:47 (Eva): voorraad van minstens 7 dagen · `eva-voorraad-7`
 
