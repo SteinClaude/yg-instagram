@@ -1,3 +1,4 @@
+KLAAR: drie ontwerpen van Wonderwick van bovenaf (A vogelvlucht, B sprookjeskaart, C schemering) buiten git in tools/ai-proef/flow/wonderwick/; keuze bij Andries · wo 25 nov 18:15
 KLAAR: totaalplan Waaromdorp en het museum (docs/waaromdorp/plan-totaal.md), keuzes bij Andries · wo 25 nov 17:50
 KLAAR: proefshort 3b (sneller en flotter: 31 s, geen stilte langer dan 0,3 s) buiten git in tools/ai-proef/flow/proefshort3b/; aan Andries getoond · wo 25 nov 17:41
 KLAAR: proef YS48 Instagram via de nieuwe automaat (do 26 nov 20:00) in orde; echt inplannen wacht op de lijst met verboden woorden op de pc (Andries) · wo 25 nov 17:18

@@ -28,6 +28,27 @@ Dit is een voorstel van Manon. Wat erin staat, beslist Andries (zie "Keuzes voor
 - **Het museum** is de plek waar alle stukken samenkomen, van beide reeksen, met één nummering. Het hoeft niet in elke video. Een rondleiding (bij EXHIBIT 010) blijft een mogelijkheid.
 - **Wat hieronder over "het museum als hart" en "het museum groeit in elke video" staat, geldt niet meer.**
 
+## Ontwerp van Wonderwick van bovenaf (wo 25 nov 2026)
+**Gemaakt:** drie ontwerpen in Flow, als beeld (Nano Banana Pro, 16:9, gratis opgeschaald naar 2K). Ze staan buiten git in `tools/ai-proef/flow/wonderwick/`, met een overzicht in `overzicht-wonderwick.jpg`.
+- **A, vogelvlucht:** van schuin boven, in middagzon.
+- **B, sprookjeskaart:** recht van bovenaf, als een schatkaart op oud papier, met een windroos.
+- **C, schemering:** van schuin boven, met lantaarns, sterren en gloeiende stenen.
+
+**In alle drie staat:**
+- het dorpsplein met de klokkentoren (daarin de tijdmachine);
+- The Museum of Why, met een glazen koepel;
+- het bureau van de rechercheurs, met een groen raam;
+- huisjes, een school, een werkplaats met een waterrad, een stenen brug en een park;
+- een meer met een haven, een vuurtoren en een zwevend eilandje;
+- mythische dingen: een reuzenboom met lantaarns, een kring van staande stenen, een slapende draak op de heuvel, een waterval en lichtgevende paddenstoelen.
+
+Er staat geen tekst in beeld en er zijn geen mensen.
+
+**Wat nog volgt, na de keuze van Andries:**
+- de gekozen richting verder uitwerken;
+- een staande versie (9:16) voor in de shorts;
+- referentiebeelden per plek, zodat elke video dezelfde plekken laat zien.
+
 ## Het idee in één zin (eerste voorstel)
 Kanaal 1 wordt één wereld: **Waaromdorp**. In het dorp staat **het museum van het waarom**, en **elke vraag die we oplossen, wordt een stuk in dat museum**. Kijkers zien het museum met elke video voller worden.
 
