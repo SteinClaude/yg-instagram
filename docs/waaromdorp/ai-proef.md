@@ -99,6 +99,26 @@
   - In scène 2 staan de woorden hoger, zodat de foto van de zonnewijzer vrij blijft.
 - **Bestanden:** buiten git, in `tools/ai-proef/flow/proefshort2/`: `proefshort2-klokken.mp4` en `stemproef-rechercheur.mp4`. De clips staan in `tools/ai-proef/flow/` (`nieuw-scene*`).
 
+## Proefshort 3 (wo 25 nov 2026)
+**Waarom.** Andries over proefshort 2:
+- ±15:59: *"Nog aanpassen"*;
+- ±16:00: *"Langer en meer verhaal,Meer beweging in beeld,Haak en einde sterker"*.
+
+**Wat er anders is:**
+- **Langer:** zes scènes, ±49 s.
+- **Meer beweging:** vier nieuwe clips met een bewegende camera:
+  1. de klok in close-up, waarna de camera terugrijdt tot de rechercheur in beeld is;
+  2. een camera die met haar meeloopt naar het bureau, waar hij de map neerlegt;
+  3. de zonnewijzer in een tuin, met een camera die er langzaam omheen draait;
+  4. de klokkentoren, waarin de camera langs hen omhoog gaat naar de wijzers.
+  - Scène 3 (de map met de foto van de zonnewijzer) en scène 6 (zij draait zich om) zijn clips uit proefshort 2.
+  - De aanvraag voor clip 4 gaf één keer "Er ging iets mis". Dezelfde aanvraag ongewijzigd opnieuw lukte wel.
+- **Sterkere haak:** de eerste zin is *"Every clock you own is copying something. And it isn't another clock."*. De titel "CASE #001" komt pas in scène 2.
+- **Sterker slot:** de laatste zin koppelt terug naar de haak: *"So every time you check the time, you're reading a shadow. Case closed."*. Daarna volgt de stempel.
+- **Stem:** Lily, 478 tekens.
+- **Bestanden:** buiten git, in `tools/ai-proef/flow/proefshort3/`: `proefshort3-klokken.mp4`, `bronnen.md` en de stemopnames. Bronnen en toelichting op de woorden staan in `bronnen.md`.
+- **Flow-tegoed:** stond om 16:00 op 618 punten (de nieuwe periode begint 24 dec). De vier aanvragen kostten samen 192.
+
 **Wat dit format nodig heeft** als het account er komt:
 - Per short 3 tot 4 clips van 8 s.
 - De scènes horen bij het onderwerp. Bij de klokken hoort de foto in de map een zonnewijzer te zijn, geen machine.
