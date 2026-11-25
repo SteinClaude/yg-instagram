@@ -78,6 +78,27 @@
   - QWERTY had ik eerst in gedachten, maar die bronnen waren niet te lezen.
 - **Bestanden:** buiten git, in `tools/ai-proef/flow/proefshort/`: `proefshort-klokken.mp4`, `bronnen.md` en de stemopnames.
 
+## Proefshort 2 (wo 25 nov 2026)
+**Waarom.** Andries vond proefshort 1 niet goed genoeg. Wat hij koos:
+- ±15:17: *"Aanpassen"*;
+- ±15:18: *"Beeld bij het verhaal,Andere stem,Tekst in beeld"*;
+- ±15:19: *"ElevenLabs"* en *"Woord voor woord, groter"*;
+- ±15:37, na drie proefstemmen: *"1 Lily (Recommended)"*.
+
+**Wat er anders is:**
+- **Beeld.** Drie nieuwe aanvragen in Flow, elk 2 versies, met een korte prompt en 4 getekende referentiebeelden:
+  - scène 1: zij komt binnen en kijkt op naar een grote wandklok; op het prikbord hangen alleen machines en gebouwen;
+  - scène 2: in de map SOURCES zit een foto van een zonnewijzer in een tuin, en hij wijst de schaduw aan;
+  - scène 3: ze staan achter een grote verlichte wijzerplaat in een klokkentoren, en zij draait zich om.
+- **Gekozen versies:** scène 1 versie 1, scène 2 versie 2 (de duidelijkste zonnewijzer) en scène 3 versie 2. Alle drie gratis opgeschaald naar 1080p.
+- **Stem:** Lily van ElevenLabs (Brits, zelfverzekerd), op tempo 1,1 zodat elke zin in zijn scène van 8 s past.
+  - Drie proefstemmen (Lily, Sarah, Alice) kostten 225 tekens.
+  - Zin 2 en 3 kostten 244 tekens; zin 1 kwam uit de proefstem.
+- **Tekst in beeld:** één groot woord tegelijk (124 px), precies op het moment dat het gezegd wordt.
+  - Kernwoorden zijn goudgeel: CLOCK, EARTH, SUNDIALS, SHADOW, CLOCKWISE, NORTHERN, COPIED, SOUTH, OTHER.
+  - In scène 2 staan de woorden hoger, zodat de foto van de zonnewijzer vrij blijft.
+- **Bestanden:** buiten git, in `tools/ai-proef/flow/proefshort2/`: `proefshort2-klokken.mp4` en `stemproef-rechercheur.mp4`. De clips staan in `tools/ai-proef/flow/` (`nieuw-scene*`).
+
 **Wat dit format nodig heeft** als het account er komt:
 - Per short 3 tot 4 clips van 8 s.
 - De scènes horen bij het onderwerp. Bij de klokken hoort de foto in de map een zonnewijzer te zijn, geen machine.
