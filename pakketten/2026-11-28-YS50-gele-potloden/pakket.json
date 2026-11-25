@@ -1,0 +1,25 @@
+{
+  "code": "YS50",
+  "titel": "Why are so many pencils yellow?",
+  "soort": "short",
+  "video": "pakketten/2026-11-28-YS50-gele-potloden/video.mp4",
+  "vraagt": {
+    "pakket": "2026-11-25T22:28:00+01:00",
+    "bijschrift": "2026-11-25T22:28:00+01:00"
+  },
+  "opmerking": "Duo-short in stijl 3 met watermerk, 40,3 s: het Vraagteken en Peertje. Haak: \"Why are so many pencils yellow?\" met de teaser \"a diamond, a world's fair, and China\". Slot: \"dressed like royalty, and it has no lead!\" Eigen getekende potloden, diamant, hal, kroon, grafiet en klei. Bronnen: CW Pencils (2018), Mental Floss (2026), McGill OSS (2017). Gemaakt na \"Ja, nu al\" (wo 25 nov ±19:53); stemmen 563 tekens. Pakket OK dekt script, bronnen en titel; bijschrift OK dekt Instagram (instagram/bijschrift.txt) en de bijschriften voor TikTok en Snapchat (tiktok-snapchat/). Bedoeld voor za 28 nov 2026, 20:00, op YouTube en Instagram.",
+  "plaatsen": [
+    {
+      "platform": "youtube",
+      "stand": "klaar",
+      "wanneer": "2026-11-28T20:00:00+01:00",
+      "noot": "Inplannen in Studio na pakket OK YS50, tussen 17:00 en 17:45 (kanaal 1 eerst nakijken)."
+    },
+    {
+      "platform": "instagram",
+      "stand": "klaar",
+      "wanneer": "2026-11-28T20:00:00+01:00",
+      "noot": "Via de automaat (inplannen.cjs) na bijschrift OK YS50, zodra de lijst met verboden woorden op de pc staat."
+    }
+  ]
+}

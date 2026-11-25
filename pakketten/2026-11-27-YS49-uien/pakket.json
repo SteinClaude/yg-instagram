@@ -1,0 +1,25 @@
+{
+  "code": "YS49",
+  "titel": "Why do onions make you cry?",
+  "soort": "short",
+  "video": "pakketten/2026-11-27-YS49-uien/video.mp4",
+  "vraagt": {
+    "pakket": "2026-11-25T22:28:00+01:00",
+    "bijschrift": "2026-11-25T22:28:00+01:00"
+  },
+  "opmerking": "Duo-short in stijl 3 met watermerk, 41,8 s: het Vraagteken en Peertje. Haak: \"Why do onions make me cry? I'm not even sad!\" Slot: \"it's just self-defense!\" Eigen getekende ui, mes, cellen, oog, konijn en koelkast. Bronnen: Smithsonian Magazine (2017) en Poison Control. Gemaakt na \"Ja, nu al\" (wo 25 nov ±19:53); stemmen 590 tekens. Pakket OK dekt script, bronnen en titel; bijschrift OK dekt Instagram (instagram/bijschrift.txt) en de bijschriften voor TikTok en Snapchat (tiktok-snapchat/). Bedoeld voor vr 27 nov 2026, 20:00, op YouTube en Instagram.",
+  "plaatsen": [
+    {
+      "platform": "youtube",
+      "stand": "klaar",
+      "wanneer": "2026-11-27T20:00:00+01:00",
+      "noot": "Inplannen in Studio na pakket OK YS49, tussen 17:00 en 17:45 (kanaal 1 eerst nakijken)."
+    },
+    {
+      "platform": "instagram",
+      "stand": "klaar",
+      "wanneer": "2026-11-27T20:00:00+01:00",
+      "noot": "Via de automaat (inplannen.cjs) na bijschrift OK YS49, zodra de lijst met verboden woorden op de pc staat."
+    }
+  ]
+}

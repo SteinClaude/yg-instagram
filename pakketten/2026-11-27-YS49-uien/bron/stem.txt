@@ -1,0 +1,13 @@
+Stem: ElevenLabs (tekst naar spraak, betaald abonnement), vraag = Laura (eleven_v4, tempo 1.12), antwoord = Liam (eleven_v4, tempo 1.12); gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.
+Ingesproken tekst per scène:
+1. [vraag, Laura] Why do onions make me cry? I'm not even sad!
+2. [antwoord, Liam] Because the onion is fighting back! Cutting it breaks open tiny cells.
+3. [antwoord, Liam] That lets out an enzyme called alliinase, and it starts a chain reaction.
+4. [vraag, Laura] A chain reaction? In my kitchen?
+5. [antwoord, Liam] Yep! A second enzyme makes a gas that floats up into your eyes.
+6. [antwoord, Liam] It hits the nerves in your eyes, and your eyes make tears!
+7. [vraag, Laura] But why would an onion do that?
+8. [antwoord, Liam] To protect itself! It's chemical warfare against animals that want to eat it.
+9. [vraag, Laura] Can I stop it?
+10. [antwoord, Liam] Chill the onion for thirty minutes first, and leave the root end on.
+11. [antwoord, Liam] So next time an onion makes you cry, it's just self-defense!

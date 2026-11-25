@@ -1,13 +1,15 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T19:53:00+01:00",
+  "tijd": "2026-11-25T22:28:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-25T22:28:00+01:00 Les: de eerste render van YS50 brak af op beeld 738 (resvg-paniek, geom.rs). Oorzaak: een lijn met opacity (het streepje op een potlood) die in de veegovergang net buiten beeld valt. Opgelost met stroke-opacity (ziet er hetzelfde uit). Bij nieuwe tekeningen: doorzichtigheid op een enkele lijn met stroke-opacity, niet met opacity.",
+    "2026-11-25T22:28:00+01:00 Pakketten YS49 (\"Why do onions make you cry?\", 41,8 s) en YS50 (\"Why are so many pencils yellow?\", 40,3 s) gemaakt: duo-shorts in stijl 3 met watermerk (Laura en Liam), na \"Ja, nu al\". Per pakket video.mp4, video-upload.mp4 (8,8 en 9,0 MB), studio.txt (vr 27 en za 28 nov 2026, 20:00), bron/bronnen.md, bron/stem.txt, bron/controle-beweging.jpg, overzicht.jpg, instagram/ (reel, omslag met de hele titel, bijschrift), tiktok-snapchat/ en een kaart die om pakket OK en bijschrift OK vraagt. Stemmen 590 en 563 tekens. Nagekeken met een blad van één beeld per seconde.",
     "2026-11-25T19:44:00+01:00 YS20–YS39 (20 uitleg-shorts) in YouTube Studio openbaar gezet op besluit van Andries (\"Toch alles vandaag\"); Studio stond op kanaal 1 na \"Staat nu op kanaal 1\". Studio meldt bij alle 20: Openbaar, 25 nov 2026, Gepubliceerd; geen short meer op Gepland. Kaarten (plaatsen: geplaatst) en studio.txt bijgewerkt.",
     "2026-11-25T18:53:00+01:00 Pakket YC01 gemaakt (eerste zaak van de rechercheurs, nieuwe reeks YC): \"Why do barber poles have red and white stripes?\", 34 s, 1080×1920, −14,6 LUFS; video.mp4, video-upload.mp4 (8,5 MB), studio.txt (di 1 dec 2026 20:00), bron/bronnen.md, bron/stem.txt, overzicht.jpg, instagram/ (reel 21,6 MB, omslag met titel, bijschrift), pakket.json met de vraag om pakket OK en bijschrift OK. Bronnen: The Worshipful Company of Barbers, TheCollector (2026), Kearny County Museum (2023); het hart van het verhaal als overlevering gebracht.",
     "2026-11-25T18:23:00+01:00 Wonderwick richting C uitgewerkt (na \"C, schemering\"): staande versie (9:16) en referentiebeelden van vier plekken (plein met klokkentoren, The Museum of Why, bureau, haven met vuurtoren), in Flow met C als voorbeeld, gratis, 2K. Buiten git in tools/ai-proef/flow/wonderwick/ (overzicht-plekken.jpg).",
@@ -164,19 +166,29 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Nieuwe duo-filmpjes (stijl 3, Laura en Liam): YS49 (waarom uien je laten huilen) en YS50 (waarom potloden geel zijn), met de bronnen uit docs/bronnen-voorraad.md.",
-  "volgende": "Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00 (kanaal 1 eerst nakijken). 12:00 heeft nu geen voorraad meer: nieuwe shorts nodig (duo nu al, of rechercheurs vaker) — vraag aan Andries. Na keuring YC01: inplannen di 1 dec 20:00. YC02 voor vr 4 dec. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1).",
+  "bezig": null,
+  "volgende": "Andries: keuring YS49 en YS50 (pakket OK en bijschrift OK per code), YC01 en stijl OK YC. Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00, en YS49/YS50 als ze gekeurd zijn (kanaal 1 eerst nakijken). Zo 29 en ma 30 nov zijn nog leeg om 20:00: YS51 en YS52 maken met nieuwe bronnen. Na keuring YC01: inplannen di 1 dec 20:00. YC02 voor vr 4 dec. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
     {
-      "vraag": "De voorraad van 7 dagen staat: 12:00 elke dag ingepland tot 15 dec (uitleg-shorts in de oude stijl, YS20–YS39); 20:00: YS48 (do 26 nov, het laatste duo-filmpje dat klaarstaat) en YC01 (di 1 dec, ter keuring). Is het goed zo voor nu?",
+      "vraag": "Voorraad rechtgezet: sinds YS20–YS39 openbaar staan, is er geen short meer om 12:00. Om 20:00: do 26 nov YS48 (klaar), vr 27 YS49 en za 28 YS50 (ter keuring), di 1 dec YC01 (ter keuring); zo 29 en ma 30 nov zijn nog leeg. Is één short per dag om 20:00 goed?",
       "aan": "andries",
       "keuzes": [
-        "Ja, goed zo",
-        "Nee, meer"
+        "Ja, 1 per dag om 20:00",
+        "Nee, ook weer 12:00"
       ],
-      "advies": "Ja; daarna YC02 voor vr 4 dec, zodat de rechercheurs ook een volle week hebben.",
+      "advies": "Ja: zo houd ik steeds een week voorraad klaar. Ik maak YS51 en YS52 voor zo 29 en ma 30 nov, met nieuwe bronnen.",
       "blokkeert": false
+    },
+    {
+      "vraag": "Keur je YS49 (waarom uien je laten huilen) en YS50 (waarom zoveel potloden geel zijn)? Per code: \"Beide OK YS49\" en \"Beide OK YS50\" (pakket OK en bijschrift OK).",
+      "aan": "andries",
+      "keuzes": [
+        "Beide OK YS49 en Beide OK YS50",
+        "Aanpassen"
+      ],
+      "advies": "Keuren; dan plan ik ze do 26 nov in Studio in voor vr 27 en za 28 nov 20:00, en op Instagram zodra de lijst met verboden woorden er is.",
+      "blokkeert": true
     },
     {
       "vraag": "Keur je YC01 (pakket OK YC01, bijschrift OK YC01) en de stijl van de nieuwe reeks (stijl OK YC)?",

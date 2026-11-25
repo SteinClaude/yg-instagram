@@ -1,0 +1,5 @@
+TIKTOK EN SNAPCHAT — YS49 (jesse-16, jesse-18)
+Video: ../video.mp4 (1080x1920, 41,8 s). Korter dan 1 minuut: op TikTok telt hij niet voor uitbetaling (daarvoor is de reeks YL).
+Bijschrift TikTok: tiktok.txt. Bijschrift Snapchat Spotlight: snapchat.txt (kort).
+AI-label: aan op beide platforms (realistische AI-stemmen van ElevenLabs).
+Plaatsen: NIET met de hand. Pas via de automaat, na de koppeling door Andries, en na pakket OK YS49.

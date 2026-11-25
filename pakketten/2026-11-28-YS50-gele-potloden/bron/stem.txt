@@ -1,0 +1,13 @@
+Stem: ElevenLabs (tekst naar spraak, betaald abonnement), vraag = Laura (eleven_v4, tempo 1.12), antwoord = Liam (eleven_v4, tempo 1.12); gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.
+Ingesproken tekst per scène:
+1. [vraag, Laura] Why are so many pencils yellow?
+2. [antwoord, Liam] It's a story about a diamond, a world's fair, and China!
+3. [antwoord, Liam] In 1889, at the world's fair in Paris, a pencil maker showed off a yellow pencil.
+4. [vraag, Laura] Why yellow?
+5. [antwoord, Liam] The best graphite was believed to come from China, where yellow stood for royalty and respect.
+6. [antwoord, Liam] They even named it after a famous diamond: the Koh-i-Noor!
+7. [vraag, Laura] And the other pencils?
+8. [antwoord, Liam] Soon other pencil makers painted theirs yellow too.
+9. [vraag, Laura] And the lead inside?
+10. [antwoord, Liam] Here's the twist: pencils never had lead in them. It's graphite and clay!
+11. [antwoord, Liam] So your yellow pencil is dressed like royalty, and it has no lead!

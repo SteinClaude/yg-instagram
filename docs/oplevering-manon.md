@@ -1,3 +1,4 @@
+KLAAR: pakketten YS49 (uien, 41,8 s) en YS50 (gele potloden, 40,3 s) ter keuring, voor vr 27 en za 28 nov 20:00; pakket OK en bijschrift OK per code gevraagd; voorraadvraag rechtgezet (12:00 is leeg, zo 29 en ma 30 nov nog open) · wo 25 nov 22:28
 KLAAR: YS20–YS39 (20 uitleg-shorts) openbaar in YouTube Studio op besluit van Andries; Studio meldt bij alle 20 "Openbaar, 25 nov 2026, Gepubliceerd"; 12:00 heeft nu geen voorraad meer · wo 25 nov 19:44
 KLAAR: voorraad 7 dagen (eva-voorraad-7): 12:00 elke dag ingepland tot 15 dec (YS20–YS39), 20:00 YS48 (do 26 nov) en YC01 (di 1 dec, ter keuring); vraag aan Andries gesteld, nog geen antwoord · wo 25 nov 19:01
 KLAAR: pakket YC01 (eerste zaak van de rechercheurs, de paal van de kapper, 34 s) ter keuring; pakket OK, bijschrift OK en stijl OK YC gevraagd · wo 25 nov 18:53
