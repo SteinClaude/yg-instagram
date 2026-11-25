@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T17:40:00+01:00",
+  "tijd": "2026-11-25T17:50:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-25T17:50:00+01:00 Proefshort 3b gemaakt (na \"de proef video moet sneller,flotter verlopen er zit te veel stilte tussen de woorden\", ±17:37): zelfde verhaal en beelden, pauzes in de stem ingekort tot 0,1 s, stem op tempo 1,15, elke scène zo lang als zijn zin, clips 1,2–1,3 keer versneld, eigen whoosh en klap; 31 s (was 49 s), geen stilte langer dan 0,3 s, −14,4 LUFS. Geen nieuw tegoed. Alleen lokaal, buiten git in tools/ai-proef/flow/proefshort3b/.",
     "2026-11-25T17:18:00+01:00 Kleine kopie van de automaat gemaakt volgens LEESMIJ (USERPROFILE/yg-automaat, alleen gereedschap en src). YS48 Instagram met inplannen.cjs --account kanaal-1 --proef voor do 26 nov 20:00: keuring (pakket en bijschrift \"Beide OK YS48\"), video, omslag en bijschrift in orde. Niet echt ingepland: geen lijst met verboden woorden op de pc (YG_VERBODEN_WOORDEN), en zonder die lijst plan ik niet in (eva-automaat-6).",
     "2026-11-25T16:32:00+01:00 Proefshort 3 gemaakt (na \"Nog aanpassen\" en \"Langer en meer verhaal,Meer beweging in beeld,Haak en einde sterker\"): zes scènes, 49 s, 1080×1920, −14 LUFS. Vier nieuwe clips met bewegende camera (klok in close-up met terugrijdende camera, meelopende camera naar het bureau, rond de zonnewijzer in een tuin, omhoog naar de wijzers in de klokkentoren) plus twee clips uit proefshort 2; alle in 1080p. Haak \"Every clock you own is copying something…\", slot \"…you're reading a shadow. Case closed.\"; stem Lily (478 tekens). Alleen lokaal, buiten git in tools/ai-proef/flow/proefshort3/; niets geplaatst.",
     "2026-11-25T15:58:00+01:00 Proefshort 2 gemaakt (na \"Aanpassen\", \"Beeld bij het verhaal,Andere stem,Tekst in beeld\", \"ElevenLabs\", \"Woord voor woord, groter\" en \"1 Lily (Recommended)\"): drie nieuwe clips in stijl D bij het verhaal (wandklok, zonnewijzer in de map, klokkentoren), beste versie per scène opgeschaald naar 1080p; stem Lily (ElevenLabs) op tempo 1,1; één groot woord tegelijk, kernwoorden goudgeel. 26,4 s, 1080×1920. Alleen lokaal, buiten git in tools/ai-proef/flow/proefshort2/; niets geplaatst. Uitleg in docs/waaromdorp/ai-proef.md.",
@@ -158,7 +159,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Proefshort 3 sneller: pauzes in de stem inkorten, stem tempo 1,15, elke scène zo lang als zijn zin, clips licht versneld.",
+  "bezig": "Niets: proefshort 3b ligt bij Andries.",
   "volgende": "Do 26 nov 17:00–17:45 Studio: YS48 inplannen voor do 26 nov 20:00 (kanaal 1 eerst nakijken). Rechercheurs op kanaal 1, afwisselend met het duo: ritme en eerste onderwerp voorstellen (niet opnieuw klokken: dat was YS47); stijl OK voor de reeks vragen. Reactie van Andries op proefshort 3. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [

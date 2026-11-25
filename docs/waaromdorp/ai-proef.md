@@ -120,6 +120,17 @@
 - **Bestanden:** buiten git, in `tools/ai-proef/flow/proefshort3/`: `proefshort3-klokken.mp4`, `bronnen.md` en de stemopnames. Bronnen en toelichting op de woorden staan in `bronnen.md`.
 - **Flow-tegoed:** stond om 16:00 op 618 punten (de nieuwe periode begint 24 dec). De vier aanvragen kostten samen 192.
 
+## Proefshort 3b (wo 25 nov 2026)
+**Waarom.** Andries, ±17:37, na proefshort 3: *"de proef video moet sneller,flotter verlopen er zit te veel stilte tussen de woorden"*.
+
+**Wat er anders is.** Het verhaal, de beelden en de stem zijn hetzelfde als in proefshort 3; er is geen nieuw tegoed gebruikt.
+- **Stiltes:** de pauzes in de stem zijn ingekort tot 0,1 s; eerst waren ze tot 0,57 s.
+- **Tempo:** de stem staat op 1,15 (was 1,1).
+- **Geen gaten tussen de scènes.** Elke scène duurt nu precies zo lang als zijn zin, plus 0,3 s; eerst viel er tot 1,8 s niets. Daarvoor spelen de clips iets sneller af (1,2 tot 1,3 keer), zodat de actie in beeld blijft.
+- **Geluid:** een eigen whoosh bij elke overgang en een klap onder de stempel, allebei zelf gemaakt. Er zit geen muziek in.
+- **Lengte:** 31 s (was 49 s). Er valt nergens meer een stilte van meer dan 0,3 s. Volume −14,4 LUFS.
+- **Bestand:** buiten git: tools/ai-proef/flow/proefshort3b/proefshort3b-klokken.mp4.
+
 **Wat dit format nodig heeft** als het account er komt:
 - Per short 3 tot 4 clips van 8 s.
 - De scènes horen bij het onderwerp. Bij de klokken hoort de foto in de map een zonnewijzer te zijn, geen machine.
