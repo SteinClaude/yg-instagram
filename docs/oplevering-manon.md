@@ -1,3 +1,4 @@
+KLAAR: YS20–YS39 (20 uitleg-shorts) openbaar in YouTube Studio op besluit van Andries; Studio meldt bij alle 20 "Openbaar, 25 nov 2026, Gepubliceerd"; 12:00 heeft nu geen voorraad meer · wo 25 nov 19:44
 KLAAR: voorraad 7 dagen (eva-voorraad-7): 12:00 elke dag ingepland tot 15 dec (YS20–YS39), 20:00 YS48 (do 26 nov) en YC01 (di 1 dec, ter keuring); vraag aan Andries gesteld, nog geen antwoord · wo 25 nov 19:01
 KLAAR: pakket YC01 (eerste zaak van de rechercheurs, de paal van de kapper, 34 s) ter keuring; pakket OK, bijschrift OK en stijl OK YC gevraagd · wo 25 nov 18:53
 KLAAR: Wonderwick richting C uitgewerkt: staande versie en vier plekken (plein, museum, bureau, haven) buiten git in tools/ai-proef/flow/wonderwick/ · wo 25 nov 18:23
@@ -250,6 +251,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 25 nov 2026 ±19:10, in de sessie, op "Wil je Studio op kanaal 1 zetten?" (keuzes: Staat nu op kanaal 1; Later): "Staat nu op kanaal 1" → YS20–YS39 openbaar gezet.
 - wo 25 nov 2026 ±19:26, in de sessie, op "Wat doen we met de 20 uitleg-shorts zonder Peertje (YS20–YS39)?" (na zijn bericht "de videos zonder peertje wil ik nu vandaag allemaal posten zodat ze niet verloren gaan maar wel alvast gepost zijn,"; keuzes: Laten staan; Sneller, 2 per dag; Toch alles vandaag — met de uitleg dat ze al ingepland staan, dat alles op één dag bereik kost en dat het buiten mijn Studio-tijd 17:00–17:45 valt): "Toch alles vandaag" → YS20–YS39 vandaag openbaar in YouTube Studio, buiten mijn vaste tijd; Studio moet eerst op kanaal 1 (dat zet Andries). Gemeld in voorEva (V-manon-studio-buiten-tijd).
 - wo 25 nov 2026 ±18:27, in de sessie, op "Wat doen we hierna?" (keuzes: Eerste zaak maken; Eerst meer plekken; mijn advies: de rood-witte paal van de kapper): "Eerste zaak maken" → YC01, nieuwe reeks van de rechercheurs (YC = case), onderwerp de rood-witte paal van de kapper; pakket OK, bijschrift OK en stijl OK voor de reeks vraag ik als het pakket klaar is.
 - wo 25 nov 2026 ±18:16, in de sessie, op "Welke richting wordt Wonderwick?" (drie ontwerpen van bovenaf; keuzes: C, schemering; A, vogelvlucht; ook B, sprookjeskaart, lag voor): "C, schemering" → Wonderwick krijgt de sfeer van C (schemering met lantaarns); staande versie en referentiebeelden per plek volgen.
