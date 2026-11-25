@@ -21,6 +21,14 @@
 
 **Nagekeken:** het plan is vr 20 nov nagelopen door twee controleurs. De ene keek naar de documentatie van Omni en de API, de andere naar onze regels en het beleid van Google, YouTube en de EU. Hun verbeteringen zijn verwerkt. Het citaat uit de voorwaarden en de punten uit de EU-richtsnoeren heb ik zelf in de bron nagekeken.
 
+## Bijgesteld wo 25 nov 2026 (keuzebladen)
+- **Stijlen:** A (echt filmbeeld), B (gepolijst echt) en D (getekend). Bijna echt (filmische 3D) vervalt (keuzeblad 1, zo 22 nov ±02:48).
+- **De rechercheur:** paneel A van keuzeblad 2 (donkere bob). **De collega:** paneel D van keuzeblad 3: donkere huid, kort grijs haar, een snor zonder baard, een rond goudkleurig brilletje. De vaste tekst van de collega is daarop aangepast.
+- **Kleuren:** camel en roest, met olijfgroen en bordeaux (keuzeblad 4, A). **Sfeer van het bureau:** zonsondergang (keuzeblad 5, A).
+- **Wie bedient Flow:** Manon, na *"Ja, Flow mag"* (wo 25 nov ±10:24).
+- **Voor welk account:** het nieuwe account op YouTube en Instagram (di 24 nov). Het Vraagteken en Peertje blijven op kanaal 1.
+- De actuele prompts staan in  (versie 2). De tekst hieronder is de eerste versie van het plan.
+
 ## Wat de proef moet laten zien
 1. **Welke stijl werkt beter: echt of bijna echt?** Dezelfde drie scènes in beide stijlen, naast elkaar.
 2. **Blijven ze gelijk?** In elke clip hetzelfde gezicht, haar en dezelfde kleding, en de twee nooit verwisseld of vermengd.
