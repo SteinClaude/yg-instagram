@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T18:47:00+01:00",
+  "tijd": "2026-11-25T18:53:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-25T18:53:00+01:00 Pakket YC01 gemaakt (eerste zaak van de rechercheurs, nieuwe reeks YC): \"Why do barber poles have red and white stripes?\", 34 s, 1080×1920, −14,6 LUFS; video.mp4, video-upload.mp4 (8,5 MB), studio.txt (di 1 dec 2026 20:00), bron/bronnen.md, bron/stem.txt, overzicht.jpg, instagram/ (reel 21,6 MB, omslag met titel, bijschrift), pakket.json met de vraag om pakket OK en bijschrift OK. Bronnen: The Worshipful Company of Barbers, TheCollector (2026), Kearny County Museum (2023); het hart van het verhaal als overlevering gebracht.",
     "2026-11-25T18:23:00+01:00 Wonderwick richting C uitgewerkt (na \"C, schemering\"): staande versie (9:16) en referentiebeelden van vier plekken (plein met klokkentoren, The Museum of Why, bureau, haven met vuurtoren), in Flow met C als voorbeeld, gratis, 2K. Buiten git in tools/ai-proef/flow/wonderwick/ (overzicht-plekken.jpg).",
     "2026-11-25T18:15:00+01:00 Ontwerp van Wonderwick van bovenaf (na het bericht van Andries ±17:48): drie versies in Flow als beeld (gratis, 2K): A vogelvlucht, B sprookjeskaart van bovenaf, C schemering met lantaarns; met plein en klokkentoren, The Museum of Why, het bureau, haven, vuurtoren, zwevend eiland, reuzenboom, steenkring, slapende draak, waterval, lichtgevende paddenstoelen. Buiten git in tools/ai-proef/flow/wonderwick/ (overzicht-wonderwick.jpg). Uitleg in docs/waaromdorp/plan-totaal.md.",
     "2026-11-25T17:50:00+01:00 Totaalplan Waaromdorp en het museum geschreven (docs/waaromdorp/plan-totaal.md): elke zaak een genummerd stuk in het museum, vaste opbouw en herkenbare dingen, referentiebeelden voor de plekken, kosten in Flow-punten, planning en vier keuzes voor Andries.",
@@ -162,10 +163,20 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "YC01 (de paal van de kapper): clips gemaakt in Flow (4 aanvragen), stem Lily ingesproken (506 tekens), testmontage van 34 s klaar; gekozen clips worden opgeschaald naar 1080p; daarna video, upload-versie, Instagram-versie en kaart.",
-  "volgende": "Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00 (kanaal 1 eerst nakijken). Daarna, als Andries dat wil: eerste echte zaak van de rechercheurs (voorstel: de rood-witte paal van de kapper, bronnen in docs/bronnen-voorraad.md; met een kapperszaak in Wonderwick), stijl OK voor de reeks vragen; mythische plekken, museum van binnen en tijdmachine. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1); YS48 op Instagram zodra de lijst met verboden woorden op de pc staat.",
+  "bezig": "Niets: YC01 ligt ter keuring bij Andries (pakket OK, bijschrift OK en stijl OK YC).",
+  "volgende": "Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00 (kanaal 1 eerst nakijken). Na de keuring van YC01: inplannen di 1 dec 20:00 (YouTube in Studio; Instagram via de automaat zodra de lijst met verboden woorden er is). Volgende zaak YC02 (2 per week). Mythische plekken, museum van binnen en tijdmachine. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
+    {
+      "vraag": "Keur je YC01 (pakket OK YC01, bijschrift OK YC01) en de stijl van de nieuwe reeks (stijl OK YC)?",
+      "aan": "andries",
+      "keuzes": [
+        "pakket OK YC01",
+        "Aanpassen"
+      ],
+      "advies": "Keuren; dan plan ik hem in voor di 1 dec 20:00 op YouTube en Instagram.",
+      "blokkeert": true
+    },
     {
       "vraag": "Zet je de lijst met verboden woorden (YG_VERBODEN_WOORDEN) op de pc? Zonder die lijst plan ik YS48 niet in op Instagram (de proef voor do 26 nov 20:00 is in orde).",
       "aan": "andries",

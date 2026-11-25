@@ -60,7 +60,23 @@ Er staat geen tekst in beeld en er zijn geen mensen.
 - de mythische plekken (reuzenboom, steenkring, de slapende draak), het museum van binnen en de tijdmachine in de klokkentoren;
 - de eerste echte zaak.
 
-## Het idee in één zin (eerste voorstel)
+## De eerste zaak: YC01 (wo 25 nov 2026)
+**Wat het is.** Een nieuwe reeks op kanaal 1, met de code **YC** (case). De eerste is YC01: *"Why do barber poles have red and white stripes?"*, 34 s. Hij staat in `pakketten/2026-12-01-YC01-kapperspaal/`, bedoeld voor di 1 dec 2026, 20:00.
+
+**De opbouw:**
+1. De haak bij de paal: de camera rijdt terug naar de kapperszaak aan het plein van Wonderwick.
+2. "Case one" in het bureau, met de titel in beeld.
+3. Een kapperszaak uit de jaren 1500.
+4. De rode en witte doeken die om de paal draaien.
+5. Opnieuw de oude zaak, bij de zin over 1745.
+6. Het slot bij de paal in Wonderwick, met de stempel "CASE CLOSED".
+
+**Waarmee gemaakt:**
+- vier nieuwe aanvragen in Flow (192 punten), een gratis beeld van de kapperszaak en één bestaande clip van het bureau;
+- stem Lily, 506 tekens.
+
+**Voor de keuring:** pakket OK en bijschrift OK voor YC01, en een stijl OK voor de reeks (stijl OK YC).
+
 Kanaal 1 wordt één wereld: **Waaromdorp**. In het dorp staat **het museum van het waarom**, en **elke vraag die we oplossen, wordt een stuk in dat museum**. Kijkers zien het museum met elke video voller worden.
 
 ## Wat het iconisch maakt

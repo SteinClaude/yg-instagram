@@ -1,3 +1,4 @@
+KLAAR: pakket YC01 (eerste zaak van de rechercheurs, de paal van de kapper, 34 s) ter keuring; pakket OK, bijschrift OK en stijl OK YC gevraagd · wo 25 nov 18:53
 KLAAR: Wonderwick richting C uitgewerkt: staande versie en vier plekken (plein, museum, bureau, haven) buiten git in tools/ai-proef/flow/wonderwick/ · wo 25 nov 18:23
 KLAAR: drie ontwerpen van Wonderwick van bovenaf (A vogelvlucht, B sprookjeskaart, C schemering) buiten git in tools/ai-proef/flow/wonderwick/; keuze bij Andries · wo 25 nov 18:15
 KLAAR: totaalplan Waaromdorp en het museum (docs/waaromdorp/plan-totaal.md), keuzes bij Andries · wo 25 nov 17:50

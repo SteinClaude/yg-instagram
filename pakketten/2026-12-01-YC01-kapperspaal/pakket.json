@@ -1,0 +1,15 @@
+{
+  "code": "YC01",
+  "titel": "Why do barber poles have red and white stripes?",
+  "soort": "short",
+  "video": "pakketten/2026-12-01-YC01-kapperspaal/video.mp4",
+  "vraagt": {
+    "pakket": "2026-11-25T18:53:00+01:00",
+    "bijschrift": "2026-11-25T18:53:00+01:00"
+  },
+  "opmerking": "Eerste zaak van de rechercheurs (nieuwe reeks YC) in Wonderwick, 34 s, in het tempo van proefshort 3b. Getekende AI-clips uit Flow, stem Lily. Het hart van het verhaal is een overlevering: de video zegt 'the story goes' en 'may be'. Naast pakket OK en bijschrift OK is ook een stijl OK voor de reeks nodig (stijl OK YC). Bedoeld voor di 1 dec 2026, 20:00, op YouTube en Instagram.",
+  "plaatsen": [
+    { "platform": "youtube", "stand": "klaar", "wanneer": "2026-12-01T20:00:00+01:00", "noot": "Inplannen in Studio na pakket OK YC01 en stijl OK YC, tussen 17:00 en 17:45." },
+    { "platform": "instagram", "stand": "klaar", "wanneer": "2026-12-01T20:00:00+01:00", "noot": "Via de automaat (inplannen.cjs) na bijschrift OK YC01, zodra de lijst met verboden woorden op de pc staat." }
+  ]
+}
