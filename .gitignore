@@ -1,5 +1,7 @@
 node_modules/
 waarschuwing.txt
+# meldingen van de automaat (src/plaatsen.cjs): de workflow maakt er meldingen op GitHub van, ze horen niet in git
+waarschuwingen/
 planning.echt.json
 
 # platen/uit is het resultaat van het renderen, geen bron: 117 MB die je met
@@ -31,3 +33,7 @@ pakketten/*/bron/telefooncontrole.html
 
 # Video van de reeks YL (65 MB+) niet in git; de pc houdt hem. Upload, Instagram/TikTok-versie, studio.txt, overzicht en bron/ wel (Eva, avondronde ma 16 nov 21:35). YL01 blijft staan.
 pakketten/*-YL*/video.mp4
+# src/plaatsen.cjs schrijft zijn bestanden in twee stappen; dit blijft alleen achter als een run precies daar wordt afgebroken
+/gedaan.json.tmp
+/status.json.tmp
+/sleutel.json.tmp

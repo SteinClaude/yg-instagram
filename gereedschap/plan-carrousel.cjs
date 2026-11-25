@@ -41,6 +41,7 @@ function controleerVideo(bestand) {
 }
 
 const WORTEL = path.join(__dirname, '..');
+const T = require('../src/accounts.cjs');                 // een carrousel is van het eerste account (@ygdigital.nl): een item zonder "account"
 const [map, datum, tijd, code] = process.argv.slice(2).filter(a => !a.startsWith('--'));
 const PROEF = process.argv.includes('--proef');
 const stop = m => { console.error('STOP: ' + m); process.exit(1); };
@@ -53,7 +54,8 @@ if (!map || !/^\d{4}-\d{2}-\d{2}$/.test(datum || '') || !/^\d{2}:\d{2}$/.test(ti
   const planning = lees('planning.json'), gedaan = lees('gedaan.json');
   const id = `${datum}-bericht-${code.toLowerCase()}`;
   if ([...planning.items, ...gedaan.items].some(i => i.id === id)) stop(`id ${id} bestaat al`);
-  if (planning.items.some(i => i.datum === datum && i.tijd === tijd)) stop(`op ${datum} ${tijd} staat al iets gepland`);
+  // alleen het eigen account telt: een ander account mag op hetzelfde moment iets plaatsen
+  if (planning.items.some(i => T.accountVan(i) === T.EERSTE && i.datum === datum && i.tijd === tijd)) stop(`op ${datum} ${tijd} staat voor ${T.zoek(T.EERSTE).label} al iets gepland`);
   if (fs.readdirSync(path.join(WORTEL, 'beeld/berichten/nl')).some(f => f.startsWith(code + '-') || f === code + '.jpg')) stop(`code ${code} is al in gebruik`);
 
   // platen: bestanden die eindigen op -<nummer>.jpg of -<nummer>.mp4, op nummer gesorteerd
