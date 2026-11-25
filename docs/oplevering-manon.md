@@ -247,6 +247,7 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 25 nov 2026 ±18:16, in de sessie, op "Welke richting wordt Wonderwick?" (drie ontwerpen van bovenaf; keuzes: C, schemering; A, vogelvlucht; ook B, sprookjeskaart, lag voor): "C, schemering" → Wonderwick krijgt de sfeer van C (schemering met lantaarns); staande versie en referentiebeelden per plek volgen.
 - wo 25 nov 2026 ±18:06, in de sessie, op de tweede ronde namen voor het dorp (keuzes: Wonderwick; Fablewick; Mythwick; Whyfell): "Wonderwick (Recommended)" → het dorp heet Wonderwick.
 - wo 25 nov 2026 ±17:58, in de sessie, op de namen (dorp: Whyvale, Whymere, Why Hollow; museum: The Whyseum, The Museum of Why, The Hall of Whys): dorp "Something else", museum "The Museum of Why" → het museum heet The Museum of Why; nieuwe ronde voor het dorp.
 - wo 25 nov 2026 ±17:48, in de sessie (eigen bericht): "ik  wil ook daarna een ontwerp maken voor het dorp vanaf boven af, dit moet een beetje een sprookjes dorp zijn met mytische dingen enz" → ontwerp van Wonderwick van bovenaf, in Flow.

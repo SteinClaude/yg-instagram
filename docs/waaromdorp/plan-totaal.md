@@ -44,7 +44,9 @@ Dit is een voorstel van Manon. Wat erin staat, beslist Andries (zie "Keuzes voor
 
 Er staat geen tekst in beeld en er zijn geen mensen.
 
-**Wat nog volgt, na de keuze van Andries:**
+**Keuze:** Andries, wo 25 nov ±18:16, op "Welke richting wordt Wonderwick?" (drie ontwerpen van bovenaf; keuzes: C, schemering; A, vogelvlucht; ook B, sprookjeskaart, lag voor): *"C, schemering"*. Wonderwick krijgt de sfeer van C: het blauwe avonduur, met brandende ramen en lantaarns.
+
+**Wat nog volgt:**
 - de gekozen richting verder uitwerken;
 - een staande versie (9:16) voor in de shorts;
 - referentiebeelden per plek, zodat elke video dezelfde plekken laat zien.

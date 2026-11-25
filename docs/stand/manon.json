@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T18:15:00+01:00",
+  "tijd": "2026-11-25T18:16:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-25T18:15:00+01:00 Ontwerp van Wonderwick van bovenaf (na het bericht van Andries ±17:48): drie versies in Flow als beeld (gratis, 2K): A vogelvlucht, B sprookjeskaart van bovenaf, C schemering met lantaarns; met plein en klokkentoren, The Museum of Why, het bureau, haven, vuurtoren, zwevend eiland, reuzenboom, steenkring, slapende draak, waterval, lichtgevende paddenstoelen. Buiten git in tools/ai-proef/flow/wonderwick/ (overzicht-wonderwick.jpg). Uitleg in docs/waaromdorp/plan-totaal.md.",
     "2026-11-25T17:50:00+01:00 Totaalplan Waaromdorp en het museum geschreven (docs/waaromdorp/plan-totaal.md): elke zaak een genummerd stuk in het museum, vaste opbouw en herkenbare dingen, referentiebeelden voor de plekken, kosten in Flow-punten, planning en vier keuzes voor Andries.",
@@ -161,7 +161,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Niets: drie ontwerpen van Wonderwick liggen bij Andries.",
+  "bezig": "Wonderwick C uitwerken: staande versie (9:16) en referentiebeelden van de plekken in Flow (gratis beelden).",
   "volgende": "Namen voorleggen. Daarna: referentiebeelden van de plekken (dorpsplein, bureau, museum, tijdmachine; gratis in Flow), eerste zaak van de rechercheurs (nieuw onderwerp, bronnen uit docs/bronnen-voorraad.md), stijl OK reeks vragen; 2 per week om 20:00. Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00 (kanaal 1 eerst nakijken). Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
@@ -179,6 +179,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T18:16:00+01:00 Andries in de sessie, op \"Welke richting wordt Wonderwick?\" (drie ontwerpen van bovenaf; keuzes: C, schemering; A, vogelvlucht; ook B, sprookjeskaart, lag voor): \"C, schemering\"",
     "2026-11-25T18:15:00+01:00 Flow (Chrome van Andries): drie beelden gemaakt met Nano Banana Pro (16:9, geen tegoed) en in 2K gedownload naar tools/ai-proef/flow/wonderwick/ (buiten git). Geen instellingen gewijzigd.",
     "2026-11-25T18:10:00+01:00 Herstel: in commit 1ce3a60 stonden de tijden van de namenkeuze te vroeg (17:50 en 17:53); juist is ±17:58 (museum) en ±18:06 (Wonderwick). Het eigen bericht over het ontwerp van bovenaf kwam ±17:48.",
     "2026-11-25T18:09:00+01:00 Namen nagezocht met een zoekmachine (alleen lezen): Whyvale, Whymere, Why Hollow, Whythorn, Museum of Why, Whyseum/Hall of Whys, Fablewick, Mythwick, Riddlewood, Whyborough, Wonderwick, Elderwhy/Whyfell.",
