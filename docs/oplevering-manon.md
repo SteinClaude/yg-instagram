@@ -1,3 +1,4 @@
+KLAAR: YS48 naar do 26 nov 20:00 (Studio stond op een ander kanaal; Andries "Later"); KAN NIET VERDER van 17:02 opgelost · wo 25 nov 17:14
 KAN NIET VERDER: YS48 kan niet in YouTube Studio, het venster staat op een ander kanaal dan kanaal 1 · nodig: Andries zet Studio op kanaal 1 en zegt het in de sessie · wo 25 nov 17:02
 KLAAR: proefshort 3 stijl D (zes scènes, 49 s, bewegende camera, sterkere haak en slot, stem Lily) buiten git in tools/ai-proef/flow/proefshort3/; aan Andries getoond · wo 25 nov 16:32
 KLAAR: proefshort 2 stijl D (beeld bij het verhaal, stem Lily, woord voor woord groter; 26,4 s) buiten git in tools/ai-proef/flow/proefshort2/; aan Andries getoond · wo 25 nov 15:58
@@ -242,6 +243,8 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 25 nov 2026 ±17:12, in de sessie (eigen bericht): "peertje en vraag tegen, en de recheurs gaan samen op de zelfde kanalen komen zo blijft het variabel en niet eentonig," → de rechercheurs komen op kanaal 1 (YouTube en Instagram), afwisselend met het Vraagteken en Peertje; geen apart nieuw account meer.
+- wo 25 nov 2026 ±17:03, in de sessie, op "Wil je Studio op kanaal 1 zetten, zodat ik YS48 voor 17:45 kan inplannen voor vanavond 20:00?" (keuzes: Staat nu op kanaal 1; Later): "Later" → YS48 gaat do 26 nov in Studio, voor do 26 nov 20:00 (planning kies ik zelf).
 - wo 25 nov 2026 ±16:00, in de sessie, op "Wat moet er nog anders?" (meer keuzes mogelijk: Langer en meer verhaal; Meer beweging in beeld; Stem of tempo; Haak en einde sterker): "Langer en meer verhaal,Meer beweging in beeld,Haak en einde sterker" → proefshort 3: zes scènes (±50 s), vier nieuwe clips met bewegende camera, een haak die prikkelt en een slot dat terugkoppelt naar het begin.
 - wo 25 nov 2026 ±15:59, in de sessie, op "Is proefshort 2 goed zo?" (keuzes: Goed zo; Nog aanpassen): "Nog aanpassen"
 - wo 25 nov 2026 ±15:37, in de sessie, op "Welke ElevenLabs-stem wordt de rechercheur?" (filmpje stemproef-rechercheur.mp4, zelfde zin; keuzes: 1 Lily; 2 Sarah; 3 Alice): "1 Lily (Recommended)" → de rechercheur spreekt met de ElevenLabs-stem Lily (Brits, zelfverzekerd).

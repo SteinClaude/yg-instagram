@@ -1,6 +1,7 @@
 # Kleine AI-proef kanaal 1: echt en bijna echt (vr 20 nov 2026)
 
 ## Besluiten (nieuwste boven)
+- **wo 25 nov 2026 ±17:12.** Andries in de sessie: *peertje en vraag tegen, en de recheurs gaan samen op de zelfde kanalen komen zo blijft het variabel en niet eentonig,*. De rechercheurs komen op kanaal 1, afwisselend met het duo; geen apart account.
 - **wo 25 nov 2026 ±15:06.** Op "Welke stijl krijgt het nieuwe account?", na de vergelijkingsvideo van B en D: *"D, getekend"*. Het nieuwe account krijgt de getekende stijl.
 - **vr 20 nov 2026 ±17:54.** Andries in de sessie: *"maken we echte mensen of bijna echte mensen"*.
   - Op "Welke stijl testen we in de proef?": *"Allebei testen (Recommended)"*.
@@ -27,7 +28,7 @@
 - **De rechercheur:** paneel A van keuzeblad 2 (donkere bob). **De collega:** paneel D van keuzeblad 3: donkere huid, kort grijs haar, een snor zonder baard, een rond goudkleurig brilletje. De vaste tekst van de collega is daarop aangepast.
 - **Kleuren:** camel en roest, met olijfgroen en bordeaux (keuzeblad 4, A). **Sfeer van het bureau:** zonsondergang (keuzeblad 5, A).
 - **Wie bedient Flow:** Manon, na *"Ja, Flow mag"* (wo 25 nov ±10:24).
-- **Voor welk account:** het nieuwe account op YouTube en Instagram (di 24 nov). Het Vraagteken en Peertje blijven op kanaal 1.
+- **Voor welk account:** kanaal 1 (YouTube en Instagram), afwisselend met het Vraagteken en Peertje. Andries, wo 25 nov ±17:12: *peertje en vraag tegen, en de recheurs gaan samen op de zelfde kanalen komen zo blijft het variabel en niet eentonig,*. Het eerdere plan (di 24 nov) voor een apart nieuw account vervalt.
 - De actuele prompts staan in `flow-stappen.md` (versie 2). De tekst hieronder is de eerste versie van het plan.
 
 ## Uitkomst clips wo 25 nov 2026
