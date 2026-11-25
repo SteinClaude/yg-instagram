@@ -1,13 +1,14 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T18:16:00+01:00",
+  "tijd": "2026-11-25T18:23:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "werkt",
+  "status": "wacht",
   "af": [
+    "2026-11-25T18:23:00+01:00 Wonderwick richting C uitgewerkt (na \"C, schemering\"): staande versie (9:16) en referentiebeelden van vier plekken (plein met klokkentoren, The Museum of Why, bureau, haven met vuurtoren), in Flow met C als voorbeeld, gratis, 2K. Buiten git in tools/ai-proef/flow/wonderwick/ (overzicht-plekken.jpg).",
     "2026-11-25T18:15:00+01:00 Ontwerp van Wonderwick van bovenaf (na het bericht van Andries ±17:48): drie versies in Flow als beeld (gratis, 2K): A vogelvlucht, B sprookjeskaart van bovenaf, C schemering met lantaarns; met plein en klokkentoren, The Museum of Why, het bureau, haven, vuurtoren, zwevend eiland, reuzenboom, steenkring, slapende draak, waterval, lichtgevende paddenstoelen. Buiten git in tools/ai-proef/flow/wonderwick/ (overzicht-wonderwick.jpg). Uitleg in docs/waaromdorp/plan-totaal.md.",
     "2026-11-25T17:50:00+01:00 Totaalplan Waaromdorp en het museum geschreven (docs/waaromdorp/plan-totaal.md): elke zaak een genummerd stuk in het museum, vaste opbouw en herkenbare dingen, referentiebeelden voor de plekken, kosten in Flow-punten, planning en vier keuzes voor Andries.",
     "2026-11-25T17:41:00+01:00 Proefshort 3b gemaakt (na \"de proef video moet sneller,flotter verlopen er zit te veel stilte tussen de woorden\", ±17:37): zelfde verhaal en beelden, pauzes in de stem ingekort tot 0,1 s, stem op tempo 1,15, elke scène zo lang als zijn zin, clips 1,2–1,3 keer versneld, eigen whoosh en klap; 31 s (was 49 s), geen stilte langer dan 0,3 s, −14,4 LUFS. Geen nieuw tegoed. Alleen lokaal, buiten git in tools/ai-proef/flow/proefshort3b/.",
@@ -161,8 +162,8 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "Wonderwick C uitwerken: staande versie (9:16) en referentiebeelden van de plekken in Flow (gratis beelden).",
-  "volgende": "Namen voorleggen. Daarna: referentiebeelden van de plekken (dorpsplein, bureau, museum, tijdmachine; gratis in Flow), eerste zaak van de rechercheurs (nieuw onderwerp, bronnen uit docs/bronnen-voorraad.md), stijl OK reeks vragen; 2 per week om 20:00. Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00 (kanaal 1 eerst nakijken). Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1).",
+  "bezig": "Niets: de plekken van Wonderwick liggen bij Andries.",
+  "volgende": "Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00 (kanaal 1 eerst nakijken). Daarna, als Andries dat wil: eerste echte zaak van de rechercheurs (voorstel: de rood-witte paal van de kapper, bronnen in docs/bronnen-voorraad.md; met een kapperszaak in Wonderwick), stijl OK voor de reeks vragen; mythische plekken, museum van binnen en tijdmachine. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1); YS48 op Instagram zodra de lijst met verboden woorden op de pc staat.",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -179,6 +180,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T18:23:00+01:00 Flow (Chrome van Andries): vijf beelden gemaakt met Nano Banana Pro (9:16, geen tegoed, ontwerp C als voorbeeld) en in 2K gedownload naar tools/ai-proef/flow/wonderwick/ (buiten git).",
     "2026-11-25T18:16:00+01:00 Andries in de sessie, op \"Welke richting wordt Wonderwick?\" (drie ontwerpen van bovenaf; keuzes: C, schemering; A, vogelvlucht; ook B, sprookjeskaart, lag voor): \"C, schemering\"",
     "2026-11-25T18:15:00+01:00 Flow (Chrome van Andries): drie beelden gemaakt met Nano Banana Pro (16:9, geen tegoed) en in 2K gedownload naar tools/ai-proef/flow/wonderwick/ (buiten git). Geen instellingen gewijzigd.",
     "2026-11-25T18:10:00+01:00 Herstel: in commit 1ce3a60 stonden de tijden van de namenkeuze te vroeg (17:50 en 17:53); juist is ±17:58 (museum) en ±18:06 (Wonderwick). Het eigen bericht over het ontwerp van bovenaf kwam ±17:48.",

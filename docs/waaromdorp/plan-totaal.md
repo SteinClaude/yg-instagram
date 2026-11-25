@@ -46,10 +46,19 @@ Er staat geen tekst in beeld en er zijn geen mensen.
 
 **Keuze:** Andries, wo 25 nov ±18:16, op "Welke richting wordt Wonderwick?" (drie ontwerpen van bovenaf; keuzes: C, schemering; A, vogelvlucht; ook B, sprookjeskaart, lag voor): *"C, schemering"*. Wonderwick krijgt de sfeer van C: het blauwe avonduur, met brandende ramen en lantaarns.
 
+**Uitgewerkt (wo 25 nov, ±18:23):** in Flow gemaakt, met C als voorbeeld, als gratis beelden in 2K. Ze staan buiten git in `tools/ai-proef/flow/wonderwick/`, met een overzicht in `overzicht-plekken.jpg`.
+- **Staande versie** van C (9:16), voor in de shorts: `ontwerp-C-staand.png`.
+- **Referentiebeelden van vier plekken**, op ooghoogte, in de schemering:
+  - het plein met de klokkentoren (`plek-plein-klokkentoren.png`);
+  - The Museum of Why (`plek-museum.png`);
+  - het bureau van de rechercheurs, met het groene raam (`plek-bureau.png`);
+  - de haven met de vuurtoren en het zwevende eiland (`plek-haven-vuurtoren.png`).
+- Deze beelden zijn het voorbeeld voor elke clip die op zo'n plek speelt.
+
 **Wat nog volgt:**
 - de gekozen richting verder uitwerken;
-- een staande versie (9:16) voor in de shorts;
-- referentiebeelden per plek, zodat elke video dezelfde plekken laat zien.
+- de mythische plekken (reuzenboom, steenkring, de slapende draak), het museum van binnen en de tijdmachine in de klokkentoren;
+- de eerste echte zaak.
 
 ## Het idee in één zin (eerste voorstel)
 Kanaal 1 wordt één wereld: **Waaromdorp**. In het dorp staat **het museum van het waarom**, en **elke vraag die we oplossen, wordt een stuk in dat museum**. Kijkers zien het museum met elke video voller worden.
