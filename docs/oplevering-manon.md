@@ -1,3 +1,4 @@
+KLAAR: proefshort stijl D ("Case #001 — Why clocks go clockwise", 26,4 s, gratis Kokoro-stem, clips in 1080p) buiten git in tools/ai-proef/flow/proefshort/; aan Andries getoond · wo 25 nov 15:13
 KLAAR: clips van de rechercheurs in Flow, stijl B (gepolijst echt) en D (getekend), 3 scènes × 2 versies per stijl; vergelijkingsvideo vergelijking-B-D.mp4 buiten git; stijlkeuze bij Andries · wo 25 nov 12:07
 KAN NIET VERDER: eerste clip in Flow mislukt twee keer ("Er ging iets mis", geen uitleg) · nodig: keuze van Andries hoe verder (eenvoudiger proberen, zelf met de hand, of later) · wo 25 nov 11:42
 KLAAR: gezichten in bijna echt (C) en getekend (D) gemaakt in Flow, naast echt (A/B); vergelijkingsblad aan Andries getoond · wo 25 nov 11:11

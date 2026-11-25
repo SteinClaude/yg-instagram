@@ -63,6 +63,26 @@
 2. Daarna schaal ik de beste clips gratis op naar 1080p.
 3. Dan bouw ik een eerste proefshort van ±30 s, met stem.
 
+## Proefshort in stijl D (wo 25 nov 2026)
+**Keuze.** Andries koos ±15:06 *"D, getekend"*.
+
+**Wat ik maakte.** Een proefshort van ±26 s: "Case #001 — Why clocks go clockwise". Alleen lokaal; er is niets geplaatst.
+- **Beeld:** versie 1 van scène 1, 2 en 3 in stijl D, in Flow gratis opgeschaald naar 1080p (1080×1920). Aan het eind blijft het laatste beeld 2,4 s staan, met de stempel "CASE CLOSED".
+- **Stem:** Kokoro (gratis, lokaal, stem af_heart), als voice-over van de rechercheur. Haar mond blijft dicht, dus een stem buiten beeld past.
+  - Het ElevenLabs-tegoed blijft over tot 14 dec. Daarover beslist Andries.
+- **Tekst in beeld:**
+  - bovenaan, tijdens de haak: "CASE #001" en de vraag;
+  - daarna ondertitels van hoogstens drie woorden.
+- **Onderwerp:** hetzelfde als YS47, met dezelfde nagekeken bronnen (The Irish Times 2001, The Old Farmer's Almanac).
+  - Ik koos het omdat de tandwielen in scène 3 erbij passen.
+  - QWERTY had ik eerst in gedachten, maar die bronnen waren niet te lezen.
+- **Bestanden:** buiten git, in `tools/ai-proef/flow/proefshort/`: `proefshort-klokken.mp4`, `bronnen.md` en de stemopnames.
+
+**Wat dit format nodig heeft** als het account er komt:
+- Per short 3 tot 4 clips van 8 s.
+- De scènes horen bij het onderwerp. Bij de klokken hoort de foto in de map een zonnewijzer te zijn, geen machine.
+- Eén vaste stem voor de rechercheur.
+
 ## Wat de proef moet laten zien
 1. **Welke stijl werkt beter: echt of bijna echt?** Dezelfde drie scènes in beide stijlen, naast elkaar.
 2. **Blijven ze gelijk?** In elke clip hetzelfde gezicht, haar en dezelfde kleding, en de twee nooit verwisseld of vermengd.
