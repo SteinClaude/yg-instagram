@@ -29,6 +29,39 @@
 - **Voor welk account:** het nieuwe account op YouTube en Instagram (di 24 nov). Het Vraagteken en Peertje blijven op kanaal 1.
 - De actuele prompts staan in `flow-stappen.md` (versie 2). De tekst hieronder is de eerste versie van het plan.
 
+## Uitkomst clips wo 25 nov 2026
+**Gemaakt.** Stijl B (gepolijst echt) en D (getekend), elk drie scènes van 8 s in 2 versies: 12 clips.
+- Andries koos voor de clips: *"B, gepolijst echt (Recommended),D, getekend (Recommended)"* (±11:25).
+- Instellingen: Omni Flash 1.2 in Flow, 9:16, 720p, met geluid.
+- Alle clips staan buiten git in `tools/ai-proef/flow/`.
+
+**Wat werkte:**
+- **Een korte prompt** (±900 tekens) met **4 referentiebeelden**: per persoon het gezicht en het hele lichaam.
+- De lange prompt uit `flow-stappen.md` (±3.300 tekens, 6 beelden) mislukte twee keer ("Er ging iets mis"). Andries koos daarna: *"Eenvoudiger proberen (Recommended)"* (±11:44).
+
+**Wat goed ging, in beide stijlen:**
+- De gezichten, het haar, de snor en het brilletje blijven gelijk binnen een clip.
+- Het lopen en het omdraaien zien er natuurlijk uit.
+- De camera staat stil, er zijn geen knippen en de monden blijven dicht.
+- "SOURCES" is goed gespeld, al ligt het etiket soms ondersteboven (leesbaar voor hen, niet voor de kijker).
+
+**Wat afwijkt:**
+- **Het prikbord** hangt vol foto's van mensen. De korte prompt sloot dat niet uit. Volgende keer: *"the pinned photographs show only machines and buildings, no people"*.
+- **Kleding:**
+  - D1 versie 2: zij draagt pumps in plaats van enkellaarzen.
+  - B1 versie 1: zij draagt hoge laarzen.
+- **De hendel** in de machinekamer is nauwelijks te zien.
+
+**Beste versie per scène:**
+- **B:** scène 1 versie 2, scène 2 versie 2, scène 3 versie 2.
+- **D:** scène 1 versie 1, scène 2 versie 1, scène 3 versie 1.
+- Ze staan naast elkaar in `vergelijking-B-D.mp4` en `vergelijking-B-D.jpg`, met "AI-generated" in beeld.
+
+**Volgende stap:**
+1. Andries kiest de stijl.
+2. Daarna schaal ik de beste clips gratis op naar 1080p.
+3. Dan bouw ik een eerste proefshort van ±30 s, met stem.
+
 ## Wat de proef moet laten zien
 1. **Welke stijl werkt beter: echt of bijna echt?** Dezelfde drie scènes in beide stijlen, naast elkaar.
 2. **Blijven ze gelijk?** In elke clip hetzelfde gezicht, haar en dezelfde kleding, en de twee nooit verwisseld of vermengd.

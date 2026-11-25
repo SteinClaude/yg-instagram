@@ -1,3 +1,4 @@
+KLAAR: clips van de rechercheurs in Flow, stijl B (gepolijst echt) en D (getekend), 3 scènes × 2 versies per stijl; vergelijkingsvideo vergelijking-B-D.mp4 buiten git; stijlkeuze bij Andries · wo 25 nov 12:07
 KAN NIET VERDER: eerste clip in Flow mislukt twee keer ("Er ging iets mis", geen uitleg) · nodig: keuze van Andries hoe verder (eenvoudiger proberen, zelf met de hand, of later) · wo 25 nov 11:42
 KLAAR: gezichten in bijna echt (C) en getekend (D) gemaakt in Flow, naast echt (A/B); vergelijkingsblad aan Andries getoond · wo 25 nov 11:11
 KLAAR: gezichten 1a en 1b (rechercheur en collega, echt) gemaakt in Flow op basis van zijn keuzes; ter keuring · wo 25 nov 10:50
