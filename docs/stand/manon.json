@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T11:42:00+01:00",
+  "tijd": "2026-11-25T11:44:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
     "sinds": "2026-11-25T10:08:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-25T11:38:00+01:00 Acht referentiebeelden gemaakt in Flow (Nano Banana Pro, 9:16): echt en getekend, rechercheur en collega, tot het middel en ten voeten uit; elk vanuit het goedgekeurde gezicht; \"SOURCES\" overal leesbaar. Buiten git in tools/ai-proef/flow/ (echt-J-b/c, echt-K-b/c, getekend-J-b/c, getekend-K-b/c) plus referenties-B-D.jpg.",
     "2026-11-25T11:11:00+01:00 Gezichten van de rechercheur en de collega ook in stijl C (bijna echt, filmische 3D) en D (getekend) gemaakt in Flow (Nano Banana Pro, 9:16), elk vanuit de goedgekeurde echte foto; buiten git in tools/ai-proef/flow/ (bijna-J-a, bijna-K-a, getekend-J-a, getekend-K-a) plus vergelijkingsblad stijlen-gezichten.jpg. Geen waarschuwing, CAPTCHA of weigering.",
@@ -152,15 +152,15 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": "-",
+  "bezig": "Clip B scène 1 eenvoudiger proberen (kortere prompt, 4 referentiebeelden)",
   "volgende": "Vandaag 17:00–17:45 Studio: YS48 inplannen voor wo 25 nov 20:00 (kanaal 1 eerst nakijken). Antwoord van Andries op een uitzondering voor Flow (dan meld ik het aan Eva). Keuzebladen 2–5. Duo na 14 dec. Weekanalyse zodra de cijfers er zijn. Instagram-sleutel kanaal 1 (alleen Andries). Instagram niet openen (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
-    "Eerste clip in Flow mislukt twee keer (\"Er ging iets mis\", geen uitleg). Hoe verder: (a) technisch eenvoudiger proberen (kortere prompt, 4 referentiebeelden), (b) Andries probeert het zelf met de hand in de videomodus van Flow, (c) stoppen en later opnieuw? · aanname: niets meer proberen zonder zijn keuze · blokkeert: ja, voor de clips",
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T11:44:00+01:00 Andries in de sessie, op \"Hoe gaan we verder?\" (eerste clip mislukt; keuzes: Eenvoudiger proberen; Ik probeer het zelf; Later opnieuw): \"Eenvoudiger proberen (Recommended)\"",
     "2026-11-25T11:42:00+01:00 Flow: eerste clip (stijl B, scène 1, 6 echte referentiebeelden, Omni Flash 1.2, 9:16, 720p, 8 s, 2 versies) twee keer verstuurd (één keer met Opnieuw proberen, zelfde opdracht); Flow meldt beide keren alleen \"Er ging iets mis. Probeer het opnieuw.\" Geen uitleg; geen clip gemaakt. Gestopt volgens de stopregel; tabblad gesloten.",
     "2026-11-25T11:25:00+01:00 Andries in de sessie, op \"Welke stijlen gaan door naar de clips?\" (keuzes: B gepolijst echt; D getekend; A echt filmbeeld; C bijna echt; meer mogelijk): \"B, gepolijst echt (Recommended),D, getekend (Recommended)\"",
     "2026-11-25T11:04:00+01:00 Andries in de sessie, op \"Wat bedoel je met de bijna echte?\" (keuzes: Getekend (D); Toch bijna echt (C); Allebei (C en D)): \"Allebei (C en D)\"",
