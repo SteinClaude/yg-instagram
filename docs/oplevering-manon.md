@@ -1,3 +1,4 @@
+KAN NIET VERDER: YS48 niet ingepland op di 24 nov (wachttaak stopte met de sessie) · nodig: niets van Andries; ik plan hem vandaag 17:00–17:45 in voor wo 25 nov 20:00 · wo 25 nov 10:08
 KLAAR: YS48 pakket OK en bijschrift OK ("Beide OK YS48", di 24 nov 13:25); YouTube wo 25 nov 20:00 (Studio vandaag 17:00); Instagram pas als de sleutel weer werkt · di 24 nov 13:25
 KLAAR: keuzeblad 1 verwerkt (stijlen A, B en D); keuzeblad 2 (de rechercheur) klaar voor Andries; morgen verder · zo 22 nov 02:56
 KLAAR: vijf keuzebladen voor Flow (docs/waaromdorp/keuzebladen.md): stijl, rechercheur, collega, kleuren, sfeer, elk met opties A–D · zo 22 nov 02:22
