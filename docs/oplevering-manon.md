@@ -1,3 +1,4 @@
+KLAAR: voorraad 7 dagen (eva-voorraad-7): 12:00 elke dag ingepland tot 15 dec (YS20–YS39), 20:00 YS48 (do 26 nov) en YC01 (di 1 dec, ter keuring); vraag aan Andries gesteld, nog geen antwoord · wo 25 nov 19:01
 KLAAR: pakket YC01 (eerste zaak van de rechercheurs, de paal van de kapper, 34 s) ter keuring; pakket OK, bijschrift OK en stijl OK YC gevraagd · wo 25 nov 18:53
 KLAAR: Wonderwick richting C uitgewerkt: staande versie en vier plekken (plein, museum, bureau, haven) buiten git in tools/ai-proef/flow/wonderwick/ · wo 25 nov 18:23
 KLAAR: drie ontwerpen van Wonderwick van bovenaf (A vogelvlucht, B sprookjeskaart, C schemering) buiten git in tools/ai-proef/flow/wonderwick/; keuze bij Andries · wo 25 nov 18:15

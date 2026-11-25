@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T18:53:00+01:00",
+  "tijd": "2026-11-25T19:01:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -168,6 +168,16 @@
   "kanNietVerder": null,
   "vragen": [
     {
+      "vraag": "De voorraad van 7 dagen staat (12:00 elke dag ingepland tot 15 dec; 20:00: YS48 do 26 nov en YC01 di 1 dec ter keuring). Is het goed zo voor nu?",
+      "aan": "andries",
+      "keuzes": [
+        "Ja, goed zo",
+        "Nee, meer"
+      ],
+      "advies": "Ja; daarna YC02 voor vr 4 dec, zodat de rechercheurs ook een volle week hebben.",
+      "blokkeert": false
+    },
+    {
       "vraag": "Keur je YC01 (pakket OK YC01, bijschrift OK YC01) en de stijl van de nieuwe reeks (stijl OK YC)?",
       "aan": "andries",
       "keuzes": [
@@ -191,6 +201,7 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-25T19:01:00+01:00 Andries in de sessie (eigen bericht, in plaats van antwoord op de keuring van YC01, de stijl OK YC en de vraag over de voorraad): \"dus dit is de eerste video van het nieuwe concept toch? en dan hebben we nog filmpjes van peertje?\" Geen keuring gegeven; de drie vragen staan nog open.",
     "2026-11-25T18:47:00+01:00 Flow (Chrome van Andries): referentiebeeld kapperszaak in Wonderwick (gratis) en 4 videoaanvragen voor YC01 (haak bij de paal, oude kapperszaak, doeken om de paal, slot bij de kapperszaak), elk 2 versies, elk met \"Goedkeuren\"; 8 clips in 720p en de gekozen versies in 1080p buiten git in tools/ai-proef/flow/yc01/. ElevenLabs: 506 tekens met Lily.",
     "2026-11-25T18:27:00+01:00 Andries in de sessie, op \"Wat doen we hierna?\" (keuzes: Eerste zaak maken; Eerst meer plekken; mijn advies: de rood-witte paal van de kapper): \"Eerste zaak maken\"",
     "2026-11-25T18:23:00+01:00 Flow (Chrome van Andries): vijf beelden gemaakt met Nano Banana Pro (9:16, geen tegoed, ontwerp C als voorbeeld) en in 2K gedownload naar tools/ai-proef/flow/wonderwick/ (buiten git).",
@@ -956,6 +967,7 @@
     }
   ],
   "ontvangen": [
+    "eva-voorraad-7",
     "eva-automaat-6",
     {
       "id": "eva-ronde-22nov",
