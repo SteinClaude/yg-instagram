@@ -1,5 +1,7 @@
 # Waaromdorp — de nieuwe wereld van kanaal 1 (ontwerp, ter keuring)
 
+> **Namen (wo 25 nov 2026, Andries):** het dorp heet **Wonderwick** (±17:53, *"Wonderwick (Recommended)"*), het museum **The Museum of Why** (±17:50). "Waaromdorp" blijft de werknaam in deze map. Het totaalplan staat in .
+
 > **Bijgesteld wo 25 nov 2026 ±17:12:** Andries: *peertje en vraag tegen, en de recheurs gaan samen op de zelfde kanalen komen zo blijft het variabel en niet eentonig,*. De rechercheurs komen dus **op dezelfde kanalen als het Vraagteken en Peertje** (kanaal 1, YouTube en Instagram), afwisselend met het duo. Het plan voor een apart nieuw account (di 24 nov, hieronder) vervalt. Stijl: getekend (D), *"D, getekend"* (wo 25 nov ±15:06).
 
 > **(Vervangen op wo 25 nov, zie hierboven.) Bijgesteld di 24 nov 2026 ±13:25:** Andries: *"ik wil peertje en vraag teken houden, voor de nieuwe content/project maak ik een nieuw acount aan"*. Het Vraagteken en Peertje blijven op kanaal 1; de rechercheurs en de AI-proef (`ai-proef.md`, `flow-stappen.md`, `keuzebladen.md`) zijn voor een nieuw account, dat Andries zelf aanmaakt. Platform: *"YouTube en Instagram"*. Wie maakt: *"Eerst Manon, later nieuw (Recommended)"* (later een eigen crewlid).

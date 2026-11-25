@@ -10,6 +10,14 @@ Dit is een voorstel van Manon. Wat erin staat, beslist Andries (zie "Keuzes voor
 - ±17:46, ritme: *"2 per week (Recommended)"* → de rechercheurs komen 2 keer per week om 20:00 op kanaal 1 (YouTube en Instagram); het duo om 12:00.
 - ±17:46, namen: *"Ja, zoek opties (Recommended)"* → ik zoek namen voor het dorp en het museum na en leg ze voor.
 
+- ±17:50, namen, eerste ronde (Whyvale, Whymere, Why Hollow; museum: The Whyseum, The Museum of Why, The Hall of Whys): dorp *"Something else"*, museum *"The Museum of Why"*.
+- ±17:53, tweede ronde voor het dorp (Wonderwick, Fablewick, Mythwick, Whyfell): *"Wonderwick (Recommended)"*.
+  - Nagezocht op wo 25 nov met een zoekmachine: geen bedrijf, spel of plaats met precies die naam gevonden. "Riddlewood" viel af (een bestaand spel), "Whythorn" ook (lijkt op Whithorn, een plaats in Schotland).
+  - Een merkonderzoek is dit niet.
+- ±17:47, eigen bericht: *"ik  wil ook daarna een ontwerp maken voor het dorp vanaf boven af, dit moet een beetje een sprookjes dorp zijn met mytische dingen enz"* → na de namen een ontwerp van Wonderwick van bovenaf: een sprookjesdorp met mythische dingen.
+
+**Namen:** het dorp heet **Wonderwick**, het museum **The Museum of Why**.
+
 ## Bijgesteld na die besluiten
 - **Het hart is het dorp.** Wat steeds terugkomt en het herkenbaar maakt:
   - het dorpsplein als vast beginpunt of als overgang;

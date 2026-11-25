@@ -246,6 +246,9 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- wo 25 nov 2026 ±17:53, in de sessie, op de tweede ronde namen voor het dorp (keuzes: Wonderwick; Fablewick; Mythwick; Whyfell): "Wonderwick (Recommended)" → het dorp heet Wonderwick.
+- wo 25 nov 2026 ±17:50, in de sessie, op de namen (dorp: Whyvale, Whymere, Why Hollow; museum: The Whyseum, The Museum of Why, The Hall of Whys): dorp "Something else", museum "The Museum of Why" → het museum heet The Museum of Why; nieuwe ronde voor het dorp.
+- wo 25 nov 2026 ±17:47, in de sessie (eigen bericht): "ik  wil ook daarna een ontwerp maken voor het dorp vanaf boven af, dit moet een beetje een sprookjes dorp zijn met mytische dingen enz" → ontwerp van Wonderwick van bovenaf, in Flow.
 - wo 25 nov 2026 ±17:48, in de sessie, op "Wat bedoel je met anders?" (bij het museum; keuzes: Museum wel, niet elke video; Het dorp is het hart; Museum als eigen reeks): "Het dorp is het hart" → Waaromdorp zelf is het herkenbare hart; het museum is één van de plekken.
 - wo 25 nov 2026 ±17:46, in de sessie, op vier vragen over het totaalplan: museum als hart: "Nee, anders" · duo ook in het museum: "Ja, ook het duo (Recommended)" · ritme rechercheurs: "2 per week (Recommended)" · namen: "Ja, zoek opties (Recommended)" → plan-totaal.md bijgesteld.
 - wo 25 nov 2026 ±17:45, in de sessie (eigen bericht): "hoe zit het met het totale plan, van ons dorp musuem dit moet echt een incoons ding worden van ons" → totaalplan geschreven (docs/waaromdorp/plan-totaal.md), keuzes voorgelegd.
