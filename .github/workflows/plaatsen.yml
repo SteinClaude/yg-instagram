@@ -77,9 +77,8 @@ jobs:
           IG_USER_ID_K2: ${{ secrets.IG_USER_ID_K2 }}
           IG_TOKEN_K3: ${{ secrets.IG_TOKEN_K3 }}
           IG_USER_ID_K3: ${{ secrets.IG_USER_ID_K3 }}
-          # Alle geheimen van de repo in één keer. Zo werkt een account dat later in src/accounts.cjs
-          # bij komt zonder dat dit bestand verandert; het script kiest op naam en toont er nooit een.
-          IG_GEHEIMEN: ${{ toJSON(secrets) }}
+          # Niet alle geheimen in één keer doorgeven: daarop houdt GitHub de workflow tegen als "mogelijk kwaadaardig".
+          # Een nieuw account krijgt hier (en hieronder bij de proef) twee eigen regels.
           REPO_RAW: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
         run: node src/plaatsen.cjs
 
@@ -97,7 +96,6 @@ jobs:
           IG_USER_ID_K2: ${{ secrets.IG_USER_ID_K2 }}
           IG_TOKEN_K3: ${{ secrets.IG_TOKEN_K3 }}
           IG_USER_ID_K3: ${{ secrets.IG_USER_ID_K3 }}
-          IG_GEHEIMEN: ${{ toJSON(secrets) }}
           REPO_RAW: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
           PROEF_VIDEO: ${{ github.event.inputs.proefvideo }}
           PROEF_OMSLAG: ${{ github.event.inputs.proefomslag }}

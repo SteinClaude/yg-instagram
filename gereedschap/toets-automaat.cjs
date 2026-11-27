@@ -1200,7 +1200,7 @@ function runnerKloon(a, naam) {
 async function deelWorkflow() {
   const T = require(path.join(WORTEL, 'src', 'accounts.cjs'));
 
-  await toets('plaatsen.yml: elke tien minuten, alle geheimen doorgegeven, de proefknop, en de twee stappen die altijd draaien', () => {
+  await toets('plaatsen.yml: elke tien minuten, de geheimen per account doorgegeven (nooit alle in één keer), de proefknop, en de twee stappen die altijd draaien', () => {
     const y = WORKFLOW();
     const crons = [...y.matchAll(/^\s*- cron: '([^']+)'\s*$/gm)].map(m => m[1]);
     gelijk(crons.length, 1, 'één regel met starttijden');
@@ -1212,7 +1212,7 @@ async function deelWorkflow() {
     const plaats = stap('Plaatsen wat aan de beurt is'), proef = stap('Proef met een video (er wordt niets geplaatst)');
     for (const st of [plaats, proef]) {
       for (const acc of T.ACCOUNTS) for (const g of [acc.geheim, acc.geheimId]) waar(st.kop.includes(`${g}: \${{ secrets.${g} }}`), `${g} wordt niet doorgegeven`);
-      waar(st.kop.includes('IG_GEHEIMEN: ${{ toJSON(secrets) }}'), 'IG_GEHEIMEN (alle geheimen, voor een account dat er later bij komt) ontbreekt');
+      waar(!st.kop.some(k => k.includes('toJSON(secrets)')), 'alle geheimen in één keer (toJSON(secrets)): GitHub houdt de workflow dan tegen als mogelijk kwaadaardig');
       waar(st.kop.some(k => k.startsWith('REPO_RAW: https://raw.githubusercontent.com/${{ github.repository }}/')), 'REPO_RAW ontbreekt');
     }
     waar(plaats.kop.includes("if: github.event.inputs.proefvideo == ''") && proef.kop.includes("if: github.event.inputs.proefvideo != ''"), 'plaatsen en proef sluiten elkaar uit');
