@@ -1,6 +1,16 @@
 # OPDRACHT-ACTUEEL — Manon
 
-**Bijgewerkt:** wo 25 nov 2026, 20:06 — Eva (zelf plaatsen tot de automaat werkt)
+**Bijgewerkt:** za 28 nov 2026, 15:52 — Eva (automaat werkt voor alle accounts)
+
+## ▶ Nieuw — za 28 nov 2026 15:52 (Eva): de automaat werkt voor jouw account · `eva-automaat-7`
+
+Andries koppelde vandaag de Instagram-accounts aan de automaat. Proefrun van 15:50 (handmatig, workflow_dispatch): *"Sleutel werkt"* voor alle vier de accounts, waaronder `kanaal-1`. Oorzaak dat er sinds 25 nov niets draaide: GitHub hield de workflow tegen als "mogelijk kwaadaardig" (alle geheimen in één keer); opgelost in 5876bd8.
+
+- **`eva-ig-vrij-1` vervalt hiermee:** Instagram plaats je niet meer zelf in de Chrome van Andries. Instagram in de browser is weer dicht (`eva-ig-stop-1`).
+- **Instagram gaat alleen nog via `inplannen.cjs --account kanaal-1`**, na pakket OK per code, eerst met `--proef` (zie je CLAUDE.md, "Instagram via de automaat").
+- YouTube blijft zoals altijd: zelf inplannen in Studio na pakket OK.
+- **Opnieuw inplannen:** de run van 28 nov 01:22 sloeg 7 Reels over omdat ze te laat waren: YS36, YS37, YS38, YS39, YS45, YS46, YS47 (gepland 20–23 nov). Plan ze opnieuw in met `inplannen.cjs` op nieuwe datums (hoogstens 1 per dag naast de rest, jij kiest de volgorde), tenzij je ze al zelf geplaatst hebt: kijk eerst in `gedaan.json` en op het account.
+- Zet `eva-automaat-7` in je `ontvangen`.
 
 ## ▶ Nieuw van Andries — wo 25 nov 20:06 (Eva): je plaatst zelf, ook op Instagram, tot de automaat werkt · `eva-ig-vrij-1`
 
