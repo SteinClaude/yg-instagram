@@ -56,3 +56,24 @@ Bronnen:
 
 Wat kan: de beste grafiet zou uit China komen (beide, "believed"); geel stond daar voor koninklijk/respect (Weaver: "originally chose the color yellow because of its connotations of royalty and respect in Chinese culture"); 1889 wereldtentoonstelling Parijs (Weaver, Mental Floss — niet 1890); vernoemd naar de Koh-i-Noor-diamant (Weaver); anderen namen geel over (beide); "lead pencils do not contain any lead" — grafiet en klei (McGill).
 Niet: "75 %".
+
+## Short — Why does popcorn pop? (YS51; uitgezocht za 28 nov 2026)
+
+Bronnen:
+- Emmanuel Virot en Alexandre Ponomarenko, "Popcorn: critical temperature, jump and sound", Journal of the Royal Society Interface 12(104): 20141247 (6 mrt 2015): https://doi.org/10.1098/rsif.2014.1247 (volledige tekst: https://pmc.ncbi.nlm.nih.gov/articles/PMC4345489/)
+- Rachel Nuwer, "Popcorn Physics 101: How a Kernel Pops", Scientific American (1 mei 2015): https://www.scientificamerican.com/article/popcorn-physics-101-how-a-kernel-pops/
+- Chad Campbell, "What's under the shell of this popular snack?", Purdue University College of Agriculture (7 feb 2020): https://ag.purdue.edu/news/2020/02/whats-under-the-shell-of-this-popular-snack.html
+- Reserve: Popcorn Board, "What Makes Popcorn Pop?" (geen datum): https://popcorn.org/All-About-Popcorn/What-Makes-Popcorn-Pop
+
+Wat kan: een druppel water in de korrel, "stored inside a circle of soft starch" (Popcorn Board), onder een harde schil, "the pericarp" (Purdue); "The kernel acts as a pressure cooker" (Purdue); "Above a critical vapour pressure, the hull breaks" (paper); "96% of popcorn are popped at 180°C", bij 170 °C maar 34 % (paper; SciAm: 356 °F); het zetmeel vormt "a spongy flake" (paper), "turning the kernel inside out" (USDA NAL); de "pop" komt volgens de onderzoekers van ontsnappende waterdamp: "the familiar 'pop' sound … is caused by the release of water vapour" (paper; in de tekst een hypothese, dus "scientists think"); "a leg of starch is responsible for the observed motion" (paper), "compresses and releases like a spring" (SciAm); de draai is "slightly better than the somersault of a running gymnast" (paper); korrels die niet poppen hebben "cuts or weaknesses in the outside layer … that let the moisture leave" (Purdue); alles gebeurt "in some hundredths of a second" (paper).
+Niet: "old maids", "het geluid is de schil die barst", "zoals een turner springt" (het gaat om de salto), drukgetallen (10 bar en 135 psi verschillen).
+
+## Short — Why is the Statue of Liberty green? (YS52; uitgezocht za 28 nov 2026)
+
+Bronnen:
+- National Park Service, "Frequently Asked Questions – Statue Of Liberty National Monument" (bijgewerkt 26 mrt 2026): https://www.nps.gov/stli/faqs.htm
+- National Park Service, "Statue Statistics" (bijgewerkt 30 dec 2024): https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm
+- PBS Digital Studios / American Chemical Society, "Why is the Statue of Liberty Green?", Reactions (29 jun 2017): https://www.pbs.org/video/why-is-the-statue-of-liberty-green-k31x0j
+
+Wat kan: de koperen huid is "3/32 of an inch, the thickness of two pennies placed together" (NPS); in 1886 was het beeld "more of a traditional brown color like an American penny" (NPS); "The Statue's copper has naturally oxidized to form the outer patina or green coating" (NPS); "It took about thirty years" (NPS; NPS Teachers: 25 tot 30 jaar); "This patina is as thick, in many places, as the copper behind it and protects the copper from naturally wearing away" (NPS); "Officials suggested trying to restore her to the original color, or painting her … after public outcry, they decided to just leave it the way it is" (PBS).
+Niet: "glanzend als een nieuwe cent" (NPS: bruin), "groen binnen 20 jaar", het jaar en bedrag van het verfplan, het gewicht van het koper, "verdigris".
