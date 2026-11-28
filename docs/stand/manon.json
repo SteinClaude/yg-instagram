@@ -1,6 +1,6 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-28T15:58:00+01:00",
+  "tijd": "2026-11-28T16:06:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
@@ -167,7 +167,7 @@
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
   "bezig": "Inplannen met de voorraad na \"de automaat is klaar plan in met de voorraad\": YouTube in Studio (17:00–17:45) en Instagram via inplannen.cjs (eerst --proef).",
-  "volgende": "Andries: keuring YS49 en YS50 (pakket OK en bijschrift OK per code), YC01 en stijl OK YC. Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00, en YS49/YS50 als ze gekeurd zijn (kanaal 1 eerst nakijken). Zo 29 en ma 30 nov zijn nog leeg om 20:00: YS51 en YS52 maken met nieuwe bronnen. Na keuring YC01: inplannen di 1 dec 20:00. YC02 voor vr 4 dec. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1).",
+  "volgende": "17:00–17:45 Studio (kanaal 1 eerst nakijken): YS48 za 28, YS49 zo 29, YS50 ma 30 nov 20:00. Lijst verboden woorden buiten git maken (namen uit Studio). Dan Instagram via inplannen.cjs: YS48–YS50 om 20:00, en de zeven overgeslagen Reels om 12:00 (YS45 zo 29, YS46 ma 30, YS47 di 1, YS36 wo 2, YS37 do 3, YS38 vr 4, YS39 za 5 dec), eerst intrekken. Daarna YS51/YS52 en YC02.",
   "kanNietVerder": null,
   "vragen": [
     {
@@ -190,20 +190,12 @@
       "advies": "Keuren; dan plan ik hem in voor di 1 dec 20:00 op YouTube en Instagram.",
       "blokkeert": true
     },
-    {
-      "vraag": "Zet je de lijst met verboden woorden (YG_VERBODEN_WOORDEN) op de pc? Zonder die lijst plan ik YS48 niet in op Instagram (de proef voor do 26 nov 20:00 is in orde).",
-      "aan": "andries",
-      "keuzes": [
-        "Gedaan",
-        "Later"
-      ],
-      "advies": "Zetten; daarna plan ik YS48 en wat sinds 20 nov is overgeslagen meteen in.",
-      "blokkeert": false
-    },
     "Bio v2 TikTok en Snapchat (met tijden, docs/bio.md) en vastzetten op Instagram (voorstel: stopbord, ampersand, YL01) · aanname: vanavond met Andries · blokkeert: nee",
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-28T16:00:00+01:00 Andries in de sessie, op \"De lijst met verboden woorden ontbreekt op de pc; wat doen we?\" (keuzes: Ik zet hem nu; Plan in zonder lijst): \"kan jij dit doen?\" → ik maak de lijst buiten git en zet de variabele YG_VERBODEN_WOORDEN",
+    "2026-11-28T16:02:00+01:00 Andries in de sessie, op \"Hoe kom ik aan de namen voor de lijst?\" (keuzes: Neem ze uit Studio; Ik typ ze hier): \"Neem ze uit Studio (Recommended)\" → ik lees kanaalnaam en handle van kanaal 1 af in YouTube Studio en zet ze met ygdigital in een bestand buiten git; de namen komen nooit in de repo",
     "2026-11-28T15:53:00+01:00 Andries in de sessie, op \"Keur je YS49 en YS50?\" (keuzes: Beide OK YS49 en YS50; Aanpassen): \"Beide OK YS49 en YS50\" → pakket OK en bijschrift OK voor YS49 en voor YS50 (keuring.json, via sessie)",
     "2026-11-28T15:56:00+01:00 Andries in de sessie (eigen bericht): \"de automaat is klaar plan in met de voorraad\"",
     "2026-11-25T19:53:00+01:00 Andries in de sessie, op \"Nieuwe duo-filmpjes nu al maken voor de lege plekken?\" (keuzes: Ja, nu al; Na 14 dec): \"Ja, nu al\"",
