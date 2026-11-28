@@ -1,7 +1,7 @@
 {
  "stand": "in orde",
- "bericht": "Verbonden met @ygdigital.nl, kanaal 1 en kanaal 2. Doet nu niet mee, er staat niets voor in de planning: account 3 (niet ingesteld).",
- "sinds": "2026-11-28 15:39",
+ "bericht": "Verbonden met @ygdigital.nl, kanaal 1, kanaal 2 en account 3.",
+ "sinds": "2026-11-28 15:50",
  "accounts": {
   "ygdigital": {
    "naam": "@ygdigital.nl",
@@ -23,9 +23,9 @@
   },
   "account-3": {
    "naam": "account 3",
-   "stand": "niet ingesteld",
-   "bericht": "IG_TOKEN_K3 en IG_USER_ID_K3 ontbreken bij de geheimen van de repo.",
-   "sinds": "2026-11-28 01:22"
+   "stand": "in orde",
+   "bericht": "Verbonden.",
+   "sinds": "2026-11-28 15:50"
   }
  }
 }
