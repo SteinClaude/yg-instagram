@@ -9,6 +9,15 @@
       "via": "sessie",
       "door": "Andries",
       "opVraag": "2026-11-16T20:53:00+01:00"
+    },
+    {
+      "soort": "pakket",
+      "uitkomst": "ok",
+      "tekst": "Alles OK",
+      "tijd": "2026-11-09T21:36:00+01:00",
+      "via": "sessie",
+      "door": "Andries",
+      "opmerking": "Aangevuld op za 28 nov 2026 uit docs/oplevering-manon.md (Besluiten met Andries, ma 9 nov 2026 ±21:36, op \"Geef je pakket OK en bijschrift OK voor YS33–YS39?\"). De video is daarna niet meer gewijzigd (laatste wijziging f1ef295, 9 nov 20:00)."
     }
   ]
 }
