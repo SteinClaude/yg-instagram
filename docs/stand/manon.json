@@ -1,12 +1,12 @@
 {
   "lid": "manon",
-  "tijd": "2026-11-25T22:28:00+01:00",
+  "tijd": "2026-11-28T15:58:00+01:00",
   "sessie": {
     "id": "c02a810c-8ecd-4e99-9222-2bd2e0dc2f0a",
     "plek": "pc",
-    "sinds": "2026-11-25T10:08:00+01:00"
+    "sinds": "2026-11-28T15:53:00+01:00"
   },
-  "status": "wacht",
+  "status": "werkt",
   "af": [
     "2026-11-25T22:28:00+01:00 Les: de eerste render van YS50 brak af op beeld 738 (resvg-paniek, geom.rs). Oorzaak: een lijn met opacity (het streepje op een potlood) die in de veegovergang net buiten beeld valt. Opgelost met stroke-opacity (ziet er hetzelfde uit). Bij nieuwe tekeningen: doorzichtigheid op een enkele lijn met stroke-opacity, niet met opacity.",
     "2026-11-25T22:28:00+01:00 Pakketten YS49 (\"Why do onions make you cry?\", 41,8 s) en YS50 (\"Why are so many pencils yellow?\", 40,3 s) gemaakt: duo-shorts in stijl 3 met watermerk (Laura en Liam), na \"Ja, nu al\". Per pakket video.mp4, video-upload.mp4 (8,8 en 9,0 MB), studio.txt (vr 27 en za 28 nov 2026, 20:00), bron/bronnen.md, bron/stem.txt, bron/controle-beweging.jpg, overzicht.jpg, instagram/ (reel, omslag met de hele titel, bijschrift), tiktok-snapchat/ en een kaart die om pakket OK en bijschrift OK vraagt. Stemmen 590 en 563 tekens. Nagekeken met een blad van één beeld per seconde.",
@@ -166,7 +166,7 @@
     "Pakketten YS26–YS30 klaar (upload-kopieën 8,9–9,0 MiB), niet ingepland",
     "Pakketten YS31–YS32 klaar; YS26–YS32 compleet (35,8–49,2 s, upload-kopieën 8,9–9,0 MiB), niet ingepland; keurlijst bijgewerkt"
   ],
-  "bezig": null,
+  "bezig": "Inplannen met de voorraad na \"de automaat is klaar plan in met de voorraad\": YouTube in Studio (17:00–17:45) en Instagram via inplannen.cjs (eerst --proef).",
   "volgende": "Andries: keuring YS49 en YS50 (pakket OK en bijschrift OK per code), YC01 en stijl OK YC. Do 26 nov 17:00–17:45 Studio: YS48 voor 20:00, en YS49/YS50 als ze gekeurd zijn (kanaal 1 eerst nakijken). Zo 29 en ma 30 nov zijn nog leeg om 20:00: YS51 en YS52 maken met nieuwe bronnen. Na keuring YC01: inplannen di 1 dec 20:00. YC02 voor vr 4 dec. Weekanalyse zodra de cijfers er zijn. Instagram niet openen in de browser (eva-ig-stop-1).",
   "kanNietVerder": null,
   "vragen": [
@@ -179,16 +179,6 @@
       ],
       "advies": "Ja: zo houd ik steeds een week voorraad klaar. Ik maak YS51 en YS52 voor zo 29 en ma 30 nov, met nieuwe bronnen.",
       "blokkeert": false
-    },
-    {
-      "vraag": "Keur je YS49 (waarom uien je laten huilen) en YS50 (waarom zoveel potloden geel zijn)? Per code: \"Beide OK YS49\" en \"Beide OK YS50\" (pakket OK en bijschrift OK).",
-      "aan": "andries",
-      "keuzes": [
-        "Beide OK YS49 en Beide OK YS50",
-        "Aanpassen"
-      ],
-      "advies": "Keuren; dan plan ik ze do 26 nov in Studio in voor vr 27 en za 28 nov 20:00, en op Instagram zodra de lijst met verboden woorden er is.",
-      "blokkeert": true
     },
     {
       "vraag": "Keur je YC01 (pakket OK YC01, bijschrift OK YC01) en de stijl van de nieuwe reeks (stijl OK YC)?",
@@ -214,6 +204,8 @@
     "ElevenLabs: wat is het bedrag van het abonnement, met zijn OK (voor het potje)? · blokkeert: nee"
   ],
   "buitenGit": [
+    "2026-11-28T15:53:00+01:00 Andries in de sessie, op \"Keur je YS49 en YS50?\" (keuzes: Beide OK YS49 en YS50; Aanpassen): \"Beide OK YS49 en YS50\" → pakket OK en bijschrift OK voor YS49 en voor YS50 (keuring.json, via sessie)",
+    "2026-11-28T15:56:00+01:00 Andries in de sessie (eigen bericht): \"de automaat is klaar plan in met de voorraad\"",
     "2026-11-25T19:53:00+01:00 Andries in de sessie, op \"Nieuwe duo-filmpjes nu al maken voor de lege plekken?\" (keuzes: Ja, nu al; Na 14 dec): \"Ja, nu al\"",
     "2026-11-25T19:10:00+01:00 Andries in de sessie, op \"YouTube Studio staat op een ander kanaal dan kanaal 1 … Wil je Studio op kanaal 1 zetten?\" (keuzes: Staat nu op kanaal 1; Later): \"Staat nu op kanaal 1\"",
     "2026-11-25T19:44:00+01:00 YouTube Studio (Chrome van Andries, kanaal 1, rood vraagteken nagekeken): YS39 t/m YS20 één voor één van Gepland naar Openbaar → Publiceren. Eén keer laadde de pagina te laat en kwam een klik in het planvenster van YS21; daarna nagekeken: YS21 stond nog ongewijzigd op Gepland 27 nov en is daarna gewoon openbaar gezet. Geen andere video's aangeraakt.",
@@ -990,6 +982,8 @@
     }
   ],
   "ontvangen": [
+    "eva-automaat-7",
+    "eva-ig-vrij-1",
     "eva-voorraad-7",
     "eva-automaat-6",
     {

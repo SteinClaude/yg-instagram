@@ -252,6 +252,8 @@ KLAAR: yg-social-plan (docs/yg-social-plan.md: 30 onderwerpen met bron, 3 reekse
 
 ## Besluiten met Andries
 
+- za 28 nov 2026 ±15:56, in de sessie (eigen bericht): "de automaat is klaar plan in met de voorraad" → inplannen wat een OK heeft: YouTube in Studio, Instagram via inplannen.cjs (na --proef), plus de zeven overgeslagen Reels (eva-automaat-7).
+- za 28 nov 2026 ±15:53, in de sessie, op "Keur je YS49 en YS50?" (keuzes: Beide OK YS49 en YS50; Aanpassen): "Beide OK YS49 en YS50" → pakket OK en bijschrift OK voor YS49 (uien) en YS50 (gele potloden).
 - wo 25 nov 2026 ±19:53, in de sessie, op "Nieuwe duo-filmpjes nu al maken voor de lege plekken?" (keuzes: Ja, nu al; Na 14 dec): "Ja, nu al" → nieuwe shorts met het Vraagteken en Peertje (stijl 3) vanaf nu, niet pas na 14 dec; eerst YS49 (uien) en YS50 (gele potloden).
 - wo 25 nov 2026 ±19:10, in de sessie, op "Wil je Studio op kanaal 1 zetten?" (keuzes: Staat nu op kanaal 1; Later): "Staat nu op kanaal 1" → YS20–YS39 openbaar gezet.
 - wo 25 nov 2026 ±19:26, in de sessie, op "Wat doen we met de 20 uitleg-shorts zonder Peertje (YS20–YS39)?" (na zijn bericht "de videos zonder peertje wil ik nu vandaag allemaal posten zodat ze niet verloren gaan maar wel alvast gepost zijn,"; keuzes: Laten staan; Sneller, 2 per dag; Toch alles vandaag — met de uitleg dat ze al ingepland staan, dat alles op één dag bereik kost en dat het buiten mijn Studio-tijd 17:00–17:45 valt): "Toch alles vandaag" → YS20–YS39 vandaag openbaar in YouTube Studio, buiten mijn vaste tijd; Studio moet eerst op kanaal 1 (dat zet Andries). Gemeld in voorEva (V-manon-studio-buiten-tijd).
