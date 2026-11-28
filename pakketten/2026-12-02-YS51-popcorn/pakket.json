@@ -1,0 +1,25 @@
+{
+  "code": "YS51",
+  "titel": "Why does popcorn pop?",
+  "soort": "short",
+  "video": "pakketten/2026-12-02-YS51-popcorn/video.mp4",
+  "vraagt": {
+    "pakket": "2026-11-28T16:44:00+01:00",
+    "bijschrift": "2026-11-28T16:44:00+01:00"
+  },
+  "opmerking": "Duo-short in stijl 3 met watermerk, 38,9 s: het Vraagteken en Peertje. Haak: \"Why does popcorn pop?\" Sterk feit: bij 180 °C knalt bijna elke korrel, bij 170 °C maar een derde. Slot: \"Pop!\" (lus naar het begin). Eigen getekende pan, korrels, popcorn, doorsnede, grafiek, veer en stopwatch. Bronnen: Virot en Ponomarenko, J. R. Soc. Interface (2015); Scientific American (2015); Purdue University (2020); USDA National Agricultural Library; Popcorn Board. Het geluid als stoom is een hypothese: in de video \"Scientists think\". Stemmen 530 tekens. Pakket OK dekt script, bronnen en titel; bijschrift OK dekt Instagram (instagram/bijschrift.txt) en de bijschriften voor TikTok en Snapchat (tiktok-snapchat/). Bedoeld voor wo 2 dec 2026, 20:00, op YouTube en Instagram.",
+  "plaatsen": [
+    {
+      "platform": "youtube",
+      "stand": "klaar",
+      "wanneer": "2026-12-02T20:00:00+01:00",
+      "noot": "Inplannen in Studio na pakket OK YS51, tussen 17:00 en 17:45 (kanaal 1 eerst nakijken)."
+    },
+    {
+      "platform": "instagram",
+      "stand": "klaar",
+      "wanneer": "2026-12-02T20:00:00+01:00",
+      "noot": "Via de automaat (inplannen.cjs) na bijschrift OK YS51."
+    }
+  ]
+}

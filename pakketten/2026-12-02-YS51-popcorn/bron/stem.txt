@@ -1,0 +1,13 @@
+Stem: ElevenLabs (tekst naar spraak, betaald abonnement), vraag = Laura (eleven_v4, tempo 1.12), antwoord = Liam (eleven_v4, tempo 1.12); gemaakt met gereedschap/short/elevenlabs.cjs. Lange stiltes zijn ingekort.
+Ingesproken tekst per scène:
+1. [vraag, Laura] Why does popcorn pop?
+2. [antwoord, Liam] Every kernel is a tiny pressure cooker, with a drop of water inside!
+3. [antwoord, Liam] Heat turns that water into steam, and the pressure builds inside the hard shell.
+4. [vraag, Laura] And then?
+5. [antwoord, Liam] At 180 degrees Celsius, almost every kernel bursts open. At 170, only a third!
+6. [antwoord, Liam] The soft starch puffs up and turns the kernel inside out.
+7. [vraag, Laura] And the pop sound?
+8. [antwoord, Liam] Scientists think it's the steam escaping, not the shell cracking!
+9. [vraag, Laura] And why does it jump?
+10. [antwoord, Liam] A little leg of starch pushes off the pan, like a spring!
+11. [antwoord, Liam] And it all happens in a few hundredths of a second. Pop!
