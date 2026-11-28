@@ -1,13 +1,13 @@
 {
  "stand": "in orde",
- "bericht": "Verbonden met kanaal 1. Doet nu niet mee, er staat niets voor in de planning: @ygdigital.nl (sleutel geweigerd), kanaal 2 (niet ingesteld) en account 3 (niet ingesteld).",
- "sinds": "2026-11-28 01:22",
+ "bericht": "Verbonden met @ygdigital.nl en kanaal 1. Doet nu niet mee, er staat niets voor in de planning: kanaal 2 (niet ingesteld) en account 3 (niet ingesteld).",
+ "sinds": "2026-11-28 12:09",
  "accounts": {
   "ygdigital": {
    "naam": "@ygdigital.nl",
-   "stand": "sleutel geweigerd",
-   "bericht": "Instagram weigert de sleutel: Instagram weigert /17841434765692615: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. (code 190)",
-   "sinds": "2026-11-28 01:22"
+   "stand": "in orde",
+   "bericht": "Verbonden.",
+   "sinds": "2026-11-28 12:09"
   },
   "kanaal-1": {
    "naam": "kanaal 1",
