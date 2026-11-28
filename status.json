@@ -1,5 +1,31 @@
 {
- "stand": "staat stil",
- "bericht": "Instagram weigert de sleutel van @ygdigital.nl: Instagram weigert /17841434765692615: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. (code 190); kanaal 1: Instagram weigert /<kanaal-1>: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. (code 190)",
- "sinds": "2026-11-20 10:57"
+ "stand": "in orde",
+ "bericht": "Verbonden met kanaal 1. Doet nu niet mee, er staat niets voor in de planning: @ygdigital.nl (sleutel geweigerd), kanaal 2 (niet ingesteld) en account 3 (niet ingesteld).",
+ "sinds": "2026-11-28 01:22",
+ "accounts": {
+  "ygdigital": {
+   "naam": "@ygdigital.nl",
+   "stand": "sleutel geweigerd",
+   "bericht": "Instagram weigert de sleutel: Instagram weigert /17841434765692615: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons. (code 190)",
+   "sinds": "2026-11-28 01:22"
+  },
+  "kanaal-1": {
+   "naam": "kanaal 1",
+   "stand": "in orde",
+   "bericht": "Verbonden.",
+   "sinds": "2026-11-28 01:22"
+  },
+  "kanaal-2": {
+   "naam": "kanaal 2",
+   "stand": "niet ingesteld",
+   "bericht": "IG_TOKEN_K2 en IG_USER_ID_K2 ontbreken bij de geheimen van de repo.",
+   "sinds": "2026-11-28 01:22"
+  },
+  "account-3": {
+   "naam": "account 3",
+   "stand": "niet ingesteld",
+   "bericht": "IG_TOKEN_K3 en IG_USER_ID_K3 ontbreken bij de geheimen van de repo.",
+   "sinds": "2026-11-28 01:22"
+  }
+ }
 }
